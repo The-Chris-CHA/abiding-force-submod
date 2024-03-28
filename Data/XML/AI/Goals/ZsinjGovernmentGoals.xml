@@ -1,0 +1,29 @@
+<?xml version="1.0" ?>
+
+<Goals>
+
+	<Keep_Zsinj_Safe>
+		<AIGoalApplicationFlags> Friendly </AIGoalApplicationFlags>
+		<GameMode> Galactic </GameMode>
+		<Category> Offensive </Category>
+		<Reachability> Any </Reachability>
+		<Time_Limit> 500.0 </Time_Limit>
+		<Build_Time_Delay_Tolerance>5.0</Build_Time_Delay_Tolerance>
+	</Keep_Zsinj_Safe>
+	
+	<Build_Pirate_Base>
+		<AIGoalApplicationFlags> Friendly </AIGoalApplicationFlags>
+		<GameMode> Galactic </GameMode>
+		<Category> Infrastructure </Category>
+		<Reachability> Any </Reachability>
+		<Time_Limit> 60.0 </Time_Limit>
+		<Build_Time_Delay_Tolerance>1.2</Build_Time_Delay_Tolerance>
+		<Is_Like>
+			Build_Space_Defensive_Structure,
+			Build_Space_Company,
+			Build_Tradestation,
+			Upgrade_Starbase
+		</Is_Like>
+	</Build_Pirate_Base>
+	
+</Goals>

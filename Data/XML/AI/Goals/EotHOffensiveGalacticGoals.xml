@@ -1,0 +1,28 @@
+<?xml version="1.0" ?>
+
+<Goals>
+
+	<EotH_Retake_Planet>
+		<AIGoalApplicationFlags> Enemy | Neutral </AIGoalApplicationFlags>
+		<GameMode> Galactic </GameMode>
+		<Category> Offensive </Category>
+		<Reachability> Enemy_destination </Reachability>
+		<Time_Limit> 90.0 </Time_Limit>
+		<Build_Time_Delay_Tolerance>1.3</Build_Time_Delay_Tolerance>
+		<Is_Like>Conquer_To_Reconnect, Unrestricted_Grab_Land</Is_Like> 
+		<Tracking_Duration>600</Tracking_Duration>
+		<Per_Failure_Desire_Adjust>1.0</Per_Failure_Desire_Adjust>
+		<Activation_Tracking_Duration>60</Activation_Tracking_Duration>
+		<Per_Activation_Failure_Desire_Adjust>-5.0</Per_Activation_Failure_Desire_Adjust>
+	</EotH_Retake_Planet>
+	
+	<EotH_Construct_Thrawn_Clone>
+		<AIGoalApplicationFlags> Friendly </AIGoalApplicationFlags>
+		<GameMode> Galactic </GameMode>
+		<Category> Offensive </Category>
+		<Reachability> Any </Reachability>
+		<Time_Limit> 90.0 </Time_Limit>
+		<Build_Time_Delay_Tolerance>1.3</Build_Time_Delay_Tolerance>
+	</EotH_Construct_Thrawn_Clone>
+
+</Goals>

@@ -1,0 +1,425 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Campaigns>
+
+<!-- ******************************************************************** -->
+<!-- ******************* SANDBOX CAMPAIGN "Isard's Revenge" ************* -->
+<!-- ******************************************************************** -->
+
+
+
+	<Campaign Name="Sandbox_IsardsRevenge_Rebel">
+		<Campaign_Set>Sandbox_IsardsRevenge</Campaign_Set>
+		
+		<Sort_Order>219</Sort_Order>
+		
+		<Text_ID> TEXT_CAMPAIGN_SINGLE_ISARDSREVENGE </Text_ID>
+        <Description_Text> TEXT_CAMPAIGN_SINGLE_DESCRIPTION_ISARDSREVENGE </Description_Text>
+
+        <Camera_Shift_X> 40.0 </Camera_Shift_X>
+        <Camera_Shift_Y> 0.0 </Camera_Shift_Y>
+        <Camera_Distance> 1200.0 </Camera_Distance>
+		
+		<Locations>
+			Galaxy_Core_Art_Model, 
+			Agamar,
+			Axxila,
+			Bilbringi,
+			Borleias,
+			Chandrila,
+			Ciutric,
+			Commenor,
+			Coruscant,
+			Corvis_Minor,
+			Farrfin,
+			Palanhi,
+			Tangrene,
+			Vrosynri,
+			Ithor,
+			Liinade,
+			Ord_Mantell,
+			M293
+		</Locations>
+		<Trade_Routes>
+			Bilbringi_Ord_Mantell,
+			Coruscant_Farrfin,
+			Borleias_Farrfin,
+			Borleias_Ord_Mantell,
+			Chandrila_Farrfin,
+			Ithor_Ord_Mantell,
+			Bilbringi_Palanhi,
+			Borleias_Palanhi,
+			Ithor_M293,
+			Ciutric_Vrosynri,
+			Chandrila_Coruscant,
+			Ciutric_Corvis_Minor,
+			Corvis_Minor_Tangrene,
+			Ciutric_Liinade,
+			Axxila_Liinade,
+			Axxila_Tangrene,
+			Axxila_Chandrila,
+			Agamar_Ord_Mantell,
+			Agamar_Ciutric,
+			Axxila_Commenor,
+			Chandrila_Commenor,
+			Ciutric_M293,
+		</Trade_Routes>
+
+		<Home_Location> Rebel, Coruscant </Home_Location>
+        <Home_Location> Empire, Ciutric </Home_Location>
+
+        <Starting_Active_Player> Rebel </Starting_Active_Player>
+		
+		<Rebel_Story_Name>Conquests\IsardsRevenge\Story_Plots_Sandbox_IsardsRevenge_Rebel.xml</Rebel_Story_Name>
+        <Empire_Story_Name>Conquests\IsardsRevenge\Story_Plots_Sandbox_IsardsRevenge_Empire.xml</Empire_Story_Name>
+		<Underworld_Story_Name>Conquests\IsardsRevenge\Story_Plots_Sandbox_IsardsRevenge_Container.xml</Underworld_Story_Name>
+		<Story_Name>
+			EmpireoftheHand, Conquests\Story_Plots_Generic_EmpireoftheHand.xml, 
+			Greater_Maldrood, Conquests\Story_Plots_Generic_Greater_Maldrood.xml,
+			Zsinj_Empire, Conquests\Story_Plots_Generic_Zsinj_Empire.xml,
+			Corporate_Sector, Conquests\Story_Plots_Generic_Corporate_Sector.xml,
+			Eriadu_Authority, Conquests\Story_Plots_Generic_Eriadu_Authority.xml, Hapes_Consortium, Conquests\Story_Plots_Generic_Hapes_Consortium.xml,
+			Pentastar, Conquests\Story_Plots_Generic_Pentastar.xml
+		</Story_Name>
+		
+		<AI_Player_Control> Rebel, SandboxHuman </AI_Player_Control>
+		<AI_Player_Control> Empire, GenericAI </AI_Player_Control>
+		
+		<AI_Player_Control> Pentastar, None</AI_Player_Control>
+		<AI_Player_Control> EmpireoftheHand, None </AI_Player_Control>
+		<AI_Player_Control> Zsinj_Empire, None </AI_Player_Control>
+		
+		<AI_Player_Control> Hapes_Consortium, None </AI_Player_Control>
+		<AI_Player_Control> Greater_Maldrood, None </AI_Player_Control>      
+		<AI_Player_Control> Eriadu_Authority, None </AI_Player_Control>				
+		<AI_Player_Control> Corporate_Sector, None </AI_Player_Control>		
+		<AI_Player_Control> Warlords, None </AI_Player_Control>				
+
+		<Markup_Filename>Empire, DefaultGalacticHints </Markup_Filename>
+		<Markup_Filename>Rebel, DefaultGalacticHints </Markup_Filename>
+		<Markup_Filename>EmpireoftheHand, DefaultGalacticHints </Markup_Filename>
+		<Markup_Filename>Zsinj_Empire, DefaultGalacticHints </Markup_Filename>
+		<Markup_Filename>Greater_Maldrood, DefaultMaldroodHints </Markup_Filename>			
+		<Markup_Filename>Pentastar, DefaultGalacticHints </Markup_Filename>
+		<Markup_Filename>Eriadu_Authority, DefaultEriaduHints </Markup_Filename>				
+		<Markup_Filename>Corporate_Sector, DefaultGalacticHints </Markup_Filename>		
+		<Markup_Filename>Warlords, DefaultGalacticHints </Markup_Filename>			
+		<Markup_Filename>Hapes_Consortium, DefaultGalacticHints </Markup_Filename>
+		
+		
+		
+		<Supports_Custom_Settings>False</Supports_Custom_Settings>
+		<Show_Completed_Tab>True</Show_Completed_Tab>
+
+		<!-- Win Conditions -->
+
+		<Human_Victory_Conditions>
+				Galactic_All_Planets_Controlled
+		</Human_Victory_Conditions>
+
+		<AI_Victory_Conditions>
+				Galactic_All_Planets_Controlled
+		</AI_Victory_Conditions>
+		
+		<Starting_Credits> Rebel,  8000 </Starting_Credits>
+		<Starting_Tech_Level> Rebel, 0 </Starting_Tech_Level>
+		<Max_Tech_Level> Rebel, 0 </Max_Tech_Level>
+		
+		
+		<!-- Borleias Space Forces -->
+		<Starting_Forces> Rebel, Borleias, Generate_Force </Starting_Forces>
+		
+		<!-- Coruscant Space Forces -->
+		<Starting_Forces> Rebel, Coruscant, NewRepublic_Star_Base_2 </Starting_Forces>
+		<Starting_Forces> Rebel, Coruscant, Calamari_Cruiser </Starting_Forces>
+		<Starting_Forces> Rebel, Coruscant, Alliance_Assault_Frigate_II </Starting_Forces>
+		<Starting_Forces> Rebel, Coruscant, Nebulon_B_Frigate </Starting_Forces>
+		<Starting_Forces> Rebel, Coruscant, Quasar </Starting_Forces>
+		<Starting_Forces> Rebel, Coruscant, Corellian_Corvette </Starting_Forces>
+		<Starting_Forces> Rebel, Coruscant, Corellian_Corvette </Starting_Forces>
+		<!-- Coruscant Land Forces -->
+		<Starting_Forces> Rebel, Coruscant, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Coruscant, NewRep_Senate </Starting_Forces>
+		<Starting_Forces> Rebel, Coruscant, R_Ground_Light_Vehicle_Factory </Starting_Forces>
+		<Starting_Forces> Rebel, Coruscant, R_Ground_Heavy_Vehicle_Factory </Starting_Forces>
+		<Starting_Forces> Rebel, Coruscant, Rebel_Infantry_Squad </Starting_Forces>
+		<Starting_Forces> Rebel, Coruscant, Rebel_T2B_Company </Starting_Forces>
+		<Starting_Forces> Rebel, Coruscant, MAS_2xB_Company </Starting_Forces>
+		
+		<!-- Chandrila Space Forces -->
+		<Starting_Forces> Rebel, Chandrila, NewRepublic_Star_Base_2 </Starting_Forces>
+		<Starting_Forces> Rebel, Chandrila, Generic_Colony_Two </Starting_Forces>
+		<Starting_Forces> Rebel, Chandrila, Corellian_Gunboat </Starting_Forces>
+		<Starting_Forces> Rebel, Chandrila, Nebulon_B_Frigate </Starting_Forces>
+		<!-- Chandrila Land Forces -->
+		<Starting_Forces> Rebel, Chandrila, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Chandrila, R_Ground_Barracks </Starting_Forces>
+		<Starting_Forces> Rebel, Chandrila, Rebel_Infantry_Squad </Starting_Forces>
+		<Starting_Forces> Rebel, Chandrila, Rebel_Marine_Squad </Starting_Forces>
+		<Starting_Forces> Rebel, Chandrila, Rebel_Freerunner_Company </Starting_Forces>
+		<Starting_Forces> Rebel, Chandrila, Rebel_Snowspeeder_Wing </Starting_Forces>
+		
+		<!-- Farrfin Land Forces -->
+		<Starting_Forces> Rebel, Farrfin, Generate_Force </Starting_Forces>
+		
+		<!-- Bilbringi Space Forces -->
+		<Starting_Forces> Rebel, Bilbringi, Generate_Force </Starting_Forces>
+		<!-- Ord_Mantell Space Forces -->
+		<Starting_Forces> Rebel, Ord_Mantell, Generate_Force </Starting_Forces>
+		
+		
+		<Starting_Credits> Empire,  8000 </Starting_Credits>
+		<Starting_Tech_Level> Empire, 1 </Starting_Tech_Level>
+		<Max_Tech_Level> Empire, 1 </Max_Tech_Level>
+		
+		<!-- Ciutric Space Forces -->
+		<Starting_Forces> Empire, Ciutric, Empire_Star_Base_3 </Starting_Forces>
+		<Starting_Forces> Empire, Ciutric, Empire_Shipyard_Level_Three </Starting_Forces>
+		<Starting_Forces> Empire, Ciutric, Secondary_Golan_Two </Starting_Forces>
+		<Starting_Forces> Empire, Ciutric, Generic_Star_Destroyer </Starting_Forces>
+		<Starting_Forces> Empire, Ciutric, Generic_Victory_Destroyer </Starting_Forces>
+		<Starting_Forces> Empire, Ciutric, Escort_Carrier </Starting_Forces>
+		<Starting_Forces> Empire, Ciutric, Lancer_Frigate </Starting_Forces>
+		<!-- Ciutric Land Forces -->
+		<Starting_Forces> Empire, Ciutric, Empire_MoffPalace </Starting_Forces>
+		<Starting_Forces> Empire, Ciutric, E_Ground_Barracks </Starting_Forces>
+		<Starting_Forces> Empire, Ciutric, E_Ground_Light_Vehicle_Factory </Starting_Forces>
+		<Starting_Forces> Empire, Ciutric, Remnant_Capital </Starting_Forces>
+		<Starting_Forces> Empire, Ciutric, Army_Guard_Squad </Starting_Forces>
+		<Starting_Forces> Empire, Ciutric, Imperial_Stormtrooper_Squad </Starting_Forces>
+		<Starting_Forces> Empire, Ciutric, Imperial_Chariot_LAV_Company </Starting_Forces>
+		<Starting_Forces> Empire, Ciutric, Imperial_AT_ST_Company </Starting_Forces>
+		<Starting_Forces> Empire, Ciutric, Imperial_A5_Juggernaut_Company </Starting_Forces>
+		
+		<!-- Corvis_Minor Space Forces -->
+		<Starting_Forces> Empire, Corvis_Minor, Empire_Star_Base_2 </Starting_Forces>
+		<Starting_Forces> Empire, Corvis_Minor, Generic_Colony_Two </Starting_Forces>
+		<Starting_Forces> Empire, Corvis_Minor, Vindicator_Cruiser </Starting_Forces>
+		<Starting_Forces> Empire, Corvis_Minor, Lancer_Frigate </Starting_Forces>
+		<!-- Corvis_Minor Land Forces -->
+		<Starting_Forces> Empire, Corvis_Minor, Empire_MoffPalace </Starting_Forces>
+		<Starting_Forces> Empire, Corvis_Minor, E_Ground_Barracks </Starting_Forces>
+		<Starting_Forces> Empire, Corvis_Minor, Army_Trooper_Squad </Starting_Forces>
+		<Starting_Forces> Empire, Corvis_Minor, Imperial_AT_PT_Company </Starting_Forces>
+		
+		<!-- Liinade Space Forces -->
+		<Starting_Forces> Empire, Liinade, Generate_Force </Starting_Forces>
+		
+		<!-- Axxila Space Forces -->
+		<Starting_Forces> Empire, Axxila, Generate_Force </Starting_Forces>
+		
+		<!-- Tangrene Space Forces -->
+		<Starting_Forces> Empire, Tangrene, Generate_Force </Starting_Forces>
+		
+		<!-- Vrosynri Space Forces -->
+		<Starting_Forces> Empire, Vrosynri, Generate_Force </Starting_Forces>
+
+
+	</Campaign>
+
+	<Campaign Name="Sandbox_IsardsRevenge_Empire">
+		<Campaign_Set>Sandbox_IsardsRevenge</Campaign_Set>
+		
+		<Sort_Order>219</Sort_Order>
+		
+		<Text_ID> TEXT_CAMPAIGN_SINGLE_ISARDSREVENGE </Text_ID>
+        <Description_Text> TEXT_CAMPAIGN_SINGLE_DESCRIPTION_ISARDSREVENGE </Description_Text>
+
+        <Camera_Shift_X> 40.0 </Camera_Shift_X>
+        <Camera_Shift_Y> 0.0 </Camera_Shift_Y>
+        <Camera_Distance> 1200.0 </Camera_Distance>
+		
+		<Locations>
+			Galaxy_Core_Art_Model, 
+			Agamar,
+			Axxila,
+			Bilbringi,
+			Borleias,
+			Chandrila,
+			Ciutric,
+			Commenor,
+			Coruscant,
+			Corvis_Minor,
+			Farrfin,
+			Palanhi,
+			Tangrene,
+			Vrosynri,
+			Ithor,
+			Liinade,
+			Ord_Mantell,
+			M293
+		</Locations>
+		<Trade_Routes>
+			Bilbringi_Ord_Mantell,
+			Coruscant_Farrfin,
+			Borleias_Farrfin,
+			Borleias_Ord_Mantell,
+			Chandrila_Farrfin,
+			Ithor_Ord_Mantell,
+			Bilbringi_Palanhi,
+			Borleias_Palanhi,
+			Ithor_M293,
+			Ciutric_Vrosynri,
+			Chandrila_Coruscant,
+			Ciutric_Corvis_Minor,
+			Corvis_Minor_Tangrene,
+			Ciutric_Liinade,
+			Axxila_Liinade,
+			Axxila_Tangrene,
+			Axxila_Chandrila,
+			Agamar_Ord_Mantell,
+			Agamar_Ciutric,
+			Axxila_Commenor,
+			Chandrila_Commenor,
+			Ciutric_M293,
+		</Trade_Routes>
+
+		<Home_Location> Rebel, Coruscant </Home_Location>
+        <Home_Location> Empire, Ciutric </Home_Location>
+
+        <Starting_Active_Player> Empire </Starting_Active_Player>
+		
+		<Rebel_Story_Name>Conquests\IsardsRevenge\Story_Plots_Sandbox_IsardsRevenge_Rebel.xml</Rebel_Story_Name>
+        <Empire_Story_Name>Conquests\IsardsRevenge\Story_Plots_Sandbox_IsardsRevenge_Empire.xml</Empire_Story_Name>
+		<Underworld_Story_Name>Conquests\IsardsRevenge\Story_Plots_Sandbox_IsardsRevenge_Container.xml</Underworld_Story_Name>
+		<Story_Name>
+			EmpireoftheHand, Conquests\Story_Plots_Generic_EmpireoftheHand.xml, 
+			Greater_Maldrood, Conquests\Story_Plots_Generic_Greater_Maldrood.xml,
+			Zsinj_Empire, Conquests\Story_Plots_Generic_Zsinj_Empire.xml,
+			Corporate_Sector, Conquests\Story_Plots_Generic_Corporate_Sector.xml,
+			Eriadu_Authority, Conquests\Story_Plots_Generic_Eriadu_Authority.xml, Hapes_Consortium, Conquests\Story_Plots_Generic_Hapes_Consortium.xml,
+			Pentastar, Conquests\Story_Plots_Generic_Pentastar.xml
+		</Story_Name>
+		
+		<AI_Player_Control> Rebel, GenericAI </AI_Player_Control>
+		<AI_Player_Control> Empire, SandboxHuman </AI_Player_Control>
+		
+		<AI_Player_Control> Pentastar, None</AI_Player_Control>
+		<AI_Player_Control> EmpireoftheHand, None </AI_Player_Control>
+		<AI_Player_Control> Zsinj_Empire, None </AI_Player_Control>
+		
+		<AI_Player_Control> Hapes_Consortium, None </AI_Player_Control>
+		<AI_Player_Control> Greater_Maldrood, None </AI_Player_Control>      
+		<AI_Player_Control> Eriadu_Authority, None </AI_Player_Control>				
+		<AI_Player_Control> Corporate_Sector, None </AI_Player_Control>		
+		<AI_Player_Control> Warlords, None </AI_Player_Control>				
+
+		<Markup_Filename>Empire, DefaultGalacticHints </Markup_Filename>
+		<Markup_Filename>Rebel, DefaultGalacticHints </Markup_Filename>
+		<Markup_Filename>EmpireoftheHand, DefaultGalacticHints </Markup_Filename>
+		<Markup_Filename>Zsinj_Empire, DefaultGalacticHints </Markup_Filename>
+		<Markup_Filename>Greater_Maldrood, DefaultMaldroodHints </Markup_Filename>			
+		<Markup_Filename>Pentastar, DefaultGalacticHints </Markup_Filename>
+		<Markup_Filename>Eriadu_Authority, DefaultEriaduHints </Markup_Filename>				
+		<Markup_Filename>Corporate_Sector, DefaultGalacticHints </Markup_Filename>		
+		<Markup_Filename>Warlords, DefaultGalacticHints </Markup_Filename>			
+		<Markup_Filename>Hapes_Consortium, DefaultGalacticHints </Markup_Filename>
+		
+		
+		<Supports_Custom_Settings>False</Supports_Custom_Settings>
+		<Show_Completed_Tab>True</Show_Completed_Tab>
+
+		<!-- Win Conditions -->
+
+		<Human_Victory_Conditions>
+				Galactic_All_Planets_Controlled
+		</Human_Victory_Conditions>
+
+		<AI_Victory_Conditions>
+				Galactic_All_Planets_Controlled
+		</AI_Victory_Conditions>
+		
+		<Starting_Credits> Rebel,  8000 </Starting_Credits>
+		<Starting_Tech_Level> Rebel, 0 </Starting_Tech_Level>
+		<Max_Tech_Level> Rebel, 0 </Max_Tech_Level>
+		
+		
+		<!-- Borleias Space Forces -->
+		<Starting_Forces> Rebel, Borleias, Generate_Force </Starting_Forces>
+		
+		<!-- Coruscant Space Forces -->
+		<Starting_Forces> Rebel, Coruscant, NewRepublic_Star_Base_2 </Starting_Forces>
+		<Starting_Forces> Rebel, Coruscant, Calamari_Cruiser </Starting_Forces>
+		<Starting_Forces> Rebel, Coruscant, Alliance_Assault_Frigate_II </Starting_Forces>
+		<Starting_Forces> Rebel, Coruscant, Nebulon_B_Frigate </Starting_Forces>
+		<Starting_Forces> Rebel, Coruscant, Quasar </Starting_Forces>
+		<Starting_Forces> Rebel, Coruscant, Corellian_Corvette </Starting_Forces>
+		<Starting_Forces> Rebel, Coruscant, Corellian_Corvette </Starting_Forces>
+		<!-- Coruscant Land Forces -->
+		<Starting_Forces> Rebel, Coruscant, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Coruscant, NewRep_Senate </Starting_Forces>
+		<Starting_Forces> Rebel, Coruscant, R_Ground_Light_Vehicle_Factory </Starting_Forces>
+		<Starting_Forces> Rebel, Coruscant, R_Ground_Heavy_Vehicle_Factory </Starting_Forces>
+		<Starting_Forces> Rebel, Coruscant, Rebel_Infantry_Squad </Starting_Forces>
+		<Starting_Forces> Rebel, Coruscant, Rebel_T2B_Company </Starting_Forces>
+		<Starting_Forces> Rebel, Coruscant, MAS_2xB_Company </Starting_Forces>
+		
+		<!-- Chandrila Space Forces -->
+		<Starting_Forces> Rebel, Chandrila, NewRepublic_Star_Base_2 </Starting_Forces>
+		<Starting_Forces> Rebel, Chandrila, Generic_Colony_Two </Starting_Forces>
+		<Starting_Forces> Rebel, Chandrila, Corellian_Gunboat </Starting_Forces>
+		<Starting_Forces> Rebel, Chandrila, Nebulon_B_Frigate </Starting_Forces>
+		<!-- Chandrila Land Forces -->
+		<Starting_Forces> Rebel, Chandrila, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Chandrila, R_Ground_Barracks </Starting_Forces>
+		<Starting_Forces> Rebel, Chandrila, Rebel_Infantry_Squad </Starting_Forces>
+		<Starting_Forces> Rebel, Chandrila, Rebel_Marine_Squad </Starting_Forces>
+		<Starting_Forces> Rebel, Chandrila, Rebel_Freerunner_Company </Starting_Forces>
+		<Starting_Forces> Rebel, Chandrila, Rebel_Snowspeeder_Wing </Starting_Forces>
+		
+		<!-- Farrfin Land Forces -->
+		<Starting_Forces> Rebel, Farrfin, Generate_Force </Starting_Forces>
+		
+		<!-- Bilbringi Space Forces -->
+		<Starting_Forces> Rebel, Bilbringi, Generate_Force </Starting_Forces>
+		<!-- Ord_Mantell Space Forces -->
+		<Starting_Forces> Rebel, Ord_Mantell, Generate_Force </Starting_Forces>
+		
+		
+		<Starting_Credits> Empire,  8000 </Starting_Credits>
+		<Starting_Tech_Level> Empire, 1 </Starting_Tech_Level>
+		<Max_Tech_Level> Empire, 1 </Max_Tech_Level>
+		
+		<!-- Ciutric Space Forces -->
+		<Starting_Forces> Empire, Ciutric, Empire_Star_Base_3 </Starting_Forces>
+		<Starting_Forces> Empire, Ciutric, Empire_Shipyard_Level_Three </Starting_Forces>
+		<Starting_Forces> Empire, Ciutric, Secondary_Golan_Two </Starting_Forces>
+		<Starting_Forces> Empire, Ciutric, Generic_Star_Destroyer </Starting_Forces>
+		<Starting_Forces> Empire, Ciutric, Generic_Victory_Destroyer </Starting_Forces>
+		<Starting_Forces> Empire, Ciutric, Escort_Carrier </Starting_Forces>
+		<Starting_Forces> Empire, Ciutric, Lancer_Frigate </Starting_Forces>
+		<!-- Ciutric Land Forces -->
+		<Starting_Forces> Empire, Ciutric, Empire_MoffPalace </Starting_Forces>
+		<Starting_Forces> Empire, Ciutric, E_Ground_Barracks </Starting_Forces>
+		<Starting_Forces> Empire, Ciutric, E_Ground_Light_Vehicle_Factory </Starting_Forces>
+		<Starting_Forces> Empire, Ciutric, Remnant_Capital </Starting_Forces>
+		<Starting_Forces> Empire, Ciutric, Army_Guard_Squad </Starting_Forces>
+		<Starting_Forces> Empire, Ciutric, Imperial_Stormtrooper_Squad </Starting_Forces>
+		<Starting_Forces> Empire, Ciutric, Imperial_Chariot_LAV_Company </Starting_Forces>
+		<Starting_Forces> Empire, Ciutric, Imperial_AT_ST_Company </Starting_Forces>
+		<Starting_Forces> Empire, Ciutric, Imperial_A5_Juggernaut_Company </Starting_Forces>
+		
+		<!-- Corvis_Minor Space Forces -->
+		<Starting_Forces> Empire, Corvis_Minor, Empire_Star_Base_2 </Starting_Forces>
+		<Starting_Forces> Empire, Corvis_Minor, Generic_Colony_Two </Starting_Forces>
+		<Starting_Forces> Empire, Corvis_Minor, Vindicator_Cruiser </Starting_Forces>
+		<Starting_Forces> Empire, Corvis_Minor, Lancer_Frigate </Starting_Forces>
+		<!-- Corvis_Minor Land Forces -->
+		<Starting_Forces> Empire, Corvis_Minor, Empire_MoffPalace </Starting_Forces>
+		<Starting_Forces> Empire, Corvis_Minor, E_Ground_Barracks </Starting_Forces>
+		<Starting_Forces> Empire, Corvis_Minor, Army_Trooper_Squad </Starting_Forces>
+		<Starting_Forces> Empire, Corvis_Minor, Imperial_AT_PT_Company </Starting_Forces>
+		
+		<!-- Liinade Space Forces -->
+		<Starting_Forces> Empire, Liinade, Generate_Force </Starting_Forces>
+		
+		<!-- Axxila Space Forces -->
+		<Starting_Forces> Empire, Axxila, Generate_Force </Starting_Forces>
+		
+		<!-- Tangrene Space Forces -->
+		<Starting_Forces> Empire, Tangrene, Generate_Force </Starting_Forces>
+		
+		<!-- Vrosynri Space Forces -->
+		<Starting_Forces> Empire, Vrosynri, Generate_Force </Starting_Forces>
+	</Campaign>
+
+</Campaigns>

@@ -1,0 +1,2177 @@
+<?xml version="1.0"?>
+<Skirmish_starbases>
+
+	<!-- Empire Skirmish Starbases -->
+	<StarBase Name="Skirmish_Remnant_Star_Base_1">
+		<Variant_Of_Existing_Type>Generic_Skirmish_Star_Base</Variant_Of_Existing_Type>
+		<Is_Community_Property>Yes</Is_Community_Property>
+		<Affiliation>Empire</Affiliation>
+
+				<Text_ID>TEXT_UNIT_VALIDUSIA</Text_ID>
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_VALIDUSIA
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
+		TEXT_TOOLTIP_VALIDUSIA_HULL 
+		TEXT_TOOLTIP_VALIDUSIA_SHIELD
+		TEXT_TOOLTIP_VALIDUSIA_WEAP1 
+		TEXT_TOOLTIP_VALIDUSIA_WEAP2
+		TEXT_TOOLTIP_VALIDUSIA_WEAP3
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+		
+		<Dense_FOW_Reveal_Range_Multiplier>0.2</Dense_FOW_Reveal_Range_Multiplier>
+		<Space_FOW_Reveal_Range>4000.0</Space_FOW_Reveal_Range>
+		<Reinforcement_Prevention_Radius> 5000 </Reinforcement_Prevention_Radius>
+		
+		<Targeting_Max_Attack_Distance>2000.0</Targeting_Max_Attack_Distance>
+		
+		
+		<!-- Tactical Production Options -->
+		<SpaceBehavior> SPACE_OBSTACLE, POWERED, SHIELDED, HIDE_WHEN_FOGGED, REVEAL, UNIT_AI, SPAWN_SQUADRON, ION_STUN_EFFECT</SpaceBehavior>
+		<Tactical_Buildable_Objects_Multiplayer> 
+			Empire,
+				TIE_Fighter_Squadron_Buildable,
+				TIE_Bomber_Squadron_Buildable,
+				TIE_Interceptor_Squadron_Buildable,
+				TIE_Defender_Squadron_Buildable,
+				Preybird_Squadron_Buildable,
+				Missile_Boat_Squadron_Buildable,	
+				Beta_ETR_3_Squadron_Buildable,
+				Skirmish_Carrack_Cruiser,
+				Skirmish_Escort_Carrier,
+				Skirmish_Crusader,
+				Skirmish_Dreadnaught_Empire,
+				Skirmish_Vindicator_Cruiser,
+				Skirmish_Strike_Cruiser,
+				Skirmish_Star_Galleon,
+				Skirmish_Acclamator_Assault_Ship_II,
+				Skirmish_Lancer_Frigate,
+				Skirmish_Victory_Destroyer,
+				Skirmish_Victory_Destroyer_Two,
+				Skirmish_Procursator,
+				Skirmish_Tector,
+				Skirmish_Star_Destroyer,
+				Skirmish_Star_Destroyer_Two,
+				Skirmish_Allegiance,
+				Skirmish_Praetor,
+				Space_Level_Two_Tech_Upgrade,
+				Space_Level_Three_Tech_Upgrade,
+				Space_Level_Four_Tech_Upgrade,
+				Space_Level_Five_Tech_Upgrade,
+				<!--
+				ES_Enhanced_Reactors_L1_Upgrade,
+				ES_Enhanced_Reactors_L2_Upgrade,
+				ES_Enhanced_Reactors_L3_Upgrade,
+				ES_Reinforced_Armor_L1_Upgrade,
+				ES_Reinforced_Armor_L2_Upgrade,
+				ES_Reinforced_Armor_L3_Upgrade,
+				ES_Improved_Weapons_L1_Upgrade,
+				ES_Improved_Weapons_L2_Upgrade,
+				ES_Improved_Weapons_L3_Upgrade,
+				ES_Improved_Defenses_L1_Upgrade,
+				ES_Improved_Defenses_L2_Upgrade,
+				ES_Improved_Defenses_L3_Upgrade,
+				ES_Hypervelocity_Gun_Use_Upgrade,
+				-->
+				
+		</Tactical_Buildable_Objects_Multiplayer>
+		<Visible_To_Enemies_When_Empty>True</Visible_To_Enemies_When_Empty>
+	
+		<!-- Data to prevent this from being buildable in galactic mode -->
+		<Build_Cost_Credits>0</Build_Cost_Credits>
+		<Build_Time_Seconds>0</Build_Time_Seconds>
+		<Build_Tab_Space_Station>No</Build_Tab_Space_Station>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+		
+		<HardPoints>
+			HP_Validusia_DualTurbo01,
+			HP_Validusia_DualTurbo02,
+			HP_Validusia_DualTurbo03,
+			HP_Validusia_DualTurbo04,
+			HP_Validusia_DualTurbo05,
+			HP_Validusia_DualTurbo06,
+			HP_Validusia_DualTurbo07,
+			HP_Validusia_DualTurbo08,
+			HP_Validusia_DualTurbo09,
+			HP_Validusia_DualTurbo10,
+			HP_Validusia_DualTurbo11,
+			HP_Validusia_DualTurbo12,
+			HP_Validusia_DualTurbo13,
+			HP_Validusia_DualTurbo14,
+			HP_Validusia_DualTurbo15,
+			HP_Validusia_DualTurbo16,
+			HP_Validusia_DualTurbo17,
+			HP_Validusia_DualTurbo18,
+			HP_Validusia_DualTurbo19,
+			HP_Validusia_DualTurbo20,
+			HP_Validusia_DualTurbo21,
+			HP_Validusia_DualTurbo22,
+			HP_Validusia_DualTurbo23,
+			HP_Validusia_DualTurbo24,
+			HP_Validusia_Concussion08,
+			HP_Validusia_Concussion07,
+			HP_Validusia_Concussion06,
+			HP_Validusia_Concussion05,
+			HP_Validusia_Concussion04,
+			HP_Validusia_Concussion03,
+			HP_Validusia_Concussion02,
+			HP_Validusia_Concussion01,
+			HP_Validusia_Ion01,
+			HP_Validusia_Ion02,
+			HP_Validusia_Ion03,
+			HP_Validusia_Ion04,
+			HP_Validusia_Ion05,
+			HP_Validusia_Ion06,
+			HP_Validusia_Ion07,
+			HP_Validusia_Ion08,
+			HP_Validusia_Hangar,
+			HP_Empire_Station_One_Supply_Dock,
+			HP_Empire_Station_One_Comm_Array,
+		</HardPoints>
+		<Icon_Name>i_button_validusia.tga</Icon_Name>
+
+
+
+	
+		<Scale_Factor>4.5</Scale_Factor>
+
+		<Space_Model_Name>PA_Validusia.alo</Space_Model_Name>
+		<Select_Box_Scale>90</Select_Box_Scale>
+		
+		<!-- Special Abilities unique to Skirmish mode -->
+		<Abilities SubObjectList="Yes">
+			<Income_Stream_Ability Name="E_Starbase_Income_Stream">
+				<Activation_Style>Skirmish_Automatic</Activation_Style>
+				<Initially_Enabled>Yes</Initially_Enabled>
+				<Base_Income_Value>15</Base_Income_Value>
+				<Base_Interval_In_Secs>1</Base_Interval_In_Secs>
+				<Split_Income_With_Allies>Yes</Split_Income_With_Allies>
+				<Split_Favors_Owner>No</Split_Favors_Owner>
+				<Full_Amount_To_Everyone>Yes</Full_Amount_To_Everyone>
+			</Income_Stream_Ability>
+			<Income_Stream_Mod_Ability Name="E_Supply_Dock_Income_Bonus">
+				<Activation_Style>Skirmish_Automatic</Activation_Style>
+				<Initially_Enabled>No</Initially_Enabled>			<!-- This bonus income is controlled by the presence of the Supply Dock hardpoint -->
+				<Income_Multiplier>1.0</Income_Multiplier>
+				<Income_Additive_Value>0</Income_Additive_Value>
+				<Interval_Multiplier>1.0</Interval_Multiplier>
+				<Stacking_Category>0</Stacking_Category>
+				<Target_Stream_Source>Skirmish_Remnant_Star_Base_1</Target_Stream_Source>
+				<Affects_All_Allied_Sources>Yes</Affects_All_Allied_Sources>
+				<Reverse_Application_Logic>No</Reverse_Application_Logic>
+			</Income_Stream_Mod_Ability>
+ 			<Enable_Radar_Ability Name="E_Comm_Array_Enable_Radar">
+ 				<Activation_Style>Skirmish_Automatic</Activation_Style>
+				<Initially_Enabled>Yes</Initially_Enabled>			<!-- This effect is controlled by the presence of the Comm Array hardpoint -->
+ 				<Affects_All_Allies>True</Affects_All_Allies>
+ 			</Enable_Radar_Ability>
+		</Abilities>
+		
+		<Last_State_Visible_Under_FOW> True </Last_State_Visible_Under_FOW>
+		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
+		<Visible_On_Radar_When_Fogged>False</Visible_On_Radar_When_Fogged>
+	</StarBase>
+	
+	<!-- Rebel Skirmish Starbases -->
+	<StarBase Name="Skirmish_NR_Star_Base_1">
+		<Variant_Of_Existing_Type>Generic_Skirmish_Star_Base</Variant_Of_Existing_Type>
+		<Is_Community_Property>Yes</Is_Community_Property>
+		<Affiliation>Rebel</Affiliation>
+		<Tactical_Health>33900</Tactical_Health>
+		
+		<Prev_Level_Base></Prev_Level_Base>
+        <Next_Level_Base>Skirmish_NR_Star_Base_Early</Next_Level_Base>
+
+
+		<Space_FOW_Reveal_Range>4000.0</Space_FOW_Reveal_Range>
+
+		<Build_Initially_Locked>Yes</Build_Initially_Locked>
+		<Reinforcement_Prevention_Radius> 5000 </Reinforcement_Prevention_Radius>
+		
+		<Targeting_Max_Attack_Distance>2000.0</Targeting_Max_Attack_Distance>
+		<!-- Tactical Production Options -->
+		<SpaceBehavior> SPACE_OBSTACLE, POWERED, SHIELDED, HIDE_WHEN_FOGGED, REVEAL, UNIT_AI, SPAWN_SQUADRON, ION_STUN_EFFECT</SpaceBehavior>
+		<Tactical_Buildable_Objects_Multiplayer> 
+			Rebel, 
+				RC_Early_Roster,	
+				Rebel_X-Wing_Squadron_Buildable,
+				A-Wing_Squadron_Buildable,
+				B-Wing_Squadron_Buildable,
+				Defender_Starfighter_Squadron_Buildable,
+				E-Wing_Squadron_Buildable,
+				K-Wing_Squadron_Buildable,
+				Skirmish_Corona,
+				Skirmish_Sacheen,
+				Skirmish_Quasar,
+				Skirmish_CR90,
+				Skirmish_DP20,
+				Skirmish_Alliance_Assault_Frigate,	
+				Skirmish_MC30c,
+				Skirmish_MC40a,
+				Skirmish_Hajen,
+				Skirmish_MC80,
+				Skirmish_Dauntless,
+				Skirmish_BAC,
+				Skirmish_Majestic,
+				Skirmish_Nebula,
+				Skirmish_Endurance,
+				Skirmish_Republic_SD,
+				Skirmish_MC90,
+				Skirmish_Home_One_Type,
+				Space_Level_Two_Tech_Upgrade,
+				Space_Level_Three_Tech_Upgrade,
+				Space_Level_Four_Tech_Upgrade,
+				Space_Level_Five_Tech_Upgrade,
+				<!--
+				RS_Enhanced_Shielding_L1_Upgrade,
+				RS_Enhanced_Shielding_L2_Upgrade,
+				RS_Enhanced_Shielding_L3_Upgrade,
+				RS_Improved_Weapons_L1_Upgrade,
+				RS_Improved_Weapons_L2_Upgrade,
+				RS_Improved_Weapons_L3_Upgrade,
+				RS_Improved_Defenses_L1_Upgrade,
+				RS_Improved_Defenses_L2_Upgrade,
+				RS_Improved_Defenses_L3_Upgrade,
+				-->
+		</Tactical_Buildable_Objects_Multiplayer>
+		<Visible_To_Enemies_When_Empty>True</Visible_To_Enemies_When_Empty>
+	
+		<!-- Data to prevent this from being buildable in galactic mode -->
+		<Build_Cost_Credits>0</Build_Cost_Credits>
+		<Build_Time_Seconds>0</Build_Time_Seconds>
+		<Build_Tab_Space_Station>No</Build_Tab_Space_Station>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+		
+		<HardPoints>
+			HP_Empress_Hangar_01,
+			HP_Empress_Hangar_02,
+			HP_Empress_Hangar_03,
+			HP_Empress_Proton01,
+			HP_Empress_Proton02,
+			HP_Empress_Proton03,
+			HP_Empress_Proton04,
+			HP_Empress_Proton05,
+			HP_Empress_Proton06,
+			HP_Empress_Proton07,
+			HP_Empress_Proton08,
+			HP_Empress_Proton09,
+			HP_Empress_Proton10,
+			HP_Empress_Proton11,
+			HP_Empress_Proton12,
+			HP_Empress_Turbo01,
+			HP_Empress_Turbo02,
+			HP_Empress_Turbo03,
+			HP_Empress_Turbo04,
+			HP_Empress_Turbo05,
+			HP_Empress_Turbo06,
+			HP_Empress_Turbo07,
+			HP_Empress_Turbo08,
+			HP_Empress_Turbo09,
+			HP_Empress_Turbo10,
+			HP_Empress_Turbo11,
+			HP_Empress_Turbo12,
+			HP_Empress_Turbo13,
+			HP_Empress_Turbo14,
+			HP_Empress_Turbo15,
+			HP_Empress_Turbo16,
+			HP_Empress_Turbo17,
+			HP_Empress_Turbo18,
+			HP_Empire_Station_One_Supply_Dock,
+			HP_Empire_Station_One_Comm_Array,
+		</HardPoints>
+		<Icon_Name>i_button_empress.tga</Icon_Name>
+	
+		<Scale_Factor>0.5</Scale_Factor>
+		<Text_ID>TEXT_UNIT_EMPRESS</Text_ID>
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_EMPRESS
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
+		TEXT_TOOLTIP_EMPRESS_HULL
+		TEXT_TOOLTIP_EMPRESS_SHIELD
+		TEXT_TOOLTIP_EMPRESS_WEAP1
+		TEXT_TOOLTIP_EMPRESS_WEAP2
+		TEXT_TOOLTIP_EMPRESS_WEAP3
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+	
+		<Space_Model_Name>Empress.alo</Space_Model_Name>
+		<Select_Box_Scale>1000</Select_Box_Scale>
+		
+		<!-- Special Abilities unique to Skirmish mode -->
+		<Abilities SubObjectList="Yes">
+			<Income_Stream_Ability Name="R_Starbase_Income_Stream">
+				<Activation_Style>Skirmish_Automatic</Activation_Style>
+				<Initially_Enabled>Yes</Initially_Enabled>
+				<Base_Income_Value>15</Base_Income_Value>
+				<Base_Interval_In_Secs>1</Base_Interval_In_Secs>
+				<Split_Income_With_Allies>Yes</Split_Income_With_Allies>
+				<Split_Favors_Owner>No</Split_Favors_Owner>
+				<Full_Amount_To_Everyone>Yes</Full_Amount_To_Everyone>
+			</Income_Stream_Ability>
+			<Income_Stream_Mod_Ability Name="R_Supply_Dock_Income_Bonus">
+				<Activation_Style>Skirmish_Automatic</Activation_Style>
+				<Initially_Enabled>No</Initially_Enabled>			<!-- This bonus income is controlled by the presence of the Supply Dock hardpoint -->
+				<Income_Multiplier>1.0</Income_Multiplier>
+				<Income_Additive_Value>0</Income_Additive_Value>
+				<Interval_Multiplier>1.0</Interval_Multiplier>
+				<Stacking_Category>0</Stacking_Category>
+				<Target_Stream_Source>Skirmish_NR_Star_Base_1</Target_Stream_Source>
+				<Affects_All_Allied_Sources>Yes</Affects_All_Allied_Sources>
+				<Reverse_Application_Logic>No</Reverse_Application_Logic>
+			</Income_Stream_Mod_Ability>
+ 			<Enable_Radar_Ability Name="R_Comm_Array_Enable_Radar">
+ 				<Activation_Style>Skirmish_Automatic</Activation_Style>
+				<Initially_Enabled>Yes</Initially_Enabled>			<!-- This effect is controlled by the presence of the Comm Array hardpoint -->
+ 				<Affects_All_Allies>True</Affects_All_Allies>
+ 			</Enable_Radar_Ability>
+		</Abilities>
+		
+		<Last_State_Visible_Under_FOW> True </Last_State_Visible_Under_FOW>
+		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
+		<Visible_On_Radar_When_Fogged>False</Visible_On_Radar_When_Fogged>
+	</StarBase>
+	
+	<StarBase Name="Skirmish_NR_Star_Base_Early">
+		<Variant_Of_Existing_Type>Generic_Skirmish_Star_Base</Variant_Of_Existing_Type>
+		<Is_Community_Property>Yes</Is_Community_Property>
+		<Affiliation>Rebel</Affiliation>
+		<Tactical_Health>33900</Tactical_Health>
+		
+		<Prev_Level_Base>Skirmish_NR_Star_Base_1</Prev_Level_Base>
+        <Next_Level_Base>Skirmish_NR_Star_Base_Late</Next_Level_Base>
+
+
+		<Space_FOW_Reveal_Range>4000.0</Space_FOW_Reveal_Range>
+
+		<Build_Initially_Locked>Yes</Build_Initially_Locked>
+		<Reinforcement_Prevention_Radius> 5000 </Reinforcement_Prevention_Radius>
+		
+		<Targeting_Max_Attack_Distance>2000.0</Targeting_Max_Attack_Distance>
+		<!-- Tactical Production Options -->
+		<SpaceBehavior> SPACE_OBSTACLE, POWERED, SHIELDED, HIDE_WHEN_FOGGED, REVEAL, UNIT_AI, SPAWN_SQUADRON, ION_STUN_EFFECT</SpaceBehavior>
+		<Tactical_Buildable_Objects_Multiplayer> 
+			Rebel,
+				RC_Late_Roster,
+				Z95_Squadron_Buildable,
+				Y-Wing_Squadron_Buildable,
+				Rebel_X-Wing_Squadron_Buildable,
+				A-Wing_Squadron_Buildable,
+				Cloakshape_New_Squadron_Buildable,
+				Shielded_TIE_Squadron_Buildable,
+				HWing_Squadron_Buildable,
+				Skirmish_Generic_Nebulon_B,
+				Skirmish_Marauder_NR,
+				Skirmish_CR90,
+				Skirmish_Quasar,
+				Skirmish_MC30a,
+				Skirmish_MC30c,
+				Skirmish_MC40a,
+				Skirmish_DP20,
+				Skirmish_Nebulon_B_Tender,
+				Skirmish_Alliance_Assault_Frigate,
+				Skirmish_Liberator_Cruiser_Rebel,
+				Skirmish_Dauntless,
+				Skirmish_MC80,
+				Skirmish_Republic_SD,
+				Skirmish_MC80B,
+				Skirmish_Home_One_Type,
+				Skirmish_Bulwark_III_NR,
+				Space_Level_Two_Tech_Upgrade,
+				Space_Level_Three_Tech_Upgrade,
+				Space_Level_Four_Tech_Upgrade,
+				Space_Level_Five_Tech_Upgrade,
+				<!--
+				RS_Enhanced_Shielding_L1_Upgrade,
+				RS_Enhanced_Shielding_L2_Upgrade,
+				RS_Enhanced_Shielding_L3_Upgrade,
+				RS_Improved_Weapons_L1_Upgrade,
+				RS_Improved_Weapons_L2_Upgrade,
+				RS_Improved_Weapons_L3_Upgrade,
+				RS_Improved_Defenses_L1_Upgrade,
+				RS_Improved_Defenses_L2_Upgrade,
+				RS_Improved_Defenses_L3_Upgrade,
+				-->
+		</Tactical_Buildable_Objects_Multiplayer>
+		<Visible_To_Enemies_When_Empty>True</Visible_To_Enemies_When_Empty>
+	
+		<!-- Data to prevent this from being buildable in galactic mode -->
+		<Build_Cost_Credits>0</Build_Cost_Credits>
+		<Build_Time_Seconds>0</Build_Time_Seconds>
+		<Build_Tab_Space_Station>No</Build_Tab_Space_Station>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+		
+		<HardPoints>
+			HP_Empress_Hangar_01,
+			HP_Empress_Hangar_02,
+			HP_Empress_Hangar_03,
+			HP_Empress_Proton01,
+			HP_Empress_Proton02,
+			HP_Empress_Proton03,
+			HP_Empress_Proton04,
+			HP_Empress_Proton05,
+			HP_Empress_Proton06,
+			HP_Empress_Proton07,
+			HP_Empress_Proton08,
+			HP_Empress_Proton09,
+			HP_Empress_Proton10,
+			HP_Empress_Proton11,
+			HP_Empress_Proton12,
+			HP_Empress_Turbo01,
+			HP_Empress_Turbo02,
+			HP_Empress_Turbo03,
+			HP_Empress_Turbo04,
+			HP_Empress_Turbo05,
+			HP_Empress_Turbo06,
+			HP_Empress_Turbo07,
+			HP_Empress_Turbo08,
+			HP_Empress_Turbo09,
+			HP_Empress_Turbo10,
+			HP_Empress_Turbo11,
+			HP_Empress_Turbo12,
+			HP_Empress_Turbo13,
+			HP_Empress_Turbo14,
+			HP_Empress_Turbo15,
+			HP_Empress_Turbo16,
+			HP_Empress_Turbo17,
+			HP_Empress_Turbo18,
+			HP_Empire_Station_One_Supply_Dock,
+			HP_Empire_Station_One_Comm_Array,
+		</HardPoints>
+		<Icon_Name>i_button_empress.tga</Icon_Name>
+	
+		<Scale_Factor>0.5</Scale_Factor>
+		<Text_ID>TEXT_UNIT_EMPRESS</Text_ID>
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_EMPRESS
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
+		TEXT_TOOLTIP_EMPRESS_HULL
+		TEXT_TOOLTIP_EMPRESS_SHIELD
+		TEXT_TOOLTIP_EMPRESS_WEAP1
+		TEXT_TOOLTIP_EMPRESS_WEAP2
+		TEXT_TOOLTIP_EMPRESS_WEAP3
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+	
+		<Space_Model_Name>Empress.alo</Space_Model_Name>
+		<Select_Box_Scale>1000</Select_Box_Scale>
+		
+		<!-- Special Abilities unique to Skirmish mode -->
+		<Abilities SubObjectList="Yes">
+			<Income_Stream_Ability Name="R_Starbase_Income_Stream">
+				<Activation_Style>Skirmish_Automatic</Activation_Style>
+				<Initially_Enabled>Yes</Initially_Enabled>
+				<Base_Income_Value>15</Base_Income_Value>
+				<Base_Interval_In_Secs>1</Base_Interval_In_Secs>
+				<Split_Income_With_Allies>Yes</Split_Income_With_Allies>
+				<Split_Favors_Owner>No</Split_Favors_Owner>
+				<Full_Amount_To_Everyone>Yes</Full_Amount_To_Everyone>
+			</Income_Stream_Ability>
+			<Income_Stream_Mod_Ability Name="R_Supply_Dock_Income_Bonus">
+				<Activation_Style>Skirmish_Automatic</Activation_Style>
+				<Initially_Enabled>No</Initially_Enabled>			<!-- This bonus income is controlled by the presence of the Supply Dock hardpoint -->
+				<Income_Multiplier>1.0</Income_Multiplier>
+				<Income_Additive_Value>0</Income_Additive_Value>
+				<Interval_Multiplier>1.0</Interval_Multiplier>
+				<Stacking_Category>0</Stacking_Category>
+				<Target_Stream_Source>Skirmish_NR_Star_Base_Early</Target_Stream_Source>
+				<Affects_All_Allied_Sources>Yes</Affects_All_Allied_Sources>
+				<Reverse_Application_Logic>No</Reverse_Application_Logic>
+			</Income_Stream_Mod_Ability>
+ 			<Enable_Radar_Ability Name="R_Comm_Array_Enable_Radar">
+ 				<Activation_Style>Skirmish_Automatic</Activation_Style>
+				<Initially_Enabled>Yes</Initially_Enabled>			<!-- This effect is controlled by the presence of the Comm Array hardpoint -->
+ 				<Affects_All_Allies>True</Affects_All_Allies>
+ 			</Enable_Radar_Ability>
+		</Abilities>
+		
+		<Last_State_Visible_Under_FOW> True </Last_State_Visible_Under_FOW>
+		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
+		<Visible_On_Radar_When_Fogged>False</Visible_On_Radar_When_Fogged>
+	</StarBase>
+	
+	<StarBase Name="Skirmish_NR_Star_Base_Late">
+		<Variant_Of_Existing_Type>Generic_Skirmish_Star_Base</Variant_Of_Existing_Type>
+		<Is_Community_Property>Yes</Is_Community_Property>
+		<Affiliation>Rebel</Affiliation>
+		<Tactical_Health>33900</Tactical_Health>
+		
+		<Prev_Level_Base>Skirmish_NR_Star_Base_Early</Prev_Level_Base>
+        <Next_Level_Base></Next_Level_Base>
+
+
+		<Space_FOW_Reveal_Range>4000.0</Space_FOW_Reveal_Range>
+
+		<Build_Initially_Locked>Yes</Build_Initially_Locked>
+		<Reinforcement_Prevention_Radius> 5000 </Reinforcement_Prevention_Radius>
+		
+		<Targeting_Max_Attack_Distance>2000.0</Targeting_Max_Attack_Distance>
+		<!-- Tactical Production Options -->
+		<SpaceBehavior> SPACE_OBSTACLE, POWERED, SHIELDED, HIDE_WHEN_FOGGED, REVEAL, UNIT_AI, SPAWN_SQUADRON, ION_STUN_EFFECT</SpaceBehavior>
+		<Tactical_Buildable_Objects_Multiplayer> 
+			Rebel,
+				A9_Squadron_Buildable,
+				Defender_Starfighter_Squadron_Buildable,
+				B-Wing_E_Squadron_Buildable,
+				Rebel_X-Wing_Squadron_Buildable,
+				A-Wing_Squadron_Buildable,
+				E-Wing_Squadron_Buildable,
+				K-Wing_Squadron_Buildable,
+				Skirmish_Corona,
+				Skirmish_Sacheen,
+				Skirmish_Agave_Corvette,
+				Skirmish_Hajen,
+				Skirmish_Warrior_Gunship,
+				Skirmish_Alliance_Assault_Frigate,
+				Skirmish_Alliance_Assault_Frigate_II,	
+				Skirmish_Belarus,
+				Skirmish_MC40a,
+				Skirmish_Defender_Carrier,
+				Skirmish_BAC,
+				Skirmish_Majestic,
+				Skirmish_Nebula,
+				Skirmish_Endurance,
+				Skirmish_MC90,
+				Skirmish_BlueDiver,
+				Skirmish_Mediator,
+				Space_Level_Two_Tech_Upgrade,
+				Space_Level_Three_Tech_Upgrade,
+				Space_Level_Four_Tech_Upgrade,
+				Space_Level_Five_Tech_Upgrade,
+				<!--
+				RS_Enhanced_Shielding_L1_Upgrade,
+				RS_Enhanced_Shielding_L2_Upgrade,
+				RS_Enhanced_Shielding_L3_Upgrade,
+				RS_Improved_Weapons_L1_Upgrade,
+				RS_Improved_Weapons_L2_Upgrade,
+				RS_Improved_Weapons_L3_Upgrade,
+				RS_Improved_Defenses_L1_Upgrade,
+				RS_Improved_Defenses_L2_Upgrade,
+				RS_Improved_Defenses_L3_Upgrade,
+				-->
+		</Tactical_Buildable_Objects_Multiplayer>
+		<Visible_To_Enemies_When_Empty>True</Visible_To_Enemies_When_Empty>
+	
+		<!-- Data to prevent this from being buildable in galactic mode -->
+		<Build_Cost_Credits>0</Build_Cost_Credits>
+		<Build_Time_Seconds>0</Build_Time_Seconds>
+		<Build_Tab_Space_Station>No</Build_Tab_Space_Station>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+		
+		<HardPoints>
+			HP_Empress_Hangar_01,
+			HP_Empress_Hangar_02,
+			HP_Empress_Hangar_03,
+			HP_Empress_Proton01,
+			HP_Empress_Proton02,
+			HP_Empress_Proton03,
+			HP_Empress_Proton04,
+			HP_Empress_Proton05,
+			HP_Empress_Proton06,
+			HP_Empress_Proton07,
+			HP_Empress_Proton08,
+			HP_Empress_Proton09,
+			HP_Empress_Proton10,
+			HP_Empress_Proton11,
+			HP_Empress_Proton12,
+			HP_Empress_Turbo01,
+			HP_Empress_Turbo02,
+			HP_Empress_Turbo03,
+			HP_Empress_Turbo04,
+			HP_Empress_Turbo05,
+			HP_Empress_Turbo06,
+			HP_Empress_Turbo07,
+			HP_Empress_Turbo08,
+			HP_Empress_Turbo09,
+			HP_Empress_Turbo10,
+			HP_Empress_Turbo11,
+			HP_Empress_Turbo12,
+			HP_Empress_Turbo13,
+			HP_Empress_Turbo14,
+			HP_Empress_Turbo15,
+			HP_Empress_Turbo16,
+			HP_Empress_Turbo17,
+			HP_Empress_Turbo18,
+			HP_Empire_Station_One_Supply_Dock,
+			HP_Empire_Station_One_Comm_Array,
+		</HardPoints>
+		<Icon_Name>i_button_empress.tga</Icon_Name>
+	
+		<Scale_Factor>0.5</Scale_Factor>
+		<Text_ID>TEXT_UNIT_EMPRESS</Text_ID>
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_EMPRESS
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
+		TEXT_TOOLTIP_EMPRESS_HULL
+		TEXT_TOOLTIP_EMPRESS_SHIELD
+		TEXT_TOOLTIP_EMPRESS_WEAP1
+		TEXT_TOOLTIP_EMPRESS_WEAP2
+		TEXT_TOOLTIP_EMPRESS_WEAP3
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+	
+		<Space_Model_Name>Empress.alo</Space_Model_Name>
+		<Select_Box_Scale>1000</Select_Box_Scale>
+		
+		<!-- Special Abilities unique to Skirmish mode -->
+		<Abilities SubObjectList="Yes">
+			<Income_Stream_Ability Name="R_Starbase_Income_Stream">
+				<Activation_Style>Skirmish_Automatic</Activation_Style>
+				<Initially_Enabled>Yes</Initially_Enabled>
+				<Base_Income_Value>15</Base_Income_Value>
+				<Base_Interval_In_Secs>1</Base_Interval_In_Secs>
+				<Split_Income_With_Allies>Yes</Split_Income_With_Allies>
+				<Split_Favors_Owner>No</Split_Favors_Owner>
+				<Full_Amount_To_Everyone>Yes</Full_Amount_To_Everyone>
+			</Income_Stream_Ability>
+			<Income_Stream_Mod_Ability Name="R_Supply_Dock_Income_Bonus">
+				<Activation_Style>Skirmish_Automatic</Activation_Style>
+				<Initially_Enabled>No</Initially_Enabled>			<!-- This bonus income is controlled by the presence of the Supply Dock hardpoint -->
+				<Income_Multiplier>1.0</Income_Multiplier>
+				<Income_Additive_Value>0</Income_Additive_Value>
+				<Interval_Multiplier>1.0</Interval_Multiplier>
+				<Stacking_Category>0</Stacking_Category>
+				<Target_Stream_Source>Skirmish_NR_Star_Base_Late</Target_Stream_Source>
+				<Affects_All_Allied_Sources>Yes</Affects_All_Allied_Sources>
+				<Reverse_Application_Logic>No</Reverse_Application_Logic>
+			</Income_Stream_Mod_Ability>
+ 			<Enable_Radar_Ability Name="R_Comm_Array_Enable_Radar">
+ 				<Activation_Style>Skirmish_Automatic</Activation_Style>
+				<Initially_Enabled>Yes</Initially_Enabled>			<!-- This effect is controlled by the presence of the Comm Array hardpoint -->
+ 				<Affects_All_Allies>True</Affects_All_Allies>
+ 			</Enable_Radar_Ability>
+		</Abilities>
+		
+		<Last_State_Visible_Under_FOW> True </Last_State_Visible_Under_FOW>
+		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
+		<Visible_On_Radar_When_Fogged>False</Visible_On_Radar_When_Fogged>
+	</StarBase>
+	
+	<StarBase Name="Skirmish_Zsinj_Star_Base_1">
+		<Variant_Of_Existing_Type>Generic_Skirmish_Star_Base</Variant_Of_Existing_Type>
+			<Is_Community_Property>Yes</Is_Community_Property>
+			<Affiliation>Zsinj_Empire</Affiliation>
+
+				<Text_ID>TEXT_UNIT_VALIDUSIA</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_VALIDUSIA
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
+		TEXT_TOOLTIP_VALIDUSIA_HULL 
+		TEXT_TOOLTIP_VALIDUSIA_SHIELD
+		TEXT_TOOLTIP_VALIDUSIA_WEAP1 
+		TEXT_TOOLTIP_VALIDUSIA_WEAP2
+		TEXT_TOOLTIP_VALIDUSIA_WEAP3
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+		
+		<Dense_FOW_Reveal_Range_Multiplier>0.2</Dense_FOW_Reveal_Range_Multiplier>
+		<Space_FOW_Reveal_Range>4000.0</Space_FOW_Reveal_Range>
+		<Reinforcement_Prevention_Radius> 5000 </Reinforcement_Prevention_Radius>
+		
+		<Targeting_Max_Attack_Distance>2000.0</Targeting_Max_Attack_Distance>
+
+		<!-- Tactical Production Options -->
+		<SpaceBehavior> SPACE_OBSTACLE, POWERED, SHIELDED, HIDE_WHEN_FOGGED, REVEAL, UNIT_AI, SPAWN_SQUADRON, ION_STUN_EFFECT</SpaceBehavior>
+	<Tactical_Buildable_Objects_Multiplayer>
+			Zsinj_Empire,
+				Z95_Squadron_Buildable,
+				TIE_Interceptor_Squadron_Buildable,
+				Starwing_Squadron_Buildable,
+				Howlrunner_Squadron_Buildable,
+				TIE_Raptor_Squadron_Buildable,
+				YZ_775_Squadron_Buildable,
+				Aggressor_Squadron_Buildable,
+				Skipray_Squadron_Buildable,
+				TIE_Heavy_Bomber_Squadron_Buildable,
+				Skirmish_Zsinj_CR90,
+				Skirmish_Generic_Nebulon_B_Zsinj,
+				Skirmish_Surveyor_Frigate,
+				Skirmish_Star_Galleon,
+				Skirmish_Vengeance_Frigate,
+				Skirmish_Neutron_Star,
+				Skirmish_Dragon_Heavy_Cruiser,
+				Skirmish_CR92,
+				Skirmish_Lancer_Frigate,
+				Skirmish_Victory_Destroyer_Two,
+				Skirmish_Generic_Aggressor,
+				Skirmish_Star_Destroyer,
+				Skirmish_Star_Destroyer_Two,
+				Skirmish_Generic_Sorannan,
+				Space_Level_Two_Tech_Upgrade,
+				Space_Level_Three_Tech_Upgrade,
+				Space_Level_Four_Tech_Upgrade,
+				Space_Level_Five_Tech_Upgrade,
+				<!--
+				ES_Enhanced_Reactors_L1_Upgrade,
+				ES_Enhanced_Reactors_L2_Upgrade,
+				ES_Enhanced_Reactors_L3_Upgrade,
+				ES_Reinforced_Armor_L1_Upgrade,
+				ES_Reinforced_Armor_L2_Upgrade,
+				ES_Reinforced_Armor_L3_Upgrade,
+				ES_Improved_Weapons_L1_Upgrade,
+				ES_Improved_Weapons_L2_Upgrade,
+				ES_Improved_Weapons_L3_Upgrade,
+				ES_Improved_Defenses_L1_Upgrade,
+				ES_Improved_Defenses_L2_Upgrade,
+				ES_Improved_Defenses_L3_Upgrade,
+				ES_Hypervelocity_Gun_Use_Upgrade,
+				-->
+				
+		</Tactical_Buildable_Objects_Multiplayer>
+		<Visible_To_Enemies_When_Empty>True</Visible_To_Enemies_When_Empty>
+	
+		<!-- Data to prevent this from being buildable in galactic mode -->
+		<Build_Cost_Credits>0</Build_Cost_Credits>
+		<Build_Time_Seconds>0</Build_Time_Seconds>
+		<Build_Tab_Space_Station>No</Build_Tab_Space_Station>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+		
+		<HardPoints>
+			HP_Validusia_DualTurbo01,
+			HP_Validusia_DualTurbo02,
+			HP_Validusia_DualTurbo03,
+			HP_Validusia_DualTurbo04,
+			HP_Validusia_DualTurbo05,
+			HP_Validusia_DualTurbo06,
+			HP_Validusia_DualTurbo07,
+			HP_Validusia_DualTurbo08,
+			HP_Validusia_DualTurbo09,
+			HP_Validusia_DualTurbo10,
+			HP_Validusia_DualTurbo11,
+			HP_Validusia_DualTurbo12,
+			HP_Validusia_DualTurbo13,
+			HP_Validusia_DualTurbo14,
+			HP_Validusia_DualTurbo15,
+			HP_Validusia_DualTurbo16,
+			HP_Validusia_DualTurbo17,
+			HP_Validusia_DualTurbo18,
+			HP_Validusia_DualTurbo19,
+			HP_Validusia_DualTurbo20,
+			HP_Validusia_DualTurbo21,
+			HP_Validusia_DualTurbo22,
+			HP_Validusia_DualTurbo23,
+			HP_Validusia_DualTurbo24,
+			HP_Validusia_Concussion08,
+			HP_Validusia_Concussion07,
+			HP_Validusia_Concussion06,
+			HP_Validusia_Concussion05,
+			HP_Validusia_Concussion04,
+			HP_Validusia_Concussion03,
+			HP_Validusia_Concussion02,
+			HP_Validusia_Concussion01,
+			HP_Validusia_Ion01,
+			HP_Validusia_Ion02,
+			HP_Validusia_Ion03,
+			HP_Validusia_Ion04,
+			HP_Validusia_Ion05,
+			HP_Validusia_Ion06,
+			HP_Validusia_Ion07,
+			HP_Validusia_Ion08,
+			HP_Validusia_Hangar,
+			HP_Empire_Station_One_Supply_Dock,
+			HP_Empire_Station_One_Comm_Array,
+		</HardPoints>
+		<Icon_Name>i_button_validusia.tga</Icon_Name>
+
+
+
+	
+		<Scale_Factor>4.5</Scale_Factor>
+
+		<Space_Model_Name>PA_Validusia.alo</Space_Model_Name>
+		<Select_Box_Scale>90</Select_Box_Scale>
+		
+	
+
+		<!-- Special Abilities unique to Skirmish mode -->
+		<Abilities SubObjectList="Yes">
+			<Income_Stream_Ability Name="P_Starbase_Income_Stream">
+				<Activation_Style>Skirmish_Automatic</Activation_Style>
+				<Initially_Enabled>Yes</Initially_Enabled>
+				<Base_Income_Value>15</Base_Income_Value>
+				<Base_Interval_In_Secs>1</Base_Interval_In_Secs>
+				<Split_Income_With_Allies>Yes</Split_Income_With_Allies>
+				<Split_Favors_Owner>No</Split_Favors_Owner>
+				<Full_Amount_To_Everyone>Yes</Full_Amount_To_Everyone>
+			</Income_Stream_Ability>
+			<Income_Stream_Mod_Ability Name="P_Supply_Dock_Income_Bonus">
+				<Activation_Style>Skirmish_Automatic</Activation_Style>
+				<Initially_Enabled>No</Initially_Enabled>			<!-- This bonus income is controlled by the presence of the Supply Dock hardpoint -->
+				<Income_Multiplier>1.0</Income_Multiplier>
+				<Income_Additive_Value>0</Income_Additive_Value>
+				<Interval_Multiplier>1.0</Interval_Multiplier>
+				<Stacking_Category>0</Stacking_Category>
+				<Target_Stream_Source>Skirmish_Zsinj_Star_Base_1</Target_Stream_Source>
+				<Affects_All_Allied_Sources>Yes</Affects_All_Allied_Sources>
+				<Reverse_Application_Logic>No</Reverse_Application_Logic>
+			</Income_Stream_Mod_Ability>
+ 			<Enable_Radar_Ability Name="P_Comm_Array_Enable_Radar">
+ 				<Activation_Style>Skirmish_Automatic</Activation_Style>
+				<Initially_Enabled>Yes</Initially_Enabled>			<!-- This effect is controlled by the presence of the Comm Array hardpoint -->
+ 				<Affects_All_Allies>True</Affects_All_Allies>
+ 			</Enable_Radar_Ability>
+		</Abilities>
+
+		<Last_State_Visible_Under_FOW> True </Last_State_Visible_Under_FOW>
+		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
+		<Visible_On_Radar_When_Fogged>False</Visible_On_Radar_When_Fogged>
+	</StarBase>
+	
+	<StarBase Name="Skirmish_CSA_Star_Base_1">
+		<Variant_Of_Existing_Type>Generic_Skirmish_Star_Base</Variant_Of_Existing_Type>
+		<Is_Community_Property>Yes</Is_Community_Property>
+		<Affiliation>Corporate_Sector</Affiliation>
+		<Tactical_Health>33900</Tactical_Health>
+
+				<Text_ID>TEXT_UNIT_EMPRESS</Text_ID>
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_EMPRESS
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
+		TEXT_TOOLTIP_EMPRESS_HULL
+		TEXT_TOOLTIP_EMPRESS_SHIELD
+		TEXT_TOOLTIP_EMPRESS_WEAP1
+		TEXT_TOOLTIP_EMPRESS_WEAP2
+		TEXT_TOOLTIP_EMPRESS_WEAP3
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+		
+		<Dense_FOW_Reveal_Range_Multiplier>0.2</Dense_FOW_Reveal_Range_Multiplier>
+		<Space_FOW_Reveal_Range>4000.0</Space_FOW_Reveal_Range>
+		<Reinforcement_Prevention_Radius> 5000 </Reinforcement_Prevention_Radius>
+		
+		<Targeting_Max_Attack_Distance>2000.0</Targeting_Max_Attack_Distance>
+
+		<!-- Tactical Production Options -->
+		<SpaceBehavior> SPACE_OBSTACLE, POWERED, SHIELDED, HIDE_WHEN_FOGGED, REVEAL, UNIT_AI, SPAWN_SQUADRON, ION_STUN_EFFECT</SpaceBehavior>
+	<Tactical_Buildable_Objects_Multiplayer>
+			Corporate_Sector,
+				Mankvim_Squadron_Buildable,
+				2_Warpod_Squadron_Buildable,
+				IRDA_Squadron_Buildable,
+				T-Wing_Squadron_Buildable,
+				Early_Skipray_Squadron_Buildable,
+				HWing_Squadron_Buildable,
+				Skirmish_Etti_Lighter,
+				Skirmish_Marauder,
+				Skirmish_Generic_Nebulon_B_CSA,
+				Skirmish_Citadel_Cruiser_Squadron,
+				Skirmish_Gladiator_CSA,
+				Skirmish_Recusant,
+				Skirmish_Gozanti_Cruiser_Squadron,
+				Skirmish_Dreadnaught_Carrier,
+				Skirmish_Galleon,
+				Skirmish_MTC_Combat,
+				Skirmish_MTC_Support,
+				Skirmish_Liberator_Cruiser,
+				Skirmish_Victory_Destroyer_CSA,
+				Skirmish_Dauntless_CSA,
+				Skirmish_Bulwark_I,
+				Skirmish_Invincible,
+				Skirmish_Lucrehulk,
+				Skirmish_Bulwark_III,
+				Space_Level_Two_Tech_Upgrade,
+				Space_Level_Three_Tech_Upgrade,
+				Space_Level_Four_Tech_Upgrade,
+				Space_Level_Five_Tech_Upgrade,
+				<!--
+				ES_Enhanced_Reactors_L1_Upgrade,
+				ES_Enhanced_Reactors_L2_Upgrade,
+				ES_Enhanced_Reactors_L3_Upgrade,
+				ES_Reinforced_Armor_L1_Upgrade,
+				ES_Reinforced_Armor_L2_Upgrade,
+				ES_Reinforced_Armor_L3_Upgrade,
+				ES_Improved_Weapons_L1_Upgrade,
+				ES_Improved_Weapons_L2_Upgrade,
+				ES_Improved_Weapons_L3_Upgrade,
+				ES_Improved_Defenses_L1_Upgrade,
+				ES_Improved_Defenses_L2_Upgrade,
+				ES_Improved_Defenses_L3_Upgrade,
+				ES_Hypervelocity_Gun_Use_Upgrade,
+				-->
+				
+			
+		</Tactical_Buildable_Objects_Multiplayer>
+		<Visible_To_Enemies_When_Empty>True</Visible_To_Enemies_When_Empty>
+	
+		<!-- Data to prevent this from being buildable in galactic mode -->
+		<Build_Cost_Credits>0</Build_Cost_Credits>
+		<Build_Time_Seconds>0</Build_Time_Seconds>
+		<Build_Tab_Space_Station>No</Build_Tab_Space_Station>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+		
+		<HardPoints>
+			HP_Empress_Hangar_01,
+			HP_Empress_Hangar_02,
+			HP_Empress_Hangar_03,
+			HP_Empress_Proton01,
+			HP_Empress_Proton02,
+			HP_Empress_Proton03,
+			HP_Empress_Proton04,
+			HP_Empress_Proton05,
+			HP_Empress_Proton06,
+			HP_Empress_Proton07,
+			HP_Empress_Proton08,
+			HP_Empress_Proton09,
+			HP_Empress_Proton10,
+			HP_Empress_Proton11,
+			HP_Empress_Proton12,
+			HP_Empress_Turbo01,
+			HP_Empress_Turbo02,
+			HP_Empress_Turbo03,
+			HP_Empress_Turbo04,
+			HP_Empress_Turbo05,
+			HP_Empress_Turbo06,
+			HP_Empress_Turbo07,
+			HP_Empress_Turbo08,
+			HP_Empress_Turbo09,
+			HP_Empress_Turbo10,
+			HP_Empress_Turbo11,
+			HP_Empress_Turbo12,
+			HP_Empress_Turbo13,
+			HP_Empress_Turbo14,
+			HP_Empress_Turbo15,
+			HP_Empress_Turbo16,
+			HP_Empress_Turbo17,
+			HP_Empress_Turbo18,
+			HP_Empire_Station_One_Supply_Dock,
+			HP_Empire_Station_One_Comm_Array,
+		</HardPoints>
+		<Icon_Name>i_button_empress.tga</Icon_Name>
+
+		<Scale_Factor>0.5</Scale_Factor>
+
+		<Space_Model_Name>Empress.alo</Space_Model_Name>
+		<Select_Box_Scale>1000</Select_Box_Scale>
+	
+		<!-- Special Abilities unique to Skirmish mode -->
+		<Abilities SubObjectList="Yes">
+			<Income_Stream_Ability Name="D_Starbase_Income_Stream">
+				<Activation_Style>Skirmish_Automatic</Activation_Style>
+				<Initially_Enabled>Yes</Initially_Enabled>
+				<Base_Income_Value>15</Base_Income_Value>
+				<Base_Interval_In_Secs>1</Base_Interval_In_Secs>
+				<Split_Income_With_Allies>Yes</Split_Income_With_Allies>
+				<Split_Favors_Owner>No</Split_Favors_Owner>
+				<Full_Amount_To_Everyone>Yes</Full_Amount_To_Everyone>
+			</Income_Stream_Ability>
+			<Income_Stream_Mod_Ability Name="D_Supply_Dock_Income_Bonus">
+				<Activation_Style>Skirmish_Automatic</Activation_Style>
+				<Initially_Enabled>No</Initially_Enabled>			<!-- This bonus income is controlled by the presence of the Supply Dock hardpoint -->
+				<Income_Multiplier>1.0</Income_Multiplier>
+				<Income_Additive_Value>0</Income_Additive_Value>
+				<Interval_Multiplier>1.0</Interval_Multiplier>
+				<Stacking_Category>0</Stacking_Category>
+				<Target_Stream_Source>Skirmish_CSA_Star_Base_1</Target_Stream_Source>
+				<Affects_All_Allied_Sources>Yes</Affects_All_Allied_Sources>
+				<Reverse_Application_Logic>No</Reverse_Application_Logic>
+			</Income_Stream_Mod_Ability>
+ 			<Enable_Radar_Ability Name="D_Comm_Array_Enable_Radar">
+ 				<Activation_Style>Skirmish_Automatic</Activation_Style>
+				<Initially_Enabled>Yes</Initially_Enabled>			<!-- This effect is controlled by the presence of the Comm Array hardpoint -->
+ 				<Affects_All_Allies>True</Affects_All_Allies>
+ 			</Enable_Radar_Ability>
+		</Abilities>
+
+		<Last_State_Visible_Under_FOW> True </Last_State_Visible_Under_FOW>
+		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
+		<Visible_On_Radar_When_Fogged>False</Visible_On_Radar_When_Fogged>
+	</StarBase>
+	
+	<StarBase Name="Skirmish_Pentastar_Star_Base_1">
+		<Variant_Of_Existing_Type>Generic_Skirmish_Star_Base</Variant_Of_Existing_Type>
+		<Is_Community_Property>Yes</Is_Community_Property>
+		<Affiliation>Pentastar</Affiliation>
+
+		<Text_ID>TEXT_UNIT_VALIDUSIA</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_VALIDUSIA
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
+		TEXT_TOOLTIP_VALIDUSIA_HULL 
+		TEXT_TOOLTIP_VALIDUSIA_SHIELD
+		TEXT_TOOLTIP_VALIDUSIA_WEAP1 
+		TEXT_TOOLTIP_VALIDUSIA_WEAP2
+		TEXT_TOOLTIP_VALIDUSIA_WEAP3
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+		
+		<Dense_FOW_Reveal_Range_Multiplier>0.2</Dense_FOW_Reveal_Range_Multiplier>
+		<Space_FOW_Reveal_Range>4000.0</Space_FOW_Reveal_Range>
+		<Reinforcement_Prevention_Radius> 5000 </Reinforcement_Prevention_Radius>
+		
+		<Targeting_Max_Attack_Distance>2000.0</Targeting_Max_Attack_Distance>
+		
+
+		<!-- Tactical Production Options -->
+		<SpaceBehavior> SPACE_OBSTACLE, POWERED, SHIELDED, HIDE_WHEN_FOGGED, REVEAL, UNIT_AI, SPAWN_SQUADRON, ION_STUN_EFFECT</SpaceBehavior>
+		<Tactical_Buildable_Objects_Multiplayer>
+			Pentastar,
+				TIE_Fighter_Squadron_Buildable,
+				TIE_Interceptor_Squadron_Buildable,
+				Starwing_Squadron_Buildable,
+				TIE_gt_Squadron_Buildable,
+				V38_Assault_Fighter_Buildable,
+				TIE_Terror_Squadron_Buildable,
+				Skirmish_Raider_Pentastar,
+				Skirmish_Victory_II_Frigate,
+				Skirmish_Trenchant,
+				Skirmish_Escort_Carrier,
+				Skirmish_Decimator,
+				Skirmish_Corellian_Buccaneer,
+				Skirmish_Imperial_Cargo_Ship,
+				Skirmish_Acclamator_Assault_Ship_Leveler,
+				Skirmish_Dreadnaught_Empire,
+				Skirmish_Enforcer,
+				Skirmish_Battle_Horn,
+				Skirmish_Tartan_Patrol_Cruiser,
+				Skirmish_Venator,
+				Skirmish_Procursator,	
+				Skirmish_Star_Destroyer,
+				Skirmish_Tector,
+				Skirmish_Secutor,
+				Skirmish_Generic_Praetor_Carrier,
+				Space_Level_Two_Tech_Upgrade,
+				Space_Level_Three_Tech_Upgrade,
+				Space_Level_Four_Tech_Upgrade,
+				Space_Level_Five_Tech_Upgrade,
+				<!--
+				ES_Enhanced_Reactors_L1_Upgrade,
+				ES_Enhanced_Reactors_L2_Upgrade,
+				ES_Enhanced_Reactors_L3_Upgrade,
+				ES_Reinforced_Armor_L1_Upgrade,
+				ES_Reinforced_Armor_L2_Upgrade,
+				ES_Reinforced_Armor_L3_Upgrade,
+				ES_Improved_Weapons_L1_Upgrade,
+				ES_Improved_Weapons_L2_Upgrade,
+				ES_Improved_Weapons_L3_Upgrade,
+				ES_Improved_Defenses_L1_Upgrade,
+				ES_Improved_Defenses_L2_Upgrade,
+				ES_Improved_Defenses_L3_Upgrade,
+				ES_Hypervelocity_Gun_Use_Upgrade,
+				-->
+				
+		</Tactical_Buildable_Objects_Multiplayer>
+		<Visible_To_Enemies_When_Empty>True</Visible_To_Enemies_When_Empty>
+	
+		<!-- Data to prevent this from being buildable in galactic mode -->
+		<Build_Cost_Credits>0</Build_Cost_Credits>
+		<Build_Time_Seconds>0</Build_Time_Seconds>
+		<Build_Tab_Space_Station>No</Build_Tab_Space_Station>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+		
+		<HardPoints>
+			HP_Validusia_DualTurbo01,
+			HP_Validusia_DualTurbo02,
+			HP_Validusia_DualTurbo03,
+			HP_Validusia_DualTurbo04,
+			HP_Validusia_DualTurbo05,
+			HP_Validusia_DualTurbo06,
+			HP_Validusia_DualTurbo07,
+			HP_Validusia_DualTurbo08,
+			HP_Validusia_DualTurbo09,
+			HP_Validusia_DualTurbo10,
+			HP_Validusia_DualTurbo11,
+			HP_Validusia_DualTurbo12,
+			HP_Validusia_DualTurbo13,
+			HP_Validusia_DualTurbo14,
+			HP_Validusia_DualTurbo15,
+			HP_Validusia_DualTurbo16,
+			HP_Validusia_DualTurbo17,
+			HP_Validusia_DualTurbo18,
+			HP_Validusia_DualTurbo19,
+			HP_Validusia_DualTurbo20,
+			HP_Validusia_DualTurbo21,
+			HP_Validusia_DualTurbo22,
+			HP_Validusia_DualTurbo23,
+			HP_Validusia_DualTurbo24,
+			HP_Validusia_Concussion08,
+			HP_Validusia_Concussion07,
+			HP_Validusia_Concussion06,
+			HP_Validusia_Concussion05,
+			HP_Validusia_Concussion04,
+			HP_Validusia_Concussion03,
+			HP_Validusia_Concussion02,
+			HP_Validusia_Concussion01,
+			HP_Validusia_Ion01,
+			HP_Validusia_Ion02,
+			HP_Validusia_Ion03,
+			HP_Validusia_Ion04,
+			HP_Validusia_Ion05,
+			HP_Validusia_Ion06,
+			HP_Validusia_Ion07,
+			HP_Validusia_Ion08,
+			HP_Validusia_Hangar,
+			HP_Empire_Station_One_Supply_Dock,
+			HP_Empire_Station_One_Comm_Array,
+		</HardPoints>
+		<Icon_Name>i_button_validusia.tga</Icon_Name>
+
+
+
+	
+		<Scale_Factor>4.5</Scale_Factor>
+
+		<Space_Model_Name>PA_Validusia.alo</Space_Model_Name>
+		<Select_Box_Scale>90</Select_Box_Scale>
+	
+
+		<Visible_To_Enemies_When_Empty>True</Visible_To_Enemies_When_Empty>
+
+		<!-- Data to prevent this from being buildable in galactic mode -->
+		<Build_Cost_Credits>0</Build_Cost_Credits>
+		<Build_Time_Seconds>0</Build_Time_Seconds>
+		<Build_Tab_Space_Station>No</Build_Tab_Space_Station>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+
+
+		
+		<!-- Special Abilities unique to Skirmish mode -->
+		<Abilities SubObjectList="Yes">
+			<Income_Stream_Ability Name="P_Starbase_Income_Stream">
+				<Activation_Style>Skirmish_Automatic</Activation_Style>
+				<Initially_Enabled>Yes</Initially_Enabled>
+				<Base_Income_Value>15</Base_Income_Value>
+				<Base_Interval_In_Secs>1</Base_Interval_In_Secs>
+				<Split_Income_With_Allies>Yes</Split_Income_With_Allies>
+				<Split_Favors_Owner>No</Split_Favors_Owner>
+				<Full_Amount_To_Everyone>Yes</Full_Amount_To_Everyone>
+			</Income_Stream_Ability>
+			<Income_Stream_Mod_Ability Name="P_Supply_Dock_Income_Bonus">
+				<Activation_Style>Skirmish_Automatic</Activation_Style>
+				<Initially_Enabled>No</Initially_Enabled>			<!-- This bonus income is controlled by the presence of the Supply Dock hardpoint -->
+				<Income_Multiplier>1.0</Income_Multiplier>
+				<Income_Additive_Value>0</Income_Additive_Value>
+				<Interval_Multiplier>1.0</Interval_Multiplier>
+				<Stacking_Category>0</Stacking_Category>
+				<Target_Stream_Source>Skirmish_Pentastar_Star_Base_1</Target_Stream_Source>
+				<Affects_All_Allied_Sources>Yes</Affects_All_Allied_Sources>
+				<Reverse_Application_Logic>No</Reverse_Application_Logic>
+			</Income_Stream_Mod_Ability>
+ 			<Enable_Radar_Ability Name="P_Comm_Array_Enable_Radar">
+ 				<Activation_Style>Skirmish_Automatic</Activation_Style>
+				<Initially_Enabled>Yes</Initially_Enabled>			<!-- This effect is controlled by the presence of the Comm Array hardpoint -->
+ 				<Affects_All_Allies>True</Affects_All_Allies>
+ 			</Enable_Radar_Ability>
+		</Abilities>
+
+		<Last_State_Visible_Under_FOW> True </Last_State_Visible_Under_FOW>
+		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
+		<Visible_On_Radar_When_Fogged>False</Visible_On_Radar_When_Fogged>
+	</StarBase>
+	
+	<StarBase Name="Skirmish_EotH_Star_Base_1">
+		<Variant_Of_Existing_Type>Generic_Skirmish_Star_Base</Variant_Of_Existing_Type>
+		<Is_Community_Property>Yes</Is_Community_Property>
+		<Affiliation>EmpireoftheHand</Affiliation>
+		<Tactical_Health>25440</Tactical_Health>
+		
+		<Text_ID>TEXT_UNIT_OTO</Text_ID>
+		<Space_Model_Name>EotH_Oto.alo</Space_Model_Name>
+		<Icon_Name>i_button_oto.tga</Icon_Name>
+		
+		<Space_FOW_Reveal_Range>4000.0</Space_FOW_Reveal_Range>
+
+		<Reinforcement_Prevention_Radius> 5000 </Reinforcement_Prevention_Radius>
+		
+		<Targeting_Max_Attack_Distance>2000.0</Targeting_Max_Attack_Distance>
+		
+		<HardPoints>
+			HP_Oto_IonCannon_01,
+			HP_Oto_IonCannon_02,
+			HP_Oto_IonCannon_03,
+			HP_Oto_IonCannon_04,
+			HP_Oto_IonCannon_05,
+			HP_Oto_IonCannon_06,
+			HP_Oto_IonCannon_07,
+			HP_Oto_IonCannon_08,
+			HP_Oto_IonCannon_09,
+			HP_Oto_IonCannon_10,
+			HP_Oto_IonCannon_11,
+			HP_Oto_IonCannon_12,
+			HP_Oto_IonCannon_13,
+			HP_Oto_IonCannon_14,
+			HP_Oto_IonCannon_15,
+			HP_Oto_IonCannon_16,
+			HP_Oto_Dual_01,
+			HP_Oto_Dual_02,
+			HP_Oto_Dual_03,
+			HP_Oto_Dual_04,
+			HP_Oto_Dual_05,
+			HP_Oto_Dual_06,
+			HP_Oto_Dual_07,
+			HP_Oto_Dual_08,
+			HP_Oto_Dual_09,
+			HP_Oto_Dual_10,
+			HP_Oto_Dual_11,
+			HP_Oto_Dual_12,
+			HP_Oto_Dual_14,
+			HP_Oto_Dual_15,
+			HP_Oto_Dual_16,
+			HP_Oto_Dual_17,
+			HP_Oto_Dual_18,
+			HP_Oto_Dual_19,
+			HP_Oto_Dual_20,
+			HP_Oto_Dual_21,
+			HP_Oto_Dual_22,
+			HP_Oto_Dual_23,
+			HP_Oto_Dual_24,
+			HP_Oto_Hangar_01,
+			HP_Oto_Hangar,
+			HP_Empire_Station_One_Supply_Dock,
+			HP_Empire_Station_One_Comm_Array,
+		</HardPoints>
+		<Scale_Factor>22.3</Scale_Factor>
+
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_OTO
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
+		TEXT_TOOLTIP_OTO_HULL 
+		TEXT_TOOLTIP_OTO_SHIELD
+		TEXT_TOOLTIP_OTO_WEAP1 
+		TEXT_TOOLTIP_OTO_WEAP2
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+		
+		<Select_Box_Scale>90</Select_Box_Scale>
+		<Build_Initially_Locked>Yes</Build_Initially_Locked>
+		
+		<!-- Tactical Production Options -->
+		<SpaceBehavior> SPACE_OBSTACLE, POWERED, SHIELDED, HIDE_WHEN_FOGGED, REVEAL, UNIT_AI, SPAWN_SQUADRON, ION_STUN_EFFECT</SpaceBehavior>
+		<Tactical_Buildable_Objects_Multiplayer> 
+			EmpireoftheHand,
+				Clawcraft_Squadron_Buildable,
+				Krsiss_Interceptor_Squadron_Buildable,			
+				Syca_Bomber_Squadron_Buildable,
+				Furion_Squadron_Buildable,
+				Scarsiss_Squadron_Buildable,
+				Skirmish_Ormos,
+				Skirmish_Fruoro,
+				Skirmish_Syzygos,
+				Skirmish_Kuuro,
+				Skirmish_Kynigos,
+				Skirmish_Muqaraea,
+				Skirmish_Rohkea,
+				Skirmish_Baomu,
+				Skirmish_Chaf_destroyer,
+				Skirmish_Chiss_Star_Destroyer,
+				Skirmish_Syndic_Destroyer,
+				Skirmish_Efodio_Fleet_Tender,
+				Skirmish_Phalanx_Destroyer,
+				Skirmish_Peltast,
+				Skirmish_Intego_Destroyer,
+				Space_Level_Two_Tech_Upgrade,
+				Space_Level_Three_Tech_Upgrade,
+				Space_Level_Four_Tech_Upgrade,
+				Space_Level_Five_Tech_Upgrade,
+				<!--
+				EOTHS_Enhanced_Reactors_L1_Upgrade,
+				EOTHS_Enhanced_Reactors_L2_Upgrade,
+				EOTHS_Reinforced_Armor_L1_Upgrade,
+				EOTHS_Reinforced_Armor_L2_Upgrade,
+				EOTHS_Improved_Weapons_L1_Upgrade,
+				EOTHS_Improved_Weapons_L2_Upgrade,
+				EOTHS_Improved_Defenses_L1_Upgrade,
+				ES_Hypervelocity_Gun_Use_Upgrade
+				-->
+		</Tactical_Buildable_Objects_Multiplayer>
+		<Visible_To_Enemies_When_Empty>True</Visible_To_Enemies_When_Empty>
+	
+		<!-- Data to prevent this from being buildable in galactic mode -->
+		<Build_Cost_Credits>0</Build_Cost_Credits>
+		<Build_Time_Seconds>0</Build_Time_Seconds>
+		<Build_Tab_Space_Station>No</Build_Tab_Space_Station>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+		
+		<!-- Special Abilities unique to Skirmish mode -->
+		<Abilities SubObjectList="Yes">
+			<Income_Stream_Ability Name="U_Starbase_Income_Stream">
+				<Activation_Style>Skirmish_Automatic</Activation_Style>
+				<Initially_Enabled>Yes</Initially_Enabled>
+				<Base_Income_Value>15</Base_Income_Value>
+				<Base_Interval_In_Secs>1</Base_Interval_In_Secs>
+				<Split_Income_With_Allies>Yes</Split_Income_With_Allies>
+				<Split_Favors_Owner>No</Split_Favors_Owner>
+				<Full_Amount_To_Everyone>Yes</Full_Amount_To_Everyone>
+			</Income_Stream_Ability>
+			<Income_Stream_Mod_Ability Name="U_Supply_Dock_Income_Bonus">
+				<Activation_Style>Skirmish_Automatic</Activation_Style>
+				<Initially_Enabled>No</Initially_Enabled>			<!-- This bonus income is controlled by the presence of the Supply Dock hardpoint -->
+				<Income_Multiplier>1.0</Income_Multiplier>
+				<Income_Additive_Value>0</Income_Additive_Value>
+				<Interval_Multiplier>1.0</Interval_Multiplier>
+				<Stacking_Category>0</Stacking_Category>
+				<Target_Stream_Source>Skirmish_EotH_Star_Base_1</Target_Stream_Source>
+				<Affects_All_Allied_Sources>Yes</Affects_All_Allied_Sources>
+				<Reverse_Application_Logic>No</Reverse_Application_Logic>
+			</Income_Stream_Mod_Ability>
+ 			<Enable_Radar_Ability Name="U_Comm_Array_Enable_Radar">
+ 				<Activation_Style>Skirmish_Automatic</Activation_Style>
+				<Initially_Enabled>Yes</Initially_Enabled>			<!-- This effect is controlled by the presence of the Comm Array hardpoint -->
+ 				<Affects_All_Allies>True</Affects_All_Allies>
+ 			</Enable_Radar_Ability>
+		</Abilities>
+		
+	
+		<Last_State_Visible_Under_FOW> True </Last_State_Visible_Under_FOW>
+		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
+		<Visible_On_Radar_When_Fogged>False</Visible_On_Radar_When_Fogged>
+	</StarBase>
+	
+	<StarBase Name="Skirmish_Delvardus_Star_Base_1">
+		<Variant_Of_Existing_Type>Generic_Skirmish_Star_Base</Variant_Of_Existing_Type>
+		<Is_Community_Property>Yes</Is_Community_Property>
+		<Affiliation>Eriadu_Authority</Affiliation>
+
+		<Text_ID>TEXT_UNIT_VALIDUSIA</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_VALIDUSIA
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
+		TEXT_TOOLTIP_VALIDUSIA_HULL 
+		TEXT_TOOLTIP_VALIDUSIA_SHIELD
+		TEXT_TOOLTIP_VALIDUSIA_WEAP1 
+		TEXT_TOOLTIP_VALIDUSIA_WEAP2
+		TEXT_TOOLTIP_VALIDUSIA_WEAP3
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+		
+		<Dense_FOW_Reveal_Range_Multiplier>0.2</Dense_FOW_Reveal_Range_Multiplier>
+		<Space_FOW_Reveal_Range>4000.0</Space_FOW_Reveal_Range>
+		<Reinforcement_Prevention_Radius> 5000 </Reinforcement_Prevention_Radius>
+		
+		<Targeting_Max_Attack_Distance>2000.0</Targeting_Max_Attack_Distance>
+		
+
+		<!-- Tactical Production Options -->
+		<SpaceBehavior> SPACE_OBSTACLE, POWERED, SHIELDED, HIDE_WHEN_FOGGED, REVEAL, UNIT_AI, SPAWN_SQUADRON, ION_STUN_EFFECT</SpaceBehavior>
+	<Tactical_Buildable_Objects_Multiplayer>
+			Eriadu_Authority,
+				TIE_Fighter_Squadron_Buildable,
+				TIE_Interceptor_Squadron_Buildable,
+				TIE_Bomber_Squadron_Buildable,
+				A9_Squadron_Buildable,
+				Sentinel_Squadron_Buildable,
+				Preybird_Squadron_Buildable,
+				Early_Skipray_Squadron_Buildable,
+				TIE_Heavy_Bomber_Squadron_Buildable,
+				Gamma_ATR_6_Squadron_Buildable,
+				Skirmish_IPV1,
+				Skirmish_Arquitens,
+				Skirmish_Raider_II_Corvette,
+				Skirmish_Generic_Imperial_I_Frigate,
+				Skirmish_Galleon,
+				Skirmish_Eidolon,
+				Skirmish_Gladiator,
+				Skirmish_IPV4,
+				Skirmish_Victory_Destroyer,
+				Skirmish_Star_Destroyer,
+				Skirmish_Star_Destroyer_Two,
+				Skirmish_Torpedo_Sphere,
+				Skirmish_Allegiance,
+				Skirmish_Praetor,
+				Space_Level_Two_Tech_Upgrade,
+				Space_Level_Three_Tech_Upgrade,
+				Space_Level_Four_Tech_Upgrade,
+				Space_Level_Five_Tech_Upgrade,
+				
+				<!--
+				ES_Enhanced_Reactors_L1_Upgrade,
+				ES_Enhanced_Reactors_L2_Upgrade,
+				ES_Enhanced_Reactors_L3_Upgrade,
+				ES_Reinforced_Armor_L1_Upgrade,
+				ES_Reinforced_Armor_L2_Upgrade,
+				ES_Reinforced_Armor_L3_Upgrade,
+				ES_Improved_Weapons_L1_Upgrade,
+				ES_Improved_Weapons_L2_Upgrade,
+				ES_Improved_Weapons_L3_Upgrade,
+				ES_Improved_Defenses_L1_Upgrade,
+				ES_Improved_Defenses_L2_Upgrade,
+				ES_Improved_Defenses_L3_Upgrade,
+				ES_Hypervelocity_Gun_Use_Upgrade,
+				-->
+		</Tactical_Buildable_Objects_Multiplayer>
+		<Visible_To_Enemies_When_Empty>True</Visible_To_Enemies_When_Empty>
+	
+		<!-- Data to prevent this from being buildable in galactic mode -->
+		<Build_Cost_Credits>0</Build_Cost_Credits>
+		<Build_Time_Seconds>0</Build_Time_Seconds>
+		<Build_Tab_Space_Station>No</Build_Tab_Space_Station>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+		
+		<HardPoints>
+			HP_Validusia_DualTurbo01,
+			HP_Validusia_DualTurbo02,
+			HP_Validusia_DualTurbo03,
+			HP_Validusia_DualTurbo04,
+			HP_Validusia_DualTurbo05,
+			HP_Validusia_DualTurbo06,
+			HP_Validusia_DualTurbo07,
+			HP_Validusia_DualTurbo08,
+			HP_Validusia_DualTurbo09,
+			HP_Validusia_DualTurbo10,
+			HP_Validusia_DualTurbo11,
+			HP_Validusia_DualTurbo12,
+			HP_Validusia_DualTurbo13,
+			HP_Validusia_DualTurbo14,
+			HP_Validusia_DualTurbo15,
+			HP_Validusia_DualTurbo16,
+			HP_Validusia_DualTurbo17,
+			HP_Validusia_DualTurbo18,
+			HP_Validusia_DualTurbo19,
+			HP_Validusia_DualTurbo20,
+			HP_Validusia_DualTurbo21,
+			HP_Validusia_DualTurbo22,
+			HP_Validusia_DualTurbo23,
+			HP_Validusia_DualTurbo24,
+			HP_Validusia_Concussion08,
+			HP_Validusia_Concussion07,
+			HP_Validusia_Concussion06,
+			HP_Validusia_Concussion05,
+			HP_Validusia_Concussion04,
+			HP_Validusia_Concussion03,
+			HP_Validusia_Concussion02,
+			HP_Validusia_Concussion01,
+			HP_Validusia_Ion01,
+			HP_Validusia_Ion02,
+			HP_Validusia_Ion03,
+			HP_Validusia_Ion04,
+			HP_Validusia_Ion05,
+			HP_Validusia_Ion06,
+			HP_Validusia_Ion07,
+			HP_Validusia_Ion08,
+			HP_Validusia_Hangar,
+			HP_Empire_Station_One_Supply_Dock,
+			HP_Empire_Station_One_Comm_Array,
+		</HardPoints>
+		<Icon_Name>i_button_validusia.tga</Icon_Name>
+
+
+
+	
+		<Scale_Factor>4.5</Scale_Factor>
+
+		<Space_Model_Name>PA_Validusia.alo</Space_Model_Name>
+		<Select_Box_Scale>90</Select_Box_Scale>
+	
+		<!-- Special Abilities unique to Skirmish mode -->
+		<Abilities SubObjectList="Yes">
+			<Income_Stream_Ability Name="D_Starbase_Income_Stream">
+				<Activation_Style>Skirmish_Automatic</Activation_Style>
+				<Initially_Enabled>Yes</Initially_Enabled>
+				<Base_Income_Value>15</Base_Income_Value>
+				<Base_Interval_In_Secs>1</Base_Interval_In_Secs>
+				<Split_Income_With_Allies>Yes</Split_Income_With_Allies>
+				<Split_Favors_Owner>No</Split_Favors_Owner>
+				<Full_Amount_To_Everyone>Yes</Full_Amount_To_Everyone>
+			</Income_Stream_Ability>
+			<Income_Stream_Mod_Ability Name="D_Supply_Dock_Income_Bonus">
+				<Activation_Style>Skirmish_Automatic</Activation_Style>
+				<Initially_Enabled>No</Initially_Enabled>			<!-- This bonus income is controlled by the presence of the Supply Dock hardpoint -->
+				<Income_Multiplier>1.0</Income_Multiplier>
+				<Income_Additive_Value>0</Income_Additive_Value>
+				<Interval_Multiplier>1.0</Interval_Multiplier>
+				<Stacking_Category>0</Stacking_Category>
+				<Target_Stream_Source>Skirmish_Delvardus_Star_Base_1</Target_Stream_Source>
+				<Affects_All_Allied_Sources>Yes</Affects_All_Allied_Sources>
+				<Reverse_Application_Logic>No</Reverse_Application_Logic>
+			</Income_Stream_Mod_Ability>
+ 			<Enable_Radar_Ability Name="D_Comm_Array_Enable_Radar">
+ 				<Activation_Style>Skirmish_Automatic</Activation_Style>
+				<Initially_Enabled>Yes</Initially_Enabled>			<!-- This effect is controlled by the presence of the Comm Array hardpoint -->
+ 				<Affects_All_Allies>True</Affects_All_Allies>
+ 			</Enable_Radar_Ability>
+		</Abilities>
+
+		<Last_State_Visible_Under_FOW> True </Last_State_Visible_Under_FOW>
+		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
+		<Visible_On_Radar_When_Fogged>False</Visible_On_Radar_When_Fogged>
+	</StarBase>
+	
+	<StarBase Name="Skirmish_Teradoc_Star_Base_1">
+		<Variant_Of_Existing_Type>Generic_Skirmish_Star_Base</Variant_Of_Existing_Type>
+		<Is_Community_Property>Yes</Is_Community_Property>
+		<Affiliation>Greater_Maldrood</Affiliation>
+
+				<Text_ID>TEXT_UNIT_VALIDUSIA</Text_ID>
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_VALIDUSIA
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
+		TEXT_TOOLTIP_VALIDUSIA_HULL 
+		TEXT_TOOLTIP_VALIDUSIA_SHIELD
+		TEXT_TOOLTIP_VALIDUSIA_WEAP1 
+		TEXT_TOOLTIP_VALIDUSIA_WEAP2
+		TEXT_TOOLTIP_VALIDUSIA_WEAP3
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+		
+		<Dense_FOW_Reveal_Range_Multiplier>0.2</Dense_FOW_Reveal_Range_Multiplier>
+		<Space_FOW_Reveal_Range>4000.0</Space_FOW_Reveal_Range>
+		<Reinforcement_Prevention_Radius> 5000 </Reinforcement_Prevention_Radius>
+		
+		<Targeting_Max_Attack_Distance>2000.0</Targeting_Max_Attack_Distance>
+		
+
+		<!-- Tactical Production Options -->
+		<SpaceBehavior> SPACE_OBSTACLE, POWERED, SHIELDED, HIDE_WHEN_FOGGED, REVEAL, UNIT_AI, SPAWN_SQUADRON, ION_STUN_EFFECT</SpaceBehavior>
+	<Tactical_Buildable_Objects_Multiplayer>
+			Greater_Maldrood,
+				TIE_Fighter_Squadron_Buildable,
+				TIE_Interceptor_Squadron_Buildable,
+				TIE_Oppressor_Squadron_Buildable,
+				Clutch_Squadron_Buildable,
+				Avenger_Squadron_Buildable,
+				Guardian_Squadron_Buildable,
+				Skipray_Squadron_Buildable,
+				Skirmish_Customs_Corvette,
+				Skirmish_Vigil,
+				Skirmish_Carrack_Cruiser,
+				Skirmish_Star_Galleon,
+				Skirmish_Strike_Cruiser,
+				Skirmish_Strike_Cruiser_Gorath,
+				Skirmish_Generic_Pursuit,
+				Skirmish_Vindicator_Cruiser,
+				Skirmish_Acclamator_Assault_Ship_II,
+				Skirmish_Imperial_II_Frigate,
+				Skirmish_Tartan_Patrol_Cruiser,
+				Skirmish_Broadside_Cruiser,
+				Skirmish_Victory_Destroyer,
+				Skirmish_Crimson_Victory,
+				Skirmish_Star_Destroyer,
+				Skirmish_Tector,
+				Skirmish_Altor_Replenishment_Ship,
+				Space_Level_Two_Tech_Upgrade,
+				Space_Level_Three_Tech_Upgrade,
+				Space_Level_Four_Tech_Upgrade,
+				Space_Level_Five_Tech_Upgrade,
+				<!--
+				ES_Enhanced_Reactors_L1_Upgrade,
+				ES_Enhanced_Reactors_L2_Upgrade,
+				ES_Enhanced_Reactors_L3_Upgrade,
+				ES_Reinforced_Armor_L1_Upgrade,
+				ES_Reinforced_Armor_L2_Upgrade,
+				ES_Reinforced_Armor_L3_Upgrade,
+				ES_Improved_Weapons_L1_Upgrade,
+				ES_Improved_Weapons_L2_Upgrade,
+				ES_Improved_Weapons_L3_Upgrade,
+				ES_Improved_Defenses_L1_Upgrade,
+				ES_Improved_Defenses_L2_Upgrade,
+				ES_Improved_Defenses_L3_Upgrade,
+				ES_Hypervelocity_Gun_Use_Upgrade,
+				-->
+				
+		</Tactical_Buildable_Objects_Multiplayer>
+		<Visible_To_Enemies_When_Empty>True</Visible_To_Enemies_When_Empty>
+	
+		<!-- Data to prevent this from being buildable in galactic mode -->
+		<Build_Cost_Credits>0</Build_Cost_Credits>
+		<Build_Time_Seconds>0</Build_Time_Seconds>
+		<Build_Tab_Space_Station>No</Build_Tab_Space_Station>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+		
+		<HardPoints>
+			HP_Validusia_DualTurbo01,
+			HP_Validusia_DualTurbo02,
+			HP_Validusia_DualTurbo03,
+			HP_Validusia_DualTurbo04,
+			HP_Validusia_DualTurbo05,
+			HP_Validusia_DualTurbo06,
+			HP_Validusia_DualTurbo07,
+			HP_Validusia_DualTurbo08,
+			HP_Validusia_DualTurbo09,
+			HP_Validusia_DualTurbo10,
+			HP_Validusia_DualTurbo11,
+			HP_Validusia_DualTurbo12,
+			HP_Validusia_DualTurbo13,
+			HP_Validusia_DualTurbo14,
+			HP_Validusia_DualTurbo15,
+			HP_Validusia_DualTurbo16,
+			HP_Validusia_DualTurbo17,
+			HP_Validusia_DualTurbo18,
+			HP_Validusia_DualTurbo19,
+			HP_Validusia_DualTurbo20,
+			HP_Validusia_DualTurbo21,
+			HP_Validusia_DualTurbo22,
+			HP_Validusia_DualTurbo23,
+			HP_Validusia_DualTurbo24,
+			HP_Validusia_Concussion08,
+			HP_Validusia_Concussion07,
+			HP_Validusia_Concussion06,
+			HP_Validusia_Concussion05,
+			HP_Validusia_Concussion04,
+			HP_Validusia_Concussion03,
+			HP_Validusia_Concussion02,
+			HP_Validusia_Concussion01,
+			HP_Validusia_Ion01,
+			HP_Validusia_Ion02,
+			HP_Validusia_Ion03,
+			HP_Validusia_Ion04,
+			HP_Validusia_Ion05,
+			HP_Validusia_Ion06,
+			HP_Validusia_Ion07,
+			HP_Validusia_Ion08,
+			HP_Validusia_Hangar,
+			HP_Empire_Station_One_Supply_Dock,
+			HP_Empire_Station_One_Comm_Array,
+		</HardPoints>
+		<Icon_Name>i_button_validusia.tga</Icon_Name>
+
+
+
+	
+		<Scale_Factor>4.5</Scale_Factor>
+
+		<Space_Model_Name>PA_Validusia.alo</Space_Model_Name>
+		<Select_Box_Scale>90</Select_Box_Scale>
+	
+
+		<!-- Special Abilities unique to Skirmish mode -->
+		<Abilities SubObjectList="Yes">
+			<Income_Stream_Ability Name="T_Starbase_Income_Stream">
+				<Activation_Style>Skirmish_Automatic</Activation_Style>
+				<Initially_Enabled>Yes</Initially_Enabled>
+				<Base_Income_Value>15</Base_Income_Value>
+				<Base_Interval_In_Secs>1</Base_Interval_In_Secs>
+				<Split_Income_With_Allies>Yes</Split_Income_With_Allies>
+				<Split_Favors_Owner>No</Split_Favors_Owner>
+				<Full_Amount_To_Everyone>Yes</Full_Amount_To_Everyone>
+			</Income_Stream_Ability>
+			<Income_Stream_Mod_Ability Name="T_Supply_Dock_Income_Bonus">
+				<Activation_Style>Skirmish_Automatic</Activation_Style>
+				<Initially_Enabled>No</Initially_Enabled>			<!-- This bonus income is controlled by the presence of the Supply Dock hardpoint -->
+				<Income_Multiplier>1.0</Income_Multiplier>
+				<Income_Additive_Value>0</Income_Additive_Value>
+				<Interval_Multiplier>1.0</Interval_Multiplier>
+				<Stacking_Category>0</Stacking_Category>
+				<Target_Stream_Source>Skirmish_Teradoc_Star_Base_1</Target_Stream_Source>
+				<Affects_All_Allied_Sources>Yes</Affects_All_Allied_Sources>
+				<Reverse_Application_Logic>No</Reverse_Application_Logic>
+			</Income_Stream_Mod_Ability>
+ 			<Enable_Radar_Ability Name="T_Comm_Array_Enable_Radar">
+ 				<Activation_Style>Skirmish_Automatic</Activation_Style>
+				<Initially_Enabled>Yes</Initially_Enabled>			<!-- This effect is controlled by the presence of the Comm Array hardpoint -->
+ 				<Affects_All_Allies>True</Affects_All_Allies>
+ 			</Enable_Radar_Ability>
+		</Abilities>
+
+		<Last_State_Visible_Under_FOW> True </Last_State_Visible_Under_FOW>
+		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
+		<Visible_On_Radar_When_Fogged>False</Visible_On_Radar_When_Fogged>
+	</StarBase>
+	
+	<StarBase Name="Skirmish_Hapan_Star_Base_1">
+		<Variant_Of_Existing_Type>Generic_Skirmish_Star_Base</Variant_Of_Existing_Type>
+		<Is_Community_Property>Yes</Is_Community_Property>
+		<Affiliation>Hapes_Consortium</Affiliation>
+
+		<Text_ID>TEXT_UNIT_APHELION</Text_ID>
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_APHELION
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
+		TEXT_TOOLTIP_APHELION_HULL
+		TEXT_TOOLTIP_APHELION_SHIELD
+		TEXT_TOOLTIP_APHELION_WEAP1
+		TEXT_TOOLTIP_APHELION_WEAP2
+		TEXT_TOOLTIP_APHELION_WEAP3
+		TEXT_TOOLTIP_APHELION_WEAP4
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+		
+		<Dense_FOW_Reveal_Range_Multiplier>0.2</Dense_FOW_Reveal_Range_Multiplier>
+		<Space_FOW_Reveal_Range>4000.0</Space_FOW_Reveal_Range>
+		<Reinforcement_Prevention_Radius> 5000 </Reinforcement_Prevention_Radius>
+		
+		<Targeting_Max_Attack_Distance>2000.0</Targeting_Max_Attack_Distance>
+		
+		<!-- Tactical Production Options -->
+		<SpaceBehavior> SPACE_OBSTACLE, POWERED, SHIELDED, HIDE_WHEN_FOGGED, REVEAL, UNIT_AI, SPAWN_SQUADRON, ION_STUN_EFFECT</SpaceBehavior>
+		<Tactical_Buildable_Objects_Multiplayer>
+			Hapes_Consortium,
+				Patrol_Miytil_Fighter_Squadron_Buildable,
+				Miytil_Bomber_Squadron_Buildable,
+				Miytil_Fighter_Squadron_Buildable,
+				House_Miytil_Fighter_Squadron_Buildable,
+				Skirmish_Baidam,
+				Skirmish_Flare,
+				Skirmish_Beta_Cruiser,
+				Skirmish_Olanji_Frigate,
+				Skirmish_Stella,
+				Skirmish_Nova_Cruiser,
+				Skirmish_Nova_Cruiser_Refit,
+				Skirmish_Magnetar,
+				Skirmish_Charubah_Frigate,
+				Skirmish_Pulsar,
+				Skirmish_Coronal,
+				Skirmish_Mist_Carrier,
+				Skirmish_BattleDragon,
+				Skirmish_Terephon_Cruiser,
+				Skirmish_Neutron_Cruiser,
+				<!--Skirmish_Star_Home,-->
+				Taa_Chume_Star_Home_Space_MP,
+				Space_Level_Two_Tech_Upgrade,
+				Space_Level_Three_Tech_Upgrade,
+				Space_Level_Four_Tech_Upgrade,
+				Space_Level_Five_Tech_Upgrade,
+				<!--
+				ES_Enhanced_Reactors_L1_Upgrade,
+				ES_Enhanced_Reactors_L2_Upgrade,
+				ES_Enhanced_Reactors_L3_Upgrade,
+				ES_Reinforced_Armor_L1_Upgrade,
+				ES_Reinforced_Armor_L2_Upgrade,
+				ES_Reinforced_Armor_L3_Upgrade,
+				ES_Improved_Weapons_L1_Upgrade,
+				ES_Improved_Weapons_L2_Upgrade,
+				ES_Improved_Weapons_L3_Upgrade,
+				ES_Improved_Defenses_L1_Upgrade,
+				ES_Improved_Defenses_L2_Upgrade,
+				ES_Improved_Defenses_L3_Upgrade,
+				ES_Hypervelocity_Gun_Use_Upgrade,
+				-->
+				
+		</Tactical_Buildable_Objects_Multiplayer>
+		<Visible_To_Enemies_When_Empty>True</Visible_To_Enemies_When_Empty>
+	
+		<!-- Data to prevent this from being buildable in galactic mode -->
+		<Build_Cost_Credits>0</Build_Cost_Credits>
+		<Build_Time_Seconds>0</Build_Time_Seconds>
+		<Build_Tab_Space_Station>No</Build_Tab_Space_Station>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+		
+		<HardPoints>
+			HP_Hapan_Starbase_Five_Hangar,
+			HP_Hapan_Starbase_Five_Turbo_01,
+			HP_Hapan_Starbase_Five_Turbo_02,
+			HP_Hapan_Starbase_Five_Turbo_03,
+			HP_Hapan_Starbase_Five_Turbo_04,
+			HP_Hapan_Starbase_Five_Turbo_05,
+			HP_Hapan_Starbase_Five_Turbo_06,
+			HP_Hapan_Starbase_Five_Turbo_07,
+			HP_Hapan_Starbase_Five_Turbo_08,
+			HP_Hapan_Starbase_Five_Turbo_09,
+			HP_Hapan_Starbase_Five_Turbo_10,
+			HP_Hapan_Starbase_Five_Turbo_11,
+			HP_Hapan_Starbase_Five_Turbo_12,
+			HP_Hapan_Starbase_Five_Turbo_13,
+			HP_Hapan_Starbase_Five_Turbo_14,
+			HP_Hapan_Starbase_Five_Turbo_15,
+			HP_Hapan_Starbase_Five_Turbo_16,
+			HP_Hapan_Starbase_Five_Turbo_17,
+			HP_Hapan_Starbase_Five_Turbo_18,
+			HP_Hapan_Starbase_Five_Turbo_19,
+			HP_Hapan_Starbase_Five_Turbo_20,
+			HP_Hapan_Starbase_Five_Turbo_21,
+			HP_Hapan_Starbase_Five_Turbo_22,
+			HP_Hapan_Starbase_Five_Turbo_23,
+			HP_Hapan_Starbase_Five_Turbo_24,
+			HP_Hapan_Starbase_Five_Laser_01,
+			HP_Hapan_Starbase_Five_Laser_02,
+			HP_Hapan_Starbase_Five_Laser_03,
+			HP_Hapan_Starbase_Five_Laser_04,
+			HP_Hapan_Starbase_Five_Laser_05,
+			HP_Hapan_Starbase_Five_Laser_06,
+			HP_Hapan_Starbase_Five_Laser_07,
+			HP_Hapan_Starbase_Five_Laser_08,
+			HP_Hapan_Starbase_Five_Laser_09,
+			HP_Hapan_Starbase_Five_Quad_Laser_01,
+			HP_Hapan_Starbase_Five_Quad_Laser_02,
+			HP_Hapan_Starbase_Five_Quad_Laser_03,
+			HP_Hapan_Starbase_Five_Ion_01,
+			HP_Hapan_Starbase_Five_Ion_02,
+			HP_Hapan_Starbase_Five_Ion_03,
+			HP_Hapan_Starbase_Five_Ion_04,
+			HP_Hapan_Starbase_Five_Ion_05,
+			HP_Hapan_Starbase_Five_Ion_06,
+			HP_Hapan_Starbase_Five_Ion_07,
+			HP_Hapan_Starbase_Five_Ion_08,
+			HP_Hapan_Starbase_Five_Ion_09,
+			HP_Hapan_Starbase_Five_Ion_10,
+			HP_Hapan_Starbase_Five_Ion_11,
+			HP_Hapan_Starbase_Five_Ion_12,
+			HP_Empire_Station_One_Supply_Dock,
+			HP_Empire_Station_One_Comm_Array,
+		</HardPoints>
+		<Icon_Name>i_button_aphelion.tga</Icon_Name>
+
+		<Scale_Factor>0.5</Scale_Factor>
+
+		<Space_Model_Name>Hapan_StarBase5.alo</Space_Model_Name>
+		<Select_Box_Scale>90</Select_Box_Scale>
+	
+		<!-- Special Abilities unique to Skirmish mode -->
+		<Abilities SubObjectList="Yes">
+			<Income_Stream_Ability Name="H_Starbase_Income_Stream">
+				<Activation_Style>Skirmish_Automatic</Activation_Style>
+				<Initially_Enabled>Yes</Initially_Enabled>
+				<Base_Income_Value>15</Base_Income_Value>
+				<Base_Interval_In_Secs>1</Base_Interval_In_Secs>
+				<Split_Income_With_Allies>Yes</Split_Income_With_Allies>
+				<Split_Favors_Owner>No</Split_Favors_Owner>
+				<Full_Amount_To_Everyone>Yes</Full_Amount_To_Everyone>
+			</Income_Stream_Ability>
+			<Income_Stream_Mod_Ability Name="H_Supply_Dock_Income_Bonus">
+				<Activation_Style>Skirmish_Automatic</Activation_Style>
+				<Initially_Enabled>No</Initially_Enabled>			<!-- This bonus income is controlled by the presence of the Supply Dock hardpoint -->
+				<Income_Multiplier>1.0</Income_Multiplier>
+				<Income_Additive_Value>0</Income_Additive_Value>
+				<Interval_Multiplier>1.0</Interval_Multiplier>
+				<Stacking_Category>0</Stacking_Category>
+				<Target_Stream_Source>Skirmish_Hapan_Star_Base_1</Target_Stream_Source>
+				<Affects_All_Allied_Sources>Yes</Affects_All_Allied_Sources>
+				<Reverse_Application_Logic>No</Reverse_Application_Logic>
+			</Income_Stream_Mod_Ability>
+ 			<Enable_Radar_Ability Name="H_Comm_Array_Enable_Radar">
+ 				<Activation_Style>Skirmish_Automatic</Activation_Style>
+				<Initially_Enabled>Yes</Initially_Enabled>			<!-- This effect is controlled by the presence of the Comm Array hardpoint -->
+ 				<Affects_All_Allies>True</Affects_All_Allies>
+ 			</Enable_Radar_Ability>
+		</Abilities>
+
+		<Last_State_Visible_Under_FOW> True </Last_State_Visible_Under_FOW>
+		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
+		<Visible_On_Radar_When_Fogged>False</Visible_On_Radar_When_Fogged>
+	</StarBase>
+	
+	<SecondaryStructure Name="Skirmish_Merchant_Dock">
+		<Select_Box_Scale>600</Select_Box_Scale>
+		<GUI_Bounds_Scale>0.3</GUI_Bounds_Scale>
+		<Variant_Of_Existing_Type>Orbital_Construction_Pod</Variant_Of_Existing_Type>
+		<Icon_Name>I_BUTTON_SHIPYARD.TGA</Icon_Name>
+		<Multisample_FOW_Check>Yes</Multisample_FOW_Check>
+		<Armor_Type> ArmourS_Capital </Armor_Type>
+		<Shield_Armor_Type>ShieldS_Capital</Shield_Armor_Type>
+	
+		<Behavior>CAPTURE_POINT, DUMMY_ORBITAL_STRUCTURE, SELECTABLE</Behavior>
+		<SpaceBehavior> SPACE_OBSTACLE, POWERED, SHIELDED, HIDE_WHEN_FOGGED, REVEAL, UNIT_AI, ION_STUN_EFFECT</SpaceBehavior>	
+		
+		<Capture_Point_Transition_Time_Seconds>15</Capture_Point_Transition_Time_Seconds>
+		<Capture_Point_Radius>800</Capture_Point_Radius>
+		<Reinforcement_Prevention_Radius> 800 </Reinforcement_Prevention_Radius>
+		<Tactical_Respawn_Time_In_Secs>80</Tactical_Respawn_Time_In_Secs>
+		
+		<Shield_Points>1000</Shield_Points>
+		<Shield_Refresh_Rate>10</Shield_Refresh_Rate>
+		<Energy_Capacity>5000</Energy_Capacity>
+		<Energy_Refresh_Rate>1000</Energy_Refresh_Rate>
+				
+		
+		<Affiliation>Neutral, Rebel, Empire, Zsinj_Empire, EmpireoftheHand, Pentastar, Hapes_Consortium, Greater_Maldrood, Eriadu_Authority, Hutt_Cartels, Corporate_Sector, Warlords, Chiss,  SsiRuuvi_Imperium</Affiliation>
+		<Tactical_Buildable_Objects_Multiplayer> 
+	
+			Empire,
+				TIE_Hunter_Squadron_Buildable,
+				Howlrunner_Squadron_Buildable,
+				A9_Squadron_Buildable,
+				Super_TIE_Buildable,
+				Avenger_Squadron_Buildable,
+				TIE_Droid_Squadron_Buildable,
+				Scimmy_Squadron_Buildable,
+				Skirmish_Combat_Escort_Carrier,
+				Skirmish_IPV1,
+				Skirmish_Nebulon_B_Empire,
+				Skirmish_Eidolon,
+				Skirmish_Munificent,
+				Skirmish_Crimson_Victory,
+				Skirmish_MTC_Support,
+				Skirmish_Generic_Tagge_Battlecruiser,
+				Banjeer_Neutron_MP,
+				181st_Stele_MP,
+				181st_TIE_Defender_Squadron_MP,
+				Scylla_MP,
+				Praji_Secutor_MP,
+				Pellaeon_Firestorm_MP,
+				Brashin_Inquisitor_MP,
+				Chimera_MP,
+				Rogriss_Aurora_MP,
+				
+			Rebel,
+				Z95_Squadron_Buildable,
+				Chirdaki_Squadron_Buildable,
+				Y-Wing_Squadron_Buildable,
+				HWing_Squadron_Buildable,
+				Skirmish_Generic_Nebulon_B,
+				Skirmish_MC30a,
+				Skirmish_Alliance_Assault_Frigate_II,
+				Skirmish_Liberator_Cruiser_Rebel,
+				Skirmish_Defender_Carrier,
+				Skirmish_MC80B,
+				Skirmish_ISD_1_NR,
+				Skirmish_Bulwark_III_NR,
+				Skirmish_BlueDiver,
+				Han_Solo_Team_Space_MP,
+				Salm_B_Wing_Squadron_MP,
+				Iblis_Peregrine_MP,
+				Wedge_Rogue_Squadron_Space_MP,
+				Sovv_Dauntless_MP,
+				Kalback_Justice_MP,
+				Bell_Endurance_MP,
+				Drayson_New_Hope_MP,
+				Ragab_Emancipator_MP,
+				Galactic_Voyager_MP,
+				Nantz_Independence_MP,
+				
+				<!--
+				Rogue_Squadron_Space,
+				Wedge_Rogue_Squadron_Space,
+				Han_Solo_Team_Space_MP,
+				Iblis_Peregrine_MP,
+				Sovv_Dauntless_MP,
+				TalDira_Deathseed,
+				Krefey_Ralroost_MP,
+				Brand_Indomitable_MP,
+				Abaht_Intrepid_MP,
+				Snunb_Resolve_MP,
+				Galactic_Voyager_MP,
+				Nantz_Independence_MP,
+				Massa_Lucrehulk_Carrier_MP,
+				-->
+				
+			EmpireoftheHand,
+				Missile_Boat_Squadron_Buildable,
+				Skirmish_EOTH_Victory_Destroyer_Two,
+				Skirmish_EOTH_Star_Destroyer,
+				Soontir_Fel_Squadron_MP,
+				Parck_Strikefast_MP,
+				Stent_Thrawns_Hand_MP,
+				Niriz_Admonitor_MP,
+				Aralani_Frontier_MP,
+				Siath_Battlehammer_MP,
+				Eviscerator_MP,
+				Grey_Wolf_MP,
+			
+				<!--
+				Soontir_Fel_Squadron,
+				Jag_Fel_Squadron_Team,
+				Chak_Fel_Krsiss_Squadron_Association,
+				Eviscerator_MP,
+				Parck_Strikefast_MP,
+				Grey_Wolf_MP,
+				Niriz_Admonitor_MP,
+				Stent_Thrawns_Hand_MP,
+				Aralani_Frontier_MP,
+				Siath_Battlehammer_MP,
+				-->
+			Pentastar,
+				TIE_Hunter_Squadron_Buildable,
+				Howlrunner_Squadron_Buildable,
+				TIE_Bomber_Squadron_Buildable,
+				TIE_Defender_Squadron_Buildable,
+				TIE_X2_Squadron_Buildable,
+				Advanced_Skipray_Squadron_Buildable,
+				Skirmish_Combat_Escort_Carrier,
+				Skirmish_Adz,
+				Skirmish_Munificent,
+				Skirmish_Crimson_Victory,
+				Skirmish_Generic_Tagge_Battlecruiser,
+				Dynamic_Besk_MP,
+				Otro_Enforcer_MP,
+				Trelix_Indenture_MP,
+				Slosin_Ironhand_MP,
+				Grant_Oriflamme_MP,
+				Trico_Star_Destroyer_MP,
+				Coross_Vengeance_II_MP,
+				Dekeet_Intractable_MP,
+				
+				<!--
+				Trelix_Indenture_MP,
+				Otro_Enforcer_MP,
+				Grant_Oriflamme_MP,
+				Dynamic_Besk_MP,
+				Dekeet_Intractable_MP,
+				-->
+			
+			Greater_Maldrood,
+				TIE_Bomber_Squadron_Buildable,
+				TIE_gt_Squadron_Buildable,
+				TIE_Hunter_Squadron_Buildable,
+				Skirmish_Combat_Escort_Carrier,
+				Skirmish_Adz,
+				Skirmish_Munificent,
+				Skirmish_Generic_Tagge_Battlecruiser,
+				Neomen_Ion_Storm_MP,
+				Nervi_Blood_Ambition_MP,
+				Riizolo_Neutron_MP,
+				13X_Teradoc_MP,
+				13X_Pellaeon_MP,
+				Lancet_Kosh_MP,
+				Tavira_Invidious_MP,
+				Syn_Silooth_MP,
+				Trier_Secutor_MP,
+				Therbon_Allegiance_MP,
+
+				<!--
+				Boba_Fett_Team_Space_MP,
+				Dengar_Team_Space_MP,
+				Neomen_Ion_Storm_MP,
+				13X_Teradoc_MP,
+				13X_Pellaeon_MP,
+				Lancet_Kosh_MP,
+				Tavira_Invidious_MP,
+				Syn_Silooth_MP,
+				Trier_Secutor_MP,
+				Therbon_Allegiance_MP,
+				Nervi_Blood_Ambition_MP,
+				-->
+				
+			Eriadu_Authority,
+				TIE_Hunter_Squadron_Buildable,
+				Shielded_TIE_Squadron_Buildable,
+				Shielded_Interceptor_Squadron_Buildable,
+				Skirmish_Combat_Escort_Carrier,
+				Skirmish_Adz,
+				Skirmish_Munificent,
+				Skirmish_Crimson_Victory,
+				Skirmish_Generic_Tagge_Battlecruiser,
+				Prittick_Tyrant_MP,
+				Kabalian_Star_Destroyer_MP,
+				Retribution_Star_Destroyer_MP,
+				Thalassa_MP,
+				<!--
+				Bossk_Team_Space_MP,
+				Prittick_Tyrant_MP,
+				Kabalian_Star_Destroyer_MP,
+				Retribution_Star_Destroyer_MP,
+				Thalassa_MP,
+				-->
+				
+			Zsinj_Empire,
+				TIE_Fighter_Squadron_Buildable,
+				TIE_Bomber_Squadron_Buildable,
+				TIE_Hunter_Squadron_Buildable,
+				Shielded_Raptor_Squadron_Buildable,
+				Skirmish_Interceptor_Frigate,
+				Skirmish_Combat_Escort_Carrier,
+				Skirmish_Adz,
+				Skirmish_Corona_Zsinj,
+				Skirmish_Action_VI_Support,
+				Skirmish_Munificent,
+				Skirmish_Super_Transport_XI,
+				Skirmish_Space_ARC_Cruiser,
+				Skirmish_Crimson_Victory,
+				Skirmish_Generic_Tagge_Battlecruiser,
+				Banjeer_MP,
+				Joshi_Provocateur_MP,
+				181_Cowall_Fighter_MP,
+				Night_Caller_MP,
+				Demolisher_MP,
+				Nabyl_Hawkbat_MP,
+				Implacable_Star_Destroyer_MP,
+				
+				
+				
+				<!--
+				181st_Cowall,
+				Night_Caller_MP,
+				Banjeer_MP,
+				Coorshas_Cross_MP,
+				Demolisher_MP,
+				Renthals_Vigilance_MP,
+				Safonnes_Sword_MP,
+				Xufush_FaLohSui_MP,
+				Dane_Sweet_Victory_MP,
+				Ssurussk_Nebula_Raiders,
+				Rneeklii_Sumpntodo_MP,
+				Hilma_Bloodthirsty_MP,
+				Implacable_Star_Destroyer_MP,
+				Sait_Blackguard_MP,
+				-->
+				
+			Corporate_Sector,
+			
+				IRD_Squadron_Buildable,
+				Cloakshape_New_Squadron_Buildable,
+				BTLB_Y-Wing_Squadron_Buildable,
+				Z95_Squadron_Buildable,
+				Generic_Z95_Bomber_Squadron_Buildable,
+				Drexl_Squadron_Buildable,
+				Skirmish_Vigil,
+				Skirmish_MC30c,
+				Skirmish_Munificent,
+				Skirmish_Neutron_Star_CSA,
+				Skirmish_Captor,
+				Skirmish_Victory_Destroyer_Two_CSA,
+				Skirmish_Venator_CSA,
+				Skirmish_Providence,
+				Skirmish_Bulwark_II,
+				Skirmish_Keldabe_CSA,
+				Skirmish_Generic_Tagge_Battlecruiser_CSA,
+				Brollyx_Dauntless_MP,
+				Sloane_Enforce_MP,
+				Phineas_VSD_MP,
+				Krin_Invincible_MP,
+				Weplinn_ISD_MP,
+				Grumby_Notropis_MP,
+				Siin_Suub_Proclamation_MP,
+				
+				
+			Hapes_Consortium,
+				Lovett_Riverlord_Space_MP,
+				Gray_Kendall_Space_MP,
+				Isolder_Song_of_War_Space_MP,
+				Chelik_Dangerous_Dance_Space_MP,
+				Alyssia_Starsong_Space_MP,
+				Astarta_Siren_Star_Space_MP,
+				
+		</Tactical_Buildable_Objects_Multiplayer>
+	
+		<Collidable_By_Projectile_Living> Yes </Collidable_By_Projectile_Living>
+		<Space_Layer> StaticObject </Space_Layer>
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Radar_Icon_Name>mini_map_structure.tga</Radar_Icon_Name>
+		<Radar_Icon_Size>0.08  0.08</Radar_Icon_Size>
+
+		<SFXEvent_Select>Structure_Light_Factory_Select_SFX</SFXEvent_Select>
+		<SFXEvent_Ambient_Loop>Unit_Starbase_Engine_Loop</SFXEvent_Ambient_Loop>
+		
+		<Death_Explosions>Huge_Explosion_Space</Death_Explosions>
+		<Remove_Upon_Death>true</Remove_Upon_Death>
+		
+        <Ownership_Sticks>Yes</Ownership_Sticks>
+		<Scale_Factor> 1.75 </Scale_Factor>
+		<Base_Level_Available> 0 </Base_Level_Available>
+		<Tactical_Health> 2000 </Tactical_Health>
+		<Required_Ground_Base_Level> 0 </Required_Ground_Base_Level>
+		<Space_FOW_Reveal_Range>850.0</Space_FOW_Reveal_Range>
+		<CategoryMask> Structure </CategoryMask>
+        <Is_Community_Property>Yes</Is_Community_Property>
+		<Build_Initially_Locked>Yes</Build_Initially_Locked>
+		<Has_Space_Evaluator>True</Has_Space_Evaluator>
+		
+		<Text_ID> TEXT_STRUCTURE_MERCHANT_SPACE_DOCK </Text_ID>
+		<MP_Encyclopedia_Text> MP_TEXT_ENCYCLOPEDIA_MERCHANT_SPACE_DOCK_00 </MP_Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+		
+		<Last_State_Visible_Under_FOW> True </Last_State_Visible_Under_FOW>
+		<Initial_State_Visible_Under_FOW>Yes</Initial_State_Visible_Under_FOW>
+	</SecondaryStructure>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	</Skirmish_starbases>

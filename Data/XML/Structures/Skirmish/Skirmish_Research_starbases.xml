@@ -1,0 +1,409 @@
+<?xml version="1.0"?>
+<Skirmish_starbases>
+
+	<StarBase Name="Skirmish_Remnant_Space_Research_Station_1">
+		<Variant_Of_Existing_Type>Generic_Skirmish_Space_Research_Station</Variant_Of_Existing_Type>
+		<Is_Community_Property>Yes</Is_Community_Property>
+		<Affiliation>Empire</Affiliation>
+
+		<SpaceBehavior> SPACE_OBSTACLE, POWERED, SHIELDED, HIDE_WHEN_FOGGED, REVEAL, UNIT_AI, SPAWN_SQUADRON, ION_STUN_EFFECT</SpaceBehavior>
+		<Tactical_Buildable_Objects_Multiplayer> 
+			Empire,
+				Space_Starbase_Increased_Supplies_L1_Upgrade,
+				Space_Starbase_Increased_Supplies_L2_Upgrade,
+				Space_Starbase_Increased_Supplies_L3_Upgrade,
+				Space_Starbase_Increased_Supplies_L4_Upgrade,
+				Space_Starbase_Increased_Supplies_L5_Upgrade,
+				Space_Asteroid_Mine_Increased_Supplies_L1_Upgrade,
+				Space_Asteroid_Mine_Increased_Supplies_L2_Upgrade,
+				Space_Asteroid_Mine_Increased_Supplies_L3_Upgrade,
+				Space_Asteroid_Mine_Increased_Supplies_L4_Upgrade,
+				Space_Asteroid_Mine_Increased_Supplies_L5_Upgrade,
+				IR_Superweapon_Desires,
+				IR_Pondering_Giant,
+				IR_Super_Weapon_Firing,
+				Defense_Station_Level_One,
+				Defense_Station_Level_Two,
+				Defense_Station_Level_Three,
+			
+				
+		</Tactical_Buildable_Objects_Multiplayer>
+		
+	
+		<!-- Data to prevent this from being buildable in galactic mode -->
+		<Build_Cost_Credits>0</Build_Cost_Credits>
+		<Build_Time_Seconds>0</Build_Time_Seconds>
+		<Build_Tab_Space_Station>No</Build_Tab_Space_Station>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+		
+		<Tactical_Respawn_Time_In_Secs>60</Tactical_Respawn_Time_In_Secs>
+		<Visible_To_Enemies_When_Empty>True</Visible_To_Enemies_When_Empty>
+		<Last_State_Visible_Under_FOW> True </Last_State_Visible_Under_FOW>
+		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
+		<Visible_On_Radar_When_Fogged>False</Visible_On_Radar_When_Fogged>
+		<Victory_Relevant>No</Victory_Relevant>
+	</StarBase>
+	
+	<StarBase Name="Skirmish_NR_Space_Research_Station_1">
+		<Variant_Of_Existing_Type>Generic_Skirmish_Space_Research_Station</Variant_Of_Existing_Type>
+		<Is_Community_Property>Yes</Is_Community_Property>
+		<Affiliation>Rebel</Affiliation>
+
+		<SpaceBehavior> SPACE_OBSTACLE, POWERED, SHIELDED, HIDE_WHEN_FOGGED, REVEAL, UNIT_AI, SPAWN_SQUADRON, ION_STUN_EFFECT</SpaceBehavior>
+		<Tactical_Buildable_Objects_Multiplayer> 
+			Rebel,
+				Space_Starbase_Increased_Supplies_L1_Upgrade,
+				Space_Starbase_Increased_Supplies_L2_Upgrade,
+				Space_Starbase_Increased_Supplies_L3_Upgrade,
+				Space_Starbase_Increased_Supplies_L4_Upgrade,
+				Space_Starbase_Increased_Supplies_L5_Upgrade,
+				Space_Asteroid_Mine_Increased_Supplies_L1_Upgrade,
+				Space_Asteroid_Mine_Increased_Supplies_L2_Upgrade,
+				Space_Asteroid_Mine_Increased_Supplies_L3_Upgrade,
+				Space_Asteroid_Mine_Increased_Supplies_L4_Upgrade,
+				Space_Asteroid_Mine_Increased_Supplies_L5_Upgrade,
+				NR_Mon_Cal_Shielding,
+				NR_Fighter_Supremacy,
+				NR_Canon_Option,
+				Skirmish_MC75,
+				Skirmish_Starhawk_MK1,
+				Defense_Station_Level_One,
+				Defense_Station_Level_Two,
+				Defense_Station_Level_Three,
+			
+				
+		</Tactical_Buildable_Objects_Multiplayer>
+		
+	
+		<!-- Data to prevent this from being buildable in galactic mode -->
+		<Build_Cost_Credits>0</Build_Cost_Credits>
+		<Build_Time_Seconds>0</Build_Time_Seconds>
+		<Build_Tab_Space_Station>No</Build_Tab_Space_Station>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+		
+		
+		<Tactical_Respawn_Time_In_Secs>60</Tactical_Respawn_Time_In_Secs>
+		<Visible_To_Enemies_When_Empty>True</Visible_To_Enemies_When_Empty>
+		<Last_State_Visible_Under_FOW> True </Last_State_Visible_Under_FOW>
+		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
+		<Visible_On_Radar_When_Fogged>False</Visible_On_Radar_When_Fogged>
+		<Victory_Relevant>No</Victory_Relevant>
+	</StarBase>
+
+	<StarBase Name="Skirmish_Zsinj_Space_Research_Station_1">
+		<Variant_Of_Existing_Type>Generic_Skirmish_Space_Research_Station</Variant_Of_Existing_Type>
+		<Is_Community_Property>Yes</Is_Community_Property>
+		<Affiliation>Zsinj_Empire</Affiliation>
+
+		<SpaceBehavior> SPACE_OBSTACLE, POWERED, SHIELDED, HIDE_WHEN_FOGGED, REVEAL, UNIT_AI, SPAWN_SQUADRON, ION_STUN_EFFECT</SpaceBehavior>
+		<Tactical_Buildable_Objects_Multiplayer> 
+			Zsinj_Empire,
+				Space_Starbase_Increased_Supplies_L1_Upgrade,
+				Space_Starbase_Increased_Supplies_L2_Upgrade,
+				Space_Starbase_Increased_Supplies_L3_Upgrade,
+				Space_Starbase_Increased_Supplies_L4_Upgrade,
+				Space_Starbase_Increased_Supplies_L5_Upgrade,
+				Space_Asteroid_Mine_Increased_Supplies_L1_Upgrade,
+				Space_Asteroid_Mine_Increased_Supplies_L2_Upgrade,
+				Space_Asteroid_Mine_Increased_Supplies_L3_Upgrade,
+				Space_Asteroid_Mine_Increased_Supplies_L4_Upgrade,
+				Space_Asteroid_Mine_Increased_Supplies_L5_Upgrade,
+				Zsinj_Friends_In_Low_Places,
+				Zsinj_Warlordism,
+				Defense_Station_Level_One,
+				Defense_Station_Level_Two,
+				Defense_Station_Level_Three,
+				
+			
+				
+		</Tactical_Buildable_Objects_Multiplayer>
+		
+	
+		<!-- Data to prevent this from being buildable in galactic mode -->
+		<Build_Cost_Credits>0</Build_Cost_Credits>
+		<Build_Time_Seconds>0</Build_Time_Seconds>
+		<Build_Tab_Space_Station>No</Build_Tab_Space_Station>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+		
+		
+		<Tactical_Respawn_Time_In_Secs>60</Tactical_Respawn_Time_In_Secs>
+		<Visible_To_Enemies_When_Empty>True</Visible_To_Enemies_When_Empty>
+		<Last_State_Visible_Under_FOW> True </Last_State_Visible_Under_FOW>
+		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
+		<Visible_On_Radar_When_Fogged>False</Visible_On_Radar_When_Fogged>
+		<Victory_Relevant>No</Victory_Relevant>
+	</StarBase>
+	
+
+	<StarBase Name="Skirmish_CSA_Space_Research_Station_1">
+		<Variant_Of_Existing_Type>Generic_Skirmish_Space_Research_Station</Variant_Of_Existing_Type>
+		<Is_Community_Property>Yes</Is_Community_Property>
+		<Affiliation>Corporate_Sector</Affiliation>
+
+		<SpaceBehavior> SPACE_OBSTACLE, POWERED, SHIELDED, HIDE_WHEN_FOGGED, REVEAL, UNIT_AI, SPAWN_SQUADRON, ION_STUN_EFFECT</SpaceBehavior>
+		<Tactical_Buildable_Objects_Multiplayer> 
+			Corporate_Sector,
+				Space_Starbase_Increased_Supplies_L1_Upgrade,
+				Space_Starbase_Increased_Supplies_L2_Upgrade,
+				Space_Starbase_Increased_Supplies_L3_Upgrade,
+				Space_Starbase_Increased_Supplies_L4_Upgrade,
+				Space_Starbase_Increased_Supplies_L5_Upgrade,
+				Space_Asteroid_Mine_Increased_Supplies_L1_Upgrade,
+				Space_Asteroid_Mine_Increased_Supplies_L2_Upgrade,
+				Space_Asteroid_Mine_Increased_Supplies_L3_Upgrade,
+				Space_Asteroid_Mine_Increased_Supplies_L4_Upgrade,
+				Space_Asteroid_Mine_Increased_Supplies_L5_Upgrade,
+				CSA_Corporate_Focus,
+				CSA_Cutting_Corners,
+				Defense_Station_Level_One,
+				Defense_Station_Level_Two,
+				Defense_Station_Level_Three,
+			
+				
+		</Tactical_Buildable_Objects_Multiplayer>
+		
+	
+		<!-- Data to prevent this from being buildable in galactic mode -->
+		<Build_Cost_Credits>0</Build_Cost_Credits>
+		<Build_Time_Seconds>0</Build_Time_Seconds>
+		<Build_Tab_Space_Station>No</Build_Tab_Space_Station>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+		
+		
+		<Tactical_Respawn_Time_In_Secs>60</Tactical_Respawn_Time_In_Secs>
+		<Visible_To_Enemies_When_Empty>True</Visible_To_Enemies_When_Empty>
+		<Last_State_Visible_Under_FOW> True </Last_State_Visible_Under_FOW>
+		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
+		<Visible_On_Radar_When_Fogged>False</Visible_On_Radar_When_Fogged>
+		<Victory_Relevant>No</Victory_Relevant>
+	</StarBase>
+	
+
+	<StarBase Name="Skirmish_Pentastar_Space_Research_Station_1">
+		<Variant_Of_Existing_Type>Generic_Skirmish_Space_Research_Station</Variant_Of_Existing_Type>
+		<Is_Community_Property>Yes</Is_Community_Property>
+		<Affiliation>Pentastar</Affiliation>
+
+		<SpaceBehavior> SPACE_OBSTACLE, POWERED, SHIELDED, HIDE_WHEN_FOGGED, REVEAL, UNIT_AI, SPAWN_SQUADRON, ION_STUN_EFFECT</SpaceBehavior>
+		<Tactical_Buildable_Objects_Multiplayer> 
+			Pentastar,
+				Space_Starbase_Increased_Supplies_L1_Upgrade,
+				Space_Starbase_Increased_Supplies_L2_Upgrade,
+				Space_Starbase_Increased_Supplies_L3_Upgrade,
+				Space_Starbase_Increased_Supplies_L4_Upgrade,
+				Space_Starbase_Increased_Supplies_L5_Upgrade,
+				Space_Asteroid_Mine_Increased_Supplies_L1_Upgrade,
+				Space_Asteroid_Mine_Increased_Supplies_L2_Upgrade,
+				Space_Asteroid_Mine_Increased_Supplies_L3_Upgrade,
+				Space_Asteroid_Mine_Increased_Supplies_L4_Upgrade,
+				Space_Asteroid_Mine_Increased_Supplies_L5_Upgrade,
+				PA_Corporate_Allies,
+				PA_Isolationism,
+				Defense_Station_Level_One,
+				Defense_Station_Level_Two,
+				Defense_Station_Level_Three,
+			
+				
+		</Tactical_Buildable_Objects_Multiplayer>
+		
+	
+		<!-- Data to prevent this from being buildable in galactic mode -->
+		<Build_Cost_Credits>0</Build_Cost_Credits>
+		<Build_Time_Seconds>0</Build_Time_Seconds>
+		<Build_Tab_Space_Station>No</Build_Tab_Space_Station>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+		
+		
+		<Tactical_Respawn_Time_In_Secs>60</Tactical_Respawn_Time_In_Secs>
+		<Visible_To_Enemies_When_Empty>True</Visible_To_Enemies_When_Empty>
+		<Last_State_Visible_Under_FOW> True </Last_State_Visible_Under_FOW>
+		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
+		<Visible_On_Radar_When_Fogged>False</Visible_On_Radar_When_Fogged>
+		<Victory_Relevant>No</Victory_Relevant>
+	</StarBase>
+	
+
+	<StarBase Name="Skirmish_EotH_Space_Research_Station_1">
+		<Variant_Of_Existing_Type>Generic_Skirmish_Space_Research_Station</Variant_Of_Existing_Type>
+		<Is_Community_Property>Yes</Is_Community_Property>
+		<Affiliation>EmpireoftheHand</Affiliation>
+
+		<SpaceBehavior> SPACE_OBSTACLE, POWERED, SHIELDED, HIDE_WHEN_FOGGED, REVEAL, UNIT_AI, SPAWN_SQUADRON, ION_STUN_EFFECT</SpaceBehavior>
+		<Tactical_Buildable_Objects_Multiplayer> 
+			EmpireoftheHand,
+				Space_Starbase_Increased_Supplies_L1_Upgrade,
+				Space_Starbase_Increased_Supplies_L2_Upgrade,
+				Space_Starbase_Increased_Supplies_L3_Upgrade,
+				Space_Starbase_Increased_Supplies_L4_Upgrade,
+				Space_Starbase_Increased_Supplies_L5_Upgrade,
+				Space_Asteroid_Mine_Increased_Supplies_L1_Upgrade,
+				Space_Asteroid_Mine_Increased_Supplies_L2_Upgrade,
+				Space_Asteroid_Mine_Increased_Supplies_L3_Upgrade,
+				Space_Asteroid_Mine_Increased_Supplies_L4_Upgrade,
+				Space_Asteroid_Mine_Increased_Supplies_L5_Upgrade,
+				EOTH_Skirmish_Tactics,
+				EOTH_Enhanced_Mobility,
+				Defense_Station_Level_One,
+				Defense_Station_Level_Two,
+				Defense_Station_Level_Three,
+			
+				
+		</Tactical_Buildable_Objects_Multiplayer>
+		
+	
+		<!-- Data to prevent this from being buildable in galactic mode -->
+		<Build_Cost_Credits>0</Build_Cost_Credits>
+		<Build_Time_Seconds>0</Build_Time_Seconds>
+		<Build_Tab_Space_Station>No</Build_Tab_Space_Station>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+		
+		
+		<Tactical_Respawn_Time_In_Secs>60</Tactical_Respawn_Time_In_Secs>
+		<Visible_To_Enemies_When_Empty>True</Visible_To_Enemies_When_Empty>
+		<Last_State_Visible_Under_FOW> True </Last_State_Visible_Under_FOW>
+		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
+		<Visible_On_Radar_When_Fogged>False</Visible_On_Radar_When_Fogged>
+		<Victory_Relevant>No</Victory_Relevant>
+	</StarBase>
+	
+
+	<StarBase Name="Skirmish_Delvardus_Space_Research_Station_1">
+		<Variant_Of_Existing_Type>Generic_Skirmish_Space_Research_Station</Variant_Of_Existing_Type>
+		<Is_Community_Property>Yes</Is_Community_Property>
+		<Affiliation>Eriadu_Authority</Affiliation>
+
+		<SpaceBehavior> SPACE_OBSTACLE, POWERED, SHIELDED, HIDE_WHEN_FOGGED, REVEAL, UNIT_AI, SPAWN_SQUADRON, ION_STUN_EFFECT</SpaceBehavior>
+		<Tactical_Buildable_Objects_Multiplayer> 
+			Eriadu_Authority,
+				Space_Starbase_Increased_Supplies_L1_Upgrade,
+				Space_Starbase_Increased_Supplies_L2_Upgrade,
+				Space_Starbase_Increased_Supplies_L3_Upgrade,
+				Space_Starbase_Increased_Supplies_L4_Upgrade,
+				Space_Starbase_Increased_Supplies_L5_Upgrade,
+				Space_Asteroid_Mine_Increased_Supplies_L1_Upgrade,
+				Space_Asteroid_Mine_Increased_Supplies_L2_Upgrade,
+				Space_Asteroid_Mine_Increased_Supplies_L3_Upgrade,
+				Space_Asteroid_Mine_Increased_Supplies_L4_Upgrade,
+				Space_Asteroid_Mine_Increased_Supplies_L5_Upgrade,
+				Eriadu_Experimental_focus,
+				Eriadu_Reckless,
+				Defense_Station_Level_One,
+				Defense_Station_Level_Two,
+				Defense_Station_Level_Three,
+			
+				
+		</Tactical_Buildable_Objects_Multiplayer>
+		
+	
+		<!-- Data to prevent this from being buildable in galactic mode -->
+		<Build_Cost_Credits>0</Build_Cost_Credits>
+		<Build_Time_Seconds>0</Build_Time_Seconds>
+		<Build_Tab_Space_Station>No</Build_Tab_Space_Station>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+		
+		
+		<Tactical_Respawn_Time_In_Secs>60</Tactical_Respawn_Time_In_Secs>
+		<Visible_To_Enemies_When_Empty>True</Visible_To_Enemies_When_Empty>
+		<Last_State_Visible_Under_FOW> True </Last_State_Visible_Under_FOW>
+		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
+		<Visible_On_Radar_When_Fogged>False</Visible_On_Radar_When_Fogged>
+		<Victory_Relevant>No</Victory_Relevant>
+	</StarBase>
+	
+
+	<StarBase Name="Skirmish_Teradoc_Space_Research_Station_1">
+		<Variant_Of_Existing_Type>Generic_Skirmish_Space_Research_Station</Variant_Of_Existing_Type>
+		<Is_Community_Property>Yes</Is_Community_Property>
+		<Affiliation>Greater_Maldrood</Affiliation>
+
+		<SpaceBehavior> SPACE_OBSTACLE, POWERED, SHIELDED, HIDE_WHEN_FOGGED, REVEAL, UNIT_AI, SPAWN_SQUADRON, ION_STUN_EFFECT</SpaceBehavior>
+		<Tactical_Buildable_Objects_Multiplayer> 
+			Greater_Maldrood,
+				Space_Starbase_Increased_Supplies_L1_Upgrade,
+				Space_Starbase_Increased_Supplies_L2_Upgrade,
+				Space_Starbase_Increased_Supplies_L3_Upgrade,
+				Space_Starbase_Increased_Supplies_L4_Upgrade,
+				Space_Starbase_Increased_Supplies_L5_Upgrade,
+				Space_Asteroid_Mine_Increased_Supplies_L1_Upgrade,
+				Space_Asteroid_Mine_Increased_Supplies_L2_Upgrade,
+				Space_Asteroid_Mine_Increased_Supplies_L3_Upgrade,
+				Space_Asteroid_Mine_Increased_Supplies_L4_Upgrade,
+				Space_Asteroid_Mine_Increased_Supplies_L5_Upgrade,
+				Malrood_The_Crimson_Fleet,
+				Malrood_Constant_Raids,
+				Defense_Station_Level_One,
+				Defense_Station_Level_Two,
+				Defense_Station_Level_Three,
+			
+				
+		</Tactical_Buildable_Objects_Multiplayer>
+		
+	
+		<!-- Data to prevent this from being buildable in galactic mode -->
+		<Build_Cost_Credits>0</Build_Cost_Credits>
+		<Build_Time_Seconds>0</Build_Time_Seconds>
+		<Build_Tab_Space_Station>No</Build_Tab_Space_Station>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+		
+		
+		<Tactical_Respawn_Time_In_Secs>60</Tactical_Respawn_Time_In_Secs>
+		<Visible_To_Enemies_When_Empty>True</Visible_To_Enemies_When_Empty>
+		<Last_State_Visible_Under_FOW> True </Last_State_Visible_Under_FOW>
+		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
+		<Visible_On_Radar_When_Fogged>False</Visible_On_Radar_When_Fogged>
+		<Victory_Relevant>No</Victory_Relevant>
+	</StarBase>
+	
+	<StarBase Name="Skirmish_Hapan_Space_Research_Station_1">
+		<Variant_Of_Existing_Type>Generic_Skirmish_Space_Research_Station</Variant_Of_Existing_Type>
+		<Is_Community_Property>Yes</Is_Community_Property>
+		<Affiliation>Hapes_Consortium </Affiliation>
+
+		<SpaceBehavior> SPACE_OBSTACLE, POWERED, SHIELDED, HIDE_WHEN_FOGGED, REVEAL, UNIT_AI, SPAWN_SQUADRON, ION_STUN_EFFECT</SpaceBehavior>
+		<Tactical_Buildable_Objects_Multiplayer> 
+			Hapes_Consortium,
+				Space_Starbase_Increased_Supplies_L1_Upgrade,
+				Space_Starbase_Increased_Supplies_L2_Upgrade,
+				Space_Starbase_Increased_Supplies_L3_Upgrade,
+				Space_Starbase_Increased_Supplies_L4_Upgrade,
+				Space_Starbase_Increased_Supplies_L5_Upgrade,
+				Space_Asteroid_Mine_Increased_Supplies_L1_Upgrade,
+				Space_Asteroid_Mine_Increased_Supplies_L2_Upgrade,
+				Space_Asteroid_Mine_Increased_Supplies_L3_Upgrade,
+				Space_Asteroid_Mine_Increased_Supplies_L4_Upgrade,
+				Space_Asteroid_Mine_Increased_Supplies_L5_Upgrade,
+				Hapes_Aggressive_Isolationism,
+				Hapes_NR_Tech_Exchange,
+				Defense_Station_Level_One,
+				Defense_Station_Level_Two,
+				Defense_Station_Level_Three,
+			
+				
+		</Tactical_Buildable_Objects_Multiplayer>
+		
+	
+		<!-- Data to prevent this from being buildable in galactic mode -->
+		<Build_Cost_Credits>0</Build_Cost_Credits>
+		<Build_Time_Seconds>0</Build_Time_Seconds>
+		<Build_Tab_Space_Station>No</Build_Tab_Space_Station>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+		
+		
+		<Tactical_Respawn_Time_In_Secs>60</Tactical_Respawn_Time_In_Secs>
+		<Visible_To_Enemies_When_Empty>True</Visible_To_Enemies_When_Empty>
+		<Last_State_Visible_Under_FOW> True </Last_State_Visible_Under_FOW>
+		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
+		<Visible_On_Radar_When_Fogged>False</Visible_On_Radar_When_Fogged>
+		<Victory_Relevant>No</Victory_Relevant>
+	</StarBase>
+
+	</Skirmish_starbases>

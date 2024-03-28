@@ -1,0 +1,631 @@
+<?xml version="1.0"?>
+<Skirmish_starbases>
+	
+	<StarBase Name="Skirmish_NR_Flagship_1">
+		<Variant_Of_Existing_Type>Generic_Skirmish_Star_Base_Flagship</Variant_Of_Existing_Type>
+		<Is_Community_Property>Yes</Is_Community_Property>
+		<Affiliation>Rebel</Affiliation>
+		
+		<Prev_Level_Base></Prev_Level_Base>
+        <Next_Level_Base>Skirmish_NR_Flagship_2</Next_Level_Base>
+		
+		<Mass>0.999</Mass>
+		<Max_Speed>0</Max_Speed>
+		<Max_Thrust>0</Max_Thrust>
+		<OverrideAcceleration> 0 </OverrideAcceleration>
+		<OverrideDeceleration> 0 </OverrideDeceleration>
+		<Max_Rate_Of_Turn>0</Max_Rate_Of_Turn>
+		<Stopped_Rate_Of_Turn>0</Stopped_Rate_Of_Turn>
+		<Min_Speed_Fraction_For_Turn>0.0</Min_Speed_Fraction_For_Turn>
+		<Max_Rate_Of_Roll>0</Max_Rate_Of_Roll>
+		<Bank_Turn_Angle>0</Bank_Turn_Angle>
+		
+		
+		<Shield_Points>6000</Shield_Points>
+		<Tactical_Health>10500</Tactical_Health>
+		<AI_Combat_Power>4025</AI_Combat_Power>
+
+				<Text_ID>TEXT_UNIT_EXECUTOR_FLAGSHIP_LEVEL_ONE</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_SSD_STARBASE</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_EXECUTOR
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_EXECUTOR_HULL_FS_1
+		TEXT_TOOLTIP_EXECUTOR_SHIELD_FS_1
+		TEXT_TOOLTIP_EXECUTOR_MOVE_FS_1
+		TEXT_TOOLTIP_EXECUTOR_WEAP4
+		</Encyclopedia_Text>
+		
+		<Dense_FOW_Reveal_Range_Multiplier>0.2</Dense_FOW_Reveal_Range_Multiplier>
+		<Space_FOW_Reveal_Range>70000.0</Space_FOW_Reveal_Range>
+	<Reinforcement_Prevention_Radius>4000 </Reinforcement_Prevention_Radius>
+		
+		<Targeting_Max_Attack_Distance>2000.0</Targeting_Max_Attack_Distance>
+		
+		
+		<!-- Tactical Production Options -->
+		<SpaceBehavior> ABILITY_COUNTDOWN, SIMPLE_SPACE_LOCOMOTOR, SPACE_OBSTACLE, POWERED, SHIELDED, HIDE_WHEN_FOGGED, REVEAL, TARGETING, UNIT_AI, DAMAGE_TRACKING, ASTEROID_FIELD_DAMAGE, SPAWN_SQUADRON, ION_STUN_EFFECT</SpaceBehavior>
+		<Tactical_Buildable_Objects_Multiplayer> 
+			REBEL,
+			Flagship_NR_AAA,
+			Flagship_NR_AAB,
+			Flagship_NR_AAC,
+			Flagship_NR_AAD,
+			Flagship_NR_AAE,
+			Flagship_NR_AAF,
+			Flagship_NR_AAG,
+			Flagship_Level_Two_Starbase_Upgrade,
+
+		</Tactical_Buildable_Objects_Multiplayer>
+		<Visible_To_Enemies_When_Empty>True</Visible_To_Enemies_When_Empty>
+	
+		<!-- Data to prevent this from being buildable in galactic mode -->
+		<Build_Cost_Credits>0</Build_Cost_Credits>
+		<Build_Time_Seconds>0</Build_Time_Seconds>
+		<Build_Tab_Space_Station>No</Build_Tab_Space_Station>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+		
+		<HardPoints>
+			HP_Executor_Laser_01, HP_Executor_Laser_02, HP_Executor_Laser_03, HP_Executor_Laser_04, HP_Executor_Laser_05, HP_Executor_Laser_06, HP_Executor_Laser_07, HP_Executor_Laser_08, HP_Executor_Laser_09, HP_Executor_Laser_10,	HP_Executor_Laser_11, HP_Executor_Laser_12, HP_Executor_Laser_13, HP_Executor_Laser_14, HP_Executor_Laser_15, HP_Executor_Laser_16, HP_Executor_Laser_17, HP_Executor_Laser_18, HP_Executor_Laser_19, HP_Executor_Laser_20, 
+			HP_SSD_Hangar,
+			HP_Executor_Engines_01_Dummy, HP_Executor_Engines_02_Dummy, HP_Executor_Engines_03_Dummy, HP_Executor_Engines_04_Dummy, HP_Executor_Engines_05_Dummy,
+			HP_Executor_Turbo_01_Dummy, HP_Executor_Turbo_02_Dummy, HP_Executor_Turbo_03_Dummy, HP_Executor_Turbo_04_Dummy, HP_Executor_Turbo_05_Dummy, HP_Executor_Turbo_06_Dummy, HP_Executor_Turbo_07_Dummy, HP_Executor_Turbo_08_Dummy, HP_Executor_Turbo_09_Dummy, HP_Executor_Turbo_10_Dummy, HP_Executor_Turbo_11_Dummy, HP_Executor_Turbo_12_Dummy, HP_Executor_Turbo_13_Dummy, HP_Executor_Turbo_14_Dummy, HP_Executor_Turbo_15_Dummy, HP_Executor_Turbo_16_Dummy, HP_Executor_Turbo_17_Dummy, HP_Executor_Turbo_18_Dummy, HP_Executor_Turbo_19_Dummy, HP_Executor_Turbo_20_Dummy, HP_Executor_Turbo_21_Dummy, HP_Executor_Turbo_22_Dummy, HP_Executor_Turbo_23_Dummy, HP_Executor_Turbo_24_Dummy, HP_Executor_Turbo_25_Dummy, HP_Executor_Turbo_26_Dummy, HP_Executor_Turbo_27_Dummy, HP_Executor_Turbo_28_Dummy, HP_Executor_Turbo_29_Dummy, HP_Executor_Turbo_30_Dummy, HP_Executor_Turbo_31_Dummy, HP_Executor_Turbo_32_Dummy, HP_Executor_Turbo_33_Dummy, HP_Executor_Turbo_34_Dummy, HP_Executor_Turbo_35_Dummy, HP_Executor_Turbo_36_Dummy, HP_Executor_Turbo_37_Dummy, HP_Executor_Turbo_38_Dummy, HP_Executor_Turbo_39_Dummy, HP_Executor_Turbo_40_Dummy, HP_Executor_Turbo_41_Dummy, HP_Executor_Turbo_42_Dummy, HP_Executor_Turbo_43_Dummy, HP_Executor_Turbo_44_Dummy, HP_Executor_Turbo_45_Dummy, HP_Executor_Turbo_46_Dummy, HP_Executor_Turbo_47_Dummy, HP_Executor_Turbo_48_Dummy, HP_Executor_Turbo_49_Dummy, HP_Executor_Turbo_50_Dummy, 
+			HP_Executor_Heavy_01_Dummy, HP_Executor_Heavy_02_Dummy, HP_Executor_Heavy_03_Dummy, HP_Executor_Heavy_04_Dummy, HP_Executor_Heavy_05_Dummy, HP_Executor_Heavy_06_Dummy, HP_Executor_Heavy_07_Dummy, HP_Executor_Heavy_08_Dummy, HP_Executor_Heavy_09_Dummy, HP_Executor_Heavy_10_Dummy, HP_Executor_Heavy_11_Dummy, HP_Executor_Heavy_12_Dummy, HP_Executor_Heavy_13_Dummy, HP_Executor_Heavy_14_Dummy, HP_Executor_Heavy_15_Dummy, HP_Executor_Heavy_16_Dummy, HP_Executor_Heavy_17_Dummy, HP_Executor_Heavy_18_Dummy, HP_Executor_Heavy_19_Dummy, HP_Executor_Heavy_20_Dummy, HP_Executor_Heavy_21_Dummy, HP_Executor_Heavy_22_Dummy, HP_Executor_Heavy_23_Dummy, HP_Executor_Heavy_24_Dummy, HP_Executor_Heavy_25_Dummy, HP_Executor_Heavy_26_Dummy, HP_Executor_Heavy_27_Dummy, HP_Executor_Heavy_28_Dummy, HP_Executor_Heavy_29_Dummy, HP_Executor_Heavy_30_Dummy, HP_Executor_Heavy_31_Dummy, HP_Executor_Heavy_32_Dummy, HP_Executor_Heavy_33_Dummy, HP_Executor_Heavy_34_Dummy, HP_Executor_Heavy_35_Dummy, HP_Executor_Heavy_36_Dummy, HP_Executor_Heavy_37_Dummy, HP_Executor_Heavy_38_Dummy, HP_Executor_Heavy_39_Dummy, HP_Executor_Heavy_40_Dummy, HP_Executor_Heavy_41_Dummy, HP_Executor_Heavy_42_Dummy, HP_Executor_Heavy_43_Dummy, HP_Executor_Heavy_44_Dummy, HP_Executor_Heavy_45_Dummy, HP_Executor_Heavy_46_Dummy, HP_Executor_Heavy_47_Dummy, HP_Executor_Heavy_48_Dummy, HP_Executor_Heavy_49_Dummy, HP_Executor_Heavy_50_Dummy, 
+			HP_Executor_Missile_01_Dummy, HP_Executor_Missile_02_Dummy, HP_Executor_Missile_03_Dummy, HP_Executor_Missile_04_Dummy, HP_Executor_Missile_05_Dummy, HP_Executor_Missile_06_Dummy, HP_Executor_Missile_07_Dummy, HP_Executor_Missile_08_Dummy, HP_Executor_Missile_09_Dummy, HP_Executor_Missile_10_Dummy,
+			HP_Executor_Ion_01_Dummy, HP_Executor_Ion_02_Dummy, HP_Executor_Ion_03_Dummy, HP_Executor_Ion_04_Dummy, HP_Executor_Ion_05_Dummy, HP_Executor_Ion_06_Dummy, HP_Executor_Ion_07_Dummy, HP_Executor_Ion_08_Dummy, HP_Executor_Ion_09_Dummy, HP_Executor_Ion_10_Dummy, HP_Executor_Ion_11_Dummy, HP_Executor_Ion_12_Dummy, HP_Executor_Ion_13_Dummy, HP_Executor_Ion_14_Dummy, HP_Executor_Ion_15_Dummy, HP_Executor_Ion_16_Dummy, HP_Executor_Ion_17_Dummy, HP_Executor_Ion_18_Dummy, HP_Executor_Ion_19_Dummy, HP_Executor_Ion_20_Dummy, HP_Executor_Ion_21_Dummy, HP_Executor_Ion_22_Dummy, HP_Executor_Ion_23_Dummy, HP_Executor_Ion_24_Dummy, HP_Executor_Ion_25_Dummy,
+		</HardPoints>
+		<Space_Model_Name>NR_Lusankya.ALO</Space_Model_Name>
+
+		<Death_Clone>Damage_Normal, Lusankya_Death_Clone</Death_Clone>
+	
+		<Scale_Factor>0.3333</Scale_Factor>
+		<Select_Box_Scale>90</Select_Box_Scale>
+		
+		<!-- Special Abilities unique to Skirmish mode -->
+		<Abilities SubObjectList="Yes">
+			<Income_Stream_Ability Name="R_Starbase_Income_Stream">
+				<Activation_Style>Skirmish_Automatic</Activation_Style>
+				<Initially_Enabled>Yes</Initially_Enabled>
+				<Base_Income_Value>15</Base_Income_Value>
+				<Base_Interval_In_Secs>1</Base_Interval_In_Secs>
+				<Split_Income_With_Allies>Yes</Split_Income_With_Allies>
+				<Split_Favors_Owner>No</Split_Favors_Owner>
+				<Full_Amount_To_Everyone>Yes</Full_Amount_To_Everyone>
+			</Income_Stream_Ability>
+			<Income_Stream_Mod_Ability Name="R_Supply_Dock_Income_Bonus">
+				<Activation_Style>Skirmish_Automatic</Activation_Style>
+				<Initially_Enabled>No</Initially_Enabled>			<!-- This bonus income is controlled by the presence of the Supply Dock hardpoint -->
+				<Income_Multiplier>1.0</Income_Multiplier>
+				<Income_Additive_Value>0</Income_Additive_Value>
+				<Interval_Multiplier>1.0</Interval_Multiplier>
+				<Stacking_Category>0</Stacking_Category>
+				<Target_Stream_Source>Skirmish_NR_Flagship_1</Target_Stream_Source>
+				<Affects_All_Allied_Sources>Yes</Affects_All_Allied_Sources>
+				<Reverse_Application_Logic>No</Reverse_Application_Logic>
+			</Income_Stream_Mod_Ability>
+ 			<Enable_Radar_Ability Name="R_Comm_Array_Enable_Radar">
+ 				<Activation_Style>Skirmish_Automatic</Activation_Style>
+				<Initially_Enabled>Yes</Initially_Enabled>			<!-- This effect is controlled by the presence of the Comm Array hardpoint -->
+ 				<Affects_All_Allies>True</Affects_All_Allies>
+ 			</Enable_Radar_Ability>
+		</Abilities>
+		
+		<Last_State_Visible_Under_FOW>False</Last_State_Visible_Under_FOW>
+		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
+		<Visible_On_Radar_When_Fogged>True</Visible_On_Radar_When_Fogged>
+	</StarBase>
+	
+	<StarBase Name="Skirmish_NR_Flagship_2">
+		<Variant_Of_Existing_Type>Generic_Skirmish_Star_Base_Flagship</Variant_Of_Existing_Type>
+		<Is_Community_Property>Yes</Is_Community_Property>
+		<Affiliation>Rebel</Affiliation>
+		
+		<Prev_Level_Base>Skirmish_NR_Flagship_1</Prev_Level_Base>
+        <Next_Level_Base>Skirmish_NR_Flagship_3</Next_Level_Base>
+		
+		<Mass>0.999</Mass>
+		<Max_Speed>0</Max_Speed>
+		<Max_Thrust>0</Max_Thrust>
+		<OverrideAcceleration> 0 </OverrideAcceleration>
+		<OverrideDeceleration> 0 </OverrideDeceleration>
+		<Max_Rate_Of_Turn>0</Max_Rate_Of_Turn>
+		<Stopped_Rate_Of_Turn>0</Stopped_Rate_Of_Turn>
+		<Min_Speed_Fraction_For_Turn>0.0</Min_Speed_Fraction_For_Turn>
+		<Max_Rate_Of_Roll>0</Max_Rate_Of_Roll>
+		<Bank_Turn_Angle>0</Bank_Turn_Angle>
+
+		
+		<Shield_Points>7500</Shield_Points>
+		<Tactical_Health>36750</Tactical_Health>
+		<AI_Combat_Power>8050</AI_Combat_Power>
+
+				<Text_ID>TEXT_UNIT_EXECUTOR_FLAGSHIP_LEVEL_TWO</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_SSD_STARBASE</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_EXECUTOR
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_EXECUTOR_HULL_FS_2
+		TEXT_TOOLTIP_EXECUTOR_SHIELD_FS_2
+		TEXT_TOOLTIP_EXECUTOR_MOVE_FS_2
+		TEXT_TOOLTIP_EXECUTOR_WEAP2
+		TEXT_TOOLTIP_EXECUTOR_WEAP4
+		</Encyclopedia_Text>
+		
+		<Dense_FOW_Reveal_Range_Multiplier>0.2</Dense_FOW_Reveal_Range_Multiplier>
+		<Space_FOW_Reveal_Range>70000.0</Space_FOW_Reveal_Range>
+	<Reinforcement_Prevention_Radius>4000 </Reinforcement_Prevention_Radius>
+		
+		<Targeting_Max_Attack_Distance>2000.0</Targeting_Max_Attack_Distance>
+		
+		
+		<!-- Tactical Production Options -->
+		<SpaceBehavior> ABILITY_COUNTDOWN, SIMPLE_SPACE_LOCOMOTOR, SPACE_OBSTACLE, POWERED, SHIELDED, HIDE_WHEN_FOGGED, REVEAL, TARGETING, UNIT_AI, DAMAGE_TRACKING, ASTEROID_FIELD_DAMAGE, SPAWN_SQUADRON, ION_STUN_EFFECT</SpaceBehavior>
+		<Tactical_Buildable_Objects_Multiplayer> 
+			REBEL,
+			Flagship_NR_AAH,
+			Flagship_NR_AAB,
+			Flagship_NR_AAC,
+			Flagship_NR_AAD,
+			Flagship_NR_AAE,
+			Flagship_NR_AAF,
+			Flagship_NR_AAI,
+			Flagship_NR_ABI,
+			Flagship_NR_AAJ,
+			Flagship_NR_AAG,
+			Flagship_Level_Three_Starbase_Upgrade,
+
+		</Tactical_Buildable_Objects_Multiplayer>
+		<Visible_To_Enemies_When_Empty>True</Visible_To_Enemies_When_Empty>
+	
+		<!-- Data to prevent this from being buildable in galactic mode -->
+		<Build_Cost_Credits>0</Build_Cost_Credits>
+		<Build_Time_Seconds>0</Build_Time_Seconds>
+		<Build_Tab_Space_Station>No</Build_Tab_Space_Station>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+		
+		<HardPoints>
+			HP_Executor_Laser_01, HP_Executor_Laser_02, HP_Executor_Laser_03, HP_Executor_Laser_04, HP_Executor_Laser_05, HP_Executor_Laser_06, HP_Executor_Laser_07, HP_Executor_Laser_08, HP_Executor_Laser_09, HP_Executor_Laser_10,	HP_Executor_Laser_11, HP_Executor_Laser_12, HP_Executor_Laser_13, HP_Executor_Laser_14, HP_Executor_Laser_15, HP_Executor_Laser_16, HP_Executor_Laser_17, HP_Executor_Laser_18, HP_Executor_Laser_19, HP_Executor_Laser_20, 
+			HP_SSD_Hangar, 
+			HP_Executor_Turbo_01, HP_Executor_Turbo_02, HP_Executor_Turbo_03, HP_Executor_Turbo_04, HP_Executor_Turbo_05, HP_Executor_Turbo_06, HP_Executor_Turbo_07, HP_Executor_Turbo_08, HP_Executor_Turbo_09, HP_Executor_Turbo_10,	HP_Executor_Turbo_11, HP_Executor_Turbo_12, HP_Executor_Turbo_13, HP_Executor_Turbo_14, HP_Executor_Turbo_15, HP_Executor_Turbo_16, HP_Executor_Turbo_17, HP_Executor_Turbo_18, HP_Executor_Turbo_19, HP_Executor_Turbo_20,	HP_Executor_Turbo_21, HP_Executor_Turbo_22, HP_Executor_Turbo_23, HP_Executor_Turbo_24, HP_Executor_Turbo_25, HP_Executor_Turbo_26, HP_Executor_Turbo_27, HP_Executor_Turbo_28, HP_Executor_Turbo_29, HP_Executor_Turbo_30,	HP_Executor_Turbo_31, HP_Executor_Turbo_32, HP_Executor_Turbo_33, HP_Executor_Turbo_34, HP_Executor_Turbo_35, HP_Executor_Turbo_36, HP_Executor_Turbo_37, HP_Executor_Turbo_38, HP_Executor_Turbo_39, HP_Executor_Turbo_40,	HP_Executor_Turbo_41, HP_Executor_Turbo_42, HP_Executor_Turbo_43, HP_Executor_Turbo_44, HP_Executor_Turbo_45, HP_Executor_Turbo_46, HP_Executor_Turbo_47, HP_Executor_Turbo_48, HP_Executor_Turbo_49, HP_Executor_Turbo_50,
+			HP_Executor_Engines_01_Dummy, HP_Executor_Engines_02_Dummy, HP_Executor_Engines_03_Dummy, HP_Executor_Engines_04_Dummy, HP_Executor_Engines_05_Dummy, 
+			HP_Executor_Heavy_01_Dummy, HP_Executor_Heavy_02_Dummy, HP_Executor_Heavy_03_Dummy, HP_Executor_Heavy_04_Dummy, HP_Executor_Heavy_05_Dummy, HP_Executor_Heavy_06_Dummy, HP_Executor_Heavy_07_Dummy, HP_Executor_Heavy_08_Dummy, HP_Executor_Heavy_09_Dummy, HP_Executor_Heavy_10_Dummy, HP_Executor_Heavy_11_Dummy, HP_Executor_Heavy_12_Dummy, HP_Executor_Heavy_13_Dummy, HP_Executor_Heavy_14_Dummy, HP_Executor_Heavy_15_Dummy, HP_Executor_Heavy_16_Dummy, HP_Executor_Heavy_17_Dummy, HP_Executor_Heavy_18_Dummy, HP_Executor_Heavy_19_Dummy, HP_Executor_Heavy_20_Dummy, HP_Executor_Heavy_21_Dummy, HP_Executor_Heavy_22_Dummy, HP_Executor_Heavy_23_Dummy, HP_Executor_Heavy_24_Dummy, HP_Executor_Heavy_25_Dummy, HP_Executor_Heavy_26_Dummy, HP_Executor_Heavy_27_Dummy, HP_Executor_Heavy_28_Dummy, HP_Executor_Heavy_29_Dummy, HP_Executor_Heavy_30_Dummy, HP_Executor_Heavy_31_Dummy, HP_Executor_Heavy_32_Dummy, HP_Executor_Heavy_33_Dummy, HP_Executor_Heavy_34_Dummy, HP_Executor_Heavy_35_Dummy, HP_Executor_Heavy_36_Dummy, HP_Executor_Heavy_37_Dummy, HP_Executor_Heavy_38_Dummy, HP_Executor_Heavy_39_Dummy, HP_Executor_Heavy_40_Dummy, HP_Executor_Heavy_41_Dummy, HP_Executor_Heavy_42_Dummy, HP_Executor_Heavy_43_Dummy, HP_Executor_Heavy_44_Dummy, HP_Executor_Heavy_45_Dummy, HP_Executor_Heavy_46_Dummy, HP_Executor_Heavy_47_Dummy, HP_Executor_Heavy_48_Dummy, HP_Executor_Heavy_49_Dummy, HP_Executor_Heavy_50_Dummy, 
+			HP_Executor_Missile_01_Dummy, HP_Executor_Missile_02_Dummy, HP_Executor_Missile_03_Dummy, HP_Executor_Missile_04_Dummy, HP_Executor_Missile_05_Dummy, HP_Executor_Missile_06_Dummy, HP_Executor_Missile_07_Dummy, HP_Executor_Missile_08_Dummy, HP_Executor_Missile_09_Dummy, HP_Executor_Missile_10_Dummy,
+			HP_Executor_Ion_01_Dummy, HP_Executor_Ion_02_Dummy, HP_Executor_Ion_03_Dummy, HP_Executor_Ion_04_Dummy, HP_Executor_Ion_05_Dummy, HP_Executor_Ion_06_Dummy, HP_Executor_Ion_07_Dummy, HP_Executor_Ion_08_Dummy, HP_Executor_Ion_09_Dummy, HP_Executor_Ion_10_Dummy, HP_Executor_Ion_11_Dummy, HP_Executor_Ion_12_Dummy, HP_Executor_Ion_13_Dummy, HP_Executor_Ion_14_Dummy, HP_Executor_Ion_15_Dummy, HP_Executor_Ion_16_Dummy, HP_Executor_Ion_17_Dummy, HP_Executor_Ion_18_Dummy, HP_Executor_Ion_19_Dummy, HP_Executor_Ion_20_Dummy, HP_Executor_Ion_21_Dummy, HP_Executor_Ion_22_Dummy, HP_Executor_Ion_23_Dummy, HP_Executor_Ion_24_Dummy, HP_Executor_Ion_25_Dummy,
+		</HardPoints>
+		<Space_Model_Name>NR_Lusankya.ALO</Space_Model_Name>
+
+		<Death_Clone>Damage_Normal, Lusankya_Death_Clone</Death_Clone>
+	
+		<Scale_Factor>0.3333</Scale_Factor>
+		<Select_Box_Scale>90</Select_Box_Scale>
+		
+		<!-- Special Abilities unique to Skirmish mode -->
+		<Abilities SubObjectList="Yes">
+			<Income_Stream_Ability Name="R_Starbase_Income_Stream">
+				<Activation_Style>Skirmish_Automatic</Activation_Style>
+				<Initially_Enabled>Yes</Initially_Enabled>
+				<Base_Income_Value>25</Base_Income_Value>
+				<Base_Interval_In_Secs>1</Base_Interval_In_Secs>
+				<Split_Income_With_Allies>Yes</Split_Income_With_Allies>
+				<Split_Favors_Owner>No</Split_Favors_Owner>
+				<Full_Amount_To_Everyone>Yes</Full_Amount_To_Everyone>
+			</Income_Stream_Ability>
+			<Income_Stream_Mod_Ability Name="R_Supply_Dock_Income_Bonus">
+				<Activation_Style>Skirmish_Automatic</Activation_Style>
+				<Initially_Enabled>No</Initially_Enabled>			<!-- This bonus income is controlled by the presence of the Supply Dock hardpoint -->
+				<Income_Multiplier>1.0</Income_Multiplier>
+				<Income_Additive_Value>0</Income_Additive_Value>
+				<Interval_Multiplier>1.0</Interval_Multiplier>
+				<Stacking_Category>0</Stacking_Category>
+				<Target_Stream_Source>Skirmish_NR_Flagship_2</Target_Stream_Source>
+				<Affects_All_Allied_Sources>Yes</Affects_All_Allied_Sources>
+				<Reverse_Application_Logic>No</Reverse_Application_Logic>
+			</Income_Stream_Mod_Ability>
+ 			<Enable_Radar_Ability Name="R_Comm_Array_Enable_Radar">
+ 				<Activation_Style>Skirmish_Automatic</Activation_Style>
+				<Initially_Enabled>Yes</Initially_Enabled>			<!-- This effect is controlled by the presence of the Comm Array hardpoint -->
+ 				<Affects_All_Allies>True</Affects_All_Allies>
+ 			</Enable_Radar_Ability>
+		</Abilities>
+		
+		<Last_State_Visible_Under_FOW>False</Last_State_Visible_Under_FOW>
+		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
+		<Visible_On_Radar_When_Fogged>True</Visible_On_Radar_When_Fogged>
+	</StarBase>
+
+	<StarBase Name="Skirmish_NR_Flagship_3">
+		<Variant_Of_Existing_Type>Generic_Skirmish_Star_Base_Flagship</Variant_Of_Existing_Type>
+		<Is_Community_Property>Yes</Is_Community_Property>
+		<Affiliation>Rebel</Affiliation>
+		
+		<Prev_Level_Base>Skirmish_NR_Flagship_2</Prev_Level_Base>
+        <Next_Level_Base>Skirmish_NR_Flagship_4</Next_Level_Base>
+		
+		<Mass>0.999</Mass>
+		<Max_Speed>0.25</Max_Speed>
+		<Max_Thrust>0.03</Max_Thrust>
+		<OverrideAcceleration> .004 </OverrideAcceleration>
+		<OverrideDeceleration> .008 </OverrideDeceleration>
+		<Max_Rate_Of_Turn>0.02</Max_Rate_Of_Turn>
+		<Stopped_Rate_Of_Turn>0.02</Stopped_Rate_Of_Turn>
+		<Min_Speed_Fraction_For_Turn>0.0</Min_Speed_Fraction_For_Turn>
+		<Max_Rate_Of_Roll>0.04</Max_Rate_Of_Roll>
+		<Bank_Turn_Angle>0</Bank_Turn_Angle>
+
+		
+		<Shield_Points>12000</Shield_Points>
+		<Tactical_Health>50400</Tactical_Health>
+		<AI_Combat_Power>12076</AI_Combat_Power>
+
+				<Text_ID>TEXT_UNIT_EXECUTOR_FLAGSHIP_LEVEL_THREE</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_SSD_STARBASE</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_EXECUTOR
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_EXECUTOR_HULL_FS_3
+		TEXT_TOOLTIP_EXECUTOR_SHIELD_FS_3
+		TEXT_TOOLTIP_EXECUTOR_MOVE_FS_3
+		TEXT_TOOLTIP_EXECUTOR_WEAP2
+		TEXT_TOOLTIP_EXECUTOR_WEAP3
+		TEXT_TOOLTIP_EXECUTOR_WEAP4
+		</Encyclopedia_Text>
+		
+		<Dense_FOW_Reveal_Range_Multiplier>0.2</Dense_FOW_Reveal_Range_Multiplier>
+		<Space_FOW_Reveal_Range>70000.0</Space_FOW_Reveal_Range>
+	<Reinforcement_Prevention_Radius>4000 </Reinforcement_Prevention_Radius>
+		
+		<Targeting_Max_Attack_Distance>2000.0</Targeting_Max_Attack_Distance>
+		
+		
+		<!-- Tactical Production Options -->
+		<SpaceBehavior> ABILITY_COUNTDOWN, SIMPLE_SPACE_LOCOMOTOR, SPACE_OBSTACLE, POWERED, SHIELDED, HIDE_WHEN_FOGGED, REVEAL, TARGETING, UNIT_AI, DAMAGE_TRACKING, ASTEROID_FIELD_DAMAGE, SPAWN_SQUADRON, ION_STUN_EFFECT</SpaceBehavior>
+		<Tactical_Buildable_Objects_Multiplayer> 
+			REBEL,
+			
+			Flagship_NR_AAK,
+			Flagship_NR_AAL,
+			Flagship_NR_AAM,
+			Flagship_NR_AAN,
+			Flagship_NR_AAO,
+			Flagship_NR_AAP,
+			Flagship_NR_AAQ,
+			Flagship_NR_AAI,
+			Flagship_NR_ABI,
+			Flagship_NR_AAR,
+			Flagship_NR_AAS,
+			Flagship_NR_AAT,
+			Flagship_NR_AAU,
+			Flagship_NR_AAV,
+			Flagship_NR_AAG,
+			Flagship_Level_Four_Starbase_Upgrade,
+
+		</Tactical_Buildable_Objects_Multiplayer>
+		<Visible_To_Enemies_When_Empty>True</Visible_To_Enemies_When_Empty>
+	
+		<!-- Data to prevent this from being buildable in galactic mode -->
+		<Build_Cost_Credits>0</Build_Cost_Credits>
+		<Build_Time_Seconds>0</Build_Time_Seconds>
+		<Build_Tab_Space_Station>No</Build_Tab_Space_Station>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+		
+		<HardPoints>
+			HP_Executor_Laser_01, HP_Executor_Laser_02, HP_Executor_Laser_03, HP_Executor_Laser_04, HP_Executor_Laser_05, HP_Executor_Laser_06, HP_Executor_Laser_07, HP_Executor_Laser_08, HP_Executor_Laser_09, HP_Executor_Laser_10,	HP_Executor_Laser_11, HP_Executor_Laser_12, HP_Executor_Laser_13, HP_Executor_Laser_14, HP_Executor_Laser_15, HP_Executor_Laser_16, HP_Executor_Laser_17, HP_Executor_Laser_18, HP_Executor_Laser_19, HP_Executor_Laser_20, 
+			HP_Executor_Turbo_01, HP_Executor_Turbo_02, HP_Executor_Turbo_03, HP_Executor_Turbo_04, HP_Executor_Turbo_05, HP_Executor_Turbo_06, HP_Executor_Turbo_07, HP_Executor_Turbo_08, HP_Executor_Turbo_09, HP_Executor_Turbo_10,	HP_Executor_Turbo_11, HP_Executor_Turbo_12, HP_Executor_Turbo_13, HP_Executor_Turbo_14, HP_Executor_Turbo_15, HP_Executor_Turbo_16, HP_Executor_Turbo_17, HP_Executor_Turbo_18, HP_Executor_Turbo_19, HP_Executor_Turbo_20,	HP_Executor_Turbo_21, HP_Executor_Turbo_22, HP_Executor_Turbo_23, HP_Executor_Turbo_24, HP_Executor_Turbo_25, HP_Executor_Turbo_26, HP_Executor_Turbo_27, HP_Executor_Turbo_28, HP_Executor_Turbo_29, HP_Executor_Turbo_30,	HP_Executor_Turbo_31, HP_Executor_Turbo_32, HP_Executor_Turbo_33, HP_Executor_Turbo_34, HP_Executor_Turbo_35, HP_Executor_Turbo_36, HP_Executor_Turbo_37, HP_Executor_Turbo_38, HP_Executor_Turbo_39, HP_Executor_Turbo_40,	HP_Executor_Turbo_41, HP_Executor_Turbo_42, HP_Executor_Turbo_43, HP_Executor_Turbo_44, HP_Executor_Turbo_45, HP_Executor_Turbo_46, HP_Executor_Turbo_47, HP_Executor_Turbo_48, HP_Executor_Turbo_49, HP_Executor_Turbo_50,
+			HP_Executor_Ion_01, HP_Executor_Ion_02, HP_Executor_Ion_03, HP_Executor_Ion_04, HP_Executor_Ion_05, HP_Executor_Ion_06, HP_Executor_Ion_07, HP_Executor_Ion_08, HP_Executor_Ion_09, HP_Executor_Ion_10,	HP_Executor_Ion_11, HP_Executor_Ion_12, HP_Executor_Ion_13, HP_Executor_Ion_14, HP_Executor_Ion_15, HP_Executor_Ion_16, HP_Executor_Ion_17, HP_Executor_Ion_18, HP_Executor_Ion_19, HP_Executor_Ion_20,	HP_Executor_Ion_21, HP_Executor_Ion_22, HP_Executor_Ion_23, HP_Executor_Ion_24, HP_Executor_Ion_25, 
+			HP_Executor_Engines_01, 
+			HP_SSD_Hangar,
+			HP_Executor_Engines_02_Dummy, HP_Executor_Engines_03_Dummy, HP_Executor_Engines_04_Dummy, HP_Executor_Engines_05_Dummy, 
+			HP_Executor_Heavy_01_Dummy, HP_Executor_Heavy_02_Dummy, HP_Executor_Heavy_03_Dummy, HP_Executor_Heavy_04_Dummy, HP_Executor_Heavy_05_Dummy, HP_Executor_Heavy_06_Dummy, HP_Executor_Heavy_07_Dummy, HP_Executor_Heavy_08_Dummy, HP_Executor_Heavy_09_Dummy, HP_Executor_Heavy_10_Dummy, HP_Executor_Heavy_11_Dummy, HP_Executor_Heavy_12_Dummy, HP_Executor_Heavy_13_Dummy, HP_Executor_Heavy_14_Dummy, HP_Executor_Heavy_15_Dummy, HP_Executor_Heavy_16_Dummy, HP_Executor_Heavy_17_Dummy, HP_Executor_Heavy_18_Dummy, HP_Executor_Heavy_19_Dummy, HP_Executor_Heavy_20_Dummy, HP_Executor_Heavy_21_Dummy, HP_Executor_Heavy_22_Dummy, HP_Executor_Heavy_23_Dummy, HP_Executor_Heavy_24_Dummy, HP_Executor_Heavy_25_Dummy, HP_Executor_Heavy_26_Dummy, HP_Executor_Heavy_27_Dummy, HP_Executor_Heavy_28_Dummy, HP_Executor_Heavy_29_Dummy, HP_Executor_Heavy_30_Dummy, HP_Executor_Heavy_31_Dummy, HP_Executor_Heavy_32_Dummy, HP_Executor_Heavy_33_Dummy, HP_Executor_Heavy_34_Dummy, HP_Executor_Heavy_35_Dummy, HP_Executor_Heavy_36_Dummy, HP_Executor_Heavy_37_Dummy, HP_Executor_Heavy_38_Dummy, HP_Executor_Heavy_39_Dummy, HP_Executor_Heavy_40_Dummy, HP_Executor_Heavy_41_Dummy, HP_Executor_Heavy_42_Dummy, HP_Executor_Heavy_43_Dummy, HP_Executor_Heavy_44_Dummy, HP_Executor_Heavy_45_Dummy, HP_Executor_Heavy_46_Dummy, HP_Executor_Heavy_47_Dummy, HP_Executor_Heavy_48_Dummy, HP_Executor_Heavy_49_Dummy, HP_Executor_Heavy_50_Dummy, 
+			HP_Executor_Missile_01_Dummy, HP_Executor_Missile_02_Dummy, HP_Executor_Missile_03_Dummy, HP_Executor_Missile_04_Dummy, HP_Executor_Missile_05_Dummy, HP_Executor_Missile_06_Dummy, HP_Executor_Missile_07_Dummy, HP_Executor_Missile_08_Dummy, HP_Executor_Missile_09_Dummy, HP_Executor_Missile_10_Dummy,
+		</HardPoints>
+		<Space_Model_Name>NR_Lusankya.ALO</Space_Model_Name>
+
+		<Death_Clone>Damage_Normal, Lusankya_Death_Clone</Death_Clone>
+	
+		<Scale_Factor>0.3333</Scale_Factor>
+		<Select_Box_Scale>90</Select_Box_Scale>
+		
+		<!-- Special Abilities unique to Skirmish mode -->
+		<Abilities SubObjectList="Yes">
+			<Income_Stream_Ability Name="R_Starbase_Income_Stream">
+				<Activation_Style>Skirmish_Automatic</Activation_Style>
+				<Initially_Enabled>Yes</Initially_Enabled>
+				<Base_Income_Value>50</Base_Income_Value>
+				<Base_Interval_In_Secs>1</Base_Interval_In_Secs>
+				<Split_Income_With_Allies>Yes</Split_Income_With_Allies>
+				<Split_Favors_Owner>No</Split_Favors_Owner>
+				<Full_Amount_To_Everyone>Yes</Full_Amount_To_Everyone>
+			</Income_Stream_Ability>
+			<Income_Stream_Mod_Ability Name="R_Supply_Dock_Income_Bonus">
+				<Activation_Style>Skirmish_Automatic</Activation_Style>
+				<Initially_Enabled>No</Initially_Enabled>			<!-- This bonus income is controlled by the presence of the Supply Dock hardpoint -->
+				<Income_Multiplier>1.0</Income_Multiplier>
+				<Income_Additive_Value>0</Income_Additive_Value>
+				<Interval_Multiplier>1.0</Interval_Multiplier>
+				<Stacking_Category>0</Stacking_Category>
+				<Target_Stream_Source>Skirmish_NR_Flagship_3</Target_Stream_Source>
+				<Affects_All_Allied_Sources>Yes</Affects_All_Allied_Sources>
+				<Reverse_Application_Logic>No</Reverse_Application_Logic>
+			</Income_Stream_Mod_Ability>
+ 			<Enable_Radar_Ability Name="R_Comm_Array_Enable_Radar">
+ 				<Activation_Style>Skirmish_Automatic</Activation_Style>
+				<Initially_Enabled>Yes</Initially_Enabled>			<!-- This effect is controlled by the presence of the Comm Array hardpoint -->
+ 				<Affects_All_Allies>True</Affects_All_Allies>
+ 			</Enable_Radar_Ability>
+		</Abilities>
+		
+		<Last_State_Visible_Under_FOW>False</Last_State_Visible_Under_FOW>
+		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
+		<Visible_On_Radar_When_Fogged>True</Visible_On_Radar_When_Fogged>
+	</StarBase>
+	
+	<StarBase Name="Skirmish_NR_Flagship_4">
+		<Variant_Of_Existing_Type>Generic_Skirmish_Star_Base_Flagship</Variant_Of_Existing_Type>
+		<Is_Community_Property>Yes</Is_Community_Property>
+		<Affiliation>Rebel</Affiliation>
+		
+		<Prev_Level_Base>Skirmish_NR_Flagship_3</Prev_Level_Base>
+        <Next_Level_Base>Skirmish_NR_Flagship_5</Next_Level_Base>
+		
+		<Mass>0.999</Mass>
+		<Max_Speed>0.75</Max_Speed>
+		<Max_Thrust>0.09</Max_Thrust>
+		<OverrideAcceleration> .012 </OverrideAcceleration>
+		<OverrideDeceleration> .024 </OverrideDeceleration>
+		<Max_Rate_Of_Turn>0.06</Max_Rate_Of_Turn>
+		<Stopped_Rate_Of_Turn>0.06</Stopped_Rate_Of_Turn>
+		<Min_Speed_Fraction_For_Turn>0.0</Min_Speed_Fraction_For_Turn>
+		<Max_Rate_Of_Roll>0.12</Max_Rate_Of_Roll>
+		<Bank_Turn_Angle>0</Bank_Turn_Angle>
+
+		
+		<Shield_Points>20000</Shield_Points>
+		<Tactical_Health>53550</Tactical_Health>
+		<AI_Combat_Power>16101</AI_Combat_Power>
+
+				<Text_ID>TEXT_UNIT_EXECUTOR_FLAGSHIP_LEVEL_FOUR</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_SSD_STARBASE</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_EXECUTOR
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_EXECUTOR_HULL_FS_4
+		TEXT_TOOLTIP_EXECUTOR_SHIELD_FS_4
+		TEXT_TOOLTIP_EXECUTOR_MOVE_FS_4
+		TEXT_TOOLTIP_EXECUTOR_WEAP2
+		TEXT_TOOLTIP_EXECUTOR_WEAP3
+		TEXT_TOOLTIP_EXECUTOR_WEAP4
+		TEXT_TOOLTIP_EXECUTOR_WEAP5
+		</Encyclopedia_Text>
+		
+		<Dense_FOW_Reveal_Range_Multiplier>0.2</Dense_FOW_Reveal_Range_Multiplier>
+		<Space_FOW_Reveal_Range>70000.0</Space_FOW_Reveal_Range>
+	<Reinforcement_Prevention_Radius>4000 </Reinforcement_Prevention_Radius>
+		
+		<Targeting_Max_Attack_Distance>2000.0</Targeting_Max_Attack_Distance>
+		
+		
+		<!-- Tactical Production Options -->
+		<SpaceBehavior> ABILITY_COUNTDOWN, SIMPLE_SPACE_LOCOMOTOR, SPACE_OBSTACLE, POWERED, SHIELDED, HIDE_WHEN_FOGGED, REVEAL, TARGETING, UNIT_AI, DAMAGE_TRACKING, ASTEROID_FIELD_DAMAGE, SPAWN_SQUADRON, ION_STUN_EFFECT</SpaceBehavior>
+		<Tactical_Buildable_Objects_Multiplayer> 
+			REBEL,
+			
+			Flagship_NR_AAW,
+			Flagship_NR_AAX,
+			Flagship_NR_AAN,
+			Flagship_NR_AAO,
+			Flagship_NR_AAY,
+			Flagship_NR_ABI,
+			Flagship_NR_AAR,
+			Flagship_NR_AAS,
+			Flagship_NR_AAT,
+			Flagship_NR_AAU,
+			Flagship_NR_AAV,
+			Flagship_NR_AAZ,
+			Flagship_NR_ABA,
+			Flagship_NR_ABB,
+			Flagship_NR_ABC,
+			Flagship_NR_ABD,
+			Flagship_NR_ABE,
+			Flagship_NR_AAG,
+			
+			Flagship_Level_Five_Starbase_Upgrade,
+
+		</Tactical_Buildable_Objects_Multiplayer>
+		<Visible_To_Enemies_When_Empty>True</Visible_To_Enemies_When_Empty>
+	
+		<!-- Data to prevent this from being buildable in galactic mode -->
+		<Build_Cost_Credits>0</Build_Cost_Credits>
+		<Build_Time_Seconds>0</Build_Time_Seconds>
+		<Build_Tab_Space_Station>No</Build_Tab_Space_Station>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+		
+		<HardPoints>
+			HP_Executor_Laser_01, HP_Executor_Laser_02, HP_Executor_Laser_03, HP_Executor_Laser_04, HP_Executor_Laser_05, HP_Executor_Laser_06, HP_Executor_Laser_07, HP_Executor_Laser_08, HP_Executor_Laser_09, HP_Executor_Laser_10,	HP_Executor_Laser_11, HP_Executor_Laser_12, HP_Executor_Laser_13, HP_Executor_Laser_14, HP_Executor_Laser_15, HP_Executor_Laser_16, HP_Executor_Laser_17, HP_Executor_Laser_18, HP_Executor_Laser_19, HP_Executor_Laser_20,
+			HP_Executor_Turbo_01, HP_Executor_Turbo_02, HP_Executor_Turbo_03, HP_Executor_Turbo_04, HP_Executor_Turbo_05, HP_Executor_Turbo_06, HP_Executor_Turbo_07, HP_Executor_Turbo_08, HP_Executor_Turbo_09, HP_Executor_Turbo_10,	HP_Executor_Turbo_11, HP_Executor_Turbo_12, HP_Executor_Turbo_13, HP_Executor_Turbo_14, HP_Executor_Turbo_15, HP_Executor_Turbo_16, HP_Executor_Turbo_17, HP_Executor_Turbo_18, HP_Executor_Turbo_19, HP_Executor_Turbo_20,	HP_Executor_Turbo_21, HP_Executor_Turbo_22, HP_Executor_Turbo_23, HP_Executor_Turbo_24, HP_Executor_Turbo_25, HP_Executor_Turbo_26, HP_Executor_Turbo_27, HP_Executor_Turbo_28, HP_Executor_Turbo_29, HP_Executor_Turbo_30,	HP_Executor_Turbo_31, HP_Executor_Turbo_32, HP_Executor_Turbo_33, HP_Executor_Turbo_34, HP_Executor_Turbo_35, HP_Executor_Turbo_36, HP_Executor_Turbo_37, HP_Executor_Turbo_38, HP_Executor_Turbo_39, HP_Executor_Turbo_40,	HP_Executor_Turbo_41, HP_Executor_Turbo_42, HP_Executor_Turbo_43, HP_Executor_Turbo_44, HP_Executor_Turbo_45, HP_Executor_Turbo_46, HP_Executor_Turbo_47, HP_Executor_Turbo_48, HP_Executor_Turbo_49, HP_Executor_Turbo_50,
+			HP_Executor_Ion_01, HP_Executor_Ion_02, HP_Executor_Ion_03, HP_Executor_Ion_04, HP_Executor_Ion_05, HP_Executor_Ion_06, HP_Executor_Ion_07, HP_Executor_Ion_08, HP_Executor_Ion_09, HP_Executor_Ion_10,	HP_Executor_Ion_11, HP_Executor_Ion_12, HP_Executor_Ion_13, HP_Executor_Ion_14, HP_Executor_Ion_15, HP_Executor_Ion_16, HP_Executor_Ion_17, HP_Executor_Ion_18, HP_Executor_Ion_19, HP_Executor_Ion_20,	HP_Executor_Ion_21, HP_Executor_Ion_22, HP_Executor_Ion_23, HP_Executor_Ion_24, HP_Executor_Ion_25, 
+			HP_Executor_Engines_01, HP_Executor_Engines_02, HP_Executor_Engines_03, 
+			HP_SSD_Hangar,
+			HP_Executor_Missile_01, HP_Executor_Missile_02, HP_Executor_Missile_03, HP_Executor_Missile_04, HP_Executor_Missile_05, HP_Executor_Missile_06, HP_Executor_Missile_07, HP_Executor_Missile_08, HP_Executor_Missile_09, HP_Executor_Missile_10,
+			HP_Executor_Engines_04_Dummy, HP_Executor_Engines_05_Dummy, 
+			HP_Executor_Heavy_01_Dummy, HP_Executor_Heavy_02_Dummy, HP_Executor_Heavy_03_Dummy, HP_Executor_Heavy_04_Dummy, HP_Executor_Heavy_05_Dummy, HP_Executor_Heavy_06_Dummy, HP_Executor_Heavy_07_Dummy, HP_Executor_Heavy_08_Dummy, HP_Executor_Heavy_09_Dummy, HP_Executor_Heavy_10_Dummy, HP_Executor_Heavy_11_Dummy, HP_Executor_Heavy_12_Dummy, HP_Executor_Heavy_13_Dummy, HP_Executor_Heavy_14_Dummy, HP_Executor_Heavy_15_Dummy, HP_Executor_Heavy_16_Dummy, HP_Executor_Heavy_17_Dummy, HP_Executor_Heavy_18_Dummy, HP_Executor_Heavy_19_Dummy, HP_Executor_Heavy_20_Dummy, HP_Executor_Heavy_21_Dummy, HP_Executor_Heavy_22_Dummy, HP_Executor_Heavy_23_Dummy, HP_Executor_Heavy_24_Dummy, HP_Executor_Heavy_25_Dummy, HP_Executor_Heavy_26_Dummy, HP_Executor_Heavy_27_Dummy, HP_Executor_Heavy_28_Dummy, HP_Executor_Heavy_29_Dummy, HP_Executor_Heavy_30_Dummy, HP_Executor_Heavy_31_Dummy, HP_Executor_Heavy_32_Dummy, HP_Executor_Heavy_33_Dummy, HP_Executor_Heavy_34_Dummy, HP_Executor_Heavy_35_Dummy, HP_Executor_Heavy_36_Dummy, HP_Executor_Heavy_37_Dummy, HP_Executor_Heavy_38_Dummy, HP_Executor_Heavy_39_Dummy, HP_Executor_Heavy_40_Dummy, HP_Executor_Heavy_41_Dummy, HP_Executor_Heavy_42_Dummy, HP_Executor_Heavy_43_Dummy, HP_Executor_Heavy_44_Dummy, HP_Executor_Heavy_45_Dummy, HP_Executor_Heavy_46_Dummy, HP_Executor_Heavy_47_Dummy, HP_Executor_Heavy_48_Dummy, HP_Executor_Heavy_49_Dummy, HP_Executor_Heavy_50_Dummy,
+		</HardPoints>
+		<Space_Model_Name>NR_Lusankya.ALO</Space_Model_Name>
+
+		<Death_Clone>Damage_Normal, Lusankya_Death_Clone</Death_Clone>
+	
+		<Scale_Factor>0.3333</Scale_Factor>
+		<Select_Box_Scale>90</Select_Box_Scale>
+		
+		<!-- Special Abilities unique to Skirmish mode -->
+		<Abilities SubObjectList="Yes">
+			<Income_Stream_Ability Name="R_Starbase_Income_Stream">
+				<Activation_Style>Skirmish_Automatic</Activation_Style>
+				<Initially_Enabled>Yes</Initially_Enabled>
+				<Base_Income_Value>75</Base_Income_Value>
+				<Base_Interval_In_Secs>1</Base_Interval_In_Secs>
+				<Split_Income_With_Allies>Yes</Split_Income_With_Allies>
+				<Split_Favors_Owner>No</Split_Favors_Owner>
+				<Full_Amount_To_Everyone>Yes</Full_Amount_To_Everyone>
+			</Income_Stream_Ability>
+			<Income_Stream_Mod_Ability Name="R_Supply_Dock_Income_Bonus">
+				<Activation_Style>Skirmish_Automatic</Activation_Style>
+				<Initially_Enabled>No</Initially_Enabled>			<!-- This bonus income is controlled by the presence of the Supply Dock hardpoint -->
+				<Income_Multiplier>1.0</Income_Multiplier>
+				<Income_Additive_Value>0</Income_Additive_Value>
+				<Interval_Multiplier>1.0</Interval_Multiplier>
+				<Stacking_Category>0</Stacking_Category>
+				<Target_Stream_Source>Skirmish_NR_Flagship_4</Target_Stream_Source>
+				<Affects_All_Allied_Sources>Yes</Affects_All_Allied_Sources>
+				<Reverse_Application_Logic>No</Reverse_Application_Logic>
+			</Income_Stream_Mod_Ability>
+ 			<Enable_Radar_Ability Name="R_Comm_Array_Enable_Radar">
+ 				<Activation_Style>Skirmish_Automatic</Activation_Style>
+				<Initially_Enabled>Yes</Initially_Enabled>			<!-- This effect is controlled by the presence of the Comm Array hardpoint -->
+ 				<Affects_All_Allies>True</Affects_All_Allies>
+ 			</Enable_Radar_Ability>
+		</Abilities>
+		
+		<Last_State_Visible_Under_FOW>False</Last_State_Visible_Under_FOW>
+		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
+		<Visible_On_Radar_When_Fogged>True</Visible_On_Radar_When_Fogged>
+	</StarBase>
+	
+	<StarBase Name="Skirmish_NR_Flagship_5">
+		<Variant_Of_Existing_Type>Generic_Skirmish_Star_Base_Flagship</Variant_Of_Existing_Type>
+		<Is_Community_Property>Yes</Is_Community_Property>
+		<Affiliation>Rebel</Affiliation>
+		
+		<Prev_Level_Base>Skirmish_NR_Flagship_4</Prev_Level_Base>
+        <Next_Level_Base></Next_Level_Base>
+		
+		<Mass>0.999</Mass>
+		<Max_Speed>1.25</Max_Speed>
+		<Max_Thrust>0.15</Max_Thrust>
+		<OverrideAcceleration> .02 </OverrideAcceleration>
+		<OverrideDeceleration> .04 </OverrideDeceleration>
+		<Max_Rate_Of_Turn>0.1</Max_Rate_Of_Turn>
+		<Stopped_Rate_Of_Turn>0.1</Stopped_Rate_Of_Turn>
+		<Min_Speed_Fraction_For_Turn>0.0</Min_Speed_Fraction_For_Turn>
+		<Max_Rate_Of_Roll>0.2</Max_Rate_Of_Roll>
+		<Bank_Turn_Angle>0</Bank_Turn_Angle>
+
+		
+		<Shield_Points>60000</Shield_Points>
+		<Tactical_Health>84000</Tactical_Health>
+		<AI_Combat_Power>20126</AI_Combat_Power>
+
+				<Text_ID>TEXT_UNIT_EXECUTOR_FLAGSHIP_LEVEL_FIVE</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_SSD_STARBASE</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_EXECUTOR
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_EXECUTOR_HULL
+		TEXT_TOOLTIP_EXECUTOR_SHIELD
+		TEXT_TOOLTIP_EXECUTOR_MOVE
+		TEXT_TOOLTIP_EXECUTOR_SQUADRON
+		TEXT_TOOLTIP_EXECUTOR_WEAP1
+		TEXT_TOOLTIP_EXECUTOR_WEAP2
+		TEXT_TOOLTIP_EXECUTOR_WEAP3
+		TEXT_TOOLTIP_EXECUTOR_WEAP4
+		TEXT_TOOLTIP_EXECUTOR_WEAP5
+		</Encyclopedia_Text>
+		
+		<Dense_FOW_Reveal_Range_Multiplier>0.2</Dense_FOW_Reveal_Range_Multiplier>
+		<Space_FOW_Reveal_Range>70000.0</Space_FOW_Reveal_Range>
+	<Reinforcement_Prevention_Radius>4000 </Reinforcement_Prevention_Radius>
+		
+		<Targeting_Max_Attack_Distance>2000.0</Targeting_Max_Attack_Distance>
+		
+		
+		<!-- Tactical Production Options -->
+		<SpaceBehavior> ABILITY_COUNTDOWN, SIMPLE_SPACE_LOCOMOTOR, SPACE_OBSTACLE, POWERED, SHIELDED, HIDE_WHEN_FOGGED, REVEAL, TARGETING, UNIT_AI, DAMAGE_TRACKING, ASTEROID_FIELD_DAMAGE, SPAWN_SQUADRON, ION_STUN_EFFECT</SpaceBehavior>
+		<Tactical_Buildable_Objects_Multiplayer> 
+			REBEL,
+			
+			Flagship_NR_AAW,
+			Flagship_NR_AAX,
+			Flagship_NR_AAN,
+			Flagship_NR_AAO,
+			Flagship_NR_AAY,
+			Flagship_NR_ABI,
+			Flagship_NR_AAR,
+			Flagship_NR_AAS,
+			Flagship_NR_AAT,
+			Flagship_NR_AAU,
+			Flagship_NR_AAV,
+			Flagship_NR_AAZ,
+			Flagship_NR_ABA,
+			Flagship_NR_ABB,
+			Flagship_NR_ABC,
+			Flagship_NR_ABD,
+			Flagship_NR_ABE,
+			Flagship_NR_ABF,
+			Flagship_NR_ABG,
+			Flagship_NR_ABH,
+			Flagship_NR_AAG,
+
+		</Tactical_Buildable_Objects_Multiplayer>
+		<Visible_To_Enemies_When_Empty>True</Visible_To_Enemies_When_Empty>
+	
+		<!-- Data to prevent this from being buildable in galactic mode -->
+		<Build_Cost_Credits>0</Build_Cost_Credits>
+		<Build_Time_Seconds>0</Build_Time_Seconds>
+		<Build_Tab_Space_Station>No</Build_Tab_Space_Station>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+		
+		<HardPoints>
+			HP_Executor_Turbo_01, HP_Executor_Turbo_02, HP_Executor_Turbo_03, HP_Executor_Turbo_04, HP_Executor_Turbo_05, HP_Executor_Turbo_06, HP_Executor_Turbo_07, HP_Executor_Turbo_08, HP_Executor_Turbo_09, HP_Executor_Turbo_10,	HP_Executor_Turbo_11, HP_Executor_Turbo_12, HP_Executor_Turbo_13, HP_Executor_Turbo_14, HP_Executor_Turbo_15, HP_Executor_Turbo_16, HP_Executor_Turbo_17, HP_Executor_Turbo_18, HP_Executor_Turbo_19, HP_Executor_Turbo_20,	HP_Executor_Turbo_21, HP_Executor_Turbo_22, HP_Executor_Turbo_23, HP_Executor_Turbo_24, HP_Executor_Turbo_25, HP_Executor_Turbo_26, HP_Executor_Turbo_27, HP_Executor_Turbo_28, HP_Executor_Turbo_29, HP_Executor_Turbo_30,	HP_Executor_Turbo_31, HP_Executor_Turbo_32, HP_Executor_Turbo_33, HP_Executor_Turbo_34, HP_Executor_Turbo_35, HP_Executor_Turbo_36, HP_Executor_Turbo_37, HP_Executor_Turbo_38, HP_Executor_Turbo_39, HP_Executor_Turbo_40,	HP_Executor_Turbo_41, HP_Executor_Turbo_42, HP_Executor_Turbo_43, HP_Executor_Turbo_44, HP_Executor_Turbo_45, HP_Executor_Turbo_46, HP_Executor_Turbo_47, HP_Executor_Turbo_48, HP_Executor_Turbo_49, HP_Executor_Turbo_50,
+			HP_Executor_Heavy_01, HP_Executor_Heavy_02, HP_Executor_Heavy_03, HP_Executor_Heavy_04, HP_Executor_Heavy_05, HP_Executor_Heavy_06, HP_Executor_Heavy_07, HP_Executor_Heavy_08, HP_Executor_Heavy_09, HP_Executor_Heavy_10,	HP_Executor_Heavy_11, HP_Executor_Heavy_12, HP_Executor_Heavy_13, HP_Executor_Heavy_14, HP_Executor_Heavy_15, HP_Executor_Heavy_16, HP_Executor_Heavy_17, HP_Executor_Heavy_18, HP_Executor_Heavy_19, HP_Executor_Heavy_20,	HP_Executor_Heavy_21, HP_Executor_Heavy_22, HP_Executor_Heavy_23, HP_Executor_Heavy_24, HP_Executor_Heavy_25, HP_Executor_Heavy_26, HP_Executor_Heavy_27, HP_Executor_Heavy_28, HP_Executor_Heavy_29, HP_Executor_Heavy_30,	HP_Executor_Heavy_31, HP_Executor_Heavy_32, HP_Executor_Heavy_33, HP_Executor_Heavy_34, HP_Executor_Heavy_35, HP_Executor_Heavy_36, HP_Executor_Heavy_37, HP_Executor_Heavy_38, HP_Executor_Heavy_39, HP_Executor_Heavy_40,	HP_Executor_Heavy_41, HP_Executor_Heavy_42, HP_Executor_Heavy_43, HP_Executor_Heavy_44, HP_Executor_Heavy_45, HP_Executor_Heavy_46, HP_Executor_Heavy_47, HP_Executor_Heavy_48, HP_Executor_Heavy_49, HP_Executor_Heavy_50,
+			HP_Executor_Laser_01, HP_Executor_Laser_02, HP_Executor_Laser_03, HP_Executor_Laser_04, HP_Executor_Laser_05, HP_Executor_Laser_06, HP_Executor_Laser_07, HP_Executor_Laser_08, HP_Executor_Laser_09, HP_Executor_Laser_10,	HP_Executor_Laser_11, HP_Executor_Laser_12, HP_Executor_Laser_13, HP_Executor_Laser_14, HP_Executor_Laser_15, HP_Executor_Laser_16, HP_Executor_Laser_17, HP_Executor_Laser_18, HP_Executor_Laser_19, HP_Executor_Laser_20,
+			HP_Executor_Missile_01, HP_Executor_Missile_02, HP_Executor_Missile_03, HP_Executor_Missile_04, HP_Executor_Missile_05, HP_Executor_Missile_06, HP_Executor_Missile_07, HP_Executor_Missile_08, HP_Executor_Missile_09, HP_Executor_Missile_10,
+			HP_Executor_Ion_01, HP_Executor_Ion_02, HP_Executor_Ion_03, HP_Executor_Ion_04, HP_Executor_Ion_05, HP_Executor_Ion_06, HP_Executor_Ion_07, HP_Executor_Ion_08, HP_Executor_Ion_09, HP_Executor_Ion_10,	HP_Executor_Ion_11, HP_Executor_Ion_12, HP_Executor_Ion_13, HP_Executor_Ion_14, HP_Executor_Ion_15, HP_Executor_Ion_16, HP_Executor_Ion_17, HP_Executor_Ion_18, HP_Executor_Ion_19, HP_Executor_Ion_20,	HP_Executor_Ion_21, HP_Executor_Ion_22, HP_Executor_Ion_23, HP_Executor_Ion_24, HP_Executor_Ion_25, 
+			HP_Executor_Engines_01, HP_Executor_Engines_02, HP_Executor_Engines_03, HP_Executor_Engines_04, HP_Executor_Engines_05, 
+			HP_SSD_Hangar,
+		</HardPoints>
+		<Space_Model_Name>NR_Lusankya.ALO</Space_Model_Name>
+
+		<Death_Clone>Damage_Normal, Lusankya_Death_Clone</Death_Clone>
+	
+		<Scale_Factor>0.3333</Scale_Factor>
+		<Select_Box_Scale>90</Select_Box_Scale>
+		
+		<!-- Special Abilities unique to Skirmish mode -->
+		<Abilities SubObjectList="Yes">
+			<Income_Stream_Ability Name="R_Starbase_Income_Stream">
+				<Activation_Style>Skirmish_Automatic</Activation_Style>
+				<Initially_Enabled>Yes</Initially_Enabled>
+				<Base_Income_Value>100</Base_Income_Value>
+				<Base_Interval_In_Secs>1</Base_Interval_In_Secs>
+				<Split_Income_With_Allies>Yes</Split_Income_With_Allies>
+				<Split_Favors_Owner>No</Split_Favors_Owner>
+				<Full_Amount_To_Everyone>Yes</Full_Amount_To_Everyone>
+			</Income_Stream_Ability>
+			<Income_Stream_Mod_Ability Name="R_Supply_Dock_Income_Bonus">
+				<Activation_Style>Skirmish_Automatic</Activation_Style>
+				<Initially_Enabled>No</Initially_Enabled>			<!-- This bonus income is controlled by the presence of the Supply Dock hardpoint -->
+				<Income_Multiplier>1.0</Income_Multiplier>
+				<Income_Additive_Value>0</Income_Additive_Value>
+				<Interval_Multiplier>1.0</Interval_Multiplier>
+				<Stacking_Category>0</Stacking_Category>
+				<Target_Stream_Source>Skirmish_NR_Flagship_5</Target_Stream_Source>
+				<Affects_All_Allied_Sources>Yes</Affects_All_Allied_Sources>
+				<Reverse_Application_Logic>No</Reverse_Application_Logic>
+			</Income_Stream_Mod_Ability>
+ 			<Enable_Radar_Ability Name="R_Comm_Array_Enable_Radar">
+ 				<Activation_Style>Skirmish_Automatic</Activation_Style>
+				<Initially_Enabled>Yes</Initially_Enabled>			<!-- This effect is controlled by the presence of the Comm Array hardpoint -->
+ 				<Affects_All_Allies>True</Affects_All_Allies>
+ 			</Enable_Radar_Ability>
+		</Abilities>
+		
+		<Last_State_Visible_Under_FOW>False</Last_State_Visible_Under_FOW>
+		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
+		<Visible_On_Radar_When_Fogged>True</Visible_On_Radar_When_Fogged>
+	</StarBase>
+
+</Skirmish_starbases>

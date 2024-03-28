@@ -1,0 +1,648 @@
+<?xml version="1.0" ?>
+<Flagship_Zsinj>
+	
+	<FlagshipUnit Name="Flagship_Zsinj_AAA">
+		<Variant_Of_Existing_Type>Template_Spawner_Unit</Variant_Of_Existing_Type>
+		<Affiliation>Zsinj_Empire</Affiliation>
+		
+		<Text_ID>TEXT_UNIT_FLAGSHIP_ZSINJ_AAA</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_GROUP_SPAWNER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+			TEXT_ENCYCLOPEDIA_FLAGSHIP_ZSINJ_AAA_UNIT_1
+			TEXT_ENCYCLOPEDIA_FLAGSHIP_ZSINJ_AAA_UNIT_2
+			TEXT_ENCYCLOPEDIA_FLAGSHIP_ZSINJ_AAA_UNIT_3
+			TEXT_TOOLTIP_SEPARATOR_FLUFF_BLOCK
+			TEXT_UNIT_FLUFF_ZSINJ_AAA
+		</Encyclopedia_Text>
+		
+		<Space_Model_Name>INSTANTACTION_Empire.alo</Space_Model_Name>
+		<Icon_Name>i_button_z95_headhunter.tga</Icon_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Lua_Script></Lua_Script>
+		<Tech_Level>99</Tech_Level>
+		
+		<Starting_Spawned_Units_Tech_0>Template_Flagship_Z_95, 3</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Template_Flagship_Howlrunner, 1</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Template_Flagship_TIE_Bomber, 2</Starting_Spawned_Units_Tech_0>
+			
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>2190</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>16</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Upgrades</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->
+
+	</FlagshipUnit>
+	
+	<FlagshipUnit Name="Flagship_Zsinj_AAB">
+		<Variant_Of_Existing_Type>Template_Spawner_Unit</Variant_Of_Existing_Type>
+		<Affiliation>Zsinj_Empire</Affiliation>
+		
+		<Text_ID>TEXT_UNIT_FLAGSHIP_ZSINJ_AAB</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_GROUP_SPAWNER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+			TEXT_ENCYCLOPEDIA_FLAGSHIP_ZSINJ_AAB_UNIT_1
+			TEXT_ENCYCLOPEDIA_FLAGSHIP_ZSINJ_AAB_UNIT_2
+			TEXT_TOOLTIP_SEPARATOR_FLUFF_BLOCK
+			TEXT_UNIT_FLUFF_ZSINJ_AAB
+		</Encyclopedia_Text>
+		
+		<Space_Model_Name>INSTANTACTION_Empire.alo</Space_Model_Name>
+		<Icon_Name>i_button_tie_raptor.tga</Icon_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Lua_Script></Lua_Script>
+		<Tech_Level>99</Tech_Level>
+		
+		<Starting_Spawned_Units_Tech_0>Template_Flagship_TIE_Raptor, 2</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Template_Flagship_TIE_Fighter, 3</Starting_Spawned_Units_Tech_0>
+			
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>1205</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>12</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Upgrades</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->
+
+	</FlagshipUnit>
+	
+	<FlagshipUnit Name="Flagship_Zsinj_AAC">
+		<Variant_Of_Existing_Type>Template_Spawner_Unit</Variant_Of_Existing_Type>
+		<Affiliation>Zsinj_Empire</Affiliation>
+		
+		<Text_ID>TEXT_UNIT_FLAGSHIP_ZSINJ_AAC</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_GROUP_SPAWNER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+			TEXT_ENCYCLOPEDIA_FLAGSHIP_ZSINJ_AAC_UNIT_1
+			TEXT_TOOLTIP_SEPARATOR_FLUFF_BLOCK
+			TEXT_UNIT_FLUFF_ZSINJ_AAC
+		</Encyclopedia_Text>
+		
+		<Space_Model_Name>INSTANTACTION_Empire.alo</Space_Model_Name>
+		<Icon_Name>i_button_r22_spearhead.tga</Icon_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Lua_Script></Lua_Script>
+		<Tech_Level>99</Tech_Level>
+		
+		<Starting_Spawned_Units_Tech_0>Template_Flagship_R22_Spearhead_Squadron, 2</Starting_Spawned_Units_Tech_0>
+			
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>470</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>6</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Upgrades</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->
+
+	</FlagshipUnit>
+	
+	<FlagshipUnit Name="Flagship_Zsinj_AAD">
+		<Variant_Of_Existing_Type>Template_Spawner_Unit</Variant_Of_Existing_Type>
+		<Affiliation>Zsinj_Empire</Affiliation>
+		
+		<Text_ID>TEXT_UNIT_FLAGSHIP_ZSINJ_AAD</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_GROUP_SPAWNER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+			TEXT_ENCYCLOPEDIA_FLAGSHIP_ZSINJ_AAD_UNIT_1
+			TEXT_ENCYCLOPEDIA_FLAGSHIP_ZSINJ_AAD_UNIT_2
+			TEXT_ENCYCLOPEDIA_FLAGSHIP_ZSINJ_AAD_UNIT_3
+			TEXT_TOOLTIP_SEPARATOR_FLUFF_BLOCK
+			TEXT_UNIT_FLUFF_ZSINJ_AAD
+		</Encyclopedia_Text>
+		
+		<Space_Model_Name>INSTANTACTION_Empire.alo</Space_Model_Name>
+		<Icon_Name>i_button_corellian_corvette_assassin.tga</Icon_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Lua_Script></Lua_Script>
+		<Tech_Level>99</Tech_Level>
+		
+		<Starting_Spawned_Units_Tech_0>Template_Flagship_CR92, 3</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Template_Flagship_Zsinj_Cr90, 3</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Template_Flagship_YZ_775, 2</Starting_Spawned_Units_Tech_0>
+			
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>2905</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>16</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->
+
+	</FlagshipUnit>
+	
+	<FlagshipUnit Name="Flagship_Zsinj_AAE">
+		<Variant_Of_Existing_Type>Template_Spawner_Unit</Variant_Of_Existing_Type>
+		<Affiliation>Zsinj_Empire</Affiliation>
+		
+		<Text_ID>TEXT_UNIT_FLAGSHIP_ZSINJ_AAE</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_GROUP_SPAWNER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+			TEXT_ENCYCLOPEDIA_FLAGSHIP_ZSINJ_AAE_UNIT_1
+			TEXT_ENCYCLOPEDIA_FLAGSHIP_ZSINJ_AAE_UNIT_2
+			TEXT_TOOLTIP_SEPARATOR_FLUFF_BLOCK
+			TEXT_UNIT_FLUFF_ZSINJ_AAE
+		</Encyclopedia_Text>
+		
+		<Space_Model_Name>INSTANTACTION_Empire.alo</Space_Model_Name>
+		<Icon_Name>i_button_surveyor_frigate.tga</Icon_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Lua_Script></Lua_Script>
+		<Tech_Level>99</Tech_Level>
+		
+		<Starting_Spawned_Units_Tech_0>Template_Flagship_Generic_Nebulon_B_Zsinj, 2</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Template_Flagship_Surveyor_Frigate, 2</Starting_Spawned_Units_Tech_0>
+			
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>2670</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>10</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->
+
+	</FlagshipUnit>
+	
+	<FlagshipUnit Name="Flagship_Zsinj_AAF">
+		<Variant_Of_Existing_Type>Template_Spawner_Unit</Variant_Of_Existing_Type>
+		<Affiliation>Zsinj_Empire</Affiliation>
+		
+		<Text_ID>TEXT_UNIT_FLAGSHIP_ZSINJ_AAF</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_GROUP_SPAWNER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+			TEXT_ENCYCLOPEDIA_FLAGSHIP_ZSINJ_AAF_UNIT_1
+			TEXT_ENCYCLOPEDIA_FLAGSHIP_ZSINJ_AAF_UNIT_2
+			TEXT_TOOLTIP_SEPARATOR_FLUFF_BLOCK
+			TEXT_UNIT_FLUFF_ZSINJ_AAF
+		</Encyclopedia_Text>
+		
+		<Space_Model_Name>INSTANTACTION_Empire.alo</Space_Model_Name>
+		<Icon_Name>i_button_surveyor_frigate.tga</Icon_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Lua_Script></Lua_Script>
+		<Tech_Level>99</Tech_Level>
+		
+		<Starting_Spawned_Units_Tech_0>Template_Flagship_Corona_Zsinj, 2</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Template_Flagship_Surveyor_Frigate, 2</Starting_Spawned_Units_Tech_0>
+			
+			<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>2840</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>10</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->
+
+	</FlagshipUnit>
+	
+	<FlagshipUnit Name="Flagship_Zsinj_AAG">
+		<Variant_Of_Existing_Type>Template_Spawner_Unit</Variant_Of_Existing_Type>
+		<Affiliation>Zsinj_Empire</Affiliation>
+		
+		<Text_ID>TEXT_UNIT_FLAGSHIP_ZSINJ_AAG</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_GROUP_SPAWNER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+			TEXT_ENCYCLOPEDIA_FLAGSHIP_ZSINJ_AAG_UNIT_1
+			TEXT_ENCYCLOPEDIA_FLAGSHIP_ZSINJ_AAG_UNIT_2
+			TEXT_ENCYCLOPEDIA_FLAGSHIP_ZSINJ_AAG_UNIT_3
+			TEXT_ENCYCLOPEDIA_FLAGSHIP_ZSINJ_AAG_UNIT_4
+			TEXT_TOOLTIP_SEPARATOR_FLUFF_BLOCK
+			TEXT_UNIT_FLUFF_ZSINJ_AAG
+		</Encyclopedia_Text>
+		
+		<Space_Model_Name>INSTANTACTION_Empire.alo</Space_Model_Name>
+		<Icon_Name>i_button_Pirate_frigate.tga</Icon_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Lua_Script></Lua_Script>
+		<Tech_Level>99</Tech_Level>
+		
+		<Starting_Spawned_Units_Tech_0>Template_Flagship_Action_VI_Support, 1</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Template_Flagship_Interceptor_Frigate, 2</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Template_Flagship_Z_95, 2</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Template_Flagship_Starwing, 2</Starting_Spawned_Units_Tech_0>
+			
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>2620</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>19</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->
+
+	</FlagshipUnit>
+	
+	
+	<FlagshipUnit Name="Flagship_Zsinj_AAH">
+		<Variant_Of_Existing_Type>Template_Spawner_Unit</Variant_Of_Existing_Type>
+		<Affiliation>Zsinj_Empire</Affiliation>
+		
+		<Text_ID>TEXT_UNIT_FLAGSHIP_ZSINJ_AAH</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_GROUP_SPAWNER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+			TEXT_ENCYCLOPEDIA_FLAGSHIP_ZSINJ_AAH_UNIT_1
+			TEXT_ENCYCLOPEDIA_FLAGSHIP_ZSINJ_AAH_UNIT_2
+			TEXT_TOOLTIP_SEPARATOR_FLUFF_BLOCK
+			TEXT_UNIT_FLUFF_ZSINJ_AAH
+		</Encyclopedia_Text>
+		
+		<Space_Model_Name>INSTANTACTION_Empire.alo</Space_Model_Name>
+		<Icon_Name>i_button_escort.tga</Icon_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Lua_Script></Lua_Script>
+		<Tech_Level>99</Tech_Level>
+		
+		<Starting_Spawned_Units_Tech_0>Template_Flagship_Combat_Escort_Carrier, 1</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Template_Flagship_TIE_Hunter, 1</Starting_Spawned_Units_Tech_0>
+		
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>1110</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>7</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->
+
+	</FlagshipUnit>
+	
+	<FlagshipUnit Name="Flagship_Zsinj_AAI">
+		<Variant_Of_Existing_Type>Template_Spawner_Unit</Variant_Of_Existing_Type>
+		<Affiliation>Zsinj_Empire</Affiliation>
+		
+		<Text_ID>TEXT_UNIT_FLAGSHIP_ZSINJ_AAI</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_GROUP_SPAWNER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+			TEXT_ENCYCLOPEDIA_FLAGSHIP_ZSINJ_AAI_UNIT_1
+			TEXT_ENCYCLOPEDIA_FLAGSHIP_ZSINJ_AAI_UNIT_2
+			TEXT_ENCYCLOPEDIA_FLAGSHIP_ZSINJ_AAI_UNIT_3
+			TEXT_TOOLTIP_SEPARATOR_FLUFF_BLOCK
+			TEXT_UNIT_FLUFF_ZSINJ_AAI
+		</Encyclopedia_Text>
+		
+		<Space_Model_Name>INSTANTACTION_Empire.alo</Space_Model_Name>
+		<Icon_Name>i_button_stargalleon.tga</Icon_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Lua_Script></Lua_Script>
+		<Tech_Level>99</Tech_Level>
+		
+		<Starting_Spawned_Units_Tech_0>Template_Flagship_Neutron_Star, 2</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Template_Flagship_Star_Galleon, 1</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Template_Flagship_Adz, 2</Starting_Spawned_Units_Tech_0>
+			
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>3705</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>13</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->
+
+	</FlagshipUnit>
+	
+	<FlagshipUnit Name="Flagship_Zsinj_AAJ">
+		<Variant_Of_Existing_Type>Template_Spawner_Unit</Variant_Of_Existing_Type>
+		<Affiliation>Zsinj_Empire</Affiliation>
+		
+		<Text_ID>TEXT_UNIT_FLAGSHIP_ZSINJ_AAJ</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_GROUP_SPAWNER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+			TEXT_ENCYCLOPEDIA_FLAGSHIP_ZSINJ_AAJ_UNIT_1
+			TEXT_ENCYCLOPEDIA_FLAGSHIP_ZSINJ_AAJ_UNIT_2
+			TEXT_TOOLTIP_SEPARATOR_FLUFF_BLOCK
+			TEXT_UNIT_FLUFF_ZSINJ_AAJ
+		</Encyclopedia_Text>
+		
+		<Space_Model_Name>INSTANTACTION_Empire.alo</Space_Model_Name>
+		<Icon_Name>I_BUTTON_DRAGON.tga</Icon_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Lua_Script></Lua_Script>
+		<Tech_Level>99</Tech_Level>
+		
+		<Starting_Spawned_Units_Tech_0>Template_Flagship_Dragon_Heavy_Cruiser, 2</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Template_Flagship_Vengeance_Frigate, 4</Starting_Spawned_Units_Tech_0>
+			
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>4950</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>13</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->
+
+	</FlagshipUnit>
+	
+	<FlagshipUnit Name="Flagship_Zsinj_AAK">
+		<Variant_Of_Existing_Type>Template_Spawner_Unit</Variant_Of_Existing_Type>
+		<Affiliation>Zsinj_Empire</Affiliation>
+		
+		<Text_ID>TEXT_UNIT_FLAGSHIP_ZSINJ_AAK</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_GROUP_SPAWNER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+			TEXT_ENCYCLOPEDIA_FLAGSHIP_ZSINJ_AAK_UNIT_1
+			TEXT_ENCYCLOPEDIA_FLAGSHIP_ZSINJ_AAK_UNIT_2
+			TEXT_TOOLTIP_SEPARATOR_FLUFF_BLOCK
+			TEXT_UNIT_FLUFF_ZSINJ_AAK
+		</Encyclopedia_Text>
+		
+		<Space_Model_Name>INSTANTACTION_Empire.alo</Space_Model_Name>
+		<Icon_Name>i_button_lancer.tga</Icon_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Lua_Script></Lua_Script>
+		<Tech_Level>99</Tech_Level>
+		
+		<Starting_Spawned_Units_Tech_0>Template_Flagship_Lancer, 2</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Template_Flagship_Tie_Aggressor, 4</Starting_Spawned_Units_Tech_0>
+				
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>2230</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>12</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->
+
+	</FlagshipUnit>
+	
+	<FlagshipUnit Name="Flagship_Zsinj_AAL">
+		<Variant_Of_Existing_Type>Template_Spawner_Unit</Variant_Of_Existing_Type>
+		<Affiliation>Zsinj_Empire</Affiliation>
+		
+		<Text_ID>TEXT_UNIT_FLAGSHIP_ZSINJ_AAL</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_GROUP_SPAWNER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+			TEXT_ENCYCLOPEDIA_FLAGSHIP_ZSINJ_AAL_UNIT_1
+			TEXT_ENCYCLOPEDIA_FLAGSHIP_ZSINJ_AAL_UNIT_2
+			TEXT_TOOLTIP_SEPARATOR_FLUFF_BLOCK
+			TEXT_UNIT_FLUFF_ZSINJ_AAL
+		</Encyclopedia_Text>
+		
+		<Space_Model_Name>INSTANTACTION_Empire.alo</Space_Model_Name>
+		<Icon_Name>i_button_tie_raptor_shielded.tga</Icon_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Lua_Script></Lua_Script>
+		<Tech_Level>99</Tech_Level>
+		
+		<Starting_Spawned_Units_Tech_0>Template_Flagship_Shielded_Raptor, 2</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Template_Flagship_Skipray, 1</Starting_Spawned_Units_Tech_0>
+				
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>1100</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>10</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Upgrades</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->
+
+	</FlagshipUnit>
+	
+	<FlagshipUnit Name="Flagship_Zsinj_AAM">
+		<Variant_Of_Existing_Type>Template_Spawner_Unit</Variant_Of_Existing_Type>
+		<Affiliation>Zsinj_Empire</Affiliation>
+		
+		<Text_ID>TEXT_UNIT_FLAGSHIP_ZSINJ_AAM</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_GROUP_SPAWNER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+			TEXT_ENCYCLOPEDIA_FLAGSHIP_ZSINJ_AAM_UNIT_1
+			TEXT_ENCYCLOPEDIA_FLAGSHIP_ZSINJ_AAM_UNIT_2
+			TEXT_TOOLTIP_SEPARATOR_FLUFF_BLOCK
+			TEXT_UNIT_FLUFF_ZSINJ_AAM
+		</Encyclopedia_Text>
+		
+		<Space_Model_Name>INSTANTACTION_Empire.alo</Space_Model_Name>
+		<Icon_Name>i_button_victory_ii.tga</Icon_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Lua_Script></Lua_Script>
+		<Tech_Level>99</Tech_Level>
+		
+		<Starting_Spawned_Units_Tech_0>Template_Flagship_Victory_Destroyer_Two, 2</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Template_Flagship_Corona_Zsinj, 4</Starting_Spawned_Units_Tech_0>
+				
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>6990</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>14</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->
+
+	</FlagshipUnit>
+	
+	<FlagshipUnit Name="Flagship_Zsinj_AAN">
+		<Variant_Of_Existing_Type>Template_Spawner_Unit</Variant_Of_Existing_Type>
+		<Affiliation>Zsinj_Empire</Affiliation>
+		
+		<Text_ID>TEXT_UNIT_FLAGSHIP_ZSINJ_AAN</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_GROUP_SPAWNER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+			TEXT_ENCYCLOPEDIA_FLAGSHIP_ZSINJ_AAN_UNIT_1
+			TEXT_ENCYCLOPEDIA_FLAGSHIP_ZSINJ_AAN_UNIT_2
+			TEXT_ENCYCLOPEDIA_FLAGSHIP_ZSINJ_AAN_UNIT_3
+			TEXT_ENCYCLOPEDIA_FLAGSHIP_ZSINJ_AAN_UNIT_4
+			TEXT_TOOLTIP_SEPARATOR_FLUFF_BLOCK
+			TEXT_UNIT_FLUFF_ZSINJ_AAN
+		</Encyclopedia_Text>
+		
+		<Space_Model_Name>INSTANTACTION_Empire.alo</Space_Model_Name>
+		<Icon_Name>I_BUTTON_SUPERTRANSPORT_XI.tga</Icon_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Lua_Script></Lua_Script>
+		<Tech_Level>99</Tech_Level>
+		
+		<Starting_Spawned_Units_Tech_0>Template_Flagship_Super_Transport_XI, 1</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Template_Flagship_Interceptor_Frigate, 4</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Template_Flagship_Action_VI_Support, 2</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Template_Flagship_Space_ARC_Cruiser, 2</Starting_Spawned_Units_Tech_0>
+		
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>7710</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>23</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->
+
+	</FlagshipUnit>
+	
+	<FlagshipUnit Name="Flagship_Zsinj_AAO">
+		<Variant_Of_Existing_Type>Template_Spawner_Unit</Variant_Of_Existing_Type>
+		<Affiliation>Zsinj_Empire</Affiliation>
+		
+		<Text_ID>TEXT_UNIT_FLAGSHIP_ZSINJ_AAO</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_GROUP_SPAWNER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+			TEXT_ENCYCLOPEDIA_FLAGSHIP_ZSINJ_AAO_UNIT_1
+			TEXT_ENCYCLOPEDIA_FLAGSHIP_ZSINJ_AAO_UNIT_2
+			TEXT_TOOLTIP_SEPARATOR_FLUFF_BLOCK
+			TEXT_UNIT_FLUFF_ZSINJ_AAO
+		</Encyclopedia_Text>
+		
+		<Space_Model_Name>INSTANTACTION_Empire.alo</Space_Model_Name>
+		<Icon_Name>i_button_aggressor.tga</Icon_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Lua_Script></Lua_Script>
+		<Tech_Level>99</Tech_Level>
+		
+		<Starting_Spawned_Units_Tech_0>Template_Flagship_Generic_Aggressor, 2</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Template_Flagship_Star_Destroyer, 2</Starting_Spawned_Units_Tech_0>
+				
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>12760</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>15</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->
+
+	</FlagshipUnit>
+	
+	<FlagshipUnit Name="Flagship_Zsinj_AAP">
+		<Variant_Of_Existing_Type>Template_Spawner_Unit</Variant_Of_Existing_Type>
+		<Affiliation>Zsinj_Empire</Affiliation>
+		
+		<Text_ID>TEXT_UNIT_FLAGSHIP_ZSINJ_AAP</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_GROUP_SPAWNER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+			TEXT_ENCYCLOPEDIA_FLAGSHIP_ZSINJ_AAP_UNIT_1
+			TEXT_ENCYCLOPEDIA_FLAGSHIP_ZSINJ_AAP_UNIT_2
+			TEXT_TOOLTIP_SEPARATOR_FLUFF_BLOCK
+			TEXT_UNIT_FLUFF_ZSINJ_AAP
+		</Encyclopedia_Text>
+		
+		<Space_Model_Name>INSTANTACTION_Empire.alo</Space_Model_Name>
+		<Icon_Name>i_button_ISD_TWO.tga</Icon_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Lua_Script></Lua_Script>
+		<Tech_Level>99</Tech_Level>
+		
+		<Starting_Spawned_Units_Tech_0>Template_Flagship_Star_Destroyer_Two, 2</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Template_Flagship_Victory_Destroyer_Two, 2</Starting_Spawned_Units_Tech_0>
+				
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>12610</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>15</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->
+
+	</FlagshipUnit>
+	
+	<FlagshipUnit Name="Flagship_Zsinj_AAQ">
+		<Variant_Of_Existing_Type>Template_Spawner_Unit</Variant_Of_Existing_Type>
+		<Affiliation>Zsinj_Empire</Affiliation>
+		
+		<Text_ID>TEXT_UNIT_FLAGSHIP_ZSINJ_AAQ</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_GROUP_SPAWNER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+			TEXT_ENCYCLOPEDIA_FLAGSHIP_ZSINJ_AAQ_UNIT_1
+			TEXT_ENCYCLOPEDIA_FLAGSHIP_ZSINJ_AAQ_UNIT_2
+			TEXT_TOOLTIP_SEPARATOR_FLUFF_BLOCK
+			TEXT_UNIT_FLUFF_ZSINJ_AAQ
+		</Encyclopedia_Text>
+		
+		<Space_Model_Name>INSTANTACTION_Empire.alo</Space_Model_Name>
+		<Icon_Name>i_button_tie_heavy_bomber_one.tga</Icon_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Lua_Script></Lua_Script>
+		<Tech_Level>99</Tech_Level>
+		
+		<Starting_Spawned_Units_Tech_0>Template_Flagship_TIE_Heavy_Bomber, 2</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Template_Flagship_Tie_Aggressor, 4</Starting_Spawned_Units_Tech_0>
+				
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>2390</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>14</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Upgrades</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->
+
+	</FlagshipUnit>
+	
+	<FlagshipUnit Name="Flagship_Zsinj_AAR">
+		<Variant_Of_Existing_Type>Template_Spawner_Unit</Variant_Of_Existing_Type>
+		<Affiliation>Zsinj_Empire</Affiliation>
+		
+		<Text_ID>TEXT_UNIT_FLAGSHIP_ZSINJ_AAR</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_GROUP_SPAWNER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+			TEXT_ENCYCLOPEDIA_FLAGSHIP_ZSINJ_AAR_UNIT_1
+			TEXT_ENCYCLOPEDIA_FLAGSHIP_ZSINJ_AAR_UNIT_2
+			TEXT_ENCYCLOPEDIA_FLAGSHIP_ZSINJ_AAR_UNIT_3
+			TEXT_TOOLTIP_SEPARATOR_FLUFF_BLOCK
+			TEXT_UNIT_FLUFF_ZSINJ_AAR
+		</Encyclopedia_Text>
+		
+		<Space_Model_Name>INSTANTACTION_Empire.alo</Space_Model_Name>
+		<Icon_Name>I_BUTTON_SORANNAN.tga</Icon_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Lua_Script></Lua_Script>
+		<Tech_Level>99</Tech_Level>
+		
+		<Starting_Spawned_Units_Tech_0>Template_Flagship_Generic_Sorannan, 1</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Template_Flagship_Generic_Aggressor, 2</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Template_Flagship_Dragon_Heavy_Cruiser, 4</Starting_Spawned_Units_Tech_0>
+				
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>21790</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>23</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->
+
+	</FlagshipUnit>
+	
+	<FlagshipUnit Name="Flagship_Zsinj_AAS">
+		<Variant_Of_Existing_Type>Template_Spawner_Unit</Variant_Of_Existing_Type>
+		<Affiliation>Zsinj_Empire</Affiliation>
+		
+		<Text_ID>TEXT_UNIT_FLAGSHIP_ZSINJ_AAS</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_GROUP_SPAWNER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+			TEXT_ENCYCLOPEDIA_FLAGSHIP_ZSINJ_AAS_UNIT_1
+			TEXT_ENCYCLOPEDIA_FLAGSHIP_ZSINJ_AAS_UNIT_2
+			TEXT_ENCYCLOPEDIA_FLAGSHIP_ZSINJ_AAS_UNIT_3
+			TEXT_TOOLTIP_SEPARATOR_FLUFF_BLOCK
+			TEXT_UNIT_FLUFF_ZSINJ_AAS
+		</Encyclopedia_Text>
+		
+		<Space_Model_Name>INSTANTACTION_Empire.alo</Space_Model_Name>
+		<Icon_Name>i_button_tagge.tga</Icon_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Lua_Script></Lua_Script>
+		<Tech_Level>99</Tech_Level>
+		
+		<Starting_Spawned_Units_Tech_0>Template_Flagship_Generic_Tagge_Battlecruiser, 1</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Template_Flagship_Star_Destroyer_Two, 2</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Template_Flagship_Star_Destroyer, 2</Starting_Spawned_Units_Tech_0>
+		
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>22660</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>22</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->
+
+	</FlagshipUnit>
+		
+	</Flagship_Zsinj>

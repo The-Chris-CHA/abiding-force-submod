@@ -1,0 +1,301 @@
+<?xml version="1.0"?>
+<CSA_Structures>
+	
+	<SpecialStructure Name="CSA_Capital">
+
+		<Variant_Of_Existing_Type>Template_Faction_Capital</Variant_Of_Existing_Type>
+		
+		<Text_ID>TEXT_COMPANY_CSA_HQ</Text_ID>
+		
+		<Encyclopedia_Text> 
+		TEXT_COMPANY_CSA_HQ_DESCRIPTION 
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_CAPITAL_CSA_HEALTH 
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_TOOLTIP_CAPITAL_CSA1
+		TEXT_TOOLTIP_CAPITAL_CSA2
+		TEXT_TOOLTIP_CAPITAL_CSA3
+		TEXT_TOOLTIP_CAPITAL_CSA4
+		TEXT_TOOLTIP_CAPITAL_CSA5
+		TEXT_TOOLTIP_CAPITAL_CSA6
+		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
+		TEXT_TOOLTIP_BONUS_BLOCK_OB
+		TEXT_TOOLTIP_BONUS_BLOCK_BR
+        TEXT_TOOLTIP_BONUS_BLOCK_VP
+		TEXT_TOOLTIP_INCOME_CAPITAL
+		TEXT_TOOLTIP_INCOME_CAPITAL_SHIPCREWS
+		TEXT_TOOLTIP_INFLUENCE_CAPITAL
+		TEXT_TOOLTIP_SEPARATOR_LIMITS_BLOCK
+		TEXT_TOOLTIP_BUILDLIMIT_CAPITAL
+		</Encyclopedia_Text>
+		
+		<Icon_Name>I_BUTTON_CSA_CAPITAL.TGA</Icon_Name>
+
+		<Affiliation>Corporate_Sector</Affiliation>
+		
+		<!--All Eras-->
+		<Starting_Spawned_Units_Tech_0>Deployed_Espo_Squad, 5</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Deployed_Espo_Squad, 15</Reserve_Spawned_Units_Tech_0>
+
+		<Starting_Spawned_Units_Tech_0>Espo_Walker, 2</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Espo_Walker, 6</Reserve_Spawned_Units_Tech_0>	
+
+		<Starting_Spawned_Units_Tech_0>GX12_Hovervan, 2</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>GX12_Hovervan, 6</Reserve_Spawned_Units_Tech_0>
+
+		<Starting_Spawned_Units_Tech_0>Class_I_Droid, 4</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Class_I_Droid, 8</Reserve_Spawned_Units_Tech_0>
+
+		<Starting_Spawned_Units_Tech_0>Persuader, 2</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Persuader, 4</Reserve_Spawned_Units_Tech_0>
+
+		<Starting_Spawned_Units_Tech_0>Strikebreaker, 1</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Strikebreaker, 1</Reserve_Spawned_Units_Tech_0>
+		
+		<Death_CLone>Damage_Normal, EB_OfficerAcademy_Death_Clone</Death_CLone>
+
+	</SpecialStructure>
+	
+	<SpecialStructure Name="CSA_LocalOffice">
+	
+		<Variant_Of_Existing_Type>Template_Planetary_Government</Variant_Of_Existing_Type>
+		
+		<Text_ID>TEXT_COMPANY_CSA_LOCALOFFICE</Text_ID>
+		
+		<Encyclopedia_Text> 
+		TEXT_COMPANY_CSA_LOCALHQ_DESCRIPTION
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
+		TEXT_TOOLTIP_OFFICE_CSA_HEALTH 
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK 
+		TEXT_TOOLTIP_OFFICE_CSA1
+		TEXT_TOOLTIP_OFFICE_CSA2
+		TEXT_TOOLTIP_OFFICE_CSA3
+		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
+		TEXT_TOOLTIP_INFLUENCE_OFFICE
+		</Encyclopedia_Text>
+		
+		<Icon_Name>I_BUTTON_CSA.TGA</Icon_Name>
+
+		<Affiliation>Corporate_Sector</Affiliation>
+		
+		<Tactical_Additional_Structure_Type>Generic_Power_Generator</Tactical_Additional_Structure_Type>
+		
+		<!--All Eras-->
+		<Starting_Spawned_Units_Tech_0>Deployed_Espo_Squad, 3</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Deployed_Espo_Squad, 9</Reserve_Spawned_Units_Tech_0>
+
+		<Starting_Spawned_Units_Tech_0>X10_Groundcruiser, 3</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>X10_Groundcruiser, 6</Reserve_Spawned_Units_Tech_0>
+
+		<Starting_Spawned_Units_Tech_0>Persuader, 1</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Persuader, 2</Reserve_Spawned_Units_Tech_0>
+		
+		<Abilities SubObjectList="Yes">		
+		
+			<Political_Transition_Bonus_Ability Name="Pacification_Bonus">
+				<Time_Reduction_Percentage>0.05</Time_Reduction_Percentage>
+				<Stacking_Category>1</Stacking_Category>
+			</Political_Transition_Bonus_Ability>
+		
+			<Reduce_Production_Price_Ability Name="Sienar_Corp_Discount">
+				<Unit_Strength_Category/>
+				<Applicable_Unit_Categories/>
+				<Applicable_Unit_Types> Sienar_HQ </Applicable_Unit_Types>
+				<Price_Reduction_Percentage>0.4</Price_Reduction_Percentage>
+				<Stacking_Category>8</Stacking_Category>
+			</Reduce_Production_Price_Ability>
+			
+			<Reduce_Production_Price_Ability Name="KDY_Corp_Discount">
+				<Unit_Strength_Category/>
+				<Applicable_Unit_Categories/>
+				<Applicable_Unit_Types> KDY_HQ </Applicable_Unit_Types>
+				<Price_Reduction_Percentage>0.80</Price_Reduction_Percentage>
+				<Stacking_Category>8</Stacking_Category>
+			</Reduce_Production_Price_Ability>
+			
+			<Reduce_Production_Price_Ability Name="KDY_Branch_Discount">
+				<Unit_Strength_Category/>
+				<Applicable_Unit_Categories/>
+				<Applicable_Unit_Types> KDY_Branch </Applicable_Unit_Types>
+				<Price_Reduction_Percentage>0.725</Price_Reduction_Percentage>
+				<Stacking_Category>8</Stacking_Category>
+			</Reduce_Production_Price_Ability>
+		</Abilities>
+
+	</SpecialStructure>
+	
+	<SpecialStructure Name="C_Ground_Barracks">
+		
+		<Variant_Of_Existing_Type>Template_Barracks</Variant_Of_Existing_Type>
+		
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_BARRACKS 
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
+		TEXT_TOOLTIP_BARRACKS_CSA_HEALTH
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_TOOLTIP_BARRACKS_CSA1
+		TEXT_TOOLTIP_BARRACKS_CSA2
+		TEXT_TOOLTIP_BARRACKS_CSA3
+		</Encyclopedia_Text>
+		
+		<MP_Encyclopedia_Text> TEXT_TOOLTIP_BARRACKS </MP_Encyclopedia_Text>
+		
+		<Land_Model_Name>RB_InfantryBarracks.alo</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Icon_Name>i_button_r_infantry_barracks.tga</Icon_Name>
+		
+		<Obstacle_Proxy_Type> R_Ground_Barracks_Build_Pad </Obstacle_Proxy_Type>
+		
+		<Affiliation>Corporate_Sector</Affiliation>
+		
+		<Required_Special_Structures>CSA_LocalOffice</Required_Special_Structures>
+
+		<!--All Eras-->
+		<Starting_Spawned_Units_Tech_0>Deployed_Espo_Squad, 2</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Deployed_Espo_Squad, -1</Reserve_Spawned_Units_Tech_0>
+
+		<Starting_Spawned_Units_Tech_0>Deployed_B1_CSA_Squad, 1</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Deployed_B1_CSA_Squad, -1</Reserve_Spawned_Units_Tech_0>
+
+		<Starting_Spawned_Units_Tech_0>Espo_Walker, 1</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Espo_Walker, 2</Reserve_Spawned_Units_Tech_0>
+
+	</SpecialStructure>
+
+	<SpecialStructure Name="C_Ground_Light_Vehicle_Factory">
+		
+		<Variant_Of_Existing_Type>Template_Light_Vehicle_Factory</Variant_Of_Existing_Type>
+		
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_L_FACTORY 
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
+		TEXT_TOOLTIP_L_FACTORY_CSA_HEALTH 
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_TOOLTIP_L_FACTORY_CSA1
+		TEXT_TOOLTIP_L_FACTORY_CSA2
+		</Encyclopedia_Text>
+		
+		<MP_Encyclopedia_Text> TEXT_TOOLTIP_L_FACTORY </MP_Encyclopedia_Text>
+		
+		<Land_Model_Name>rb_lightvehiclefactory.alo</Land_Model_Name>
+		<Icon_Name>i_button_r_vehicle_factory.tga</Icon_Name>
+		
+		<Obstacle_Proxy_Type> R_Ground_Light_Vehicle_Factory_Build_Pad </Obstacle_Proxy_Type>
+		
+		<Affiliation>Corporate_Sector</Affiliation>
+		
+		<Required_Special_Structures>CSA_LocalOffice</Required_Special_Structures>
+		
+		<!--
+		<Tactical_Buildable_Objects_Campaign>
+			Corporate_Sector,
+				RL_Light_Armor_L1_Upgrade,
+				RL_Light_Armor_L2_Upgrade,
+				RL_Enhanced_Repulsors_L1_Upgrade,
+				RL_Enhanced_Repulsors_L2_Upgrade,
+				RL_Weatherproof_Upgrade,
+		</Tactical_Buildable_Objects_Campaign>
+		-->
+		
+	    <Tactical_Buildable_Objects_Multiplayer>
+			Corporate_Sector,
+				Rebel_T2B_Company,
+				Rebel_T1B_Company,
+				Rebel_AAC_2_Company,
+				Rebel_Snowspeeder_Wing,
+				Rebel_Freerunner_Company,
+				<!--
+				RL_Light_Armor_L1_Upgrade,
+				RL_Light_Armor_L2_Upgrade,
+				RL_Enhanced_Repulsors_L1_Upgrade,
+				RL_Enhanced_Repulsors_L2_Upgrade,
+				RL_Weatherproof_Upgrade,
+				-->
+		</Tactical_Buildable_Objects_Multiplayer>
+		
+		<!--All Eras-->
+		<Starting_Spawned_Units_Tech_0>Class_I_Droid, 4</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Class_I_Droid, 8</Reserve_Spawned_Units_Tech_0>
+
+		<Starting_Spawned_Units_Tech_0>X10_Groundcruiser, 4</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>X10_Groundcruiser, 8</Reserve_Spawned_Units_Tech_0>
+
+	</SpecialStructure>
+
+	<SpecialStructure Name="C_Ground_Heavy_Vehicle_Factory">
+		
+		<Variant_Of_Existing_Type>Template_Heavy_Vehicle_Factory</Variant_Of_Existing_Type>
+		
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_H_FACTORY
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
+		TEXT_TOOLTIP_H_FACTORY_CSA_HEALTH
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_TOOLTIP_H_FACTORY_CSA1
+		</Encyclopedia_Text>
+		
+		<MP_Encyclopedia_Text> TEXT_TOOLTIP_H_FACTORY </MP_Encyclopedia_Text>
+		
+		<Land_Model_Name>rb_heavyvehiclefactory.alo</Land_Model_Name>
+		<Icon_Name>i_button_r_advanced_weapons.tga</Icon_Name>
+
+		<Obstacle_Proxy_Type> R_Ground_Heavy_Vehicle_Factory_Build_Pad </Obstacle_Proxy_Type>
+		
+		<Affiliation>Corporate_Sector</Affiliation>
+		
+		<Required_Special_Structures>CSA_LocalOffice</Required_Special_Structures>
+		
+		<!--
+		<Tactical_Buildable_Objects_Campaign>
+			Corporate_Sector,
+				RL_Heavy_Armor_L1_Upgrade,
+				RL_Heavy_Armor_L2_Upgrade,
+				RL_Improved_Treads_L1_Upgrade,
+				RL_Improved_Treads_L2_Upgrade,
+				RL_Improved_T4B_Damage_L1_Upgrade,
+				RL_Improved_T4B_Damage_L2_Upgrade,
+				RL_Weatherproof_Upgrade,
+		</Tactical_Buildable_Objects_Campaign>
+		-->
+
+		<Tactical_Buildable_Objects_Multiplayer>
+			Corporate_Sector,
+				Rebel_T4B_Company,
+				Rebel_MPTL_Company,
+				Rebel_Gallofree_HTT_Company,
+				Rebel_T3B_Company,
+				Rebel_Vwing_Group,
+				Rebel_Tracker_Company,
+				<!--
+				RL_Heavy_Armor_L1_Upgrade,
+				RL_Heavy_Armor_L2_Upgrade,
+				RL_Improved_Treads_L1_Upgrade,
+				RL_Improved_Treads_L2_Upgrade,
+				RL_Improved_T4B_Damage_L1_Upgrade,
+				RL_Improved_T4B_Damage_L2_Upgrade,
+				RL_Weatherproof_Upgrade,
+				-->
+		</Tactical_Buildable_Objects_Multiplayer>
+
+		<!--<Tactical_Buildable_Objects_Multiplayer>
+			Rebel,
+				RL_T4B_Research_Upgrade,
+				Rebel_T4B_Company,
+				RL_MPTL_Research_Upgrade,
+				Rebel_MPTL_Company,
+				RL_Heavy_Armor_L1_Upgrade,
+				RL_Heavy_Armor_L2_Upgrade,
+				RL_Improved_Treads_L1_Upgrade,
+				RL_Improved_Treads_L2_Upgrade,
+				RL_Improved_T4B_Damage_L1_Upgrade,
+				RL_Improved_T4B_Damage_L2_Upgrade,
+		</Tactical_Buildable_Objects_Multiplayer>-->
+
+		<!--All Eras-->
+		<Starting_Spawned_Units_Tech_0>Strikebreaker, 2</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Strikebreaker, 4</Reserve_Spawned_Units_Tech_0>
+		
+	</SpecialStructure>
+
+	
+</CSA_Structures>

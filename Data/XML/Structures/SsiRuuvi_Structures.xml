@@ -1,0 +1,97 @@
+<?xml version="1.0"?>
+<SpecialStructures>
+
+	<SpecialStructure Name="Creenaak_Palace">
+	
+		<Variant_Of_Existing_Type>Template_Faction_Capital</Variant_Of_Existing_Type>
+		
+		<Text_ID>TEXT_COMPANY_SSIRUU_CAPITAL</Text_ID>
+		
+		<Encyclopedia_Text>
+		TEXT_COMPANY_CAPITAL_DESCRIPTION
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_CAPITAL_SSIRUU_HEALTH
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_TOOLTIP_CAPITAL_SSIRUU1
+		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
+		TEXT_TOOLTIP_BONUS_BLOCK_OB
+		TEXT_TOOLTIP_BONUS_BLOCK_BR
+        TEXT_TOOLTIP_BONUS_BLOCK_VP
+		TEXT_TOOLTIP_INCOME_CAPITAL
+		TEXT_TOOLTIP_INCOME_CAPITAL_SHIPCREWS
+		TEXT_TOOLTIP_INFLUENCE_CAPITAL
+		TEXT_TOOLTIP_SEPARATOR_LIMITS_BLOCK
+		TEXT_TOOLTIP_BUILDLIMIT_CAPITAL
+		</Encyclopedia_Text>
+		
+		<Land_Model_Name>W_Corsenate.alo</Land_Model_Name>
+		
+		<Icon_Name>i_button_ruuvi_capital.tga</Icon_Name>
+		
+		<Affiliation>SsiRuuvi_Imperium</Affiliation>
+
+		<Starting_Spawned_Units_Tech_0>SsiRuuk_Soldier_Squad_Deployed, 4</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>SsiRuuk_Soldier_Squad_Deployed, 12</Reserve_Spawned_Units_Tech_0>
+		
+		<Death_CLone>Damage_Normal, W_CORSENATE_Death_Clone</Death_CLone>
+
+	</SpecialStructure>	
+	
+	<SpecialStructure Name="SsiRuuvi_Palace">
+		
+		<Variant_Of_Existing_Type>Template_Planetary_Government</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_COMPANY_SSIRUU_PALACE</Text_ID>
+
+		<Land_Model_Name>W_Corsenate.alo</Land_Model_Name>
+		<Scale_Factor>0.75</Scale_Factor>
+		
+		<Affiliation>SsiRuuvi_Imperium</Affiliation>
+		
+		<Tactical_Additional_Structure_Type>Generic_Power_Generator</Tactical_Additional_Structure_Type>
+		
+		<Icon_Name>i_button_ruuvi.tga</Icon_Name>
+		
+		<Starting_Spawned_Units_Tech_0>SsiRuuk_Soldier_Squad_Deployed, 3</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>SsiRuuk_Soldier_Squad_Deployed, 9</Reserve_Spawned_Units_Tech_0>
+
+
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_SENATORSOFFICE_DESCRIPTION
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_OFFICE_SSIRUU_HEALTH
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_TOOLTIP_OFFICE_SSIRUU1
+		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
+		TEXT_TOOLTIP_INFLUENCE_OFFICE
+		</Encyclopedia_Text>
+		
+	</SpecialStructure>
+	
+	<SpecialStructure Name="S_Ground_Barracks">
+		
+		<Variant_Of_Existing_Type>Template_Barracks</Variant_Of_Existing_Type>
+		
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_BARRACKS 
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
+		TEXT_TOOLTIP_BARRACKS_SSIRUU_HEALTH
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_TOOLTIP_BARRACKS_SSIRUU1
+		</Encyclopedia_Text>
+		
+		<Land_Model_Name>RB_InfantryBarracks.alo</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Icon_Name>i_button_r_infantry_barracks.tga</Icon_Name>
+		
+		<Affiliation>SsiRuuvi_Imperium</Affiliation>
+		
+		<Required_Special_Structures>SsiRuuvi_Palace</Required_Special_Structures>
+
+		<Starting_Spawned_Units_Tech_0>SsiRuuk_Soldier_Squad_Deployed, 4</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>SsiRuuk_Soldier_Squad_Deployed, -1</Reserve_Spawned_Units_Tech_0>
+
+	</SpecialStructure>
+
+</SpecialStructures>
+

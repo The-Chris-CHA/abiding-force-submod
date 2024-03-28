@@ -1,0 +1,226 @@
+<?xml version="1.0" ?>
+
+
+
+<!--******************************************************-->
+<!--******	Campaign: Fractured Empire (Isard) *****-->
+<!--******************************************************-->
+
+	<!-- 
+		Note: The random short timers are typically because Lua functions linked to XML events cannot fire simultaneously
+		Keep this in mind if you need to add an event that might happen concurrently with another
+	-->
+
+
+<Story>
+	
+	<Event Name="Government_Start">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>0</Event_Param1>
+	</Event>
+	
+	<Event Name="Support_Candidate_Leia">
+		<Event_Type>STORY_CONSTRUCT</Event_Type>
+		<Event_Param1>Candidate_Leia</Event_Param1>
+		<Event_Param2>1</Event_Param2>
+		<Event_Param3>Rebel</Event_Param3>
+		<Reward_Type>DESTROY_OBJECT</Reward_Type>
+		<Reward_Param1>Candidate_Leia</Reward_Param1>
+		<Perpetual>true</Perpetual>
+	</Event>	
+	
+	<Event Name="Support_Candidate_Borsk">
+		<Event_Type>STORY_CONSTRUCT</Event_Type>
+		<Event_Param1>Candidate_Borsk</Event_Param1>
+		<Event_Param2>1</Event_Param2>
+		<Event_Param3>Rebel</Event_Param3>
+		<Reward_Type>DESTROY_OBJECT</Reward_Type>
+		<Reward_Param1>Candidate_Borsk</Reward_Param1>
+		<Perpetual>true</Perpetual>
+	</Event>
+	
+	<Event Name="Hero_Locks_Borsk_Win">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>BORSK_LOCK_HEROES</Event_Param2>
+		<Perpetual>true</Perpetual>
+	</Event>
+	
+	<Event Name="Hero_Unlocks_Borsk_Lose">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>BORSK_UNLOCK_HEROES</Event_Param2>
+		<Perpetual>true</Perpetual>
+	</Event>
+	
+	<Event Name="Support_Candidate_Mothma">
+		<Event_Type>STORY_CONSTRUCT</Event_Type>
+		<Event_Param1>Candidate_Mothma</Event_Param1>
+		<Event_Param2>1</Event_Param2>
+		<Event_Param3>Rebel</Event_Param3>
+		<Reward_Type>DESTROY_OBJECT</Reward_Type>
+		<Reward_Param1>Candidate_Mothma</Reward_Param1>
+		<Perpetual>true</Perpetual>
+	</Event>	
+	
+	<Event Name="Support_Candidate_Gavrisom">
+		<Event_Type>STORY_CONSTRUCT</Event_Type>
+		<Event_Param1>Candidate_Gavrisom</Event_Param1>
+		<Event_Param2>1</Event_Param2>
+		<Event_Param3>Rebel</Event_Param3>
+		<Reward_Type>DESTROY_OBJECT</Reward_Type>
+		<Reward_Param1>Candidate_Gavrisom</Reward_Param1>
+		<Perpetual>true</Perpetual>
+	</Event>
+	
+	<Event Name="Support_Candidate_Tevv">
+		<Event_Type>STORY_CONSTRUCT</Event_Type>
+		<Event_Param1>Candidate_Tevv</Event_Param1>
+		<Event_Param2>1</Event_Param2>
+		<Event_Param3>Rebel</Event_Param3>
+		<Reward_Type>DESTROY_OBJECT</Reward_Type>
+		<Reward_Param1>Candidate_Tevv</Reward_Param1>
+		<Perpetual>true</Perpetual>
+	</Event>
+	
+	<Event Name="Support_Candidate_SoBilles">
+		<Event_Type>STORY_CONSTRUCT</Event_Type>
+		<Event_Param1>Candidate_SoBilles</Event_Param1>
+		<Event_Param2>1</Event_Param2>
+		<Event_Param3>Rebel</Event_Param3>
+		<Reward_Type>DESTROY_OBJECT</Reward_Type>
+		<Reward_Param1>Candidate_SoBilles</Reward_Param1>
+		<Perpetual>true</Perpetual>
+	</Event>
+	
+	<Event Name="Support_Candidate_Navik">
+		<Event_Type>STORY_CONSTRUCT</Event_Type>
+		<Event_Param1>Candidate_Navik</Event_Param1>
+		<Event_Param2>1</Event_Param2>
+		<Event_Param3>Rebel</Event_Param3>
+		<Reward_Type>DESTROY_OBJECT</Reward_Type>
+		<Reward_Param1>Candidate_Navik</Reward_Param1>
+		<Perpetual>true</Perpetual>
+	</Event>
+	
+	<Event Name="Support_Candidate_Shesh">
+		<Event_Type>STORY_CONSTRUCT</Event_Type>
+		<Event_Param1>Candidate_Shesh</Event_Param1>
+		<Event_Param2>1</Event_Param2>
+		<Event_Param3>Rebel</Event_Param3>
+		<Reward_Type>DESTROY_OBJECT</Reward_Type>
+		<Reward_Param1>Candidate_Shesh</Reward_Param1>
+		<Perpetual>true</Perpetual>
+	</Event>
+	
+	<Event Name="Solo_Exit_Speech">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>HAN_RETIRE_SPEECH</Event_Param2>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_CONQUEST_HAN_RETIRE</Reward_Param1>
+		<Reward_Param2>15</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6 />
+		<Reward_Param7 />
+		<Reward_Param8></Reward_Param8>
+		<Reward_Param9>Han_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+	</Event>
+	
+	<Event Name="Falcon_Respawn_Speech">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>HAN_RESPAWN_SPEECH</Event_Param2>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_CONQUEST_HAN_RESPAWN</Reward_Param1>
+		<Reward_Param2>15</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6 />
+		<Reward_Param7 />
+		<Reward_Param8></Reward_Param8>
+		<Reward_Param9>Han_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+	</Event>
+		
+	<Event Name="Solo_Intrepid_Speech">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>HAN_INTREPID_SPEECH</Event_Param2>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_CONQUEST_HAN_INTREPID</Reward_Param1>
+		<Reward_Param2>15</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6 />
+		<Reward_Param7 />
+		<Reward_Param8></Reward_Param8>
+		<Reward_Param9>Han_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+	</Event>
+	
+	<Event Name="Wedge_Lusankya_Speech">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>WEDGE_SPEECH</Event_Param2>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_CONQUEST_ISARD_DEATH</Reward_Param1>
+		<Reward_Param2>15</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6 />
+		<Reward_Param7 />
+		<Reward_Param8></Reward_Param8>
+		<Reward_Param9>Wedge_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+	</Event>
+	
+	<Event Name="Kalback_Exit_Speech">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>KALBACK_SPEECH</Event_Param2>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_CONQUEST_KALBACK_RETIRE</Reward_Param1>
+		<Reward_Param2>15</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6 />
+		<Reward_Param7 />
+		<Reward_Param8></Reward_Param8>
+		<Reward_Param9>Kalback_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+	</Event>
+		
+	<Event Name="Lady_Respawn_Speech">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>LANDO_RESPAWN_SPEECH</Event_Param2>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_CONQUEST_LANDO_RESPAWN</Reward_Param1>
+		<Reward_Param2>15</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6 />
+		<Reward_Param7 />
+		<Reward_Param8></Reward_Param8>
+		<Reward_Param9>Lando_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+	</Event>
+	
+	<Event Name="Luke_NJO_Speech">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>NJO_SPEECH</Event_Param2>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_CONQUEST_LUKE_NJO</Reward_Param1>
+		<Reward_Param2>15</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6 />
+		<Reward_Param7 />
+		<Reward_Param8></Reward_Param8>
+		<Reward_Param9>Luke_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+	</Event>
+
+</Story>

@@ -1,0 +1,231 @@
+<?xml version="1.0" ?>
+
+<Game_Object_Files>
+
+	<!-- These two need to be at the top -->
+	<File>Mod_Id.xml</File>
+	<File>Debug_Dummies.xml</File>
+	<File>Props\Master_Prop_File.xml</File>
+	
+	<!-- Easier to load Death Clones before Templates -->
+	<File>Units\Death_Clones_Master.xml</File>
+	<File>Units\Death_Clones_Coresaga.xml</File>
+	<File>Units\Death_Clones_TR.xml</File>
+	
+	<!-- Load all templates to reduce looping -->
+	<File>Units\Templates_Dummy.xml</File>
+	<File>Units\Templates_Instant_Action.xml</File>
+	<File>Units\Templates_Jedi.xml</File>
+	<File>Units\Templates_Master.xml</File>
+	<File>Units\Templates_Fighters.xml</File>
+	<File>Units\Templates_Corvettes.xml</File>
+	<File>Units\Templates_Frigates.xml</File>
+	<File>Units\Templates_Capitals.xml</File>
+	<File>Units\Templates_Ground.xml</File>
+	<File>Units\Templates_Ground_Militia.xml</File>
+	<File>Units\Templates_BombingRunUnits.xml</File>
+	<File>Structures\Templates_Ground_Structures.xml</File>
+	<File>Structures\Templates_Space_Structures.xml</File>
+	<File>Structures\Templates_Basic_Resource_Structures.xml</File>
+	<File>Structures\Template_Skirmish_Space_Structures.xml</File>
+	
+	<!--Main Files -->
+	<File>BlackMarketItems.xml</File> <!-- Game looks for it -->
+	<File>Display_Structures_Dummies.xml</File>
+	<File>Era_Dummies.xml</File>
+	<File>GroundIndigenous.xml</File>
+	<File>GroundCompaniesIndigenous.xml</File>
+	<File>Influence_Structures_Dummies.xml</File>
+	<File>LandPrimarySkydomes.xml</File>
+	<File>LandSecondarySkydomes.xml</File>
+	<File>LayerDummies.xml</File>
+	<File>MiscObjects.xml</File>
+	<File>Options.xml</File>
+	<File>Planets.xml</File>
+	<File>Planets_Dummy.xml</File>
+	<File>SpaceBuildablesSkirmish.xml</File>
+	<File>SpacePrimarySkydomes.xml</File>
+	<File>SpaceSecondarySkydomes.xml</File>
+	<File>SpecialEffects.xml</File>
+	<File>SurvivalUpgradeObjects.xml</File>
+	<File>TECHBUILDING_Dummies.xml</File>
+	<File>UpgradeObjects.xml</File>
+	<File>UpgradeObjects_Flagship_Mode.xml</File>
+	<File>UpgradeObjectsGroundSkirmish.xml</File>
+	<File>Structures\GroundStructures.xml</File>
+	<File>Structures\Shipyards.xml</File>
+	<File>Projectiles\Projectiles_Ground_Lasers.xml</File>
+	<File>Projectiles\Projectiles_GroundExplosives.xml</File>
+	<File>Projectiles\Projectiles_Infantry.xml</File>
+	<File>Projectiles\Projectiles.xml</File>
+	<File>Projectiles\Projectiles_Melee.xml</File>
+	<File>Projectiles\Projectiles_Space_Lasers.xml</File>
+	<File>Projectiles\Projectiles_SpaceExplosives.xml</File>
+	<File>Projectiles\Projectiles_SpecialAbility.xml</File>
+	<File>Projectiles\ICW_Ground_Lasers.xml</File>
+	<File>Projectiles\ICW_Lasers.xml</File>
+	<File>Projectiles\Projectiles_Infantry_Heroes.xml</File>
+	<File>Particles\Particles_Galactic.xml</File>
+	<File>Particles\Particles_Land.xml</File>
+	<File>Particles\Particles_Space.xml</File>
+	<File>Particles\Particles_Abilities.xml</File>
+	
+	<!-- Coresaga Files -->
+	<File>Coresaga_Containers.xml</File>
+	
+	<!-- TR Files -->
+	<File>Containers.xml</File>
+	<File>Deconstruct_Dummies.xml</File>
+	<File>Government_NewRepublic_ChiefsOfState.xml</File>
+	<File>Markers.xml</File>
+	<File>Multiplayer_Structure_Markers.XML</File>
+	<File>EOTH_Research.xml</File>
+	<File>NR_Research.xml</File>
+	<File>Options_TR.xml</File>
+	<File>RegicideObjects.xml</File>
+	<File>TR_Containers.xml</File>
+	<File>Units\Units_Fighters.xml</File>
+	<File>Units\Units_Corvettes.xml</File>
+	<File>Units\Units_Frigates.xml</File>
+	<File>Units\Units_Capitals.xml</File>
+	<File>Units\SharedSpaceTriangles.xml</File>
+	<File>Units\Corsec_Space.xml</File>
+	<File>Units\EotH_Space.xml</File>
+	<File>Units\Hapes_Space.xml</File>
+	<File>Units\SsiRuuk_Space.xml</File>
+	<File>Units\Hutt_Space.xml</File>
+	<File>Units\HuntForZsinj_Campaign_Units.xml</File>
+	<File>Units\TransportUnits.xml</File>
+	<File>Units\New_Republic_Infantry.xml</File>
+	<File>Units\New_Republic_Vehicles.xml</File>
+	<File>Units\Imperial_Infantry.xml</File>
+	<File>Units\Imperial_Vehicles.xml</File>
+	<File>Units\Imperial_Infantry_Companies.xml</File>
+	<File>Units\Imperial_Vehicle_Companies.xml</File>
+	<File>Units\New_Republic_Ground.xml</File>
+	<File>Units\EotH_Ground.xml</File>
+	<File>Units\CSA_Ground.xml</File>
+	<File>Units\Hapes_Ground.xml</File>
+	<File>Units\SsiRuuk_Ground.xml</File>
+	<File>Units\Yevetha_Ground.xml</File>
+	<File>Units\Hutt_Ground.xml</File>
+	<File>Units\Militia_Vehicles.xml</File>
+	<File>Units\Militia_Companies.xml</File>
+	<File>Units\InfluenceRewards.xml</File>
+	<File>Units\InstantAction_Bases.xml</File>
+	<File>Units\InstantAction_Units.xml</File>
+	<File>Units\LandBombingRunUnits.xml</File>
+	<File>Structures\Basic_Resource_Structures.xml</File>
+	<File>Structures\Generic_Structures.xml</File>
+	<File>Structures\Capturable_Barracks.xml</File>
+	<File>Structures\Capturable_Factories.xml</File>
+	<File>Structures\Conquest_Bases.xml</File>
+	<File>Structures\GroundBases.xml</File>
+	<File>Structures\GalacticCorporations.xml</File>
+	<File>Structures\MainStarbases.xml</File>
+	<File>Structures\CSA_Structures.xml</File>
+	<File>Structures\EotH_Structures.xml</File>
+	<File>Structures\Hapes_Structures.xml</File>
+	<File>Structures\Imperial_Structures.xml</File>
+	<File>Structures\New_Republic_Structures.xml</File>
+	<File>Structures\Revolt_Structures.xml</File>
+	<File>Structures\SecondaryStructures.xml</File>
+	<File>Structures\Shipyards_Factional.xml</File>
+	<File>Structures\SpecialStructures.xml</File>
+	<File>Structures\SpecialStructures_Underworld.xml</File>
+	<File>Structures\SsiRuuvi_Structures.xml</File>
+	<File>Structures\SurvivalBases.xml</File>
+	<File>Heroes\Bounty_Hunter_Heroes.xml</File>
+	<File>Heroes\Commanders.xml</File>
+	<File>Heroes\CSA_Heroes.xml</File>
+	<File>Heroes\EotH_Heroes.xml</File>
+	<File>Heroes\Eriadu_Heroes.xml</File>
+	<File>Heroes\Hapes_Heroes.xml</File>
+	<File>Heroes\Imperial_Remnant_Heroes.xml</File>
+	<File>Heroes\Legitimacy_Heroes.xml</File>
+	<File>Heroes\Pentastar_Heroes.xml</File>
+	<File>Heroes\Teradoc_Heroes.xml</File>
+	<File>Heroes\Yevetha_Heroes.xml</File>
+	<File>Heroes\Zsinj_Heroes.xml</File>
+	<File>Heroes\New_Republic_Heroes.xml</File>
+	<File>GroundTurrets.xml</File> <!-- Load before buildables -->
+	<File>GroundBuildablesEmpire.xml</File>
+	<File>GroundBuildablesRebel.xml</File>
+	<File>GroundBuildablesUnderworld.xml</File>
+	
+		<!-- Canon / Fractal Units -->
+	<File>Units\AdditionalUnits\Canon_Space_Units.xml</File>
+	<File>Units\AdditionalUnits\Fractal_Units.xml</File>
+	
+	<!-- Skirmish Files -->
+	<File>UpgradeObjectsSpaceSkirmish.xml</File>
+	<File>Units\Skirmish\SkirmishUnits_NR.xml</File>
+	<File>Units\Skirmish\SkirmishUnits_Imperial.xml</File>
+	<File>Units\Skirmish\SkirmishUnits_CSA.xml</File>
+	<File>Units\Skirmish\SkirmishUnits_EOTH.xml</File>
+	<File>Units\Skirmish\SkirmishUnits_Hapes.xml</File>
+	<File>Units\Skirmish\SkirmishUnits_Other.xml</File>
+	<File>Units\Skirmish\Skirmish_buildable_Squadrons.xml</File>
+	<File>Heroes\Skirmish_Heroes.xml</File>
+	<File>GroundBuildablesSkirmish.xml</File>
+	<File>Structures\Skirmish\Skirmish_starbases.xml</File>
+	<File>Structures\Skirmish\Skirmish_Research_starbases.xml</File>
+	<File>Structures\Skirmish\Skirmish_Defence_Stations.xml</File>
+	
+	<!-- Flagship Files -->
+	<File>Units\Skirmish\Flagship_Mode\Skirmish_Flagship_Ship_Templates.xml</File>
+	<File>Units\Skirmish\Flagship_Mode\Skirmish_Flagship_Squadrons_Templates.xml</File>
+	<File>Units\Skirmish\Flagship_Mode\Complete_Units\Skirmish_Flagship_CSA.xml</File>
+	<File>Units\Skirmish\Flagship_Mode\Complete_Units\Skirmish_Flagship_Empire.xml</File>
+	<File>Units\Skirmish\Flagship_Mode\Complete_Units\Skirmish_Flagship_EOTH.xml</File>
+	<File>Units\Skirmish\Flagship_Mode\Complete_Units\Skirmish_Flagship_Eriadu_Authority.xml</File>
+	<File>Units\Skirmish\Flagship_Mode\Complete_Units\Skirmish_Flagship_Greater_Maldrood.xml</File>
+	<File>Units\Skirmish\Flagship_Mode\Complete_Units\Skirmish_Flagship_Hapes.xml</File>
+ 	<File>Units\Skirmish\Flagship_Mode\Complete_Units\Skirmish_Flagship_NR.xml</File>
+	<File>Units\Skirmish\Flagship_Mode\Complete_Units\Skirmish_Flagship_Pentastar.xml</File>
+	<File>Units\Skirmish\Flagship_Mode\Complete_Units\Skirmish_Flagship_Zsinj.xml</File>
+	<File>Structures\Skirmish\Skirmish_starbases_Flagshipmode_CSA.xml</File>
+	<File>Structures\Skirmish\Skirmish_starbases_Flagshipmode_Empire.xml</File>
+	<File>Structures\Skirmish\Skirmish_starbases_Flagshipmode_EOTH.xml</File>
+	<File>Structures\Skirmish\Skirmish_starbases_Flagshipmode_Eriadu_Authority.xml</File>
+	<File>Structures\Skirmish\Skirmish_starbases_Flagshipmode_Greater_Maldrood.xml</File>
+	<File>Structures\Skirmish\Skirmish_starbases_Flagshipmode_Hapes.xml</File>
+	<File>Structures\Skirmish\Skirmish_starbases_Flagshipmode_NR.xml</File>
+	<File>Structures\Skirmish\Skirmish_starbases_Flagshipmode_Pentastar.xml</File>
+	<File>Structures\Skirmish\Skirmish_starbases_Flagshipmode_Zsinj.xml</File>
+	
+	<!-- Ground War -->
+	<File>Units\Skirmish\Ground_War\Ground_War_Infantry_Templates.xml</File>
+	<File>Units\Skirmish\Ground_War\Ground_War_Vehicle_Templates.xml</File>
+	<File>Units\Skirmish\Ground_War\Formations\Ground_War_Formations_CSA.xml</File>
+	<File>Units\Skirmish\Ground_War\Formations\Ground_War_Formations_EA.xml</File>
+	<File>Units\Skirmish\Ground_War\Formations\Ground_War_Formations_Empire.xml</File>
+	<File>Units\Skirmish\Ground_War\Formations\Ground_War_Formations_EOTH.xml</File>
+	<File>Units\Skirmish\Ground_War\Formations\Ground_War_Formations_GM.xml</File>
+	<File>Units\Skirmish\Ground_War\Formations\Ground_War_Formations_Hapes.xml</File>
+	<File>Units\Skirmish\Ground_War\Formations\Ground_War_Formations_NR.xml</File>
+	<File>Units\Skirmish\Ground_War\Formations\Ground_War_Formations_PA.xml</File>
+	<File>Units\Skirmish\Ground_War\Formations\Ground_War_Formations_Zsinj.xml</File>
+	<File>Units\Skirmish\Ground_War\Companies\Ground_War_Complete_Units_CSA.xml</File>
+	<File>Units\Skirmish\Ground_War\Companies\Ground_War_Complete_Units_EA.xml</File>
+	<File>Units\Skirmish\Ground_War\Companies\Ground_War_Complete_Units_Empire.xml</File>
+	<File>Units\Skirmish\Ground_War\Companies\Ground_War_Complete_Units_EOTH.xml</File>	
+	<File>Units\Skirmish\Ground_War\Companies\Ground_War_Complete_Units_GM.xml</File>
+	<File>Units\Skirmish\Ground_War\Companies\Ground_War_Complete_Units_Hapes.xml</File>
+	<File>Units\Skirmish\Ground_War\Companies\Ground_War_Complete_Units_NR.xml</File>
+	<File>Units\Skirmish\Ground_War\Companies\Ground_War_Complete_Units_PA.xml</File>
+	<File>Units\Skirmish\Ground_War\Companies\Ground_War_Complete_Units_Zsinj.xml</File>
+	<File>Structures\Skirmish\GroundWars_Structures.xml</File>
+
+	<!-- Prop Files -->
+	<File>Props\Props_Coresaga.xml</File>
+	<File>Props\Props_TR.xml</File>
+
+	<!-- Mission Files -->
+	<!-- <File>Props\MissionObjects.xml</File> -->
+
+	<!-- Loop if higher, so load last -->
+	<File>Ability_Dummies.xml</File>
+	<File>UpgradeObjectsSpaceSkirmish_TR.xml</File>
+
+</Game_Object_Files>

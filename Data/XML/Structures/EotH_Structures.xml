@@ -1,0 +1,565 @@
+<?xml version='1.0' encoding='ASCII'?>
+<EotH_Structures>
+	
+	<!-- Unused -->
+	<SpecialStructure Name="Oto">
+
+		<Text_ID>TEXT_UNIT_OTO</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE_SECONDARY_DEFENSE</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_OTO
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
+		TEXT_TOOLTIP_OTO_HULL 
+		TEXT_TOOLTIP_OTO_SHIELD
+		TEXT_TOOLTIP_OTO_WEAP1 
+		TEXT_TOOLTIP_OTO_WEAP2
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_TOOLTIP_OTO_SQUADRON
+		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
+		TEXT_TOOLTIP_BONUS_FLEET_TENDER
+		</Encyclopedia_Text>
+		<Icon_Name>i_button_oto.tga</Icon_Name>
+
+		<Land_Model_Name>nb_baseshieldgen.alo</Land_Model_Name>
+		<Scale_Factor>22.3</Scale_Factor>
+		<Select_Box_Scale>90</Select_Box_Scale>
+		<Size_Value>2</Size_Value>
+
+		<Loop_Idle_Anim_00/>
+		<Shield_On_Anim/>
+		<Shield_Off_Anim/>
+
+		<Mass>1.0</Mass>
+
+		<Armor_Type> ArmourS_SuperCapital </Armor_Type>
+		<Tactical_Health>42000</Tactical_Health>
+		<Affiliation>EmpireoftheHand</Affiliation>
+
+		<SecondaryOccupationPassability/>
+		<Base_Shield_Always_Off/>
+		<Shield_Normal_Color/>
+		<Shield_Upgraded_Color/>
+		<Base_Shield_Radius/>
+		<Reinforcement_Prevention_Radius> 2000 </Reinforcement_Prevention_Radius>
+
+		<CategoryMask> SpaceStructure | AntiFrigate | AntiCapital </CategoryMask>
+		<Space_Or_Garrison_Category>Capital</Space_Or_Garrison_Category>
+		<Property_Flags>IsStarbase | HealsVehicles</Property_Flags>
+		<Base_Position>Orbital</Base_Position>
+		<Place_At_Every_Specific_Marker_Position/>
+		<Requires_Base_Power/>
+		<Is_Community_Property>Yes</Is_Community_Property>
+		<Victory_Relevant>yes</Victory_Relevant>
+		<Influences_Capture_Point>False</Influences_Capture_Point>
+		<Can_Contain_Heroes_During_Ground_Battle/>
+		<Is_Dummy>Yes</Is_Dummy>
+
+		<Tech_Level>99</Tech_Level>
+		<Required_Timeline>0</Required_Timeline>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>1</Required_Star_Base_Level>
+		<Required_Special_Structures>AI_Category_Dummy | Structure_Category_Dummy</Required_Special_Structures>
+		<Required_Planets/>
+
+		<GUI_Row> 1 </GUI_Row>
+		<Political_Control>0</Political_Control>
+		<Build_Cost_Credits>12000</Build_Cost_Credits>
+		<Build_Time_Seconds>75</Build_Time_Seconds>
+		<Build_Tab_Special_Structures>Yes</Build_Tab_Special_Structures>
+		<Build_Max_Instances_Per_Planet> 1 </Build_Max_Instances_Per_Planet>
+		<Build_Limit_Current_Per_Player>5</Build_Limit_Current_Per_Player>
+		<Build_Initially_Locked/>
+		<Override_Bounty_SP>1</Override_Bounty_SP>
+		<Override_Bounty_MP>1</Override_Bounty_MP>
+		<Score_Cost_Credits> 1500 </Score_Cost_Credits>
+		<Sabotage_Cost_Credits>5000</Sabotage_Cost_Credits>
+
+		<Behavior>SELECTABLE, DUMMY_ORBITAL_STRUCTURE</Behavior>
+		<LandBehavior>SPACE_OBSTACLE, LAND_OBSTACLE, REVEAL, SELECTABLE, DAMAGE_TRACKING, DUMMY_LAND_BASE_LEVEL_COMPONENT, UNIT_AI, TERRAIN_TEXTURE_MODIFICATION, EARTHQUAKE_TARGET, ION_STUN_EFFECT, STUNNABLE</LandBehavior>
+
+		<Ranged_Target_Z_Adjust>30.0</Ranged_Target_Z_Adjust>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Death_Explosions>Large_Explosion_Space</Death_Explosions>
+		<Death_Clone_Is_Obstacle>true</Death_Clone_Is_Obstacle>
+		<Obstacle_Width>40.0</Obstacle_Width>
+		<Obstacle_Height>40.0</Obstacle_Height>
+		<Obstacle_X_Offset>-20.0</Obstacle_X_Offset>
+		<Obstacle_Y_Offset>-20.0</Obstacle_Y_Offset>
+		<Fine_Tune_Occupied_Passability>false</Fine_Tune_Occupied_Passability>
+		<Obstacle_Proxy_Type/>
+		<Target_Bones/>
+
+		<Land_Damage_Thresholds>1, 0.66, 0.33</Land_Damage_Thresholds>
+		<Land_Damage_Alternates>0, 1, 2</Land_Damage_Alternates>
+		<Land_Damage_SFX>null,SFX_Grenade_Detonation, SFX_Grenade_Detonation</Land_Damage_SFX>
+
+		<SFXEvent_Build_Started>EHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>EHD_Construction_Complete</SFXEvent_Build_Complete>
+		<SFXEvent_Ambient_Loop>Unit_Starbase_Engine_Loop</SFXEvent_Ambient_Loop>
+		<SFXEvent_Fire>Unit_Turbo_Fire</SFXEvent_Fire>
+		<SFXEvent_Select>Unit_Select_Empire_Space_Station</SFXEvent_Select>
+		<SFXEvent_Attack>Unit_Attack_Empire_Space_Station</SFXEvent_Attack>
+		<SFXEvent_Barrage>Unit_Barrage_Empire_Space_Station</SFXEvent_Barrage>
+		<Death_SFXEvent_Start_Die>Unit_Space_Station_Death_SFX</Death_SFXEvent_Start_Die>
+		<SFXEvent_Unit_Under_Attack> EHD_Space_Station_Under_Attack </SFXEvent_Unit_Under_Attack>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_LASER, Unit_HP_LASER_Empire_Space_Station</SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MISSILE, Unit_HP_MISSILE_Empire_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_TORPEDO, Unit_HP_TORP_Empire_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_ION_CANNON, Unit_HP_ION_Empire_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_SHIELD_GENERATOR, Unit_HP_SHIELDS_Empire_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENGINE, Unit_HP_ENGINES_Empire_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_GRAVITY_WELL, Unit_HP_Grav_Empire_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_FIGHTER_BAY, Unit_HP_BAY_Empire_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_TRACTOR_BEAM, null </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MASS_DRIVER, null </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_SPECIAL, null </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENABLE_SPECIAL_ABILITY, null </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_DUMMY_ART, null </SFXEvent_Attack_Hardpoint>
+				
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_LASER, Unit_Lost_Laser_Empire_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_MISSILE,  Unit_Lost_Missile_Empire_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_TORPEDO,  Unit_Lost_Torpedo_Empire_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_ION_CANNON, Unit_Lost_Ion_Empire_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_SHIELD_GENERATOR, Unit_Lost_Shields_Empire_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENGINE, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_GRAVITY_WELL, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_FIGHTER_BAY, Unit_Lost_Bay_Empire_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_TRACTOR_BEAM, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_MASS_DRIVER, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_SPECIAL, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENABLE_SPECIAL_ABILITY, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_DUMMY_ART, null </SFXEvent_Hardpoint_Destroyed>
+
+		<GUI_Bracket_Size>2</GUI_Bracket_Size>
+		<GUI_Bounds_Scale>0.05</GUI_Bounds_Scale>
+
+ 		<Custom_Soft_Footprint_Radius> 15 </Custom_Soft_Footprint_Radius>
+
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Radar_Range_Icon_Name>i_radar_shield.tga</Radar_Range_Icon_Name>
+		<Radar_Icon_Size>0.05  0.05</Radar_Icon_Size>
+
+		<Land_FOW_Reveal_Range>200.0</Land_FOW_Reveal_Range>
+		<Multisample_FOW_Check>Yes</Multisample_FOW_Check>
+		<Last_State_Visible_Under_FOW> Yes </Last_State_Visible_Under_FOW>
+		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
+		<Reveal_During_Setup_Phase>true</Reveal_During_Setup_Phase>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+
+		<Space_Obstacle_Offset> 0 0 0 </Space_Obstacle_Offset>
+		<Space_Layer> StaticObject </Space_Layer>
+		<Has_Land_Evaluator>True</Has_Land_Evaluator>
+
+		<Terrain_Texture_Modifier_Material>62</Terrain_Texture_Modifier_Material>
+		<Terrain_Texture_Modifier_Join_Distance>1.0</Terrain_Texture_Modifier_Join_Distance>
+		<Terrain_Texture_Modifier_Square>true</Terrain_Texture_Modifier_Square>
+
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+
+		<Space_Model_Name>EotH_Oto.alo</Space_Model_Name>
+		<Select_Box_Z_Adjust>-30</Select_Box_Z_Adjust>
+		<Build_Tab_Space_Units>Yes</Build_Tab_Space_Units>
+		<Build_Tab_Space_Units>Yes</Build_Tab_Space_Units>
+		<Autoresolve_Health>42000</Autoresolve_Health>
+		<Shield_Points>40000</Shield_Points>
+		<Shield_Refresh_Rate>300</Shield_Refresh_Rate>
+		<Energy_Capacity>3000</Energy_Capacity>
+		<Energy_Refresh_Rate>500</Energy_Refresh_Rate>
+		<AI_Combat_Power>10818</AI_Combat_Power>
+		<Shield_Armor_Type>ShieldS_SuperCapital</Shield_Armor_Type>
+		<SpaceBehavior>ABILITY_COUNTDOWN, POWERED, SHIELDED, HIDE_WHEN_FOGGED, REVEAL, TARGETING, UNIT_AI, DAMAGE_TRACKING, ION_STUN_EFFECT, NEBULA </SpaceBehavior>
+		<Space_FOW_Reveal_Range>28000.0</Space_FOW_Reveal_Range>
+		<Targeting_Max_Attack_Distance>2000.0</Targeting_Max_Attack_Distance>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<Modifies_Reveal_Range>no</Modifies_Reveal_Range>
+		<Reveal_Range_Modifier>-.50</Reveal_Range_Modifier>
+		<Damage>200</Damage>
+		<Radar_Icon_Name>i_radar_golanthree.tga</Radar_Icon_Name>
+		<HardPoints>
+			HP_Oto_IonCannon_01,
+			HP_Oto_IonCannon_02,
+			HP_Oto_IonCannon_03,
+			HP_Oto_IonCannon_04,
+			HP_Oto_IonCannon_05,
+			HP_Oto_IonCannon_06,
+			HP_Oto_IonCannon_07,
+			HP_Oto_IonCannon_08,
+			HP_Oto_IonCannon_09,
+			HP_Oto_IonCannon_10,
+			HP_Oto_IonCannon_11,
+			HP_Oto_IonCannon_12,
+			HP_Oto_IonCannon_13,
+			HP_Oto_IonCannon_14,
+			HP_Oto_IonCannon_15,
+			HP_Oto_IonCannon_16,
+			HP_Oto_Dual_01,
+			HP_Oto_Dual_02,
+			HP_Oto_Dual_03,
+			HP_Oto_Dual_04,
+			HP_Oto_Dual_05,
+			HP_Oto_Dual_06,
+			HP_Oto_Dual_07,
+			HP_Oto_Dual_08,
+			HP_Oto_Dual_09,
+			HP_Oto_Dual_10,
+			HP_Oto_Dual_11,
+			HP_Oto_Dual_12,
+			HP_Oto_Dual_14,
+			HP_Oto_Dual_15,
+			HP_Oto_Dual_16,
+			HP_Oto_Dual_17,
+			HP_Oto_Dual_18,
+			HP_Oto_Dual_19,
+			HP_Oto_Dual_20,
+			HP_Oto_Dual_21,
+			HP_Oto_Dual_22,
+			HP_Oto_Dual_23,
+			HP_Oto_Dual_24,
+			HP_Oto_Hangar_01,
+			HP_Oto_Hangar
+		</HardPoints>
+		
+		<Lua_Script>GenericGameObject</Lua_Script>
+		
+		<Death_Clone>Damage_Normal, Large_Explosion_Space</Death_Clone>
+		<Has_Space_Evaluator>True</Has_Space_Evaluator>
+		<Tactical_Build_Cost_Multiplayer>5000</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>20</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites/>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<Abilities SubObjectList="Yes">
+	   <Planet_Income_Bonus_Ability Name="Station_Income_Bonus">
+				<Specific_Mod_Source_Text>TEXT_ECONOMY_TRADE_FACILITIES</Specific_Mod_Source_Text>
+				<!-- 3% bonus to base planetary income -->
+				<Percentage_Income_Modifier>0.20</Percentage_Income_Modifier>
+				<!-- plus an absolute 0 credits to planetary income -->
+				<Absolute_Income_Modifier>0</Absolute_Income_Modifier>
+				<!-- net effect of +( (base income * 0%) + 20) credits -->
+				<!-- <Additional_Multiplier_On_Mining_Colonies>1.5</Additional_Multiplier_On_Mining_Colonies> -->
+				<!-- net result above multiplied by 2.0 if the affected planet is a mining colony -->
+			</Planet_Income_Bonus_Ability>
+			<Force_Healing_Ability Name="Trade_Facility_Self_Repair">
+				<Activation_Style>Skirmish_Automatic</Activation_Style>
+				<Heal_Range>0.0</Heal_Range>
+				<Heal_Percent>0.003</Heal_Percent>  <!-- Change from .025 to .003 for MP-->
+				<Heal_Amount>0.0</Heal_Amount>
+				<Heal_Interval_In_Secs>2.0</Heal_Interval_In_Secs> <!-- change from 5.0 to 2.0 for MP-->
+				<Single_Target_Heal>Yes</Single_Target_Heal>
+				<Applicable_Unit_Categories/>
+				<Applicable_Unit_Types/>
+				<SFXEvent_Target_Affected/>
+				<Owner_Particle_Bone_Name>ROOT</Owner_Particle_Bone_Name>
+				<Owner_Light_Effect_Type>Color_Flash</Owner_Light_Effect_Type>
+				<Owner_Light_Effect_Color>1.2, 1.2, 1.2</Owner_Light_Effect_Color>
+				<Owner_Light_Effect_Color2/>
+				<Owner_Light_Effect_Duration>0.6</Owner_Light_Effect_Duration>
+				<Owner_Light_Effect_Pulse_Count>1</Owner_Light_Effect_Pulse_Count>
+			</Force_Healing_Ability>
+			<Force_Healing_Ability Name="Fleet_Tender_Facility_Healing">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Heal_Range>2000.0</Heal_Range>
+				<Heal_Percent> 0.05 </Heal_Percent>
+                <Blob_Color>0, 255, 0, 255</Blob_Color>
+				<Heal_Interval_In_Secs>2.0</Heal_Interval_In_Secs>
+				<Single_Target_Heal>Yes</Single_Target_Heal>
+				<Heal_Range_Blob_Material>Reinforcement_Point_Radius_Overlay</Heal_Range_Blob_Material>
+				<!-- We can heal the following unit types: -->
+				<Applicable_Unit_Categories>Corvette, Frigate, Capital, Hero, SuperCapital, SpaceHero</Applicable_Unit_Categories>
+				<Applicable_Unit_Types/>
+				<SFXEvent_Target_Affected>Unit_Force_Healing_Pulse</SFXEvent_Target_Affected>
+				<Target_Particle_Effect>Shield_Sparks_Medium</Target_Particle_Effect>
+				<Target_Particle_Bone_Name>B_TURRET, TURRET_00, B_TURRET_BASE</Target_Particle_Bone_Name>
+				<Target_Light_Effect_Type>Color_Flash</Target_Light_Effect_Type>
+				<Target_Light_Effect_Color>1.2, 1.2, 2.0</Target_Light_Effect_Color>
+				<Target_Light_Effect_Color2/>
+				<Target_Light_Effect_Duration>0.6</Target_Light_Effect_Duration>
+				<Target_Light_Effect_Pulse_Count>1</Target_Light_Effect_Pulse_Count>
+				<Owner_Particle_Bone_Name>ROOT</Owner_Particle_Bone_Name>
+				<Owner_Light_Effect_Type>Color_Flash</Owner_Light_Effect_Type>
+				<Owner_Light_Effect_Color>1.2, 1.2, 2.0</Owner_Light_Effect_Color>
+				<Owner_Light_Effect_Color2/>
+				<Owner_Light_Effect_Duration>0.6</Owner_Light_Effect_Duration>
+				<Owner_Light_Effect_Pulse_Count>1</Owner_Light_Effect_Pulse_Count>
+				<!--<Lightning_Effect_Name>Repair_Facility_Effect</Lightning_Effect_Name>-->
+			</Force_Healing_Ability>
+
+		</Abilities>
+	</SpecialStructure>
+	
+	<SpecialStructure Name="U_Ground_Palace">
+	
+		<Variant_Of_Existing_Type>Template_Faction_Capital</Variant_Of_Existing_Type>
+		
+		<Text_ID>TEXT_GROUND_HAND_OF_THRAWN</Text_ID>
+		
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_HAND_OF_THRAWN
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_CAPITAL_EOTH_HEALTH
+		TEXT_TOOLTIP_CAPITAL_EOTH_SHIELD
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK 
+		TEXT_TOOLTIP_CAPITAL_EOTH1
+		TEXT_TOOLTIP_CAPITAL_EOTH2
+		TEXT_TOOLTIP_CAPITAL_EOTH3
+		TEXT_TOOLTIP_CAPITAL_EOTH4
+		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
+		TEXT_TOOLTIP_BONUS_BLOCK_OB
+		TEXT_TOOLTIP_BONUS_BLOCK_BR
+        TEXT_TOOLTIP_BONUS_BLOCK_VP
+		TEXT_TOOLTIP_INCOME_CAPITAL
+		TEXT_TOOLTIP_INCOME_CAPITAL_SHIPCREWS
+		TEXT_TOOLTIP_INFLUENCE_CAPITAL
+		TEXT_TOOLTIP_SEPARATOR_LIMITS_BLOCK
+		TEXT_TOOLTIP_BUILDLIMIT_CAPITAL
+		</Encyclopedia_Text>
+		
+		<MP_Encyclopedia_Text> TEXT_ENCYCLOPEDIA_HAND_OF_THRAWN </MP_Encyclopedia_Text>
+		
+
+		<Land_Model_Name>Handofthrawn.ALO</Land_Model_Name>
+		
+		<Icon_Name>I_BUTTON_EOTH_CAPITAL.TGA</Icon_Name>
+		
+		<LandBehavior>SPAWN_SQUADRON,SPACE_OBSTACLE, LAND_OBSTACLE,REVEAL,SELECTABLE,SHIELDED,POWERED,HIDE_WHEN_FOGGED,DAMAGE_TRACKING,DUMMY_LAND_BASE_LEVEL_COMPONENT,UNIT_AI,TERRAIN_TEXTURE_MODIFICATION,EARTHQUAKE_TARGET,ION_STUN_EFFECT, STUNNABLE</LandBehavior>
+		
+		<Affiliation>EmpireoftheHand</Affiliation>
+		
+		<Tactical_Health>3000</Tactical_Health>
+		<Shield_Points>1000</Shield_Points>
+		<Shield_Refresh_Rate>45</Shield_Refresh_Rate>
+		
+		<!--All Eras-->
+		<Starting_Spawned_Units_Tech_0>Phalanx_Trooper_Squad_Deployed, 6</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Phalanx_Trooper_Squad_Deployed, 18</Reserve_Spawned_Units_Tech_0>
+
+		<Starting_Spawned_Units_Tech_0>RFT, 4</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>RFT, 8</Reserve_Spawned_Units_Tech_0>
+
+		<Starting_Spawned_Units_Tech_0>Gilzean, 3</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Gilzean, 6</Reserve_Spawned_Units_Tech_0>
+
+		<Starting_Spawned_Units_Tech_0>MMT, 1</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>MMT, 1</Reserve_Spawned_Units_Tech_0>
+	</SpecialStructure>
+
+	<SpecialStructure Name="Hand_GovernorOffice">
+
+		<Variant_Of_Existing_Type>Template_Planetary_Government</Variant_Of_Existing_Type>
+		
+		<Text_ID>TEXT_COMPANY_HAND_GOVERNOROFFICE</Text_ID>
+		
+		<Encyclopedia_Text>
+		TEXT_COMPANY_GOVERNOROFFICE_DESCRIPTION
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_OFFICE_EOTH_HEALTH
+		TEXT_TOOLTIP_OFFICE_EOTH_SHIELD
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK 
+		TEXT_TOOLTIP_OFFICE_EOTH1
+		TEXT_TOOLTIP_OFFICE_EOTH2
+		TEXT_TOOLTIP_OFFICE_EOTH3
+		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
+		TEXT_TOOLTIP_INFLUENCE_OFFICE
+		</Encyclopedia_Text>
+		
+		<Affiliation>EmpireoftheHand</Affiliation>
+		
+		<LandBehavior>SPACE_OBSTACLE, LAND_OBSTACLE,REVEAL,SELECTABLE, POWERED, SHIELDED, HIDE_WHEN_FOGGED,DAMAGE_TRACKING,DUMMY_LAND_BASE_LEVEL_COMPONENT,UNIT_AI,TERRAIN_TEXTURE_MODIFICATION,SPAWN_SQUADRON,EARTHQUAKE_TARGET, ION_STUN_EFFECT, STUNNABLE, TURRET, TARGETING,WEAPON</LandBehavior>
+		<Shield_Points>1000</Shield_Points>
+		<Shield_Refresh_Rate>45</Shield_Refresh_Rate>
+		
+		<Tactical_Additional_Structure_Type>Generic_Power_Generator</Tactical_Additional_Structure_Type>
+		
+		<Icon_Name>i_button_eoth.tga</Icon_Name>
+		
+		<!--All Eras-->
+		<Starting_Spawned_Units_Tech_0>Phalanx_Trooper_Squad_Deployed, 6</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Phalanx_Trooper_Squad_Deployed, 18</Reserve_Spawned_Units_Tech_0>
+
+		<Starting_Spawned_Units_Tech_0>Gilzean, 1</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Gilzean, 2</Reserve_Spawned_Units_Tech_0>
+
+		<Starting_Spawned_Units_Tech_0>Flame_Tank, 1</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Flame_Tank, 1</Reserve_Spawned_Units_Tech_0>
+
+	</SpecialStructure>
+	
+	<SpecialStructure Name="U_Ground_Barracks">
+		
+		<Variant_Of_Existing_Type>Template_Barracks</Variant_Of_Existing_Type>
+		
+		<Text_ID>TEXT_GROUND_BARRACKS_EOTH</Text_ID>
+		
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_BARRACKS
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
+		TEXT_TOOLTIP_BARRACKS_EOTH_HEALTH
+		TEXT_TOOLTIP_BARRACKS_EOTH_SHIELD
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_TOOLTIP_BARRACKS_EOTH1
+		TEXT_TOOLTIP_BARRACKS_EOTH2
+		</Encyclopedia_Text>
+		
+		<MP_Encyclopedia_Text> TEXT_TOOLTIP_BARRACKS </MP_Encyclopedia_Text>
+		
+		<LandBehavior>SPACE_OBSTACLE, LAND_OBSTACLE,REVEAL,SELECTABLE, POWERED, SHIELDED, HIDE_WHEN_FOGGED,DAMAGE_TRACKING,DUMMY_LAND_BASE_LEVEL_COMPONENT,UNIT_AI,TERRAIN_TEXTURE_MODIFICATION,SPAWN_SQUADRON,EARTHQUAKE_TARGET, ION_STUN_EFFECT, STUNNABLE, TURRET, TARGETING,WEAPON</LandBehavior>
+		
+		<Affiliation>EmpireoftheHand</Affiliation>
+		
+		<Required_Special_Structures>Hand_GovernorOffice</Required_Special_Structures>
+		
+		<Tactical_Health>350</Tactical_Health>
+		<Shield_Points>600</Shield_Points>
+		<Shield_Refresh_Rate>25</Shield_Refresh_Rate>
+		
+		<!--
+		<Tactical_Buildable_Objects_Campaign>
+			EmpireoftheHand,
+				EotHL_Increased_Mobility_Upgrade,
+				EotHL_Stamina_Boost_Upgrade,
+				EotHL_Weatherproof_Upgrade,
+		</Tactical_Buildable_Objects_Campaign>
+		-->
+
+		<Tactical_Buildable_Objects_Multiplayer>
+			EmpireoftheHand,
+				Phalanx_Trooper_Squad,
+				<!--
+				EotHL_Increased_Mobility_Upgrade,
+				EotHL_Stamina_Boost_Upgrade,
+				EotHL_Weatherproof_Upgrade,
+				-->
+		</Tactical_Buildable_Objects_Multiplayer>
+
+		<!--All Eras-->
+		<Starting_Spawned_Units_Tech_0>Phalanx_Trooper_Squad_Deployed, 4</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Phalanx_Trooper_Squad_Deployed, -1</Reserve_Spawned_Units_Tech_0>
+
+		<Starting_Spawned_Units_Tech_0>Flame_Tank, 1</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Flame_Tank, 2</Reserve_Spawned_Units_Tech_0>
+
+	</SpecialStructure>
+
+	<SpecialStructure Name="U_Ground_Vehicle_Factory">
+		
+		<Variant_Of_Existing_Type>Template_Light_Vehicle_Factory</Variant_Of_Existing_Type>
+		
+		<Text_ID>TEXT_EOTH_LIGHT_VEHICLE_FACTORY</Text_ID>
+		
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_L_FACTORY 
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
+		TEXT_TOOLTIP_L_FACTORY_EOTH_HEALTH
+		TEXT_TOOLTIP_L_FACTORY_EOTH_SHIELD
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_TOOLTIP_L_FACTORY_EOTH1
+		TEXT_TOOLTIP_L_FACTORY_EOTH2
+		</Encyclopedia_Text>
+		
+		<MP_Encyclopedia_Text> TEXT_TOOLTIP_L_FACTORY </MP_Encyclopedia_Text>
+		
+		<LandBehavior>SPACE_OBSTACLE, LAND_OBSTACLE,REVEAL,SELECTABLE, POWERED, SHIELDED, HIDE_WHEN_FOGGED,DAMAGE_TRACKING,DUMMY_LAND_BASE_LEVEL_COMPONENT,UNIT_AI,TERRAIN_TEXTURE_MODIFICATION,SPAWN_SQUADRON,EARTHQUAKE_TARGET, ION_STUN_EFFECT, STUNNABLE, TURRET, TARGETING, WEAPON</LandBehavior>
+		
+		<Affiliation>EmpireoftheHand</Affiliation>
+		
+		<Required_Special_Structures>Hand_GovernorOffice</Required_Special_Structures>
+		
+		<Tactical_Health>1000</Tactical_Health>
+		<Shield_Points>900</Shield_Points>
+		<Shield_Refresh_Rate>28</Shield_Refresh_Rate>
+		
+		<!--
+		<Tactical_Buildable_Objects_Campaign>
+			EmpireoftheHand,
+				EotHL_Light_Reflective_Armor_L1_Upgrade,
+				EotHL_Light_Reflective_Armor_L2_Upgrade,
+				EotHL_Enhanced_Reactors_L1_Upgrade,
+				EotHL_Enhanced_Reactors_L2_Upgrade,
+				EotHL_Weatherproof_Upgrade,
+		</Tactical_Buildable_Objects_Campaign>
+		-->
+
+		<Tactical_Buildable_Objects_Multiplayer>
+			EmpireoftheHand,
+					EotH_Kirov_Brigade,
+					RFT_Brigade,
+					Flame_Tank_Company,
+					Mortar_Company,
+				<!--
+				EotHL_Light_Reflective_Armor_L1_Upgrade,
+				EotHL_Light_Reflective_Armor_L2_Upgrade,
+				EotHL_Enhanced_Reactors_L1_Upgrade,
+				EotHL_Enhanced_Reactors_L2_Upgrade,
+				EotHL_Weatherproof_Upgrade,
+				-->
+		</Tactical_Buildable_Objects_Multiplayer>
+
+		<!--All Eras-->
+		<Starting_Spawned_Units_Tech_0>RFT, 2</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>RFT, 4</Reserve_Spawned_Units_Tech_0>
+
+		<Starting_Spawned_Units_Tech_0>Gilzean, 1</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Gilzean, 2</Reserve_Spawned_Units_Tech_0>
+
+	</SpecialStructure>
+	
+	<SpecialStructure Name="U_Ground_Droid_Works">
+		
+		<Variant_Of_Existing_Type>Template_Heavy_Vehicle_Factory</Variant_Of_Existing_Type>
+		
+		<Text_ID>TEXT_GROUND_DROID_WORKS</Text_ID>
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_H_FACTORY
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_H_FACTORY_EOTH_HEALTH
+		TEXT_TOOLTIP_H_FACTORY_EOTH_SHIELD
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_TOOLTIP_H_FACTORY_EOTH1
+		TEXT_TOOLTIP_H_FACTORY_EOTH2
+		</Encyclopedia_Text>
+		
+		<MP_Encyclopedia_Text> TEXT_TOOLTIP_H_FACTORY </MP_Encyclopedia_Text>
+		
+		<LandBehavior>SPACE_OBSTACLE, LAND_OBSTACLE,REVEAL,SELECTABLE, POWERED, SHIELDED, HIDE_WHEN_FOGGED,DAMAGE_TRACKING,DUMMY_LAND_BASE_LEVEL_COMPONENT,UNIT_AI,TERRAIN_TEXTURE_MODIFICATION,SPAWN_SQUADRON,EARTHQUAKE_TARGET, ION_STUN_EFFECT, STUNNABLE, TURRET, TARGETING, WEAPON</LandBehavior>
+		
+		<Affiliation>EmpireoftheHand</Affiliation>
+		
+		<Required_Special_Structures>Hand_GovernorOffice</Required_Special_Structures>
+		
+		<Tactical_Health>2350</Tactical_Health>
+		<Shield_Points>700</Shield_Points>
+		<Shield_Refresh_Rate>25</Shield_Refresh_Rate>
+
+		<!--
+		<Tactical_Buildable_Objects_Campaign>
+			EmpireoftheHand,
+				EotHL_Heavy_Reflective_Armor_L1_Upgrade,
+				EotHL_Heavy_Reflective_Armor_L2_Upgrade,
+		</Tactical_Buildable_Objects_Campaign>
+		-->
+		
+		<Tactical_Buildable_Objects_Multiplayer>
+			EmpireoftheHand,
+				MMT_Brigade,
+				Gilzean_Brigade,
+				AirStraeker_Company,
+				<!--
+				EotHL_Heavy_Reflective_Armor_L1_Upgrade,
+				EotHL_Heavy_Reflective_Armor_L2_Upgrade,
+				-->
+		</Tactical_Buildable_Objects_Multiplayer>
+		
+		<!--All Eras-->
+		<Starting_Spawned_Units_Tech_0>MMT, 2</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>MMT, 4</Reserve_Spawned_Units_Tech_0>
+		
+		<Starting_Spawned_Units_Tech_0>Flame_Tank, 1</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Flame_Tank, 2</Reserve_Spawned_Units_Tech_0>
+
+	</SpecialStructure>
+
+
+</EotH_Structures>

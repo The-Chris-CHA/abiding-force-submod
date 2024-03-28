@@ -1,0 +1,265 @@
+<?xml version="1.0"?>
+<Complete_Units_Ground_War>
+
+
+	<GroundWarFormation Name="UNIT_GW_EOTH_AAA">
+		<Variant_Of_Existing_Type>GroundWar_Spawner_Unit</Variant_Of_Existing_Type>
+		<Affiliation>EmpireoftheHand</Affiliation>
+		
+		<Text_ID>GW_EOTH_AAA</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_GROUP_SPAWNER</Encyclopedia_Unit_Class>
+		
+		<Land_Model_Name>GROUNDWAR_EotH.alo</Land_Model_Name>
+		<Icon_Name>i_button_phalanxtrooper.tga</Icon_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Lua_Script></Lua_Script>
+		<Tech_Level>99</Tech_Level>
+		
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_Phalanx_Trooper_Squad_Deployed, 6</Starting_Spawned_Units_Tech_0>
+
+
+			
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>1</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>1</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->
+
+	</GroundWarFormation>
+	
+	<GroundWarFormation Name="UNIT_GW_EOTH_AAB">
+		<Variant_Of_Existing_Type>GroundWar_Spawner_Unit</Variant_Of_Existing_Type>
+		<Affiliation>EmpireoftheHand</Affiliation>
+		
+		<Text_ID>GW_EOTH_AAB</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_GROUP_SPAWNER</Encyclopedia_Unit_Class>
+		
+		<Land_Model_Name>GROUNDWAR_EotH.alo</Land_Model_Name>
+		<Icon_Name>i_button_phalanxtrooper.tga</Icon_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Lua_Script></Lua_Script>
+		<Tech_Level>99</Tech_Level>
+		
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_Phalanx_Trooper_Squad_Deployed, 2</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_Phalanx_Medic_Squad, 1</Starting_Spawned_Units_Tech_0>
+	
+
+			
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>1</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>1</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->
+
+	</GroundWarFormation>
+	
+	<GroundWarFormation Name="UNIT_GW_EOTH_AAC">
+		<Variant_Of_Existing_Type>GroundWar_Spawner_Unit</Variant_Of_Existing_Type>
+		<Affiliation>EmpireoftheHand</Affiliation>
+		
+		<Text_ID>GW_EOTH_AAC</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_GROUP_SPAWNER</Encyclopedia_Unit_Class>
+		
+		<Land_Model_Name>GROUNDWAR_EotH.alo</Land_Model_Name>
+		<Icon_Name>i_button_rft.tga</Icon_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Lua_Script></Lua_Script>
+		<Tech_Level>99</Tech_Level>
+		
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_Flame_Tank, 2</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_RFT, 4</Starting_Spawned_Units_Tech_0>
+
+
+			
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>1</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>1</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->
+
+	</GroundWarFormation>
+
+	<GroundWarFormation Name="UNIT_GW_EOTH_AAD">
+		<Variant_Of_Existing_Type>GroundWar_Spawner_Unit</Variant_Of_Existing_Type>
+		<Affiliation>EmpireoftheHand</Affiliation>
+		
+		<Text_ID>GW_EOTH_AAD</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_GROUP_SPAWNER</Encyclopedia_Unit_Class>
+		
+		<Land_Model_Name>GROUNDWAR_EotH.alo</Land_Model_Name>
+		<Icon_Name>I_BUTTON_FLAMETANK.tga</Icon_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Lua_Script></Lua_Script>
+		<Tech_Level>99</Tech_Level>
+		
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_Phalanx_Trooper_Squad_Deployed, 6</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_Flame_Tank, 4</Starting_Spawned_Units_Tech_0>
+
+
+			
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>1</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>1</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->
+
+	</GroundWarFormation>
+
+	<GroundWarFormation Name="UNIT_GW_EOTH_AAE">
+		<Variant_Of_Existing_Type>GroundWar_Spawner_Unit</Variant_Of_Existing_Type>
+		<Affiliation>EmpireoftheHand</Affiliation>
+		
+		<Text_ID>GW_EOTH_AAE</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_GROUP_SPAWNER</Encyclopedia_Unit_Class>
+		
+		<Land_Model_Name>GROUNDWAR_EotH.alo</Land_Model_Name>
+		<Icon_Name>i_button_kirov.tga</Icon_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Lua_Script></Lua_Script>
+		<Tech_Level>99</Tech_Level>
+		
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_Kirov, 3</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_Flame_Tank, 1</Starting_Spawned_Units_Tech_0>
+
+
+			
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>1</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>1</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->
+
+	</GroundWarFormation>
+	
+	<GroundWarFormation Name="UNIT_GW_EOTH_AAF">
+		<Variant_Of_Existing_Type>GroundWar_Spawner_Unit</Variant_Of_Existing_Type>
+		<Affiliation>EmpireoftheHand</Affiliation>
+		
+		<Text_ID>GW_EOTH_AAF</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_GROUP_SPAWNER</Encyclopedia_Unit_Class>
+		
+		<Land_Model_Name>GROUNDWAR_EotH.alo</Land_Model_Name>
+		<Icon_Name>i_button_gilzean.tga</Icon_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Lua_Script></Lua_Script>
+		<Tech_Level>99</Tech_Level>
+		
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_Gilzean, 2</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_RFT, 3</Starting_Spawned_Units_Tech_0>
+
+
+			
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>1</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>1</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->
+
+	</GroundWarFormation>
+	
+	<GroundWarFormation Name="UNIT_GW_EOTH_AAG">
+		<Variant_Of_Existing_Type>GroundWar_Spawner_Unit</Variant_Of_Existing_Type>
+		<Affiliation>EmpireoftheHand</Affiliation>
+		
+		<Text_ID>GW_EOTH_AAG</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_GROUP_SPAWNER</Encyclopedia_Unit_Class>
+		
+		<Land_Model_Name>GROUNDWAR_EotH.alo</Land_Model_Name>
+		<Icon_Name>i_button_airstraeker.tga</Icon_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Lua_Script></Lua_Script>
+		<Tech_Level>99</Tech_Level>
+		
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_Airstraeker, 6</Starting_Spawned_Units_Tech_0>
+	
+
+			
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>1</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>1</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->
+
+	</GroundWarFormation>
+
+	<GroundWarFormation Name="UNIT_GW_EOTH_AAH">
+		<Variant_Of_Existing_Type>GroundWar_Spawner_Unit</Variant_Of_Existing_Type>
+		<Affiliation>EmpireoftheHand</Affiliation>
+		
+		<Text_ID>GW_EOTH_AAH</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_GROUP_SPAWNER</Encyclopedia_Unit_Class>
+		
+		<Land_Model_Name>GROUNDWAR_EotH.alo</Land_Model_Name>
+		<Icon_Name>i_button_mortar.tga</Icon_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Lua_Script></Lua_Script>
+		<Tech_Level>99</Tech_Level>
+		
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_Plasma_Mortar, 2</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_Kirov, 1</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_Phalanx_Trooper_Squad_Deployed, 4</Starting_Spawned_Units_Tech_0>
+
+
+			
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>1</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>1</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->
+
+	</GroundWarFormation>
+
+	<GroundWarFormation Name="UNIT_GW_EOTH_AAI">
+		<Variant_Of_Existing_Type>GroundWar_Spawner_Unit</Variant_Of_Existing_Type>
+		<Affiliation>EmpireoftheHand</Affiliation>
+		
+		<Text_ID>GW_EOTH_AAI</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_GROUP_SPAWNER</Encyclopedia_Unit_Class>
+		
+		<Land_Model_Name>GROUNDWAR_EotH.alo</Land_Model_Name>
+		<Icon_Name>i_button_mmt.tga</Icon_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Lua_Script></Lua_Script>
+		<Tech_Level>99</Tech_Level>
+		
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_MMT, 1</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_Gilzean, 3</Starting_Spawned_Units_Tech_0>
+	
+
+			
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>1</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>1</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->
+
+	</GroundWarFormation>
+
+</Complete_Units_Ground_War>

@@ -1,0 +1,804 @@
+<?xml version="1.0"?>
+<Complete_Units_Ground_War>
+
+
+	<GroundWarFormation Name="UNIT_GW_IR_AAA">
+		<Variant_Of_Existing_Type>GroundWar_Spawner_Unit</Variant_Of_Existing_Type>
+		<Affiliation>Empire</Affiliation>
+		
+		<Text_ID>GW_IR_AAA</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_GROUP_SPAWNER</Encyclopedia_Unit_Class>
+		
+		<Land_Model_Name>GROUNDWAR_Empire.alo</Land_Model_Name>
+		<Icon_Name>i_button_dsd_empire.tga</Icon_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Lua_Script></Lua_Script>
+		<Tech_Level>99</Tech_Level>
+		
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_Imperial_Dwarf_Spider_Droid_Squad, 2</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_Imperial_Armytrooper_Assault_Team_Deployed, 2</Starting_Spawned_Units_Tech_0>
+
+
+			
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>1</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>1</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->
+
+	</GroundWarFormation>
+	
+	<GroundWarFormation Name="UNIT_GW_IR_AAB">
+		<Variant_Of_Existing_Type>GroundWar_Spawner_Unit</Variant_Of_Existing_Type>
+		<Affiliation>Empire</Affiliation>
+		
+		<Text_ID>GW_IR_AAB</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_GROUP_SPAWNER</Encyclopedia_Unit_Class>
+		
+		<Land_Model_Name>GROUNDWAR_Empire.alo</Land_Model_Name>
+		<Icon_Name>i_button_scout_trooper.tga</Icon_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Lua_Script></Lua_Script>
+		<Tech_Level>99</Tech_Level>
+		
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_Scout_Trooper, 4</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_Imperial_Army_Guard_Team_Deployed, 2</Starting_Spawned_Units_Tech_0>
+
+
+			
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>1</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>1</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->
+		
+
+	</GroundWarFormation>
+	
+	<GroundWarFormation Name="UNIT_GW_IR_AAC">
+		<Variant_Of_Existing_Type>GroundWar_Spawner_Unit</Variant_Of_Existing_Type>
+		<Affiliation>Empire</Affiliation>
+		
+		<Text_ID>GW_IR_AAC</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_GROUP_SPAWNER</Encyclopedia_Unit_Class>
+		
+		<Land_Model_Name>GROUNDWAR_Empire.alo</Land_Model_Name>
+		<Icon_Name>i_button_army_trooper_weap.tga</Icon_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Lua_Script></Lua_Script>
+		<Tech_Level>99</Tech_Level>
+		
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_Imperial_Armytrooper_Heavy_Team_Deployed, 4</Starting_Spawned_Units_Tech_0>
+			
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>1</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>1</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->
+
+	</GroundWarFormation>
+
+	<GroundWarFormation Name="UNIT_GW_IR_AAD">
+		<Variant_Of_Existing_Type>GroundWar_Spawner_Unit</Variant_Of_Existing_Type>
+		<Affiliation>Empire</Affiliation>
+		
+		<Text_ID>GW_IR_AAD</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_GROUP_SPAWNER</Encyclopedia_Unit_Class>
+		
+		<Land_Model_Name>GROUNDWAR_Empire.alo</Land_Model_Name>
+		<Icon_Name>i_button_army_trooper_weap.tga</Icon_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Lua_Script></Lua_Script>
+		<Tech_Level>99</Tech_Level>
+		
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_Imperial_Medic_Armytrooper_Squad, 2</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_Chariot_LAV_Combat, 2</Starting_Spawned_Units_Tech_0>
+
+
+			
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>1</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>1</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->
+
+	</GroundWarFormation>
+
+	<GroundWarFormation Name="UNIT_GW_IR_AAE">
+		<Variant_Of_Existing_Type>GroundWar_Spawner_Unit</Variant_Of_Existing_Type>
+		<Affiliation>Empire</Affiliation>
+		
+		<Text_ID>GW_IR_AAE</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_GROUP_SPAWNER</Encyclopedia_Unit_Class>
+		
+		<Land_Model_Name>GROUNDWAR_Empire.alo</Land_Model_Name>
+		<Icon_Name>i_button_storm_trooper_assault.tga</Icon_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Lua_Script></Lua_Script>
+		<Tech_Level>99</Tech_Level>
+		
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_Imperial_Stormtrooper_Heavy_Team_Deployed, 2</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_Imperial_Stormtrooper_Assault_Team_Deployed, 3</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_Imperial_Dwarf_Spider_Droid_Squad, 1</Starting_Spawned_Units_Tech_0>
+
+
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>1</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>1</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->
+
+	</GroundWarFormation>
+	
+	<GroundWarFormation Name="UNIT_GW_IR_AAF">
+		<Variant_Of_Existing_Type>GroundWar_Spawner_Unit</Variant_Of_Existing_Type>
+		<Affiliation>Empire</Affiliation>
+		
+		<Text_ID>GW_IR_AAF</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_GROUP_SPAWNER</Encyclopedia_Unit_Class>
+		
+		<Land_Model_Name>GROUNDWAR_Empire.alo</Land_Model_Name>
+		<Icon_Name>i_button_atpt.tga</Icon_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Lua_Script></Lua_Script>
+		<Tech_Level>99</Tech_Level>
+		
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_Chariot_LAV_Combat, 2</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_AT_PT_Walker, 4</Starting_Spawned_Units_Tech_0>
+	
+			
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>1</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>1</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->
+
+	</GroundWarFormation>
+	
+	<GroundWarFormation Name="UNIT_GW_IR_AAG">
+		<Variant_Of_Existing_Type>GroundWar_Spawner_Unit</Variant_Of_Existing_Type>
+		<Affiliation>Empire</Affiliation>
+		
+		<Text_ID>GW_IR_AAG</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_GROUP_SPAWNER</Encyclopedia_Unit_Class>
+		
+		<Land_Model_Name>GROUNDWAR_Empire.alo</Land_Model_Name>
+		<Icon_Name>i_button_tnt.tga</Icon_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Lua_Script></Lua_Script>
+		<Tech_Level>99</Tech_Level>
+		
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_Treaded_Neutron_Torch, 1</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_PX10, 3</Starting_Spawned_Units_Tech_0>
+		
+
+			
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>1</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>1</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->
+
+	</GroundWarFormation>
+
+	<GroundWarFormation Name="UNIT_GW_IR_AAH">
+		<Variant_Of_Existing_Type>GroundWar_Spawner_Unit</Variant_Of_Existing_Type>
+		<Affiliation>Empire</Affiliation>
+		
+		<Text_ID>GW_IR_AAH</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_GROUP_SPAWNER</Encyclopedia_Unit_Class>
+		
+		<Land_Model_Name>GROUNDWAR_Empire.alo</Land_Model_Name>
+		<Icon_Name>i_button_ScoutTrooper_Sniper.tga</Icon_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Lua_Script></Lua_Script>
+		<Tech_Level>99</Tech_Level>
+		
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_Scout_Trooper, 8</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_Imperial_Scout_Trooper_Sniper_Squad_Deployed, 8</Starting_Spawned_Units_Tech_0>
+
+
+			
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>1</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>1</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->
+		
+		<Unit_Abilities_Data SubObjectList="Yes">		
+			<Unit_Ability>
+                <Type>SELF_DESTRUCT</Type>
+                <Expiration_Seconds>90</Expiration_Seconds>
+				<Recharge_Seconds>90</Recharge_Seconds>
+                <Active_By_Default>Yes</Active_By_Default>
+                <Spawned_Object_Type>  </Spawned_Object_Type>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+
+	</GroundWarFormation>
+
+	<GroundWarFormation Name="UNIT_GW_IR_AAI">
+		<Variant_Of_Existing_Type>GroundWar_Spawner_Unit</Variant_Of_Existing_Type>
+		<Affiliation>Empire</Affiliation>
+		
+		<Text_ID>GW_IR_AAI</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_GROUP_SPAWNER</Encyclopedia_Unit_Class>
+		
+		<Land_Model_Name>GROUNDWAR_Empire.alo</Land_Model_Name>
+		<Icon_Name>i_button_ScoutTrooper_Commando.tga</Icon_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Lua_Script></Lua_Script>
+		<Tech_Level>99</Tech_Level>
+		
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_Imperial_Scout_Trooper_Assault_Squad_Deployed, 6</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_Imperial_Scout_Trooper_Commando_Squad_Deployed, 6</Starting_Spawned_Units_Tech_0>
+
+
+			
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>1</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>1</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->
+
+	</GroundWarFormation>
+
+	<GroundWarFormation Name="UNIT_GW_IR_AAJ">
+		<Variant_Of_Existing_Type>GroundWar_Spawner_Unit</Variant_Of_Existing_Type>
+		<Affiliation>Empire</Affiliation>
+		
+		<Text_ID>GW_IR_AAJ</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_GROUP_SPAWNER</Encyclopedia_Unit_Class>
+		
+		<Land_Model_Name>GROUNDWAR_Empire.alo</Land_Model_Name>
+		<Icon_Name>i_button_storm_trooper_support.tga</Icon_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Lua_Script></Lua_Script>
+		<Tech_Level>99</Tech_Level>
+		
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_Imperial_Stormtrooper_Assault_Team_Deployed, 3</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_Imperial_Medic_Stormtrooper_Squad, 1</Starting_Spawned_Units_Tech_0>
+
+
+			
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>1</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>1</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->
+
+	</GroundWarFormation>
+	
+	<GroundWarFormation Name="UNIT_GW_IR_AAK">
+		<Variant_Of_Existing_Type>GroundWar_Spawner_Unit</Variant_Of_Existing_Type>
+		<Affiliation>Empire</Affiliation>
+		
+		<Text_ID>GW_IR_AAK</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_GROUP_SPAWNER</Encyclopedia_Unit_Class>
+		
+		<Land_Model_Name>GROUNDWAR_Empire.alo</Land_Model_Name>
+		<Icon_Name>i_button_ataa.tga</Icon_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Lua_Script></Lua_Script>
+		<Tech_Level>99</Tech_Level>
+		
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_Imperial_Dwarf_Spider_Droid_Squad, 4</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_AT_AA_Walker, 2</Starting_Spawned_Units_Tech_0>
+		
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>1</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>1</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->
+
+	</GroundWarFormation>
+	
+	<GroundWarFormation Name="UNIT_GW_IR_AAL">
+		<Variant_Of_Existing_Type>GroundWar_Spawner_Unit</Variant_Of_Existing_Type>
+		<Affiliation>Empire</Affiliation>
+		
+		<Text_ID>GW_IR_AAL</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_GROUP_SPAWNER</Encyclopedia_Unit_Class>
+		
+		<Land_Model_Name>GROUNDWAR_Empire.alo</Land_Model_Name>
+		<Icon_Name>i_button_ev_s_1_firehawke.tga</Icon_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Lua_Script></Lua_Script>
+		<Tech_Level>99</Tech_Level>
+		
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_AT_ST_Walker, 3</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_S_1_Firehawke, 2</Starting_Spawned_Units_Tech_0>
+	
+
+			
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>1</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>1</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->
+
+	</GroundWarFormation>
+	
+	<GroundWarFormation Name="UNIT_GW_IR_AAM">
+		<Variant_Of_Existing_Type>GroundWar_Spawner_Unit</Variant_Of_Existing_Type>
+		<Affiliation>Empire</Affiliation>
+		
+		<Text_ID>GW_IR_AAM</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_GROUP_SPAWNER</Encyclopedia_Unit_Class>
+		
+		<Land_Model_Name>GROUNDWAR_Empire.alo</Land_Model_Name>
+		<Icon_Name>i_button_deathhawk.tga</Icon_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Lua_Script></Lua_Script>
+		<Tech_Level>99</Tech_Level>
+		
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_Deathhawk, 3</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_Scout_Trooper, 1</Starting_Spawned_Units_Tech_0>
+		
+		
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>1</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>1</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->
+
+	</GroundWarFormation>
+	
+	<GroundWarFormation Name="UNIT_GW_IR_AAN">
+		<Variant_Of_Existing_Type>GroundWar_Spawner_Unit</Variant_Of_Existing_Type>
+		<Affiliation>Empire</Affiliation>
+		
+		<Text_ID>GW_IR_AAN</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_GROUP_SPAWNER</Encyclopedia_Unit_Class>
+		
+		<Land_Model_Name>GROUNDWAR_Empire.alo</Land_Model_Name>
+		<Icon_Name>i_button_atst.tga</Icon_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Lua_Script></Lua_Script>
+		<Tech_Level>99</Tech_Level>
+		
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_AT_ST_A_Walker, 3</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_AT_PT_Walker, 2</Starting_Spawned_Units_Tech_0>
+		
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>1</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>1</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->
+
+	</GroundWarFormation>
+	
+	<GroundWarFormation Name="UNIT_GW_IR_AAO">
+		<Variant_Of_Existing_Type>GroundWar_Spawner_Unit</Variant_Of_Existing_Type>
+		<Affiliation>Empire</Affiliation>
+		
+		<Text_ID>GW_IR_AAO</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_GROUP_SPAWNER</Encyclopedia_Unit_Class>
+		
+		<Land_Model_Name>GROUNDWAR_Empire.alo</Land_Model_Name>
+		<Icon_Name>i_button_storm_trooper_hwt.tga</Icon_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Lua_Script></Lua_Script>
+		<Tech_Level>99</Tech_Level>
+		
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_Imperial_Stormtrooper_HWT_Squad, 2</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_Imperial_Dwarf_Spider_Droid_Squad, 4</Starting_Spawned_Units_Tech_0>
+		
+		
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>1</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>1</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->
+
+	</GroundWarFormation>
+	
+	<GroundWarFormation Name="UNIT_GW_IR_AAP">
+		<Variant_Of_Existing_Type>GroundWar_Spawner_Unit</Variant_Of_Existing_Type>
+		<Affiliation>Empire</Affiliation>
+		
+		<Text_ID>GW_IR_AAP</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_GROUP_SPAWNER</Encyclopedia_Unit_Class>
+		
+		<Land_Model_Name>GROUNDWAR_Empire.alo</Land_Model_Name>
+		<Icon_Name>i_button_ev_s_1_firehawke.tga</Icon_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Lua_Script></Lua_Script>
+		<Tech_Level>99</Tech_Level>
+		
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_S_1_Firehawke, 8</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_Chariot_LAV_Combat, 1</Starting_Spawned_Units_Tech_0>
+		
+		
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>1</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>1</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->
+
+	</GroundWarFormation>
+	
+	<GroundWarFormation Name="UNIT_GW_IR_AAQ">
+		<Variant_Of_Existing_Type>GroundWar_Spawner_Unit</Variant_Of_Existing_Type>
+		<Affiliation>Empire</Affiliation>
+		
+		<Text_ID>GW_IR_AAQ</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_GROUP_SPAWNER</Encyclopedia_Unit_Class>
+		
+		<Land_Model_Name>GROUNDWAR_Empire.alo</Land_Model_Name>
+		<Icon_Name>i_button_darkjedi.tga</Icon_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Lua_Script></Lua_Script>
+		<Tech_Level>99</Tech_Level>
+		
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_Imperial_Dark_Jedi_Squad, 2</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_Imperial_Shadow_Stormtrooper_Squad, 4</Starting_Spawned_Units_Tech_0>
+		
+		
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>1</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>1</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->
+
+	</GroundWarFormation>
+	
+	<GroundWarFormation Name="UNIT_GW_IR_AAR">
+		<Variant_Of_Existing_Type>GroundWar_Spawner_Unit</Variant_Of_Existing_Type>
+		<Affiliation>Empire</Affiliation>
+		
+		<Text_ID>GW_IR_AAR</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_GROUP_SPAWNER</Encyclopedia_Unit_Class>
+		
+		<Land_Model_Name>GROUNDWAR_Empire.alo</Land_Model_Name>
+		<Icon_Name>i_button_atat.tga</Icon_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Lua_Script></Lua_Script>
+		<Tech_Level>99</Tech_Level>
+		
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_AT_ST_Walker, 4</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_AT_AT_Walker, 2</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_Imperial_Dwarf_Spider_Droid_Squad, 1</Starting_Spawned_Units_Tech_0>
+		
+		
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>1</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>1</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->
+
+	</GroundWarFormation>
+	
+	<GroundWarFormation Name="UNIT_GW_IR_AAS">
+		<Variant_Of_Existing_Type>GroundWar_Spawner_Unit</Variant_Of_Existing_Type>
+		<Affiliation>Empire</Affiliation>
+		
+		<Text_ID>GW_IR_AAS</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_GROUP_SPAWNER</Encyclopedia_Unit_Class>
+		
+		<Land_Model_Name>GROUNDWAR_Empire.alo</Land_Model_Name>
+		<Icon_Name>i_button_a5_juggernaut.tga</Icon_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Lua_Script></Lua_Script>
+		<Tech_Level>99</Tech_Level>
+		
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_Imperial_Stormtrooper_Assault_Team_Deployed, 4</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_A5_Juggernaut, 1</Starting_Spawned_Units_Tech_0>
+		
+		
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>1</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>1</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->
+
+	</GroundWarFormation>
+	
+	<GroundWarFormation Name="UNIT_GW_IR_AAT">
+		<Variant_Of_Existing_Type>GroundWar_Spawner_Unit</Variant_Of_Existing_Type>
+		<Affiliation>Empire</Affiliation>
+		
+		<Text_ID>GW_IR_AAT</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_GROUP_SPAWNER</Encyclopedia_Unit_Class>
+		
+		<Land_Model_Name>GROUNDWAR_Empire.alo</Land_Model_Name>
+		<Icon_Name>i_button_spma_g.tga</Icon_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Lua_Script></Lua_Script>
+		<Tech_Level>99</Tech_Level>
+		
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_SPMAG_Walker, 2</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_PX4, 1</Starting_Spawned_Units_Tech_0>
+		
+		
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>1</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>1</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->
+
+	</GroundWarFormation>
+	
+	<GroundWarFormation Name="UNIT_GW_IR_AAU">
+		<Variant_Of_Existing_Type>GroundWar_Spawner_Unit</Variant_Of_Existing_Type>
+		<Affiliation>Empire</Affiliation>
+		
+		<Text_ID>GW_IR_AAU</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_GROUP_SPAWNER</Encyclopedia_Unit_Class>
+		
+		<Land_Model_Name>GROUNDWAR_Empire.alo</Land_Model_Name>
+		<Icon_Name>I_BUTTON_STORM_TROOPER_ELITE_GUARD.tga</Icon_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Lua_Script></Lua_Script>
+		<Tech_Level>99</Tech_Level>
+		
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_IDT, 2</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_Imperial_Elite_Guard_Stormtrooper_Squad, 4</Starting_Spawned_Units_Tech_0>
+		
+		
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>1</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>1</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->
+
+	</GroundWarFormation>
+	
+	<GroundWarFormation Name="UNIT_GW_IR_AAV">
+		<Variant_Of_Existing_Type>GroundWar_Spawner_Unit</Variant_Of_Existing_Type>
+		<Affiliation>Empire</Affiliation>
+		
+		<Text_ID>GW_IR_AAV</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_GROUP_SPAWNER</Encyclopedia_Unit_Class>
+		
+		<Land_Model_Name>GROUNDWAR_Empire.alo</Land_Model_Name>
+		<Icon_Name>i_button_deathhawk.tga</Icon_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Lua_Script></Lua_Script>
+		<Tech_Level>99</Tech_Level>
+		
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_IDT, 3</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_Deathhawk, 4</Starting_Spawned_Units_Tech_0>
+	
+		
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>1</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>1</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->
+		
+		<Unit_Abilities_Data SubObjectList="Yes">		
+			<Unit_Ability>
+                <Type>SELF_DESTRUCT</Type>
+                <Expiration_Seconds>120</Expiration_Seconds>
+				<Recharge_Seconds>120</Recharge_Seconds>
+                <Active_By_Default>Yes</Active_By_Default>
+                <Spawned_Object_Type>  </Spawned_Object_Type>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+
+	</GroundWarFormation>
+	
+	<GroundWarFormation Name="UNIT_GW_IR_AAX">
+		<Variant_Of_Existing_Type>GroundWar_Spawner_Unit</Variant_Of_Existing_Type>
+		<Affiliation>Empire</Affiliation>
+		
+		<Text_ID>GW_IR_AAX</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_GROUP_SPAWNER</Encyclopedia_Unit_Class>
+		
+		<Land_Model_Name>GROUNDWAR_Empire.alo</Land_Model_Name>
+		<Icon_Name>i_button_nova_storm_trooper.tga</Icon_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Lua_Script></Lua_Script>
+		<Tech_Level>99</Tech_Level>
+		
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_Imperial_Nova_Stormtrooper_Squad, 6</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_AT_AT_Walker_Refit, 2</Starting_Spawned_Units_Tech_0>
+	
+		
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>1</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>1</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->
+		
+		<Unit_Abilities_Data SubObjectList="Yes">		
+			<Unit_Ability>
+                <Type>SELF_DESTRUCT</Type>
+                <Expiration_Seconds>120</Expiration_Seconds>
+				<Recharge_Seconds>120</Recharge_Seconds>
+                <Active_By_Default>Yes</Active_By_Default>
+                <Spawned_Object_Type>  </Spawned_Object_Type>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+
+	</GroundWarFormation>
+	
+	<GroundWarFormation Name="UNIT_GW_IR_AAY">
+		<Variant_Of_Existing_Type>GroundWar_Spawner_Unit</Variant_Of_Existing_Type>
+		<Affiliation>Empire</Affiliation>
+		
+		<Text_ID>GW_IR_AAY</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_GROUP_SPAWNER</Encyclopedia_Unit_Class>
+		
+		<Land_Model_Name>GROUNDWAR_Empire.alo</Land_Model_Name>
+		<Icon_Name>i_button_tankdroid.tga</Icon_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Lua_Script></Lua_Script>
+		<Tech_Level>99</Tech_Level>
+		
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_XR85, 2</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_Imperial_Dark_Stormtrooper_Team_Deployed, 6</Starting_Spawned_Units_Tech_0>
+
+		
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>1</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>1</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->
+		
+		<Unit_Abilities_Data SubObjectList="Yes">		
+			<Unit_Ability>
+                <Type>SELF_DESTRUCT</Type>
+                <Expiration_Seconds>120</Expiration_Seconds>
+				<Recharge_Seconds>120</Recharge_Seconds>
+                <Active_By_Default>Yes</Active_By_Default>
+                <Spawned_Object_Type>  </Spawned_Object_Type>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+
+	</GroundWarFormation>
+	
+	<GroundWarFormation Name="UNIT_GW_IR_AAZ">
+		<Variant_Of_Existing_Type>GroundWar_Spawner_Unit</Variant_Of_Existing_Type>
+		<Affiliation>Empire</Affiliation>
+		
+		<Text_ID>GW_IR_AAZ</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_GROUP_SPAWNER</Encyclopedia_Unit_Class>
+		
+		<Land_Model_Name>GROUNDWAR_Empire.alo</Land_Model_Name>
+		<Icon_Name>i_button_rg_storm_trooper.tga</Icon_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Lua_Script></Lua_Script>
+		<Tech_Level>99</Tech_Level>
+		
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_Imperial_Jumptrooper_Squad, 6</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_IDT, 4</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_Imperial_Royal_Guard_Stormtrooper_Squad, 4</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_Imperial_Dark_Stormtrooper_Team_Deployed, 4</Starting_Spawned_Units_Tech_0>
+		
+		
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>1</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>1</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->
+		
+		<Unit_Abilities_Data SubObjectList="Yes">		
+			<Unit_Ability>
+                <Type>SELF_DESTRUCT</Type>
+                <Expiration_Seconds>120</Expiration_Seconds>
+				<Recharge_Seconds>120</Recharge_Seconds>
+                <Active_By_Default>Yes</Active_By_Default>
+                <Spawned_Object_Type>  </Spawned_Object_Type>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+
+	</GroundWarFormation>
+	
+	<GroundWarFormation Name="UNIT_GW_IR_ABA">
+		<Variant_Of_Existing_Type>GroundWar_Spawner_Unit</Variant_Of_Existing_Type>
+		<Affiliation>Empire</Affiliation>
+		
+		<Text_ID>GW_IR_ABA</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_GROUP_SPAWNER</Encyclopedia_Unit_Class>
+		
+		<Land_Model_Name>GROUNDWAR_Empire.alo</Land_Model_Name>
+		<Icon_Name>i_button_atat_tl.tga</Icon_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Lua_Script></Lua_Script>
+		<Tech_Level>99</Tech_Level>
+		
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_AT_ST_A_Walker, 4</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_AT_AT_Walker_Refit, 2</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_Imperial_Dwarf_Spider_Droid_Squad, 1</Starting_Spawned_Units_Tech_0>
+
+		
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>1</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>1</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->
+		
+		<Unit_Abilities_Data SubObjectList="Yes">		
+			<Unit_Ability>
+                <Type>SELF_DESTRUCT</Type>
+                <Expiration_Seconds>120</Expiration_Seconds>
+				<Recharge_Seconds>120</Recharge_Seconds>
+                <Active_By_Default>Yes</Active_By_Default>
+                <Spawned_Object_Type>  </Spawned_Object_Type>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+
+	</GroundWarFormation>
+
+
+</Complete_Units_Ground_War>

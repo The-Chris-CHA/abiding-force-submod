@@ -1,0 +1,673 @@
+<?xml version="1.0"?>
+<SpecialStructures>
+
+
+	<!--<SpecialStructure Name="Empire_InstantAction">
+		<Variant_Of_Existing_Type>Generic_Golan_Three_Strategic</Variant_Of_Existing_Type>
+		<Tech_Level>99</Tech_Level>
+		<Affiliation>Empire, Greater_Maldrood, Eriadu_Authority, Zsinj_Empire, Pentastar, Corporate_Sector</Affiliation>
+		
+		<Tactical_Buildable_Objects_Campaign> 
+			Empire,
+				IA_LANCER_FRIGATE,
+				IA_CARRACK_CRUISER,
+				IA_GENERIC_STAR_DESTROYER_TWO,
+				IA_GENERIC_TECTOR,
+				IA_Escort_Carrier,
+				IA_GENERIC_STAR_DESTROYER,
+				IA_STRIKE_CRUISER,
+				IA_GENERIC_VICTORY_DESTROYER,
+				IA_GENERIC_VICTORY_DESTROYER_TWO,
+				IA_GENERIC_VENATOR,
+				IA_Generic_Gladiator,
+				IA_MTC_SUPPORT,
+				IA_Generic_Procursator,
+				IA_DREADNAUGHT_EMPIRE,
+				IA_VINDICATOR_CRUISER,
+				IA_Generic_Secutor,
+				IA_Generic_Allegiance,
+				IA_Generic_Praetor,
+				IA_Generic_Bellator,
+				IA_GENERIC_EXECUTOR,
+				IA_Vigil,
+				IA_Eclipse_Star_Destroyer
+		</Tactical_Buildable_Objects_Campaign>
+	
+	
+	</SpecialStructure>
+
+	<SpecialStructure Name="Rebel_InstantAction">
+		<Variant_Of_Existing_Type>Generic_Golan_Three_Strategic</Variant_Of_Existing_Type>
+		<Tech_Level>99</Tech_Level>
+		<Affiliation>Empire, Greater_Maldrood, Eriadu_Authority, Zsinj_Empire, Pentastar, Corporate_Sector</Affiliation>
+		
+		<Tactical_Buildable_Objects_Campaign> 
+			Empire,
+				IA_Marauder_Cruiser,
+				IA_Corellian_Corvette,
+				IA_Nebulon_B_Frigate,
+				IA_Calamari_Cruiser,
+				IA_Corona,
+				IA_Majestic,
+				IA_MC40A,
+				IA_Quasar,
+				IA_Dauntless,
+				IA_Home_One_Type,
+				IA_BAC,
+				IA_MC80B,
+				IA_Nebula,
+				IA_Endurance,
+				IA_MC90,
+				IA_Sacheen,
+				IA_CORELLIAN_GUNBOAT,
+				IA_Viscount,
+		</Tactical_Buildable_Objects_Campaign>
+		
+	</SpecialStructure>-->
+
+
+		
+	<SpaceUnit Name="InstantAction_Marker_Empire">
+		<Variant_Of_Existing_Type>InstantAction_Marker_Generic</Variant_Of_Existing_Type>
+		<Tech_Level>99</Tech_Level>
+		<Space_FOW_Reveal_Range>50000.0</Space_FOW_Reveal_Range>
+		<Affiliation>Empire, Rebel</Affiliation>
+		<Space_Model_Name>INSTANTACTION_Empire.alo</Space_Model_Name>
+		<Icon_Name>i_button_ir.tga</Icon_Name>
+	
+			<Tactical_Buildable_Objects_Campaign> 
+			Empire,
+				IA_Decimator_Squadron,
+				IA_YE_4_Squadron,
+				IA_Gamma_ATR_6_Squadron,
+				IA_Beta_ETR_3_Squadron,
+				IA_Guardian_Squadron,
+				IA_YZ_775_Squadron,
+				IA_Raider_Corvette,
+				IA_Raider_II_Corvette,
+				IA_IPV1_System_Patrol_Craft,
+				IA_IPV4,
+				IA_Customs_Corvette,
+				IA_Crusader_Gunship,
+				IA_CR90_Zsinj,
+				IA_CR92_Assassin,
+				IA_Corellian_Buccaneer,
+				IA_Adz,
+				IA_Tartan_Patrol_Cruiser,
+				IA_Lancer_Frigate,
+				IA_Hunter_Killer_Probot,
+				IA_Trenchant
+		</Tactical_Buildable_Objects_Campaign>
+
+	</SpaceUnit>
+
+	<SpaceUnit Name="InstantAction_Marker_Empire2">
+		<Variant_Of_Existing_Type>InstantAction_Marker_Generic</Variant_Of_Existing_Type>
+		<Tech_Level>99</Tech_Level>
+		<Space_FOW_Reveal_Range>50000.0</Space_FOW_Reveal_Range>
+		<Affiliation>Empire, Rebel</Affiliation>
+		<Space_Model_Name>INSTANTACTION_Empire.alo</Space_Model_Name>
+		<Icon_Name>i_button_ir.tga</Icon_Name>
+	
+			<Tactical_Buildable_Objects_Campaign> 
+			Empire,
+				IA_Nebulon_B_Zsinj,
+				IA_Nebulon_B_Empire,
+				IA_Galleon,
+				IA_Star_Galleon,
+				IA_Vengeance_Frigate,
+				IA_Vigil,
+				IA_Arquitens,
+				IA_Carrack_Cruiser,
+				IA_Surveyor_Frigate,
+				IA_Active_Frigate,
+				IA_Victory_I_Frigate,
+				IA_Victory_II_Frigate,
+				IA_Strike_Cruiser,
+				IA_Strike_Cruiser_Gorath,
+				IA_Strike_Interdictor,
+				IA_Eidolon,
+				IA_Escort_Carrier,
+				IA_Combat_Escort_Carrier,
+				IA_Neutron_Star,
+				IA_Battle_Horn,
+				IA_Dreadnaught_Empire,
+				IA_Katana_Dreadnaught_Empire,
+				IA_Generic_Pursuit,
+				IA_Broadside_Cruiser,
+		</Tactical_Buildable_Objects_Campaign>
+
+	</SpaceUnit>
+	
+	<SpaceUnit Name="InstantAction_Marker_Empire3">
+		<Variant_Of_Existing_Type>InstantAction_Marker_Generic</Variant_Of_Existing_Type>
+		<Tech_Level>99</Tech_Level>
+		<Space_FOW_Reveal_Range>50000.0</Space_FOW_Reveal_Range>
+		<Affiliation>Empire, Rebel</Affiliation>
+		<Space_Model_Name>INSTANTACTION_Empire.alo</Space_Model_Name>
+		<Icon_Name>i_button_ir.tga</Icon_Name>
+	
+			<Tactical_Buildable_Objects_Campaign> 
+			Empire,
+				IA_Generic_Gladiator,
+				IA_Generic_Gladiator_Two,
+				IA_Vindicator_Cruiser,
+				IA_Enforcer,
+				IA_Dragon_Heavy_Cruiser,
+				IA_World_Devastator_Frigate,
+				IA_MTC_Support,
+				IA_MTC_Sensor,
+				IA_Imperial_Cargo_Ship,
+				IA_Generic_Acclamator_Assault_Ship_Leveler,
+				IA_Generic_Acclamator_Assault_Ship_I,
+				IA_Generic_Acclamator_Assault_Ship_II,
+				IA_Generic_Imperial_I_Frigate,
+				IA_Generic_Imperial_II_Frigate,
+				IA_Generic_Twin_Well_Cruiser,
+				IA_Generic_Interdictor_Cruiser,
+				IA_Generic_Procursator,
+				IA_Generic_Victory_Destroyer,
+				IA_Generic_Victory_Destroyer_Two,
+				IA_Crimson_Victory,
+				IA_Generic_Venator
+		</Tactical_Buildable_Objects_Campaign>
+
+	</SpaceUnit>
+
+	<SpaceUnit Name="InstantAction_Marker_Empire4">
+		<Variant_Of_Existing_Type>InstantAction_Marker_Generic</Variant_Of_Existing_Type>
+		<Tech_Level>99</Tech_Level>
+		<Space_FOW_Reveal_Range>50000.0</Space_FOW_Reveal_Range>
+		<Affiliation>Empire, Rebel</Affiliation>
+		<Space_Model_Name>INSTANTACTION_Empire.alo</Space_Model_Name>
+		<Icon_Name>i_button_ir.tga</Icon_Name>
+	
+			<Tactical_Buildable_Objects_Campaign> 
+			Empire,
+				IA_Generic_Dominator,
+				IA_Generic_Tector,
+				IA_Generic_Star_Destroyer,
+				IA_Generic_Star_Destroyer_Two,
+				IA_Generic_Aggressor,
+				IA_Generic_Secutor,
+				IA_Generic_Allegiance,
+				IA_Torpedo_Sphere,
+				IA_World_Devastator_Capital,
+				IA_World_Devastator_Battlecruiser,
+				IA_Altor_Replenishment_Ship,
+				IA_Communications_Battlecruiser,
+				IA_Generic_Sorannan,
+				IA_EX_F,
+				IA_Generic_Praetor_Carrier,
+				IA_Generic_Praetor,
+				IA_Generic_Bellator,
+				IA_Generic_Vengeance,
+				IA_Generic_Mandator_III,
+				IA_Generic_Aramadia,
+				IA_Generic_Executor,
+				IA_Assertor,
+				IA_Sovereign,
+				IA_Eclipse_Star_Destroyer
+		</Tactical_Buildable_Objects_Campaign>
+
+	</SpaceUnit>
+
+	<!-- Factional Set-Up begins (Future) -->
+
+	<!--<SpaceUnit Name="InstantAction_Marker_Empire1">
+		<Variant_Of_Existing_Type>InstantAction_Marker_Generic</Variant_Of_Existing_Type>
+		<Tech_Level>99</Tech_Level>
+		<Space_FOW_Reveal_Range>50000.0</Space_FOW_Reveal_Range>
+		<Affiliation>Empire, Rebel</Affiliation>
+		<Space_Model_Name>INSTANTACTION_Empire.alo</Space_Model_Name>
+		<Icon_Name>i_button_ir.tga</Icon_Name>
+	
+			<Tactical_Buildable_Objects_Campaign> 
+			Empire,
+				IA_Beta_ETR_3_Squadron,
+				IA_IPV1_System_Patrol_Craft,
+				IA_Crusader_Gunship,
+				IA_Lancer_Frigate,
+				IA_Nebulon_B_Empire,
+				IA_Star_Galleon,
+				IA_Carrack_Cruiser,
+				IA_Eidolon,
+				IA_Strike_Cruiser,
+				IA_Escort_Carrier,
+				IA_Combat_Escort_Carrier,
+				IA_Dreadnaught_Empire,
+				IA_Vindicator_Cruiser,
+				IA_Generic_Interdictor_Cruiser,
+				IA_MTC_Support,
+				IA_MTC_Sensor,
+				IA_Generic_Acclamator_Assault_Ship_II,
+				IA_Generic_Victory_Destroyer,
+				IA_Generic_Victory_Destroyer_Two,
+				IA_Generic_Procursator
+		</Tactical_Buildable_Objects_Campaign>
+
+	</SpaceUnit>-->
+
+	<!--<SpaceUnit Name="InstantAction_Marker_Empire2">
+		<Variant_Of_Existing_Type>InstantAction_Marker_Generic</Variant_Of_Existing_Type>
+		<Tech_Level>99</Tech_Level>
+		<Space_FOW_Reveal_Range>50000.0</Space_FOW_Reveal_Range>
+		<Affiliation>Empire, Rebel</Affiliation>
+		<Space_Model_Name>INSTANTACTION_Empire.alo</Space_Model_Name>
+		<Icon_Name>i_button_ir.tga</Icon_Name>
+	
+			<Tactical_Buildable_Objects_Campaign> 
+			Empire,
+				IA_Generic_Dominator,
+				IA_Generic_Star_Destroyer,
+				IA_Generic_Tector,
+				IA_Generic_Star_Destroyer_Two,
+				IA_Generic_Allegiance,
+				IA_Generic_Praetor,
+				IA_Sovereign,
+				IA_Generic_Executor,
+				IA_Eclipse_Star_Destroyer
+		</Tactical_Buildable_Objects_Campaign>
+
+	</SpaceUnit>-->
+
+	<!--<SpaceUnit Name="InstantAction_Marker_GM">
+		<Variant_Of_Existing_Type>InstantAction_Marker_Generic</Variant_Of_Existing_Type>
+		<Tech_Level>99</Tech_Level>
+		<Space_FOW_Reveal_Range>50000.0</Space_FOW_Reveal_Range>
+		<Affiliation>Empire, Rebel</Affiliation>
+		<Space_Model_Name>INSTANTACTION_Empire.alo</Space_Model_Name>
+		<Icon_Name>i_button_ir.tga</Icon_Name>
+	
+			<Tactical_Buildable_Objects_Campaign> 
+			Empire,
+				IA_Guardian_Squadron,
+				IA_Customs_Corvette
+				IA_Adz,
+				IA_Tartan_Patrol_Cruiser,
+				IA_Vigil,
+				IA_Star_Galleon,
+				IA_Carrack_Cruiser,
+				IA_Strike_Cruiser,
+				IA_Strike_Cruiser_Gorath,
+				IA_Strike_Interdictor,
+				IA_Generic_Pursuit,
+				IA_Broadside_Cruiser,
+				IA_Vindicator_Cruiser,
+				IA_Generic_Imperial_II_Frigate,
+				IA_Generic_Acclamator_Assault_Ship_II,
+				IA_Generic_Victory_Destroyer,
+				IA_Crimson_Victory,
+				IA_Generic_Dominator,
+				IA_Generic_Star_Destroyer,
+				IA_Generic_Tector,
+				IA_Altor_Replenishment_Ship,
+				IA_Generic_Bellator
+		</Tactical_Buildable_Objects_Campaign>
+
+	</SpaceUnit>-->
+
+	<!--<SpaceUnit Name="InstantAction_Marker_Eriadu">
+		<Variant_Of_Existing_Type>InstantAction_Marker_Generic</Variant_Of_Existing_Type>
+		<Tech_Level>99</Tech_Level>
+		<Space_FOW_Reveal_Range>50000.0</Space_FOW_Reveal_Range>
+		<Affiliation>Empire, Rebel</Affiliation>
+		<Space_Model_Name>INSTANTACTION_Empire.alo</Space_Model_Name>
+		<Icon_Name>i_button_ir.tga</Icon_Name>
+	
+			<Tactical_Buildable_Objects_Campaign> 
+			Empire,
+				IA_Gamma_ATR_6_Squadron
+				IA_IPV1_System_Patrol_Craft,
+				IA_IPV4,
+				IA_Raider_II_Corvette,
+				IA_Adz,
+				IA_Galleon,
+				IA_Arquitens,
+				IA_Eidolon,
+				IA_Generic_Twin_Well_Cruiser,
+				IA_Generic_Gladiator,
+				IA_Generic_Imperial_I_Frigate,
+				IA_Generic_Victory_Destroyer,
+				IA_Generic_Star_Destroyer,
+				IA_Generic_Star_Destroyer_Two,
+				IA_Generic_Allegiance,
+				IA_Torpedo_Sphere,
+				IA_Generic_Praetor,
+				IA_Generic_Bellator,
+				IA_Assertor
+		</Tactical_Buildable_Objects_Campaign>
+
+	</SpaceUnit>-->
+
+	<!--<SpaceUnit Name="InstantAction_Marker_Zsinj">
+		<Variant_Of_Existing_Type>InstantAction_Marker_Generic</Variant_Of_Existing_Type>
+		<Tech_Level>99</Tech_Level>
+		<Space_FOW_Reveal_Range>50000.0</Space_FOW_Reveal_Range>
+		<Affiliation>Empire, Rebel</Affiliation>
+		<Space_Model_Name>INSTANTACTION_Empire.alo</Space_Model_Name>
+		<Icon_Name>i_button_ir.tga</Icon_Name>
+	
+			<Tactical_Buildable_Objects_Campaign> 
+			Empire,
+				IA_YZ_775_Squadron,
+				IA_CR90_Zsinj,
+				IA_Interceptor_Frigate,
+				IA_Action_VI_Support,
+				IA_Adz,
+				IA_CR92_Assassin,
+				IA_Lancer_Frigate,
+				IA_Star_Galleon,
+				IA_Nebulon_B_Zsinj,
+				IA_Vengeance_Frigate,
+				IA_Surveyor_Frigate,
+				IA_Neutron_Star,
+				IA_Super_Transport_XI_Modified,
+				IA_Dragon_Heavy_Cruiser,
+				IA_Generic_Twin_Well_Cruiser,
+				IA_Space_ARC_Cruiser,
+				IA_Generic_Victory_Destroyer_Two,
+				IA_Generic_Aggressor,
+				IA_Generic_Star_Destroyer,
+				IA_Generic_Star_Destroyer_Two,
+				IA_Generic_Sorannan,
+				IA_Generic_Vengeance
+		</Tactical_Buildable_Objects_Campaign>
+
+	</SpaceUnit>-->
+
+	<!--<SpaceUnit Name="InstantAction_Marker_Pentastar">
+		<Variant_Of_Existing_Type>InstantAction_Marker_Generic</Variant_Of_Existing_Type>
+		<Tech_Level>99</Tech_Level>
+		<Space_FOW_Reveal_Range>50000.0</Space_FOW_Reveal_Range>
+		<Affiliation>Empire, Rebel </Affiliation>
+		<Space_Model_Name>INSTANTACTION_Pentastar.alo</Space_Model_Name>
+		<Icon_Name>i_button_pa.tga</Icon_Name>
+		
+				<Tactical_Buildable_Objects_Campaign> 
+			Empire,
+				IA_Decimator_Squadron,
+				IA_Raider_Corvette,
+				IA_Tartan_Patrol_Cruiser,
+				IA_Adz,
+				IA_Corellian_Buccaneer,
+				IA_Trenchant,
+				IA_Victory_II_Frigate,
+				IA_Escort_Carrier,
+				IA_Battle_Horn,
+				IA_Dreadnaught_Empire,
+				IA_Imperial_Cargo_Ship,
+				IA_Generic_Interdictor_Cruiser,
+				IA_Enforcer,
+				IA_Generic_Acclamator_Assault_Ship_Leveler,
+				IA_Generic_Procursator,
+				IA_Generic_Venator,
+				IA_Generic_Star_Destroyer,
+				IA_Generic_Tector,
+				IA_Generic_Secutor,
+				IA_Generic_Praetor_Carrier,
+				IA_Generic_Mandator_III
+		</Tactical_Buildable_Objects_Campaign>
+	</SpaceUnit>-->
+
+	<!-- Factional Set-Up ends -->
+		
+	<SpaceUnit Name="InstantAction_Marker_NewRep">
+		<Variant_Of_Existing_Type>InstantAction_Marker_Generic</Variant_Of_Existing_Type>
+		<Tech_Level>99</Tech_Level>
+		<Space_FOW_Reveal_Range>50000.0</Space_FOW_Reveal_Range>
+		<Affiliation>Empire, Rebel </Affiliation>
+		<Space_Model_Name>INSTANTACTION_Rebel.alo</Space_Model_Name>
+		<Icon_Name>i_button_nr.tga</Icon_Name>
+		
+		<Tactical_Buildable_Objects_Campaign> 
+			Empire,
+				IA_Corellian_Corvette,
+				IA_Corellian_Gunboat,
+				IA_Nebulon_B_Tender,
+				IA_Nebulon_B_Frigate,
+				IA_CC7700_E,
+				IA_Quasar,
+				IA_MC30A,
+				IA_MC30C,
+				IA_Alliance_Assault_Frigate,
+				IA_Alliance_Assault_Frigate_II,
+				IA_MC40A,
+				IA_Liberator_Cruiser,
+				IA_Dauntless,
+				IA_MC80B,
+				IA_Calamari_Cruiser,
+				IA_Home_One_Type
+		</Tactical_Buildable_Objects_Campaign>
+	</SpaceUnit>
+	
+	<SpaceUnit Name="InstantAction_Marker_NewRep_Late">
+		<Variant_Of_Existing_Type>InstantAction_Marker_Generic</Variant_Of_Existing_Type>
+		<Tech_Level>99</Tech_Level>
+		<Space_FOW_Reveal_Range>50000.0</Space_FOW_Reveal_Range>
+		<Affiliation>Empire, Rebel </Affiliation>
+		<Space_Model_Name>INSTANTACTION_Rebel.alo</Space_Model_Name>
+		<Icon_Name>i_button_nr.tga</Icon_Name>
+		
+		<Tactical_Buildable_Objects_Campaign> 
+			Empire,
+				IA_Agave_Corvette,
+				IA_Warrior_Gunship,
+				IA_Hajen,
+				IA_Corona,
+				IA_Sacheen,
+				IA_Belarus,
+				IA_Defender_Carrier,
+				IA_Majestic,
+				IA_Republic_SD,
+				IA_BAC,
+				IA_Endurance,
+				IA_Nebula,
+				IA_Mothma_Star_Destroyer,
+				IA_MC90,
+				IA_BlueDiver,
+				IA_Mediator,
+				IA_Mini_Viscount,
+				IA_Viscount
+		</Tactical_Buildable_Objects_Campaign>
+	</SpaceUnit>
+			
+	<SpaceUnit Name="InstantAction_Marker_Hapans">
+		<Variant_Of_Existing_Type>InstantAction_Marker_Generic</Variant_Of_Existing_Type>
+		<Tech_Level>99</Tech_Level>
+		<Space_FOW_Reveal_Range>50000.0</Space_FOW_Reveal_Range>
+		<Affiliation>Empire, Rebel </Affiliation>
+		<Space_Model_Name>INSTANTACTION_Hapans.alo</Space_Model_Name>
+		<Icon_Name>i_multiplay_hapans.tga</Icon_Name>
+		
+		<Tactical_Buildable_Objects_Campaign> 
+			Empire,
+				IA_Baidam,
+				IA_Flare,
+				IA_Beta_Cruiser,
+				IA_Olanji_Frigate,
+				IA_Nova_Cruiser,
+				IA_Nova_Cruiser_Refit,
+				IA_Stella,
+				IA_Charubah_Frigate,
+				IA_Magnetar,
+				IA_Pulsar,
+				IA_Coronal,
+				IA_Terephon_Cruiser,
+				IA_BattleDragon,
+				IA_Neutron_Cruiser,
+				IA_Mist_Carrier,
+				IA_Star_Home,				
+		</Tactical_Buildable_Objects_Campaign>
+	</SpaceUnit>	
+			
+	<SpaceUnit Name="InstantAction_Marker_EotH">
+		<Variant_Of_Existing_Type>InstantAction_Marker_Generic</Variant_Of_Existing_Type>
+		<Tech_Level>99</Tech_Level>
+		<Space_FOW_Reveal_Range>50000.0</Space_FOW_Reveal_Range>
+		<Affiliation>Empire, Rebel </Affiliation>
+		<Space_Model_Name>INSTANTACTION_EotH.alo</Space_Model_Name>
+		<Icon_Name>i_button_eoth.tga</Icon_Name>
+		
+		<Tactical_Buildable_Objects_Campaign> 
+			Empire,
+				IA_Kuuro,
+				IA_Muqaraea,
+				IA_Syzygos,
+				IA_Fruoro,
+				IA_Ormos,
+				IA_Rohkea,
+				IA_Baomu,
+				IA_Kynigos,
+				IA_Prolipsi,
+				IA_Chaf_Destroyer,
+				IA_Chiss_Star_Destroyer,
+				IA_Peltast,
+				IA_Syndic_Destroyer,
+				IA_Efodio_Fleet_Tender,
+				IA_Phalanx_Destroyer,
+				IA_Intego_Destroyer,
+		</Tactical_Buildable_Objects_Campaign>
+	</SpaceUnit>	
+	
+	<SpaceUnit Name="InstantAction_Marker_CSA">
+		<Variant_Of_Existing_Type>InstantAction_Marker_Generic</Variant_Of_Existing_Type>
+		<Tech_Level>99</Tech_Level>
+		<Space_FOW_Reveal_Range>50000.0</Space_FOW_Reveal_Range>
+		<Affiliation>Empire, Rebel </Affiliation>
+		<Space_Model_Name>INSTANTACTION_CSA.alo</Space_Model_Name>
+		<Icon_Name>I_BUTTON_CSA.TGA</Icon_Name>
+		
+		<Tactical_Buildable_Objects_Campaign> 
+			Empire,
+				IA_Gozanti_Cruiser_Squadron,
+				IA_Citadel_Cruiser_Squadron,
+				IA_Etti_Lighter,
+				IA_CC7700,
+				IA_Marauder_Cruiser,
+				IA_Marauder_Missile_Cruiser,
+				IA_Dreadnaught_Carrier,
+				IA_Recusant,
+				IA_MTC_Combat,
+				IA_Captor,
+				IA_Lucrehulk_Core_Destroyer,
+				IA_Generic_Providence,
+				IA_Invincible_Cruiser,
+				IA_Bulwark_I,
+				IA_Bulwark_II,
+				IA_Bulwark_III,
+				IA_Generic_Tagge_Battlecruiser_CSA,
+				IA_Lucrehulk_CSA,
+				IA_Generic_Mandator_II
+		</Tactical_Buildable_Objects_Campaign>
+	</SpaceUnit>
+
+	<SpaceUnit Name="InstantAction_Marker_IF">
+		<Variant_Of_Existing_Type>InstantAction_Marker_Generic</Variant_Of_Existing_Type>
+		<Tech_Level>99</Tech_Level>
+		<Space_FOW_Reveal_Range>50000.0</Space_FOW_Reveal_Range>
+		<Affiliation>Empire, Rebel </Affiliation>
+		<Space_Model_Name>INSTANTACTION_Independent.alo</Space_Model_Name>
+		<Icon_Name/>
+		
+		<Tactical_Buildable_Objects_Campaign> 
+			Empire,
+				IA_Action_VI_Support,
+				IA_Interceptor_Frigate,
+				IA_Skandrei_Gunship,
+				IA_Super_Transport_VI,
+				IA_Super_Transport_VII_Interdictor,
+				IA_Super_Transport_VII,
+				IA_Super_Transport_XI_Modified,
+				IA_Super_Transport_XI,
+				IA_Neutron_Star_Tender,
+				IA_Space_ARC_Cruiser,
+				IA_Calamari_Cruiser_Liner,
+				IA_Home_One_Type_Liner,
+				IA_C_Type_Influence,
+				IA_Armadia_Influence,
+				IA_Namana_Cruiser_Influence,
+				IA_Bakura_Destroyer_Influence,
+				IA_Keldabe_Influence,
+				IA_Komrk_Gunship_Squadron_Influence,
+				IA_Munificent_Influence,
+		</Tactical_Buildable_Objects_Campaign>
+	</SpaceUnit>
+
+	<SpaceUnit Name="InstantAction_Marker_Hutts">
+		<Variant_Of_Existing_Type>InstantAction_Marker_Generic</Variant_Of_Existing_Type>
+		<Tech_Level>99</Tech_Level>
+		<Space_FOW_Reveal_Range>50000.0</Space_FOW_Reveal_Range>
+		<Affiliation>Empire, Rebel </Affiliation>
+		<Space_Model_Name>INSTANTACTION_Independent.alo</Space_Model_Name>
+		<Icon_Name/>
+		
+		<Tactical_Buildable_Objects_Campaign> 
+			Empire,
+				IA_Heavy_Minstrel_Yacht,
+				IA_Ubrikkian_Frigate,
+				IA_Kaloth_Battlecruiser,
+				IA_Juvard_Frigate,
+				IA_Barabbula_Frigate,
+				IA_Kossak_Frigate,
+				IA_Starbolt,
+				IA_Proficient,
+				IA_Proficient_Tender,
+				IA_Wurrif_Cruiser,
+				IA_Lwhekk_Manufacturing_Ship,
+				IA_Shree_Cruiser
+		</Tactical_Buildable_Objects_Campaign>
+	</SpaceUnit>
+	
+	<SpaceUnit Name="InstantAction_Marker_Extra">
+		<Variant_Of_Existing_Type>InstantAction_Marker_Generic</Variant_Of_Existing_Type>
+		<Tech_Level>99</Tech_Level>
+		<Space_FOW_Reveal_Range>50000.0</Space_FOW_Reveal_Range>
+		<Affiliation>Empire, Rebel </Affiliation>
+		<Space_Model_Name>INSTANTACTION_Independent.alo</Space_Model_Name>
+		<Icon_Name/>
+		
+		<Tactical_Buildable_Objects_Campaign> 
+			Empire,
+				IA_MC75,
+				IA_Starhawk_MK1,
+				IA_Impellor
+		</Tactical_Buildable_Objects_Campaign>
+	</SpaceUnit>
+
+	
+	<SpaceUnit Name="InstantAction_Marker_Target">
+		<Variant_Of_Existing_Type>InstantAction_Marker_Generic</Variant_Of_Existing_Type>
+		<Tech_Level>99</Tech_Level>
+		<Space_FOW_Reveal_Range>50000.0</Space_FOW_Reveal_Range>
+		<Affiliation>Empire, Rebel</Affiliation>
+
+		<Tactical_Buildable_Objects_Campaign> 
+			Empire,
+				<!-- IA_Increase_Tech,
+				IA_Decrease_Tech, -->
+				IA_Template_Fighter_Target,
+				IA_Template_HeavyFrigate_Target,
+				IA_Template_Gunship_Target,
+				IA_Template_Capital_Target,
+				IA_Template_Corvette_Target,
+				IA_Template_SuperCapital_Target,
+				IA_Template_Frigate_Target,
+				IA_Revert_Factions,
+				IA_Set_Empire,
+				IA_Set_Rebel,
+				IA_Set_Pentastar,
+				IA_Set_Greater_Maldrood,
+				IA_Set_Zsinj_Empire,
+				IA_Set_Eriadu_Authority,
+				IA_Set_EmpireoftheHand,
+				IA_Set_Corporate_Sector,
+				IA_Set_Hapes_Consortium,
+		</Tactical_Buildable_Objects_Campaign>
+		
+		<Lua_Script>GenericGameObject</Lua_Script>
+
+		<Space_Model_Name>C-type_thrustship.alo</Space_Model_Name>
+	</SpaceUnit>
+	
+</SpecialStructures>

@@ -1,0 +1,52 @@
+<?xml version="1.0" ?>
+
+
+
+<!--******************************************************-->
+<!--******	Campaign: Rim World Conflict (Empire)	******-->
+<!--******************************************************-->
+
+<Story>
+
+	<Event Name="Black_Fleet_Enable">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>GC_BLACK_FLEET_CRISIS</Event_Param2>
+	</Event>
+	
+	<Event Name="Early_Kill">
+  		<Event_Type>STORY_TACTICAL_DESTROY</Event_Type>
+  		<Event_Param1>Spaar_Aramadia_SSD</Event_Param1>
+		<Event_Param2></Event_Param2>
+		<Event_Param3>1</Event_Param3>
+		<Reward_Type>DISABLE_BRANCH</Reward_Type>
+		<Reward_Param1>Speech_Branch</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+	</Event>
+	
+	<Event Name="No_Yevetha">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>START_ERA_POST_ZSINJ</Event_Param2>
+		<Reward_Type>DISABLE_BRANCH</Reward_Type>
+		<Reward_Param1>Speech_Branch</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+	</Event>
+	
+	<Event Name="Spaar_Speech">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>120</Event_Param1>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_CONQUEST_BFC_DL_INTRO_GENERIC</Reward_Param1>
+		<Reward_Param2>15</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6 />
+		<Reward_Param7 />
+		<Reward_Param8 />
+		<Reward_Param9>NilSpaar_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+		<Prereq>Black_Fleet_Enable</Prereq>
+		<Branch>Speech_Branch</Branch>
+	</Event>
+	
+</Story>

@@ -1,0 +1,624 @@
+<?xml version="1.0"?>
+<Complete_Units_Ground_War>
+
+
+	<GroundWarFormation Name="UNIT_GW_EA_AAA">
+		<Variant_Of_Existing_Type>GroundWar_Spawner_Unit</Variant_Of_Existing_Type>
+		<Affiliation>Eriadu_Authority</Affiliation>
+		
+		<Text_ID>GW_EA_AAA</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_GROUP_SPAWNER</Encyclopedia_Unit_Class>
+		
+		<Land_Model_Name>GROUNDWAR_EA.alo</Land_Model_Name>
+		<Icon_Name>i_button_army_trooper.tga</Icon_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Lua_Script></Lua_Script>
+		<Tech_Level>99</Tech_Level>
+		
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_Imperial_Armytrooper_Heavy_Team_Deployed, 2</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_Imperial_Armytrooper_Assault_Team_Deployed, 3</Starting_Spawned_Units_Tech_0>
+
+
+			
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>1</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>1</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->
+
+	</GroundWarFormation>
+	
+	<GroundWarFormation Name="UNIT_GW_EA_AAB">
+		<Variant_Of_Existing_Type>GroundWar_Spawner_Unit</Variant_Of_Existing_Type>
+		<Affiliation>Eriadu_Authority</Affiliation>
+		
+		<Text_ID>GW_EA_AAB</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_GROUP_SPAWNER</Encyclopedia_Unit_Class>
+		
+		<Land_Model_Name>GROUNDWAR_EA.alo</Land_Model_Name>
+		<Icon_Name>i_button_army_trooper_weap.tga</Icon_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Lua_Script></Lua_Script>
+		<Tech_Level>99</Tech_Level>
+		
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_Imperial_Armytrooper_Heavy_Team_Deployed, 2</Starting_Spawned_Units_Tech_0>
+
+
+			
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>1</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>1</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->
+
+	</GroundWarFormation>
+	
+	<GroundWarFormation Name="UNIT_GW_EA_AAC">
+		<Variant_Of_Existing_Type>GroundWar_Spawner_Unit</Variant_Of_Existing_Type>
+		<Affiliation>Eriadu_Authority</Affiliation>
+		
+		<Text_ID>GW_EA_AAC</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_GROUP_SPAWNER</Encyclopedia_Unit_Class>
+		
+		<Land_Model_Name>GROUNDWAR_EA.alo</Land_Model_Name>
+		<Icon_Name>i_button_64y_sled.tga</Icon_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Lua_Script></Lua_Script>
+		<Tech_Level>99</Tech_Level>
+		
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_64Y_Sled, 6</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_Imperial_Army_Guard_Team_Deployed, 2</Starting_Spawned_Units_Tech_0>
+
+
+			
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>1</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>1</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->
+
+	</GroundWarFormation>
+
+	<GroundWarFormation Name="UNIT_GW_EA_AAD">
+		<Variant_Of_Existing_Type>GroundWar_Spawner_Unit</Variant_Of_Existing_Type>
+		<Affiliation>Eriadu_Authority</Affiliation>
+		
+		<Text_ID>GW_EA_AAD</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_GROUP_SPAWNER</Encyclopedia_Unit_Class>
+		
+		<Land_Model_Name>GROUNDWAR_EA.alo</Land_Model_Name>
+		<Icon_Name>I_BUTTON_ARMY_SPECIAL_MISSIONS_HEAVY.tga</Icon_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Lua_Script></Lua_Script>
+		<Tech_Level>99</Tech_Level>
+		
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_Army_Special_Missions_Weapons_Team_Deployed, 1</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_Army_Special_Missions_Heavy_Team_Deployed, 2</Starting_Spawned_Units_Tech_0>
+
+
+			
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>1</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>1</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->
+
+	</GroundWarFormation>
+
+	<GroundWarFormation Name="UNIT_GW_EA_AAE">
+		<Variant_Of_Existing_Type>GroundWar_Spawner_Unit</Variant_Of_Existing_Type>
+		<Affiliation>Eriadu_Authority</Affiliation>
+		
+		<Text_ID>GW_EA_AAE</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_GROUP_SPAWNER</Encyclopedia_Unit_Class>
+		
+		<Land_Model_Name>GROUNDWAR_EA.alo</Land_Model_Name>
+		<Icon_Name>i_button_army_trooper_support.tga</Icon_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Lua_Script></Lua_Script>
+		<Tech_Level>99</Tech_Level>
+		
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_Imperial_Army_Guard_Team_Deployed, 3</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_Imperial_Medic_Armytrooper_Squad, 1</Starting_Spawned_Units_Tech_0>
+
+
+			
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>1</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>1</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->
+
+	</GroundWarFormation>
+	
+	<GroundWarFormation Name="UNIT_GW_EA_AAF">
+		<Variant_Of_Existing_Type>GroundWar_Spawner_Unit</Variant_Of_Existing_Type>
+		<Affiliation>Eriadu_Authority</Affiliation>
+		
+		<Text_ID>GW_EA_AAF</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_GROUP_SPAWNER</Encyclopedia_Unit_Class>
+		
+		<Land_Model_Name>GROUNDWAR_EA.alo</Land_Model_Name>
+		<Icon_Name>i_button_1l_tank.tga</Icon_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Lua_Script></Lua_Script>
+		<Tech_Level>99</Tech_Level>
+		
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_1L_Tank, 3</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_AT_MP_Walker, 2</Starting_Spawned_Units_Tech_0>
+
+
+			
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>1</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>1</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->
+
+	</GroundWarFormation>
+	
+	<GroundWarFormation Name="UNIT_GW_EA_AAG">
+		<Variant_Of_Existing_Type>GroundWar_Spawner_Unit</Variant_Of_Existing_Type>
+		<Affiliation>Eriadu_Authority</Affiliation>
+		
+		<Text_ID>GW_EA_AAG</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_GROUP_SPAWNER</Encyclopedia_Unit_Class>
+		
+		<Land_Model_Name>GROUNDWAR_EA.alo</Land_Model_Name>
+		<Icon_Name>i_button_atmp.tga</Icon_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Lua_Script></Lua_Script>
+		<Tech_Level>99</Tech_Level>
+		
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_AT_MP_Walker, 3</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_Imperial_Army_Guard_Team_Deployed, 2</Starting_Spawned_Units_Tech_0>
+	
+
+			
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>1</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>1</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->
+
+	</GroundWarFormation>
+
+	<GroundWarFormation Name="UNIT_GW_EA_AAH">
+		<Variant_Of_Existing_Type>GroundWar_Spawner_Unit</Variant_Of_Existing_Type>
+		<Affiliation>Eriadu_Authority</Affiliation>
+		
+		<Text_ID>GW_EA_AAH</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_GROUP_SPAWNER</Encyclopedia_Unit_Class>
+		
+		<Land_Model_Name>GROUNDWAR_EA.alo</Land_Model_Name>
+		<Icon_Name>i_button_64y_sled.tga</Icon_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Lua_Script></Lua_Script>
+		<Tech_Level>99</Tech_Level>
+		
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_1L_Tank, 1</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_64Y_Sled, 4</Starting_Spawned_Units_Tech_0>
+
+
+			
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>1</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>1</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->
+
+	</GroundWarFormation>
+
+	<GroundWarFormation Name="UNIT_GW_EA_AAI">
+		<Variant_Of_Existing_Type>GroundWar_Spawner_Unit</Variant_Of_Existing_Type>
+		<Affiliation>Eriadu_Authority</Affiliation>
+		
+		<Text_ID>GW_EA_AAI</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_GROUP_SPAWNER</Encyclopedia_Unit_Class>
+		
+		<Land_Model_Name>GROUNDWAR_EA.alo</Land_Model_Name>
+		<Icon_Name>i_button_Army_Commando.tga</Icon_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Lua_Script></Lua_Script>
+		<Tech_Level>99</Tech_Level>
+		
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_Imperial_Army_Commando_Squad_Deployed, 3</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_Imperial_ISB_Infiltrator_Sniper_Team_Deployed, 2</Starting_Spawned_Units_Tech_0>
+
+			
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>1</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>1</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->
+
+	</GroundWarFormation>
+
+	
+	<GroundWarFormation Name="UNIT_GW_EA_AAJ">
+		<Variant_Of_Existing_Type>GroundWar_Spawner_Unit</Variant_Of_Existing_Type>
+		<Affiliation>Eriadu_Authority</Affiliation>
+		
+		<Text_ID>GW_EA_AAJ</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_GROUP_SPAWNER</Encyclopedia_Unit_Class>
+		
+		<Land_Model_Name>GROUNDWAR_EA.alo</Land_Model_Name>
+		<Icon_Name>i_button_ISB_stormtrooper.tga</Icon_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Lua_Script></Lua_Script>
+		<Tech_Level>99</Tech_Level>
+		
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_Imperial_ISB_Stormtrooper_Team_Deployed, 2</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_Imperial_Armytrooper_Assault_Team_Deployed, 2</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_Imperial_Armytrooper_Heavy_Team_Deployed, 3</Starting_Spawned_Units_Tech_0>
+
+
+			
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>1</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>1</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->
+
+	</GroundWarFormation>
+	
+	<GroundWarFormation Name="UNIT_GW_EA_AAK">
+		<Variant_Of_Existing_Type>GroundWar_Spawner_Unit</Variant_Of_Existing_Type>
+		<Affiliation>Eriadu_Authority</Affiliation>
+		
+		<Text_ID>GW_EA_AAK</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_GROUP_SPAWNER</Encyclopedia_Unit_Class>
+		
+		<Land_Model_Name>GROUNDWAR_EA.alo</Land_Model_Name>
+		<Icon_Name>Weapons_Army_Special_Missions_Team.tga</Icon_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Lua_Script></Lua_Script>
+		<Tech_Level>99</Tech_Level>
+		
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_Imperial_ISB_Infiltrator_Assault_Team_Deployed, 1</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_Army_Special_Missions_Heavy_Team_Deployed, 3</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_Army_Special_Missions_Weapons_Team_Deployed, 2</Starting_Spawned_Units_Tech_0>
+		
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>1</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>1</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->
+
+	</GroundWarFormation>
+	
+	<GroundWarFormation Name="UNIT_GW_EA_AAL">
+		<Variant_Of_Existing_Type>GroundWar_Spawner_Unit</Variant_Of_Existing_Type>
+		<Affiliation>Eriadu_Authority</Affiliation>
+		
+		<Text_ID>GW_EA_AAL</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_GROUP_SPAWNER</Encyclopedia_Unit_Class>
+		
+		<Land_Model_Name>GROUNDWAR_EA.alo</Land_Model_Name>
+		<Icon_Name>i_button_1m_tank.tga</Icon_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Lua_Script></Lua_Script>
+		<Tech_Level>99</Tech_Level>
+		
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_1M_Tank, 1</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_1L_Tank, 2</Starting_Spawned_Units_Tech_0>
+
+			
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>1</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>1</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->
+
+	</GroundWarFormation>
+	
+	<GroundWarFormation Name="UNIT_GW_EA_AAM">
+		<Variant_Of_Existing_Type>GroundWar_Spawner_Unit</Variant_Of_Existing_Type>
+		<Affiliation>Eriadu_Authority</Affiliation>
+		
+		<Text_ID>GW_EA_AAM</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_GROUP_SPAWNER</Encyclopedia_Unit_Class>
+		
+		<Land_Model_Name>GROUNDWAR_EA.alo</Land_Model_Name>
+		<Icon_Name>i_button_ev_tie_lancet.tga</Icon_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Lua_Script></Lua_Script>
+		<Tech_Level>99</Tech_Level>
+		
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_Lancet_Air_Artillery, 2</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_64Y_Sled, 4</Starting_Spawned_Units_Tech_0>
+		
+		
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>1</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>1</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->
+
+	</GroundWarFormation>
+	
+	<GroundWarFormation Name="UNIT_GW_EA_AAN">
+		<Variant_Of_Existing_Type>GroundWar_Spawner_Unit</Variant_Of_Existing_Type>
+		<Affiliation>Eriadu_Authority</Affiliation>
+		
+		<Text_ID>GW_EA_AAN</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_GROUP_SPAWNER</Encyclopedia_Unit_Class>
+		
+		<Land_Model_Name>GROUNDWAR_EA.alo</Land_Model_Name>
+		<Icon_Name>i_button_ataa.tga</Icon_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Lua_Script></Lua_Script>
+		<Tech_Level>99</Tech_Level>
+		
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_AT_AA_Walker, 1</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_Imperial_Army_Guard_Team_Deployed, 3</Starting_Spawned_Units_Tech_0>
+		
+		
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>1</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>1</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->
+
+	</GroundWarFormation>
+	
+	<GroundWarFormation Name="UNIT_GW_EA_AAO">
+		<Variant_Of_Existing_Type>GroundWar_Spawner_Unit</Variant_Of_Existing_Type>
+		<Affiliation>Eriadu_Authority</Affiliation>
+		
+		<Text_ID>GW_EA_AAO</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_GROUP_SPAWNER</Encyclopedia_Unit_Class>
+		
+		<Land_Model_Name>GROUNDWAR_EA.alo</Land_Model_Name>
+		<Icon_Name>i_button_1h_tank.tga</Icon_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Lua_Script></Lua_Script>
+		<Tech_Level>99</Tech_Level>
+		
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_1H_Tank, 2</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_1M_Tank, 2</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_1L_Tank, 4</Starting_Spawned_Units_Tech_0>
+		
+		
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>1</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>1</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->
+
+	</GroundWarFormation>
+	
+	<GroundWarFormation Name="UNIT_GW_EA_AAP">
+		<Variant_Of_Existing_Type>GroundWar_Spawner_Unit</Variant_Of_Existing_Type>
+		<Affiliation>Eriadu_Authority</Affiliation>
+		
+		<Text_ID>GW_EA_AAP</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_GROUP_SPAWNER</Encyclopedia_Unit_Class>
+		
+		<Land_Model_Name>GROUNDWAR_EA.alo</Land_Model_Name>
+		<Icon_Name>i_button_flashblind.tga</Icon_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Lua_Script></Lua_Script>
+		<Tech_Level>99</Tech_Level>
+		
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_Flashblind, 3</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_Lancet_Air_Artillery, 1</Starting_Spawned_Units_Tech_0>
+		
+		
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>1</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>1</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->
+
+	</GroundWarFormation>
+	
+	<GroundWarFormation Name="UNIT_GW_EA_AAQ">
+		<Variant_Of_Existing_Type>GroundWar_Spawner_Unit</Variant_Of_Existing_Type>
+		<Affiliation>Eriadu_Authority</Affiliation>
+		
+		<Text_ID>GW_EA_AAQ</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_GROUP_SPAWNER</Encyclopedia_Unit_Class>
+		
+		<Land_Model_Name>GROUNDWAR_EA.alo</Land_Model_Name>
+		<Icon_Name>i_button_imperial_light_artillery.tga</Icon_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Lua_Script></Lua_Script>
+		<Tech_Level>99</Tech_Level>
+		
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_Imperial_Light_Artillery, 1</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_64Y_Sled, 3</Starting_Spawned_Units_Tech_0>
+		
+		
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>1</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>1</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->
+
+	</GroundWarFormation>
+	
+	<GroundWarFormation Name="UNIT_GW_EA_AAR">
+		<Variant_Of_Existing_Type>GroundWar_Spawner_Unit</Variant_Of_Existing_Type>
+		<Affiliation>Eriadu_Authority</Affiliation>
+		
+		<Text_ID>GW_EA_AAR</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_GROUP_SPAWNER</Encyclopedia_Unit_Class>
+		
+		<Land_Model_Name>GROUNDWAR_EA.alo</Land_Model_Name>
+		<Icon_Name>i_button_atat.tga</Icon_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Lua_Script></Lua_Script>
+		<Tech_Level>99</Tech_Level>
+		
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_AT_AT_Walker, 2</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_AT_MP_Walker, 4</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_AT_AA_Walker, 1</Starting_Spawned_Units_Tech_0>
+		
+		
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>1</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>1</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->
+
+	</GroundWarFormation>
+	
+	<GroundWarFormation Name="UNIT_GW_EA_AAS">
+		<Variant_Of_Existing_Type>GroundWar_Spawner_Unit</Variant_Of_Existing_Type>
+		<Affiliation>Eriadu_Authority</Affiliation>
+		
+		<Text_ID>GW_EA_AAS</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_GROUP_SPAWNER</Encyclopedia_Unit_Class>
+		
+		<Land_Model_Name>GROUNDWAR_EA.alo</Land_Model_Name>
+		<Icon_Name>i_button_tracked_mobile_base.tga</Icon_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Lua_Script></Lua_Script>
+		<Tech_Level>99</Tech_Level>
+		
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_Tracked_Mobile_Base, 1</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_Imperial_Light_Artillery, 2</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_AT_AA_Walker, 1</Starting_Spawned_Units_Tech_0>
+		
+		
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>1</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>1</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->
+
+	</GroundWarFormation>
+	
+	<GroundWarFormation Name="UNIT_GW_EA_AAT">
+		<Variant_Of_Existing_Type>GroundWar_Spawner_Unit</Variant_Of_Existing_Type>
+		<Affiliation>Eriadu_Authority</Affiliation>
+		
+		<Text_ID>GW_EA_AAT</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_GROUP_SPAWNER</Encyclopedia_Unit_Class>
+		
+		<Land_Model_Name>GROUNDWAR_EA.alo</Land_Model_Name>
+		<Icon_Name>I_BUTTON_ARMY_SPECIAL_MISSIONS.tga</Icon_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Lua_Script></Lua_Script>
+		<Tech_Level>99</Tech_Level>
+		
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_64Y_Sled, 4</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_64Y_Sled_Company, 2</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_Army_Special_Missions_Company, 3</Starting_Spawned_Units_Tech_0>
+		
+		
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>1</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>1</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->
+
+	</GroundWarFormation>
+	
+	<GroundWarFormation Name="UNIT_GW_EA_AAU">
+		<Variant_Of_Existing_Type>GroundWar_Spawner_Unit</Variant_Of_Existing_Type>
+		<Affiliation>Eriadu_Authority</Affiliation>
+		
+		<Text_ID>GW_EA_AAU</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_GROUP_SPAWNER</Encyclopedia_Unit_Class>
+		
+		<Land_Model_Name>GROUNDWAR_EA.alo</Land_Model_Name>
+		<Icon_Name>I_BUTTON_ARMY_SPECIAL_MISSIONS.tga</Icon_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Lua_Script></Lua_Script>
+		<Tech_Level>99</Tech_Level>
+		
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_Army_Special_Missions_Company, 5</Starting_Spawned_Units_Tech_0>	
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_64Y_Sled, 4</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_64Y_Sled_Company, 2</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_Imperial_Armytrooper_Heavy_Team_Deployed, 2</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_Imperial_Armytrooper_Assault_Team_Deployed, 6</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_1L_Tank_Company, 1</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_1L_Tank, 2</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_Imperial_Light_Artillery, 2</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_1M_Tank, 2</Starting_Spawned_Units_Tech_0>
+		
+		
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>1</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>1</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->
+		
+		<Unit_Abilities_Data SubObjectList="Yes">		
+			<Unit_Ability>
+                <Type>SELF_DESTRUCT</Type>
+                <Expiration_Seconds>180</Expiration_Seconds>
+				<Recharge_Seconds>180</Recharge_Seconds>
+                <Active_By_Default>Yes</Active_By_Default>
+                <Spawned_Object_Type>  </Spawned_Object_Type>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+
+	</GroundWarFormation>
+
+</Complete_Units_Ground_War>

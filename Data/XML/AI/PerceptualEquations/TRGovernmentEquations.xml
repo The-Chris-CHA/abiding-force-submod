@@ -1,0 +1,68 @@
+<?xml version="1.0" ?>
+<!-- Equations that define perception functions -->
+<Equations>
+	
+	<Safe_Zsinj_Planet>
+		20.0
+		*
+		(
+			Function_Planet_Has_Rancor_Base.Evaluate
+			+
+			clamp(Function_DefensiveValue.Evaluate, 0.0, 1.0)
+		)
+	</Safe_Zsinj_Planet>
+	
+	<Pentastar_Aggro_On>
+		Function_Era_Four.Evaluate
+	</Pentastar_Aggro_On>
+	
+	<Pentastar_Aggro_Off>
+		(Script_GetCurrentYear.Evaluate > 4)
+		*
+		(9 > Script_GetCurrentYear.Evaluate)
+		+
+		(Script_GetCurrentYear.Evaluate > 11)
+	</Pentastar_Aggro_Off>
+	
+	<EotH_Aggro_On>
+		Script_GetCurrentYear.Evaluate > 15
+	</EotH_Aggro_On>
+	
+	<EotH_Should_Construct_Thrawn_Clone>
+		Function_Era_Seven.Evaluate
+	</EotH_Should_Construct_Thrawn_Clone>
+	
+	
+	<Needs_SSD_Hero_Upgrade>
+		50.0
+		*
+		(Variable_Self.CreditsUnnormalized > 30000)
+		*
+		(
+			Variable_Self.IsFaction {Parameter_Faction = "Empire"}
+			*
+			Variable_Target.FriendlyForce.HasGroundUnitsBitfield {Parameter_Type = "Ysanne_Isard"}
+			+
+			Variable_Self.IsFaction {Parameter_Faction = "Pentastar"}
+			*
+			Variable_Target.FriendlyForce.HasGroundUnitsBitfield {Parameter_Type = "Ardus_Kaine"}
+			+
+			Variable_Self.IsFaction {Parameter_Faction = "Eriadu_Authority"}
+			*
+			Variable_Target.FriendlyForce.HasSpaceUnitsBitfield {Parameter_Type = "Delvardus_Brilliant"}
+			+
+			Variable_Self.IsFaction {Parameter_Faction = "Zsinj_Empire"}
+			*
+			Variable_Target.FriendlyForce.HasSpaceUnitsBitfield {Parameter_Type = "Iron_Fist_VSD"}
+		)
+		*
+		Variable_Self.HasStructure {
+			Parameter_Type = "Empire_Shipyard_Level_Four",
+			Parameter_Type = "Pentastar_Shipyard_Level_Four",
+			Parameter_Type = "Eriadu_Shipyard_Level_Four",
+			Parameter_Type = "Zsinj_Shipyard_Level_Four",
+			Parameter_Type = "Rancor_Base", Parameter_Only_Consider_Complete = 1.0}
+	</Needs_SSD_Hero_Upgrade>
+	
+
+</Equations>

@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" ?>
+
+
+
+<!--***************************************************-->
+<!--***** CAMPAIGN: Fractured Empire (Rebel Version) *****-->
+<!--***************************************************-->
+
+
+
+<Story>
+
+	<!--***************************************************-->
+	<!--***********      Overview              ************-->
+	<!--***************************************************-->
+
+	<Event Name="Universal_Story_Start">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>0</Event_Param1>
+	</Event>
+	
+
+
+	<!--***************************************************-->
+	<!--*****      General Story Events              *****-->
+	<!--***************************************************-->
+			
+	<Event Name="Reveal_All_Planets">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>REVEAL_ALL_PLANETS</Reward_Type>
+		<Prereq>Universal_Story_Start</Prereq>
+	</Event>
+   
+	
+
+
+
+
+</Story>

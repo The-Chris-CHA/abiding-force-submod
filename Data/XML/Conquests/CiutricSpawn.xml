@@ -1,0 +1,34 @@
+<?xml version="1.0" ?>
+
+
+
+<!--******************************************************-->
+<!--******	Campaign: Rim World Conflict (Empire)	******-->
+<!--******************************************************-->
+
+<Story>
+
+<Event Name="Universal_Story_Start">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>0</Event_Param1>
+	</Event>
+		
+	<Event Name="GC_Starts_03">
+		<Event_Type>STORY_TECH_LEVEL</Event_Type>
+		<Event_Param1>3</Event_Param1>
+		<Reward_Type>DISABLE_BRANCH</Reward_Type>
+		<Reward_Param1>Ciutric</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+		
+	</Event>
+
+
+	<Event Name="Trigger_Council_Thrawn_Death">
+  		<Event_Type>STORY_TACTICAL_DESTROY</Event_Type>
+  		<Event_Param1>Chimera</Event_Param1>
+		<Event_Param2></Event_Param2>
+		<Event_Param3>1</Event_Param3>
+		<Branch>Ciutric</Branch>
+	</Event>
+
+</Story>

@@ -1,0 +1,200 @@
+<?xml version="1.0" ?>
+
+
+
+<!--******************************************************-->
+<!--******	Campaign: Rim World Conflict (Empire)	******-->
+<!--******************************************************-->
+
+<Story>
+	
+	
+		
+
+
+	<!-- Hapes Consortium Spawns -->
+	
+	<Event Name="Hapes_Enter_Tech_02">
+		<Event_Type>STORY_TECH_LEVEL</Event_Type>
+		<Event_Param1>2</Event_Param1>
+
+	</Event>
+	
+	<Event Name="Hapes_Enter_Tech_03">
+		<Event_Type>STORY_TECH_LEVEL</Event_Type>
+		<Event_Param1>3</Event_Param1>
+		<Reward_Type>DISABLE_BRANCH</Reward_Type>
+		<Reward_Param1>Hapes_Spawns</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+	</Event>
+	
+	<Event Name="Hapes_Enter_Tech_04">
+		<Event_Type>STORY_TECH_LEVEL</Event_Type>
+		<Event_Param1>4</Event_Param1>
+	</Event>
+	
+	<Event Name="Hapes_Enter_Tech_05">
+		<Event_Type>STORY_TECH_LEVEL</Event_Type>
+		<Event_Param1>5</Event_Param1>
+	</Event>
+	
+	<Event Name="Universal_Story_Start">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>2</Event_Param1>
+	</Event>
+	
+	<Event Name="Hapes_Unlocks">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>3090</Event_Param1>
+	</Event>
+	
+	<Event Name="Transitory_Mists_I_Bouncer">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>0</Event_Param1>
+		<Reward_Type>SET_PLANET_RESTRICTED</Reward_Type>
+		<Reward_Param1>Transitory_Mists_I</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+		<Prereq>Universal_Story_Start</Prereq>
+	</Event>
+	
+	<Event Name="MitOne_Bounces">
+		<Event_Type>STORY_FLEET_BOUNCED</Event_Type>
+		<Event_Param1>Transitory_Mists_I</Event_Param1>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_STORY_UNIVERSAL_BOUNCE_GENERIC</Reward_Param1>
+		<Reward_Param2>10</Reward_Param2>
+		<Reward_Param3></Reward_Param3>
+		<Reward_Param9></Reward_Param9>
+		<Prereq>Universal_Story_Start</Prereq>
+		<Perpetual>true</Perpetual>
+	</Event>
+	
+	<Event Name="Transitory_Mists_I_Unlocked">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>4</Event_Param1>
+		<Reward_Type>SET_PLANET_RESTRICTED</Reward_Type>
+		<Reward_Param1>Transitory_Mists_I</Reward_Param1>
+		<Reward_Param2>0</Reward_Param2>
+		<Prereq>Hapes_Unlocks</Prereq>
+		<Prereq>Hapes_Enter_Tech_02</Prereq>
+		<Prereq>Hapes_Enter_Tech_03</Prereq>
+		<Prereq>Hapes_Enter_Tech_04</Prereq>
+		<Prereq>Hapes_Enter_Tech_05</Prereq>
+	</Event>
+	
+	<Event Name="Transitory_Mists_II_Bouncer">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>0</Event_Param1>
+		<Reward_Type>SET_PLANET_RESTRICTED</Reward_Type>
+		<Reward_Param1>Transitory_Mists_II</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+		<Prereq>Universal_Story_Start</Prereq>
+	</Event>
+	
+	<Event Name="Transitory_Mists_II_Unlocked">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>4</Event_Param1>
+		<Reward_Type>SET_PLANET_RESTRICTED</Reward_Type>
+		<Reward_Param1>Transitory_Mists_II</Reward_Param1>
+		<Reward_Param2>0</Reward_Param2>
+		<Prereq>Hapes_Unlocks</Prereq>
+		<Prereq>Hapes_Enter_Tech_02</Prereq>
+		<Prereq>Hapes_Enter_Tech_03</Prereq>
+		<Prereq>Hapes_Enter_Tech_04</Prereq>
+		<Prereq>Hapes_Enter_Tech_05</Prereq>
+	</Event>
+	
+	<Event Name="Transitory_Mists_III_Bouncer">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>0</Event_Param1>
+		<Reward_Type>SET_PLANET_RESTRICTED</Reward_Type>
+		<Reward_Param1>Transitory_Mists_III</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+		<Prereq>Universal_Story_Start</Prereq>
+	</Event>
+	
+	<Event Name="Transitory_Mists_III_Unlocked">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>4</Event_Param1>
+		<Reward_Type>SET_PLANET_RESTRICTED</Reward_Type>
+		<Reward_Param1>Transitory_Mists_III</Reward_Param1>
+		<Reward_Param2>0</Reward_Param2>
+		<Prereq>Hapes_Unlocks</Prereq>
+		<Prereq>Hapes_Enter_Tech_02</Prereq>
+		<Prereq>Hapes_Enter_Tech_03</Prereq>
+		<Prereq>Hapes_Enter_Tech_04</Prereq>
+		<Prereq>Hapes_Enter_Tech_05</Prereq>
+	</Event>
+	
+		<Event Name="Hapes_Bouncer">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>0</Event_Param1>
+		<Reward_Type>SET_PLANET_RESTRICTED</Reward_Type>
+		<Reward_Param1>Hapes</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+		<Prereq>Universal_Story_Start</Prereq>
+	</Event>
+
+	<Event Name="Hapes_Unlocked">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>4</Event_Param1>
+		<Reward_Type>SET_PLANET_RESTRICTED</Reward_Type>
+		<Reward_Param1>Hapes</Reward_Param1>
+		<Reward_Param2>0</Reward_Param2>
+		<Prereq>Hapes_Unlocks</Prereq>
+		<Prereq>Hapes_Enter_Tech_02</Prereq>
+		<Prereq>Hapes_Enter_Tech_03</Prereq>
+		<Prereq>Hapes_Enter_Tech_04</Prereq>
+		<Prereq>Hapes_Enter_Tech_05</Prereq>
+	</Event>
+	
+	<Event Name="Charubah_Bouncer">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>0</Event_Param1>
+		<Reward_Type>SET_PLANET_RESTRICTED</Reward_Type>
+		<Reward_Param1>Charubah</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+		<Prereq>Universal_Story_Start</Prereq>
+	</Event>
+	
+	<Event Name="Charubah_Unlocked">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>4</Event_Param1>
+		<Reward_Type>SET_PLANET_RESTRICTED</Reward_Type>
+		<Reward_Param1>Charubah</Reward_Param1>
+		<Reward_Param2>0</Reward_Param2>
+		<Prereq>Hapes_Unlocks</Prereq>
+		<Prereq>Hapes_Enter_Tech_02</Prereq>
+		<Prereq>Hapes_Enter_Tech_03</Prereq>
+		<Prereq>Hapes_Enter_Tech_04</Prereq>
+		<Prereq>Hapes_Enter_Tech_05</Prereq>
+	</Event>
+	
+	<Event Name="Terephon_Bouncer">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>0</Event_Param1>
+		<Reward_Type>SET_PLANET_RESTRICTED</Reward_Type>
+		<Reward_Param1>Terephon</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+		<Prereq>Universal_Story_Start</Prereq>
+	</Event>
+	
+	<Event Name="Terephon_Unlocked">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>4</Event_Param1>
+		<Reward_Type>SET_PLANET_RESTRICTED</Reward_Type>
+		<Reward_Param1>Terephon</Reward_Param1>
+		<Reward_Param2>0</Reward_Param2>
+		<Prereq>Hapes_Unlocks</Prereq>
+		<Prereq>Hapes_Enter_Tech_02</Prereq>
+		<Prereq>Hapes_Enter_Tech_03</Prereq>
+		<Prereq>Hapes_Enter_Tech_04</Prereq>
+		<Prereq>Hapes_Enter_Tech_05</Prereq>
+	</Event>
+	
+	<Event Name="Hapes_Spawns">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>2000</Event_Param1>
+	</Event>
+	
+</Story>

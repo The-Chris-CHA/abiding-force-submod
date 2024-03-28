@@ -1,0 +1,668 @@
+<?xml version="1.0" ?>
+
+
+
+<!--******************************************************-->
+<!--******	Campaign: Fractured Empire (Isard) *****-->
+<!--******************************************************-->
+
+
+
+<Story>
+	
+	<Event Name="Universal_Story_Start">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>0</Event_Param1>
+	</Event>
+	
+	<Event Name="Reveal_All_Planets">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>REVEAL_ALL_PLANETS</Reward_Type>
+		<Prereq>Universal_Story_Start</Prereq>
+	</Event>
+ 
+ 	<Event Name="Eclipse_Lock">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>LOCK_UNIT</Reward_Type>
+		<Reward_Param1>Dummy_Eclipse</Reward_Param1>
+		<Prereq>Universal_Story_Start</Prereq>
+	</Event>
+
+	<!-- Spawn Thrawn Heroes -->
+	<Event Name="Spawn_Thrawn">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Chimera</Reward_Param1>
+		<Reward_Param2>Myrkr</Reward_Param2>
+		<Prereq>Universal_Story_Start</Prereq>
+	</Event>
+
+	<Event Name="Spawn_Phennir">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>181st_TIE_Interceptor_Squadron</Reward_Param1>
+		<Reward_Param2>Bastion</Reward_Param2>
+		<Prereq>Universal_Story_Start</Prereq>
+	</Event>
+
+	<Event Name="Spawn_Covell">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>General_Covell_Team</Reward_Param1>
+		<Reward_Param2>Bastion</Reward_Param2>
+		<Prereq>Universal_Story_Start</Prereq>
+	</Event>
+
+	<Event Name="Spawn_Brandei">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Judicator_Star_Destroyer</Reward_Param1>
+		<Reward_Param2>Bastion</Reward_Param2>
+		<Prereq>Universal_Story_Start</Prereq>
+	</Event>
+
+	<Event Name="Spawn_Dorja">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Relentless_Star_Destroyer</Reward_Param1>
+		<Reward_Param2>Bastion</Reward_Param2>
+		<Prereq>Universal_Story_Start</Prereq>
+	</Event>
+	
+	<Event Name="Spawn_Drost">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Drost_Team</Reward_Param1>
+		<Reward_Param2>Bilbringi</Reward_Param2>
+		<Prereq>Universal_Story_Start</Prereq>
+	</Event>
+	
+	<Event Name="Spawn_Dezon">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Dezon_Constrainer</Reward_Param1>
+		<Reward_Param2>Myrkr</Reward_Param2>
+		<Prereq>Universal_Story_Start</Prereq>
+	</Event>
+
+	<Event Name="Spawn_Rukh">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Rukh_Team</Reward_Param1>
+		<Reward_Param2>Honoghr</Reward_Param2>
+		<Prereq>Universal_Story_Start</Prereq>
+	</Event>
+	
+	<Event Name="Spawn_Ferrier">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Corellian_Gunboat_Ferrier</Reward_Param1>
+		<Reward_Param2>New_Cov</Reward_Param2>
+		<Prereq>Universal_Story_Start</Prereq>
+	</Event>
+	
+	<Event Name="Spawn_Johans">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Johans_Team</Reward_Param1>
+		<Reward_Param2>Eriadu</Reward_Param2>
+		<Prereq>Universal_Story_Start</Prereq>
+	</Event>
+	
+	   <Event Name="Lock_Katana">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SET_PLANET_RESTRICTED</Reward_Type>
+		<Reward_Param1>Katana_Space</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+		<Prereq>Universal_Story_Start</Prereq>
+	</Event>
+	
+	<Event Name="Unlock_on_Death">
+  		<Event_Type>STORY_TACTICAL_DESTROY</Event_Type>
+  		<Event_Param1>Chimera</Event_Param1>
+		<Event_Param2></Event_Param2>
+		<Event_Param3>1</Event_Param3>
+		<Event_Param4>Pentastar, Rebel, Zsinj_Empire, EmpireoftheHand, Hapes_Consortium, Eriadu_Authority</Event_Param4>
+ 		<Reward_Param1>Katana_Space</Reward_Param1>
+		<Reward_Param2>0</Reward_Param2>
+		<Prereq>Universal_Story_Start</Prereq>
+	</Event>
+	
+	<Event Name="Conquer_Pantolomin">
+		<Event_Type>STORY_CONQUER</Event_Type>
+		<Event_Param1>Pantolomin</Event_Param1>
+		<Event_Param3>FILTER_FRIENDLY_ONLY</Event_Param3>
+		<Reward_Type>TRIGGER_EVENT</Reward_Type>
+		<Reward_Param1>Katana_Thrawn_Speech</Reward_Param1>
+		<Prereq>Universal_Story_Start</Prereq>
+	</Event>
+   
+	<Event Name="Intro_Welcome">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_CONQUEST_THRAWN_IR_INTRO_ONE</Reward_Param1>
+		<Reward_Param2>15</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6 />
+		<Reward_Param7 />
+		<Reward_Param8 />
+		<Reward_Param9>Thrawn_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+		<Prereq>Universal_Story_Start</Prereq>
+	</Event>
+  
+    <Event Name="Intro_Dialog">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>15</Event_Param1>
+		<Story_Dialog>Dialog_Remnant_Thrawn</Story_Dialog>
+		<Story_Chapter>0</Story_Chapter>
+		<Story_Tag>Intro_Tag</Story_Tag>
+		<Prereq>Universal_Story_Start</Prereq>
+	</Event>  
+  
+	<!-- Emperor's Storehouse -->
+	
+	<Event Name="Wayland_Locked">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>0</Event_Param1>
+		<Reward_Type>SET_PLANET_RESTRICTED</Reward_Type>
+		<Reward_Param1>Wayland</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+		<Prereq>Universal_Story_Start</Prereq>
+	</Event>
+	
+	<Event Name="Obroa_Start">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>30</Event_Param1>
+		<Branch>Branch_Obroa_Text</Branch>
+	</Event>
+	
+	<Event Name="Jump_Camera_ObroaSkai">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>POSITION_CAMERA</Reward_Type>
+		<Reward_Param1>Obroa_Skai</Reward_Param1>
+		<Reward_Param2>0,0,0</Reward_Param2>
+		<Prereq>Obroa_Start</Prereq>
+	</Event>
+	
+	<Event Name="Flash_ObroaSkai">
+        <Event_Type>STORY_TRIGGER</Event_Type>
+        <Reward_Type>FLASH_PLANET_GUI</Reward_Type>
+        <Reward_Param1>Obroa_Skai</Reward_Param1>
+        <Reward_Param2>FLASH_PLANET</Reward_Param2>
+        <Reward_Param4>ObroaSkai_GUI_Flash</Reward_Param4>
+        <Reward_Param5>True</Reward_Param5>
+        <Prereq>Obroa_Start</Prereq>
+    </Event>
+	
+	<Event Name="Obroa_Skai_Intro">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_CONQUEST_THRAWN_OBROA_INTRO</Reward_Param1>
+		<Reward_Param2>15</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6 />
+		<Reward_Param7 />
+		<Reward_Param8 />
+		<Reward_Param9>Thrawn_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+		<Branch>Branch_Obroa_Text</Branch>
+		<Prereq>Obroa_Start</Prereq>
+	</Event>
+	
+	<Event Name="Remove_Flash_ObroaSkai">
+        <Event_Type>STORY_ELAPSED</Event_Type>
+        <Event_Param1>10</Event_Param1>
+        <Reward_Type>HIDE_TUTORIAL_CURSOR</Reward_Type>
+        <Reward_Param1>ObroaSkai_GUI_Flash</Reward_Param1>
+        <Prereq>Obroa_Skai_Intro</Prereq>
+    </Event>
+  
+    <Event Name="Obroa_Skai_Dialog">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>15</Event_Param1>
+		<Story_Dialog>Dialog_Remnant_Thrawn</Story_Dialog>
+		<Story_Chapter>2</Story_Chapter>
+		<Branch>Branch_Obroa_Text</Branch>
+		<Prereq>Obroa_Start</Prereq>
+	</Event>
+	
+	<Event Name="Obroa_Skai_Raid">
+  		<Event_Type>STORY_CONQUER</Event_Type>
+  		<Event_Param1>Obroa_Skai</Event_Param1>
+		<Event_Param3>FILTER_FRIENDLY_AND_ENEMY</Event_Param3>
+		<Reward_Type>DISABLE_BRANCH</Reward_Type>
+		<Reward_Param1>Branch_Obroa_Text</Reward_Param1>
+		<Reward_Param2>0</Reward_Param2>
+	</Event>
+	
+	<Event Name="Obroa_Skai_Conquer_Text">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_CONQUEST_THRAWN_OBROA_CONCLUSION</Reward_Param1>
+		<Reward_Param2>15</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6 />
+		<Reward_Param7 />
+		<Reward_Param8 />
+		<Reward_Param9>Thrawn_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+		<Prereq>Obroa_Skai_Raid</Prereq>
+	</Event>
+	
+	<Event Name="Wayland_Unlocked">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SET_PLANET_RESTRICTED</Reward_Type>
+		<Reward_Param1>Wayland</Reward_Param1>
+		<Reward_Param2>0</Reward_Param2>
+		<Prereq>Obroa_Skai_Raid</Prereq>
+	</Event>
+	
+	<Event Name="Jump_Camera_Wayland">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>POSITION_CAMERA</Reward_Type>
+		<Reward_Param1>Wayland</Reward_Param1>
+		<Reward_Param2>0,0,0</Reward_Param2>
+		<Prereq>Wayland_Unlocked</Prereq>
+	</Event>
+	
+	<Event Name="Flash_Wayland">
+        <Event_Type>STORY_TRIGGER</Event_Type>
+        <Reward_Type>FLASH_PLANET_GUI</Reward_Type>
+        <Reward_Param1>Wayland</Reward_Param1>
+        <Reward_Param2>FLASH_PLANET</Reward_Param2>
+        <Reward_Param4>Wayland_GUI_Flash</Reward_Param4>
+        <Reward_Param5>True</Reward_Param5>
+        <Prereq>Wayland_Unlocked</Prereq>
+    </Event>
+	
+	<Event Name="Wayland_Conquer">
+  		<Event_Type>STORY_CONQUER</Event_Type>
+  		<Event_Param1>Wayland</Event_Param1>
+		<Event_Param3>FILTER_FRIENDLY_AND_ENEMY</Event_Param3>
+		<!--<Perpetual>true</Perpetual> Gonna make them have to be first -->
+	</Event>
+	
+	<Event Name="Remove_Flash_Wayland">
+        <Event_Type>STORY_ELAPSED</Event_Type>
+        <Event_Param1>10</Event_Param1>
+        <Reward_Type>HIDE_TUTORIAL_CURSOR</Reward_Type>
+        <Reward_Param1>Wayland_GUI_Flash</Reward_Param1>
+        <Prereq>Wayland_Conquer</Prereq>
+    </Event>
+	
+	<Event Name="Wayland_Conquer_Text">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_CONQUEST_THRAWN_TAKE_WAYLAND</Reward_Param1>
+		<Reward_Param2>15</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6 />
+		<Reward_Param7 />
+		<Reward_Param8 />
+		<Reward_Param9>Thrawn_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+		<Prereq>Wayland_Conquer</Prereq>
+	</Event>
+	
+	<Event Name="Spawn_Jorus">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Joruus_Cboath_Team</Reward_Param1>
+		<Reward_Param2>Wayland</Reward_Param2>
+		<Prereq>Wayland_Conquer</Prereq>
+	</Event>
+	
+	<Event Name="Spawn_Spaarti">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>UNIQUE_UNIT</Reward_Type>
+		<Reward_Param1>Cloning_HQ</Reward_Param1>
+		<Reward_Param2>Wayland</Reward_Param2>
+		<Prereq>Wayland_Conquer</Prereq>
+	</Event>
+	
+	<!-- Nkllon raid -->
+	
+	<Event Name="Nkllon_Start">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>80</Event_Param1>
+		<Branch>Branch_Nkllon_Text</Branch>
+		<Prereq>Wayland_Conquer</Prereq>
+	</Event>
+	
+	<Event Name="Jump_Camera_Nkllon">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>POSITION_CAMERA</Reward_Type>
+		<Reward_Param1>Nkllon</Reward_Param1>
+		<Reward_Param2>0,0,0</Reward_Param2>
+		<Prereq>Nkllon_Start</Prereq>
+	</Event>
+	
+	<Event Name="Flash_Nkllon">
+        <Event_Type>STORY_TRIGGER</Event_Type>
+        <Reward_Type>FLASH_PLANET_GUI</Reward_Type>
+        <Reward_Param1>Nkllon</Reward_Param1>
+        <Reward_Param2>FLASH_PLANET</Reward_Param2>
+        <Reward_Param4>Nkllon_GUI_Flash</Reward_Param4>
+        <Reward_Param5>True</Reward_Param5>
+        <Prereq>Nkllon_Start</Prereq>
+    </Event>
+	
+	<Event Name="Nkllon_Intro">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_CONQUEST_THRAWN_NKLLON_INTRO</Reward_Param1>
+		<Reward_Param2>15</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6 />
+		<Reward_Param7 />
+		<Reward_Param8 />
+		<Reward_Param9>Thrawn_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+		<Branch>Branch_Nkllon_Text</Branch>
+		<Prereq>Nkllon_Start</Prereq>
+	</Event>
+	
+	<Event Name="Remove_Flash_Nkllon">
+        <Event_Type>STORY_ELAPSED</Event_Type>
+        <Event_Param1>10</Event_Param1>
+        <Reward_Type>HIDE_TUTORIAL_CURSOR</Reward_Type>
+        <Reward_Param1>Nkllon_GUI_Flash</Reward_Param1>
+        <Prereq>Nkllon_Intro</Prereq>
+    </Event>
+  
+    <Event Name="Nkllon_Dialog">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>15</Event_Param1>
+		<Story_Dialog>Dialog_Remnant_Thrawn</Story_Dialog>
+		<Story_Chapter>3</Story_Chapter>
+		<Branch>Branch_Nkllon_Text</Branch>
+		<Prereq>Nkllon_Start</Prereq>
+	</Event>
+	
+	<Event Name="Nkllon_Conquer_Text">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_CONQUEST_THRAWN_NKLLON_CONCLUSION</Reward_Param1>
+		<Reward_Param2>15</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6 />
+		<Reward_Param7 />
+		<Reward_Param8 />
+		<Reward_Param9>Thrawn_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+		<Prereq>Nkllon_Raid</Prereq>
+	</Event>
+	
+	<Event Name="Nkllon_Raid">
+  		<Event_Type>STORY_CONQUER</Event_Type>
+  		<Event_Param1>Nkllon</Event_Param1>
+		<Event_Param3>FILTER_FRIENDLY_AND_ENEMY</Event_Param3>
+		<Reward_Type>DISABLE_BRANCH</Reward_Type>
+		<Reward_Param1>Branch_Nkllon_Text</Reward_Param1>
+		<Reward_Param2>0</Reward_Param2>
+	</Event>
+	
+	<Event Name="Mole_1">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>UNIQUE_UNIT</Reward_Type>
+		<Reward_Param1>Imperial_Boarding_Shuttle</Reward_Param1>
+		<Reward_Param2>Nkllon</Reward_Param2>
+		<Prereq>Nkllon_Raid</Prereq>
+	</Event>
+	
+	<Event Name="Mole_2">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>UNIQUE_UNIT</Reward_Type>
+		<Reward_Param1>Imperial_Boarding_Shuttle</Reward_Param1>
+		<Reward_Param2>Nkllon</Reward_Param2>
+		<Prereq>Nkllon_Raid</Prereq>
+	</Event>
+	
+	<Event Name="Pantolomin_Start">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>1000</Event_Param1>
+		<Branch>Branch_Pantolomin_Text</Branch>
+	</Event>
+	
+	<Event Name="Pantolomin_Intro">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_CONQUEST_THRAWN_NKLLON_INTRO</Reward_Param1>
+		<Reward_Param2>15</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6 />
+		<Reward_Param7 />
+		<Reward_Param8 />
+		<Reward_Param9>Thrawn_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+		<Branch>Branch_Pantolomin_Text</Branch>
+		<Prereq>Pantolomin_Start</Prereq>
+	</Event>
+  
+    <Event Name="Pantolomin_Dialog">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>15</Event_Param1>
+		<Story_Dialog>Dialog_Remnant_Thrawn</Story_Dialog>
+		<Story_Chapter>4</Story_Chapter>
+		<Branch>Branch_Pantolomin_Text</Branch>
+		<Prereq>Pantolomin_Start</Prereq>
+	</Event>
+	
+	<Event Name="Pantolomin_Text_Kill">
+  		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Param1>Branch_Pantolomin_Text</Reward_Param1>
+		<Prereq>Conquer_Pantolomin</Prereq>
+		<Reward_Param2>0</Reward_Param2>
+	</Event>
+	
+	<!-- Katana fleet -->
+	
+	<Event Name="Katana_Thrawn_Speech">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>5</Event_Param1>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_CONQUEST_THRAWN_IR_KATANA_INFO</Reward_Param1>
+		<Reward_Param2>25</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6 />
+		<Reward_Param7 />
+		<Reward_Param8 />
+		<Reward_Param9>Thrawn_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+		<Prereq>Conquer_Pantolomin</Prereq>
+	</Event>
+	
+	<Event Name="Jump_Camera_Katana">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>POSITION_CAMERA</Reward_Type>
+		<Reward_Param1>Katana_Space</Reward_Param1>
+		<Reward_Param2>0,0,0</Reward_Param2>
+		<Prereq>Katana_Thrawn_Speech</Prereq>
+	</Event>
+	
+	<Event Name="Flash_Katana">
+        <Event_Type>STORY_TRIGGER</Event_Type>
+        <Reward_Type>FLASH_PLANET_GUI</Reward_Type>
+        <Reward_Param1>Katana_Space</Reward_Param1>
+        <Reward_Param2>FLASH_PLANET</Reward_Param2>
+        <Reward_Param4>Katana_GUI_Flash</Reward_Param4>
+        <Reward_Param5>True</Reward_Param5>
+        <Prereq>Katana_Thrawn_Speech</Prereq>
+    </Event>
+  
+    <Event Name="Katana_Dialog">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>15</Event_Param1>
+		<Story_Dialog>Dialog_Remnant_Thrawn</Story_Dialog>
+		<Story_Chapter>1</Story_Chapter>
+		<Story_Tag>Katana_Tag</Story_Tag>
+		<Prereq>Conquer_Pantolomin</Prereq>
+	</Event>  
+	
+	<Event Name="Unlock_Katana">
+		<Event_Type>STORY_MOVE</Event_Type>
+		<Event_Param1>Chimera</Event_Param1>
+		<Event_Param2>Katana_Space</Event_Param2>
+		<Reward_Type>SET_PLANET_RESTRICTED</Reward_Type>
+		<Reward_Param1>0</Reward_Param1>
+		<Prereq>Conquer_Pantolomin</Prereq>
+	</Event>
+	
+	<Event Name="Make_It_Happen">
+		<Event_Type>STORY_MOVE</Event_Type>
+		<Event_Param1>Chimera</Event_Param1>
+		<Event_Param2>Katana_Space</Event_Param2>
+		<Reward_Type>TRIGGER_EVENT</Reward_Type>
+		<Reward_Param1>Dummy</Reward_Param1>
+		<Prereq>Conquer_Pantolomin</Prereq>
+	</Event>
+  
+	<Event Name="Dummy">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>0</Event_Param1>
+		<Reward_Type>SET_PLANET_RESTRICTED</Reward_Type>
+		<Reward_Param1>0</Reward_Param1>
+		<Prereq>Conquer_Pantolomin</Prereq>
+		<Perpetual>false</Perpetual>
+	</Event>
+  
+	<!--<Event Name="Katana_Battle">
+		<Event_Type>STORY_SPACE_TACTICAL</Event_Type>
+		<Event_Param1>Katana_Plot.xml</Event_Param1>
+		<Event_Param2>Katana_Space</Event_Param2>
+		<Reward_Type>SET_TACTICAL_MAP</Reward_Type>
+		<Reward_Param1>Space_Katana_Mission</Reward_Param1>
+		<Reward_Param2>Space</Reward_Param2>
+		<Prereq>Universal_Story_Start</Prereq>
+		<Perpetual>false</Perpetual>
+	</Event>-->
+ 
+	<Event Name="Katana_Battle">
+		<Event_Type>STORY_ENTER</Event_Type>
+		<Event_Param1>Katana_Space</Event_Param1>
+		<Event_Param2>FILTER_FRIENDLY_ONLY</Event_Param2>
+		<Reward_Type>LINK_TACTICAL</Reward_Type>
+		<Reward_Param1>Katana_Space</Reward_Param1>
+		<Reward_Param2>SPACE</Reward_Param2>
+		<Reward_Param3>Empire</Reward_Param3>
+		<Reward_Param4>_FOTG_SPACE_KATANA_BATTLE.TED</Reward_Param4>
+		<Reward_Param5>Hostile</Reward_Param5>
+		<Reward_Param7>Katana_Plot.XML</Reward_Param7>
+		<Reward_Param8>1</Reward_Param8>
+		<Reward_Param13>1</Reward_Param13>
+		<Prereq>Conquer_Pantolomin</Prereq>
+	</Event>
+ 
+     <Event Name="Katana_Completed">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>STORY_GOAL_COMPLETED</Reward_Type>
+		<Reward_Param1>Katana_Tag</Reward_Param1>
+		<Prereq>Katana_Battle</Prereq>
+	</Event>
+	
+	<Event Name="Remove_Flash_Katana">
+        <Event_Type>STORY_ELAPSED</Event_Type>
+        <Event_Param1>10</Event_Param1>
+        <Reward_Type>HIDE_TUTORIAL_CURSOR</Reward_Type>
+        <Reward_Param1>Katana_GUI_Flash</Reward_Param1>
+        <Prereq>Katana_Completed</Prereq>
+    </Event>
+   
+	<Event Name="SET_FLAG_KATANA_COUNT">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SET_FLAG</Reward_Type>
+		<Reward_Param1>KATANA_COUNT</Reward_Param1>
+		<Reward_Param2>0</Reward_Param2>
+		<Prereq>Universal_Story_Start</Prereq>
+	</Event>
+	
+	<Event Name="Disable_Katana_Count">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>DISABLE_STORY_EVENT</Reward_Type>
+		<Reward_Param1>STORY_FLAG_KATANA_COUNT</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+		<Prereq>Universal_Story_Start</Prereq>
+	</Event>
+	
+	<Event Name="STORY_CONQUER_Katana_Space">
+		<Event_Type>STORY_CONQUER</Event_Type>
+		<Event_Param1>Katana_Space</Event_Param1>
+		<Event_Param3>FILTER_FRIENDLY_ONLY</Event_Param3>
+		<Reward_Type>DISABLE_STORY_EVENT</Reward_Type>
+		<Reward_Param1>STORY_FLAG_KATANA_COUNT</Reward_Param1>
+		<Reward_Param2>0</Reward_Param2>
+	</Event>
+	
+	<Event Name="STORY_FLAG_KATANA_COUNT">
+		<Event_Type>STORY_FLAG</Event_Type>
+		<Event_Param1>KATANA_COUNT</Event_Param1>
+		<Event_Param2>0</Event_Param2>
+		<Event_Param3>GREATER_THAN</Event_Param3>
+		<Reward_Type>UNIQUE_UNIT</Reward_Type>
+		<Reward_Param1>Katana_Dreadnaught_Empire</Reward_Param1>
+		<Reward_Param2>Katana_Space</Reward_Param2>
+		<Perpetual>true</Perpetual>
+	</Event>
+	
+	<Event Name="INCREMENT_FLAG_KATANA_COUNT_Minus_1">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>INCREMENT_FLAG</Reward_Type>
+		<Reward_Param1>KATANA_COUNT</Reward_Param1>
+		<Reward_Param2>-1</Reward_Param2>
+		<Prereq>STORY_FLAG_KATANA_COUNT</Prereq>
+		<Perpetual>true</Perpetual>	
+	</Event>
+
+	<Event Name="Katana_Ownwer_Rebel">
+		<Event_Type>STORY_MISSION_LOST</Event_Type>
+		<Event_Param1>Katana_Plot.xml</Event_Param1>
+		<Reward_Type>PLANET_FACTION</Reward_Type>
+		<Reward_Param1>Katana_Space</Reward_Param1>
+		<Reward_Param2>Rebel</Reward_Param2>
+		<Prereq>Universal_Story_Start</Prereq>
+	</Event>
+
+	<Event Name="Katana_NR_Wins">
+		<Event_Type>STORY_MISSION_LOST</Event_Type>
+		<Event_Param1>Katana_Plot.xml</Event_Param1>
+		<Reward_Type>CHANGE_OWNER</Reward_Type>
+		<Reward_Param1>Katana_Dreadnaught_Empire</Reward_Param1>
+		<Reward_Param2>Rebel</Reward_Param2>
+		<Prereq>Universal_Story_Start</Prereq>
+	</Event>
+  
+	<Event Name="Disable_Katana_Branch">
+		<Event_Type>STORY_MISSION_LOST</Event_Type>
+		<Event_Param1>Katana_Plot.xml</Event_Param1>
+		<Reward_Type>DISABLE_STORY_EVENT</Reward_Type>
+		<Reward_Param1>Katana_Spawn_Rebel</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+		<Prereq>Universal_Story_Start</Prereq>
+	</Event>
+  
+    <Event Name="No_Really_This_Time">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SET_PLANET_RESTRICTED</Reward_Type>
+		<Reward_Param1>Katana_Space</Reward_Param1>
+		<Reward_Param2>0</Reward_Param2>
+		<Prereq>Conquer_Pantolomin</Prereq>
+	</Event>
+ 
+</Story>

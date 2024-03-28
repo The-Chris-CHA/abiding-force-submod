@@ -1,0 +1,1390 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Campaigns>
+
+<!-- ******************************************************************** -->
+<!-- **************** SANDBOX CAMPAIGN "Deep Core Conflict" ************* -->
+<!-- ******************************************************************** -->
+
+<!-- 
+Maldrood and Gann start at rough parity. Zero Command have more starting forces, while EA has less
+EA position has a pretty rough postion overall, but they'll get Cronus on Night Hammer after holding out for a bit
+-->
+
+	<Campaign Name="Sandbox_DeepCoreConflict_Era_3_Empire">
+		<Campaign_Set>Sandbox_DeepCoreConflict_Era_3</Campaign_Set>
+		
+		<Sort_Order>006</Sort_Order>
+		<Is_Listed>False</Is_Listed>
+		
+		<Text_ID> TEXT_CAMPAIGN_SINGLE_DEEPCORECONFLICT </Text_ID>
+        <Description_Text> TEXT_CAMPAIGN_SINGLE_DESCRIPTION_DEEPCORECONFLICT </Description_Text>
+
+        <Camera_Shift_X> 40.0 </Camera_Shift_X>
+        <Camera_Shift_Y> 0.0 </Camera_Shift_Y>
+        <Camera_Distance> 1200.0 </Camera_Distance>
+		
+		<Locations>
+			<!-- Possibly Metellos, Pakrik, or Sarapin, though none are that great a fit-->
+			Galaxy_Core_Art_Model,
+			Abregado_Rae,
+			Cal_Seti,
+			Columus,
+			Ebaq,
+			Empress_Teta,
+			Foerost,
+			Galantos,
+			Hakassi,
+			Kaikielius,
+			Kalist,
+			Kampe,
+			Odik,
+			Ojom,
+			Prakith,
+			Thomork,
+			Tsoss,
+		</Locations>
+		<Trade_Routes>
+			Abregado_Rae_Kalist,
+			Abregado_Rae_Thomork,
+			Cal_Seti_Foerost,
+			Cal_Seti_Galantos,
+			Cal_Seti_Odik,
+			Columus_Hakassi,
+			Ebaq_Hakassi,
+			Ebaq_Tsoss,
+			Ebaq_Kampe,
+			Foerost_Kaikielius,
+			Empress_Teta_Foerost,
+			Empress_Teta_Tsoss,
+			Galantos_Odik,
+			Hakassi_Ojom,
+			Kaikielius_Tsoss,
+			Kalist_Kampe,
+			Kalist_Odik,
+			Kalist_Thomork,
+			Kampe_Ojom,
+			Kampe_Thomork,
+			Kampe_Tsoss,
+			Odik_Prakith,
+			Odik_Tsoss,
+			Ojom_Thomork
+		</Trade_Routes>
+
+        <Home_Location> Greater_Maldrood, Hakassi </Home_Location>
+		<Home_Location> Eriadu_Authority, Kampe </Home_Location>
+		<Home_Location> Empire, Kalist </Home_Location>
+		<Home_Location> Warlords, Odik </Home_Location>
+
+        <Starting_Active_Player> Empire </Starting_Active_Player>
+		<Empire_Story_Name>Conquests\DeepCore\Story_Plots_Sandbox_Core_Empire.xml</Empire_Story_Name>
+		<Underworld_Story_Name>Conquests\DeepCore\Story_Plots_Sandbox_Core_Container.xml</Underworld_Story_Name>
+		
+		<Story_Name>
+			EmpireoftheHand, Conquests\Story_Plots_Generic_EmpireoftheHand.xml, 
+			Greater_Maldrood, Conquests\Story_Plots_Generic_Greater_Maldrood.xml,
+			Zsinj_Empire, Conquests\Story_Plots_Generic_Zsinj_Empire.xml,
+			Corporate_Sector, Conquests\Story_Plots_Generic_Corporate_Sector.xml,
+			Eriadu_Authority, Conquests\Story_Plots_Generic_Eriadu_Authority.xml, Hapes_Consortium, Conquests\Story_Plots_Generic_Hapes_Consortium.xml,
+			Pentastar, Conquests\Story_Plots_Generic_Pentastar.xml
+		</Story_Name>
+		
+		<AI_Player_Control> Greater_Maldrood, WarlordAI </AI_Player_Control>
+		<AI_Player_Control> Eriadu_Authority, WarlordAI </AI_Player_Control>
+		<AI_Player_Control> Empire, SandboxHuman </AI_Player_Control>
+		<AI_Player_Control> Warlords, None </AI_Player_Control>
+		<AI_Player_Control> Independent_Forces, None </AI_Player_Control>
+		
+		<AI_Player_Control> Rebel, None</AI_Player_Control>
+		<AI_Player_Control> Pentastar, None</AI_Player_Control>
+		<AI_Player_Control> EmpireoftheHand, None </AI_Player_Control>
+		<AI_Player_Control> Zsinj_Empire, None </AI_Player_Control>
+		
+		<AI_Player_Control> Hapes_Consortium, None </AI_Player_Control>		
+		<AI_Player_Control> Corporate_Sector, None </AI_Player_Control>		
+		
+		<Markup_Filename>Empire, DefaultGalacticHints </Markup_Filename>
+		<Markup_Filename>Rebel, DefaultGalacticHints </Markup_Filename>
+		<Markup_Filename>EmpireoftheHand, DefaultGalacticHints </Markup_Filename>
+		<Markup_Filename>Zsinj_Empire, DefaultGalacticHints </Markup_Filename>
+		<Markup_Filename>Greater_Maldrood, DefaultMaldroodHints </Markup_Filename>			
+		<Markup_Filename>Pentastar, DefaultGalacticHints </Markup_Filename>
+		<Markup_Filename>Eriadu_Authority, DefaultEriaduHints </Markup_Filename>				
+		<Markup_Filename>Corporate_Sector, DefaultGalacticHints </Markup_Filename>		
+		<Markup_Filename>Warlords, DefaultGalacticHints </Markup_Filename>			
+		<Markup_Filename>Hapes_Consortium, DefaultGalacticHints </Markup_Filename>
+		
+		
+		<Supports_Custom_Settings>True</Supports_Custom_Settings>
+		<Show_Completed_Tab>True</Show_Completed_Tab>
+
+		<!-- Win Conditions -->
+
+		<Human_Victory_Conditions>
+				Galactic_All_Planets_Controlled
+		</Human_Victory_Conditions>
+
+		<AI_Victory_Conditions>
+				Galactic_All_Planets_Controlled
+		</AI_Victory_Conditions>
+		
+				
+		
+				
+		<Starting_Credits> Empire,  2000 </Starting_Credits>
+		<Starting_Tech_Level> Empire, 1 </Starting_Tech_Level>
+		<Max_Tech_Level> Empire, 3 </Max_Tech_Level>
+		
+		<!-- Kalist Space Forces -->
+		<Starting_Forces> Empire, Kalist, Empire_Star_Base_2 </Starting_Forces>
+		<Starting_Forces> Empire, Kalist, Empire_Shipyard_Level_Three </Starting_Forces>
+		<Starting_Forces> Empire, Kalist, Whirlwind_Star_Destroyer </Starting_Forces>
+		<Starting_Forces> Empire, Kalist, Ilthmars_Fist </Starting_Forces>
+		<Starting_Forces> Empire, Kalist, Agamar_Meniscus </Starting_Forces>
+		<Starting_Forces> Empire, Kalist, Generic_Star_Destroyer </Starting_Forces>
+		<Starting_Forces> Empire, Kalist, Dreadnaught_Empire </Starting_Forces>
+		<Starting_Forces> Empire, Kalist, Carrack_Cruiser </Starting_Forces>
+		<Starting_Forces> Empire, Kalist, Lancer_Frigate </Starting_Forces>
+		<Starting_Forces> Empire, Kalist, Lancer_Frigate </Starting_Forces>
+		<Starting_Forces> Empire, Kalist, Lancer_Frigate </Starting_Forces>
+		<!-- Kalist Land Forces -->
+		<Starting_Forces> Empire, Kalist, Remnant_Capital </Starting_Forces>
+		<Starting_Forces> Empire, Kalist, Empire_MoffPalace </Starting_Forces>
+		<Starting_Forces> Empire, Kalist, E_Ground_Barracks </Starting_Forces>
+		<Starting_Forces> Empire, Kalist, E_Ground_Light_Vehicle_Factory </Starting_Forces>
+		<Starting_Forces> Empire, Kalist, Noils_Team </Starting_Forces>
+		<Starting_Forces> Empire, Kalist, Imperial_A5RX_Company </Starting_Forces>
+		<Starting_Forces> Empire, Kalist, Imperial_AT_PT_Company </Starting_Forces>
+		<Starting_Forces> Empire, Kalist, Imperial_AT_PT_Company </Starting_Forces>
+		<Starting_Forces> Empire, Kalist, Navy_Trooper_Squad </Starting_Forces>
+		<Starting_Forces> Empire, Kalist, Navy_Trooper_Squad </Starting_Forces>
+		<Starting_Forces> Empire, Kalist, Navy_Trooper_Squad </Starting_Forces>
+		<Starting_Forces> Empire, Kalist, Navy_Trooper_Squad </Starting_Forces>
+		<Starting_Forces> Empire, Kalist, Imperial_IDT_Group </Starting_Forces>
+		
+		<!-- Abregado Rae Space Forces -->
+		<Starting_Forces> Empire, Abregado_Rae, Empire_Star_Base_2 </Starting_Forces>
+		<Starting_Forces> Empire, Abregado_Rae, Empire_Shipyard_Level_Two </Starting_Forces>
+		<Starting_Forces> Empire, Abregado_Rae, Generic_Tradestation </Starting_Forces>
+		<Starting_Forces> Empire, Abregado_Rae, Generic_Star_Destroyer </Starting_Forces>
+		<Starting_Forces> Empire, Abregado_Rae, Generic_Victory_Destroyer </Starting_Forces>
+		<Starting_Forces> Empire, Abregado_Rae, Dreadnaught_Empire </Starting_Forces>
+		<Starting_Forces> Empire, Abregado_Rae, Carrack_Cruiser </Starting_Forces>
+		<Starting_Forces> Empire, Abregado_Rae, Lancer_Frigate </Starting_Forces>
+		<!-- Abregado Rae Land Forces -->
+		<Starting_Forces> Empire, Abregado_Rae, Empire_MoffPalace </Starting_Forces>
+		<Starting_Forces> Empire, Abregado_Rae, E_Ground_Barracks </Starting_Forces>
+		<Starting_Forces> Empire, Abregado_Rae, E_Ground_Heavy_Vehicle_Factory </Starting_Forces>
+		<Starting_Forces> Empire, Abregado_Rae, Imperial_S_1_Firehawke_Company </Starting_Forces>
+		<Starting_Forces> Empire, Abregado_Rae, Imperial_AT_PT_Company </Starting_Forces>
+		<Starting_Forces> Empire, Abregado_Rae, Imperial_Chariot_LAV_Company </Starting_Forces>
+		<Starting_Forces> Empire, Abregado_Rae, Imperial_Chariot_LAV_Company </Starting_Forces>
+		<Starting_Forces> Empire, Abregado_Rae, Army_Trooper_Squad </Starting_Forces>
+		<Starting_Forces> Empire, Abregado_Rae, Army_Trooper_Squad </Starting_Forces>
+		<Starting_Forces> Empire, Abregado_Rae, Army_Trooper_Squad </Starting_Forces>
+		<Starting_Forces> Empire, Abregado_Rae, Army_Trooper_Squad </Starting_Forces>
+		
+		<!-- Thomork Space Forces -->
+		<Starting_Forces> Empire, Thomork, Empire_Star_Base_2 </Starting_Forces>
+		<Starting_Forces> Empire, Thomork, Empire_Shipyard_Level_Four </Starting_Forces>
+		<Starting_Forces> Empire, Thomork, Generic_Star_Destroyer_Two </Starting_Forces>
+		<Starting_Forces> Empire, Thomork, Generic_Star_Destroyer </Starting_Forces>
+		<Starting_Forces> Empire, Thomork, Generic_Tector </Starting_Forces>
+		<Starting_Forces> Empire, Thomork, Lancer_Frigate </Starting_Forces>
+		<Starting_Forces> Empire, Thomork, Lancer_Frigate </Starting_Forces>
+		<!-- Thomork Land Forces -->
+		<Starting_Forces> Empire, Thomork, Empire_MoffPalace </Starting_Forces>
+		<Starting_Forces> Empire, Thomork, E_Ground_Barracks </Starting_Forces>
+		<Starting_Forces> Empire, Thomork, E_Ground_Light_Vehicle_Factory </Starting_Forces>
+		<Starting_Forces> Empire, Thomork, Imperial_AT_AT_Company </Starting_Forces>
+		<Starting_Forces> Empire, Thomork, Imperial_PX4_Company </Starting_Forces>
+		<Starting_Forces> Empire, Thomork, Imperial_S_1_Firehawke_Company </Starting_Forces>
+		<Starting_Forces> Empire, Thomork, Imperial_S_1_Firehawke_Company </Starting_Forces>
+		<Starting_Forces> Empire, Thomork, Imperial_Stormtrooper_Squad </Starting_Forces>
+		<Starting_Forces> Empire, Thomork, Imperial_Stormtrooper_Squad </Starting_Forces>
+		<Starting_Forces> Empire, Thomork, Imperial_Stormtrooper_Squad </Starting_Forces>
+		<Starting_Forces> Empire, Thomork, Imperial_IDT_Group </Starting_Forces>
+		
+		<Starting_Credits> Warlords,  5000 </Starting_Credits>
+		<Starting_Tech_Level> Warlords, 1 </Starting_Tech_Level>
+		<Max_Tech_Level> Warlords, 3 </Max_Tech_Level>
+		
+		<Starting_Forces> Warlords, Odik, Empire_Star_Base_3 </Starting_Forces>
+		<Starting_Forces> Warlords, Odik, Empire_Shipyard_Level_Three </Starting_Forces>
+		<Starting_Forces> Warlords, Odik, Secondary_Golan_One </Starting_Forces>
+		<Starting_Forces> Warlords, Odik, Generic_Star_Destroyer_Two </Starting_Forces>
+		<Starting_Forces> Warlords, Odik, Generic_Star_Destroyer_Two </Starting_Forces>
+		<Starting_Forces> Warlords, Odik, Generic_Procursator </Starting_Forces>
+		<Starting_Forces> Warlords, Odik, Generic_Procursator </Starting_Forces>
+		<Starting_Forces> Warlords, Odik, Generic_Gladiator </Starting_Forces>
+		<Starting_Forces> Warlords, Odik, Yzu_Constitution </Starting_Forces>
+		<Starting_Forces> Warlords, Odik, Escort_Carrier </Starting_Forces>
+		<Starting_Forces> Warlords, Odik, Raider_Corvette </Starting_Forces>
+		<Starting_Forces> Warlords, Odik, Raider_Corvette </Starting_Forces>
+		<Starting_Forces> Warlords, Odik, Raider_Corvette </Starting_Forces>
+		<Starting_Forces> Warlords, Odik, Raider_Corvette </Starting_Forces>
+		
+		<Starting_Forces> Warlords, Odik, Remnant_Capital </Starting_Forces>
+		<Starting_Forces> Warlords, Odik, Empire_MoffPalace </Starting_Forces>
+		<Starting_Forces> Warlords, Odik, E_Ground_Barracks </Starting_Forces>
+		<Starting_Forces> Warlords, Odik, E_Ground_Light_Vehicle_Factory </Starting_Forces>
+		<Starting_Forces> Warlords, Odik, Imperial_A5_Juggernaut_Company </Starting_Forces>
+		<Starting_Forces> Warlords, Odik, Gann_Team </Starting_Forces>
+		<Starting_Forces> Warlords, Odik, Imperial_A9_Fortress_Company </Starting_Forces>
+		<Starting_Forces> Warlords, Odik, Imperial_AT_ST_Company </Starting_Forces>
+		<Starting_Forces> Warlords, Odik, Imperial_AT_ST_Company </Starting_Forces>
+		<Starting_Forces> Warlords, Odik, Imperial_Stormtrooper_Squad </Starting_Forces>
+		<Starting_Forces> Warlords, Odik, Imperial_Stormtrooper_Squad </Starting_Forces>
+		<Starting_Forces> Warlords, Odik, Imperial_Stormtrooper_Squad </Starting_Forces>
+		<Starting_Forces> Warlords, Odik, Imperial_Stormtrooper_Squad </Starting_Forces>
+		
+		<Starting_Forces> Warlords, Prakith, Empire_Star_Base_2 </Starting_Forces>
+		<Starting_Forces> Warlords, Prakith, Empire_Shipyard_Level_Two </Starting_Forces>
+		<Starting_Forces> Warlords, Prakith, Generic_Star_Destroyer_Two </Starting_Forces>
+		<Starting_Forces> Warlords, Prakith, Generic_Star_Destroyer </Starting_Forces>
+		<Starting_Forces> Warlords, Prakith, Generic_Procursator </Starting_Forces>
+		<Starting_Forces> Warlords, Prakith, Generic_Acclamator_Assault_Ship_II </Starting_Forces>
+		<Starting_Forces> Warlords, Prakith, Nebulon_B_Zsinj </Starting_Forces>
+		<Starting_Forces> Warlords, Prakith, Nebulon_B_Zsinj </Starting_Forces>
+		<Starting_Forces> Warlords, Prakith, Nebulon_B_Zsinj </Starting_Forces>
+		<Starting_Forces> Warlords, Prakith, Strike_Cruiser </Starting_Forces>
+		<Starting_Forces> Warlords, Prakith, Strike_Cruiser </Starting_Forces>
+		<Starting_Forces> Warlords, Prakith, Raider_Corvette </Starting_Forces>
+		<Starting_Forces> Warlords, Prakith, Raider_Corvette </Starting_Forces>
+		
+		<Starting_Forces> Warlords, Prakith, Empire_MoffPalace </Starting_Forces>
+		<Starting_Forces> Warlords, Prakith, E_Ground_Barracks </Starting_Forces>
+		<Starting_Forces> Warlords, Prakith, E_Ground_Light_Vehicle_Factory </Starting_Forces>
+		<Starting_Forces> Warlords, Prakith, Imperial_AT_TE_Walker_Company </Starting_Forces>
+		<Starting_Forces> Warlords, Prakith, Imperial_AT_PT_Company </Starting_Forces>
+		<Starting_Forces> Warlords, Prakith, Imperial_AT_PT_Company </Starting_Forces>
+		<Starting_Forces> Warlords, Prakith, Imperial_Repulsor_Scout_Company </Starting_Forces>
+		<Starting_Forces> Warlords, Prakith, Imperial_Repulsor_Scout_Company </Starting_Forces>
+		<Starting_Forces> Warlords, Prakith, Imperial_Dark_Jedi_Squad </Starting_Forces>
+		<Starting_Forces> Warlords, Prakith, Imperial_Dark_Jedi_Squad </Starting_Forces>
+		<Starting_Forces> Warlords, Prakith, Imperial_Stormtrooper_Squad </Starting_Forces>
+		<Starting_Forces> Warlords, Prakith, Imperial_Stormtrooper_Squad </Starting_Forces>
+		<Starting_Forces> Warlords, Prakith, Foga_Brill_Team </Starting_Forces>
+		
+		<Starting_Forces> Warlords, Cal_Seti, Empire_Star_Base_2 </Starting_Forces>
+		<Starting_Forces> Warlords, Cal_Seti, Empire_Shipyard_Level_Two </Starting_Forces>
+		<Starting_Forces> Warlords, Cal_Seti, Secondary_Golan_Two </Starting_Forces>
+		<Starting_Forces> Warlords, Cal_Seti, Praji_Secutor </Starting_Forces>
+		<Starting_Forces> Warlords, Cal_Seti, Generic_Star_Destroyer </Starting_Forces>
+		<Starting_Forces> Warlords, Cal_Seti, Generic_Procursator </Starting_Forces>
+		<Starting_Forces> Warlords, Cal_Seti, Generic_Acclamator_Assault_Ship_II </Starting_Forces>
+		<Starting_Forces> Warlords, Cal_Seti, Generic_Acclamator_Assault_Ship_II </Starting_Forces>
+		<Starting_Forces> Warlords, Cal_Seti, Generic_Gladiator </Starting_Forces>
+		<Starting_Forces> Warlords, Cal_Seti, Generic_Gladiator </Starting_Forces>
+		<Starting_Forces> Warlords, Cal_Seti, Raider_Corvette </Starting_Forces>
+		<Starting_Forces> Warlords, Cal_Seti, Raider_Corvette </Starting_Forces>
+		<Starting_Forces> Warlords, Cal_Seti, Raider_Corvette </Starting_Forces>
+		
+		<Starting_Forces> Warlords, Cal_Seti, Empire_MoffPalace </Starting_Forces>
+		<Starting_Forces> Warlords, Cal_Seti, E_Ground_Light_Vehicle_Factory </Starting_Forces>
+		<Starting_Forces> Warlords, Cal_Seti, Imperial_TX130_Company </Starting_Forces>
+		<Starting_Forces> Warlords, Cal_Seti, Imperial_TX130_Company </Starting_Forces>
+		<Starting_Forces> Warlords, Cal_Seti, Imperial_TX130_Company </Starting_Forces>
+		<Starting_Forces> Warlords, Cal_Seti, Imperial_Repulsor_Scout_Company </Starting_Forces>
+		<Starting_Forces> Warlords, Cal_Seti, Shargael_Team </Starting_Forces>
+		<Starting_Forces> Warlords, Cal_Seti, Imperial_TIE_Mauler_Company </Starting_Forces>
+		<Starting_Forces> Warlords, Cal_Seti, Skyhopper_Group </Starting_Forces>
+		<Starting_Forces> Warlords, Cal_Seti, Army_Trooper_Squad </Starting_Forces>
+		<Starting_Forces> Warlords, Cal_Seti, Army_Trooper_Squad </Starting_Forces>
+		<Starting_Forces> Warlords, Cal_Seti, Imperial_Stormtrooper_Squad </Starting_Forces>
+		
+		<Starting_Credits> Independent_Forces,  5000 </Starting_Credits>
+		<Starting_Tech_Level> Independent_Forces, 1 </Starting_Tech_Level>
+		<Max_Tech_Level> Independent_Forces, 3 </Max_Tech_Level>
+		
+		<!-- Galantos starts neutral, but should be gobbled up by Gann quickly -->
+		
+		<Starting_Forces> Independent_Forces, Galantos, Police_Responder_Team </Starting_Forces>
+		<Starting_Forces> Independent_Forces, Galantos, Police_Responder_Team </Starting_Forces>
+		<Starting_Forces> Independent_Forces, Galantos, Mercenary_Team </Starting_Forces>
+		<Starting_Forces> Independent_Forces, Galantos, Heavy_Scavenger_Team </Starting_Forces> <!-- Black Hammer Pirates or something -->
+		
+		<Starting_Credits> Eriadu_Authority,  2000 </Starting_Credits>
+		<Starting_Tech_Level> Eriadu_Authority, 1 </Starting_Tech_Level>
+		<Max_Tech_Level> Eriadu_Authority, 3 </Max_Tech_Level>
+		
+		<Starting_Forces> Eriadu_Authority, Kampe, Empire_Star_Base_2 </Starting_Forces>
+		<Starting_Forces> Eriadu_Authority, Kampe, Eriadu_Shipyard_Level_Three </Starting_Forces>
+		<Starting_Forces> Eriadu_Authority, Kampe, Generic_Praetor </Starting_Forces>
+		<Starting_Forces> Eriadu_Authority, Kampe, Delvardus_Brilliant </Starting_Forces>
+		<Starting_Forces> Eriadu_Authority, Kampe, Vindicator_Cruiser </Starting_Forces>
+		<Starting_Forces> Eriadu_Authority, Kampe, Vindicator_Cruiser </Starting_Forces>
+		<Starting_Forces> Eriadu_Authority, Kampe, Eidolon </Starting_Forces>
+		<Starting_Forces> Eriadu_Authority, Kampe, IPV1_SYSTEM_PATROL_CRAFT </Starting_Forces>
+		
+		<Starting_Forces> Eriadu_Authority, Kampe, Eriadu_Capital </Starting_Forces>
+		<Starting_Forces> Eriadu_Authority, Kampe, Eriadu_MoffPalace </Starting_Forces>
+		<Starting_Forces> Eriadu_Authority, Kampe, A_Ground_Barracks </Starting_Forces>
+		<Starting_Forces> Eriadu_Authority, Kampe, A_Ground_Light_Vehicle_Factory </Starting_Forces>
+		<Starting_Forces> Eriadu_Authority, Kampe, Imperial_AT_AT_Company </Starting_Forces>
+		<Starting_Forces> Eriadu_Authority, Kampe, Imperial_TRMB_Company </Starting_Forces>
+		<Starting_Forces> Eriadu_Authority, Kampe, Imperial_1H_Tank_Company </Starting_Forces>
+		<Starting_Forces> Eriadu_Authority, Kampe, Imperial_1L_Tank_Company </Starting_Forces>
+		<Starting_Forces> Eriadu_Authority, Kampe, Imperial_1L_Tank_Company </Starting_Forces>
+		<Starting_Forces> Eriadu_Authority, Kampe, Army_Trooper_Squad </Starting_Forces>
+		<Starting_Forces> Eriadu_Authority, Kampe, Army_Trooper_Squad </Starting_Forces>
+		
+		<Starting_Forces> Eriadu_Authority, Empress_Teta, Empire_Star_Base_2 </Starting_Forces>
+		<Starting_Forces> Eriadu_Authority, Empress_Teta, Eriadu_Shipyard_Level_Two </Starting_Forces>
+		<Starting_Forces> Eriadu_Authority, Empress_Teta, GENERIC_IMPERIAL_I_FRIGATE </Starting_Forces>
+		<Starting_Forces> Eriadu_Authority, Empress_Teta, Victory_II_Frigate </Starting_Forces>
+		
+		<Starting_Forces> Eriadu_Authority, Empress_Teta, Eriadu_MoffPalace </Starting_Forces>
+		<Starting_Forces> Eriadu_Authority, Empress_Teta, A_Ground_Barracks </Starting_Forces>
+		<Starting_Forces> Eriadu_Authority, Empress_Teta, A_Ground_Barracks </Starting_Forces>
+		<Starting_Forces> Eriadu_Authority, Empress_Teta, A_Ground_Barracks </Starting_Forces>
+		<Starting_Forces> Eriadu_Authority, Empress_Teta, Imperial_1L_Tank_Company </Starting_Forces>
+		<Starting_Forces> Eriadu_Authority, Empress_Teta, Imperial_AT_MP_Company </Starting_Forces>
+		<Starting_Forces> Eriadu_Authority, Empress_Teta, Imperial_Stormtrooper_Squad </Starting_Forces>
+		<Starting_Forces> Eriadu_Authority, Empress_Teta, Imperial_Stormtrooper_Squad </Starting_Forces>
+		<Starting_Forces> Eriadu_Authority, Empress_Teta, Army_Trooper_Squad </Starting_Forces>
+		<Starting_Forces> Eriadu_Authority, Empress_Teta, Army_Trooper_Squad </Starting_Forces>
+		<Starting_Forces> Eriadu_Authority, Empress_Teta, Army_Trooper_Squad </Starting_Forces>
+		
+		<Starting_Forces> Eriadu_Authority, Kaikielius, Empire_Star_Base_2 </Starting_Forces>
+		<Starting_Forces> Eriadu_Authority, Kaikielius, Eriadu_Shipyard_Level_One </Starting_Forces>
+		<Starting_Forces> Eriadu_Authority, Kaikielius, Generic_Victory_Destroyer_Two </Starting_Forces>
+		
+		<Starting_Forces> Eriadu_Authority, Kaikielius, Eriadu_MoffPalace </Starting_Forces>
+		<Starting_Forces> Eriadu_Authority, Kaikielius, A_Ground_Barracks </Starting_Forces>
+		<Starting_Forces> Eriadu_Authority, Kaikielius, A_Ground_Light_Vehicle_Factory </Starting_Forces>
+		<Starting_Forces> Eriadu_Authority, Kaikielius, Imperial_1M_Tank_Company </Starting_Forces>
+		<Starting_Forces> Eriadu_Authority, Kaikielius, Imperial_1L_Tank_Company </Starting_Forces>
+		<Starting_Forces> Eriadu_Authority, Kaikielius, Imperial_AT_MP_Company </Starting_Forces>
+		<Starting_Forces> Eriadu_Authority, Kaikielius, Army_Trooper_Squad </Starting_Forces>
+		<Starting_Forces> Eriadu_Authority, Kaikielius, Army_Trooper_Squad </Starting_Forces>
+		
+		<Starting_Forces> Eriadu_Authority, Foerost, Empire_Star_Base_2 </Starting_Forces>
+		<Starting_Forces> Eriadu_Authority, Foerost, Eriadu_Shipyard_Level_Four </Starting_Forces>
+		<Starting_Forces> Eriadu_Authority, Foerost, Victory_II_Frigate </Starting_Forces>
+		
+		<Starting_Forces> Eriadu_Authority, Foerost, Eriadu_MoffPalace </Starting_Forces>
+		<Starting_Forces> Eriadu_Authority, Foerost, A_Ground_Light_Vehicle_Factory </Starting_Forces>
+		<Starting_Forces> Eriadu_Authority, Foerost, A_Ground_Heavy_Vehicle_Factory </Starting_Forces>
+		<Starting_Forces> Eriadu_Authority, Foerost, Imperial_1M_Tank_Company </Starting_Forces>
+		<Starting_Forces> Eriadu_Authority, Foerost, Imperial_Light_Artillery_Company </Starting_Forces>
+		<Starting_Forces> Eriadu_Authority, Foerost, Imperial_TRMB_Company </Starting_Forces>
+		<Starting_Forces> Eriadu_Authority, Foerost, Army_Trooper_Squad </Starting_Forces>
+		<Starting_Forces> Eriadu_Authority, Foerost, Army_Trooper_Squad </Starting_Forces>
+		<Starting_Forces> Eriadu_Authority, Foerost, Army_Trooper_Squad </Starting_Forces>
+		
+		<Starting_Forces> Eriadu_Authority, Tsoss, Empire_Star_Base_2 </Starting_Forces>
+		<Starting_Forces> Eriadu_Authority, Tsoss, Eriadu_Shipyard_Level_Two </Starting_Forces>
+		<Starting_Forces> Eriadu_Authority, Tsoss, Arquitens </Starting_Forces>
+		<Starting_Forces> Eriadu_Authority, Tsoss, Arquitens </Starting_Forces>
+		<Starting_Forces> Eriadu_Authority, Tsoss, Arquitens </Starting_Forces>
+		
+		
+		<Starting_Credits> Greater_Maldrood,  2000 </Starting_Credits>
+		<Starting_Tech_Level> Greater_Maldrood, 1 </Starting_Tech_Level>
+		<Max_Tech_Level> Greater_Maldrood, 3 </Max_Tech_Level>
+		
+		<Starting_Forces> Greater_Maldrood, Hakassi, Empire_Star_Base_2 </Starting_Forces>
+		<Starting_Forces> Greater_Maldrood, Hakassi, Greater_Maldrood_Shipyard_Level_Three </Starting_Forces>
+		
+		<Starting_Forces> Greater_Maldrood, Hakassi, Lancet_Kosh </Starting_Forces>
+		<Starting_Forces> Greater_Maldrood, Hakassi, Generic_Star_Destroyer </Starting_Forces>
+		<Starting_Forces> Greater_Maldrood, Hakassi, Generic_Procursator </Starting_Forces>
+		<Starting_Forces> Greater_Maldrood, Hakassi, Strike_Cruiser </Starting_Forces>
+		<Starting_Forces> Greater_Maldrood, Hakassi, Strike_Cruiser </Starting_Forces>
+		<Starting_Forces> Greater_Maldrood, Hakassi, Vigil </Starting_Forces>
+		<Starting_Forces> Greater_Maldrood, Hakassi, Customs_Corvette </Starting_Forces>
+		<Starting_Forces> Greater_Maldrood, Hakassi, Customs_Corvette </Starting_Forces>
+		
+		<Starting_Forces> Greater_Maldrood, Hakassi, Maldrood_Capital </Starting_Forces>
+		<Starting_Forces> Greater_Maldrood, Hakassi, Maldrood_MoffPalace </Starting_Forces>
+		<Starting_Forces> Greater_Maldrood, Hakassi, T_Ground_Barracks </Starting_Forces>
+		<Starting_Forces> Greater_Maldrood, Hakassi, T_Ground_Light_Vehicle_Factory </Starting_Forces>
+		<Starting_Forces> Greater_Maldrood, Hakassi, Imperial_A5_Juggernaut_Company </Starting_Forces>
+		<Starting_Forces> Greater_Maldrood, Hakassi, Imperial_SA5_Company </Starting_Forces>
+		<Starting_Forces> Greater_Maldrood, Hakassi, Imperial_SA5_Company </Starting_Forces>
+		<Starting_Forces> Greater_Maldrood, Hakassi, Imperial_SA5_Company </Starting_Forces>
+		<Starting_Forces> Greater_Maldrood, Hakassi, Imperial_MAAT_Group </Starting_Forces>
+		<Starting_Forces> Greater_Maldrood, Hakassi, Imperial_MAAT_Group </Starting_Forces>
+		<Starting_Forces> Greater_Maldrood, Hakassi, Imperial_INT4_Group </Starting_Forces>
+		<Starting_Forces> Greater_Maldrood, Hakassi, Imperial_Navy_Commando_Squad </Starting_Forces>
+		<Starting_Forces> Greater_Maldrood, Hakassi, Imperial_Navy_Commando_Squad </Starting_Forces>
+		<Starting_Forces> Greater_Maldrood, Hakassi, Imperial_74Z_Bike_Company </Starting_Forces>
+		
+		<Starting_Forces> Greater_Maldrood, Ojom, Empire_Star_Base_2 </Starting_Forces>
+		<Starting_Forces> Greater_Maldrood, Ojom, Greater_Maldrood_Shipyard_Level_One </Starting_Forces>
+		
+		<Starting_Forces> Greater_Maldrood, Ojom, Generic_Star_Destroyer </Starting_Forces>
+		<Starting_Forces> Greater_Maldrood, Ojom, Strike_Cruiser </Starting_Forces>
+		<Starting_Forces> Greater_Maldrood, Ojom, Strike_Cruiser </Starting_Forces>
+		<Starting_Forces> Greater_Maldrood, Ojom, Customs_Corvette </Starting_Forces>
+		
+		<Starting_Forces> Greater_Maldrood, Ojom, Maldrood_MoffPalace </Starting_Forces>
+		<Starting_Forces> Greater_Maldrood, Ojom, T_Ground_Light_Vehicle_Factory </Starting_Forces>
+		<Starting_Forces> Greater_Maldrood, Ojom, T_Ground_Light_Vehicle_Factory </Starting_Forces>
+		<Starting_Forces> Greater_Maldrood, Ojom, Imperial_SA5_Company </Starting_Forces>
+		<Starting_Forces> Greater_Maldrood, Ojom, Imperial_SA5_Company </Starting_Forces>
+		<Starting_Forces> Greater_Maldrood, Ojom, Imperial_AT_RT_Company </Starting_Forces>
+		<Starting_Forces> Greater_Maldrood, Ojom, Imperial_AT_RT_Company </Starting_Forces>
+		<Starting_Forces> Greater_Maldrood, Ojom, Army_Trooper_Squad </Starting_Forces>
+		<Starting_Forces> Greater_Maldrood, Ojom, Army_Trooper_Squad </Starting_Forces>
+		<Starting_Forces> Greater_Maldrood, Ojom, Army_Trooper_Squad </Starting_Forces>
+		<Starting_Forces> Greater_Maldrood, Ojom, Imperial_74Z_Bike_Company </Starting_Forces>
+		<Starting_Forces> Greater_Maldrood, Ojom, Imperial_74Z_Bike_Company </Starting_Forces>
+		
+		<Starting_Forces> Greater_Maldrood, Ebaq, Empire_Star_Base_2 </Starting_Forces>
+		<Starting_Forces> Greater_Maldrood, Ebaq, Greater_Maldrood_Shipyard_Level_Two </Starting_Forces>
+		
+		<Starting_Forces> Greater_Maldrood, Ebaq, Generic_Procursator </Starting_Forces>
+		<Starting_Forces> Greater_Maldrood, Ebaq, Generic_Victory_Destroyer </Starting_Forces>
+		<Starting_Forces> Greater_Maldrood, Ebaq, Strike_Cruiser </Starting_Forces>
+		<Starting_Forces> Greater_Maldrood, Ebaq, Generic_Imperial_II_Frigate </Starting_Forces>
+		<Starting_Forces> Greater_Maldrood, Ebaq, Generic_Pursuit </Starting_Forces>
+		
+		<Starting_Forces> Greater_Maldrood, Ebaq, Maldrood_MoffPalace </Starting_Forces>
+		<Starting_Forces> Greater_Maldrood, Ebaq, T_Ground_Barracks </Starting_Forces>
+		<Starting_Forces> Greater_Maldrood, Ebaq, Imperial_2M_Company </Starting_Forces>
+		<Starting_Forces> Greater_Maldrood, Ebaq, Imperial_RTT_Company </Starting_Forces>
+		<Starting_Forces> Greater_Maldrood, Ebaq, Imperial_Missile_Artillery_Company </Starting_Forces>
+		<Starting_Forces> Greater_Maldrood, Ebaq, Imperial_Navy_Commando_Squad </Starting_Forces>
+		<Starting_Forces> Greater_Maldrood, Ebaq, Imperial_Navy_Commando_Squad </Starting_Forces>
+		<Starting_Forces> Greater_Maldrood, Ebaq, Imperial_Navy_Commando_Squad </Starting_Forces>
+		
+		<Starting_Forces> Greater_Maldrood, Columus, Empire_Star_Base_2 </Starting_Forces>
+		<Starting_Forces> Greater_Maldrood, Columus, Greater_Maldrood_Shipyard_Level_One </Starting_Forces>
+		
+		<Starting_Forces> Greater_Maldrood, Columus, Tavira_Invidious </Starting_Forces>
+		<Starting_Forces> Greater_Maldrood, Columus, Eidolon </Starting_Forces>
+		<Starting_Forces> Greater_Maldrood, Columus, Vigil </Starting_Forces>
+		<Starting_Forces> Greater_Maldrood, Columus, Customs_Corvette </Starting_Forces>
+		
+		<Starting_Forces> Greater_Maldrood, Columus, Maldrood_MoffPalace </Starting_Forces>
+		<Starting_Forces> Greater_Maldrood, Columus, T_Ground_Barracks </Starting_Forces>
+		<Starting_Forces> Greater_Maldrood, Columus, T_Ground_Light_Vehicle_Factory </Starting_Forces>
+		<Starting_Forces> Greater_Maldrood, Columus, Imperial_MAAT_Group </Starting_Forces>
+		<Starting_Forces> Greater_Maldrood, Columus, Imperial_INT4_Group </Starting_Forces>
+		<Starting_Forces> Greater_Maldrood, Columus, Imperial_INT4_Group </Starting_Forces>
+		<Starting_Forces> Greater_Maldrood, Columus, Imperial_ISP_Company </Starting_Forces>
+		<Starting_Forces> Greater_Maldrood, Columus, Imperial_ISP_Company </Starting_Forces>
+		<Starting_Forces> Greater_Maldrood, Columus, Army_Trooper_Squad </Starting_Forces>
+		<Starting_Forces> Greater_Maldrood, Columus, Army_Trooper_Squad </Starting_Forces>
+	</Campaign>
+
+	<Campaign Name="Sandbox_DeepCoreConflict_Era_3_Greater_Maldrood">
+		<Campaign_Set>Sandbox_DeepCoreConflict_Era_3</Campaign_Set>
+		
+		<Sort_Order>006</Sort_Order>
+		<Is_Listed>False</Is_Listed>
+		
+		<Text_ID> TEXT_CAMPAIGN_SINGLE_DEEPCORECONFLICT </Text_ID>
+        <Description_Text> TEXT_CAMPAIGN_SINGLE_DESCRIPTION_DEEPCORECONFLICT </Description_Text>
+
+        <Camera_Shift_X> 40.0 </Camera_Shift_X>
+        <Camera_Shift_Y> 0.0 </Camera_Shift_Y>
+        <Camera_Distance> 1200.0 </Camera_Distance>
+		
+		<Locations>
+			<!-- Possibly Metellos, Pakrik, or Sarapin, though none are that great a fit-->
+			Galaxy_Core_Art_Model,
+			Abregado_Rae,
+			Cal_Seti,
+			Columus,
+			Ebaq,
+			Empress_Teta,
+			Foerost,
+			Galantos,
+			Hakassi,
+			Kaikielius,
+			Kalist,
+			Kampe,
+			Odik,
+			Ojom,
+			Prakith,
+			Thomork,
+			Tsoss,
+		</Locations>
+		<Trade_Routes>
+			Abregado_Rae_Kalist,
+			Abregado_Rae_Thomork,
+			Cal_Seti_Foerost,
+			Cal_Seti_Galantos,
+			Cal_Seti_Odik,
+			Columus_Hakassi,
+			Ebaq_Hakassi,
+			Ebaq_Tsoss,
+			Ebaq_Kampe,
+			Foerost_Kaikielius,
+			Empress_Teta_Foerost,
+			Empress_Teta_Tsoss,
+			Galantos_Odik,
+			Hakassi_Ojom,
+			Kaikielius_Tsoss,
+			Kalist_Kampe,
+			Kalist_Odik,
+			Kalist_Thomork,
+			Kampe_Ojom,
+			Kampe_Thomork,
+			Kampe_Tsoss,
+			Odik_Prakith,
+			Odik_Tsoss,
+			Ojom_Thomork
+		</Trade_Routes>
+
+        <Home_Location> Greater_Maldrood, Hakassi </Home_Location>
+		<Home_Location> Eriadu_Authority, Kampe </Home_Location>
+		<Home_Location> Empire, Kalist </Home_Location>
+		<Home_Location> Warlords, Odik </Home_Location>
+
+        <Starting_Active_Player> Greater_Maldrood </Starting_Active_Player>
+		<Empire_Story_Name>Conquests\DeepCore\Story_Plots_Sandbox_Core_Empire.xml</Empire_Story_Name>
+		<Underworld_Story_Name>Conquests\DeepCore\Story_Plots_Sandbox_Core_Container.xml</Underworld_Story_Name>
+		
+		<Story_Name>
+			EmpireoftheHand, Conquests\Story_Plots_Generic_EmpireoftheHand.xml, 
+			Greater_Maldrood, Conquests\Story_Plots_Generic_Greater_Maldrood.xml,
+			Zsinj_Empire, Conquests\Story_Plots_Generic_Zsinj_Empire.xml,
+			Corporate_Sector, Conquests\Story_Plots_Generic_Corporate_Sector.xml,
+			Eriadu_Authority, Conquests\Story_Plots_Generic_Eriadu_Authority.xml, Hapes_Consortium, Conquests\Story_Plots_Generic_Hapes_Consortium.xml,
+			Pentastar, Conquests\Story_Plots_Generic_Pentastar.xml
+		</Story_Name>
+		
+		<AI_Player_Control> Greater_Maldrood, SandboxHuman </AI_Player_Control>
+		<AI_Player_Control> Eriadu_Authority, WarlordAI </AI_Player_Control>
+		<AI_Player_Control> Empire, GenericAI </AI_Player_Control>
+		<AI_Player_Control> Warlords, None </AI_Player_Control>
+		<AI_Player_Control> Independent_Forces, None </AI_Player_Control>
+		
+		<AI_Player_Control> Rebel, None</AI_Player_Control>
+		<AI_Player_Control> Pentastar, None</AI_Player_Control>
+		<AI_Player_Control> EmpireoftheHand, None </AI_Player_Control>
+		<AI_Player_Control> Zsinj_Empire, None </AI_Player_Control>
+		
+		<AI_Player_Control> Hapes_Consortium, None </AI_Player_Control>		
+		<AI_Player_Control> Corporate_Sector, None </AI_Player_Control>		
+		
+		<Markup_Filename>Empire, DefaultGalacticHints </Markup_Filename>
+		<Markup_Filename>Rebel, DefaultGalacticHints </Markup_Filename>
+		<Markup_Filename>EmpireoftheHand, DefaultGalacticHints </Markup_Filename>
+		<Markup_Filename>Zsinj_Empire, DefaultGalacticHints </Markup_Filename>
+		<Markup_Filename>Greater_Maldrood, DefaultMaldroodHints </Markup_Filename>			
+		<Markup_Filename>Pentastar, DefaultGalacticHints </Markup_Filename>
+		<Markup_Filename>Eriadu_Authority, DefaultEriaduHints </Markup_Filename>				
+		<Markup_Filename>Corporate_Sector, DefaultGalacticHints </Markup_Filename>		
+		<Markup_Filename>Warlords, DefaultGalacticHints </Markup_Filename>			
+		<Markup_Filename>Hapes_Consortium, DefaultGalacticHints </Markup_Filename>
+		
+		
+		<Supports_Custom_Settings>True</Supports_Custom_Settings>
+		<Show_Completed_Tab>True</Show_Completed_Tab>
+
+		<!-- Win Conditions -->
+
+		<Human_Victory_Conditions>
+				Galactic_All_Planets_Controlled
+		</Human_Victory_Conditions>
+
+		<AI_Victory_Conditions>
+				Galactic_All_Planets_Controlled
+		</AI_Victory_Conditions>
+		
+				
+		
+				
+		<Starting_Credits> Empire,  2000 </Starting_Credits>
+		<Starting_Tech_Level> Empire, 1 </Starting_Tech_Level>
+		<Max_Tech_Level> Empire, 3 </Max_Tech_Level>
+		
+		<!-- Kalist Space Forces -->
+		<Starting_Forces> Empire, Kalist, Empire_Star_Base_2 </Starting_Forces>
+		<Starting_Forces> Empire, Kalist, Empire_Shipyard_Level_Three </Starting_Forces>
+		<Starting_Forces> Empire, Kalist, Whirlwind_Star_Destroyer </Starting_Forces>
+		<Starting_Forces> Empire, Kalist, Ilthmars_Fist </Starting_Forces>
+		<Starting_Forces> Empire, Kalist, Agamar_Meniscus </Starting_Forces>
+		<Starting_Forces> Empire, Kalist, Generic_Star_Destroyer </Starting_Forces>
+		<Starting_Forces> Empire, Kalist, Dreadnaught_Empire </Starting_Forces>
+		<Starting_Forces> Empire, Kalist, Carrack_Cruiser </Starting_Forces>
+		<Starting_Forces> Empire, Kalist, Lancer_Frigate </Starting_Forces>
+		<Starting_Forces> Empire, Kalist, Lancer_Frigate </Starting_Forces>
+		<Starting_Forces> Empire, Kalist, Lancer_Frigate </Starting_Forces>
+		<!-- Kalist Land Forces -->
+		<Starting_Forces> Empire, Kalist, Remnant_Capital </Starting_Forces>
+		<Starting_Forces> Empire, Kalist, Empire_MoffPalace </Starting_Forces>
+		<Starting_Forces> Empire, Kalist, E_Ground_Barracks </Starting_Forces>
+		<Starting_Forces> Empire, Kalist, E_Ground_Light_Vehicle_Factory </Starting_Forces>
+		<Starting_Forces> Empire, Kalist, Noils_Team </Starting_Forces>
+		<Starting_Forces> Empire, Kalist, Imperial_A5RX_Company </Starting_Forces>
+		<Starting_Forces> Empire, Kalist, Imperial_AT_PT_Company </Starting_Forces>
+		<Starting_Forces> Empire, Kalist, Imperial_AT_PT_Company </Starting_Forces>
+		<Starting_Forces> Empire, Kalist, Navy_Trooper_Squad </Starting_Forces>
+		<Starting_Forces> Empire, Kalist, Navy_Trooper_Squad </Starting_Forces>
+		<Starting_Forces> Empire, Kalist, Navy_Trooper_Squad </Starting_Forces>
+		<Starting_Forces> Empire, Kalist, Navy_Trooper_Squad </Starting_Forces>
+		<Starting_Forces> Empire, Kalist, Imperial_IDT_Group </Starting_Forces>
+		
+		<!-- Abregado Rae Space Forces -->
+		<Starting_Forces> Empire, Abregado_Rae, Empire_Star_Base_2 </Starting_Forces>
+		<Starting_Forces> Empire, Abregado_Rae, Empire_Shipyard_Level_Two </Starting_Forces>
+		<Starting_Forces> Empire, Abregado_Rae, Generic_Tradestation </Starting_Forces>
+		<Starting_Forces> Empire, Abregado_Rae, Generic_Star_Destroyer </Starting_Forces>
+		<Starting_Forces> Empire, Abregado_Rae, Generic_Victory_Destroyer </Starting_Forces>
+		<Starting_Forces> Empire, Abregado_Rae, Dreadnaught_Empire </Starting_Forces>
+		<Starting_Forces> Empire, Abregado_Rae, Carrack_Cruiser </Starting_Forces>
+		<Starting_Forces> Empire, Abregado_Rae, Lancer_Frigate </Starting_Forces>
+		<!-- Abregado Rae Land Forces -->
+		<Starting_Forces> Empire, Abregado_Rae, Empire_MoffPalace </Starting_Forces>
+		<Starting_Forces> Empire, Abregado_Rae, E_Ground_Barracks </Starting_Forces>
+		<Starting_Forces> Empire, Abregado_Rae, E_Ground_Heavy_Vehicle_Factory </Starting_Forces>
+		<Starting_Forces> Empire, Abregado_Rae, Imperial_S_1_Firehawke_Company </Starting_Forces>
+		<Starting_Forces> Empire, Abregado_Rae, Imperial_AT_PT_Company </Starting_Forces>
+		<Starting_Forces> Empire, Abregado_Rae, Imperial_Chariot_LAV_Company </Starting_Forces>
+		<Starting_Forces> Empire, Abregado_Rae, Imperial_Chariot_LAV_Company </Starting_Forces>
+		<Starting_Forces> Empire, Abregado_Rae, Army_Trooper_Squad </Starting_Forces>
+		<Starting_Forces> Empire, Abregado_Rae, Army_Trooper_Squad </Starting_Forces>
+		<Starting_Forces> Empire, Abregado_Rae, Army_Trooper_Squad </Starting_Forces>
+		<Starting_Forces> Empire, Abregado_Rae, Army_Trooper_Squad </Starting_Forces>
+		
+		<!-- Thomork Space Forces -->
+		<Starting_Forces> Empire, Thomork, Empire_Star_Base_2 </Starting_Forces>
+		<Starting_Forces> Empire, Thomork, Empire_Shipyard_Level_Four </Starting_Forces>
+		<Starting_Forces> Empire, Thomork, Generic_Star_Destroyer_Two </Starting_Forces>
+		<Starting_Forces> Empire, Thomork, Generic_Star_Destroyer </Starting_Forces>
+		<Starting_Forces> Empire, Thomork, Generic_Tector </Starting_Forces>
+		<Starting_Forces> Empire, Thomork, Lancer_Frigate </Starting_Forces>
+		<Starting_Forces> Empire, Thomork, Lancer_Frigate </Starting_Forces>
+		<!-- Thomork Land Forces -->
+		<Starting_Forces> Empire, Thomork, Empire_MoffPalace </Starting_Forces>
+		<Starting_Forces> Empire, Thomork, E_Ground_Barracks </Starting_Forces>
+		<Starting_Forces> Empire, Thomork, E_Ground_Light_Vehicle_Factory </Starting_Forces>
+		<Starting_Forces> Empire, Thomork, Imperial_AT_AT_Company </Starting_Forces>
+		<Starting_Forces> Empire, Thomork, Imperial_PX4_Company </Starting_Forces>
+		<Starting_Forces> Empire, Thomork, Imperial_S_1_Firehawke_Company </Starting_Forces>
+		<Starting_Forces> Empire, Thomork, Imperial_S_1_Firehawke_Company </Starting_Forces>
+		<Starting_Forces> Empire, Thomork, Imperial_Stormtrooper_Squad </Starting_Forces>
+		<Starting_Forces> Empire, Thomork, Imperial_Stormtrooper_Squad </Starting_Forces>
+		<Starting_Forces> Empire, Thomork, Imperial_Stormtrooper_Squad </Starting_Forces>
+		<Starting_Forces> Empire, Thomork, Imperial_IDT_Group </Starting_Forces>
+		
+		<Starting_Credits> Warlords,  5000 </Starting_Credits>
+		<Starting_Tech_Level> Warlords, 1 </Starting_Tech_Level>
+		<Max_Tech_Level> Warlords, 3 </Max_Tech_Level>
+		
+		<Starting_Forces> Warlords, Odik, Empire_Star_Base_3 </Starting_Forces>
+		<Starting_Forces> Warlords, Odik, Empire_Shipyard_Level_Three </Starting_Forces>
+		<Starting_Forces> Warlords, Odik, Secondary_Golan_One </Starting_Forces>
+		<Starting_Forces> Warlords, Odik, Generic_Star_Destroyer_Two </Starting_Forces>
+		<Starting_Forces> Warlords, Odik, Generic_Star_Destroyer_Two </Starting_Forces>
+		<Starting_Forces> Warlords, Odik, Generic_Procursator </Starting_Forces>
+		<Starting_Forces> Warlords, Odik, Generic_Procursator </Starting_Forces>
+		<Starting_Forces> Warlords, Odik, Generic_Gladiator </Starting_Forces>
+		<Starting_Forces> Warlords, Odik, Yzu_Constitution </Starting_Forces>
+		<Starting_Forces> Warlords, Odik, Escort_Carrier </Starting_Forces>
+		<Starting_Forces> Warlords, Odik, Raider_Corvette </Starting_Forces>
+		<Starting_Forces> Warlords, Odik, Raider_Corvette </Starting_Forces>
+		<Starting_Forces> Warlords, Odik, Raider_Corvette </Starting_Forces>
+		<Starting_Forces> Warlords, Odik, Raider_Corvette </Starting_Forces>
+		
+		<Starting_Forces> Warlords, Odik, Remnant_Capital </Starting_Forces>
+		<Starting_Forces> Warlords, Odik, Empire_MoffPalace </Starting_Forces>
+		<Starting_Forces> Warlords, Odik, E_Ground_Barracks </Starting_Forces>
+		<Starting_Forces> Warlords, Odik, E_Ground_Light_Vehicle_Factory </Starting_Forces>
+		<Starting_Forces> Warlords, Odik, Imperial_A5_Juggernaut_Company </Starting_Forces>
+		<Starting_Forces> Warlords, Odik, Gann_Team </Starting_Forces>
+		<Starting_Forces> Warlords, Odik, Imperial_A9_Fortress_Company </Starting_Forces>
+		<Starting_Forces> Warlords, Odik, Imperial_AT_ST_Company </Starting_Forces>
+		<Starting_Forces> Warlords, Odik, Imperial_AT_ST_Company </Starting_Forces>
+		<Starting_Forces> Warlords, Odik, Imperial_Stormtrooper_Squad </Starting_Forces>
+		<Starting_Forces> Warlords, Odik, Imperial_Stormtrooper_Squad </Starting_Forces>
+		<Starting_Forces> Warlords, Odik, Imperial_Stormtrooper_Squad </Starting_Forces>
+		<Starting_Forces> Warlords, Odik, Imperial_Stormtrooper_Squad </Starting_Forces>
+		
+		<Starting_Forces> Warlords, Prakith, Empire_Star_Base_2 </Starting_Forces>
+		<Starting_Forces> Warlords, Prakith, Empire_Shipyard_Level_Two </Starting_Forces>
+		<Starting_Forces> Warlords, Prakith, Generic_Star_Destroyer_Two </Starting_Forces>
+		<Starting_Forces> Warlords, Prakith, Generic_Star_Destroyer </Starting_Forces>
+		<Starting_Forces> Warlords, Prakith, Generic_Procursator </Starting_Forces>
+		<Starting_Forces> Warlords, Prakith, Generic_Acclamator_Assault_Ship_II </Starting_Forces>
+		<Starting_Forces> Warlords, Prakith, Nebulon_B_Zsinj </Starting_Forces>
+		<Starting_Forces> Warlords, Prakith, Nebulon_B_Zsinj </Starting_Forces>
+		<Starting_Forces> Warlords, Prakith, Nebulon_B_Zsinj </Starting_Forces>
+		<Starting_Forces> Warlords, Prakith, Strike_Cruiser </Starting_Forces>
+		<Starting_Forces> Warlords, Prakith, Strike_Cruiser </Starting_Forces>
+		<Starting_Forces> Warlords, Prakith, Raider_Corvette </Starting_Forces>
+		<Starting_Forces> Warlords, Prakith, Raider_Corvette </Starting_Forces>
+		
+		<Starting_Forces> Warlords, Prakith, Empire_MoffPalace </Starting_Forces>
+		<Starting_Forces> Warlords, Prakith, E_Ground_Barracks </Starting_Forces>
+		<Starting_Forces> Warlords, Prakith, E_Ground_Light_Vehicle_Factory </Starting_Forces>
+		<Starting_Forces> Warlords, Prakith, Imperial_AT_TE_Walker_Company </Starting_Forces>
+		<Starting_Forces> Warlords, Prakith, Imperial_AT_PT_Company </Starting_Forces>
+		<Starting_Forces> Warlords, Prakith, Imperial_AT_PT_Company </Starting_Forces>
+		<Starting_Forces> Warlords, Prakith, Imperial_Repulsor_Scout_Company </Starting_Forces>
+		<Starting_Forces> Warlords, Prakith, Imperial_Repulsor_Scout_Company </Starting_Forces>
+		<Starting_Forces> Warlords, Prakith, Imperial_Dark_Jedi_Squad </Starting_Forces>
+		<Starting_Forces> Warlords, Prakith, Imperial_Dark_Jedi_Squad </Starting_Forces>
+		<Starting_Forces> Warlords, Prakith, Imperial_Stormtrooper_Squad </Starting_Forces>
+		<Starting_Forces> Warlords, Prakith, Imperial_Stormtrooper_Squad </Starting_Forces>
+		<Starting_Forces> Warlords, Prakith, Foga_Brill_Team </Starting_Forces>
+		
+		<Starting_Forces> Warlords, Cal_Seti, Empire_Star_Base_2 </Starting_Forces>
+		<Starting_Forces> Warlords, Cal_Seti, Empire_Shipyard_Level_Two </Starting_Forces>
+		<Starting_Forces> Warlords, Cal_Seti, Secondary_Golan_Two </Starting_Forces>
+		<Starting_Forces> Warlords, Cal_Seti, Praji_Secutor </Starting_Forces>
+		<Starting_Forces> Warlords, Cal_Seti, Generic_Star_Destroyer </Starting_Forces>
+		<Starting_Forces> Warlords, Cal_Seti, Generic_Procursator </Starting_Forces>
+		<Starting_Forces> Warlords, Cal_Seti, Generic_Acclamator_Assault_Ship_II </Starting_Forces>
+		<Starting_Forces> Warlords, Cal_Seti, Generic_Acclamator_Assault_Ship_II </Starting_Forces>
+		<Starting_Forces> Warlords, Cal_Seti, Generic_Gladiator </Starting_Forces>
+		<Starting_Forces> Warlords, Cal_Seti, Generic_Gladiator </Starting_Forces>
+		<Starting_Forces> Warlords, Cal_Seti, Raider_Corvette </Starting_Forces>
+		<Starting_Forces> Warlords, Cal_Seti, Raider_Corvette </Starting_Forces>
+		<Starting_Forces> Warlords, Cal_Seti, Raider_Corvette </Starting_Forces>
+		
+		<Starting_Forces> Warlords, Cal_Seti, Empire_MoffPalace </Starting_Forces>
+		<Starting_Forces> Warlords, Cal_Seti, E_Ground_Light_Vehicle_Factory </Starting_Forces>
+		<Starting_Forces> Warlords, Cal_Seti, Imperial_TX130_Company </Starting_Forces>
+		<Starting_Forces> Warlords, Cal_Seti, Imperial_TX130_Company </Starting_Forces>
+		<Starting_Forces> Warlords, Cal_Seti, Imperial_TX130_Company </Starting_Forces>
+		<Starting_Forces> Warlords, Cal_Seti, Imperial_Repulsor_Scout_Company </Starting_Forces>
+		<Starting_Forces> Warlords, Cal_Seti, Shargael_Team </Starting_Forces>
+		<Starting_Forces> Warlords, Cal_Seti, Imperial_TIE_Mauler_Company </Starting_Forces>
+		<Starting_Forces> Warlords, Cal_Seti, Skyhopper_Group </Starting_Forces>
+		<Starting_Forces> Warlords, Cal_Seti, Army_Trooper_Squad </Starting_Forces>
+		<Starting_Forces> Warlords, Cal_Seti, Army_Trooper_Squad </Starting_Forces>
+		<Starting_Forces> Warlords, Cal_Seti, Imperial_Stormtrooper_Squad </Starting_Forces>
+		
+		<Starting_Credits> Independent_Forces,  5000 </Starting_Credits>
+		<Starting_Tech_Level> Independent_Forces, 1 </Starting_Tech_Level>
+		<Max_Tech_Level> Independent_Forces, 3 </Max_Tech_Level>
+		
+		<!-- Galantos starts neutral, but should be gobbled up by Gann quickly -->
+		
+		<Starting_Forces> Independent_Forces, Galantos, Police_Responder_Team </Starting_Forces>
+		<Starting_Forces> Independent_Forces, Galantos, Police_Responder_Team </Starting_Forces>
+		<Starting_Forces> Independent_Forces, Galantos, Mercenary_Team </Starting_Forces>
+		<Starting_Forces> Independent_Forces, Galantos, Heavy_Scavenger_Team </Starting_Forces> <!-- Black Hammer Pirates or something -->
+		
+		<Starting_Credits> Eriadu_Authority,  2000 </Starting_Credits>
+		<Starting_Tech_Level> Eriadu_Authority, 1 </Starting_Tech_Level>
+		<Max_Tech_Level> Eriadu_Authority, 3 </Max_Tech_Level>
+		
+		<Starting_Forces> Eriadu_Authority, Kampe, Empire_Star_Base_2 </Starting_Forces>
+		<Starting_Forces> Eriadu_Authority, Kampe, Eriadu_Shipyard_Level_Three </Starting_Forces>
+		<Starting_Forces> Eriadu_Authority, Kampe, Generic_Praetor </Starting_Forces>
+		<Starting_Forces> Eriadu_Authority, Kampe, Delvardus_Brilliant </Starting_Forces>
+		<Starting_Forces> Eriadu_Authority, Kampe, Vindicator_Cruiser </Starting_Forces>
+		<Starting_Forces> Eriadu_Authority, Kampe, Vindicator_Cruiser </Starting_Forces>
+		<Starting_Forces> Eriadu_Authority, Kampe, Eidolon </Starting_Forces>
+		<Starting_Forces> Eriadu_Authority, Kampe, IPV1_SYSTEM_PATROL_CRAFT </Starting_Forces>
+		
+		<Starting_Forces> Eriadu_Authority, Kampe, Eriadu_Capital </Starting_Forces>
+		<Starting_Forces> Eriadu_Authority, Kampe, Eriadu_MoffPalace </Starting_Forces>
+		<Starting_Forces> Eriadu_Authority, Kampe, A_Ground_Barracks </Starting_Forces>
+		<Starting_Forces> Eriadu_Authority, Kampe, A_Ground_Light_Vehicle_Factory </Starting_Forces>
+		<Starting_Forces> Eriadu_Authority, Kampe, Imperial_AT_AT_Company </Starting_Forces>
+		<Starting_Forces> Eriadu_Authority, Kampe, Imperial_TRMB_Company </Starting_Forces>
+		<Starting_Forces> Eriadu_Authority, Kampe, Imperial_1H_Tank_Company </Starting_Forces>
+		<Starting_Forces> Eriadu_Authority, Kampe, Imperial_1L_Tank_Company </Starting_Forces>
+		<Starting_Forces> Eriadu_Authority, Kampe, Imperial_1L_Tank_Company </Starting_Forces>
+		<Starting_Forces> Eriadu_Authority, Kampe, Army_Trooper_Squad </Starting_Forces>
+		<Starting_Forces> Eriadu_Authority, Kampe, Army_Trooper_Squad </Starting_Forces>
+		
+		<Starting_Forces> Eriadu_Authority, Empress_Teta, Empire_Star_Base_2 </Starting_Forces>
+		<Starting_Forces> Eriadu_Authority, Empress_Teta, Eriadu_Shipyard_Level_Two </Starting_Forces>
+		<Starting_Forces> Eriadu_Authority, Empress_Teta, GENERIC_IMPERIAL_I_FRIGATE </Starting_Forces>
+		<Starting_Forces> Eriadu_Authority, Empress_Teta, Victory_II_Frigate </Starting_Forces>
+		
+		<Starting_Forces> Eriadu_Authority, Empress_Teta, Eriadu_MoffPalace </Starting_Forces>
+		<Starting_Forces> Eriadu_Authority, Empress_Teta, A_Ground_Barracks </Starting_Forces>
+		<Starting_Forces> Eriadu_Authority, Empress_Teta, A_Ground_Barracks </Starting_Forces>
+		<Starting_Forces> Eriadu_Authority, Empress_Teta, A_Ground_Barracks </Starting_Forces>
+		<Starting_Forces> Eriadu_Authority, Empress_Teta, Imperial_1L_Tank_Company </Starting_Forces>
+		<Starting_Forces> Eriadu_Authority, Empress_Teta, Imperial_AT_MP_Company </Starting_Forces>
+		<Starting_Forces> Eriadu_Authority, Empress_Teta, Imperial_Stormtrooper_Squad </Starting_Forces>
+		<Starting_Forces> Eriadu_Authority, Empress_Teta, Imperial_Stormtrooper_Squad </Starting_Forces>
+		<Starting_Forces> Eriadu_Authority, Empress_Teta, Army_Trooper_Squad </Starting_Forces>
+		<Starting_Forces> Eriadu_Authority, Empress_Teta, Army_Trooper_Squad </Starting_Forces>
+		<Starting_Forces> Eriadu_Authority, Empress_Teta, Army_Trooper_Squad </Starting_Forces>
+		
+		<Starting_Forces> Eriadu_Authority, Kaikielius, Empire_Star_Base_2 </Starting_Forces>
+		<Starting_Forces> Eriadu_Authority, Kaikielius, Eriadu_Shipyard_Level_One </Starting_Forces>
+		<Starting_Forces> Eriadu_Authority, Kaikielius, Generic_Victory_Destroyer_Two </Starting_Forces>
+		
+		<Starting_Forces> Eriadu_Authority, Kaikielius, Eriadu_MoffPalace </Starting_Forces>
+		<Starting_Forces> Eriadu_Authority, Kaikielius, A_Ground_Barracks </Starting_Forces>
+		<Starting_Forces> Eriadu_Authority, Kaikielius, A_Ground_Light_Vehicle_Factory </Starting_Forces>
+		<Starting_Forces> Eriadu_Authority, Kaikielius, Imperial_1M_Tank_Company </Starting_Forces>
+		<Starting_Forces> Eriadu_Authority, Kaikielius, Imperial_1L_Tank_Company </Starting_Forces>
+		<Starting_Forces> Eriadu_Authority, Kaikielius, Imperial_AT_MP_Company </Starting_Forces>
+		<Starting_Forces> Eriadu_Authority, Kaikielius, Army_Trooper_Squad </Starting_Forces>
+		<Starting_Forces> Eriadu_Authority, Kaikielius, Army_Trooper_Squad </Starting_Forces>
+		
+		<Starting_Forces> Eriadu_Authority, Foerost, Empire_Star_Base_2 </Starting_Forces>
+		<Starting_Forces> Eriadu_Authority, Foerost, Eriadu_Shipyard_Level_Four </Starting_Forces>
+		<Starting_Forces> Eriadu_Authority, Foerost, Victory_II_Frigate </Starting_Forces>
+		
+		<Starting_Forces> Eriadu_Authority, Foerost, Eriadu_MoffPalace </Starting_Forces>
+		<Starting_Forces> Eriadu_Authority, Foerost, A_Ground_Light_Vehicle_Factory </Starting_Forces>
+		<Starting_Forces> Eriadu_Authority, Foerost, A_Ground_Heavy_Vehicle_Factory </Starting_Forces>
+		<Starting_Forces> Eriadu_Authority, Foerost, Imperial_1M_Tank_Company </Starting_Forces>
+		<Starting_Forces> Eriadu_Authority, Foerost, Imperial_Light_Artillery_Company </Starting_Forces>
+		<Starting_Forces> Eriadu_Authority, Foerost, Imperial_TRMB_Company </Starting_Forces>
+		<Starting_Forces> Eriadu_Authority, Foerost, Army_Trooper_Squad </Starting_Forces>
+		<Starting_Forces> Eriadu_Authority, Foerost, Army_Trooper_Squad </Starting_Forces>
+		<Starting_Forces> Eriadu_Authority, Foerost, Army_Trooper_Squad </Starting_Forces>
+		
+		<Starting_Forces> Eriadu_Authority, Tsoss, Empire_Star_Base_2 </Starting_Forces>
+		<Starting_Forces> Eriadu_Authority, Tsoss, Eriadu_Shipyard_Level_Two </Starting_Forces>
+		<Starting_Forces> Eriadu_Authority, Tsoss, Arquitens </Starting_Forces>
+		<Starting_Forces> Eriadu_Authority, Tsoss, Arquitens </Starting_Forces>
+		<Starting_Forces> Eriadu_Authority, Tsoss, Arquitens </Starting_Forces>
+		
+		
+		<Starting_Credits> Greater_Maldrood,  2000 </Starting_Credits>
+		<Starting_Tech_Level> Greater_Maldrood, 1 </Starting_Tech_Level>
+		<Max_Tech_Level> Greater_Maldrood, 3 </Max_Tech_Level>
+		
+		<Starting_Forces> Greater_Maldrood, Hakassi, Empire_Star_Base_2 </Starting_Forces>
+		<Starting_Forces> Greater_Maldrood, Hakassi, Greater_Maldrood_Shipyard_Level_Three </Starting_Forces>
+		
+		<Starting_Forces> Greater_Maldrood, Hakassi, Lancet_Kosh </Starting_Forces>
+		<Starting_Forces> Greater_Maldrood, Hakassi, Generic_Star_Destroyer </Starting_Forces>
+		<Starting_Forces> Greater_Maldrood, Hakassi, Generic_Procursator </Starting_Forces>
+		<Starting_Forces> Greater_Maldrood, Hakassi, Strike_Cruiser </Starting_Forces>
+		<Starting_Forces> Greater_Maldrood, Hakassi, Strike_Cruiser </Starting_Forces>
+		<Starting_Forces> Greater_Maldrood, Hakassi, Vigil </Starting_Forces>
+		<Starting_Forces> Greater_Maldrood, Hakassi, Customs_Corvette </Starting_Forces>
+		<Starting_Forces> Greater_Maldrood, Hakassi, Customs_Corvette </Starting_Forces>
+		
+		<Starting_Forces> Greater_Maldrood, Hakassi, Maldrood_Capital </Starting_Forces>
+		<Starting_Forces> Greater_Maldrood, Hakassi, Maldrood_MoffPalace </Starting_Forces>
+		<Starting_Forces> Greater_Maldrood, Hakassi, T_Ground_Barracks </Starting_Forces>
+		<Starting_Forces> Greater_Maldrood, Hakassi, T_Ground_Light_Vehicle_Factory </Starting_Forces>
+		<Starting_Forces> Greater_Maldrood, Hakassi, Imperial_A5_Juggernaut_Company </Starting_Forces>
+		<Starting_Forces> Greater_Maldrood, Hakassi, Imperial_SA5_Company </Starting_Forces>
+		<Starting_Forces> Greater_Maldrood, Hakassi, Imperial_SA5_Company </Starting_Forces>
+		<Starting_Forces> Greater_Maldrood, Hakassi, Imperial_SA5_Company </Starting_Forces>
+		<Starting_Forces> Greater_Maldrood, Hakassi, Imperial_MAAT_Group </Starting_Forces>
+		<Starting_Forces> Greater_Maldrood, Hakassi, Imperial_MAAT_Group </Starting_Forces>
+		<Starting_Forces> Greater_Maldrood, Hakassi, Imperial_INT4_Group </Starting_Forces>
+		<Starting_Forces> Greater_Maldrood, Hakassi, Imperial_Navy_Commando_Squad </Starting_Forces>
+		<Starting_Forces> Greater_Maldrood, Hakassi, Imperial_Navy_Commando_Squad </Starting_Forces>
+		<Starting_Forces> Greater_Maldrood, Hakassi, Imperial_74Z_Bike_Company </Starting_Forces>
+		
+		<Starting_Forces> Greater_Maldrood, Ojom, Empire_Star_Base_2 </Starting_Forces>
+		<Starting_Forces> Greater_Maldrood, Ojom, Greater_Maldrood_Shipyard_Level_One </Starting_Forces>
+		
+		<Starting_Forces> Greater_Maldrood, Ojom, Generic_Star_Destroyer </Starting_Forces>
+		<Starting_Forces> Greater_Maldrood, Ojom, Strike_Cruiser </Starting_Forces>
+		<Starting_Forces> Greater_Maldrood, Ojom, Strike_Cruiser </Starting_Forces>
+		<Starting_Forces> Greater_Maldrood, Ojom, Customs_Corvette </Starting_Forces>
+		
+		<Starting_Forces> Greater_Maldrood, Ojom, Maldrood_MoffPalace </Starting_Forces>
+		<Starting_Forces> Greater_Maldrood, Ojom, T_Ground_Light_Vehicle_Factory </Starting_Forces>
+		<Starting_Forces> Greater_Maldrood, Ojom, T_Ground_Light_Vehicle_Factory </Starting_Forces>
+		<Starting_Forces> Greater_Maldrood, Ojom, Imperial_SA5_Company </Starting_Forces>
+		<Starting_Forces> Greater_Maldrood, Ojom, Imperial_SA5_Company </Starting_Forces>
+		<Starting_Forces> Greater_Maldrood, Ojom, Imperial_AT_RT_Company </Starting_Forces>
+		<Starting_Forces> Greater_Maldrood, Ojom, Imperial_AT_RT_Company </Starting_Forces>
+		<Starting_Forces> Greater_Maldrood, Ojom, Army_Trooper_Squad </Starting_Forces>
+		<Starting_Forces> Greater_Maldrood, Ojom, Army_Trooper_Squad </Starting_Forces>
+		<Starting_Forces> Greater_Maldrood, Ojom, Army_Trooper_Squad </Starting_Forces>
+		<Starting_Forces> Greater_Maldrood, Ojom, Imperial_74Z_Bike_Company </Starting_Forces>
+		<Starting_Forces> Greater_Maldrood, Ojom, Imperial_74Z_Bike_Company </Starting_Forces>
+		
+		<Starting_Forces> Greater_Maldrood, Ebaq, Empire_Star_Base_2 </Starting_Forces>
+		<Starting_Forces> Greater_Maldrood, Ebaq, Greater_Maldrood_Shipyard_Level_Two </Starting_Forces>
+		
+		<Starting_Forces> Greater_Maldrood, Ebaq, Generic_Procursator </Starting_Forces>
+		<Starting_Forces> Greater_Maldrood, Ebaq, Generic_Victory_Destroyer </Starting_Forces>
+		<Starting_Forces> Greater_Maldrood, Ebaq, Strike_Cruiser </Starting_Forces>
+		<Starting_Forces> Greater_Maldrood, Ebaq, Generic_Imperial_II_Frigate </Starting_Forces>
+		<Starting_Forces> Greater_Maldrood, Ebaq, Generic_Pursuit </Starting_Forces>
+		
+		<Starting_Forces> Greater_Maldrood, Ebaq, Maldrood_MoffPalace </Starting_Forces>
+		<Starting_Forces> Greater_Maldrood, Ebaq, T_Ground_Barracks </Starting_Forces>
+		<Starting_Forces> Greater_Maldrood, Ebaq, Imperial_2M_Company </Starting_Forces>
+		<Starting_Forces> Greater_Maldrood, Ebaq, Imperial_RTT_Company </Starting_Forces>
+		<Starting_Forces> Greater_Maldrood, Ebaq, Imperial_Missile_Artillery_Company </Starting_Forces>
+		<Starting_Forces> Greater_Maldrood, Ebaq, Imperial_Navy_Commando_Squad </Starting_Forces>
+		<Starting_Forces> Greater_Maldrood, Ebaq, Imperial_Navy_Commando_Squad </Starting_Forces>
+		<Starting_Forces> Greater_Maldrood, Ebaq, Imperial_Navy_Commando_Squad </Starting_Forces>
+		
+		<Starting_Forces> Greater_Maldrood, Columus, Empire_Star_Base_2 </Starting_Forces>
+		<Starting_Forces> Greater_Maldrood, Columus, Greater_Maldrood_Shipyard_Level_One </Starting_Forces>
+		
+		<Starting_Forces> Greater_Maldrood, Columus, Tavira_Invidious </Starting_Forces>
+		<Starting_Forces> Greater_Maldrood, Columus, Eidolon </Starting_Forces>
+		<Starting_Forces> Greater_Maldrood, Columus, Vigil </Starting_Forces>
+		<Starting_Forces> Greater_Maldrood, Columus, Customs_Corvette </Starting_Forces>
+		
+		<Starting_Forces> Greater_Maldrood, Columus, Maldrood_MoffPalace </Starting_Forces>
+		<Starting_Forces> Greater_Maldrood, Columus, T_Ground_Barracks </Starting_Forces>
+		<Starting_Forces> Greater_Maldrood, Columus, T_Ground_Light_Vehicle_Factory </Starting_Forces>
+		<Starting_Forces> Greater_Maldrood, Columus, Imperial_MAAT_Group </Starting_Forces>
+		<Starting_Forces> Greater_Maldrood, Columus, Imperial_INT4_Group </Starting_Forces>
+		<Starting_Forces> Greater_Maldrood, Columus, Imperial_INT4_Group </Starting_Forces>
+		<Starting_Forces> Greater_Maldrood, Columus, Imperial_ISP_Company </Starting_Forces>
+		<Starting_Forces> Greater_Maldrood, Columus, Imperial_ISP_Company </Starting_Forces>
+		<Starting_Forces> Greater_Maldrood, Columus, Army_Trooper_Squad </Starting_Forces>
+		<Starting_Forces> Greater_Maldrood, Columus, Army_Trooper_Squad </Starting_Forces>
+	</Campaign>
+
+	<Campaign Name="Sandbox_DeepCoreConflict_Era_3_Eriadu_Authority">
+		<Campaign_Set>Sandbox_DeepCoreConflict_Era_3</Campaign_Set>
+		
+		<Sort_Order>006</Sort_Order>
+		<Is_Listed>False</Is_Listed>
+		
+		<Text_ID> TEXT_CAMPAIGN_SINGLE_DEEPCORECONFLICT </Text_ID>
+        <Description_Text> TEXT_CAMPAIGN_SINGLE_DESCRIPTION_DEEPCORECONFLICT </Description_Text>
+
+        <Camera_Shift_X> 40.0 </Camera_Shift_X>
+        <Camera_Shift_Y> 0.0 </Camera_Shift_Y>
+        <Camera_Distance> 1200.0 </Camera_Distance>
+		
+		<Locations>
+			<!-- Possibly Metellos, Pakrik, or Sarapin, though none are that great a fit-->
+			Galaxy_Core_Art_Model,
+			Abregado_Rae,
+			Cal_Seti,
+			Columus,
+			Ebaq,
+			Empress_Teta,
+			Foerost,
+			Galantos,
+			Hakassi,
+			Kaikielius,
+			Kalist,
+			Kampe,
+			Odik,
+			Ojom,
+			Prakith,
+			Thomork,
+			Tsoss,
+		</Locations>
+		<Trade_Routes>
+			Abregado_Rae_Kalist,
+			Abregado_Rae_Thomork,
+			Cal_Seti_Foerost,
+			Cal_Seti_Galantos,
+			Cal_Seti_Odik,
+			Columus_Hakassi,
+			Ebaq_Hakassi,
+			Ebaq_Tsoss,
+			Ebaq_Kampe,
+			Foerost_Kaikielius,
+			Empress_Teta_Foerost,
+			Empress_Teta_Tsoss,
+			Galantos_Odik,
+			Hakassi_Ojom,
+			Kaikielius_Tsoss,
+			Kalist_Kampe,
+			Kalist_Odik,
+			Kalist_Thomork,
+			Kampe_Ojom,
+			Kampe_Thomork,
+			Kampe_Tsoss,
+			Odik_Prakith,
+			Odik_Tsoss,
+			Ojom_Thomork
+		</Trade_Routes>
+
+        <Home_Location> Greater_Maldrood, Hakassi </Home_Location>
+		<Home_Location> Eriadu_Authority, Kampe </Home_Location>
+		<Home_Location> Empire, Kalist </Home_Location>
+		<Home_Location> Warlords, Odik </Home_Location>
+
+        <Starting_Active_Player> Eriadu_Authority </Starting_Active_Player>
+		<Empire_Story_Name>Conquests\DeepCore\Story_Plots_Sandbox_Core_Empire.xml</Empire_Story_Name>
+		<Underworld_Story_Name>Conquests\DeepCore\Story_Plots_Sandbox_Core_Container.xml</Underworld_Story_Name>
+		
+		<Story_Name>
+			EmpireoftheHand, Conquests\Story_Plots_Generic_EmpireoftheHand.xml, 
+			Greater_Maldrood, Conquests\Story_Plots_Generic_Greater_Maldrood.xml,
+			Zsinj_Empire, Conquests\Story_Plots_Generic_Zsinj_Empire.xml,
+			Corporate_Sector, Conquests\Story_Plots_Generic_Corporate_Sector.xml,
+			Eriadu_Authority, Conquests\Story_Plots_Generic_Eriadu_Authority.xml, Hapes_Consortium, Conquests\Story_Plots_Generic_Hapes_Consortium.xml,
+			Pentastar, Conquests\Story_Plots_Generic_Pentastar.xml
+		</Story_Name>
+		
+		<AI_Player_Control> Greater_Maldrood, WarlordAI </AI_Player_Control>
+		<AI_Player_Control> Eriadu_Authority, SandboxHuman </AI_Player_Control>
+		<AI_Player_Control> Empire, GenericAI </AI_Player_Control>
+		<AI_Player_Control> Warlords, None </AI_Player_Control>
+		<AI_Player_Control> Independent_Forces, None </AI_Player_Control>
+		
+		<AI_Player_Control> Rebel, None</AI_Player_Control>
+		<AI_Player_Control> Pentastar, None</AI_Player_Control>
+		<AI_Player_Control> EmpireoftheHand, None </AI_Player_Control>
+		<AI_Player_Control> Zsinj_Empire, None </AI_Player_Control>
+		
+		<AI_Player_Control> Hapes_Consortium, None </AI_Player_Control>		
+		<AI_Player_Control> Corporate_Sector, None </AI_Player_Control>		
+		
+		<Markup_Filename>Empire, DefaultGalacticHints </Markup_Filename>
+		<Markup_Filename>Rebel, DefaultGalacticHints </Markup_Filename>
+		<Markup_Filename>EmpireoftheHand, DefaultGalacticHints </Markup_Filename>
+		<Markup_Filename>Zsinj_Empire, DefaultGalacticHints </Markup_Filename>
+		<Markup_Filename>Greater_Maldrood, DefaultMaldroodHints </Markup_Filename>			
+		<Markup_Filename>Pentastar, DefaultGalacticHints </Markup_Filename>
+		<Markup_Filename>Eriadu_Authority, DefaultEriaduHints </Markup_Filename>				
+		<Markup_Filename>Corporate_Sector, DefaultGalacticHints </Markup_Filename>		
+		<Markup_Filename>Warlords, DefaultGalacticHints </Markup_Filename>			
+		<Markup_Filename>Hapes_Consortium, DefaultGalacticHints </Markup_Filename>
+		
+		
+		<Supports_Custom_Settings>True</Supports_Custom_Settings>
+		<Show_Completed_Tab>True</Show_Completed_Tab>
+
+		<!-- Win Conditions -->
+
+		<Human_Victory_Conditions>
+				Galactic_All_Planets_Controlled
+		</Human_Victory_Conditions>
+
+		<AI_Victory_Conditions>
+				Galactic_All_Planets_Controlled
+		</AI_Victory_Conditions>
+		
+				
+		
+				
+		<Starting_Credits> Empire,  2000 </Starting_Credits>
+		<Starting_Tech_Level> Empire, 1 </Starting_Tech_Level>
+		<Max_Tech_Level> Empire, 3 </Max_Tech_Level>
+		
+		<!-- Kalist Space Forces -->
+		<Starting_Forces> Empire, Kalist, Empire_Star_Base_2 </Starting_Forces>
+		<Starting_Forces> Empire, Kalist, Empire_Shipyard_Level_Three </Starting_Forces>
+		<Starting_Forces> Empire, Kalist, Whirlwind_Star_Destroyer </Starting_Forces>
+		<Starting_Forces> Empire, Kalist, Ilthmars_Fist </Starting_Forces>
+		<Starting_Forces> Empire, Kalist, Agamar_Meniscus </Starting_Forces>
+		<Starting_Forces> Empire, Kalist, Generic_Star_Destroyer </Starting_Forces>
+		<Starting_Forces> Empire, Kalist, Dreadnaught_Empire </Starting_Forces>
+		<Starting_Forces> Empire, Kalist, Carrack_Cruiser </Starting_Forces>
+		<Starting_Forces> Empire, Kalist, Lancer_Frigate </Starting_Forces>
+		<Starting_Forces> Empire, Kalist, Lancer_Frigate </Starting_Forces>
+		<Starting_Forces> Empire, Kalist, Lancer_Frigate </Starting_Forces>
+		<!-- Kalist Land Forces -->
+		<Starting_Forces> Empire, Kalist, Remnant_Capital </Starting_Forces>
+		<Starting_Forces> Empire, Kalist, Empire_MoffPalace </Starting_Forces>
+		<Starting_Forces> Empire, Kalist, E_Ground_Barracks </Starting_Forces>
+		<Starting_Forces> Empire, Kalist, E_Ground_Light_Vehicle_Factory </Starting_Forces>
+		<Starting_Forces> Empire, Kalist, Noils_Team </Starting_Forces>
+		<Starting_Forces> Empire, Kalist, Imperial_A5RX_Company </Starting_Forces>
+		<Starting_Forces> Empire, Kalist, Imperial_AT_PT_Company </Starting_Forces>
+		<Starting_Forces> Empire, Kalist, Imperial_AT_PT_Company </Starting_Forces>
+		<Starting_Forces> Empire, Kalist, Navy_Trooper_Squad </Starting_Forces>
+		<Starting_Forces> Empire, Kalist, Navy_Trooper_Squad </Starting_Forces>
+		<Starting_Forces> Empire, Kalist, Navy_Trooper_Squad </Starting_Forces>
+		<Starting_Forces> Empire, Kalist, Navy_Trooper_Squad </Starting_Forces>
+		<Starting_Forces> Empire, Kalist, Imperial_IDT_Group </Starting_Forces>
+		
+		<!-- Abregado Rae Space Forces -->
+		<Starting_Forces> Empire, Abregado_Rae, Empire_Star_Base_2 </Starting_Forces>
+		<Starting_Forces> Empire, Abregado_Rae, Empire_Shipyard_Level_Two </Starting_Forces>
+		<Starting_Forces> Empire, Abregado_Rae, Generic_Tradestation </Starting_Forces>
+		<Starting_Forces> Empire, Abregado_Rae, Generic_Star_Destroyer </Starting_Forces>
+		<Starting_Forces> Empire, Abregado_Rae, Generic_Victory_Destroyer </Starting_Forces>
+		<Starting_Forces> Empire, Abregado_Rae, Dreadnaught_Empire </Starting_Forces>
+		<Starting_Forces> Empire, Abregado_Rae, Carrack_Cruiser </Starting_Forces>
+		<Starting_Forces> Empire, Abregado_Rae, Lancer_Frigate </Starting_Forces>
+		<!-- Abregado Rae Land Forces -->
+		<Starting_Forces> Empire, Abregado_Rae, Empire_MoffPalace </Starting_Forces>
+		<Starting_Forces> Empire, Abregado_Rae, E_Ground_Barracks </Starting_Forces>
+		<Starting_Forces> Empire, Abregado_Rae, E_Ground_Heavy_Vehicle_Factory </Starting_Forces>
+		<Starting_Forces> Empire, Abregado_Rae, Imperial_S_1_Firehawke_Company </Starting_Forces>
+		<Starting_Forces> Empire, Abregado_Rae, Imperial_AT_PT_Company </Starting_Forces>
+		<Starting_Forces> Empire, Abregado_Rae, Imperial_Chariot_LAV_Company </Starting_Forces>
+		<Starting_Forces> Empire, Abregado_Rae, Imperial_Chariot_LAV_Company </Starting_Forces>
+		<Starting_Forces> Empire, Abregado_Rae, Army_Trooper_Squad </Starting_Forces>
+		<Starting_Forces> Empire, Abregado_Rae, Army_Trooper_Squad </Starting_Forces>
+		<Starting_Forces> Empire, Abregado_Rae, Army_Trooper_Squad </Starting_Forces>
+		<Starting_Forces> Empire, Abregado_Rae, Army_Trooper_Squad </Starting_Forces>
+		
+		<!-- Thomork Space Forces -->
+		<Starting_Forces> Empire, Thomork, Empire_Star_Base_2 </Starting_Forces>
+		<Starting_Forces> Empire, Thomork, Empire_Shipyard_Level_Four </Starting_Forces>
+		<Starting_Forces> Empire, Thomork, Generic_Star_Destroyer_Two </Starting_Forces>
+		<Starting_Forces> Empire, Thomork, Generic_Star_Destroyer </Starting_Forces>
+		<Starting_Forces> Empire, Thomork, Generic_Tector </Starting_Forces>
+		<Starting_Forces> Empire, Thomork, Lancer_Frigate </Starting_Forces>
+		<Starting_Forces> Empire, Thomork, Lancer_Frigate </Starting_Forces>
+		<!-- Thomork Land Forces -->
+		<Starting_Forces> Empire, Thomork, Empire_MoffPalace </Starting_Forces>
+		<Starting_Forces> Empire, Thomork, E_Ground_Barracks </Starting_Forces>
+		<Starting_Forces> Empire, Thomork, E_Ground_Light_Vehicle_Factory </Starting_Forces>
+		<Starting_Forces> Empire, Thomork, Imperial_AT_AT_Company </Starting_Forces>
+		<Starting_Forces> Empire, Thomork, Imperial_PX4_Company </Starting_Forces>
+		<Starting_Forces> Empire, Thomork, Imperial_S_1_Firehawke_Company </Starting_Forces>
+		<Starting_Forces> Empire, Thomork, Imperial_S_1_Firehawke_Company </Starting_Forces>
+		<Starting_Forces> Empire, Thomork, Imperial_Stormtrooper_Squad </Starting_Forces>
+		<Starting_Forces> Empire, Thomork, Imperial_Stormtrooper_Squad </Starting_Forces>
+		<Starting_Forces> Empire, Thomork, Imperial_Stormtrooper_Squad </Starting_Forces>
+		<Starting_Forces> Empire, Thomork, Imperial_IDT_Group </Starting_Forces>
+		
+		<Starting_Credits> Warlords,  5000 </Starting_Credits>
+		<Starting_Tech_Level> Warlords, 1 </Starting_Tech_Level>
+		<Max_Tech_Level> Warlords, 3 </Max_Tech_Level>
+		
+		<Starting_Forces> Warlords, Odik, Empire_Star_Base_3 </Starting_Forces>
+		<Starting_Forces> Warlords, Odik, Empire_Shipyard_Level_Three </Starting_Forces>
+		<Starting_Forces> Warlords, Odik, Secondary_Golan_One </Starting_Forces>
+		<Starting_Forces> Warlords, Odik, Generic_Star_Destroyer_Two </Starting_Forces>
+		<Starting_Forces> Warlords, Odik, Generic_Star_Destroyer_Two </Starting_Forces>
+		<Starting_Forces> Warlords, Odik, Generic_Procursator </Starting_Forces>
+		<Starting_Forces> Warlords, Odik, Generic_Procursator </Starting_Forces>
+		<Starting_Forces> Warlords, Odik, Generic_Gladiator </Starting_Forces>
+		<Starting_Forces> Warlords, Odik, Yzu_Constitution </Starting_Forces>
+		<Starting_Forces> Warlords, Odik, Escort_Carrier </Starting_Forces>
+		<Starting_Forces> Warlords, Odik, Raider_Corvette </Starting_Forces>
+		<Starting_Forces> Warlords, Odik, Raider_Corvette </Starting_Forces>
+		<Starting_Forces> Warlords, Odik, Raider_Corvette </Starting_Forces>
+		<Starting_Forces> Warlords, Odik, Raider_Corvette </Starting_Forces>
+		
+		<Starting_Forces> Warlords, Odik, Remnant_Capital </Starting_Forces>
+		<Starting_Forces> Warlords, Odik, Empire_MoffPalace </Starting_Forces>
+		<Starting_Forces> Warlords, Odik, E_Ground_Barracks </Starting_Forces>
+		<Starting_Forces> Warlords, Odik, E_Ground_Light_Vehicle_Factory </Starting_Forces>
+		<Starting_Forces> Warlords, Odik, Imperial_A5_Juggernaut_Company </Starting_Forces>
+		<Starting_Forces> Warlords, Odik, Gann_Team </Starting_Forces>
+		<Starting_Forces> Warlords, Odik, Imperial_A9_Fortress_Company </Starting_Forces>
+		<Starting_Forces> Warlords, Odik, Imperial_AT_ST_Company </Starting_Forces>
+		<Starting_Forces> Warlords, Odik, Imperial_AT_ST_Company </Starting_Forces>
+		<Starting_Forces> Warlords, Odik, Imperial_Stormtrooper_Squad </Starting_Forces>
+		<Starting_Forces> Warlords, Odik, Imperial_Stormtrooper_Squad </Starting_Forces>
+		<Starting_Forces> Warlords, Odik, Imperial_Stormtrooper_Squad </Starting_Forces>
+		<Starting_Forces> Warlords, Odik, Imperial_Stormtrooper_Squad </Starting_Forces>
+		
+		<Starting_Forces> Warlords, Prakith, Empire_Star_Base_2 </Starting_Forces>
+		<Starting_Forces> Warlords, Prakith, Empire_Shipyard_Level_Two </Starting_Forces>
+		<Starting_Forces> Warlords, Prakith, Generic_Star_Destroyer_Two </Starting_Forces>
+		<Starting_Forces> Warlords, Prakith, Generic_Star_Destroyer </Starting_Forces>
+		<Starting_Forces> Warlords, Prakith, Generic_Procursator </Starting_Forces>
+		<Starting_Forces> Warlords, Prakith, Generic_Acclamator_Assault_Ship_II </Starting_Forces>
+		<Starting_Forces> Warlords, Prakith, Nebulon_B_Zsinj </Starting_Forces>
+		<Starting_Forces> Warlords, Prakith, Nebulon_B_Zsinj </Starting_Forces>
+		<Starting_Forces> Warlords, Prakith, Nebulon_B_Zsinj </Starting_Forces>
+		<Starting_Forces> Warlords, Prakith, Strike_Cruiser </Starting_Forces>
+		<Starting_Forces> Warlords, Prakith, Strike_Cruiser </Starting_Forces>
+		<Starting_Forces> Warlords, Prakith, Raider_Corvette </Starting_Forces>
+		<Starting_Forces> Warlords, Prakith, Raider_Corvette </Starting_Forces>
+		
+		<Starting_Forces> Warlords, Prakith, Empire_MoffPalace </Starting_Forces>
+		<Starting_Forces> Warlords, Prakith, E_Ground_Barracks </Starting_Forces>
+		<Starting_Forces> Warlords, Prakith, E_Ground_Light_Vehicle_Factory </Starting_Forces>
+		<Starting_Forces> Warlords, Prakith, Imperial_AT_TE_Walker_Company </Starting_Forces>
+		<Starting_Forces> Warlords, Prakith, Imperial_AT_PT_Company </Starting_Forces>
+		<Starting_Forces> Warlords, Prakith, Imperial_AT_PT_Company </Starting_Forces>
+		<Starting_Forces> Warlords, Prakith, Imperial_Repulsor_Scout_Company </Starting_Forces>
+		<Starting_Forces> Warlords, Prakith, Imperial_Repulsor_Scout_Company </Starting_Forces>
+		<Starting_Forces> Warlords, Prakith, Imperial_Dark_Jedi_Squad </Starting_Forces>
+		<Starting_Forces> Warlords, Prakith, Imperial_Dark_Jedi_Squad </Starting_Forces>
+		<Starting_Forces> Warlords, Prakith, Imperial_Stormtrooper_Squad </Starting_Forces>
+		<Starting_Forces> Warlords, Prakith, Imperial_Stormtrooper_Squad </Starting_Forces>
+		<Starting_Forces> Warlords, Prakith, Foga_Brill_Team </Starting_Forces>
+		
+		<Starting_Forces> Warlords, Cal_Seti, Empire_Star_Base_2 </Starting_Forces>
+		<Starting_Forces> Warlords, Cal_Seti, Empire_Shipyard_Level_Two </Starting_Forces>
+		<Starting_Forces> Warlords, Cal_Seti, Secondary_Golan_Two </Starting_Forces>
+		<Starting_Forces> Warlords, Cal_Seti, Praji_Secutor </Starting_Forces>
+		<Starting_Forces> Warlords, Cal_Seti, Generic_Star_Destroyer </Starting_Forces>
+		<Starting_Forces> Warlords, Cal_Seti, Generic_Procursator </Starting_Forces>
+		<Starting_Forces> Warlords, Cal_Seti, Generic_Acclamator_Assault_Ship_II </Starting_Forces>
+		<Starting_Forces> Warlords, Cal_Seti, Generic_Acclamator_Assault_Ship_II </Starting_Forces>
+		<Starting_Forces> Warlords, Cal_Seti, Generic_Gladiator </Starting_Forces>
+		<Starting_Forces> Warlords, Cal_Seti, Generic_Gladiator </Starting_Forces>
+		<Starting_Forces> Warlords, Cal_Seti, Raider_Corvette </Starting_Forces>
+		<Starting_Forces> Warlords, Cal_Seti, Raider_Corvette </Starting_Forces>
+		<Starting_Forces> Warlords, Cal_Seti, Raider_Corvette </Starting_Forces>
+		
+		<Starting_Forces> Warlords, Cal_Seti, Empire_MoffPalace </Starting_Forces>
+		<Starting_Forces> Warlords, Cal_Seti, E_Ground_Light_Vehicle_Factory </Starting_Forces>
+		<Starting_Forces> Warlords, Cal_Seti, Imperial_TX130_Company </Starting_Forces>
+		<Starting_Forces> Warlords, Cal_Seti, Imperial_TX130_Company </Starting_Forces>
+		<Starting_Forces> Warlords, Cal_Seti, Imperial_TX130_Company </Starting_Forces>
+		<Starting_Forces> Warlords, Cal_Seti, Imperial_Repulsor_Scout_Company </Starting_Forces>
+		<Starting_Forces> Warlords, Cal_Seti, Shargael_Team </Starting_Forces>
+		<Starting_Forces> Warlords, Cal_Seti, Imperial_TIE_Mauler_Company </Starting_Forces>
+		<Starting_Forces> Warlords, Cal_Seti, Skyhopper_Group </Starting_Forces>
+		<Starting_Forces> Warlords, Cal_Seti, Army_Trooper_Squad </Starting_Forces>
+		<Starting_Forces> Warlords, Cal_Seti, Army_Trooper_Squad </Starting_Forces>
+		<Starting_Forces> Warlords, Cal_Seti, Imperial_Stormtrooper_Squad </Starting_Forces>
+		
+		<Starting_Credits> Independent_Forces,  5000 </Starting_Credits>
+		<Starting_Tech_Level> Independent_Forces, 1 </Starting_Tech_Level>
+		<Max_Tech_Level> Independent_Forces, 3 </Max_Tech_Level>
+		
+		<!-- Galantos starts neutral, but should be gobbled up by Gann quickly -->
+		
+		<Starting_Forces> Independent_Forces, Galantos, Police_Responder_Team </Starting_Forces>
+		<Starting_Forces> Independent_Forces, Galantos, Police_Responder_Team </Starting_Forces>
+		<Starting_Forces> Independent_Forces, Galantos, Mercenary_Team </Starting_Forces>
+		<Starting_Forces> Independent_Forces, Galantos, Heavy_Scavenger_Team </Starting_Forces> <!-- Black Hammer Pirates or something -->
+		
+		<Starting_Credits> Eriadu_Authority,  2000 </Starting_Credits>
+		<Starting_Tech_Level> Eriadu_Authority, 1 </Starting_Tech_Level>
+		<Max_Tech_Level> Eriadu_Authority, 3 </Max_Tech_Level>
+		
+		<Starting_Forces> Eriadu_Authority, Kampe, Empire_Star_Base_2 </Starting_Forces>
+		<Starting_Forces> Eriadu_Authority, Kampe, Eriadu_Shipyard_Level_Three </Starting_Forces>
+		<Starting_Forces> Eriadu_Authority, Kampe, Generic_Praetor </Starting_Forces>
+		<Starting_Forces> Eriadu_Authority, Kampe, Delvardus_Brilliant </Starting_Forces>
+		<Starting_Forces> Eriadu_Authority, Kampe, Vindicator_Cruiser </Starting_Forces>
+		<Starting_Forces> Eriadu_Authority, Kampe, Vindicator_Cruiser </Starting_Forces>
+		<Starting_Forces> Eriadu_Authority, Kampe, Eidolon </Starting_Forces>
+		<Starting_Forces> Eriadu_Authority, Kampe, IPV1_SYSTEM_PATROL_CRAFT </Starting_Forces>
+		
+		<Starting_Forces> Eriadu_Authority, Kampe, Eriadu_Capital </Starting_Forces>
+		<Starting_Forces> Eriadu_Authority, Kampe, Eriadu_MoffPalace </Starting_Forces>
+		<Starting_Forces> Eriadu_Authority, Kampe, A_Ground_Barracks </Starting_Forces>
+		<Starting_Forces> Eriadu_Authority, Kampe, A_Ground_Light_Vehicle_Factory </Starting_Forces>
+		<Starting_Forces> Eriadu_Authority, Kampe, Imperial_AT_AT_Company </Starting_Forces>
+		<Starting_Forces> Eriadu_Authority, Kampe, Imperial_TRMB_Company </Starting_Forces>
+		<Starting_Forces> Eriadu_Authority, Kampe, Imperial_1H_Tank_Company </Starting_Forces>
+		<Starting_Forces> Eriadu_Authority, Kampe, Imperial_1L_Tank_Company </Starting_Forces>
+		<Starting_Forces> Eriadu_Authority, Kampe, Imperial_1L_Tank_Company </Starting_Forces>
+		<Starting_Forces> Eriadu_Authority, Kampe, Army_Trooper_Squad </Starting_Forces>
+		<Starting_Forces> Eriadu_Authority, Kampe, Army_Trooper_Squad </Starting_Forces>
+		
+		<Starting_Forces> Eriadu_Authority, Empress_Teta, Empire_Star_Base_2 </Starting_Forces>
+		<Starting_Forces> Eriadu_Authority, Empress_Teta, Eriadu_Shipyard_Level_Two </Starting_Forces>
+		<Starting_Forces> Eriadu_Authority, Empress_Teta, GENERIC_IMPERIAL_I_FRIGATE </Starting_Forces>
+		<Starting_Forces> Eriadu_Authority, Empress_Teta, Victory_II_Frigate </Starting_Forces>
+		
+		<Starting_Forces> Eriadu_Authority, Empress_Teta, Eriadu_MoffPalace </Starting_Forces>
+		<Starting_Forces> Eriadu_Authority, Empress_Teta, A_Ground_Barracks </Starting_Forces>
+		<Starting_Forces> Eriadu_Authority, Empress_Teta, A_Ground_Barracks </Starting_Forces>
+		<Starting_Forces> Eriadu_Authority, Empress_Teta, A_Ground_Barracks </Starting_Forces>
+		<Starting_Forces> Eriadu_Authority, Empress_Teta, Imperial_1L_Tank_Company </Starting_Forces>
+		<Starting_Forces> Eriadu_Authority, Empress_Teta, Imperial_AT_MP_Company </Starting_Forces>
+		<Starting_Forces> Eriadu_Authority, Empress_Teta, Imperial_Stormtrooper_Squad </Starting_Forces>
+		<Starting_Forces> Eriadu_Authority, Empress_Teta, Imperial_Stormtrooper_Squad </Starting_Forces>
+		<Starting_Forces> Eriadu_Authority, Empress_Teta, Army_Trooper_Squad </Starting_Forces>
+		<Starting_Forces> Eriadu_Authority, Empress_Teta, Army_Trooper_Squad </Starting_Forces>
+		<Starting_Forces> Eriadu_Authority, Empress_Teta, Army_Trooper_Squad </Starting_Forces>
+		
+		<Starting_Forces> Eriadu_Authority, Kaikielius, Empire_Star_Base_2 </Starting_Forces>
+		<Starting_Forces> Eriadu_Authority, Kaikielius, Eriadu_Shipyard_Level_One </Starting_Forces>
+		<Starting_Forces> Eriadu_Authority, Kaikielius, Generic_Victory_Destroyer_Two </Starting_Forces>
+		
+		<Starting_Forces> Eriadu_Authority, Kaikielius, Eriadu_MoffPalace </Starting_Forces>
+		<Starting_Forces> Eriadu_Authority, Kaikielius, A_Ground_Barracks </Starting_Forces>
+		<Starting_Forces> Eriadu_Authority, Kaikielius, A_Ground_Light_Vehicle_Factory </Starting_Forces>
+		<Starting_Forces> Eriadu_Authority, Kaikielius, Imperial_1M_Tank_Company </Starting_Forces>
+		<Starting_Forces> Eriadu_Authority, Kaikielius, Imperial_1L_Tank_Company </Starting_Forces>
+		<Starting_Forces> Eriadu_Authority, Kaikielius, Imperial_AT_MP_Company </Starting_Forces>
+		<Starting_Forces> Eriadu_Authority, Kaikielius, Army_Trooper_Squad </Starting_Forces>
+		<Starting_Forces> Eriadu_Authority, Kaikielius, Army_Trooper_Squad </Starting_Forces>
+		
+		<Starting_Forces> Eriadu_Authority, Foerost, Empire_Star_Base_2 </Starting_Forces>
+		<Starting_Forces> Eriadu_Authority, Foerost, Eriadu_Shipyard_Level_Four </Starting_Forces>
+		<Starting_Forces> Eriadu_Authority, Foerost, Victory_II_Frigate </Starting_Forces>
+		
+		<Starting_Forces> Eriadu_Authority, Foerost, Eriadu_MoffPalace </Starting_Forces>
+		<Starting_Forces> Eriadu_Authority, Foerost, A_Ground_Light_Vehicle_Factory </Starting_Forces>
+		<Starting_Forces> Eriadu_Authority, Foerost, A_Ground_Heavy_Vehicle_Factory </Starting_Forces>
+		<Starting_Forces> Eriadu_Authority, Foerost, Imperial_1M_Tank_Company </Starting_Forces>
+		<Starting_Forces> Eriadu_Authority, Foerost, Imperial_Light_Artillery_Company </Starting_Forces>
+		<Starting_Forces> Eriadu_Authority, Foerost, Imperial_TRMB_Company </Starting_Forces>
+		<Starting_Forces> Eriadu_Authority, Foerost, Army_Trooper_Squad </Starting_Forces>
+		<Starting_Forces> Eriadu_Authority, Foerost, Army_Trooper_Squad </Starting_Forces>
+		<Starting_Forces> Eriadu_Authority, Foerost, Army_Trooper_Squad </Starting_Forces>
+		
+		<Starting_Forces> Eriadu_Authority, Tsoss, Empire_Star_Base_2 </Starting_Forces>
+		<Starting_Forces> Eriadu_Authority, Tsoss, Eriadu_Shipyard_Level_Two </Starting_Forces>
+		<Starting_Forces> Eriadu_Authority, Tsoss, Arquitens </Starting_Forces>
+		<Starting_Forces> Eriadu_Authority, Tsoss, Arquitens </Starting_Forces>
+		<Starting_Forces> Eriadu_Authority, Tsoss, Arquitens </Starting_Forces>
+		
+		
+		<Starting_Credits> Greater_Maldrood,  2000 </Starting_Credits>
+		<Starting_Tech_Level> Greater_Maldrood, 1 </Starting_Tech_Level>
+		<Max_Tech_Level> Greater_Maldrood, 3 </Max_Tech_Level>
+		
+		<Starting_Forces> Greater_Maldrood, Hakassi, Empire_Star_Base_2 </Starting_Forces>
+		<Starting_Forces> Greater_Maldrood, Hakassi, Greater_Maldrood_Shipyard_Level_Three </Starting_Forces>
+		
+		<Starting_Forces> Greater_Maldrood, Hakassi, Lancet_Kosh </Starting_Forces>
+		<Starting_Forces> Greater_Maldrood, Hakassi, Generic_Star_Destroyer </Starting_Forces>
+		<Starting_Forces> Greater_Maldrood, Hakassi, Generic_Procursator </Starting_Forces>
+		<Starting_Forces> Greater_Maldrood, Hakassi, Strike_Cruiser </Starting_Forces>
+		<Starting_Forces> Greater_Maldrood, Hakassi, Strike_Cruiser </Starting_Forces>
+		<Starting_Forces> Greater_Maldrood, Hakassi, Vigil </Starting_Forces>
+		<Starting_Forces> Greater_Maldrood, Hakassi, Customs_Corvette </Starting_Forces>
+		<Starting_Forces> Greater_Maldrood, Hakassi, Customs_Corvette </Starting_Forces>
+		
+		<Starting_Forces> Greater_Maldrood, Hakassi, Maldrood_Capital </Starting_Forces>
+		<Starting_Forces> Greater_Maldrood, Hakassi, Maldrood_MoffPalace </Starting_Forces>
+		<Starting_Forces> Greater_Maldrood, Hakassi, T_Ground_Barracks </Starting_Forces>
+		<Starting_Forces> Greater_Maldrood, Hakassi, T_Ground_Light_Vehicle_Factory </Starting_Forces>
+		<Starting_Forces> Greater_Maldrood, Hakassi, Imperial_A5_Juggernaut_Company </Starting_Forces>
+		<Starting_Forces> Greater_Maldrood, Hakassi, Imperial_SA5_Company </Starting_Forces>
+		<Starting_Forces> Greater_Maldrood, Hakassi, Imperial_SA5_Company </Starting_Forces>
+		<Starting_Forces> Greater_Maldrood, Hakassi, Imperial_SA5_Company </Starting_Forces>
+		<Starting_Forces> Greater_Maldrood, Hakassi, Imperial_MAAT_Group </Starting_Forces>
+		<Starting_Forces> Greater_Maldrood, Hakassi, Imperial_MAAT_Group </Starting_Forces>
+		<Starting_Forces> Greater_Maldrood, Hakassi, Imperial_INT4_Group </Starting_Forces>
+		<Starting_Forces> Greater_Maldrood, Hakassi, Imperial_Navy_Commando_Squad </Starting_Forces>
+		<Starting_Forces> Greater_Maldrood, Hakassi, Imperial_Navy_Commando_Squad </Starting_Forces>
+		<Starting_Forces> Greater_Maldrood, Hakassi, Imperial_74Z_Bike_Company </Starting_Forces>
+		
+		<Starting_Forces> Greater_Maldrood, Ojom, Empire_Star_Base_2 </Starting_Forces>
+		<Starting_Forces> Greater_Maldrood, Ojom, Greater_Maldrood_Shipyard_Level_One </Starting_Forces>
+		
+		<Starting_Forces> Greater_Maldrood, Ojom, Generic_Star_Destroyer </Starting_Forces>
+		<Starting_Forces> Greater_Maldrood, Ojom, Strike_Cruiser </Starting_Forces>
+		<Starting_Forces> Greater_Maldrood, Ojom, Strike_Cruiser </Starting_Forces>
+		<Starting_Forces> Greater_Maldrood, Ojom, Customs_Corvette </Starting_Forces>
+		
+		<Starting_Forces> Greater_Maldrood, Ojom, Maldrood_MoffPalace </Starting_Forces>
+		<Starting_Forces> Greater_Maldrood, Ojom, T_Ground_Light_Vehicle_Factory </Starting_Forces>
+		<Starting_Forces> Greater_Maldrood, Ojom, T_Ground_Light_Vehicle_Factory </Starting_Forces>
+		<Starting_Forces> Greater_Maldrood, Ojom, Imperial_SA5_Company </Starting_Forces>
+		<Starting_Forces> Greater_Maldrood, Ojom, Imperial_SA5_Company </Starting_Forces>
+		<Starting_Forces> Greater_Maldrood, Ojom, Imperial_AT_RT_Company </Starting_Forces>
+		<Starting_Forces> Greater_Maldrood, Ojom, Imperial_AT_RT_Company </Starting_Forces>
+		<Starting_Forces> Greater_Maldrood, Ojom, Army_Trooper_Squad </Starting_Forces>
+		<Starting_Forces> Greater_Maldrood, Ojom, Army_Trooper_Squad </Starting_Forces>
+		<Starting_Forces> Greater_Maldrood, Ojom, Army_Trooper_Squad </Starting_Forces>
+		<Starting_Forces> Greater_Maldrood, Ojom, Imperial_74Z_Bike_Company </Starting_Forces>
+		<Starting_Forces> Greater_Maldrood, Ojom, Imperial_74Z_Bike_Company </Starting_Forces>
+		
+		<Starting_Forces> Greater_Maldrood, Ebaq, Empire_Star_Base_2 </Starting_Forces>
+		<Starting_Forces> Greater_Maldrood, Ebaq, Greater_Maldrood_Shipyard_Level_Two </Starting_Forces>
+		
+		<Starting_Forces> Greater_Maldrood, Ebaq, Generic_Procursator </Starting_Forces>
+		<Starting_Forces> Greater_Maldrood, Ebaq, Generic_Victory_Destroyer </Starting_Forces>
+		<Starting_Forces> Greater_Maldrood, Ebaq, Strike_Cruiser </Starting_Forces>
+		<Starting_Forces> Greater_Maldrood, Ebaq, Generic_Imperial_II_Frigate </Starting_Forces>
+		<Starting_Forces> Greater_Maldrood, Ebaq, Generic_Pursuit </Starting_Forces>
+		
+		<Starting_Forces> Greater_Maldrood, Ebaq, Maldrood_MoffPalace </Starting_Forces>
+		<Starting_Forces> Greater_Maldrood, Ebaq, T_Ground_Barracks </Starting_Forces>
+		<Starting_Forces> Greater_Maldrood, Ebaq, Imperial_2M_Company </Starting_Forces>
+		<Starting_Forces> Greater_Maldrood, Ebaq, Imperial_RTT_Company </Starting_Forces>
+		<Starting_Forces> Greater_Maldrood, Ebaq, Imperial_Missile_Artillery_Company </Starting_Forces>
+		<Starting_Forces> Greater_Maldrood, Ebaq, Imperial_Navy_Commando_Squad </Starting_Forces>
+		<Starting_Forces> Greater_Maldrood, Ebaq, Imperial_Navy_Commando_Squad </Starting_Forces>
+		<Starting_Forces> Greater_Maldrood, Ebaq, Imperial_Navy_Commando_Squad </Starting_Forces>
+		
+		<Starting_Forces> Greater_Maldrood, Columus, Empire_Star_Base_2 </Starting_Forces>
+		<Starting_Forces> Greater_Maldrood, Columus, Greater_Maldrood_Shipyard_Level_One </Starting_Forces>
+		
+		<Starting_Forces> Greater_Maldrood, Columus, Tavira_Invidious </Starting_Forces>
+		<Starting_Forces> Greater_Maldrood, Columus, Eidolon </Starting_Forces>
+		<Starting_Forces> Greater_Maldrood, Columus, Vigil </Starting_Forces>
+		<Starting_Forces> Greater_Maldrood, Columus, Customs_Corvette </Starting_Forces>
+		
+		<Starting_Forces> Greater_Maldrood, Columus, Maldrood_MoffPalace </Starting_Forces>
+		<Starting_Forces> Greater_Maldrood, Columus, T_Ground_Barracks </Starting_Forces>
+		<Starting_Forces> Greater_Maldrood, Columus, T_Ground_Light_Vehicle_Factory </Starting_Forces>
+		<Starting_Forces> Greater_Maldrood, Columus, Imperial_MAAT_Group </Starting_Forces>
+		<Starting_Forces> Greater_Maldrood, Columus, Imperial_INT4_Group </Starting_Forces>
+		<Starting_Forces> Greater_Maldrood, Columus, Imperial_INT4_Group </Starting_Forces>
+		<Starting_Forces> Greater_Maldrood, Columus, Imperial_ISP_Company </Starting_Forces>
+		<Starting_Forces> Greater_Maldrood, Columus, Imperial_ISP_Company </Starting_Forces>
+		<Starting_Forces> Greater_Maldrood, Columus, Army_Trooper_Squad </Starting_Forces>
+		<Starting_Forces> Greater_Maldrood, Columus, Army_Trooper_Squad </Starting_Forces>
+	</Campaign>
+
+</Campaigns>

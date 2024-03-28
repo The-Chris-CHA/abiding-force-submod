@@ -1,0 +1,472 @@
+<?xml version="1.0"?>
+<Complete_Units_Ground_War>
+
+
+	<GroundWarFormation Name="UNIT_GW_ZSINJ_AAA">
+		<Variant_Of_Existing_Type>GroundWar_Spawner_Unit</Variant_Of_Existing_Type>
+		<Affiliation>Zsinj_Empire</Affiliation>
+		
+		<Text_ID>GW_ZSINJ_AAA</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_GROUP_SPAWNER</Encyclopedia_Unit_Class>
+		
+		<Land_Model_Name>GROUNDWAR_Zsinj.alo</Land_Model_Name>
+		<Icon_Name>i_button_army_trooper.tga</Icon_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Lua_Script></Lua_Script>
+		<Tech_Level>99</Tech_Level>
+		
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_Imperial_Armytrooper_Heavy_Team_Deployed, 2</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_Imperial_Armytrooper_Assault_Team_Deployed, 3</Starting_Spawned_Units_Tech_0>
+
+
+			
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>1</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>1</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->
+
+	</GroundWarFormation>
+	
+	<GroundWarFormation Name="UNIT_GW_ZSINJ_AAB">
+		<Variant_Of_Existing_Type>GroundWar_Spawner_Unit</Variant_Of_Existing_Type>
+		<Affiliation>Zsinj_Empire</Affiliation>
+		
+		<Text_ID>GW_ZSINJ_AAB</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_GROUP_SPAWNER</Encyclopedia_Unit_Class>
+		
+		<Land_Model_Name>GROUNDWAR_Zsinj.alo</Land_Model_Name>
+		<Icon_Name>i_button_army_trooper_heavy.tga</Icon_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Lua_Script></Lua_Script>
+		<Tech_Level>99</Tech_Level>
+		
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_Imperial_Armytrooper_Assault_Team_Deployed, 2</Starting_Spawned_Units_Tech_0>
+
+
+			
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>1</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>1</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->
+
+	</GroundWarFormation>
+	
+	<GroundWarFormation Name="UNIT_GW_ZSINJ_AAC">
+		<Variant_Of_Existing_Type>GroundWar_Spawner_Unit</Variant_Of_Existing_Type>
+		<Affiliation>Zsinj_Empire</Affiliation>
+		
+		<Text_ID>GW_ZSINJ_AAC</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_GROUP_SPAWNER</Encyclopedia_Unit_Class>
+		
+		<Land_Model_Name>GROUNDWAR_Zsinj.alo</Land_Model_Name>
+		<Icon_Name>i_button_scout_trooper_raptor.tga</Icon_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Lua_Script></Lua_Script>
+		<Tech_Level>99</Tech_Level>
+		
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_Raptor_Scout_Trooper, 2</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_PX10, 4</Starting_Spawned_Units_Tech_0>
+
+
+			
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>1</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>1</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->
+
+	</GroundWarFormation>
+
+	<GroundWarFormation Name="UNIT_GW_ZSINJ_AAD">
+		<Variant_Of_Existing_Type>GroundWar_Spawner_Unit</Variant_Of_Existing_Type>
+		<Affiliation>Zsinj_Empire</Affiliation>
+		
+		<Text_ID>GW_ZSINJ_AAD</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_GROUP_SPAWNER</Encyclopedia_Unit_Class>
+		
+		<Land_Model_Name>GROUNDWAR_Zsinj.alo</Land_Model_Name>
+		<Icon_Name>i_button_compforce_assault.tga</Icon_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Lua_Script></Lua_Script>
+		<Tech_Level>99</Tech_Level>
+		
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_Imperial_Compforce_Assault_Team_Deployed, 4</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_EVO_Trooper_Team_Deployed, 2</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_Imperial_Incinerator_Stormtrooper_Squad, 1</Starting_Spawned_Units_Tech_0>
+
+
+			
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>1</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>1</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->
+
+	</GroundWarFormation>
+
+	<GroundWarFormation Name="UNIT_GW_ZSINJ_AAE">
+		<Variant_Of_Existing_Type>GroundWar_Spawner_Unit</Variant_Of_Existing_Type>
+		<Affiliation>Zsinj_Empire</Affiliation>
+		
+		<Text_ID>GW_ZSINJ_AAE</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_GROUP_SPAWNER</Encyclopedia_Unit_Class>
+		
+		<Land_Model_Name>GROUNDWAR_Zsinj.alo</Land_Model_Name>
+		<Icon_Name>i_button_army_trooper_support.tga</Icon_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Lua_Script></Lua_Script>
+		<Tech_Level>99</Tech_Level>
+		
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_Imperial_Army_Guard_Team_Deployed, 3</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_Imperial_Medic_Armytrooper_Squad, 1</Starting_Spawned_Units_Tech_0>
+
+
+			
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>1</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>1</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->
+
+	</GroundWarFormation>
+	
+	<GroundWarFormation Name="UNIT_GW_ZSINJ_AAF">
+		<Variant_Of_Existing_Type>GroundWar_Spawner_Unit</Variant_Of_Existing_Type>
+		<Affiliation>Zsinj_Empire</Affiliation>
+		
+		<Text_ID>GW_ZSINJ_AAF</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_GROUP_SPAWNER</Encyclopedia_Unit_Class>
+		
+		<Land_Model_Name>GROUNDWAR_Zsinj.alo</Land_Model_Name>
+		<Icon_Name>i_button_repulsor_scout.tga</Icon_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Lua_Script></Lua_Script>
+		<Tech_Level>99</Tech_Level>
+		
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_Repulsor_Scout, 4</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_Chariot_LAV_Combat, 1</Starting_Spawned_Units_Tech_0>
+
+
+			
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>1</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>1</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->
+
+	</GroundWarFormation>
+	
+	<GroundWarFormation Name="UNIT_GW_ZSINJ_AAG">
+		<Variant_Of_Existing_Type>GroundWar_Spawner_Unit</Variant_Of_Existing_Type>
+		<Affiliation>Zsinj_Empire</Affiliation>
+		
+		<Text_ID>GW_ZSINJ_AAG</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_GROUP_SPAWNER</Encyclopedia_Unit_Class>
+		
+		<Land_Model_Name>GROUNDWAR_Zsinj.alo</Land_Model_Name>
+		<Icon_Name>i_button_ev_px10.tga</Icon_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Lua_Script></Lua_Script>
+		<Tech_Level>99</Tech_Level>
+		
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_Imperial_ULAV, 2</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_PX10, 6</Starting_Spawned_Units_Tech_0>
+		
+
+			
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>1</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>1</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->
+
+	</GroundWarFormation>
+
+	<GroundWarFormation Name="UNIT_GW_ZSINJ_AAH">
+		<Variant_Of_Existing_Type>GroundWar_Spawner_Unit</Variant_Of_Existing_Type>
+		<Affiliation>Zsinj_Empire</Affiliation>
+		
+		<Text_ID>GW_ZSINJ_AAH</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_GROUP_SPAWNER</Encyclopedia_Unit_Class>
+		
+		<Land_Model_Name>GROUNDWAR_Zsinj.alo</Land_Model_Name>
+		<Icon_Name>i_button_compforce_observe.tga</Icon_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Lua_Script></Lua_Script>
+		<Tech_Level>99</Tech_Level>
+		
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_Chariot_LAV_Combat, 1</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_Imperial_Compforce_Observe_Team_Deployed, 1</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_PX10, 5</Starting_Spawned_Units_Tech_0>
+
+
+			
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>1</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>1</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->
+
+	</GroundWarFormation>
+
+	<GroundWarFormation Name="UNIT_GW_ZSINJ_AAI">
+		<Variant_Of_Existing_Type>GroundWar_Spawner_Unit</Variant_Of_Existing_Type>
+		<Affiliation>Zsinj_Empire</Affiliation>
+		
+		<Text_ID>GW_ZSINJ_AAI</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_GROUP_SPAWNER</Encyclopedia_Unit_Class>
+		
+		<Land_Model_Name>GROUNDWAR_Zsinj.alo</Land_Model_Name>
+		<Icon_Name>i_button_raptor_trooper.tga</Icon_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Lua_Script></Lua_Script>
+		<Tech_Level>99</Tech_Level>
+		
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_Zsinj_Raptor_Heavy_Team_Deployed, 4</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_Zsinj_Raptor_Medic_Squad, 1</Starting_Spawned_Units_Tech_0>
+	
+			
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>1</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>1</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->
+
+	</GroundWarFormation>
+
+	
+	<GroundWarFormation Name="UNIT_GW_ZSINJ_AAJ">
+		<Variant_Of_Existing_Type>GroundWar_Spawner_Unit</Variant_Of_Existing_Type>
+		<Affiliation>Zsinj_Empire</Affiliation>
+		
+		<Text_ID>GW_ZSINJ_AAJ</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_GROUP_SPAWNER</Encyclopedia_Unit_Class>
+		
+		<Land_Model_Name>GROUNDWAR_Zsinj.alo</Land_Model_Name>
+		<Icon_Name>i_button_ataa.tga</Icon_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Lua_Script></Lua_Script>
+		<Tech_Level>99</Tech_Level>
+		
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_AT_AA_Walker, 1</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_PX10, 2</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_Chariot_LAV_Combat, 1</Starting_Spawned_Units_Tech_0>
+
+
+			
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>1</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>1</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->
+
+	</GroundWarFormation>
+	
+	<GroundWarFormation Name="UNIT_GW_ZSINJ_AAK">
+		<Variant_Of_Existing_Type>GroundWar_Spawner_Unit</Variant_Of_Existing_Type>
+		<Affiliation>Zsinj_Empire</Affiliation>
+		
+		<Text_ID>GW_ZSINJ_AAK</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_GROUP_SPAWNER</Encyclopedia_Unit_Class>
+		
+		<Land_Model_Name>GROUNDWAR_Zsinj.alo</Land_Model_Name>
+		<Icon_Name>I_BUTTON_ROGUESQUADRONAPC.tga</Icon_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Lua_Script></Lua_Script>
+		<Tech_Level>99</Tech_Level>
+		
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_Imperial_APC, 2</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_Imperial_Army_Guard_Team_Deployed,2</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_Imperial_Armytrooper_Assault_Team_Deployed, 6</Starting_Spawned_Units_Tech_0>
+		
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>1</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>1</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->
+
+	</GroundWarFormation>
+	
+	<GroundWarFormation Name="UNIT_GW_ZSINJ_AAL">
+		<Variant_Of_Existing_Type>GroundWar_Spawner_Unit</Variant_Of_Existing_Type>
+		<Affiliation>Zsinj_Empire</Affiliation>
+		
+		<Text_ID>GW_ZSINJ_AAL</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_GROUP_SPAWNER</Encyclopedia_Unit_Class>
+		
+		<Land_Model_Name>GROUNDWAR_Zsinj.alo</Land_Model_Name>
+		<Icon_Name>i_button_EVO_Trooper.tga</Icon_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Lua_Script></Lua_Script>
+		<Tech_Level>99</Tech_Level>
+		
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_IDT, 3</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_EVO_Trooper_Team_Deployed, 2</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_Zsinj_Raptor_Heavy_Team_Deployed, 6</Starting_Spawned_Units_Tech_0>
+
+
+			
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>1</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>1</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->
+
+	</GroundWarFormation>
+	
+	<GroundWarFormation Name="UNIT_GW_ZSINJ_AAM">
+		<Variant_Of_Existing_Type>GroundWar_Spawner_Unit</Variant_Of_Existing_Type>
+		<Affiliation>Zsinj_Empire</Affiliation>
+		
+		<Text_ID>GW_ZSINJ_AAM</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_GROUP_SPAWNER</Encyclopedia_Unit_Class>
+		
+		<Land_Model_Name>GROUNDWAR_Zsinj.alo</Land_Model_Name>
+		<Icon_Name>i_button_spma_t.tga</Icon_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Lua_Script></Lua_Script>
+		<Tech_Level>99</Tech_Level>
+		
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_SPMAT_Walker, 1</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_Chariot_LAV_Combat, 1</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_Imperial_Army_Guard_Team_Deployed, 3</Starting_Spawned_Units_Tech_0>
+		
+		
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>1</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>1</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->
+
+	</GroundWarFormation>
+	
+	<GroundWarFormation Name="UNIT_GW_ZSINJ_AAN">
+		<Variant_Of_Existing_Type>GroundWar_Spawner_Unit</Variant_Of_Existing_Type>
+		<Affiliation>Zsinj_Empire</Affiliation>
+		
+		<Text_ID>GW_ZSINJ_AAN</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_GROUP_SPAWNER</Encyclopedia_Unit_Class>
+		
+		<Land_Model_Name>GROUNDWAR_Zsinj.alo</Land_Model_Name>
+		<Icon_Name>I_BUTTON_ATAP.tga</Icon_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Lua_Script></Lua_Script>
+		<Tech_Level>99</Tech_Level>
+		
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_AT_AP_Walker, 3</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_Imperial_IntSec_Operator_Sniper_Team_Deployed, 3</Starting_Spawned_Units_Tech_0>
+		
+		
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>1</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>1</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->
+
+	</GroundWarFormation>
+	
+	<GroundWarFormation Name="UNIT_GW_ZSINJ_AAO">
+		<Variant_Of_Existing_Type>GroundWar_Spawner_Unit</Variant_Of_Existing_Type>
+		<Affiliation>Zsinj_Empire</Affiliation>
+		
+		<Text_ID>GW_ZSINJ_AAO</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_GROUP_SPAWNER</Encyclopedia_Unit_Class>
+		
+		<Land_Model_Name>GROUNDWAR_Zsinj.alo</Land_Model_Name>
+		<Icon_Name>i_button_IntSec_operator_heavy.tga</Icon_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Lua_Script></Lua_Script>
+		<Tech_Level>99</Tech_Level>
+		
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_IDT, 1</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_Imperial_IntSec_Operator_Team_Deployed, 4</Starting_Spawned_Units_Tech_0>
+		
+		
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>1</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>1</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->
+
+	</GroundWarFormation>
+	
+	<GroundWarFormation Name="UNIT_GW_ZSINJ_AAP">
+		<Variant_Of_Existing_Type>GroundWar_Spawner_Unit</Variant_Of_Existing_Type>
+		<Affiliation>Zsinj_Empire</Affiliation>
+		
+		<Text_ID>GW_ZSINJ_AAP</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_GROUP_SPAWNER</Encyclopedia_Unit_Class>
+		
+		<Land_Model_Name>GROUNDWAR_Zsinj.alo</Land_Model_Name>
+		<Icon_Name>i_button_fortress.tga</Icon_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Lua_Script></Lua_Script>
+		<Tech_Level>99</Tech_Level>
+		
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_A9_Floating_Fortress, 1</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_Imperial_APC, 2</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_Imperial_IntSec_Operator_Team_Deployed, 2</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_EVO_Trooper_Team_Deployed, 2</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_Imperial_Armytrooper_Heavy_Team_Deployed, 3</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_Imperial_Armytrooper_Assault_Team_Deployed, 3</Starting_Spawned_Units_Tech_0>
+		
+		
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>1</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>1</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->
+
+	</GroundWarFormation>
+
+</Complete_Units_Ground_War>

@@ -1,0 +1,536 @@
+<?xml version="1.0"?>
+<Complete_Units_Ground_War>
+
+
+	<GroundWarFormation Name="UNIT_GW_PA_AAA">
+		<Variant_Of_Existing_Type>GroundWar_Spawner_Unit</Variant_Of_Existing_Type>
+		<Affiliation>Pentastar</Affiliation>
+		
+		<Text_ID>GW_PA_AAA</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_GROUP_SPAWNER</Encyclopedia_Unit_Class>
+		
+		<Land_Model_Name>GROUNDWAR_Pentastar.alo</Land_Model_Name>
+		<Icon_Name>i_button_pentastar_army_trooper.tga</Icon_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Lua_Script></Lua_Script>
+		<Tech_Level>99</Tech_Level>
+		
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_Pentastar_Armytrooper_Assault_Team_Deployed, 2</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_Pentastar_Armytrooper_Heavy_Team_Deployed, 3</Starting_Spawned_Units_Tech_0>
+
+			
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>1</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>1</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->
+
+	</GroundWarFormation>
+	
+	<GroundWarFormation Name="UNIT_GW_PA_AAB">
+		<Variant_Of_Existing_Type>GroundWar_Spawner_Unit</Variant_Of_Existing_Type>
+		<Affiliation>Pentastar</Affiliation>
+		
+		<Text_ID>GW_PA_AAB</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_GROUP_SPAWNER</Encyclopedia_Unit_Class>
+		
+		<Land_Model_Name>GROUNDWAR_Pentastar.alo</Land_Model_Name>
+		<Icon_Name>i_button_enforcer_trooper.tga</Icon_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Lua_Script></Lua_Script>
+		<Tech_Level>99</Tech_Level>
+		
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_Enforcer_Trooper_Squad_Deployed, 3</Starting_Spawned_Units_Tech_0>
+
+			
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>1</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>1</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->
+
+	</GroundWarFormation>
+	
+	<GroundWarFormation Name="UNIT_GW_PA_AAC">
+		<Variant_Of_Existing_Type>GroundWar_Spawner_Unit</Variant_Of_Existing_Type>
+		<Affiliation>Pentastar</Affiliation>
+		
+		<Text_ID>GW_PA_AAC</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_GROUP_SPAWNER</Encyclopedia_Unit_Class>
+		
+		<Land_Model_Name>GROUNDWAR_Pentastar.alo</Land_Model_Name>
+		<Icon_Name>i_button_atpt.tga</Icon_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Lua_Script></Lua_Script>
+		<Tech_Level>99</Tech_Level>
+		
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_AT_PT_Walker, 3</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_Pentastar_Armytrooper_Assault_Team_Deployed, 2</Starting_Spawned_Units_Tech_0>
+
+
+			
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>1</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>1</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->
+
+	</GroundWarFormation>
+
+	<GroundWarFormation Name="UNIT_GW_PA_AAD">
+		<Variant_Of_Existing_Type>GroundWar_Spawner_Unit</Variant_Of_Existing_Type>
+		<Affiliation>Pentastar</Affiliation>
+		
+		<Text_ID>GW_PA_AAD</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_GROUP_SPAWNER</Encyclopedia_Unit_Class>
+		
+		<Land_Model_Name>GROUNDWAR_Pentastar.alo</Land_Model_Name>
+		<Icon_Name>i_button_army_guard_heavy.tga</Icon_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Lua_Script></Lua_Script>
+		<Tech_Level>99</Tech_Level>
+		
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_Pentastar_Medic_Armytrooper_Squad, 1</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_Imperial_Army_Guard_Team_Deployed, 2</Starting_Spawned_Units_Tech_0>
+
+
+			
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>1</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>1</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->
+
+	</GroundWarFormation>
+
+	<GroundWarFormation Name="UNIT_GW_PA_AAE">
+		<Variant_Of_Existing_Type>GroundWar_Spawner_Unit</Variant_Of_Existing_Type>
+		<Affiliation>Pentastar</Affiliation>
+		
+		<Text_ID>GW_PA_AAE</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_GROUP_SPAWNER</Encyclopedia_Unit_Class>
+		
+		<Land_Model_Name>GROUNDWAR_Pentastar.alo</Land_Model_Name>
+		<Icon_Name>i_button_atdp.tga</Icon_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Lua_Script></Lua_Script>
+		<Tech_Level>99</Tech_Level>
+		
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_AT_DP_Walker, 3</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_AT_PT_Walker, 2</Starting_Spawned_Units_Tech_0>
+
+
+			
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>1</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>1</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->
+
+	</GroundWarFormation>
+	
+	<GroundWarFormation Name="UNIT_GW_PA_AAF">
+		<Variant_Of_Existing_Type>GroundWar_Spawner_Unit</Variant_Of_Existing_Type>
+		<Affiliation>Pentastar</Affiliation>
+		
+		<Text_ID>GW_PA_AAF</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_GROUP_SPAWNER</Encyclopedia_Unit_Class>
+		
+		<Land_Model_Name>GROUNDWAR_Pentastar.alo</Land_Model_Name>
+		<Icon_Name>i_button_IntSec_operator_heavy.tga</Icon_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Lua_Script></Lua_Script>
+		<Tech_Level>99</Tech_Level>
+		
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_Imperial_IntSec_Operator_Team_Deployed, 2</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_Imperial_Army_Guard_Team_Deployed, 4</Starting_Spawned_Units_Tech_0>
+
+
+			
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>1</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>1</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->
+
+	</GroundWarFormation>
+	
+	<GroundWarFormation Name="UNIT_GW_PA_AAG">
+		<Variant_Of_Existing_Type>GroundWar_Spawner_Unit</Variant_Of_Existing_Type>
+		<Affiliation>Pentastar</Affiliation>
+		
+		<Text_ID>GW_PA_AAG</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_GROUP_SPAWNER</Encyclopedia_Unit_Class>
+		
+		<Land_Model_Name>GROUNDWAR_Pentastar.alo</Land_Model_Name>
+		<Icon_Name>i_button_tie_crawler.tga</Icon_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Lua_Script></Lua_Script>
+		<Tech_Level>99</Tech_Level>
+		
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_AT_DP_Walker, 1</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_TIE_Mauler, 2</Starting_Spawned_Units_Tech_0>
+		
+
+			
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>1</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>1</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->
+
+	</GroundWarFormation>
+
+	<GroundWarFormation Name="UNIT_GW_PA_AAH">
+		<Variant_Of_Existing_Type>GroundWar_Spawner_Unit</Variant_Of_Existing_Type>
+		<Affiliation>Pentastar</Affiliation>
+		
+		<Text_ID>GW_PA_AAH</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_GROUP_SPAWNER</Encyclopedia_Unit_Class>
+		
+		<Land_Model_Name>GROUNDWAR_Pentastar.alo</Land_Model_Name>
+		<Icon_Name>i_button_utaa.tga</Icon_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Lua_Script></Lua_Script>
+		<Tech_Level>99</Tech_Level>
+		
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_UTAA, 1</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_Imperial_Army_Guard_Team_Deployed, 2</Starting_Spawned_Units_Tech_0>
+
+
+			
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>1</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>1</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->
+
+	</GroundWarFormation>
+
+	<GroundWarFormation Name="UNIT_GW_PA_AAI">
+		<Variant_Of_Existing_Type>GroundWar_Spawner_Unit</Variant_Of_Existing_Type>
+		<Affiliation>Pentastar</Affiliation>
+		
+		<Text_ID>GW_PA_AAI</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_GROUP_SPAWNER</Encyclopedia_Unit_Class>
+		
+		<Land_Model_Name>GROUNDWAR_Pentastar.alo</Land_Model_Name>
+		<Icon_Name>i_button_gaba_18.tga</Icon_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Lua_Script></Lua_Script>
+		<Tech_Level>99</Tech_Level>
+		
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_Gaba18, 6</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_Enforcer_Trooper_Squad_Deployed, 3</Starting_Spawned_Units_Tech_0>
+	
+			
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>1</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>1</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->
+
+	</GroundWarFormation>
+
+	
+	<GroundWarFormation Name="UNIT_GW_PA_AAJ">
+		<Variant_Of_Existing_Type>GroundWar_Spawner_Unit</Variant_Of_Existing_Type>
+		<Affiliation>Pentastar</Affiliation>
+		
+		<Text_ID>GW_PA_AAJ</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_GROUP_SPAWNER</Encyclopedia_Unit_Class>
+		
+		<Land_Model_Name>GROUNDWAR_Pentastar.alo</Land_Model_Name>
+		<Icon_Name>i_button_tiecrawl.tga</Icon_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Lua_Script></Lua_Script>
+		<Tech_Level>99</Tech_Level>
+		
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_Century_Tank, 2</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_TIE_Mauler, 4</Starting_Spawned_Units_Tech_0>
+
+
+			
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>1</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>1</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->
+
+	</GroundWarFormation>
+	
+	<GroundWarFormation Name="UNIT_GW_PA_AAK">
+		<Variant_Of_Existing_Type>GroundWar_Spawner_Unit</Variant_Of_Existing_Type>
+		<Affiliation>Pentastar</Affiliation>
+		
+		<Text_ID>GW_PA_AAK</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_GROUP_SPAWNER</Encyclopedia_Unit_Class>
+		
+		<Land_Model_Name>GROUNDWAR_Pentastar.alo</Land_Model_Name>
+		<Icon_Name>i_button_Army_Commando.tga</Icon_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Lua_Script></Lua_Script>
+		<Tech_Level>99</Tech_Level>
+		
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_Imperial_IntSec_Operator_Sniper_Team_Deployed, 2</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_Imperial_Army_Commando_Squad_Deployed, 4</Starting_Spawned_Units_Tech_0>
+		
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>1</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>1</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->
+
+	</GroundWarFormation>
+	
+	<GroundWarFormation Name="UNIT_GW_PA_AAL">
+		<Variant_Of_Existing_Type>GroundWar_Spawner_Unit</Variant_Of_Existing_Type>
+		<Affiliation>Pentastar</Affiliation>
+		
+		<Text_ID>GW_PA_AAL</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_GROUP_SPAWNER</Encyclopedia_Unit_Class>
+		
+		<Land_Model_Name>GROUNDWAR_Pentastar.alo</Land_Model_Name>
+		<Icon_Name>i_button_Guardian_Protector.tga</Icon_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Lua_Script></Lua_Script>
+		<Tech_Level>99</Tech_Level>
+		
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_Imperial_Compforce_Assault_Team_Deployed, 6</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_Imperial_Guardian_Protector_Squad_Deployed, 3</Starting_Spawned_Units_Tech_0>
+		
+
+			
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>1</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>1</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->
+
+	</GroundWarFormation>
+	
+	<GroundWarFormation Name="UNIT_GW_PA_AAM">
+		<Variant_Of_Existing_Type>GroundWar_Spawner_Unit</Variant_Of_Existing_Type>
+		<Affiliation>Pentastar</Affiliation>
+		
+		<Text_ID>GW_PA_AAM</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_GROUP_SPAWNER</Encyclopedia_Unit_Class>
+		
+		<Land_Model_Name>GROUNDWAR_Pentastar.alo</Land_Model_Name>
+		<Icon_Name>i_button_ev_juggernaut.tga</Icon_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Lua_Script></Lua_Script>
+		<Tech_Level>99</Tech_Level>
+		
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_B5_Juggernaut, 2</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_Pentastar_Armytrooper_Assault_Team_Deployed, 6</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_Imperial_Guardian_Protector_Squad_Deployed, 2</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_Pentastar_Armytrooper_Heavy_Team_Deployed, 4</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_Imperial_Army_Commando_Squad_Deployed, 2</Starting_Spawned_Units_Tech_0>
+		
+		
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>1</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>1</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->
+		
+		<Unit_Abilities_Data SubObjectList="Yes">		
+			<Unit_Ability>
+                <Type>SELF_DESTRUCT</Type>
+                <Expiration_Seconds>90</Expiration_Seconds>
+				<Recharge_Seconds>90</Recharge_Seconds>
+                <Active_By_Default>Yes</Active_By_Default>
+                <Spawned_Object_Type>  </Spawned_Object_Type>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+
+
+	</GroundWarFormation>
+	
+	<GroundWarFormation Name="UNIT_GW_PA_AAN">
+		<Variant_Of_Existing_Type>GroundWar_Spawner_Unit</Variant_Of_Existing_Type>
+		<Affiliation>Pentastar</Affiliation>
+		
+		<Text_ID>GW_PA_AAN</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_GROUP_SPAWNER</Encyclopedia_Unit_Class>
+		
+		<Land_Model_Name>GROUNDWAR_Pentastar.alo</Land_Model_Name>
+		<Icon_Name>i_button_nemesis_gunship.tga</Icon_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Lua_Script></Lua_Script>
+		<Tech_Level>99</Tech_Level>
+		
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_Nemesis_Gunship, 2</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_Gaba18, 6</Starting_Spawned_Units_Tech_0>
+		
+		
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>1</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>1</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->
+		
+		
+
+	</GroundWarFormation>
+	
+	<GroundWarFormation Name="UNIT_GW_PA_AAO">
+		<Variant_Of_Existing_Type>GroundWar_Spawner_Unit</Variant_Of_Existing_Type>
+		<Affiliation>Pentastar</Affiliation>
+		
+		<Text_ID>GW_PA_AAO</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_GROUP_SPAWNER</Encyclopedia_Unit_Class>
+		
+		<Land_Model_Name>GROUNDWAR_Pentastar.alo</Land_Model_Name>
+		<Icon_Name>i_button_imperial_heavy_artillery.tga</Icon_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Lua_Script></Lua_Script>
+		<Tech_Level>99</Tech_Level>
+		
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_Imperial_Heavy_Artillery, 2</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_Enforcer_Trooper_Squad_Deployed, 4</Starting_Spawned_Units_Tech_0>
+		
+		
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>1</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>1</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->
+
+	</GroundWarFormation>
+	
+	<GroundWarFormation Name="UNIT_GW_PA_AAP">
+		<Variant_Of_Existing_Type>GroundWar_Spawner_Unit</Variant_Of_Existing_Type>
+		<Affiliation>Pentastar</Affiliation>
+		
+		<Text_ID>GW_PA_AAP</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_GROUP_SPAWNER</Encyclopedia_Unit_Class>
+		
+		<Land_Model_Name>GROUNDWAR_Pentastar.alo</Land_Model_Name>
+		<Icon_Name>i_button_c10.tga</Icon_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Lua_Script></Lua_Script>
+		<Tech_Level>99</Tech_Level>
+		
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_C10_Siege_Tower, 2</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_Imperial_Heavy_Artillery, 1</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_UTAA, 1</Starting_Spawned_Units_Tech_0>
+		
+		
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>1</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>1</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->
+
+	</GroundWarFormation>
+	
+	<GroundWarFormation Name="UNIT_GW_PA_AAQ">
+		<Variant_Of_Existing_Type>GroundWar_Spawner_Unit</Variant_Of_Existing_Type>
+		<Affiliation>Pentastar</Affiliation>
+		
+		<Text_ID>GW_PA_AAQ</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_GROUP_SPAWNER</Encyclopedia_Unit_Class>
+		
+		<Land_Model_Name>GROUNDWAR_Pentastar.alo</Land_Model_Name>
+		<Icon_Name>i_button_darkjedi.tga</Icon_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Lua_Script></Lua_Script>
+		<Tech_Level>99</Tech_Level>
+		
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_Dark_Jedi_Squad, 2</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_Imperial_Guardian_Protector_Squad_Deployed, 4</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_Pentastar_Armytrooper_Heavy_Team_Deployed, 2</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_Pentastar_Armytrooper_Assault_Team_Deployed, 2</Starting_Spawned_Units_Tech_0>
+		
+		
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>1</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>1</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->
+
+	</GroundWarFormation>
+	
+	<GroundWarFormation Name="UNIT_GW_PA_AAR">
+		<Variant_Of_Existing_Type>GroundWar_Spawner_Unit</Variant_Of_Existing_Type>
+		<Affiliation>Pentastar</Affiliation>
+		
+		<Text_ID>GW_PA_AAR</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_GROUP_SPAWNER</Encyclopedia_Unit_Class>
+		
+		<Land_Model_Name>GROUNDWAR_Pentastar.alo</Land_Model_Name>
+		<Icon_Name>i_button_darkjedi.tga</Icon_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Lua_Script></Lua_Script>
+		<Tech_Level>99</Tech_Level>
+		
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_Gaba18, 4</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_Enforcer_Trooper_Squad_Deployed, 4</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Template_GroundWar_Spawner_AT_DP_Walker, 3</Starting_Spawned_Units_Tech_0>
+		
+		
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>1</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>1</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->
+
+	</GroundWarFormation>
+
+</Complete_Units_Ground_War>

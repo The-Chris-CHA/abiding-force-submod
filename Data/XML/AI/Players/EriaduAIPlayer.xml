@@ -1,0 +1,46 @@
+<?xml version="1.0" ?>
+<AIPlayerType>
+
+	<Name>EriaduAI</Name>
+
+	<GoalSetExtensionSize>3</GoalSetExtensionSize>
+
+	<Personality>
+		<Focus> 1.0 </Focus>
+		<Aggressiveness> 1.0</Aggressiveness>
+	</Personality>
+	
+    <GalacticFreeStoreScript>GalacticFreeStore</GalacticFreeStoreScript>
+    <SpaceFreeStoreScript>BusyTacticalFreeStore</SpaceFreeStoreScript>
+    <LandFreeStoreScript>LandTacticalFreeStore</LandFreeStoreScript>
+	
+	<GoalProposalFunctionSets>
+		SystemFunctions
+		BasicOffensiveGalacticSet
+		WarlordOffensiveGalacticSet
+		BasicDefensiveGalacticSet
+		BasicInfrastructureGalacticSet
+		BasicOffensiveSpaceSet
+		BasicLandGoalSet
+		EriaduGovernmentSet
+	</GoalProposalFunctionSets>
+	
+	<Templates>
+        <Space>
+            Generic_Space
+        </Space>
+        <Land>
+            Generic_Land
+        </Land>
+		<Galactic>
+			EA_Default
+		</Galactic>
+	</Templates>
+
+	<Difficulty_Adjustments>
+		<Easy>Easy_Default</Easy>
+		<Normal>Normal_Default</Normal>
+		<Hard>Hard_Default</Hard>
+	</Difficulty_Adjustments>
+	
+</AIPlayerType>

@@ -1,0 +1,234 @@
+<?xml version="1.0" ?>
+<NR_Research>
+	
+	
+	<SpaceUnit Name="Dummy_NewClass">
+		<Variant_Of_Existing_Type>Template_Research_Dummy</Variant_Of_Existing_Type>
+		
+		<Text_ID>TEXT_NEWCLASS_NAME</Text_ID>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_TECHUPGRADE </Encyclopedia_Unit_Class>
+		<Encyclopedia_Text> TEXT_NEWCLASS_DESCRIPTION</Encyclopedia_Text>
+		
+		<Icon_Name>I_BUTTON_RESEARCH_NCMP1.tga</Icon_Name>
+		<GUI_Row>1</GUI_Row>
+
+		<Affiliation>Rebel</Affiliation>
+		<Build_Initially_Locked>Yes</Build_Initially_Locked>
+		<Tech_Level>0</Tech_Level>
+		<Required_Star_Base_Level>1</Required_Star_Base_Level>
+		<Required_Special_Structures>AI_Category_Dummy | Story_Category_Dummy</Required_Special_Structures>
+		<Build_Cost_Credits>25000</Build_Cost_Credits>
+		<Build_Time_Seconds>180</Build_Time_Seconds>
+		
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+		<Build_Limit_Lifetime_Per_Player>1</Build_Limit_Lifetime_Per_Player>
+	</SpaceUnit>
+
+	<SpaceUnit Name="Dummy_NewClass_PhaseTwo">
+		<Variant_Of_Existing_Type>Template_Research_Dummy</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_NEWCLASSTWO_NAME</Text_ID>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_TECHUPGRADE </Encyclopedia_Unit_Class>
+		<Encyclopedia_Text> TEXT_NEWCLASSTWO_DESCRIPTION</Encyclopedia_Text>
+		
+		<Icon_Name>I_BUTTON_RESEARCH_NCMP2.tga</Icon_Name>
+		<GUI_Row>1</GUI_Row>
+
+		<Affiliation>Rebel</Affiliation>
+		<Build_Initially_Locked>Yes</Build_Initially_Locked>
+		<Tech_Level>0</Tech_Level>
+		<Required_Star_Base_Level>1</Required_Star_Base_Level>
+		<Required_Special_Structures>AI_Category_Dummy | Story_Category_Dummy</Required_Special_Structures>
+		<Build_Cost_Credits>47500</Build_Cost_Credits>
+		<Build_Time_Seconds>360</Build_Time_Seconds>
+		
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+		<Build_Limit_Lifetime_Per_Player>1</Build_Limit_Lifetime_Per_Player>
+	</SpaceUnit>
+
+	<SpaceUnit Name="Dummy_RepublicSD">
+		<Variant_Of_Existing_Type>Template_Research_Dummy</Variant_Of_Existing_Type>
+		
+		<Text_ID>TEXT_REPUBLICSD_NAME</Text_ID>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_TECHUPGRADE </Encyclopedia_Unit_Class>
+		<Encyclopedia_Text> TEXT_REPUBLICSD_DESCRIPTION</Encyclopedia_Text>
+		
+		<Icon_Name>I_BUTTON_RESEARCH_REPUBLIC.tga</Icon_Name>
+		<GUI_Row>1</GUI_Row>
+
+		<Affiliation>Rebel</Affiliation>
+		<Build_Initially_Locked>Yes</Build_Initially_Locked>	
+		<Tech_Level>0</Tech_Level>
+		<Required_Star_Base_Level>1</Required_Star_Base_Level>
+		<Required_Special_Structures>AI_Category_Dummy | Story_Category_Dummy</Required_Special_Structures>
+		<Build_Cost_Credits>15000</Build_Cost_Credits>
+		<Build_Time_Seconds>100</Build_Time_Seconds>
+		
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+		<Build_Limit_Lifetime_Per_Player>1</Build_Limit_Lifetime_Per_Player>
+	</SpaceUnit>
+
+	<SpaceUnit Name="Dummy_BwingE">
+		<Variant_Of_Existing_Type>Template_Research_Dummy</Variant_Of_Existing_Type>
+		
+		<Text_ID>TEXT_UNIT_BWINGE_RESEARCH</Text_ID>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_TECHUPGRADE </Encyclopedia_Unit_Class>
+		<Encyclopedia_Text> TEXT_TOOLTIP_BWINGE_RESEARCH </Encyclopedia_Text>
+		
+		<Icon_Name>I_BUTTON_RESEARCH_BWINGE.tga</Icon_Name>
+		<GUI_Row>1</GUI_Row>
+
+		<Affiliation>Rebel</Affiliation>
+		<Build_Initially_Locked>No</Build_Initially_Locked>
+		<Tech_Level>2</Tech_Level>
+		<Required_Star_Base_Level>1</Required_Star_Base_Level>
+		<Required_Special_Structures>AI_Category_Dummy | Story_Category_Dummy</Required_Special_Structures>
+		<Build_Cost_Credits>10000</Build_Cost_Credits>
+		<Build_Time_Seconds>100</Build_Time_Seconds>
+		
+		<Lua_Script>ResearchBwingE</Lua_Script>
+
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+		<Build_Limit_Lifetime_Per_Player>1</Build_Limit_Lifetime_Per_Player>
+	</SpaceUnit>
+	
+	<SpaceUnit Name="Dummy_Viscount">
+		<Variant_Of_Existing_Type>Template_Research_Dummy</Variant_Of_Existing_Type>
+		
+		<Text_ID>TEXT_UNIT_VISCOUNT_RESEARCH</Text_ID>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_TECHUPGRADE </Encyclopedia_Unit_Class>
+		<Encyclopedia_Text> TEXT_TOOLTIP_VISCOUNT_RESEARCH</Encyclopedia_Text>
+
+		<Icon_Name>I_BUTTON_RESEARCH_VISCOUNT.tga</Icon_Name>
+		<GUI_Row>1</GUI_Row>
+
+		<Affiliation>Rebel</Affiliation>
+		<Build_Initially_Locked>Yes</Build_Initially_Locked>
+		<Tech_Level>0</Tech_Level>
+		<Required_Star_Base_Level>1</Required_Star_Base_Level>
+		<Required_Special_Structures>AI_Category_Dummy | Story_Category_Dummy</Required_Special_Structures>
+		<Required_Planets>Mon_Calamari</Required_Planets>
+		<Build_Cost_Credits>30000</Build_Cost_Credits>
+		<Build_Time_Seconds>240</Build_Time_Seconds>
+		
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+		<Build_Limit_Lifetime_Per_Player>1</Build_Limit_Lifetime_Per_Player>
+	</SpaceUnit>
+
+	<SpaceUnit Name="Dummy_Mediator">
+		<Variant_Of_Existing_Type>Template_Research_Dummy</Variant_Of_Existing_Type>
+		
+		<Text_ID>TEXT_UNIT_MEDIATOR_RESEARCH</Text_ID>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_TECHUPGRADE </Encyclopedia_Unit_Class>
+		<Encyclopedia_Text> TEXT_TOOLTIP_MEDIATOR_RESEARCH</Encyclopedia_Text>
+		
+		<Icon_Name>I_BUTTON_RESEARCH_MEDIATOR.tga</Icon_Name>
+		<GUI_Row>1</GUI_Row>
+		
+		<Affiliation>Rebel</Affiliation>
+		<Build_Initially_Locked>Yes</Build_Initially_Locked>
+		<Tech_Level>2</Tech_Level>
+		<Required_Star_Base_Level>1</Required_Star_Base_Level>
+		<Required_Special_Structures>AI_Category_Dummy | Story_Category_Dummy</Required_Special_Structures>
+		<Required_Planets>Mon_Calamari</Required_Planets>
+		<Build_Cost_Credits>20000</Build_Cost_Credits>
+		<Build_Time_Seconds>200</Build_Time_Seconds>
+	
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+		<Build_Limit_Lifetime_Per_Player>1</Build_Limit_Lifetime_Per_Player>
+	</SpaceUnit>
+
+	<SpaceUnit Name="Dummy_BlueDiver">
+		<Variant_Of_Existing_Type>Template_Research_Dummy</Variant_Of_Existing_Type>
+		
+		<Text_ID>TEXT_UNIT_BLUEDIVER_RESEARCH</Text_ID>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_TECHUPGRADE </Encyclopedia_Unit_Class>
+		<Encyclopedia_Text> TEXT_TOOLTIP_BLUEDIVER_RESEARCH</Encyclopedia_Text>
+		
+		<Icon_Name>I_BUTTON_RESEARCH_BLUEDIVER.tga</Icon_Name>
+		<GUI_Row>1</GUI_Row>
+
+		<Affiliation>Rebel</Affiliation>
+		<Build_Initially_Locked>Yes</Build_Initially_Locked>
+		<Tech_Level>2</Tech_Level>
+		<Required_Star_Base_Level>1</Required_Star_Base_Level>
+		<Required_Special_Structures>AI_Category_Dummy | Story_Category_Dummy</Required_Special_Structures>
+		<Required_Planets>Mon_Calamari</Required_Planets>
+		<Build_Cost_Credits>20000</Build_Cost_Credits>
+		<Build_Time_Seconds>300</Build_Time_Seconds>
+		
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+		<Build_Limit_Lifetime_Per_Player>1</Build_Limit_Lifetime_Per_Player>
+	</SpaceUnit>
+
+	<!-- Regicide -->
+
+	<SpaceUnit Name="Influence_ReleaseHapes">
+		<Variant_Of_Existing_Type>Template_Research_Dummy</Variant_Of_Existing_Type>
+		
+		<Text_ID>TEXT_EVENT_INFLUENCE_RELEASE_HAPES</Text_ID>
+		<Encyclopedia_Text>TEXT_EVENT_INFLUENCE_RELEASE_HAPES_DESCRIPTION</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_FACTIONVASSAL </Encyclopedia_Unit_Class>
+		
+		<Icon_Name>i_multiplay_hapans.tga</Icon_Name>
+		
+		<GUI_Row> 1 </GUI_Row>
+		<Affiliation>Rebel</Affiliation>
+		<Build_Initially_Locked>No</Build_Initially_Locked>
+		<Tech_Level>99</Tech_Level>
+		<Required_Star_Base_Level>1</Required_Star_Base_Level>
+		<Required_Special_Structures>AI_Category_Dummy | Story_Category_Dummy</Required_Special_Structures>
+		<Required_Planets>Hapes</Required_Planets>
+		<Build_Cost_Credits>500</Build_Cost_Credits>
+		<Build_Time_Seconds>10</Build_Time_Seconds>
+		
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+		<Build_Limit_Lifetime_Per_Player>1</Build_Limit_Lifetime_Per_Player>
+	</SpaceUnit>
+	
+	<SpaceUnit Name="Research_BAC">
+		<Variant_Of_Existing_Type>Template_Research_Dummy</Variant_Of_Existing_Type>
+		
+		<Text_ID>TEXT_RESEARCH_BAC_NAME</Text_ID>
+		<Encyclopedia_Text>TEXT_RESEARCH_BAC_DESCRIPTION</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_RESEARCH </Encyclopedia_Unit_Class>
+		
+		<Icon_Name>I_BUTTON_RESEARCH_BAC.tga</Icon_Name>
+		
+		<GUI_Row> 1 </GUI_Row>
+		<Affiliation>Rebel</Affiliation>
+		<Build_Initially_Locked>Yes</Build_Initially_Locked>
+		<Tech_Level>0</Tech_Level>
+		<Required_Star_Base_Level>1</Required_Star_Base_Level>
+		<Required_Special_Structures>DUMMY_CHIEFOFSTATE_FEYLYA, AI_Category_Dummy | Story_Category_Dummy</Required_Special_Structures>
+		<Build_Cost_Credits>10000</Build_Cost_Credits>
+		<Build_Time_Seconds>180</Build_Time_Seconds>
+		
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+		<Build_Limit_Lifetime_Per_Player>1</Build_Limit_Lifetime_Per_Player>
+	</SpaceUnit>
+	
+	<SpaceUnit Name="Research_MMSD">
+		<Variant_Of_Existing_Type>Template_Research_Dummy</Variant_Of_Existing_Type>
+		
+		<Text_ID>TEXT_RESEARCH_MMSD_NAME</Text_ID>
+		<Encyclopedia_Text>TEXT_RESEARCH_MMSD_DESCRIPTION</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_RESEARCH </Encyclopedia_Unit_Class>
+		
+		<Icon_Name>I_BUTTON_RESEARCH_MMSD.tga</Icon_Name>
+		
+		<GUI_Row> 1 </GUI_Row>
+		<Affiliation>Rebel</Affiliation>
+		<Build_Initially_Locked>No</Build_Initially_Locked>
+		<Tech_Level>2</Tech_Level>
+		<Required_Star_Base_Level>1</Required_Star_Base_Level>
+		<Required_Special_Structures>DUMMY_CHIEFOFSTATE_SHESH, AI_Category_Dummy | Story_Category_Dummy</Required_Special_Structures>
+		<Required_Planets>Kuat</Required_Planets>
+		<Build_Cost_Credits>15000</Build_Cost_Credits>
+		<Build_Time_Seconds>180</Build_Time_Seconds>
+		
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+		<Build_Limit_Lifetime_Per_Player>1</Build_Limit_Lifetime_Per_Player>
+	</SpaceUnit>
+	
+</NR_Research>

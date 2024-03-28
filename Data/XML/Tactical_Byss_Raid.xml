@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" ?>
+
+
+
+<!--******************************************************-->
+<!--******	Campaign: Origin of Corruption (Rebel)	******-->
+<!--******************************************************-->
+
+
+
+<Story>
+
+<Event Name="Battle_Start">
+<Event_Type>STORY_ELAPSED</Event_Type>
+<Event_Param1>0</Event_Param1>
+</Event>
+
+<Event Name="Disable_Autoresolve">
+<Event_Type>STORY_TRIGGER</Event_Type>
+<Reward_Type>DISABLE_AUTORESOLVE</Reward_Type>
+<Prereq>Battle_Start</Prereq>
+</Event>
+ 
+	<Event Name="STORY_VICTORY_Player">
+		<Event_Type>STORY_VICTORY</Event_Type>
+		<Event_Param1>Rebel</Event_Param1>
+	</Event>
+       
+</Story>

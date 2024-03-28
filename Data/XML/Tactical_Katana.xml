@@ -1,0 +1,484 @@
+﻿<?xml version="1.0" ?>
+
+
+
+<!--******************************************************-->
+<!--******	Campaign: Origin of Corruption (Rebel)	******-->
+<!--******************************************************-->
+
+
+
+<Story>
+
+<Event Name="Battle_Start">
+<Event_Type>STORY_ELAPSED</Event_Type>
+<Event_Param1>0</Event_Param1>
+</Event>
+
+<Event Name="SWITCH_CONTROL_EVENT">
+<Event_Type>STORY_TRIGGER</Event_Type>
+<Reward_Type>SWITCH_CONTROL</Reward_Type>
+<Reward_Param1>Hostile</Reward_Param1>
+<Reward_Param2>AI_Player_UnderworldStoryOpponent</Reward_Param2>
+<Prereq>Battle_Start</Prereq>
+</Event>
+
+<Event Name="Disable_Retreat_H">
+<Event_Type>STORY_TRIGGER</Event_Type>
+<Reward_Type>DISABLE_RETREAT</Reward_Type>
+<Reward_Param1>Hostile</Reward_Param1>
+<Reward_Param2>1</Reward_Param2>
+<Prereq>Battle_Start</Prereq>
+</Event>
+
+<Event Name="Disable_Retreat_IR">
+<Event_Type>STORY_TRIGGER</Event_Type>
+<Reward_Type>DISABLE_RETREAT</Reward_Type>
+<Reward_Param1>Empire</Reward_Param1>
+<Reward_Param2>1</Reward_Param2>
+<Prereq>Battle_Start</Prereq>
+</Event>
+
+<Event Name="Disable_Retreat_NR">
+<Event_Type>STORY_TRIGGER</Event_Type>
+<Reward_Type>DISABLE_RETREAT</Reward_Type>
+<Reward_Param1>Rebel</Reward_Param1>
+<Reward_Param2>1</Reward_Param2>
+<Prereq>Battle_Start</Prereq>
+</Event>
+
+<Event Name="Disable_Retreat_EotH">
+<Event_Type>STORY_TRIGGER</Event_Type>
+<Reward_Type>DISABLE_RETREAT</Reward_Type>
+<Reward_Param1>EmpireoftheHand</Reward_Param1>
+<Reward_Param2>1</Reward_Param2>
+<Prereq>Battle_Start</Prereq>
+</Event>
+
+<Event Name="Disable_Retreat_PA">
+<Event_Type>STORY_TRIGGER</Event_Type>
+<Reward_Type>DISABLE_RETREAT</Reward_Type>
+<Reward_Param1>Pentastar</Reward_Param1>
+<Reward_Param2>1</Reward_Param2>
+<Prereq>Battle_Start</Prereq>
+</Event>
+
+<Event Name="Disable_Retreat_ZE">
+<Event_Type>STORY_TRIGGER</Event_Type>
+<Reward_Type>DISABLE_RETREAT</Reward_Type>
+<Reward_Param1>Zsinj_Empire</Reward_Param1>
+<Reward_Param2>1</Reward_Param2>
+<Prereq>Battle_Start</Prereq>
+</Event>
+
+<Event Name="Disable_Retreat_GM">
+<Event_Type>STORY_TRIGGER</Event_Type>
+<Reward_Type>DISABLE_RETREAT</Reward_Type>
+<Reward_Param1>Greater_Maldrood</Reward_Param1>
+<Reward_Param2>1</Reward_Param2>
+<Prereq>Battle_Start</Prereq>
+</Event>
+
+<Event Name="Disable_Retreat_EA">
+<Event_Type>STORY_TRIGGER</Event_Type>
+<Reward_Type>DISABLE_RETREAT</Reward_Type>
+<Reward_Param1>Eriadu_Authority</Reward_Param1>
+<Reward_Param2>1</Reward_Param2>
+<Prereq>Battle_Start</Prereq>
+</Event>
+
+<Event Name="Disable_Retreat_CSA">
+<Event_Type>STORY_TRIGGER</Event_Type>
+<Reward_Type>DISABLE_RETREAT</Reward_Type>
+<Reward_Param1>Corporate_Sector</Reward_Param1>
+<Reward_Param2>1</Reward_Param2>
+<Prereq>Battle_Start</Prereq>
+</Event>
+
+<Event Name="Disable_Retreat_Hapes">
+<Event_Type>STORY_TRIGGER</Event_Type>
+<Reward_Type>DISABLE_RETREAT</Reward_Type>
+<Reward_Param1>Hapes_Consortium</Reward_Param1>
+<Reward_Param2>1</Reward_Param2>
+<Prereq>Battle_Start</Prereq>
+</Event>
+
+<Event Name="Disable_Autoresolve">
+<Event_Type>STORY_TRIGGER</Event_Type>
+<Reward_Type>DISABLE_AUTORESOLVE</Reward_Type>
+<Prereq>Battle_Start</Prereq>
+</Event>
+
+  <Event Name="Katana_Thrawn_Speech_Two">
+     <Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>START_SPEECH_IR</Event_Param2>
+    	<Reward_Type>SCREEN_TEXT</Reward_Type>
+    		<Reward_Param1>TEXT_CONQUEST_THRAWN_IR_KATANA_BATTLE</Reward_Param1>
+    		<Reward_Param2>-1</Reward_Param2>
+	<Prereq>Battle_Start</Prereq>
+  </Event>
+  
+
+
+ <Event Name="Katana_Thrawn_Speech_End">
+          <Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+      <Event_Param2>END_SPEECH_IR</Event_Param2>
+    <Reward_Type>SCREEN_TEXT</Reward_Type>
+		<Reward_Param1>TEXT_CONQUEST_THRAWN_IR_KATANA_BATTLE</Reward_Param1>
+		<Reward_Param4>remove</Reward_Param4>
+    <Prereq>Battle_Start</Prereq>
+  </Event>
+  
+  <Event Name="Katana_Karrde_Speech_Two">
+    <Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+	<Event_Param2>START_SPEECH_NR</Event_Param2>
+    <Reward_Type>SCREEN_TEXT</Reward_Type>
+    <Reward_Param1>TEXT_CONQUEST_THRAWN_NR_KARRDE_BATTLE</Reward_Param1>
+    <Reward_Param2>-1</Reward_Param2>
+    <Prereq>Battle_Start</Prereq>
+  </Event>
+  
+  <Event Name="Katana_Karrde_Speech_End">
+          <Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+      <Event_Param2>END_SPEECH_NR</Event_Param2>
+    <Reward_Type>SCREEN_TEXT</Reward_Type>
+		<Reward_Param1>TEXT_CONQUEST_THRAWN_NR_KARRDE_BATTLE</Reward_Param1>
+		<Reward_Param4>remove</Reward_Param4>
+    <Prereq>Battle_Start</Prereq>
+  </Event>
+  
+  <Event Name="Katana_Parck_Speech_Two">
+    <Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+	<Event_Param2>START_SPEECH_EOTH</Event_Param2>
+    <Reward_Type>SCREEN_TEXT</Reward_Type>
+    <Reward_Param1>TEXT_CONQUEST_THRAWN_EOTH_KATANA_BATTLE</Reward_Param1>
+    <Reward_Param2>-1</Reward_Param2>
+    <Prereq>Battle_Start</Prereq>
+  </Event>
+  
+  <Event Name="Katana_Parck_Speech_End">
+          <Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+      <Event_Param2>END_SPEECH_EOTH</Event_Param2>
+    <Reward_Type>SCREEN_TEXT</Reward_Type>
+		<Reward_Param1>TEXT_CONQUEST_THRAWN_EOTH_KATANA_BATTLE</Reward_Param1>
+		<Reward_Param4>remove</Reward_Param4>
+    <Prereq>Battle_Start</Prereq>
+  </Event>
+  
+  <Event Name="Katana_Kaine_Speech_Two">
+    <Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+	<Event_Param2>START_SPEECH_PA</Event_Param2>
+    <Reward_Type>SCREEN_TEXT</Reward_Type>
+    <Reward_Param1>TEXT_CONQUEST_THRAWN_PA_KATANA_BATTLE</Reward_Param1>
+    <Reward_Param2>-1</Reward_Param2>
+    <Prereq>Battle_Start</Prereq>
+  </Event>
+  
+  <Event Name="Katana_Kaine_Speech_End">
+          <Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+      <Event_Param2>END_SPEECH_PA</Event_Param2>
+    <Reward_Type>SCREEN_TEXT</Reward_Type>
+		<Reward_Param1>TEXT_CONQUEST_THRAWN_PA_KATANA_BATTLE</Reward_Param1>
+		<Reward_Param4>remove</Reward_Param4>
+    <Prereq>Battle_Start</Prereq>
+  </Event>
+  
+  <Event Name="Katana_Zsinj_Speech_Two">
+    <Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+	<Event_Param2>START_SPEECH_ZE</Event_Param2>
+    <Reward_Type>SCREEN_TEXT</Reward_Type>
+    <Reward_Param1>TEXT_CONQUEST_THRAWN_ZE_KATANA_BATTLE</Reward_Param1>
+    <Reward_Param2>-1</Reward_Param2>
+    <Prereq>Battle_Start</Prereq>
+  </Event>
+  
+  <Event Name="Katana_Zsinj_Speech_End">
+          <Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+      <Event_Param2>END_SPEECH_ZE</Event_Param2>
+    <Reward_Type>SCREEN_TEXT</Reward_Type>
+		<Reward_Param1>TEXT_CONQUEST_THRAWN_ZE_KATANA_BATTLE</Reward_Param1>
+		<Reward_Param4>remove</Reward_Param4>
+    <Prereq>Battle_Start</Prereq>
+  </Event>
+  
+  <Event Name="Katana_Teradoc_Speech_Two">
+    <Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+	<Event_Param2>START_SPEECH_GM</Event_Param2>
+    <Reward_Type>SCREEN_TEXT</Reward_Type>
+    <Reward_Param1>TEXT_CONQUEST_THRAWN_GM_KATANA_BATTLE</Reward_Param1>
+    <Reward_Param2>-1</Reward_Param2>
+    <Prereq>Battle_Start</Prereq>
+  </Event>
+  
+  <Event Name="Katana_Teradoc_Speech_End">
+          <Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+      <Event_Param2>END_SPEECH_GM</Event_Param2>
+    <Reward_Type>SCREEN_TEXT</Reward_Type>
+		<Reward_Param1>TEXT_CONQUEST_THRAWN_GM_KATANA_BATTLE</Reward_Param1>
+		<Reward_Param4>remove</Reward_Param4>
+    <Prereq>Battle_Start</Prereq>
+  </Event>
+  
+  <Event Name="Katana_Delvardus_Speech_Two">
+    <Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+	<Event_Param2>START_SPEECH_EA</Event_Param2>
+    <Reward_Type>SCREEN_TEXT</Reward_Type>
+    <Reward_Param1>TEXT_CONQUEST_THRAWN_EA_KATANA_BATTLE</Reward_Param1>
+    <Reward_Param2>-1</Reward_Param2>
+    <Prereq>Battle_Start</Prereq>
+  </Event>
+  
+  <Event Name="Katana_Delvardus_Speech_End">
+          <Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+      <Event_Param2>END_SPEECH_EA</Event_Param2>
+    <Reward_Type>SCREEN_TEXT</Reward_Type>
+		<Reward_Param1>TEXT_CONQUEST_THRAWN_EA_KATANA_BATTLE</Reward_Param1>
+		<Reward_Param4>remove</Reward_Param4>
+    <Prereq>Battle_Start</Prereq>
+  </Event>
+  
+  <Event Name="Katana_Grumby_Speech_Two">
+    <Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+	<Event_Param2>START_SPEECH_CSA</Event_Param2>
+    <Reward_Type>SCREEN_TEXT</Reward_Type>
+    <Reward_Param1>TEXT_CONQUEST_THRAWN_CSA_KATANA_BATTLE</Reward_Param1>
+    <Reward_Param2>-1</Reward_Param2>
+    <Prereq>Battle_Start</Prereq>
+  </Event>
+  
+  <Event Name="Katana_Grumby_Speech_End">
+          <Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+      <Event_Param2>END_SPEECH_CSA</Event_Param2>
+    <Reward_Type>SCREEN_TEXT</Reward_Type>
+		<Reward_Param1>TEXT_CONQUEST_THRAWN_CSA_KATANA_BATTLE</Reward_Param1>
+		<Reward_Param4>remove</Reward_Param4>
+    <Prereq>Battle_Start</Prereq>
+  </Event>
+  
+  <Event Name="Katana_Isolder_Speech_Two">
+    <Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+	<Event_Param2>START_SPEECH_HAPES</Event_Param2>
+    <Reward_Type>SCREEN_TEXT</Reward_Type>
+    <Reward_Param1>TEXT_CONQUEST_THRAWN_HAPES_KATANA_BATTLE</Reward_Param1>
+    <Reward_Param2>-1</Reward_Param2>
+    <Prereq>Battle_Start</Prereq>
+  </Event>
+  
+  <Event Name="Katana_Isolder_Speech_End">
+          <Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+      <Event_Param2>END_SPEECH_HAPES</Event_Param2>
+    <Reward_Type>SCREEN_TEXT</Reward_Type>
+		<Reward_Param1>TEXT_CONQUEST_THRAWN_HAPES_KATANA_BATTLE</Reward_Param1>
+		<Reward_Param4>remove</Reward_Param4>
+    <Prereq>Battle_Start</Prereq>
+  </Event>
+  
+  
+	<Event Name="Reinforcements_Appear">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>250</Event_Param1>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_CONQUEST_KATANA_BATTLE_REINFORCEMENTS</Reward_Param1>
+		<Reward_Param2>15</Reward_Param2>
+	</Event>
+ 
+
+	
+   <Event Name="INCREMENT_FLAG_Katana_Count">
+	   <Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		   <Event_Param2>INCREMENT_KATANA_COUNT</Event_Param2>
+		<Reward_Type>INCREMENT_FLAG</Reward_Type>     
+			<Reward_Param1>KATANA_COUNT</Reward_Param1>
+			<Reward_Param2></Reward_Param2>
+	   <Perpetual>true</Perpetual>
+   </Event>
+
+	<Event Name="STORY_VICTORY_IR_Player">
+		<Event_Type>STORY_VICTORY</Event_Type>
+		<Event_Param1>Empire</Event_Param1>
+		<Prereq>Katana_Thrawn_Speech_Two</Prereq>
+	</Event>
+	
+	<Event Name="STORY_VICTORY_NR_Player">
+		<Event_Type>STORY_VICTORY</Event_Type>
+		<Event_Param1>Rebel</Event_Param1>
+		<Prereq>Katana_Karrde_Speech_Two</Prereq>
+	</Event>
+	
+	<Event Name="STORY_VICTORY_EotH_Player">
+		<Event_Type>STORY_VICTORY</Event_Type>
+		<Event_Param1>EmpireoftheHand</Event_Param1>
+		<Prereq>Katana_Parck_Speech_Two</Prereq>
+	</Event>
+	
+	<Event Name="STORY_VICTORY_PA_Player">
+		<Event_Type>STORY_VICTORY</Event_Type>
+		<Event_Param1>Pentastar</Event_Param1>
+		<Prereq>Katana_Kaine_Speech_Two</Prereq>
+	</Event>
+	
+	<Event Name="STORY_VICTORY_ZE_Player">
+		<Event_Type>STORY_VICTORY</Event_Type>
+		<Event_Param1>Zsinj_Empire</Event_Param1>
+		<Prereq>Katana_Zsinj_Speech_Two</Prereq>
+	</Event>
+	
+	<Event Name="STORY_VICTORY_GM_Player">
+		<Event_Type>STORY_VICTORY</Event_Type>
+		<Event_Param1>Greater_Maldrood</Event_Param1>
+		<Prereq>Katana_Teradoc_Speech_Two</Prereq>
+	</Event>
+	
+	<Event Name="STORY_VICTORY_EA_Player">
+		<Event_Type>STORY_VICTORY</Event_Type>
+		<Event_Param1>Eriadu_Authority</Event_Param1>
+		<Prereq>Katana_Delvardus_Speech_Two</Prereq>
+	</Event>
+	
+	<Event Name="STORY_VICTORY_CSA_Player">
+		<Event_Type>STORY_VICTORY</Event_Type>
+		<Event_Param1>Corporate_Sector</Event_Param1>
+		<Prereq>Katana_Grumby_Speech_Two</Prereq>
+	</Event>
+	
+	<Event Name="STORY_VICTORY_Hapes_Player">
+		<Event_Type>STORY_VICTORY</Event_Type>
+		<Event_Param1>Hapes_Consortium</Event_Param1>
+		<Prereq>Katana_Isolder_Speech_Two</Prereq>
+	</Event>
+
+	<Event Name="STORY_VICTORY_Player">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Prereq>STORY_VICTORY_IR_Player</Prereq>
+		<Prereq>STORY_VICTORY_NR_Player</Prereq>
+		<Prereq>STORY_VICTORY_EotH_Player</Prereq>
+		<Prereq>STORY_VICTORY_PA_Player</Prereq>
+		<Prereq>STORY_VICTORY_ZE_Player</Prereq>
+		<Prereq>STORY_VICTORY_GM_Player</Prereq>
+		<Prereq>STORY_VICTORY_EA_Player</Prereq>
+		<Prereq>STORY_VICTORY_CSA_Player</Prereq>
+		<Prereq>STORY_VICTORY_Hapes_Player</Prereq>
+	</Event>
+	
+	<Event Name="Reveal_FOW">
+	   <Event_Type>STORY_TRIGGER</Event_Type>
+	   <Reward_Type>ENABLE_FOW</Reward_Type>
+	   <Reward_Param1>0</Reward_Param1>
+      <Prereq>Battle_Start</Prereq>
+   </Event>
+	
+	<Event Name="BOARDING_TEXT">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>BOARDING_KATANA_TEXT</Event_Param2>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>BOARDING_KATANA</Reward_Param1>
+		<Reward_Param2>15</Reward_Param2>
+	   <Perpetual>true</Perpetual>
+   </Event>
+   
+   <Event Name="SUCCESS_TEXT">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>BOARDING_SUCCESSFUL_TEXT</Event_Param2>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>BOARDING_SUCCESSFUL</Reward_Param1>
+		<Reward_Param2>15</Reward_Param2>
+	   <Perpetual>true</Perpetual>
+   </Event>
+   
+   <Event Name="No_Player">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>NO_PLAYER_TEXT</Event_Param2>
+		<Reward_Type>SCREEN_TEXT</Reward_Type>
+		<Reward_Param1>TEXT_CONQUEST_KATANA_BATTLE_NOPLAYER</Reward_Param1>
+		<Reward_Param2>15</Reward_Param2>
+   </Event>
+   
+   <Event Name="Empire_Autolose">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>EMPIRE_LOSE</Event_Param2>
+    	<Reward_Type>VICTORY</Reward_Type>
+    	<Reward_Param1>Empire</Reward_Param1>
+    	<Reward_Param2>1</Reward_Param2>
+  </Event>
+   
+   <Event Name="Player_Autolose">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>GENERIC_LOSE</Event_Param2>
+    	<Reward_Type>VICTORY</Reward_Type>
+    	<Reward_Param1>Warlords</Reward_Param1>
+    	<Reward_Param2>1</Reward_Param2>
+  </Event>
+  
+  <Event Name="Rebel_Autolose">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>REBEL_LOSE</Event_Param2>
+    	<Reward_Type>VICTORY</Reward_Type>
+    	<Reward_Param1>Rebel</Reward_Param1>
+    	<Reward_Param2>1</Reward_Param2>
+  </Event>
+  
+  <Event Name="EotH_Autolose">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>EOTH_LOSE</Event_Param2>
+    	<Reward_Type>VICTORY</Reward_Type>
+    	<Reward_Param1>EmpireoftheHand</Reward_Param1>
+    	<Reward_Param2>1</Reward_Param2>
+  </Event>
+  
+  <Event Name="PA_Autolose">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>PA_LOSE</Event_Param2>
+    	<Reward_Type>VICTORY</Reward_Type>
+    	<Reward_Param1>Pentastar</Reward_Param1>
+    	<Reward_Param2>1</Reward_Param2>
+  </Event>
+  
+  <Event Name="Zainj_Autolose">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>ZSINJ_LOSE</Event_Param2>
+    	<Reward_Type>VICTORY</Reward_Type>
+    	<Reward_Param1>Zsinj_Empire</Reward_Param1>
+    	<Reward_Param2>1</Reward_Param2>
+  </Event>
+  
+  <Event Name="GM_Autolose">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>GM_LOSE</Event_Param2>
+    	<Reward_Type>VICTORY</Reward_Type>
+    	<Reward_Param1>Greater_Maldrood</Reward_Param1>
+    	<Reward_Param2>1</Reward_Param2>
+  </Event>
+  
+  <Event Name="PA_Autolose">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>PA_LOSE</Event_Param2>
+    	<Reward_Type>VICTORY</Reward_Type>
+    	<Reward_Param1>Pentastar</Reward_Param1>
+    	<Reward_Param2>1</Reward_Param2>
+  </Event>
+  
+  <Event Name="EA_Autolose">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>EA_LOSE</Event_Param2>
+    	<Reward_Type>VICTORY</Reward_Type>
+    	<Reward_Param1>Eriadu_Authority</Reward_Param1>
+    	<Reward_Param2>1</Reward_Param2>
+  </Event>
+  
+  <Event Name="CSA_Autolose">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>CSA_LOSE</Event_Param2>
+    	<Reward_Type>VICTORY</Reward_Type>
+    	<Reward_Param1>Corporate_Sector</Reward_Param1>
+    	<Reward_Param2>1</Reward_Param2>
+  </Event>
+  
+  <Event Name="Hapes_Autolose">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>HAPES_LOSE</Event_Param2>
+    	<Reward_Type>VICTORY</Reward_Type>
+    	<Reward_Param1>Hapes_Consortium</Reward_Param1>
+    	<Reward_Param2>1</Reward_Param2>
+  </Event>
+       
+</Story>

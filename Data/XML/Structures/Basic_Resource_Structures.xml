@@ -1,0 +1,135 @@
+<?xml version="1.0" ?>
+<Ground_Structures>
+	
+	<SpecialStructure Name="Pilot_Academy">
+	
+		<Variant_Of_Existing_Type>Template_Pilot_Academy</Variant_Of_Existing_Type>
+		
+		<Affiliation>Empire, Rebel, Underworld, EmpireoftheHand, Pentastar, Greater_Maldrood, Zsinj_Empire, Hapes_Consortium, Eriadu_Authority, Warlords, Corporate_Sector, SsiRuuvi_Imperium</Affiliation>
+		
+		<Starting_Spawned_Units_Tech_0>Military_Soldier_Team_Deployed, 1</Starting_Spawned_Units_Tech_0>
+		
+	</SpecialStructure>
+	
+	<SpecialStructure Name="Naval_Academy">
+	
+		<Variant_Of_Existing_Type>Template_Naval_Academy</Variant_Of_Existing_Type>
+		
+		<Affiliation>Empire, Rebel, Underworld, EmpireoftheHand, Pentastar, Greater_Maldrood, Zsinj_Empire, Hapes_Consortium, Eriadu_Authority, Warlords, Corporate_Sector, SsiRuuvi_Imperium</Affiliation>
+		
+		<Starting_Spawned_Units_Tech_0>Military_Soldier_Team_Deployed, 1</Starting_Spawned_Units_Tech_0>
+		
+	</SpecialStructure>
+	
+	<SpecialStructure Name="Local_Infrastructure">
+	
+		<Variant_Of_Existing_Type>Template_Local_Infrastructure</Variant_Of_Existing_Type>
+		
+		<Affiliation>Empire, Rebel, Underworld, EmpireoftheHand, Pentastar, Greater_Maldrood, Zsinj_Empire, Hapes_Consortium, Eriadu_Authority, Warlords, Corporate_Sector, SsiRuuvi_Imperium</Affiliation>
+		
+		<Starting_Spawned_Units_Tech_0>Security_Trooper_Team_Deployed, 1</Starting_Spawned_Units_Tech_0>
+
+	</SpecialStructure>
+	
+	<SpecialStructure Name="Tax_Agency">
+		<Variant_Of_Existing_Type>Template_Tax_Agency</Variant_Of_Existing_Type>
+		
+		<Affiliation>Empire, Rebel, Underworld, EmpireoftheHand, Pentastar, Greater_Maldrood, Zsinj_Empire, Hapes_Consortium, Eriadu_Authority, Warlords, Corporate_Sector, SsiRuuvi_Imperium</Affiliation>
+		
+		<Required_Special_Structures>Empire_MoffPalace | NewRep_SenatorsOffice | Hand_GovernorOffice | Pentastar_MoffPalace | Maldrood_MoffPalace | Eriadu_MoffPalace | Zsinj_MoffPalace | House_Royal | House_AlGray | House_Corr | House_Galney | House_Maluri | House_Requud | House_Thane | SsiRuuvi_Palace | CSA_LocalOffice</Required_Special_Structures>
+		
+		<Starting_Spawned_Units_Tech_0>Security_Trooper_Team_Deployed, 1</Starting_Spawned_Units_Tech_0>
+
+	</SpecialStructure>
+	
+	<SpecialStructure Name="Mining_Facility">
+		
+		<Variant_Of_Existing_Type>Template_Mining_Facility</Variant_Of_Existing_Type>
+		
+		<Affiliation>Empire, Rebel, Underworld, EmpireoftheHand, Pentastar, Greater_Maldrood, Zsinj_Empire, Hapes_Consortium, Eriadu_Authority, Warlords, Corporate_Sector, SsiRuuvi_Imperium</Affiliation>
+
+		<Starting_Spawned_Units_Tech_0>Security_Trooper_Team_Deployed, 1</Starting_Spawned_Units_Tech_0>
+
+	</SpecialStructure>
+	
+	<SpecialStructure Name="Imperial_Prison">
+		
+		<Variant_Of_Existing_Type>Template_Labour_Camp</Variant_Of_Existing_Type>
+		
+		<Affiliation>Empire, EmpireoftheHand, Greater_Maldrood, Zsinj_Empire, Eriadu_Authority, Pentastar, Corporate_Sector, Hapes_Consortium</Affiliation>
+
+		<Starting_Spawned_Units_Tech_0>Police_Responder_Assault_Team_Deployed, 1</Starting_Spawned_Units_Tech_0>
+		
+	</SpecialStructure>
+	
+	<SpecialStructure Name="Generic_TradeStation">
+		
+		<Variant_Of_Existing_Type>Template_Generic_TradeStation</Variant_Of_Existing_Type>
+		
+		<Affiliation>Empire, Rebel, Underworld, EmpireoftheHand, Pentastar, Greater_Maldrood, Zsinj_Empire, Hapes_Consortium, Eriadu_Authority, Warlords, Corporate_Sector, SsiRuuvi_Imperium</Affiliation>
+		
+	</SpecialStructure>
+	
+	<SpecialStructure Name="Generic_Colony_One">
+		
+		<Variant_Of_Existing_Type>Template_Generic_Colony_One</Variant_Of_Existing_Type>
+		
+		<Affiliation>Empire, Rebel, Underworld, EmpireoftheHand, Pentastar, Greater_Maldrood, Zsinj_Empire, Hapes_Consortium, Eriadu_Authority, Warlords, Corporate_Sector, SsiRuuvi_Imperium</Affiliation>
+		
+		<Death_Clone>Damage_Normal, Golan_Colony_One_Death_Clone</Death_Clone>
+		
+	</SpecialStructure>
+	
+	<SpecialStructure Name="Generic_Colony_Two">
+		
+		<Variant_Of_Existing_Type>Template_Generic_Colony_Two</Variant_Of_Existing_Type>
+		
+		<Affiliation>Empire, Rebel, Underworld, EmpireoftheHand, Pentastar, Greater_Maldrood, Zsinj_Empire, Hapes_Consortium, Eriadu_Authority, Warlords, Corporate_Sector, SsiRuuvi_Imperium</Affiliation>
+		
+		<!-- <Death_Clone>Damage_Normal, Golan_Colony_Two_Death_Clone</Death_Clone> -->
+		
+	</SpecialStructure>
+	
+	<SpecialStructure Name="Trade_Income_Dummy">
+		
+		<Variant_Of_Existing_Type>Template_Trade_Income_Dummy</Variant_Of_Existing_Type>
+		
+		<Affiliation>Empire, Rebel, Underworld, EmpireoftheHand, Pentastar, Greater_Maldrood, Zsinj_Empire, Hapes_Consortium, Eriadu_Authority, Warlords, Corporate_Sector, SsiRuuvi_Imperium</Affiliation>
+		
+	</SpecialStructure>
+
+	<SpecialStructure Name="Trade_Hub_Income_Dummy">
+		
+		<Variant_Of_Existing_Type>Template_Trade_Hub_Income_Dummy</Variant_Of_Existing_Type>
+		
+		<Affiliation>Empire, Rebel, Underworld, EmpireoftheHand, Pentastar, Greater_Maldrood, Zsinj_Empire, Hapes_Consortium, Eriadu_Authority, Warlords, Corporate_Sector, SsiRuuvi_Imperium</Affiliation>
+		
+	</SpecialStructure>
+	
+	
+	<SpecialStructure Name="Infrastructure_Surplus">
+		
+		<Variant_Of_Existing_Type>Template_Infrastructure_Surplus</Variant_Of_Existing_Type>
+				
+		<Affiliation>Empire, Rebel, Underworld, EmpireoftheHand, Pentastar, Greater_Maldrood, Zsinj_Empire, Hapes_Consortium, Eriadu_Authority, Warlords, Corporate_Sector, SsiRuuvi_Imperium</Affiliation>
+		
+	</SpecialStructure>
+
+	<SpecialStructure Name="Infrastructure_Deficit_Small">
+		
+		<Variant_Of_Existing_Type>Template_Infrastructure_Deficit_Small</Variant_Of_Existing_Type>
+				
+		<Affiliation>Empire, Rebel, Underworld, EmpireoftheHand, Pentastar, Greater_Maldrood, Zsinj_Empire, Hapes_Consortium, Eriadu_Authority, Warlords, Corporate_Sector, SsiRuuvi_Imperium</Affiliation>
+		
+	</SpecialStructure>
+	
+	<SpecialStructure Name="Infrastructure_Deficit_Severe">
+		
+		<Variant_Of_Existing_Type>Template_Infrastructure_Deficit_Severe</Variant_Of_Existing_Type>
+		
+		<Affiliation>Empire, Rebel, Underworld, EmpireoftheHand, Pentastar, Greater_Maldrood, Zsinj_Empire, Hapes_Consortium, Eriadu_Authority, Warlords, Corporate_Sector, SsiRuuvi_Imperium</Affiliation>
+		
+	</SpecialStructure>
+	
+
+</Ground_Structures>

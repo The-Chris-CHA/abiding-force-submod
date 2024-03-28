@@ -1,0 +1,61 @@
+<?xml version="1.0" ?>
+
+<!--****************************************************-->
+<!--***** CAMPAIGN: Fractured Empire (Empire Version) *****-->
+<!--****************************************************-->
+
+<Story>
+
+	<Event Name="Universal_Story_Start">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>0</Event_Param1>
+	</Event>
+ 	
+	<Event Name="Spawn_Pellaeon">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Chimera_Pellaeon_Grand</Reward_Param1>
+		<Reward_Param2>Borosk</Reward_Param2>
+		<Prereq>Universal_Story_Start</Prereq>
+	</Event>
+	
+	<Event Name="Spawn_Scylla">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Scylla</Reward_Param1>
+		<Reward_Param2>Hakassi</Reward_Param2>
+		<Prereq>Universal_Story_Start</Prereq>
+	</Event>
+	
+	<Event Name="Spawn_Tethys">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Tethys_Callous</Reward_Param1>
+		<Reward_Param2>Kampe</Reward_Param2>
+		<Prereq>Universal_Story_Start</Prereq>
+	</Event>
+	
+	<Event Name="Spawn_Shargael">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Shargael_Team</Reward_Param1>
+		<Reward_Param2>Kalist</Reward_Param2>
+		<Prereq>Universal_Story_Start</Prereq>
+	</Event>
+	
+	<Event Name="Spawn_Phennir">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>181st_Stele</Reward_Param1>
+		<Reward_Param2>Borosk</Reward_Param2>
+		<Prereq>Universal_Story_Start</Prereq>
+	</Event>	
+	<Event Name="Spawn_Brakiss">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Brakiss_Team</Reward_Param1>
+		<Reward_Param2>Hakassi</Reward_Param2>
+		<Prereq>Universal_Story_Start</Prereq>
+	</Event>
+
+</Story>

@@ -1,0 +1,171 @@
+ <!-- ==================== BEGIN SAVE CRASH RE-ENABLE EVENTS ==================== -->
+  
+	<!--<Event Name="Lock_Controls">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>LOCK_CONTROLS</Reward_Type>
+		<Reward_Param1>1</Reward_Param1>
+		<Prereq>Progressive_Story_Start</Prereq>
+	</Event>
+  
+	<Event Name="Forces_Spawned">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>10</Event_Param1>
+
+	</Event>
+  	<Event Name="Enable_AI_Rebel">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SWITCH_CONTROL</Reward_Type>
+		<Reward_Param1>Rebel</Reward_Param1>
+		<Reward_Param2>GenericAI</Reward_Param2>
+		<Prereq>Forces_Spawned</Prereq>
+		<Branch>Faction_Branch_NewRep_Save</Branch>
+	</Event>
+	
+	<Event Name="Enable_Human_Rebel">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SWITCH_CONTROL</Reward_Type>
+		<Reward_Param1>Rebel</Reward_Param1>
+		<Reward_Param2>SandboxHuman</Reward_Param2>
+		<Prereq>Forces_Spawned</Prereq>
+		<Branch>Faction_Branch_NewRep</Branch>
+	</Event>
+
+	<Event Name="Enable_AI_Empire">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SWITCH_CONTROL</Reward_Type>
+		<Reward_Param1>Empire</Reward_Param1>
+		<Reward_Param2>RemnantAI</Reward_Param2>
+		<Prereq>Forces_Spawned</Prereq>
+		<Branch>Faction_Branch_Empire_Save</Branch>
+	</Event>
+	
+	<Event Name="Enable_Human_Empire">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SWITCH_CONTROL</Reward_Type>
+		<Reward_Param1>Empire</Reward_Param1>
+		<Reward_Param2>SandboxHuman</Reward_Param2>
+		<Prereq>Forces_Spawned</Prereq>
+		<Branch>Faction_Branch_Empire</Branch>
+	</Event>
+	
+	<Event Name="Enable_AI_EotH">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SWITCH_CONTROL</Reward_Type>
+		<Reward_Param1>EmpireoftheHand</Reward_Param1>
+		<Reward_Param2>EotHAI</Reward_Param2>
+		<Prereq>Forces_Spawned</Prereq>
+		<Branch>Faction_Branch_EotH_Save</Branch>
+
+	</Event>
+	
+	<Event Name="Enable_Human_EotH">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SWITCH_CONTROL</Reward_Type>
+		<Reward_Param1>EotH</Reward_Param1>
+		<Reward_Param2>SandboxHuman</Reward_Param2>
+		<Prereq>Forces_Spawned</Prereq>
+		<Branch>Faction_Branch_EotH</Branch>
+	</Event>
+	
+	<Event Name="Enable_AI_Pentastar">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SWITCH_CONTROL</Reward_Type>
+		<Reward_Param1>Pentastar</Reward_Param1>
+		<Reward_Param2>PentastarAI</Reward_Param2>
+		<Prereq>Forces_Spawned</Prereq>
+		<Branch>Faction_Branch_Pentastar_Save</Branch>
+	</Event>
+	
+	<Event Name="Enable_Human_Pentastar">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SWITCH_CONTROL</Reward_Type>
+		<Reward_Param1>Pentastar</Reward_Param1>
+		<Reward_Param2>SandboxHuman</Reward_Param2>
+		<Prereq>Forces_Spawned</Prereq>
+		<Branch>Faction_Branch_Pentastar</Branch>
+	</Event>
+	
+	<Event Name="Enable_AI_Pirates">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SWITCH_CONTROL</Reward_Type>
+		<Reward_Param1>Pirates</Reward_Param1>
+		<Reward_Param2>WarlordAI</Reward_Param2>
+		<Prereq>Forces_Spawned</Prereq>
+		<Branch>Faction_Branch_Zsinj_Save</Branch>
+
+	</Event>
+
+	<Event Name="Enable_Human_Pirates">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SWITCH_CONTROL</Reward_Type>
+		<Reward_Param1>Pirates</Reward_Param1>
+		<Reward_Param2>SandboxHuman</Reward_Param2>
+		<Prereq>Forces_Spawned</Prereq>
+		<Branch>Faction_Branch_Zsinj</Branch>
+	</Event>
+	
+	<Event Name="Enable_AI_Eriadu">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SWITCH_CONTROL</Reward_Type>
+		<Reward_Param1>Hutts</Reward_Param1>
+		<Reward_Param2>WarlordAI</Reward_Param2>
+		<Prereq>Forces_Spawned</Prereq>
+		<Branch>Faction_Branch_Eriadu_Save</Branch>
+
+	</Event>
+	
+	<Event Name="Enable_Human_Eriadu">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SWITCH_CONTROL</Reward_Type>
+		<Reward_Param1>Hutts</Reward_Param1>
+		<Reward_Param2>SandboxHuman</Reward_Param2>
+		<Prereq>Forces_Spawned</Prereq>
+		<Branch>Faction_Branch_Eriadu</Branch>
+	</Event>
+	
+	<Event Name="Enable_AI_Teradoc">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SWITCH_CONTROL</Reward_Type>
+		<Reward_Param1>Teradoc</Reward_Param1>
+		<Reward_Param2>WarlordAI</Reward_Param2>
+		<Prereq>Forces_Spawned</Prereq>
+		<Branch>Faction_Branch_Teradoc_Save</Branch>
+
+	</Event>
+	
+	<Event Name="Enable_Human_Teradoc">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SWITCH_CONTROL</Reward_Type>
+		<Reward_Param1>Teradoc</Reward_Param1>
+		<Reward_Param2>SandboxHuman</Reward_Param2>
+		<Prereq>Forces_Spawned</Prereq>
+		<Branch>Faction_Branch_Teradoc</Branch>
+	</Event>
+		
+	<Event Name="Enable_AI_Corporate_Sector">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SWITCH_CONTROL</Reward_Type>
+		<Reward_Param1>Corporate_Sector</Reward_Param1>
+		<Reward_Param2>GenericAI</Reward_Param2>
+		<Prereq>Forces_Spawned</Prereq>
+		<Branch>Faction_Branch_Corporate_Sector_Save</Branch>
+
+	</Event>
+	
+	<Event Name="Enable_Human_Corporate_Sector">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SWITCH_CONTROL</Reward_Type>
+		<Reward_Param1>Corporate_Sector</Reward_Param1>
+		<Reward_Param2>SandboxHuman</Reward_Param2>
+		<Prereq>Forces_Spawned</Prereq>
+		<Branch>Faction_Branch_Corporate_Sector</Branch>
+	</Event>
+	
+	
+	<Event Name="Unlock_Controls">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>LOCK_CONTROLS</Reward_Type>
+		<Reward_Param1>0</Reward_Param1>
+		<Prereq>Forces_Spawned</Prereq>
+	</Event> -->
+	

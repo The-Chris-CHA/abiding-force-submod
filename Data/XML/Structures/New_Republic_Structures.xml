@@ -1,0 +1,352 @@
+<?xml version="1.0"?>
+<SpecialStructures>
+
+	<SpecialStructure Name="NewRep_Senate">
+	
+		<Variant_Of_Existing_Type>Template_Faction_Capital</Variant_Of_Existing_Type>
+		
+		<Text_ID>TEXT_COMPANY_NEWREP_CAPITAL</Text_ID>
+		
+		<Encyclopedia_Text>
+		TEXT_COMPANY_CAPITAL_DESCRIPTION
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_CAPITAL_NR_HEALTH
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_TOOLTIP_CAPITAL_NR1
+		TEXT_TOOLTIP_CAPITAL_NR2
+		TEXT_TOOLTIP_CAPITAL_NR3
+		TEXT_TOOLTIP_CAPITAL_NR4
+		TEXT_TOOLTIP_CAPITAL_NR5
+		TEXT_TOOLTIP_CAPITAL_NR6
+		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
+		TEXT_TOOLTIP_BONUS_BLOCK_OB
+		TEXT_TOOLTIP_BONUS_BLOCK_BR
+        TEXT_TOOLTIP_BONUS_BLOCK_VP
+		TEXT_TOOLTIP_INCOME_CAPITAL
+		TEXT_TOOLTIP_INCOME_CAPITAL_SHIPCREWS
+		TEXT_TOOLTIP_INFLUENCE_CAPITAL
+		TEXT_TOOLTIP_SEPARATOR_LIMITS_BLOCK
+		TEXT_TOOLTIP_BUILDLIMIT_CAPITAL
+		</Encyclopedia_Text>
+		
+		<Land_Model_Name>W_Corsenate.alo</Land_Model_Name>
+		
+		<Icon_Name>I_BUTTON_NR_CAPITAL.TGA</Icon_Name>
+		
+		<Affiliation>Rebel</Affiliation>
+
+		<!--Era 1 to 3-->
+		<Starting_Spawned_Units_Tech_0>Rebel_Infantry_Squad_Deployed, 5</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Rebel_Infantry_Squad_Deployed, 15</Reserve_Spawned_Units_Tech_0>
+
+		<Starting_Spawned_Units_Tech_0>Rebel_Marine_Squad_Deployed, 2</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Rebel_Marine_Squad_Deployed, 6</Reserve_Spawned_Units_Tech_0>
+
+		<Starting_Spawned_Units_Tech_0>Freerunner, 2</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Freerunner, 4</Reserve_Spawned_Units_Tech_0>
+
+		<Starting_Spawned_Units_Tech_0>T2B_Tank, 4</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>T2B_Tank, 8</Reserve_Spawned_Units_Tech_0>
+
+		<Starting_Spawned_Units_Tech_0>T4B_Tank, 1</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>T4B_Tank, 1</Reserve_Spawned_Units_Tech_0>
+
+		<!--Era 4+ -->
+		<Starting_Spawned_Units_Tech_2>Defense_Trooper_Squad_Deployed, 5</Starting_Spawned_Units_Tech_2>
+		<Reserve_Spawned_Units_Tech_2>Defense_Trooper_Squad_Deployed, 15</Reserve_Spawned_Units_Tech_2>
+
+		<Starting_Spawned_Units_Tech_2>Rebel_Marine_Squad_Deployed, 2</Starting_Spawned_Units_Tech_2>
+		<Reserve_Spawned_Units_Tech_2>Rebel_Marine_Squad_Deployed, 6</Reserve_Spawned_Units_Tech_2>
+
+		<Starting_Spawned_Units_Tech_2>Freerunner, 2</Starting_Spawned_Units_Tech_2>
+		<Reserve_Spawned_Units_Tech_2>Freerunner, 4</Reserve_Spawned_Units_Tech_2>
+
+		<Starting_Spawned_Units_Tech_2>T2B_Tank, 4</Starting_Spawned_Units_Tech_2>
+		<Reserve_Spawned_Units_Tech_2>T2B_Tank, 8</Reserve_Spawned_Units_Tech_2>
+
+		<Starting_Spawned_Units_Tech_2>T4B_Tank, 1</Starting_Spawned_Units_Tech_2>
+		<Reserve_Spawned_Units_Tech_2>T4B_Tank, 1</Reserve_Spawned_Units_Tech_2>
+		
+		<Death_CLone>Damage_Normal, W_CORSENATE_Death_Clone</Death_CLone>
+
+	</SpecialStructure>	
+	
+	<SpecialStructure Name="NewRep_SenatorsOffice">
+		
+		<Variant_Of_Existing_Type>Template_Planetary_Government</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_COMPANY_SENATORSOFFICE</Text_ID>
+
+		<Land_Model_Name>RB_OfficerAcademy.alo</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		
+		<Affiliation>Rebel</Affiliation>
+		
+		<Tactical_Additional_Structure_Type>Generic_Power_Generator</Tactical_Additional_Structure_Type>
+		
+		<Icon_Name>i_button_nr.tga</Icon_Name>
+		
+		<!--Era 1 to 3-->
+		<Starting_Spawned_Units_Tech_0>Rebel_Infantry_Squad_Deployed, 3</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Rebel_Infantry_Squad_Deployed, 9</Reserve_Spawned_Units_Tech_0>
+
+		<Starting_Spawned_Units_Tech_0>Freerunner, 1</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Freerunner, 2</Reserve_Spawned_Units_Tech_0>
+
+		<Starting_Spawned_Units_Tech_0>AAC_2, 2</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>AAC_2, 4</Reserve_Spawned_Units_Tech_0>
+
+		<!--Era 4+ -->
+		<Starting_Spawned_Units_Tech_2>Defense_Trooper_Squad_Deployed, 3</Starting_Spawned_Units_Tech_2>
+		<Reserve_Spawned_Units_Tech_2>Defense_Trooper_Squad_Deployed, 9</Reserve_Spawned_Units_Tech_2>
+
+		<Starting_Spawned_Units_Tech_2>Freerunner, 1</Starting_Spawned_Units_Tech_2>
+		<Reserve_Spawned_Units_Tech_2>Freerunner, 2</Reserve_Spawned_Units_Tech_2>
+
+		<Starting_Spawned_Units_Tech_2>AAC_2, 2</Starting_Spawned_Units_Tech_2>
+		<Reserve_Spawned_Units_Tech_2>AAC_2, 4</Reserve_Spawned_Units_Tech_2>
+
+
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_SENATORSOFFICE_DESCRIPTION
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_OFFICE_NR_HEALTH
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_TOOLTIP_OFFICE_NR1
+		TEXT_TOOLTIP_OFFICE_NR2
+		TEXT_TOOLTIP_OFFICE_NR3
+		TEXT_TOOLTIP_OFFICE_NR4
+		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
+		TEXT_TOOLTIP_INFLUENCE_OFFICE
+		</Encyclopedia_Text>
+		
+		<Abilities SubObjectList="Yes">		
+		
+			<Political_Transition_Bonus_Ability Name="Pacification_Bonus">
+				<Time_Reduction_Percentage>0.05</Time_Reduction_Percentage>
+				<Stacking_Category>1</Stacking_Category>
+			</Political_Transition_Bonus_Ability>
+			
+			<!-- KDY discounts are high enough the additive rather than multiplicative way bonuses combine cause problems, so these ones don't stack -->
+			<Reduce_Production_Price_Ability Name="KDY_Corp_Discount">
+				<Unit_Strength_Category/>
+				<Applicable_Unit_Categories/>
+				<Applicable_Unit_Types> KDY_HQ </Applicable_Unit_Types>
+				<Price_Reduction_Percentage>0.925</Price_Reduction_Percentage>
+				<Stacking_Category>0</Stacking_Category>
+			</Reduce_Production_Price_Ability>
+			
+			<Reduce_Production_Price_Ability Name="KDY_Branch_Discount">
+				<Unit_Strength_Category/>
+				<Applicable_Unit_Categories/>
+				<Applicable_Unit_Types> KDY_Branch </Applicable_Unit_Types>
+				<Price_Reduction_Percentage>0.85</Price_Reduction_Percentage>
+				<Stacking_Category>0</Stacking_Category>
+			</Reduce_Production_Price_Ability>
+			
+			<Reduce_Production_Price_Ability Name="Rendili_Corp_Discount">
+				<Unit_Strength_Category/>
+				<Applicable_Unit_Categories/>
+				<Applicable_Unit_Types> Rendili_HQ </Applicable_Unit_Types>
+				<Price_Reduction_Percentage>0.3333333</Price_Reduction_Percentage>
+				<Stacking_Category>0</Stacking_Category>
+			</Reduce_Production_Price_Ability>
+			
+			<Reduce_Production_Price_Ability Name="Sienar_Corp_Discount">
+				<Unit_Strength_Category/>
+				<Applicable_Unit_Categories/>
+				<Applicable_Unit_Types> Sienar_HQ </Applicable_Unit_Types>
+				<Price_Reduction_Percentage>0.4</Price_Reduction_Percentage>
+				<Stacking_Category>0</Stacking_Category>
+			</Reduce_Production_Price_Ability>
+		</Abilities>
+		
+	</SpecialStructure>
+		
+	<SpecialStructure Name="R_Ground_Barracks">
+		
+		<Variant_Of_Existing_Type>Template_Barracks</Variant_Of_Existing_Type>
+		
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_BARRACKS 
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
+		TEXT_TOOLTIP_BARRACKS_NR_HEALTH
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_TOOLTIP_BARRACKS_NR1
+		TEXT_TOOLTIP_BARRACKS_NR2
+		TEXT_TOOLTIP_BARRACKS_NR3
+		TEXT_TOOLTIP_BARRACKS_NR4
+		</Encyclopedia_Text>
+		
+		<MP_Encyclopedia_Text> TEXT_TOOLTIP_BARRACKS </MP_Encyclopedia_Text>
+		
+		<Land_Model_Name>RB_InfantryBarracks.alo</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Icon_Name>i_button_r_infantry_barracks.tga</Icon_Name>
+		
+		<Affiliation>Rebel</Affiliation>
+		
+		<Required_Special_Structures>NewRep_SenatorsOffice</Required_Special_Structures>
+
+		<Tactical_Buildable_Objects_Multiplayer>
+			Rebel,
+				Rebel_Infantry_Squad,
+				<!--Jedi_Squad,-->
+				Rebel_Marine_Squad,
+				Defense_Trooper_Squad,
+				Rebel_Infiltrator_Squad, 
+				
+			Corporate_Sector,
+			    Espo_Squad,
+				CSA_Destroyer_Droid_Company,
+				CSA_B1_Droid_Squad,
+				Heavy_Espo_Squad,
+			Hapes_Consortium,
+				Hapan_Infantry_Squad,
+				Requud_Infantry_Squad,
+				Galney_Infantry_Squad,
+				Maluri_Infantry_Squad,
+				HRG_Commando_Squad,
+		</Tactical_Buildable_Objects_Multiplayer>
+
+		<!--Era 1 to 3-->
+		<Starting_Spawned_Units_Tech_0>Rebel_Infantry_Squad_Deployed, 2</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Rebel_Infantry_Squad_Deployed, -1</Reserve_Spawned_Units_Tech_0> <!--Infinite Respawns-->
+
+		<Starting_Spawned_Units_Tech_0>Rebel_Infantry_Squad_Fodder_Deployed, 1</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Rebel_Infantry_Squad_Fodder_Deployed, -1</Reserve_Spawned_Units_Tech_0> <!--Infinite Respawns-->
+
+		<Starting_Spawned_Units_Tech_0>T1B_Tank, 1</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>T1B_Tank, 2</Reserve_Spawned_Units_Tech_0>
+
+		<!--Era 4 to 7-->
+		<Starting_Spawned_Units_Tech_2>Defense_Trooper_Squad_Deployed, 3</Starting_Spawned_Units_Tech_2>
+		<Reserve_Spawned_Units_Tech_2>Defense_Trooper_Squad_Deployed, -1</Reserve_Spawned_Units_Tech_2> <!--Infinite Respawns-->
+
+		<Starting_Spawned_Units_Tech_2>T1B_Tank, 1</Starting_Spawned_Units_Tech_2>
+		<Reserve_Spawned_Units_Tech_2>T1B_Tank, 2</Reserve_Spawned_Units_Tech_2> 
+
+	</SpecialStructure>
+	
+	<SpecialStructure Name="R_Ground_Light_Vehicle_Factory">
+		
+		<Variant_Of_Existing_Type>Template_Light_Vehicle_Factory</Variant_Of_Existing_Type>
+		
+		<Land_Model_Name>rb_lightvehiclefactory.alo</Land_Model_Name>
+		<Icon_Name>i_button_r_vehicle_factory.tga</Icon_Name>
+
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_L_FACTORY
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
+		TEXT_TOOLTIP_L_FACTORY_NR_HEALTH 
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK 
+		TEXT_TOOLTIP_L_FACTORY_NR1
+		TEXT_TOOLTIP_L_FACTORY_NR2
+		</Encyclopedia_Text>
+		
+		<MP_Encyclopedia_Text> TEXT_TOOLTIP_L_FACTORY </MP_Encyclopedia_Text>
+		
+		<Obstacle_Proxy_Type> R_Ground_Light_Vehicle_Factory_Build_Pad </Obstacle_Proxy_Type>
+
+		<Affiliation>Rebel</Affiliation>
+
+		<Required_Special_Structures>NewRep_SenatorsOffice</Required_Special_Structures>
+
+		<Tactical_Health>750</Tactical_Health>
+		
+		<!--All Eras-->
+		<Starting_Spawned_Units_Tech_0>T2B_Tank, 1</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>T2B_Tank, 2</Reserve_Spawned_Units_Tech_0>
+
+		<Starting_Spawned_Units_Tech_0>AAC_2, 3</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>AAC_2, 6</Reserve_Spawned_Units_Tech_0>
+
+
+	    <Tactical_Buildable_Objects_Multiplayer>
+			Rebel,
+				Rebel_T2B_Company,
+				Rebel_AAC_2_Company,
+				Rebel_SRV1_Company,
+				Rebel_T1B_Company,
+				Rebel_Snowspeeder_Wing,
+	
+			Corporate_Sector,
+			    Espo_Walker_Squad,
+				X10_Group,
+				GX12_Company,
+				SX20_Company,
+		
+			Hapes_Consortium,
+				Hapan_LightTank_Company,
+				Hapan_Transport_Company,
+				Hapan_Silanus_Company,
+				Hapan_Artillery_Company,
+				
+		</Tactical_Buildable_Objects_Multiplayer>
+
+	</SpecialStructure>
+
+	<SpecialStructure Name="R_Ground_Heavy_Vehicle_Factory">
+	
+		<Variant_Of_Existing_Type>Template_Heavy_Vehicle_Factory</Variant_Of_Existing_Type>
+		
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_H_FACTORY 
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_H_FACTORY_NR_HEALTH 
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_TOOLTIP_H_FACTORY_NR1
+		TEXT_TOOLTIP_H_FACTORY_NR2
+		</Encyclopedia_Text>
+		<MP_Encyclopedia_Text> TEXT_TOOLTIP_H_FACTORY </MP_Encyclopedia_Text>
+		
+		<Land_Model_Name>rb_heavyvehiclefactory.alo</Land_Model_Name>
+		<Icon_Name>i_button_r_advanced_weapons.tga</Icon_Name>
+		<Obstacle_Proxy_Type> R_Ground_Heavy_Vehicle_Factory_Build_Pad </Obstacle_Proxy_Type>
+		
+		<Scale_Factor>1.50</Scale_Factor>
+	
+		<Affiliation>Rebel</Affiliation>
+		
+		<Required_Special_Structures>NewRep_SenatorsOffice</Required_Special_Structures>
+
+
+		<Tactical_Buildable_Objects_Multiplayer>
+			Rebel,
+				Rebel_AA5_Company,
+				Rebel_Gallofree_HTT_Company,
+				Rebel_Freerunner_Company,
+				Rebel_T3B_Company,
+				Rebel_T4B_Company,
+				Rebel_MPTL_Company,
+				Rebel_Vwing_Group,
+				Rebel_Tracker_Company,
+				MAS_2xB_Company,
+	
+			Corporate_Sector,
+			    Hailfire_Company,
+				Class_I_Company,
+				JX40_Group,
+				Strikebreaker_Group,
+				K222_Group,
+				Persuader_Company,
+				CA_Artillery_Company,
+			
+				
+			Hapes_Consortium,
+				Hapan_HeavyTank_Company,
+				Hapan_Gunboat_Company,
+		</Tactical_Buildable_Objects_Multiplayer>
+
+	
+		<!--All Eras-->
+		<Starting_Spawned_Units_Tech_0>T4B_Tank, 2</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>T4B_Tank, 4</Reserve_Spawned_Units_Tech_0>
+
+		<Starting_Spawned_Units_Tech_0>AAC_2, 1</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>AAC_2, 2</Reserve_Spawned_Units_Tech_0>
+
+	</SpecialStructure>
+
+</SpecialStructures>
+

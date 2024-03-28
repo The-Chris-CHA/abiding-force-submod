@@ -1,0 +1,353 @@
+<?xml version="1.0" ?>
+<!-- Equations that define perception functions -->
+<Equations>
+
+	<Is_Connected_To_Player>
+		(Variable_Target.IsConnectedTo {Parameter_Faction = "Empire", Parameter_Attenuator = 0.0}
+		+
+		Variable_Target.IsConnectedTo {Parameter_Faction = "Rebel", Parameter_Attenuator = 0.0}
+		+
+		Variable_Target.IsConnectedTo {Parameter_Faction = "Underworld", Parameter_Attenuator = 0.0}
+		+
+		Variable_Target.IsConnectedTo {Parameter_Faction = "Zsinj_Empire", Parameter_Attenuator = 0.0}
+		+
+		Variable_Target.IsConnectedTo {Parameter_Faction = "Eriadu_Authority", Parameter_Attenuator = 0.0}
+		+
+		Variable_Target.IsConnectedTo {Parameter_Faction = "Pentastar", Parameter_Attenuator = 0.0}
+		+
+		Variable_Target.IsConnectedTo {Parameter_Faction = "Greater_Maldrood", Parameter_Attenuator = 0.0}
+		+
+		Variable_Target.IsConnectedTo {Parameter_Faction = "Hutt_Cartels", Parameter_Attenuator = 0.0}
+		+
+		Variable_Target.IsConnectedTo {Parameter_Faction = "SsiRuuvi_Imperium", Parameter_Attenuator = 0.0}
+		+
+		Variable_Target.IsConnectedTo {Parameter_Faction = "Corporate_Sector", Parameter_Attenuator = 0.0}
+		+
+		Variable_Target.IsConnectedTo {Parameter_Faction = "Hapes_Consortium", Parameter_Attenuator = 0.0}
+		+
+		Variable_Target.IsConnectedTo {Parameter_Faction = "EmpireoftheHand", Parameter_Attenuator = 0.0}) > 0.0
+	</Is_Connected_To_Player>
+	
+	<Is_Connected_To_Enemy_Human>
+		(
+			(
+			Variable_Target.IsConnectedTo {Parameter_Faction = "Rebel", Parameter_Attenuator = 0.0} * Variable_Human.IsFaction {Parameter_Faction = "Rebel"}
+			+ Variable_Target.IsConnectedTo {Parameter_Faction = "Underworld", Parameter_Attenuator = 0.0} * Variable_Human.IsFaction {Parameter_Faction = "Underworld"}
+			+ Variable_Target.IsConnectedTo {Parameter_Faction = "Zsinj_Empire", Parameter_Attenuator = 0.0} * Variable_Human.IsFaction {Parameter_Faction = "Zsinj_Empire"}
+			+ Variable_Target.IsConnectedTo {Parameter_Faction = "Eriadu_Authority", Parameter_Attenuator = 0.0} * Variable_Human.IsFaction {Parameter_Faction = "Eriadu_Authority"}
+			+ Variable_Target.IsConnectedTo {Parameter_Faction = "Pentastar", Parameter_Attenuator = 0.0} * Variable_Human.IsFaction {Parameter_Faction = "Pentastar"}
+			+ Variable_Target.IsConnectedTo {Parameter_Faction = "Greater_Maldrood", Parameter_Attenuator = 0.0} * Variable_Human.IsFaction {Parameter_Faction = "Greater_Maldrood"}
+			+ Variable_Target.IsConnectedTo {Parameter_Faction = "Hutt_Cartels", Parameter_Attenuator = 0.0} * Variable_Human.IsFaction {Parameter_Faction = "Hutt_Cartels"}
+			+ Variable_Target.IsConnectedTo {Parameter_Faction = "SsiRuuvi_Imperium", Parameter_Attenuator = 0.0} * Variable_Human.IsFaction {Parameter_Faction = "SsiRuuvi_Imperium"}
+			+ Variable_Target.IsConnectedTo {Parameter_Faction = "Corporate_Sector", Parameter_Attenuator = 0.0} * Variable_Human.IsFaction {Parameter_Faction = "Corporate_Sector"}
+			+ Variable_Target.IsConnectedTo {Parameter_Faction = "EmpireoftheHand", Parameter_Attenuator = 0.0} * Variable_Human.IsFaction {Parameter_Faction = "EmpireoftheHand"}
+			+ Variable_Target.IsConnectedTo {Parameter_Faction = "Hapes_Consortium", Parameter_Attenuator = 0.0} * Variable_Human.IsFaction {Parameter_Faction = "Hapes_Consortium"}
+			) 
+			*
+			Variable_Self.IsFaction {Parameter_Faction = "Empire"}
+			+
+			(
+			Variable_Target.IsConnectedTo {Parameter_Faction = "Underworld", Parameter_Attenuator = 0.0} * Variable_Human.IsFaction {Parameter_Faction = "Underworld"}
+			+ Variable_Target.IsConnectedTo {Parameter_Faction = "Zsinj_Empire", Parameter_Attenuator = 0.0} * Variable_Human.IsFaction {Parameter_Faction = "Zsinj_Empire"}
+			+ Variable_Target.IsConnectedTo {Parameter_Faction = "Eriadu_Authority", Parameter_Attenuator = 0.0} * Variable_Human.IsFaction {Parameter_Faction = "Eriadu_Authority"}
+			+ Variable_Target.IsConnectedTo {Parameter_Faction = "Pentastar", Parameter_Attenuator = 0.0} * Variable_Human.IsFaction {Parameter_Faction = "Pentastar"}
+			+ Variable_Target.IsConnectedTo {Parameter_Faction = "Greater_Maldrood", Parameter_Attenuator = 0.0} * Variable_Human.IsFaction {Parameter_Faction = "Greater_Maldrood"}
+			+ Variable_Target.IsConnectedTo {Parameter_Faction = "Hutt_Cartels", Parameter_Attenuator = 0.0} * Variable_Human.IsFaction {Parameter_Faction = "Hutt_Cartels"}
+			+ Variable_Target.IsConnectedTo {Parameter_Faction = "SsiRuuvi_Imperium", Parameter_Attenuator = 0.0} * Variable_Human.IsFaction {Parameter_Faction = "SsiRuuvi_Imperium"}
+			+ Variable_Target.IsConnectedTo {Parameter_Faction = "Corporate_Sector", Parameter_Attenuator = 0.0} * Variable_Human.IsFaction {Parameter_Faction = "Corporate_Sector"}
+			+ Variable_Target.IsConnectedTo {Parameter_Faction = "Empire", Parameter_Attenuator = 0.0} * Variable_Human.IsFaction {Parameter_Faction = "Empire"}
+			+ Variable_Target.IsConnectedTo {Parameter_Faction = "EmpireoftheHand", Parameter_Attenuator = 0.0} * Variable_Human.IsFaction {Parameter_Faction = "EmpireoftheHand"}
+			+ Variable_Target.IsConnectedTo {Parameter_Faction = "Hapes_Consortium", Parameter_Attenuator = 0.0} * Variable_Human.IsFaction {Parameter_Faction = "Hapes_Consortium"}
+			) 
+			*
+			Variable_Self.IsFaction {Parameter_Faction = "Rebel"}
+			+
+			(
+			Variable_Target.IsConnectedTo {Parameter_Faction = "Rebel", Parameter_Attenuator = 0.0} * Variable_Human.IsFaction {Parameter_Faction = "Rebel"}
+			+ Variable_Target.IsConnectedTo {Parameter_Faction = "Zsinj_Empire", Parameter_Attenuator = 0.0} * Variable_Human.IsFaction {Parameter_Faction = "Zsinj_Empire"}
+			+ Variable_Target.IsConnectedTo {Parameter_Faction = "Eriadu_Authority", Parameter_Attenuator = 0.0} * Variable_Human.IsFaction {Parameter_Faction = "Eriadu_Authority"}
+			+ Variable_Target.IsConnectedTo {Parameter_Faction = "Pentastar", Parameter_Attenuator = 0.0} * Variable_Human.IsFaction {Parameter_Faction = "Pentastar"}
+			+ Variable_Target.IsConnectedTo {Parameter_Faction = "Greater_Maldrood", Parameter_Attenuator = 0.0} * Variable_Human.IsFaction {Parameter_Faction = "Greater_Maldrood"}
+			+ Variable_Target.IsConnectedTo {Parameter_Faction = "Hutt_Cartels", Parameter_Attenuator = 0.0} * Variable_Human.IsFaction {Parameter_Faction = "Hutt_Cartels"}
+			+ Variable_Target.IsConnectedTo {Parameter_Faction = "SsiRuuvi_Imperium", Parameter_Attenuator = 0.0} * Variable_Human.IsFaction {Parameter_Faction = "SsiRuuvi_Imperium"}
+			+ Variable_Target.IsConnectedTo {Parameter_Faction = "Corporate_Sector", Parameter_Attenuator = 0.0} * Variable_Human.IsFaction {Parameter_Faction = "Corporate_Sector"}
+			+ Variable_Target.IsConnectedTo {Parameter_Faction = "Empire", Parameter_Attenuator = 0.0} * Variable_Human.IsFaction {Parameter_Faction = "Empire"}
+			+ Variable_Target.IsConnectedTo {Parameter_Faction = "EmpireoftheHand", Parameter_Attenuator = 0.0} * Variable_Human.IsFaction {Parameter_Faction = "EmpireoftheHand"}
+			+ Variable_Target.IsConnectedTo {Parameter_Faction = "Hapes_Consortium", Parameter_Attenuator = 0.0} * Variable_Human.IsFaction {Parameter_Faction = "Hapes_Consortium"}
+			) 
+			*
+			Variable_Self.IsFaction {Parameter_Faction = "Underworld"}
+			+
+			(
+			Variable_Target.IsConnectedTo {Parameter_Faction = "Rebel", Parameter_Attenuator = 0.0} * Variable_Human.IsFaction {Parameter_Faction = "Rebel"}
+			+ Variable_Target.IsConnectedTo {Parameter_Faction = "Zsinj_Empire", Parameter_Attenuator = 0.0} * Variable_Human.IsFaction {Parameter_Faction = "Zsinj_Empire"}
+			+ Variable_Target.IsConnectedTo {Parameter_Faction = "Eriadu_Authority", Parameter_Attenuator = 0.0} * Variable_Human.IsFaction {Parameter_Faction = "Eriadu_Authority"}
+			+ Variable_Target.IsConnectedTo {Parameter_Faction = "Pentastar", Parameter_Attenuator = 0.0} * Variable_Human.IsFaction {Parameter_Faction = "Pentastar"}
+			+ Variable_Target.IsConnectedTo {Parameter_Faction = "Greater_Maldrood", Parameter_Attenuator = 0.0} * Variable_Human.IsFaction {Parameter_Faction = "Greater_Maldrood"}
+			+ Variable_Target.IsConnectedTo {Parameter_Faction = "Hutt_Cartels", Parameter_Attenuator = 0.0} * Variable_Human.IsFaction {Parameter_Faction = "Hutt_Cartels"}
+			+ Variable_Target.IsConnectedTo {Parameter_Faction = "SsiRuuvi_Imperium", Parameter_Attenuator = 0.0} * Variable_Human.IsFaction {Parameter_Faction = "SsiRuuvi_Imperium"}
+			+ Variable_Target.IsConnectedTo {Parameter_Faction = "Corporate_Sector", Parameter_Attenuator = 0.0} * Variable_Human.IsFaction {Parameter_Faction = "Corporate_Sector"}
+			+ Variable_Target.IsConnectedTo {Parameter_Faction = "Empire", Parameter_Attenuator = 0.0} * Variable_Human.IsFaction {Parameter_Faction = "Empire"}
+			+ Variable_Target.IsConnectedTo {Parameter_Faction = "Underworld", Parameter_Attenuator = 0.0} * Variable_Human.IsFaction {Parameter_Faction = "Underworld"}
+			+ Variable_Target.IsConnectedTo {Parameter_Faction = "Hapes_Consortium", Parameter_Attenuator = 0.0} * Variable_Human.IsFaction {Parameter_Faction = "Hapes_Consortium"}
+			) 
+			*
+			Variable_Self.IsFaction {Parameter_Faction = "EmpireoftheHand"}
+			+
+			(
+			Variable_Target.IsConnectedTo {Parameter_Faction = "Rebel", Parameter_Attenuator = 0.0} * Variable_Human.IsFaction {Parameter_Faction = "Rebel"}
+			+ Variable_Target.IsConnectedTo {Parameter_Faction = "Underworld", Parameter_Attenuator = 0.0} * Variable_Human.IsFaction {Parameter_Faction = "Underworld"}
+			+ Variable_Target.IsConnectedTo {Parameter_Faction = "Eriadu_Authority", Parameter_Attenuator = 0.0} * Variable_Human.IsFaction {Parameter_Faction = "Eriadu_Authority"}
+			+ Variable_Target.IsConnectedTo {Parameter_Faction = "Pentastar", Parameter_Attenuator = 0.0} * Variable_Human.IsFaction {Parameter_Faction = "Pentastar"}
+			+ Variable_Target.IsConnectedTo {Parameter_Faction = "Greater_Maldrood", Parameter_Attenuator = 0.0} * Variable_Human.IsFaction {Parameter_Faction = "Greater_Maldrood"}
+			+ Variable_Target.IsConnectedTo {Parameter_Faction = "Hutt_Cartels", Parameter_Attenuator = 0.0} * Variable_Human.IsFaction {Parameter_Faction = "Hutt_Cartels"}
+			+ Variable_Target.IsConnectedTo {Parameter_Faction = "SsiRuuvi_Imperium", Parameter_Attenuator = 0.0} * Variable_Human.IsFaction {Parameter_Faction = "SsiRuuvi_Imperium"}
+			+ Variable_Target.IsConnectedTo {Parameter_Faction = "Corporate_Sector", Parameter_Attenuator = 0.0} * Variable_Human.IsFaction {Parameter_Faction = "Corporate_Sector"}
+			+ Variable_Target.IsConnectedTo {Parameter_Faction = "Empire", Parameter_Attenuator = 0.0} * Variable_Human.IsFaction {Parameter_Faction = "Empire"}
+			+ Variable_Target.IsConnectedTo {Parameter_Faction = "EmpireoftheHand", Parameter_Attenuator = 0.0} * Variable_Human.IsFaction {Parameter_Faction = "EmpireoftheHand"}
+			+ Variable_Target.IsConnectedTo {Parameter_Faction = "Hapes_Consortium", Parameter_Attenuator = 0.0} * Variable_Human.IsFaction {Parameter_Faction = "Hapes_Consortium"}
+			) 
+			*
+			Variable_Self.IsFaction {Parameter_Faction = "Zsinj_Empire"}
+			+
+			(
+			Variable_Target.IsConnectedTo {Parameter_Faction = "Rebel", Parameter_Attenuator = 0.0} * Variable_Human.IsFaction {Parameter_Faction = "Rebel"}
+			+ Variable_Target.IsConnectedTo {Parameter_Faction = "Underworld", Parameter_Attenuator = 0.0} * Variable_Human.IsFaction {Parameter_Faction = "Underworld"}
+			+ Variable_Target.IsConnectedTo {Parameter_Faction = "Zsinj_Empire", Parameter_Attenuator = 0.0} * Variable_Human.IsFaction {Parameter_Faction = "Zsinj_Empire"}
+			+ Variable_Target.IsConnectedTo {Parameter_Faction = "Pentastar", Parameter_Attenuator = 0.0} * Variable_Human.IsFaction {Parameter_Faction = "Pentastar"}
+			+ Variable_Target.IsConnectedTo {Parameter_Faction = "Greater_Maldrood", Parameter_Attenuator = 0.0} * Variable_Human.IsFaction {Parameter_Faction = "Greater_Maldrood"}
+			+ Variable_Target.IsConnectedTo {Parameter_Faction = "Hutt_Cartels", Parameter_Attenuator = 0.0} * Variable_Human.IsFaction {Parameter_Faction = "Hutt_Cartels"}
+			+ Variable_Target.IsConnectedTo {Parameter_Faction = "SsiRuuvi_Imperium", Parameter_Attenuator = 0.0} * Variable_Human.IsFaction {Parameter_Faction = "SsiRuuvi_Imperium"}
+			+ Variable_Target.IsConnectedTo {Parameter_Faction = "Corporate_Sector", Parameter_Attenuator = 0.0} * Variable_Human.IsFaction {Parameter_Faction = "Corporate_Sector"}
+			+ Variable_Target.IsConnectedTo {Parameter_Faction = "Empire", Parameter_Attenuator = 0.0} * Variable_Human.IsFaction {Parameter_Faction = "Empire"}
+			+ Variable_Target.IsConnectedTo {Parameter_Faction = "EmpireoftheHand", Parameter_Attenuator = 0.0} * Variable_Human.IsFaction {Parameter_Faction = "EmpireoftheHand"}
+			+ Variable_Target.IsConnectedTo {Parameter_Faction = "Hapes_Consortium", Parameter_Attenuator = 0.0} * Variable_Human.IsFaction {Parameter_Faction = "Hapes_Consortium"}
+			) 
+			*
+			Variable_Self.IsFaction {Parameter_Faction = "Eriadu_Authority"}
+			+
+			(
+			Variable_Target.IsConnectedTo {Parameter_Faction = "Rebel", Parameter_Attenuator = 0.0} * Variable_Human.IsFaction {Parameter_Faction = "Rebel"}
+			+ Variable_Target.IsConnectedTo {Parameter_Faction = "Underworld", Parameter_Attenuator = 0.0} * Variable_Human.IsFaction {Parameter_Faction = "Underworld"}
+			+ Variable_Target.IsConnectedTo {Parameter_Faction = "Zsinj_Empire", Parameter_Attenuator = 0.0} * Variable_Human.IsFaction {Parameter_Faction = "Zsinj_Empire"}
+			+ Variable_Target.IsConnectedTo {Parameter_Faction = "Eriadu_Authority", Parameter_Attenuator = 0.0} * Variable_Human.IsFaction {Parameter_Faction = "Eriadu_Authority"}
+			+ Variable_Target.IsConnectedTo {Parameter_Faction = "Greater_Maldrood", Parameter_Attenuator = 0.0} * Variable_Human.IsFaction {Parameter_Faction = "Greater_Maldrood"}
+			+ Variable_Target.IsConnectedTo {Parameter_Faction = "Hutt_Cartels", Parameter_Attenuator = 0.0} * Variable_Human.IsFaction {Parameter_Faction = "Hutt_Cartels"}
+			+ Variable_Target.IsConnectedTo {Parameter_Faction = "SsiRuuvi_Imperium", Parameter_Attenuator = 0.0} * Variable_Human.IsFaction {Parameter_Faction = "SsiRuuvi_Imperium"}
+			+ Variable_Target.IsConnectedTo {Parameter_Faction = "Corporate_Sector", Parameter_Attenuator = 0.0} * Variable_Human.IsFaction {Parameter_Faction = "Corporate_Sector"}
+			+ Variable_Target.IsConnectedTo {Parameter_Faction = "Empire", Parameter_Attenuator = 0.0} * Variable_Human.IsFaction {Parameter_Faction = "Empire"}
+			+ Variable_Target.IsConnectedTo {Parameter_Faction = "EmpireoftheHand", Parameter_Attenuator = 0.0} * Variable_Human.IsFaction {Parameter_Faction = "EmpireoftheHand"}
+			+ Variable_Target.IsConnectedTo {Parameter_Faction = "Hapes_Consortium", Parameter_Attenuator = 0.0} * Variable_Human.IsFaction {Parameter_Faction = "Hapes_Consortium"}
+			) 
+			*
+			Variable_Self.IsFaction {Parameter_Faction = "Pentastar"}
+			+
+			(
+			Variable_Target.IsConnectedTo {Parameter_Faction = "Rebel", Parameter_Attenuator = 0.0} * Variable_Human.IsFaction {Parameter_Faction = "Rebel"}
+			+ Variable_Target.IsConnectedTo {Parameter_Faction = "Underworld", Parameter_Attenuator = 0.0} * Variable_Human.IsFaction {Parameter_Faction = "Underworld"}
+			+ Variable_Target.IsConnectedTo {Parameter_Faction = "Zsinj_Empire", Parameter_Attenuator = 0.0} * Variable_Human.IsFaction {Parameter_Faction = "Zsinj_Empire"}
+			+ Variable_Target.IsConnectedTo {Parameter_Faction = "Eriadu_Authority", Parameter_Attenuator = 0.0} * Variable_Human.IsFaction {Parameter_Faction = "Eriadu_Authority"}
+			+ Variable_Target.IsConnectedTo {Parameter_Faction = "Pentastar", Parameter_Attenuator = 0.0} * Variable_Human.IsFaction {Parameter_Faction = "Pentastar"}
+			+ Variable_Target.IsConnectedTo {Parameter_Faction = "Hutt_Cartels", Parameter_Attenuator = 0.0} * Variable_Human.IsFaction {Parameter_Faction = "Hutt_Cartels"}
+			+ Variable_Target.IsConnectedTo {Parameter_Faction = "SsiRuuvi_Imperium", Parameter_Attenuator = 0.0} * Variable_Human.IsFaction {Parameter_Faction = "SsiRuuvi_Imperium"}
+			+ Variable_Target.IsConnectedTo {Parameter_Faction = "Corporate_Sector", Parameter_Attenuator = 0.0} * Variable_Human.IsFaction {Parameter_Faction = "Corporate_Sector"}
+			+ Variable_Target.IsConnectedTo {Parameter_Faction = "Empire", Parameter_Attenuator = 0.0} * Variable_Human.IsFaction {Parameter_Faction = "Empire"}
+			+ Variable_Target.IsConnectedTo {Parameter_Faction = "EmpireoftheHand", Parameter_Attenuator = 0.0} * Variable_Human.IsFaction {Parameter_Faction = "EmpireoftheHand"}
+			+ Variable_Target.IsConnectedTo {Parameter_Faction = "Hapes_Consortium", Parameter_Attenuator = 0.0} * Variable_Human.IsFaction {Parameter_Faction = "Hapes_Consortium"}
+			) 
+			*
+			Variable_Self.IsFaction {Parameter_Faction = "Greater_Maldrood"}
+			+
+			(
+			Variable_Target.IsConnectedTo {Parameter_Faction = "Rebel", Parameter_Attenuator = 0.0} * Variable_Human.IsFaction {Parameter_Faction = "Rebel"}
+			+ Variable_Target.IsConnectedTo {Parameter_Faction = "Underworld", Parameter_Attenuator = 0.0} * Variable_Human.IsFaction {Parameter_Faction = "Underworld"}
+			+ Variable_Target.IsConnectedTo {Parameter_Faction = "Zsinj_Empire", Parameter_Attenuator = 0.0} * Variable_Human.IsFaction {Parameter_Faction = "Zsinj_Empire"}
+			+ Variable_Target.IsConnectedTo {Parameter_Faction = "Eriadu_Authority", Parameter_Attenuator = 0.0} * Variable_Human.IsFaction {Parameter_Faction = "Eriadu_Authority"}
+			+ Variable_Target.IsConnectedTo {Parameter_Faction = "Pentastar", Parameter_Attenuator = 0.0} * Variable_Human.IsFaction {Parameter_Faction = "Pentastar"}
+			+ Variable_Target.IsConnectedTo {Parameter_Faction = "Greater_Maldrood", Parameter_Attenuator = 0.0} * Variable_Human.IsFaction {Parameter_Faction = "Greater_Maldrood"}
+			+ Variable_Target.IsConnectedTo {Parameter_Faction = "Hutt_Cartels", Parameter_Attenuator = 0.0} * Variable_Human.IsFaction {Parameter_Faction = "Hutt_Cartels"}
+			+ Variable_Target.IsConnectedTo {Parameter_Faction = "SsiRuuvi_Imperium", Parameter_Attenuator = 0.0} * Variable_Human.IsFaction {Parameter_Faction = "SsiRuuvi_Imperium"}
+			+ Variable_Target.IsConnectedTo {Parameter_Faction = "Corporate_Sector", Parameter_Attenuator = 0.0} * Variable_Human.IsFaction {Parameter_Faction = "Corporate_Sector"}
+			+ Variable_Target.IsConnectedTo {Parameter_Faction = "Empire", Parameter_Attenuator = 0.0} * Variable_Human.IsFaction {Parameter_Faction = "Empire"}
+			+ Variable_Target.IsConnectedTo {Parameter_Faction = "EmpireoftheHand", Parameter_Attenuator = 0.0} * Variable_Human.IsFaction {Parameter_Faction = "EmpireoftheHand"}
+			+ Variable_Target.IsConnectedTo {Parameter_Faction = "Hapes_Consortium", Parameter_Attenuator = 0.0} * Variable_Human.IsFaction {Parameter_Faction = "Hapes_Consortium"}
+			) 
+			*
+			Variable_Self.IsFaction {Parameter_Faction = "Hutt_Cartels"}
+			+
+			(
+			Variable_Target.IsConnectedTo {Parameter_Faction = "Rebel", Parameter_Attenuator = 0.0} * Variable_Human.IsFaction {Parameter_Faction = "Rebel"} 
+			+ Variable_Target.IsConnectedTo {Parameter_Faction = "Underworld", Parameter_Attenuator = 0.0} * Variable_Human.IsFaction {Parameter_Faction = "Underworld"}
+			+ Variable_Target.IsConnectedTo {Parameter_Faction = "Zsinj_Empire", Parameter_Attenuator = 0.0} * Variable_Human.IsFaction {Parameter_Faction = "Zsinj_Empire"}
+			+ Variable_Target.IsConnectedTo {Parameter_Faction = "Eriadu_Authority", Parameter_Attenuator = 0.0} * Variable_Human.IsFaction {Parameter_Faction = "Eriadu_Authority"}
+			+ Variable_Target.IsConnectedTo {Parameter_Faction = "Pentastar", Parameter_Attenuator = 0.0} * Variable_Human.IsFaction {Parameter_Faction = "Pentastar"}
+			+ Variable_Target.IsConnectedTo {Parameter_Faction = "Greater_Maldrood", Parameter_Attenuator = 0.0} * Variable_Human.IsFaction {Parameter_Faction = "Greater_Maldrood"}
+			+ Variable_Target.IsConnectedTo {Parameter_Faction = "Hutt_Cartels", Parameter_Attenuator = 0.0} * Variable_Human.IsFaction {Parameter_Faction = "Hutt_Cartels"}
+			+ Variable_Target.IsConnectedTo {Parameter_Faction = "Corporate_Sector", Parameter_Attenuator = 0.0} * Variable_Human.IsFaction {Parameter_Faction = "Corporate_Sector"}
+			+ Variable_Target.IsConnectedTo {Parameter_Faction = "Empire", Parameter_Attenuator = 0.0} * Variable_Human.IsFaction {Parameter_Faction = "Empire"}
+			+ Variable_Target.IsConnectedTo {Parameter_Faction = "EmpireoftheHand", Parameter_Attenuator = 0.0} * Variable_Human.IsFaction {Parameter_Faction = "EmpireoftheHand"}
+			+ Variable_Target.IsConnectedTo {Parameter_Faction = "Hapes_Consortium", Parameter_Attenuator = 0.0} * Variable_Human.IsFaction {Parameter_Faction = "Hapes_Consortium"}
+			) 
+			*
+			Variable_Self.IsFaction {Parameter_Faction = "SsiRuuvi_Imperium"}
+			+
+			(
+			Variable_Target.IsConnectedTo {Parameter_Faction = "Rebel", Parameter_Attenuator = 0.0} * Variable_Human.IsFaction {Parameter_Faction = "Rebel"} 
+			+ Variable_Target.IsConnectedTo {Parameter_Faction = "Underworld", Parameter_Attenuator = 0.0} * Variable_Human.IsFaction {Parameter_Faction = "Underworld"}
+			+ Variable_Target.IsConnectedTo {Parameter_Faction = "Zsinj_Empire", Parameter_Attenuator = 0.0} * Variable_Human.IsFaction {Parameter_Faction = "Zsinj_Empire"}
+			+ Variable_Target.IsConnectedTo {Parameter_Faction = "Eriadu_Authority", Parameter_Attenuator = 0.0} * Variable_Human.IsFaction {Parameter_Faction = "Eriadu_Authority"}
+			+ Variable_Target.IsConnectedTo {Parameter_Faction = "Pentastar", Parameter_Attenuator = 0.0} * Variable_Human.IsFaction {Parameter_Faction = "Pentastar"}
+			+ Variable_Target.IsConnectedTo {Parameter_Faction = "Greater_Maldrood", Parameter_Attenuator = 0.0} * Variable_Human.IsFaction {Parameter_Faction = "Greater_Maldrood"}
+			+ Variable_Target.IsConnectedTo {Parameter_Faction = "Hutt_Cartels", Parameter_Attenuator = 0.0} * Variable_Human.IsFaction {Parameter_Faction = "Hutt_Cartels"}
+			+ Variable_Target.IsConnectedTo {Parameter_Faction = "SsiRuuvi_Imperium", Parameter_Attenuator = 0.0} * Variable_Human.IsFaction {Parameter_Faction = "SsiRuuvi_Imperium"}
+			+ Variable_Target.IsConnectedTo {Parameter_Faction = "Empire", Parameter_Attenuator = 0.0} * Variable_Human.IsFaction {Parameter_Faction = "Empire"}
+			+ Variable_Target.IsConnectedTo {Parameter_Faction = "EmpireoftheHand", Parameter_Attenuator = 0.0} * Variable_Human.IsFaction {Parameter_Faction = "EmpireoftheHand"}
+			+ Variable_Target.IsConnectedTo {Parameter_Faction = "Hapes_Consortium", Parameter_Attenuator = 0.0} * Variable_Human.IsFaction {Parameter_Faction = "Hapes_Consortium"}
+			) 
+			*
+			Variable_Self.IsFaction {Parameter_Faction = "Corporate_Sector"}
+			+
+			(
+			Variable_Target.IsConnectedTo {Parameter_Faction = "Rebel", Parameter_Attenuator = 0.0} * Variable_Human.IsFaction {Parameter_Faction = "Rebel"} 
+			+ Variable_Target.IsConnectedTo {Parameter_Faction = "Underworld", Parameter_Attenuator = 0.0} * Variable_Human.IsFaction {Parameter_Faction = "Underworld"}
+			+ Variable_Target.IsConnectedTo {Parameter_Faction = "Zsinj_Empire", Parameter_Attenuator = 0.0} * Variable_Human.IsFaction {Parameter_Faction = "Zsinj_Empire"}
+			+ Variable_Target.IsConnectedTo {Parameter_Faction = "Eriadu_Authority", Parameter_Attenuator = 0.0} * Variable_Human.IsFaction {Parameter_Faction = "Eriadu_Authority"}
+			+ Variable_Target.IsConnectedTo {Parameter_Faction = "Pentastar", Parameter_Attenuator = 0.0} * Variable_Human.IsFaction {Parameter_Faction = "Pentastar"}
+			+ Variable_Target.IsConnectedTo {Parameter_Faction = "Greater_Maldrood", Parameter_Attenuator = 0.0} * Variable_Human.IsFaction {Parameter_Faction = "Greater_Maldrood"}
+			+ Variable_Target.IsConnectedTo {Parameter_Faction = "Hutt_Cartels", Parameter_Attenuator = 0.0} * Variable_Human.IsFaction {Parameter_Faction = "Hutt_Cartels"}
+			+ Variable_Target.IsConnectedTo {Parameter_Faction = "SsiRuuvi_Imperium", Parameter_Attenuator = 0.0} * Variable_Human.IsFaction {Parameter_Faction = "SsiRuuvi_Imperium"}
+			+ Variable_Target.IsConnectedTo {Parameter_Faction = "Empire", Parameter_Attenuator = 0.0} * Variable_Human.IsFaction {Parameter_Faction = "Empire"}
+			+ Variable_Target.IsConnectedTo {Parameter_Faction = "EmpireoftheHand", Parameter_Attenuator = 0.0} * Variable_Human.IsFaction {Parameter_Faction = "EmpireoftheHand"}
+			+ Variable_Target.IsConnectedTo {Parameter_Faction = "Corporate_Sector", Parameter_Attenuator = 0.0} * Variable_Human.IsFaction {Parameter_Faction = "Corporate_Sector"}
+			) 
+			*
+			Variable_Self.IsFaction {Parameter_Faction = "Hapes_Consortium"}
+		) > 0.0
+	</Is_Connected_To_Enemy_Human>
+	
+	<Self_Present>
+		Variable_Target.IsFaction {Parameter_Faction = "Empire"} *
+		Variable_Self.IsFaction {Parameter_Faction = "Empire"}
+		+
+		Variable_Target.IsFaction {Parameter_Faction = "Rebel"} *
+		Variable_Self.IsFaction {Parameter_Faction = "Rebel"}
+		+
+		Variable_Target.IsFaction {Parameter_Faction = "Underworld"} *
+		Variable_Self.IsFaction {Parameter_Faction = "Underworld"}
+		+
+		Variable_Target.IsFaction {Parameter_Faction = "Zsinj_Empire"} *
+		Variable_Self.IsFaction {Parameter_Faction = "Zsinj_Empire"}	
+		+
+		Variable_Target.IsFaction {Parameter_Faction = "Eriadu_Authority"} *
+		Variable_Self.IsFaction {Parameter_Faction = "Eriadu_Authority"}
+		+
+		Variable_Target.IsFaction {Parameter_Faction = "Pentastar"} *
+		Variable_Self.IsFaction {Parameter_Faction = "Pentastar"}	
+		+
+		Variable_Target.IsFaction {Parameter_Faction = "Greater_Maldrood"} *
+		Variable_Self.IsFaction {Parameter_Faction = "Greater_Maldrood"}	
+		+
+		Variable_Target.IsFaction {Parameter_Faction = "Hutt_Cartels"} *
+		Variable_Self.IsFaction {Parameter_Faction = "Hutt_Cartels"}	
+		+
+		Variable_Target.IsFaction {Parameter_Faction = "SsiRuuvi_Imperium"} *
+		Variable_Self.IsFaction {Parameter_Faction = "SsiRuuvi_Imperium"}			
+		+
+		Variable_Target.IsFaction {Parameter_Faction = "Corporate_Sector"} *
+		Variable_Self.IsFaction {Parameter_Faction = "Corporate_Sector"}
+		+
+		Variable_Target.IsFaction {Parameter_Faction = "EmpireoftheHand"} *
+		Variable_Self.IsFaction {Parameter_Faction = "EmpireoftheHand"}
+		+
+		Variable_Target.IsFaction {Parameter_Faction = "Chiss"} *
+		Variable_Self.IsFaction {Parameter_Faction = "Chiss"}
+		+
+		Variable_Target.IsFaction {Parameter_Faction = "Corellia"} *
+		Variable_Self.IsFaction {Parameter_Faction = "Corellia"}
+		+
+		Variable_Target.IsFaction {Parameter_Faction = "Hapes_Consortium"} *
+		Variable_Self.IsFaction {Parameter_Faction = "Hapes_Consortium"}
+	</Self_Present>
+	
+	<Player_Has_Capital_Building>
+				(Variable_Self.HasStructure{Parameter_Type = "Remnant_Capital", Parameter_Only_Consider_Complete = 1.0} * Variable_Self.IsFaction{Parameter_Faction = "Empire"})
+				+
+				(Variable_Self.HasStructure{Parameter_Type = "PA_Capital", Parameter_Only_Consider_Complete = 1.0} * Variable_Self.IsFaction{Parameter_Faction = "Pentastar"})
+				+
+				(Variable_Self.HasStructure{Parameter_Type = "Maldrood_Capital", Parameter_Only_Consider_Complete = 1.0} * Variable_Self.IsFaction{Parameter_Faction = "Greater_Maldrood"})
+				+
+				(Variable_Self.HasStructure{Parameter_Type = "Eriadu_Capital", Parameter_Only_Consider_Complete = 1.0} * Variable_Self.IsFaction{Parameter_Faction = "Eriadu_Authority"})
+				+
+				(Variable_Self.HasStructure{Parameter_Type = "NewRep_Senate", Parameter_Only_Consider_Complete = 1.0} * Variable_Self.IsFaction{Parameter_Faction = "Rebel"})
+				+
+				(Variable_Self.HasStructure{Parameter_Type = "Rancor_Base", Parameter_Only_Consider_Complete = 1.0} * Variable_Self.IsFaction{Parameter_Faction = "Zsinj_Empire"})
+				+
+				(Variable_Self.HasStructure{Parameter_Type = "CSA_Capital", Parameter_Only_Consider_Complete = 1.0} * Variable_Self.IsFaction{Parameter_Faction = "Corporate_Sector"})
+				+
+				(Variable_Self.HasStructure{Parameter_Type = "U_Ground_Palace", Parameter_Only_Consider_Complete = 1.0} * Variable_Self.IsFaction{Parameter_Faction = "EmpireoftheHand"})
+				+
+				(Variable_Self.HasStructure{Parameter_Type = "Hapan_Palace", Parameter_Only_Consider_Complete = 1.0} * Variable_Self.IsFaction{Parameter_Faction = "Hapes_Consortium"})
+	</Player_Has_Capital_Building>
+	
+	<Era_One>
+		(Script_GetCurrentYear.Evaluate >= 4)
+		*
+		(5 > Script_GetCurrentYear.Evaluate)
+	</Era_One>
+	
+	<Era_Two>
+		(Script_GetCurrentYear.Evaluate >= 5)
+		*
+		(8 > Script_GetCurrentYear.Evaluate)
+	</Era_Two>
+	
+	<Era_Three>
+		(Script_GetCurrentYear.Evaluate >= 8)
+		*
+		(9 > Script_GetCurrentYear.Evaluate)
+	</Era_Three>
+	
+	<Era_Four>
+		(Script_GetCurrentYear.Evaluate >= 9)
+		*
+		(11 > Script_GetCurrentYear.Evaluate)
+	</Era_Four>
+	
+	<Era_Five>
+		Script_GetCurrentYear.Evaluate == 11
+	</Era_Five>
+	
+	<Era_Six>
+		(Script_GetCurrentYear.Evaluate == 12)
+	</Era_Six>
+	
+	<Era_Seven>
+		(Script_GetCurrentYear.Evaluate > 12)
+		*
+		(25 > Script_GetCurrentYear.Evaluate)
+	</Era_Seven>
+	
+	<Era_Eight>
+		(Script_GetCurrentYear.Evaluate >= 25)
+		*
+		(35 > Script_GetCurrentYear.Evaluate)
+	</Era_Eight>
+	
+	<Era_Nine>
+		(Script_GetCurrentYear.Evaluate >= 35)
+		*
+		(40 > Script_GetCurrentYear.Evaluate)
+	</Era_Nine>
+	
+	<Era_Ten>
+		(Script_GetCurrentYear.Evaluate >= 40)
+		*
+		(42 > Script_GetCurrentYear.Evaluate)
+	</Era_Ten>
+	
+	<Era_Eleven>
+		(Script_GetCurrentYear.Evaluate >= 42)
+	</Era_Eleven>
+	
+</Equations>
+	

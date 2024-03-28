@@ -1,0 +1,46 @@
+<?xml version="1.0" ?>
+<AIPlayerType>
+
+	<Name>EotHAI</Name>
+
+	<GoalSetExtensionSize>5</GoalSetExtensionSize>
+
+	<Personality>
+		<Focus> 1.0 </Focus>
+		<Aggressiveness> 1.0</Aggressiveness>
+	</Personality>
+	
+    <GalacticFreeStoreScript>GalacticFreeStore</GalacticFreeStoreScript>
+    <SpaceFreeStoreScript>BusyTacticalFreeStore</SpaceFreeStoreScript>
+    <LandFreeStoreScript>LandTacticalFreeStore</LandFreeStoreScript>
+	
+	<GoalProposalFunctionSets>
+		SystemFunctions
+		BasicOffensiveGalacticSet
+		BasicDefensiveGalacticSet
+		BasicInfrastructureGalacticSet
+		BasicOffensiveSpaceSet
+		BasicLandGoalSet
+		EotHOffensiveGalacticSet
+	</GoalProposalFunctionSets>
+	
+	<Templates>
+        <Space>
+            Generic_Space
+        </Space>
+        <Land>
+            Generic_Land
+        </Land>
+		<Galactic>
+			EotH_Default
+			EotH_Aggro
+		</Galactic>
+	</Templates>
+
+	<Difficulty_Adjustments>
+		<Easy>Easy_Default</Easy>
+		<Normal>Normal_Default</Normal>
+		<Hard>Hard_Default</Hard>
+	</Difficulty_Adjustments>
+	
+</AIPlayerType>

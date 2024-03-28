@@ -1,0 +1,120 @@
+<?xml version="1.0" ?>
+
+
+
+<!--******************************************************-->
+<!--******	Campaign: Rim World Conflict (Empire)	******-->
+<!--******************************************************-->
+
+<Story>
+
+	
+	<Event Name="Influence_Doc">
+		<Event_Type>STORY_CLICK_GUI</Event_Type>
+		<Event_Param1>b_doc_filter04</Event_Param1>
+		<Perpetual>true</Perpetual>
+		<Story_Dialog>Documentation_InfluenceTR</Story_Dialog>
+		<Story_Dialog_Popup>True</Story_Dialog_Popup>
+		<Story_Chapter>0</Story_Chapter>
+		<Story_Tag>Influence_Doc_Tag</Story_Tag>
+	</Event>
+		
+	<Event Name="Influence_Doc_Close">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>1</Event_Param1>
+		<Perpetual>true</Perpetual>
+		<Reward_Type>REMOVE_STORY_GOAL</Reward_Type>
+		<Reward_Param1>Influence_Doc_Tag</Reward_Param1>
+		<Story_Dialog_Popup>False</Story_Dialog_Popup>
+		<Prereq>Influence_Doc</Prereq>		
+	</Event>
+	
+	
+	<Event Name="Command_Bonuses">
+		<Event_Type>STORY_CLICK_GUI</Event_Type>
+		<Event_Param1>b_doc_filter02</Event_Param1>
+		<Perpetual>true</Perpetual>
+		<Story_Dialog>Documentation_TiersAndTraits</Story_Dialog>
+		<Story_Dialog_Popup>True</Story_Dialog_Popup>
+		<Story_Chapter>0</Story_Chapter>
+		<Story_Tag>Bonuses_Doc_Tag</Story_Tag>
+	</Event>
+	
+	<Event Name="Command_Bonuses_Close">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>1</Event_Param1>
+		<Perpetual>true</Perpetual>
+		<Reward_Type>REMOVE_STORY_GOAL</Reward_Type>
+		<Reward_Param1>Bonuses_Doc_Tag</Reward_Param1>
+		<Story_Dialog_Popup>False</Story_Dialog_Popup>
+		<Prereq>Command_Bonuses</Prereq>		
+	</Event>
+	
+	<Event Name="Story_Events">
+		<Event_Type>STORY_CLICK_GUI</Event_Type>
+		<Event_Param1>b_doc_filter03</Event_Param1>
+		<Perpetual>true</Perpetual>
+		<Story_Dialog>Documentation_StoryOverviewTR</Story_Dialog>
+		<Story_Chapter>0</Story_Chapter>
+		<Story_Tag>StoryOverview_Doc_Tag</Story_Tag>
+	</Event>
+	
+	<Event Name="Story_Events_Close">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>1</Event_Param1>
+		<Perpetual>true</Perpetual>
+		<Reward_Type>REMOVE_STORY_GOAL</Reward_Type>
+		<Reward_Param1>StoryOverview_Doc_Tag</Reward_Param1>
+		<Story_Dialog_Popup>False</Story_Dialog_Popup>
+		<Prereq>Story_Events</Prereq>		
+	</Event>
+	
+	<Event Name="Delvardus_Returns_Speech">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>DELVARDUS_RETURNS</Event_Param2>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_SPEECH_DELVARDUS_RETURNS</Reward_Param1>
+		<Reward_Param2>10</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6 />
+		<Reward_Param7 />
+		<Reward_Param8></Reward_Param8>
+		<Reward_Param9>Delvardus_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+	</Event>
+	
+	<Event Name="Teradoc_Returns_Speech">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>TERADOC_RETURNS</Event_Param2>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_SPEECH_TERADOC_RETURNS</Reward_Param1>
+		<Reward_Param2>10</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6 />
+		<Reward_Param7 />
+		<Reward_Param8></Reward_Param8>
+		<Reward_Param9>Treuten_Teradoc_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+	</Event>
+	
+	<Event Name="Tyber_Zann_Returns_Speech">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>TYBER_ZANN_RETURNS</Event_Param2>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_SPEECH_TYBER_ZANN_RETURNS</Reward_Param1>
+		<Reward_Param2>10</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6 />
+		<Reward_Param7 />
+		<Reward_Param8></Reward_Param8>
+		<Reward_Param9>Tyber_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+	</Event>
+
+</Story>

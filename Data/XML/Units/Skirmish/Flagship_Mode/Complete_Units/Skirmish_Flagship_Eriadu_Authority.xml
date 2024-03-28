@@ -1,0 +1,741 @@
+<?xml version="1.0" ?>
+<Flagship_EA>
+	
+	<FlagshipUnit Name="Flagship_EA_AAA">
+		<Variant_Of_Existing_Type>Template_Spawner_Unit</Variant_Of_Existing_Type>
+		<Affiliation>Eriadu_Authority</Affiliation>
+		
+		<Text_ID>TEXT_UNIT_FLAGSHIP_EA_AAA</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_GROUP_SPAWNER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+			TEXT_ENCYCLOPEDIA_FLAGSHIP_EA_AAA_UNIT_1
+			TEXT_ENCYCLOPEDIA_FLAGSHIP_EA_AAA_UNIT_2
+			TEXT_ENCYCLOPEDIA_FLAGSHIP_EA_AAA_UNIT_3
+			TEXT_TOOLTIP_SEPARATOR_FLUFF_BLOCK
+			TEXT_UNIT_FLUFF_EA_AAA
+		</Encyclopedia_Text>
+		
+		<Space_Model_Name>INSTANTACTION_Empire.alo</Space_Model_Name>
+		<Icon_Name>i_button_tie_fighter.tga</Icon_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Lua_Script></Lua_Script>
+		<Tech_Level>99</Tech_Level>
+		
+		<Starting_Spawned_Units_Tech_0>Template_Flagship_TIE_Fighter, 3</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Template_Flagship_TIE_Interceptor, 1</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Template_Flagship_TIE_Bomber, 2</Starting_Spawned_Units_Tech_0>
+			
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>2205</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>16</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Upgrades</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->
+
+	</FlagshipUnit>
+	
+	<FlagshipUnit Name="Flagship_EA_AAB">
+		<Variant_Of_Existing_Type>Template_Spawner_Unit</Variant_Of_Existing_Type>
+		<Affiliation>Eriadu_Authority</Affiliation>
+		
+		<Text_ID>TEXT_UNIT_FLAGSHIP_EA_AAB</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_GROUP_SPAWNER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+			TEXT_ENCYCLOPEDIA_FLAGSHIP_EA_AAB_UNIT_1
+			TEXT_TOOLTIP_SEPARATOR_FLUFF_BLOCK
+			TEXT_UNIT_FLUFF_EA_AAB
+		</Encyclopedia_Text>
+		
+		<Space_Model_Name>INSTANTACTION_Empire.alo</Space_Model_Name>
+		<Icon_Name>i_button_tie_lightduty.tga</Icon_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Lua_Script></Lua_Script>
+		<Tech_Level>99</Tech_Level>
+		
+		<Starting_Spawned_Units_Tech_0>Template_Flagship_TIE_Light_Duty_Squadron, 2</Starting_Spawned_Units_Tech_0>
+			
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>450</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>6</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Upgrades</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->
+
+	</FlagshipUnit>
+	
+	<FlagshipUnit Name="Flagship_EA_AAC">
+		<Variant_Of_Existing_Type>Template_Spawner_Unit</Variant_Of_Existing_Type>
+		<Affiliation>Eriadu_Authority</Affiliation>
+		
+		<Text_ID>TEXT_UNIT_FLAGSHIP_EA_AAC</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_GROUP_SPAWNER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+			TEXT_ENCYCLOPEDIA_FLAGSHIP_EA_AAC_UNIT_1
+			TEXT_ENCYCLOPEDIA_FLAGSHIP_EA_AAC_UNIT_2
+			TEXT_TOOLTIP_SEPARATOR_FLUFF_BLOCK
+			TEXT_UNIT_FLUFF_EA_AAC
+		</Encyclopedia_Text>
+		
+		<Space_Model_Name>INSTANTACTION_Empire.alo</Space_Model_Name>
+		<Icon_Name>i_button_arquitens.tga</Icon_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Lua_Script></Lua_Script>
+		<Tech_Level>99</Tech_Level>
+		
+		<Starting_Spawned_Units_Tech_0>Template_Flagship_Arquitens, 2</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Template_Flagship_Raider_II_Corvette, 4</Starting_Spawned_Units_Tech_0>
+			
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>2460</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>11</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->
+
+	</FlagshipUnit>
+	
+	<FlagshipUnit Name="Flagship_EA_AAD">
+		<Variant_Of_Existing_Type>Template_Spawner_Unit</Variant_Of_Existing_Type>
+		<Affiliation>Eriadu_Authority</Affiliation>
+		
+		<Text_ID>TEXT_UNIT_FLAGSHIP_EA_AAD</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_GROUP_SPAWNER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+			TEXT_ENCYCLOPEDIA_FLAGSHIP_EA_AAD_UNIT_1
+			TEXT_ENCYCLOPEDIA_FLAGSHIP_EA_AAD_UNIT_2
+			TEXT_TOOLTIP_SEPARATOR_FLUFF_BLOCK
+			TEXT_UNIT_FLUFF_EA_AAD
+		</Encyclopedia_Text>
+		
+		<Space_Model_Name>INSTANTACTION_Empire.alo</Space_Model_Name>
+		<Icon_Name>i_button_adz.tga</Icon_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Lua_Script></Lua_Script>
+		<Tech_Level>99</Tech_Level>
+		
+		<Starting_Spawned_Units_Tech_0>Template_Flagship_Adz, 2</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Template_Flagship_A9, 1</Starting_Spawned_Units_Tech_0>
+			
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>1035</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>8</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->
+
+	</FlagshipUnit>
+	
+	<FlagshipUnit Name="Flagship_EA_AAE">
+		<Variant_Of_Existing_Type>Template_Spawner_Unit</Variant_Of_Existing_Type>
+		<Affiliation>Eriadu_Authority</Affiliation>
+		
+		<Text_ID>TEXT_UNIT_FLAGSHIP_EA_AAE</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_GROUP_SPAWNER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+			TEXT_ENCYCLOPEDIA_FLAGSHIP_EA_AAE_UNIT_1
+			TEXT_ENCYCLOPEDIA_FLAGSHIP_EA_AAE_UNIT_2
+			TEXT_TOOLTIP_SEPARATOR_FLUFF_BLOCK
+			TEXT_UNIT_FLUFF_EA_AAE
+		</Encyclopedia_Text>
+		
+		<Space_Model_Name>INSTANTACTION_Empire.alo</Space_Model_Name>
+		<Icon_Name>i_button_ipv.tga</Icon_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Lua_Script></Lua_Script>
+		<Tech_Level>99</Tech_Level>
+		
+		<Starting_Spawned_Units_Tech_0>Template_Flagship_Gamma_ATR_6, 2</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Template_Flagship_IPV1, 3</Starting_Spawned_Units_Tech_0>
+			
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>1975</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>11</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->
+
+	</FlagshipUnit>
+	
+	<FlagshipUnit Name="Flagship_EA_AAF">
+		<Variant_Of_Existing_Type>Template_Spawner_Unit</Variant_Of_Existing_Type>
+		<Affiliation>Eriadu_Authority</Affiliation>
+		
+		<Text_ID>TEXT_UNIT_FLAGSHIP_EA_AAF</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_GROUP_SPAWNER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+			TEXT_ENCYCLOPEDIA_FLAGSHIP_EA_AAF_UNIT_1
+			TEXT_ENCYCLOPEDIA_FLAGSHIP_EA_AAF_UNIT_2
+			TEXT_TOOLTIP_SEPARATOR_FLUFF_BLOCK
+			TEXT_UNIT_FLUFF_EA_AAF
+		</Encyclopedia_Text>
+		
+		<Space_Model_Name>INSTANTACTION_Empire.alo</Space_Model_Name>
+		<Icon_Name>i_button_eidolon.tga</Icon_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Lua_Script></Lua_Script>
+		<Tech_Level>99</Tech_Level>
+		
+		<Starting_Spawned_Units_Tech_0>Template_Flagship_Eidolon, 1</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Template_Flagship_TIE_Sentinel, 2</Starting_Spawned_Units_Tech_0>
+			
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>1600</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>9</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->
+
+	</FlagshipUnit>
+	
+	<FlagshipUnit Name="Flagship_EA_AAG">
+		<Variant_Of_Existing_Type>Template_Spawner_Unit</Variant_Of_Existing_Type>
+		<Affiliation>Eriadu_Authority</Affiliation>
+		
+		<Text_ID>TEXT_UNIT_FLAGSHIP_EA_AAG</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_GROUP_SPAWNER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+			TEXT_ENCYCLOPEDIA_FLAGSHIP_EA_AAG_UNIT_1
+			TEXT_ENCYCLOPEDIA_FLAGSHIP_EA_AAG_UNIT_2
+			TEXT_TOOLTIP_SEPARATOR_FLUFF_BLOCK
+			TEXT_UNIT_FLUFF_EA_AAG
+		</Encyclopedia_Text>
+		
+		<Space_Model_Name>INSTANTACTION_Empire.alo</Space_Model_Name>
+		<Icon_Name>i_button_imperialifrigate.tga</Icon_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Lua_Script></Lua_Script>
+		<Tech_Level>99</Tech_Level>
+		
+		<Starting_Spawned_Units_Tech_0>Template_Flagship_Generic_Imperial_I_Frigate, 1</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Template_Flagship_Gladiator, 1</Starting_Spawned_Units_Tech_0>
+			
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>2405</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>8</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->
+
+	</FlagshipUnit>
+	
+	
+	<FlagshipUnit Name="Flagship_EA_AAH">
+		<Variant_Of_Existing_Type>Template_Spawner_Unit</Variant_Of_Existing_Type>
+		<Affiliation>Eriadu_Authority</Affiliation>
+		
+		<Text_ID>TEXT_UNIT_FLAGSHIP_EA_AAH</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_GROUP_SPAWNER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+			TEXT_ENCYCLOPEDIA_FLAGSHIP_EA_AAH_UNIT_1
+			TEXT_ENCYCLOPEDIA_FLAGSHIP_EA_AAH_UNIT_2
+			TEXT_TOOLTIP_SEPARATOR_FLUFF_BLOCK
+			TEXT_UNIT_FLUFF_EA_AAH
+		</Encyclopedia_Text>
+		
+		<Space_Model_Name>INSTANTACTION_Empire.alo</Space_Model_Name>
+		<Icon_Name>i_button_tie_fighter_shielded.tga</Icon_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Lua_Script></Lua_Script>
+		<Tech_Level>99</Tech_Level>
+		
+		<Starting_Spawned_Units_Tech_0>Template_Flagship_Shielded_TIE, 2</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Template_Flagship_Shielded_Interceptor, 1</Starting_Spawned_Units_Tech_0>
+		
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>690</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>9</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Upgrades</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->
+
+	</FlagshipUnit>
+	
+	<FlagshipUnit Name="Flagship_EA_AAI">
+		<Variant_Of_Existing_Type>Template_Spawner_Unit</Variant_Of_Existing_Type>
+		<Affiliation>Eriadu_Authority</Affiliation>
+		
+		<Text_ID>TEXT_UNIT_FLAGSHIP_EA_AAI</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_GROUP_SPAWNER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+			TEXT_ENCYCLOPEDIA_FLAGSHIP_EA_AAI_UNIT_1
+			TEXT_ENCYCLOPEDIA_FLAGSHIP_EA_AAI_UNIT_2
+			TEXT_TOOLTIP_SEPARATOR_FLUFF_BLOCK
+			TEXT_UNIT_FLUFF_EA_AAI
+		</Encyclopedia_Text>
+		
+		<Space_Model_Name>INSTANTACTION_Empire.alo</Space_Model_Name>
+		<Icon_Name>i_button_escort.tga</Icon_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Lua_Script></Lua_Script>
+		<Tech_Level>99</Tech_Level>
+		
+		<Starting_Spawned_Units_Tech_0>Template_Flagship_Combat_Escort_Carrier, 1</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Template_Flagship_TIE_Hunter, 1</Starting_Spawned_Units_Tech_0>
+			
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>1110</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>7</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->
+
+	</FlagshipUnit>
+	
+	<FlagshipUnit Name="Flagship_EA_AAJ">
+		<Variant_Of_Existing_Type>Template_Spawner_Unit</Variant_Of_Existing_Type>
+		<Affiliation>Eriadu_Authority</Affiliation>
+		
+		<Text_ID>TEXT_UNIT_FLAGSHIP_EA_AAJ</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_GROUP_SPAWNER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+			TEXT_ENCYCLOPEDIA_FLAGSHIP_EA_AAJ_UNIT_1
+			TEXT_ENCYCLOPEDIA_FLAGSHIP_EA_AAJ_UNIT_2
+			TEXT_TOOLTIP_SEPARATOR_FLUFF_BLOCK
+			TEXT_UNIT_FLUFF_EA_AAJ
+		</Encyclopedia_Text>
+		
+		<Space_Model_Name>INSTANTACTION_Empire.alo</Space_Model_Name>
+		<Icon_Name>i_button_victory_class.tga</Icon_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Lua_Script></Lua_Script>
+		<Tech_Level>99</Tech_Level>
+		
+		<Starting_Spawned_Units_Tech_0>Template_Flagship_Victory_Destroyer, 1</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Template_Flagship_Gladiator, 2</Starting_Spawned_Units_Tech_0>
+			
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>3910</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>10</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->
+
+	</FlagshipUnit>
+	
+	<FlagshipUnit Name="Flagship_EA_AAK">
+		<Variant_Of_Existing_Type>Template_Spawner_Unit</Variant_Of_Existing_Type>
+		<Affiliation>Eriadu_Authority</Affiliation>
+		
+		<Text_ID>TEXT_UNIT_FLAGSHIP_EA_AAK</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_GROUP_SPAWNER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+			TEXT_ENCYCLOPEDIA_FLAGSHIP_EA_AAK_UNIT_1
+			TEXT_ENCYCLOPEDIA_FLAGSHIP_EA_AAK_UNIT_2
+			TEXT_TOOLTIP_SEPARATOR_FLUFF_BLOCK
+			TEXT_UNIT_FLUFF_EA_AAK
+		</Encyclopedia_Text>
+		
+		<Space_Model_Name>INSTANTACTION_Empire.alo</Space_Model_Name>
+		<Icon_Name>i_button_ipv4.tga</Icon_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Lua_Script></Lua_Script>
+		<Tech_Level>99</Tech_Level>
+		
+		<Starting_Spawned_Units_Tech_0>Template_Flagship_IPV4, 3</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Template_Flagship_IPV1, 3</Starting_Spawned_Units_Tech_0>
+				
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>2145</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>10</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->
+
+	</FlagshipUnit>
+	
+	<FlagshipUnit Name="Flagship_EA_AAL">
+		<Variant_Of_Existing_Type>Template_Spawner_Unit</Variant_Of_Existing_Type>
+		<Affiliation>Eriadu_Authority</Affiliation>
+		
+		<Text_ID>TEXT_UNIT_FLAGSHIP_EA_AAL</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_GROUP_SPAWNER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+			TEXT_ENCYCLOPEDIA_FLAGSHIP_EA_AAL_UNIT_1
+			TEXT_ENCYCLOPEDIA_FLAGSHIP_EA_AAL_UNIT_2
+			TEXT_TOOLTIP_SEPARATOR_FLUFF_BLOCK
+			TEXT_UNIT_FLUFF_EA_AAL
+		</Encyclopedia_Text>
+		
+		<Space_Model_Name>INSTANTACTION_Empire.alo</Space_Model_Name>
+		<Icon_Name>i_button_Gamma_6.tga</Icon_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Lua_Script></Lua_Script>
+		<Tech_Level>99</Tech_Level>
+		
+		<Starting_Spawned_Units_Tech_0>Template_Flagship_Early_Skipray, 3</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Template_Flagship_Gamma_ATR_6, 3</Starting_Spawned_Units_Tech_0>
+				
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>3060</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>15</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Upgrades</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->
+
+	</FlagshipUnit>
+	
+	<FlagshipUnit Name="Flagship_EA_AAM">
+		<Variant_Of_Existing_Type>Template_Spawner_Unit</Variant_Of_Existing_Type>
+		<Affiliation>Eriadu_Authority</Affiliation>
+		
+		<Text_ID>TEXT_UNIT_FLAGSHIP_EA_AAM</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_GROUP_SPAWNER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+			TEXT_ENCYCLOPEDIA_FLAGSHIP_EA_AAM_UNIT_1
+			TEXT_ENCYCLOPEDIA_FLAGSHIP_EA_AAM_UNIT_2
+			TEXT_ENCYCLOPEDIA_FLAGSHIP_EA_AAM_UNIT_3
+			TEXT_TOOLTIP_SEPARATOR_FLUFF_BLOCK
+			TEXT_UNIT_FLUFF_EA_AAM
+		</Encyclopedia_Text>
+		
+		<Space_Model_Name>INSTANTACTION_Empire.alo</Space_Model_Name>
+		<Icon_Name>i_button_galleon.tga</Icon_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Lua_Script></Lua_Script>
+		<Tech_Level>99</Tech_Level>
+		
+		<Starting_Spawned_Units_Tech_0>Template_Flagship_Generic_Imperial_I_Frigate, 2</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Template_Flagship_Galleon, 1</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Template_Flagship_Preybird, 2</Starting_Spawned_Units_Tech_0>
+				
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>4300</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>15</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->
+
+	</FlagshipUnit>
+	
+	<FlagshipUnit Name="Flagship_EA_AAN">
+		<Variant_Of_Existing_Type>Template_Spawner_Unit</Variant_Of_Existing_Type>
+		<Affiliation>Eriadu_Authority</Affiliation>
+		
+		<Text_ID>TEXT_UNIT_FLAGSHIP_EA_AAN</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_GROUP_SPAWNER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+			TEXT_ENCYCLOPEDIA_FLAGSHIP_EA_AAN_UNIT_1
+			TEXT_ENCYCLOPEDIA_FLAGSHIP_EA_AAN_UNIT_2
+			TEXT_ENCYCLOPEDIA_FLAGSHIP_EA_AAN_UNIT_3
+			TEXT_TOOLTIP_SEPARATOR_FLUFF_BLOCK
+			TEXT_UNIT_FLUFF_EA_AAN
+		</Encyclopedia_Text>
+		
+		<Space_Model_Name>INSTANTACTION_Empire.alo</Space_Model_Name>
+		<Icon_Name>i_button_tie_heavy_bomber.tga</Icon_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Lua_Script></Lua_Script>
+		<Tech_Level>99</Tech_Level>
+		
+		<Starting_Spawned_Units_Tech_0>Template_Flagship_TIE_Heavy_Bomber, 1</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Template_Flagship_TIE_Fighter, 2</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Template_Flagship_TIE_Sentinel, 1</Starting_Spawned_Units_Tech_0>
+			
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>1465</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>14</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Upgrades</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->
+
+	</FlagshipUnit>
+	
+	<FlagshipUnit Name="Flagship_EA_AAO">
+		<Variant_Of_Existing_Type>Template_Spawner_Unit</Variant_Of_Existing_Type>
+		<Affiliation>Eriadu_Authority</Affiliation>
+		
+		<Text_ID>TEXT_UNIT_FLAGSHIP_EA_AAO</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_GROUP_SPAWNER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+			TEXT_ENCYCLOPEDIA_FLAGSHIP_EA_AAO_UNIT_1
+			TEXT_ENCYCLOPEDIA_FLAGSHIP_EA_AAO_UNIT_2
+			TEXT_TOOLTIP_SEPARATOR_FLUFF_BLOCK
+			TEXT_UNIT_FLUFF_EA_AAO
+		</Encyclopedia_Text>
+		
+		<Space_Model_Name>INSTANTACTION_Empire.alo</Space_Model_Name>
+		<Icon_Name>i_button_ISD_TWO.tga</Icon_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Lua_Script></Lua_Script>
+		<Tech_Level>99</Tech_Level>
+		
+		<Starting_Spawned_Units_Tech_0>Template_Flagship_Star_Destroyer, 1</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Template_Flagship_Star_Destroyer_Two, 1</Starting_Spawned_Units_Tech_0>
+				
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>7930</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>11</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->
+
+	</FlagshipUnit>
+	
+	<FlagshipUnit Name="Flagship_EA_AAP">
+		<Variant_Of_Existing_Type>Template_Spawner_Unit</Variant_Of_Existing_Type>
+		<Affiliation>Eriadu_Authority</Affiliation>
+		
+		<Text_ID>TEXT_UNIT_FLAGSHIP_EA_AAP</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_GROUP_SPAWNER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+			TEXT_ENCYCLOPEDIA_FLAGSHIP_EA_AAP_UNIT_1
+			TEXT_ENCYCLOPEDIA_FLAGSHIP_EA_AAP_UNIT_2
+			TEXT_TOOLTIP_SEPARATOR_FLUFF_BLOCK
+			TEXT_UNIT_FLUFF_EA_AAP
+		</Encyclopedia_Text>
+		
+		<Space_Model_Name>INSTANTACTION_Empire.alo</Space_Model_Name>
+		<Icon_Name>i_button_imperator.tga</Icon_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Lua_Script></Lua_Script>
+		<Tech_Level>99</Tech_Level>
+		
+		<Starting_Spawned_Units_Tech_0>Template_Flagship_Star_Destroyer, 1</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Template_Flagship_Victory_Destroyer, 2</Starting_Spawned_Units_Tech_0>
+				
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>9940</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>18</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->
+
+	</FlagshipUnit>
+	
+	<FlagshipUnit Name="Flagship_EA_AAQ">
+		<Variant_Of_Existing_Type>Template_Spawner_Unit</Variant_Of_Existing_Type>
+		<Affiliation>Eriadu_Authority</Affiliation>
+		
+		<Text_ID>TEXT_UNIT_FLAGSHIP_EA_AAQ</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_GROUP_SPAWNER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+			TEXT_ENCYCLOPEDIA_FLAGSHIP_EA_AAQ_UNIT_1
+			TEXT_ENCYCLOPEDIA_FLAGSHIP_EA_AAQ_UNIT_2
+			TEXT_ENCYCLOPEDIA_FLAGSHIP_EA_AAQ_UNIT_3
+			TEXT_TOOLTIP_SEPARATOR_FLUFF_BLOCK
+			TEXT_UNIT_FLUFF_EA_AAQ
+		</Encyclopedia_Text>
+		
+		<Space_Model_Name>INSTANTACTION_Empire.alo</Space_Model_Name>
+		<Icon_Name>i_button_ISD_TWO.tga</Icon_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Lua_Script></Lua_Script>
+		<Tech_Level>99</Tech_Level>
+		
+		<Starting_Spawned_Units_Tech_0>Template_Flagship_Star_Destroyer_Two, 1</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Template_Flagship_Gladiator, 2</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Template_Flagship_Arquitens, 4</Starting_Spawned_Units_Tech_0>
+				
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>8620</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>18</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->
+
+	</FlagshipUnit>
+	
+	<FlagshipUnit Name="Flagship_EA_AAR">
+		<Variant_Of_Existing_Type>Template_Spawner_Unit</Variant_Of_Existing_Type>
+		<Affiliation>Eriadu_Authority</Affiliation>
+		
+		<Text_ID>TEXT_UNIT_FLAGSHIP_EA_AAR</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_GROUP_SPAWNER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+			TEXT_ENCYCLOPEDIA_FLAGSHIP_EA_AAR_UNIT_1
+			TEXT_ENCYCLOPEDIA_FLAGSHIP_EA_AAR_UNIT_2
+			TEXT_TOOLTIP_SEPARATOR_FLUFF_BLOCK
+			TEXT_UNIT_FLUFF_EA_AAR
+		</Encyclopedia_Text>
+		
+		<Space_Model_Name>INSTANTACTION_Empire.alo</Space_Model_Name>
+		<Icon_Name>i_button_allegiance.tga</Icon_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Lua_Script></Lua_Script>
+		<Tech_Level>99</Tech_Level>
+		
+		<Starting_Spawned_Units_Tech_0>Template_Flagship_Allegiance, 1</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Template_Flagship_Star_Destroyer_Two, 4</Starting_Spawned_Units_Tech_0>
+				
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>24630</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>18</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->
+
+	</FlagshipUnit>
+	
+	<FlagshipUnit Name="Flagship_EA_AAS">
+		<Variant_Of_Existing_Type>Template_Spawner_Unit</Variant_Of_Existing_Type>
+		<Affiliation>Eriadu_Authority</Affiliation>
+		
+		<Text_ID>TEXT_UNIT_FLAGSHIP_EA_AAS</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_GROUP_SPAWNER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+			TEXT_ENCYCLOPEDIA_FLAGSHIP_EA_AAS_UNIT_1
+			TEXT_ENCYCLOPEDIA_FLAGSHIP_EA_AAS_UNIT_2
+			TEXT_ENCYCLOPEDIA_FLAGSHIP_EA_AAS_UNIT_3
+			TEXT_TOOLTIP_SEPARATOR_FLUFF_BLOCK
+			TEXT_UNIT_FLUFF_EA_AAS
+		</Encyclopedia_Text>
+		
+		<Space_Model_Name>INSTANTACTION_Empire.alo</Space_Model_Name>
+		<Icon_Name>i_button_torpsphere.tga</Icon_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Lua_Script></Lua_Script>
+		<Tech_Level>99</Tech_Level>
+		
+		<Starting_Spawned_Units_Tech_0>Template_Flagship_Torpedo_Sphere, 1</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Template_Flagship_Victory_Destroyer, 2</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Template_Flagship_Eidolon, 3</Starting_Spawned_Units_Tech_0>
+		
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>13430</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>20</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->
+
+	</FlagshipUnit>
+	
+	<FlagshipUnit Name="Flagship_EA_AAT">
+		<Variant_Of_Existing_Type>Template_Spawner_Unit</Variant_Of_Existing_Type>
+		<Affiliation>Eriadu_Authority</Affiliation>
+		
+		<Text_ID>TEXT_UNIT_FLAGSHIP_EA_AAT</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_GROUP_SPAWNER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+			TEXT_ENCYCLOPEDIA_FLAGSHIP_EA_AAT_UNIT_1
+			TEXT_ENCYCLOPEDIA_FLAGSHIP_EA_AAT_UNIT_2
+			TEXT_ENCYCLOPEDIA_FLAGSHIP_EA_AAT_UNIT_3
+			TEXT_TOOLTIP_SEPARATOR_FLUFF_BLOCK
+			TEXT_UNIT_FLUFF_EA_AAT
+		</Encyclopedia_Text>
+		
+		<Space_Model_Name>INSTANTACTION_Empire.alo</Space_Model_Name>
+		<Icon_Name>i_button_praetortwo.tga</Icon_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Lua_Script></Lua_Script>
+		<Tech_Level>99</Tech_Level>
+		
+		<Starting_Spawned_Units_Tech_0>Template_Flagship_Praetor, 1</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Template_Flagship_Star_Destroyer, 2</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Template_Flagship_Generic_Imperial_I_Frigate, 2</Starting_Spawned_Units_Tech_0>
+
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>21675</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>21</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->
+
+	</FlagshipUnit>
+	
+	<FlagshipUnit Name="Flagship_EA_AAU">
+		<Variant_Of_Existing_Type>Template_Spawner_Unit</Variant_Of_Existing_Type>
+		<Affiliation>Eriadu_Authority</Affiliation>
+		
+		<Text_ID>TEXT_UNIT_FLAGSHIP_EA_AAU</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_GROUP_SPAWNER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+			TEXT_ENCYCLOPEDIA_FLAGSHIP_EA_AAU_UNIT_1
+			TEXT_ENCYCLOPEDIA_FLAGSHIP_EA_AAU_UNIT_2
+			TEXT_ENCYCLOPEDIA_FLAGSHIP_EA_AAU_UNIT_3
+			TEXT_TOOLTIP_SEPARATOR_FLUFF_BLOCK
+			TEXT_UNIT_FLUFF_EA_AAU
+		</Encyclopedia_Text>
+		
+		<Space_Model_Name>INSTANTACTION_Empire.alo</Space_Model_Name>
+		<Icon_Name>i_button_tagge.tga</Icon_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Lua_Script></Lua_Script>
+		<Tech_Level>99</Tech_Level>
+		
+		<Starting_Spawned_Units_Tech_0>Template_Flagship_Generic_Tagge_Battlecruiser, 1</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Template_Flagship_Raider_II_Corvette, 3</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Template_Flagship_IPV4, 3</Starting_Spawned_Units_Tech_0>
+
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>15745</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>19</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->
+
+	</FlagshipUnit>
+	
+	<FlagshipUnit Name="Flagship_EA_AAV">
+		<Variant_Of_Existing_Type>Template_Spawner_Unit</Variant_Of_Existing_Type>
+		<Affiliation>Eriadu_Authority</Affiliation>
+		
+		<Text_ID>TEXT_UNIT_FLAGSHIP_EA_AAV</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_GROUP_SPAWNER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+			TEXT_ENCYCLOPEDIA_FLAGSHIP_EA_AAV_UNIT_1
+			TEXT_TOOLTIP_SEPARATOR_FLUFF_BLOCK
+			TEXT_UNIT_FLUFF_EA_AAV
+		</Encyclopedia_Text>
+		
+		<Space_Model_Name>INSTANTACTION_Empire.alo</Space_Model_Name>
+		<Icon_Name>i_button_torpsphere.tga</Icon_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Lua_Script></Lua_Script>
+		<Tech_Level>99</Tech_Level>
+		
+		<Starting_Spawned_Units_Tech_0>Template_Flagship_Torpedo_Sphere, 2</Starting_Spawned_Units_Tech_0>
+
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>13180</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>9</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->
+
+	</FlagshipUnit>
+	
+	</Flagship_EA>

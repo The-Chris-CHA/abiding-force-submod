@@ -1,0 +1,643 @@
+<?xml version="1.0" ?>
+
+
+
+<!--******************************************************-->
+<!--******	Campaign: Rim World Conflict (Empire)	******-->
+<!--******************************************************-->
+
+<Story>
+
+
+
+	<!-- *************************************************************** -->
+	<!--********************* Protection from Swaps *********************-->
+	<!-- *************************************************************** -->
+	
+	<Event Name="Death_Event_Disable">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>DISABLE_HERO_DEATH_EVENTS</Event_Param2>
+		<Reward_Type>DISABLE_BRANCH</Reward_Type>
+		<Reward_Param1>Hero_Death_Events</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+	</Event>
+	
+	<Event Name="Death_Event_Enable">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>ENABLE_HERO_DEATH_EVENTS</Event_Param2>
+		<Reward_Type>DISABLE_BRANCH</Reward_Type>
+		<Reward_Param1>Hero_Death_Events</Reward_Param1>
+		<Reward_Param2>0</Reward_Param2>
+	</Event>
+		
+	<Event Name="Reveal_All_Planets">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>0</Event_Param1>
+		<Reward_Type>REVEAL_ALL_PLANETS</Reward_Type>
+	</Event>
+	
+	<Event Name="Destroy_Dlarit">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>REMOVE_DLARIT</Event_Param2>
+		<Reward_Type>REMOVE_UNIT</Reward_Type>
+		<Reward_Param1>Elite_Squadron</Reward_Param1>
+	</Event>
+	
+	<Event Name="Destroy_Phennir">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>REMOVE_PHENNIR</Event_Param2>
+		<Reward_Type>REMOVE_UNIT</Reward_Type>
+		<Reward_Param1>181st_TIE_Interceptor_Squadron</Reward_Param1>
+	</Event>
+
+	<!--***********************************************************-->
+	<!--***********************************************************-->
+	<!--***************** New Republic Storyline ******************-->
+	<!--***********************************************************-->	
+	<!--***********************************************************-->	
+	
+	<!-- <Event Name="Battle_of_Endor">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>1</Event_Param1>
+		<Reward_Type>LINK_TACTICAL</Reward_Type>
+		<Reward_Param1>Endor</Reward_Param1> the planet
+		<Reward_Param2>SPACE</Reward_Param2> LAND or SPACE, MUST be capitalized
+		<Reward_Param3>Hostile</Reward_Param3> attacking faction
+		<Reward_Param4>_FOTG_SPACE_ENDOR_BATTLE.TED</Reward_Param4> the map you want to load for your mission
+		<Reward_Param5>Rebel</Reward_Param5> defending faction
+		<Reward_Param7>Battle_of_Endor.xml</Reward_Param7> the story plot file
+		<Reward_Param8>1</Reward_Param8> explained below
+		<Reward_Param13>1</Reward_Param13> 1: displays the "Launch Battle" dialog before battle; 0: skips the dialog and launches battle without asking the player
+		<Prereq>GC_Progress_01</Prereq> 
+	</Event> -->
+	
+
+	<!--***********************************************************-->
+	<!--***********************************************************-->
+	<!--******************* ERA CHANGE EVENTS *********************-->
+	<!--***********************************************************-->	
+	<!--***********************************************************-->	
+	
+	<Event Name="Branch_Enabler_Hammer">
+  		<Event_Type>STORY_TACTICAL_DESTROY</Event_Type>
+  		<Event_Param1>Thalassa</Event_Param1>
+		<Event_Param2></Event_Param2>
+		<Event_Param3>1</Event_Param3>
+		<Reward_Type>DISABLE_BRANCH</Reward_Type>
+		<Reward_Param1>Branch_Daala_Hammer_Active</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+		<Branch>Hero_Death_Events</Branch>
+	</Event>
+	
+	<!--***********************************************************-->
+	<!--***********************************************************-->
+	<!--******************** UNIVERSAL EVENTS *********************-->
+	<!--***********************************************************-->	
+	<!--***********************************************************-->	
+	
+
+	<!--**************** Warlord Groups Captured ******************-->
+
+	<Event Name="NewRep_Evac_Trigger">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>30</Event_Param1>
+		<Prereq>Set_Subera_Palpatine</Prereq>
+		<Prereq>GC_Progress_03</Prereq>
+		<Branch>Faction_Branch_NewRep</Branch>
+	</Event>
+	
+	<Event Name="Jump_Camera_Coruscant">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>POSITION_CAMERA</Reward_Type>
+		<Reward_Param1>Coruscant</Reward_Param1>
+		<Reward_Param2>0,0,0</Reward_Param2>
+		<Prereq>NewRep_Evac_Trigger</Prereq>
+	</Event>
+	
+	<Event Name="Flash_Coruscant">
+        <Event_Type>STORY_TRIGGER</Event_Type>
+        <Reward_Type>FLASH_PLANET_GUI</Reward_Type>
+        <Reward_Param1>Coruscant</Reward_Param1>
+        <Reward_Param2>FLASH_PLANET</Reward_Param2>
+        <Reward_Param4>Coruscant_GUI_Flash</Reward_Param4>
+        <Reward_Param5>True</Reward_Param5>
+        <Prereq>NewRep_Evac_Trigger</Prereq>
+    </Event>
+	
+	<Event Name="Evac_Prereq">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>ENABLE_BATTLE_OF_CORUSCANT</Event_Param2>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_CONQUEST_PALPATINE_NR_INTRO</Reward_Param1>
+		<Reward_Param2>15</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6 />
+		<Reward_Param7 />
+		<Reward_Param8 />
+		<Reward_Param9>Mon_Mothma_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+	</Event>
+
+	<Event Name="Battle_of_Coruscant">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>16</Event_Param1>
+		<Reward_Type>LINK_TACTICAL</Reward_Type>
+		<Reward_Param1>Coruscant</Reward_Param1> <!-- the planet -->
+		<Reward_Param2>SPACE</Reward_Param2> <!-- LAND or SPACE, MUST be capitalized -->
+		<Reward_Param3>Hostile</Reward_Param3> <!-- attacking faction -->
+		<Reward_Param4>_FOTG_SPACE_CORUSCANT_EVACUATION.TED</Reward_Param4> <!-- the map you want to load for your mission -->
+		<Reward_Param5>Rebel</Reward_Param5> <!-- defending faction -->
+		<Reward_Param7>Battle_of_Coruscant.xml</Reward_Param7> <!-- the story plot file -->
+		<Reward_Param8>1</Reward_Param8> <!-- explained below -->
+		<Reward_Param9>2</Reward_Param9>
+		<Reward_Param13>1</Reward_Param13> <!-- 1: displays the "Launch Battle" dialog before battle; 0: skips the dialog and launches battle without asking the player -->
+		<Prereq>Evac_Prereq</Prereq>
+	</Event>
+	
+	<Event Name="Remove_Flash_Coruscant">
+        <Event_Type>STORY_ELAPSED</Event_Type>
+        <Event_Param1>10</Event_Param1>
+        <Reward_Type>HIDE_TUTORIAL_CURSOR</Reward_Type>
+        <Reward_Param1>Coruscant_GUI_Flash</Reward_Param1>
+        <Prereq>Battle_of_Coruscant</Prereq>
+    </Event>
+	
+	<Event Name="Empire_wins_Coruscant">  <!-- This exists to trigger Lua events -->
+		<Event_Type>STORY_MISSION_LOST</Event_Type>
+		<Event_Param1>Battle_of_Coruscant.xml</Event_Param1>
+	</Event>
+	
+	<Event Name="Loop_Clearer">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>LOOP_CLEAR</Event_Param2>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+	<!-- Katana Fleet events -->
+	
+	<Event Name="Katana_Locked">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>0</Event_Param1>
+		<Reward_Type>SET_PLANET_RESTRICTED</Reward_Type>
+		<Reward_Param1>Katana_Space</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+	</Event>
+	
+	<Event Name="Katana_Era_2_only">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>DISABLE_STORY_EVENT</Reward_Type>
+		<Reward_Param1>Unlock_Katana</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+		<Prereq>GC_Starts_03</Prereq>
+	</Event>
+	
+	<Event Name="Unlock_Katana_in_3_plus">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SET_PLANET_RESTRICTED</Reward_Type>
+		<Reward_Param1>Katana_Space</Reward_Param1>
+		<Reward_Param2>0</Reward_Param2>
+		<Prereq>Trigger_Palpatine_Thrawn_Voluntary</Prereq>
+		<Prereq>Trigger_Palpatine_Thrawn_Death_Timer</Prereq>
+		<Prereq>Trigger_Palpatine_Thrawn_Timer</Prereq>
+		<Prereq>GC_Progress_03</Prereq>
+		<Prereq>GC_Progress_04</Prereq>
+		<Prereq>GC_Progress_05</Prereq>
+	</Event>
+	
+	<Event Name="Unlock_Katana">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>120</Event_Param1>
+		<Reward_Type>SET_PLANET_RESTRICTED</Reward_Type>
+		<Reward_Param1>Katana_Space</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+		
+		<Prereq>Set_Subera_Thrawn</Prereq>
+		<Prereq>GC_Progress_02</Prereq>
+	</Event>
+	
+	<Event Name="Katana_Speech_Empire">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_CONQUEST_THRAWN_IR_KATANA_INFO</Reward_Param1>
+		<Reward_Param2>15</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6 />
+		<Reward_Param7 />
+		<Reward_Param8 />
+		<Reward_Param9>Thrawn_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+		<Prereq>Unlock_Katana</Prereq>
+		<Branch>Faction_Branch_Remnant</Branch>
+	</Event>
+	
+	<Event Name="Katana_Speech_NR">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_CONQUEST_THRAWN_NR_KARRDE_INFO</Reward_Param1>
+		<Reward_Param2>15</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6 />
+		<Reward_Param7 />
+		<Reward_Param8 />
+		<Reward_Param9>Karrde_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+		<Prereq>Unlock_Katana</Prereq>
+		<Branch>Faction_Branch_NewRep</Branch>
+	</Event>
+	
+	<Event Name="Katana_Speech_EotH">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_CONQUEST_THRAWN_EOTH_KATANA_INFO</Reward_Param1>
+		<Reward_Param2>15</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6 />
+		<Reward_Param7 />
+		<Reward_Param8 />
+		<Reward_Param9>Parck_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+		<Prereq>Unlock_Katana</Prereq>
+		<Branch>Faction_Branch_EotH</Branch>
+	</Event>
+	
+	<Event Name="Katana_Speech_PA">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_CONQUEST_THRAWN_PA_KATANA_INFO</Reward_Param1>
+		<Reward_Param2>15</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6 />
+		<Reward_Param7 />
+		<Reward_Param8 />
+		<Reward_Param9>Kaine_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+		<Prereq>Unlock_Katana</Prereq>
+		<Branch>Faction_Branch_Pentastar</Branch>
+	</Event>
+	
+	<Event Name="Katana_Speech_ZE">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_CONQUEST_THRAWN_ZE_KATANA_INFO</Reward_Param1>
+		<Reward_Param2>15</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6 />
+		<Reward_Param7 />
+		<Reward_Param8 />
+		<Reward_Param9>Zsinj_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+		<Prereq>Unlock_Katana</Prereq>
+		<Branch>Faction_Branch_Zsinj</Branch>
+	</Event>
+	
+	<Event Name="Katana_Speech_GM">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_CONQUEST_THRAWN_GM_KATANA_INFO</Reward_Param1>
+		<Reward_Param2>15</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6 />
+		<Reward_Param7 />
+		<Reward_Param8 />
+		<Reward_Param9>Treuten_Teradoc_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+		<Prereq>Unlock_Katana</Prereq>
+		<Branch>Faction_Branch_Teradoc</Branch>
+	</Event>
+	
+	<Event Name="Katana_Speech_EA">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_CONQUEST_THRAWN_EA_KATANA_INFO</Reward_Param1>
+		<Reward_Param2>15</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6 />
+		<Reward_Param7 />
+		<Reward_Param8 />
+		<Reward_Param9>Delvardus_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+		<Prereq>Unlock_Katana</Prereq>
+		<Branch>Faction_Branch_Eriadu</Branch>
+	</Event>
+	
+	<Event Name="Katana_Speech_CSA">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_CONQUEST_THRAWN_CSA_KATANA_INFO</Reward_Param1>
+		<Reward_Param2>15</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6 />
+		<Reward_Param7 />
+		<Reward_Param8 />
+		<Reward_Param9>Grumby_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+		<Prereq>Unlock_Katana</Prereq>
+		<Branch>Faction_Branch_Corporate_Sector</Branch>
+	</Event>
+	
+	<Event Name="Katana_Speech_Hapes">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_CONQUEST_THRAWN_HAPES_KATANA_INFO</Reward_Param1>
+		<Reward_Param2>15</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6 />
+		<Reward_Param7 />
+		<Reward_Param8 />
+		<Reward_Param9>Isolder_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+		<Prereq>Unlock_Katana</Prereq>
+		<Branch>Faction_Branch_Hapes</Branch>
+	</Event>
+	
+	<Event Name="Jump_Camera_Katana">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>POSITION_CAMERA</Reward_Type>
+		<Reward_Param1>Katana_Space</Reward_Param1>
+		<Reward_Param2>0,0,0</Reward_Param2>
+		<Prereq>Katana_Speech_Empire</Prereq>
+		<Prereq>Katana_Speech_NR</Prereq>
+		<Prereq>Katana_Speech_PA</Prereq>
+		<Prereq>Katana_Speech_EotH</Prereq>
+		<Prereq>Katana_Speech_ZE</Prereq>
+		<Prereq>Katana_Speech_GM</Prereq>
+		<Prereq>Katana_Speech_EA</Prereq>
+		<Prereq>Katana_Speech_CSA</Prereq>
+		<Prereq>Katana_Speech_Hapes</Prereq>
+	</Event>
+	
+	<Event Name="Flash_Katana">
+        <Event_Type>STORY_TRIGGER</Event_Type>
+        <Reward_Type>FLASH_PLANET_GUI</Reward_Type>
+        <Reward_Param1>Katana_Space</Reward_Param1>
+        <Reward_Param2>FLASH_PLANET</Reward_Param2>
+        <Reward_Param4>Katana_GUI_Flash</Reward_Param4>
+        <Reward_Param5>True</Reward_Param5>
+        <Prereq>Jump_Camera_Katana</Prereq>
+    </Event>
+	
+	<Event Name="Katana_Speech_Generic">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>15</Event_Param1>
+		<Story_Dialog>Dialog_Katana_Generic</Story_Dialog>
+		<Story_Chapter>0</Story_Chapter>
+		<Story_Tag>Main_Tag</Story_Tag>
+		<Prereq>Katana_Speech_Empire</Prereq>
+		<Prereq>Katana_Speech_NR</Prereq>
+		<Prereq>Katana_Speech_EotH</Prereq>
+		<Prereq>Katana_Speech_PA</Prereq>
+		<Prereq>Katana_Speech_ZE</Prereq>
+		<Prereq>Katana_Speech_GM</Prereq>
+		<Prereq>Katana_Speech_EA</Prereq>
+		<Prereq>Katana_Speech_CSA</Prereq>
+		<Prereq>Katana_Speech_Hapes</Prereq>
+	</Event>
+	
+	<Event Name="Katana_Battle_Empire">
+		<Event_Type>STORY_ENTER</Event_Type>
+		<Event_Param1>Katana_Space</Event_Param1>
+		<Event_Param2>FILTER_FRIENDLY_AND_ENEMY</Event_Param2>
+		<Reward_Type>LINK_TACTICAL</Reward_Type>
+		<Reward_Param1>Katana_Space</Reward_Param1>
+		<Reward_Param2>SPACE</Reward_Param2>
+		<Reward_Param3>Empire</Reward_Param3>
+		<Reward_Param4>_FOTG_SPACE_KATANA_BATTLE.TED</Reward_Param4>
+		<Reward_Param5>Hostile</Reward_Param5>
+		<Reward_Param7>Katana_Plot.XML</Reward_Param7>
+		<Reward_Param8>1</Reward_Param8>
+		<Reward_Param13>1</Reward_Param13>
+		<Branch>Faction_Branch_Remnant</Branch>
+		<Prereq>Unlock_Katana</Prereq>
+	</Event>
+	
+	<Event Name="Katana_Battle_NR">
+		<Event_Type>STORY_ENTER</Event_Type>
+		<Event_Param1>Katana_Space</Event_Param1>
+		<Event_Param2>FILTER_FRIENDLY_AND_ENEMY</Event_Param2>
+		<Reward_Type>LINK_TACTICAL</Reward_Type>
+		<Reward_Param1>Katana_Space</Reward_Param1>
+		<Reward_Param2>SPACE</Reward_Param2>
+		<Reward_Param3>Rebel</Reward_Param3>
+		<Reward_Param4>_FOTG_SPACE_KATANA_BATTLE.TED</Reward_Param4>
+		<Reward_Param5>Hostile</Reward_Param5>
+		<Reward_Param7>Katana_Plot.XML</Reward_Param7>
+		<Reward_Param8>1</Reward_Param8>
+		<Reward_Param13>1</Reward_Param13>
+		<Branch>Faction_Branch_NewRep</Branch>
+		<Prereq>Unlock_Katana</Prereq>
+	</Event>
+	
+	<Event Name="Katana_Battle_PA">
+		<Event_Type>STORY_ENTER</Event_Type>
+		<Event_Param1>Katana_Space</Event_Param1>
+		<Event_Param2>FILTER_FRIENDLY_AND_ENEMY</Event_Param2>
+		<Reward_Type>LINK_TACTICAL</Reward_Type>
+		<Reward_Param1>Katana_Space</Reward_Param1>
+		<Reward_Param2>SPACE</Reward_Param2>
+		<Reward_Param3>Pentastar</Reward_Param3>
+		<Reward_Param4>_FOTG_SPACE_KATANA_BATTLE.TED</Reward_Param4>
+		<Reward_Param5>Hostile</Reward_Param5>
+		<Reward_Param7>Katana_Plot.XML</Reward_Param7>
+		<Reward_Param8>1</Reward_Param8>
+		<Reward_Param13>1</Reward_Param13>
+		<Branch>Faction_Branch_Pentastar</Branch>
+		<Prereq>Unlock_Katana</Prereq>
+	</Event>
+	
+	<Event Name="Katana_Battle_EotH">
+		<Event_Type>STORY_ENTER</Event_Type>
+		<Event_Param1>Katana_Space</Event_Param1>
+		<Event_Param2>FILTER_FRIENDLY_AND_ENEMY</Event_Param2>
+		<Reward_Type>LINK_TACTICAL</Reward_Type>
+		<Reward_Param1>Katana_Space</Reward_Param1>
+		<Reward_Param2>SPACE</Reward_Param2>
+		<Reward_Param3>EmpireoftheHand</Reward_Param3>
+		<Reward_Param4>_FOTG_SPACE_KATANA_BATTLE.TED</Reward_Param4>
+		<Reward_Param5>Hostile</Reward_Param5>
+		<Reward_Param7>Katana_Plot.XML</Reward_Param7>
+		<Reward_Param8>1</Reward_Param8>
+		<Reward_Param13>1</Reward_Param13>
+		<Branch>Faction_Branch_EotH</Branch>
+		<Prereq>Unlock_Katana</Prereq>
+	</Event>
+	
+	<Event Name="Katana_Battle_ZE">
+		<Event_Type>STORY_ENTER</Event_Type>
+		<Event_Param1>Katana_Space</Event_Param1>
+		<Event_Param2>FILTER_FRIENDLY_AND_ENEMY</Event_Param2>
+		<Reward_Type>LINK_TACTICAL</Reward_Type>
+		<Reward_Param1>Katana_Space</Reward_Param1>
+		<Reward_Param2>SPACE</Reward_Param2>
+		<Reward_Param3>Zsinj_Empire</Reward_Param3>
+		<Reward_Param4>_FOTG_SPACE_KATANA_BATTLE.TED</Reward_Param4>
+		<Reward_Param5>Hostile</Reward_Param5>
+		<Reward_Param7>Katana_Plot.XML</Reward_Param7>
+		<Reward_Param8>1</Reward_Param8>
+		<Reward_Param13>1</Reward_Param13>
+		<Branch>Faction_Branch_Zsinj</Branch>
+		<Prereq>Unlock_Katana</Prereq>
+	</Event>
+	
+	<Event Name="Katana_Battle_GM">
+		<Event_Type>STORY_ENTER</Event_Type>
+		<Event_Param1>Katana_Space</Event_Param1>
+		<Event_Param2>FILTER_FRIENDLY_AND_ENEMY</Event_Param2>
+		<Reward_Type>LINK_TACTICAL</Reward_Type>
+		<Reward_Param1>Katana_Space</Reward_Param1>
+		<Reward_Param2>SPACE</Reward_Param2>
+		<Reward_Param3>Greater_Maldrood</Reward_Param3>
+		<Reward_Param4>_FOTG_SPACE_KATANA_BATTLE.TED</Reward_Param4>
+		<Reward_Param5>Hostile</Reward_Param5>
+		<Reward_Param7>Katana_Plot.XML</Reward_Param7>
+		<Reward_Param8>1</Reward_Param8>
+		<Reward_Param13>1</Reward_Param13>
+		<Branch>Faction_Branch_Teradoc</Branch>
+		<Prereq>Unlock_Katana</Prereq>
+	</Event>
+	
+	<Event Name="Katana_Battle_EA">
+		<Event_Type>STORY_ENTER</Event_Type>
+		<Event_Param1>Katana_Space</Event_Param1>
+		<Event_Param2>FILTER_FRIENDLY_AND_ENEMY</Event_Param2>
+		<Reward_Type>LINK_TACTICAL</Reward_Type>
+		<Reward_Param1>Katana_Space</Reward_Param1>
+		<Reward_Param2>SPACE</Reward_Param2>
+		<Reward_Param3>Eriadu_Authority</Reward_Param3>
+		<Reward_Param4>_FOTG_SPACE_KATANA_BATTLE.TED</Reward_Param4>
+		<Reward_Param5>Hostile</Reward_Param5>
+		<Reward_Param7>Katana_Plot.XML</Reward_Param7>
+		<Reward_Param8>1</Reward_Param8>
+		<Reward_Param13>1</Reward_Param13>
+		<Branch>Faction_Branch_Eriadu</Branch>
+		<Prereq>Unlock_Katana</Prereq>
+	</Event>
+	
+	<Event Name="Katana_Battle_CSA">
+		<Event_Type>STORY_ENTER</Event_Type>
+		<Event_Param1>Katana_Space</Event_Param1>
+		<Event_Param2>FILTER_FRIENDLY_AND_ENEMY</Event_Param2>
+		<Reward_Type>LINK_TACTICAL</Reward_Type>
+		<Reward_Param1>Katana_Space</Reward_Param1>
+		<Reward_Param2>SPACE</Reward_Param2>
+		<Reward_Param3>Corporate_Sector</Reward_Param3>
+		<Reward_Param4>_FOTG_SPACE_KATANA_BATTLE.TED</Reward_Param4>
+		<Reward_Param5>Hostile</Reward_Param5>
+		<Reward_Param7>Katana_Plot.XML</Reward_Param7>
+		<Reward_Param8>1</Reward_Param8>
+		<Reward_Param13>1</Reward_Param13>
+		<Branch>Faction_Branch_Corporate_Sector</Branch>
+		<Prereq>Unlock_Katana</Prereq>
+	</Event>
+	
+	<Event Name="Katana_Battle_Hapes">
+		<Event_Type>STORY_ENTER</Event_Type>
+		<Event_Param1>Katana_Space</Event_Param1>
+		<Event_Param2>FILTER_FRIENDLY_AND_ENEMY</Event_Param2>
+		<Reward_Type>LINK_TACTICAL</Reward_Type>
+		<Reward_Param1>Katana_Space</Reward_Param1>
+		<Reward_Param2>SPACE</Reward_Param2>
+		<Reward_Param3>Hapes_Consortium</Reward_Param3>
+		<Reward_Param4>_FOTG_SPACE_KATANA_BATTLE.TED</Reward_Param4>
+		<Reward_Param5>Hostile</Reward_Param5>
+		<Reward_Param7>Katana_Plot.XML</Reward_Param7>
+		<Reward_Param8>1</Reward_Param8>
+		<Reward_Param13>1</Reward_Param13>
+		<Branch>Faction_Branch_Hapes</Branch>
+		<Prereq>Unlock_Katana</Prereq>
+	</Event>
+	
+	<Event Name="Remove_Flash_Katana">
+        <Event_Type>STORY_ELAPSED</Event_Type>
+        <Event_Param1>10</Event_Param1>
+        <Reward_Type>HIDE_TUTORIAL_CURSOR</Reward_Type>
+        <Reward_Param1>Katana_GUI_Flash</Reward_Param1>
+        <Prereq>Katana_Battle_Empire</Prereq>
+		<Prereq>Katana_Battle_NR</Prereq>
+		<Prereq>Katana_Battle_PA</Prereq>
+		<Prereq>Katana_Battle_EotH</Prereq>
+		<Prereq>Katana_Battle_ZE</Prereq>
+		<Prereq>Katana_Battle_GM</Prereq>
+		<Prereq>Katana_Battle_EA</Prereq>
+		<Prereq>Katana_Battle_CSA</Prereq>
+		<Prereq>Katana_Battle_Hapes</Prereq>
+    </Event>
+	
+	<!-- Katana reward spawn -->
+	
+	<Event Name="SET_FLAG_KATANA_COUNT">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SET_FLAG</Reward_Type>
+		<Reward_Param1>KATANA_COUNT</Reward_Param1>
+		<Reward_Param2>0</Reward_Param2>
+		<Prereq>Setup_Finished</Prereq>
+	</Event>
+	
+	<Event Name="Disable_Katana_Count">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>DISABLE_STORY_EVENT</Reward_Type>
+		<Reward_Param1>STORY_FLAG_KATANA_COUNT</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+		<Prereq>Setup_Finished</Prereq>
+	</Event>
+	
+	<Event Name="STORY_CONQUER_Katana_Space">
+		<Event_Type>STORY_CONQUER</Event_Type>
+		<Event_Param1>Katana_Space</Event_Param1>
+		<Event_Param3>FILTER_FRIENDLY_AND_ENEMY</Event_Param3>
+		<Reward_Type>DISABLE_STORY_EVENT</Reward_Type>
+		<Reward_Param1>STORY_FLAG_KATANA_COUNT</Reward_Param1>
+		<Reward_Param2>0</Reward_Param2>
+		<Prereq>Setup_Finished</Prereq>
+	</Event>
+	
+	<Event Name="STORY_FLAG_KATANA_COUNT">
+		<Event_Type>STORY_FLAG</Event_Type>
+		<Event_Param1>KATANA_COUNT</Event_Param1>
+		<Event_Param2>0</Event_Param2>
+		<Event_Param3>GREATER_THAN</Event_Param3>
+		<Reward_Type>DISABLE_STORY_EVENT</Reward_Type>
+		<Reward_Param1>STORY_FLAG_KATANA_COUNT</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+		<Perpetual>true</Perpetual>
+	</Event>
+	
+	<!-- Lua spawns can't keep up with xml events when they need to call loop clear events between each one -->
+	<Event Name="Katana_Spawn_Throttle">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>KATANA_THROTTLE</Event_Param2>
+		<Reward_Type>DISABLE_STORY_EVENT</Reward_Type>
+		<Reward_Param1>STORY_FLAG_KATANA_COUNT</Reward_Param1>
+		<Reward_Param2>0</Reward_Param2>
+		<Perpetual>true</Perpetual>
+	</Event>
+	
+	<Event Name="INCREMENT_FLAG_KATANA_COUNT_Minus_1">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>INCREMENT_FLAG</Reward_Type>
+		<Reward_Param1>KATANA_COUNT</Reward_Param1>
+		<Reward_Param2>-1</Reward_Param2>
+		<Prereq>STORY_FLAG_KATANA_COUNT</Prereq>
+		<Perpetual>true</Perpetual>	
+	</Event>
+	
+</Story>

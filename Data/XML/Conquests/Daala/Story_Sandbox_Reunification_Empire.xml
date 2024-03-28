@@ -1,0 +1,138 @@
+<?xml version="1.0" ?>
+
+
+
+<!--****************************************************-->
+<!--***** CAMPAIGN: Fractured Empire (Empire Version) *****-->
+<!--****************************************************-->
+
+
+
+<Story>
+
+ <Event Name="Universal_Story_Start">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>0</Event_Param1>
+
+ </Event>
+	
+	<Event Name="Spawn_Gorgon">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+  		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Gorgon</Reward_Param1>
+		<Reward_Param2>The_Maw</Reward_Param2>
+		<Prereq>Universal_Story_Start</Prereq>
+	</Event>
+	
+	<Event Name="Spawn_Sivron">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+  		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Sivron_Team</Reward_Param1>
+		<Reward_Param2>The_Maw</Reward_Param2>
+		<Prereq>Universal_Story_Start</Prereq>
+	</Event>
+	
+	<Event Name="Spawn_Odosk">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+  		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Odosk_Team</Reward_Param1>
+		<Reward_Param2>The_Maw</Reward_Param2>
+		<Prereq>Universal_Story_Start</Prereq>
+	</Event>
+	
+	<Event Name="Spawn_Fredja">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+  		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Fredja_Team</Reward_Param1>
+		<Reward_Param2>The_Maw</Reward_Param2>
+		<Prereq>Universal_Story_Start</Prereq>
+	</Event>
+
+	<Event Name="Spawn_Knight_Hammer">
+			<Event_Type>STORY_CONQUER</Event_Type>
+		<Event_Param1>Kampe</Event_Param1>
+		<Event_Param2></Event_Param2>
+		<Event_Param3>FILTER_FRIENDLY_ONLY</Event_Param3>
+		<Reward_Type>UNIQUE_UNIT</Reward_Type>
+		<Reward_Param1>Knight_Hammer</Reward_Param1>
+		<Reward_Param2>Kampe</Reward_Param2>
+			<Prereq>Universal_Story_Start</Prereq>
+	</Event>
+	
+
+	<Event Name="Spawn_Cronus">
+		<Event_Type>STORY_CONQUER</Event_Type>
+		<Event_Param1>Kampe</Event_Param1>
+		<Event_Param2></Event_Param2>
+		<Event_Param3>FILTER_FRIENDLY_ONLY</Event_Param3>
+		<Reward_Type>UNIQUE_UNIT</Reward_Type>
+		<Reward_Param1>13X</Reward_Param1>
+		<Reward_Param2>Kampe</Reward_Param2>
+		<Prereq>Universal_Story_Start</Prereq>
+	</Event>
+
+	
+	
+	<Event Name="Spawn_Pellaeon_Palpateam">
+		<Event_Type>STORY_CONQUER</Event_Type>
+		<Event_Param1>Hakassi</Event_Param1>
+		<Event_Param2></Event_Param2>
+		<Event_Param3>FILTER_FRIENDLY_ONLY</Event_Param3>
+		<Reward_Type>UNIQUE_UNIT</Reward_Type>
+		<Reward_Param1>Pellaeon_Firestorm</Reward_Param1>
+		<Reward_Param2>Hakassi</Reward_Param2>
+		<Prereq>Universal_Story_Start</Prereq>
+	</Event>
+	
+	<Event Name="Spawn_Noils">
+		<Event_Type>STORY_CONQUER</Event_Type>
+		<Event_Param1>Kalist</Event_Param1>
+		<Event_Param2></Event_Param2>
+		<Event_Param3>FILTER_FRIENDLY_ONLY</Event_Param3>
+		<Reward_Type>UNIQUE_UNIT</Reward_Type>
+		<Reward_Param1>Noils_Team</Reward_Param1>
+		<Reward_Param2>Kalist</Reward_Param2>
+		<Prereq>Universal_Story_Start</Prereq>
+	</Event>
+	
+	<!-- May as well lock Crimson Command until you've taken it for the verisimilitude -->
+	
+	<Event Name="E_Lock_Crimson_Victory_Open">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>8</Event_Param1>
+		<Reward_Type>LOCK_UNIT</Reward_Type>
+		<Reward_Param1>Crimson_Victory</Reward_Param1>
+		<Prereq>Universal_Story_Start</Prereq>
+	</Event>
+	
+	<Event Name="Unlock_VSDII_Start">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>BUILDABLE_UNIT</Reward_Type>
+		<Reward_Param1>Generic_Victory_Destroyer_Two</Reward_Param1>
+		<Prereq>E_Lock_Crimson_Victory_Open</Prereq>
+	</Event>
+	
+	<Event Name="Lock_Knight_Hammer">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>LOCK_UNIT</Reward_Type>
+		<Reward_Param1>Knight_Hammer</Reward_Param1>
+		<Prereq>Universal_Story_Start</Prereq>
+	</Event>
+	
+	<Event Name="Unlock_Crimson">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>BUILDABLE_UNIT</Reward_Type>
+		<Reward_Param1>Crimson_Victory</Reward_Param1>
+		<Prereq>Spawn_Pellaeon_Palpateam</Prereq>
+	</Event>
+	
+	<Event Name="Lock_VSDII">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>LOCK_UNIT</Reward_Type>
+		<Reward_Param1>Generic_Victory_Destroyer_Two</Reward_Param1>
+		<Prereq>Spawn_Pellaeon_Palpateam</Prereq>
+	</Event>
+	
+	
+
+</Story>

@@ -1,0 +1,57 @@
+<?xml version="1.0" ?>
+<Equations>
+	
+	<!-- Warlords tilt more strongly to attack than construction -->
+	<WarlordOffensiveBudgetAllocation>
+		1.25 * Function_GenericOffensiveBudgetAllocation.Evaluate
+	</WarlordOffensiveBudgetAllocation>
+	
+	<WarlordInfrastructureBudgetAllocation>
+		Function_GenericInfrastructureBudgetAllocation.Evaluate
+	</WarlordInfrastructureBudgetAllocation>
+	
+	<WarlordMajorItemBudgetAllocation>
+		Function_GenericMajorItemBudgetAllocation.Evaluate
+	</WarlordMajorItemBudgetAllocation>
+	
+	<!-- Remnant tilts more towards infrastructure and big stuff -->
+	<RemnantOffensiveBudgetAllocation>
+		0.9 * Function_GenericOffensiveBudgetAllocation.Evaluate
+	</RemnantOffensiveBudgetAllocation>
+	
+	<RemnantInfrastructureBudgetAllocation>
+		1.1 * Function_GenericInfrastructureBudgetAllocation.Evaluate
+	</RemnantInfrastructureBudgetAllocation>
+	
+	<RemnantMajorItemBudgetAllocation>
+		1.2 * Function_GenericMajorItemBudgetAllocation.Evaluate
+	</RemnantMajorItemBudgetAllocation>	
+	
+
+	<!-- Pentastar is very low aggro by default-->
+	<PentastarOffensiveBudgetAllocation>
+		0.7 * Function_GenericOffensiveBudgetAllocation.Evaluate
+	</PentastarOffensiveBudgetAllocation>
+	
+	<PentastarInfrastructureBudgetAllocation>
+		1.1 * Function_GenericInfrastructureBudgetAllocation.Evaluate
+	</PentastarInfrastructureBudgetAllocation>
+	
+	<PentastarMajorItemBudgetAllocation>
+		Function_GenericMajorItemBudgetAllocation.Evaluate
+	</PentastarMajorItemBudgetAllocation>	
+	
+	<EotHDefaultOffensiveBudgetAllocation>
+		0.5 * Function_GenericOffensiveBudgetAllocation.Evaluate
+	</EotHDefaultOffensiveBudgetAllocation>
+	
+	<EotHDefaultInfrastructureBudgetAllocation>
+		Function_GenericInfrastructureBudgetAllocation.Evaluate
+	</EotHDefaultInfrastructureBudgetAllocation>
+	
+	<EotHDefaultMajorItemBudgetAllocation>
+		0.5 * Function_GenericMajorItemBudgetAllocation.Evaluate
+	</EotHDefaultMajorItemBudgetAllocation>
+	
+	
+</Equations>

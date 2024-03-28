@@ -1,0 +1,206 @@
+<?xml version="1.0" ?>
+
+
+
+<!--******************************************************-->
+<!--******	Campaign: Fractured Empire (Isard) *****-->
+<!--******************************************************-->
+
+
+
+<Story>
+	
+	<Event Name="Universal_Story_Start">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>0</Event_Param1>
+	</Event>
+	
+	<Event Name="AI_NR">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>AI_NR_UNIVERSAL_LOCK</Event_Param2>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+	<Event Name="Rebels_Enter_Tech_01">
+		<Event_Type>STORY_TECH_LEVEL</Event_Type>
+		<Event_Param1>0</Event_Param1>
+	</Event>
+
+	<Event Name="Rebels_Enter_Tech_02">
+		<Event_Type>STORY_TECH_LEVEL</Event_Type>
+		<Event_Param1>2</Event_Param1>
+	</Event>
+	
+	<Event Name="Rebels_Enter_Tech_03">
+		<Event_Type>STORY_TECH_LEVEL</Event_Type>
+		<Event_Param1>4</Event_Param1>
+	</Event>
+	
+	<Event Name="Rebels_Enter_Tech_04">
+		<Event_Type>STORY_TECH_LEVEL</Event_Type>
+		<Event_Param1>6</Event_Param1>
+	</Event>
+	
+	<Event Name="Rebels_Enter_Tech_05">
+		<Event_Type>STORY_TECH_LEVEL</Event_Type>
+		<Event_Param1>7</Event_Param1>
+	</Event>
+	
+	<Event Name="Check_5_Start">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>0</Event_Param1>
+		<Reward_Type>DISABLE_BRANCH</Reward_Type>
+		<Reward_Param1>Start_Check_4</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+		<Prereq>Rebels_Enter_Tech_05</Prereq>
+	</Event>
+	
+	<Event Name="Check_4_Start">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>0</Event_Param1>
+		<Reward_Type>DISABLE_BRANCH</Reward_Type>
+		<Reward_Param1>Start_Check_3</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+		<Prereq>Rebels_Enter_Tech_04</Prereq>
+	</Event>
+	
+	<Event Name="Check_3_Start">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>0</Event_Param1>
+		<Reward_Type>DISABLE_BRANCH</Reward_Type>
+		<Reward_Param1>Start_Check_2</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+		<Prereq>Rebels_Enter_Tech_03</Prereq>
+	</Event>
+	
+	<Event Name="Check_2_Start">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>0</Event_Param1>
+		<Reward_Type>DISABLE_BRANCH</Reward_Type>
+		<Reward_Param1>Start_Check_1</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+		<Prereq>Rebels_Enter_Tech_02</Prereq>
+	</Event>
+	
+	<Event Name="Check_1_Start">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>0</Event_Param1>
+		<Prereq>Rebels_Enter_Tech_01</Prereq>
+	</Event>
+	
+	<Event Name="Cancel_5_Check">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>10</Event_Param1>
+		<Reward_Type>DISABLE_BRANCH</Reward_Type>
+		<Reward_Param1>Start_Check_5</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+		<Prereq>Rebels_Enter_Tech_01</Prereq>
+	</Event>
+
+	<Event Name="GC_Starts_01">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>1</Event_Param1>
+		<Branch>Start_Check_1</Branch>
+		<Prereq>Check_1_Start</Prereq>
+	</Event>
+
+	<Event Name="GC_Starts_02">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>1</Event_Param1>
+		<Branch>Start_Check_2</Branch>
+		<Prereq>Check_2_Start</Prereq>
+	</Event>
+	
+	<Event Name="GC_Starts_03">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>1</Event_Param1>
+		<Branch>Start_Check_3</Branch>
+		<Prereq>Check_3_Start</Prereq>
+	</Event>
+	
+	<Event Name="GC_Starts_04">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>1</Event_Param1>
+		<Branch>Start_Check_4</Branch>
+		<Prereq>Check_4_Start</Prereq>
+	</Event>
+
+	<Event Name="GC_Starts_05">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>1</Event_Param1>
+		<Branch>Start_Check_5</Branch>
+		<Prereq>Check_5_Start</Prereq>
+	</Event>
+	
+	<Event Name="GC_Starts_02_plus">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>1</Event_Param1>
+		<Branch>Rebels_Enter_Tech_02</Branch>
+		<Prereq>Check_5_Start</Prereq>
+	</Event>
+	
+	<Event Name="GC_Starts_03_plus">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>1</Event_Param1>
+		<Branch>Rebels_Enter_Tech_03</Branch>
+		<Prereq>Check_5_Start</Prereq>
+	</Event>
+	
+	<Event Name="GC_Starts_04_plus">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>1</Event_Param1>
+		<Branch>Rebels_Enter_Tech_04</Branch>
+		<Prereq>Check_5_Start</Prereq>
+	</Event>
+	
+	
+
+
+		<!-- Skirmish Unit/MP unit locks -->
+	
+	<Event Name="Disable_Tevv_Locks">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>0</Event_Param1>
+		<Reward_Type>DISABLE_BRANCH</Reward_Type>
+		<Reward_Param1>Tevv_Locks</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+		<Prereq>Unlock_Mediator</Prereq>
+	</Event>
+	
+	<Event Name="Tevv_Home_One_Lock">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>TEVV_LOCK_HOME_ONE</Event_Param2>
+		<Reward_Type>LOCK_UNIT</Reward_Type>
+		<Reward_Param1>Home_One_Type</Reward_Param1>
+		<Branch>Tevv_Locks</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+	
+	<Event Name="Tevv_Home_One_Unlock">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>TEVV_UNLOCK_HOME_ONE</Event_Param2>
+		<Reward_Type>BUILDABLE_UNIT</Reward_Type>
+		<Reward_Param1>Home_One_Type</Reward_Param1>
+		<Branch>Tevv_Locks</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+	
+	<Event Name="Tevv_Bulwark_Lock">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>TEVV_LOCK_BULWARK</Event_Param2>
+		<Reward_Type>LOCK_UNIT</Reward_Type>
+		<Reward_Param1>Bulwark_III</Reward_Param1>
+		<Branch>Tevv_Locks</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+	
+	<Event Name="Tevv_Bulwark_Unlock">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>TEVV_UNLOCK_BULWARK</Event_Param2>
+		<Reward_Type>BUILDABLE_UNIT</Reward_Type>
+		<Reward_Param1>Bulwark_III</Reward_Param1>
+		<Branch>Tevv_Locks</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+</Story>

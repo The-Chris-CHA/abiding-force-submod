@@ -1,0 +1,194 @@
+<?xml version="1.0" ?>
+<AITemplates>
+
+<Remnant_Default>
+
+	<Priority>2</Priority>
+	
+	<Trigger>One</Trigger>
+	
+	<Budget>
+		<Always>Zero</Always>
+		<Offensive>RemnantOffensiveBudgetAllocation</Offensive>
+		<Infrastructure>RemnantInfrastructureBudgetAllocation</Infrastructure>
+		<MajorItem>RemnantMajorItemBudgetAllocation</MajorItem>
+	</Budget>
+
+	<Turn_On>
+		<Goals>
+			<Category>Always</Category>
+			<Category>Offensive</Category>
+			<Category>Infrastructure</Category>
+			<Category>MajorItem</Category>
+		</Goals>
+		
+		<Plans>
+			<Goal_Category>Always</Goal_Category>
+			<Goal_Category>Offensive</Goal_Category>
+			<Goal_Category>Infrastructure</Goal_Category>
+			<Goal_Category>MajorItem</Goal_Category>
+		</Plans>
+	</Turn_On>
+	
+</Remnant_Default>
+
+<Remnant_Pestage_Isard>
+
+	<Priority>1</Priority>
+	
+	<Trigger>Era_One</Trigger>
+	<Un_Trigger>Era_Two</Un_Trigger>
+	
+	<Budget>
+		<Always>Zero</Always>
+		<Offensive>RemnantOffensiveBudgetAllocation</Offensive>
+		<Infrastructure>RemnantInfrastructureBudgetAllocation</Infrastructure>
+		<MajorItem>RemnantMajorItemBudgetAllocation</MajorItem>
+	</Budget>
+
+	<Turn_On>
+		<Goals>
+			<Category>Always</Category>
+			<Category>Offensive</Category>
+			<Category>Infrastructure</Category>
+			<Category>MajorItem</Category>
+		</Goals>
+		
+		<Plans>
+			<Goal_Category>Always</Goal_Category>
+			<Goal_Category>Offensive</Goal_Category>
+			<Goal_Category>Infrastructure</Goal_Category>
+			<Goal_Category>MajorItem</Goal_Category>
+		</Plans>
+	</Turn_On>
+	
+</Remnant_Pestage_Isard>
+
+<Remnant_Thrawn>
+
+	<Priority>1</Priority>
+	
+	<Trigger>Era_Two</Trigger>
+	<Un_Trigger>Era_Three</Un_Trigger>
+	
+	<Budget>
+		<Always>Zero</Always>
+		<Offensive>GenericOffensiveBudgetAllocation</Offensive>
+		<Infrastructure>GenericInfrastructureBudgetAllocation</Infrastructure>
+		<MajorItem>GenericMajorItemBudgetAllocation</MajorItem>
+	</Budget>
+
+	<Turn_On>
+		<Goals>
+			<Category>Always</Category>
+			<Category>Offensive</Category>
+			<Category>Infrastructure</Category>
+			<Category>MajorItem</Category>
+		</Goals>
+		
+		<Plans>
+			<Goal_Category>Always</Goal_Category>
+			<Goal_Category>Offensive</Goal_Category>
+			<Goal_Category>Infrastructure</Goal_Category>
+			<Goal_Category>MajorItem</Goal_Category>
+		</Plans>
+	</Turn_On>
+	
+</Remnant_Thrawn>
+
+<Remnant_Sidious>
+
+	<Priority>1</Priority>
+	
+	<Trigger>Era_Three</Trigger>
+	<Un_Trigger>Era_Four</Un_Trigger>
+	
+	<Budget>
+		<Always>Zero</Always>
+		<Offensive>GenericOffensiveBudgetAllocation</Offensive>
+		<Infrastructure>GenericInfrastructureBudgetAllocation</Infrastructure>
+		<MajorItem>GenericMajorItemBudgetAllocation</MajorItem>
+	</Budget>
+
+	<Turn_On>
+		<Goals>
+			<Category>Always</Category>
+			<Category>Offensive</Category>
+			<Category>Infrastructure</Category>
+			<Category>MajorItem</Category>
+		</Goals>
+		
+		<Plans>
+			<Goal_Category>Always</Goal_Category>
+			<Goal_Category>Offensive</Goal_Category>
+			<Goal_Category>Infrastructure</Goal_Category>
+			<Goal_Category>MajorItem</Goal_Category>
+		</Plans>
+	</Turn_On>
+	
+</Remnant_Sidious>
+
+<Remnant_Daala>
+
+	<Priority>1</Priority>
+	
+	<Trigger>Era_Four</Trigger>
+	<Un_Trigger>Era_Five</Un_Trigger>
+	
+	<Budget>
+		<Always>Zero</Always>
+		<Offensive>GenericOffensiveBudgetAllocation</Offensive>
+		<Infrastructure>GenericInfrastructureBudgetAllocation</Infrastructure>
+		<MajorItem>GenericMajorItemBudgetAllocation</MajorItem>
+	</Budget>
+
+	<Turn_On>
+		<Goals>
+			<Category>Always</Category>
+			<Category>Offensive</Category>
+			<Category>Infrastructure</Category>
+			<Category>MajorItem</Category>
+		</Goals>
+		
+		<Plans>
+			<Goal_Category>Always</Goal_Category>
+			<Goal_Category>Offensive</Goal_Category>
+			<Goal_Category>Infrastructure</Goal_Category>
+			<Goal_Category>MajorItem</Goal_Category>
+		</Plans>
+	</Turn_On>
+	
+</Remnant_Daala>
+
+<Remnant_Pellaeon>
+
+	<Priority>1</Priority>
+	
+	<Trigger>Era_Five</Trigger>
+	
+	<Budget>
+		<Always>Zero</Always>
+		<Offensive>GenericOffensiveBudgetAllocation</Offensive>
+		<Infrastructure>GenericInfrastructureBudgetAllocation</Infrastructure>
+		<MajorItem>GenericMajorItemBudgetAllocation</MajorItem>
+	</Budget>
+
+	<Turn_On>
+		<Goals>
+			<Category>Always</Category>
+			<Category>Offensive</Category>
+			<Category>Infrastructure</Category>
+			<Category>MajorItem</Category>
+		</Goals>
+		
+		<Plans>
+			<Goal_Category>Always</Goal_Category>
+			<Goal_Category>Offensive</Goal_Category>
+			<Goal_Category>Infrastructure</Goal_Category>
+			<Goal_Category>MajorItem</Goal_Category>
+		</Plans>
+	</Turn_On>
+	
+</Remnant_Pellaeon>
+
+</AITemplates>

@@ -1,0 +1,2233 @@
+<?xml version="1.0"?>
+<Conquest_Bases>
+
+	<GroundBuildable Name="Field_Base_Pad">
+		<GUI_Bounds_Scale>0.3</GUI_Bounds_Scale>
+
+		<Behavior>DUMMY_GROUND_STRUCTURE</Behavior>
+		<LandBehavior> TACTICAL_BUILD_OBJECTS, REVEAL, HIDE_WHEN_FOGGED, CAPTURE_POINT</LandBehavior>
+		<Space_Layer> Land </Space_Layer>	
+        <UnitCollisionClass> Build Pad </UnitCollisionClass>	
+        <Custom_Hard_XExtent> 0.0 </Custom_Hard_XExtent>
+        <Custom_Hard_YExtent> 0.0 </Custom_Hard_YExtent>
+
+		<Minimum_Time_Before_Pad_Can_Build_Again> 20.0 </Minimum_Time_Before_Pad_Can_Build_Again>
+		
+		<!-- This is a list of the buildable objects at this pad (defined below) - that will be under construction -->
+		<Tactical_Buildable_Objects_Campaign> 
+			Empire, 
+				UC_Empire_Field_Military_Base, 
+				UC_Empire_Field_Support_Base, 
+				UC_Empire_Field_Commando_Base,
+				UC_Empire_Field_Scout_Base,
+			Greater_Maldrood,
+				UC_Teradoc_Field_Military_Base,
+				UC_Teradoc_Field_Support_Base,
+				UC_Teradoc_Field_Commando_Base,
+				UC_Teradoc_Field_Scout_Base,
+			Rebel,
+				UC_Rebel_Field_Military_Base,
+				UC_Rebel_Field_Support_Base,
+				UC_Rebel_Field_Commando_Base,
+			Zsinj_Empire,
+				UC_Zsinj_Field_Military_Base,
+				UC_Zsinj_Field_Support_Base,
+				UC_Zsinj_Field_Commando_Base,
+			EmpireoftheHand,
+				UC_EotH_Field_Military_Base,
+				UC_EotH_Field_Support_Base,
+				UC_EotH_Field_Commando_Base,
+			Pentastar,
+				UC_Pentastar_Field_Military_Base,
+				UC_Pentastar_Field_Support_Base,
+				UC_Pentastar_Field_Commando_Base,
+			Corporate_Sector,
+				UC_Corporate_Sector_Field_Military_Base,
+				UC_Corporate_Sector_Field_Support_Base,
+				UC_Corporate_Sector_Field_Commando_Base,
+			Eriadu_Authority,
+				UC_Eriadu_Field_Military_Base,
+				UC_Eriadu_Field_Support_Base,
+				UC_Eriadu_Field_Commando_Base,
+			Hapes_Consortium,
+				UC_Hapes_Field_Galney_Base,
+				UC_Hapes_Field_Maluri_Base,
+				UC_Hapes_Field_Requud_Base,
+		</Tactical_Buildable_Objects_Campaign>
+		
+		<Tactical_Buildable_Objects_Multiplayer> 
+			Empire, 
+				UC_Empire_Field_Military_Base, 
+				UC_Empire_Field_Support_Base, 
+				UC_Empire_Field_Commando_Base,
+				UC_Empire_Field_Scout_Base,
+			Greater_Maldrood,
+				UC_Teradoc_Field_Military_Base,
+				UC_Teradoc_Field_Support_Base,
+				UC_Teradoc_Field_Commando_Base,
+				UC_Teradoc_Field_Scout_Base,
+			Rebel,
+				UC_Rebel_Field_Military_Base,
+				UC_Rebel_Field_Support_Base,
+				UC_Rebel_Field_Commando_Base,
+			Zsinj_Empire,
+				UC_Zsinj_Field_Military_Base,
+				UC_Zsinj_Field_Support_Base,
+				UC_Zsinj_Field_Commando_Base,
+			EmpireoftheHand,
+				UC_EotH_Field_Military_Base,
+				UC_EotH_Field_Support_Base,
+				UC_EotH_Field_Commando_Base,
+			Pentastar,
+				UC_Pentastar_Field_Military_Base,
+				UC_Pentastar_Field_Support_Base,
+				UC_Pentastar_Field_Commando_Base,
+			Corporate_Sector,
+				UC_Corporate_Sector_Field_Military_Base,
+				UC_Corporate_Sector_Field_Support_Base,
+				UC_Corporate_Sector_Field_Commando_Base,
+			Eriadu_Authority,
+				UC_Eriadu_Field_Military_Base,
+				UC_Eriadu_Field_Support_Base,
+				UC_Eriadu_Field_Commando_Base,
+			Hapes_Consortium,
+				UC_Hapes_Field_Galney_Base,
+				UC_Hapes_Field_Maluri_Base,
+				UC_Hapes_Field_Requud_Base,
+		</Tactical_Buildable_Objects_Multiplayer>
+		
+		<Land_Model_Name>W_BuildBaseFOC.alo</Land_Model_Name>
+		<Capture_Point_Radius>200</Capture_Point_Radius>
+		<Influences_Capture_Point>no</Influences_Capture_Point>
+		<Capture_Point_Transition_Time_Seconds>5.0</Capture_Point_Transition_Time_Seconds>
+		<Visible_To_Enemies_When_Empty>True</Visible_To_Enemies_When_Empty>
+		<Loop_Idle_Anim_00> No </Loop_Idle_Anim_00>
+		<Collidable_By_Projectile_Living> No </Collidable_By_Projectile_Living>
+		
+		<Is_Visible_On_Radar> Yes </Is_Visible_On_Radar>
+		<Radar_Icon_Size>0.08  0.08</Radar_Icon_Size>
+		
+		<Select_Box_Scale> 110 </Select_Box_Scale>
+		<Scale_Factor> 0.2 </Scale_Factor>
+		<Mass>1.0</Mass>
+		
+		<Shield_Points> 0 </Shield_Points>
+		<Tactical_Health> 10000 </Tactical_Health>
+		
+		<Affiliation>Neutral, Rebel, Empire, Zsinj_Empire, EmpireoftheHand, Pentastar, Greater_Maldrood, Warlords, Eriadu_Authority, Corporate_Sector, Hapes_Consortium</Affiliation>
+		
+		<Hides_When_Built_On>True</Hides_When_Built_On>
+		<Base_Level_Available> 1 </Base_Level_Available>
+		<Required_Ground_Base_Level> 0 </Required_Ground_Base_Level>
+		<Reveal_During_Setup_Phase> True </Reveal_During_Setup_Phase>
+		<Reveal_During_Setup_Phase_Only> True </Reveal_During_Setup_Phase_Only>
+		<Land_FOW_Reveal_Range>100.0</Land_FOW_Reveal_Range>
+		<Victory_Relevant> No </Victory_Relevant>
+		<No_Reflection_Below_Detail_Level> 1 </No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level> 1 </No_Refraction_Below_Detail_Level>
+		<CategoryMask> Structure </CategoryMask>
+		<GUI_Bracket_Width> 20 </GUI_Bracket_Width>
+		<GUI_Bracket_Height> 0 </GUI_Bracket_Height>
+		<GUI_Bracket_Size> 2 </GUI_Bracket_Size> 
+		<Has_Land_Evaluator>True</Has_Land_Evaluator>
+		<Influences_Capture_Point> False </Influences_Capture_Point>
+		<Immune_To_Damage>True</Immune_To_Damage>
+		
+		<Text_ID>TEXT_GROUND_BUNKER</Text_ID>
+		<Encyclopedia_Text> TEXT_ENCYCLOPEDIA_BUNKER </Encyclopedia_Text>
+		<MP_Encyclopedia_Text> TEXT_ENCYCLOPEDIA_BUNKER </MP_Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+		
+		<Land_Damage_Thresholds>1</Land_Damage_Thresholds>
+		<Land_Damage_Alternates>3</Land_Damage_Alternates>
+		<Land_Damage_SFX>null,null,null,null</Land_Damage_SFX>
+		
+	</GroundBuildable>
+	
+	<!-- IR Military FB  -->
+	<GroundBuildable Name="UC_Empire_Field_Military_Base">
+		<GUI_Bounds_Scale>0.25</GUI_Bounds_Scale>
+		<Text_ID>TEXT_FIELD_BASE_MILITARY</Text_ID>
+		<Land_Model_Name> EB_TestBunker.alo </Land_Model_Name>
+		<Tactical_Buildable_Constructed> Empire_Field_Military_Base </Tactical_Buildable_Constructed>
+		<Tactical_Build_Start_Lower_Z> 50.0 </Tactical_Build_Start_Lower_Z>
+		<Behavior>TACTICAL_UNDER_CONSTRUCTION, REVEAL, HIDE_WHEN_FOGGED</Behavior>
+		<LandBehavior>TERRAIN_TEXTURE_MODIFICATION, LAND_OBSTACLE, SPACE_OBSTACLE</LandBehavior>
+		
+		<Terrain_Texture_Modifier_Square>false</Terrain_Texture_Modifier_Square>
+		
+		<Obstacle_Proxy_Type> Bunker_Pad </Obstacle_Proxy_Type>
+		<Affiliation>Empire</Affiliation>
+		<Icon_Name>I_BUTTON_EV_BUNKER.tga</Icon_Name>
+		
+		<Space_Layer> Land </Space_Layer>
+        <UnitCollisionClass> Vehicle </UnitCollisionClass>	
+        <Custom_Hard_XExtent> 26.0</Custom_Hard_XExtent>
+        <Custom_Hard_YExtent> 26.0 </Custom_Hard_YExtent>
+		
+		<Land_FOW_Reveal_Range>300.0</Land_FOW_Reveal_Range>
+		<Is_Dummy>Yes</Is_Dummy>
+		<Scale_Factor>1.0</Scale_Factor>
+		<GUI_Bracket_Size>2</GUI_Bracket_Size>
+		<Size_Value>50</Size_Value>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Land_Damage_Thresholds>1</Land_Damage_Thresholds>
+		<Land_Damage_Alternates>3</Land_Damage_Alternates>
+		<Land_Damage_SFX>null,null,null,null</Land_Damage_SFX>
+		<Armor_Type> ArmourG_Structure </Armor_Type>
+		<Reveal_During_Setup_Phase> true </Reveal_During_Setup_Phase>
+		<Is_Community_Property>Yes</Is_Community_Property>
+		<CategoryMask> Structure </CategoryMask>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Radar_Icon_Size>0.08  0.08</Radar_Icon_Size>
+		<Influences_Capture_Point> False </Influences_Capture_Point>
+		
+		<Tactical_Health>500</Tactical_Health>
+		<Tactical_Build_Cost_Multiplayer> 300 </Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds> 23 </Tactical_Build_Time_Seconds>
+
+		<SFXEvent_Build_Started>EHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>EHD_Construction_Complete</SFXEvent_Build_Complete>
+		<Death_SFXEvent_Start_Die>Unit_Generic_Building_Death_SFX</Death_SFXEvent_Start_Die>
+		<SFXEvent_Select>Structure_Mining_Select_SFX</SFXEvent_Select>
+		
+		<Encyclopedia_Text>
+			TEXT_TOOLTIP_FIELD_BASE_MILITARY
+			TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+			TEXT_TOOLTIP_FIELD_BASE_MILITARY_EMPIRE_HEALTH
+			TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+			TEXT_TOOLTIP_FIELD_BASE_MILITARY_EMPIRE1
+			TEXT_TOOLTIP_FIELD_BASE_MILITARY_EMPIRE2
+		</Encyclopedia_Text>
+		<MP_Encyclopedia_Text> TEXT_ENCYCLOPEDIA_BUNKER </MP_Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+
+		<Last_State_Visible_Under_FOW> True </Last_State_Visible_Under_FOW>
+		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>		
+	</GroundBuildable>
+	
+	<SpecialStructure Name="Empire_Field_Military_Base">
+		<Variant_Of_Existing_Type>Garrison_Bunker_Template</Variant_Of_Existing_Type>
+		<Icon_Name>I_BUTTON_EV_BUNKER.tga</Icon_Name>
+		<Text_ID>TEXT_FIELD_BASE_MILITARY</Text_ID>
+		<Encyclopedia_Text> 
+			TEXT_TOOLTIP_FIELD_BASE_MILITARY
+			TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+			TEXT_TOOLTIP_FIELD_BASE_MILITARY_EMPIRE_HEALTH
+			TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+			TEXT_TOOLTIP_FIELD_BASE_MILITARY_EMPIRE1
+			TEXT_TOOLTIP_FIELD_BASE_MILITARY_EMPIRE2
+		</Encyclopedia_Text>
+		<Land_Model_Name>EB_TestBunker.alo</Land_Model_Name>
+		<Affiliation>Empire</Affiliation>
+		<Scale_Factor>1.0</Scale_Factor>
+        <Garrison_Radius>10</Garrison_Radius>
+
+		<Num_Garrison_Slots>0</Num_Garrison_Slots>	
+		<LandBehavior> SPAWN_SQUADRON, REVEAL, SELECTABLE, HIDE_WHEN_FOGGED, DAMAGE_TRACKING, EARTHQUAKE_TARGET, UNIT_AI</LandBehavior>
+		
+		<Starting_Spawned_Units_Tech_0>Empire_Field_Military, 1</Starting_Spawned_Units_Tech_0>
+        <!--<Starting_Spawned_Units_Tech_0>Field_Pad_Offense, 1</Starting_Spawned_Units_Tech_0>-->
+		
+		<Spawned_Squadron_Delay_Seconds>5</Spawned_Squadron_Delay_Seconds>
+		<Spawned_Squadron_Location_Bones>B_GARRISON_03</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>40.0</Spawned_Squadron_Location_Flyout_Distances>
+		<Spawn_Garrison_On_Load>True</Spawn_Garrison_On_Load>
+	</SpecialStructure>
+	
+	<Marker Name="Empire_Field_Military">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Galactic_Model_Name/>
+		<Space_Model_Name>W_LASER_INVISIBLE.ALO</Space_Model_Name>
+		<Land_Model_Name>W_LASER_INVISIBLE.ALO</Land_Model_Name>
+		<Behavior></Behavior>
+		<LandBehavior>SPAWN_SQUADRON</LandBehavior>
+		<Lua_Script>FieldBaseSpawner</Lua_Script>
+		<Is_Discardable>false</Is_Discardable>
+		<Affiliation>Neutral</Affiliation>
+		<Scale_Factor>0.1</Scale_Factor>
+        
+		<Starting_Spawned_Units_Tech_0>Imperial_Stormtrooper_Assault_Team_Deployed, 2</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Imperial_Stormtrooper_Heavy_Team_Deployed, 2</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Imperial_Stormtrooper_Assault_Team_Deployed, 10</Reserve_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Imperial_Stormtrooper_Heavy_Team_Deployed, 10</Reserve_Spawned_Units_Tech_0>
+        <Spawned_Squadron_Delay_Seconds>30.0</Spawned_Squadron_Delay_Seconds>
+
+	</Marker>
+	
+	<!-- GM Military FB  -->
+	<GroundBuildable Name="UC_Teradoc_Field_Military_Base">
+        <Variant_Of_Existing_Type>UC_Empire_Field_Military_Base</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_FIELD_BASE_MILITARY</Text_ID>
+		<Land_Model_Name> EB_TestBunker.alo </Land_Model_Name>
+		<Tactical_Buildable_Constructed> Teradoc_Field_Military_Base </Tactical_Buildable_Constructed>
+		<Obstacle_Proxy_Type> Bunker_Pad </Obstacle_Proxy_Type>
+		<Affiliation>Greater_Maldrood</Affiliation>
+		<Icon_Name>I_BUTTON_EV_BUNKER.tga</Icon_Name>
+
+		<SFXEvent_Build_Started>EHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>EHD_Construction_Complete</SFXEvent_Build_Complete>
+		<Death_SFXEvent_Start_Die>Unit_Generic_Building_Death_SFX</Death_SFXEvent_Start_Die>
+		<SFXEvent_Select>Structure_Mining_Select_SFX</SFXEvent_Select>
+
+		<Encyclopedia_Text>
+			TEXT_TOOLTIP_FIELD_BASE_MILITARY
+			TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+			TEXT_TOOLTIP_FIELD_BASE_MILITARY_TERADOC_HEALTH
+			TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+			TEXT_TOOLTIP_FIELD_BASE_MILITARY_TERADOC1
+			TEXT_TOOLTIP_FIELD_BASE_MILITARY_TERADOC2
+		</Encyclopedia_Text>
+		<MP_Encyclopedia_Text> TEXT_ENCYCLOPEDIA_BUNKER </MP_Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+	</GroundBuildable>
+	
+	<SpecialStructure Name="Teradoc_Field_Military_Base">
+		<Variant_Of_Existing_Type>Garrison_Bunker_Template</Variant_Of_Existing_Type>
+		<Icon_Name>I_BUTTON_EV_BUNKER.tga</Icon_Name>
+		<Text_ID>TEXT_FIELD_BASE_MILITARY</Text_ID>
+		<Encyclopedia_Text>
+			TEXT_TOOLTIP_FIELD_BASE_MILITARY
+			TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+			TEXT_TOOLTIP_FIELD_BASE_MILITARY_TERADOC_HEALTH
+			TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+			TEXT_TOOLTIP_FIELD_BASE_MILITARY_TERADOC1
+			TEXT_TOOLTIP_FIELD_BASE_MILITARY_TERADOC2
+		</Encyclopedia_Text>
+		<Land_Model_Name>EB_TestBunker.alo</Land_Model_Name>
+		<Affiliation>Greater_Maldrood</Affiliation>
+		<Scale_Factor>1.0</Scale_Factor>
+        <Garrison_Radius>10</Garrison_Radius>
+
+		<Num_Garrison_Slots>0</Num_Garrison_Slots>	
+		<LandBehavior> SPAWN_SQUADRON, REVEAL, SELECTABLE, HIDE_WHEN_FOGGED, DAMAGE_TRACKING, EARTHQUAKE_TARGET, UNIT_AI</LandBehavior>
+
+		<Starting_Spawned_Units_Tech_0>Teradoc_Field_Military, 1</Starting_Spawned_Units_Tech_0>
+
+		<Spawned_Squadron_Delay_Seconds>5</Spawned_Squadron_Delay_Seconds>
+		<Spawned_Squadron_Location_Bones>B_GARRISON_03</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>40.0</Spawned_Squadron_Location_Flyout_Distances>
+		<Spawn_Garrison_On_Load>True</Spawn_Garrison_On_Load>
+	</SpecialStructure>
+	
+	<Marker Name="Teradoc_Field_Military">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Galactic_Model_Name/>
+		<Space_Model_Name>W_LASER_INVISIBLE.ALO</Space_Model_Name>
+		<Land_Model_Name>W_LASER_INVISIBLE.ALO</Land_Model_Name>
+		<Behavior></Behavior>
+		<LandBehavior>SPAWN_SQUADRON</LandBehavior>
+		<Lua_Script>FieldBaseSpawner</Lua_Script>
+		<Is_Discardable>false</Is_Discardable>
+		<Affiliation>Neutral</Affiliation>
+		<Scale_Factor>0.1</Scale_Factor>
+
+		<Starting_Spawned_Units_Tech_0>Imperial_Armytrooper_Heavy_Team_Deployed, 2</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Imperial_Armytrooper_Assault_Team_Deployed, 2</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Imperial_Armytrooper_Heavy_Team_Deployed, 10</Reserve_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Imperial_Armytrooper_Assault_Team_Deployed, 10</Reserve_Spawned_Units_Tech_0>
+        <Spawned_Squadron_Delay_Seconds>30.0</Spawned_Squadron_Delay_Seconds>
+
+	</Marker>
+	
+	<!-- NR Military FB  -->
+	<GroundBuildable Name="UC_Rebel_Field_Military_Base">
+        <Variant_Of_Existing_Type>UC_Empire_Field_Military_Base</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_FIELD_BASE_MILITARY</Text_ID>
+		<Land_Model_Name> RB_Bunker.alo </Land_Model_Name>
+		<Tactical_Buildable_Constructed> Rebel_Field_Military_Base </Tactical_Buildable_Constructed>
+		<Obstacle_Proxy_Type> Bunker_Pad </Obstacle_Proxy_Type>
+		<Affiliation>Rebel</Affiliation>
+		<Icon_Name>I_BUTTON_RB_BUNKER.TGA</Icon_Name>
+
+		<SFXEvent_Build_Started>RHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>RHD_Construction_Complete</SFXEvent_Build_Complete>
+		<Death_SFXEvent_Start_Die>Unit_Generic_Building_Death_SFX</Death_SFXEvent_Start_Die>
+		<SFXEvent_Select>Structure_Mining_Select_SFX</SFXEvent_Select>
+
+		<Encyclopedia_Text>
+			TEXT_TOOLTIP_FIELD_BASE_MILITARY
+			TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+			TEXT_TOOLTIP_FIELD_BASE_MILITARY_REBEL_HEALTH
+			TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+			TEXT_TOOLTIP_FIELD_BASE_MILITARY_REBEL1
+			TEXT_TOOLTIP_FIELD_BASE_MILITARY_REBEL2
+			TEXT_TOOLTIP_FIELD_BASE_MILITARY_REBEL3
+		</Encyclopedia_Text>
+		<MP_Encyclopedia_Text> TEXT_ENCYCLOPEDIA_BUNKER </MP_Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+	</GroundBuildable>
+	
+	<SpecialStructure Name="Rebel_Field_Military_Base">
+		<Variant_Of_Existing_Type>Garrison_Bunker_Template</Variant_Of_Existing_Type>
+		<Icon_Name>I_BUTTON_RB_BUNKER.TGA</Icon_Name>
+		<Text_ID>TEXT_FIELD_BASE_MILITARY</Text_ID>
+		<Encyclopedia_Text>
+			TEXT_TOOLTIP_FIELD_BASE_MILITARY
+			TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+			TEXT_TOOLTIP_FIELD_BASE_MILITARY_REBEL_HEALTH
+			TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+			TEXT_TOOLTIP_FIELD_BASE_MILITARY_REBEL1
+			TEXT_TOOLTIP_FIELD_BASE_MILITARY_REBEL2
+			TEXT_TOOLTIP_FIELD_BASE_MILITARY_REBEL3
+		</Encyclopedia_Text>
+		<Land_Model_Name>RB_Bunker.alo</Land_Model_Name>
+		<Affiliation>Rebel</Affiliation>
+		<Scale_Factor>1.0</Scale_Factor>
+        <Garrison_Radius>10</Garrison_Radius>
+
+		<Num_Garrison_Slots>0</Num_Garrison_Slots>	
+		<LandBehavior> SPAWN_SQUADRON, REVEAL, SELECTABLE, HIDE_WHEN_FOGGED, DAMAGE_TRACKING, EARTHQUAKE_TARGET, UNIT_AI</LandBehavior>
+		<Starting_Spawned_Units_Tech_0>Rebel_Field_Military, 1</Starting_Spawned_Units_Tech_0>
+
+		<Spawned_Squadron_Delay_Seconds>5</Spawned_Squadron_Delay_Seconds>
+		<Spawned_Squadron_Location_Bones>B_GARRISON_03</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>40.0</Spawned_Squadron_Location_Flyout_Distances>
+		<Spawn_Garrison_On_Load>True</Spawn_Garrison_On_Load>
+	</SpecialStructure>
+	
+	<Marker Name="Rebel_Field_Military">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Galactic_Model_Name/>
+		<Space_Model_Name>W_LASER_INVISIBLE.ALO</Space_Model_Name>
+		<Land_Model_Name>W_LASER_INVISIBLE.ALO</Land_Model_Name>
+		<Behavior></Behavior>
+		<LandBehavior>SPAWN_SQUADRON</LandBehavior>
+		<Lua_Script>FieldBaseSpawner</Lua_Script>
+		<Is_Discardable>false</Is_Discardable>
+		<Affiliation>Neutral</Affiliation>
+		<Scale_Factor>0.1</Scale_Factor>
+
+		<Starting_Spawned_Units_Tech_0>Rebel_Infantry_Squad_Deployed, 2</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Rebel_Infantry_Squad_Fodder_Deployed, 2</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Rebel_Infantry_Squad_Deployed, 10</Reserve_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Rebel_Infantry_Squad_Fodder_Deployed, 10</Reserve_Spawned_Units_Tech_0>
+
+		<Starting_Spawned_Units_Tech_2>Defense_Trooper_Squad_Deployed, 4</Starting_Spawned_Units_Tech_2>
+		<Reserve_Spawned_Units_Tech_2>Defense_Trooper_Squad_Deployed, 10</Reserve_Spawned_Units_Tech_2>
+
+
+        <Spawned_Squadron_Delay_Seconds>30.0</Spawned_Squadron_Delay_Seconds>
+
+	</Marker>
+	
+	<!-- ZE Military FB  -->
+	<GroundBuildable Name="UC_Zsinj_Field_Military_Base">
+        <Variant_Of_Existing_Type>UC_Empire_Field_Military_Base</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_FIELD_BASE_MILITARY</Text_ID>
+		<Land_Model_Name> EB_TestBunker.alo </Land_Model_Name>
+		<Tactical_Buildable_Constructed> Zsinj_Field_Military_Base </Tactical_Buildable_Constructed>
+		<Obstacle_Proxy_Type> Bunker_Pad </Obstacle_Proxy_Type>
+		<Affiliation>Zsinj_Empire</Affiliation>
+		<Icon_Name>I_BUTTON_EV_BUNKER.tga</Icon_Name>
+
+		<SFXEvent_Build_Started>EHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>EHD_Construction_Complete</SFXEvent_Build_Complete>
+		<Death_SFXEvent_Start_Die>Unit_Generic_Building_Death_SFX</Death_SFXEvent_Start_Die>
+		<SFXEvent_Select>Structure_Mining_Select_SFX</SFXEvent_Select>
+
+		<Encyclopedia_Text>
+			TEXT_TOOLTIP_FIELD_BASE_MILITARY
+			TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+			TEXT_TOOLTIP_FIELD_BASE_MILITARY_ZSINJ_HEALTH
+			TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+			TEXT_TOOLTIP_FIELD_BASE_MILITARY_ZSINJ1
+		</Encyclopedia_Text>
+		<MP_Encyclopedia_Text> TEXT_ENCYCLOPEDIA_BUNKER </MP_Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+	</GroundBuildable>
+	
+	<SpecialStructure Name="Zsinj_Field_Military_Base">
+		<Variant_Of_Existing_Type>Garrison_Bunker_Template</Variant_Of_Existing_Type>
+		<Icon_Name>I_BUTTON_EV_BUNKER.tga</Icon_Name>
+		<Text_ID>TEXT_FIELD_BASE_MILITARY</Text_ID>
+		<Encyclopedia_Text>
+			TEXT_TOOLTIP_FIELD_BASE_MILITARY
+			TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+			TEXT_TOOLTIP_FIELD_BASE_MILITARY_ZSINJ_HEALTH
+			TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+			TEXT_TOOLTIP_FIELD_BASE_MILITARY_ZSINJ1
+		</Encyclopedia_Text>
+		<Land_Model_Name>EB_TestBunker.alo</Land_Model_Name>
+		<Affiliation>Zsinj_Empire</Affiliation>
+		<Scale_Factor>1.0</Scale_Factor>
+        <Garrison_Radius>10</Garrison_Radius>
+
+		<Num_Garrison_Slots>0</Num_Garrison_Slots>	
+		<LandBehavior> SPAWN_SQUADRON, REVEAL, SELECTABLE, HIDE_WHEN_FOGGED, DAMAGE_TRACKING, EARTHQUAKE_TARGET, UNIT_AI</LandBehavior>
+
+		<Starting_Spawned_Units_Tech_0>Zsinj_Field_Military, 1</Starting_Spawned_Units_Tech_0>
+
+		<Spawned_Squadron_Delay_Seconds>5</Spawned_Squadron_Delay_Seconds>
+		<Spawned_Squadron_Location_Bones>B_GARRISON_03</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>40.0</Spawned_Squadron_Location_Flyout_Distances>
+		<Spawn_Garrison_On_Load>True</Spawn_Garrison_On_Load>
+	</SpecialStructure>
+
+	<Marker Name="Zsinj_Field_Military">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Galactic_Model_Name/>
+		<Space_Model_Name>W_LASER_INVISIBLE.ALO</Space_Model_Name>
+		<Land_Model_Name>W_LASER_INVISIBLE.ALO</Land_Model_Name>
+		<Behavior></Behavior>
+		<LandBehavior>SPAWN_SQUADRON</LandBehavior>
+		<Lua_Script>FieldBaseSpawner</Lua_Script>
+		<Is_Discardable>false</Is_Discardable>
+		<Affiliation>Neutral</Affiliation>
+		<Scale_Factor>0.1</Scale_Factor>
+
+		<Starting_Spawned_Units_Tech_0>Zsinj_Raptor_Heavy_Team_Deployed, 4</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Zsinj_Raptor_Heavy_Team_Deployed, 10</Reserve_Spawned_Units_Tech_0>
+        <Spawned_Squadron_Delay_Seconds>30.0</Spawned_Squadron_Delay_Seconds>
+
+	</Marker>
+	
+	<!-- PA Military FB  -->
+	<GroundBuildable Name="UC_Pentastar_Field_Military_Base">
+        <Variant_Of_Existing_Type>UC_Empire_Field_Military_Base</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_FIELD_BASE_MILITARY</Text_ID>
+		<Land_Model_Name> EB_TestBunker.alo </Land_Model_Name>
+		<Tactical_Buildable_Constructed> Pentastar_Field_Military_Base </Tactical_Buildable_Constructed>
+		<Obstacle_Proxy_Type> Bunker_Pad </Obstacle_Proxy_Type>
+		<Affiliation>Pentastar</Affiliation>
+		<Icon_Name>I_BUTTON_EV_BUNKER.tga</Icon_Name>
+
+		<SFXEvent_Build_Started>EHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>EHD_Construction_Complete</SFXEvent_Build_Complete>
+		<Death_SFXEvent_Start_Die>Unit_Generic_Building_Death_SFX</Death_SFXEvent_Start_Die>
+		<SFXEvent_Select>Structure_Mining_Select_SFX</SFXEvent_Select>
+
+		<Encyclopedia_Text>
+			TEXT_TOOLTIP_FIELD_BASE_MILITARY
+			TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+			TEXT_TOOLTIP_FIELD_BASE_MILITARY_PENTASTAR_HEALTH
+			TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+			TEXT_TOOLTIP_FIELD_BASE_MILITARY_PENTASTAR1
+			TEXT_TOOLTIP_FIELD_BASE_MILITARY_PENTASTAR2
+		</Encyclopedia_Text>
+		<MP_Encyclopedia_Text> TEXT_ENCYCLOPEDIA_BUNKER </MP_Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+	</GroundBuildable>
+	
+	<SpecialStructure Name="Pentastar_Field_Military_Base">
+		<Variant_Of_Existing_Type>Garrison_Bunker_Template</Variant_Of_Existing_Type>
+		<Icon_Name>I_BUTTON_EV_BUNKER.tga</Icon_Name>
+		<Text_ID>TEXT_FIELD_BASE_MILITARY</Text_ID>
+		<Encyclopedia_Text>
+			TEXT_TOOLTIP_FIELD_BASE_MILITARY
+			TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+			TEXT_TOOLTIP_FIELD_BASE_MILITARY_PENTASTAR_HEALTH
+			TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+			TEXT_TOOLTIP_FIELD_BASE_MILITARY_PENTASTAR1
+			TEXT_TOOLTIP_FIELD_BASE_MILITARY_PENTASTAR2
+		</Encyclopedia_Text>
+		<Land_Model_Name>EB_TestBunker.alo</Land_Model_Name>
+		<Affiliation>Pentastar</Affiliation>
+		<Scale_Factor>1.0</Scale_Factor>
+        <Garrison_Radius>10</Garrison_Radius>
+
+		<Num_Garrison_Slots>0</Num_Garrison_Slots>	
+		<LandBehavior> SPAWN_SQUADRON, REVEAL, SELECTABLE, HIDE_WHEN_FOGGED, DAMAGE_TRACKING, EARTHQUAKE_TARGET, UNIT_AI</LandBehavior>
+
+		<Starting_Spawned_Units_Tech_0>Pentastar_Field_Military, 1</Starting_Spawned_Units_Tech_0>
+
+		<Spawned_Squadron_Delay_Seconds>5</Spawned_Squadron_Delay_Seconds>
+		<Spawned_Squadron_Location_Bones>B_GARRISON_03</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>40.0</Spawned_Squadron_Location_Flyout_Distances>
+		<Spawn_Garrison_On_Load>True</Spawn_Garrison_On_Load>
+	</SpecialStructure>
+
+	<Marker Name="Pentastar_Field_Military">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Galactic_Model_Name/>
+		<Space_Model_Name>W_LASER_INVISIBLE.ALO</Space_Model_Name>
+		<Land_Model_Name>W_LASER_INVISIBLE.ALO</Land_Model_Name>
+		<Behavior></Behavior>
+		<LandBehavior>SPAWN_SQUADRON</LandBehavior>
+		<Lua_Script>FieldBaseSpawner</Lua_Script>
+		<Is_Discardable>false</Is_Discardable>
+		<Affiliation>Neutral</Affiliation>
+		<Scale_Factor>0.1</Scale_Factor>
+
+		<Starting_Spawned_Units_Tech_0>Imperial_Guardian_Protector_Squad_Deployed, 2</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Enforcer_Trooper_Squad_Deployed, 3</Starting_Spawned_Units_Tech_0>
+        <Reserve_Spawned_Units_Tech_0>Imperial_Guardian_Protector_Squad_Deployed, 10</Reserve_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Enforcer_Trooper_Squad_Deployed, 10</Reserve_Spawned_Units_Tech_0>
+        <Spawned_Squadron_Delay_Seconds>30.0</Spawned_Squadron_Delay_Seconds>
+
+	</Marker>
+	
+	<!-- EotH Military FB  -->
+	<GroundBuildable Name="UC_EotH_Field_Military_Base">
+        <Variant_Of_Existing_Type>UC_Empire_Field_Military_Base</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_FIELD_BASE_MILITARY</Text_ID>
+		<Land_Model_Name> EB_TestBunker.alo </Land_Model_Name>
+		<Tactical_Buildable_Constructed> EotH_Field_Military_Base </Tactical_Buildable_Constructed>
+		<Obstacle_Proxy_Type> Bunker_Pad </Obstacle_Proxy_Type>
+		<Affiliation>EmpireoftheHand</Affiliation>
+		<Icon_Name>I_BUTTON_EV_BUNKER.tga</Icon_Name>
+
+		<SFXEvent_Build_Started>EHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>EHD_Construction_Complete</SFXEvent_Build_Complete>
+		<Death_SFXEvent_Start_Die>Unit_Generic_Building_Death_SFX</Death_SFXEvent_Start_Die>
+		<SFXEvent_Select>Structure_Mining_Select_SFX</SFXEvent_Select>
+
+		<Encyclopedia_Text>
+			TEXT_TOOLTIP_FIELD_BASE_MILITARY
+			TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+			TEXT_TOOLTIP_FIELD_BASE_MILITARY_EOTH_HEALTH
+			TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+			TEXT_TOOLTIP_FIELD_BASE_MILITARY_EOTH1
+			TEXT_TOOLTIP_FIELD_BASE_MILITARY_EOTH2
+		</Encyclopedia_Text>
+		<MP_Encyclopedia_Text> TEXT_ENCYCLOPEDIA_BUNKER </MP_Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+	</GroundBuildable>
+
+	<SpecialStructure Name="EotH_Field_Military_Base">
+		<Variant_Of_Existing_Type>Garrison_Bunker_Template</Variant_Of_Existing_Type>
+		<Icon_Name>I_BUTTON_EV_BUNKER.tga</Icon_Name>
+		<Text_ID>TEXT_FIELD_BASE_MILITARY</Text_ID>
+		<Encyclopedia_Text>
+			TEXT_TOOLTIP_FIELD_BASE_MILITARY
+			TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+			TEXT_TOOLTIP_FIELD_BASE_MILITARY_EOTH_HEALTH
+			TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+			TEXT_TOOLTIP_FIELD_BASE_MILITARY_EOTH1
+			TEXT_TOOLTIP_FIELD_BASE_MILITARY_EOTH2
+		</Encyclopedia_Text>
+		<Land_Model_Name>EB_TestBunker.alo</Land_Model_Name>
+		<Affiliation>EmpireoftheHand</Affiliation>
+		<Scale_Factor>1.0</Scale_Factor>
+        <Garrison_Radius>10</Garrison_Radius>
+
+		<Num_Garrison_Slots>0</Num_Garrison_Slots>	
+		<LandBehavior> SPAWN_SQUADRON, REVEAL, SELECTABLE, HIDE_WHEN_FOGGED, DAMAGE_TRACKING, EARTHQUAKE_TARGET, UNIT_AI</LandBehavior>
+
+		<Starting_Spawned_Units_Tech_0>EotH_Field_Military, 1</Starting_Spawned_Units_Tech_0>
+
+		<Spawned_Squadron_Delay_Seconds>5</Spawned_Squadron_Delay_Seconds>
+		<Spawned_Squadron_Location_Bones>B_GARRISON_03</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>40.0</Spawned_Squadron_Location_Flyout_Distances>
+		<Spawn_Garrison_On_Load>True</Spawn_Garrison_On_Load>
+	</SpecialStructure>
+	
+	<Marker Name="EotH_Field_Military">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Galactic_Model_Name/>
+		<Space_Model_Name>W_LASER_INVISIBLE.ALO</Space_Model_Name>
+		<Land_Model_Name>W_LASER_INVISIBLE.ALO</Land_Model_Name>
+		<Behavior></Behavior>
+		<LandBehavior>SPAWN_SQUADRON</LandBehavior>
+		<Lua_Script>FieldBaseSpawner</Lua_Script>
+		<Is_Discardable>false</Is_Discardable>
+		<Affiliation>Neutral</Affiliation>
+		<Scale_Factor>0.1</Scale_Factor>
+
+		<Starting_Spawned_Units_Tech_0>Phalanx_Trooper_Squad_Deployed, 3</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>EotH_Scout_Bike, 1</Starting_Spawned_Units_Tech_0>
+        <Reserve_Spawned_Units_Tech_0>Phalanx_Trooper_Squad_Deployed, 10</Reserve_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>EotH_Scout_Bike, 10</Reserve_Spawned_Units_Tech_0>
+        <Spawned_Squadron_Delay_Seconds>30.0</Spawned_Squadron_Delay_Seconds>
+
+	</Marker>
+	
+	<!-- CSA Military FB  -->
+	<GroundBuildable Name="UC_Corporate_Sector_Field_Military_Base">
+        <Variant_Of_Existing_Type>UC_Empire_Field_Military_Base</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_FIELD_BASE_MILITARY</Text_ID>
+		<Land_Model_Name> EB_TestBunker.alo </Land_Model_Name>
+		<Tactical_Buildable_Constructed> Corporate_Sector_Field_Military_Base </Tactical_Buildable_Constructed>
+		<Obstacle_Proxy_Type> Bunker_Pad </Obstacle_Proxy_Type>
+		<Affiliation>Corporate_Sector</Affiliation>
+		<Icon_Name>I_BUTTON_EV_BUNKER.tga</Icon_Name>
+
+		<SFXEvent_Build_Started>EHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>EHD_Construction_Complete</SFXEvent_Build_Complete>
+		<Death_SFXEvent_Start_Die>Unit_Generic_Building_Death_SFX</Death_SFXEvent_Start_Die>
+		<SFXEvent_Select>Structure_Mining_Select_SFX</SFXEvent_Select>
+
+		<Encyclopedia_Text>
+			TEXT_TOOLTIP_FIELD_BASE_MILITARY
+			TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+			TEXT_TOOLTIP_FIELD_BASE_MILITARY_CSA_HEALTH
+			TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+			TEXT_TOOLTIP_FIELD_BASE_MILITARY_CSA1
+			TEXT_TOOLTIP_FIELD_BASE_MILITARY_CSA2
+		</Encyclopedia_Text>
+		<MP_Encyclopedia_Text> TEXT_ENCYCLOPEDIA_BUNKER </MP_Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+	</GroundBuildable>
+
+	<SpecialStructure Name="Corporate_Sector_Field_Military_Base">
+		<Variant_Of_Existing_Type>Garrison_Bunker_Template</Variant_Of_Existing_Type>
+		<Icon_Name>I_BUTTON_EV_BUNKER.tga</Icon_Name>
+		<Text_ID>TEXT_FIELD_BASE_MILITARY</Text_ID>
+		<Encyclopedia_Text>
+			TEXT_TOOLTIP_FIELD_BASE_MILITARY
+			TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+			TEXT_TOOLTIP_FIELD_BASE_MILITARY_CSA_HEALTH
+			TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+			TEXT_TOOLTIP_FIELD_BASE_MILITARY_CSA1
+			TEXT_TOOLTIP_FIELD_BASE_MILITARY_CSA2
+		</Encyclopedia_Text>
+		<Land_Model_Name>EB_TestBunker.alo</Land_Model_Name>
+		<Affiliation>Corporate_Sector</Affiliation>
+		<Scale_Factor>1.0</Scale_Factor>
+        <Garrison_Radius>10</Garrison_Radius>
+
+		<Num_Garrison_Slots>0</Num_Garrison_Slots>	
+		<LandBehavior> SPAWN_SQUADRON, REVEAL, SELECTABLE, HIDE_WHEN_FOGGED, DAMAGE_TRACKING, EARTHQUAKE_TARGET, UNIT_AI</LandBehavior>
+
+		<Starting_Spawned_Units_Tech_0>Corporate_Sector_Field_Military, 1</Starting_Spawned_Units_Tech_0>
+
+		<Spawned_Squadron_Delay_Seconds>5</Spawned_Squadron_Delay_Seconds>
+		<Spawned_Squadron_Location_Bones>B_GARRISON_03</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>40.0</Spawned_Squadron_Location_Flyout_Distances>
+		<Spawn_Garrison_On_Load>True</Spawn_Garrison_On_Load>
+	</SpecialStructure>
+	
+	<Marker Name="Corporate_Sector_Field_Military">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Galactic_Model_Name/>
+		<Space_Model_Name>W_LASER_INVISIBLE.ALO</Space_Model_Name>
+		<Land_Model_Name>W_LASER_INVISIBLE.ALO</Land_Model_Name>
+		<Behavior></Behavior>
+		<LandBehavior>SPAWN_SQUADRON</LandBehavior>
+		<Lua_Script>FieldBaseSpawner</Lua_Script>
+		<Is_Discardable>false</Is_Discardable>
+		<Affiliation>Neutral</Affiliation>
+		<Scale_Factor>0.1</Scale_Factor>
+
+		<Starting_Spawned_Units_Tech_0>CSA_Medium_Espo_Squad, 2</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>CSA_Medium_Droid_Squad, 4</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>CSA_Medium_Espo_Squad, 10</Reserve_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>CSA_Medium_Droid_Squad, 10</Reserve_Spawned_Units_Tech_0>
+        <Spawned_Squadron_Delay_Seconds>30.0</Spawned_Squadron_Delay_Seconds>
+
+	</Marker>
+	
+	<!-- EA Military FB  -->
+	<GroundBuildable Name="UC_Eriadu_Field_Military_Base">
+        <Variant_Of_Existing_Type>UC_Empire_Field_Military_Base</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_FIELD_BASE_MILITARY</Text_ID>
+		<Land_Model_Name> EB_TestBunker.alo </Land_Model_Name>
+		<Tactical_Buildable_Constructed> Eriadu_Field_Military_Base </Tactical_Buildable_Constructed>
+		<Obstacle_Proxy_Type> Bunker_Pad </Obstacle_Proxy_Type>
+		<Affiliation>Eriadu_Authority</Affiliation>
+		<Icon_Name>I_BUTTON_EV_BUNKER.tga</Icon_Name>
+
+		<SFXEvent_Build_Started>EHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>EHD_Construction_Complete</SFXEvent_Build_Complete>
+		<Death_SFXEvent_Start_Die>Unit_Generic_Building_Death_SFX</Death_SFXEvent_Start_Die>
+		<SFXEvent_Select>Structure_Mining_Select_SFX</SFXEvent_Select>
+
+		<Encyclopedia_Text>
+			TEXT_TOOLTIP_FIELD_BASE_MILITARY
+			TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+			TEXT_TOOLTIP_FIELD_BASE_MILITARY_ERIADU_HEALTH
+			TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+			TEXT_TOOLTIP_FIELD_BASE_MILITARY_ERIADU1
+			TEXT_TOOLTIP_FIELD_BASE_MILITARY_ERIADU2
+		</Encyclopedia_Text>
+		<MP_Encyclopedia_Text> TEXT_ENCYCLOPEDIA_BUNKER </MP_Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+	</GroundBuildable>
+
+	<SpecialStructure Name="Eriadu_Field_Military_Base">
+		<Variant_Of_Existing_Type>Garrison_Bunker_Template</Variant_Of_Existing_Type>
+		<Icon_Name>I_BUTTON_EV_BUNKER.tga</Icon_Name>
+		<Text_ID>TEXT_FIELD_BASE_MILITARY</Text_ID>
+		<Encyclopedia_Text>
+			TEXT_TOOLTIP_FIELD_BASE_MILITARY
+			TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+			TEXT_TOOLTIP_FIELD_BASE_MILITARY_ERIADU_HEALTH
+			TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+			TEXT_TOOLTIP_FIELD_BASE_MILITARY_ERIADU1
+			TEXT_TOOLTIP_FIELD_BASE_MILITARY_ERIADU2
+		</Encyclopedia_Text>
+		<Land_Model_Name>EB_TestBunker.alo</Land_Model_Name>
+		<Affiliation>Eriadu_Authority</Affiliation>
+		<Scale_Factor>1.0</Scale_Factor>
+        <Garrison_Radius>10</Garrison_Radius>
+
+		<Num_Garrison_Slots>0</Num_Garrison_Slots>	
+		<LandBehavior> SPAWN_SQUADRON, REVEAL, SELECTABLE, HIDE_WHEN_FOGGED, DAMAGE_TRACKING, EARTHQUAKE_TARGET, UNIT_AI</LandBehavior>
+
+		<Starting_Spawned_Units_Tech_0>Eriadu_Field_Military, 1</Starting_Spawned_Units_Tech_0>
+
+		<Spawned_Squadron_Delay_Seconds>5</Spawned_Squadron_Delay_Seconds>
+		<Spawned_Squadron_Location_Bones>B_GARRISON_03</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>40.0</Spawned_Squadron_Location_Flyout_Distances>
+		<Spawn_Garrison_On_Load>True</Spawn_Garrison_On_Load>
+	</SpecialStructure>
+
+	<Marker Name="Eriadu_Field_Military">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Galactic_Model_Name/>
+		<Space_Model_Name>W_LASER_INVISIBLE.ALO</Space_Model_Name>
+		<Land_Model_Name>W_LASER_INVISIBLE.ALO</Land_Model_Name>
+		<Behavior></Behavior>
+		<LandBehavior>SPAWN_SQUADRON</LandBehavior>
+		<Lua_Script>FieldBaseSpawner</Lua_Script>
+		<Is_Discardable>false</Is_Discardable>
+		<Affiliation>Neutral</Affiliation>
+		<Scale_Factor>0.1</Scale_Factor>
+
+		<Starting_Spawned_Units_Tech_0>Imperial_Armytrooper_Heavy_Team_Deployed, 2</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Imperial_Armytrooper_Assault_Team_Deployed, 2</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Imperial_Armytrooper_Heavy_Team_Deployed, 10</Reserve_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Imperial_Armytrooper_Assault_Team_Deployed, 10</Reserve_Spawned_Units_Tech_0>
+        <Spawned_Squadron_Delay_Seconds>30.0</Spawned_Squadron_Delay_Seconds>
+
+	</Marker>
+	
+
+	
+	<!-- IR Support FB  -->
+	<GroundBuildable Name="UC_Empire_Field_Support_Base">
+		<Variant_Of_Existing_Type>UC_Empire_Field_Military_Base</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_FIELD_BASE_SUPPORT</Text_ID>
+		<Encyclopedia_Text> 
+			TEXT_TOOLTIP_FIELD_BASE_SUPPORT
+			TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+			TEXT_TOOLTIP_FIELD_BASE_SUPPORT_EMPIRE_HEALTH
+			TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+			TEXT_TOOLTIP_FIELD_BASE_SUPPORT_EMPIRE1
+			TEXT_TOOLTIP_FIELD_BASE_SUPPORT_EMPIRE2
+		</Encyclopedia_Text>
+		<Tactical_Buildable_Constructed> Empire_Field_Support_Base </Tactical_Buildable_Constructed>
+		
+		<Tactical_Build_Cost_Multiplayer> 300 </Tactical_Build_Cost_Multiplayer>
+		<Terrain_Texture_Modifier_Square>false</Terrain_Texture_Modifier_Square>
+		
+		<Obstacle_Proxy_Type> Bunker_Pad </Obstacle_Proxy_Type>
+		<Affiliation>Empire</Affiliation>
+		<Icon_Name>I_BUTTON_EV_BUNKER.tga</Icon_Name>
+		
+	</GroundBuildable>
+	
+	<SpecialStructure Name="Empire_Field_Support_Base">
+		<Variant_Of_Existing_Type>Garrison_Bunker_Template</Variant_Of_Existing_Type>
+		<Icon_Name>I_BUTTON_EV_BUNKER.tga</Icon_Name>
+		<Text_ID>TEXT_FIELD_BASE_SUPPORT</Text_ID>
+		<Encyclopedia_Text> 
+			TEXT_TOOLTIP_FIELD_BASE_SUPPORT
+			TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+			TEXT_TOOLTIP_FIELD_BASE_SUPPORT_EMPIRE_HEALTH
+			TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+			TEXT_TOOLTIP_FIELD_BASE_SUPPORT_EMPIRE1
+			TEXT_TOOLTIP_FIELD_BASE_SUPPORT_EMPIRE2
+		</Encyclopedia_Text>
+		<Land_Model_Name>EB_TestBunker.alo</Land_Model_Name>
+		<Affiliation>Empire</Affiliation>
+		<Scale_Factor>1.0</Scale_Factor>
+        <Garrison_Radius>10</Garrison_Radius>
+		
+		<Num_Garrison_Slots>0</Num_Garrison_Slots>	
+		<LandBehavior> SPAWN_SQUADRON, REVEAL, SELECTABLE, HIDE_WHEN_FOGGED, DAMAGE_TRACKING, EARTHQUAKE_TARGET, UNIT_AI</LandBehavior>
+		
+		<Starting_Spawned_Units_Tech_0>Empire_Field_Support, 1</Starting_Spawned_Units_Tech_0>
+        <!--<Starting_Spawned_Units_Tech_0>Field_Pad_Defense, 1</Starting_Spawned_Units_Tech_0>-->
+		
+		<Spawned_Squadron_Delay_Seconds>5</Spawned_Squadron_Delay_Seconds>
+		<Spawned_Squadron_Location_Bones>B_GARRISON_03</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>40.0</Spawned_Squadron_Location_Flyout_Distances>
+		<Spawn_Garrison_On_Load>True</Spawn_Garrison_On_Load>
+
+	</SpecialStructure>
+	
+	<Marker Name="Empire_Field_Support">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Galactic_Model_Name/>
+		<Space_Model_Name>W_LASER_INVISIBLE.ALO</Space_Model_Name>
+		<Land_Model_Name>W_LASER_INVISIBLE.ALO</Land_Model_Name>
+		<Behavior></Behavior>
+		<LandBehavior>SPAWN_SQUADRON</LandBehavior>
+		<Lua_Script>FieldBaseSpawner</Lua_Script>
+		<Is_Discardable>false</Is_Discardable>
+		<Affiliation>Neutral</Affiliation>
+		<Scale_Factor>0.1</Scale_Factor>
+        
+		<Starting_Spawned_Units_Tech_0>Imperial_Medium_Stormtrooper_Squad, 1</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Imperial_Medic_Stormtrooper_Squad, 2</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Imperial_Medium_Stormtrooper_Squad, 10</Reserve_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Imperial_Medic_Stormtrooper_Squad, 10</Reserve_Spawned_Units_Tech_0>
+        <Spawned_Squadron_Delay_Seconds>30.0</Spawned_Squadron_Delay_Seconds>
+
+	</Marker>
+	
+	<!-- GM Support FB  -->
+	<GroundBuildable Name="UC_Teradoc_Field_Support_Base">
+		<Variant_Of_Existing_Type>UC_Empire_Field_Support_Base</Variant_Of_Existing_Type>
+		<Encyclopedia_Text>
+			TEXT_TOOLTIP_FIELD_BASE_SUPPORT
+			TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+			TEXT_TOOLTIP_FIELD_BASE_SUPPORT_TERADOC_HEALTH
+			TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+			TEXT_TOOLTIP_FIELD_BASE_SUPPORT_TERADOC1
+			TEXT_TOOLTIP_FIELD_BASE_SUPPORT_TERADOC2
+		</Encyclopedia_Text>
+		<Tactical_Buildable_Constructed> Teradoc_Field_Support_Base </Tactical_Buildable_Constructed>
+		<Affiliation>Greater_Maldrood</Affiliation>
+	</GroundBuildable>
+	
+	<SpecialStructure Name="Teradoc_Field_Support_Base">
+		<Variant_Of_Existing_Type>Garrison_Bunker_Template</Variant_Of_Existing_Type>
+		<Icon_Name>I_BUTTON_EV_BUNKER.tga</Icon_Name>
+		<Text_ID>TEXT_FIELD_BASE_SUPPORT</Text_ID>
+		<Encyclopedia_Text>
+			TEXT_TOOLTIP_FIELD_BASE_SUPPORT
+			TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+			TEXT_TOOLTIP_FIELD_BASE_SUPPORT_TERADOC_HEALTH
+			TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+			TEXT_TOOLTIP_FIELD_BASE_SUPPORT_TERADOC1
+			TEXT_TOOLTIP_FIELD_BASE_SUPPORT_TERADOC2
+		</Encyclopedia_Text>
+		<Land_Model_Name>EB_TestBunker.alo</Land_Model_Name>
+		<Affiliation>Greater_Maldrood</Affiliation>
+		<Scale_Factor>1.0</Scale_Factor>
+        <Garrison_Radius>10</Garrison_Radius>
+
+		<Num_Garrison_Slots>0</Num_Garrison_Slots>	
+		<LandBehavior> SPAWN_SQUADRON, REVEAL, SELECTABLE, HIDE_WHEN_FOGGED, DAMAGE_TRACKING, EARTHQUAKE_TARGET, UNIT_AI</LandBehavior>
+
+		<Starting_Spawned_Units_Tech_0>Teradoc_Field_Support, 1</Starting_Spawned_Units_Tech_0>
+		<Spawned_Squadron_Delay_Seconds>5</Spawned_Squadron_Delay_Seconds>
+		<Spawned_Squadron_Location_Bones>B_GARRISON_03</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>40.0</Spawned_Squadron_Location_Flyout_Distances>
+		<Spawn_Garrison_On_Load>True</Spawn_Garrison_On_Load>
+	</SpecialStructure>
+	
+	<Marker Name="Teradoc_Field_Support">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Galactic_Model_Name/>
+		<Space_Model_Name>W_LASER_INVISIBLE.ALO</Space_Model_Name>
+		<Land_Model_Name>W_LASER_INVISIBLE.ALO</Land_Model_Name>
+		<Behavior></Behavior>
+		<LandBehavior>SPAWN_SQUADRON</LandBehavior>
+		<Lua_Script>FieldBaseSpawner</Lua_Script>
+		<Is_Discardable>false</Is_Discardable>
+		<Affiliation>Neutral</Affiliation>
+		<Scale_Factor>0.1</Scale_Factor>
+
+		<Starting_Spawned_Units_Tech_0>Imperial_Medium_Armytrooper_Squad, 1</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Imperial_Medic_Armytrooper_Squad, 2</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Imperial_Medium_Armytrooper_Squad, 10</Reserve_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Imperial_Medic_Armytrooper_Squad, 10</Reserve_Spawned_Units_Tech_0>
+        <Spawned_Squadron_Delay_Seconds>30.0</Spawned_Squadron_Delay_Seconds>
+
+	</Marker>
+	
+	<!-- NR Support FB  -->
+	<GroundBuildable Name="UC_Rebel_Field_Support_Base">
+		<Variant_Of_Existing_Type>UC_Empire_Field_Support_Base</Variant_Of_Existing_Type>
+		<Icon_Name>I_BUTTON_RB_BUNKER.TGA</Icon_Name>
+        <Land_Model_Name> RB_Bunker.alo </Land_Model_Name>
+        <Encyclopedia_Text>
+			TEXT_TOOLTIP_FIELD_BASE_SUPPORT
+			TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+			TEXT_TOOLTIP_FIELD_BASE_SUPPORT_REBEL_HEALTH
+			TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+			TEXT_TOOLTIP_FIELD_BASE_SUPPORT_REBEL1
+			TEXT_TOOLTIP_FIELD_BASE_SUPPORT_REBEL2
+			TEXT_TOOLTIP_FIELD_BASE_SUPPORT_REBEL3
+			TEXT_TOOLTIP_FIELD_BASE_SUPPORT_REBEL4
+		</Encyclopedia_Text>
+		<Tactical_Buildable_Constructed> Rebel_Field_Support_Base </Tactical_Buildable_Constructed>
+		<Affiliation>Rebel</Affiliation>
+	</GroundBuildable>
+	
+	<SpecialStructure Name="Rebel_Field_Support_Base">
+		<Variant_Of_Existing_Type>Garrison_Bunker_Template</Variant_Of_Existing_Type>
+		<Icon_Name>I_BUTTON_RB_BUNKER.TGA</Icon_Name>
+		<Text_ID>TEXT_FIELD_BASE_SUPPORT</Text_ID>
+		<Encyclopedia_Text>
+			TEXT_TOOLTIP_FIELD_BASE_SUPPORT
+			TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+			TEXT_TOOLTIP_FIELD_BASE_SUPPORT_REBEL_HEALTH
+			TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+			TEXT_TOOLTIP_FIELD_BASE_SUPPORT_REBEL1
+			TEXT_TOOLTIP_FIELD_BASE_SUPPORT_REBEL2
+			TEXT_TOOLTIP_FIELD_BASE_SUPPORT_REBEL3
+			TEXT_TOOLTIP_FIELD_BASE_SUPPORT_REBEL4
+		</Encyclopedia_Text>
+		<Land_Model_Name>RB_Bunker.alo</Land_Model_Name>
+		<Affiliation>Rebel</Affiliation>
+		<Scale_Factor>1.0</Scale_Factor>
+        <Garrison_Radius>10</Garrison_Radius>
+
+		<Num_Garrison_Slots>0</Num_Garrison_Slots>	
+		<LandBehavior> SPAWN_SQUADRON, REVEAL, SELECTABLE, HIDE_WHEN_FOGGED, DAMAGE_TRACKING, EARTHQUAKE_TARGET, UNIT_AI</LandBehavior>
+
+		<Starting_Spawned_Units_Tech_0>Rebel_Field_Support, 1</Starting_Spawned_Units_Tech_0>
+		<Spawned_Squadron_Delay_Seconds>5</Spawned_Squadron_Delay_Seconds>
+		<Spawned_Squadron_Location_Bones>B_GARRISON_03</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>40.0</Spawned_Squadron_Location_Flyout_Distances>
+		<Spawn_Garrison_On_Load>True</Spawn_Garrison_On_Load>
+	</SpecialStructure>
+	
+	<Marker Name="Rebel_Field_Support">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Galactic_Model_Name/>
+		<Space_Model_Name>W_LASER_INVISIBLE.ALO</Space_Model_Name>
+		<Land_Model_Name>W_LASER_INVISIBLE.ALO</Land_Model_Name>
+		<Behavior></Behavior>
+		<LandBehavior>SPAWN_SQUADRON</LandBehavior>
+		<Lua_Script>FieldBaseSpawner</Lua_Script>
+		<Is_Discardable>false</Is_Discardable>
+		<Affiliation>Neutral</Affiliation>
+		<Scale_Factor>0.1</Scale_Factor>
+
+		<Starting_Spawned_Units_Tech_0>Rebel_Support_Infantry_Squad, 2</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Rebel_Infantry_Squad_Deployed, 1</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Rebel_Support_Infantry_Squad, 10</Reserve_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Rebel_Infantry_Squad_Deployed, 10</Reserve_Spawned_Units_Tech_0>
+		
+		<Starting_Spawned_Units_Tech_2>Defense_Trooper_Support_Squad, 2</Starting_Spawned_Units_Tech_2>
+		<Starting_Spawned_Units_Tech_2>Defense_Trooper_Squad_Deployed, 1</Starting_Spawned_Units_Tech_2>
+		<Reserve_Spawned_Units_Tech_2>Defense_Trooper_Support_Squad, 10</Reserve_Spawned_Units_Tech_2>
+		<Reserve_Spawned_Units_Tech_2>Defense_Trooper_Squad_Deployed, 10</Reserve_Spawned_Units_Tech_2>
+        <Spawned_Squadron_Delay_Seconds>30.0</Spawned_Squadron_Delay_Seconds>
+
+	</Marker>
+	
+	<!-- ZE Support FB  -->
+    <GroundBuildable Name="UC_Zsinj_Field_Support_Base">
+		<Variant_Of_Existing_Type>UC_Empire_Field_Support_Base</Variant_Of_Existing_Type>
+		<Encyclopedia_Text>
+			TEXT_TOOLTIP_FIELD_BASE_SUPPORT
+			TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+			TEXT_TOOLTIP_FIELD_BASE_SUPPORT_ZSINJ_HEALTH
+			TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+			TEXT_TOOLTIP_FIELD_BASE_SUPPORT_ZSINJ1
+			TEXT_TOOLTIP_FIELD_BASE_SUPPORT_ZSINJ2
+		</Encyclopedia_Text>
+		<Tactical_Buildable_Constructed> Zsinj_Field_Support_Base </Tactical_Buildable_Constructed>
+		<Affiliation>Zsinj_Empire</Affiliation>
+	</GroundBuildable>
+	
+	<SpecialStructure Name="Zsinj_Field_Support_Base">
+		<Variant_Of_Existing_Type>Garrison_Bunker_Template</Variant_Of_Existing_Type>
+		<Icon_Name>I_BUTTON_EV_BUNKER.tga</Icon_Name>
+		<Text_ID>TEXT_FIELD_BASE_SUPPORT</Text_ID>
+		<Encyclopedia_Text>
+			TEXT_TOOLTIP_FIELD_BASE_SUPPORT
+			TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+			TEXT_TOOLTIP_FIELD_BASE_SUPPORT_ZSINJ_HEALTH
+			TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+			TEXT_TOOLTIP_FIELD_BASE_SUPPORT_ZSINJ1
+			TEXT_TOOLTIP_FIELD_BASE_SUPPORT_ZSINJ2
+		</Encyclopedia_Text>
+		<Land_Model_Name>EB_TestBunker.alo</Land_Model_Name>
+		<Affiliation>Zsinj_Empire</Affiliation>
+		<Scale_Factor>1.0</Scale_Factor>
+        <Garrison_Radius>10</Garrison_Radius>
+
+		<Num_Garrison_Slots>0</Num_Garrison_Slots>	
+		<LandBehavior> SPAWN_SQUADRON, REVEAL, SELECTABLE, HIDE_WHEN_FOGGED, DAMAGE_TRACKING, EARTHQUAKE_TARGET, UNIT_AI</LandBehavior>
+
+		<Starting_Spawned_Units_Tech_0>Zsinj_Field_Support, 1</Starting_Spawned_Units_Tech_0>
+		<Spawned_Squadron_Delay_Seconds>5</Spawned_Squadron_Delay_Seconds>
+		<Spawned_Squadron_Location_Bones>B_GARRISON_03</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>40.0</Spawned_Squadron_Location_Flyout_Distances>
+		<Spawn_Garrison_On_Load>True</Spawn_Garrison_On_Load>
+	</SpecialStructure>
+	
+	<Marker Name="Zsinj_Field_Support">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Galactic_Model_Name/>
+		<Space_Model_Name>W_LASER_INVISIBLE.ALO</Space_Model_Name>
+		<Land_Model_Name>W_LASER_INVISIBLE.ALO</Land_Model_Name>
+		<Behavior></Behavior>
+		<LandBehavior>SPAWN_SQUADRON</LandBehavior>
+		<Lua_Script>FieldBaseSpawner</Lua_Script>
+		<Is_Discardable>false</Is_Discardable>
+		<Affiliation>Neutral</Affiliation>
+		<Scale_Factor>0.1</Scale_Factor>
+
+		<Starting_Spawned_Units_Tech_0>Imperial_Medium_Armytrooper_Squad, 1</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Zsinj_Raptor_Medic_Squad, 2</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Imperial_Medium_Armytrooper_Squad, 10</Reserve_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Zsinj_Raptor_Medic_Squad, 10</Reserve_Spawned_Units_Tech_0>
+        <Spawned_Squadron_Delay_Seconds>30.0</Spawned_Squadron_Delay_Seconds>
+
+	</Marker>
+	
+	<!-- PA Support FB  -->
+	<GroundBuildable Name="UC_Pentastar_Field_Support_Base">
+		<Variant_Of_Existing_Type>UC_Empire_Field_Support_Base</Variant_Of_Existing_Type>
+		<Encyclopedia_Text>
+			TEXT_TOOLTIP_FIELD_BASE_SUPPORT
+			TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+			TEXT_TOOLTIP_FIELD_BASE_SUPPORT_PENTASTAR_HEALTH
+			TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+			TEXT_TOOLTIP_FIELD_BASE_SUPPORT_PENTASTAR1
+			TEXT_TOOLTIP_FIELD_BASE_SUPPORT_PENTASTAR2
+		</Encyclopedia_Text>
+		<Tactical_Buildable_Constructed> Pentastar_Field_Support_Base </Tactical_Buildable_Constructed>
+		<Affiliation>Pentastar</Affiliation>
+	</GroundBuildable>
+	
+	<SpecialStructure Name="Pentastar_Field_Support_Base">
+		<Variant_Of_Existing_Type>Garrison_Bunker_Template</Variant_Of_Existing_Type>
+		<Icon_Name>I_BUTTON_EV_BUNKER.tga</Icon_Name>
+		<Text_ID>TEXT_FIELD_BASE_SUPPORT</Text_ID>
+		<Encyclopedia_Text>
+			TEXT_TOOLTIP_FIELD_BASE_SUPPORT
+			TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+			TEXT_TOOLTIP_FIELD_BASE_SUPPORT_PENTASTAR_HEALTH
+			TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+			TEXT_TOOLTIP_FIELD_BASE_SUPPORT_PENTASTAR1
+			TEXT_TOOLTIP_FIELD_BASE_SUPPORT_PENTASTAR2
+		</Encyclopedia_Text>
+		<Land_Model_Name>EB_TestBunker.alo</Land_Model_Name>
+		<Affiliation>Pentastar</Affiliation>
+		<Scale_Factor>1.0</Scale_Factor>
+        <Garrison_Radius>10</Garrison_Radius>
+
+		<Num_Garrison_Slots>0</Num_Garrison_Slots>	
+		<LandBehavior> SPAWN_SQUADRON, REVEAL, SELECTABLE, HIDE_WHEN_FOGGED, DAMAGE_TRACKING, EARTHQUAKE_TARGET, UNIT_AI</LandBehavior>
+
+		<Starting_Spawned_Units_Tech_0>Pentastar_Field_Support, 1</Starting_Spawned_Units_Tech_0>
+		<Spawned_Squadron_Delay_Seconds>5</Spawned_Squadron_Delay_Seconds>
+		<Spawned_Squadron_Location_Bones>B_GARRISON_03</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>40.0</Spawned_Squadron_Location_Flyout_Distances>
+		<Spawn_Garrison_On_Load>True</Spawn_Garrison_On_Load>
+	</SpecialStructure>
+	
+	<Marker Name="Pentastar_Field_Support">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Galactic_Model_Name/>
+		<Space_Model_Name>W_LASER_INVISIBLE.ALO</Space_Model_Name>
+		<Land_Model_Name>W_LASER_INVISIBLE.ALO</Land_Model_Name>
+		<Behavior></Behavior>
+		<LandBehavior>SPAWN_SQUADRON</LandBehavior>
+		<Lua_Script>FieldBaseSpawner</Lua_Script>
+		<Is_Discardable>false</Is_Discardable>
+		<Affiliation>Neutral</Affiliation>
+		<Scale_Factor>0.1</Scale_Factor>
+		
+		<Starting_Spawned_Units_Tech_0>Pentastar_Medium_Armytrooper_Squad, 1</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Pentastar_Medic_Armytrooper_Squad, 2</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Pentastar_Medium_Armytrooper_Squad, 10</Reserve_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Pentastar_Medic_Armytrooper_Squad, 10</Reserve_Spawned_Units_Tech_0>
+        <Spawned_Squadron_Delay_Seconds>30.0</Spawned_Squadron_Delay_Seconds>
+
+	</Marker>
+	
+	<!-- EOTH Support FB  -->
+	<GroundBuildable Name="UC_EotH_Field_Support_Base">
+		<Variant_Of_Existing_Type>UC_Empire_Field_Support_Base</Variant_Of_Existing_Type>
+		<Encyclopedia_Text>
+			TEXT_TOOLTIP_FIELD_BASE_SUPPORT
+			TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+			TEXT_TOOLTIP_FIELD_BASE_SUPPORT_EOTH_HEALTH
+			TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+			TEXT_TOOLTIP_FIELD_BASE_SUPPORT_EOTH1
+		</Encyclopedia_Text>
+		<Tactical_Buildable_Constructed> EotH_Field_Support_Base </Tactical_Buildable_Constructed>
+		<Affiliation>EmpireoftheHand</Affiliation>
+	</GroundBuildable>
+	
+	<SpecialStructure Name="EotH_Field_Support_Base">
+		<Variant_Of_Existing_Type>Garrison_Bunker_Template</Variant_Of_Existing_Type>
+		<Icon_Name>I_BUTTON_EV_BUNKER.tga</Icon_Name>
+		<Text_ID>TEXT_FIELD_BASE_SUPPORT</Text_ID>
+		<Encyclopedia_Text>
+			TEXT_TOOLTIP_FIELD_BASE_SUPPORT
+			TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+			TEXT_TOOLTIP_FIELD_BASE_SUPPORT_EOTH_HEALTH
+			TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+			TEXT_TOOLTIP_FIELD_BASE_SUPPORT_EOTH1
+		</Encyclopedia_Text>
+		<Land_Model_Name>EB_TestBunker.alo</Land_Model_Name>
+		<Affiliation>EmpireoftheHand</Affiliation>
+		<Scale_Factor>1.0</Scale_Factor>
+        <Garrison_Radius>10</Garrison_Radius>
+
+		<Num_Garrison_Slots>0</Num_Garrison_Slots>	
+		<LandBehavior> SPAWN_SQUADRON, REVEAL, SELECTABLE, HIDE_WHEN_FOGGED, DAMAGE_TRACKING, EARTHQUAKE_TARGET, UNIT_AI</LandBehavior>
+
+		<Starting_Spawned_Units_Tech_0>EotH_Field_Support, 1</Starting_Spawned_Units_Tech_0>
+		<Spawned_Squadron_Delay_Seconds>5</Spawned_Squadron_Delay_Seconds>
+		<Spawned_Squadron_Location_Bones>B_GARRISON_03</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>40.0</Spawned_Squadron_Location_Flyout_Distances>
+		<Spawn_Garrison_On_Load>True</Spawn_Garrison_On_Load>
+	</SpecialStructure>
+
+	<Marker Name="EotH_Field_Support">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Galactic_Model_Name/>
+		<Space_Model_Name>W_LASER_INVISIBLE.ALO</Space_Model_Name>
+		<Land_Model_Name>W_LASER_INVISIBLE.ALO</Land_Model_Name>
+		<Behavior></Behavior>
+		<LandBehavior>SPAWN_SQUADRON</LandBehavior>
+		<Lua_Script>FieldBaseSpawner</Lua_Script>
+		<Is_Discardable>false</Is_Discardable>
+		<Affiliation>Neutral</Affiliation>
+		<Scale_Factor>0.1</Scale_Factor>
+
+		<Starting_Spawned_Units_Tech_0>Phalanx_Medic_Squad, 3</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Phalanx_Medic_Squad, 10</Reserve_Spawned_Units_Tech_0>
+        <Spawned_Squadron_Delay_Seconds>30.0</Spawned_Squadron_Delay_Seconds>
+
+	</Marker>
+	
+	<!-- CSA Support FB  -->
+	<GroundBuildable Name="UC_Corporate_Sector_Field_Support_Base">
+		<Variant_Of_Existing_Type>UC_Empire_Field_Support_Base</Variant_Of_Existing_Type>
+		<Encyclopedia_Text>
+			TEXT_TOOLTIP_FIELD_BASE_SUPPORT
+			TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+			TEXT_TOOLTIP_FIELD_BASE_SUPPORT_CSA_HEALTH
+			TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+			TEXT_TOOLTIP_FIELD_BASE_SUPPORT_CSA1
+			TEXT_TOOLTIP_FIELD_BASE_SUPPORT_CSA2
+		</Encyclopedia_Text>
+		<Tactical_Buildable_Constructed> Corporate_Sector_Field_Support_Base </Tactical_Buildable_Constructed>
+		<Affiliation>Corporate_Sector</Affiliation>
+	</GroundBuildable>
+	
+	<SpecialStructure Name="Corporate_Sector_Field_Support_Base">
+		<Variant_Of_Existing_Type>Garrison_Bunker_Template</Variant_Of_Existing_Type>
+		<Icon_Name>I_BUTTON_EV_BUNKER.tga</Icon_Name>
+		<Text_ID>TEXT_FIELD_BASE_SUPPORT</Text_ID>
+		<Encyclopedia_Text>
+			TEXT_TOOLTIP_FIELD_BASE_SUPPORT
+			TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+			TEXT_TOOLTIP_FIELD_BASE_SUPPORT_CSA_HEALTH
+			TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+			TEXT_TOOLTIP_FIELD_BASE_SUPPORT_CSA1
+			TEXT_TOOLTIP_FIELD_BASE_SUPPORT_CSA2
+		</Encyclopedia_Text>
+		<Land_Model_Name>EB_TestBunker.alo</Land_Model_Name>
+		<Affiliation>Corporate_Sector</Affiliation>
+		<Scale_Factor>1.0</Scale_Factor>
+        <Garrison_Radius>10</Garrison_Radius>
+
+		<Num_Garrison_Slots>0</Num_Garrison_Slots>	
+		<LandBehavior> SPAWN_SQUADRON, REVEAL, SELECTABLE, HIDE_WHEN_FOGGED, DAMAGE_TRACKING, EARTHQUAKE_TARGET, UNIT_AI</LandBehavior>
+
+		<Starting_Spawned_Units_Tech_0>Corporate_Sector_Field_Support, 1</Starting_Spawned_Units_Tech_0>
+		<Spawned_Squadron_Delay_Seconds>5</Spawned_Squadron_Delay_Seconds>
+		<Spawned_Squadron_Location_Bones>B_GARRISON_03</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>40.0</Spawned_Squadron_Location_Flyout_Distances>
+		<Spawn_Garrison_On_Load>True</Spawn_Garrison_On_Load>
+	</SpecialStructure>
+
+	<Marker Name="Corporate_Sector_Field_Support">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Galactic_Model_Name/>
+		<Space_Model_Name>W_LASER_INVISIBLE.ALO</Space_Model_Name>
+		<Land_Model_Name>W_LASER_INVISIBLE.ALO</Land_Model_Name>
+		<Behavior></Behavior>
+		<LandBehavior>SPAWN_SQUADRON</LandBehavior>
+		<Lua_Script>FieldBaseSpawner</Lua_Script>
+		<Is_Discardable>false</Is_Discardable>
+		<Affiliation>Neutral</Affiliation>
+		<Scale_Factor>0.1</Scale_Factor>
+
+        <Starting_Spawned_Units_Tech_0>CSA_Medic_Espo_Squad, 3</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>CSA_Medium_Espo_Squad, 1</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>CSA_Medic_Espo_Squad, 10</Reserve_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>CSA_Medium_Espo_Squad, 10</Reserve_Spawned_Units_Tech_0>
+
+        <Spawned_Squadron_Delay_Seconds>30.0</Spawned_Squadron_Delay_Seconds>
+
+	</Marker>
+	
+	<!-- EA Support FB  -->
+	<GroundBuildable Name="UC_Eriadu_Field_Support_Base">
+		<Variant_Of_Existing_Type>UC_Empire_Field_Support_Base</Variant_Of_Existing_Type>
+		<Encyclopedia_Text>
+			TEXT_TOOLTIP_FIELD_BASE_SUPPORT
+			TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+			TEXT_TOOLTIP_FIELD_BASE_SUPPORT_ERIADU_HEALTH
+			TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+			TEXT_TOOLTIP_FIELD_BASE_SUPPORT_ERIADU1
+			TEXT_TOOLTIP_FIELD_BASE_SUPPORT_ERIADU2
+		</Encyclopedia_Text>
+		<Tactical_Buildable_Constructed> Eriadu_Field_Support_Base </Tactical_Buildable_Constructed>
+		<Affiliation>Eriadu_Authority</Affiliation>
+	</GroundBuildable>
+
+	<SpecialStructure Name="Eriadu_Field_Support_Base">
+		<Variant_Of_Existing_Type>Garrison_Bunker_Template</Variant_Of_Existing_Type>
+		<Icon_Name>I_BUTTON_EV_BUNKER.tga</Icon_Name>
+		<Text_ID>TEXT_FIELD_BASE_SUPPORT</Text_ID>
+		<Encyclopedia_Text>
+			TEXT_TOOLTIP_FIELD_BASE_SUPPORT
+			TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+			TEXT_TOOLTIP_FIELD_BASE_SUPPORT_ERIADU_HEALTH
+			TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+			TEXT_TOOLTIP_FIELD_BASE_SUPPORT_ERIADU1
+			TEXT_TOOLTIP_FIELD_BASE_SUPPORT_ERIADU2
+		</Encyclopedia_Text>
+		<Land_Model_Name>EB_TestBunker.alo</Land_Model_Name>
+		<Affiliation>Eriadu_Authority</Affiliation>
+		<Scale_Factor>1.0</Scale_Factor>
+        <Garrison_Radius>10</Garrison_Radius>
+
+		<Num_Garrison_Slots>0</Num_Garrison_Slots>	
+		<LandBehavior> SPAWN_SQUADRON, REVEAL, SELECTABLE, HIDE_WHEN_FOGGED, DAMAGE_TRACKING, EARTHQUAKE_TARGET, UNIT_AI</LandBehavior>
+
+		<Starting_Spawned_Units_Tech_0>Eriadu_Field_Support, 1</Starting_Spawned_Units_Tech_0>
+		<Spawned_Squadron_Delay_Seconds>5</Spawned_Squadron_Delay_Seconds>
+		<Spawned_Squadron_Location_Bones>B_GARRISON_03</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>40.0</Spawned_Squadron_Location_Flyout_Distances>
+		<Spawn_Garrison_On_Load>True</Spawn_Garrison_On_Load>
+	</SpecialStructure>
+	
+	<Marker Name="Eriadu_Field_Support">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Galactic_Model_Name/>
+		<Space_Model_Name>W_LASER_INVISIBLE.ALO</Space_Model_Name>
+		<Land_Model_Name>W_LASER_INVISIBLE.ALO</Land_Model_Name>
+		<Behavior></Behavior>
+		<LandBehavior>SPAWN_SQUADRON</LandBehavior>
+		<Lua_Script>FieldBaseSpawner</Lua_Script>
+		<Is_Discardable>false</Is_Discardable>
+		<Affiliation>Neutral</Affiliation>
+		<Scale_Factor>0.1</Scale_Factor>
+
+        <Starting_Spawned_Units_Tech_0>Army_Special_Missions_Heavy_Team_Deployed, 1</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Imperial_Medic_Armytrooper_Squad, 2</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Army_Special_Missions_Heavy_Team_Deployed, 10</Reserve_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Imperial_Medic_Armytrooper_Squad, 10</Reserve_Spawned_Units_Tech_0>
+
+        <Spawned_Squadron_Delay_Seconds>30.0</Spawned_Squadron_Delay_Seconds>
+
+	</Marker>
+	
+	
+	<!-- IR Commando FB  -->
+	<GroundBuildable Name="UC_Empire_Field_Commando_Base">
+		<Variant_Of_Existing_Type>UC_Empire_Field_Military_Base</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_FIELD_BASE_COMMANDO</Text_ID>
+		<Encyclopedia_Text>
+			TEXT_TOOLTIP_FIELD_BASE_COMMANDO
+			TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+			TEXT_TOOLTIP_FIELD_BASE_COMMANDO_EMPIRE_HEALTH
+			TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+			TEXT_TOOLTIP_FIELD_BASE_COMMANDO_EMPIRE1
+			TEXT_TOOLTIP_FIELD_BASE_COMMANDO_EMPIRE2
+			TEXT_TOOLTIP_FIELD_BASE_COMMANDO_EMPIRE3
+		</Encyclopedia_Text>
+		<Tactical_Buildable_Constructed> Empire_Field_Commando_Base </Tactical_Buildable_Constructed>
+
+		<Tactical_Build_Cost_Multiplayer> 350 </Tactical_Build_Cost_Multiplayer>
+		<Terrain_Texture_Modifier_Square>false</Terrain_Texture_Modifier_Square>
+		
+		<Obstacle_Proxy_Type> Bunker_Pad </Obstacle_Proxy_Type>
+		<Affiliation>Empire</Affiliation>
+		<Icon_Name>I_BUTTON_EV_BUNKER.tga</Icon_Name>
+
+	</GroundBuildable>
+	
+	<SpecialStructure Name="Empire_Field_Commando_Base">
+		<Variant_Of_Existing_Type>Garrison_Bunker_Template</Variant_Of_Existing_Type>
+		<Icon_Name>I_BUTTON_EV_BUNKER.tga</Icon_Name>
+		<Text_ID>TEXT_FIELD_BASE_COMMANDO</Text_ID>
+		<Encyclopedia_Text>
+			TEXT_TOOLTIP_FIELD_BASE_COMMANDO
+			TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+			TEXT_TOOLTIP_FIELD_BASE_COMMANDO_EMPIRE_HEALTH
+			TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+			TEXT_TOOLTIP_FIELD_BASE_COMMANDO_EMPIRE1
+			TEXT_TOOLTIP_FIELD_BASE_COMMANDO_EMPIRE2
+			TEXT_TOOLTIP_FIELD_BASE_COMMANDO_EMPIRE3
+		</Encyclopedia_Text>
+		<Land_Model_Name>EB_TestBunker.alo</Land_Model_Name>
+		<Affiliation>Empire</Affiliation>
+		<Land_FOW_Reveal_Range>600.0</Land_FOW_Reveal_Range>
+		<Scale_Factor>1.0</Scale_Factor>
+        <Garrison_Radius>10</Garrison_Radius>
+
+		<Num_Garrison_Slots>0</Num_Garrison_Slots>	
+		<LandBehavior> SPAWN_SQUADRON, REVEAL, SELECTABLE, HIDE_WHEN_FOGGED, DAMAGE_TRACKING, EARTHQUAKE_TARGET, UNIT_AI</LandBehavior>
+
+		<Starting_Spawned_Units_Tech_0>Empire_Field_Commando, 1</Starting_Spawned_Units_Tech_0>
+        <!--<Starting_Spawned_Units_Tech_0>Field_Pad_Basic, 1</Starting_Spawned_Units_Tech_0>-->
+
+		<Spawned_Squadron_Delay_Seconds>5</Spawned_Squadron_Delay_Seconds>
+		<Spawned_Squadron_Location_Bones>B_GARRISON_03</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>40.0</Spawned_Squadron_Location_Flyout_Distances>
+		<Spawn_Garrison_On_Load>True</Spawn_Garrison_On_Load>
+
+	</SpecialStructure>
+	
+	<Marker Name="Empire_Field_Commando">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Galactic_Model_Name/>
+		<Space_Model_Name>W_LASER_INVISIBLE.ALO</Space_Model_Name>
+		<Land_Model_Name>W_LASER_INVISIBLE.ALO</Land_Model_Name>
+		<Behavior></Behavior>
+		<LandBehavior>SPAWN_SQUADRON</LandBehavior>
+		<Lua_Script>FieldBaseSpawner</Lua_Script>
+		<Is_Discardable>false</Is_Discardable>
+		<Affiliation>Neutral</Affiliation>
+		<Scale_Factor>0.1</Scale_Factor>
+		
+		<Starting_Spawned_Units_Tech_0>Imperial_Scout_Trooper_Assault_Squad_Deployed, 2</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Imperial_Scout_Trooper_Commando_Squad_Deployed, 2</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Imperial_Scout_Trooper_Sniper_Squad_Deployed, 2</Starting_Spawned_Units_Tech_0>
+		
+		<Reserve_Spawned_Units_Tech_0>Imperial_Scout_Trooper_Assault_Squad_Deployed, 10</Reserve_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Imperial_Scout_Trooper_Commando_Squad_Deployed, 10</Reserve_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Imperial_Scout_Trooper_Sniper_Squad_Deployed, 10</Reserve_Spawned_Units_Tech_0>
+        <Spawned_Squadron_Delay_Seconds>30.0</Spawned_Squadron_Delay_Seconds>
+
+	</Marker>
+	
+	<!-- GM Commando FB  -->
+	<GroundBuildable Name="UC_Teradoc_Field_Commando_Base">
+		<Variant_Of_Existing_Type>UC_Empire_Field_Commando_Base</Variant_Of_Existing_Type>
+		<Encyclopedia_Text>
+			TEXT_TOOLTIP_FIELD_BASE_COMMANDO
+			TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+			TEXT_TOOLTIP_FIELD_BASE_COMMANDO_TERADOC_HEALTH
+			TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+			TEXT_TOOLTIP_FIELD_BASE_COMMANDO_TERADOC1
+			TEXT_TOOLTIP_FIELD_BASE_COMMANDO_TERADOC2
+		</Encyclopedia_Text>
+		<Tactical_Build_Cost_Multiplayer> 350 </Tactical_Build_Cost_Multiplayer>
+		<Terrain_Texture_Modifier_Square>false</Terrain_Texture_Modifier_Square>
+		<Obstacle_Proxy_Type> Bunker_Pad </Obstacle_Proxy_Type>
+		<Affiliation>Greater_Maldrood</Affiliation>
+		<Icon_Name>I_BUTTON_EV_BUNKER.tga</Icon_Name>
+		<Tactical_Buildable_Constructed> Teradoc_Field_Commando_Base </Tactical_Buildable_Constructed>
+
+	</GroundBuildable>
+	
+    <SpecialStructure Name="Teradoc_Field_Commando_Base">
+		<Variant_Of_Existing_Type>Garrison_Bunker_Template</Variant_Of_Existing_Type>
+        <Icon_Name>I_BUTTON_EV_BUNKER.tga</Icon_Name>
+		<Text_ID>TEXT_FIELD_BASE_COMMANDO</Text_ID>
+         <Encyclopedia_Text>
+			TEXT_TOOLTIP_FIELD_BASE_COMMANDO
+			TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+			TEXT_TOOLTIP_FIELD_BASE_COMMANDO_TERADOC_HEALTH
+			TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+			TEXT_TOOLTIP_FIELD_BASE_COMMANDO_TERADOC1
+			TEXT_TOOLTIP_FIELD_BASE_COMMANDO_TERADOC2
+		</Encyclopedia_Text>
+		<Land_Model_Name>EB_TestBunker.alo</Land_Model_Name>
+		<Affiliation>Greater_Maldrood</Affiliation>
+		<Land_FOW_Reveal_Range>600.0</Land_FOW_Reveal_Range>
+		<Scale_Factor>1.0</Scale_Factor>
+        <Garrison_Radius>10</Garrison_Radius>
+		<Num_Garrison_Slots>0</Num_Garrison_Slots>	
+		<LandBehavior> SPAWN_SQUADRON, REVEAL, SELECTABLE, HIDE_WHEN_FOGGED, DAMAGE_TRACKING, EARTHQUAKE_TARGET, UNIT_AI</LandBehavior>
+
+		<Starting_Spawned_Units_Tech_0>Teradoc_Field_Commando, 1</Starting_Spawned_Units_Tech_0>
+		<Spawned_Squadron_Delay_Seconds>5</Spawned_Squadron_Delay_Seconds>
+		<Spawned_Squadron_Location_Bones>B_GARRISON_03</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>40.0</Spawned_Squadron_Location_Flyout_Distances>
+		<Spawn_Garrison_On_Load>True</Spawn_Garrison_On_Load>
+
+	</SpecialStructure>
+	
+	<Marker Name="Teradoc_Field_Commando">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Galactic_Model_Name/>
+		<Space_Model_Name>W_LASER_INVISIBLE.ALO</Space_Model_Name>
+		<Land_Model_Name>W_LASER_INVISIBLE.ALO</Land_Model_Name>
+		<Behavior></Behavior>
+		<LandBehavior>SPAWN_SQUADRON</LandBehavior>
+		<Lua_Script>FieldBaseSpawner</Lua_Script>
+		<Is_Discardable>false</Is_Discardable>
+		<Affiliation>Neutral</Affiliation>
+		<Scale_Factor>0.1</Scale_Factor>
+
+		<Starting_Spawned_Units_Tech_0>Imperial_Fleet_Commando_Squad_Deployed, 3</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Imperial_Fleet_Commando_Sniper_Squad_Deployed, 1</Starting_Spawned_Units_Tech_0>
+		
+		<Reserve_Spawned_Units_Tech_0>Imperial_Fleet_Commando_Squad_Deployed, 10</Reserve_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Imperial_Fleet_Commando_Sniper_Squad_Deployed, 10</Reserve_Spawned_Units_Tech_0>
+		<Spawned_Squadron_Delay_Seconds>30.0</Spawned_Squadron_Delay_Seconds>
+
+	</Marker>
+	
+	<!-- NR Commando FB  -->
+	<GroundBuildable Name="UC_Rebel_Field_Commando_Base">
+		<Variant_Of_Existing_Type>UC_Empire_Field_Commando_Base</Variant_Of_Existing_Type>
+		<Encyclopedia_Text>
+			TEXT_TOOLTIP_FIELD_BASE_COMMANDO
+			TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+			TEXT_TOOLTIP_FIELD_BASE_COMMANDO_REBEL_HEALTH
+			TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+			TEXT_TOOLTIP_FIELD_BASE_COMMANDO_REBEL1
+			TEXT_TOOLTIP_FIELD_BASE_COMMANDO_REBEL2
+		</Encyclopedia_Text>
+		<Tactical_Build_Cost_Multiplayer> 350 </Tactical_Build_Cost_Multiplayer>
+		<Terrain_Texture_Modifier_Square>false</Terrain_Texture_Modifier_Square>
+		<Obstacle_Proxy_Type> Bunker_Pad </Obstacle_Proxy_Type>
+		<Affiliation>Rebel</Affiliation>
+        <Land_Model_Name> RB_Bunker.alo </Land_Model_Name>
+        <Icon_Name>I_BUTTON_RB_BUNKER.TGA</Icon_Name>
+		<Tactical_Buildable_Constructed> Rebel_Field_Commando_Base </Tactical_Buildable_Constructed>
+
+	</GroundBuildable>
+	
+	<SpecialStructure Name="Rebel_Field_Commando_Base">
+		<Variant_Of_Existing_Type>Garrison_Bunker_Template</Variant_Of_Existing_Type>
+        <Icon_Name>I_BUTTON_RB_BUNKER.TGA</Icon_Name>
+		<Text_ID>TEXT_FIELD_BASE_COMMANDO</Text_ID>
+         <Encyclopedia_Text>
+			TEXT_TOOLTIP_FIELD_BASE_COMMANDO
+			TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+			TEXT_TOOLTIP_FIELD_BASE_COMMANDO_REBEL_HEALTH
+			TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+			TEXT_TOOLTIP_FIELD_BASE_COMMANDO_REBEL1
+			TEXT_TOOLTIP_FIELD_BASE_COMMANDO_REBEL2
+		</Encyclopedia_Text>
+        <Land_Model_Name> RB_Bunker.alo </Land_Model_Name>
+		<Affiliation>Rebel</Affiliation>
+		<Land_FOW_Reveal_Range>600.0</Land_FOW_Reveal_Range>
+		<Scale_Factor>1.0</Scale_Factor>
+        <Garrison_Radius>10</Garrison_Radius>
+		<Num_Garrison_Slots>0</Num_Garrison_Slots>	
+		<LandBehavior> SPAWN_SQUADRON, REVEAL, SELECTABLE, HIDE_WHEN_FOGGED, DAMAGE_TRACKING, EARTHQUAKE_TARGET, UNIT_AI</LandBehavior>
+
+		<Starting_Spawned_Units_Tech_0>Rebel_Field_Commando, 1</Starting_Spawned_Units_Tech_0>
+		<Spawned_Squadron_Delay_Seconds>5</Spawned_Squadron_Delay_Seconds>
+		<Spawned_Squadron_Location_Bones>B_GARRISON_03</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>40.0</Spawned_Squadron_Location_Flyout_Distances>
+		<Spawn_Garrison_On_Load>True</Spawn_Garrison_On_Load>
+
+	</SpecialStructure>
+
+	<Marker Name="Rebel_Field_Commando">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Galactic_Model_Name/>
+		<Space_Model_Name>W_LASER_INVISIBLE.ALO</Space_Model_Name>
+		<Land_Model_Name>W_LASER_INVISIBLE.ALO</Land_Model_Name>
+		<Behavior></Behavior>
+		<LandBehavior>SPAWN_SQUADRON</LandBehavior>
+		<Lua_Script>FieldBaseSpawner</Lua_Script>
+		<Is_Discardable>false</Is_Discardable>
+		<Affiliation>Neutral</Affiliation>
+		<Scale_Factor>0.1</Scale_Factor>
+
+		<Starting_Spawned_Units_Tech_0>Rebel_Infiltrator_Assault_Squad_Deployed, 3</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Rebel_Infiltrator_Sniper_Squad_Deployed, 1</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Rebel_Infiltrator_Assault_Squad_Deployed, 10</Reserve_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Rebel_Infiltrator_Sniper_Squad_Deployed, 10</Reserve_Spawned_Units_Tech_0>
+        <Spawned_Squadron_Delay_Seconds>10.0</Spawned_Squadron_Delay_Seconds>
+
+	</Marker>
+	
+	<!-- ZE Commando FB  -->
+    <GroundBuildable Name="UC_Zsinj_Field_Commando_Base">
+		<Variant_Of_Existing_Type>UC_Empire_Field_Commando_Base</Variant_Of_Existing_Type>
+		<Encyclopedia_Text>
+			TEXT_TOOLTIP_FIELD_BASE_COMMANDO
+			TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+			TEXT_TOOLTIP_FIELD_BASE_COMMANDO_ZSINJ_HEALTH
+			TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+			TEXT_TOOLTIP_FIELD_BASE_COMMANDO_ZSINJ1
+		</Encyclopedia_Text>
+		<Tactical_Build_Cost_Multiplayer> 350 </Tactical_Build_Cost_Multiplayer>
+		<Terrain_Texture_Modifier_Square>false</Terrain_Texture_Modifier_Square>
+		<Obstacle_Proxy_Type> Bunker_Pad </Obstacle_Proxy_Type>
+		<Affiliation>Zsinj_Empire</Affiliation>
+		<Icon_Name>I_BUTTON_EV_BUNKER.tga</Icon_Name>
+		<Tactical_Buildable_Constructed> Zsinj_Field_Commando_Base </Tactical_Buildable_Constructed>
+
+	</GroundBuildable>
+	
+    <SpecialStructure Name="Zsinj_Field_Commando_Base">
+		<Variant_Of_Existing_Type>Garrison_Bunker_Template</Variant_Of_Existing_Type>
+        <Icon_Name>I_BUTTON_EV_BUNKER.tga</Icon_Name>
+		<Text_ID>TEXT_FIELD_BASE_COMMANDO</Text_ID>
+         <Encyclopedia_Text>
+			TEXT_TOOLTIP_FIELD_BASE_COMMANDO
+			TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+			TEXT_TOOLTIP_FIELD_BASE_COMMANDO_ZSINJ_HEALTH
+			TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+			TEXT_TOOLTIP_FIELD_BASE_COMMANDO_ZSINJ1
+		</Encyclopedia_Text>
+		<Land_Model_Name>EB_TestBunker.alo</Land_Model_Name>
+		<Affiliation>Zsinj_Empire</Affiliation>
+		<Land_FOW_Reveal_Range>600.0</Land_FOW_Reveal_Range>
+		<Scale_Factor>1.0</Scale_Factor>
+        <Garrison_Radius>10</Garrison_Radius>
+		<Num_Garrison_Slots>0</Num_Garrison_Slots>	
+		<LandBehavior> SPAWN_SQUADRON, REVEAL, SELECTABLE, HIDE_WHEN_FOGGED, DAMAGE_TRACKING, EARTHQUAKE_TARGET, UNIT_AI</LandBehavior>
+
+		<Starting_Spawned_Units_Tech_0>Zsinj_Field_Commando, 1</Starting_Spawned_Units_Tech_0>
+		<Spawned_Squadron_Delay_Seconds>5</Spawned_Squadron_Delay_Seconds>
+		<Spawned_Squadron_Location_Bones>B_GARRISON_03</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>40.0</Spawned_Squadron_Location_Flyout_Distances>
+		<Spawn_Garrison_On_Load>True</Spawn_Garrison_On_Load>
+
+	</SpecialStructure>
+	
+	<Marker Name="Zsinj_Field_Commando">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Galactic_Model_Name/>
+		<Space_Model_Name>W_LASER_INVISIBLE.ALO</Space_Model_Name>
+		<Land_Model_Name>W_LASER_INVISIBLE.ALO</Land_Model_Name>
+		<Behavior></Behavior>
+		<LandBehavior>SPAWN_SQUADRON</LandBehavior>
+		<Lua_Script>FieldBaseSpawner</Lua_Script>
+		<Is_Discardable>false</Is_Discardable>
+		<Affiliation>Neutral</Affiliation>
+		<Scale_Factor>0.1</Scale_Factor>
+
+		<Starting_Spawned_Units_Tech_0>EVO_Trooper_Team_Deployed, 4</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>EVO_Trooper_Team_Deployed, 10</Reserve_Spawned_Units_Tech_0>
+        <Spawned_Squadron_Delay_Seconds>30.0</Spawned_Squadron_Delay_Seconds>
+
+	</Marker>
+	
+	<!-- PA Commando FB  -->
+	<GroundBuildable Name="UC_Pentastar_Field_Commando_Base">
+		<Variant_Of_Existing_Type>UC_Empire_Field_Commando_Base</Variant_Of_Existing_Type>
+		<Encyclopedia_Text>
+			TEXT_TOOLTIP_FIELD_BASE_COMMANDO
+			TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+			TEXT_TOOLTIP_FIELD_BASE_COMMANDO_PENTASTAR_HEALTH
+			TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+			TEXT_TOOLTIP_FIELD_BASE_COMMANDO_PENTASTAR1
+		</Encyclopedia_Text>
+		<Tactical_Build_Cost_Multiplayer> 350 </Tactical_Build_Cost_Multiplayer>
+		<Terrain_Texture_Modifier_Square>false</Terrain_Texture_Modifier_Square>
+		<Obstacle_Proxy_Type> Bunker_Pad </Obstacle_Proxy_Type>
+		<Affiliation>Pentastar</Affiliation>
+		<Icon_Name>I_BUTTON_EV_BUNKER.tga</Icon_Name>
+		<Tactical_Buildable_Constructed> Pentastar_Field_Commando_Base </Tactical_Buildable_Constructed>
+
+	</GroundBuildable>
+	
+	<SpecialStructure Name="Pentastar_Field_Commando_Base">
+		<Variant_Of_Existing_Type>Garrison_Bunker_Template</Variant_Of_Existing_Type>
+        <Icon_Name>I_BUTTON_EV_BUNKER.tga</Icon_Name>
+		<Text_ID>TEXT_FIELD_BASE_COMMANDO</Text_ID>
+        <Encyclopedia_Text>
+			TEXT_TOOLTIP_FIELD_BASE_COMMANDO
+			TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+			TEXT_TOOLTIP_FIELD_BASE_COMMANDO_PENTASTAR_HEALTH
+			TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+			TEXT_TOOLTIP_FIELD_BASE_COMMANDO_PENTASTAR1
+		</Encyclopedia_Text>
+		<Land_Model_Name>EB_TestBunker.alo</Land_Model_Name>
+		<Affiliation>Pentastar</Affiliation>
+		<Land_FOW_Reveal_Range>600.0</Land_FOW_Reveal_Range>
+		<Scale_Factor>1.0</Scale_Factor>
+        <Garrison_Radius>10</Garrison_Radius>
+		<Num_Garrison_Slots>0</Num_Garrison_Slots>	
+		<LandBehavior> SPAWN_SQUADRON, REVEAL, SELECTABLE, HIDE_WHEN_FOGGED, DAMAGE_TRACKING, EARTHQUAKE_TARGET, UNIT_AI</LandBehavior>
+
+		<Starting_Spawned_Units_Tech_0>Pentastar_Field_Commando, 1</Starting_Spawned_Units_Tech_0>
+		<Spawned_Squadron_Delay_Seconds>5</Spawned_Squadron_Delay_Seconds>
+		<Spawned_Squadron_Location_Bones>B_GARRISON_03</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>40.0</Spawned_Squadron_Location_Flyout_Distances>
+		<Spawn_Garrison_On_Load>True</Spawn_Garrison_On_Load>
+
+	</SpecialStructure>
+
+	<Marker Name="Pentastar_Field_Commando">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Galactic_Model_Name/>
+		<Space_Model_Name>W_LASER_INVISIBLE.ALO</Space_Model_Name>
+		<Land_Model_Name>W_LASER_INVISIBLE.ALO</Land_Model_Name>
+		<Behavior></Behavior>
+		<LandBehavior>SPAWN_SQUADRON</LandBehavior>
+		<Lua_Script>FieldBaseSpawner</Lua_Script>
+		<Is_Discardable>false</Is_Discardable>
+		<Affiliation>Neutral</Affiliation>
+		<Scale_Factor>0.1</Scale_Factor>
+
+		<Starting_Spawned_Units_Tech_0>Imperial_Army_Commando_Squad_Deployed, 4</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Imperial_Army_Commando_Squad_Deployed, 10</Reserve_Spawned_Units_Tech_0>
+        <Spawned_Squadron_Delay_Seconds>30.0</Spawned_Squadron_Delay_Seconds>
+
+	</Marker>
+	
+	<!-- EOTH Commando FB  -->
+	<GroundBuildable Name="UC_EotH_Field_Commando_Base">
+		<Variant_Of_Existing_Type>UC_Empire_Field_Commando_Base</Variant_Of_Existing_Type>
+		<Encyclopedia_Text>
+			TEXT_TOOLTIP_FIELD_BASE_COMMANDO
+			TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+			TEXT_TOOLTIP_FIELD_BASE_COMMANDO_EOTH_HEALTH
+			TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+			TEXT_TOOLTIP_FIELD_BASE_COMMANDO_EOTH1
+			TEXT_TOOLTIP_FIELD_BASE_COMMANDO_EOTH2
+			TEXT_TOOLTIP_FIELD_BASE_COMMANDO_EOTH3
+		</Encyclopedia_Text>
+		<Tactical_Build_Cost_Multiplayer> 350 </Tactical_Build_Cost_Multiplayer>
+		<Terrain_Texture_Modifier_Square>false</Terrain_Texture_Modifier_Square>
+		<Obstacle_Proxy_Type> Bunker_Pad </Obstacle_Proxy_Type>
+		<Affiliation>EmpireoftheHand</Affiliation>
+		<Icon_Name>I_BUTTON_EV_BUNKER.tga</Icon_Name>
+		<Tactical_Buildable_Constructed> EotH_Field_Commando_Base </Tactical_Buildable_Constructed>
+
+	</GroundBuildable>
+	
+	<SpecialStructure Name="EotH_Field_Commando_Base">
+		<Variant_Of_Existing_Type>Garrison_Bunker_Template</Variant_Of_Existing_Type>
+        <Icon_Name>I_BUTTON_EV_BUNKER.tga</Icon_Name>
+		<Text_ID>TEXT_FIELD_BASE_COMMANDO</Text_ID>
+         <Encyclopedia_Text>
+			TEXT_TOOLTIP_FIELD_BASE_COMMANDO
+			TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+			TEXT_TOOLTIP_FIELD_BASE_COMMANDO_EOTH_HEALTH
+			TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+			TEXT_TOOLTIP_FIELD_BASE_COMMANDO_EOTH1
+			TEXT_TOOLTIP_FIELD_BASE_COMMANDO_EOTH2
+			TEXT_TOOLTIP_FIELD_BASE_COMMANDO_EOTH3
+		</Encyclopedia_Text>
+		<Land_Model_Name>EB_TestBunker.alo</Land_Model_Name>
+		<Affiliation>EmpireoftheHand</Affiliation>
+		<Land_FOW_Reveal_Range>600.0</Land_FOW_Reveal_Range>
+		<Scale_Factor>1.0</Scale_Factor>
+        <Garrison_Radius>10</Garrison_Radius>
+		<Num_Garrison_Slots>0</Num_Garrison_Slots>	
+		<LandBehavior> SPAWN_SQUADRON, REVEAL, SELECTABLE, HIDE_WHEN_FOGGED, DAMAGE_TRACKING, EARTHQUAKE_TARGET, UNIT_AI</LandBehavior>
+
+		<Starting_Spawned_Units_Tech_0>EotH_Field_Commando, 1</Starting_Spawned_Units_Tech_0>
+		<Spawned_Squadron_Delay_Seconds>5</Spawned_Squadron_Delay_Seconds>
+		<Spawned_Squadron_Location_Bones>B_GARRISON_03</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>40.0</Spawned_Squadron_Location_Flyout_Distances>
+		<Spawn_Garrison_On_Load>True</Spawn_Garrison_On_Load>
+
+	</SpecialStructure>
+	
+	<Marker Name="EotH_Field_Commando">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Galactic_Model_Name/>
+		<Space_Model_Name>W_LASER_INVISIBLE.ALO</Space_Model_Name>
+		<Land_Model_Name>W_LASER_INVISIBLE.ALO</Land_Model_Name>
+		<Behavior></Behavior>
+		<LandBehavior>SPAWN_SQUADRON</LandBehavior>
+		<Lua_Script>FieldBaseSpawner</Lua_Script>
+		<Is_Discardable>false</Is_Discardable>
+		<Affiliation>Neutral</Affiliation>
+		<Scale_Factor>0.1</Scale_Factor>
+
+		<Starting_Spawned_Units_Tech_0>Ysalamiri_Phalanx_Squad, 1</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Phalanx_Commando, 2</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>EotH_Scout_Bike, 3</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Ysalamiri_Phalanx_Squad, 10</Reserve_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Phalanx_Commando, 10</Reserve_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>EotH_Scout_Bike, 10</Reserve_Spawned_Units_Tech_0>
+        <Spawned_Squadron_Delay_Seconds>30.0</Spawned_Squadron_Delay_Seconds>
+
+	</Marker>
+	
+	<!-- CSA Commando FB  -->
+	<GroundBuildable Name="UC_Corporate_Sector_Field_Commando_Base">
+		<Variant_Of_Existing_Type>UC_Empire_Field_Commando_Base</Variant_Of_Existing_Type>
+		<Encyclopedia_Text>
+			TEXT_TOOLTIP_FIELD_BASE_COMMANDO
+			TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+			TEXT_TOOLTIP_FIELD_BASE_COMMANDO_CSA_HEALTH
+			TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+			TEXT_TOOLTIP_FIELD_BASE_COMMANDO_CSA1
+		</Encyclopedia_Text>
+		<Tactical_Build_Cost_Multiplayer> 350 </Tactical_Build_Cost_Multiplayer>
+		<Terrain_Texture_Modifier_Square>false</Terrain_Texture_Modifier_Square>
+		<Obstacle_Proxy_Type> Bunker_Pad </Obstacle_Proxy_Type>
+		<Affiliation>Corporate_Sector</Affiliation>
+		<Icon_Name>I_BUTTON_EV_BUNKER.tga</Icon_Name>
+		<Tactical_Buildable_Constructed> Corporate_Sector_Field_Commando_Base </Tactical_Buildable_Constructed>
+
+	</GroundBuildable>
+	
+	<SpecialStructure Name="Corporate_Sector_Field_Commando_Base">
+		<Variant_Of_Existing_Type>Garrison_Bunker_Template</Variant_Of_Existing_Type>
+        <Icon_Name>I_BUTTON_EV_BUNKER.tga</Icon_Name>
+		<Text_ID>TEXT_FIELD_BASE_COMMANDO</Text_ID>
+         <Encyclopedia_Text>
+			TEXT_TOOLTIP_FIELD_BASE_COMMANDO
+			TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+			TEXT_TOOLTIP_FIELD_BASE_COMMANDO_CSA_HEALTH
+			TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+			TEXT_TOOLTIP_FIELD_BASE_COMMANDO_CSA1
+		</Encyclopedia_Text>
+		<Land_Model_Name>EB_TestBunker.alo</Land_Model_Name>
+		<Affiliation>Corporate_Sector</Affiliation>
+		<Land_FOW_Reveal_Range>600.0</Land_FOW_Reveal_Range>
+		<Scale_Factor>1.0</Scale_Factor>
+        <Garrison_Radius>10</Garrison_Radius>
+   		<Num_Garrison_Slots>0</Num_Garrison_Slots>	
+		<LandBehavior> SPAWN_SQUADRON, REVEAL, SELECTABLE, HIDE_WHEN_FOGGED, DAMAGE_TRACKING, EARTHQUAKE_TARGET, UNIT_AI</LandBehavior>
+
+		<Starting_Spawned_Units_Tech_0>Corporate_Sector_Field_Commando, 1</Starting_Spawned_Units_Tech_0>
+		<Spawned_Squadron_Delay_Seconds>5</Spawned_Squadron_Delay_Seconds>
+		<Spawned_Squadron_Location_Bones>B_GARRISON_03</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>40.0</Spawned_Squadron_Location_Flyout_Distances>
+		<Spawn_Garrison_On_Load>True</Spawn_Garrison_On_Load>
+
+	</SpecialStructure>
+
+	<Marker Name="Corporate_Sector_Field_Commando">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Galactic_Model_Name/>
+		<Space_Model_Name>W_LASER_INVISIBLE.ALO</Space_Model_Name>
+		<Land_Model_Name>W_LASER_INVISIBLE.ALO</Land_Model_Name>
+		<Behavior></Behavior>
+		<LandBehavior>SPAWN_SQUADRON</LandBehavior>
+		<Lua_Script>FieldBaseSpawner</Lua_Script>
+		<Is_Discardable>false</Is_Discardable>
+		<Affiliation>Neutral</Affiliation>
+		<Scale_Factor>0.1</Scale_Factor>
+
+		<Starting_Spawned_Units_Tech_0>Heavy_Espo_Team_Deployed, 4</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Heavy_Espo_Team_Deployed, 10</Reserve_Spawned_Units_Tech_0>
+        <Spawned_Squadron_Delay_Seconds>30.0</Spawned_Squadron_Delay_Seconds>
+
+	</Marker>
+	
+	<!-- EA Commando FB  -->
+	<GroundBuildable Name="UC_Eriadu_Field_Commando_Base">
+		<Variant_Of_Existing_Type>UC_Empire_Field_Commando_Base</Variant_Of_Existing_Type>
+		<Encyclopedia_Text>
+			TEXT_TOOLTIP_FIELD_BASE_COMMANDO
+			TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+			TEXT_TOOLTIP_FIELD_BASE_COMMANDO_ERIADU_HEALTH
+			TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+			TEXT_TOOLTIP_FIELD_BASE_COMMANDO_ERIADU1
+		</Encyclopedia_Text>
+		<Tactical_Build_Cost_Multiplayer> 350 </Tactical_Build_Cost_Multiplayer>
+		<Terrain_Texture_Modifier_Square>false</Terrain_Texture_Modifier_Square>
+		<Obstacle_Proxy_Type> Bunker_Pad </Obstacle_Proxy_Type>
+		<Affiliation>Eriadu_Authority</Affiliation>
+		<Icon_Name>I_BUTTON_EV_BUNKER.tga</Icon_Name>
+		<Tactical_Buildable_Constructed> Eriadu_Field_Commando_Base </Tactical_Buildable_Constructed>
+
+	</GroundBuildable>
+
+	<SpecialStructure Name="Eriadu_Field_Commando_Base">
+		<Variant_Of_Existing_Type>Garrison_Bunker_Template</Variant_Of_Existing_Type>
+        <Icon_Name>I_BUTTON_EV_BUNKER.tga</Icon_Name>
+		<Text_ID>TEXT_FIELD_BASE_COMMANDO</Text_ID>
+        <Encyclopedia_Text>
+			TEXT_TOOLTIP_FIELD_BASE_COMMANDO
+			TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+			TEXT_TOOLTIP_FIELD_BASE_COMMANDO_ERIADU_HEALTH
+			TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+			TEXT_TOOLTIP_FIELD_BASE_COMMANDO_ERIADU1
+		</Encyclopedia_Text>
+		<Land_Model_Name>EB_TestBunker.alo</Land_Model_Name>
+		<Affiliation>Eriadu_Authority</Affiliation>
+		<Land_FOW_Reveal_Range>600.0</Land_FOW_Reveal_Range>
+		<Scale_Factor>1.0</Scale_Factor>
+        <Garrison_Radius>10</Garrison_Radius>
+		<Num_Garrison_Slots>0</Num_Garrison_Slots>	
+		<LandBehavior> SPAWN_SQUADRON, REVEAL, SELECTABLE, HIDE_WHEN_FOGGED, DAMAGE_TRACKING, EARTHQUAKE_TARGET, UNIT_AI</LandBehavior>
+
+		<Starting_Spawned_Units_Tech_0>Eriadu_Field_Commando, 1</Starting_Spawned_Units_Tech_0>
+		<Spawned_Squadron_Delay_Seconds>5</Spawned_Squadron_Delay_Seconds>
+		<Spawned_Squadron_Location_Bones>B_GARRISON_03</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>40.0</Spawned_Squadron_Location_Flyout_Distances>
+		<Spawn_Garrison_On_Load>True</Spawn_Garrison_On_Load>
+
+	</SpecialStructure>
+
+	<Marker Name="Eriadu_Field_Commando">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Galactic_Model_Name/>
+		<Space_Model_Name>W_LASER_INVISIBLE.ALO</Space_Model_Name>
+		<Land_Model_Name>W_LASER_INVISIBLE.ALO</Land_Model_Name>
+		<Behavior></Behavior>
+		<LandBehavior>SPAWN_SQUADRON</LandBehavior>
+		<Lua_Script>FieldBaseSpawner</Lua_Script>
+		<Is_Discardable>false</Is_Discardable>
+		<Affiliation>Neutral</Affiliation>
+		<Scale_Factor>0.1</Scale_Factor>
+
+		<Starting_Spawned_Units_Tech_0>Imperial_Army_Commando_Squad_Deployed, 4</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Imperial_Army_Commando_Squad_Deployed, 10</Reserve_Spawned_Units_Tech_0>
+        <Spawned_Squadron_Delay_Seconds>30.0</Spawned_Squadron_Delay_Seconds>
+
+	</Marker>
+	
+	
+	<!-- IR Scouting FB  -->
+	<GroundBuildable Name="UC_Empire_Field_Scout_Base">
+		<Variant_Of_Existing_Type>UC_Empire_Field_Military_Base</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_FIELD_BASE_SCOUT</Text_ID>
+		<Encyclopedia_Text>
+			TEXT_TOOLTIP_FIELD_BASE_SCOUT
+			TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+			TEXT_TOOLTIP_FIELD_BASE_SCOUT_EMPIRE_HEALTH
+			TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+			TEXT_TOOLTIP_FIELD_BASE_SCOUT_EMPIRE1
+		</Encyclopedia_Text>
+		<Tactical_Buildable_Constructed> Empire_Field_Scout_Base </Tactical_Buildable_Constructed>
+
+		<Tactical_Build_Cost_Multiplayer> 350 </Tactical_Build_Cost_Multiplayer>
+		<Terrain_Texture_Modifier_Square>false</Terrain_Texture_Modifier_Square>
+
+		<Obstacle_Proxy_Type> Bunker_Pad </Obstacle_Proxy_Type>
+		<Affiliation>Empire</Affiliation>
+		<Icon_Name>I_BUTTON_EV_BUNKER.tga</Icon_Name>
+
+	</GroundBuildable>
+	
+	<SpecialStructure Name="Empire_Field_Scout_Base">
+		<Variant_Of_Existing_Type>Garrison_Bunker_Template</Variant_Of_Existing_Type>
+		<Icon_Name>I_BUTTON_EV_BUNKER.tga</Icon_Name>
+		<Text_ID>TEXT_FIELD_BASE_SCOUT</Text_ID>
+		<Encyclopedia_Text>
+			TEXT_TOOLTIP_FIELD_BASE_SCOUT
+			TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+			TEXT_TOOLTIP_FIELD_BASE_SCOUT_EMPIRE_HEALTH
+			TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+			TEXT_TOOLTIP_FIELD_BASE_SCOUT_EMPIRE1
+		</Encyclopedia_Text>
+		<Land_Model_Name>EB_TestBunker.alo</Land_Model_Name>
+		<Affiliation>Empire</Affiliation>
+		<Land_FOW_Reveal_Range>600.0</Land_FOW_Reveal_Range>
+		<Scale_Factor>1.0</Scale_Factor>
+        <Garrison_Radius>10</Garrison_Radius>
+		
+		<Num_Garrison_Slots>0</Num_Garrison_Slots>	
+		<LandBehavior> SPAWN_SQUADRON, REVEAL, SELECTABLE, HIDE_WHEN_FOGGED, DAMAGE_TRACKING, EARTHQUAKE_TARGET, UNIT_AI</LandBehavior>
+
+		<Num_Garrison_Slots>0</Num_Garrison_Slots>
+		<Property_Flags>TacticalStructure </Property_Flags>
+		<Garrison_Category/>
+
+		<Starting_Spawned_Units_Tech_0>Empire_Field_Scout, 1</Starting_Spawned_Units_Tech_0>
+        <!--<Starting_Spawned_Units_Tech_0>Field_Pad_Basic, 1</Starting_Spawned_Units_Tech_0>-->
+
+		<Spawned_Squadron_Delay_Seconds>5</Spawned_Squadron_Delay_Seconds>
+		<Spawned_Squadron_Location_Bones>B_GARRISON_03</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>40.0</Spawned_Squadron_Location_Flyout_Distances>
+		<Spawn_Garrison_On_Load>True</Spawn_Garrison_On_Load>
+
+	</SpecialStructure>
+	
+	<Marker Name="Empire_Field_Scout">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Galactic_Model_Name/>
+		<Space_Model_Name>W_LASER_INVISIBLE.ALO</Space_Model_Name>
+		<Land_Model_Name>W_LASER_INVISIBLE.ALO</Land_Model_Name>
+		<Behavior></Behavior>
+		<LandBehavior>SPAWN_SQUADRON</LandBehavior>
+		<Lua_Script>FieldBaseSpawner</Lua_Script>
+		<Is_Discardable>false</Is_Discardable>
+		<Affiliation>Neutral</Affiliation>
+		<Scale_Factor>0.1</Scale_Factor>
+		
+		<Starting_Spawned_Units_Tech_0>Imperial_Jumptrooper_Squad, 3</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Imperial_Jumptrooper_Squad, 9</Reserve_Spawned_Units_Tech_0>
+        <Spawned_Squadron_Delay_Seconds>30.0</Spawned_Squadron_Delay_Seconds>
+
+	</Marker>
+	
+	<!-- GM Scouting FB  -->
+	<GroundBuildable Name="UC_Teradoc_Field_Scout_Base">
+		<Variant_Of_Existing_Type>UC_Empire_Field_Military_Base</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_FIELD_BASE_SCOUT</Text_ID>
+		<Encyclopedia_Text>
+			TEXT_TOOLTIP_FIELD_BASE_SCOUT
+			TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+			TEXT_TOOLTIP_FIELD_BASE_SCOUT_TERADOC_HEALTH
+			TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+			TEXT_TOOLTIP_FIELD_BASE_SCOUT_TERADOC1
+		</Encyclopedia_Text>
+		<Tactical_Buildable_Constructed> Teradoc_Field_Scout_Base </Tactical_Buildable_Constructed>
+
+		<Tactical_Build_Cost_Multiplayer> 350 </Tactical_Build_Cost_Multiplayer>
+		<Terrain_Texture_Modifier_Square>false</Terrain_Texture_Modifier_Square>
+
+		<Obstacle_Proxy_Type> Bunker_Pad </Obstacle_Proxy_Type>
+		<Affiliation>Greater_Maldrood</Affiliation>
+		<Icon_Name>I_BUTTON_EV_BUNKER.tga</Icon_Name>
+
+	</GroundBuildable>
+	
+	<SpecialStructure Name="Teradoc_Field_Scout_Base">
+		<Variant_Of_Existing_Type>Garrison_Bunker_Template</Variant_Of_Existing_Type>
+		<Icon_Name>I_BUTTON_EV_BUNKER.tga</Icon_Name>
+		<Text_ID>TEXT_FIELD_BASE_SCOUT</Text_ID>
+		<Encyclopedia_Text>
+			TEXT_TOOLTIP_FIELD_BASE_SCOUT
+			TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+			TEXT_TOOLTIP_FIELD_BASE_SCOUT_TERADOC_HEALTH
+			TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+			TEXT_TOOLTIP_FIELD_BASE_SCOUT_TERADOC1
+		</Encyclopedia_Text>
+		<Land_Model_Name>EB_TestBunker.alo</Land_Model_Name>
+		<Affiliation>Empire</Affiliation>
+		<Land_FOW_Reveal_Range>600.0</Land_FOW_Reveal_Range>
+		<Scale_Factor>1.0</Scale_Factor>
+        <Garrison_Radius>10</Garrison_Radius>
+			
+		<LandBehavior> SPAWN_SQUADRON, REVEAL, SELECTABLE, HIDE_WHEN_FOGGED, DAMAGE_TRACKING, EARTHQUAKE_TARGET, UNIT_AI</LandBehavior>
+		<Num_Garrison_Slots>0</Num_Garrison_Slots>
+		<Property_Flags>TacticalStructure </Property_Flags>
+		<Garrison_Category/>
+
+		<Starting_Spawned_Units_Tech_0>Teradoc_Field_Scout, 1</Starting_Spawned_Units_Tech_0>
+        <!--<Starting_Spawned_Units_Tech_0>Field_Pad_Basic, 1</Starting_Spawned_Units_Tech_0>-->
+
+		<Spawned_Squadron_Delay_Seconds>5</Spawned_Squadron_Delay_Seconds>
+		<Spawned_Squadron_Location_Bones>B_GARRISON_03</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>40.0</Spawned_Squadron_Location_Flyout_Distances>
+		<Spawn_Garrison_On_Load>True</Spawn_Garrison_On_Load>
+
+	</SpecialStructure>
+	
+	<Marker Name="Teradoc_Field_Scout">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Galactic_Model_Name/>
+		<Space_Model_Name>W_LASER_INVISIBLE.ALO</Space_Model_Name>
+		<Land_Model_Name>W_LASER_INVISIBLE.ALO</Land_Model_Name>
+		<Behavior></Behavior>
+		<LandBehavior>SPAWN_SQUADRON</LandBehavior>
+		<Lua_Script>FieldBaseSpawner</Lua_Script>
+		<Is_Discardable>false</Is_Discardable>
+		<Affiliation>Neutral</Affiliation>
+		<Scale_Factor>0.1</Scale_Factor>
+		
+		<Starting_Spawned_Units_Tech_0>Imperial_Jumptrooper_Squad, 3</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Imperial_Jumptrooper_Squad, 9</Reserve_Spawned_Units_Tech_0>
+        <Spawned_Squadron_Delay_Seconds>30.0</Spawned_Squadron_Delay_Seconds>
+
+	</Marker>
+	
+	
+	
+	<!-- ******************* Hapes FBs ******************** -->
+	<!-- Not categorized like other ones -->
+	
+	
+	<!-- Hapes Galney FB  -->
+	<GroundBuildable Name="UC_Hapes_Field_Galney_Base">
+        <Variant_Of_Existing_Type>UC_Empire_Field_Military_Base</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_FIELD_BASE_GALNEY</Text_ID>
+		<Land_Model_Name> EB_TestBunker.alo </Land_Model_Name>
+		<Tactical_Buildable_Constructed> Hapes_Field_Galney_Base </Tactical_Buildable_Constructed>
+		<Obstacle_Proxy_Type> Bunker_Pad </Obstacle_Proxy_Type>
+		<Affiliation>Hapes_Consortium</Affiliation>
+		<Icon_Name>I_BUTTON_HAPES_GALNEY.TGA</Icon_Name>
+
+		<SFXEvent_Build_Started>EHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>EHD_Construction_Complete</SFXEvent_Build_Complete>
+		<Death_SFXEvent_Start_Die>Unit_Generic_Building_Death_SFX</Death_SFXEvent_Start_Die>
+		<SFXEvent_Select>Structure_Mining_Select_SFX</SFXEvent_Select>
+
+		<Encyclopedia_Text>
+			TEXT_TOOLTIP_FIELD_BASE_GALNEY
+			TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+			TEXT_TOOLTIP_FIELD_BASE_HAPAN_HEALTH
+			TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+			TEXT_TOOLTIP_FIELD_BASE_GALNEY1
+		</Encyclopedia_Text>
+		<MP_Encyclopedia_Text> TEXT_ENCYCLOPEDIA_BUNKER </MP_Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+	</GroundBuildable>
+	
+	<SpecialStructure Name="Hapes_Field_Galney_Base">
+		<Variant_Of_Existing_Type>Garrison_Bunker_Template</Variant_Of_Existing_Type>
+		<Icon_Name>I_BUTTON_HAPES_GALNEY.TGA</Icon_Name>
+		<Text_ID>TEXT_FIELD_BASE_GALNEY</Text_ID>
+		<Encyclopedia_Text>
+			TEXT_TOOLTIP_FIELD_BASE_GALNEY
+			TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+			TEXT_TOOLTIP_FIELD_BASE_HAPAN_HEALTH
+			TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+			TEXT_TOOLTIP_FIELD_BASE_GALNEY1
+		</Encyclopedia_Text>
+		<Land_Model_Name>EB_TestBunker.alo</Land_Model_Name>
+		<Affiliation>Hapes_Consortium</Affiliation>
+		<Scale_Factor>1.0</Scale_Factor>
+        <Garrison_Radius>10</Garrison_Radius>
+	
+		<Num_Garrison_Slots>0</Num_Garrison_Slots>	
+		<LandBehavior> SPAWN_SQUADRON, REVEAL, SELECTABLE, HIDE_WHEN_FOGGED, DAMAGE_TRACKING, EARTHQUAKE_TARGET, UNIT_AI</LandBehavior>
+
+		<Starting_Spawned_Units_Tech_0>Hapes_Field_Galney, 1</Starting_Spawned_Units_Tech_0>
+
+		<Spawned_Squadron_Delay_Seconds>5</Spawned_Squadron_Delay_Seconds>
+		<Spawned_Squadron_Location_Bones>B_GARRISON_03</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>40.0</Spawned_Squadron_Location_Flyout_Distances>
+		<Spawn_Garrison_On_Load>True</Spawn_Garrison_On_Load>
+	</SpecialStructure>
+
+	<Marker Name="Hapes_Field_Galney">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Galactic_Model_Name/>
+		<Space_Model_Name>W_LASER_INVISIBLE.ALO</Space_Model_Name>
+		<Land_Model_Name>W_LASER_INVISIBLE.ALO</Land_Model_Name>
+		<Behavior></Behavior>
+		<LandBehavior>SPAWN_SQUADRON</LandBehavior>
+		<Lua_Script>FieldBaseSpawner</Lua_Script>
+		<Is_Discardable>false</Is_Discardable>
+		<Affiliation>Neutral</Affiliation>
+		<Scale_Factor>0.1</Scale_Factor>
+
+		<Starting_Spawned_Units_Tech_0>Galney_Infantry_Squad_Deployed, 4</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Galney_Infantry_Squad_Deployed, 10</Reserve_Spawned_Units_Tech_0>
+        <Spawned_Squadron_Delay_Seconds>30.0</Spawned_Squadron_Delay_Seconds>
+
+	</Marker>
+	
+	<!-- Hapes Maluri FB  -->
+	<GroundBuildable Name="UC_Hapes_Field_Maluri_Base">
+        <Variant_Of_Existing_Type>UC_Empire_Field_Military_Base</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_FIELD_BASE_MALURI</Text_ID>
+		<Land_Model_Name> EB_TestBunker.alo </Land_Model_Name>
+		<Tactical_Buildable_Constructed> Hapes_Field_Maluri_Base </Tactical_Buildable_Constructed>
+		<Obstacle_Proxy_Type> Bunker_Pad </Obstacle_Proxy_Type>
+		<Affiliation>Hapes_Consortium</Affiliation>
+		<Icon_Name>I_BUTTON_HAPES_MALURI.TGA</Icon_Name>
+
+		<SFXEvent_Build_Started>EHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>EHD_Construction_Complete</SFXEvent_Build_Complete>
+		<Death_SFXEvent_Start_Die>Unit_Generic_Building_Death_SFX</Death_SFXEvent_Start_Die>
+		<SFXEvent_Select>Structure_Mining_Select_SFX</SFXEvent_Select>
+
+		<Encyclopedia_Text>
+			TEXT_TOOLTIP_FIELD_BASE_MALURI
+			TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+			TEXT_TOOLTIP_FIELD_BASE_HAPAN_HEALTH
+			TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+			TEXT_TOOLTIP_FIELD_BASE_MALURI1
+			TEXT_TOOLTIP_FIELD_BASE_MALURI2
+		</Encyclopedia_Text>
+		<MP_Encyclopedia_Text> TEXT_ENCYCLOPEDIA_BUNKER </MP_Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+	</GroundBuildable>
+	
+	<SpecialStructure Name="Hapes_Field_Maluri_Base">
+		<Variant_Of_Existing_Type>Garrison_Bunker_Template</Variant_Of_Existing_Type>
+		<Icon_Name>I_BUTTON_HAPES_MALURI.TGA</Icon_Name>
+		<Text_ID>TEXT_FIELD_BASE_MALURI</Text_ID>
+		<Encyclopedia_Text>
+			TEXT_TOOLTIP_FIELD_BASE_MALURI
+			TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+			TEXT_TOOLTIP_FIELD_BASE_HAPAN_HEALTH
+			TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+			TEXT_TOOLTIP_FIELD_BASE_MALURI1
+			TEXT_TOOLTIP_FIELD_BASE_MALURI2
+		</Encyclopedia_Text>
+		<Land_Model_Name>EB_TestBunker.alo</Land_Model_Name>
+		<Affiliation>Hapes_Consortium</Affiliation>
+		<Scale_Factor>1.0</Scale_Factor>
+        <Garrison_Radius>10</Garrison_Radius>
+
+		<Num_Garrison_Slots>0</Num_Garrison_Slots>	
+		<LandBehavior> SPAWN_SQUADRON, REVEAL, SELECTABLE, HIDE_WHEN_FOGGED, DAMAGE_TRACKING, EARTHQUAKE_TARGET, UNIT_AI</LandBehavior>
+
+		<Starting_Spawned_Units_Tech_0>Hapes_Field_Maluri, 1</Starting_Spawned_Units_Tech_0>
+
+		<Spawned_Squadron_Delay_Seconds>5</Spawned_Squadron_Delay_Seconds>
+		<Spawned_Squadron_Location_Bones>B_GARRISON_03</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>40.0</Spawned_Squadron_Location_Flyout_Distances>
+		<Spawn_Garrison_On_Load>True</Spawn_Garrison_On_Load>
+	</SpecialStructure>
+
+	<Marker Name="Hapes_Field_Maluri">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Galactic_Model_Name/>
+		<Space_Model_Name>W_LASER_INVISIBLE.ALO</Space_Model_Name>
+		<Land_Model_Name>W_LASER_INVISIBLE.ALO</Land_Model_Name>
+		<Behavior></Behavior>
+		<LandBehavior>SPAWN_SQUADRON</LandBehavior>
+		<Lua_Script>FieldBaseSpawner</Lua_Script>
+		<Is_Discardable>false</Is_Discardable>
+		<Affiliation>Neutral</Affiliation>
+		<Scale_Factor>0.1</Scale_Factor>
+
+		<Starting_Spawned_Units_Tech_0>Maluri_Infantry_Escort_Squad_Deployed, 1</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Maluri_Infantry_Support_Squad_Deployed, 2</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Maluri_Infantry_Escort_Squad_Deployed, 10</Reserve_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Maluri_Infantry_Support_Squad_Deployed, 10</Reserve_Spawned_Units_Tech_0>
+        <Spawned_Squadron_Delay_Seconds>30.0</Spawned_Squadron_Delay_Seconds>
+
+	</Marker>
+	
+	<!-- Hapes Requud FB  -->
+	<GroundBuildable Name="UC_Hapes_Field_Requud_Base">
+        <Variant_Of_Existing_Type>UC_Empire_Field_Military_Base</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_FIELD_BASE_REQUUD</Text_ID>
+		<Land_Model_Name> EB_TestBunker.alo </Land_Model_Name>
+		<Tactical_Buildable_Constructed> Hapes_Field_Requud_Base </Tactical_Buildable_Constructed>
+		<Obstacle_Proxy_Type> Bunker_Pad </Obstacle_Proxy_Type>
+		<Affiliation>Hapes_Consortium</Affiliation>
+		<Icon_Name>I_BUTTON_HAPES_REQUUD.TGA</Icon_Name>
+
+		<SFXEvent_Build_Started>EHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>EHD_Construction_Complete</SFXEvent_Build_Complete>
+		<Death_SFXEvent_Start_Die>Unit_Generic_Building_Death_SFX</Death_SFXEvent_Start_Die>
+		<SFXEvent_Select>Structure_Mining_Select_SFX</SFXEvent_Select>
+
+		<Encyclopedia_Text>
+			TEXT_TOOLTIP_FIELD_BASE_REQUUD
+			TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+			TEXT_TOOLTIP_FIELD_BASE_HAPAN_HEALTH
+			TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+			TEXT_TOOLTIP_FIELD_BASE_REQUUD1
+		</Encyclopedia_Text>
+		<MP_Encyclopedia_Text> TEXT_ENCYCLOPEDIA_BUNKER </MP_Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+	</GroundBuildable>
+	
+	<SpecialStructure Name="Hapes_Field_Requud_Base">
+		<Variant_Of_Existing_Type>Garrison_Bunker_Template</Variant_Of_Existing_Type>
+		<Icon_Name>I_BUTTON_HAPES_REQUUD.TGA</Icon_Name>
+		<Text_ID>TEXT_FIELD_BASE_REQUUD</Text_ID>
+		<Encyclopedia_Text>
+			TEXT_TOOLTIP_FIELD_BASE_REQUUD
+			TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+			TEXT_TOOLTIP_FIELD_BASE_HAPAN_HEALTH
+			TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+			TEXT_TOOLTIP_FIELD_BASE_REQUUD1
+		</Encyclopedia_Text>
+		<Land_Model_Name>EB_TestBunker.alo</Land_Model_Name>
+		<Affiliation>Hapes_Consortium</Affiliation>
+		<Scale_Factor>1.0</Scale_Factor>
+        <Garrison_Radius>10</Garrison_Radius>
+
+		<Num_Garrison_Slots>0</Num_Garrison_Slots>	
+		<LandBehavior> SPAWN_SQUADRON, REVEAL, SELECTABLE, HIDE_WHEN_FOGGED, DAMAGE_TRACKING, EARTHQUAKE_TARGET, UNIT_AI</LandBehavior>
+
+		<Starting_Spawned_Units_Tech_0>Hapes_Field_Requud, 1</Starting_Spawned_Units_Tech_0>
+
+		<Spawned_Squadron_Delay_Seconds>5</Spawned_Squadron_Delay_Seconds>
+		<Spawned_Squadron_Location_Bones>B_GARRISON_03</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>40.0</Spawned_Squadron_Location_Flyout_Distances>
+		<Spawn_Garrison_On_Load>True</Spawn_Garrison_On_Load>
+	</SpecialStructure>
+
+	<Marker Name="Hapes_Field_Requud">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Galactic_Model_Name/>
+		<Space_Model_Name>W_LASER_INVISIBLE.ALO</Space_Model_Name>
+		<Land_Model_Name>W_LASER_INVISIBLE.ALO</Land_Model_Name>
+		<Behavior></Behavior>
+		<LandBehavior>SPAWN_SQUADRON</LandBehavior>
+		<Lua_Script>FieldBaseSpawner</Lua_Script>
+		<Is_Discardable>false</Is_Discardable>
+		<Affiliation>Neutral</Affiliation>
+		<Scale_Factor>0.1</Scale_Factor>
+
+		<Starting_Spawned_Units_Tech_0>Requud_Infantry_Squad_Deployed, 4</Starting_Spawned_Units_Tech_0>
+        <Reserve_Spawned_Units_Tech_0>Requud_Infantry_Squad_Deployed, 10</Reserve_Spawned_Units_Tech_0>
+        <Spawned_Squadron_Delay_Seconds>30.0</Spawned_Squadron_Delay_Seconds>
+
+	</Marker>
+	
+	
+</Conquest_Bases>

@@ -1,0 +1,965 @@
+<?xml version="1.0"?>
+<Campaigns>
+
+
+
+
+
+    
+<!-- ******************************************************************** -->
+<!-- ******************* SANDBOX CAMPAIGN "Thrawn Campaign" ************* -->
+<!-- ******************************************************************** -->
+
+
+
+
+	
+
+	<Campaign Name="Sandbox_T_Empire">
+
+		<Campaign_Set> Sandbox_Thrawn </Campaign_Set>
+		<Sort_Order>218</Sort_Order>
+
+        <Text_ID> TEXT_CAMPAIGN_SINGLE_THRAWN </Text_ID>
+        <Description_Text> TEXT_CAMPAIGN_SINGLE_DESCRIPTION_THRAWN </Description_Text>
+
+        <Camera_Shift_X> 40.0 </Camera_Shift_X>
+        <Camera_Shift_Y> 0.0 </Camera_Shift_Y>
+        <Camera_Distance> 1200.0 </Camera_Distance>
+
+        <Locations> 
+				Galaxy_Core_Art_Model, 
+				Abregado_Rae,
+				Anx_Minor,
+				Bastion,
+				Bilbringi,
+				Bimmisaari,
+				Borosk,
+				Bothawui,
+				Bpfassh,
+				Carida,
+				Cejansij,
+				Chrondre,
+				Ciutric,
+				Commenor,
+				Corellia,
+				Corulag,
+				Coruscant,
+				Denon,
+				Dolomar,
+				Dubrillion,
+				Duro,
+				Endor,
+				Eriadu,
+				Farrfin,
+				Filve,
+				Fondor,
+				Garqi,
+				Gravlex_Med,
+				Honoghr,
+				Jomark,
+				Kashyyyk,
+				Ketaris,
+				Kothlis,
+				Kuat,
+				Ord_Mantell,
+				Mon_Calamari,
+				Morishim,
+				Mrisst,
+				Muunilinst,
+				Myrkr,
+				New_Cov,
+				Nkllon,
+				Obroa_Skai,
+				Pakrik_Minor,
+				Pantolomin,
+				Ord_Pardron,
+				Poderis,
+				Qat_Chrystac,
+				Sluis_Van,
+				Svivren,
+				Ord_Trasi,
+				Ukio,
+				Wayland,
+				Wistril,
+				Woostri,
+				Yaga_Minor,
+				Katana_Space
+			</Locations>
+
+        <Trade_Routes> 
+			Abregado_Rae_Fondor,
+			Abregado_Rae_Pakrik_Minor,
+			Anx_Minor_Gravlex_Med,
+			Anx_Minor_Ord_Trasi,
+			Bastion_Dubrillion,
+			Bastion_Muunilinst,
+			Bilbringi_Mrisst,
+			Bilbringi_Wistril,
+			Bimmisaari_Cejansij,
+			Bimmisaari_Jomark,
+			Borosk_Morishim,
+			Borosk_Wistril,
+			Borosk_Yaga_Minor,
+			Bothawui_Denon,
+			Bothawui_Kothlis,
+			Bpfassh_Sluis_Van,
+			Carida_Corulag,
+			Carida_Kuat,
+			Carida_Poderis,
+			Cejansij_Kashyyyk,
+			Chrondre_Filve,
+			Chrondre_Ord_Pardron,
+			Chrondre_Svivren,
+			Ciutric_Gravlex_Med,
+			Ciutric_Ketaris,
+			Ciutric_Wayland,
+			Commenor_Corellia,
+			Commenor_Kashyyyk,
+			Corellia_Duro,
+			Corellia_Fondor,
+			Corellia_Kuat,
+			Corulag_Coruscant,
+			Coruscant_Dolomar,
+			Coruscant_Farrfin,
+			Coruscant_Kuat,
+			Coruscant_Pakrik_Minor,
+			Denon_Duro,
+			Denon_New_Cov,
+			Dolomar_Farrfin,
+			Dolomar_Poderis,
+			Dubrillion_Gravlex_Med,
+			Endor_Qat_Chrystac,
+			Eriadu_Sluis_Van,
+			Eriadu_Woostri,
+			Farrfin_Pantolomin,
+			Filve_New_Cov,
+			Filve_Ord_Pardron,
+			Fondor_Nkllon,
+			Garqi_Ketaris,
+			Garqi_Ord_Trasi,
+			Garqi_Wistril,
+			Honoghr_Jomark,
+			Jomark_Mon_Calamari,
+			Jomark_Myrkr,
+			Ketaris_Ord_Mantell,
+			Kothlis_Ukio,
+			Ord_Mantell_Wistril,
+			Morishim_Ord_Trasi,
+			Morishim_Yaga_Minor,
+			Muunilinst_Yaga_Minor,
+			Mrisst_Pakrik_Minor,
+			Mrisst_Pantolomin,
+			Myrkr_Obroa_Skai,
+			Myrkr_Wayland,
+			Nkllon_Qat_Chrystac,
+			Nkllon_Woostri,
+			Obroa_Skai_Poderis,
+			Ord_Pardron_Ukio,
+			Sluis_Van_Svivren,
+			Katana_Space_Pakrik_Minor
+		</Trade_Routes>
+		
+        <Home_Location> Rebel, Coruscant </Home_Location>
+        <Home_Location> Empire, Bastion </Home_Location>
+        
+	
+
+        <Starting_Active_Player> Empire </Starting_Active_Player>
+		
+		
+	<Rebel_Story_Name>Conquests\Thrawn\Story_Plots_Sandbox_TC_Rebel_AI.xml</Rebel_Story_Name>
+    <Empire_Story_Name>Conquests\Thrawn\Story_Plots_Sandbox_TC_Empire.xml</Empire_Story_Name>
+			
+		<AI_Player_Control> Rebel, GenericAI </AI_Player_Control>
+		<AI_Player_Control> Empire, SandboxHuman </AI_Player_Control>
+		
+		<AI_Player_Control> Pentastar, None</AI_Player_Control>
+		<AI_Player_Control> EmpireoftheHand, None </AI_Player_Control>
+		<AI_Player_Control> Zsinj_Empire, None </AI_Player_Control>
+		
+		<AI_Player_Control> Hapes_Consortium, None </AI_Player_Control>
+		<AI_Player_Control> Greater_Maldrood, None </AI_Player_Control>      
+		<AI_Player_Control> Eriadu_Authority, None </AI_Player_Control>				
+		<AI_Player_Control> Corporate_Sector, None </AI_Player_Control>		
+		<AI_Player_Control> Warlords, None </AI_Player_Control>			
+
+		<Markup_Filename>Empire, DefaultGalacticHints </Markup_Filename>
+		<Markup_Filename>Rebel, DefaultGalacticHints </Markup_Filename>
+		<Markup_Filename>EmpireoftheHand, DefaultGalacticHints </Markup_Filename>
+		<Markup_Filename>Zsinj_Empire, DefaultGalacticHints </Markup_Filename>
+		<Markup_Filename>Greater_Maldrood, DefaultMaldroodHints </Markup_Filename>			
+		<Markup_Filename>Pentastar, DefaultGalacticHints </Markup_Filename>
+		<Markup_Filename>Eriadu_Authority, DefaultEriaduHints </Markup_Filename>				
+		<Markup_Filename>Corporate_Sector, DefaultGalacticHints </Markup_Filename>		
+		<Markup_Filename>Warlords, DefaultGalacticHints </Markup_Filename>			
+		<Markup_Filename>Hapes_Consortium, DefaultGalacticHints </Markup_Filename>
+		
+
+		
+		<Supports_Custom_Settings>False</Supports_Custom_Settings>
+		<Show_Completed_Tab>True</Show_Completed_Tab>
+
+		<!-- Win Conditions -->
+
+		<Human_Victory_Conditions>
+				Galactic_All_Planets_Controlled
+		</Human_Victory_Conditions>
+
+		<AI_Victory_Conditions>
+				Galactic_All_Planets_Controlled
+		</AI_Victory_Conditions>
+		
+		<!-- Katana Space Forces -->
+		<Starting_Forces> Warlords, Katana_Space, Katana_Dreadnaught_Rebel </Starting_Forces>
+		<Starting_Forces> Warlords, Katana_Space, Katana_Dreadnaught_Rebel </Starting_Forces>
+		<Starting_Forces> Warlords, Katana_Space, Katana_Dreadnaught_Rebel </Starting_Forces>
+		<Starting_Forces> Warlords, Katana_Space, Katana_Dreadnaught_Rebel </Starting_Forces>
+		<Starting_Forces> Warlords, Katana_Space, Katana_Dreadnaught_Rebel </Starting_Forces>
+		<Starting_Forces> Warlords, Katana_Space, Katana_Dreadnaught_Rebel </Starting_Forces>
+		<Starting_Forces> Warlords, Katana_Space, Katana_Dreadnaught_Rebel </Starting_Forces>
+		<Starting_Forces> Warlords, Katana_Space, Katana_Dreadnaught_Rebel </Starting_Forces>
+		<Starting_Forces> Warlords, Katana_Space, Katana_Dreadnaught_Rebel </Starting_Forces>
+		<Starting_Forces> Warlords, Katana_Space, Katana_Dreadnaught_Rebel </Starting_Forces>
+		<Starting_Forces> Warlords, Katana_Space, Katana_Dreadnaught_Rebel </Starting_Forces>
+		<Starting_Forces> Warlords, Katana_Space, Katana_Dreadnaught_Rebel </Starting_Forces>
+		<Starting_Forces> Warlords, Katana_Space, Katana_Dreadnaught_Rebel </Starting_Forces>
+		<Starting_Forces> Warlords, Katana_Space, Katana_Dreadnaught_Rebel </Starting_Forces>
+		<Starting_Forces> Warlords, Katana_Space, Katana_Dreadnaught_Rebel </Starting_Forces>
+		<Starting_Forces> Warlords, Katana_Space, Katana_Dreadnaught_Rebel </Starting_Forces>
+		<Starting_Forces> Warlords, Katana_Space, Katana_Dreadnaught_Rebel </Starting_Forces>
+		<Starting_Forces> Warlords, Katana_Space, Katana_Dreadnaught_Rebel </Starting_Forces>
+		<Starting_Forces> Warlords, Katana_Space, Katana_Dreadnaught_Rebel </Starting_Forces>
+		<Starting_Forces> Warlords, Katana_Space, Katana_Dreadnaught_Rebel </Starting_Forces>
+		<Starting_Forces> Warlords, Katana_Space, Katana_Dreadnaught_Rebel </Starting_Forces>
+		<Starting_Forces> Warlords, Katana_Space, Katana_Dreadnaught_Rebel </Starting_Forces>
+		<Starting_Forces> Warlords, Katana_Space, Katana_Dreadnaught_Rebel </Starting_Forces>
+		<Starting_Forces> Warlords, Katana_Space, Katana_Dreadnaught_Rebel </Starting_Forces>
+		<Starting_Forces> Warlords, Katana_Space, Katana_Dreadnaught_Rebel </Starting_Forces>
+		<Starting_Forces> Warlords, Katana_Space, Katana_Dreadnaught_Rebel </Starting_Forces>
+		<Starting_Forces> Warlords, Katana_Space, Katana_Dreadnaught_Rebel </Starting_Forces>
+		
+     
+		<!-- Rebel Starting Forces -->
+
+		<Starting_Credits> Rebel,  8000 </Starting_Credits>
+		<Starting_Tech_Level> Rebel, 0 </Starting_Tech_Level>
+		<Max_Tech_Level> Rebel, 0 </Max_Tech_Level>
+		
+	
+		
+	<!-- Kothlis Space Forces -->		
+		<Starting_Forces> Rebel, Kothlis, Generate_Force </Starting_Forces>
+		
+		<!-- Bothawui Space Forces -->
+		<Starting_Forces> Rebel, Bothawui, Generate_Force </Starting_Forces>
+		
+		<!-- Dolomar Space Forces -->
+		<Starting_Forces> Rebel, Dolomar, Generate_Force </Starting_Forces>
+
+		<!-- Ukio Space Forces -->
+		<Starting_Forces> Rebel, Ukio, Generate_Force </Starting_Forces>
+		<!-- Abregado_Rae Space Forces -->
+		<Starting_Forces> Rebel, Abregado_Rae, Generate_Force </Starting_Forces>
+		
+		<!-- Chrondre Space Forces -->
+		<Starting_Forces> Rebel, Chrondre, Generate_Force </Starting_Forces>
+		
+		<!-- Ord_Pardron Space Forces -->
+		<Starting_Forces> Rebel, Ord_Pardron, Generate_Force </Starting_Forces>
+
+		<!-- Sluis_Van Space Forces -->
+		<Starting_Forces> Rebel, Sluis_Van, Generate_Force </Starting_Forces>
+
+		<!-- Fondor Space Forces -->
+		<Starting_Forces> Rebel, Fondor, Generate_Force </Starting_Forces>
+
+		<!-- Kuat Space Forces -->
+		<Starting_Forces> Rebel, Kuat, Generate_Force </Starting_Forces>
+
+		<!-- Mon_Calamari Space Forces -->
+		<Starting_Forces> Rebel, Mon_Calamari, Generate_Force </Starting_Forces>
+		
+		<!-- Denon Space Forces -->
+		<Starting_Forces> Rebel, Denon, Generate_Force </Starting_Forces>
+
+		<!-- Coruscant Space Forces -->
+		<Starting_Forces> Rebel, Coruscant, NewRepublic_Star_Base_4 </Starting_Forces>
+		<Starting_Forces> Rebel, Coruscant, NewRepublic_Shipyard_Level_Two</Starting_Forces>
+		<Starting_Forces> Rebel, Coruscant, Corellian_Corvette </Starting_Forces>
+		<Starting_Forces> Rebel, Coruscant, Corellian_Corvette </Starting_Forces>
+		<Starting_Forces> Rebel, Coruscant, Nebulon_B_Frigate </Starting_Forces>		
+		<Starting_Forces> Rebel, Coruscant, Alliance_Assault_Frigate </Starting_Forces>
+		<Starting_Forces> Rebel, Coruscant, Alliance_Assault_Frigate_II </Starting_Forces>
+		<Starting_Forces> Rebel, Coruscant, Calamari_Cruiser </Starting_Forces>
+		<Starting_Forces> Rebel, Coruscant, MC80B </Starting_Forces>
+		<Starting_Forces> Rebel, Coruscant, Quasar </Starting_Forces>
+		<!-- Coruscant Land Forces -->
+		<Starting_Forces> Rebel, Coruscant, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Coruscant, R_Ground_Barracks </Starting_Forces>
+		<Starting_Forces> Rebel, Coruscant, R_Ground_Light_Vehicle_Factory </Starting_Forces>
+		<Starting_Forces> Rebel, Coruscant, NewRep_Senate </Starting_Forces>
+		<Starting_Forces> Rebel, Coruscant, Rebel_Infantry_Squad </Starting_Forces>
+		<Starting_Forces> Rebel, Coruscant, Rebel_Infantry_Squad </Starting_Forces>
+		<Starting_Forces> Rebel, Coruscant, Rebel_SRV1_Company </Starting_Forces>
+		<Starting_Forces> Rebel, Coruscant, MAS_2xB_Company </Starting_Forces>
+		<Starting_Forces> Rebel, Coruscant, Rebel_T1B_Company </Starting_Forces>
+		<Starting_Forces> Rebel, Coruscant, Rebel_T3B_Company </Starting_Forces>
+		<Starting_Forces> Rebel, Coruscant, Rebel_T4B_Company </Starting_Forces>
+
+		<!-- Kashyyyk Space Forces -->
+		<Starting_Forces> Rebel, Kashyyyk, Generate_Force </Starting_Forces>
+	
+		<!-- Endor Space Forces -->
+		<Starting_Forces> Rebel, Endor, Generate_Force </Starting_Forces>
+
+
+		<!-- Ord_Mantell Space Forces -->
+		<Starting_Forces> Rebel, Ord_Mantell, Generate_Force </Starting_Forces>
+
+		<!-- Filve Space Forces -->
+		<Starting_Forces> Rebel, Filve, Generate_Force </Starting_Forces>
+
+		<!-- Nkllon Space Forces -->
+		<Starting_Forces> Rebel, Nkllon, Generate_Force </Starting_Forces>
+
+		
+		<!-- Commenor Space Forces -->
+		<Starting_Forces> Rebel, Commenor, Generate_Force </Starting_Forces>
+		<!-- Qat_Chrystac Space Forces -->
+		<Starting_Forces> Empire, Qat_Chrystac, Generate_Force </Starting_Forces>
+
+
+		<!-- Pantolomin Space Forces -->
+		<Starting_Forces> Warlords, Pantolomin, Corellian_Corvette </Starting_Forces>
+		<Starting_Forces> Warlords, Pantolomin, Corellian_Corvette </Starting_Forces>
+		<Starting_Forces> Warlords, Pantolomin, Neutron_Star </Starting_Forces>
+		<Starting_Forces> Warlords, Pantolomin, Generic_Gladiator </Starting_Forces>
+		<!-- Pantolomin Land Forces -->
+
+		
+		<!-- Mrisst Space Forces -->
+		<Starting_Forces> Rebel, Mrisst, Generate_Force </Starting_Forces>
+		
+		<!-- Bimmisaari Space Forces -->
+		<Starting_Forces> Rebel, Bimmisaari, Generate_Force </Starting_Forces>
+
+		<!-- Woostri Space Forces -->
+		<Starting_Forces> Rebel, Woostri, Generate_Force </Starting_Forces>
+		
+		<!-- Farrfin Space Forces -->
+		<Starting_Forces> Rebel, Farrfin, Generate_Force </Starting_Forces>
+		
+		<!-- Cejansij Space Forces -->
+		<Starting_Forces> Rebel, Cejansij, Generate_Force </Starting_Forces>
+
+		<!-- Ketaris Space Forces -->
+		<Starting_Forces> Rebel, Ketaris, Generate_Force </Starting_Forces>
+		
+		<!-- New_Cov Space Forces -->
+		<Starting_Forces> Rebel, New_Cov, Generate_Force </Starting_Forces>
+	
+		
+		<Starting_Forces> Rebel, Obroa_Skai, Alliance_Assault_Frigate </Starting_Forces>
+		<Starting_Forces> Rebel, Obroa_Skai, Alliance_Assault_Frigate </Starting_Forces>
+		<Starting_Forces> Rebel, Obroa_Skai, Alliance_Assault_Frigate </Starting_Forces>
+		<Starting_Forces> Rebel, Obroa_Skai, Alliance_Assault_Frigate </Starting_Forces>
+		<!-- Obroa Skai Forces -->
+		<Starting_Forces> Warlords, Obroa_Skai, PDF_Soldier_Team </Starting_Forces>
+		<Starting_Forces> Warlords, Obroa_Skai, PDF_Soldier_Team </Starting_Forces>
+		<Starting_Forces> Warlords, Obroa_Skai, Military_Soldier_Team </Starting_Forces>
+		<Starting_Forces> Warlords, Obroa_Skai, Military_Soldier_Team </Starting_Forces>
+		<Starting_Forces> Warlords, Obroa_Skai, Mercenary_Team </Starting_Forces>
+		<Starting_Forces> Warlords, Obroa_Skai, Imperial_AT_AP_Walker_Company </Starting_Forces>
+		<Starting_Forces> Warlords, Obroa_Skai, Imperial_AT_AP_Walker_Company </Starting_Forces>
+		<Starting_Forces> Warlords, Obroa_Skai, Skyhopper_Group </Starting_Forces>		
+
+		<!-- Empire Starting Forces -->
+
+		<Starting_Credits> Empire,  12000 </Starting_Credits>
+		<Starting_Tech_Level> Empire, 1 </Starting_Tech_Level>
+		<Max_Tech_Level> Empire, 1 </Max_Tech_Level>
+		
+		
+		<!-- Bastion Space Forces -->
+		<Starting_Forces> Empire, Bastion, Empire_Star_Base_2 </Starting_Forces>
+		<Starting_Forces> Empire, Bastion, Empire_Shipyard_Level_Two </Starting_Forces>
+		<Starting_Forces> Empire, Bastion, Generic_Victory_Destroyer </Starting_Forces>
+		<Starting_Forces> Empire, Bastion, Dreadnaught_Empire </Starting_Forces>
+		<Starting_Forces> Empire, Bastion, Strike_Cruiser </Starting_Forces>		
+		<Starting_Forces> Empire, Bastion, Lancer_Frigate </Starting_Forces>
+		<Starting_Forces> Empire, Bastion, Lancer_Frigate </Starting_Forces>		
+		<!-- Bastion Land Forces -->
+		<Starting_Forces> Empire, Bastion, Empire_MoffPalace </Starting_Forces>
+		<Starting_Forces> Empire, Bastion, E_Ground_Barracks </Starting_Forces>
+		<Starting_Forces> Empire, Bastion, E_Ground_Light_Vehicle_Factory </Starting_Forces>
+		<Starting_Forces> Empire, Bastion, Remnant_Capital </Starting_Forces>
+		<Starting_Forces> Empire, Bastion, Imperial_Stormtrooper_Squad </Starting_Forces>
+		<Starting_Forces> Empire, Bastion, Army_Guard_Squad </Starting_Forces>
+		<Starting_Forces> Empire, Bastion, Imperial_AT_ST_Company </Starting_Forces>
+		<Starting_Forces> Empire, Bastion, Imperial_AT_AT_Company </Starting_Forces>
+
+
+		<!-- Garos IV Space Forces -->
+		<Starting_Forces> Empire, Eriadu, Generate_Force </Starting_Forces>
+
+
+		<!-- Corellia Space Forces -->
+		<Starting_Forces> Warlords, Corellia, Generate_Force </Starting_Forces>
+
+		
+		<!-- Myrkr Space Forces -->
+		<Starting_Forces> Empire, Myrkr, Generate_Force </Starting_Forces>
+	
+		
+		<!-- Carida Space Forces -->
+		<Starting_Forces> Empire, Carida, Generate_Force </Starting_Forces>
+
+		<!-- Muunilinst Space Forces -->
+		<Starting_Forces> Empire, Muunilinst, Generate_Force </Starting_Forces>
+
+		
+		<!-- Bilbringi Space Forces -->
+		<Starting_Forces> Empire, Bilbringi, Generate_Force </Starting_Forces>
+
+
+		<!-- Yaga Space Forces -->
+		<Starting_Forces> Empire, Yaga_Minor, Generate_Force </Starting_Forces>
+
+
+		<!-- Honoghr Space Forces -->
+		<Starting_Forces> Empire, Honoghr, Generate_Force </Starting_Forces>
+
+		
+		<!-- Anx_Minor Space Forces -->
+		<Starting_Forces> Empire, Anx_Minor, Generate_Force </Starting_Forces>
+
+		<!-- Duro Space Forces -->
+		<Starting_Forces> Warlords, Duro, Generate_Force </Starting_Forces>
+
+		<!-- Morishim Space Forces -->
+		<Starting_Forces> Empire, Morishim, Generate_Force </Starting_Forces>
+
+		<!-- Wistril Space Forces -->
+		<Starting_Forces> Empire, Wistril, Generate_Force </Starting_Forces>
+		
+		<!-- Dubrillion Space Forces -->
+		<Starting_Forces> Empire, Dubrillion, Generate_Force </Starting_Forces>
+		<!-- Garqi Space Forces -->
+		<Starting_Forces> Empire, Garqi, Generate_Force </Starting_Forces>
+
+
+		<!-- Poderis Space Forces -->
+		<Starting_Forces> Empire, Poderis, Generate_Force </Starting_Forces>
+
+		<!-- Jomark Space Forces -->
+		<Starting_Forces> Empire, Jomark, Generate_Force </Starting_Forces>
+		<!-- New Cov Space Forces -->
+		<Starting_Forces> Empire, Corulag, Generate_Force </Starting_Forces>
+
+		<!-- Obroa Skai Space Forces -->
+		<Starting_Forces> Empire, Ciutric, Generate_Force </Starting_Forces>
+
+
+		<!-- Wayland Space Forces 
+		<Starting_Forces> Empire, Wayland, Empire_Star_Base_2 </Starting_Forces>
+		<Starting_Forces> Empire, Wayland, Dreadnaught_Empire </Starting_Forces>
+		<Starting_Forces> Empire, Wayland, Lancer_Frigate </Starting_Forces>-->
+		<!-- Wayland Land Forces
+		<Starting_Forces> Empire, Wayland, E_Ground_Barracks </Starting_Forces> -->
+		
+		<!-- Pakrik_Minor Space Forces -->
+		<Starting_Forces> Empire, Pakrik_Minor, Generate_Force </Starting_Forces>
+
+		
+
+		<!-- Ord_Trasi Space Forces -->
+		<Starting_Forces> Empire, Ord_Trasi, Generate_Force </Starting_Forces>
+
+		
+		<!-- Gravlex_Med Space Forces -->
+		<Starting_Forces> Empire, Gravlex_Med, Generate_Force </Starting_Forces>
+		
+		<!-- Borosk Space Forces -->
+		<Starting_Forces> Empire, Borosk, Generate_Force </Starting_Forces>
+
+				
+	</Campaign>	
+
+	<Campaign Name="Sandbox_T_Rebels">
+
+		<Campaign_Set> Sandbox_Thrawn </Campaign_Set>
+		<Sort_Order>218</Sort_Order>
+
+        <Text_ID> TEXT_CAMPAIGN_SINGLE_THRAWN </Text_ID>
+        <Description_Text> TEXT_CAMPAIGN_SINGLE_DESCRIPTION_THRAWN </Description_Text>
+
+        <Camera_Shift_X> 40.0 </Camera_Shift_X>
+        <Camera_Shift_Y> 0.0 </Camera_Shift_Y>
+        <Camera_Distance> 1200.0 </Camera_Distance>
+
+          <Locations> 
+				Galaxy_Core_Art_Model, 
+				Abregado_Rae,
+				Anx_Minor,
+				Bastion,
+				Bilbringi,
+				Bimmisaari,
+				Borosk,
+				Bothawui,
+				Bpfassh,
+				Carida,
+				Cejansij,
+				Chrondre,
+				Ciutric,
+				Commenor,
+				Corellia,
+				Corulag,
+				Coruscant,
+				Denon,
+				Dolomar,
+				Dubrillion,
+				Duro,
+				Endor,
+				Eriadu,
+				Farrfin,
+				Filve,
+				Fondor,
+				Garqi,
+				Gravlex_Med,
+				Honoghr,
+				Jomark,
+				Kashyyyk,
+				Ketaris,
+				Kothlis,
+				Kuat,
+				Ord_Mantell,
+				Mon_Calamari,
+				Morishim,
+				Mrisst,
+				Muunilinst,
+				Myrkr,
+				New_Cov,
+				Nkllon,
+				Obroa_Skai,
+				Pakrik_Minor,
+				Pantolomin,
+				Ord_Pardron,
+				Poderis,
+				Qat_Chrystac,
+				Sluis_Van,
+				Svivren,
+				Ord_Trasi,
+				Ukio,
+				Wayland,
+				Wistril,
+				Woostri,
+				Yaga_Minor,
+				Katana_Space
+			</Locations>
+
+        <Trade_Routes> 
+			Abregado_Rae_Fondor,
+			Abregado_Rae_Pakrik_Minor,
+			Anx_Minor_Gravlex_Med,
+			Anx_Minor_Ord_Trasi,
+			Bastion_Dubrillion,
+			Bastion_Muunilinst,
+			Bilbringi_Mrisst,
+			Bilbringi_Wistril,
+			Bimmisaari_Cejansij,
+			Bimmisaari_Jomark,
+			Borosk_Morishim,
+			Borosk_Wistril,
+			Borosk_Yaga_Minor,
+			Bothawui_Denon,
+			Bothawui_Kothlis,
+			Bpfassh_Sluis_Van,
+			Carida_Corulag,
+			Carida_Kuat,
+			Carida_Poderis,
+			Cejansij_Kashyyyk,
+			Chrondre_Filve,
+			Chrondre_Ord_Pardron,
+			Chrondre_Svivren,
+			Ciutric_Gravlex_Med,
+			Ciutric_Ketaris,
+			Ciutric_Wayland,
+			Commenor_Corellia,
+			Commenor_Kashyyyk,
+			Corellia_Duro,
+			Corellia_Fondor,
+			Corellia_Kuat,
+			Corulag_Coruscant,
+			Coruscant_Dolomar,
+			Coruscant_Farrfin,
+			Coruscant_Kuat,
+			Coruscant_Pakrik_Minor,
+			Denon_Duro,
+			Denon_New_Cov,
+			Dolomar_Farrfin,
+			Dolomar_Poderis,
+			Dubrillion_Gravlex_Med,
+			Endor_Qat_Chrystac,
+			Eriadu_Sluis_Van,
+			Eriadu_Woostri,
+			Farrfin_Pantolomin,
+			Filve_New_Cov,
+			Filve_Ord_Pardron,
+			Fondor_Nkllon,
+			Garqi_Ketaris,
+			Garqi_Ord_Trasi,
+			Garqi_Wistril,
+			Honoghr_Jomark,
+			Jomark_Mon_Calamari,
+			Jomark_Myrkr,
+			Ketaris_Ord_Mantell,
+			Kothlis_Ukio,
+			Ord_Mantell_Wistril,
+			Morishim_Ord_Trasi,
+			Morishim_Yaga_Minor,
+			Muunilinst_Yaga_Minor,
+			Mrisst_Pakrik_Minor,
+			Mrisst_Pantolomin,
+			Myrkr_Obroa_Skai,
+			Myrkr_Wayland,
+			Nkllon_Qat_Chrystac,
+			Nkllon_Woostri,
+			Obroa_Skai_Poderis,
+			Ord_Pardron_Ukio,
+			Sluis_Van_Svivren,
+			Katana_Space_Pakrik_Minor
+		</Trade_Routes>
+		
+        <Home_Location> Rebel, Coruscant </Home_Location>
+        <Home_Location> Empire, Bastion </Home_Location>
+        
+	
+
+        <Starting_Active_Player> Rebel </Starting_Active_Player>
+
+		<Rebel_Story_Name>Conquests\Thrawn\Story_Plots_Sandbox_TC_Rebel.xml</Rebel_Story_Name>
+        <Empire_Story_Name>Conquests\Thrawn\Story_Plots_Sandbox_TC_Empire_AI.xml</Empire_Story_Name>
+
+        	       
+		<AI_Player_Control> Rebel, SandboxHuman </AI_Player_Control>
+		<AI_Player_Control> Empire, GenericAI </AI_Player_Control>
+
+		<AI_Player_Control> Pentastar, None</AI_Player_Control>
+		<AI_Player_Control> EmpireoftheHand, None </AI_Player_Control>
+		<AI_Player_Control> Zsinj_Empire, None </AI_Player_Control>
+		
+		<AI_Player_Control> Hapes_Consortium, None </AI_Player_Control>
+		<AI_Player_Control> Greater_Maldrood, None </AI_Player_Control>      
+		<AI_Player_Control> Eriadu_Authority, None </AI_Player_Control>				
+		<AI_Player_Control> Corporate_Sector, None </AI_Player_Control>		
+		<AI_Player_Control> Warlords, None </AI_Player_Control>				
+
+		<Markup_Filename>Empire, DefaultGalacticHints </Markup_Filename>
+		<Markup_Filename>Rebel, DefaultGalacticHints </Markup_Filename>
+		<Markup_Filename>EmpireoftheHand, DefaultGalacticHints </Markup_Filename>
+		<Markup_Filename>Zsinj_Empire, DefaultGalacticHints </Markup_Filename>
+		<Markup_Filename>Greater_Maldrood, DefaultMaldroodHints </Markup_Filename>			
+		<Markup_Filename>Pentastar, DefaultGalacticHints </Markup_Filename>
+		<Markup_Filename>Eriadu_Authority, DefaultEriaduHints </Markup_Filename>				
+		<Markup_Filename>Corporate_Sector, DefaultGalacticHints </Markup_Filename>		
+		<Markup_Filename>Warlords, DefaultGalacticHints </Markup_Filename>			
+		<Markup_Filename>Hapes_Consortium, DefaultGalacticHints </Markup_Filename>
+		
+
+		
+		<Supports_Custom_Settings>False</Supports_Custom_Settings>
+		<Show_Completed_Tab>True</Show_Completed_Tab>
+
+		<!-- Win Conditions -->
+
+		<Human_Victory_Conditions>
+				Galactic_All_Planets_Controlled
+		</Human_Victory_Conditions>
+
+		<AI_Victory_Conditions>
+				Galactic_All_Planets_Controlled
+		</AI_Victory_Conditions>
+		
+		<!-- Katana Space Forces -->
+		<Starting_Forces> Warlords, Katana_Space, Katana_Dreadnaught_Empire </Starting_Forces>
+		<Starting_Forces> Warlords, Katana_Space, Katana_Dreadnaught_Empire </Starting_Forces>
+		<Starting_Forces> Warlords, Katana_Space, Katana_Dreadnaught_Empire </Starting_Forces>
+		<Starting_Forces> Warlords, Katana_Space, Katana_Dreadnaught_Empire </Starting_Forces>
+		<Starting_Forces> Warlords, Katana_Space, Katana_Dreadnaught_Empire </Starting_Forces>
+		<Starting_Forces> Warlords, Katana_Space, Katana_Dreadnaught_Empire </Starting_Forces>
+		<Starting_Forces> Warlords, Katana_Space, Katana_Dreadnaught_Empire </Starting_Forces>
+		<Starting_Forces> Warlords, Katana_Space, Katana_Dreadnaught_Empire </Starting_Forces>
+		<Starting_Forces> Warlords, Katana_Space, Katana_Dreadnaught_Empire </Starting_Forces>
+		<Starting_Forces> Warlords, Katana_Space, Katana_Dreadnaught_Empire </Starting_Forces>
+		<Starting_Forces> Warlords, Katana_Space, Katana_Dreadnaught_Empire </Starting_Forces>
+		<Starting_Forces> Warlords, Katana_Space, Katana_Dreadnaught_Empire </Starting_Forces>
+		<Starting_Forces> Warlords, Katana_Space, Katana_Dreadnaught_Empire </Starting_Forces>
+		<Starting_Forces> Warlords, Katana_Space, Katana_Dreadnaught_Empire </Starting_Forces>
+		<Starting_Forces> Warlords, Katana_Space, Katana_Dreadnaught_Empire </Starting_Forces>
+		<Starting_Forces> Warlords, Katana_Space, Katana_Dreadnaught_Empire </Starting_Forces>
+		<Starting_Forces> Warlords, Katana_Space, Katana_Dreadnaught_Empire </Starting_Forces>
+		<Starting_Forces> Warlords, Katana_Space, Katana_Dreadnaught_Empire </Starting_Forces>
+		<Starting_Forces> Warlords, Katana_Space, Katana_Dreadnaught_Empire </Starting_Forces>
+		<Starting_Forces> Warlords, Katana_Space, Katana_Dreadnaught_Empire </Starting_Forces>
+		<Starting_Forces> Warlords, Katana_Space, Katana_Dreadnaught_Empire </Starting_Forces>
+		<Starting_Forces> Warlords, Katana_Space, Katana_Dreadnaught_Empire </Starting_Forces>
+		<Starting_Forces> Warlords, Katana_Space, Katana_Dreadnaught_Empire </Starting_Forces>
+		<Starting_Forces> Warlords, Katana_Space, Katana_Dreadnaught_Empire </Starting_Forces>
+		<Starting_Forces> Warlords, Katana_Space, Katana_Dreadnaught_Empire </Starting_Forces>
+		<Starting_Forces> Warlords, Katana_Space, Katana_Dreadnaught_Empire </Starting_Forces>
+		<Starting_Forces> Warlords, Katana_Space, Katana_Dreadnaught_Empire </Starting_Forces>
+		
+		
+		<!-- Rebel Starting Forces -->
+
+		<Starting_Credits> Rebel,  8000 </Starting_Credits>
+		<Starting_Tech_Level> Rebel, 0 </Starting_Tech_Level>
+		<Max_Tech_Level> Rebel, 0 </Max_Tech_Level>
+		
+	
+		
+	<!-- Kothlis Space Forces -->		
+		<Starting_Forces> Rebel, Kothlis, Generate_Force </Starting_Forces>
+		
+		<!-- Bothawui Space Forces -->
+		<Starting_Forces> Rebel, Bothawui, Generate_Force </Starting_Forces>
+		
+		<!-- Dolomar Space Forces -->
+		<Starting_Forces> Rebel, Dolomar, Generate_Force </Starting_Forces>
+
+		<!-- Ukio Space Forces -->
+		<Starting_Forces> Rebel, Ukio, Generate_Force </Starting_Forces>
+		<!-- Abregado_Rae Space Forces -->
+		<Starting_Forces> Rebel, Abregado_Rae, Generate_Force </Starting_Forces>
+		
+		<!-- Chrondre Space Forces -->
+		<Starting_Forces> Rebel, Chrondre, Generate_Force </Starting_Forces>
+		
+		<!-- Ord_Pardron Space Forces -->
+		<Starting_Forces> Rebel, Ord_Pardron, Generate_Force </Starting_Forces>
+
+		<!-- Sluis_Van Space Forces -->
+		<Starting_Forces> Rebel, Sluis_Van, Generate_Force </Starting_Forces>
+
+		<!-- Fondor Space Forces -->
+		<Starting_Forces> Rebel, Fondor, Generate_Force </Starting_Forces>
+
+		<!-- Kuat Space Forces -->
+		<Starting_Forces> Rebel, Kuat, Generate_Force </Starting_Forces>
+
+		<!-- Mon_Calamari Space Forces -->
+		<Starting_Forces> Rebel, Mon_Calamari, Generate_Force </Starting_Forces>
+		
+		<!-- Denon Space Forces -->
+		<Starting_Forces> Rebel, Denon, Generate_Force </Starting_Forces>
+
+		<!-- Coruscant Space Forces -->
+		<Starting_Forces> Rebel, Coruscant, NewRepublic_Star_Base_4 </Starting_Forces>
+		<Starting_Forces> Rebel, Coruscant, NewRepublic_Shipyard_Level_Two</Starting_Forces>
+		<Starting_Forces> Rebel, Coruscant, Corellian_Corvette </Starting_Forces>
+		<Starting_Forces> Rebel, Coruscant, Corellian_Corvette </Starting_Forces>
+		<Starting_Forces> Rebel, Coruscant, Nebulon_B_Frigate </Starting_Forces>		
+		<Starting_Forces> Rebel, Coruscant, Alliance_Assault_Frigate </Starting_Forces>
+		<Starting_Forces> Rebel, Coruscant, Alliance_Assault_Frigate_II </Starting_Forces>
+		<Starting_Forces> Rebel, Coruscant, Calamari_Cruiser </Starting_Forces>
+		<Starting_Forces> Rebel, Coruscant, MC80B </Starting_Forces>
+		<Starting_Forces> Rebel, Coruscant, Quasar </Starting_Forces>
+		<!-- Coruscant Land Forces -->
+		<Starting_Forces> Rebel, Coruscant, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Coruscant, R_Ground_Barracks </Starting_Forces>
+		<Starting_Forces> Rebel, Coruscant, R_Ground_Light_Vehicle_Factory </Starting_Forces>
+		<Starting_Forces> Rebel, Coruscant, NewRep_Senate </Starting_Forces>
+		<Starting_Forces> Rebel, Coruscant, Rebel_Infantry_Squad </Starting_Forces>
+		<Starting_Forces> Rebel, Coruscant, Rebel_Infantry_Squad </Starting_Forces>
+		<Starting_Forces> Rebel, Coruscant, Rebel_SRV1_Company </Starting_Forces>
+		<Starting_Forces> Rebel, Coruscant, MAS_2xB_Company </Starting_Forces>
+		<Starting_Forces> Rebel, Coruscant, Rebel_T1B_Company </Starting_Forces>
+		<Starting_Forces> Rebel, Coruscant, Rebel_T3B_Company </Starting_Forces>
+		<Starting_Forces> Rebel, Coruscant, Rebel_T4B_Company </Starting_Forces>
+
+		<!-- Kashyyyk Space Forces -->
+		<Starting_Forces> Rebel, Kashyyyk, Generate_Force </Starting_Forces>
+	
+		<!-- Endor Space Forces -->
+		<Starting_Forces> Rebel, Endor, Generate_Force </Starting_Forces>
+
+
+		<!-- Ord_Mantell Space Forces -->
+		<Starting_Forces> Rebel, Ord_Mantell, Generate_Force </Starting_Forces>
+
+		<!-- Filve Space Forces -->
+		<Starting_Forces> Rebel, Filve, Generate_Force </Starting_Forces>
+
+		<!-- Nkllon Space Forces -->
+		<Starting_Forces> Rebel, Nkllon, Generate_Force </Starting_Forces>
+
+		
+		<!-- Commenor Space Forces -->
+		<Starting_Forces> Rebel, Commenor, Generate_Force </Starting_Forces>
+		<!-- Qat_Chrystac Space Forces -->
+		<Starting_Forces> Empire, Qat_Chrystac, Generate_Force </Starting_Forces>
+
+
+		<!-- Pantolomin Space Forces -->
+		<Starting_Forces> Warlords, Pantolomin, Corellian_Corvette </Starting_Forces>
+		<Starting_Forces> Warlords, Pantolomin, Corellian_Corvette </Starting_Forces>
+		<Starting_Forces> Warlords, Pantolomin, Neutron_Star </Starting_Forces>
+		<Starting_Forces> Warlords, Pantolomin, Generic_Gladiator </Starting_Forces>
+		<!-- Pantolomin Land Forces -->
+
+		
+		<!-- Mrisst Space Forces -->
+		<Starting_Forces> Rebel, Mrisst, Generate_Force </Starting_Forces>
+		
+		<!-- Bimmisaari Space Forces -->
+		<Starting_Forces> Rebel, Bimmisaari, Generate_Force </Starting_Forces>
+
+		<!-- Woostri Space Forces -->
+		<Starting_Forces> Rebel, Woostri, Generate_Force </Starting_Forces>
+		
+		<!-- Farrfin Space Forces -->
+		<Starting_Forces> Rebel, Farrfin, Generate_Force </Starting_Forces>
+		
+		<!-- Cejansij Space Forces -->
+		<Starting_Forces> Rebel, Cejansij, Generate_Force </Starting_Forces>
+
+		<!-- Ketaris Space Forces -->
+		<Starting_Forces> Rebel, Ketaris, Generate_Force </Starting_Forces>
+		
+		<!-- New_Cov Space Forces -->
+		<Starting_Forces> Rebel, New_Cov, Generate_Force </Starting_Forces>
+	
+		
+		<Starting_Forces> Rebel, Obroa_Skai, Alliance_Assault_Frigate </Starting_Forces>
+		<Starting_Forces> Rebel, Obroa_Skai, Alliance_Assault_Frigate </Starting_Forces>
+		<Starting_Forces> Rebel, Obroa_Skai, Alliance_Assault_Frigate </Starting_Forces>
+		<Starting_Forces> Rebel, Obroa_Skai, Alliance_Assault_Frigate </Starting_Forces>
+		<!-- Obroa Skai Forces -->
+		<Starting_Forces> Warlords, Obroa_Skai, PDF_Soldier_Team </Starting_Forces>
+		<Starting_Forces> Warlords, Obroa_Skai, PDF_Soldier_Team </Starting_Forces>
+		<Starting_Forces> Warlords, Obroa_Skai, Military_Soldier_Team </Starting_Forces>
+		<Starting_Forces> Warlords, Obroa_Skai, Military_Soldier_Team </Starting_Forces>
+		<Starting_Forces> Warlords, Obroa_Skai, Mercenary_Team </Starting_Forces>
+		<Starting_Forces> Warlords, Obroa_Skai, Imperial_AT_AP_Walker_Company </Starting_Forces>
+		<Starting_Forces> Warlords, Obroa_Skai, Imperial_AT_AP_Walker_Company </Starting_Forces>
+		<Starting_Forces> Warlords, Obroa_Skai, Skyhopper_Group </Starting_Forces>		
+
+		<!-- Empire Starting Forces -->
+
+		<Starting_Credits> Empire,  12000 </Starting_Credits>
+		<Starting_Tech_Level> Empire, 1 </Starting_Tech_Level>
+		<Max_Tech_Level> Empire, 1 </Max_Tech_Level>
+		
+		
+		<!-- Bastion Space Forces -->
+		<Starting_Forces> Empire, Bastion, Empire_Star_Base_2 </Starting_Forces>
+		<Starting_Forces> Empire, Bastion, Empire_Shipyard_Level_Two </Starting_Forces>
+		<Starting_Forces> Empire, Bastion, Generic_Victory_Destroyer </Starting_Forces>
+		<Starting_Forces> Empire, Bastion, Dreadnaught_Empire </Starting_Forces>
+		<Starting_Forces> Empire, Bastion, Strike_Cruiser </Starting_Forces>		
+		<Starting_Forces> Empire, Bastion, Lancer_Frigate </Starting_Forces>
+		<Starting_Forces> Empire, Bastion, Lancer_Frigate </Starting_Forces>		
+		<!-- Bastion Land Forces -->
+		<Starting_Forces> Empire, Bastion, Empire_MoffPalace </Starting_Forces>
+		<Starting_Forces> Empire, Bastion, E_Ground_Barracks </Starting_Forces>
+		<Starting_Forces> Empire, Bastion, E_Ground_Light_Vehicle_Factory </Starting_Forces>
+		<Starting_Forces> Empire, Bastion, Remnant_Capital </Starting_Forces>
+		<Starting_Forces> Empire, Bastion, Imperial_Stormtrooper_Squad </Starting_Forces>
+		<Starting_Forces> Empire, Bastion, Army_Guard_Squad </Starting_Forces>
+		<Starting_Forces> Empire, Bastion, Imperial_AT_ST_Company </Starting_Forces>
+		<Starting_Forces> Empire, Bastion, Imperial_AT_AT_Company </Starting_Forces>
+
+
+		<!-- Garos IV Space Forces -->
+		<Starting_Forces> Empire, Eriadu, Generate_Force </Starting_Forces>
+
+
+		<!-- Corellia Space Forces -->
+		<Starting_Forces> Warlords, Corellia, Generate_Force </Starting_Forces>
+
+		
+		<!-- Myrkr Space Forces -->
+		<Starting_Forces> Empire, Myrkr, Generate_Force </Starting_Forces>
+	
+		
+		<!-- Carida Space Forces -->
+		<Starting_Forces> Empire, Carida, Generate_Force </Starting_Forces>
+
+		<!-- Muunilinst Space Forces -->
+		<Starting_Forces> Empire, Muunilinst, Generate_Force </Starting_Forces>
+
+		
+		<!-- Bilbringi Space Forces -->
+		<Starting_Forces> Empire, Bilbringi, Generate_Force </Starting_Forces>
+
+
+		<!-- Yaga Space Forces -->
+		<Starting_Forces> Empire, Yaga_Minor, Generate_Force </Starting_Forces>
+
+
+		<!-- Honoghr Space Forces -->
+		<Starting_Forces> Empire, Honoghr, Generate_Force </Starting_Forces>
+
+		
+		<!-- Anx_Minor Space Forces -->
+		<Starting_Forces> Empire, Anx_Minor, Generate_Force </Starting_Forces>
+
+		<!-- Duro Space Forces -->
+		<Starting_Forces> Warlords, Duro, Generate_Force </Starting_Forces>
+
+		<!-- Morishim Space Forces -->
+		<Starting_Forces> Empire, Morishim, Generate_Force </Starting_Forces>
+
+		<!-- Wistril Space Forces -->
+		<Starting_Forces> Empire, Wistril, Generate_Force </Starting_Forces>
+		
+		<!-- Dubrillion Space Forces -->
+		<Starting_Forces> Empire, Dubrillion, Generate_Force </Starting_Forces>
+		<!-- Garqi Space Forces -->
+		<Starting_Forces> Empire, Garqi, Generate_Force </Starting_Forces>
+
+
+		<!-- Poderis Space Forces -->
+		<Starting_Forces> Empire, Poderis, Generate_Force </Starting_Forces>
+
+		<!-- Jomark Space Forces -->
+		<Starting_Forces> Empire, Jomark, Generate_Force </Starting_Forces>
+		<!-- New Cov Space Forces -->
+		<Starting_Forces> Empire, Corulag, Generate_Force </Starting_Forces>
+
+		<!-- Obroa Skai Space Forces -->
+		<Starting_Forces> Empire, Ciutric, Generate_Force </Starting_Forces>
+
+
+		<!-- Wayland Space Forces 
+		<Starting_Forces> Empire, Wayland, Empire_Star_Base_2 </Starting_Forces>
+		<Starting_Forces> Empire, Wayland, Dreadnaught_Empire </Starting_Forces>
+		<Starting_Forces> Empire, Wayland, Lancer_Frigate </Starting_Forces>-->
+		<!-- Wayland Land Forces
+		<Starting_Forces> Empire, Wayland, E_Ground_Barracks </Starting_Forces> -->
+		
+		<!-- Pakrik_Minor Space Forces -->
+		<Starting_Forces> Empire, Pakrik_Minor, Generate_Force </Starting_Forces>
+
+		
+
+		<!-- Ord_Trasi Space Forces -->
+		<Starting_Forces> Empire, Ord_Trasi, Generate_Force </Starting_Forces>
+
+		
+		<!-- Gravlex_Med Space Forces -->
+		<Starting_Forces> Empire, Gravlex_Med, Generate_Force </Starting_Forces>
+		
+		<!-- Borosk Space Forces -->
+		<Starting_Forces> Empire, Borosk, Generate_Force </Starting_Forces>
+
+				
+	</Campaign>			
+		
+    
+    
+
+
+
+ </Campaigns>
