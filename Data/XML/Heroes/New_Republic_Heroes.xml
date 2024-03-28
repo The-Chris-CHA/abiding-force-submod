@@ -2478,7 +2478,7 @@
 		<Text_ID>TEXT_HERO_MIREILLE</Text_ID>
 		<Encyclopedia_Text> 
 		TEXT_TOOLTIP_SEPARATOR_TRAITS_BLOCK 
-		TEXT_TOOLTIP_TRAIT_COMMAND4_SPACE
+		TEXT_TOOLTIP_TRAIT_COMMAND2_SPACE
 		TEXT_TOOLTIP_TRAIT_ACEPILOT
 		TEXT_TOOLTIP_SEPARATOR_BIO_BLOCK
 		TEXT_TOOLTIP_MIREILLE
@@ -2520,8 +2520,8 @@
 			<Combat_Bonus_Ability Name="Miri_Space_Bonus">
 				<Activation_Style>Space_Automatic</Activation_Style>
 				<Applicable_Unit_Categories>All</Applicable_Unit_Categories>
-				<Health_Bonus_Percentage>0.05</Health_Bonus_Percentage>
-				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Health_Bonus_Percentage>0.25</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.25</Damage_Bonus_Percentage>
 				<Shield_Bonus_Percentage>0.05</Shield_Bonus_Percentage>
 				<Defense_Bonus_Percentage>0.05</Defense_Bonus_Percentage>
 				<Movement_Speed_Bonus_Percentage>0.0</Movement_Speed_Bonus_Percentage>
@@ -2531,9 +2531,9 @@
 			<Combat_Bonus_Ability Name="Miri_Combat_Bonus_Ace_Pilot">
 				<Activation_Style>Space_Automatic</Activation_Style>
 				<Applicable_Unit_Categories> Fighter | Bomber </Applicable_Unit_Categories>
-				<Health_Bonus_Percentage>0.15</Health_Bonus_Percentage>
-				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
-				<Shield_Bonus_Percentage>0.05</Shield_Bonus_Percentage>
+				<Health_Bonus_Percentage>0.80</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.50</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.50</Shield_Bonus_Percentage>
 				<Defense_Bonus_Percentage>0.05</Defense_Bonus_Percentage>
 				<Movement_Speed_Bonus_Percentage>0.10</Movement_Speed_Bonus_Percentage>
 				<Stacking_Category>0</Stacking_Category>
@@ -2552,7 +2552,7 @@
 		<Encyclopedia_Text> 
 		TEXT_TOOLTIP_ASSIGN_NR_ADMIRAL
 		TEXT_TOOLTIP_SEPARATOR_TRAITS_BLOCK 
-		TEXT_TOOLTIP_TRAIT_COMMAND4_SPACE
+		TEXT_TOOLTIP_TRAIT_COMMAND2_SPACE
 		TEXT_TOOLTIP_TRAIT_ACEPILOT
 		TEXT_TOOLTIP_SEPARATOR_BIO_BLOCK
 		TEXT_TOOLTIP_MIREILLE
