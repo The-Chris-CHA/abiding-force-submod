@@ -115,6 +115,7 @@ return {
 			Find_Object_Type("Klev_Frigate_Devastator"),
 			Find_Object_Type("Scylla"),
 			Find_Object_Type("13X"),
+            Find_Object_Type("Mireille_Adinor"),
         },
         {
             Find_Object_Type("Drayson_New_Hope"),

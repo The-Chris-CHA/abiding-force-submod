@@ -84,6 +84,7 @@ function RepublicHeroes:new(gc, herokilled_finished_event, human_player)
 			["Lando"] = {"LANDO_ASSIGN",{"LANDO_RETIRE","LANDO_RETIRE2"},{"LANDO_LIBERATOR","LANDO_ALLEGIANCE"},"TEXT_HERO_LANDO",["no_random"] = true, ["required_unit"] = "LANDO_CALRISSIAN", ["required_team"] = "LANDO_CALRISSIAN_TEAM"},
 			["Raddus"] = {"RADDUS_ASSIGN",{"RADDUS_RETIRE"},{"RADDUS_PROFUNDITY"},"TEXT_HERO_RADDUS"},
 			["Hera"] = {"HERA_ASSIGN",{"HERA_RETIRE"},{"HERA_STARHAWK"},"TEXT_HERO_HERA"},
+			["Mireille"] = {"MIREILLE_ASSIGN",{"MIREILLE_RETIRE"},{"MIREILLE_ADINOR"},"TEXT_HERO_MIREILLE"},
 		},
 		available_list = {--Heroes currently available for purchase. Seeded with those who have no special prereqs
 			"Ackbar",
@@ -465,4 +466,5 @@ function RepublicHeroes:Canon_Heroes()
 	--Logger:trace("entering RepublicHeroes:Canon_Heroes")
 	Handle_Hero_Add("Raddus", admiral_data)
 	Handle_Hero_Add("Hera", admiral_data)
+	Handle_Hero_Add("Mireille", admiral_data)
 end

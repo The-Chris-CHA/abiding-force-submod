@@ -2471,7 +2471,208 @@
 		<Tech_Level>0</Tech_Level>
 		<Required_Orbiting_Units>Kalback_Justice</Required_Orbiting_Units>
 	</SpaceUnit>
+
+	<UniqueUnit Name="Mireille_Adinor">
+		<Variant_Of_Existing_Type>Calamari_Cruiser</Variant_Of_Existing_Type>
+		
+		<Text_ID>TEXT_HERO_MIREILLE</Text_ID>
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_SEPARATOR_TRAITS_BLOCK 
+		TEXT_TOOLTIP_TRAIT_COMMAND2_SPACE
+		TEXT_TOOLTIP_TRAIT_ACEPILOT
+		TEXT_TOOLTIP_SEPARATOR_BIO_BLOCK
+		TEXT_TOOLTIP_MIREILLE
+		TEXT_TOOLTIP_SEPARATOR_COMMANDS_BLOCK 
+		TEXT_TOOLTIP_COMMAND_ADINOR
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_MON_CALAMARI_CRUISER_HULL
+		TEXT_TOOLTIP_MON_CALAMARI_CRUISER_SHIELD
+		TEXT_TOOLTIP_MON_CALAMARI_CRUISER_MOVE
+		TEXT_TOOLTIP_MON_CALAMARI_CRUISER_SQUADRON
+		TEXT_TOOLTIP_MON_CALAMARI_CRUISER_WEAP1
+		TEXT_TOOLTIP_MON_CALAMARI_CRUISER_WEAP2
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_ORBITAL_BOMBARDMENT
+		TEXT_TOOLTIP_CAPABILITY_BOMBING_RUN
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_FLEET_COMMANDER </Encyclopedia_Unit_Class>
+		<Icon_Name>i_button_mireillenem.tga</Icon_Name>
+		
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+		<CategoryMask>SpaceHero | AntiFrigate</CategoryMask>
+        <Ranking_In_Category>3</Ranking_In_Category>
+		<Tech_Level>99</Tech_Level>
+		
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>DEFEND</Type>
+				<Mod_Multiplier>WEAPON_DELAY_MULTIPLIER,	1.25f</Mod_Multiplier>
+				<Mod_Multiplier>SHIELD_REGEN_INTERVAL_MULTIPLIER,	0.20f</Mod_Multiplier>
+				<Mod_Multiplier>SPEED_MULTIPLIER,		0.8f</Mod_Multiplier>
+				<Recharge_Seconds>150</Recharge_Seconds>
+				<Expiration_Seconds>8</Expiration_Seconds>
+		
+				<SFXEvent_GUI_Unit_Ability_Activated>Unit_Defend_Ackbar</SFXEvent_GUI_Unit_Ability_Activated>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Miri_Space_Bonus">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>All</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.25</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.25</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.05</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.05</Defense_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.0</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>0</Stacking_Category>
+			</Combat_Bonus_Ability>
+
+			<Combat_Bonus_Ability Name="Miri_Combat_Bonus_Ace_Pilot">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories> Fighter | Bomber </Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.80</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.50</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.50</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.05</Defense_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.10</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>0</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UniqueUnit>
+
+	<SpaceUnit Name="Mireille_Assign">
+		<Variant_Of_Existing_Type>Template_Assign</Variant_Of_Existing_Type>
+		
+		<Text_ID>TEXT_HERO_MIREILLE</Text_ID>
+		<Icon_Name>i_button_mireillenem.tga</Icon_Name>
+
+		<Affiliation>Rebel</Affiliation>
+
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_ASSIGN_NR_ADMIRAL
+		TEXT_TOOLTIP_SEPARATOR_TRAITS_BLOCK 
+		TEXT_TOOLTIP_TRAIT_COMMAND2_SPACE
+		TEXT_TOOLTIP_TRAIT_ACEPILOT
+		TEXT_TOOLTIP_SEPARATOR_BIO_BLOCK
+		TEXT_TOOLTIP_MIREILLE
+		TEXT_TOOLTIP_SEPARATOR_COMMANDS_BLOCK 
+		TEXT_TOOLTIP_COMMAND_ADINOR
+		</Encyclopedia_Text>
+	</SpaceUnit>
 	
+	<SpaceUnit Name="Mireille_Retire">
+		<Variant_Of_Existing_Type>Template_Retire</Variant_Of_Existing_Type>
+		
+		<Text_ID>TEXT_HERO_MIREILLE</Text_ID>
+		<Icon_Name>i_button_mireillenem_retire.tga</Icon_Name>
+
+		<Affiliation>Rebel</Affiliation>
+
+		<Tech_Level>0</Tech_Level>
+		<Required_Orbiting_Units>Mireille_Adinor</Required_Orbiting_Units>
+	</SpaceUnit>
+
+	<UniqueUnit Name="Babouls_Adinor">
+		<Variant_Of_Existing_Type>Calamari_Cruiser</Variant_Of_Existing_Type>
+		
+		<Text_ID>TEXT_HERO_BABOULS</Text_ID>
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_SEPARATOR_TRAITS_BLOCK 
+		TEXT_TOOLTIP_TRAIT_COMMAND4_SPACE
+		TEXT_TOOLTIP_TRAIT_ACEPILOT
+		TEXT_TOOLTIP_SEPARATOR_BIO_BLOCK
+		TEXT_TOOLTIP_TALLON
+		TEXT_TOOLTIP_SEPARATOR_COMMANDS_BLOCK 
+		TEXT_TOOLTIP_COMMAND_ADINOR
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_MON_CALAMARI_CRUISER_HULL
+		TEXT_TOOLTIP_MON_CALAMARI_CRUISER_SHIELD
+		TEXT_TOOLTIP_MON_CALAMARI_CRUISER_MOVE
+		TEXT_TOOLTIP_MON_CALAMARI_CRUISER_SQUADRON
+		TEXT_TOOLTIP_MON_CALAMARI_CRUISER_WEAP1
+		TEXT_TOOLTIP_MON_CALAMARI_CRUISER_WEAP2
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_ORBITAL_BOMBARDMENT
+		TEXT_TOOLTIP_CAPABILITY_BOMBING_RUN
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_FLEET_COMMANDER </Encyclopedia_Unit_Class>
+		<Icon_Name>i_button_adartallon.tga</Icon_Name>
+		
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+		<CategoryMask>SpaceHero | AntiFrigate</CategoryMask>
+        <Ranking_In_Category>3</Ranking_In_Category>
+		<Tech_Level>99</Tech_Level>
+		
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>DEFEND</Type>
+				<Mod_Multiplier>WEAPON_DELAY_MULTIPLIER,	1.25f</Mod_Multiplier>
+				<Mod_Multiplier>SHIELD_REGEN_INTERVAL_MULTIPLIER,	0.20f</Mod_Multiplier>
+				<Mod_Multiplier>SPEED_MULTIPLIER,		0.8f</Mod_Multiplier>
+				<Recharge_Seconds>150</Recharge_Seconds>
+				<Expiration_Seconds>8</Expiration_Seconds>
+		
+				<SFXEvent_GUI_Unit_Ability_Activated>Unit_Defend_Ackbar</SFXEvent_GUI_Unit_Ability_Activated>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Babouls_Space_Bonus">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>All</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.05</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.05</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.05</Defense_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.0</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>0</Stacking_Category>
+			</Combat_Bonus_Ability>
+
+			<Combat_Bonus_Ability Name="Babouls_Combat_Bonus_Ace_Pilot">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories> Fighter | Bomber </Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.15</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.05</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.05</Defense_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.10</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>0</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UniqueUnit>
+
+	<SpaceUnit Name="Babouls_Assign">
+		<Variant_Of_Existing_Type>Template_Assign</Variant_Of_Existing_Type>
+		
+		<Text_ID>TEXT_HERO_BABOULS</Text_ID>
+		<Icon_Name>i_button_adartallon_command.tga</Icon_Name>
+
+		<Affiliation>Rebel</Affiliation>
+
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_ASSIGN_NR_ADMIRAL
+		TEXT_TOOLTIP_SEPARATOR_TRAITS_BLOCK 
+		TEXT_TOOLTIP_TRAIT_COMMAND4_SPACE
+		TEXT_TOOLTIP_TRAIT_ACEPILOT
+		TEXT_TOOLTIP_SEPARATOR_BIO_BLOCK
+		TEXT_TOOLTIP_TALLON
+		TEXT_TOOLTIP_SEPARATOR_COMMANDS_BLOCK 
+		TEXT_TOOLTIP_COMMAND_ADINOR
+		</Encyclopedia_Text>
+	</SpaceUnit>
+	
+	<SpaceUnit Name="Babouls_Retire">
+		<Variant_Of_Existing_Type>Template_Retire</Variant_Of_Existing_Type>
+		
+		<Text_ID>TEXT_HERO_BABOULS</Text_ID>
+		<Icon_Name>i_button_adartallon_retire.tga</Icon_Name>
+
+		<Affiliation>Rebel</Affiliation>
+
+		<Tech_Level>0</Tech_Level>
+		<Required_Orbiting_Units>Babouls_Adinor</Required_Orbiting_Units>
+	</SpaceUnit>
 
 <!-- ISD heroes -->
 	

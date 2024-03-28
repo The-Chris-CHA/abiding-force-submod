@@ -240,6 +240,7 @@ return {
     ,MASSA_LUCREHULK_CARRIER = {nil, true}
     ,MARA_SABER_TEAM = {nil, false}
     ,MILLENNIUM_FALCON = {nil, true}
+    ,MIREILLE_ADINOR = {nil, true}
     ,MIRAX_TEAM = {"Planet_Has_Capital_Building", false}
     ,NAMMO_DEFIANCE = {nil, true}
     ,NANTZ_INDEPENDENCE = {nil, true}
