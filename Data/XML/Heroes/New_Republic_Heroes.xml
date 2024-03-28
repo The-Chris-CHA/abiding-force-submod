@@ -2483,7 +2483,7 @@
 		TEXT_TOOLTIP_SEPARATOR_BIO_BLOCK
 		TEXT_TOOLTIP_MIREILLE
 		TEXT_TOOLTIP_SEPARATOR_COMMANDS_BLOCK 
-		TEXT_TOOLTIP_COMMAND_SILENT_WATER
+		TEXT_TOOLTIP_COMMAND_ADINOR
 		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
 		TEXT_TOOLTIP_MON_CALAMARI_CRUISER_HULL
 		TEXT_TOOLTIP_MON_CALAMARI_CRUISER_SHIELD
@@ -2496,7 +2496,7 @@
 		TEXT_TOOLTIP_CAPABILITY_BOMBING_RUN
 		</Encyclopedia_Text>
 		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_FLEET_COMMANDER </Encyclopedia_Unit_Class>
-		<Icon_Name>i_button_adartallon.tga</Icon_Name>
+		<Icon_Name>i_button_mireillenem.tga</Icon_Name>
 		
 		<Is_Named_Hero>Yes</Is_Named_Hero>
 		<CategoryMask>SpaceHero | AntiFrigate</CategoryMask>
@@ -2517,7 +2517,7 @@
 		</Unit_Abilities_Data>
 
 		<Abilities SubObjectList="Yes">
-			<Combat_Bonus_Ability Name="Tallon_Space_Bonus">
+			<Combat_Bonus_Ability Name="Miri_Space_Bonus">
 				<Activation_Style>Space_Automatic</Activation_Style>
 				<Applicable_Unit_Categories>All</Applicable_Unit_Categories>
 				<Health_Bonus_Percentage>0.05</Health_Bonus_Percentage>
@@ -2528,7 +2528,7 @@
 				<Stacking_Category>0</Stacking_Category>
 			</Combat_Bonus_Ability>
 
-			<Combat_Bonus_Ability Name="Tallon_Combat_Bonus_Ace_Pilot">
+			<Combat_Bonus_Ability Name="Miri_Combat_Bonus_Ace_Pilot">
 				<Activation_Style>Space_Automatic</Activation_Style>
 				<Applicable_Unit_Categories> Fighter | Bomber </Applicable_Unit_Categories>
 				<Health_Bonus_Percentage>0.15</Health_Bonus_Percentage>
@@ -2545,7 +2545,7 @@
 		<Variant_Of_Existing_Type>Template_Assign</Variant_Of_Existing_Type>
 		
 		<Text_ID>TEXT_HERO_MIREILLE</Text_ID>
-		<Icon_Name>i_button_adartallon_command.tga</Icon_Name>
+		<Icon_Name>i_button_mireillenem.tga</Icon_Name>
 
 		<Affiliation>Rebel</Affiliation>
 
@@ -2557,7 +2557,7 @@
 		TEXT_TOOLTIP_SEPARATOR_BIO_BLOCK
 		TEXT_TOOLTIP_MIREILLE
 		TEXT_TOOLTIP_SEPARATOR_COMMANDS_BLOCK 
-		TEXT_TOOLTIP_COMMAND_SILENT_WATER
+		TEXT_TOOLTIP_COMMAND_ADINOR
 		</Encyclopedia_Text>
 	</SpaceUnit>
 	
@@ -2565,12 +2565,12 @@
 		<Variant_Of_Existing_Type>Template_Retire</Variant_Of_Existing_Type>
 		
 		<Text_ID>TEXT_HERO_MIREILLE</Text_ID>
-		<Icon_Name>i_button_adartallon_retire.tga</Icon_Name>
+		<Icon_Name>i_button_mireillenem_retire.tga</Icon_Name>
 
 		<Affiliation>Rebel</Affiliation>
 
 		<Tech_Level>0</Tech_Level>
-		<Required_Orbiting_Units>Tallon_Silent_Water</Required_Orbiting_Units>
+		<Required_Orbiting_Units>Mireille_Adinor</Required_Orbiting_Units>
 	</SpaceUnit>
 
 	<UniqueUnit Name="Babouls_Adinor">
@@ -2584,7 +2584,7 @@
 		TEXT_TOOLTIP_SEPARATOR_BIO_BLOCK
 		TEXT_TOOLTIP_TALLON
 		TEXT_TOOLTIP_SEPARATOR_COMMANDS_BLOCK 
-		TEXT_TOOLTIP_COMMAND_SILENT_WATER
+		TEXT_TOOLTIP_COMMAND_ADINOR
 		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
 		TEXT_TOOLTIP_MON_CALAMARI_CRUISER_HULL
 		TEXT_TOOLTIP_MON_CALAMARI_CRUISER_SHIELD
@@ -2618,7 +2618,7 @@
 		</Unit_Abilities_Data>
 
 		<Abilities SubObjectList="Yes">
-			<Combat_Bonus_Ability Name="Tallon_Space_Bonus">
+			<Combat_Bonus_Ability Name="Babouls_Space_Bonus">
 				<Activation_Style>Space_Automatic</Activation_Style>
 				<Applicable_Unit_Categories>All</Applicable_Unit_Categories>
 				<Health_Bonus_Percentage>0.05</Health_Bonus_Percentage>
@@ -2629,7 +2629,7 @@
 				<Stacking_Category>0</Stacking_Category>
 			</Combat_Bonus_Ability>
 
-			<Combat_Bonus_Ability Name="Tallon_Combat_Bonus_Ace_Pilot">
+			<Combat_Bonus_Ability Name="Babouls_Combat_Bonus_Ace_Pilot">
 				<Activation_Style>Space_Automatic</Activation_Style>
 				<Applicable_Unit_Categories> Fighter | Bomber </Applicable_Unit_Categories>
 				<Health_Bonus_Percentage>0.15</Health_Bonus_Percentage>
@@ -2658,7 +2658,7 @@
 		TEXT_TOOLTIP_SEPARATOR_BIO_BLOCK
 		TEXT_TOOLTIP_TALLON
 		TEXT_TOOLTIP_SEPARATOR_COMMANDS_BLOCK 
-		TEXT_TOOLTIP_COMMAND_SILENT_WATER
+		TEXT_TOOLTIP_COMMAND_ADINOR
 		</Encyclopedia_Text>
 	</SpaceUnit>
 	
@@ -2671,7 +2671,7 @@
 		<Affiliation>Rebel</Affiliation>
 
 		<Tech_Level>0</Tech_Level>
-		<Required_Orbiting_Units>Tallon_Silent_Water</Required_Orbiting_Units>
+		<Required_Orbiting_Units>Babouls_Adinor</Required_Orbiting_Units>
 	</SpaceUnit>
 
 <!-- ISD heroes -->

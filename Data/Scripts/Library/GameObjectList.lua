@@ -358,6 +358,7 @@ return {
 ["MERIDIAN_IV"] = true,
 ["MIKTISS_ASAGOV_RAIDER"] = true,
 ["MINI_VISCOUNT"] = true,
+["MIREILLE_ADINOR"] = true,
 ["MIST_CARRIER"] = true,
 ["MOTHMA_STAR_DESTROYER"] = true,
 ["MTC_COMBAT"] = true,
