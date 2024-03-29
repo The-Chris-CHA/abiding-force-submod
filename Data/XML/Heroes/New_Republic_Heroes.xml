@@ -14051,5 +14051,164 @@
 		<Required_Orbiting_Units>Alliance_Shuttle_Cilghal</Required_Orbiting_Units>
 	</SpaceUnit>
 
+	<UniqueUnit Name="Kred_XWing">
+		<Variant_Of_Existing_Type>X-Wing</Variant_Of_Existing_Type>
+		<LOD_Bias>5</LOD_Bias>
+		<Text_ID>TEXT_HERO_KRED_JERVATA</Text_ID>
+	
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_FIGHTER </Encyclopedia_Unit_Class>
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_SEPARATOR_TRAITS_BLOCK
+		TEXT_TOOLTIP_TRAIT_COMMAND4_LANDSPACE
+		TEXT_TOOLTIP_TRAIT_FORCESENSITIVE 
+		TEXT_TOOLTIP_TRAIT_PROTECTIVE
+		TEXT_TOOLTIP_SEPARATOR_BIO_BLOCK 
+		TEXT_TOOLTIP_KRED_BLACK_SQUADRON
+		TEXT_TOOLTIP_SEPARATOR_COMMANDS_BLOCK
+		TEXT_TOOLTIP_COMMAND_XWING
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_STATBLOCK_CORRAN_XWING_BASE
+		TEXT_STATBLOCK_XWING_MOVE
+		TEXT_STATBLOCK_XWING_WEAP1
+		TEXT_STATBLOCK_XWING_WEAP2
+		</Encyclopedia_Text>
+
+		<Space_Model_Name>rv_XWing.ALO</Space_Model_Name>
+		<Icon_Name>i_button_kred_bs.tga</Icon_Name>
+
+
+		<Scale_Factor>0.5</Scale_Factor>
+		<Select_Box_Scale>40</Select_Box_Scale>
+		<Select_Box_Z_Adjust>1.0f</Select_Box_Z_Adjust>
+		<Mass>0.98</Mass>
+
+		<Max_Speed>5.05</Max_Speed>
+		<Min_Speed>1.34</Min_Speed>
+		<Max_Lift>2.55f</Max_Lift>
+		<Max_Rate_Of_Turn>3.75</Max_Rate_Of_Turn>
+		<Max_Thrust>2.55</Max_Thrust>
+		<Max_Rate_Of_Roll>3.0</Max_Rate_Of_Roll>
+		<Bank_Turn_Angle>90</Bank_Turn_Angle>
+		<Begin_Turn_Towards_Distance>400.0</Begin_Turn_Towards_Distance>
+		<Hyperspace>Yes</Hyperspace>
+		<Hyperspace_Speed>1.5</Hyperspace_Speed>
+
+		<Behavior>SELECTABLE, TRANSPORT</Behavior>
+		<SpaceBehavior>FIGHTER_LOCOMOTOR, TARGETING, WEAPON, POWERED, SHIELDED, HIDE_WHEN_FOGGED, AMBIENT_SFX, NEBULA, DAMAGE_TRACKING, REVEAL, ABILITY_COUNTDOWN </SpaceBehavior>
+
+		<Armor_Type> ArmourS_Fighter </Armor_Type>
+		<Shield_Armor_Type> ShieldS_Fighter </Shield_Armor_Type>
+
+		<Affiliation>Rebel</Affiliation>
+		<Shield_Points>100</Shield_Points>
+		<Tactical_Health>260</Tactical_Health>
+		<Collision_Box_Modifier>1.0</Collision_Box_Modifier>
+		<Shield_Refresh_Rate>5</Shield_Refresh_Rate>
+		<Energy_Capacity>9999</Energy_Capacity>
+		<Energy_Refresh_Rate>500</Energy_Refresh_Rate>
+
+		<Formation_Priority>1</Formation_Priority>
+		<Is_Escort>yes</Is_Escort>
+		<Is_Bomber>no</Is_Bomber>
+		<Squadron_Capacity>0</Squadron_Capacity>
+		<Number_per_Squadron>1</Number_per_Squadron>
+		<Size_Value>8</Size_Value>
+
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+
+
+		<HardPoints> HP_Xwing_00, HP_Xwing_01, HP_Xwing_02 </HardPoints>
+		
+		<Death_Explosions>Medium_Explosion_Space</Death_Explosions>
+		<Asteroid_Damage_Hit_Particles>Large_Damage_Space</Asteroid_Damage_Hit_Particles>
+		<Death_SFXEvent_Start_Die> Unit_X_Wing_Death_SFX </Death_SFXEvent_Start_Die> 
+
+		<SFXEvent_Select>Unit_Select_Luke</SFXEvent_Select>
+		<SFXEvent_Move>Unit_Move_Luke</SFXEvent_Move>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Luke</SFXEvent_Fleet_Move>
+		<SFXEvent_Attack>Unit_Attack_Luke</SFXEvent_Attack>
+		<SFXEvent_Guard>Unit_Guard_Luke</SFXEvent_Guard>
+		<SFXEvent_Assist_Move>Unit_Assist_Move_Luke </SFXEvent_Assist_Move>		
+		<SFXEvent_Assist_Attack>Unit_Assist_Attack_Luke </SFXEvent_Assist_Attack>
+		<SFXEvent_Health_Low_Warning> Unit_Health_Low_Luke </SFXEvent_Health_Low_Warning>
+		<SFXEvent_Health_Critical_Warning> Unit_Health_Critical_Luke </SFXEvent_Health_Critical_Warning>
+		<SFXEvent_Enemy_Health_Low_Warning> Unit_Enemy_Health_Low_Luke </SFXEvent_Enemy_Health_Low_Warning>
+		<SFXEvent_Enemy_Health_Critical_Warning> Unit_Enemy_Health_Critical_Luke </SFXEvent_Enemy_Health_Critical_Warning>		
+		<SFXEvent_Unit_Lost> Unit_Defeat_Luke </SFXEvent_Unit_Lost>
+
+		<SFXEvent_Fire>Unit_X_Wing_Fire</SFXEvent_Fire>
+		<SFXEvent_Ambient_Moving> Unit_X_Wing_Fly_By </SFXEvent_Ambient_Moving>
+		<SFXEvent_Ambient_Moving_Min_Delay_Seconds> 5 </SFXEvent_Ambient_Moving_Min_Delay_Seconds>
+		<SFXEvent_Ambient_Moving_Max_Delay_Seconds> 10 </SFXEvent_Ambient_Moving_Max_Delay_Seconds>
+		<SFXEvent_Engine_Cinematic_Focus_Loop> Unit_X_Wing_Cinematic_Engine_Loop </SFXEvent_Engine_Cinematic_Focus_Loop>
+
+		<Score_Cost_Credits> 500 </Score_Cost_Credits>
+		<Blob_Shadow_Below_Detail_Level>2</Blob_Shadow_Below_Detail_Level>
+		<Blob_Shadow_Scale>200.0, 100.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name>Generic_Shadow</Blob_Shadow_Material_Name>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+
+        <Ranking_In_Category>2</Ranking_In_Category>
+
+		<MovementClass> Space </MovementClass>
+		<CategoryMask> Fighter | AntiFighter </CategoryMask>
+		<Victory_Relevant>yes</Victory_Relevant>
+		<Custom_Footprint_Radius> 15.0 </Custom_Footprint_Radius>
+		<MovementClass> Space </MovementClass>
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<FormationOrder>2</FormationOrder>
+
+		<Spin_Away_On_Death>Yes</Spin_Away_On_Death>
+		<Spin_Away_On_Death_Chance>0.2</Spin_Away_On_Death_Chance>
+		<Spin_Away_On_Death_Time>2.0f</Spin_Away_On_Death_Time>
+		<Spin_Away_On_Death_Explosion>Small_Explosion_Space</Spin_Away_On_Death_Explosion>
+		<Spin_Away_On_Death_SFXEvent_Start_Die>Unit_X_Wing_Spinning_By</Spin_Away_On_Death_SFXEvent_Start_Die>
+		<Remove_Upon_Death>true</Remove_Upon_Death>
+
+		<Landing_Transport_Variant>Luke_Jedi_Xwing_Landing</Landing_Transport_Variant>
+
+		<!-- Non-Hero unit abilities description -->
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<!-- Primary ability -->
+			<Unit_Ability>
+				<Type>HUNT</Type>
+			</Unit_Ability>
+			
+			<!-- Secondary ability -->
+			<Unit_Ability>
+				<Type>POWER_TO_WEAPONS</Type>
+				<Mod_Multiplier>WEAPON_DELAY_MULTIPLIER, 0.50f</Mod_Multiplier>
+				<Mod_Multiplier>SPEED_MULTIPLIER, 1.2</Mod_Multiplier>
+				<Mod_Multiplier>CAUSE_DAMAGE_MULTIPLIER , 2.5</Mod_Multiplier>
+				<Recharge_Seconds>60</Recharge_Seconds>
+				<Expiration_Seconds>15</Expiration_Seconds>
+				<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_STRIKE_NAME</Alternate_Name_Text>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_STRIKE_DESCRIPTION</Alternate_Description_Text>
+				<Alternate_Icon_Name>i_sa_strike.tga</Alternate_Icon_Name>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+
+		<Abilities SubObjectList="Yes">
+			
+			<Combat_Bonus_Ability Name="Kred_Space_Combat_Bonus">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Unit_Strength_Category>All</Unit_Strength_Category>
+				<Applicable_Unit_Categories>All</Applicable_Unit_Categories>
+				<Applicable_Unit_Types />
+				<Excluded_Unit_Types> </Excluded_Unit_Types>
+				<Health_Bonus_Percentage>0.1</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.1</Damage_Bonus_Percentage>
+				<Energy_Pool_Bonus_Percentage>0.0</Energy_Pool_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.0</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.0</Defense_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.1</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>0</Stacking_Category>
+			</Combat_Bonus_Ability>
+
+		</Abilities>
+
+	</UniqueUnit>
+
 	
 </New_Republic_Heroes>
