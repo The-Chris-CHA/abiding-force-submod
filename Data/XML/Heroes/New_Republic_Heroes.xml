@@ -2479,7 +2479,8 @@
 		<Encyclopedia_Text> 
 		TEXT_TOOLTIP_SEPARATOR_TRAITS_BLOCK 
 		TEXT_TOOLTIP_TRAIT_COMMAND2_SPACE
-		TEXT_TOOLTIP_TRAIT_ACEPILOT
+		TEXT_TOOLTIP_TRAIT_ADMIN4
+		TEXT_TOOLTIP_TRAIT_FORCESENSITIVE
 		TEXT_TOOLTIP_SEPARATOR_BIO_BLOCK
 		TEXT_TOOLTIP_MIREILLE
 		TEXT_TOOLTIP_SEPARATOR_COMMANDS_BLOCK 
@@ -2526,11 +2527,12 @@
 			<Combat_Bonus_Ability Name="Miri_Space_Bonus">
 				<Activation_Style>Space_Automatic</Activation_Style>
 				<Applicable_Unit_Categories>All</Applicable_Unit_Categories>
-				<Health_Bonus_Percentage>0.25</Health_Bonus_Percentage>
-				<Damage_Bonus_Percentage>0.25</Damage_Bonus_Percentage>
-				<Shield_Bonus_Percentage>0.05</Shield_Bonus_Percentage>
-				<Defense_Bonus_Percentage>0.05</Defense_Bonus_Percentage>
-				<Movement_Speed_Bonus_Percentage>0.0</Movement_Speed_Bonus_Percentage>
+				<Health_Bonus_Percentage>0.15</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.20</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.15</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.15</Defense_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.15</Movement_Speed_Bonus_Percentage>
+				<Ability_Recharge_Bonus_Percentage>-0.05</Ability_Recharge_Bonus_Percentage>
 				<Stacking_Category>0</Stacking_Category>
 			</Combat_Bonus_Ability>
 
@@ -2544,6 +2546,13 @@
 				<Movement_Speed_Bonus_Percentage>0.10</Movement_Speed_Bonus_Percentage>
 				<Stacking_Category>0</Stacking_Category>
 			</Combat_Bonus_Ability>
+
+			<Reduce_Production_Price_Ability Name="Miri_Reduce_Production_Price">
+				<Applicable_Unit_Categories>All</Applicable_Unit_Categories>
+				<Applicable_Unit_Types />
+				<Price_Reduction_Percentage>0.15</Price_Reduction_Percentage>
+				<Stacking_Category>0</Stacking_Category>
+			</Reduce_Production_Price_Ability>
 		</Abilities>
 	</UniqueUnit>
 
@@ -14060,12 +14069,12 @@
 	<UniqueUnit Name="Kred_XWing">
 		<Variant_Of_Existing_Type>X-Wing</Variant_Of_Existing_Type>
 		<LOD_Bias>5</LOD_Bias>
-		<Text_ID>TEXT_HERO_KRED_JERVATA</Text_ID>
+		<Text_ID>TEXT_HERO_KRED_JERVATAA</Text_ID>
 	
 		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_FIGHTER </Encyclopedia_Unit_Class>
 		<Encyclopedia_Text> 
 		TEXT_TOOLTIP_SEPARATOR_TRAITS_BLOCK
-		TEXT_TOOLTIP_TRAIT_COMMAND4_LANDSPACE
+		TEXT_TOOLTIP_TRAIT_ACEPILOT
 		TEXT_TOOLTIP_TRAIT_FORCESENSITIVE 
 		TEXT_TOOLTIP_TRAIT_PROTECTIVE
 		TEXT_TOOLTIP_SEPARATOR_BIO_BLOCK 
@@ -14082,6 +14091,7 @@
 		<Space_Model_Name>rv_XWing.ALO</Space_Model_Name>
 		<Icon_Name>i_button_kred_bs.tga</Icon_Name>
 
+		<Is_Named_Hero>Yes</Is_Named_Hero>
 
 		<Scale_Factor>0.5</Scale_Factor>
 		<Select_Box_Scale>40</Select_Box_Scale>
@@ -14196,6 +14206,17 @@
 		</Unit_Abilities_Data>
 
 		<Abilities SubObjectList="Yes">
+
+			<Combat_Bonus_Ability Name="Kred_Combat_Bonus_Ace_Pilot">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories> Fighter | Bomber </Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.15</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.05</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.05</Defense_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.10</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>0</Stacking_Category>
+			</Combat_Bonus_Ability>
 			
 			<Combat_Bonus_Ability Name="Kred_Space_Combat_Bonus">
 				<Activation_Style>Space_Automatic</Activation_Style>
