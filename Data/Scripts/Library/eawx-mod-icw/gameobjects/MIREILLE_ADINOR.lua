@@ -11,6 +11,9 @@ return {
         },
 		["KRED_XWING"] = {
 			DEFAULT = {Initial = 1, Reserve = 0}
+		},
+		["DREX_XWING"] = {
+			DEFAULT = {Initial = 1, Reserve = 0}
 		}
 	},
 	Scripts = {"multilayer", "fighter-spawn"}
