@@ -7,7 +7,7 @@ return {
     },
     ["REBEL"] = {
         ["SAIJO"] = {"Nantz_Independence", "Mon_Mothma_Team"},
-        ["ENDOR"] = {"Han_Solo_Team", "Luke_Skywalker_Jedi_Team", "Home_One", "Lando_Calrissian_Team", "Wedge_Rogue_Squadron_Space"},
+        ["ENDOR"] = {"Han_Solo_Team", "Luke_Skywalker_Jedi_Team", "Home_One", "Lando_Calrissian_Team", "Wedge_Rogue_Squadron_Space", "Blue_Squadron_Space"},
         ["MON_CALAMARI"] = {"Airen_Cracken_Team", "Katarn_Team"},
         ["SULLUST"] = {"Sovv_Dauntless"},
     },

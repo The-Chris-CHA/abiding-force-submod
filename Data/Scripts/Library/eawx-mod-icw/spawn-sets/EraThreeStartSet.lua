@@ -18,7 +18,7 @@ return {
         }
     },
     ["REBEL"] = {
-        ["CORUSCANT"] = {"Drayson_True_Fidelity", "Iillor_Corusca", "Luke_Skywalker_Jedi_Team", "Princess_Leia_Team", "Han_Solo_Team", "Mon_Mothma_Team"},
+        ["CORUSCANT"] = {"Drayson_True_Fidelity", "Iillor_Corusca", "Luke_Skywalker_Jedi_Team", "Princess_Leia_Team", "Han_Solo_Team", "Mon_Mothma_Team", "Blue Squadron_Space"},
 		["ABREGADAO_RAE"] = {"Errant_Venture"},
 		["DRUCKENWELL"] = {"Iblis_Peregrine"},
 		["KASHYYYK"] = {"Katarn_Team"},
