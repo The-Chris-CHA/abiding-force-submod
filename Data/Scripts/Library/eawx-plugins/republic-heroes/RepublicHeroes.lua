@@ -85,6 +85,7 @@ function RepublicHeroes:new(gc, herokilled_finished_event, human_player)
 			["Raddus"] = {"RADDUS_ASSIGN",{"RADDUS_RETIRE"},{"RADDUS_PROFUNDITY"},"TEXT_HERO_RADDUS"},
 			["Hera"] = {"HERA_ASSIGN",{"HERA_RETIRE"},{"HERA_STARHAWK"},"TEXT_HERO_HERA"},
 			["Mireille"] = {"MIREILLE_ASSIGN",{"MIREILLE_RETIRE"},{"MIREILLE_ADINOR"},"TEXT_HERO_MIREILLE"},
+			["Babouls"] = {"BABOULS_ASSIGN",{"BABOULS_RETIRE"},{"BABOULS_PARAMOUNT"},"TEXT_HERO_BABOULS"},
 		},
 		available_list = {--Heroes currently available for purchase. Seeded with those who have no special prereqs
 			"Ackbar",
@@ -100,6 +101,7 @@ function RepublicHeroes:new(gc, herokilled_finished_event, human_player)
 			"Burke",
 			"Massa",
 			"Lando",
+			"Mireille"
 		},
 		story_locked_list = {--Heroes not accessible, but able to return with the right conditions
 			["Dorat"] = true
@@ -231,6 +233,7 @@ function RepublicHeroes:init_heroes()
 	
 	if tech_level >= 3 then
 		Handle_Hero_Add("Iblis", admiral_data)
+		Handle_Hero_Exit("Mireille", admiral_data)
 	end
 	
 	if tech_level >= 4 then
@@ -466,5 +469,4 @@ function RepublicHeroes:Canon_Heroes()
 	--Logger:trace("entering RepublicHeroes:Canon_Heroes")
 	Handle_Hero_Add("Raddus", admiral_data)
 	Handle_Hero_Add("Hera", admiral_data)
-	Handle_Hero_Add("Mireille", admiral_data)
 end
