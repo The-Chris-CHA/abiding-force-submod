@@ -2511,6 +2511,12 @@
 		<Reserve_Spawned_Units_Tech_0>Rebel_X-Wing_Squadron_Double, 1</Reserve_Spawned_Units_Tech_0>
 		<Reserve_Spawned_Units_Tech_0>B-Wing_Squadron, 1</Reserve_Spawned_Units_Tech_0>
 		
+		<SFXEvent_Select>Unit_Select_Mara_Jade</SFXEvent_Select>
+		<SFXEvent_Move>Unit_Move_Mara_Jade</SFXEvent_Move>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Mara_Jade</SFXEvent_Fleet_Move>
+		<SFXEvent_Attack>Unit_Attack_Mara_Jade</SFXEvent_Attack>
+		<SFXEvent_Guard>Unit_Guard_Mara_Jade</SFXEvent_Guard>
+
 		<Unit_Abilities_Data SubObjectList="Yes">
 			<Unit_Ability>
 				<Type>DEFEND</Type>
@@ -14413,6 +14419,7 @@
 		<Text_ID>TEXT_HERO_BLUE_HAL</Text_ID>
 		<Encyclopedia_Text>
 		TEXT_TOOLTIP_SEPARATOR_TRAITS_BLOCK 
+		TEXT_TOOLTIP_TRAIT_ENDOR
 		TEXT_TOOLTIP_TRAIT_ACEPILOT
 		TEXT_TOOLTIP_SEPARATOR_BIO_BLOCK 
 		TEXT_TOOLTIP_HAL 
@@ -14526,6 +14533,7 @@
 		<Text_ID>TEXT_HERO_BLUE_TANN</Text_ID>
 		<Encyclopedia_Text>
 		TEXT_TOOLTIP_SEPARATOR_TRAITS_BLOCK 
+		TEXT_TOOLTIP_TRAIT_ENDOR
 		TEXT_TOOLTIP_TRAIT_ACEPILOT
 		TEXT_TOOLTIP_SEPARATOR_BIO_BLOCK 
 		TEXT_TOOLTIP_TANN_SHALA 
@@ -14544,7 +14552,8 @@
 		<Scale_Factor>0.5</Scale_Factor>
 		
 		<Armor_Type> Armor_Hero_Transport </Armor_Type>
-		<Is_Named_Hero>Yes</Is_Named_Hero>
+		<!-- Testing config stuff -->
+		<!-- <Is_Named_Hero>Yes</Is_Named_Hero> -->
 		<Tactical_Health>500</Tactical_Health>
 		<Shield_Points>200</Shield_Points>
 		<Shield_Refresh_Rate>10</Shield_Refresh_Rate>
@@ -14636,11 +14645,13 @@
 		<Tactical_Health>400</Tactical_Health>
 		<Shield_Refresh_Rate>10</Shield_Refresh_Rate>
 		
-		<Is_Named_Hero>Yes</Is_Named_Hero>
+		<!-- Testing config stuff -->
+		<!-- <Is_Named_Hero>Yes</Is_Named_Hero> -->
 		
 		<Text_ID>TEXT_HERO_BLUE_QOV</Text_ID>
 		<Encyclopedia_Text>
 		TEXT_TOOLTIP_SEPARATOR_TRAITS_BLOCK
+		TEXT_TOOLTIP_TRAIT_ENDOR
 		TEXT_TOOLTIP_TRAIT_ACEPILOT
 		TEXT_TOOLTIP_SEPARATOR_BIO_BLOCK
 		TEXT_TOOLTIP_QOV 
@@ -14654,7 +14665,7 @@
 		TEXT_STATBLOCK_YWING_WEAP3
 		TEXT_STATBLOCK_YWING_WEAP4
 		</Encyclopedia_Text>
-		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_GENERAL </Encyclopedia_Unit_Class>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_BOMBER </Encyclopedia_Unit_Class>
 		
 		<HardPoints>
 			HP_Ywing_01, HP_Ywing_02, HP_Ywing_03, HP_Ywing_04, HP_CR90_Hangar
@@ -14662,11 +14673,6 @@
 		
 		<SpaceBehavior>ABILITY_COUNTDOWN, SPAWN_SQUADRON, HUNT, FIGHTER_LOCOMOTOR, SELECTABLE, GARRISON_UNIT, TARGETING, POWERED, SHIELDED, HIDE_WHEN_FOGGED, AMBIENT_SFX, DAMAGE_TRACKING, REVEAL, NEBULA </SpaceBehavior>		
 		<CategoryMask> Bomber | AntiCapital | SpaceHero </CategoryMask>
-		<Create_Team>Yes</Create_Team>
-		<Create_Team_Type>Salm_Y-Wing_Squadron</Create_Team_Type>
-		
-		<Starting_Spawned_Units_Tech_0>Y-Wing_Squadron, 2</Starting_Spawned_Units_Tech_0>
-		<Spawned_Squadron_Delay_Seconds>1</Spawned_Squadron_Delay_Seconds>
 		
 		<Icon_Name>i_button_qov_blu.tga</Icon_Name>
 		
@@ -14703,7 +14709,7 @@
 				<Stacking_Category>0</Stacking_Category>
 			</Combat_Bonus_Ability>
 			
-			<Force_Healing_Ability Name="Qov_Tann_Self_Heal">
+			<Force_Healing_Ability Name="Blue_Qov_Self_Heal">
 			
 				<Activation_Style>Space_Automatic</Activation_Style>
 				<Heal_Range>5.0</Heal_Range>
@@ -14792,7 +14798,7 @@
 		
 		<Create_Team_Type> Blue_Squadron_Space_Container </Create_Team_Type>
 		<Squadron_Units> Rogue_XWing_Wedge_Escort, Rogue_XWing_Wedge_Escort, Rogue_XWing_Wedge_Escort, Rogue_XWing_Wedge_Escort </Squadron_Units>
-		<Squadron_Units> Rogue_XWing_Wedge_Escort, Rogue_XWing_Wedge_Escort, Rogue_XWing_Wedge_Escort, Rogue_XWing_Wedge_Escort </Squadron_Units>
+		<Squadron_Units> Rogue_XWing_Wedge_Escort, Salm_Y-Wing_Escort, Rogue_XWing_Wedge_Escort, Salm_Y-Wing_Escort </Squadron_Units>
 		<Squadron_Units> Rogue_XWing_Wedge_Escort, Qov_YWing, Tann_XWing, Hal_XWing </Squadron_Units>
 				
 		<Damage>50</Damage>
