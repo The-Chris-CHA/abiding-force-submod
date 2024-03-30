@@ -210,6 +210,7 @@ return {
     ,AIREN_CRACKEN_TEAM = {"Is_Production_Planet", false}
     ,BELL_ENDURANCE = {nil, true}
     ,BELL_SWIFT_LIBERTY = {nil, true}
+    ,BLUE_SQUADRON_SPACE = {nil, true}
     ,BRAND_INDOMITABLE = {nil, true}
     ,BRAND_YALD = {nil, true}
     ,BURKE_REMEMBER_ALDERAAN = {nil, true}

@@ -14,7 +14,7 @@ return {
     },
     ["REBEL"] = {
         ["BOTHAWUI"] = {"Mon_Mothma_Team", "Luke_Skywalker_Jedi_Team"},
-		["KASHYYYK"] = {"Han_Solo_Team", "Home_One", "Lando_Calrissian_Team", "Wedge_Rogue_Squadron_Space"},
+		["KASHYYYK"] = {"Han_Solo_Team", "Home_One", "Lando_Calrissian_Team", "Wedge_Rogue_Squadron_Space", "Blue_Squadron_Space"},
         ["MON_CALAMARI"] = {"Ragab_Emancipator", "Iillor_Corusca", "Airen_Cracken_Team", "Katarn_Team"},
 		["BOMIS_KOORI"] = {"Nantz_Independence"},
     },
