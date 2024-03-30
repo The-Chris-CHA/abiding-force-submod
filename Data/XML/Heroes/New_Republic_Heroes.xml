@@ -14408,5 +14408,407 @@
 
 	</UniqueUnit>
 
+	<UniqueUnit Name="Hal_XWing">
+		<Variant_Of_Existing_Type>X-Wing</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_HERO_BLUE_HAL</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_SEPARATOR_TRAITS_BLOCK 
+		TEXT_TOOLTIP_TRAIT_ACEPILOT
+		TEXT_TOOLTIP_SEPARATOR_BIO_BLOCK 
+		TEXT_TOOLTIP_HAL 
+		TEXT_TOOLTIP_SEPARATOR_COMMANDS_BLOCK
+		TEXT_TOOLTIP_COMMAND_BLUE_SQUADRON
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_STATBLOCK_ROGUE_BASE
+		TEXT_STATBLOCK_XWING_MOVE
+		TEXT_STATBLOCK_XWING_WEAP1
+		TEXT_STATBLOCK_XWING_WEAP2
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_FIGHTER </Encyclopedia_Unit_Class>
+		<Icon_Name>i_button_hal_blu.tga</Icon_Name>
+
+		<Space_Model_Name>rv_XWing.alo</Space_Model_Name>
+		<Scale_Factor>0.5</Scale_Factor>
+		
+		<Armor_Type> Armor_Hero_Transport </Armor_Type>
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+		<Tactical_Health>500</Tactical_Health>
+		<Shield_Points>200</Shield_Points>
+		<Shield_Refresh_Rate>10</Shield_Refresh_Rate>
+
+		<Redirect_Damage_To_Teammates>Yes</Redirect_Damage_To_Teammates>
+		
+		<CategoryMask> SpaceHero | AntiFighter </CategoryMask>
+
+        <!-- Wedge's X-Wing is a Death Star killer! -->		
+        <Is_Super_Weapon_Killer>Yes</Is_Super_Weapon_Killer>
+
+		<SpaceBehavior>FIGHTER_LOCOMOTOR, ABILITY_COUNTDOWN, SELECTABLE, TARGETING, WEAPON, POWERED, SHIELDED, HIDE_WHEN_FOGGED, AMBIENT_SFX, NEBULA </SpaceBehavior>
+		
+		<SFXEvent_Select>Unit_Select_Wedge_Rogue</SFXEvent_Select>
+		<SFXEvent_Move>Unit_Move_Wedge_Rogue</SFXEvent_Move>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Wedge_Rogue</SFXEvent_Fleet_Move>
+		<SFXEvent_Attack>Unit_Attack_Wedge_Rogue</SFXEvent_Attack>
+		<SFXEvent_Guard>Unit_Guard_Wedge_Rogue</SFXEvent_Guard>
+		<SFXEvent_Assist_Move>Unit_Assist_Move_Wedge_Rogue </SFXEvent_Assist_Move>		
+		<SFXEvent_Assist_Attack> Unit_Assist_Attack_Wedge_Rogue</SFXEvent_Assist_Attack>
+		<SFXEvent_Health_Low_Warning> Unit_Health_Low_Wedge_Rogue </SFXEvent_Health_Low_Warning>
+		<SFXEvent_Health_Critical_Warning> Unit_Health_Critical_Wedge_Rogue </SFXEvent_Health_Critical_Warning>
+		<SFXEvent_Enemy_Health_Low_Warning> Unit_Enemy_Health_Low_Wedge_Rogue </SFXEvent_Enemy_Health_Low_Warning>
+		<SFXEvent_Enemy_Health_Critical_Warning> Unit_Enemy_Health_Critical_Wedge_Rogue </SFXEvent_Enemy_Health_Critical_Warning>
+		
+		<SFXEvent_Fire>Unit_X_Wing_Fire</SFXEvent_Fire>
+		<SFXEvent_Ambient_Moving> Unit_X_Wing_Fly_By </SFXEvent_Ambient_Moving>
+		<SFXEvent_Ambient_Moving_Min_Delay_Seconds> 5 </SFXEvent_Ambient_Moving_Min_Delay_Seconds>
+		<SFXEvent_Ambient_Moving_Max_Delay_Seconds> 10 </SFXEvent_Ambient_Moving_Max_Delay_Seconds>
+		<SFXEvent_Engine_Cinematic_Focus_Loop> Unit_X_Wing_Cinematic_Engine_Loop </SFXEvent_Engine_Cinematic_Focus_Loop>
+
+		<Create_Team>Yes</Create_Team>
+		<Create_Team_Type>Blue_Squadron_Space</Create_Team_Type>
+		
+		<!-- Non-Hero unit abilities description -->
+		<Unit_Abilities_Data SubObjectList="Yes">
+			
+			<!-- Primary ability -->
+			
+			<Unit_Ability>
+				<Type>POWER_TO_WEAPONS</Type>
+				<Mod_Multiplier>WEAPON_DELAY_MULTIPLIER, 0.50f</Mod_Multiplier>
+				<Mod_Multiplier>SPEED_MULTIPLIER, 1.2</Mod_Multiplier>
+				<Mod_Multiplier>CAUSE_DAMAGE_MULTIPLIER , 2.5</Mod_Multiplier>
+				<Recharge_Seconds>60</Recharge_Seconds>
+				<Expiration_Seconds>15</Expiration_Seconds>
+				<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_STRIKE_NAME</Alternate_Name_Text>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_STRIKE_DESCRIPTION</Alternate_Description_Text>
+				<Alternate_Icon_Name>i_sa_strike.tga</Alternate_Icon_Name>
+			</Unit_Ability>
+			
+		</Unit_Abilities_Data>
+
+		<Abilities SubObjectList="Yes">
+			
+			<Combat_Bonus_Ability Name="Hal_Blue_Combat_Bonus_Ace_Pilot">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Unit_Strength_Category> Fighter | Bomber </Unit_Strength_Category>
+				<Applicable_Unit_Categories> Fighter | Bomber </Applicable_Unit_Categories>
+				<Applicable_Unit_Types />
+				<Excluded_Unit_Types> </Excluded_Unit_Types>
+				<Health_Bonus_Percentage>0.10</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.0</Damage_Bonus_Percentage>
+				<Energy_Pool_Bonus_Percentage>0.0</Energy_Pool_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.0</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.0</Defense_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.10</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>0</Stacking_Category>
+			</Combat_Bonus_Ability>
+			
+			<Force_Healing_Ability Name="Blue_Hal_Self_Heal">
+			
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Heal_Range>5.0</Heal_Range>
+				<Heal_Amount> 0.0 </Heal_Amount>
+				<Heal_Percent> 0.03 </Heal_Percent>
+				<Heal_Interval_In_Secs>5.0</Heal_Interval_In_Secs>
+				<Single_Target_Heal>Yes</Single_Target_Heal>
+
+				<Applicable_Unit_Categories />
+				<Applicable_Unit_Types>Hal_XWing</Applicable_Unit_Types>
+				<Excluded_Unit_Types />
+			
+			</Force_Healing_Ability>
+
+		</Abilities>
+
+	</UniqueUnit>
+
+	<UniqueUnit Name="Tann_XWing">
+		<Variant_Of_Existing_Type>X-Wing</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_HERO_BLUE_TANN</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_SEPARATOR_TRAITS_BLOCK 
+		TEXT_TOOLTIP_TRAIT_ACEPILOT
+		TEXT_TOOLTIP_SEPARATOR_BIO_BLOCK 
+		TEXT_TOOLTIP_TANN_SHALA 
+		TEXT_TOOLTIP_SEPARATOR_COMMANDS_BLOCK
+		TEXT_TOOLTIP_COMMAND_BLUE_SQUADRON
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_STATBLOCK_ROGUE_BASE
+		TEXT_STATBLOCK_XWING_MOVE
+		TEXT_STATBLOCK_XWING_WEAP1
+		TEXT_STATBLOCK_XWING_WEAP2
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_FIGHTER </Encyclopedia_Unit_Class>
+		<Icon_Name>i_button_tann_blu.tga</Icon_Name>
+
+		<Space_Model_Name>rv_XWing.alo</Space_Model_Name>
+		<Scale_Factor>0.5</Scale_Factor>
+		
+		<Armor_Type> Armor_Hero_Transport </Armor_Type>
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+		<Tactical_Health>500</Tactical_Health>
+		<Shield_Points>200</Shield_Points>
+		<Shield_Refresh_Rate>10</Shield_Refresh_Rate>
+
+		<Redirect_Damage_To_Teammates>Yes</Redirect_Damage_To_Teammates>
+		
+		<CategoryMask> SpaceHero | AntiFighter </CategoryMask>
+
+        <!-- Wedge's X-Wing is a Death Star killer! -->		
+        <Is_Super_Weapon_Killer>Yes</Is_Super_Weapon_Killer>
+
+		<SpaceBehavior>FIGHTER_LOCOMOTOR, ABILITY_COUNTDOWN, SELECTABLE, TARGETING, WEAPON, POWERED, SHIELDED, HIDE_WHEN_FOGGED, AMBIENT_SFX, NEBULA </SpaceBehavior>
+		
+		<SFXEvent_Select>Unit_Select_Mara_Jade</SFXEvent_Select>
+		<SFXEvent_Move>Unit_Move_Mara_Jade</SFXEvent_Move>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Mara_Jade</SFXEvent_Fleet_Move>
+		<SFXEvent_Attack>Unit_Attack_Mara_Jade</SFXEvent_Attack>
+		<SFXEvent_Guard>Unit_Guard_Mara_Jade</SFXEvent_Guard>
+		<SFXEvent_Health_Low_Warning> Unit_Health_Low_Mara_Jade </SFXEvent_Health_Low_Warning>
+		<SFXEvent_Health_Critical_Warning> Unit_Health_Critical_Mara_Jade </SFXEvent_Health_Critical_Warning>
+		<Death_SFXEvent_Start_Die> Unit_Defeat_Mara_Jade </Death_SFXEvent_Start_Die>
+		
+		<SFXEvent_Fire>Unit_X_Wing_Fire</SFXEvent_Fire>
+		<SFXEvent_Ambient_Moving> Unit_X_Wing_Fly_By </SFXEvent_Ambient_Moving>
+		<SFXEvent_Ambient_Moving_Min_Delay_Seconds> 5 </SFXEvent_Ambient_Moving_Min_Delay_Seconds>
+		<SFXEvent_Ambient_Moving_Max_Delay_Seconds> 10 </SFXEvent_Ambient_Moving_Max_Delay_Seconds>
+		<SFXEvent_Engine_Cinematic_Focus_Loop> Unit_X_Wing_Cinematic_Engine_Loop </SFXEvent_Engine_Cinematic_Focus_Loop>
+		
+		<!-- Non-Hero unit abilities description -->
+		<Unit_Abilities_Data SubObjectList="Yes">
+			
+			<!-- Primary ability -->
+			
+			<Unit_Ability>
+				<Type>POWER_TO_WEAPONS</Type>
+				<Mod_Multiplier>WEAPON_DELAY_MULTIPLIER, 0.50f</Mod_Multiplier>
+				<Mod_Multiplier>SPEED_MULTIPLIER, 1.2</Mod_Multiplier>
+				<Mod_Multiplier>CAUSE_DAMAGE_MULTIPLIER , 2.5</Mod_Multiplier>
+				<Recharge_Seconds>60</Recharge_Seconds>
+				<Expiration_Seconds>15</Expiration_Seconds>
+				<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_STRIKE_NAME</Alternate_Name_Text>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_STRIKE_DESCRIPTION</Alternate_Description_Text>
+				<Alternate_Icon_Name>i_sa_strike.tga</Alternate_Icon_Name>
+			</Unit_Ability>
+			
+		</Unit_Abilities_Data>
+
+		<Abilities SubObjectList="Yes">
+			
+			<Combat_Bonus_Ability Name="Tann_Blue_Combat_Bonus_Ace_Pilot">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Unit_Strength_Category> Fighter | Bomber </Unit_Strength_Category>
+				<Applicable_Unit_Categories> Fighter | Bomber </Applicable_Unit_Categories>
+				<Applicable_Unit_Types />
+				<Excluded_Unit_Types> </Excluded_Unit_Types>
+				<Health_Bonus_Percentage>0.10</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.0</Damage_Bonus_Percentage>
+				<Energy_Pool_Bonus_Percentage>0.0</Energy_Pool_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.0</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.0</Defense_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.10</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>0</Stacking_Category>
+			</Combat_Bonus_Ability>
+			
+			<Force_Healing_Ability Name="Blue_Tann_Self_Heal">
+			
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Heal_Range>5.0</Heal_Range>
+				<Heal_Amount> 0.0 </Heal_Amount>
+				<Heal_Percent> 0.03 </Heal_Percent>
+				<Heal_Interval_In_Secs>5.0</Heal_Interval_In_Secs>
+				<Single_Target_Heal>Yes</Single_Target_Heal>
+
+				<Applicable_Unit_Categories />
+				<Applicable_Unit_Types>Tann_XWing</Applicable_Unit_Types>
+				<Excluded_Unit_Types />
+			
+			</Force_Healing_Ability>
+
+		</Abilities>
+
+	</UniqueUnit>
+
+	<UniqueUnit Name="Qov_YWing">
+	
+		<Variant_Of_Existing_Type>Y-Wing</Variant_Of_Existing_Type>
+		
+		<Shield_Points>500</Shield_Points>
+		<Tactical_Health>400</Tactical_Health>
+		<Shield_Refresh_Rate>10</Shield_Refresh_Rate>
+		
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+		
+		<Text_ID>TEXT_HERO_BLUE_QOV</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_SEPARATOR_TRAITS_BLOCK
+		TEXT_TOOLTIP_TRAIT_ACEPILOT
+		TEXT_TOOLTIP_SEPARATOR_BIO_BLOCK
+		TEXT_TOOLTIP_QOV 
+		TEXT_TOOLTIP_SEPARATOR_COMMANDS_BLOCK
+		TEXT_TOOLTIP_COMMAND_BLUE_SQUADRON
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_STATBLOCK_YWING_SALM_BASE
+		TEXT_STATBLOCK_YWING_MOVE
+		TEXT_STATBLOCK_YWING_WEAP1
+		TEXT_STATBLOCK_YWING_WEAP2
+		TEXT_STATBLOCK_YWING_WEAP3
+		TEXT_STATBLOCK_YWING_WEAP4
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_GENERAL </Encyclopedia_Unit_Class>
+		
+		<HardPoints>
+			HP_Ywing_01, HP_Ywing_02, HP_Ywing_03, HP_Ywing_04, HP_CR90_Hangar
+		</HardPoints>
+		
+		<SpaceBehavior>ABILITY_COUNTDOWN, SPAWN_SQUADRON, HUNT, FIGHTER_LOCOMOTOR, SELECTABLE, GARRISON_UNIT, TARGETING, POWERED, SHIELDED, HIDE_WHEN_FOGGED, AMBIENT_SFX, DAMAGE_TRACKING, REVEAL, NEBULA </SpaceBehavior>		
+		<CategoryMask> Bomber | AntiCapital | SpaceHero </CategoryMask>
+		<Create_Team>Yes</Create_Team>
+		<Create_Team_Type>Salm_Y-Wing_Squadron</Create_Team_Type>
+		
+		<Starting_Spawned_Units_Tech_0>Y-Wing_Squadron, 2</Starting_Spawned_Units_Tech_0>
+		<Spawned_Squadron_Delay_Seconds>1</Spawned_Squadron_Delay_Seconds>
+		
+		<Icon_Name>i_button_qov_blu.tga</Icon_Name>
+		
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>POWER_TO_WEAPONS</Type>
+				<Expiration_Seconds>30</Expiration_Seconds>
+				<Mod_Multiplier>WEAPON_DELAY_MULTIPLIER, 0.25f</Mod_Multiplier>
+				<Mod_Multiplier>SHIELD_REGEN_MULTIPLIER, 1.0f</Mod_Multiplier>
+				<Mod_Multiplier>ENERGY_REGEN_MULTIPLIER, 1.0f</Mod_Multiplier>
+				<Mod_Multiplier>SPEED_MULTIPLIER, 0.5f</Mod_Multiplier>
+				<Recharge_Seconds>60</Recharge_Seconds>
+				<SFXEvent_GUI_Unit_Ability_Activated />
+				<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_STRIKE_NAME</Alternate_Name_Text>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_STRIKE_DESCRIPTION</Alternate_Description_Text>
+				<Alternate_Icon_Name>i_sa_strike.tga</Alternate_Icon_Name>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+
+		<Abilities SubObjectList="Yes">
+			
+			<Combat_Bonus_Ability Name="Qov_Blue_Combat_Bonus_Ace_Pilot">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Unit_Strength_Category> Fighter | Bomber </Unit_Strength_Category>
+				<Applicable_Unit_Categories> Fighter | Bomber </Applicable_Unit_Categories>
+				<Applicable_Unit_Types />
+				<Excluded_Unit_Types> </Excluded_Unit_Types>
+				<Health_Bonus_Percentage>0.10</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.0</Damage_Bonus_Percentage>
+				<Energy_Pool_Bonus_Percentage>0.0</Energy_Pool_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.0</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.0</Defense_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.10</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>0</Stacking_Category>
+			</Combat_Bonus_Ability>
+			
+			<Force_Healing_Ability Name="Qov_Tann_Self_Heal">
+			
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Heal_Range>5.0</Heal_Range>
+				<Heal_Amount> 0.0 </Heal_Amount>
+				<Heal_Percent> 0.03 </Heal_Percent>
+				<Heal_Interval_In_Secs>5.0</Heal_Interval_In_Secs>
+				<Single_Target_Heal>Yes</Single_Target_Heal>
+
+				<Applicable_Unit_Categories />
+				<Applicable_Unit_Types>Qov_YWing</Applicable_Unit_Types>
+				<Excluded_Unit_Types />
+			
+			</Force_Healing_Ability>
+
+			
+		</Abilities>
+		
+	</UniqueUnit>
+
+	<Container Name="Blue_Squadron_Space_Container">
+		<Variant_Of_Existing_Type>Rebel_X-Wing_Squadron_Container</Variant_Of_Existing_Type>
+		
+		<Text_ID>TEXT_HERO_BLUE</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_ENCYCLOPEDIA_ROGUE_SQUADRON 
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_STATBLOCK_XWING_SQUADRON
+		TEXT_STATBLOCK_ROGUE_ESCORT_BASE
+		TEXT_STATBLOCK_XWING_MOVE
+		TEXT_STATBLOCK_XWING_WEAP1
+		TEXT_STATBLOCK_XWING_WEAP2
+		</Encyclopedia_Text>
+		<Icon_Name>i_button_hal_blu.tga</Icon_Name>
+		
+		<CategoryMask> SpaceHero | AntiFighter</CategoryMask>
+		
+		<Radar_Icon_Size>0.03  0.03</Radar_Icon_Size>
+
+		<SpaceBehavior>REVEAL, ABILITY_COUNTDOWN</SpaceBehavior>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>LUCKY_SHOT</Type>
+				<Recharge_Seconds>40.0</Recharge_Seconds>
+				<Mod_Multiplier>CAUSE_DAMAGE_MULTIPLIER, 5f</Mod_Multiplier>
+				<Projectile_Types_Override>Proj_Ship_Bomber_Proton_Torpedo</Projectile_Types_Override>
+				<GUI_Activated_Ability_Name>Blue_Lucky_Shot</GUI_Activated_Ability_Name> 
+				<SFXEvent_Target_Ability> Unit_Lucky_Shot_Wedge_Rogue </SFXEvent_Target_Ability>
+				<Supports_Autofire>True</Supports_Autofire>
+				<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_TRD_NAME</Alternate_Name_Text>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_TRD_DESCRIPTION</Alternate_Description_Text>
+			</Unit_Ability>			
+		</Unit_Abilities_Data>
+		
+		<Abilities SubObjectList="Yes">
+			<Lucky_Shot_Attack_Ability Name="Blue_Lucky_Shot">
+				<Activation_Style> User_Input </Activation_Style>
+				<Applicable_Unit_Categories>All</Applicable_Unit_Categories>
+			</Lucky_Shot_Attack_Ability>
+		</Abilities>		
+	</Container>
+
+	<Squadron Name="Blue_Squadron_Space">
+		<Variant_Of_Existing_Type>Rebel_X-Wing_Squadron</Variant_Of_Existing_Type>
+		
+		<Text_ID>TEXT_HERO_BLUE</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_SEPARATOR_TRAITS_BLOCK
+		TEXT_TOOLTIP_TRAIT_ENDOR
+		TEXT_TOOLTIP_TRAIT_ACEPILOT 
+		TEXT_TOOLTIP_SEPARATOR_BIO_BLOCK 
+		TEXT_TOOLTIP_HAL
+		TEXT_TOOLTIP_SEPARATOR_COMMANDS_BLOCK
+		TEXT_TOOLTIP_COMMAND_BLUE_SQUADRON
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_STATBLOCK_XWING_SQUADRON
+		TEXT_STATBLOCK_ROGUE_ESCORT_BASE
+		TEXT_STATBLOCK_XWING_MOVE
+		TEXT_STATBLOCK_XWING_WEAP1
+		TEXT_STATBLOCK_XWING_WEAP2
+		</Encyclopedia_Text>
+		<Icon_Name>i_button_hal_blu.tga</Icon_Name>
+
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+		<Population_Value>1</Population_Value>
+		
+		<Create_Team_Type> Blue_Squadron_Space_Container </Create_Team_Type>
+		<Squadron_Units> Rogue_XWing_Wedge_Escort, Rogue_XWing_Wedge_Escort, Rogue_XWing_Wedge_Escort, Rogue_XWing_Wedge_Escort </Squadron_Units>
+		<Squadron_Units> Rogue_XWing_Wedge_Escort, Rogue_XWing_Wedge_Escort, Rogue_XWing_Wedge_Escort, Rogue_XWing_Wedge_Escort </Squadron_Units>
+		<Squadron_Units> Rogue_XWing_Wedge_Escort, Qov_YWing, Tann_XWing, Hal_XWing </Squadron_Units>
+				
+		<Damage>50</Damage>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>LUCKY_SHOT</Type>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+		
+		<Abilities SubObjectList="Yes">
+			<Lucky_Shot_Attack_Ability Name="Blue_Lucky_Shot">
+				<Activation_Style> User_Input </Activation_Style>
+				<Applicable_Unit_Categories>All</Applicable_Unit_Categories>
+			</Lucky_Shot_Attack_Ability>
+		</Abilities>		
+	</Squadron>
 	
 </New_Republic_Heroes>
