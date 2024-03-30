@@ -97,4 +97,12 @@
 		<Prereq>Universal_Story_Start</Prereq>
 	</Event>
 
+	<Event Name="Spawn_Blue">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Blue_Squadron_Space</Reward_Param1>
+		<Reward_Param2>Coruscant</Reward_Param2>
+		<Prereq>Universal_Story_Start</Prereq>
+	</Event>
+
 </Story>
