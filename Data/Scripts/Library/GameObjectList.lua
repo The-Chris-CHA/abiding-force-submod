@@ -27,6 +27,7 @@ return {
 ["ASSERTOR"] = true,
 ["ASTARTA_SIREN_STAR"] = true,
 ["ATTAN_BEAUTY"] = true,
+["BABOULS_PARAMOUNT"] = true,
 ["BAC"] = true,
 ["BAIDAM"] = true,
 ["BAKURA_DESTROYER"] = true,

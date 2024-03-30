@@ -2499,14 +2499,31 @@
 		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_FLEET_COMMANDER </Encyclopedia_Unit_Class>
 		<Icon_Name>i_button_mireillenem.tga</Icon_Name>
 
-		<Shield_Points>10000</Shield_Points>
-		<Shield_Refresh_Rate>100</Shield_Refresh_Rate>
-		<Tactical_Health>7500</Tactical_Health>
+		<Shield_Points>25000</Shield_Points>
+		<Shield_Refresh_Rate>150</Shield_Refresh_Rate>
+		<Tactical_Health>9310</Tactical_Health>
 		
 		<Is_Named_Hero>Yes</Is_Named_Hero>
 		<CategoryMask>SpaceHero | AntiFrigate</CategoryMask>
         <Ranking_In_Category>3</Ranking_In_Category>
 		<Tech_Level>99</Tech_Level>
+
+		<HardPoints>
+			HP_Adinor_Bay,
+			HP_Adinor_Engines,
+			HP_Adinor_Ion_01,
+			HP_Adinor_Ion_02,
+			HP_Adinor_Ion_03,
+			HP_Adinor_Ion_04,			
+			HP_Adinor_Turbo_01,
+			HP_Adinor_Turbo_02,
+			HP_Adinor_Turbo_03,
+			HP_Adinor_Turbo_04,
+			HP_Adinor_Turbo_05,
+			HP_Adinor_Turbo_06,
+			HP_Adinor_Turbo_07,
+			HP_Adinor_Turbo_08
+		</HardPoints>
 
 		<Starting_Spawned_Units_Tech_0>Rebel_X-Wing_Squadron_Double, 1</Starting_Spawned_Units_Tech_0>
 		<Starting_Spawned_Units_Tech_0>B-Wing_Squadron, 1</Starting_Spawned_Units_Tech_0>
@@ -2539,7 +2556,7 @@
 				<Mod_Multiplier>WEAPON_DELAY_MULTIPLIER,	0.5f</Mod_Multiplier>
 				<Mod_Multiplier>ENERGY_REGEN_MULTIPLIER,	1.0f</Mod_Multiplier>
 				<Mod_Multiplier>SPEED_MULTIPLIER,		0.5f</Mod_Multiplier>
-				<Recharge_Seconds>65</Recharge_Seconds>
+				<Recharge_Seconds>45</Recharge_Seconds>
 
 				<SFXEvent_GUI_Unit_Ability_Activated>Unit_Attack_Mara_Jade</SFXEvent_GUI_Unit_Ability_Activated>
 			</Unit_Ability>
@@ -2555,17 +2572,6 @@
 				<Defense_Bonus_Percentage>0.15</Defense_Bonus_Percentage>
 				<Movement_Speed_Bonus_Percentage>0.15</Movement_Speed_Bonus_Percentage>
 				<Ability_Recharge_Bonus_Percentage>-0.05</Ability_Recharge_Bonus_Percentage>
-				<Stacking_Category>0</Stacking_Category>
-			</Combat_Bonus_Ability>
-
-			<Combat_Bonus_Ability Name="Miri_Combat_Bonus_Ace_Pilot">
-				<Activation_Style>Space_Automatic</Activation_Style>
-				<Applicable_Unit_Categories> Fighter | Bomber </Applicable_Unit_Categories>
-				<Health_Bonus_Percentage>0.80</Health_Bonus_Percentage>
-				<Damage_Bonus_Percentage>0.50</Damage_Bonus_Percentage>
-				<Shield_Bonus_Percentage>0.50</Shield_Bonus_Percentage>
-				<Defense_Bonus_Percentage>0.05</Defense_Bonus_Percentage>
-				<Movement_Speed_Bonus_Percentage>0.10</Movement_Speed_Bonus_Percentage>
 				<Stacking_Category>0</Stacking_Category>
 			</Combat_Bonus_Ability>
 
@@ -2611,92 +2617,95 @@
 		<Required_Orbiting_Units>Mireille_Adinor</Required_Orbiting_Units>
 	</SpaceUnit>
 
-	<UniqueUnit Name="Babouls_Adinor">
-		<Variant_Of_Existing_Type>Calamari_Cruiser</Variant_Of_Existing_Type>
+	<UniqueUnit Name="Babouls_Paramount">
+		<Variant_Of_Existing_Type>Starhawk_MK1</Variant_Of_Existing_Type>
 		
 		<Text_ID>TEXT_HERO_BABOULS</Text_ID>
 		<Encyclopedia_Text> 
-		TEXT_TOOLTIP_SEPARATOR_TRAITS_BLOCK 
-		TEXT_TOOLTIP_TRAIT_COMMAND4_SPACE
-		TEXT_TOOLTIP_TRAIT_ACEPILOT
+		TEXT_TOOLTIP_SEPARATOR_TRAITS_BLOCK
+		TEXT_TOOLTIP_TRAIT_COMMAND3_SPACE
 		TEXT_TOOLTIP_SEPARATOR_BIO_BLOCK
-		TEXT_TOOLTIP_TALLON
+		TEXT_TOOLTIP_BABOULS
 		TEXT_TOOLTIP_SEPARATOR_COMMANDS_BLOCK 
-		TEXT_TOOLTIP_COMMAND_ADINOR
+		TEXT_TOOLTIP_COMMAND_PARAMOUNT
 		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
-		TEXT_TOOLTIP_MON_CALAMARI_CRUISER_HULL
-		TEXT_TOOLTIP_MON_CALAMARI_CRUISER_SHIELD
-		TEXT_TOOLTIP_MON_CALAMARI_CRUISER_MOVE
-		TEXT_TOOLTIP_MON_CALAMARI_CRUISER_SQUADRON
-		TEXT_TOOLTIP_MON_CALAMARI_CRUISER_WEAP1
-		TEXT_TOOLTIP_MON_CALAMARI_CRUISER_WEAP2
+		TEXT_TOOLTIP_STARHAWK_MK1_HULL
+		TEXT_TOOLTIP_STARHAWK_MK1_SHIELD
+		TEXT_TOOLTIP_STARHAWK_MK1_MOVE
+		TEXT_TOOLTIP_STARHAWK_MK1_SQUADRON
+		TEXT_TOOLTIP_STARHAWK_MK1_WEAP1
+		TEXT_TOOLTIP_STARHAWK_MK1_WEAP2
+		TEXT_TOOLTIP_STARHAWK_MK1_WEAP3
+		TEXT_TOOLTIP_STARHAWK_MK1_WEAP4
+		TEXT_TOOLTIP_STARHAWK_MK1_WEAP5
+		TEXT_TOOLTIP_STARHAWK_MK1_WEAP6
 		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
 		TEXT_TOOLTIP_CAPABILITY_ORBITAL_BOMBARDMENT
 		TEXT_TOOLTIP_CAPABILITY_BOMBING_RUN
 		</Encyclopedia_Text>
 		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_FLEET_COMMANDER </Encyclopedia_Unit_Class>
-		<Icon_Name>i_button_adartallon.tga</Icon_Name>
+		<Icon_Name>i_button_babouls.tga</Icon_Name>
 		
 		<Is_Named_Hero>Yes</Is_Named_Hero>
-		<CategoryMask>SpaceHero | AntiFrigate</CategoryMask>
+		<CategoryMask>SpaceHero | AntiCapital</CategoryMask>
         <Ranking_In_Category>3</Ranking_In_Category>
 		<Tech_Level>99</Tech_Level>
 		
 		<Unit_Abilities_Data SubObjectList="Yes">
-			<Unit_Ability>
-				<Type>DEFEND</Type>
-				<Mod_Multiplier>WEAPON_DELAY_MULTIPLIER,	1.25f</Mod_Multiplier>
-				<Mod_Multiplier>SHIELD_REGEN_INTERVAL_MULTIPLIER,	0.20f</Mod_Multiplier>
-				<Mod_Multiplier>SPEED_MULTIPLIER,		0.8f</Mod_Multiplier>
-				<Recharge_Seconds>150</Recharge_Seconds>
-				<Expiration_Seconds>8</Expiration_Seconds>
-		
-				<SFXEvent_GUI_Unit_Ability_Activated>Unit_Defend_Ackbar</SFXEvent_GUI_Unit_Ability_Activated>
-			</Unit_Ability>
-		</Unit_Abilities_Data>
-
-		<Abilities SubObjectList="Yes">
-			<Combat_Bonus_Ability Name="Babouls_Space_Bonus">
+            <!-- Primary ability -->
+            <Unit_Ability>
+                <Type>TRACTOR_BEAM</Type>
+                <Mod_Multiplier>SPEED_MULTIPLIER, 0.8f</Mod_Multiplier>
+                <GUI_Activated_Ability_Name>Starhawk_Tractor_Beam</GUI_Activated_Ability_Name>
+                <Recharge_Seconds>25</Recharge_Seconds>
+                <SFXEvent_Target_Ability>Unit_Tractor_Beam_Star_Destroyer</SFXEvent_Target_Ability>
+                <SFXEvent_Special_Ability_Loop>Unit_Star_Destroyer_Tractor_Beam</SFXEvent_Special_Ability_Loop>
+                <Supports_Autofire>True</Supports_Autofire>
+            </Unit_Ability>
+            
+        </Unit_Abilities_Data>
+        
+         <Abilities SubObjectList="Yes">
+            <Tractor_Beam_Attack_Ability Name="Starhawk_Tractor_Beam">
+                <Activation_Style>User_Input</Activation_Style>
+                <Applicable_Unit_Categories>Corvette | Frigate | Capital | SuperCapital</Applicable_Unit_Categories>
+                <Applicable_Unit_Types/>
+                <Activation_Min_Range>0</Activation_Min_Range>
+                <Activation_Max_Range>1500</Activation_Max_Range>
+                <!-- Modifiers. If 0 - no modifier is applied, 1 - "100% increase or decrease" -->
+                <Target_Speed_Decrease_Percent>0.45</Target_Speed_Decrease_Percent>
+                <Stacking_Category>2</Stacking_Category>
+            </Tractor_Beam_Attack_Ability>
+			
+			<Combat_Bonus_Ability Name="Babouls_Combat_Bonus">
 				<Activation_Style>Space_Automatic</Activation_Style>
 				<Applicable_Unit_Categories>All</Applicable_Unit_Categories>
-				<Health_Bonus_Percentage>0.05</Health_Bonus_Percentage>
-				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
-				<Shield_Bonus_Percentage>0.05</Shield_Bonus_Percentage>
-				<Defense_Bonus_Percentage>0.05</Defense_Bonus_Percentage>
-				<Movement_Speed_Bonus_Percentage>0.0</Movement_Speed_Bonus_Percentage>
+				<Health_Bonus_Percentage>0.10</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.10</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.10</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.10</Defense_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.05</Movement_Speed_Bonus_Percentage>
 				<Stacking_Category>0</Stacking_Category>
 			</Combat_Bonus_Ability>
-
-			<Combat_Bonus_Ability Name="Babouls_Combat_Bonus_Ace_Pilot">
-				<Activation_Style>Space_Automatic</Activation_Style>
-				<Applicable_Unit_Categories> Fighter | Bomber </Applicable_Unit_Categories>
-				<Health_Bonus_Percentage>0.15</Health_Bonus_Percentage>
-				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
-				<Shield_Bonus_Percentage>0.05</Shield_Bonus_Percentage>
-				<Defense_Bonus_Percentage>0.05</Defense_Bonus_Percentage>
-				<Movement_Speed_Bonus_Percentage>0.10</Movement_Speed_Bonus_Percentage>
-				<Stacking_Category>0</Stacking_Category>
-			</Combat_Bonus_Ability>
-		</Abilities>
+        </Abilities>	
 	</UniqueUnit>
 
 	<SpaceUnit Name="Babouls_Assign">
 		<Variant_Of_Existing_Type>Template_Assign</Variant_Of_Existing_Type>
 		
 		<Text_ID>TEXT_HERO_BABOULS</Text_ID>
-		<Icon_Name>i_button_adartallon_command.tga</Icon_Name>
+		<Icon_Name>i_button_babouls_command.tga</Icon_Name>
 
 		<Affiliation>Rebel</Affiliation>
 
 		<Encyclopedia_Text> 
 		TEXT_TOOLTIP_ASSIGN_NR_ADMIRAL
 		TEXT_TOOLTIP_SEPARATOR_TRAITS_BLOCK 
-		TEXT_TOOLTIP_TRAIT_COMMAND4_SPACE
-		TEXT_TOOLTIP_TRAIT_ACEPILOT
+		TEXT_TOOLTIP_TRAIT_COMMAND3_SPACE
 		TEXT_TOOLTIP_SEPARATOR_BIO_BLOCK
-		TEXT_TOOLTIP_TALLON
+		TEXT_TOOLTIP_BABOULS
 		TEXT_TOOLTIP_SEPARATOR_COMMANDS_BLOCK 
-		TEXT_TOOLTIP_COMMAND_ADINOR
+		TEXT_TOOLTIP_COMMAND_PARAMOUNT
 		</Encyclopedia_Text>
 	</SpaceUnit>
 	
@@ -2704,12 +2713,12 @@
 		<Variant_Of_Existing_Type>Template_Retire</Variant_Of_Existing_Type>
 		
 		<Text_ID>TEXT_HERO_BABOULS</Text_ID>
-		<Icon_Name>i_button_adartallon_retire.tga</Icon_Name>
+		<Icon_Name>i_button_babouls_retire.tga</Icon_Name>
 
 		<Affiliation>Rebel</Affiliation>
 
 		<Tech_Level>0</Tech_Level>
-		<Required_Orbiting_Units>Babouls_Adinor</Required_Orbiting_Units>
+		<Required_Orbiting_Units>Babouls_Paramount</Required_Orbiting_Units>
 	</SpaceUnit>
 
 <!-- ISD heroes -->
@@ -14549,8 +14558,6 @@
 		<Tactical_Health>150</Tactical_Health>
 		<Shield_Points>300</Shield_Points>
 		<Shield_Refresh_Rate>5</Shield_Refresh_Rate>
-
-		<Redirect_Damage_To_Teammates>Yes</Redirect_Damage_To_Teammates>
 		
 		<CategoryMask> SpaceHero | AntiFighter </CategoryMask>
 

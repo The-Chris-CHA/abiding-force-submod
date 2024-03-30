@@ -7173,6 +7173,513 @@
 		<Engine_Particles>Engines</Engine_Particles>
 	</HardPoint>
 
+	<!-- Adinor Hero Hardpoints -->
+
+	<HardPoint Name="HP_Adinor_Bay">
+		<Type> HARD_POINT_FIGHTER_BAY </Type>
+		<Is_Targetable>Yes</Is_Targetable>
+		<Is_Destroyable>Yes</Is_Destroyable>
+		<Attachment_Bone>Hangar</Attachment_Bone>
+		<Collision_Mesh>Hangar</Collision_Mesh>
+		<Tooltip_Text>TEXT_FIGHTER_BAY_HARDPOINT</Tooltip_Text>
+		<Health>665.0</Health>
+		<Death_Explosion_Particles> Large_Explosion_Space </Death_Explosion_Particles>  <!-- STUBBED PLACEHOLDER -->
+		<Death_Explosion_SFXEvent>Unit_Hardpoint_Bay_Death</Death_Explosion_SFXEvent> <!-- STUBBED PLACEHOLDER -->
+	</HardPoint>
+
+	<HardPoint Name="HP_Adinor_Ion_01">
+		<Type> HARD_POINT_WEAPON_ION_CANNON </Type>
+		<Is_Targetable>Yes</Is_Targetable>
+		<Is_Destroyable>Yes</Is_Destroyable>
+		<Tooltip_Text>TEXT_WEAPON_IONCANNON</Tooltip_Text>
+		<Health>665.0</Health>
+
+		<Death_Explosion_Particles> Large_Explosion_Space </Death_Explosion_Particles>
+		<Death_Explosion_SFXEvent>Unit_Hardpoint_Ion_Death</Death_Explosion_SFXEvent>
+
+		<Model_To_Attach></Model_To_Attach>
+		<Attachment_Bone>HP01</Attachment_Bone>
+		<Collision_Mesh>HP01</Collision_Mesh>
+		<Damage_Particles>HP01</Damage_Particles>
+
+
+		<Fire_Bone_A>HP01</Fire_Bone_A>
+		<Fire_Bone_B>HP01</Fire_Bone_B>
+		<Fire_Cone_Width>190.0</Fire_Cone_Width>
+		<Fire_Cone_Height>180.0</Fire_Cone_Height>
+		<Fire_Projectile_Type>Proj_Ship_Ion_Cannon_Medium</Fire_Projectile_Type>
+		<Fire_Min_Recharge_Seconds>2.0</Fire_Min_Recharge_Seconds>
+		<Fire_Max_Recharge_Seconds>2.0</Fire_Max_Recharge_Seconds>
+		<Fire_Pulse_Count>2</Fire_Pulse_Count>
+		<Fire_Pulse_Delay_Seconds>0.2</Fire_Pulse_Delay_Seconds>
+		<Fire_Range_Distance>3100.0</Fire_Range_Distance>
+		<Fire_SFXEvent>Unit_Ion_Fire</Fire_SFXEvent>
+
+		<Fire_Inaccuracy_Distance> Fighter, 60.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Bomber, 60.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Transport, 50.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> SpaceHero, 50.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Corvette, 35.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Frigate, 20.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Capital, 10.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> SuperCapital, 5.0 </Fire_Inaccuracy_Distance>
+
+	</HardPoint>
+
+	<HardPoint Name="HP_Adinor_Ion_02">
+		<Type> HARD_POINT_WEAPON_ION_CANNON </Type>
+		<Is_Targetable>Yes</Is_Targetable>
+		<Is_Destroyable>Yes</Is_Destroyable>
+		<Tooltip_Text>TEXT_WEAPON_IONCANNON</Tooltip_Text>
+		<Health>665.0</Health>
+
+		<Death_Explosion_Particles> Large_Explosion_Space </Death_Explosion_Particles>
+		<Death_Explosion_SFXEvent>Unit_Hardpoint_Ion_Death</Death_Explosion_SFXEvent>
+
+
+		<Attachment_Bone>HP02</Attachment_Bone>
+		<Collision_Mesh>HP02</Collision_Mesh>
+		<Damage_Particles>HP02</Damage_Particles>
+
+
+
+		<Fire_Bone_A>HP02</Fire_Bone_A>
+		<Fire_Bone_B>HP02</Fire_Bone_B>
+		<Fire_Cone_Width>190.0</Fire_Cone_Width>
+		<Fire_Cone_Height>180.0</Fire_Cone_Height>
+		<Fire_Projectile_Type>Proj_Ship_Ion_Cannon_Medium</Fire_Projectile_Type>
+		<Fire_Min_Recharge_Seconds>2.0</Fire_Min_Recharge_Seconds>
+		<Fire_Max_Recharge_Seconds>2.0</Fire_Max_Recharge_Seconds>
+		<Fire_Pulse_Count>2</Fire_Pulse_Count>
+		<Fire_Pulse_Delay_Seconds>0.2</Fire_Pulse_Delay_Seconds>
+		<Fire_Range_Distance>3100.0</Fire_Range_Distance>
+		<Fire_SFXEvent>Unit_Ion_Fire</Fire_SFXEvent>
+
+		<Fire_Inaccuracy_Distance> Fighter, 60.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Bomber, 60.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Transport, 50.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> SpaceHero, 50.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Corvette, 35.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Frigate, 20.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Capital, 10.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> SuperCapital, 5.0 </Fire_Inaccuracy_Distance>
+
+	</HardPoint>
+
+	<HardPoint Name="HP_Adinor_Ion_03">
+		<Type> HARD_POINT_WEAPON_ION_CANNON </Type>
+		<Is_Targetable>Yes</Is_Targetable>
+		<Is_Destroyable>Yes</Is_Destroyable>
+		<Tooltip_Text>TEXT_WEAPON_IONCANNON</Tooltip_Text>
+		<Health>665.0</Health>
+
+		<Death_Explosion_Particles> Large_Explosion_Space </Death_Explosion_Particles>
+		<Death_Explosion_SFXEvent>Unit_Hardpoint_Ion_Death</Death_Explosion_SFXEvent>
+
+		<Model_To_Attach></Model_To_Attach>
+		<Attachment_Bone>HP08</Attachment_Bone>
+		<Collision_Mesh>HP08</Collision_Mesh>
+		<Damage_Particles>HP08</Damage_Particles>
+
+
+		<Fire_Bone_A>HP08</Fire_Bone_A>
+		<Fire_Bone_B>HP08</Fire_Bone_B>
+		<Fire_Cone_Width>190.0</Fire_Cone_Width>
+		<Fire_Cone_Height>180.0</Fire_Cone_Height>
+		<Fire_Projectile_Type>Proj_Ship_Ion_Cannon_Medium</Fire_Projectile_Type>
+		<Fire_Min_Recharge_Seconds>2.0</Fire_Min_Recharge_Seconds>
+		<Fire_Max_Recharge_Seconds>2.0</Fire_Max_Recharge_Seconds>
+		<Fire_Pulse_Count>2</Fire_Pulse_Count>
+		<Fire_Pulse_Delay_Seconds>0.2</Fire_Pulse_Delay_Seconds>
+		<Fire_Range_Distance>3100.0</Fire_Range_Distance>
+		<Fire_SFXEvent>Unit_Ion_Fire</Fire_SFXEvent>
+
+		<Fire_Inaccuracy_Distance> Fighter, 60.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Bomber, 60.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Transport, 50.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> SpaceHero, 50.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Corvette, 35.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Frigate, 20.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Capital, 10.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> SuperCapital, 5.0 </Fire_Inaccuracy_Distance>
+
+	</HardPoint>
+
+	<HardPoint Name="HP_Adinor_Ion_04">
+		<Type> HARD_POINT_WEAPON_ION_CANNON </Type>
+		<Is_Targetable>Yes</Is_Targetable>
+		<Is_Destroyable>Yes</Is_Destroyable>
+		<Tooltip_Text>TEXT_WEAPON_IONCANNON</Tooltip_Text>
+		<Health>665.0</Health>
+
+		<Death_Explosion_Particles> Large_Explosion_Space </Death_Explosion_Particles>
+		<Death_Explosion_SFXEvent>Unit_Hardpoint_Ion_Death</Death_Explosion_SFXEvent>
+
+
+		<Attachment_Bone>HP09</Attachment_Bone>
+		<Collision_Mesh>HP09</Collision_Mesh>
+		<Damage_Particles>HP09</Damage_Particles>
+
+
+
+		<Fire_Bone_A>HP09</Fire_Bone_A>
+		<Fire_Bone_B>HP09</Fire_Bone_B>
+		<Fire_Cone_Width>190.0</Fire_Cone_Width>
+		<Fire_Cone_Height>180.0</Fire_Cone_Height>
+		<Fire_Projectile_Type>Proj_Ship_Ion_Cannon_Medium</Fire_Projectile_Type>
+		<Fire_Min_Recharge_Seconds>2.0</Fire_Min_Recharge_Seconds>
+		<Fire_Max_Recharge_Seconds>2.0</Fire_Max_Recharge_Seconds>
+		<Fire_Pulse_Count>2</Fire_Pulse_Count>
+		<Fire_Pulse_Delay_Seconds>0.2</Fire_Pulse_Delay_Seconds>
+		<Fire_Range_Distance>3100.0</Fire_Range_Distance>
+		<Fire_SFXEvent>Unit_Ion_Fire</Fire_SFXEvent>
+
+		<Fire_Inaccuracy_Distance> Fighter, 60.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Bomber, 60.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Transport, 50.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> SpaceHero, 50.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Corvette, 35.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Frigate, 20.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Capital, 10.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> SuperCapital, 5.0 </Fire_Inaccuracy_Distance>
+
+	</HardPoint>
+
+	<HardPoint Name="HP_Adinor_Turbo_01">
+		<Type> HARD_POINT_WEAPON_LASER </Type>
+		<Is_Targetable>Yes</Is_Targetable>
+		<Is_Destroyable>Yes</Is_Destroyable>
+		<Tooltip_Text>TEXT_WEAPON_TURBOLASER</Tooltip_Text>
+		<Health>665.0</Health>
+
+		<Death_Explosion_Particles> Large_Explosion_Space </Death_Explosion_Particles>
+		<Death_Explosion_SFXEvent>Unit_Hardpoint_Turbo_Laser_Death</Death_Explosion_SFXEvent>
+
+
+		<Attachment_Bone>HP03</Attachment_Bone>
+		<Collision_Mesh>HP03</Collision_Mesh>
+		<Damage_Particles>HP03</Damage_Particles>
+
+
+
+		<Fire_Bone_A>HP03</Fire_Bone_A>
+		<Fire_Bone_B>HP03</Fire_Bone_B>
+		<Fire_Cone_Width>200.0</Fire_Cone_Width>
+		<Fire_Cone_Height>180.0</Fire_Cone_Height>
+		<Fire_Projectile_Type>Proj_Ship_Turbolaser_Red_Medium</Fire_Projectile_Type>
+		<Fire_Min_Recharge_Seconds>1.67</Fire_Min_Recharge_Seconds>
+		<Fire_Max_Recharge_Seconds>1.67</Fire_Max_Recharge_Seconds>
+		<Fire_Pulse_Count>2</Fire_Pulse_Count>
+		<Fire_Pulse_Delay_Seconds>0.2</Fire_Pulse_Delay_Seconds>
+		<Fire_Range_Distance>3100.0</Fire_Range_Distance>
+		<Fire_SFXEvent>Unit_Turbo_Fire</Fire_SFXEvent>
+
+		<Fire_Inaccuracy_Distance> Fighter, 50.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Bomber, 50.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Transport, 25.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> SpaceHero, 25.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Corvette, 25.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Frigate, 15.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Capital, 5.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> SuperCapital, 1.0 </Fire_Inaccuracy_Distance>
+
+	</HardPoint>
+
+	<HardPoint Name="HP_Adinor_Turbo_02">
+		<Type> HARD_POINT_WEAPON_LASER </Type>
+		<Is_Targetable>Yes</Is_Targetable>
+		<Is_Destroyable>Yes</Is_Destroyable>
+		<Tooltip_Text>TEXT_WEAPON_TURBOLASER</Tooltip_Text>
+		<Health>665.0</Health>
+
+		<Death_Explosion_Particles> Large_Explosion_Space </Death_Explosion_Particles>
+		<Death_Explosion_SFXEvent>Unit_Hardpoint_Turbo_Laser_Death</Death_Explosion_SFXEvent>
+
+
+
+		<Attachment_Bone>HP04</Attachment_Bone>
+		<Collision_Mesh>HP04</Collision_Mesh>
+		<Damage_Particles>HP04</Damage_Particles>
+
+		<Fire_Bone_A>HP04</Fire_Bone_A>
+		<Fire_Bone_B>HP04</Fire_Bone_B>
+		<Fire_Cone_Width>170.0</Fire_Cone_Width>
+		<Fire_Cone_Height>180.0</Fire_Cone_Height>
+		<Fire_Projectile_Type>Proj_Ship_Turbolaser_Red_Medium</Fire_Projectile_Type>
+		<Fire_Min_Recharge_Seconds>1.67</Fire_Min_Recharge_Seconds>
+		<Fire_Max_Recharge_Seconds>1.67</Fire_Max_Recharge_Seconds>
+		<Fire_Pulse_Count>2</Fire_Pulse_Count>
+		<Fire_Pulse_Delay_Seconds>0.2</Fire_Pulse_Delay_Seconds>
+		<Fire_Range_Distance>3100.0</Fire_Range_Distance>
+		<Fire_SFXEvent>Unit_Turbo_Fire</Fire_SFXEvent>
+
+		<Fire_Inaccuracy_Distance> Fighter, 50.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Bomber, 50.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Transport, 25.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> SpaceHero, 25.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Corvette, 25.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Frigate, 15.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Capital, 5.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> SuperCapital, 1.0 </Fire_Inaccuracy_Distance>
+	</HardPoint>
+
+	<HardPoint Name="HP_Adinor_Turbo_03">
+		<Type> HARD_POINT_WEAPON_LASER </Type>
+		<Is_Targetable>Yes</Is_Targetable>
+		<Is_Destroyable>Yes</Is_Destroyable>
+		<Tooltip_Text>TEXT_WEAPON_TURBOLASER</Tooltip_Text>
+		<Health>665.0</Health>
+
+		<Death_Explosion_Particles> Large_Explosion_Space </Death_Explosion_Particles>
+		<Death_Explosion_SFXEvent>Unit_Hardpoint_Turbo_Laser_Death</Death_Explosion_SFXEvent>
+
+
+
+		<Attachment_Bone>HP05</Attachment_Bone>
+		<Collision_Mesh>HP05</Collision_Mesh>
+		<Damage_Particles>HP05</Damage_Particles>
+
+
+
+		<Fire_Bone_A>HP05</Fire_Bone_A>
+		<Fire_Bone_B>HP05</Fire_Bone_B>
+		<Fire_Cone_Width>170</Fire_Cone_Width>
+		<Fire_Cone_Height>180.0</Fire_Cone_Height>
+		<Fire_Projectile_Type>Proj_Ship_Turbolaser_Red_Medium</Fire_Projectile_Type>
+		<Fire_Min_Recharge_Seconds>1.67</Fire_Min_Recharge_Seconds>
+		<Fire_Max_Recharge_Seconds>1.67</Fire_Max_Recharge_Seconds>
+		<Fire_Pulse_Count>2</Fire_Pulse_Count>
+		<Fire_Pulse_Delay_Seconds>0.2</Fire_Pulse_Delay_Seconds>
+		<Fire_Range_Distance>3100.0</Fire_Range_Distance>
+		<Fire_SFXEvent>Unit_Turbo_Fire</Fire_SFXEvent>
+
+		<Fire_Inaccuracy_Distance> Fighter, 50.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Bomber, 50.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Transport, 25.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> SpaceHero, 25.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Corvette, 25.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Frigate, 15.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Capital, 5.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> SuperCapital, 1.0 </Fire_Inaccuracy_Distance>
+
+	</HardPoint>
+
+	<HardPoint Name="HP_Adinor_Turbo_04">
+		<Type> HARD_POINT_WEAPON_LASER </Type>
+		<Is_Targetable>Yes</Is_Targetable>
+		<Is_Destroyable>Yes</Is_Destroyable>
+		<Tooltip_Text>TEXT_WEAPON_TURBOLASER</Tooltip_Text>
+		<Health>665.0</Health>
+
+		<Death_Explosion_Particles> Large_Explosion_Space </Death_Explosion_Particles>
+		<Death_Explosion_SFXEvent>Unit_Hardpoint_Turbo_Laser_Death</Death_Explosion_SFXEvent>
+
+
+
+		<Attachment_Bone>HP06</Attachment_Bone>
+		<Collision_Mesh>HP06</Collision_Mesh>
+		<Damage_Particles>HP06</Damage_Particles>
+
+
+		<Fire_Bone_A>HP06</Fire_Bone_A>
+		<Fire_Bone_B>HP06</Fire_Bone_B>
+		<Fire_Cone_Width>200</Fire_Cone_Width>
+		<Fire_Cone_Height>180.0</Fire_Cone_Height>
+		<Fire_Projectile_Type>Proj_Ship_Turbolaser_Red_Medium</Fire_Projectile_Type>
+		<Fire_Min_Recharge_Seconds>1.67</Fire_Min_Recharge_Seconds>
+		<Fire_Max_Recharge_Seconds>1.67</Fire_Max_Recharge_Seconds>
+		<Fire_Pulse_Count>2</Fire_Pulse_Count>
+		<Fire_Pulse_Delay_Seconds>0.2</Fire_Pulse_Delay_Seconds>
+		<Fire_Range_Distance>3100.0</Fire_Range_Distance>
+		<Fire_SFXEvent>Unit_Turbo_Fire</Fire_SFXEvent>
+
+		<Fire_Inaccuracy_Distance> Fighter, 50.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Bomber, 50.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Transport, 25.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> SpaceHero, 25.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Corvette, 25.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Frigate, 15.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Capital, 5.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> SuperCapital, 1.0 </Fire_Inaccuracy_Distance>
+
+	</HardPoint>
+
+	<HardPoint Name="HP_Adinor_Turbo_05">
+		<Type> HARD_POINT_WEAPON_LASER </Type>
+		<Is_Targetable>Yes</Is_Targetable>
+		<Is_Destroyable>Yes</Is_Destroyable>
+		<Tooltip_Text>TEXT_WEAPON_TURBOLASER</Tooltip_Text>
+		<Health>665.0</Health>
+
+		<Death_Explosion_Particles> Large_Explosion_Space </Death_Explosion_Particles>
+		<Death_Explosion_SFXEvent>Unit_Hardpoint_Turbo_Laser_Death</Death_Explosion_SFXEvent>
+
+
+
+		<Attachment_Bone>HP07</Attachment_Bone>
+		<Collision_Mesh>HP07</Collision_Mesh>
+		<Damage_Particles>HP07</Damage_Particles>
+
+
+		<Fire_Bone_A>HP07</Fire_Bone_A>
+		<Fire_Bone_B>HP07</Fire_Bone_B>
+		<Fire_Cone_Width>190</Fire_Cone_Width>
+		<Fire_Cone_Height>180.0</Fire_Cone_Height>
+		<Fire_Projectile_Type>Proj_Ship_Turbolaser_Red_Medium</Fire_Projectile_Type>
+		<Fire_Min_Recharge_Seconds>1.67</Fire_Min_Recharge_Seconds>
+		<Fire_Max_Recharge_Seconds>1.67</Fire_Max_Recharge_Seconds>
+		<Fire_Pulse_Count>2</Fire_Pulse_Count>
+		<Fire_Pulse_Delay_Seconds>0.2</Fire_Pulse_Delay_Seconds>
+		<Fire_Range_Distance>3100.0</Fire_Range_Distance>
+		<Fire_SFXEvent>Unit_Turbo_Fire</Fire_SFXEvent>
+
+		<Fire_Inaccuracy_Distance> Fighter, 50.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Bomber, 50.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Transport, 25.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> SpaceHero, 25.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Corvette, 25.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Frigate, 15.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Capital, 5.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> SuperCapital, 1.0 </Fire_Inaccuracy_Distance>
+
+	</HardPoint>
+
+	<HardPoint Name="HP_Adinor_Turbo_06">
+		<Type> HARD_POINT_WEAPON_LASER </Type>
+		<Is_Targetable>Yes</Is_Targetable>
+		<Is_Destroyable>Yes</Is_Destroyable>
+		<Tooltip_Text>TEXT_WEAPON_TURBOLASER</Tooltip_Text>
+		<Health>665.0</Health>
+
+		<Death_Explosion_Particles> Large_Explosion_Space </Death_Explosion_Particles>
+		<Death_Explosion_SFXEvent>Unit_Hardpoint_Turbo_Laser_Death</Death_Explosion_SFXEvent>
+
+
+
+		<Attachment_Bone>HP10</Attachment_Bone>
+		<Collision_Mesh>HP10</Collision_Mesh>
+		<Damage_Particles>HP10</Damage_Particles>
+
+
+		<Fire_Bone_A>HP10</Fire_Bone_A>
+		<Fire_Bone_B>HP10</Fire_Bone_B>
+		<Fire_Cone_Width>190</Fire_Cone_Width>
+		<Fire_Cone_Height>180.0</Fire_Cone_Height>
+		<Fire_Projectile_Type>Proj_Ship_Turbolaser_Red_Medium</Fire_Projectile_Type>
+		<Fire_Min_Recharge_Seconds>1.67</Fire_Min_Recharge_Seconds>
+		<Fire_Max_Recharge_Seconds>1.67</Fire_Max_Recharge_Seconds>
+		<Fire_Pulse_Count>2</Fire_Pulse_Count>
+		<Fire_Pulse_Delay_Seconds>0.2</Fire_Pulse_Delay_Seconds>
+		<Fire_Range_Distance>3100.0</Fire_Range_Distance>
+		<Fire_SFXEvent>Unit_Turbo_Fire</Fire_SFXEvent>
+
+		<Fire_Inaccuracy_Distance> Fighter, 50.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Bomber, 50.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Transport, 25.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> SpaceHero, 25.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Corvette, 25.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Frigate, 15.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Capital, 5.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> SuperCapital, 1.0 </Fire_Inaccuracy_Distance>
+
+	</HardPoint>
+
+	<HardPoint Name="HP_Adinor_Turbo_07">
+		<Type> HARD_POINT_WEAPON_LASER </Type>
+		<Is_Targetable>Yes</Is_Targetable>
+		<Is_Destroyable>Yes</Is_Destroyable>
+		<Tooltip_Text>TEXT_WEAPON_TURBOLASER</Tooltip_Text>
+		<Health>665.0</Health>
+
+		<Death_Explosion_Particles> Large_Explosion_Space </Death_Explosion_Particles>
+		<Death_Explosion_SFXEvent>Unit_Hardpoint_Turbo_Laser_Death</Death_Explosion_SFXEvent>
+
+
+
+		<Attachment_Bone>HP11</Attachment_Bone>
+		<Collision_Mesh>HP11</Collision_Mesh>
+		<Damage_Particles>HP11</Damage_Particles>
+
+
+		<Fire_Bone_A>HP11</Fire_Bone_A>
+		<Fire_Bone_B>HP11</Fire_Bone_B>
+		<Fire_Cone_Width>200</Fire_Cone_Width>
+		<Fire_Cone_Height>180.0</Fire_Cone_Height>
+		<Fire_Projectile_Type>Proj_Ship_Turbolaser_Red_Medium</Fire_Projectile_Type>
+		<Fire_Min_Recharge_Seconds>1.67</Fire_Min_Recharge_Seconds>
+		<Fire_Max_Recharge_Seconds>1.67</Fire_Max_Recharge_Seconds>
+		<Fire_Pulse_Count>2</Fire_Pulse_Count>
+		<Fire_Pulse_Delay_Seconds>0.2</Fire_Pulse_Delay_Seconds>
+		<Fire_Range_Distance>3100.0</Fire_Range_Distance>
+		<Fire_SFXEvent>Unit_Turbo_Fire</Fire_SFXEvent>
+
+		<Fire_Inaccuracy_Distance> Fighter, 50.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Bomber, 50.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Transport, 25.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> SpaceHero, 25.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Corvette, 25.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Frigate, 15.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Capital, 5.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> SuperCapital, 1.0 </Fire_Inaccuracy_Distance>
+
+	</HardPoint>
+
+	<HardPoint Name="HP_Adinor_Turbo_08">
+		<Type> HARD_POINT_WEAPON_LASER </Type>
+		<Is_Targetable>Yes</Is_Targetable>
+		<Is_Destroyable>Yes</Is_Destroyable>
+		<Tooltip_Text>TEXT_WEAPON_TURBOLASER</Tooltip_Text>
+		<Health>665.0</Health>
+
+		<Death_Explosion_Particles> Large_Explosion_Space </Death_Explosion_Particles>
+		<Death_Explosion_SFXEvent>Unit_Hardpoint_Turbo_Laser_Death</Death_Explosion_SFXEvent>
+
+
+
+		<Attachment_Bone>HP12</Attachment_Bone>
+		<Collision_Mesh>HP12</Collision_Mesh>
+		<Damage_Particles>HP12</Damage_Particles>
+
+
+		<Fire_Bone_A>HP12</Fire_Bone_A>
+		<Fire_Bone_B>HP12</Fire_Bone_B>
+		<Fire_Cone_Width>200</Fire_Cone_Width>
+		<Fire_Cone_Height>180.0</Fire_Cone_Height>
+		<Fire_Projectile_Type>Proj_Ship_Turbolaser_Red_Medium</Fire_Projectile_Type>
+		<Fire_Min_Recharge_Seconds>1.67</Fire_Min_Recharge_Seconds>
+		<Fire_Max_Recharge_Seconds>1.67</Fire_Max_Recharge_Seconds>
+		<Fire_Pulse_Count>2</Fire_Pulse_Count>
+		<Fire_Pulse_Delay_Seconds>0.2</Fire_Pulse_Delay_Seconds>
+		<Fire_Range_Distance>3100.0</Fire_Range_Distance>
+		<Fire_SFXEvent>Unit_Turbo_Fire</Fire_SFXEvent>
+
+		<Fire_Inaccuracy_Distance> Fighter, 50.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Bomber, 50.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Transport, 25.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> SpaceHero, 25.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Corvette, 25.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Frigate, 15.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Capital, 5.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> SuperCapital, 1.0 </Fire_Inaccuracy_Distance>
+
+	</HardPoint>
+
+	<HardPoint Name="HP_Adinor_Engines">
+		<Type> HARD_POINT_ENGINE </Type>
+		<Is_Targetable>Yes</Is_Targetable>
+		<Is_Destroyable>Yes</Is_Destroyable>
+		<Tooltip_Text>TEXT_ENGINE_HARDPOINT</Tooltip_Text>
+		<Health>665.0</Health>
+
+		<Death_Explosion_Particles> Large_Explosion_Space </Death_Explosion_Particles>
+		<Death_Explosion_SFXEvent>Unit_Hardpoint_Engines_Death</Death_Explosion_SFXEvent>
+
+		<Model_To_Attach>RV_MonCalCruiser_HP00_E.alo</Model_To_Attach>
+		<Attachment_Bone>Engines</Attachment_Bone> <!-- This is an attachment bone for the HUD reticle centering, even though no model is attached -->
+		<Collision_Mesh>HP_E_COLL</Collision_Mesh>
+		<Damage_Particles>P_HP_IMPERIAL_SMOKE</Damage_Particles>
+		<Engine_Particles>Engines</Engine_Particles>
+	</HardPoint>
 
 	<!-- Justice Hero Hard Points -->
 

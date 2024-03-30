@@ -208,6 +208,7 @@ return {
     ,ACKBAR_GUARDIAN = {nil, true}
     ,ACKDOOL_MEDIATOR = {nil, true}
     ,AIREN_CRACKEN_TEAM = {"Is_Production_Planet", false}
+    ,BABOULS_PARAMOUNT = {nil, true}
     ,BELL_ENDURANCE = {nil, true}
     ,BELL_SWIFT_LIBERTY = {nil, true}
     ,BLUE_SQUADRON_SPACE = {nil, true}
