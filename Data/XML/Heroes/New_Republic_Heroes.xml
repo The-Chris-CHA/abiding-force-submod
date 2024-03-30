@@ -2498,6 +2498,10 @@
 		</Encyclopedia_Text>
 		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_FLEET_COMMANDER </Encyclopedia_Unit_Class>
 		<Icon_Name>i_button_mireillenem.tga</Icon_Name>
+
+		<Shield_Points>10000</Shield_Points>
+		<Shield_Refresh_Rate>100</Shield_Refresh_Rate>
+		<Tactical_Health>7500</Tactical_Health>
 		
 		<Is_Named_Hero>Yes</Is_Named_Hero>
 		<CategoryMask>SpaceHero | AntiFrigate</CategoryMask>
@@ -2526,7 +2530,7 @@
 				<Recharge_Seconds>150</Recharge_Seconds>
 				<Expiration_Seconds>8</Expiration_Seconds>
 		
-				<SFXEvent_GUI_Unit_Ability_Activated>Unit_Defend_Ackbar</SFXEvent_GUI_Unit_Ability_Activated>
+				<SFXEvent_GUI_Unit_Ability_Activated>Unit_Guard_Mara_Jade</SFXEvent_GUI_Unit_Ability_Activated>
 			</Unit_Ability>
 
 			<Unit_Ability>
@@ -2537,7 +2541,7 @@
 				<Mod_Multiplier>SPEED_MULTIPLIER,		0.5f</Mod_Multiplier>
 				<Recharge_Seconds>65</Recharge_Seconds>
 
-				<SFXEvent_GUI_Unit_Ability_Activated>Unit_Barrage_Acclamator</SFXEvent_GUI_Unit_Ability_Activated>
+				<SFXEvent_GUI_Unit_Ability_Activated>Unit_Attack_Mara_Jade</SFXEvent_GUI_Unit_Ability_Activated>
 			</Unit_Ability>
 		</Unit_Abilities_Data>
 
@@ -14424,6 +14428,7 @@
 		<Scale_Factor>0.5</Scale_Factor>
 		
 		<Armor_Type> Armor_Hero_Transport </Armor_Type>
+		<Shield_Armor_Type> ShieldS_Fighter </Shield_Armor_Type>
 		<Is_Named_Hero>Yes</Is_Named_Hero>
 		<Tactical_Health>150</Tactical_Health>
 		<Shield_Points>300</Shield_Points>
@@ -14538,6 +14543,7 @@
 		<Scale_Factor>0.5</Scale_Factor>
 		
 		<Armor_Type> Armor_Hero_Transport </Armor_Type>
+		<Shield_Armor_Type> ShieldS_Fighter </Shield_Armor_Type>
 		<!-- Testing config stuff -->
 		<!-- <Is_Named_Hero>Yes</Is_Named_Hero> -->
 		<Tactical_Health>150</Tactical_Health>
@@ -14631,6 +14637,8 @@
 	
 		<Variant_Of_Existing_Type>Y-Wing</Variant_Of_Existing_Type>
 		
+		<Armor_Type> Armor_Hero_Transport </Armor_Type>
+		<Shield_Armor_Type> ShieldS_Fighter </Shield_Armor_Type>
 		<Shield_Points>500</Shield_Points>
 		<Tactical_Health>400</Tactical_Health>
 		<Shield_Refresh_Rate>10</Shield_Refresh_Rate>
