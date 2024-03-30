@@ -2528,6 +2528,17 @@
 		
 				<SFXEvent_GUI_Unit_Ability_Activated>Unit_Defend_Ackbar</SFXEvent_GUI_Unit_Ability_Activated>
 			</Unit_Ability>
+
+			<Unit_Ability>
+				<Type>POWER_TO_WEAPONS</Type>
+				<Expiration_Seconds>20</Expiration_Seconds>
+				<Mod_Multiplier>WEAPON_DELAY_MULTIPLIER,	0.5f</Mod_Multiplier>
+				<Mod_Multiplier>ENERGY_REGEN_MULTIPLIER,	1.0f</Mod_Multiplier>
+				<Mod_Multiplier>SPEED_MULTIPLIER,		0.5f</Mod_Multiplier>
+				<Recharge_Seconds>65</Recharge_Seconds>
+
+				<SFXEvent_GUI_Unit_Ability_Activated>Unit_Barrage_Acclamator</SFXEvent_GUI_Unit_Ability_Activated>
+			</Unit_Ability>
 		</Unit_Abilities_Data>
 
 		<Abilities SubObjectList="Yes">
@@ -2567,7 +2578,7 @@
 		<Variant_Of_Existing_Type>Template_Assign</Variant_Of_Existing_Type>
 		
 		<Text_ID>TEXT_HERO_MIREILLE</Text_ID>
-		<Icon_Name>i_button_mireillenem.tga</Icon_Name>
+		<Icon_Name>i_button_mireillenem_command.tga</Icon_Name>
 
 		<Affiliation>Rebel</Affiliation>
 
@@ -2575,7 +2586,8 @@
 		TEXT_TOOLTIP_ASSIGN_NR_ADMIRAL
 		TEXT_TOOLTIP_SEPARATOR_TRAITS_BLOCK 
 		TEXT_TOOLTIP_TRAIT_COMMAND2_SPACE
-		TEXT_TOOLTIP_TRAIT_ACEPILOT
+		TEXT_TOOLTIP_TRAIT_ADMIN4
+		TEXT_TOOLTIP_TRAIT_FORCESENSITIVE
 		TEXT_TOOLTIP_SEPARATOR_BIO_BLOCK
 		TEXT_TOOLTIP_MIREILLE
 		TEXT_TOOLTIP_SEPARATOR_COMMANDS_BLOCK 
@@ -14123,8 +14135,8 @@
 		<Shield_Armor_Type> ShieldS_Fighter </Shield_Armor_Type>
 
 		<Affiliation>Rebel</Affiliation>
-		<Shield_Points>200</Shield_Points>
-		<Tactical_Health>500</Tactical_Health>
+		<Shield_Points>150</Shield_Points>
+		<Tactical_Health>300</Tactical_Health>
 		<Collision_Box_Modifier>1.0</Collision_Box_Modifier>
 		<Shield_Refresh_Rate>8</Shield_Refresh_Rate>
 		<Energy_Capacity>9999</Energy_Capacity>
@@ -14145,19 +14157,6 @@
 		<Death_Explosions>Medium_Explosion_Space</Death_Explosions>
 		<Asteroid_Damage_Hit_Particles>Large_Damage_Space</Asteroid_Damage_Hit_Particles>
 		<Death_SFXEvent_Start_Die> Unit_X_Wing_Death_SFX </Death_SFXEvent_Start_Die> 
-
-		<SFXEvent_Select>Unit_Select_Luke</SFXEvent_Select>
-		<SFXEvent_Move>Unit_Move_Luke</SFXEvent_Move>
-		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Luke</SFXEvent_Fleet_Move>
-		<SFXEvent_Attack>Unit_Attack_Luke</SFXEvent_Attack>
-		<SFXEvent_Guard>Unit_Guard_Luke</SFXEvent_Guard>
-		<SFXEvent_Assist_Move>Unit_Assist_Move_Luke </SFXEvent_Assist_Move>		
-		<SFXEvent_Assist_Attack>Unit_Assist_Attack_Luke </SFXEvent_Assist_Attack>
-		<SFXEvent_Health_Low_Warning> Unit_Health_Low_Luke </SFXEvent_Health_Low_Warning>
-		<SFXEvent_Health_Critical_Warning> Unit_Health_Critical_Luke </SFXEvent_Health_Critical_Warning>
-		<SFXEvent_Enemy_Health_Low_Warning> Unit_Enemy_Health_Low_Luke </SFXEvent_Enemy_Health_Low_Warning>
-		<SFXEvent_Enemy_Health_Critical_Warning> Unit_Enemy_Health_Critical_Luke </SFXEvent_Enemy_Health_Critical_Warning>		
-		<SFXEvent_Unit_Lost> Unit_Defeat_Luke </SFXEvent_Unit_Lost>
 
 		<SFXEvent_Fire>Unit_X_Wing_Fire</SFXEvent_Fire>
 		<SFXEvent_Ambient_Moving> Unit_X_Wing_Fly_By </SFXEvent_Ambient_Moving>
@@ -14293,8 +14292,8 @@
 		<Shield_Armor_Type> ShieldS_Fighter </Shield_Armor_Type>
 
 		<Affiliation>Rebel</Affiliation>
-		<Shield_Points>200</Shield_Points>
-		<Tactical_Health>500</Tactical_Health>
+		<Shield_Points>150</Shield_Points>
+		<Tactical_Health>300</Tactical_Health>
 		<Collision_Box_Modifier>1.0</Collision_Box_Modifier>
 		<Shield_Refresh_Rate>8</Shield_Refresh_Rate>
 		<Energy_Capacity>9999</Energy_Capacity>
@@ -14315,19 +14314,6 @@
 		<Death_Explosions>Medium_Explosion_Space</Death_Explosions>
 		<Asteroid_Damage_Hit_Particles>Large_Damage_Space</Asteroid_Damage_Hit_Particles>
 		<Death_SFXEvent_Start_Die> Unit_X_Wing_Death_SFX </Death_SFXEvent_Start_Die> 
-
-		<SFXEvent_Select>Unit_Select_Luke</SFXEvent_Select>
-		<SFXEvent_Move>Unit_Move_Luke</SFXEvent_Move>
-		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Luke</SFXEvent_Fleet_Move>
-		<SFXEvent_Attack>Unit_Attack_Luke</SFXEvent_Attack>
-		<SFXEvent_Guard>Unit_Guard_Luke</SFXEvent_Guard>
-		<SFXEvent_Assist_Move>Unit_Assist_Move_Luke </SFXEvent_Assist_Move>		
-		<SFXEvent_Assist_Attack>Unit_Assist_Attack_Luke </SFXEvent_Assist_Attack>
-		<SFXEvent_Health_Low_Warning> Unit_Health_Low_Luke </SFXEvent_Health_Low_Warning>
-		<SFXEvent_Health_Critical_Warning> Unit_Health_Critical_Luke </SFXEvent_Health_Critical_Warning>
-		<SFXEvent_Enemy_Health_Low_Warning> Unit_Enemy_Health_Low_Luke </SFXEvent_Enemy_Health_Low_Warning>
-		<SFXEvent_Enemy_Health_Critical_Warning> Unit_Enemy_Health_Critical_Luke </SFXEvent_Enemy_Health_Critical_Warning>		
-		<SFXEvent_Unit_Lost> Unit_Defeat_Luke </SFXEvent_Unit_Lost>
 
 		<SFXEvent_Fire>Unit_X_Wing_Fire</SFXEvent_Fire>
 		<SFXEvent_Ambient_Moving> Unit_X_Wing_Fly_By </SFXEvent_Ambient_Moving>
@@ -14426,7 +14412,7 @@
 		TEXT_TOOLTIP_SEPARATOR_COMMANDS_BLOCK
 		TEXT_TOOLTIP_COMMAND_BLUE_SQUADRON
 		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
-		TEXT_STATBLOCK_ROGUE_BASE
+		TEXT_STATBLOCK_BSQUADRON_BASE
 		TEXT_STATBLOCK_XWING_MOVE
 		TEXT_STATBLOCK_XWING_WEAP1
 		TEXT_STATBLOCK_XWING_WEAP2
@@ -14439,9 +14425,9 @@
 		
 		<Armor_Type> Armor_Hero_Transport </Armor_Type>
 		<Is_Named_Hero>Yes</Is_Named_Hero>
-		<Tactical_Health>500</Tactical_Health>
-		<Shield_Points>200</Shield_Points>
-		<Shield_Refresh_Rate>10</Shield_Refresh_Rate>
+		<Tactical_Health>150</Tactical_Health>
+		<Shield_Points>300</Shield_Points>
+		<Shield_Refresh_Rate>5</Shield_Refresh_Rate>
 
 		<Redirect_Damage_To_Teammates>Yes</Redirect_Damage_To_Teammates>
 		
@@ -14540,7 +14526,7 @@
 		TEXT_TOOLTIP_SEPARATOR_COMMANDS_BLOCK
 		TEXT_TOOLTIP_COMMAND_BLUE_SQUADRON
 		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
-		TEXT_STATBLOCK_ROGUE_BASE
+		TEXT_STATBLOCK_BSQUADRON_BASE
 		TEXT_STATBLOCK_AWING_MOVE
 		TEXT_STATBLOCK_AWING_WEAP1
 		TEXT_STATBLOCK_AWING_WEAP2
@@ -14554,9 +14540,9 @@
 		<Armor_Type> Armor_Hero_Transport </Armor_Type>
 		<!-- Testing config stuff -->
 		<!-- <Is_Named_Hero>Yes</Is_Named_Hero> -->
-		<Tactical_Health>500</Tactical_Health>
-		<Shield_Points>200</Shield_Points>
-		<Shield_Refresh_Rate>10</Shield_Refresh_Rate>
+		<Tactical_Health>400</Tactical_Health>
+		<Shield_Points>100</Shield_Points>
+		<Shield_Refresh_Rate>5</Shield_Refresh_Rate>
 
 		<Redirect_Damage_To_Teammates>Yes</Redirect_Damage_To_Teammates>
 		
