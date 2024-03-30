@@ -14528,8 +14528,8 @@
 
 	</UniqueUnit>
 
-	<UniqueUnit Name="Tann_XWing">
-		<Variant_Of_Existing_Type>X-Wing</Variant_Of_Existing_Type>
+	<UniqueUnit Name="Tann_AWing">
+		<Variant_Of_Existing_Type>A-Wing</Variant_Of_Existing_Type>
 		<Text_ID>TEXT_HERO_BLUE_TANN</Text_ID>
 		<Encyclopedia_Text>
 		TEXT_TOOLTIP_SEPARATOR_TRAITS_BLOCK 
@@ -14541,14 +14541,14 @@
 		TEXT_TOOLTIP_COMMAND_BLUE_SQUADRON
 		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
 		TEXT_STATBLOCK_ROGUE_BASE
-		TEXT_STATBLOCK_XWING_MOVE
-		TEXT_STATBLOCK_XWING_WEAP1
-		TEXT_STATBLOCK_XWING_WEAP2
+		TEXT_STATBLOCK_AWING_MOVE
+		TEXT_STATBLOCK_AWING_WEAP1
+		TEXT_STATBLOCK_AWING_WEAP2
 		</Encyclopedia_Text>
 		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_FIGHTER </Encyclopedia_Unit_Class>
 		<Icon_Name>i_button_tann_blu.tga</Icon_Name>
 
-		<Space_Model_Name>rv_XWing.alo</Space_Model_Name>
+		<Space_Model_Name>rv_AWing.ALO</Space_Model_Name>
 		<Scale_Factor>0.5</Scale_Factor>
 		
 		<Armor_Type> Armor_Hero_Transport </Armor_Type>
@@ -14566,7 +14566,11 @@
         <Is_Super_Weapon_Killer>Yes</Is_Super_Weapon_Killer>
 
 		<SpaceBehavior>FIGHTER_LOCOMOTOR, ABILITY_COUNTDOWN, SELECTABLE, TARGETING, WEAPON, POWERED, SHIELDED, HIDE_WHEN_FOGGED, AMBIENT_SFX, NEBULA </SpaceBehavior>
-		
+
+		<HardPoints>
+			HP_Awing_00, HP_Awing_01
+		</HardPoints>
+
 		<SFXEvent_Select>Unit_Select_Mara_Jade</SFXEvent_Select>
 		<SFXEvent_Move>Unit_Move_Mara_Jade</SFXEvent_Move>
 		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Mara_Jade</SFXEvent_Fleet_Move>
@@ -14576,11 +14580,11 @@
 		<SFXEvent_Health_Critical_Warning> Unit_Health_Critical_Mara_Jade </SFXEvent_Health_Critical_Warning>
 		<Death_SFXEvent_Start_Die> Unit_Defeat_Mara_Jade </Death_SFXEvent_Start_Die>
 		
-		<SFXEvent_Fire>Unit_X_Wing_Fire</SFXEvent_Fire>
-		<SFXEvent_Ambient_Moving> Unit_X_Wing_Fly_By </SFXEvent_Ambient_Moving>
+		<SFXEvent_Fire>Unit_A_Wing_Fire</SFXEvent_Fire>
+		<SFXEvent_Ambient_Moving> Unit_A_Wing_Fly_By </SFXEvent_Ambient_Moving>
 		<SFXEvent_Ambient_Moving_Min_Delay_Seconds> 5 </SFXEvent_Ambient_Moving_Min_Delay_Seconds>
 		<SFXEvent_Ambient_Moving_Max_Delay_Seconds> 10 </SFXEvent_Ambient_Moving_Max_Delay_Seconds>
-		<SFXEvent_Engine_Cinematic_Focus_Loop> Unit_X_Wing_Cinematic_Engine_Loop </SFXEvent_Engine_Cinematic_Focus_Loop>
+		<SFXEvent_Engine_Cinematic_Focus_Loop> Unit_A_Wing_Cinematic_Engine_Loop </SFXEvent_Engine_Cinematic_Focus_Loop>
 		
 		<!-- Non-Hero unit abilities description -->
 		<Unit_Abilities_Data SubObjectList="Yes">
@@ -14628,7 +14632,7 @@
 				<Single_Target_Heal>Yes</Single_Target_Heal>
 
 				<Applicable_Unit_Categories />
-				<Applicable_Unit_Types>Tann_XWing</Applicable_Unit_Types>
+				<Applicable_Unit_Types>Tann_AWing</Applicable_Unit_Types>
 				<Excluded_Unit_Types />
 			
 			</Force_Healing_Ability>
@@ -14734,7 +14738,7 @@
 		
 		<Text_ID>TEXT_HERO_BLUE</Text_ID>
 		<Encyclopedia_Text>
-		TEXT_ENCYCLOPEDIA_ROGUE_SQUADRON 
+		TEXT_ENCYCLOPEDIA_BLUE_SQUADRON 
 		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
 		TEXT_STATBLOCK_XWING_SQUADRON
 		TEXT_STATBLOCK_ROGUE_ESCORT_BASE
@@ -14799,7 +14803,7 @@
 		<Create_Team_Type> Blue_Squadron_Space_Container </Create_Team_Type>
 		<Squadron_Units> Rogue_XWing_Wedge_Escort, Rogue_XWing_Wedge_Escort, Rogue_XWing_Wedge_Escort, Rogue_XWing_Wedge_Escort </Squadron_Units>
 		<Squadron_Units> Rogue_XWing_Wedge_Escort, Salm_Y-Wing_Escort, Rogue_XWing_Wedge_Escort, Salm_Y-Wing_Escort </Squadron_Units>
-		<Squadron_Units> Rogue_XWing_Wedge_Escort, Qov_YWing, Tann_XWing, Hal_XWing </Squadron_Units>
+		<Squadron_Units> Rogue_XWing_Wedge_Escort, Qov_YWing, Tann_AWing, Hal_XWing </Squadron_Units>
 				
 		<Damage>50</Damage>
 
