@@ -101,7 +101,8 @@ function RepublicHeroes:new(gc, herokilled_finished_event, human_player)
 			"Burke",
 			"Massa",
 			"Lando",
-			"Mireille"
+			"Mireille",
+			"Babouls"
 		},
 		story_locked_list = {--Heroes not accessible, but able to return with the right conditions
 			["Dorat"] = true

@@ -2499,14 +2499,31 @@
 		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_FLEET_COMMANDER </Encyclopedia_Unit_Class>
 		<Icon_Name>i_button_mireillenem.tga</Icon_Name>
 
-		<Shield_Points>10000</Shield_Points>
-		<Shield_Refresh_Rate>100</Shield_Refresh_Rate>
-		<Tactical_Health>7500</Tactical_Health>
+		<Shield_Points>25000</Shield_Points>
+		<Shield_Refresh_Rate>150</Shield_Refresh_Rate>
+		<Tactical_Health>9310</Tactical_Health>
 		
 		<Is_Named_Hero>Yes</Is_Named_Hero>
 		<CategoryMask>SpaceHero | AntiFrigate</CategoryMask>
         <Ranking_In_Category>3</Ranking_In_Category>
 		<Tech_Level>99</Tech_Level>
+
+		<HardPoints>
+			HP_Adinor_Bay,
+			HP_Adinor_Engines,
+			HP_Adinor_Ion_01,
+			HP_Adinor_Ion_02,
+			HP_Adinor_Ion_03,
+			HP_Adinor_Ion_04,			
+			HP_Adinor_Turbo_01,
+			HP_Adinor_Turbo_02,
+			HP_Adinor_Turbo_03,
+			HP_Adinor_Turbo_04,
+			HP_Adinor_Turbo_05,
+			HP_Adinor_Turbo_06,
+			HP_Adinor_Turbo_07,
+			HP_Adinor_Turbo_08
+		</HardPoints>
 
 		<Starting_Spawned_Units_Tech_0>Rebel_X-Wing_Squadron_Double, 1</Starting_Spawned_Units_Tech_0>
 		<Starting_Spawned_Units_Tech_0>B-Wing_Squadron, 1</Starting_Spawned_Units_Tech_0>
@@ -2539,7 +2556,7 @@
 				<Mod_Multiplier>WEAPON_DELAY_MULTIPLIER,	0.5f</Mod_Multiplier>
 				<Mod_Multiplier>ENERGY_REGEN_MULTIPLIER,	1.0f</Mod_Multiplier>
 				<Mod_Multiplier>SPEED_MULTIPLIER,		0.5f</Mod_Multiplier>
-				<Recharge_Seconds>65</Recharge_Seconds>
+				<Recharge_Seconds>45</Recharge_Seconds>
 
 				<SFXEvent_GUI_Unit_Ability_Activated>Unit_Attack_Mara_Jade</SFXEvent_GUI_Unit_Ability_Activated>
 			</Unit_Ability>
@@ -2555,17 +2572,6 @@
 				<Defense_Bonus_Percentage>0.15</Defense_Bonus_Percentage>
 				<Movement_Speed_Bonus_Percentage>0.15</Movement_Speed_Bonus_Percentage>
 				<Ability_Recharge_Bonus_Percentage>-0.05</Ability_Recharge_Bonus_Percentage>
-				<Stacking_Category>0</Stacking_Category>
-			</Combat_Bonus_Ability>
-
-			<Combat_Bonus_Ability Name="Miri_Combat_Bonus_Ace_Pilot">
-				<Activation_Style>Space_Automatic</Activation_Style>
-				<Applicable_Unit_Categories> Fighter | Bomber </Applicable_Unit_Categories>
-				<Health_Bonus_Percentage>0.80</Health_Bonus_Percentage>
-				<Damage_Bonus_Percentage>0.50</Damage_Bonus_Percentage>
-				<Shield_Bonus_Percentage>0.50</Shield_Bonus_Percentage>
-				<Defense_Bonus_Percentage>0.05</Defense_Bonus_Percentage>
-				<Movement_Speed_Bonus_Percentage>0.10</Movement_Speed_Bonus_Percentage>
 				<Stacking_Category>0</Stacking_Category>
 			</Combat_Bonus_Ability>
 
