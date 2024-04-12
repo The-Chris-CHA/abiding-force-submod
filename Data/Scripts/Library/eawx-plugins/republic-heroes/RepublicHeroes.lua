@@ -58,10 +58,10 @@ function RepublicHeroes:new(gc, herokilled_finished_event, human_player)
 	crossplot:subscribe("NR_CANON_ADMIRALS", self.Canon_Heroes, self)
 	
 	admiral_data = {
-		total_slots = 4,			--Max slot number. Set at the start of the GC and never change
-		free_hero_slots = 4,		--Slots open to buy
+		total_slots = 5,			--Max slot number. Set at the start of the GC and never change
+		free_hero_slots = 5,		--Slots open to buy
 		vacant_hero_slots = 0,	    --Slots that need another action to move to free
-		vacant_limit = 5,           --Number of times a lost slot can be reopened
+		vacant_limit = 6,           --Number of times a lost slot can be reopened
 		initialized = false,
 		full_list = { --All options for reference operations
 			["Ackbar"] = {"ACKBAR_ASSIGN",{"ACKBAR_RETIRE","ACKBAR_RETIRE2"},{"HOME_ONE","GALACTIC_VOYAGER","ACKBAR_GUARDIAN"},"Gial Ackbar"},
@@ -89,6 +89,8 @@ function RepublicHeroes:new(gc, herokilled_finished_event, human_player)
 			["Lando"] = {"LANDO_ASSIGN",{"LANDO_RETIRE","LANDO_RETIRE2"},{"LANDO_LIBERATOR","LANDO_ALLEGIANCE"},"Lando Calrissian",["no_random"] = true},
 			["Raddus"] = {"RADDUS_ASSIGN",{"RADDUS_RETIRE"},{"RADDUS_PROFUNDITY"},"Raddus"},
 			["Hera"] = {"HERA_ASSIGN",{"HERA_RETIRE"},{"HERA_STARHAWK"},"Hera Syndulla"},
+			["Mireille"] = {"MIREILLE_ASSIGN",{"MIREILLE_RETIRE"},{"MIREILLE_ADINOR"},"Mireille Nem"},
+			["Babouls"] = {"BABOULS_ASSIGN",{"BABOULS_RETIRE"},{"BABOULS_PARAMOUNT"},"Ba'bouls"},
 			-- Historical command staff
 			["Standish"] = {"TEMPLATE_FLAGSHIP_SWAP",{"TEMPLATE_FLAGSHIP_SWAP"},{"ANTON_STANDISH"},"Anton Standish",["Locked"] = true},
 		},
@@ -105,6 +107,8 @@ function RepublicHeroes:new(gc, herokilled_finished_event, human_player)
 			"Snunb",
 			"Burke",
 			"Massa",
+			"Mireille",
+			"Babouls",
 		},
 		story_locked_list = {--Heroes not accessible, but able to return with the right conditions
 			["Dorat"] = true,
@@ -372,6 +376,7 @@ function RepublicHeroes:init_heroes()
 	
 	if tech_level >= 3 then
 		Handle_Hero_Add("Iblis", admiral_data)
+		Handle_Hero_Exit("Mireille", admiral_data)
 	end
 	
 	if tech_level >= 4 then

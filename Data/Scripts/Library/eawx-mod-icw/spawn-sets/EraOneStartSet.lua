@@ -3,7 +3,7 @@ return {
         ["SAIJO"] = {"Nantz_Independence", "Mon_Mothma_Team"},
         ["ENDOR"] = {"Han_Solo_Team", "Luke_Skywalker_Jedi_Team", "Home_One", "Lando_Calrissian_Team"},
         ["MON_CALAMARI"] = {"Airen_Cracken_Team", "Katarn_Team"},
-        ["SULLUST"] = {"Sovv_Dauntless"},
+        ["SULLUST"] = {"Sovv_Dauntless", "Mireille_Adinor"},
     },
     ["EMPIREOFTHEHAND"] = {
         ["NIRAUAN"] = {

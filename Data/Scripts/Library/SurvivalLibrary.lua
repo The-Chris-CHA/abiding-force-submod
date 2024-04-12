@@ -319,6 +319,7 @@ return {
 			Find_Object_Type("Klev_Frigate_Devastator"),
 			Find_Object_Type("Daala_Scylla"),
 			Find_Object_Type("Cronus_13x"),
+			Find_Object_Type("Mireille_Adinor"),
         },
         {
             Find_Object_Type("Drayson_New_Hope"),
