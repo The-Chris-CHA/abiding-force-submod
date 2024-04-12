@@ -201,6 +201,7 @@ function RepublicHeroes:new(gc, herokilled_finished_event, human_player)
 		"Wedge_Rogues_Location_Set",
 		"SalmY_Location_Set",
 		"Ranulf_Trommer_Location_Set",
+		"Blue_Squadron_Location_Set",
 	}
 	fighter_assign_enabled = false
 	
