@@ -482,6 +482,19 @@ function Get_Hero_Entries(upgrade_object)
 				{"SLIXIKE", Locations = {"SLIXIKE"}},
 			}
 		},
+		["BLUE_SQUADRON_LOCATION_SET"] = {
+			Hero_Squadron = "HAL_BOSTOV_BLUE_SQUADRON",
+			PopupHeader = "BLUE_SQUADRON_SELECTOR_HEADER",
+			NoInit = true,
+			Options = {
+				{"MIREILLE", Locations = {"MIREILLE_ADINOR"}},
+				{"NANTZ", Locations = {"NANTZ_INDEPENDENCE","NANTZ_WATCHMEN"}},
+				{"LANDO", Locations = {"LANDO_LIBERATOR","LANDO_ALLEGIANCE"}},
+				{"DORAT", Locations = {"DORAT_ARROW_OF_SULLUST"}},
+				{"IILLOR", Locations = {"IILLOR_CORUSCA"}},
+				{"GRANT", Locations = {"GRANT_ORIFLAMME"}},
+			}
+		},
 		["MYRSK_LOCATION_SET"] = {
 			Hero_Squadron = "MYRSK_MANKVIM_SQUADRON",
 			PopupHeader = "MYRSK_SELECTOR_HEADER",

@@ -226,6 +226,7 @@ return {
     ,ACKBAR_GUARDIAN = {nil, true}
     ,ACKDOOL_MEDIATOR = {nil, true}
 	,ANTON_STANDISH = {nil, true}
+    ,BABOULS_PARAMOUNT = {nil, true}
     ,BELL_ENDURANCE = {nil, true}
     ,BELL_SWIFT_LIBERTY = {nil, true}
     ,BRAND_INDOMITABLE = {nil, true}
@@ -258,6 +259,7 @@ return {
     ,MASSA_LUCREHULK_CARRIER = {nil, true}
     ,MARA_SABER_TEAM = {nil, false}
     ,MILLENNIUM_FALCON = {nil, true}
+    ,MIREILLE_ADINOR = {nil, true}
     ,MIRAX_TEAM = {"Planet_Has_Capital_Building", false}
     ,MON_MOTHMA_TEAM = {"Planet_Has_Capital_Building", false}
     ,NAMMO_DEFIANCE = {nil, true}
