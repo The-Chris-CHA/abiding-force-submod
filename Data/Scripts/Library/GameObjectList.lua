@@ -617,7 +617,7 @@ return {
 ["ULRIC_TAGGE"] = true,
 ["VALIDUSIA"] = true,
 ["VALOR_STATION"] = true,
-["VANKO_INVICIBLE"] = true,
+["VANKO_INVINCIBLE"] = true,
 ["VANTAI_MOONSHADOW"] = true,
 ["VEILED_QUEEN_SAVRIP"] = true,
 ["VENATOR_REFIT"] = true,

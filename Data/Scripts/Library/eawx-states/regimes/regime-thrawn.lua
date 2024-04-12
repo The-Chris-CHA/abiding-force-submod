@@ -54,8 +54,6 @@ return {
                 Story_Event("THRAWN_WELCOME")
             end
 
-            Set_To_First_Extant_Host("TURR_PHENNIR_TIE_INTERCEPTOR_LOCATION_SET", Find_Player("Empire"), true)
-              
         else
             StoryUtil.SetPlanetRestricted("KATANA_SPACE", 0)
 
@@ -81,12 +79,14 @@ return {
             UnitUtil.DespawnList{
                 "Dummy_Regicide_Thrawn",
                 "Isard_Lusankya",
+                "Thrawn_Grey_Wolf"
             }
 
             Clear_Fighter_Hero("VESSERY_STRANGER_SQUADRON")
-            Set_To_First_Extant_Host("TURR_PHENNIR_TIE_INTERCEPTOR_LOCATION_SET", Find_Player("Empire"), true)
             
         end
+
+        Set_To_First_Extant_Host("TURR_PHENNIR_TIE_INTERCEPTOR_LOCATION_SET", Find_Player("Empire"), true)
 
         local starting_era = false
         if self.entry_time <= 5 then

@@ -97,7 +97,17 @@ function State_Caamas_Crisis_Which_Thrawn(message)
         local activePlanets = StoryUtil.GetSafePlanetTable()
 
 		local HandOfThrawn = Find_First_Object("U_GROUND_PALACE")
-		local DisraAndTierce = TestValid(Find_First_Object("Vilim_Disra").Get_Planet_Location()) and TestValid(Find_First_Object("Grodin_Tierce").Get_Planet_Location())
+
+		local Disra = Find_First_Object("Vilim_Disra")
+		if Disra ~= nil then
+			Disra = TestValid(Disra.Get_Planet_Location())
+		end
+		local Tierce = Find_First_Object("Grodin_Tierce")
+		if Tierce ~= nil then
+			Tierce = TestValid(Tierce.Get_Planet_Location())
+		end
+
+		local DisraAndTierce = Disra and Tierce
 
 		if HandOfThrawn then
 			StoryUtil.SpawnAtSafePlanet("NIRAUAN", p_eoth, activePlanets, {"Thrawn_Clone_Eviscerator"})

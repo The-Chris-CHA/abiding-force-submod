@@ -147,15 +147,16 @@ end
 --param keep_existing == true will keep target hero with current host if current host exists
 function Set_To_First_Extant_Host(setter_object, target_owner, keep_existing)
 	local hero_entry = Get_Hero_Entries(setter_object)
-	
+
 	if keep_existing then
-		local current_host = Find_First_Object(Get_Fighter_Hero(hero_entry.Hero_Squadron))
-		
-		if TestValid(current_host) then
-			local current_host_owner = current_host.Get_Owner()
-			
-			if current_host_owner == target_owner then
-				return true
+		local current_host_name = Get_Fighter_Hero(hero_entry.Hero_Squadron)
+		if current_host_name ~= nil then
+			local current_host_object = Find_First_Object(current_host_name)
+			if TestValid(current_host_object) then
+				local current_host_owner = current_host_object.Get_Owner()
+				if current_host_owner == target_owner then
+					return true
+				end
 			end
 		end
 	end
