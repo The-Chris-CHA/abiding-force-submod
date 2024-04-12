@@ -20,7 +20,7 @@
 		<Max_Lift>2.0</Max_Lift>
 		<Bank_Turn_Angle>50</Bank_Turn_Angle>
 		<Behavior>POWERED</Behavior>
-		<LandBehavior> REVEAL, LANDBOMBER_LOCOMOTOR, SHIELDED, POWERED, AMBIENT_SFX,UNIT_AI, TARGETING, WEAPON </LandBehavior>
+		<LandBehavior> REVEAL, LANDBOMBER_LOCOMOTOR, POWERED, AMBIENT_SFX,UNIT_AI, TARGETING, WEAPON </LandBehavior>
 		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
 		<Select_Box_Scale>43</Select_Box_Scale>
 		<Select_Box_Z_Adjust>1.0f</Select_Box_Z_Adjust>
@@ -31,29 +31,26 @@
 		<Affiliation>Empire</Affiliation>
 		<Size_Value>15</Size_Value>
 
-		<No_Colorization_Color> 75, 75, 75, 255 </No_Colorization_Color>
+		<No_Colorization_Color/>
 
 		<Armor_Type> ArmourG_SpeederHeavy </Armor_Type>
 		<Damage>25</Damage>
 		<Shield_Points>0</Shield_Points>
-		<Tactical_Health>34</Tactical_Health>
+		<Tactical_Health>50</Tactical_Health>
 		<Shield_Refresh_Rate>0</Shield_Refresh_Rate>
 		<Energy_Capacity>500</Energy_Capacity>
 		<Energy_Refresh_Rate>10</Energy_Refresh_Rate>
 
 		<SFXEvent_Fire>Unit_TIE_Bomber_Fire</SFXEvent_Fire>
-		<SFXEvent_Select>Unit_Select_TIE_Bomber</SFXEvent_Select>
-		<SFXEvent_Move>Unit_Move_TIE_Bomber</SFXEvent_Move>
-		<SFXEvent_Attack>Unit_Attack_TIE_Bomber</SFXEvent_Attack>
-		<SFXEvent_Select>Unit_Select_TIE_Bomber</SFXEvent_Select>
-		<SFXEvent_Guard>Unit_Guard_TIE_Bomber</SFXEvent_Guard>
-		<SFXEvent_Hardpoint>Unit_Hardpoint_TIE_Bomber</SFXEvent_Hardpoint>
-		<XSFXEvent_Ambient_Loop>Unit_TIE_Fighter_Engine_Loop</XSFXEvent_Ambient_Loop>
+		<SFXEvent_Select>Null</SFXEvent_Select>
+		<SFXEvent_Move/>
+		<SFXEvent_Attack/>
+		<SFXEvent_Guard/>
 		<SFXEvent_Ambient_Moving> Unit_TIE_Bomber_Fly_By_Land </SFXEvent_Ambient_Moving>
 		<SFXEvent_Ambient_Moving_Min_Delay_Seconds> 1 </SFXEvent_Ambient_Moving_Min_Delay_Seconds>
 		<SFXEvent_Ambient_Moving_Max_Delay_Seconds> 2 </SFXEvent_Ambient_Moving_Max_Delay_Seconds>
-		<SFXEvent_Bomb_Run_Select_Target> Unit_Select_Tie_Bomber </SFXEvent_Bomb_Run_Select_Target>
-		<SFXEvent_Bomb_Run_Incoming> Unit_Bombing_Run_Tie_Bomber </SFXEvent_Bomb_Run_Incoming>
+		<SFXEvent_Bomb_Run_Select_Target/>
+		<SFXEvent_Bomb_Run_Incoming/>
 
 		<Ranged_Target_Z_Adjust>0.0</Ranged_Target_Z_Adjust>
 		<Fires_Forward>no</Fires_Forward>
@@ -122,7 +119,7 @@
 		<Max_Lift>2.0</Max_Lift>
 		<Bank_Turn_Angle>50</Bank_Turn_Angle>
 		<Behavior>POWERED</Behavior>
-		<LandBehavior> REVEAL, LANDBOMBER_LOCOMOTOR, SHIELDED, POWERED, AMBIENT_SFX,UNIT_AI, TARGETING, WEAPON </LandBehavior>
+		<LandBehavior> REVEAL, LANDBOMBER_LOCOMOTOR, POWERED, AMBIENT_SFX,UNIT_AI, TARGETING, WEAPON </LandBehavior>
 		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
 		<Select_Box_Scale>43</Select_Box_Scale>
 		<Select_Box_Z_Adjust>1.0f</Select_Box_Z_Adjust>
@@ -133,30 +130,27 @@
 		<Affiliation>Empire</Affiliation>
 		<Size_Value>15</Size_Value>
 
-		<No_Colorization_Color> 75, 75, 75, 255 </No_Colorization_Color>
+		<No_Colorization_Color/>
 
 		<Armor_Type> ArmourG_SpeederHeavy </Armor_Type>
 		<Shield_Armor_Type> ShieldG_Speeder </Shield_Armor_Type>
 		<Damage>25</Damage>
 		<Shield_Points>0</Shield_Points>
-		<Tactical_Health>40</Tactical_Health>
+		<Tactical_Health>50</Tactical_Health>
 		<Shield_Refresh_Rate>0</Shield_Refresh_Rate>
 		<Energy_Capacity>500</Energy_Capacity>
 		<Energy_Refresh_Rate>10</Energy_Refresh_Rate>
 
 		<SFXEvent_Fire>Unit_TIE_Bomber_Fire</SFXEvent_Fire>
-		<SFXEvent_Select>Unit_Select_TIE_Bomber</SFXEvent_Select>
-		<SFXEvent_Move>Unit_Move_TIE_Bomber</SFXEvent_Move>
-		<SFXEvent_Attack>Unit_Attack_TIE_Bomber</SFXEvent_Attack>
-		<SFXEvent_Select>Unit_Select_TIE_Bomber</SFXEvent_Select>
-		<SFXEvent_Guard>Unit_Guard_TIE_Bomber</SFXEvent_Guard>
-		<SFXEvent_Hardpoint>Unit_Hardpoint_TIE_Bomber</SFXEvent_Hardpoint>
-		<XSFXEvent_Ambient_Loop>Unit_TIE_Fighter_Engine_Loop</XSFXEvent_Ambient_Loop>
+		<SFXEvent_Select>Null</SFXEvent_Select>
+		<SFXEvent_Move/>
+		<SFXEvent_Attack/>
+		<SFXEvent_Guard/>
 		<SFXEvent_Ambient_Moving> Unit_TIE_Bomber_Fly_By_Land </SFXEvent_Ambient_Moving>
 		<SFXEvent_Ambient_Moving_Min_Delay_Seconds> 1 </SFXEvent_Ambient_Moving_Min_Delay_Seconds>
 		<SFXEvent_Ambient_Moving_Max_Delay_Seconds> 2 </SFXEvent_Ambient_Moving_Max_Delay_Seconds>
-		<SFXEvent_Bomb_Run_Select_Target> Unit_Select_Tie_Bomber </SFXEvent_Bomb_Run_Select_Target>
-		<SFXEvent_Bomb_Run_Incoming> Unit_Bombing_Run_Tie_Bomber </SFXEvent_Bomb_Run_Incoming>
+		<SFXEvent_Bomb_Run_Select_Target/>
+		<SFXEvent_Bomb_Run_Incoming/>
 
 		<Ranged_Target_Z_Adjust>0.0</Ranged_Target_Z_Adjust>
 		<Fires_Forward>no</Fires_Forward>
@@ -225,7 +219,7 @@
 		<Max_Lift>2.0</Max_Lift>
 		<Bank_Turn_Angle>50</Bank_Turn_Angle>
 		<Behavior>POWERED</Behavior>
-		<LandBehavior> REVEAL, LANDBOMBER_LOCOMOTOR, SHIELDED, POWERED, AMBIENT_SFX,UNIT_AI, TARGETING, WEAPON </LandBehavior>
+		<LandBehavior> REVEAL, LANDBOMBER_LOCOMOTOR, POWERED, AMBIENT_SFX,UNIT_AI, TARGETING, WEAPON </LandBehavior>
 		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
 		<Select_Box_Scale>43</Select_Box_Scale>
 		<Select_Box_Z_Adjust>1.0f</Select_Box_Z_Adjust>
@@ -236,30 +230,27 @@
 		<Affiliation>Empire</Affiliation>
 		<Size_Value>15</Size_Value>
 
-		<No_Colorization_Color> 75, 75, 75, 255 </No_Colorization_Color>
+		<No_Colorization_Color/>
 
 		<Armor_Type> ArmourG_SpeederHeavy </Armor_Type>
 		<Shield_Armor_Type> ShieldG_Speeder </Shield_Armor_Type>
 		<Damage>25</Damage>
-		<Shield_Points>24</Shield_Points>
-		<Tactical_Health>52</Tactical_Health>
-		<Shield_Refresh_Rate>2.4</Shield_Refresh_Rate>
+		<Shield_Points>0</Shield_Points>
+		<Tactical_Health>50</Tactical_Health>
+		<Shield_Refresh_Rate>0</Shield_Refresh_Rate>
 		<Energy_Capacity>500</Energy_Capacity>
 		<Energy_Refresh_Rate>10</Energy_Refresh_Rate>
 
 		<SFXEvent_Fire>Unit_TIE_Bomber_Fire</SFXEvent_Fire>
-		<SFXEvent_Select>Unit_Select_TIE_Bomber</SFXEvent_Select>
-		<SFXEvent_Move>Unit_Move_TIE_Bomber</SFXEvent_Move>
-		<SFXEvent_Attack>Unit_Attack_TIE_Bomber</SFXEvent_Attack>
-		<SFXEvent_Select>Unit_Select_TIE_Bomber</SFXEvent_Select>
-		<SFXEvent_Guard>Unit_Guard_TIE_Bomber</SFXEvent_Guard>
-		<SFXEvent_Hardpoint>Unit_Hardpoint_TIE_Bomber</SFXEvent_Hardpoint>
-		<XSFXEvent_Ambient_Loop>Unit_TIE_Fighter_Engine_Loop</XSFXEvent_Ambient_Loop>
+		<SFXEvent_Select>Null</SFXEvent_Select>
+		<SFXEvent_Move/>
+		<SFXEvent_Attack/>
+		<SFXEvent_Guard/>
 		<SFXEvent_Ambient_Moving> Unit_TIE_Bomber_Fly_By_Land </SFXEvent_Ambient_Moving>
 		<SFXEvent_Ambient_Moving_Min_Delay_Seconds> 1 </SFXEvent_Ambient_Moving_Min_Delay_Seconds>
 		<SFXEvent_Ambient_Moving_Max_Delay_Seconds> 2 </SFXEvent_Ambient_Moving_Max_Delay_Seconds>
-		<SFXEvent_Bomb_Run_Select_Target> Unit_Select_Tie_Bomber </SFXEvent_Bomb_Run_Select_Target>
-		<SFXEvent_Bomb_Run_Incoming> Unit_Bombing_Run_Tie_Bomber </SFXEvent_Bomb_Run_Incoming>
+		<SFXEvent_Bomb_Run_Select_Target/>
+		<SFXEvent_Bomb_Run_Incoming/>
 
 		<Ranged_Target_Z_Adjust>0.0</Ranged_Target_Z_Adjust>
 		<Fires_Forward>no</Fires_Forward>
@@ -317,7 +308,7 @@
 	</LandBombingUnit>
 	
 	<LandBombingUnit Name="Scimitar_Bombing_Run">
-		<Text_ID>TEXT_UNIT_SCIMMY</Text_ID>
+		<Text_ID>TEXT_UNIT_SCIMITAR</Text_ID>
 		<Land_Model_Name>BombingRun_Scimitar.alo</Land_Model_Name>
 		<Mass>0.985</Mass>
 		<Autoresolve_Health>40.0</Autoresolve_Health>
@@ -328,7 +319,7 @@
 		<Max_Lift>2.0</Max_Lift>
 		<Bank_Turn_Angle>50</Bank_Turn_Angle>
 		<Behavior>POWERED</Behavior>
-		<LandBehavior> REVEAL, LANDBOMBER_LOCOMOTOR, SHIELDED, POWERED, AMBIENT_SFX,UNIT_AI, TARGETING, WEAPON </LandBehavior>
+		<LandBehavior> REVEAL, LANDBOMBER_LOCOMOTOR, POWERED, AMBIENT_SFX,UNIT_AI, TARGETING, WEAPON </LandBehavior>
 		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
 		<Select_Box_Scale>43</Select_Box_Scale>
 		<Select_Box_Z_Adjust>1.0f</Select_Box_Z_Adjust>
@@ -339,29 +330,26 @@
 		<Affiliation>Empire</Affiliation>
 		<Size_Value>15</Size_Value>
 
-		<No_Colorization_Color> 75, 75, 75, 255 </No_Colorization_Color>
+		<No_Colorization_Color/>
 
 		<Armor_Type> ArmourG_SpeederHeavy </Armor_Type>
 		<Damage>25</Damage>
 		<Shield_Points>0</Shield_Points>
-		<Tactical_Health>34</Tactical_Health>
+		<Tactical_Health>50</Tactical_Health>
 		<Shield_Refresh_Rate>0</Shield_Refresh_Rate>
 		<Energy_Capacity>500</Energy_Capacity>
 		<Energy_Refresh_Rate>10</Energy_Refresh_Rate>
 
 		<SFXEvent_Fire>Unit_TIE_Bomber_Fire</SFXEvent_Fire>
-		<SFXEvent_Select>Unit_Select_TIE_Bomber</SFXEvent_Select>
-		<SFXEvent_Move>Unit_Move_TIE_Bomber</SFXEvent_Move>
-		<SFXEvent_Attack>Unit_Attack_TIE_Bomber</SFXEvent_Attack>
-		<SFXEvent_Select>Unit_Select_TIE_Bomber</SFXEvent_Select>
-		<SFXEvent_Guard>Unit_Guard_TIE_Bomber</SFXEvent_Guard>
-		<SFXEvent_Hardpoint>Unit_Hardpoint_TIE_Bomber</SFXEvent_Hardpoint>
-		<XSFXEvent_Ambient_Loop>Unit_TIE_Fighter_Engine_Loop</XSFXEvent_Ambient_Loop>
+		<SFXEvent_Select>Null</SFXEvent_Select>
+		<SFXEvent_Move/>
+		<SFXEvent_Attack/>
+		<SFXEvent_Guard/>
 		<SFXEvent_Ambient_Moving> Unit_TIE_Bomber_Fly_By_Land </SFXEvent_Ambient_Moving>
 		<SFXEvent_Ambient_Moving_Min_Delay_Seconds> 1 </SFXEvent_Ambient_Moving_Min_Delay_Seconds>
 		<SFXEvent_Ambient_Moving_Max_Delay_Seconds> 2 </SFXEvent_Ambient_Moving_Max_Delay_Seconds>
-		<SFXEvent_Bomb_Run_Select_Target> Unit_Select_Tie_Bomber </SFXEvent_Bomb_Run_Select_Target>
-		<SFXEvent_Bomb_Run_Incoming> Unit_Bombing_Run_Tie_Bomber </SFXEvent_Bomb_Run_Incoming>
+		<SFXEvent_Bomb_Run_Select_Target/>
+		<SFXEvent_Bomb_Run_Incoming/>
 
 		<Ranged_Target_Z_Adjust>0.0</Ranged_Target_Z_Adjust>
 		<Fires_Forward>no</Fires_Forward>
@@ -430,7 +418,7 @@
 		<Max_Lift>2.0</Max_Lift>
 		<Bank_Turn_Angle>50</Bank_Turn_Angle>
 		<Behavior>POWERED</Behavior>
-		<LandBehavior> REVEAL, LANDBOMBER_LOCOMOTOR, SHIELDED, POWERED, AMBIENT_SFX,UNIT_AI, TARGETING, WEAPON </LandBehavior>
+		<LandBehavior> REVEAL, LANDBOMBER_LOCOMOTOR, POWERED, AMBIENT_SFX,UNIT_AI, TARGETING, WEAPON </LandBehavior>
 		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
 		<Select_Box_Scale>43</Select_Box_Scale>
 		<Select_Box_Z_Adjust>1.0f</Select_Box_Z_Adjust>
@@ -441,30 +429,27 @@
 		<Affiliation>Empire</Affiliation>
 		<Size_Value>15</Size_Value>
 
-		<No_Colorization_Color> 75, 75, 75, 255 </No_Colorization_Color>
+		<No_Colorization_Color/>
 
 		<Armor_Type> ArmourG_SpeederHeavy </Armor_Type>
 		<Damage>25</Damage>
 		<Shield_Points>0</Shield_Points>
-		<Tactical_Health>34</Tactical_Health>
+		<Tactical_Health>50</Tactical_Health>
 		<Shield_Refresh_Rate>0</Shield_Refresh_Rate>
 		<Energy_Capacity>500</Energy_Capacity>
 		<Energy_Refresh_Rate>10</Energy_Refresh_Rate>
 
 		<SFXEvent_Fire>Unit_TIE_Bomber_Fire</SFXEvent_Fire>
-		<SFXEvent_Select>Unit_Select_TIE_Bomber</SFXEvent_Select>
-		<SFXEvent_Move>Unit_Move_TIE_Bomber</SFXEvent_Move>
-		<SFXEvent_Attack>Unit_Attack_TIE_Bomber</SFXEvent_Attack>
-		<SFXEvent_Select>Unit_Select_TIE_Bomber</SFXEvent_Select>
-		<SFXEvent_Guard>Unit_Guard_TIE_Bomber</SFXEvent_Guard>
-		<SFXEvent_Hardpoint>Unit_Hardpoint_TIE_Bomber</SFXEvent_Hardpoint>
-		<XSFXEvent_Ambient_Loop>Unit_TIE_Fighter_Engine_Loop</XSFXEvent_Ambient_Loop>
+		<SFXEvent_Select>Null</SFXEvent_Select>
+		<SFXEvent_Move/>
+		<SFXEvent_Attack/>
+		<SFXEvent_Guard/>
 		<SFXEvent_Ambient_Moving> Unit_TIE_Bomber_Fly_By_Land </SFXEvent_Ambient_Moving>
 		<SFXEvent_Ambient_Moving_Min_Delay_Seconds> 1 </SFXEvent_Ambient_Moving_Min_Delay_Seconds>
 		<SFXEvent_Ambient_Moving_Max_Delay_Seconds> 2 </SFXEvent_Ambient_Moving_Max_Delay_Seconds>
-		<SFXEvent_Bomb_Run_Select_Target> Unit_Select_Tie_Bomber </SFXEvent_Bomb_Run_Select_Target>
-		<SFXEvent_Bomb_Run_Incoming> Unit_Bombing_Run_Tie_Bomber </SFXEvent_Bomb_Run_Incoming>
-
+		<SFXEvent_Bomb_Run_Select_Target/>
+		<SFXEvent_Bomb_Run_Incoming/>
+		
 		<Ranged_Target_Z_Adjust>0.0</Ranged_Target_Z_Adjust>
 		<Fires_Forward>no</Fires_Forward>
 		<Turret_Rotate_Extent_Degrees>20</Turret_Rotate_Extent_Degrees>
@@ -532,7 +517,7 @@
 		<Max_Lift>2.0</Max_Lift>
 		<Bank_Turn_Angle>50</Bank_Turn_Angle>
 		<Behavior>POWERED</Behavior>
-		<LandBehavior> REVEAL, LANDBOMBER_LOCOMOTOR, SHIELDED, POWERED, AMBIENT_SFX,UNIT_AI, TARGETING, WEAPON </LandBehavior>
+		<LandBehavior> REVEAL, LANDBOMBER_LOCOMOTOR, POWERED, AMBIENT_SFX,UNIT_AI, TARGETING, WEAPON </LandBehavior>
 		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
 		<Select_Box_Scale>43</Select_Box_Scale>
 		<Select_Box_Z_Adjust>1.0f</Select_Box_Z_Adjust>
@@ -543,29 +528,26 @@
 		<Affiliation>Empire</Affiliation>
 		<Size_Value>15</Size_Value>
 
-		<No_Colorization_Color> 75, 75, 75, 255 </No_Colorization_Color>
+		<No_Colorization_Color/>
 
 		<Armor_Type> ArmourG_SpeederHeavy </Armor_Type>
 		<Damage>25</Damage>
 		<Shield_Points>0</Shield_Points>
-		<Tactical_Health>34</Tactical_Health>
+		<Tactical_Health>50</Tactical_Health>
 		<Shield_Refresh_Rate>0</Shield_Refresh_Rate>
 		<Energy_Capacity>500</Energy_Capacity>
 		<Energy_Refresh_Rate>10</Energy_Refresh_Rate>
 
 		<SFXEvent_Fire>Unit_TIE_Bomber_Fire</SFXEvent_Fire>
-		<SFXEvent_Select>Unit_Select_TIE_Bomber</SFXEvent_Select>
-		<SFXEvent_Move>Unit_Move_TIE_Bomber</SFXEvent_Move>
-		<SFXEvent_Attack>Unit_Attack_TIE_Bomber</SFXEvent_Attack>
-		<SFXEvent_Select>Unit_Select_TIE_Bomber</SFXEvent_Select>
-		<SFXEvent_Guard>Unit_Guard_TIE_Bomber</SFXEvent_Guard>
-		<SFXEvent_Hardpoint>Unit_Hardpoint_TIE_Bomber</SFXEvent_Hardpoint>
-		<XSFXEvent_Ambient_Loop>Unit_TIE_Fighter_Engine_Loop</XSFXEvent_Ambient_Loop>
+		<SFXEvent_Select>Null</SFXEvent_Select>
+		<SFXEvent_Move/>
+		<SFXEvent_Attack/>
+		<SFXEvent_Guard/>
 		<SFXEvent_Ambient_Moving> Unit_TIE_Bomber_Fly_By_Land </SFXEvent_Ambient_Moving>
 		<SFXEvent_Ambient_Moving_Min_Delay_Seconds> 1 </SFXEvent_Ambient_Moving_Min_Delay_Seconds>
 		<SFXEvent_Ambient_Moving_Max_Delay_Seconds> 2 </SFXEvent_Ambient_Moving_Max_Delay_Seconds>
-		<SFXEvent_Bomb_Run_Select_Target> Unit_Select_Tie_Bomber </SFXEvent_Bomb_Run_Select_Target>
-		<SFXEvent_Bomb_Run_Incoming> Unit_Bombing_Run_Tie_Bomber </SFXEvent_Bomb_Run_Incoming>
+		<SFXEvent_Bomb_Run_Select_Target/>
+		<SFXEvent_Bomb_Run_Incoming/>
 
 		<Ranged_Target_Z_Adjust>0.0</Ranged_Target_Z_Adjust>
 		<Fires_Forward>no</Fires_Forward>
@@ -634,7 +616,7 @@
 		<Max_Lift>2.0</Max_Lift>
 		<Bank_Turn_Angle>50</Bank_Turn_Angle>
 		<Behavior>POWERED</Behavior>
-		<LandBehavior> REVEAL, LANDBOMBER_LOCOMOTOR, SHIELDED, POWERED, AMBIENT_SFX,UNIT_AI, TARGETING, WEAPON </LandBehavior>
+		<LandBehavior> REVEAL, LANDBOMBER_LOCOMOTOR, POWERED, AMBIENT_SFX,UNIT_AI, TARGETING, WEAPON </LandBehavior>
 		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
 		<Select_Box_Scale>43</Select_Box_Scale>
 		<Select_Box_Z_Adjust>1.0f</Select_Box_Z_Adjust>
@@ -645,29 +627,26 @@
 		<Affiliation>Empire</Affiliation>
 		<Size_Value>15</Size_Value>
 
-		<No_Colorization_Color> 75, 75, 75, 255 </No_Colorization_Color>
+		<No_Colorization_Color/>
 
 		<Armor_Type> ArmourG_SpeederHeavy </Armor_Type>
 		<Damage>25</Damage>
 		<Shield_Points>0</Shield_Points>
-		<Tactical_Health>34</Tactical_Health>
+		<Tactical_Health>50</Tactical_Health>
 		<Shield_Refresh_Rate>0</Shield_Refresh_Rate>
 		<Energy_Capacity>500</Energy_Capacity>
 		<Energy_Refresh_Rate>10</Energy_Refresh_Rate>
 
 		<SFXEvent_Fire>Unit_TIE_Bomber_Fire</SFXEvent_Fire>
-		<SFXEvent_Select>Unit_Select_TIE_Bomber</SFXEvent_Select>
-		<SFXEvent_Move>Unit_Move_TIE_Bomber</SFXEvent_Move>
-		<SFXEvent_Attack>Unit_Attack_TIE_Bomber</SFXEvent_Attack>
-		<SFXEvent_Select>Unit_Select_TIE_Bomber</SFXEvent_Select>
-		<SFXEvent_Guard>Unit_Guard_TIE_Bomber</SFXEvent_Guard>
-		<SFXEvent_Hardpoint>Unit_Hardpoint_TIE_Bomber</SFXEvent_Hardpoint>
-		<XSFXEvent_Ambient_Loop>Unit_TIE_Fighter_Engine_Loop</XSFXEvent_Ambient_Loop>
+		<SFXEvent_Select>Null</SFXEvent_Select>
+		<SFXEvent_Move/>
+		<SFXEvent_Attack/>
+		<SFXEvent_Guard/>
 		<SFXEvent_Ambient_Moving> Unit_TIE_Bomber_Fly_By_Land </SFXEvent_Ambient_Moving>
 		<SFXEvent_Ambient_Moving_Min_Delay_Seconds> 1 </SFXEvent_Ambient_Moving_Min_Delay_Seconds>
 		<SFXEvent_Ambient_Moving_Max_Delay_Seconds> 2 </SFXEvent_Ambient_Moving_Max_Delay_Seconds>
-		<SFXEvent_Bomb_Run_Select_Target> Unit_Select_Tie_Bomber </SFXEvent_Bomb_Run_Select_Target>
-		<SFXEvent_Bomb_Run_Incoming> Unit_Bombing_Run_Tie_Bomber </SFXEvent_Bomb_Run_Incoming>
+		<SFXEvent_Bomb_Run_Select_Target/>
+		<SFXEvent_Bomb_Run_Incoming/>
 
 		<Ranged_Target_Z_Adjust>0.0</Ranged_Target_Z_Adjust>
 		<Fires_Forward>no</Fires_Forward>
@@ -736,7 +715,7 @@
 		<Max_Lift>2.0</Max_Lift>
 		<Bank_Turn_Angle>50</Bank_Turn_Angle>
 		<Behavior>POWERED</Behavior>
-		<LandBehavior> REVEAL, LANDBOMBER_LOCOMOTOR, SHIELDED, POWERED, AMBIENT_SFX,UNIT_AI, TARGETING, WEAPON </LandBehavior>
+		<LandBehavior> REVEAL, LANDBOMBER_LOCOMOTOR, POWERED, AMBIENT_SFX,UNIT_AI, TARGETING, WEAPON </LandBehavior>
 		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
 		<Select_Box_Scale>43</Select_Box_Scale>
 		<Select_Box_Z_Adjust>1.0f</Select_Box_Z_Adjust>
@@ -747,29 +726,26 @@
 		<Affiliation>Empire</Affiliation>
 		<Size_Value>15</Size_Value>
 
-		<No_Colorization_Color> 75, 75, 75, 255 </No_Colorization_Color>
+		<No_Colorization_Color/>
 
 		<Armor_Type> ArmourG_SpeederHeavy </Armor_Type>
 		<Damage>25</Damage>
 		<Shield_Points>0</Shield_Points>
-		<Tactical_Health>34</Tactical_Health>
+		<Tactical_Health>50</Tactical_Health>
 		<Shield_Refresh_Rate>0</Shield_Refresh_Rate>
 		<Energy_Capacity>500</Energy_Capacity>
 		<Energy_Refresh_Rate>10</Energy_Refresh_Rate>
 
 		<SFXEvent_Fire>Unit_TIE_Bomber_Fire</SFXEvent_Fire>
-		<SFXEvent_Select>Unit_Select_TIE_Bomber</SFXEvent_Select>
-		<SFXEvent_Move>Unit_Move_TIE_Bomber</SFXEvent_Move>
-		<SFXEvent_Attack>Unit_Attack_TIE_Bomber</SFXEvent_Attack>
-		<SFXEvent_Select>Unit_Select_TIE_Bomber</SFXEvent_Select>
-		<SFXEvent_Guard>Unit_Guard_TIE_Bomber</SFXEvent_Guard>
-		<SFXEvent_Hardpoint>Unit_Hardpoint_TIE_Bomber</SFXEvent_Hardpoint>
-		<XSFXEvent_Ambient_Loop>Unit_TIE_Fighter_Engine_Loop</XSFXEvent_Ambient_Loop>
+		<SFXEvent_Select>Null</SFXEvent_Select>
+		<SFXEvent_Move/>
+		<SFXEvent_Attack/>
+		<SFXEvent_Guard/>
 		<SFXEvent_Ambient_Moving> Unit_TIE_Bomber_Fly_By_Land </SFXEvent_Ambient_Moving>
 		<SFXEvent_Ambient_Moving_Min_Delay_Seconds> 1 </SFXEvent_Ambient_Moving_Min_Delay_Seconds>
 		<SFXEvent_Ambient_Moving_Max_Delay_Seconds> 2 </SFXEvent_Ambient_Moving_Max_Delay_Seconds>
-		<SFXEvent_Bomb_Run_Select_Target> Unit_Select_Tie_Bomber </SFXEvent_Bomb_Run_Select_Target>
-		<SFXEvent_Bomb_Run_Incoming> Unit_Bombing_Run_Tie_Bomber </SFXEvent_Bomb_Run_Incoming>
+		<SFXEvent_Bomb_Run_Select_Target/>
+		<SFXEvent_Bomb_Run_Incoming/>
 
 		<Ranged_Target_Z_Adjust>0.0</Ranged_Target_Z_Adjust>
 		<Fires_Forward>no</Fires_Forward>
@@ -838,7 +814,7 @@
 		<Max_Lift>2.0</Max_Lift>
 		<Bank_Turn_Angle>50</Bank_Turn_Angle>
 		<Behavior>POWERED</Behavior>
-		<LandBehavior> REVEAL, LANDBOMBER_LOCOMOTOR, SHIELDED, POWERED, AMBIENT_SFX,UNIT_AI, TARGETING, WEAPON </LandBehavior>
+		<LandBehavior> REVEAL, LANDBOMBER_LOCOMOTOR, POWERED, AMBIENT_SFX,UNIT_AI, TARGETING, WEAPON </LandBehavior>
 		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
 		<Select_Box_Scale>43</Select_Box_Scale>
 		<Select_Box_Z_Adjust>1.0f</Select_Box_Z_Adjust>
@@ -849,30 +825,27 @@
 		<Affiliation>EmpireoftheHand</Affiliation>
 		<Size_Value>15</Size_Value>
 
-		<No_Colorization_Color> 75, 75, 75, 255 </No_Colorization_Color>
+		<No_Colorization_Color/>
 
 		<Armor_Type> ArmourG_SpeederHeavy </Armor_Type>
 		<Shield_Armor_Type> ShieldG_Speeder </Shield_Armor_Type>
 		<Damage>25</Damage>
-		<Shield_Points>16</Shield_Points>
-		<Tactical_Health>28</Tactical_Health>
-		<Shield_Refresh_Rate>1.6</Shield_Refresh_Rate>
+		<Shield_Points>0</Shield_Points>
+		<Tactical_Health>50</Tactical_Health>
+		<Shield_Refresh_Rate>0</Shield_Refresh_Rate>
 		<Energy_Capacity>500</Energy_Capacity>
 		<Energy_Refresh_Rate>10</Energy_Refresh_Rate>
 
 		<SFXEvent_Fire>Unit_TIE_Bomber_Fire</SFXEvent_Fire>
-		<SFXEvent_Select>Unit_Select_TIE_Bomber</SFXEvent_Select>
-		<SFXEvent_Move>Unit_Move_TIE_Bomber</SFXEvent_Move>
-		<SFXEvent_Attack>Unit_Attack_TIE_Bomber</SFXEvent_Attack>
-		<SFXEvent_Select>Unit_Select_TIE_Bomber</SFXEvent_Select>
-		<SFXEvent_Guard>Unit_Guard_TIE_Bomber</SFXEvent_Guard>
-		<SFXEvent_Hardpoint>Unit_Hardpoint_TIE_Bomber</SFXEvent_Hardpoint>
-		<XSFXEvent_Ambient_Loop>Unit_TIE_Fighter_Engine_Loop</XSFXEvent_Ambient_Loop>
+		<SFXEvent_Select>Null</SFXEvent_Select>
+		<SFXEvent_Move/>
+		<SFXEvent_Attack/>
+		<SFXEvent_Guard/>
 		<SFXEvent_Ambient_Moving> Unit_TIE_Bomber_Fly_By_Land </SFXEvent_Ambient_Moving>
 		<SFXEvent_Ambient_Moving_Min_Delay_Seconds> 1 </SFXEvent_Ambient_Moving_Min_Delay_Seconds>
 		<SFXEvent_Ambient_Moving_Max_Delay_Seconds> 2 </SFXEvent_Ambient_Moving_Max_Delay_Seconds>
-		<SFXEvent_Bomb_Run_Select_Target> Unit_Select_Tie_Bomber </SFXEvent_Bomb_Run_Select_Target>
-		<SFXEvent_Bomb_Run_Incoming> Unit_Bombing_Run_Tie_Bomber </SFXEvent_Bomb_Run_Incoming>
+		<SFXEvent_Bomb_Run_Select_Target/>
+		<SFXEvent_Bomb_Run_Incoming/>
 
 		<Ranged_Target_Z_Adjust>0.0</Ranged_Target_Z_Adjust>
 		<Fires_Forward>no</Fires_Forward>
@@ -944,7 +917,7 @@
 		<Max_Lift>3.0</Max_Lift>
 		<Bank_Turn_Angle>45</Bank_Turn_Angle>
 		<Behavior>POWERED</Behavior>
-		<LandBehavior> REVEAL, LANDBOMBER_LOCOMOTOR, SHIELDED, POWERED, AMBIENT_SFX,UNIT_AI, TARGETING, WEAPON </LandBehavior>
+		<LandBehavior> REVEAL, LANDBOMBER_LOCOMOTOR, POWERED, AMBIENT_SFX,UNIT_AI, TARGETING, WEAPON </LandBehavior>
 		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
 		<Select_Box_Scale>43</Select_Box_Scale>
 		<Select_Box_Z_Adjust>1.0f</Select_Box_Z_Adjust>
@@ -959,22 +932,22 @@
 		<Armor_Type> ArmourG_SpeederHeavy </Armor_Type>
 		<Shield_Armor_Type> ShieldG_Speeder </Shield_Armor_Type>
 		<Damage>25</Damage>
-		<Shield_Points>24</Shield_Points>
-		<Tactical_Health>36</Tactical_Health>
-		<Shield_Refresh_Rate>2.4</Shield_Refresh_Rate>
+		<Shield_Points>0</Shield_Points>
+		<Tactical_Health>50</Tactical_Health>
+		<Shield_Refresh_Rate>0</Shield_Refresh_Rate>
 		<Energy_Capacity>500</Energy_Capacity>
 		<Energy_Refresh_Rate>10</Energy_Refresh_Rate>
 
 		<SFXEvent_Fire>Unit_Y_Wing_Fire</SFXEvent_Fire>
-		<SFXEvent_Select>Unit_Select_B_Wing</SFXEvent_Select>
-		<SFXEvent_Move>Unit_Move_B_Wing</SFXEvent_Move>
-		<SFXEvent_Attack>Unit_Attack_B_Wing</SFXEvent_Attack>
-		<SFXEvent_Guard>Unit_Guard_B_Wing</SFXEvent_Guard>
+		<SFXEvent_Select>Null</SFXEvent_Select>
+		<SFXEvent_Move/>
+		<SFXEvent_Attack/>
+		<SFXEvent_Guard/>
 		<SFXEvent_Ambient_Moving> Unit_Y_Wing_Fly_By_Land </SFXEvent_Ambient_Moving>
 		<SFXEvent_Ambient_Moving_Min_Delay_Seconds> 1 </SFXEvent_Ambient_Moving_Min_Delay_Seconds>
 		<SFXEvent_Ambient_Moving_Max_Delay_Seconds> 2 </SFXEvent_Ambient_Moving_Max_Delay_Seconds>
-		<SFXEvent_Bomb_Run_Select_Target> Unit_Select_B_Wing </SFXEvent_Bomb_Run_Select_Target>
-		<SFXEvent_Bomb_Run_Incoming> Unit_Bombing_Run_Y_Wing </SFXEvent_Bomb_Run_Incoming>
+		<SFXEvent_Bomb_Run_Select_Target/>
+		<SFXEvent_Bomb_Run_Incoming/>
 
 		<Ranged_Target_Z_Adjust>0.0</Ranged_Target_Z_Adjust>
 		<Fires_Forward> Yes </Fires_Forward> <!-- This must be YES in order to fire missiles without concern of the firing cone in Calculate_Projectile_Facing() -->
@@ -1045,7 +1018,7 @@
 		<Max_Lift>3.0</Max_Lift>
 		<Bank_Turn_Angle>45</Bank_Turn_Angle>
 		<Behavior>POWERED</Behavior>
-		<LandBehavior> REVEAL, LANDBOMBER_LOCOMOTOR, SHIELDED, POWERED, AMBIENT_SFX,UNIT_AI, TARGETING, WEAPON </LandBehavior>
+		<LandBehavior> REVEAL, LANDBOMBER_LOCOMOTOR, POWERED, AMBIENT_SFX,UNIT_AI, TARGETING, WEAPON </LandBehavior>
 		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
 		<Select_Box_Scale>43</Select_Box_Scale>
 		<Select_Box_Z_Adjust>1.0f</Select_Box_Z_Adjust>
@@ -1060,22 +1033,22 @@
 		<Armor_Type> ArmourG_SpeederHeavy </Armor_Type>
 		<Shield_Armor_Type> ShieldG_Speeder </Shield_Armor_Type>
 		<Damage>25</Damage>
-		<Shield_Points>36</Shield_Points>
-		<Tactical_Health>48</Tactical_Health>
-		<Shield_Refresh_Rate>3.6</Shield_Refresh_Rate>
+		<Shield_Points>0</Shield_Points>
+		<Tactical_Health>50</Tactical_Health>
+		<Shield_Refresh_Rate>0</Shield_Refresh_Rate>
 		<Energy_Capacity>500</Energy_Capacity>
 		<Energy_Refresh_Rate>10</Energy_Refresh_Rate>
 
 		<SFXEvent_Fire>Unit_Y_Wing_Fire</SFXEvent_Fire>
-		<SFXEvent_Select>Unit_Select_Y_Wing</SFXEvent_Select>
-		<SFXEvent_Move>Unit_Move_Y_Wing</SFXEvent_Move>
-		<SFXEvent_Attack>Unit_Attack_Y_Wing</SFXEvent_Attack>
-		<SFXEvent_Guard>Unit_Guard_Y_Wing</SFXEvent_Guard>
+		<SFXEvent_Select>Null</SFXEvent_Select>
+		<SFXEvent_Move/>
+		<SFXEvent_Attack/>
+		<SFXEvent_Guard/>
 		<SFXEvent_Ambient_Moving> Unit_Y_Wing_Fly_By_Land </SFXEvent_Ambient_Moving>
 		<SFXEvent_Ambient_Moving_Min_Delay_Seconds> 1 </SFXEvent_Ambient_Moving_Min_Delay_Seconds>
 		<SFXEvent_Ambient_Moving_Max_Delay_Seconds> 2 </SFXEvent_Ambient_Moving_Max_Delay_Seconds>
-		<SFXEvent_Bomb_Run_Select_Target> Unit_Select_Y_Wing </SFXEvent_Bomb_Run_Select_Target>
-		<SFXEvent_Bomb_Run_Incoming> Unit_Bombing_Run_Y_Wing </SFXEvent_Bomb_Run_Incoming>
+		<SFXEvent_Bomb_Run_Select_Target/>
+		<SFXEvent_Bomb_Run_Incoming/>
 
 		<Ranged_Target_Z_Adjust>0.0</Ranged_Target_Z_Adjust>
 		<Fires_Forward> Yes </Fires_Forward> <!-- This must be YES in order to fire missiles without concern of the firing cone in Calculate_Projectile_Facing() -->
@@ -1144,7 +1117,7 @@
 		<Max_Lift>2.0</Max_Lift>
 		<Bank_Turn_Angle>50</Bank_Turn_Angle>
 		<Behavior>POWERED</Behavior>
-		<LandBehavior> REVEAL, LANDBOMBER_LOCOMOTOR, SHIELDED, POWERED, AMBIENT_SFX,UNIT_AI, TARGETING, WEAPON </LandBehavior>
+		<LandBehavior> REVEAL, LANDBOMBER_LOCOMOTOR, POWERED, AMBIENT_SFX,UNIT_AI, TARGETING, WEAPON </LandBehavior>
 		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
 		<Select_Box_Scale>43</Select_Box_Scale>
 		<Select_Box_Z_Adjust>1.0f</Select_Box_Z_Adjust>
@@ -1158,22 +1131,22 @@
 		<Armor_Type> ArmourG_SpeederHeavy </Armor_Type>
 		<Shield_Armor_Type> ShieldG_Speeder </Shield_Armor_Type>
 		<Damage>25</Damage>
-		<Shield_Points>12</Shield_Points>
-		<Tactical_Health>32</Tactical_Health>
-		<Shield_Refresh_Rate>0.1</Shield_Refresh_Rate>
+		<Shield_Points>0</Shield_Points>
+		<Tactical_Health>50</Tactical_Health>
+		<Shield_Refresh_Rate>0</Shield_Refresh_Rate>
 		<Energy_Capacity>500</Energy_Capacity>
 		<Energy_Refresh_Rate>10</Energy_Refresh_Rate>
 
 		<SFXEvent_Fire>Unit_Y_Wing_Fire</SFXEvent_Fire>
-		<SFXEvent_Select>Unit_Select_B_Wing</SFXEvent_Select>
-		<SFXEvent_Move>Unit_Move_B_Wing</SFXEvent_Move>
-		<SFXEvent_Attack>Unit_Attack_B_Wing</SFXEvent_Attack>
-		<SFXEvent_Guard>Unit_Guard_B_Wing</SFXEvent_Guard>
+		<SFXEvent_Select>Null</SFXEvent_Select>
+		<SFXEvent_Move/>
+		<SFXEvent_Attack/>
+		<SFXEvent_Guard/>
 		<SFXEvent_Ambient_Moving> Unit_Y_Wing_Fly_By_Land </SFXEvent_Ambient_Moving>
 		<SFXEvent_Ambient_Moving_Min_Delay_Seconds> 1 </SFXEvent_Ambient_Moving_Min_Delay_Seconds>
 		<SFXEvent_Ambient_Moving_Max_Delay_Seconds> 2 </SFXEvent_Ambient_Moving_Max_Delay_Seconds>
-		<SFXEvent_Bomb_Run_Select_Target> Unit_Select_B_Wing </SFXEvent_Bomb_Run_Select_Target>
-		<SFXEvent_Bomb_Run_Incoming> Unit_Bombing_Run_Y_Wing </SFXEvent_Bomb_Run_Incoming>
+		<SFXEvent_Bomb_Run_Select_Target/>
+		<SFXEvent_Bomb_Run_Incoming/>
 
 		<Ranged_Target_Z_Adjust>0.0</Ranged_Target_Z_Adjust>
 		<Fires_Forward>no</Fires_Forward>

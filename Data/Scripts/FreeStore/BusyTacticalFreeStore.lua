@@ -123,30 +123,26 @@ function On_Unit_Service(object)
 	end
 	
 	current_target = object.Get_Attack_Target()
-
-	if aggressive_mode and not TestValid(current_target) then
-		if TR_On_Unit_Service(object) then
-			DebugMessage("%s -- %s attacking target within TR attack range", tostring(Script), tostring(object))
-			return
-		end
-	end
     
     if TestValid(current_target) then
 	
-		DebugMessage("%s -- %s already have a target %s, kiting or healing", tostring(Script), tostring(object), tostring(current_target))
+		DebugMessage("%s -- %s already have a target %s", tostring(Script), tostring(object), tostring(current_target))
 		
 		-- Don't need to kite away from small stuff
-		if object.Is_Good_Against(current_target) then
-			DebugMessage("%s -- %s fighting %s we're good against, keep it up", tostring(Script), tostring(object), tostring(current_target))
-			if object.Get_Distance(current_target) < object.Get_Type().Get_Max_Range() then
-				Try_Ability(object,"Power_To_Weapons")
-				Try_Ability(object, "FULL_SALVO")
-			end
+		if object.Is_Good_Against(current_target) and object.Get_Distance(current_target) < object.Get_Type().Get_Max_Range() then
+			DebugMessage("%s -- %s in range of %s we're good against, keep it up", tostring(Script), tostring(object), tostring(current_target))
+			-- If we have a good target in range, stop moving and attack it, enabling offensive abilities
+			object.Attack_Target(current_target)
+			
+			Try_Ability(object,"Power_To_Weapons")
+			Try_Ability(object, "FULL_SALVO")
+			
 			return
 		end
 			
-		-- Current target is something small and we're not good at killing it, find an alternative target
-		if current_target.Is_Category("Fighter") or current_target.Is_Category("Bomber") then
+		-- Current target is something small and we're not good at killing it (and not a fighter out of range), find an alternative target
+		if (current_target.Is_Category("Fighter") or current_target.Is_Category("Bomber")) and not object.Is_Category("Fighter") then
+			DebugMessage("%s -- %s finding alternate target to %s", tostring(Script), tostring(object), tostring(current_target))
 			if Service_Attack(object) then 
 				return
 			end
@@ -154,6 +150,7 @@ function On_Unit_Service(object)
 		
 		if object.Get_Shield() < 0.1 then
 			Try_Ability(object,"Power_To_Weapons")
+			Try_Ability(object,"Defend")
 		end
 
 		if should_kite(object, current_target) then
@@ -167,13 +164,13 @@ function On_Unit_Service(object)
 				return
 			end
 		end
-			
-		
-		-- If we have a target, stop moving and attack it
-		get_in_range(object, current_target)
-		
-		return
-    end
+	
+    elseif aggressive_mode then
+		if TR_On_Unit_Service(object) then
+			DebugMessage("%s -- %s attacking preferred target within TR attack range", tostring(Script), tostring(object))
+			return
+		end
+	end
 
     if not object.Has_Active_Orders() then
 	
@@ -201,58 +198,52 @@ function On_Unit_Service(object)
 		
 		return
     end
-end
-
----Gets units in range of enemies or attack immediately if in range
----@param object GameObject
----@param enemy_object GameObject unit to attack
-function get_in_range(object, enemy_object)
 	
-	if object.Get_Distance(enemy_object) < object.Get_Type().Get_Max_Range() then
-		object.Attack_Target(enemy_object)
-	else
-		object.Attack_Move(Project_By_Unit_Range(object, enemy_object.Get_Position()))
+	if Service_Attack(object) then
+		return
 	end
 	
-	return true	
+	Service_Guard(object)
+	
+	return
 end
 
 ---Makes units engage enemies
 ---@param object GameObject
 ---@return boolean
 function Service_Attack(object)
-
 	-- keep corvettes guarding
 	if object.Is_Category("AntiBomber") then
 		return false
 	end
+	
+	-- first deal with best possible target for non-group units
+	if not object.Is_Category("Fighter") and not object.Is_Category("Bomber") and not object.Is_Category("Gunship") and not object.Is_Category("SpaceHero") then
+		local best_target = FindTarget.Reachable_Target(PlayerObject, "Unit_Needs_To_Be_Destroyed_Freestore", "Enemy_Unit", "Any_Threat", 1.0, object, object.Get_Type().Get_Max_Range())
+		
+		if TestValid(best_target) then
+			DebugMessage("%s -- attacking best target", tostring(Script))
+			object.Attack_Target(best_target)
+			return true
+		end	
+	end
 
+	-- then deal with nearby enemies in range
 	local closest_enemy = Find_Nearest(object, "Corvette|Frigate|Capital|SuperCapital|SpaceHero|SpaceStructure", object.Get_Owner(), false)
 	
-	if not TestValid(closest_enemy) or not TestValid(enemy_location) then
+	if not TestValid(closest_enemy) then
 		return false
 	else
 		DebugMessage("%s -- closest enemy is %s units away", tostring(Script), tostring(object.Get_Distance(closest_enemy)))
 	end
 	
 	if object.Get_Distance(closest_enemy) < FREE_STORE_ATTACK_RANGE then
-		if get_in_range(object, closest_enemy) then
-			return true
-		end
+		object.Attack_Target(closest_enemy)
+		return true
 	elseif aggressive_mode then
-		if get_in_range(object, closest_enemy) then
-			return true
-		end
+		object.Attack_Target(closest_enemy)
+		return true
 	end
-	
-	local deadly_enemy = FindDeadlyEnemy(object)
-	
-	if TestValid(deadly_enemy) then
-		DebugMessage("%s -- attacking enemy attacker", tostring(Script))
-		if get_in_range(object, deadly_enemy) then
-			return true
-		end
-	end	
 
     return false
 end
@@ -350,7 +341,7 @@ function Service_Heal_Friendly(object)
         return false
     end
 	
-	DebugMessage("%s -- %s moving to healer", tostring(Script), tostring(object), tostring(deadly_enemy))
+	DebugMessage("%s -- %s moving to escort target %s", tostring(Script), tostring(object), tostring(heal_target))
     object.Move_To(heal_target, 10)
     
     return true

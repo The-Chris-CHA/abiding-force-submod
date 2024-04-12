@@ -101,7 +101,7 @@ function BoardingProximityTrigger(prox_obj, trigger_obj, self)
         return
     end
 
-    if trigger_obj.Is_Category("Boardable") then
+    if trigger_obj.Has_Property("Boardable") then
         TR_Cancel_Prox(Object, BoardingProximityTrigger)
         self.boardingTarget = trigger_obj
         self:ToggleBoardingEffects()

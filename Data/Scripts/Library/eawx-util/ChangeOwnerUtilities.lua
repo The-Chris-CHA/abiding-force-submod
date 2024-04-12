@@ -20,234 +20,184 @@
 
 require("PGBase")
 require("PGStateMachine")
+require("eawx-util/StoryUtil")
 CONSTANTS = ModContentLoader.get("GameConstants")
 
----Changes the owner of a given list of planets or a single planet. All units from these planets are transfered to an allied planet
+---Changes the owner of a given list of planets or a single planet. 
+---Units belonging to the new owner are not moved.
+---Units belonging to the old owner are transferred to the specified destination (if provided and valid) or an allied planet (capital location preferred).
+---Units belonging to any other faction are moved to an allied planet (capital location preferred).
 ---@param planets PlanetObject|PlanetObject[]
 ---@param newOwner PlayerObject
-function ChangePlanetOwnerAndRetreat(planets, newOwner)
-    DebugMessage("ChangePlanetOwnerAndRetreat STARTED")
-    if type(planets) ~= "table" then
-        planets = {planets}
+---@param destinationPlanet PlanetObject
+---@param newBuildingsMode int (optional)
+function ChangePlanetOwnerAndRetreat(planets, newOwner, destinationPlanet, newBuildingsMode)
+    --DebugMessage("ChangePlanetOwnerAndRetreat STARTED")
+    ChangePlanetOwnerAnd(0, planets, newOwner, destinationPlanet, newBuildingsMode)
+end
+
+---Changes the owner of a given list of planets or a single planet.
+---Units belonging to the new owner are not moved.
+---Units belonging to the old owner are given to the new owner.
+---Units belonging to any other faction are moved to an allied planet (capital location preferred).
+---@param planets PlanetObject|PlanetObject[]
+---@param newOwner PlayerObject
+---@param newBuildingsMode int (optional)
+function ChangePlanetOwnerAndReplace(planets, newOwner, newBuildingsMode)
+    --DebugMessage("ChangePlanetOwnerAndReplace STARTED")
+    ChangePlanetOwnerAnd(1, planets, newOwner, nil, newBuildingsMode) 
+end
+
+---Executes planet ownership change
+---@param mode integer (0 == retreat, 1 == replace)
+---@param transferPlanetObjects PlanetObject|PlanetObject[]
+---@param newOwnerPlayer PlayerObject
+---@param destinationPlanet PlanetObject (optional)
+---@param newBuildingsMode int (optional) (1 == basic structures per CONSTANTS, 2 == random structures from ChangePlanetOwnerAndPopulate, nil and all other values == nothing)
+function ChangePlanetOwnerAnd(mode, transferPlanetObjects, newOwnerPlayer, destinationPlanet, newBuildingsMode)
+    if type(transferPlanetObjects) ~= "table" then
+        transferPlanetObjects = {transferPlanetObjects}
     end
 
-    ---@type GameObject[]
-    local unitTypes = {}
+	local newOwnerPlayerHumanFlag = newOwnerPlayer.Is_Human()
 
     ---@type PlayerObject[]
-    local unitOwners = {}
+	local transferPlanetOwners = {}
+    ---@type GameObject[]
+    local queuedSpawns = {}
+
+    local spaceStructures = require("StructureCategoryLists")
+
+	for _, transferPlanetObject in pairs(transferPlanetObjects) do
+		transferPlanetOwners[transferPlanetObject] = transferPlanetObject.Get_Owner()
+	end
+	
     set_hero_death_enabled(false)
 
-    ---@type table<PlayerObject, GameObject[]>
-    local allUnitsPerOwner = {}
+	for _, factionName in pairs(CONSTANTS.ALL_FACTIONS) do
+		local factionPlayer = Find_Player(factionName)
 
-    for i, planet in pairs(planets) do
-        local owner = planet.Get_Owner()
+		if factionPlayer ~= newOwnerPlayer then
+			local allFactionUnitInstances = Find_All_Objects_Of_Type(factionPlayer) or {}
+			for i, unitInstance in pairs(allFactionUnitInstances) do
+				if TestValid(unitInstance) then
+					local unitPlanet = unitInstance.Get_Planet_Location()
+					local unitAction = determine_unit_action(unitInstance, unitPlanet, transferPlanetObjects, spaceStructures)
+
+					--if unitInstance is a secondary space structure despawn it
+					if unitAction == 1 then
+						unitInstance.Despawn()
+					--if unitInstance meets conditions, add unitInstanceRelevantObject to queuedSpawns[spawnPlayer][spawnPlanet], then despawn unitInstanceRelevantObject
+					elseif unitAction == 2 then
+						local unitInstanceRelevantObject = get_relevant_object(unitInstance)
+						if TestValid(unitInstanceRelevantObject) then
+							--if replace and unitInstance belongs to transferPlanetOwners[unitPlanet] give to newOwnerPlayer
+							local spawnPlayer = nil
+							if mode == 1 and factionPlayer == transferPlanetOwners[unitPlanet] then
+								spawnPlayer = newOwnerPlayer
+							--else retain original ownership
+							else
+								spawnPlayer = factionPlayer
+							end
+
+							if not queuedSpawns[spawnPlayer] then
+								queuedSpawns[spawnPlayer] = {}
+							end	
+
+							local spawnPlanet = nil
+							--if replace and unitInstance owner is old planet owner, then spawn on same planet
+							if mode == 1 and factionPlayer == transferPlanetOwners[unitPlanet] then
+								spawnPlanet = unitPlanet
+							--if retreat and destinationPlanet is friendly, then spawn on destinationPlanet
+							elseif mode == 0 and destinationPlanet then
+								if StoryUtil.CheckFriendlyPlanet(destinationPlanet, factionPlayer) then
+									spawnPlanet = destinationPlanet
+								end
+							end	
+							--else placeholder (selection made after all ownership transfers in batch)
+							if not spawnPlanet then
+								spawnPlanet = "placeholder"
+							end
+
+							if not queuedSpawns[spawnPlayer][spawnPlanet] then
+								queuedSpawns[spawnPlayer][spawnPlanet] = {}
+							end
+
+							table.insert(queuedSpawns[spawnPlayer][spawnPlanet], unitInstanceRelevantObject.Get_Type())
+							--NB: despawn the relevant object, not the unit, to ensure only 1 object for each company causes that company to be added to queuedSpawns
+							unitInstanceRelevantObject.Despawn()
+						end
+					end
+				end
+			end		
+		end
+	end
+
+	for _, transferPlanetObject in pairs(transferPlanetObjects) do
+		transferPlanetObject.Change_Owner(newOwnerPlayer)
+
+		--basic structures
+		if newBuildingsMode == 1 then
+			SpawnList(CONSTANTS.ALL_FACTIONS_BASIC_STRUCTURES[newOwnerPlayer.Get_Faction_Name()], transferPlanetObject, newOwnerPlayer, true, false)
+		end
 		
-		if owner ~= Find_Player("Neutral") then
-			insert_all_enemy_units_on_planet(allUnitsPerOwner, owner, planet)
+		--random structures
+		if newBuildingsMode == 2 then
+			ChangePlanetOwnerAndPopulate(transferPlanetObject, newOwnerPlayer, 0, nil, true)
+		end
+	end
 
-			if not allUnitsPerOwner[owner] then
-				allUnitsPerOwner[owner] = get_friendly_units_on_planet(owner, planet)
+	for spawnPlayer, spawnPlanetTable in pairs(queuedSpawns) do
+		local spawnPlanetOut = nil
+		for spawnPlanetIn, unitTypeTable in pairs(spawnPlanetTable) do
+			--replace placeholder with friendly planet, prefer capital
+			if type(spawnPlanetIn) == "string" then
+				spawnPlanetOut = StoryUtil.FindFriendlyPlanet(spawnPlayer, true)
+				
+				--if there's nowhere to go, just disappear
+				if not spawnPlanetOut then
+					break
+				end
+			else
+				spawnPlanetOut = spawnPlanetIn
 			end
 
-			-- local allUnitsOfCurrentOwner = allUnitsPerOwner[owner]
-			for player, units in pairs(allUnitsPerOwner) do
-				insert_into_spawn_tables(unitTypes, unitOwners, units, planet)
+			for _, unitType in pairs(unitTypeTable) do
+				spawnedUnit = Spawn_Unit(unitType, spawnPlanetOut, spawnPlayer)
+				spawnedUnit[1].Prevent_AI_Usage(false)
 			end
 		end
 
-        planet.Change_Owner(newOwner)
-    end
-
-    spawn_units_on_friendly_location(unitTypes, unitOwners)
-    set_hero_death_enabled(true)
-end
-
-function insert_all_enemy_units_on_planet(allUnitsPerOwner, planet_owner, planet)
-	for _, enemy_faction in pairs(CONSTANTS.ALL_FACTIONS) do
-		local enemy_faction_obj = Find_Player(enemy_faction)
-		if enemy_faction_obj ~= planet_owner then
-			local friendly_units_on_planet = get_friendly_units_on_planet(enemy_faction_obj, planet)
-
-			if table.getn(friendly_units_on_planet) > 0 then
-			    allUnitsPerOwner[enemy_faction_obj] = friendly_units_on_planet
-            end
-        end
-    end
-end
-
----Changes the owner of a given list of planets or a single planet. All units from these planets are replaced with the same units set to the new owner
----@param planets PlanetObject|PlanetObject[]
----@param newOwner PlayerObject
-function ChangePlanetOwnerAndReplace(planets, newOwner)
-    DebugMessage("ChangePlanetOwnerAndReplace STARTED")
-    if type(planets) ~= "table" then
-        planets = {planets}
-    end
-
-    ---@type GameObject[]
-    local friendlyUnitTypes = {}
-
-    ---@type PlayerObject[]
-    local friendlyUnitOwners = {}
-
-    ---@type GameObject[]
-    local unitTypes = {}
-
-    ---@type PlayerObject[]
-    local unitOwners = {}
-    set_hero_death_enabled(false)
-
-    ---@type table<PlayerObject, GameObject[]>
-    local allUnitsPerOwner = {}
-
-    for i, planet in pairs(planets) do
-        local owner = planet.Get_Owner()
-		
-		if owner ~= Find_Player("Neutral") then
-			if not allUnitsPerOwner[owner] then
-				allUnitsPerOwner[owner] = Find_All_Objects_Of_Type(owner)
-			end
-
-			insert_all_enemy_units_on_planet(allUnitsPerOwner, owner, planet)
-
-			local allUnitsOfCurrentOwner = allUnitsPerOwner[owner]
-			insert_into_spawn_tables(friendlyUnitTypes, friendlyUnitOwners, allUnitsOfCurrentOwner, planet)
-
-			allUnitsPerOwner[owner] = nil
-			for player, units in pairs(allUnitsPerOwner) do
-				insert_into_spawn_tables(unitTypes, unitOwners, units, planet)
-			end
+		if spawnPlayer.Is_Human() and not newOwnerPlayerHumanFlag and spawnPlanetOut then
+			StoryUtil.ShowScreenText("TEXT_SINGLE_UNIT_RETREAT_PLANET", 15, spawnPlanetOut, {r = 255, g = 255, b = 100})
 		end
-
-        planet.Change_Owner(newOwner)
-
-        spawn_units_on_target_location(friendlyUnitTypes, planet, newOwner)
-        spawn_units_on_friendly_location(unitTypes, unitOwners)
-    end
+	end
 
     set_hero_death_enabled(true)
 end
 
----@param player PlayerObject
----@param planet PlanetObject
-function get_friendly_units_on_planet(player, planet)
-    local all_units_of_player = Find_All_Objects_Of_Type(player) or {}
-    local friendly_units_on_planet = {}
-    for _, unit in pairs(all_units_of_player) do
-        if should_insert_into_spawn_table(unit, planet) then
-            local relevant_object = get_relevant_object(unit)
-            table.insert(friendly_units_on_planet, relevant_object)
-        end
-    end
+function determine_unit_action(unitInstance, unitPlanet, transferPlanetObjects, spaceStructures)
+	local unitOnTransferredPlanet = false
+	for _, transferPlanetObject in pairs(transferPlanetObjects) do
+		if unitPlanet == transferPlanetObject then
+			unitOnTransferredPlanet = true
+			break
+		end
+	end
+	
+	if not unitOnTransferredPlanet then
+		return 0
+	end
+	
+	if is_valid_category(unitInstance) then
+		return 2
+	end
 
-    return friendly_units_on_planet
-end
+	if is_secondary_space_structure(unitInstance, spaceStructures) then
+		return 1
+	end
 
-function insert_into_spawn_tables(unit_types_table, unit_owners_table, all_units_of_owner, planet)
-    local owner
-
-    for i, unit in pairs(all_units_of_owner) do
-        if should_insert_into_spawn_table(unit, planet) then
-            if not owner then
-                owner = unit.Get_Owner()
-            end
-
-            local relevant_object = get_relevant_object(unit)
-            if TestValid(relevant_object) then
-                DebugMessage(
-                    "Relevant object: %s Planet: %s Owner: %s",
-                    relevant_object.Get_Type().Get_Name(),
-                    planet.Get_Type().Get_Name(),
-                    owner.Get_Faction_Name()
-                )
-                table.insert(unit_types_table, relevant_object.Get_Type())
-                table.insert(unit_owners_table, owner)
-                all_units_of_owner[i] = nil
-                relevant_object.Despawn()
-            else
-                DebugMessage("Could not find the relevant object for unit %s", unit.Get_Type().Get_Name())
-            end
-        end
-    end
-end
-
----Returns true if the unit is valid, has a valid category and is located on the sepcified planet
----@param unit GameObject
----@param planet PlanetObject
-function should_insert_into_spawn_table(unit, planet)
-    return TestValid(unit) and unit.Get_Planet_Location() == planet and is_valid_category(unit)
-end
-
----Returns the object necessary to spawn an instance of the unit on the GC map. If the unit is in a company it will return the company. Otherwise returns the object
----@param unit GameObject The unit
-function get_relevant_object(unit)
-    if is_in_company(unit) then
-        return unit.Get_Parent_Object()
-    end
-
-    return unit
-end
-
----Returns true if the unit is part of a company
----@param unit GameObject
-function is_in_company(unit)
-    local parent = unit.Get_Parent_Object()
-    local planet = unit.Get_Planet_Location()
-    return parent and parent ~= planet and parent.Get_Type() ~= Find_Object_Type("Galactic_Fleet")
-end
-
----Enables or disables tracking of hero deaths
----@param enabled boolean
-function set_hero_death_enabled(enabled)
-    if enabled then
-        Story_Event("ENABLE_HERO_DEATH_EVENTS")
-    else
-        Story_Event("DISABLE_HERO_DEATH_EVENTS")
-    end
-end
-
----Spawns units on a friendly planet if possible
----@param unitTypes GameObjectType[]
----@param unitOwners PlayerObject[]
-function spawn_units_on_friendly_location(unitTypes, unitOwners)
-    local owner_spawn_target = {}
-    local human_location
-    for unit_index, unit_type in ipairs(unitTypes) do
-        local owner = unitOwners[unit_index]
-        if not owner_spawn_target[owner] then
-            owner_spawn_target[owner] = StoryUtil.FindFriendlyPlanet(owner)
-        end
-
-        local friendly_planet = owner_spawn_target[owner]
-        if TestValid(friendly_planet) then
-            if owner.Is_Human() then
-                human_location = friendly_planet
-            end
-            DebugMessage("Spawning unit type %s on %s", unit_type.Get_Name(), friendly_planet.Get_Type().Get_Name())
-            unit = Spawn_Unit(unit_type, friendly_planet, owner)
-			unit[1].Prevent_AI_Usage(false)
-        end
-    end
-
-    if human_location then
-        StoryUtil.ShowScreenText("TEXT_SINGLE_UNIT_RETREAT_PLANET", 5, human_location, {r = 255, g = 255, b = 255})
-    end
-end
-
----Spawns units on a target planet
----@param unitTypes GameObjectType[]
----@param planet PlanetObject
----@param owner PlayerObject[]
-function spawn_units_on_target_location(unitTypes, planet, owner)
-    for _, unit_type in ipairs(unitTypes) do
-        if TestValid(planet) then
-            DebugMessage("Spawning unit type %s on %s", unit_type.Get_Name(), planet.Get_Type().Get_Name())
-            unit = Spawn_Unit(unit_type, planet, owner)
-			unit[1].Prevent_AI_Usage(false)
-        end
-    end
+	return 0
 end
 
 ---Returns true if the unit has a category that allows moving to a different planet
@@ -257,6 +207,7 @@ function is_valid_category(unit)
         "Fighter",
         "Bomber",
         -- "Transport",
+        "Gunship",
         "Corvette",
         "Frigate",
         "Capital",
@@ -280,6 +231,158 @@ function is_valid_category(unit)
     end
 
     return false
+end
+
+---Returns true if the unit is a secondary space structure
+---@param unitType GameObject
+function is_secondary_space_structure(unitType, spaceStructures)	
+	local unitTypeName = unitType.Get_Type().Get_Name()
+
+    for _, spaceStructuresSub in pairs(spaceStructures) do
+        for _, spaceStructureName in pairs(spaceStructuresSub) do
+			if unitTypeName == spaceStructureName then
+                return true
+            end
+        end        
+    end
+
+	return false
+end
+
+---Returns the object necessary to spawn an instance of the unit on the GC map. If the unit is in a company it will return the company. Otherwise returns the object
+---@param unit GameObject
+function get_relevant_object(unit)
+    if is_in_company(unit) then
+        return unit.Get_Parent_Object()
+    end
+	
+    return unit
+end
+
+---Returns true if the unit is part of a company
+---@param unit GameObject
+function is_in_company(unit)
+    local parent = unit.Get_Parent_Object()
+    return parent and parent ~= unit.Get_Planet_Location() and parent.Get_Type() ~= Find_Object_Type("Galactic_Fleet")
+end
+
+---Enables or disables tracking of hero deaths
+---@param enabled boolean
+function set_hero_death_enabled(enabled)
+    if enabled then
+        Story_Event("ENABLE_HERO_DEATH_EVENTS")
+    else
+        Story_Event("DISABLE_HERO_DEATH_EVENTS")
+    end
+end
+
+function insert_all_enemy_units_on_planet(allUnitsPerOwner, planet_owner, planet)
+	for _, enemy_faction in pairs(CONSTANTS.ALL_FACTIONS) do
+		local enemy_faction_obj = Find_Player(enemy_faction)
+		if enemy_faction_obj ~= planet_owner then
+			local friendly_units_on_planet = get_friendly_units_on_planet(enemy_faction_obj, planet)
+			if table.getn(friendly_units_on_planet) > 0 then
+			    allUnitsPerOwner[enemy_faction_obj] = friendly_units_on_planet
+            end
+        end
+    end
+end
+
+---@param player PlayerObject
+---@param planet PlanetObject
+--This same function is duplicated in AI_Plan_Rescue_Trapped_Fleet (to simplify dependencies?)
+function get_friendly_units_on_planet(player, planet)
+	DebugMessage("%s -- getting all units for %s on planet %s", tostring(Script), tostring(player), tostring(planet))
+	local all_units_of_player = Find_All_Objects_Of_Type(player) or {}
+	local friendly_units_on_planet = {}
+	for _, unit in pairs(all_units_of_player) do
+		if TestValid(unit) and unit.Get_Planet_Location() == planet and unit.Get_Type() ~= Find_Object_Type("Galactic_Fleet") then
+			table.insert(friendly_units_on_planet, unit)
+		end
+	end
+
+	return friendly_units_on_planet
+end
+
+--transfers all game objects that belong to oldOwner to newOwner. Transferred units over third-party planets retreat to one of newOwner's planets (capital preferred)
+--@param oldOwnerPlayer PlayerObject
+--@param newOwnerPlayer PlayerObject
+--@param newBuildingsMode int (1 == basic structures per CONSTANTS, 2 == random structures from ChangePlanetOwnerAndPopulate, nil and all other values == nothing)
+function Faction_Total_Replace(oldOwnerPlayer,newOwnerPlayer,newBuildingsMode)	
+	local allPlanetObjects = FindPlanet.Get_All_Planets()
+	local planets_to_transfer = {}
+
+	for _, planet in pairs(allPlanetObjects) do
+		if planet.Get_Owner() == oldOwnerPlayer then
+			table.insert(planets_to_transfer, planet)
+		end
+	end
+
+	ChangePlanetOwnerAndReplace(planets_to_transfer, newOwnerPlayer, newBuildingsMode)
+
+	Transfer_All_Units(oldOwnerPlayer,newOwnerPlayer)
+end
+
+--transfers all movable units that belong to oldOwner to newOwner. Transferred units over third-party planets retreat to one of newOwner's planets (capital preferred)
+--@param oldOwnerPlayer PlayerObject
+--@param newOwnerPlayer PlayerObject
+function Transfer_All_Units(oldOwnerPlayer,newOwnerPlayer)
+	local defaultSpawnPlanet = StoryUtil.FindFriendlyPlanet(newOwnerPlayer, true)
+
+	if defaultSpawnPlanet == nil then
+		return
+	end
+
+	local defaultPlanetUsed = false
+    local queuedSpawns = {}
+	queuedSpawns[defaultSpawnPlanet] = {}
+		
+	local allFactionUnitInstances = Find_All_Objects_Of_Type(oldOwnerPlayer) or {}
+
+    set_hero_death_enabled(false)
+
+	for i, unitInstance in pairs(allFactionUnitInstances) do
+		if TestValid(unitInstance) then
+			if is_valid_category(unitInstance) then
+				local unitInstanceRelevantObject = get_relevant_object(unitInstance)
+				if TestValid(unitInstanceRelevantObject) then
+					local unitPlanet = unitInstance.Get_Planet_Location()
+					if TestValid(unitPlanet) then
+						local spawnPlanet = nil
+
+						if unitPlanet.Get_Owner() == newOwnerPlayer then
+							spawnPlanet = unitPlanet
+						else
+							spawnPlanet = defaultSpawnPlanet
+							defaultPlanetUsed = true
+						end
+	
+						if not queuedSpawns[spawnPlanet] then
+							queuedSpawns[spawnPlanet] = {}
+						end
+						
+						table.insert(queuedSpawns[spawnPlanet], unitInstanceRelevantObject.Get_Type())
+	
+						--NB: despawn the relevant object, not the unit, to ensure only 1 object for each company causes that company to be added to queuedSpawns
+						unitInstanceRelevantObject.Despawn()
+					end
+				end
+			end
+		end
+	end
+
+	for spawnPlanet, unitTypeTable in pairs(queuedSpawns) do
+		for _, unitType in pairs(unitTypeTable) do
+			spawnedUnit = Spawn_Unit(unitType, spawnPlanet, newOwnerPlayer)
+			spawnedUnit[1].Prevent_AI_Usage(false)
+		end
+	end
+
+	if newOwnerPlayer.Is_Human() and defaultPlanetUsed then
+		StoryUtil.ShowScreenText("TEXT_SINGLE_UNIT_RETREAT_PLANET", 15, defaultSpawnPlanet, {r = 255, g = 255, b = 100})
+	end
+
+    set_hero_death_enabled(true)
 end
 
 function Destroy_Planet(planet)

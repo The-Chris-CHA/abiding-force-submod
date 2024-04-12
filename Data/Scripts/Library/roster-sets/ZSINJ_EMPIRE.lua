@@ -19,6 +19,7 @@ return {
     ["GENERIC_VENGEANCE"] = 0,
 	-- Heroes
 	["RAZORS_KISS"] = 0,
+	["IRONFISTUPGRADE"] = 0,
 	-- Pirate Base
 	["INTERCEPTOR_FRIGATE"] = 0,
 	["ACTION_VI_SUPPORT"] = 0,
@@ -32,6 +33,11 @@ return {
 	["HUNTER_KILLER_PROBOT"] = 0,
 	["MTC_SENSOR"] = 0,
 	["MTC_SUPPORT"] = 0,
+	["WORLD_DEVASTATOR_FRIGATE"] = 0,
 	["SOVEREIGN"] = 0,
 	["ECLIPSE_STAR_DESTROYER"] = 0,
+	["DAALAUPGRADE"] = 0,
+	["PELLAEONUPGRADE"] = 0,
+	["PELLAEONUPGRADE2"] = 0,
+	["ROGRISSUPGRADE"] = 0,
 }

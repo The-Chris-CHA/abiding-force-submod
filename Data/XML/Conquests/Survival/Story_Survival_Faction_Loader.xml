@@ -1,0 +1,272 @@
+<?xml version="1.0" ?>
+
+<Story>
+
+	<Event Name="Universal_Story_Start">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>0</Event_Param1>
+	</Event>
+
+	<Event Name="Select_Dummy_Planet">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SELECT_PLANET</Reward_Type>
+		<Reward_Param1>Survivaland</Reward_Param1>
+		<Story_Dialog>Dialog_Survival_Lore</Story_Dialog>
+		<Story_Chapter>1</Story_Chapter>
+		<Story_Tag>Survival_Popup</Story_Tag>
+		<Story_Dialog_Popup>True</Story_Dialog_Popup>
+		<Prereq>Universal_Story_Start</Prereq>
+	</Event>
+
+	<!--<Event Name="Planet_Scroll_Locking">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SCROLL_LOCK</Reward_Type>
+		<Reward_Param1>1</Reward_Param1>
+		<Prereq>Universal_Story_Start</Prereq>
+	</Event>
+
+	<Event Name="Planet_Selection_Locking">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>LOCK_PLANET_SELECTION</Reward_Type>
+		<Reward_Param1>1</Reward_Param1>
+		<Prereq>Universal_Story_Start</Prereq>
+	</Event>-->
+
+	<Event Name="Story_Box_Closed">
+		<Event_Type>STORY_GENERIC</Event_Type>
+		<Event_Param1>CLOSE_STORY_DIALOG</Event_Param1>
+		<Perpetual>True</Perpetual>
+		<Prereq>Universal_Story_Start</Prereq>
+	</Event>
+
+	<Event Name="Lock_Naval_Academy">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>LOCK_UNIT</Reward_Type>
+		<Reward_Param1>Naval_Academy</Reward_Param1>
+		<Prereq>Universal_Story_Start</Prereq>
+	</Event>
+	
+	<Event Name="Lock_Local_Infrastructure">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>LOCK_UNIT</Reward_Type>
+		<Reward_Param1>Local_Infrastructure</Reward_Param1>
+		<Prereq>Universal_Story_Start</Prereq>
+	</Event>
+	
+	<Event Name="Lock_Imperial_Prison">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>LOCK_UNIT</Reward_Type>
+		<Reward_Param1>Imperial_Prison</Reward_Param1>
+		<Prereq>Universal_Story_Start</Prereq>
+	</Event>
+	
+	<Event Name="Lock_Planetary_Shield">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>LOCK_UNIT</Reward_Type>
+		<Reward_Param1>Generic_Planetary_Shield</Reward_Param1>
+		<Prereq>Universal_Story_Start</Prereq>
+	</Event>
+	
+	<Event Name="Lock_Ion_Cannon">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>LOCK_UNIT</Reward_Type>
+		<Reward_Param1>Ground_Ion_Cannon</Reward_Param1>
+		<Prereq>Universal_Story_Start</Prereq>
+	</Event>
+	
+	<Event Name="Lock_NewRep_SenatorsOffice">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>LOCK_UNIT</Reward_Type>
+		<Reward_Param1>NewRep_SenatorsOffice</Reward_Param1>
+		<Prereq>Universal_Story_Start</Prereq>
+	</Event>
+
+	<Event Name="Lock_NewRep_Senate">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>LOCK_UNIT</Reward_Type>
+		<Reward_Param1>NewRep_Senate</Reward_Param1>
+		<Prereq>Universal_Story_Start</Prereq>
+	</Event>
+
+	<Event Name="Unlock_Faction_Dummy_NR">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>BUILDABLE_UNIT</Reward_Type>
+		<Reward_Param1>Faction_Dummy_NR</Reward_Param1>
+		<Prereq>Universal_Story_Start</Prereq>
+	</Event>
+
+	<Event Name="Unlock_Faction_Dummy_IR">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>BUILDABLE_UNIT</Reward_Type>
+		<Reward_Param1>Faction_Dummy_IR</Reward_Param1>
+		<Prereq>Universal_Story_Start</Prereq>
+	</Event>
+	
+	<Event Name="Unlock_Faction_Dummy_Pentastar">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>BUILDABLE_UNIT</Reward_Type>
+		<Reward_Param1>Faction_Dummy_Pentastar</Reward_Param1>
+		<Prereq>Universal_Story_Start</Prereq>
+	</Event>
+	
+	<Event Name="Unlock_Faction_Dummy_Eriadu_Authority">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>BUILDABLE_UNIT</Reward_Type>
+		<Reward_Param1>Faction_Dummy_Eriadu_Authority</Reward_Param1>
+		<Prereq>Universal_Story_Start</Prereq>
+	</Event>
+	
+	<Event Name="Unlock_Faction_Dummy_Zsinj_Empire">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>BUILDABLE_UNIT</Reward_Type>
+		<Reward_Param1>Faction_Dummy_Zsinj_Empire</Reward_Param1>
+		<Prereq>Universal_Story_Start</Prereq>
+	</Event>
+	
+	<Event Name="Unlock_Faction_Dummy_Greater_Maldrood">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>BUILDABLE_UNIT</Reward_Type>
+		<Reward_Param1>Faction_Dummy_Greater_Maldrood</Reward_Param1>
+		<Prereq>Universal_Story_Start</Prereq>
+	</Event>
+
+	<Event Name="Unlock_Faction_Dummy_Corporate_Sector">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>BUILDABLE_UNIT</Reward_Type>
+		<Reward_Param1>Faction_Dummy_Corporate_Sector</Reward_Param1>
+		<Prereq>Universal_Story_Start</Prereq>
+	</Event>
+
+	<Event Name="Unlock_Faction_Dummy_Hapes_Consortium">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>BUILDABLE_UNIT</Reward_Type>
+		<Reward_Param1>Faction_Dummy_Hapes_Consortium</Reward_Param1>
+		<Prereq>Universal_Story_Start</Prereq>
+	</Event>
+
+	<Event Name="Unlock_Faction_Dummy_EmpireoftheHand">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>BUILDABLE_UNIT</Reward_Type>
+		<Reward_Param1>Faction_Dummy_EmpireoftheHand</Reward_Param1>
+		<Prereq>Universal_Story_Start</Prereq>
+	</Event>
+
+	<Event Name="Unlock_Faction_Dummy_Hutts">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>BUILDABLE_UNIT</Reward_Type>
+		<Reward_Param1>Faction_Dummy_Hutts</Reward_Param1>
+		<Prereq>Universal_Story_Start</Prereq>
+	</Event>
+
+
+	<Event Name="Survival_Construction_Dummy_NR">
+		<Event_Type>STORY_CONSTRUCT</Event_Type>
+		<Event_Param1>Faction_Dummy_NR</Event_Param1>
+		<Event_Param2>1</Event_Param2>
+		<Event_Param3>FILTER_FRIENDLY_ONLY</Event_Param3>
+		<Reward_Type>LOAD_CAMPAIGN</Reward_Type>
+		<Reward_Param1>Sandbox_Survival_Rebel</Reward_Param1>
+		<Reward_Param2>0</Reward_Param2>
+		<Prereq>Universal_Story_Start</Prereq>
+	</Event>
+
+	<Event Name="Survival_Construction_Dummy_IR">
+		<Event_Type>STORY_CONSTRUCT</Event_Type>
+		<Event_Param1>Faction_Dummy_IR</Event_Param1>
+		<Event_Param2>1</Event_Param2>
+		<Event_Param3>FILTER_FRIENDLY_ONLY</Event_Param3>
+		<Reward_Type>LOAD_CAMPAIGN</Reward_Type>
+		<Reward_Param1>Sandbox_Survival_Empire</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+		<Prereq>Universal_Story_Start</Prereq>
+	</Event>
+
+	<Event Name="Survival_Construction_Dummy_PA">
+		<Event_Type>STORY_CONSTRUCT</Event_Type>
+		<Event_Param1>Faction_Dummy_Pentastar</Event_Param1>
+		<Event_Param2>1</Event_Param2>
+		<Event_Param3>FILTER_FRIENDLY_ONLY</Event_Param3>
+		<Reward_Type>LOAD_CAMPAIGN</Reward_Type>
+		<Reward_Param1>Sandbox_Survival_Pentastar</Reward_Param1>
+		<Reward_Param2>14</Reward_Param2>
+		<Prereq>Universal_Story_Start</Prereq>
+	</Event>
+
+	<Event Name="Survival_Construction_Dummy_EA">
+		<Event_Type>STORY_CONSTRUCT</Event_Type>
+		<Event_Param1>Faction_Dummy_Eriadu_Authority</Event_Param1>
+		<Event_Param2>1</Event_Param2>
+		<Event_Param3>FILTER_FRIENDLY_ONLY</Event_Param3>
+		<Reward_Type>LOAD_CAMPAIGN</Reward_Type>
+		<Reward_Param1>Sandbox_Survival_Eriadu_Authority</Reward_Param1>
+		<Reward_Param2>8</Reward_Param2>
+		<Prereq>Universal_Story_Start</Prereq>
+	</Event>
+
+	<Event Name="Survival_Construction_Dummy_ZE">
+		<Event_Type>STORY_CONSTRUCT</Event_Type>
+		<Event_Param1>Faction_Dummy_Zsinj_Empire</Event_Param1>
+		<Event_Param2>1</Event_Param2>
+		<Event_Param3>FILTER_FRIENDLY_ONLY</Event_Param3>
+		<Reward_Type>LOAD_CAMPAIGN</Reward_Type>
+		<Reward_Param1>Sandbox_Survival_Zsinj_Empire</Reward_Param1>
+		<Reward_Param2>7</Reward_Param2>
+		<Prereq>Universal_Story_Start</Prereq>
+	</Event>
+
+	<Event Name="Survival_Construction_Dummy_GM">
+		<Event_Type>STORY_CONSTRUCT</Event_Type>
+		<Event_Param1>Faction_Dummy_Greater_Maldrood</Event_Param1>
+		<Event_Param2>1</Event_Param2>
+		<Event_Param3>FILTER_FRIENDLY_ONLY</Event_Param3>
+		<Reward_Type>LOAD_CAMPAIGN</Reward_Type>
+		<Reward_Param1>Sandbox_Survival_Greater_Maldrood</Reward_Param1>
+		<Reward_Param2>15</Reward_Param2>
+		<Prereq>Universal_Story_Start</Prereq>
+	</Event>
+
+	<Event Name="Survival_Construction_Dummy_CSA">
+		<Event_Type>STORY_CONSTRUCT</Event_Type>
+		<Event_Param1>Faction_Dummy_Corporate_Sector</Event_Param1>
+		<Event_Param2>1</Event_Param2>
+		<Event_Param3>FILTER_FRIENDLY_ONLY</Event_Param3>
+		<Reward_Type>LOAD_CAMPAIGN</Reward_Type>
+		<Reward_Param1>Sandbox_Survival_Corporate_Sector</Reward_Param1>
+		<Reward_Param2>13</Reward_Param2>
+		<Prereq>Universal_Story_Start</Prereq>
+	</Event>
+
+	<Event Name="Survival_Construction_Dummy_Hapes">
+		<Event_Type>STORY_CONSTRUCT</Event_Type>
+		<Event_Param1>Faction_Dummy_Hapes_Consortium</Event_Param1>
+		<Event_Param2>1</Event_Param2>
+		<Event_Param3>FILTER_FRIENDLY_ONLY</Event_Param3>
+		<Reward_Type>LOAD_CAMPAIGN</Reward_Type>
+		<Reward_Param1>Sandbox_Survival_Hapes_Consortium</Reward_Param1>
+		<Reward_Param2>12</Reward_Param2>
+		<Prereq>Universal_Story_Start</Prereq>
+	</Event>
+
+	<Event Name="Survival_Construction_Dummy_EotH">
+		<Event_Type>STORY_CONSTRUCT</Event_Type>
+		<Event_Param1>Faction_Dummy_EmpireoftheHand</Event_Param1>
+		<Event_Param2>1</Event_Param2>
+		<Event_Param3>FILTER_FRIENDLY_ONLY</Event_Param3>
+		<Reward_Type>LOAD_CAMPAIGN</Reward_Type>
+		<Reward_Param1>Sandbox_Survival_EmpireoftheHand</Reward_Param1>
+		<Reward_Param2>5</Reward_Param2>
+		<Prereq>Universal_Story_Start</Prereq>
+	</Event>
+
+	<Event Name="Survival_Construction_Dummy_Hutts">
+		<Event_Type>STORY_CONSTRUCT</Event_Type>
+		<Event_Param1>Faction_Dummy_Hutts</Event_Param1>
+		<Event_Param2>1</Event_Param2>
+		<Event_Param3>FILTER_FRIENDLY_ONLY</Event_Param3>
+		<Reward_Type>LOAD_CAMPAIGN</Reward_Type>
+		<Reward_Param1>Sandbox_Survival_Hutt_Cartels</Reward_Param1>
+		<Reward_Param2>2</Reward_Param2>
+		<Prereq>Universal_Story_Start</Prereq>
+	</Event>
+
+</Story>

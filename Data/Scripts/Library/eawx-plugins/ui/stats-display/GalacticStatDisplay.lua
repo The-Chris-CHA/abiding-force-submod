@@ -1,6 +1,7 @@
 require("deepcore/std/class")
 require("eawx-util/StoryUtil")
 CONSTANTS = ModContentLoader.get("GameConstants")
+require("eawx-util/Sort")
 
 ---@class GalacticStatDisplay
 GalacticStatDisplay = class()
@@ -30,12 +31,19 @@ function GalacticStatDisplay:update()
     self.stat_display_event.Add_Dialog_Text("TEXT_DOCUMENTATION_BODY_SEPARATOR")
     self.stat_display_event.Add_Dialog_Text("Economic Structures:")
     self.stat_display_event.Add_Dialog_Text("TEXT_DOCUMENTATION_BODY_SEPARATOR")
-	
-	self.stat_display_event.Add_Dialog_Text(
-        "STAT_TAX_COUNT",
-        EvaluatePerception("Tax_Count", self.galactic_conquest.HumanPlayer)
-    )
-	
+    
+    if Find_Player("local") == Find_Player("HUTT_CARTELS") then
+        self.stat_display_event.Add_Dialog_Text(
+            "STAT_CANTINA_COUNT",
+            EvaluatePerception("Cantina_Count", self.galactic_conquest.HumanPlayer)
+        )
+    else
+        self.stat_display_event.Add_Dialog_Text(
+            "STAT_TAX_COUNT",
+            EvaluatePerception("Tax_Count", self.galactic_conquest.HumanPlayer)
+        )
+    end
+    
     self.stat_display_event.Add_Dialog_Text(
         "STAT_MINES_COUNT",
         EvaluatePerception("Mines_Count", self.galactic_conquest.HumanPlayer)
@@ -45,9 +53,9 @@ function GalacticStatDisplay:update()
         "STAT_TRADESTATION_COUNT",
         EvaluatePerception("Tradestation_Count", self.galactic_conquest.HumanPlayer)
     )
-	
-	self.stat_display_event.Add_Dialog_Text("TEXT_NONE")
-	
+    
+    self.stat_display_event.Add_Dialog_Text("TEXT_NONE")
+    
     if self.id ~= "rev" then
         self.stat_display_event.Add_Dialog_Text("TEXT_DOCUMENTATION_BODY_SEPARATOR")
         self.stat_display_event.Add_Dialog_Text("Persistent Damage for Super Star Destroyers:")
@@ -69,14 +77,15 @@ function GalacticStatDisplay:update()
         end
     end
     
-	self.stat_display_event.Add_Dialog_Text("TEXT_NONE")
-	self.stat_display_event.Add_Dialog_Text("TEXT_DOCUMENTATION_BODY_SEPARATOR")
+    self.stat_display_event.Add_Dialog_Text("TEXT_NONE")
+    self.stat_display_event.Add_Dialog_Text("TEXT_DOCUMENTATION_BODY_SEPARATOR")
 
     self.stat_display_event.Add_Dialog_Text("STAT_FACTIONS")
 
     local number_of_planets_per_faction = self.galactic_conquest.Number_Of_Owned_Planets_By_Faction
 
-    for faction_name, number_of_owned_planets in pairs(number_of_planets_per_faction) do
+    for i, faction_name in ipairs(SortKeys(number_of_planets_per_faction,"desc")) do
+        local number_of_owned_planets = number_of_planets_per_faction[faction_name]
         if number_of_owned_planets ~= 0 then
             local faction = Find_Player(faction_name)
 
@@ -88,15 +97,36 @@ function GalacticStatDisplay:update()
             self.stat_display_event.Add_Dialog_Text(CONSTANTS.ALL_FACTION_TEXTS[faction_name])
             self.stat_display_event.Add_Dialog_Text("STAT_PLANET_COUNT", number_of_owned_planets)
 
-            local force_percentage = self:evaluate_or_zero_for_neutral("Percent_Forces", faction)
-            local income = self:evaluate_or_zero_for_neutral("Current_Income", faction)
-            local upkeep = tonumber(Dirty_Floor(self:evaluate_or_zero_for_neutral("Total_Maintenance", faction)))
-            local credits = faction.Get_Credits()
+            local force_percentage = nil
+            local income = nil
+            local upkeep = nil
+            local credits = nil
+            local smuggling_income = nil
 
-            self.stat_display_event.Add_Dialog_Text("STAT_FORCE_PERCENT", force_percentage)
-            self.stat_display_event.Add_Dialog_Text("STAT_INCOME", income)
-            self.stat_display_event.Add_Dialog_Text("STAT_UPKEEP", upkeep)
-            self.stat_display_event.Add_Dialog_Text("STAT_CREDITS", credits)
+            if self:should_show(faction_name,"STAT_FORCE_PERCENT") then
+                force_percentage = EvaluatePerception("Percent_Forces", faction)
+                self.stat_display_event.Add_Dialog_Text("STAT_FORCE_PERCENT", force_percentage)
+            end     
+
+            if self:should_show(faction_name,"economic_stats") then
+                income = EvaluatePerception("Current_Income", faction)
+                self.stat_display_event.Add_Dialog_Text("STAT_INCOME", income)
+
+                if faction == Find_Player("HUTT_CARTELS") then
+                    smuggling_income = GlobalValue.Get("HUTT_SMUGGLING_INCOME")
+
+                    if smuggling_income == nil then
+                        smuggling_income = 0
+                    end
+                    self.stat_display_event.Add_Dialog_Text("STAT_INCOME_SMUGGLING", smuggling_income)
+                end
+
+                upkeep = tonumber(Dirty_Floor(EvaluatePerception("Total_Maintenance", faction)))
+                self.stat_display_event.Add_Dialog_Text("STAT_UPKEEP", upkeep)
+
+                credits = faction.Get_Credits()
+                self.stat_display_event.Add_Dialog_Text("STAT_CREDITS", credits)
+            end
 
             DebugMessage(
                 "GalacticStatDisplay::update -- Faction %s, planets: %s, forces: %s, income %s, upkeep %s",
@@ -112,13 +142,21 @@ function GalacticStatDisplay:update()
     Story_Event("SHOW_STAT_DISPLAY")
 end
 
----@private
----@param perception string
----@param faction PlayerObject
-function GalacticStatDisplay:evaluate_or_zero_for_neutral(perception, faction)
-    if faction == Find_Player("Neutral") then
-        return 0
+function GalacticStatDisplay:should_show(faction_name,stat_name)
+    --display no statistics beyond planet count for Neutral
+    if faction_name == "NEUTRAL" then
+        return false
     end
-
-    return EvaluatePerception(perception, faction)
+    
+    --display force percent and planet count for factions with no AI
+    if stat_name == "STAT_FORCE_PERCENT" then
+        return true
+    end
+    
+    --display no additional stats for factions with no AI
+    if CONSTANTS.ALL_FACTIONS_AI[faction_name] == "None" then
+        return false
+    end
+    
+    return true
 end

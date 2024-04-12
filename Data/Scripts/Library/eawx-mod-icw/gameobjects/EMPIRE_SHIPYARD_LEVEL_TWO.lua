@@ -29,7 +29,7 @@ return {
 		},
 		["SKIRMISH_DREADNAUGHT_EMPIRE"] = {
 			DEFAULT = {Initial = 2, Reserve = 0}
-		}
+		},
 	},
 	Scripts = {"fighter-spawn"},
 	Flags = {SHIPYARD = true, HANGAR = true}

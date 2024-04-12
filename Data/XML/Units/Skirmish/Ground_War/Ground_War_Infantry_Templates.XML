@@ -28,7 +28,7 @@
 		<Max_Rate_Of_Roll>0.1</Max_Rate_Of_Roll>
 		<Bank_Turn_Angle>0</Bank_Turn_Angle>
 		<Hyperspace>yes</Hyperspace>
-		<Hyperspace_Speed>1.0</Hyperspace_Speed>
+		<Hyperspace_Speed>1.5</Hyperspace_Speed>
 
 		<Shield_Armor_Type></Shield_Armor_Type>
 		<Shield_Points>90000</Shield_Points>
@@ -80,8 +80,6 @@
 		<Build_Time_Reduced_By_Multiple_Factories>yes</Build_Time_Reduced_By_Multiple_Factories>
 		<Build_Tab_Space_Units>yes</Build_Tab_Space_Units>
 		<Build_Initially_Locked>no</Build_Initially_Locked>
-		<Override_Bounty_SP></Override_Bounty_SP>
-		<Override_Bounty_MP></Override_Bounty_MP>
 		<Tactical_Bribe_Cost>1</Tactical_Bribe_Cost>
 		<Piracy_Value_Credits>1</Piracy_Value_Credits>
 		<Score_Cost_Credits>1</Score_Cost_Credits>
@@ -1270,7 +1268,7 @@
 		<Spawned_Squadron_Location_Flyout_Distances>150.0</Spawned_Squadron_Location_Flyout_Distances>
 		
 		<Destruction_Survivors> 
-		Enforcer_Trooper_Squad_Deployed, 1
+		Pentastar_Enforcer_Trooper_Squad_Deployed, 1
 		</Destruction_Survivors>
 		
 	</GroundWarTemplate>
@@ -1355,7 +1353,7 @@
 		<Spawned_Squadron_Location_Flyout_Distances>150.0</Spawned_Squadron_Location_Flyout_Distances>
 		
 		<Destruction_Survivors> 
-		Dark_Jedi_Squad, 1
+		Pentastar_Dark_Jedi_Squad, 1
 		</Destruction_Survivors>
 		
 	</GroundWarTemplate>
@@ -1375,7 +1373,7 @@
 		<Spawned_Squadron_Location_Flyout_Distances>150.0</Spawned_Squadron_Location_Flyout_Distances>
 		
 		<Destruction_Survivors> 
-		EVO_Trooper_Team_Deployed, 1
+		Zsinj_EVO_Trooper_Team_Deployed, 1
 		</Destruction_Survivors>
 		
 	</GroundWarTemplate>
@@ -1443,7 +1441,7 @@
 		<Spawned_Squadron_Location_Flyout_Distances>150.0</Spawned_Squadron_Location_Flyout_Distances>
 		
 		<Destruction_Survivors> 
-		Night_Sister_Company, 1
+		Zsinj_Night_Sister_Company, 1
 		</Destruction_Survivors>
 		
 	</GroundWarTemplate>
@@ -1586,7 +1584,7 @@
 		
 	</GroundWarTemplate>
 
-	<GroundWarTemplate Name="Template_GroundWar_Spawner_Imperial_Incinerator_Stormtrooper_Squad">
+	<GroundWarTemplate Name="Template_GroundWar_Spawner_Imperial_Incinerator_Stormtrooper_Squad_Deployed">
 	
 		<Variant_Of_Existing_Type>GroundWar_Spawner</Variant_Of_Existing_Type>
 		
@@ -1598,7 +1596,7 @@
 		<Spawned_Squadron_Location_Flyout_Distances>150.0</Spawned_Squadron_Location_Flyout_Distances>
 		
 		<Destruction_Survivors> 
-		Imperial_Incinerator_Stormtrooper_Squad, 1
+		Imperial_Incinerator_Stormtrooper_Squad_Deployed, 1
 		</Destruction_Survivors>
 		
 	</GroundWarTemplate>
@@ -1615,7 +1613,7 @@
 		<Spawned_Squadron_Location_Flyout_Distances>150.0</Spawned_Squadron_Location_Flyout_Distances>
 		
 		<Destruction_Survivors> 
-		Storm_Commando_Team_Deployed, 1
+		Imperial_Storm_Commando_Team_Deployed, 1
 		</Destruction_Survivors>
 		
 	</GroundWarTemplate>
@@ -1687,7 +1685,7 @@
 		<Spawned_Squadron_Location_Flyout_Distances>150.0</Spawned_Squadron_Location_Flyout_Distances>
 		
 		<Destruction_Survivors> 
-		Army_Special_Missions_Squad, 1
+		Imperial_Army_Special_Missions_Squad, 1
 		</Destruction_Survivors>
 		
 	</GroundWarTemplate>
@@ -1704,7 +1702,7 @@
 		<Spawned_Squadron_Location_Flyout_Distances>150.0</Spawned_Squadron_Location_Flyout_Distances>
 		
 		<Destruction_Survivors> 
-		Army_Special_Missions_Heavy_Team_Deployed, 1
+		Imperial_Army_Special_Missions_Heavy_Team_Deployed, 1
 		</Destruction_Survivors>
 		
 	</GroundWarTemplate>
@@ -1721,7 +1719,7 @@
 		<Spawned_Squadron_Location_Flyout_Distances>150.0</Spawned_Squadron_Location_Flyout_Distances>
 		
 		<Destruction_Survivors> 
-		Army_Special_Missions_Weapons_Team_Deployed, 1
+		Imperial_Army_Special_Missions_Weapons_Team_Deployed, 1
 		</Destruction_Survivors>
 		
 	</GroundWarTemplate>

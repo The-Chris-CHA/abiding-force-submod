@@ -1,10 +1,10 @@
 return {
 	Ship_Crew_Requirement = 1,
 	Fighters = {
-		TIE_DEFENDER_SQUADRON = {
+		["TIE_DEFENDER_SQUADRON"] = {
 			DEFAULT = {Initial = 1, Reserve = 1}
 		},
-		STARWING_SQUADRON = {
+		["STARWING_SQUADRON"] = {
 			DEFAULT = {Initial = 1, Reserve = 1}
 		}
 	},

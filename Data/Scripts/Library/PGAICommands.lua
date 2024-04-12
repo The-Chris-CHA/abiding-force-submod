@@ -86,64 +86,71 @@ function Set_Contrast_Values()
 	_e_cnt = 1;
 
 	EnemyContrastTypes[_e_cnt] = "Fighter"
-	FriendlyContrastTypeNames = {"AntiFighter", "Bomber", "Fighter", "Corvette", "Frigate", "Capital", "SuperCapital", "SpaceHero", "AntiBomber", "AntiCorvette", "AntiFrigate", "AntiCapital"}
-	FriendlyContrastWeights =	{1.5, 0.25, 1.0, 1.25, 0.95, 0.95, 0.95, 0.95, 1.1, 0.0, 0.0, 0.0}
+	FriendlyContrastTypeNames = {"AntiFighter", "Bomber", "Fighter", "Gunship", "Corvette", "Frigate", "Capital", "SuperCapital", "SpaceHero", "AntiBomber", "AntiCorvette", "AntiFrigate", "AntiCapital"}
+	FriendlyContrastWeights =	{1.5, 0.25, 1.0, 1.1, 1.25, 0.95, 0.95, 0.95, 0.95, 1.1, 0.0, 0.0, 0.0}
 	FriendlyContrastTypes[_e_cnt] = WeightedTypeList.Create()
 	FriendlyContrastTypes[_e_cnt].Parse(FriendlyContrastTypeNames, FriendlyContrastWeights)	
 	_e_cnt = _e_cnt+1;
 	
 	EnemyContrastTypes[_e_cnt] = "Bomber"
-	FriendlyContrastTypeNames = {"AntiBomber", "Fighter", "Bomber", "Corvette", "Frigate", "Capital", "SuperCapital", "SpaceHero", "AntiFighter", "AntiCorvette", "AntiFrigate", "AntiCapital"}
-	FriendlyContrastWeights =	{1.5, 1.25, 1.0, 1.25, 0.5, 0.25, 0.25, 0.95, 1.2, 0.0, 0.0, 0.0}
+	FriendlyContrastTypeNames = {"AntiBomber", "Fighter", "Bomber", "Gunship", "Corvette", "Frigate", "Capital", "SuperCapital", "SpaceHero", "AntiFighter", "AntiCorvette", "AntiFrigate", "AntiCapital"}
+	FriendlyContrastWeights =	{1.5, 1.25, 1.0, 1.1, 1.25, 0.5, 0.25, 0.25, 0.95, 1.2, 0.0, 0.0, 0.0}
 	FriendlyContrastTypes[_e_cnt] = WeightedTypeList.Create()
 	FriendlyContrastTypes[_e_cnt].Parse(FriendlyContrastTypeNames, FriendlyContrastWeights)	
 	_e_cnt = _e_cnt+1;
 
 	EnemyContrastTypes[_e_cnt] = "Transport"
-	FriendlyContrastTypeNames = {"Fighter", "Bomber", "Corvette", "Frigate", "Capital", "SuperCapital", "SpaceHero"}
-	FriendlyContrastWeights =	{2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0}
+	FriendlyContrastTypeNames = {"Fighter", "Bomber", "Gunship", "Corvette", "Frigate", "Capital", "SuperCapital", "SpaceHero"}
+	FriendlyContrastWeights =	{2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0}
+	FriendlyContrastTypes[_e_cnt] = WeightedTypeList.Create()
+	FriendlyContrastTypes[_e_cnt].Parse(FriendlyContrastTypeNames, FriendlyContrastWeights)	
+	_e_cnt = _e_cnt+1;
+	
+	EnemyContrastTypes[_e_cnt] = "Gunship"
+	FriendlyContrastTypeNames = {"AntiCorvette", "AntiFighter", "Fighter", "Bomber", "Gunship", "Corvette", "Frigate", "Capital", "SuperCapital", "SpaceHero", "AntiFighter", "AntiBomber", "AntiFrigate", "AntiCapital"}
+	FriendlyContrastWeights =	{1.5, 1.25, 0.25, 0.25, 1.0, 1.25, 1.0, 1.0, 1.0, 1.25, 0.0, 0.0, 0.2, 0.2}
 	FriendlyContrastTypes[_e_cnt] = WeightedTypeList.Create()
 	FriendlyContrastTypes[_e_cnt].Parse(FriendlyContrastTypeNames, FriendlyContrastWeights)	
 	_e_cnt = _e_cnt+1;
 
 	EnemyContrastTypes[_e_cnt] = "Corvette"
-	FriendlyContrastTypeNames = {"AntiCorvette", "Fighter", "Bomber", "Corvette", "Frigate", "Capital", "SuperCapital", "SpaceHero", "AntiFighter", "AntiBomber", "AntiFrigate", "AntiCapital"}
-	FriendlyContrastWeights =	{1.5, 0.25, 0.25, 1.0, 1.25, 1.0, 1.0, 1.25, 0.0, 0.0, 0.2, 0.2}
+	FriendlyContrastTypeNames = {"AntiCorvette", "Fighter", "Bomber", "Gunship", "Corvette", "Frigate", "Capital", "SuperCapital", "SpaceHero", "AntiFighter", "AntiBomber", "AntiFrigate", "AntiCapital"}
+	FriendlyContrastWeights =	{1.5, 0.25, 0.25, 0.75, 1.0, 1.25, 1.0, 1.0, 1.25, 0.0, 0.0, 0.2, 0.2}
 	FriendlyContrastTypes[_e_cnt] = WeightedTypeList.Create()
 	FriendlyContrastTypes[_e_cnt].Parse(FriendlyContrastTypeNames, FriendlyContrastWeights)	
 	_e_cnt = _e_cnt+1;
 	
 	EnemyContrastTypes[_e_cnt] = "Frigate"
-	FriendlyContrastTypeNames = {"AntiFrigate", "Corvette", "Fighter", "Bomber", "Frigate", "Capital", "SuperCapital", "SpaceHero", "AntiFighter", "AntiBomber", "AntiCorvette", "AntiCapital"}
-	FriendlyContrastWeights =	{1.5, 0.5, 0.25, 1.0, 1.0, 1.25, 1.0, 1.25, 0.0, 0.0, 0.2, 0.2}
+	FriendlyContrastTypeNames = {"AntiFrigate", "Corvette", "Fighter", "Bomber", "Gunship", "Frigate", "Capital", "SuperCapital", "SpaceHero", "AntiFighter", "AntiBomber", "AntiCorvette", "AntiCapital"}
+	FriendlyContrastWeights =	{1.5, 0.5, 0.25, 0.75, 1.0, 1.0, 1.25, 1.0, 1.25, 0.0, 0.0, 0.2, 0.2}
 	FriendlyContrastTypes[_e_cnt] = WeightedTypeList.Create()
 	FriendlyContrastTypes[_e_cnt].Parse(FriendlyContrastTypeNames, FriendlyContrastWeights)	
 	_e_cnt = _e_cnt+1;
 
 	EnemyContrastTypes[_e_cnt] = "Capital"
-	FriendlyContrastTypeNames = {"AntiCapital", "Corvette", "Frigate", "Fighter", "Bomber", "Capital", "SuperCapital", "SpaceHero", "AntiFighter", "AntiBomber", "AntiCorvette", "AntiFrigate"}
-	FriendlyContrastWeights =	{1.5, 0.25, 0.5, 0.25, 1.0, 1.0, 1.25, 1.25, 0.0, 0.0, 0.2, 0.2}
+	FriendlyContrastTypeNames = {"AntiCapital", "Corvette", "Frigate", "Fighter", "Bomber", "Gunship", "Capital", "SuperCapital", "SpaceHero", "AntiFighter", "AntiBomber", "AntiCorvette", "AntiFrigate"}
+	FriendlyContrastWeights =	{1.5, 0.25, 0.5, 0.25, 0.75, 1.0, 1.0, 1.25, 1.25, 0.0, 0.0, 0.2, 0.2}
 	FriendlyContrastTypes[_e_cnt] = WeightedTypeList.Create()
 	FriendlyContrastTypes[_e_cnt].Parse(FriendlyContrastTypeNames, FriendlyContrastWeights)	
 	_e_cnt = _e_cnt+1;
 	
 	EnemyContrastTypes[_e_cnt] = "SuperCapital"
-	FriendlyContrastTypeNames = {"AntiCapital", "Corvette", "Frigate", "Fighter", "Bomber", "Capital", "SuperCapital", "SpaceHero", "AntiFighter", "AntiBomber", "AntiCorvette", "AntiFrigate"}
-	FriendlyContrastWeights =	{1.25, 0.25, 0.5, 0.25, 1.25, 0.75, 0.75, 1.25, 0.0, 0.0, 0.2, 0.2}
+	FriendlyContrastTypeNames = {"AntiCapital", "Corvette", "Frigate", "Fighter", "Bomber", "Gunship", "Capital", "SuperCapital", "SpaceHero", "AntiFighter", "AntiBomber", "AntiCorvette", "AntiFrigate"}
+	FriendlyContrastWeights =	{1.25, 0.25, 0.5, 0.25, 1.25, 0.75, 0.75, 0.75, 1.25, 0.0, 0.0, 0.2, 0.2}
 	FriendlyContrastTypes[_e_cnt] = WeightedTypeList.Create()
 	FriendlyContrastTypes[_e_cnt].Parse(FriendlyContrastTypeNames, FriendlyContrastWeights)	
 	_e_cnt = _e_cnt+1;
 	
 	EnemyContrastTypes[_e_cnt] = "SpaceStructure"
-	FriendlyContrastTypeNames = {"AntiCapital", "Corvette", "Frigate", "Fighter", "Bomber", "Capital", "SuperCapital", "SpaceHero", "AntiFighter", "AntiBomber"}
-	FriendlyContrastWeights =	{3.0, 1.0, 2.0, 1.0, 2.5, 2.5, 2.5, 2.5, 0.0, 0.0}
+	FriendlyContrastTypeNames = {"AntiCapital", "Corvette", "Frigate", "Fighter", "Bomber", "Gunship", "Capital", "SuperCapital", "SpaceHero", "AntiFighter", "AntiBomber"}
+	FriendlyContrastWeights =	{3.0, 1.0, 2.0, 1.0, 2.5, 1.0, 2.5, 2.5, 2.5, 0.0, 0.0}
 	FriendlyContrastTypes[_e_cnt] = WeightedTypeList.Create()
 	FriendlyContrastTypes[_e_cnt].Parse(FriendlyContrastTypeNames, FriendlyContrastWeights)	
 	_e_cnt = _e_cnt+1;
 	
 	EnemyContrastTypes[_e_cnt] = "SpaceHero"
-	FriendlyContrastTypeNames = {"Corvette", "Frigate", "Fighter", "Bomber", "Capital", "SuperCapital", "SpaceHero"}
-	FriendlyContrastWeights =	{0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 1.0}
+	FriendlyContrastTypeNames = {"Corvette", "Frigate", "Fighter", "Bomber", "Gunship", "Capital", "SuperCapital", "SpaceHero"}
+	FriendlyContrastWeights =	{0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 1.0}
 	FriendlyContrastTypes[_e_cnt] = WeightedTypeList.Create()
 	FriendlyContrastTypes[_e_cnt].Parse(FriendlyContrastTypeNames, FriendlyContrastWeights)	
 	_e_cnt = _e_cnt+1;

@@ -42,10 +42,6 @@ function GenericConquer:new(gc, event_name, planet, players, spawn_list, show_ho
 
     self.Winner = nil
 
-    self.ConqueringPlayer = nil
-
-    
-
     self.Story_Tag = event_name
 
     if unlock_list ~= nil then
@@ -76,7 +72,6 @@ function GenericConquer:activate()
     --Logger:trace("entering GenericConquer:activate")
     if (self.is_complete == false) and (self.is_active == false) then
         self.is_active = true
-
         for _, player in pairs(self.ForPlayer) do
             if Find_Player(player) == self.HumanPlayer then
                 if self.show_holocron == true then
@@ -98,7 +93,7 @@ function GenericConquer:planet_owner_changed(planet, new_owner_name, old_owner_n
             if self.ForAnyPlayer == false then
                 local intended_faction = false
                 for _, player in pairs(self.ForPlayer) do
-                    if new_owner_name ==  string.upper(player) then
+                    if new_owner_name == string.upper(player) then
                         self.Winner = Find_Player(player)
                         intended_faction = true
                         self:fulfil()

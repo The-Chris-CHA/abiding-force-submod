@@ -51,12 +51,12 @@ function VentureUpgrade:on_production_finished(planet, object_type_name)
 		local PA = Find_Player("Pentastar")
 		PA.Lock_Tech(assign_unit)
 	elseif object_type_name == "DAALAUPGRADE" then
-		local assign_unit = Find_Object_Type("THALASSAUPGRADE")
+		local assign_unit = Find_Object_Type("DELVARDUS_THALASSAUPGRADE")
 		local EA = Find_Player("Eriadu_Authority")
 		EA.Lock_Tech(assign_unit)
 		assign_unit = Find_Object_Type("BRILLIANTUPGRADE")
 		EA.Lock_Tech(assign_unit)
-	elseif object_type_name == "THALASSAUPGRADE" or object_type_name == "BRILLIANTUPGRADE" then
+	elseif object_type_name == "DELVARDUS_THALASSAUPGRADE" or object_type_name == "BRILLIANTUPGRADE" then
 		local assign_unit = Find_Object_Type("DAALAUPGRADE")
 		local EA = Find_Player("Eriadu_Authority")
 		EA.Lock_Tech(assign_unit)

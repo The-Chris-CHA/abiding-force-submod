@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<Survival_Starbases>
+
+<Starbase Name="Template_Survival_Alternate_Research_Starbase">
+		<Variant_Of_Existing_Type>Template_Generic_Colony_One</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_UNIT_SURVIVAL_ALTERNATE_RESEARCH</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_SURVIVAL_ALTERNATE_RESEARCH
+		</Encyclopedia_Text>
+		
+		<Icon_Name>i_button_survival_alternate_station.tga</Icon_Name>
+		
+		<Affiliation/>
+		<Tech_Level>99</Tech_Level>
+		
+		<Additional_Population_Capacity>0</Additional_Population_Capacity>
+		
+		<HardPoints>
+			HP_Golan_Colony_One_Laser_01_Dummy,
+			HP_Golan_Colony_One_Laser_02_Dummy,
+			HP_Golan_Colony_One_Laser_03_Dummy,
+			HP_Golan_Colony_One_Laser_04_Dummy,
+			HP_Golan_Colony_One_Laser_05_Dummy,
+			HP_Golan_Colony_One_Laser_06_Dummy,
+			HP_Golan_Colony_One_Hangar_01_Dummy,
+			HP_Golan_Colony_One_Hangar_02_Dummy,
+			HP_Golan_Colony_One_Hangar_03_Dummy
+		</HardPoints>
+		
+		<Collidable_By_Projectile_Living>No</Collidable_By_Projectile_Living>
+		<Victory_Relevant>No</Victory_Relevant>
+	</Starbase>
+
+</Survival_Starbases>

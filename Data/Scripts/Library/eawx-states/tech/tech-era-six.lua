@@ -1,6 +1,7 @@
 require("eawx-util/UnitUtil")
 require("PGStoryMode")
 require("PGSpawnUnits")
+require("SetFighterResearch")
 
 return {
 	on_enter = function(self, state_context)
@@ -12,7 +13,6 @@ return {
 		self.ViscountEvent = false
 
 		if self.entry_time <= 5 then
-
 			UnitUtil.SetLockList("REBEL", {
 				"Calamari_Cruiser",
 				"MC30c",
@@ -40,15 +40,9 @@ return {
 			UnitUtil.SetLockList("EMPIRE", {
 				"Eidolon",
 				"IPV1_System_Patrol_Craft",
-				"Imperial_Boarding_Shuttle",
-				"Ysalamiri_Stormtrooper_Squad",
-				"Noghri_Assassin_Squad",
 				"Imperial_PX10_Company",
 				"Imperial_AT_ST_Company",
 				"Imperial_AT_AT_Company",
-				"SoroSuub_HQ",
-				"Mekuun_HQ",
-				"Cygnus_HQ",
 				"TaggeCo_HQ",
 				-- Historical-only units
 				"Imperial_Navy_Commando_Squad"
@@ -57,12 +51,15 @@ return {
 			UnitUtil.SetLockList("EMPIRE", {
 				"Nebulon_B_Empire",
 				"Crusader_Gunship",
+				"Delta_JV7_Squadron",
+				"Cygnus_HQ",
 				"Imperial_Dwarf_Spider_Droid_Company",
 				"Imperial_AT_AT_Refit_Company",
 				"Imperial_AT_ST_A_Company",
 			})
 
 			UnitUtil.SetLockList("PENTASTAR", {
+				"Cygnus_HQ",
 				"Merkuni_HQ",
 				"Adz"
 			})
@@ -105,9 +102,7 @@ return {
 			UnitUtil.SetLockList("ZSINJ_EMPIRE", {
 				"TaggeCo_HQ"
 			}, false)
-			
 		else
-			
 			UnitUtil.SetLockList("REBEL", {
 				"Jedi_Temple",
 				"Jedi_Squad"
@@ -134,7 +129,6 @@ return {
 				"IPV1_System_Patrol_Craft"
 			}, false)
 		end
-
 	end,
 	on_update = function(self, state_context)  
 	end,

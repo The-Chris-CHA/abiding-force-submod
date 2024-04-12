@@ -408,6 +408,41 @@
 		<Projectile_Blast_Area_Range> 10 </Projectile_Blast_Area_Range>
 	</Projectile>
 	
+	
+<!-- ************************************************************************************** -->
+<!-- ********************                   Pulse Wave                   ****************** -->
+<!-- ************************************************************************************** -->
+
+
+<!-- ************************************************************************************** -->
+<!-- ********************                   Heat Beam                   ******************* -->
+<!-- ************************************************************************************** -->
+	
+	<Projectile Name="Proj_Heat_Beam">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_BEAM_LIGHT_GREEN.ALO</Land_Model_Name>
+		<Damage_Type> DamageL_ThermalWarhead </Damage_Type>
+		<Scale_Factor>0.03</Scale_Factor>
+		<Max_Speed>100</Max_Speed>
+		<Max_Rate_Of_Turn>0.0</Max_Rate_Of_Turn>
+		<Behavior>PROJECTILE, HIDE_WHEN_FOGGED</Behavior>
+		<Projectile_Category>Laser</Projectile_Category>
+		<Projectile_Max_Flight_Distance>400.0</Projectile_Max_Flight_Distance>
+		<Projectile_Damage>1.00</Projectile_Damage>
+		<Projectile_Does_Shield_Damage>Yes</Projectile_Does_Shield_Damage>
+		<Projectile_Does_Energy_Damage>No</Projectile_Does_Energy_Damage>
+		<Projectile_Does_Hitpoint_Damage>Yes</Projectile_Does_Hitpoint_Damage>
+		<Projectile_Energy_Per_Shot>1.5</Projectile_Energy_Per_Shot>
+		<Projectile_Object_Detonation_Particle>LAAT_Beam_Hit</Projectile_Object_Detonation_Particle>
+		<Projectile_Object_Armor_Reduced_Detonation_Particle>LAAT_Beam_Hit</Projectile_Object_Armor_Reduced_Detonation_Particle>
+		<Projectile_Ground_Detonation_Particle>Projectile_Dirt_Collide_Green</Projectile_Ground_Detonation_Particle>
+		<Projectile_Lifetime_Detonation_Particle>Projectile_Dirt_Collide_Green</Projectile_Lifetime_Detonation_Particle>
+		<Projectile_Absorbed_By_Shields_Particle>Projectile_Shield_Absorb_Medium</Projectile_Absorbed_By_Shields_Particle>
+		<AI_Combat_Power>6</AI_Combat_Power>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</Projectile>
+
+	
 <!-- ************************************************************************************** -->
 <!-- ********************                       Units                        ************** -->
 <!-- ************************************************************************************** -->
@@ -543,7 +578,7 @@
 		<Text_ID>TEXT_NONE</Text_ID>
 		<Space_Model_Name>W_concussion_missile.alo</Space_Model_Name>
 		<Scale_Factor>0.2</Scale_Factor>
-		<Damage_Type> DamageS_HeavyMissile </Damage_Type>
+		<Damage_Type> DamageS_Concussion </Damage_Type>
 		<Max_Speed>20</Max_Speed>
 		<Max_Rate_Of_Turn>360</Max_Rate_Of_Turn>
 		<Behavior>PROJECTILE, HIDE_WHEN_FOGGED</Behavior>

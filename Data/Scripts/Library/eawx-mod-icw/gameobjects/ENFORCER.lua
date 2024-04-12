@@ -4,6 +4,9 @@ return {
 		["REBEL_X-WING_SQUADRON"] = {
 			REBEL = {Initial = 1, Reserve = 1}
 		},
+		["DUNELIZARD_FIGHTER_SQUADRON"] = {
+			HUTT_CARTELS = {Initial = 1, Reserve = 1}
+		},
 		["TIE_FIGHTER_SQUADRON"] = {
 			HAPES_CONSORTIUM = {Initial = 1, Reserve = 1},
 			HOSTILE = {Initial = 1, Reserve = 1},

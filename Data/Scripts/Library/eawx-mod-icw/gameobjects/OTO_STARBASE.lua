@@ -1,9 +1,9 @@
 return {
 	Fighters = {
-		["CLAWCRAFT_SQUADRON_DOUBLE"] = {
+		["NSSIS_SQUADRON_DOUBLE"] = {
 			DEFAULT = {Initial = 1, Reserve = 5}
 		},
-		["KRSISS_INTERCEPTOR_SQUADRON"] = {
+		["KRSSIS_INTERCEPTOR_SQUADRON"] = {
 			DEFAULT = {Initial = 1, Reserve = 5}
 		},
 		["SYCA_BOMBER_SQUADRON_DOUBLE"] = {

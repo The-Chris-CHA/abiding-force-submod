@@ -5,7 +5,7 @@ return {
 			DEFAULT = {Initial = 1, Reserve = 4}
 		},
 		["A-WING_SQUADRON"] = {
-			DEFAULT = {Initial = 1, Reserve = 5}
+			DEFAULT = {Initial = 1, Reserve = 5, HeroOverride = {{"TALLON_SILENT_WATER"}, {"A-WING_SQUADRON_DOUBLE"}}}
 		},
 		["B-WING_SQUADRON_DOUBLE"] = {
 			DEFAULT = {Initial = 1, Reserve = 3, ResearchType = "~BwingE"}

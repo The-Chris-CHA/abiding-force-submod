@@ -1,18 +1,4 @@
 return {
-    ["EMPIRE"] = {
-        ["ORD_CANTRELL"] = {
-			"Banjeer_Neutron",
-			"Jeratai_Allegiance",
-			"Kooloota_Team",
-			"Carnor_Jax_Team",
-			"Windcaller_Team",
-			"Manos_Team",
-			"Za_Team"
-        },
-		["PHAEDA"] = {"Xexus_Shev_Team"},
-		["ORINDA"] = {"Immodet_Fortress_Company"},
-		["YINCHORR"] = {"Emperors_Revenge_Star_Destroyer"}
-    },
     ["REBEL"] = {
         ["CORUSCANT"] = {"Iblis_Peregrine", "Airen_Cracken_Team"},
 		["CHANDRILA"] = {"Drayson_True_Fidelity"},
@@ -24,7 +10,6 @@ return {
     },
     ["EMPIREOFTHEHAND"] = {
         ["NIRAUAN"] =  {
-            "Soontir_Fel_Squadron",
             "Niriz_Admonitor",
             "Parck_Strikefast",
 			"Hand_of_Judgement_Team"
@@ -37,13 +22,13 @@ return {
     },
     ["GREATER_MALDROOD"] = {
         ["HAKASSI"]  = {
-			"13x_Teradoc",
+			"Treuten_13X",
 			"Neomen_Ion_Storm",
 			"Maston_Team", 
 			"Ramier_Team", 
 			"Lacmar_Team"},
 		["RYVESTER"] = {
-			"Lancet_Kosh",
+			"Kosh_Lancet",
 			"Nervi_Blood_Ambition", 
 			"Tavira_Invidious", 
 			"Riizolo_Neutron", 
@@ -53,8 +38,8 @@ return {
     },
     ["PENTASTAR"] = {
         ["ENTRALLA"]  = {
-            "Gregor_Team",
-			"Coross_Vengeance_II",
+            "Gregor_Raquoran_Team",
+            "Coross_Vengeance_II",
             "Dekeet_Intractable",
             "Dynamic_Besk",
             "Otro_Enforcer",
@@ -67,7 +52,7 @@ return {
         ["KAMPE"]  = {
 			"Delvardus_Brilliant",
 			"Prittick_Tyrant",
-			"Retribution_Star_Destroyer",
+			"Resuun_Retribution",
 			"Octavion_Sorin_Team",
 			"Cronus_Team",
 			"Adrick_Team",
@@ -106,6 +91,33 @@ return {
             "Beed_Thane_Team",
             "Lovett_Riverlord",
             "Livette_Team"
+        }
+	},
+	["HUTT_CARTELS"] = {
+		["GAMORR"]  = {
+			"Zorba_The_Hutt_Team"
+		},
+        ["LATHARRA"]  = {
+			"Borvo_Prosperous_Secret"
+		},
+		["CIRCUMTORE"]  = {
+			"Tronox_Team",
+			"Reshul_Team",
+        },
+		["MULATAN"]  = {
+            "Troonol_Agrelcu_Haalta"
+        },
+        ["NAL_HUTTA"]  = {
+			"Bossato_Team",
+			"Plakot_Team",
+        },
+		["NAR_SHADDAA"]  = {
+            "Popara_Imru_Ootmian",
+			"Parella_Team",
+			"Smebba_Dunk_Team",
+        },
+		["UBRIKKIA"]  = {
+            "Quaffug_Lorda"
         }
 	},
     ["YEVETHA"] = {

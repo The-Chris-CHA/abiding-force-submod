@@ -38,13 +38,13 @@
 		<Projectile_Max_Flight_Distance>3750.0</Projectile_Max_Flight_Distance>
 		<Max_Rate_Of_Turn>0.09</Max_Rate_Of_Turn>
 	</Projectile>
-	
+
 	<Projectile Name="Proj_Ship_Proton_Torpedo_Light">
 		<Variant_Of_Existing_Type>Proj_Ship_Proton_Torpedo</Variant_Of_Existing_Type>
 		<Projectile_Damage>24.0</Projectile_Damage>
 		<AI_Combat_Power>46.8</AI_Combat_Power>
 	</Projectile>
-	
+
 	<Projectile Name="Proj_Ship_Fighter_Proton_Torpedo">
 		<Variant_Of_Existing_Type>Proj_Ship_Proton_Torpedo</Variant_Of_Existing_Type>
 		<Max_Speed>14.0</Max_Speed>
@@ -52,7 +52,7 @@
 		<Projectile_Damage>10.0</Projectile_Damage>
 		<AI_Combat_Power>12</AI_Combat_Power>
 	</Projectile>
-	
+
 	<Projectile Name="Proj_Ship_Bomber_Proton_Torpedo">
 		<Variant_Of_Existing_Type>Proj_Ship_Proton_Torpedo</Variant_Of_Existing_Type>
 		<Space_Model_Name>W_PROTONTORP_FIGHTER.ALO</Space_Model_Name>
@@ -62,10 +62,16 @@
 		<AI_Combat_Power>16.9</AI_Combat_Power>
 	</Projectile>
 
+	<Projectile Name="Proj_Ship_Bomber_Critical_Strike">
+		<Variant_Of_Existing_Type>Proj_Ship_Bomber_Proton_Torpedo</Variant_Of_Existing_Type>
+		<Max_Speed>20.0</Max_Speed>
+		<Max_Rate_Of_Turn>2.0</Max_Rate_Of_Turn>
+		<Projectile_Does_Shield_Damage>No</Projectile_Does_Shield_Damage>
+	</Projectile>
+
 <!-- ************************************************************************************** -->
 <!-- ********************                Bomber Stuff                        ************** -->
 <!-- ************************************************************************************** -->
-
 
 	<Projectile Name="Proj_Ship_Proton_Rocket">
 		<Text_ID>TEXT_NONE</Text_ID>
@@ -136,12 +142,10 @@
 		<AI_Combat_Power>115.0</AI_Combat_Power>
 	</Projectile>
 
-	
 <!-- ************************************************************************************** -->
 <!-- ********************                 Concussion Missiles                ************** -->
 <!-- ************************************************************************************** -->
-	
-	
+
 	<Projectile Name="Proj_Ship_Concussion_Missile">
 		<Text_ID>TEXT_NONE</Text_ID>
 		<Space_Model_Name>p_rocketsmall.alo</Space_Model_Name>
@@ -166,7 +170,7 @@
 		<Projectile_Ground_Detonation_Particle>Conc_Missile_Detonation_Particle</Projectile_Ground_Detonation_Particle>
 		<AI_Combat_Power>22.5</AI_Combat_Power>
 	</Projectile>
-	
+
 	<Projectile Name="Proj_Ship_Assault_Concussion_Missile">
 		<Text_ID>TEXT_NONE</Text_ID>
 		<Space_Model_Name>p_rocket.alo</Space_Model_Name>
@@ -193,7 +197,7 @@
 		<Projectile_Absorbed_By_Shields_Particle>Space_AoE_Explosion</Projectile_Absorbed_By_Shields_Particle>
 		<AI_Combat_Power>67.5</AI_Combat_Power>
 	</Projectile>
-	
+
 	<Projectile Name="Proj_Ship_Light_Concussion_Missile">
 		<Variant_Of_Existing_Type>Proj_Ship_Concussion_Missile</Variant_Of_Existing_Type>
 		<Projectile_Damage>6.0</Projectile_Damage>
@@ -221,7 +225,7 @@
 		<Projectile_Blast_Area_Range> 50 </Projectile_Blast_Area_Range>
 		<AI_Combat_Power>25.0</AI_Combat_Power>
 	</Projectile>
-	
+
 	<Projectile Name="Proj_Rhazer_Missile">
 		<Text_ID>TEXT_NONE</Text_ID>
 		<Space_Model_Name>p_rocket_green.alo</Space_Model_Name>
@@ -246,14 +250,14 @@
 		<Projectile_Ground_Detonation_Particle>Conc_Missile_Detonation_Particle</Projectile_Ground_Detonation_Particle>
 		<AI_Combat_Power>22.5</AI_Combat_Power>
 	</Projectile>
-	
+
 	<Projectile Name="Proj_Ship_Concussion_Missile_Satellite">
 		<Variant_Of_Existing_Type>Proj_Ship_Concussion_Missile</Variant_Of_Existing_Type>
 		<Space_Model_Name>p_rocket.alo</Space_Model_Name>
 		<Max_Speed>8.5</Max_Speed>
 		<Projectile_Damage>25.0</Projectile_Damage>
 	</Projectile>
-	
+
 	<Projectile Name="Proj_Ship_Concussion_Missile_Bossk">
 		<Variant_Of_Existing_Type>Proj_Ship_Concussion_Missile</Variant_Of_Existing_Type>
 		<Space_Model_Name>p_rocket.alo</Space_Model_Name>
@@ -261,7 +265,7 @@
 		<Max_Rate_Of_Turn>5.0</Max_Rate_Of_Turn>
 		<Projectile_Damage>23.0</Projectile_Damage>
 	</Projectile>
-	
+
 	<Projectile Name="Proj_Ship_Diamond_Boron_Missile">
 		<Text_ID>TEXT_NONE</Text_ID>
 		<Space_Model_Name>W_concussion_missile.alo</Space_Model_Name>
@@ -294,7 +298,7 @@
 		<Projectile_Absorbed_By_Shields_Particle>DB_Missile_Explosion</Projectile_Absorbed_By_Shields_Particle>
 		<AI_Combat_Power>600</AI_Combat_Power>
 	</Projectile>
-	
+
 	<Projectile Name="Proj_Ship_Diamond_Boron_Missile_Barrage">
 		<Variant_Of_Existing_Type>Proj_Ship_Diamond_Boron_Missile</Variant_Of_Existing_Type>
 		<!-- Scatter radius and damage -->
@@ -307,13 +311,36 @@
 		<Max_Speed>12.0</Max_Speed>
 	</Projectile>
 
+	<Projectile Name="Proj_Ship_Concussion_Sphere">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Space_Model_Name>p_conc_sphere.alo</Space_Model_Name>
+		<Scale_Factor>.15</Scale_Factor>
+		<Damage_Type> DamageS_Concussion </Damage_Type>
+		<Max_Speed>19.0</Max_Speed>
+		<Max_Rate_Of_Turn>3.0</Max_Rate_Of_Turn>
+		<Behavior>PROJECTILE, HIDE_WHEN_FOGGED</Behavior>
+		<Projectile_Category>MISSILE</Projectile_Category>
+		<Projectile_Max_Flight_Distance>8000.0</Projectile_Max_Flight_Distance>
+		<Projectile_Max_Scan_Range>0.0</Projectile_Max_Scan_Range>
+		<Projectile_Damage>0.0</Projectile_Damage>
+		<Projectile_Blast_Area_Damage> 54 </Projectile_Blast_Area_Damage>
+		<Projectile_Blast_Area_Range> 100 </Projectile_Blast_Area_Range>
+		<Projectile_SFXEvent_Detonate>SFX_Concussion_Missile_Detonation</Projectile_SFXEvent_Detonate>
+		<Projectile_SFXEvent_Detonate_Reduced_By_Armor> SFX_Concussion_Missile_Detonation </Projectile_SFXEvent_Detonate_Reduced_By_Armor>
+		<Projectile_Does_Shield_Damage>Yes</Projectile_Does_Shield_Damage>
+		<Projectile_Does_Energy_Damage>No</Projectile_Does_Energy_Damage>
+		<Projectile_Does_Hitpoint_Damage>Yes</Projectile_Does_Hitpoint_Damage>
+		<Projectile_Energy_Per_Shot>0</Projectile_Energy_Per_Shot>
+		<Projectile_Object_Detonation_Particle>Space_AoE_Explosion</Projectile_Object_Detonation_Particle>
+		<Projectile_Object_Armor_Reduced_Detonation_Particle>Space_AoE_Explosion</Projectile_Object_Armor_Reduced_Detonation_Particle>
+		<Projectile_Ground_Detonation_Particle>Space_AoE_Explosion</Projectile_Ground_Detonation_Particle>
+		<Projectile_Absorbed_By_Shields_Particle>Space_AoE_Explosion</Projectile_Absorbed_By_Shields_Particle>
+		<AI_Combat_Power>67.5</AI_Combat_Power>
+	</Projectile>
 
-
-	
 <!-- ************************************************************************************** -->
 <!-- ********************                    Weapons                         ************** -->
 <!-- ************************************************************************************** -->
-
 
 	<Projectile Name="Proj_Underworld_Station_Main_Cannon">
 		<Text_ID>TEXT_NONE</Text_ID>
@@ -369,7 +396,7 @@
 		<Projectile_SFXEvent_Detonate_Reduced_By_Armor> SFX_Driverhit </Projectile_SFXEvent_Detonate_Reduced_By_Armor>
 		<AI_Combat_Power>23.4</AI_Combat_Power>
 	</Projectile>
-	
+
 	<Projectile Name="Proj_Ship_Slugthrower">
 		<Variant_Of_Existing_Type>Proj_Ship_Mass_Driver</Variant_Of_Existing_Type>
 		<Space_Model_Name>P_flechette_red.ALO</Space_Model_Name>
@@ -393,7 +420,6 @@
 		<Projectile_Damage>0.5</Projectile_Damage>
 		<AI_Combat_Power>0.25</AI_Combat_Power>
 	</Projectile>
-	
 
 	<!-- Slave I's Harmonic bomb -->
 	<Projectile Name="Proj_Harmonic_Bomb_Slave_I">
@@ -427,14 +453,10 @@
 		<Projectile_SFXEvent_Detonate>
 		</Projectile_SFXEvent_Detonate>
 	</Projectile>
-	
-	
-
 
 <!-- ************************************************************************************** -->
 <!-- ********************                Self Destructs                      ************** -->
 <!-- ************************************************************************************** -->
-
 
 	<Projectile Name="Proj_Construction_Pod_Detonation">
 		<Text_ID>TEXT_NONE</Text_ID>
@@ -463,13 +485,12 @@
 		<Projectile_Ground_Detonation_Particle>Friggin_Huge_Explosion_Space</Projectile_Ground_Detonation_Particle>
 		<Projectile_Absorbed_By_Shields_Particle>Friggin_Huge_Explosion_Space</Projectile_Absorbed_By_Shields_Particle>
 	</Projectile>
-	
+
 	<!-- jdg using this guy in an expansion corruption mission, making player immune to damage -->
 	<Projectile Name="Proj_Construction_Pod_Detonation_Underworld_Immune">
 		<Variant_Of_Existing_Type>Proj_Construction_Pod_Detonation</Variant_Of_Existing_Type>
 		<Projectile_Blast_Area_Immune_Faction> Underworld </Projectile_Blast_Area_Immune_Faction>
 	</Projectile>
-
 
 	<Projectile Name="Ship_Self_Destruct_Area_Blast_Effect">
 		<Text_ID>TEXT_NONE</Text_ID>
@@ -495,6 +516,5 @@
 		<Projectile_Lifetime_Detonation_Particle>Self_Destruct_Effect</Projectile_Lifetime_Detonation_Particle>
 		<!--<Lua_Script>FriendlyFire_Selfdstrct</Lua_Script>-->
 	</Projectile>
-
 
 </Projectiles>

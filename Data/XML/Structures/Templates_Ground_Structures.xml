@@ -1,7 +1,7 @@
 <?xml version="1.0" ?>
-<Ground_Structures>
+<Template_Ground_Structures>
 	
-	<SpecialStructure Name="Template_Galactic_Company">
+	<Template_Ground_Structure Name="Template_Galactic_Company">
 	
 		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
 
@@ -27,12 +27,15 @@
 		<Is_Dummy>No</Is_Dummy>
 		
 		<Tech_Level>0</Tech_Level>
-		<Required_Timeline>0</Required_Timeline>
 		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
 		<Required_Star_Base_Level>0</Required_Star_Base_Level>
 		<Required_Special_Structures/>
 		<Required_Planets/>
-	
+
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+
+		<Tactical_Additional_Structure_Type>Generic_Power_Generator</Tactical_Additional_Structure_Type>
+
 		<Target_Bones> Point01, Point02, Point03, Point04, Point05, Point06,
 		Point07, Point08, Point09, Point10, Point11, Point11, Point12,
 		Point13, Point14, Point15, Point16 </Target_Bones>
@@ -45,13 +48,11 @@
 		<Build_Tab_Special_Structures>Yes</Build_Tab_Special_Structures>
 		<Build_Max_Instances_Per_Planet>1</Build_Max_Instances_Per_Planet>
 		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
-		<Override_Bounty_SP>500</Override_Bounty_SP>
-		<Override_Bounty_MP>500</Override_Bounty_MP>
 		<Sabotage_Cost_Credits>1600</Sabotage_Cost_Credits>
 		<Score_Cost_Credits> 8000 </Score_Cost_Credits>
 		
 		<Behavior>DUMMY_GROUND_STRUCTURE</Behavior>
-        <LandBehavior>SPACE_OBSTACLE, LAND_OBSTACLE, REVEAL, SELECTABLE, HIDE_WHEN_FOGGED, DAMAGE_TRACKING, DUMMY_LAND_BASE_LEVEL_COMPONENT, UNIT_AI, TERRAIN_TEXTURE_MODIFICATION, SPAWN_SQUADRON, EARTHQUAKE_TARGET, ION_STUN_EFFECT, STUNNABLE</LandBehavior>
+        <LandBehavior>SPACE_OBSTACLE, LAND_OBSTACLE, REVEAL, SELECTABLE, HIDE_WHEN_FOGGED, DAMAGE_TRACKING, DUMMY_LAND_BASE_LEVEL_COMPONENT, UNIT_AI, SPAWN_SQUADRON, EARTHQUAKE_TARGET, ION_STUN_EFFECT, STUNNABLE</LandBehavior>
 		
 		<Spawned_Squadron_Delay_Seconds>25</Spawned_Squadron_Delay_Seconds>
 		<Spawned_Squadron_Location_Bones>Spawn</Spawned_Squadron_Location_Bones>
@@ -94,18 +95,14 @@
 		<Space_Obstacle_Offset> 0 0 0 </Space_Obstacle_Offset>
 		<Space_Layer> Corvette </Space_Layer>
 		<Has_Land_Evaluator>True</Has_Land_Evaluator>
-		
-		<Terrain_Texture_Modifier_Material>62</Terrain_Texture_Modifier_Material>
-		<Terrain_Texture_Modifier_Join_Distance>1.0</Terrain_Texture_Modifier_Join_Distance>
-		<Terrain_Texture_Modifier_Square>true</Terrain_Texture_Modifier_Square>
-		
+
 		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
 		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
 		
 		<Obstacle_Proxy_Type> E_Ground_Officer_Academy_Build_Pad </Obstacle_Proxy_Type>
-	</SpecialStructure>
+	</Template_Ground_Structure>
 	
-	<SpecialStructure Name="Template_Planetary_Government">
+	<Template_Ground_Structure Name="Template_Planetary_Government">
 		
 		<Variant_Of_Existing_Type>Template_Galactic_Company</Variant_Of_Existing_Type>
 		
@@ -117,6 +114,8 @@
 		<Build_Limit_Current_Per_Player>-1</Build_Limit_Current_Per_Player>
 		<Spawned_Squadron_Delay_Seconds>30.0</Spawned_Squadron_Delay_Seconds>
 
+		<Tactical_Additional_Structure_Type>Generic_Power_Generator</Tactical_Additional_Structure_Type>
+
 		<Abilities SubObjectList="Yes">
 			<Political_Transition_Bonus_Ability Name="Pacification_Bonus">
 				<Time_Reduction_Percentage>0.05</Time_Reduction_Percentage>
@@ -124,13 +123,13 @@
 			</Political_Transition_Bonus_Ability>
 		</Abilities>
 
-	</SpecialStructure>
+	</Template_Ground_Structure>
 	
-	<SpecialStructure Name="Template_Faction_Capital">
+	<Template_Ground_Structure Name="Template_Faction_Capital">
 
 		<Variant_Of_Existing_Type>Template_Galactic_Company</Variant_Of_Existing_Type>
 		
-		<LandBehavior>SPACE_OBSTACLE, LAND_OBSTACLE, REVEAL, SELECTABLE, HIDE_WHEN_FOGGED, DAMAGE_TRACKING, DUMMY_LAND_BASE_LEVEL_COMPONENT, UNIT_AI, TERRAIN_TEXTURE_MODIFICATION, SPAWN_SQUADRON, EARTHQUAKE_TARGET, ION_STUN_EFFECT, STUNNABLE, SPAWN_INDIGENOUS_UNITS, DUMMY_TOOLTIP</LandBehavior>
+		<LandBehavior>SPACE_OBSTACLE, LAND_OBSTACLE, REVEAL, SELECTABLE, HIDE_WHEN_FOGGED, DAMAGE_TRACKING, DUMMY_LAND_BASE_LEVEL_COMPONENT, UNIT_AI, SPAWN_SQUADRON, EARTHQUAKE_TARGET, ION_STUN_EFFECT, STUNNABLE, SPAWN_INDIGENOUS_UNITS, DUMMY_TOOLTIP</LandBehavior>
 		<Friendly_Spawn_Text> TEXT_TACTICAL_CAPITAL_DEFEND_DESCRIPTION </Friendly_Spawn_Text>
 		<Enemy_Spawn_Text> TEXT_TACTICAL_CAPITAL_DESTROY_DESCRIPTION </Enemy_Spawn_Text>
 		
@@ -160,9 +159,9 @@
 				<!-- net result above multiplied by 2.0 if the affected planet is a mining colony -->
 			</Planet_Income_Bonus_Ability>
 		</Abilities>
-	</SpecialStructure>
+	</Template_Ground_Structure>
 	
-	<SpecialStructure Name="Template_Barracks">
+	<Template_Ground_Structure Name="Template_Barracks">
 		
 		<Variant_Of_Existing_Type>Template_Galactic_Company</Variant_Of_Existing_Type>
 		
@@ -227,9 +226,9 @@
 				<SFXEvent_Activate>Unit_Lightsaber_Projectile_Block</SFXEvent_Activate>
 			</Redirect_Blaster_Ability>
 		</Abilities>
-	</SpecialStructure>
+	</Template_Ground_Structure>
 	
-	<SpecialStructure Name="Template_Light_Vehicle_Factory">
+	<Template_Ground_Structure Name="Template_Light_Vehicle_Factory">
 	
 		<Variant_Of_Existing_Type>Template_Galactic_Company</Variant_Of_Existing_Type>
 		
@@ -291,9 +290,9 @@
 				<SFXEvent_Activate>Unit_Lightsaber_Projectile_Block</SFXEvent_Activate>
 			</Redirect_Blaster_Ability>
 		</Abilities>
-	</SpecialStructure>
+	</Template_Ground_Structure>
 	
-	<SpecialStructure Name="Template_Heavy_Vehicle_Factory">
+	<Template_Ground_Structure Name="Template_Heavy_Vehicle_Factory">
 	
 		<Variant_Of_Existing_Type>Template_Galactic_Company</Variant_Of_Existing_Type>
 		
@@ -355,9 +354,9 @@
 				<SFXEvent_Activate>Unit_Lightsaber_Projectile_Block</SFXEvent_Activate>
 			</Redirect_Blaster_Ability>
 		</Abilities>
-	</SpecialStructure>
+	</Template_Ground_Structure>
 	
-	<SpecialStructure Name="Template_Advanced_Vehicle_Factory">
+	<Template_Ground_Structure Name="Template_Advanced_Vehicle_Factory">
 	
 		<Variant_Of_Existing_Type>Template_Galactic_Company</Variant_Of_Existing_Type>
 	
@@ -407,9 +406,9 @@
 				<Owner_Light_Effect_Pulse_Count>1</Owner_Light_Effect_Pulse_Count>
 			</Force_Healing_Ability>
 		</Abilities>
-	</SpecialStructure>
+	</Template_Ground_Structure>
 	
-	<SpecialStructure Name="Template_Ground_Officer_Academy">
+	<Template_Ground_Structure Name="Template_Ground_Officer_Academy">
 		<GUI_Bounds_Scale>0.4</GUI_Bounds_Scale>
 		<Text_ID>TEXT_GROUND_OFFICER_ACADEMY</Text_ID>
 		<GUI_Row> 0 </GUI_Row>
@@ -417,13 +416,11 @@
 		<Loop_Idle_Anim_00>Yes</Loop_Idle_Anim_00>
 		<SFXEvent_Ambient_Loop>Structure_Barracks_Loop</SFXEvent_Ambient_Loop>
 		<Behavior>DUMMY_GROUND_STRUCTURE</Behavior>
-		<LandBehavior>SPACE_OBSTACLE, LAND_OBSTACLE,REVEAL,SELECTABLE, HIDE_WHEN_FOGGED,DAMAGE_TRACKING,DUMMY_LAND_BASE_LEVEL_COMPONENT,UNIT_AI,TERRAIN_TEXTURE_MODIFICATION,EARTHQUAKE_TARGET,ION_STUN_EFFECT, STUNNABLE</LandBehavior>
+		<LandBehavior>SPACE_OBSTACLE, LAND_OBSTACLE,REVEAL,SELECTABLE, HIDE_WHEN_FOGGED,DAMAGE_TRACKING,DUMMY_LAND_BASE_LEVEL_COMPONENT,UNIT_AI,EARTHQUAKE_TARGET,ION_STUN_EFFECT, STUNNABLE</LandBehavior>
 		<Obstacle_Proxy_Type> E_Ground_Officer_Academy_Build_Pad </Obstacle_Proxy_Type>
 		<Multisample_FOW_Check>Yes</Multisample_FOW_Check>
 		<Last_State_Visible_Under_FOW> Yes </Last_State_Visible_Under_FOW>
-		<Terrain_Texture_Modifier_Material>62</Terrain_Texture_Modifier_Material>
-		<Terrain_Texture_Modifier_Join_Distance>1.0</Terrain_Texture_Modifier_Join_Distance>
-		<Terrain_Texture_Modifier_Square>true</Terrain_Texture_Modifier_Square>
+
 		<Land_FOW_Reveal_Range>300.0</Land_FOW_Reveal_Range>
 		<Is_Community_Property>Yes</Is_Community_Property>
 		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
@@ -461,7 +458,6 @@
 		<Size_Value>50</Size_Value>
 		<Base_Position>In_Base</Base_Position>
 		<Tech_Level>99</Tech_Level>
-		<Required_Timeline>0</Required_Timeline>
 		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
 		<Required_Star_Base_Level>0</Required_Star_Base_Level>
 		<Required_Planets/>
@@ -515,9 +511,9 @@
 				<Owner_Light_Effect_Pulse_Count>1</Owner_Light_Effect_Pulse_Count>
 			</Force_Healing_Ability>
 		</Abilities>
-	</SpecialStructure>
+	</Template_Ground_Structure>
 
-	<SpecialStructure Name="Template_Ground_Research_Facility">
+	<Template_Ground_Structure Name="Template_Ground_Research_Facility">
 		<GUI_Bounds_Scale>0.35</GUI_Bounds_Scale>
 		<Text_ID>TEXT_GROUND_RESEARCH_FACILITY</Text_ID>
 		<GUI_Row> 0 </GUI_Row>
@@ -525,7 +521,7 @@
 		<Loop_Idle_Anim_00>Yes</Loop_Idle_Anim_00>
 		<SFXEvent_Ambient_Loop>Structure_Barracks_Loop</SFXEvent_Ambient_Loop>
 		<Behavior>DUMMY_GROUND_STRUCTURE</Behavior>
-		<LandBehavior>SPACE_OBSTACLE, LAND_OBSTACLE,REVEAL,SELECTABLE, HIDE_WHEN_FOGGED,DAMAGE_TRACKING,DUMMY_LAND_BASE_LEVEL_COMPONENT,UNIT_AI,TERRAIN_TEXTURE_MODIFICATION,EARTHQUAKE_TARGET,ION_STUN_EFFECT, STUNNABLE</LandBehavior>
+		<LandBehavior>SPACE_OBSTACLE, LAND_OBSTACLE,REVEAL,SELECTABLE, HIDE_WHEN_FOGGED,DAMAGE_TRACKING,DUMMY_LAND_BASE_LEVEL_COMPONENT,UNIT_AI,EARTHQUAKE_TARGET,ION_STUN_EFFECT, STUNNABLE</LandBehavior>
 		<Obstacle_Proxy_Type> Generic_Ground_Research_Facility_Build_Pad </Obstacle_Proxy_Type>
 		<Multisample_FOW_Check>Yes</Multisample_FOW_Check>
 		<Last_State_Visible_Under_FOW> Yes </Last_State_Visible_Under_FOW>
@@ -535,10 +531,6 @@
 		<Target_Bones> Point01, Point02, Point03, Point04, Point05, Point06,
 	Point07, Point08, Point09, Point10, Point11, Point11, Point12,
 	Point13, Point14, Point15, Point16 </Target_Bones>
-
-		<Terrain_Texture_Modifier_Material>62</Terrain_Texture_Modifier_Material>
-		<Terrain_Texture_Modifier_Join_Distance>1.0</Terrain_Texture_Modifier_Join_Distance>
-		<Terrain_Texture_Modifier_Square>true</Terrain_Texture_Modifier_Square>
 
 		<Land_FOW_Reveal_Range>300.0</Land_FOW_Reveal_Range>
 		<Is_Community_Property>Yes</Is_Community_Property>
@@ -581,7 +573,6 @@
 		<Size_Value>50</Size_Value>
 		<Base_Position>In_Base</Base_Position>
 		<Tech_Level>99</Tech_Level>
-		<Required_Timeline>0</Required_Timeline>
 		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
 		<Required_Star_Base_Level>0</Required_Star_Base_Level>
 		<Required_Special_Structures/>
@@ -652,9 +643,9 @@
 			</Redirect_Blaster_Ability>
 
 		</Abilities>
-	</SpecialStructure>
+	</Template_Ground_Structure>
 
-	<SpecialStructure Name="Template_Hypervelocity_Gun">
+	<Template_Ground_Structure Name="Template_Hypervelocity_Gun">
 		
 		<Variant_Of_Existing_Type>Template_Galactic_Company</Variant_Of_Existing_Type>
 		
@@ -764,9 +755,9 @@
 				<!-- net result above multiplied by 2.0 if the affected planet is a mining colony -->
 			</Planet_Income_Bonus_Ability>
 		</Abilities>
-	</SpecialStructure>
+	</Template_Ground_Structure>
 	
-	<SpecialStructure Name="Template_Ion_Cannon">
+	<Template_Ground_Structure Name="Template_Ion_Cannon">
 	
 		<Variant_Of_Existing_Type>Template_Galactic_Company</Variant_Of_Existing_Type>
 		
@@ -877,9 +868,9 @@
 				<!-- net result above multiplied by 2.0 if the affected planet is a mining colony -->
 			</Planet_Income_Bonus_Ability>
 		</Abilities>
-	</SpecialStructure>
+	</Template_Ground_Structure>
 	
-	<SpecialStructure Name="Template_Base_Shield">
+	<Template_Ground_Structure Name="Template_Base_Shield">
 	
 		<Text_ID>TEXT_GROUND_BASE_SHIELD</Text_ID>
 		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
@@ -926,7 +917,6 @@
 		<Is_Dummy>No</Is_Dummy>
 
 		<Tech_Level>99</Tech_Level>
-		<Required_Timeline>0</Required_Timeline>
 		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
 		<Required_Star_Base_Level>0</Required_Star_Base_Level>
 		<Required_Special_Structures />
@@ -944,7 +934,7 @@
 		<Sabotage_Cost_Credits>4000</Sabotage_Cost_Credits>
 
 		<Behavior>DUMMY_GROUND_STRUCTURE</Behavior>
-		<LandBehavior>BASE_SHIELD, SPACE_OBSTACLE, LAND_OBSTACLE, REVEAL, SELECTABLE, DAMAGE_TRACKING, DUMMY_LAND_BASE_LEVEL_COMPONENT, UNIT_AI, TERRAIN_TEXTURE_MODIFICATION, EARTHQUAKE_TARGET, ION_STUN_EFFECT, STUNNABLE</LandBehavior>
+		<LandBehavior>BASE_SHIELD, SPACE_OBSTACLE, LAND_OBSTACLE, REVEAL, SELECTABLE, DAMAGE_TRACKING, DUMMY_LAND_BASE_LEVEL_COMPONENT, UNIT_AI, EARTHQUAKE_TARGET, ION_STUN_EFFECT, STUNNABLE</LandBehavior>
 
 		<Ranged_Target_Z_Adjust>30.0</Ranged_Target_Z_Adjust>
 		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
@@ -998,10 +988,6 @@
 		<Space_Layer>Corvette</Space_Layer>
 		<Has_Land_Evaluator>True</Has_Land_Evaluator>
 
-		<Terrain_Texture_Modifier_Material>62</Terrain_Texture_Modifier_Material>
-		<Terrain_Texture_Modifier_Join_Distance>1.0</Terrain_Texture_Modifier_Join_Distance>
-		<Terrain_Texture_Modifier_Square>true</Terrain_Texture_Modifier_Square>
-
 		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
 		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
 		
@@ -1025,9 +1011,9 @@
 			</Force_Healing_Ability>
 		</Abilities>
 		
-	</SpecialStructure>
+	</Template_Ground_Structure>
 	
-	<SpecialStructure Name="Template_Planetary_Shield">
+	<Template_Ground_Structure Name="Template_Planetary_Shield">
 		
 		<Text_ID>TEXT_GROUND_PLANETARY_SHIELD</Text_ID>
 		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
@@ -1080,7 +1066,6 @@
 		<Is_Dummy>No</Is_Dummy>
 
 		<Tech_Level>0</Tech_Level>
-		<Required_Timeline>0</Required_Timeline>
 		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
 		<Required_Star_Base_Level>0</Required_Star_Base_Level>
 		<Required_Special_Structures />
@@ -1098,7 +1083,7 @@
 		<Sabotage_Cost_Credits />
 
 		<Behavior>DUMMY_GROUND_STRUCTURE</Behavior>
-		<LandBehavior>SPACE_OBSTACLE, LAND_OBSTACLE, REVEAL, SELECTABLE, DAMAGE_TRACKING, DUMMY_LAND_BASE_LEVEL_COMPONENT, UNIT_AI, TERRAIN_TEXTURE_MODIFICATION, EARTHQUAKE_TARGET, ION_STUN_EFFECT, STUNNABLE, SPAWN_INDIGENOUS_UNITS, DUMMY_TOOLTIP</LandBehavior>
+		<LandBehavior>SPACE_OBSTACLE, LAND_OBSTACLE, REVEAL, SELECTABLE, DAMAGE_TRACKING, DUMMY_LAND_BASE_LEVEL_COMPONENT, UNIT_AI, EARTHQUAKE_TARGET, ION_STUN_EFFECT, STUNNABLE, SPAWN_INDIGENOUS_UNITS, DUMMY_TOOLTIP</LandBehavior>
 
 		<Ranged_Target_Z_Adjust>30.0</Ranged_Target_Z_Adjust>
 		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
@@ -1145,18 +1130,14 @@
 		<Space_Layer>Corvette</Space_Layer>
 		<Has_Land_Evaluator>True</Has_Land_Evaluator>
 
-		<Terrain_Texture_Modifier_Material>62</Terrain_Texture_Modifier_Material>
-		<Terrain_Texture_Modifier_Join_Distance>1.0</Terrain_Texture_Modifier_Join_Distance>
-		<Terrain_Texture_Modifier_Square>true</Terrain_Texture_Modifier_Square>
-
 		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
 		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
 		
 		<Death_Clone>Damage_Normal, Template_Planetary_Shield_Death_Clone</Death_Clone>
 		
-	</SpecialStructure>
+	</Template_Ground_Structure>
 
-	<SpecialStructure Name="Template_Turbolaser_Tower">
+	<Template_Ground_Structure Name="Template_Turbolaser_Tower">
 		<Text_ID>TEXT_GROUND_TURBOLASER_TOWER</Text_ID>
 		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_TURRET</Encyclopedia_Unit_Class>
 		<Encyclopedia_Text> 
@@ -1201,7 +1182,6 @@
 		<Is_Dummy>No</Is_Dummy>
 
 		<Tech_Level>99</Tech_Level>
-		<Required_Timeline>0</Required_Timeline>
 		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
 		<Required_Star_Base_Level>0</Required_Star_Base_Level>
 		<Required_Special_Structures/>
@@ -1215,8 +1195,6 @@
 		<Build_Max_Instances_Per_Planet> -1 </Build_Max_Instances_Per_Planet>
 		<Build_Limit_Current_Per_Player/>
 		<Build_Initially_Locked>Yes</Build_Initially_Locked>
-		<Override_Bounty_SP>1</Override_Bounty_SP>
-		<Override_Bounty_MP>1</Override_Bounty_MP>
 		<Score_Cost_Credits> 20000 </Score_Cost_Credits>
 		<Sabotage_Cost_Credits/>
 
@@ -1270,10 +1248,6 @@
 		<Space_Obstacle_Offset> 0 0 0 </Space_Obstacle_Offset>
 		<Space_Layer> Corvette </Space_Layer>
 		<Has_Land_Evaluator>True</Has_Land_Evaluator>
-
-		<Terrain_Texture_Modifier_Material>62</Terrain_Texture_Modifier_Material>
-		<Terrain_Texture_Modifier_Join_Distance>1.0</Terrain_Texture_Modifier_Join_Distance>
-		<Terrain_Texture_Modifier_Square>true</Terrain_Texture_Modifier_Square>
 
 		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
 		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
@@ -1336,9 +1310,9 @@
 		
 		<Targeting_Priority_Set>AntiVehicleAir</Targeting_Priority_Set>
 		
-	</SpecialStructure>
+	</Template_Ground_Structure>
 	
-	<SpecialStructure Name="Template_Turbolaser_Tower_Defenses">
+	<Template_Ground_Structure Name="Template_Turbolaser_Tower_Defenses">
 		<Text_ID>TEXT_BASE_DEFENSES</Text_ID>
 		<Encyclopedia_Text> 
 		TEXT_TOOLTIP_BASE_DEFENSES
@@ -1380,7 +1354,6 @@
 		<Base_Position>In_Base</Base_Position>
 		<Tech_Level>99</Tech_Level>
 		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
-		<Required_Timeline>0</Required_Timeline>
 		<Required_Star_Base_Level>0</Required_Star_Base_Level>
 		<Required_Planets/>
 		<Icon_Name>i_button_base_defenses.tga</Icon_Name>
@@ -1390,9 +1363,9 @@
 		<CategoryMask> Structure | AntiVehicle</CategoryMask>
 		<Score_Cost_Credits> 20000 </Score_Cost_Credits>
 		<Property_Flags>InBase</Property_Flags>
-	</SpecialStructure>
+	</Template_Ground_Structure>
 
-	<SpecialStructure Name="Garrison_Bunker_Template">
+	<Template_Ground_Structure Name="Garrison_Bunker_Template">
 		<GUI_Bounds_Scale>0.3</GUI_Bounds_Scale>
 		<Text_ID>TEXT_GROUND_BUNKER</Text_ID>
 		<Encyclopedia_Text>
@@ -1479,9 +1452,9 @@
         <AI_Combat_Power>100</AI_Combat_Power>
 		<Property_Flags>TacticalStructure | CanContainGarrison | GarrisonCanFire </Property_Flags>
 
-	</SpecialStructure>
+	</Template_Ground_Structure>
 
-	<SpecialStructure Name="Garrison_Makeshift_Bunker_Template">
+	<Template_Ground_Structure Name="Garrison_Makeshift_Bunker_Template">
 		<Variant_Of_Existing_Type>Garrison_Bunker_Template</Variant_Of_Existing_Type>
 		<Land_Model_Name>UB_Bunker.alo</Land_Model_Name>
 		<Icon_Name>I_BUTTON_BUNKER_MAKESHIFT.TGA</Icon_Name>
@@ -1502,9 +1475,9 @@
         	<Garrison_Enter_Dist>0</Garrison_Enter_Dist>
         	<Garrison_Radius>5</Garrison_Radius>
         	<Num_Garrison_Guns>8</Num_Garrison_Guns>
-	</SpecialStructure>
+	</Template_Ground_Structure>
 
-	<SpecialStructure Name="Pillbox_Bunker_Template">
+	<Template_Ground_Structure Name="Pillbox_Bunker_Template">
 		<GUI_Bounds_Scale>0.3</GUI_Bounds_Scale>
 		<Text_ID>TEXT_GROUND_BUNKER_PILLBOX</Text_ID>
 		<Encyclopedia_Text>
@@ -1597,9 +1570,9 @@
         	<AI_Combat_Power>150</AI_Combat_Power>
 		<Property_Flags>TacticalStructure | CanContainGarrison | GarrisonCanFire </Property_Flags>
 
-	</SpecialStructure>
+	</Template_Ground_Structure>
 
-	<SpecialStructure Name="Battery_Bunker_Template">
+	<Template_Ground_Structure Name="Battery_Bunker_Template">
 		<Variant_Of_Existing_Type>Pillbox_Bunker_Template</Variant_Of_Existing_Type>
 		<Land_Model_Name>EB_TestBunker.alo</Land_Model_Name>
 		<Icon_Name>I_BUTTON_BUNKER_BATTERY.TGA</Icon_Name>
@@ -1616,10 +1589,57 @@
 		<HardPoints>
 			Battery_Bunker_1, Battery_Bunker_2, Battery_Bunker_3, Battery_Bunker_4
 		</HardPoints>
+	</Template_Ground_Structure>
+	
+	<Template_Ground_Structure Name="Trooper_Bunker_Template">
+			<Variant_Of_Existing_Type>Garrison_Bunker_Template</Variant_Of_Existing_Type>
+			<Land_Model_Name>Infantry_bunker_structure.alo</Land_Model_Name>
+			<Icon_Name>I_BUTTON_BUNKER_TROOPERS.TGA</Icon_Name>
+	</Template_Ground_Structure>
 
-	</SpecialStructure>
+	<Template_Ground_Structure Name="AV_Bunker_Template">
+		<Variant_Of_Existing_Type>Pillbox_Bunker_Template</Variant_Of_Existing_Type>
+		<Land_Model_Name>AV_Bunker_structure.alo</Land_Model_Name>
+		<Icon_Name>I_BUTTON_BUNKER_AV.TGA</Icon_Name>
+		<LandBehavior> REVEAL,SELECTABLE,TARGETING, TURRET, WEAPON, IDLE, UNIT_AI, HIDE_WHEN_FOGGED,DAMAGE_TRACKING,EARTHQUAKE_TARGET, GARRISON_STRUCTURE</LandBehavior>
+		
+		<Text_ID>TEXT_GROUND_BUNKER_BATTERY</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_BUNKER_BATTERY
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_BUNKER_HEALTH
+		TEXT_TOOLTIP_BUNKER_BATTERY_WEAP1
+		</Encyclopedia_Text>
+		<MP_Encyclopedia_Text> TEXT_TOOLTIP_BUNKER_BATTERY </MP_Encyclopedia_Text>
 
-	<SpecialStructure Name="PLEX_Bunker_Template">
+		<HardPoints>
+			AV_Bunker_1, AV_Bunker_2, AV_Bunker_3, AV_Bunker_4
+		</HardPoints>
+
+	</Template_Ground_Structure>
+
+	<Template_Ground_Structure Name="AI_Bunker_Template">
+		<Variant_Of_Existing_Type>Pillbox_Bunker_Template</Variant_Of_Existing_Type>
+		<Land_Model_Name>AI_Bunker_structure.alo</Land_Model_Name>
+		<Icon_Name>I_BUTTON_BUNKER_AI.TGA</Icon_Name>
+		<LandBehavior> REVEAL,SELECTABLE,TARGETING, TURRET, WEAPON, IDLE, UNIT_AI, HIDE_WHEN_FOGGED,DAMAGE_TRACKING,EARTHQUAKE_TARGET, GARRISON_STRUCTURE</LandBehavior>
+
+		<Text_ID>TEXT_GROUND_BUNKER_BATTERY</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_BUNKER_BATTERY
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_BUNKER_HEALTH
+		TEXT_TOOLTIP_BUNKER_BATTERY_WEAP1
+		</Encyclopedia_Text>
+		<MP_Encyclopedia_Text> TEXT_TOOLTIP_BUNKER_BATTERY </MP_Encyclopedia_Text>
+
+		<HardPoints>
+			AI_Bunker_1, AI_Bunker_2, AI_Bunker_3, AI_Bunker_4
+		</HardPoints>
+
+	</Template_Ground_Structure>
+
+	<Template_Ground_Structure Name="PLEX_Bunker_Template">
 		<Variant_Of_Existing_Type>Pillbox_Bunker_Template</Variant_Of_Existing_Type>
 		<Land_Model_Name>EB_TestBunker.alo</Land_Model_Name>
 		<Icon_Name>I_BUTTON_BUNKER_PLEX.TGA</Icon_Name>
@@ -1639,6 +1659,6 @@
 			Plex_Bunker_1, Plex_Bunker_2, Plex_Bunker_3, Plex_Bunker_4
 		</HardPoints>
 
-	</SpecialStructure>
+	</Template_Ground_Structure>
 
-</Ground_Structures>
+</Template_Ground_Structures>

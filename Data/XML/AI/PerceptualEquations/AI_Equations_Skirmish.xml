@@ -416,9 +416,11 @@
 		*
 		(1 - Variable_Target.Type.IsType {Parameter_Type = "E_Ground_Barracks_Build_Pad",
 											Parameter_Type = "R_Ground_Barracks_Build_Pad",
+											Parameter_Type = "H_Ground_Barracks_Build_Pad",
 											Parameter_Type = "U_Ground_Merc_Outpost_Build_Pad",
 											Parameter_Type = "Imperial_Command_Center_Build_Pad",
 											Parameter_Type = "Rebel_Command_Center_Build_Pad",
+											Parameter_Type = "Hutt_Command_Center_Build_Pad",
 											Parameter_Type = "Imperial_GroundWar_Center_Build_Pad",
 											Parameter_Type = "Rebel_GroundWar_Center_Build_Pad",
 											Parameter_Type = "Underworld_Palace_Build_Pad"})
@@ -432,6 +434,7 @@
 		*
 		Variable_Target.Type.IsType {Parameter_Type = "E_Ground_Barracks_Build_Pad",
 										Parameter_Type = "R_Ground_Barracks_Build_Pad",
+										Parameter_Type = "H_Ground_Barracks_Build_Pad",
 										Parameter_Type = "U_Ground_Merc_Outpost_Build_Pad",
 										Parameter_Type = "Imperial_GroundWar_Barracks_Build_Pad",
 										Parameter_Type = "Rebel_GroundWar_Barracks_Build_Pad",
@@ -451,6 +454,7 @@
 		Variable_Target.Type.IsType {Parameter_Type = "Imperial_Command_Center_Build_Pad",
 										Parameter_Type = "Rebel_Command_Center_Build_Pad",
 										Parameter_Type = "Hapan_Command_Center_Build_Pad",
+										Parameter_Type = "Hutt_Command_Center_Build_Pad",
 										Parameter_Type = "Rebel_GroundWar_Center_Build_Pad",
 										Parameter_Type = "Imperial_GroundWar_Center_Build_Pad"}
 	</Tactical_Multiplayer_Should_Build_Command_Center>
@@ -605,12 +609,14 @@
 								Parameter_Type = "R_Ground_Barracks", 
 								Parameter_Type = "U_Ground_Barracks",
 								Parameter_Type = "M_Ground_Barracks",
+								Parameter_Type = "H_Ground_Barracks",
 								Parameter_Type = "Rebel_GroundWar_Barracks", 
 								Parameter_Type = "Imperial_GroundWar_Barracks"}
 		*
 		Variable_Self.HasUnit {Parameter_Type = "Imperial_Command_Center", 
 								Parameter_Type = "Rebel_Command_Center",
 								Parameter_Type = "U_Ground_Palace",
+								Parameter_Type = "Hutt_Command_Center",
 								Parameter_Type = "Hapan_Palace",
 								Parameter_Type = "Rebel_GroundWar_Center",
 								Parameter_Type = "Imperial_GroundWar_Center"}
@@ -627,7 +633,7 @@
 
 	
 	<Should_Build_Infantry_Emergency>
-		100.0
+		25.0
 		*
 		((400 > Function_Non_Structure_Force_Unnormalized.Evaluate)
 		*

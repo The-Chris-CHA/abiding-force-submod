@@ -32,7 +32,6 @@ function State_Init(message)
 		PirateHeroes = {
 			{"Drednar_Sable_III"},
 			{"Coorshas_Cross"},
-			{"Kath_Scarlet"},
 			{"Entel_Night_Wind"},
 			{"Slader_Raider_II"},
 			{"Miktiss_Asagov_Raider"},
@@ -40,9 +39,10 @@ function State_Init(message)
 			{"Kaerobani_Interdictor"},
 			{{"Mabin_Squadron", "Mabin_Gozanti"}},
 			{"Vulture_Pirates"},
-			{{"Ssurussk_Nebula_Raiders", "Ssurussk"}},
 			{"Barkbone_RobberBaron"},
-			{"Antig_Trustworthy"}
+			{"Antig_Trustworthy"},
+			{"Tarntas_Fang"},
+			{"Loose_Cannon_Pirates"}
 		}
 		
 		Random_Replacement(Object, PirateHeroes, true)

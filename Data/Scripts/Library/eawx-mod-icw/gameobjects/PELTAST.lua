@@ -7,7 +7,10 @@ return {
 		["MIYTIL_FIGHTER_SQUADRON"] = {
 			HAPES_CONSORTIUM = {Initial = 1, Reserve = 1}
 		},
-		["SCARSISS_SQUADRON"] = {
+		["DUNELIZARD_FIGHTER_SQUADRON"] = {
+			HUTT_CARTELS = {Initial = 1, Reserve = 1}
+		},
+		["SCARSSIS_SQUADRON"] = {
 			EMPIREOFTHEHAND = {Initial = 1, Reserve = 1},
 			HOSTILE = {Initial = 1, Reserve = 1},
 			INDEPENDENT_FORCES = {Initial = 1, Reserve = 1}

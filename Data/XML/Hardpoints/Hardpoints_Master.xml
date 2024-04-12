@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='us-ascii'?>
 <HardPoints>
 
 	<HardPoint Name="HP_SSD_Hangar">
@@ -45,6 +45,33 @@
 		
 		<Attachment_Bone>ROOT</Attachment_Bone>
 		<Damage_Particles>PI_DAMAGE_ELEC_CAP00</Damage_Particles>
+	</HardPoint>
+
+	<HardPoint Name="Generic_Prop_Effigy_Proxy">
+		<Type> HARD_POINT_DUMMY_ART </Type>
+		<Is_Targetable>No</Is_Targetable>
+		<Is_Destroyable>No</Is_Destroyable>
+		
+		<Attachment_Bone>ROOT</Attachment_Bone>
+		<Damage_Particles>P_EFIGY_FLAME</Damage_Particles>
+	</HardPoint>
+
+	<HardPoint Name="Generic_Prop_Hide_Head">
+		<Type> HARD_POINT_DUMMY_ART </Type>
+		<Is_Targetable>No</Is_Targetable>
+		<Is_Destroyable>No</Is_Destroyable>
+		
+		<Attachment_Bone>ROOT</Attachment_Bone>
+          	<Damage_Decal>Head</Damage_Decal>
+	</HardPoint>
+
+	<HardPoint Name="Generic_Prop_Hide_Body">
+		<Type> HARD_POINT_DUMMY_ART </Type>
+		<Is_Targetable>No</Is_Targetable>
+		<Is_Destroyable>No</Is_Destroyable>
+		
+		<Attachment_Bone>ROOT</Attachment_Bone>
+          	<Damage_Decal>Body</Damage_Decal>
 	</HardPoint>
 
 
@@ -227,6 +254,7 @@
 		<Fire_Inaccuracy_Distance> Bomber, 60.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Transport, 30.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> SpaceHero, 30.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Gunship, 30.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Corvette, 30.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Frigate, 18.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Capital, 6.0 </Fire_Inaccuracy_Distance>
@@ -264,6 +292,7 @@
 		<Fire_Inaccuracy_Distance> Bomber, 60.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Transport, 30.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> SpaceHero, 30.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Gunship, 30.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Corvette, 30.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Frigate, 18.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Capital, 6.0 </Fire_Inaccuracy_Distance>
@@ -301,6 +330,7 @@
 		<Fire_Inaccuracy_Distance> Bomber, 60.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Transport, 30.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> SpaceHero, 30.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Gunship, 30.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Corvette, 30.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Frigate, 18.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Capital, 6.0 </Fire_Inaccuracy_Distance>
@@ -338,6 +368,7 @@
 		<Fire_Inaccuracy_Distance> Bomber, 60.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Transport, 30.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> SpaceHero, 30.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Gunship, 30.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Corvette, 30.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Frigate, 18.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Capital, 6.0 </Fire_Inaccuracy_Distance>
@@ -375,6 +406,7 @@
 		<Fire_Inaccuracy_Distance> Bomber, 60.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Transport, 30.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> SpaceHero, 30.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Gunship, 30.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Corvette, 30.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Frigate, 18.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Capital, 6.0 </Fire_Inaccuracy_Distance>
@@ -412,6 +444,7 @@
 		<Fire_Inaccuracy_Distance> Bomber, 60.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Transport, 30.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> SpaceHero, 30.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Gunship, 30.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Corvette, 30.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Frigate, 18.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Capital, 6.0 </Fire_Inaccuracy_Distance>
@@ -449,6 +482,7 @@
 		<Fire_Inaccuracy_Distance> Bomber, 1.2 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Transport, 3.6 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> SpaceHero, 3.6 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Gunship, 3.6 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Corvette, 3.6 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Frigate, 3.6 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Capital, 7.2 </Fire_Inaccuracy_Distance>
@@ -486,6 +520,7 @@
 		<Fire_Inaccuracy_Distance> Bomber, 1.2 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Transport, 3.6 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> SpaceHero, 3.6 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Gunship, 3.6 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Corvette, 3.6 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Frigate, 3.6 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Capital, 7.2 </Fire_Inaccuracy_Distance>
@@ -523,6 +558,7 @@
 		<Fire_Inaccuracy_Distance> Bomber, 60.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Transport, 30.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> SpaceHero, 30.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Gunship, 30.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Corvette, 30.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Frigate, 18.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Capital, 6.0 </Fire_Inaccuracy_Distance>
@@ -560,6 +596,7 @@
 		<Fire_Inaccuracy_Distance> Bomber, 60.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Transport, 30.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> SpaceHero, 30.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Gunship, 30.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Corvette, 30.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Frigate, 18.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Capital, 6.0 </Fire_Inaccuracy_Distance>
@@ -597,6 +634,7 @@
 		<Fire_Inaccuracy_Distance> Bomber, 60.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Transport, 30.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> SpaceHero, 30.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Gunship, 30.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Corvette, 30.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Frigate, 18.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Capital, 6.0 </Fire_Inaccuracy_Distance>
@@ -634,6 +672,7 @@
 		<Fire_Inaccuracy_Distance> Bomber, 60.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Transport, 30.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> SpaceHero, 30.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Gunship, 30.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Corvette, 30.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Frigate, 18.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Capital, 6.0 </Fire_Inaccuracy_Distance>
@@ -671,6 +710,7 @@
 		<Fire_Inaccuracy_Distance> Bomber, 60.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Transport, 30.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> SpaceHero, 30.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Gunship, 30.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Corvette, 30.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Frigate, 18.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Capital, 6.0 </Fire_Inaccuracy_Distance>
@@ -708,6 +748,7 @@
 		<Fire_Inaccuracy_Distance> Bomber, 60.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Transport, 30.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> SpaceHero, 30.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Gunship, 30.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Corvette, 30.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Frigate, 18.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Capital, 6.0 </Fire_Inaccuracy_Distance>
@@ -745,6 +786,7 @@
 		<Fire_Inaccuracy_Distance> Bomber, 60.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Transport, 30.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> SpaceHero, 30.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Gunship, 30.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Corvette, 30.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Frigate, 18.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Capital, 6.0 </Fire_Inaccuracy_Distance>
@@ -782,6 +824,7 @@
 		<Fire_Inaccuracy_Distance> Bomber, 60.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Transport, 30.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> SpaceHero, 30.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Gunship, 30.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Corvette, 30.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Frigate, 18.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Capital, 6.0 </Fire_Inaccuracy_Distance>
@@ -819,6 +862,7 @@
 		<Fire_Inaccuracy_Distance> Bomber, 1.2 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Transport, 3.6 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> SpaceHero, 3.6 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Gunship, 3.6 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Corvette, 3.6 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Frigate, 3.6 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Capital, 7.2 </Fire_Inaccuracy_Distance>
@@ -856,6 +900,7 @@
 		<Fire_Inaccuracy_Distance> Bomber, 1.2 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Transport, 3.6 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> SpaceHero, 3.6 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Gunship, 3.6 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Corvette, 3.6 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Frigate, 3.6 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Capital, 7.2 </Fire_Inaccuracy_Distance>
@@ -893,6 +938,7 @@
 		<Fire_Inaccuracy_Distance> Bomber, 1.2 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Transport, 3.6 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> SpaceHero, 3.6 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Gunship, 3.6 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Corvette, 3.6 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Frigate, 3.6 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Capital, 7.2 </Fire_Inaccuracy_Distance>
@@ -930,6 +976,7 @@
 		<Fire_Inaccuracy_Distance> Bomber, 1.2 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Transport, 3.6 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> SpaceHero, 3.6 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Gunship, 3.6 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Corvette, 3.6 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Frigate, 3.6 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Capital, 7.2 </Fire_Inaccuracy_Distance>
@@ -968,6 +1015,7 @@
 		<Fire_Inaccuracy_Distance> Bomber, 60.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Transport, 30.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> SpaceHero, 30.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Gunship, 30.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Corvette, 30.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Frigate, 18.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Capital, 6.0 </Fire_Inaccuracy_Distance>
@@ -1005,6 +1053,7 @@
 		<Fire_Inaccuracy_Distance> Bomber, 60.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Transport, 30.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> SpaceHero, 30.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Gunship, 30.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Corvette, 30.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Frigate, 18.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Capital, 6.0 </Fire_Inaccuracy_Distance>
@@ -1042,6 +1091,7 @@
 		<Fire_Inaccuracy_Distance> Bomber, 60.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Transport, 30.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> SpaceHero, 30.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Gunship, 30.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Corvette, 30.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Frigate, 18.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Capital, 6.0 </Fire_Inaccuracy_Distance>
@@ -1079,6 +1129,7 @@
 		<Fire_Inaccuracy_Distance> Bomber, 60.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Transport, 30.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> SpaceHero, 30.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Gunship, 30.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Corvette, 30.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Frigate, 18.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Capital, 6.0 </Fire_Inaccuracy_Distance>
@@ -1116,6 +1167,7 @@
 		<Fire_Inaccuracy_Distance> Bomber, 60.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Transport, 30.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> SpaceHero, 30.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Gunship, 30.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Corvette, 30.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Frigate, 18.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Capital, 6.0 </Fire_Inaccuracy_Distance>
@@ -1153,6 +1205,7 @@
 		<Fire_Inaccuracy_Distance> Bomber, 60.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Transport, 30.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> SpaceHero, 30.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Gunship, 30.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Corvette, 30.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Frigate, 18.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Capital, 6.0 </Fire_Inaccuracy_Distance>
@@ -1190,6 +1243,7 @@
 		<Fire_Inaccuracy_Distance> Bomber, 60.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Transport, 30.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> SpaceHero, 30.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Gunship, 30.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Corvette, 30.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Frigate, 18.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Capital, 6.0 </Fire_Inaccuracy_Distance>
@@ -1227,6 +1281,7 @@
 		<Fire_Inaccuracy_Distance> Bomber, 60.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Transport, 30.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> SpaceHero, 30.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Gunship, 30.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Corvette, 30.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Frigate, 18.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Capital, 6.0 </Fire_Inaccuracy_Distance>
@@ -1264,6 +1319,7 @@
 		<Fire_Inaccuracy_Distance> Bomber, 60.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Transport, 30.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> SpaceHero, 30.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Gunship, 30.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Corvette, 30.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Frigate, 18.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Capital, 6.0 </Fire_Inaccuracy_Distance>
@@ -1301,6 +1357,7 @@
 		<Fire_Inaccuracy_Distance> Bomber, 60.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Transport, 30.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> SpaceHero, 30.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Gunship, 30.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Corvette, 30.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Frigate, 18.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Capital, 6.0 </Fire_Inaccuracy_Distance>
@@ -1338,6 +1395,7 @@
 		<Fire_Inaccuracy_Distance> Bomber, 60.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Transport, 30.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> SpaceHero, 30.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Gunship, 30.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Corvette, 30.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Frigate, 18.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Capital, 6.0 </Fire_Inaccuracy_Distance>
@@ -1375,6 +1433,7 @@
 		<Fire_Inaccuracy_Distance> Bomber, 60.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Transport, 30.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> SpaceHero, 30.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Gunship, 30.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Corvette, 30.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Frigate, 18.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Capital, 6.0 </Fire_Inaccuracy_Distance>
@@ -1412,6 +1471,7 @@
 		<Fire_Inaccuracy_Distance> Bomber, 60.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Transport, 30.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> SpaceHero, 30.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Gunship, 30.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Corvette, 30.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Frigate, 18.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Capital, 6.0 </Fire_Inaccuracy_Distance>
@@ -1449,6 +1509,7 @@
 		<Fire_Inaccuracy_Distance> Bomber, 1.2 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Transport, 3.6 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> SpaceHero, 3.6 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Gunship, 3.6 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Corvette, 3.6 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Frigate, 3.6 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Capital, 7.2 </Fire_Inaccuracy_Distance>
@@ -1486,6 +1547,7 @@
 		<Fire_Inaccuracy_Distance> Bomber, 1.2 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Transport, 3.6 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> SpaceHero, 3.6 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Gunship, 3.6 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Corvette, 3.6 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Frigate, 3.6 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Capital, 7.2 </Fire_Inaccuracy_Distance>
@@ -1523,6 +1585,7 @@
 		<Fire_Inaccuracy_Distance> Bomber, 1.2 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Transport, 3.6 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> SpaceHero, 3.6 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Gunship, 3.6 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Corvette, 3.6 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Frigate, 3.6 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Capital, 7.2 </Fire_Inaccuracy_Distance>
@@ -1560,6 +1623,7 @@
 		<Fire_Inaccuracy_Distance> Bomber, 1.2 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Transport, 3.6 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> SpaceHero, 3.6 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Gunship, 3.6 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Corvette, 3.6 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Frigate, 3.6 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Capital, 7.2 </Fire_Inaccuracy_Distance>
@@ -1597,6 +1661,7 @@
 		<Fire_Inaccuracy_Distance> Bomber, 1.2 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Transport, 3.6 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> SpaceHero, 3.6 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Gunship, 3.6 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Corvette, 3.6 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Frigate, 3.6 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Capital, 7.2 </Fire_Inaccuracy_Distance>
@@ -1634,6 +1699,7 @@
 		<Fire_Inaccuracy_Distance> Bomber, 1.2 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Transport, 3.6 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> SpaceHero, 3.6 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Gunship, 3.6 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Corvette, 3.6 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Frigate, 3.6 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Capital, 7.2 </Fire_Inaccuracy_Distance>
@@ -1671,6 +1737,7 @@
 		<Fire_Inaccuracy_Distance> Bomber, 48.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Transport, 24.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> SpaceHero, 24.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Gunship, 24.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Corvette, 24.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Frigate, 12.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Capital, 6.0 </Fire_Inaccuracy_Distance>
@@ -1708,6 +1775,7 @@
 		<Fire_Inaccuracy_Distance> Bomber, 48.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Transport, 24.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> SpaceHero, 24.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Gunship, 24.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Corvette, 24.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Frigate, 12.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Capital, 6.0 </Fire_Inaccuracy_Distance>
@@ -1745,6 +1813,7 @@
 		<Fire_Inaccuracy_Distance> Bomber, 48.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Transport, 24.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> SpaceHero, 24.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Gunship, 24.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Corvette, 24.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Frigate, 12.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Capital, 6.0 </Fire_Inaccuracy_Distance>
@@ -1782,6 +1851,7 @@
 		<Fire_Inaccuracy_Distance> Bomber, 48.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Transport, 24.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> SpaceHero, 24.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Gunship, 24.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Corvette, 24.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Frigate, 12.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Capital, 6.0 </Fire_Inaccuracy_Distance>
@@ -1819,6 +1889,7 @@
 		<Fire_Inaccuracy_Distance> Bomber, 48.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Transport, 24.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> SpaceHero, 24.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Gunship, 24.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Corvette, 24.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Frigate, 12.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Capital, 6.0 </Fire_Inaccuracy_Distance>
@@ -1856,6 +1927,7 @@
 		<Fire_Inaccuracy_Distance> Bomber, 48.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Transport, 24.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> SpaceHero, 24.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Gunship, 24.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Corvette, 24.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Frigate, 12.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Capital, 6.0 </Fire_Inaccuracy_Distance>
@@ -1893,6 +1965,7 @@
 		<Fire_Inaccuracy_Distance> Bomber, 48.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Transport, 24.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> SpaceHero, 24.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Gunship, 24.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Corvette, 24.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Frigate, 12.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Capital, 6.0 </Fire_Inaccuracy_Distance>
@@ -1930,6 +2003,7 @@
 		<Fire_Inaccuracy_Distance> Bomber, 48.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Transport, 24.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> SpaceHero, 24.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Gunship, 24.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Corvette, 24.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Frigate, 12.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Capital, 6.0 </Fire_Inaccuracy_Distance>
@@ -1967,6 +2041,7 @@
 		<Fire_Inaccuracy_Distance> Bomber, 48.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Transport, 24.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> SpaceHero, 24.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Gunship, 24.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Corvette, 24.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Frigate, 12.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Capital, 6.0 </Fire_Inaccuracy_Distance>
@@ -2004,6 +2079,7 @@
 		<Fire_Inaccuracy_Distance> Bomber, 48.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Transport, 24.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> SpaceHero, 24.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Gunship, 24.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Corvette, 24.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Frigate, 12.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Capital, 6.0 </Fire_Inaccuracy_Distance>
@@ -2041,6 +2117,7 @@
 		<Fire_Inaccuracy_Distance> Bomber, 60.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Transport, 30.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> SpaceHero, 30.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Gunship, 30.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Corvette, 30.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Frigate, 18.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Capital, 6.0 </Fire_Inaccuracy_Distance>
@@ -2078,6 +2155,7 @@
 		<Fire_Inaccuracy_Distance> Bomber, 60.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Transport, 30.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> SpaceHero, 30.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Gunship, 30.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Corvette, 30.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Frigate, 18.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Capital, 6.0 </Fire_Inaccuracy_Distance>
@@ -2115,6 +2193,7 @@
 		<Fire_Inaccuracy_Distance> Bomber, 60.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Transport, 30.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> SpaceHero, 30.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Gunship, 30.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Corvette, 30.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Frigate, 18.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Capital, 6.0 </Fire_Inaccuracy_Distance>
@@ -2152,6 +2231,7 @@
 		<Fire_Inaccuracy_Distance> Bomber, 60.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Transport, 30.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> SpaceHero, 30.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Gunship, 30.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Corvette, 30.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Frigate, 18.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Capital, 6.0 </Fire_Inaccuracy_Distance>
@@ -2189,6 +2269,7 @@
 		<Fire_Inaccuracy_Distance> Bomber, 60.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Transport, 30.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> SpaceHero, 30.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Gunship, 30.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Corvette, 30.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Frigate, 18.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Capital, 6.0 </Fire_Inaccuracy_Distance>
@@ -2226,6 +2307,7 @@
 		<Fire_Inaccuracy_Distance> Bomber, 60.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Transport, 30.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> SpaceHero, 30.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Gunship, 30.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Corvette, 30.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Frigate, 18.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Capital, 6.0 </Fire_Inaccuracy_Distance>
@@ -2263,6 +2345,7 @@
 		<Fire_Inaccuracy_Distance> Bomber, 60.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Transport, 30.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> SpaceHero, 30.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Gunship, 30.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Corvette, 30.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Frigate, 18.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Capital, 6.0 </Fire_Inaccuracy_Distance>
@@ -2300,6 +2383,7 @@
 		<Fire_Inaccuracy_Distance> Bomber, 60.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Transport, 30.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> SpaceHero, 30.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Gunship, 30.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Corvette, 30.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Frigate, 18.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Capital, 6.0 </Fire_Inaccuracy_Distance>
@@ -2337,6 +2421,7 @@
 		<Fire_Inaccuracy_Distance> Bomber, 1.2 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Transport, 3.6 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> SpaceHero, 3.6 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Gunship, 3.6 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Corvette, 3.6 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Frigate, 3.6 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Capital, 7.2 </Fire_Inaccuracy_Distance>
@@ -2374,6 +2459,7 @@
 		<Fire_Inaccuracy_Distance> Bomber, 1.2 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Transport, 3.6 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> SpaceHero, 3.6 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Gunship, 3.6 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Corvette, 3.6 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Frigate, 3.6 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Capital, 7.2 </Fire_Inaccuracy_Distance>
@@ -2411,6 +2497,7 @@
 		<Fire_Inaccuracy_Distance> Bomber, 1.2 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Transport, 3.6 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> SpaceHero, 3.6 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Gunship, 3.6 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Corvette, 3.6 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Frigate, 3.6 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Capital, 7.2 </Fire_Inaccuracy_Distance>
@@ -2448,6 +2535,7 @@
 		<Fire_Inaccuracy_Distance> Bomber, 1.2 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Transport, 3.6 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> SpaceHero, 3.6 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Gunship, 3.6 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Corvette, 3.6 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Frigate, 3.6 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Capital, 7.2 </Fire_Inaccuracy_Distance>
@@ -2482,6 +2570,7 @@
 		<Fire_Inaccuracy_Distance> Bomber, 1.2 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Transport, 3.6 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> SpaceHero, 3.6 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Gunship, 3.6 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Corvette, 3.6 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Frigate, 3.6 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Capital, 7.2 </Fire_Inaccuracy_Distance>
@@ -2510,6 +2599,7 @@
 		<Fire_Inaccuracy_Distance> Bomber, 1.2 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Transport, 3.6 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> SpaceHero, 3.6 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Gunship, 3.6 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Corvette, 3.6 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Frigate, 3.6 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Capital, 7.2 </Fire_Inaccuracy_Distance>
@@ -2547,11 +2637,12 @@
             <Fire_Pulse_Count>2</Fire_Pulse_Count>
             <Fire_Pulse_Delay_Seconds>0.2</Fire_Pulse_Delay_Seconds>
             <Fire_Range_Distance>2800.0</Fire_Range_Distance>
-			<Fire_SFXEvent>Unit_Empire_Ship_Laser_Cannon_Fire</Fire_SFXEvent>
+			<Fire_SFXEvent>Unit_Pirate_Ship_Laser_Cannon_Fire</Fire_SFXEvent>
 		<Fire_Inaccuracy_Distance> Fighter, 2.2 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Bomber, 2.2 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Transport, 6.6 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> SpaceHero, 6.6 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Gunship, 6.6 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Corvette, 6.6 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Frigate, 6.6 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Capital, 8.8 </Fire_Inaccuracy_Distance>
@@ -2588,11 +2679,12 @@
             <Fire_Pulse_Count>2</Fire_Pulse_Count>
             <Fire_Pulse_Delay_Seconds>0.2</Fire_Pulse_Delay_Seconds>
             <Fire_Range_Distance>2800.0</Fire_Range_Distance>
-			<Fire_SFXEvent>Unit_Empire_Ship_Laser_Cannon_Fire</Fire_SFXEvent>
+			<Fire_SFXEvent>Unit_Pirate_Ship_Laser_Cannon_Fire</Fire_SFXEvent>
 		<Fire_Inaccuracy_Distance> Fighter, 2.2 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Bomber, 2.2 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Transport, 6.6 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> SpaceHero, 6.6 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Gunship, 6.6 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Corvette, 6.6 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Frigate, 6.6 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Capital, 8.8 </Fire_Inaccuracy_Distance>
@@ -2635,6 +2727,7 @@
 		<Fire_Inaccuracy_Distance> Bomber, 44.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Transport, 22.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> SpaceHero, 22.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Gunship, 22.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Corvette, 22.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Frigate, 11.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Capital, 5.5 </Fire_Inaccuracy_Distance>
@@ -2677,6 +2770,7 @@
 		<Fire_Inaccuracy_Distance> Bomber, 44.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Transport, 22.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> SpaceHero, 22.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Gunship, 22.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Corvette, 22.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Frigate, 11.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Capital, 5.5 </Fire_Inaccuracy_Distance>
@@ -2719,6 +2813,7 @@
 		<Fire_Inaccuracy_Distance> Bomber, 44.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Transport, 22.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> SpaceHero, 22.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Gunship, 22.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Corvette, 22.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Frigate, 11.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Capital, 5.5 </Fire_Inaccuracy_Distance>
@@ -2761,6 +2856,7 @@
 		<Fire_Inaccuracy_Distance> Bomber, 44.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Transport, 22.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> SpaceHero, 22.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Gunship, 22.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Corvette, 22.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Frigate, 11.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Capital, 5.5 </Fire_Inaccuracy_Distance>
@@ -2899,6 +2995,7 @@
 		<Fire_Inaccuracy_Distance> Bomber, 1.65 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Transport, 4.95 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> SpaceHero, 4.95 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Gunship, 4.95 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Corvette, 4.95 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Frigate, 4.95 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Capital, 7.7 </Fire_Inaccuracy_Distance>
@@ -2936,6 +3033,7 @@
 		<Fire_Inaccuracy_Distance> Bomber, 1.65 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Transport, 4.95 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> SpaceHero, 4.95 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Gunship, 4.95 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Corvette, 4.95 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Frigate, 4.95 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Capital, 7.7 </Fire_Inaccuracy_Distance>
@@ -2973,6 +3071,7 @@
 		<Fire_Inaccuracy_Distance> Bomber, 1.65 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Transport, 4.95 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> SpaceHero, 4.95 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Gunship, 4.95 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Corvette, 4.95 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Frigate, 4.95 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Capital, 7.7 </Fire_Inaccuracy_Distance>
@@ -3010,6 +3109,7 @@
 		<Fire_Inaccuracy_Distance> Bomber, 1.65 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Transport, 4.95 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> SpaceHero, 4.95 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Gunship, 4.95 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Corvette, 4.95 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Frigate, 4.95 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Capital, 7.7 </Fire_Inaccuracy_Distance>
@@ -3047,6 +3147,7 @@
 		<Fire_Inaccuracy_Distance> Bomber, 1.65 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Transport, 4.95 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> SpaceHero, 4.95 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Gunship, 4.95 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Corvette, 4.95 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Frigate, 4.95 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Capital, 7.7 </Fire_Inaccuracy_Distance>
@@ -3084,6 +3185,7 @@
 		<Fire_Inaccuracy_Distance> Bomber, 1.65 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Transport, 4.95 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> SpaceHero, 4.95 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Gunship, 4.95 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Corvette, 4.95 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Frigate, 4.95 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Capital, 7.7 </Fire_Inaccuracy_Distance>
@@ -3175,6 +3277,7 @@
 		<Fire_Inaccuracy_Distance> Bomber, 1.65 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Transport, 4.95 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> SpaceHero, 4.95 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Gunship, 4.95 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Corvette, 4.95 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Frigate, 4.95 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Capital, 7.7 </Fire_Inaccuracy_Distance>
@@ -3212,6 +3315,7 @@
 		<Fire_Inaccuracy_Distance> Bomber, 1.65 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Transport, 4.95 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> SpaceHero, 4.95 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Gunship, 4.95 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Corvette, 4.95 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Frigate, 4.95 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Capital, 7.7 </Fire_Inaccuracy_Distance>
@@ -3249,6 +3353,7 @@
 		<Fire_Inaccuracy_Distance> Bomber, 1.65 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Transport, 4.95 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> SpaceHero, 4.95 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Gunship, 4.95 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Corvette, 4.95 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Frigate, 4.95 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Capital, 7.7 </Fire_Inaccuracy_Distance>
@@ -3286,6 +3391,7 @@
 		<Fire_Inaccuracy_Distance> Bomber, 1.65 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Transport, 4.95 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> SpaceHero, 4.95 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Gunship, 4.95 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Corvette, 4.95 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Frigate, 4.95 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Capital, 7.7 </Fire_Inaccuracy_Distance>
@@ -3323,6 +3429,7 @@
 		<Fire_Inaccuracy_Distance> Bomber, 1.65 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Transport, 4.95 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> SpaceHero, 4.95 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Gunship, 4.95 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Corvette, 4.95 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Frigate, 4.95 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Capital, 7.7 </Fire_Inaccuracy_Distance>
@@ -3360,6 +3467,7 @@
 		<Fire_Inaccuracy_Distance> Bomber, 1.65 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Transport, 4.95 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> SpaceHero, 4.95 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Gunship, 4.95 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Corvette, 4.95 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Frigate, 4.95 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Capital, 7.7 </Fire_Inaccuracy_Distance>
@@ -3539,7 +3647,8 @@
 			<Fire_Inaccuracy_Distance> Fighter, 10.0 </Fire_Inaccuracy_Distance>
 			<Fire_Inaccuracy_Distance> Bomber, 10.0 </Fire_Inaccuracy_Distance>
 			<Fire_Inaccuracy_Distance> Transport, 15.0 </Fire_Inaccuracy_Distance>
-			<Fire_Inaccuracy_Distance> Corvette, 40.0 </Fire_Inaccuracy_Distance>
+			<Fire_Inaccuracy_Distance> Gunship, 40.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Corvette, 40.0 </Fire_Inaccuracy_Distance>
 			<Fire_Inaccuracy_Distance> Frigate, 40.0 </Fire_Inaccuracy_Distance>
 			<Fire_Inaccuracy_Distance> Capital, 40.0 </Fire_Inaccuracy_Distance>
 			<Fire_Inaccuracy_Distance> SuperCapital, 40.0 </Fire_Inaccuracy_Distance>
@@ -3582,7 +3691,8 @@
 			<Fire_Inaccuracy_Distance> Fighter, 70.0 </Fire_Inaccuracy_Distance>
 			<Fire_Inaccuracy_Distance> Bomber, 35.0 </Fire_Inaccuracy_Distance>
 			<Fire_Inaccuracy_Distance> Transport, 60.0 </Fire_Inaccuracy_Distance>
-			<Fire_Inaccuracy_Distance> Corvette, 30.0 </Fire_Inaccuracy_Distance>
+			<Fire_Inaccuracy_Distance> Gunship, 30.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Corvette, 30.0 </Fire_Inaccuracy_Distance>
 			<Fire_Inaccuracy_Distance> Frigate, 10.0 </Fire_Inaccuracy_Distance>
 			<Fire_Inaccuracy_Distance> Capital, 10.0 </Fire_Inaccuracy_Distance>
 			<Fire_Inaccuracy_Distance> SuperCapital, 1.0 </Fire_Inaccuracy_Distance>
@@ -3756,7 +3866,8 @@
 			<Fire_Inaccuracy_Distance> Fighter, 1.0 </Fire_Inaccuracy_Distance>
 			<Fire_Inaccuracy_Distance> Bomber, 1.0 </Fire_Inaccuracy_Distance>
 			<Fire_Inaccuracy_Distance> Transport, 10.0 </Fire_Inaccuracy_Distance>
-			<Fire_Inaccuracy_Distance> Corvette, 10.0 </Fire_Inaccuracy_Distance>
+			<Fire_Inaccuracy_Distance> Gunship, 10.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Corvette, 10.0 </Fire_Inaccuracy_Distance>
 			<Fire_Inaccuracy_Distance> Frigate, 20.0 </Fire_Inaccuracy_Distance>
 			<Fire_Inaccuracy_Distance> Capital, 20.0 </Fire_Inaccuracy_Distance>
 			<Fire_Inaccuracy_Distance> SuperCapital, 20.0 </Fire_Inaccuracy_Distance>
@@ -3798,7 +3909,8 @@
 			<Fire_Inaccuracy_Distance> Fighter, 50.0 </Fire_Inaccuracy_Distance>
 			<Fire_Inaccuracy_Distance> Bomber, 50.0 </Fire_Inaccuracy_Distance>
 			<Fire_Inaccuracy_Distance> Transport, 10.0 </Fire_Inaccuracy_Distance>
-			<Fire_Inaccuracy_Distance> Corvette, 20.0 </Fire_Inaccuracy_Distance>
+			<Fire_Inaccuracy_Distance> Gunship, 20.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Corvette, 20.0 </Fire_Inaccuracy_Distance>
 			<Fire_Inaccuracy_Distance> Frigate, 20.0 </Fire_Inaccuracy_Distance>
 			<Fire_Inaccuracy_Distance> Capital, 6.0 </Fire_Inaccuracy_Distance>
 			<Fire_Inaccuracy_Distance> SuperCapital, 1.0 </Fire_Inaccuracy_Distance>
@@ -3944,7 +4056,8 @@
 			<Fire_Inaccuracy_Distance> Fighter, 20.0 </Fire_Inaccuracy_Distance>
 			<Fire_Inaccuracy_Distance> Bomber, 20.0 </Fire_Inaccuracy_Distance>
 			<Fire_Inaccuracy_Distance> Transport, 15.0 </Fire_Inaccuracy_Distance>
-			<Fire_Inaccuracy_Distance> Corvette, 40.0 </Fire_Inaccuracy_Distance>
+			<Fire_Inaccuracy_Distance> Gunship, 40.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Corvette, 40.0 </Fire_Inaccuracy_Distance>
 			<Fire_Inaccuracy_Distance> Frigate, 40.0 </Fire_Inaccuracy_Distance>
 			<Fire_Inaccuracy_Distance> Capital, 40.0 </Fire_Inaccuracy_Distance>
 			<Fire_Inaccuracy_Distance> SuperCapital, 40.0 </Fire_Inaccuracy_Distance>
@@ -4023,7 +4136,8 @@
 			<Fire_Inaccuracy_Distance> Fighter, 70.0 </Fire_Inaccuracy_Distance>
 			<Fire_Inaccuracy_Distance> Bomber, 70.0 </Fire_Inaccuracy_Distance>
 			<Fire_Inaccuracy_Distance> Transport, 60.0 </Fire_Inaccuracy_Distance>
-			<Fire_Inaccuracy_Distance> Corvette, 30.0 </Fire_Inaccuracy_Distance>
+			<Fire_Inaccuracy_Distance> Gunship, 30.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Corvette, 30.0 </Fire_Inaccuracy_Distance>
 			<Fire_Inaccuracy_Distance> Frigate, 10.0 </Fire_Inaccuracy_Distance>
 			<Fire_Inaccuracy_Distance> Capital, 10.0 </Fire_Inaccuracy_Distance>
 			<Fire_Inaccuracy_Distance> SuperCapital, 1.0 </Fire_Inaccuracy_Distance>
@@ -4100,7 +4214,8 @@
 			<Fire_Inaccuracy_Distance> Fighter, 20.0 </Fire_Inaccuracy_Distance>
 			<Fire_Inaccuracy_Distance> Bomber, 20.0 </Fire_Inaccuracy_Distance>
 			<Fire_Inaccuracy_Distance> Transport, 20.0 </Fire_Inaccuracy_Distance>
-			<Fire_Inaccuracy_Distance> Corvette, 20.0 </Fire_Inaccuracy_Distance>
+			<Fire_Inaccuracy_Distance> Gunship, 20.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Corvette, 20.0 </Fire_Inaccuracy_Distance>
 			<Fire_Inaccuracy_Distance> Frigate, 20.0 </Fire_Inaccuracy_Distance>
 			<Fire_Inaccuracy_Distance> Capital, 20.0 </Fire_Inaccuracy_Distance>
 			<Fire_Inaccuracy_Distance> SuperCapital, 20.0 </Fire_Inaccuracy_Distance>
@@ -4179,7 +4294,8 @@
 			<Fire_Inaccuracy_Distance> Fighter, 20.0 </Fire_Inaccuracy_Distance>
 			<Fire_Inaccuracy_Distance> Bomber, 20.0 </Fire_Inaccuracy_Distance>
 			<Fire_Inaccuracy_Distance> Transport, 20.0 </Fire_Inaccuracy_Distance>
-			<Fire_Inaccuracy_Distance> Corvette, 20.0 </Fire_Inaccuracy_Distance>
+			<Fire_Inaccuracy_Distance> Gunship, 20.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Corvette, 20.0 </Fire_Inaccuracy_Distance>
 			<Fire_Inaccuracy_Distance> Frigate, 20.0 </Fire_Inaccuracy_Distance>
 			<Fire_Inaccuracy_Distance> Capital, 20.0 </Fire_Inaccuracy_Distance>
 			<Fire_Inaccuracy_Distance> SuperCapital, 20.0 </Fire_Inaccuracy_Distance>
@@ -4221,7 +4337,8 @@
 			<Fire_Inaccuracy_Distance> Fighter, 20.0 </Fire_Inaccuracy_Distance>
 			<Fire_Inaccuracy_Distance> Bomber, 20.0 </Fire_Inaccuracy_Distance>
 			<Fire_Inaccuracy_Distance> Transport, 15.0 </Fire_Inaccuracy_Distance>
-			<Fire_Inaccuracy_Distance> Corvette, 40.0 </Fire_Inaccuracy_Distance>
+			<Fire_Inaccuracy_Distance> Gunship, 40.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Corvette, 40.0 </Fire_Inaccuracy_Distance>
 			<Fire_Inaccuracy_Distance> Frigate, 40.0 </Fire_Inaccuracy_Distance>
 			<Fire_Inaccuracy_Distance> Capital, 40.0 </Fire_Inaccuracy_Distance>
 			<Fire_Inaccuracy_Distance> SuperCapital, 40.0 </Fire_Inaccuracy_Distance>
@@ -4263,7 +4380,8 @@
 			<Fire_Inaccuracy_Distance> Fighter, 70.0 </Fire_Inaccuracy_Distance>
 			<Fire_Inaccuracy_Distance> Bomber, 70.0 </Fire_Inaccuracy_Distance>
 			<Fire_Inaccuracy_Distance> Transport, 60.0 </Fire_Inaccuracy_Distance>
-			<Fire_Inaccuracy_Distance> Corvette, 30.0 </Fire_Inaccuracy_Distance>
+			<Fire_Inaccuracy_Distance> Gunship, 30.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Corvette, 30.0 </Fire_Inaccuracy_Distance>
 			<Fire_Inaccuracy_Distance> Frigate, 10.0 </Fire_Inaccuracy_Distance>
 			<Fire_Inaccuracy_Distance> Capital, 10.0 </Fire_Inaccuracy_Distance>
 			<Fire_Inaccuracy_Distance> SuperCapital, 1.0 </Fire_Inaccuracy_Distance>
@@ -4361,7 +4479,8 @@
 			<Fire_Inaccuracy_Distance> Fighter, 20.0 </Fire_Inaccuracy_Distance>
 			<Fire_Inaccuracy_Distance> Bomber, 20.0 </Fire_Inaccuracy_Distance>
 			<Fire_Inaccuracy_Distance> Transport, 20.0 </Fire_Inaccuracy_Distance>
-			<Fire_Inaccuracy_Distance> Corvette, 20.0 </Fire_Inaccuracy_Distance>
+			<Fire_Inaccuracy_Distance> Gunship, 20.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Corvette, 20.0 </Fire_Inaccuracy_Distance>
 			<Fire_Inaccuracy_Distance> Frigate, 20.0 </Fire_Inaccuracy_Distance>
 			<Fire_Inaccuracy_Distance> Capital, 20.0 </Fire_Inaccuracy_Distance>
 			<Fire_Inaccuracy_Distance> SuperCapital, 20.0 </Fire_Inaccuracy_Distance>
@@ -4438,7 +4557,8 @@
 			<Fire_Inaccuracy_Distance> Fighter, 40.0 </Fire_Inaccuracy_Distance>
 			<Fire_Inaccuracy_Distance> Bomber, 40.0 </Fire_Inaccuracy_Distance>
 			<Fire_Inaccuracy_Distance> Transport, 4.0 </Fire_Inaccuracy_Distance>
-			<Fire_Inaccuracy_Distance> Corvette, 20.0 </Fire_Inaccuracy_Distance>
+			<Fire_Inaccuracy_Distance> Gunship, 20.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Corvette, 20.0 </Fire_Inaccuracy_Distance>
 			<Fire_Inaccuracy_Distance> Frigate, 10.0 </Fire_Inaccuracy_Distance>
 			<Fire_Inaccuracy_Distance> Capital, 10.0 </Fire_Inaccuracy_Distance>
 			<Fire_Inaccuracy_Distance> SuperCapital, 1.0 </Fire_Inaccuracy_Distance>
@@ -4804,5 +4924,110 @@
 		<Collision_Mesh>Root</Collision_Mesh>	
 	</Hardpoint>
 
+
+<!-- =============================================                       ============================================= -->
+<!-- =============================================	  SURVVIAL DUMMY     ============================================= -->
+<!-- =============================================                       ============================================= -->
+	
+	<HardPoint Name="HP_Golan_Colony_One_Laser_01_Dummy">
+		<Type> HARD_POINT_WEAPON_LASER </Type>
+		<Is_Targetable>No</Is_Targetable>
+		<Is_Destroyable>No</Is_Destroyable>
+		<Health>275.0</Health>
+		
+		<Attachment_Bone>Weap_LaserRapid_LS_01_240</Attachment_Bone>
+		<Collision_Mesh>Weap_LaserRapid_LS_01_240</Collision_Mesh>
+		<Damage_Particles>Weap_LaserRapid_LS_01_240</Damage_Particles>
+		<Fire_Bone_A>Weap_LaserRapid_LS_01_240</Fire_Bone_A>
+		<Fire_Bone_B>Weap_LaserRapid_LS_01_240</Fire_Bone_B>
+    </HardPoint>
+	
+	<HardPoint Name="HP_Golan_Colony_One_Laser_02_Dummy">
+		<Type> HARD_POINT_WEAPON_LASER </Type>
+		<Is_Targetable>No</Is_Targetable>
+		<Is_Destroyable>No</Is_Destroyable>
+		<Health>275.0</Health>
+
+		<Attachment_Bone>Weap_LaserRapid_LS_02_240</Attachment_Bone>
+		<Collision_Mesh>Weap_LaserRapid_LS_02_240</Collision_Mesh>
+		<Damage_Particles>Weap_LaserRapid_LS_02_240</Damage_Particles>
+    </HardPoint>
+	
+	<HardPoint Name="HP_Golan_Colony_One_Laser_03_Dummy">
+		<Type> HARD_POINT_WEAPON_LASER </Type>
+		<Is_Targetable>No</Is_Targetable>
+		<Is_Destroyable>No</Is_Destroyable>
+		<Health>275.0</Health>
+
+		<Attachment_Bone>Weap_LaserRapid_LS_03_240</Attachment_Bone>
+		<Collision_Mesh>Weap_LaserRapid_LS_03_240</Collision_Mesh>
+		<Damage_Particles>Weap_LaserRapid_LS_03_240</Damage_Particles>
+    </HardPoint>
+	
+	<HardPoint Name="HP_Golan_Colony_One_Laser_04_Dummy">
+		<Type> HARD_POINT_WEAPON_LASER </Type>
+		<Is_Targetable>No</Is_Targetable>
+		<Is_Destroyable>No</Is_Destroyable>
+		<Health>275.0</Health>
+
+		<Attachment_Bone>Weap_LaserRapid_LS_04_240</Attachment_Bone>
+		<Collision_Mesh>Weap_LaserRapid_LS_04_240</Collision_Mesh>
+		<Damage_Particles>Weap_LaserRapid_LS_04_240</Damage_Particles>
+    </HardPoint>
+	
+	<HardPoint Name="HP_Golan_Colony_One_Laser_05_Dummy">
+		<Type> HARD_POINT_WEAPON_LASER </Type>
+		<Is_Targetable>No</Is_Targetable>
+		<Is_Destroyable>No</Is_Destroyable>
+		<Health>275.0</Health>
+
+		<Attachment_Bone>Weap_LaserRapid_LS_05_240</Attachment_Bone>
+		<Collision_Mesh>Weap_LaserRapid_LS_05_240</Collision_Mesh>
+		<Damage_Particles>Weap_LaserRapid_LS_05_240</Damage_Particles>
+    </HardPoint>
+	
+	<HardPoint Name="HP_Golan_Colony_One_Laser_06_Dummy">
+		<Type> HARD_POINT_WEAPON_LASER </Type>
+		<Is_Targetable>No</Is_Targetable>
+		<Is_Destroyable>No</Is_Destroyable>
+		<Health>275.0</Health>
+
+		<Attachment_Bone>Weap_LaserRapid_LS_06_240</Attachment_Bone>
+		<Collision_Mesh>Weap_LaserRapid_LS_06_240</Collision_Mesh>
+		<Damage_Particles>Weap_LaserRapid_LS_06_240</Damage_Particles>
+    </HardPoint>
+	
+	<HardPoint Name="HP_Golan_Colony_One_Hangar_01_Dummy">
+		<Type> HARD_POINT_WEAPON_LASER </Type>
+		<Is_Targetable>No</Is_Targetable>
+		<Is_Destroyable>No</Is_Destroyable>
+		<Health>275.0</Health>
+		
+		<Attachment_Bone>Hangar01</Attachment_Bone>
+		<Collision_Mesh>Hangar01</Collision_Mesh>
+        <Damage_Particles>Hangar01</Damage_Particles>
+	</HardPoint>
+	
+	<HardPoint Name="HP_Golan_Colony_One_Hangar_02_Dummy">
+		<Type> HARD_POINT_WEAPON_LASER </Type>
+		<Is_Targetable>No</Is_Targetable>
+		<Is_Destroyable>No</Is_Destroyable>
+		<Health>275.0</Health>
+		
+		<Attachment_Bone>Hangar02</Attachment_Bone>
+		<Collision_Mesh>Hangar02</Collision_Mesh>
+        <Damage_Particles>Hangar02</Damage_Particles>
+	</HardPoint>
+	
+	<HardPoint Name="HP_Golan_Colony_One_Hangar_03_Dummy">
+		<Type> HARD_POINT_WEAPON_LASER </Type>
+		<Is_Targetable>No</Is_Targetable>
+		<Is_Destroyable>No</Is_Destroyable>
+		<Health>275.0</Health>
+		
+		<Attachment_Bone>Hangar03</Attachment_Bone>
+		<Collision_Mesh>Hangar03</Collision_Mesh>
+        <Damage_Particles>Hangar03</Damage_Particles>
+	</HardPoint>
 
 </HardPoints>

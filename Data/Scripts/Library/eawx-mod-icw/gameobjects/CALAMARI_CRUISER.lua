@@ -7,6 +7,9 @@ return {
 		["IRDA_SQUADRON"] = {
 			CORPORATE_SECTOR = {Initial = 1, Reserve = 1}
 		},
+		["DUNELIZARD_FIGHTER_SQUADRON"] = {
+			HUTT_CARTELS = {Initial = 1, Reserve = 1}
+		},
 		["REBEL_X-WING_SQUADRON"] = {
 			HAPES_CONSORTIUM = {Initial = 1, Reserve = 1},
 			HOSTILE = {Initial = 1, Reserve = 1},
@@ -23,6 +26,9 @@ return {
 		["K-WING_SQUADRON"] = {
 			HOSTILE = {Initial = 1, Reserve = 1, TechLevel = GreaterOrEqualTo(4)},
 			REBEL = {Initial = 1, Reserve = 1, TechLevel = GreaterOrEqualTo(4)}
+		},
+		["KIMOGILA_SQUADRON"] = {
+			HUTT_CARTELS = {Initial = 1, Reserve = 1}
 		},
 		["TIE_HEAVY_BOMBER_SQUADRON"] = {
 			IMPERIAL = {Initial = 1, Reserve = 1}

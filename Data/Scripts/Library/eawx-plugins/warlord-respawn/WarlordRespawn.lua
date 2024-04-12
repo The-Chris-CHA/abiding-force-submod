@@ -35,8 +35,8 @@ end
 
 function WarlordRespawn:on_galactic_hero_killed(hero_name, owner)
 	--Logger:trace("entering WarlordRespawn:on_galactic_hero_killed")
-	if hero_name == "THALASSA" then
-		if not Find_First_Object("Night_Hammer_Delvardus") then
+	if hero_name == "DELVARDUS_THALASSA" then
+		if not Find_First_Object("Delvardus_Night_Hammer") then
 			local p_eriadu = Find_Player("Eriadu_Authority")
 
 			if self.Active_Planets["KAMPE"] then
@@ -52,7 +52,7 @@ function WarlordRespawn:on_galactic_hero_killed(hero_name, owner)
 				Story_Event("DELVARDUS_RETURNS")
 			end
 		end
-    elseif hero_name == "13X_TERADOC" then
+    elseif hero_name == "TREUTEN_13X" then
 		if owner == "GREATER_MALDROOD" then
 			local p_maldrood = Find_Player("Greater_Maldrood")
 			if self.Active_Planets["HAKASSI"] then
@@ -64,7 +64,7 @@ function WarlordRespawn:on_galactic_hero_killed(hero_name, owner)
 				self.start_planet = StoryUtil.FindFriendlyPlanet(p_maldrood)
 			end
 			if self.start_planet then
-				SpawnList({"CrimsonSunrise_Star_Destroyer"}, self.start_planet, p_maldrood, true, false)
+				SpawnList({"Treuten_Crimson_Sunrise"}, self.start_planet, p_maldrood, true, false)
 				Story_Event("TERADOC_RETURNS")
 			end
 		end
@@ -84,6 +84,36 @@ function WarlordRespawn:on_galactic_hero_killed(hero_name, owner)
 				Story_Event("TYBER_ZANN_RETURNS")
 			end
 		end
-    end
+    elseif hero_name == "BRASHIN_TRMB_TEAM" then
+		local Empire = Find_Player("Empire")
+		if Empire.Is_Human() then
+			GlobalValue.Set("BRASHIN_TRMB_DEAD", true)
+			local assign_unit = Find_Object_Type("Rebuild_Brashin")
+			Empire.Unlock_Tech(assign_unit)
+			
+			StoryUtil.ShowScreenText("General Brashin's TR-MB has been destroyed and must be replaced.", 5, nil, {r = 244, g = 244, b = 0})
+		else
+			Empire.Give_Money(-1000)
+		end
+	elseif hero_name == "GRODIN_TIERCE_TEAM" then
+		GlobalValue.Set("DEPLOYED_GRODIN_TIERCE_DEAD", true)
+		local Empire = Find_Player("Empire")
+		if Empire.Is_Human() then
+			StoryUtil.ShowScreenText("Grodin Tierce has been wounded and can no longer fight on land.", 5, nil, {r = 244, g = 244, b = 0})
+		end
+	elseif hero_name == "JAG_127TH_TEAM" then
+		local p_zsinj = Find_Player("Zsinj_Empire")
+		if p_zsinj.Is_Human() then
+			local assign_unit = Find_Object_Type("Reform_127th")
+			p_zsinj.Unlock_Tech(assign_unit)
+			UnitUtil.SetBuildable(p_zsinj, "Jag_127th_Location_Set", false)
+			Clear_Fighter_Hero("JAG_127TH_SQUADRON")
+			StoryUtil.ShowScreenText("The 127th has taken crippling casualties and must be reformed.", 5, nil, {r = 244, g = 244, b = 0})
+		else
+			p_zsinj.Give_Money(-1000)
+		end
+	elseif hero_name == "JENN_TEAM" then
+		crossplot:publish("JENN_SMEEL_DEATH", "empty")
+	end
 
 end

@@ -1,0 +1,182 @@
+﻿<?xml version="1.0" ?>
+<!--********************************************-->
+<!--******  Campaign: Caamas Crisis  ***********-->
+<!--********************************************-->
+<Story>
+	<Event Name="Universal_Story_Start">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>0</Event_Param1>
+	</Event>
+
+	<Event Name="Trigger_EOTH_Player_Checker">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Prereq>Universal_Story_Start</Prereq>
+	</Event>
+
+	<Event Name="Trigger_EOTH_Story_Start">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>EOTH_STORY_START</Event_Param2>
+	</Event>
+	
+	<!--************************************-->
+	<!--*********** Story Handler **********-->
+	<!--************************************-->
+
+	<Event Name="Spawn_Aurek_Seven">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Aurek_Seven_Team</Reward_Param1>
+		<Reward_Param2>Nirauan</Reward_Param2>
+		<Prereq>Universal_Story_Start</Prereq>
+	</Event>
+
+	<Event Name="Spawn_Parck">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Parck_Strikefast</Reward_Param1>
+		<Reward_Param2>Nirauan</Reward_Param2>
+		<Prereq>Universal_Story_Start</Prereq>
+	</Event>
+
+	<Event Name="Spawn_Niriz">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>UNIQUE_UNIT</Reward_Type>
+		<Reward_Param1>Niriz_Admonitor</Reward_Param1>
+		<Reward_Param2>Nirauan</Reward_Param2>
+		<Prereq>Universal_Story_Start</Prereq>
+	</Event>
+	
+	<Event Name="Spawn_Ashik">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Ashik_Team</Reward_Param1>
+		<Reward_Param2>Nirauan</Reward_Param2>
+		<Prereq>Universal_Story_Start</Prereq>
+	</Event>
+
+	<Event Name="Spawn_501st">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Hand_of_Judgement_Team</Reward_Param1>
+		<Reward_Param2>Troukree</Reward_Param2>
+		<Prereq>Universal_Story_Start</Prereq>
+	</Event>
+	
+	<Event Name="Spawn_Ferob">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Ferob_Iron_Fist</Reward_Param1>
+		<Reward_Param2>Quethold</Reward_Param2>
+		<Prereq>Universal_Story_Start</Prereq>
+	</Event>
+	
+	<Event Name="Spawn_Tasse">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Tasse_Team</Reward_Param1>
+		<Reward_Param2>Quethold</Reward_Param2>
+		<Prereq>Universal_Story_Start</Prereq>
+	</Event>
+
+	<Event Name="Spawn_Siath">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Siath_Battlehammer</Reward_Param1>
+		<Reward_Param2>Troukree</Reward_Param2>
+		<Prereq>Universal_Story_Start</Prereq>
+	</Event>
+
+	<Event Name="Spawn_Stent">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Stent_Thrawns_Hand</Reward_Param1>
+		<Reward_Param2>Syca</Reward_Param2>
+		<Prereq>Universal_Story_Start</Prereq>
+	</Event>
+	
+	<!--************************************-->
+	<!--*********** Tech Handler ***********-->
+	<!--************************************-->
+
+	<!--************************************-->
+	<!--*************** Act I **************-->
+	<!--************************************-->
+
+	<Event Name="EOTH_Caamas_Crisis_Speech_01">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>0.5</Event_Param1>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_CONQUEST_CAAMAS_HAND_INTRO</Reward_Param1>
+		<Reward_Param2>15</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6 />
+		<Reward_Param7 />
+		<Reward_Param8 />
+		<Reward_Param9>Parck_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+		<Prereq>Trigger_EOTH_Story_Start</Prereq>
+	</Event>
+
+	<Event Name="EOTH_Caamas_Crisis_Act_I_Dialog">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>15</Event_Param1>
+		<Prereq>EOTH_Caamas_Crisis_Speech_01</Prereq>
+		<Story_Dialog>Dialog_Caamas_Hand</Story_Dialog>
+		<Story_Chapter>1</Story_Chapter>
+		<Story_Tag>Caamas_Crisis_EOTH_Act_1</Story_Tag>
+	</Event>
+
+	<!--************************************-->
+	<!--*************** Act II *************-->
+	<!--************************************-->
+
+	<Event Name="EOTH_Caamas_Crisis_Speech_02">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>THRAWN_RETURNS</Event_Param2>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_CONQUEST_CAAMAS_THRAWN_RETURNS</Reward_Param1>
+		<Reward_Param2>15.0</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6 />
+		<Reward_Param7 />
+		<Reward_Param8 />
+		<Reward_Param9>Thrawn_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+	</Event>
+
+	<Event Name="EOTH_Caamas_Crisis_Speech_03A">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>EOTH_CLONE_THRAWN</Event_Param2>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_CONQUEST_CAAMAS_RETURN_PARCK_FOLLOW</Reward_Param1>
+		<Reward_Param2>15.0</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6 />
+		<Reward_Param7 />
+		<Reward_Param8 />
+		<Reward_Param9>Parck_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+	</Event>
+
+	<Event Name="EOTH_Caamas_Crisis_Speech_03B">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>EOTH_IMPOSTER_THRAWN</Event_Param2>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_CONQUEST_CAAMAS_RETURN_PARCK_DOUBT</Reward_Param1>
+		<Reward_Param2>15.0</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6 />
+		<Reward_Param7 />
+		<Reward_Param8 />
+		<Reward_Param9>Parck_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+	</Event>
+</Story>

@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" ?>
+<!--**************************************************-->
+<!--************  Campaign: Reunification  ***********-->
+<!--**************************************************-->
+<Story>
+	<Event Name="Universal_Story_Start">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>0</Event_Param1>
+	</Event>
+
+	<Event Name="Trigger_Hutts_Player_Checker">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Prereq>Universal_Story_Start</Prereq>
+	</Event>
+
+	<Event Name="Trigger_Hutts_Story_Start">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>HUTTS_STORY_START</Event_Param2>
+	</Event>
+	
+	<!--************************************-->
+	<!--*********** Story Handler **********-->
+	<!--************************************-->
+	
+	<Event Name="Spawn_Popara">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+  		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Popara_Imru_Ootmian</Reward_Param1>
+		<Reward_Param2>Nimban</Reward_Param2>
+		<Prereq>Universal_Story_Start</Prereq>
+	</Event>
+	
+	<Event Name="Spawn_Troonol">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+  		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Troonol_Agrelcu_Haalta</Reward_Param1>
+		<Reward_Param2>Saleucami</Reward_Param2>
+		<Prereq>Universal_Story_Start</Prereq>
+	</Event>
+	
+	<Event Name="Spawn_Parella">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+  		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Parella_Team</Reward_Param1>
+		<Reward_Param2>Nimban</Reward_Param2>
+		<Prereq>Universal_Story_Start</Prereq>
+	</Event>
+	
+	<Event Name="Spawn_Plakot">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+  		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Plakot_Team</Reward_Param1>
+		<Reward_Param2>Sriluur</Reward_Param2>
+		<Prereq>Universal_Story_Start</Prereq>
+	</Event>
+	
+	<Event Name="Spawn_Smebba">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+  		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Smebba_Dunk_Team</Reward_Param1>
+		<Reward_Param2>Ubrikkia</Reward_Param2>
+		<Prereq>Universal_Story_Start</Prereq>
+	</Event>
+	
+	<Event Name="Spawn_Quaffug">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+  		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Quaffug_Lorda</Reward_Param1>
+		<Reward_Param2>Ubrikkia</Reward_Param2>
+		<Prereq>Universal_Story_Start</Prereq>
+	</Event>
+	
+	<!--************************************-->
+	<!--*********** Tech Handler ***********-->
+	<!--************************************-->
+
+	<Event Name="Hutts_Reunification_Tsoss_Bounce">
+		<Event_Type>STORY_FLEET_BOUNCED</Event_Type>
+		<Event_Param1>Tsoss</Event_Param1>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_CONQUEST_REUNIFICATION_GENERIC_TSOSS_BOUNCE</Reward_Param1>
+		<Reward_Param2>10</Reward_Param2>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+	<!--************************************-->
+	<!--*************** Act I **************-->
+	<!--************************************-->
+	
+	<Event Name="Hutts_Reunification_Speech_01">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>0.5</Event_Param1>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_CONQUEST_REUNIFICATION_HUTTS_INTRO</Reward_Param1>
+		<Reward_Param2>15.0</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6 />
+		<Reward_Param7 />
+		<Reward_Param8 />
+		<Reward_Param9>Zorba_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+		<Prereq>Trigger_Hutts_Story_Start</Prereq>
+	</Event>
+
+	<Event Name="Hutts_Reunification_Act_I_Dialog">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>15</Event_Param1>
+		<Story_Dialog>Dialog_Reunification_Hutts</Story_Dialog>
+		<Story_Chapter>1</Story_Chapter>
+		<Story_Dialog_Popup>true</Story_Dialog_Popup>
+		<Story_Tag>Reunification_Hutts_Act_I</Story_Tag>
+		<Prereq>Hutts_Reunification_Speech_01</Prereq>
+	</Event>
+
+	<!--************************************-->
+	<!--*************** Act II *************-->
+	<!--************************************-->
+
+	<Event Name="Hutts_Reunification_Speech_02">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>TSOSS_CONFERENCE</Event_Param2>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_CONQUEST_REUNIFICATION_HUTTS_TSOSS</Reward_Param1>
+		<Reward_Param2>15.0</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6 />
+		<Reward_Param7 />
+		<Reward_Param8 />
+		<Reward_Param9>Zorba_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+		<Prereq>Trigger_Hutts_Story_Start</Prereq>
+	</Event>
+</Story>

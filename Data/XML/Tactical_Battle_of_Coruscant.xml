@@ -1,16 +1,10 @@
 ﻿<?xml version="1.0" ?>
-
-
-
-<!--******************************************************-->
-<!--******	Campaign: Origin of Corruption (Rebel)	******-->
-<!--******************************************************-->
-
-
-
 <Story>
+<!--******************************************************-->
+<!--***	Tactical: Battle of Coruscant (New Republic)  ****-->
+<!--******************************************************-->
 
-	<Event Name="Battle_Start">
+	<Event Name="Battle_Start"> <!--calls Lua-->
 		<Event_Type>STORY_ELAPSED</Event_Type>
 		<Event_Param1>0</Event_Param1>
 	</Event>
@@ -37,27 +31,17 @@
 		<Prereq>Battle_Start</Prereq>
 	</Event>
 
-	<Event Name="Imps_Enter_System">
+	<Event Name="Wave1_Spawn"> <!--calls Lua-->
 		<Event_Type>STORY_ELAPSED</Event_Type>
 		<Event_Param1>2</Event_Param1>
 	</Event>
 
-	<Event Name="Intro_01">
+	<Event Name="Battle_of_Coruscant_Speech_1">
 		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
-		<Event_Param2>INTRO_SPEECH</Event_Param2>
+		<Event_Param2>OSH_CORUSCANT_SPEECH_1</Event_Param2>
 		<Reward_Type>MULTIMEDIA</Reward_Type>
-		<Reward_Param1>TEXT_STORY_SHADOWHAND_CORUSCANT_BATTLE</Reward_Param1>
-		<Reward_Param2>2.5</Reward_Param2>
-		<Reward_Param6>255 255 255 255</Reward_Param6>
-		<Reward_Param10>0</Reward_Param10>
-	</Event>
-
-	<Event Name="Battle_of_Coruscant_Speech_01">
-		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
-		<Event_Param2>BEGIN_BRIEFING_OSH</Event_Param2>
-		<Reward_Type>MULTIMEDIA</Reward_Type>
-		<Reward_Param1>TEXT_STORY_SHADOWHAND_CORUSCANT_00</Reward_Param1>
-		<Reward_Param2>5.5</Reward_Param2>
+		<Reward_Param1>TEXT_STORY_SHADOWHAND_CORUSCANT_1</Reward_Param1>
+		<Reward_Param2>8</Reward_Param2>
 		<Reward_Param3 />
 		<Reward_Param4 />
 		<Reward_Param5 />
@@ -68,12 +52,12 @@
 		<Reward_Param10>0</Reward_Param10>
 	</Event>
 
-	<Event Name="Battle_of_Coruscant_Speech_02">
+	<Event Name="Battle_of_Coruscant_Speech_2">
 		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
-		<Event_Param2>NEXT_BRIEFING_OSH</Event_Param2>
+		<Event_Param2>OSH_CORUSCANT_SPEECH_2</Event_Param2>
 		<Reward_Type>MULTIMEDIA</Reward_Type>
-		<Reward_Param1>TEXT_STORY_SHADOWHAND_CORUSCANT_01</Reward_Param1>
-		<Reward_Param2>5.5</Reward_Param2>
+		<Reward_Param1>TEXT_STORY_SHADOWHAND_CORUSCANT_2</Reward_Param1>
+		<Reward_Param2>8</Reward_Param2>
 		<Reward_Param3 />
 		<Reward_Param4 />
 		<Reward_Param5 />
@@ -84,12 +68,12 @@
 		<Reward_Param10>0</Reward_Param10>
 	</Event>
 
-	<Event Name="Battle_of_Coruscant_Speech_03">
+	<Event Name="Battle_of_Coruscant_Speech_3">
 		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
-		<Event_Param2>END_BRIEFING_OSH</Event_Param2>
+		<Event_Param2>OSH_CORUSCANT_SPEECH_3</Event_Param2>
 		<Reward_Type>MULTIMEDIA</Reward_Type>
-		<Reward_Param1>TEXT_STORY_SHADOWHAND_CORUSCANT_02</Reward_Param1>
-		<Reward_Param2>6.5</Reward_Param2>
+		<Reward_Param1>TEXT_STORY_SHADOWHAND_CORUSCANT_3</Reward_Param1>
+		<Reward_Param2>8</Reward_Param2>
 		<Reward_Param3 />
 		<Reward_Param4 />
 		<Reward_Param5 />
@@ -100,17 +84,17 @@
 		<Reward_Param10>0</Reward_Param10>
 	</Event>
 
-	<Event Name="Wave2_Spawn">
+	<Event Name="Wave2_Spawn"> <!--calls Lua-->
 		<Event_Type>STORY_ELAPSED</Event_Type>
-		<Event_Param1>60</Event_Param1>
+		<Event_Param1>20</Event_Param1>
 	</Event>
 
-	<Event Name="Wave3_Spawn">
+	<Event Name="Wave3_Spawn"> <!--calls Lua-->
 		<Event_Type>STORY_ELAPSED</Event_Type>
-		<Event_Param1>120</Event_Param1>
+		<Event_Param1>40</Event_Param1>
 	</Event>
 
-	<Event Name="Retreat_OK">
+	<Event Name="Retreat_Timer">
 		<Event_Type>STORY_ELAPSED</Event_Type>
 		<Event_Param1>150</Event_Param1>
 	</Event>
@@ -120,28 +104,36 @@
 		<Reward_Type>DISABLE_RETREAT</Reward_Type>
 		<Reward_Param1>Rebel</Reward_Param1>
 		<Reward_Param2>0</Reward_Param2>
-		<Prereq>Retreat_OK</Prereq>
+		<Prereq>Retreat_Timer</Prereq>
 	</Event>
 
-	<Event Name="Battle_of_Coruscant_Retreat_Speech">
+	<Event Name="Battle_of_Coruscant_Speech_Retreat">
 		<Event_Type>STORY_TRIGGER</Event_Type>
 		<Reward_Type>MULTIMEDIA</Reward_Type>
-		<Reward_Param1>TEXT_CONQUEST_SHADOWHAND_NR_CORUSCANT_BATTLE_RETREAT</Reward_Param1>
-		<Reward_Param2>7</Reward_Param2>
+		<Reward_Param1>TEXT_STORY_SHADOWHAND_CORUSCANT_RETREAT</Reward_Param1>
+		<Reward_Param2>15</Reward_Param2>
 		<Reward_Param3 />
 		<Reward_Param4 />
 		<Reward_Param5 />
 		<Reward_Param6>255 255 255 255</Reward_Param6>
 		<Reward_Param7 />
-		<Reward_Param8>Nonexistant_Speech</Reward_Param8>
-		<Reward_Param9>Rebel_Trooper_Loop</Reward_Param9>
+		<Reward_Param8 />
+		<Reward_Param9>Garm_Loop</Reward_Param9>
 		<Reward_Param10>0</Reward_Param10>
-		<Prereq>Retreat_OK</Prereq>
+		<Prereq>Retreat_Timer</Prereq>
 	</Event>
 	
-	<Event Name="STORY_VICTORY_Player">
-		<Event_Type>STORY_VICTORY</Event_Type>
-		<Event_Param1>Rebel</Event_Param1>
+	<Event Name="Battle_of_Coruscant_Flash_Retreat_Button">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>FLASH_GUI</Reward_Type>
+		<Reward_Param1>b_retreat</Reward_Param1>
+		<Prereq>Battle_of_Coruscant_Speech_Retreat</Prereq>
 	</Event>
-	
+
+	<Event Name="Battle_of_Coruscant_Remove_Flash_Retreat_Button">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>15</Event_Param1>
+		<Reward_Type>HIDE_TUTORIAL_CURSOR</Reward_Type>
+		<Prereq>Battle_of_Coruscant_Flash_Retreat_Button</Prereq>
+	</Event>
 </Story>

@@ -9,6 +9,9 @@ return {
 		["MIYTIL_FIGHTER_SQUADRON"] = {
 			HAPES_CONSORTIUM = {Initial = 2, Reserve = 5}
 		},
+		["CLOAKSHAPE_NEW_SQUADRON"] = {
+			HUTT_CARTELS = {Initial = 2, Reserve = 5}
+		},
 		["REBEL_X-WING_SQUADRON"] = {
 			REBEL = {Initial = 1, Reserve = 2, TechLevel = LessThan(4)}
 		},
@@ -40,7 +43,8 @@ return {
 		["BTLB_Y-WING_SQUADRON_DOUBLE"] = {
 			CORPORATE_SECTOR = {Initial = 1, Reserve = 3},
 			HOSTILE = {Initial = 1, Reserve = 3},
-			INDEPENDENT_FORCES = {Initial = 1, Reserve = 3}
+			INDEPENDENT_FORCES = {Initial = 1, Reserve = 3},
+			HUTT_CARTELS = {Initial = 1, Reserve = 3}
 		},
 		["MIYTIL_BOMBER_SQUADRON_DOUBLE"] = {
 			HAPES_CONSORTIUM = {Initial = 1, Reserve = 3}

@@ -11,6 +11,7 @@ function Definitions()
 
 	-- possible units to spawn
 	unit_table = {
+		"RAPTOR_GUNSHIP_SQUADRON",
 		"BAIDAM",
 		"FLARE",
 		"BETA_CRUISER",

@@ -7,6 +7,9 @@ return {
 		["MIYTIL_FIGHTER_SQUADRON"] = {
 			HAPES_CONSORTIUM = {Initial = 1, Reserve = 1}
 		},
+		["CLOAKSHAPE_NEW_SQUADRON"] = {
+			HUTT_CARTELS = {Initial = 1, Reserve = 1}
+		},
 		["TIE_DROID_SQUADRON"] = {
 			EMPIRE = {Initial = 1, Reserve = 1, TechLevel = IsOneOf({4, 5})}
 		},
@@ -31,6 +34,7 @@ return {
 		["EARLY_SKIPRAY_SQUADRON_HALF"] = {
 			CORPORATE_SECTOR = {Initial = 1, Reserve = 1},
 			HAPES_CONSORTIUM = {Initial = 1, Reserve = 1},
+			HUTT_CARTELS = {Initial = 1, Reserve = 1},
 			REBEL = {Initial = 1, Reserve = 1}
 		},
 		["SKIPRAY_SQUADRON_HALF"] = {
@@ -49,6 +53,9 @@ return {
 		},
 		["MIYTIL_BOMBER_SQUADRON"] = {
 			HAPES_CONSORTIUM = {Initial = 1, Reserve = 2}
+		},
+		["SCURRG_H6_SQUADRON"] = {
+			HUTT_CARTELS = {Initial = 1, Reserve = 1}
 		},
 		["STARWING_SQUADRON"] = {
 			HOSTILE = {Initial = 1, Reserve = 2},

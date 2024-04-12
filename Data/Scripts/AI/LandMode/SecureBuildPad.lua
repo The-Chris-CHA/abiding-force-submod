@@ -50,6 +50,11 @@ function Definitions()
 		{
 			"MainForce"
 			,"Infantry = 1, 2"
+			,"-B2_RP_Team"
+			,"-Clone_Jumptrooper_One_Team"
+			,"-Clone_Jumptrooper_Two_Team"
+			,"-Mando_Commando_Team"
+			,"-Jumptrooper_Team"
 		}
 	}
 

@@ -1,0 +1,22 @@
+<?xml version="1.0" ?>
+
+
+
+<!--******************************************************-->
+<!--******	Campaign: Rim World Conflict (Empire)	******-->
+<!--******************************************************-->
+
+<Story>
+	<Event Name="Delayed_Initialize">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>7</Event_Param1>
+	</Event> 
+	
+	<Event Name="Rancor_Base_Check">
+		<Event_Type>STORY_CONSTRUCT</Event_Type>
+		<Event_Param1>Rancor_Base</Event_Param1>
+		<Event_Param2>1</Event_Param2>
+		<Event_Param3>Zsinj_Empire</Event_Param3>
+	</Event>	
+	
+</Story>

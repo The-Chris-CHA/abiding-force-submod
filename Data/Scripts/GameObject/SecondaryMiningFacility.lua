@@ -40,7 +40,6 @@
 --/////////////////////////////////////////////////////////////////////////////////////////////////
 
 require("PGStateMachine")
-
 --Once this object has fully transitioned to a playable side it spits out vehicles for its owner
 
 function Definitions()
@@ -52,10 +51,17 @@ function State_Waiting_For_Control(message)
 
 	if message == OnEnter then
 		-- Do Nothing
+		if not ModContentLoader then
+            ModContentLoader = require("eawx-std/ModContentLoader")
+		end
+
+		CONSTANTS = ModContentLoader.get("GameConstants")
 	elseif message == OnUpdate then
 		faction = Object.Get_Owner().Get_Faction_Name()
-		if faction ~= "NEUTRAL" then
-			Set_Next_State("State_Controlled")
+		for _, faction_name in pairs(CONSTANTS.ALL_FACTIONS_NOT_NEUTRAL) do
+			if faction == faction_name then
+				Set_Next_State("State_Controlled")
+			end
 		end
 	end
 end

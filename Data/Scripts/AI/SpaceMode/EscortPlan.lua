@@ -55,7 +55,7 @@ function Definitions()
 	-- First Task Force
 	{
 		"MainForce"
-		,"Fighter | Bomber = 1,10"
+		,"Fighter | Bomber | Gunship = 1,10"
 		,"Interdictor | Corvette | Frigate = 0,4"
 	}
 	}

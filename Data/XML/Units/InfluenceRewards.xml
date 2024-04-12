@@ -9,6 +9,7 @@
 		<Variant_Of_Existing_Type>Template_BattleDragon</Variant_Of_Existing_Type>
 		<Space_FOW_Reveal_Range>25000.0</Space_FOW_Reveal_Range>	
 		<Required_Star_Base_Level>1</Required_Star_Base_Level>
+		<GUI_Row> 0 </GUI_Row>
 		<Required_Special_Structures>
 		NewRepublic_Shipyard_Level_Two | NewRepublic_Shipyard_Level_Three |
 		EotH_Shipyard_Level_Two | EotH_Shipyard_Level_Three |
@@ -17,12 +18,13 @@
 		Zsinj_Shipyard_Level_Two | Zsinj_Shipyard_Level_Three | Rancor_Base |	
 		Eriadu_Shipyard_Level_Two | Eriadu_Shipyard_Level_Three |
 		Pentastar_Shipyard_Level_Two | Pentastar_Shipyard_Level_Three |
-		CSA_Shipyard_Level_Two | CSA_Shipyard_Level_Three,
+		CSA_Shipyard_Level_Two | CSA_Shipyard_Level_Three |
+		Hutt_Shipyard_Level_Two | Hutt_Shipyard_Level_Three,
 		DUMMY_CHIEFOFSTATE_GAVRISOM | INFLUENCE_TEN,
 		AI_Category_Dummy | Heavy_Frigate_Category_Dummy	
 		</Required_Special_Structures>
 		<Required_Planets>Hapes, Charubah, Terephon</Required_Planets>
-		<Affiliation>Rebel, EmpireoftheHand, Empire, Greater_Maldrood, Zsinj_Empire, Eriadu_Authority, Pentastar, Corporate_Sector</Affiliation>
+		<Affiliation>Rebel, EmpireoftheHand, Empire, Greater_Maldrood, Zsinj_Empire, Eriadu_Authority, Pentastar, Corporate_Sector, Hutt_Cartels</Affiliation>
 		<Starting_Spawned_Units_Tech_0>Miytil_Fighter_Squadron, 1</Starting_Spawned_Units_Tech_0>
 		<Starting_Spawned_Units_Tech_0>Miytil_Bomber_Squadron, 1</Starting_Spawned_Units_Tech_0>
 		<Reserve_Spawned_Units_Tech_0>Miytil_Fighter_Squadron, 1</Reserve_Spawned_Units_Tech_0>
@@ -31,7 +33,7 @@
 
 	<SpaceUnit Name="Nova_Cruiser_Influence">
 		<Variant_Of_Existing_Type>Template_Nova_Cruiser</Variant_Of_Existing_Type>
-		<Affiliation>Rebel, EmpireoftheHand, Empire, Greater_Maldrood, Zsinj_Empire, Eriadu_Authority, Pentastar, Corporate_Sector</Affiliation>
+		<Affiliation>Rebel, EmpireoftheHand, Empire, Greater_Maldrood, Zsinj_Empire, Eriadu_Authority, Pentastar, Corporate_Sector, Hutt_Cartels</Affiliation>
 		<Required_Star_Base_Level>1</Required_Star_Base_Level>
 		<GUI_Row> 0 </GUI_Row>
 		<Required_Special_Structures>
@@ -42,7 +44,8 @@
 		Zsinj_Shipyard_Level_Two | Zsinj_Shipyard_Level_Three | Rancor_Base |	
 		Eriadu_Shipyard_Level_Two | Eriadu_Shipyard_Level_Three |
 		Pentastar_Shipyard_Level_Two | Pentastar_Shipyard_Level_Three |
-		CSA_Shipyard_Level_Two | CSA_Shipyard_Level_Three,
+		CSA_Shipyard_Level_Two | CSA_Shipyard_Level_Three |
+		Hutt_Shipyard_Level_Two | Hutt_Shipyard_Level_Three,
 		DUMMY_CHIEFOFSTATE_GAVRISOM | INFLUENCE_TEN | INFLUENCE_NINE | INFLUENCE_EIGHT,
 		AI_Category_Dummy | Non_Capital_Category_Dummy		
 		</Required_Special_Structures>
@@ -56,7 +59,7 @@
 
 	<SpaceUnit Name="Beta_Cruiser_Influence">
 		<Variant_Of_Existing_Type>Template_Beta_Cruiser</Variant_Of_Existing_Type>
-		<Affiliation>Rebel, EmpireoftheHand, Empire, Greater_Maldrood, Zsinj_Empire, Eriadu_Authority, Pentastar, Corporate_Sector</Affiliation>
+		<Affiliation>Rebel, EmpireoftheHand, Empire, Greater_Maldrood, Zsinj_Empire, Eriadu_Authority, Pentastar, Corporate_Sector, Hutt_Cartels</Affiliation>
 		<Required_Star_Base_Level>1</Required_Star_Base_Level>
 		<GUI_Row> 0 </GUI_Row>
 		<Required_Special_Structures>
@@ -67,7 +70,8 @@
 		Zsinj_Shipyard_Level_Two | Zsinj_Shipyard_Level_Three | Rancor_Base |	
 		Eriadu_Shipyard_Level_Two | Eriadu_Shipyard_Level_Three |
 		Pentastar_Shipyard_Level_Two | Pentastar_Shipyard_Level_Three |
-		CSA_Shipyard_Level_Two | CSA_Shipyard_Level_Three,
+		CSA_Shipyard_Level_Two | CSA_Shipyard_Level_Three |
+		Hutt_Shipyard_Level_Two | Hutt_Shipyard_Level_Three,
 		DUMMY_CHIEFOFSTATE_GAVRISOM | INFLUENCE_TEN | INFLUENCE_NINE | INFLUENCE_EIGHT | INFLUENCE_SEVEN,
 		AI_Category_Dummy | Non_Capital_Category_Dummy		
 		</Required_Special_Structures>
@@ -78,7 +82,7 @@
 
 	<SpaceUnit Name="Armadia_Influence">
 		<Variant_Of_Existing_Type>Template_Armadia</Variant_Of_Existing_Type>
-		<Affiliation>Rebel, Empire, EmpireoftheHand, Greater_Maldrood, Zsinj_Empire, Eriadu_Authority, Pentastar, Corporate_Sector, Hapes_Consortium</Affiliation>
+		<Affiliation>Rebel, Empire, EmpireoftheHand, Greater_Maldrood, Zsinj_Empire, Eriadu_Authority, Pentastar, Corporate_Sector, Hapes_Consortium, Hutt_Cartels</Affiliation>
 		<Required_Star_Base_Level>1</Required_Star_Base_Level>
 		<GUI_Row> 0 </GUI_Row>
 		<Required_Special_Structures>
@@ -90,7 +94,8 @@
 		Eriadu_Shipyard_Level_One | Eriadu_Shipyard_Level_Two | Eriadu_Shipyard_Level_Three | Eriadu_Shipyard_Level_Four |
 		Pentastar_Shipyard_Level_One | Pentastar_Shipyard_Level_Two | Pentastar_Shipyard_Level_Three | Pentastar_Shipyard_Level_Four |
 		CSA_Shipyard_Level_One | CSA_Shipyard_Level_Two | CSA_Shipyard_Level_Three | CSA_Shipyard_Level_Four |
-		Hapan_Shipyard_Royal | Hapan_Shipyard_Galney | Hapan_Shipyard_Requud | Hapan_Shipyard_Maluri | Hapan_Shipyard_AlGray | Hapan_Shipyard_Corr | Hapan_Shipyard_Thane,
+		Hapan_Shipyard_Royal | Hapan_Shipyard_Galney | Hapan_Shipyard_Requud | Hapan_Shipyard_Maluri | Hapan_Shipyard_AlGray | Hapan_Shipyard_Corr | Hapan_Shipyard_Thane |
+		Hutt_Shipyard_Level_One | Hutt_Shipyard_Level_Two | Hutt_Shipyard_Level_Three | Hutt_Shipyard_Level_Four,
 		DUMMY_CHIEFOFSTATE_GAVRISOM | INFLUENCE_TEN | INFLUENCE_NINE,
 		AI_Category_Dummy | Non_Capital_Category_Dummy		
 		</Required_Special_Structures>
@@ -102,7 +107,7 @@
 
 	<SpaceUnit Name="C_Type_Influence">
 		<Variant_Of_Existing_Type>Template_C_type_Thrustship</Variant_Of_Existing_Type>
-		<Affiliation>Rebel, Empire, EmpireoftheHand, Greater_Maldrood, Zsinj_Empire, Eriadu_Authority, Pentastar, Corporate_Sector, Hapes_Consortium</Affiliation>
+		<Affiliation>Rebel, Empire, EmpireoftheHand, Greater_Maldrood, Zsinj_Empire, Eriadu_Authority, Pentastar, Corporate_Sector, Hapes_Consortium, Hutt_Cartels</Affiliation>
 		<Required_Star_Base_Level>1</Required_Star_Base_Level>
 		<GUI_Row> 0 </GUI_Row>
 		<Required_Special_Structures>
@@ -114,7 +119,8 @@
 		Eriadu_Shipyard_Level_One | Eriadu_Shipyard_Level_Two | Eriadu_Shipyard_Level_Three | Eriadu_Shipyard_Level_Four |
 		Pentastar_Shipyard_Level_One | Pentastar_Shipyard_Level_Two | Pentastar_Shipyard_Level_Three | Pentastar_Shipyard_Level_Four |
 		CSA_Shipyard_Level_One | CSA_Shipyard_Level_Two | CSA_Shipyard_Level_Three | CSA_Shipyard_Level_Four |
-		Hapan_Shipyard_Royal | Hapan_Shipyard_Galney | Hapan_Shipyard_Requud | Hapan_Shipyard_Maluri | Hapan_Shipyard_AlGray | Hapan_Shipyard_Corr | Hapan_Shipyard_Thane,
+		Hapan_Shipyard_Royal | Hapan_Shipyard_Galney | Hapan_Shipyard_Requud | Hapan_Shipyard_Maluri | Hapan_Shipyard_AlGray | Hapan_Shipyard_Corr | Hapan_Shipyard_Thane |
+		Hutt_Shipyard_Level_One | Hutt_Shipyard_Level_Two | Hutt_Shipyard_Level_Three | Hutt_Shipyard_Level_Four,
 		DUMMY_CHIEFOFSTATE_GAVRISOM | INFLUENCE_TEN | INFLUENCE_NINE,
 		AI_Category_Dummy | Non_Capital_Category_Dummy		
 		</Required_Special_Structures>
@@ -128,7 +134,7 @@
 
 	<SpaceUnit Name="Komrk_Gunship_Squadron_Influence">
 		<Variant_Of_Existing_Type>Komrk_Gunship_Squadron</Variant_Of_Existing_Type>
-		<Affiliation>Rebel, Empire, EmpireoftheHand, Greater_Maldrood, Zsinj_Empire, Eriadu_Authority, Pentastar, Corporate_Sector, Hapes_Consortium</Affiliation>
+		<Affiliation>Rebel, Empire, EmpireoftheHand, Greater_Maldrood, Zsinj_Empire, Eriadu_Authority, Pentastar, Corporate_Sector, Hapes_Consortium, Hutt_Cartels</Affiliation>
 		<Required_Star_Base_Level>1</Required_Star_Base_Level>
 		<GUI_Row> 0 </GUI_Row>
 		<Required_Special_Structures>
@@ -140,7 +146,8 @@
 		Eriadu_Shipyard_Level_Three |
 		Pentastar_Shipyard_Level_Three | 
 		CSA_Shipyard_Level_Three |
-		Hapan_Shipyard_Royal | Hapan_Shipyard_Galney | Hapan_Shipyard_Requud | Hapan_Shipyard_Maluri | Hapan_Shipyard_AlGray | Hapan_Shipyard_Corr | Hapan_Shipyard_Thane,
+		Hapan_Shipyard_Royal | Hapan_Shipyard_Galney | Hapan_Shipyard_Requud | Hapan_Shipyard_Maluri | Hapan_Shipyard_AlGray | Hapan_Shipyard_Corr | Hapan_Shipyard_Thane |
+		Hutt_Shipyard_Level_One | Hutt_Shipyard_Level_Two | Hutt_Shipyard_Level_Three | Hutt_Shipyard_Level_Four,
 		DUMMY_CHIEFOFSTATE_GAVRISOM | INFLUENCE_TEN | INFLUENCE_NINE | INFLUENCE_EIGHT | INFLUENCE_SEVEN,
 		AI_Category_Dummy | Non_Capital_Category_Dummy
 		</Required_Special_Structures>
@@ -150,7 +157,7 @@
 
 	<SpaceUnit Name="Keldabe_Influence">
 		<Variant_Of_Existing_Type>Template_Keldabe</Variant_Of_Existing_Type>
-		<Affiliation>Rebel, Empire, EmpireoftheHand, Greater_Maldrood, Zsinj_Empire, Eriadu_Authority, Pentastar, Corporate_Sector, Hapes_Consortium</Affiliation>
+		<Affiliation>Rebel, Empire, EmpireoftheHand, Greater_Maldrood, Zsinj_Empire, Eriadu_Authority, Pentastar, Corporate_Sector, Hapes_Consortium, Hutt_Cartels</Affiliation>
 		<Required_Star_Base_Level>1</Required_Star_Base_Level>
 		<GUI_Row> 0 </GUI_Row>
 		<Required_Special_Structures>
@@ -162,7 +169,8 @@
 		Eriadu_Shipyard_Level_Three |
 		Pentastar_Shipyard_Level_Three | 
 		CSA_Shipyard_Level_Three |
-		Hapan_Shipyard_Royal | Hapan_Shipyard_Galney | Hapan_Shipyard_Requud | Hapan_Shipyard_Maluri | Hapan_Shipyard_AlGray | Hapan_Shipyard_Corr | Hapan_Shipyard_Thane,
+		Hapan_Shipyard_Royal | Hapan_Shipyard_Galney | Hapan_Shipyard_Requud | Hapan_Shipyard_Maluri | Hapan_Shipyard_AlGray | Hapan_Shipyard_Corr | Hapan_Shipyard_Thane |
+		Hutt_Shipyard_Level_Three,
 		DUMMY_CHIEFOFSTATE_GAVRISOM | INFLUENCE_TEN,
 		AI_Category_Dummy | Capital_Category_Dummy,
 		</Required_Special_Structures>
@@ -176,7 +184,7 @@
 
 	<SpaceUnit Name="Namana_Cruiser_Influence">
 		<Variant_Of_Existing_Type>Template_Namana_Cruiser</Variant_Of_Existing_Type>
-		<Affiliation>Rebel, Empire, EmpireoftheHand, Greater_Maldrood, Zsinj_Empire, Eriadu_Authority, Pentastar, Corporate_Sector, Hapes_Consortium</Affiliation>
+		<Affiliation>Rebel, Empire, EmpireoftheHand, Greater_Maldrood, Zsinj_Empire, Eriadu_Authority, Pentastar, Corporate_Sector, Hapes_Consortium, Hutt_Cartels</Affiliation>
 		<Required_Star_Base_Level>1</Required_Star_Base_Level>
 		<GUI_Row> 0 </GUI_Row>
 		<Required_Special_Structures>
@@ -188,7 +196,8 @@
 		Eriadu_Shipyard_Level_Two |
 		Pentastar_Shipyard_Level_Two | 
 		CSA_Shipyard_Level_Two |
-		Hapan_Shipyard_Royal | Hapan_Shipyard_Galney | Hapan_Shipyard_Requud | Hapan_Shipyard_Maluri | Hapan_Shipyard_AlGray | Hapan_Shipyard_Corr | Hapan_Shipyard_Thane,
+		Hapan_Shipyard_Royal | Hapan_Shipyard_Galney | Hapan_Shipyard_Requud | Hapan_Shipyard_Maluri | Hapan_Shipyard_AlGray | Hapan_Shipyard_Corr | Hapan_Shipyard_Thane |
+		Hutt_Shipyard_Level_Two,
 		DUMMY_CHIEFOFSTATE_GAVRISOM | INFLUENCE_TEN | INFLUENCE_NINE | INFLUENCE_EIGHT | INFLUENCE_SEVEN,
 		AI_Category_Dummy | Non_Capital_Category_Dummy		
 		</Required_Special_Structures>
@@ -200,7 +209,7 @@
 
 	<SpaceUnit Name="Bakura_Destroyer_Influence">
 		<Variant_Of_Existing_Type>Template_Bakura_Destroyer</Variant_Of_Existing_Type>
-		<Affiliation>Rebel, Empire, EmpireoftheHand, Greater_Maldrood, Zsinj_Empire, Eriadu_Authority, Pentastar, Corporate_Sector, Hapes_Consortium</Affiliation>
+		<Affiliation>Rebel, Empire, EmpireoftheHand, Greater_Maldrood, Zsinj_Empire, Eriadu_Authority, Pentastar, Corporate_Sector, Hapes_Consortium, Hutt_Cartels</Affiliation>
 		<Required_Star_Base_Level>1</Required_Star_Base_Level>
 		<GUI_Row> 0 </GUI_Row>
 		<Required_Special_Structures>
@@ -212,7 +221,8 @@
 		Eriadu_Shipyard_Level_Two |
 		Pentastar_Shipyard_Level_Two | 
 		CSA_Shipyard_Level_Two |
-		Hapan_Shipyard_Royal | Hapan_Shipyard_Galney | Hapan_Shipyard_Requud | Hapan_Shipyard_Maluri | Hapan_Shipyard_AlGray | Hapan_Shipyard_Corr | Hapan_Shipyard_Thane,
+		Hapan_Shipyard_Royal | Hapan_Shipyard_Galney | Hapan_Shipyard_Requud | Hapan_Shipyard_Maluri | Hapan_Shipyard_AlGray | Hapan_Shipyard_Corr | Hapan_Shipyard_Thane |
+		Hutt_Shipyard_Level_Two,
 		DUMMY_CHIEFOFSTATE_GAVRISOM | INFLUENCE_TEN,
 		AI_Category_Dummy | Heavy_Frigate_Category_Dummy
 		</Required_Special_Structures>
@@ -224,7 +234,7 @@
 
 	<SpaceUnit Name="Munificent_Influence">
 		<Variant_Of_Existing_Type>Template_Munificent</Variant_Of_Existing_Type>
-		<Affiliation>Rebel, Empire, EmpireoftheHand, Greater_Maldrood, Zsinj_Empire, Eriadu_Authority, Pentastar, Corporate_Sector, Hapes_Consortium</Affiliation>
+		<Affiliation>Rebel, Empire, EmpireoftheHand, Greater_Maldrood, Zsinj_Empire, Eriadu_Authority, Pentastar, Corporate_Sector, Hapes_Consortium, Hutt_Cartels</Affiliation>
 		<Required_Star_Base_Level>1</Required_Star_Base_Level>
 		<GUI_Row> 0 </GUI_Row>
 		<Required_Special_Structures>
@@ -236,7 +246,8 @@
 		Eriadu_Shipyard_Level_Two |
 		Pentastar_Shipyard_Level_Two | 
 		CSA_Shipyard_Level_Two |
-		Hapan_Shipyard_Royal | Hapan_Shipyard_Galney | Hapan_Shipyard_Requud | Hapan_Shipyard_Maluri | Hapan_Shipyard_AlGray | Hapan_Shipyard_Corr | Hapan_Shipyard_Thane,
+		Hapan_Shipyard_Royal | Hapan_Shipyard_Galney | Hapan_Shipyard_Requud | Hapan_Shipyard_Maluri | Hapan_Shipyard_AlGray | Hapan_Shipyard_Corr | Hapan_Shipyard_Thane |
+		Hutt_Shipyard_Level_Two,
 		DUMMY_CHIEFOFSTATE_GAVRISOM | INFLUENCE_TEN | INFLUENCE_NINE,
 		AI_Category_Dummy | Heavy_Frigate_Category_Dummy		
 		</Required_Special_Structures>
@@ -247,55 +258,6 @@
 		<Reserve_Spawned_Units_Tech_0>TIE_Fighter_Squadron, 1</Reserve_Spawned_Units_Tech_0>
 		<Reserve_Spawned_Units_Tech_0>Skipray_Squadron_Half, 1</Reserve_Spawned_Units_Tech_0>
 		<Tech_Level>0</Tech_Level>
-
-		<SFXEvent_Build_Started>EHD_Build_Vehicle</SFXEvent_Build_Started>
-		<SFXEvent_Build_Cancelled>EHD_Unit_Canceled</SFXEvent_Build_Cancelled>
-		<SFXEvent_Build_Complete>Unit_Complete_Munificent</SFXEvent_Build_Complete>
-		<SFXEvent_Bombard_Select_Target/>
-		<SFXEvent_Bombard_Incoming>Orbital_Bombardment_SFX</SFXEvent_Bombard_Incoming>
-
-		<SFXEvent_Select>Unit_Select_Munificent</SFXEvent_Select>
-		<SFXEvent_Move>Unit_Move_Munificent</SFXEvent_Move>
-		<SFXEvent_Fleet_Move>Unit_Move_Munificent</SFXEvent_Fleet_Move>
-		<SFXEvent_Attack>Unit_Attack_Munificent</SFXEvent_Attack>
-		<SFXEvent_Guard>Unit_Select_Munificent</SFXEvent_Guard>
-		<SFXEvent_Barrage>Unit_Attack_Munificent</SFXEvent_Barrage>
-		<SFXEvent_Move_Into_Asteroid_Field> Unit_Move_Munificent </SFXEvent_Move_Into_Asteroid_Field>
-		<SFXEvent_Move_Into_Nebula> Unit_Move_Munificent </SFXEvent_Move_Into_Nebula>
-
-		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_LASER, Unit_Attack_Munificent </SFXEvent_Attack_Hardpoint>
-		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MISSILE, Unit_Attack_Munificent </SFXEvent_Attack_Hardpoint>
-		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_TORPEDO, Unit_Attack_Munificent </SFXEvent_Attack_Hardpoint>
-		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_ION_CANNON, Unit_Attack_Munificent </SFXEvent_Attack_Hardpoint>
-		<SFXEvent_Attack_Hardpoint> HARD_POINT_SHIELD_GENERATOR, Unit_Attack_Munificent </SFXEvent_Attack_Hardpoint>
-		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENGINE, Unit_Attack_Munificent </SFXEvent_Attack_Hardpoint>
-		<SFXEvent_Attack_Hardpoint> HARD_POINT_GRAVITY_WELL, Unit_Attack_Munificent </SFXEvent_Attack_Hardpoint>
-		<SFXEvent_Attack_Hardpoint> HARD_POINT_FIGHTER_BAY, Unit_Attack_Munificent </SFXEvent_Attack_Hardpoint>
-		<SFXEvent_Attack_Hardpoint> HARD_POINT_TRACTOR_BEAM, Unit_Attack_Munificent </SFXEvent_Attack_Hardpoint>
-		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MASS_DRIVER, Unit_Attack_Munificent </SFXEvent_Attack_Hardpoint>
-		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_SPECIAL, Unit_Attack_Munificent </SFXEvent_Attack_Hardpoint>
-		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENABLE_SPECIAL_ABILITY, Unit_Attack_Munificent </SFXEvent_Attack_Hardpoint>
-		<SFXEvent_Attack_Hardpoint> HARD_POINT_DUMMY_ART, Unit_Attack_Munificent </SFXEvent_Attack_Hardpoint>
-
-		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_LASER, null </SFXEvent_Hardpoint_Destroyed>
-		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_MISSILE, null </SFXEvent_Hardpoint_Destroyed>
-		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_TORPEDO, null </SFXEvent_Hardpoint_Destroyed>
-		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_ION_CANNON, null </SFXEvent_Hardpoint_Destroyed>
-		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_SHIELD_GENERATOR, null </SFXEvent_Hardpoint_Destroyed>
-		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENGINE, null </SFXEvent_Hardpoint_Destroyed>
-		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_GRAVITY_WELL, null </SFXEvent_Hardpoint_Destroyed>
-		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_FIGHTER_BAY, null </SFXEvent_Hardpoint_Destroyed>
-		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_TRACTOR_BEAM, null </SFXEvent_Hardpoint_Destroyed>
-		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_MASS_DRIVER, null </SFXEvent_Hardpoint_Destroyed>
-		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_SPECIAL, null </SFXEvent_Hardpoint_Destroyed>
-		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENABLE_SPECIAL_ABILITY, null </SFXEvent_Hardpoint_Destroyed>
-		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_DUMMY_ART, null </SFXEvent_Hardpoint_Destroyed>
-
-		<SFXEvent_Engine_Idle_Loop> Unit_Nebulon_Idle_Engine_Loop </SFXEvent_Engine_Idle_Loop>
-		<SFXEvent_Engine_Moving_Loop> Unit_Nebulon_Moving_Engine_Loop </SFXEvent_Engine_Moving_Loop>
-		<SFXEvent_Engine_Cinematic_Focus_Loop> Unit_Nebulon_Cinematic_Engine_Loop </SFXEvent_Engine_Cinematic_Focus_Loop>
-		<SFXEvent_Damaged_By_Asteroid> SFX_Asteroid_Detonation </SFXEvent_Damaged_By_Asteroid>
-		<Death_SFXEvent_Start_Die>Unit_Cruiser_Death_SFX</Death_SFXEvent_Start_Die>
     </SpaceUnit>
 
 	<!-- ******************************************************************** -->
@@ -305,9 +267,10 @@
 	<GroundCompany Name="SD_6_Droid_Company">
 		<Variant_Of_Existing_Type>SD_6_Hulk_Infantry_Droid_Company</Variant_Of_Existing_Type>
 		<Tech_Level>0</Tech_Level>
-		<Affiliation>Rebel, Empire, EmpireoftheHand, Greater_Maldrood, Zsinj_Empire, Eriadu_Authority, Pentastar, Corporate_Sector, Hapes_Consortium</Affiliation>
+		<Affiliation>Rebel, Empire, EmpireoftheHand, Greater_Maldrood, Zsinj_Empire, Eriadu_Authority, Pentastar, Corporate_Sector, Hapes_Consortium, Hutt_Cartels</Affiliation>
 		<Required_Special_Structures> DUMMY_CHIEFOFSTATE_GAVRISOM | INFLUENCE_TEN | INFLUENCE_NINE | INFLUENCE_EIGHT | INFLUENCE_SEVEN </Required_Special_Structures>
 		<Required_Planets>Balmorra</Required_Planets>
+		<GUI_Row> 0 </GUI_Row>
 		
 		<Required_Ground_Base_Level>1</Required_Ground_Base_Level>
 		
@@ -324,9 +287,10 @@
 	<GroundCompany Name="SD_9_Droid_Company">
 		<Variant_Of_Existing_Type>SD_9_Battle_Droid_Company</Variant_Of_Existing_Type>
 		<Tech_Level>0</Tech_Level>
-		<Affiliation>Rebel, Empire, EmpireoftheHand, Greater_Maldrood, Zsinj_Empire, Eriadu_Authority, Pentastar, Corporate_Sector, Hapes_Consortium</Affiliation>
+		<Affiliation>Rebel, Empire, EmpireoftheHand, Greater_Maldrood, Zsinj_Empire, Eriadu_Authority, Pentastar, Corporate_Sector, Hapes_Consortium, Hutt_Cartels</Affiliation>
 		<Required_Special_Structures> DUMMY_CHIEFOFSTATE_GAVRISOM | INFLUENCE_TEN | INFLUENCE_NINE | INFLUENCE_EIGHT </Required_Special_Structures>
 		<Required_Planets>Balmorra</Required_Planets>
+		<GUI_Row> 0 </GUI_Row>
 		
 		<Required_Ground_Base_Level>1</Required_Ground_Base_Level>
 		
@@ -343,9 +307,10 @@
 	<GroundCompany Name="SD_10_Droid_Company">
 		<Variant_Of_Existing_Type>SD_10_Battle_Droid_Company</Variant_Of_Existing_Type>
 		<Tech_Level>0</Tech_Level>
-		<Affiliation>Rebel, Empire, EmpireoftheHand, Greater_Maldrood, Zsinj_Empire, Eriadu_Authority, Pentastar, Corporate_Sector, Hapes_Consortium</Affiliation>
+		<Affiliation>Rebel, Empire, EmpireoftheHand, Greater_Maldrood, Zsinj_Empire, Eriadu_Authority, Pentastar, Corporate_Sector, Hapes_Consortium, Hutt_Cartels</Affiliation>
 		<Required_Special_Structures> DUMMY_CHIEFOFSTATE_GAVRISOM | INFLUENCE_TEN | INFLUENCE_NINE </Required_Special_Structures>
 		<Required_Planets>Balmorra</Required_Planets>
+		<GUI_Row> 0 </GUI_Row>
 		
 		<Required_Ground_Base_Level>1</Required_Ground_Base_Level>
 		
@@ -362,9 +327,10 @@
 	<GroundCompany Name="X1_Viper_Company">
 		<Variant_Of_Existing_Type>X1_Viper_Droid_Company</Variant_Of_Existing_Type>
 		<Tech_Level>0</Tech_Level>
-		<Affiliation>Rebel, Empire, EmpireoftheHand, Greater_Maldrood, Zsinj_Empire, Eriadu_Authority, Pentastar, Corporate_Sector, Hapes_Consortium</Affiliation>
+		<Affiliation>Rebel, Empire, EmpireoftheHand, Greater_Maldrood, Zsinj_Empire, Eriadu_Authority, Pentastar, Corporate_Sector, Hapes_Consortium, Hutt_Cartels</Affiliation>
 		<Required_Special_Structures> DUMMY_CHIEFOFSTATE_GAVRISOM | INFLUENCE_TEN </Required_Special_Structures>
 		<Required_Planets>Balmorra</Required_Planets>
+		<GUI_Row> 0 </GUI_Row>
 		
 		<Required_Ground_Base_Level>1</Required_Ground_Base_Level>
 		
@@ -381,10 +347,11 @@
 	<GroundCompany Name="Storm_Cloud_Car_Company">
 		<Variant_Of_Existing_Type>Storm_Cloud_Car_Group</Variant_Of_Existing_Type>
 		<Build_Initially_Locked>No</Build_Initially_Locked>
-		<Affiliation>Rebel, Empire, EmpireoftheHand, Greater_Maldrood, Zsinj_Empire, Eriadu_Authority, Pentastar, Corporate_Sector, Hapes_Consortium</Affiliation>
+		<Affiliation>Rebel, Empire, EmpireoftheHand, Greater_Maldrood, Zsinj_Empire, Eriadu_Authority, Pentastar, Corporate_Sector, Hapes_Consortium, Hutt_Cartels</Affiliation>
 		<Required_Special_Structures> DUMMY_CHIEFOFSTATE_GAVRISOM | INFLUENCE_TEN | INFLUENCE_NINE | INFLUENCE_EIGHT | INFLUENCE_SEVEN </Required_Special_Structures>
 		<Required_Planets>Bespin</Required_Planets>
 		<Build_Initially_Locked>No</Build_Initially_Locked>
+		<GUI_Row> 0 </GUI_Row>
 		
 		<Required_Ground_Base_Level>1</Required_Ground_Base_Level>
 		
@@ -397,13 +364,74 @@
 		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->
 		
 	</GroundCompany>
+	
+	<GroundCompany Name="Ailon_Nova_Guard_Company">
+		<Variant_Of_Existing_Type>Ailon_Nova_Guard_Squad</Variant_Of_Existing_Type>
+		<Tech_Level>0</Tech_Level>
+		<Affiliation>Rebel, Empire, EmpireoftheHand, Greater_Maldrood, Zsinj_Empire, Eriadu_Authority, Pentastar, Corporate_Sector, Hapes_Consortium, Hutt_Cartels</Affiliation>
+		<Required_Special_Structures> DUMMY_CHIEFOFSTATE_GAVRISOM | INFLUENCE_TEN | INFLUENCE_NINE | INFLUENCE_EIGHT | INFLUENCE_SEVEN </Required_Special_Structures>
+		<Required_Planets>Ailon</Required_Planets>
+		<GUI_Row> 0 </GUI_Row>
+		
+		<Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+		
+		<!--<MULTIPLAYER SKEAMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>240</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>10</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites>Ground_Level_Four_Tech_Upgrade</Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Upgrades</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->
+		
+	</GroundCompany>
+	
+	<GroundCompany Name="Sun_Guard_Company">
+		<Variant_Of_Existing_Type>Sun_Guard_Squad</Variant_Of_Existing_Type>
+		<Tech_Level>0</Tech_Level>
+		<Affiliation>Rebel, Empire, EmpireoftheHand, Greater_Maldrood, Zsinj_Empire, Eriadu_Authority, Pentastar, Corporate_Sector, Hapes_Consortium, Hutt_Cartels</Affiliation>
+		<Required_Special_Structures> DUMMY_CHIEFOFSTATE_GAVRISOM | INFLUENCE_TEN | INFLUENCE_NINE | INFLUENCE_EIGHT | INFLUENCE_SEVEN </Required_Special_Structures>
+		<Required_Planets>Thyrsus</Required_Planets>
+		<GUI_Row> 0 </GUI_Row>
+		
+		<Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+		
+		<!--<MULTIPLAYER SKEAMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>235</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>11</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites>Ground_Level_Two_Tech_Upgrade</Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Upgrades</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->
+		
+	</GroundCompany>
+	
+	<GroundCompany Name="Nimbus_Commando_Company">
+		<Variant_Of_Existing_Type>Nimbus_Commando_Squad</Variant_Of_Existing_Type>
+		<Tech_Level>0</Tech_Level>
+		<Affiliation>Rebel, Empire, EmpireoftheHand, Greater_Maldrood, Zsinj_Empire, Eriadu_Authority, Pentastar, Corporate_Sector, Hapes_Consortium, Hutt_Cartels</Affiliation>
+		<Required_Special_Structures> DUMMY_CHIEFOFSTATE_GAVRISOM | INFLUENCE_TEN | INFLUENCE_NINE | INFLUENCE_EIGHT </Required_Special_Structures>
+		<Required_Planets>Jabiim</Required_Planets>
+		<GUI_Row> 0 </GUI_Row>
+		
+		<Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+		
+			<!--<MULTIPLAYER SKEAMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>165</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>9</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites>Ground_Level_Three_Tech_Upgrade</Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Upgrades</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->
+		
+	</GroundCompany>
 
 	<GroundCompany Name="Mandalorian_Soldier_Company">
 		<Variant_Of_Existing_Type>Mandalorian_Soldier_Team</Variant_Of_Existing_Type>
 		<Tech_Level>0</Tech_Level>
-		<Affiliation>Rebel, Empire, EmpireoftheHand, Greater_Maldrood, Zsinj_Empire, Eriadu_Authority, Pentastar, Corporate_Sector, Hapes_Consortium</Affiliation>
+		<Affiliation>Rebel, Empire, EmpireoftheHand, Greater_Maldrood, Zsinj_Empire, Eriadu_Authority, Pentastar, Corporate_Sector, Hapes_Consortium, Hutt_Cartels</Affiliation>
 		<Required_Special_Structures> DUMMY_CHIEFOFSTATE_GAVRISOM | INFLUENCE_TEN | INFLUENCE_NINE | INFLUENCE_EIGHT | INFLUENCE_SEVEN </Required_Special_Structures>
 		<Required_Planets>Mandalore</Required_Planets>
+		<GUI_Row> 0 </GUI_Row>
 		
 		<Required_Ground_Base_Level>1</Required_Ground_Base_Level>
 		
@@ -420,9 +448,10 @@
 	<GroundCompany Name="Mandalorian_Commando_Company">
 		<Variant_Of_Existing_Type>Mandalorian_Commando_Team</Variant_Of_Existing_Type>
 		<Tech_Level>0</Tech_Level>
-		<Affiliation>Rebel, Empire, EmpireoftheHand, Greater_Maldrood, Zsinj_Empire, Eriadu_Authority, Pentastar, Corporate_Sector, Hapes_Consortium</Affiliation>
+		<Affiliation>Rebel, Empire, EmpireoftheHand, Greater_Maldrood, Zsinj_Empire, Eriadu_Authority, Pentastar, Corporate_Sector, Hapes_Consortium, Hutt_Cartels</Affiliation>
 		<Required_Special_Structures> DUMMY_CHIEFOFSTATE_GAVRISOM | INFLUENCE_TEN | INFLUENCE_NINE | INFLUENCE_EIGHT </Required_Special_Structures>
 		<Required_Planets>Mandalore</Required_Planets>
+		<GUI_Row> 0 </GUI_Row>
 		
 		<Required_Ground_Base_Level>1</Required_Ground_Base_Level>
 		
@@ -438,7 +467,7 @@
 
 	<GroundCompany Name="Canderous_Assault_Tank_Company">
 
-		<Text_ID>TEXT_UNIT_CANDEROUS_TANK_COMPANY</Text_ID>
+		<Text_ID>TEXT_UNIT_CANDEROUS_TANK</Text_ID>
 		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_HEAVY_VEHICLE</Encyclopedia_Unit_Class>
 		<Encyclopedia_Text>
 		TEXT_TOOLTIP_CANDEROUS_TANK
@@ -460,7 +489,7 @@
 		<Is_Dummy>Yes</Is_Dummy>
 		<Is_Escort>yes</Is_Escort>
 
-		<GUI_Row> 1 </GUI_Row>
+		<GUI_Row> 0 </GUI_Row>
 		<Build_Cost_Credits>950</Build_Cost_Credits>
 		<Build_Time_Seconds>40</Build_Time_Seconds>
 		<Slice_Cost_Credits />
@@ -476,7 +505,6 @@
 		<Required_Planets>Mandalore</Required_Planets>
 
 		<Tech_Level>0</Tech_Level>
-		<Required_Timeline>0</Required_Timeline>
 		<Required_Ground_Base_Level>1</Required_Ground_Base_Level>
 
 		<Affiliation> Rebel, Empire, EmpireoftheHand, Greater_Maldrood, Zsinj_Empire, Eriadu_Authority, Pentastar, Corporate_Sector, Hapes_Consortium, Hutt_Cartels </Affiliation>
@@ -486,7 +514,7 @@
 
 		<Create_Team_Type />
 		<Max_Squad_Size> 1 </Max_Squad_Size>
-		<Company_Transport_Unit>TZ86_Vehicle_Transport</Company_Transport_Unit>
+		<Company_Transport_Unit>TZ86_Vehicle_Transport_Tanks</Company_Transport_Unit>
 
 		<SFXEvent_Build_Started>UHD_Build_Vehicle</SFXEvent_Build_Started>
 		<SFXEvent_Build_Cancelled>UHD_Vehicle_Canceled</SFXEvent_Build_Cancelled>
@@ -535,7 +563,7 @@
 		<Is_Dummy>Yes</Is_Dummy>
 		<Is_Escort>no</Is_Escort>
 
-		<GUI_Row> 1 </GUI_Row>
+		<GUI_Row> 0 </GUI_Row>
 		<Build_Cost_Credits>500</Build_Cost_Credits>
 		<Build_Time_Seconds>15</Build_Time_Seconds>
 		<Slice_Cost_Credits/>
@@ -547,7 +575,6 @@
 		<Population_Value>1</Population_Value>
 
 		<Tech_Level>0</Tech_Level>
-		<Required_Timeline>0</Required_Timeline>
 		<Required_Ground_Base_Level>1</Required_Ground_Base_Level>
 		
 		<Affiliation>Rebel, Empire, EmpireoftheHand, Greater_Maldrood, Zsinj_Empire, Eriadu_Authority, Pentastar, Corporate_Sector, Hapes_Consortium, Hutt_Cartels</Affiliation>
@@ -561,7 +588,7 @@
 		<Max_Squad_Size> 1 </Max_Squad_Size>
 		<Company_Units>Destroyer_Droid_II, Destroyer_Droid_II, Destroyer_Droid_II, Destroyer_Droid_II</Company_Units>
 		<Company_Units>Destroyer_Droid_II, Destroyer_Droid_II, Destroyer_Droid_II, Destroyer_Droid_II</Company_Units>
-		<Company_Transport_Unit>TZ86_Vehicle_Transport</Company_Transport_Unit>
+		<Company_Transport_Unit>RZ52_Infantry_Shuttle_Troops</Company_Transport_Unit>
 
 		<SFXEvent_Build_Started>UHD_Build_Vehicle</SFXEvent_Build_Started>
 		<SFXEvent_Build_Cancelled>UHD_Vehicle_Canceled</SFXEvent_Build_Cancelled>
@@ -582,6 +609,74 @@
 		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
 		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->
 		
+	</GroundCompany>
+
+    <GroundCompany Name="Wookiee_Flutter_Company">
+		<Text_ID>TEXT_UNIT_WOOKFLUTTER_COMPANY</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_LIGHT_AIRSPEEDER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_WOOKFLUTTER
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_WOOKFLUTTER_COMPANY
+		TEXT_TOOLTIP_WOOKFLUTTER_HEALTH
+		TEXT_TOOLTIP_WOOKFLUTTER_MOVE
+		TEXT_TOOLTIP_WOOKFLUTTER_WEAP1
+		</Encyclopedia_Text>
+		<Icon_Name>i_button_wookflutter.tga</Icon_Name>
+
+		<Autoresolve_Health>40</Autoresolve_Health>
+		<Damage>24</Damage>
+
+		<Ship_Class>walker</Ship_Class>
+		<Formation_Priority>1</Formation_Priority>
+		<Is_Dummy>Yes</Is_Dummy>
+		<Is_Escort>yes</Is_Escort>
+
+		<GUI_Row> 0 </GUI_Row>
+		<Build_Cost_Credits>350</Build_Cost_Credits>
+		<Build_Time_Seconds>20</Build_Time_Seconds>
+		<Slice_Cost_Credits>2000</Slice_Cost_Credits>
+		<Build_Time_Reduced_By_Multiple_Factories> Yes </Build_Time_Reduced_By_Multiple_Factories>
+		<Build_Tab_Land_Units>Yes</Build_Tab_Land_Units>
+		<Build_Initially_Locked>No</Build_Initially_Locked>
+		<Build_Can_Be_Unlocked_By_Slicer>No</Build_Can_Be_Unlocked_By_Slicer>
+		<Tactical_Build_Cost_Multiplayer>400</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>15</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites>EC_Level_Two_Tech_Upgrade</Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<Piracy_Value_Credits>50</Piracy_Value_Credits>
+		<Score_Cost_Credits>225</Score_Cost_Credits>
+		<Population_Value>1</Population_Value>
+
+		<Tech_Level>0</Tech_Level>
+		<Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+		<Affiliation>Rebel, Empire, EmpireoftheHand, Greater_Maldrood, Zsinj_Empire, Eriadu_Authority, Pentastar, Corporate_Sector, Hapes_Consortium, Hutt_Cartels</Affiliation>
+		<Required_Special_Structures> DUMMY_CHIEFOFSTATE_GAVRISOM | INFLUENCE_TEN | INFLUENCE_NINE | INFLUENCE_EIGHT | INFLUENCE_SEVEN </Required_Special_Structures>
+		<Required_Planets>Kashyyyk</Required_Planets>
+
+		<Political_Control/>
+
+		<Behavior>DUMMY_GROUND_COMPANY</Behavior>
+
+		<Create_Team_Type/>
+		<Max_Squad_Size>1</Max_Squad_Size>
+		<Company_Transport_Unit>Gallofree_Transport</Company_Transport_Unit>
+
+		<SFXEvent_Build_Started>RHD_Build_Vehicle</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Vehicle_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Select_Wookie</SFXEvent_Build_Complete>
+		<SFXEvent_Fleet_Move>Unit_Move_Wookie</SFXEvent_Fleet_Move>
+
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+
+		<Formation_Prority>1</Formation_Prority>
+		<Company_Units>Wookiee_Flutter, Wookiee_Flutter, Wookiee_Flutter, Wookiee_Flutter, Wookiee_Flutter, Wookiee_Flutter, Wookiee_Flutter, Wookiee_Flutter</Company_Units>
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>HUNT</Type>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+		<Maintenance_Cost>0.05</Maintenance_Cost>
 	</GroundCompany>
 
 </InfluenceRewards>

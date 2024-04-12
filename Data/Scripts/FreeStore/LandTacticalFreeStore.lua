@@ -84,16 +84,16 @@ function unit_has_target(object, target)
     if Should_Crush(object, target) then
 		object.Move_To(target.Get_Position())
     end
+	
+	if Service_Garrison(object) then
+        return
+    end
 
     if Service_Kite(object) then
         return
     end
 
     if Service_Heal(object, 0.6) then
-        return
-    end
-
-    if Service_Garrison(object) then
         return
     end
 
@@ -106,6 +106,10 @@ function unit_idle(object)
 
     -- Reset some abilities
     object.Activate_Ability("SPREAD_OUT", false)
+	
+	if Service_Garrison(object) then
+        return
+    end
 
     if Service_Attack(object) then
         return
@@ -116,10 +120,6 @@ function unit_idle(object)
     end
 
     if Service_Heal(object, 1.0) then
-        return
-    end
-
-    if Service_Garrison(object) then
         return
     end
 
@@ -154,7 +154,7 @@ function Service_Heal(object, health_threshold)
     -- Try to find the nearest healing structure appropriate for this unit
     local fs_healer_property_flag = Get_Special_Healer_Property_Flag(object)
     if not fs_healer_property_flag then
-        if object.Is_Category("Infantry") then
+        if object.Is_Category("Infantry") or object.Is_Category("LandHero") then
             fs_healer_property_flag = "HealsInfantry"
         elseif object.Is_Category("Vehicle") or object.Is_Category("Air") then
             fs_healer_property_flag = "HealsVehicles"
@@ -242,7 +242,6 @@ end
 ---Makes units engage enemies
 ---@param object GameObject
 function Service_Attack(object)
-
     --Move to the enemy position rather than the enemy itself in order to leave us free
     --to run autonomous targeting.  While this doesn't provide chase behavior we're probably
     --repeating this enough that we don't care

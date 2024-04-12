@@ -1,7 +1,7 @@
 <?xml version="1.0" ?>
-<Remnant_Space_Units>
+<Dummy_Structures>
 
-	<SpaceUnit Name="Deconstruct_Economic">
+	<DummyStructure Name="Deconstruct_Economic">
 	
 		<Variant_Of_Existing_Type>Template_Deconstruct</Variant_Of_Existing_Type>
 		<Text_ID>TEXT_DECONSTRUCT_STRUCTURE_ECONOMIC</Text_ID>
@@ -28,14 +28,14 @@
 		Black_15,
 		AI_Category_Dummy | Structure_Category_Dummy
 		</Required_Special_Structures>
-		<Affiliation>Empire, Underworld, EmpireoftheHand, Rebel,  Pentastar, Zsinj_Empire, Hapes_Consortium, Eriadu_Authority, Greater_Maldrood, Corporate_Sector, SsiRuuvi_Imperium</Affiliation>
+		<Affiliation>Empire, Rebel, Hutt_Cartels, Underworld, EmpireoftheHand, Pentastar, Greater_Maldrood, Zsinj_Empire, Hapes_Consortium, Eriadu_Authority, Corporate_Sector, SsiRuuvi_Imperium</Affiliation>
 		<Icon_Name>i_button_scrap_economic.tga</Icon_Name>
 
 		<Population_Value>0</Population_Value>
 
-	</SpaceUnit>
+	</DummyStructure>
 	
-	<SpaceUnit Name="Deconstruct_Construction">
+	<DummyStructure Name="Deconstruct_Construction">
 	
 		<Variant_Of_Existing_Type>Template_Deconstruct</Variant_Of_Existing_Type>
 		<Text_ID>TEXT_DECONSTRUCT_STRUCTURE_CONSTRUCTION</Text_ID>
@@ -65,6 +65,7 @@
 									CSA_Shipyard_Level_One | 
 									Chiss_Shipyard_Level_One | 
 									EotH_Shipyard_Level_One | 
+									Hutt_Shipyard_Level_One |
 
 		Generic_Shipyard_Level_Two | 
 									NewRepublic_Shipyard_Level_Two | 
@@ -77,6 +78,7 @@
 									CSA_Shipyard_Level_Two | 
 									Chiss_Shipyard_Level_Two | 
 									EotH_Shipyard_Level_Two | 
+									Hutt_Shipyard_Level_Two | 
 		
 		Generic_Shipyard_Level_Three | 
 									NewRepublic_Shipyard_Level_Three | 
@@ -88,6 +90,8 @@
 									CSA_Shipyard_Level_Three | 
 									Chiss_Shipyard_Level_Three | 
 									EotH_Shipyard_Level_Three | 
+									Hutt_Shipyard_Level_Three | 
+									
 		Generic_Shipyard_Level_Four | 
 									NewRepublic_Shipyard_Level_Four | 
 									Empire_Shipyard_Level_Four | 
@@ -99,6 +103,7 @@
 									CSA_Shipyard_Level_Four | 
 									Chiss_Shipyard_Level_Four | 
 									EotH_Shipyard_Level_Four | 
+									Hutt_Shipyard_Level_Four | 
 									
 									Hapan_Shipyard_Royal | 
 									Hapan_Shipyard_Thane | 
@@ -110,13 +115,13 @@
 									CSA_Ship_Market,
 		AI_Category_Dummy | Structure_Category_Dummy
 		</Required_Special_Structures>
-		<Affiliation>Empire, Underworld, EmpireoftheHand, Rebel,  Pentastar, Zsinj_Empire, Hapes_Consortium, Eriadu_Authority, Greater_Maldrood, Corporate_Sector</Affiliation>
+		<Affiliation>Empire, Rebel, Hutt_Cartels, Underworld, EmpireoftheHand, Pentastar, Greater_Maldrood, Zsinj_Empire, Hapes_Consortium, Eriadu_Authority, Corporate_Sector, SsiRuuvi_Imperium</Affiliation>
 		<Icon_Name>i_button_scrap_production.tga</Icon_Name>
 		
 		<Population_Value>0</Population_Value>
-	</SpaceUnit>
+	</DummyStructure>
 	
-	<SpaceUnit Name="Deconstruct_Defense">
+	<DummyStructure Name="Deconstruct_Defense">
 	
 		<Variant_Of_Existing_Type>Template_Deconstruct</Variant_Of_Existing_Type>
 		<Text_ID>TEXT_DECONSTRUCT_STRUCTURE_DEFENSE</Text_ID>
@@ -149,10 +154,10 @@
 		Aphelion,
 		AI_Category_Dummy | Structure_Category_Dummy
 		</Required_Special_Structures>
-		<Affiliation>Empire, Underworld, EmpireoftheHand, Rebel,  Pentastar, Zsinj_Empire, Hapes_Consortium, Eriadu_Authority, Greater_Maldrood, Corporate_Sector</Affiliation>
+		<Affiliation>Empire, Rebel, Hutt_Cartels, Underworld, EmpireoftheHand, Pentastar, Greater_Maldrood, Zsinj_Empire, Hapes_Consortium, Eriadu_Authority, Corporate_Sector, SsiRuuvi_Imperium</Affiliation>
 		<Icon_Name>i_button_scrap_secondary.tga</Icon_Name>
 		
 		<Population_Value>0</Population_Value>
-	</SpaceUnit>
+	</DummyStructure>
 	
-</Remnant_Space_Units>
+</Dummy_Structures>

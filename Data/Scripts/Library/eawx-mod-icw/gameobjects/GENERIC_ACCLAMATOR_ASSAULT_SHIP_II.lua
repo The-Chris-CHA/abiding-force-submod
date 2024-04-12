@@ -4,6 +4,9 @@ return {
 		["MIYTIL_FIGHTER_SQUADRON"] = {
 			HAPES_CONSORTIUM = {Initial = 1, Reserve = 2}
 		},
+		["DUNELIZARD_FIGHTER_SQUADRON"] = {
+			HUTT_CARTELS = {Initial = 1, Reserve = 2}
+		},
 		["TIE_FIGHTER_SQUADRON"] = {
 			EMPIRE = {Initial = 1, Reserve = 2, TechLevel = LessThan(6), ResearchType = "~V38"},
 			ERIADU_AUTHORITY = {Initial = 1, Reserve = 2},

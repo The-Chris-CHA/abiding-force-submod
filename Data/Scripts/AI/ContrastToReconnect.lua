@@ -58,6 +58,7 @@ function Definitions()
 		"SpaceForce"						
 		,"MinimumTotalSize = 5"				
 		,"Corvette | Frigate | Capital = 100%"
+		,"Gunship = 0,10"
 		,"AntiBomber = 0, 50"
 		,"SuperCapital = 0, 1"
 		,"SpaceHero = 0,1"

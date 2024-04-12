@@ -1,0 +1,44 @@
+<?xml version="1.0" ?>
+<AIPlayerType>
+
+	<Name>HuttSkynetAI</Name>
+
+	<GoalSetExtensionSize>10</GoalSetExtensionSize>
+
+	<Personality>
+		<Focus> 1.0 </Focus>
+		<Aggressiveness> 1.0</Aggressiveness>
+	</Personality>
+	
+    <GalacticFreeStoreScript>GalacticFreeStore</GalacticFreeStoreScript>
+    <SpaceFreeStoreScript>BusyTacticalFreeStore</SpaceFreeStoreScript>
+    <LandFreeStoreScript>LandTacticalFreeStore</LandFreeStoreScript>
+	
+	<GoalProposalFunctionSets>
+		SystemFunctions
+		BasicOffensiveGalacticSet
+		SkynetOffensiveGalacticSet
+		HuttInfrastructureGalacticSet
+		BasicOffensiveSpaceSet
+		BasicLandGoalSet
+	</GoalProposalFunctionSets>
+	
+	<Templates>
+        <Space>
+            Generic_Space
+        </Space>
+        <Land>
+            Generic_Land
+        </Land>
+		<Galactic>
+			Generic_AI_Default
+		</Galactic>
+	</Templates>
+
+	<Difficulty_Adjustments>
+		<Easy>Easy_Skynet</Easy>
+		<Normal>Normal_Skynet</Normal>
+		<Hard>Hard_Skynet</Hard>
+	</Difficulty_Adjustments>
+	
+</AIPlayerType>

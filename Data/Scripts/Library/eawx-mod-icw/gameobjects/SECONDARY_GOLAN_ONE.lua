@@ -3,6 +3,9 @@ return {
 		["IRD_SQUADRON"] = {
 			CORPORATE_SECTOR = {Initial = 1, Reserve = 1}
 		},
+		["DUNELIZARD_FIGHTER_SQUADRON"] = {
+			HUTT_CARTELS = {Initial = 1, Reserve = 1}
+		},
 		["TIE_FIGHTER_SQUADRON"] = {
 			EMPIRE = {Initial = 1, Reserve = 1, TechLevel = LessThan(6)},
 			ERIADU_AUTHORITY = {Initial = 1, Reserve = 1, ResearchType = "~EATIEShields"},
@@ -35,6 +38,9 @@ return {
 		["SKIRMISH_ETTI_LIGHTER"] = {
 			CORPORATE_SECTOR = {Initial = 1, Reserve = 1}
 		},
+		["SKIRMISH_WARLORD_CRUISER"] = {
+			HUTT_CARTELS = {Initial = 1, Reserve = 1}
+		},
 		["SKIRMISH_IPV1"] = {
 			EMPIRE = {Initial = 1, Reserve = 1, TechLevel = LessThan(6)},
 			ERIADU_AUTHORITY = {Initial = 1, Reserve = 1},
@@ -50,7 +56,7 @@ return {
 		["SKIRMISH_ZSINJ_CR90"] = {
 			ZSINJ_EMPIRE = {Initial = 1, Reserve = 1}
 		},
-		["CLAWCRAFT_SQUADRON"] = {
+		["NSSIS_SQUADRON"] = {
 			EMPIREOFTHEHAND = {Initial = 1, Reserve = 1}
 		},
 		["SKIRMISH_MUQARAEA"] = {

@@ -58,6 +58,7 @@ function Definitions()
         {
             "SpaceForce",
             "Corvette | Frigate | Capital = 100%",
+			"Gunship = 0,10",
 			"SuperCapital = 0, 1",
 			"AntiBomber = 0, 50",
 			"SpaceHero = 0,1"

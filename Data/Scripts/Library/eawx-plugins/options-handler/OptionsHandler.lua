@@ -56,6 +56,7 @@ function OptionsHandler:activate_ai()
                     end
                 end
             end
+            Sleep(0.1) --Some FOTR historical GCs CTD for CIS player w/o this. ~Mord
         else
             for _, faction in pairs(CONSTANTS.ALL_FACTIONS_NOT_NEUTRAL) do
                 local faction_object = Find_Player(faction)
@@ -159,7 +160,7 @@ function OptionsHandler:fs_units()
     --Logger:trace("entering OptionsHandler:fs_units")
 
     UnitUtil.SetLockList("EMPIRE", {
-        "Impellor"})
+        "Impellor", "Compellor"})
 end
 
 

@@ -202,7 +202,21 @@
 			<Volume_Saturation_Distance>300.0</Volume_Saturation_Distance>
 	 </SFXEvent>
 
-
+	<SFXEvent Name="Preset_EGL_SpeederBike_Idle">
+			<Is_Preset> Yes </Is_Preset>
+			<Is_3D> Yes </Is_3D>
+			<Is_2D> No </Is_2D>
+			<Priority> 1 </Priority>
+			<Max_Instances> 3 </Max_Instances>
+			<Play_Count>-1</Play_Count>
+			<Loop_Fade_In_Seconds> 0.5 </Loop_Fade_In_Seconds>		<!-- Crossfading from idle (stopped) to moving and vice-versa -->
+			<Loop_Fade_Out_Seconds> 1.0 </Loop_Fade_Out_Seconds>	<!-- Crossfading from idle (stopped) to moving and vice-versa -->
+			<Min_Pitch>80</Min_Pitch>
+			<Max_Pitch>90</Max_Pitch>
+			<Min_Volume>35</Min_Volume>
+			<Max_Volume>35</Max_Volume>
+			<Volume_Saturation_Distance>200.0</Volume_Saturation_Distance>
+	 </SFXEvent>	
 
 	 <SFXEvent Name="Preset_BDL">
 			<Is_Preset> Yes </Is_Preset>
@@ -277,7 +291,7 @@
 			<Max_Pitch>105</Max_Pitch>
     </SFXEvent>
 
-<SFXEvent Name="Preset_GUNV">
+	<SFXEvent Name="Preset_GUNV">
 	  <Is_Preset> Yes </Is_Preset>
 	  <Is_3D> Yes </Is_3D>
 	  <Is_2D> No </Is_2D>
@@ -288,9 +302,9 @@
 	  <Max_Volume>95</Max_Volume>
 	  <Min_Pitch>95</Min_Pitch>
 	  <Max_Pitch>105</Max_Pitch>
-</SFXEvent>
+	</SFXEvent>
 
-	 <SFXEvent Name="Preset_GUNS">
+	<SFXEvent Name="Preset_GUNS">
 	  <Is_Preset> Yes </Is_Preset>
 	  <Is_3D> Yes </Is_3D>
 	  <Is_2D> No </Is_2D>
@@ -301,13 +315,9 @@
 	  <Min_Pitch>95</Min_Pitch>
 	  <Max_Pitch>105</Max_Pitch>
 	  <Volume_Saturation_Distance>300.0</Volume_Saturation_Distance>
-</SFXEvent>
-
-
-
-
-
-	 <SFXEvent Name="Preset_HERO">
+	</SFXEvent>
+	
+	<SFXEvent Name="Preset_HERO">
 	  <Is_Preset> Yes </Is_Preset>
 	  <Is_3D> Yes </Is_3D>
 	  <Is_2D> No </Is_2D>
@@ -316,7 +326,7 @@
 	  <Min_Volume>90</Min_Volume>
 	  <Max_Volume>90</Max_Volume>
 	  <Volume_Saturation_Distance>2000.0</Volume_Saturation_Distance>
-</SFXEvent>
+	</SFXEvent>
 
 
 	 <SFXEvent Name="Preset_INSANE">

@@ -45,7 +45,18 @@
 		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
 		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
 	</Props_Coresaga>
-	
+
+	<Props_Coresaga Name="PropOnly_Firespray">
+		<Land_Model_Name>Ev_slave1.ALO</Land_Model_Name>
+		<Scale_Factor>4.0</Scale_Factor>
+		<!-- Base Game model scale is 60% of space norm -->
+		<Behavior>IDLE</Behavior>
+		<Loop_Idle_Anim_00>IDLE_00</Loop_Idle_Anim_00>
+		<Exclude_From_Distance_Fade>Yes</Exclude_From_Distance_Fade>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Props_Coresaga>
+
 	<!-- Significantly reduced scale -->
 	<Props_Coresaga Name="Prop_Hardcell">
 		<Land_Model_Name>Prop_Hardcell.alo</Land_Model_Name>
@@ -55,7 +66,7 @@
 		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
 		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>		
 	</Props_Coresaga>
-	
+
 	<Props_Coresaga Name="Prop_Hardcell_Full">
 		<Land_Model_Name>Prop_Hardcell.alo</Land_Model_Name>
 		<Scale_Factor>12.0</Scale_Factor>
@@ -118,14 +129,14 @@
 		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
 		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
 	</Props_Coresaga>
-	
+
 	<Props_Coresaga Name="PropOnly_Cloud_Car">
 		<Land_Model_Name>w_cloud_car.alo</Land_Model_Name>
 		<Scale_Factor>1.2</Scale_Factor>
 		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
 		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
 	</Props_Coresaga>
-	
+
 	<Props_Coresaga Name="TR_VSD">
 		<Land_Model_Name>Victory_I_Prop.alo</Land_Model_Name>
 		<Scale_Factor>3.0</Scale_Factor>
@@ -133,7 +144,7 @@
 		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
 		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
 	</Props_Coresaga>
-	
+
 	<Props_Coresaga Name="TR_ISDconstruct">
 		<Land_Model_Name>W_Construction_ISD.ALO</Land_Model_Name>
 		<Scale_Factor>2.0</Scale_Factor>
@@ -141,7 +152,15 @@
 		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
 		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
 	</Props_Coresaga>
-	
+
+	<Props_Coresaga Name="TR_ISD_Construction_Full">
+		<Land_Model_Name>W_Construction_ISD.ALO</Land_Model_Name>
+		<Scale_Factor>8.0</Scale_Factor>
+		<Exclude_From_Distance_Fade>Yes</Exclude_From_Distance_Fade>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Props_Coresaga>
+
 	<Props_Coresaga Name="TR_Venator_Construction_G">
 		<Land_Model_Name>W_Construction_Venator.ALO</Land_Model_Name>
 		<Scale_Factor>2.0</Scale_Factor>
@@ -149,10 +168,26 @@
 		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
 		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
 	</Props_Coresaga>
-	
+
+	<Props_Coresaga Name="TR_Venator_Construction_G_Full">
+		<Land_Model_Name>W_Construction_Venator.ALO</Land_Model_Name>
+		<Scale_Factor>8.0</Scale_Factor>
+		<Exclude_From_Distance_Fade>Yes</Exclude_From_Distance_Fade>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Props_Coresaga>
+
 	<Props_Coresaga Name="TR_Providence_Construction_G">
 		<Land_Model_Name>W_Construction_Providence.ALO</Land_Model_Name>
 		<Scale_Factor>2.0</Scale_Factor>
+		<Exclude_From_Distance_Fade>Yes</Exclude_From_Distance_Fade>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Props_Coresaga>
+
+	<Props_Coresaga Name="TR_Providence_Construction_G_Full">
+		<Land_Model_Name>W_Construction_Providence.ALO</Land_Model_Name>
+		<Scale_Factor>8.0</Scale_Factor>
 		<Exclude_From_Distance_Fade>Yes</Exclude_From_Distance_Fade>
 		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
 		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
@@ -178,7 +213,7 @@
 		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
 		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
 	</Props_Coresaga>
-	
+
 	<Props_Coresaga Name="TR_SHIP_Gozanti">
 		<Land_Model_Name>CSA_Gozanti.ALO</Land_Model_Name>
 		<Scale_Factor>6.0</Scale_Factor>
@@ -195,6 +230,14 @@
 		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
 	</Props_Coresaga>
 
+	<Props_Coresaga Name="TR_SHIP_CSS1">
+		<Land_Model_Name>W_CSS-1_star_shuttle.ALO</Land_Model_Name>
+		<Scale_Factor>6.0</Scale_Factor>
+		<Exclude_From_Distance_Fade>Yes</Exclude_From_Distance_Fade>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Props_Coresaga>
+
 	<Props_Coresaga Name="TR_SHIP_Personal_Luxury_Yacht">
 		<Land_Model_Name>RV_LADYLUCK.ALO</Land_Model_Name>
 		<Scale_Factor>0.9157</Scale_Factor>
@@ -203,7 +246,7 @@
 		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
 		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
 	</Props_Coresaga>
-	
+
 	<Props_Coresaga Name="TR_SHIP_Venator">
 		<Land_Model_Name>Prop_Venator.ALO</Land_Model_Name>
 		<Scale_Factor>25.0</Scale_Factor>
@@ -240,6 +283,14 @@
 		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
 	</Props_Coresaga>
 
+	<Props_Coresaga Name="TR_SHIP_MonCalCruiser_Construction_Full">
+		<Land_Model_Name>W_Construction_Liberty.ALO</Land_Model_Name>
+		<Scale_Factor>6.0</Scale_Factor>
+		<Exclude_From_Distance_Fade>Yes</Exclude_From_Distance_Fade>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Props_Coresaga>
+
 	<Props_Coresaga Name="TR_SHIP_Quasar">
 		<Land_Model_Name>NR_Quasar.ALO</Land_Model_Name>
 		<Scale_Factor>12.0</Scale_Factor>
@@ -252,18 +303,107 @@
 		<SFXEvent_Hardpoint_Destroyed>HARD_POINT_DUMMY_ART, null</SFXEvent_Hardpoint_Destroyed>
 	</Props_Coresaga>
 
-	<Props_Coresaga Name="TR_SHIP_Lucrehulk">
-		<Land_Model_Name>lucrehulk_bship.ALO</Land_Model_Name>
-		<Scale_Factor>30.0</Scale_Factor>
+	<Props_Coresaga Name="TR_SHIP_Arquitens">
+		<Land_Model_Name>PA_Arquitens.ALO</Land_Model_Name>
+		<Scale_Factor>6.0</Scale_Factor>
 		<Exclude_From_Distance_Fade>Yes</Exclude_From_Distance_Fade>
 		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
 		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<HardPoints>
+			Generic_Prop_Ion_Proxy_Cap
+		</HardPoints>
+		<SFXEvent_Hardpoint_Destroyed>HARD_POINT_DUMMY_ART, null</SFXEvent_Hardpoint_Destroyed>
 	</Props_Coresaga>
-	
+
+	<Props_Coresaga Name="TR_SHIP_CEC_Light_Cruiser">
+		<Land_Model_Name>CEC_Light_Cruiser.ALO</Land_Model_Name>
+		<Scale_Factor>6.0</Scale_Factor>
+		<Exclude_From_Distance_Fade>Yes</Exclude_From_Distance_Fade>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+		<HardPoints>
+			Generic_Prop_Ion_Proxy_Cap
+		</HardPoints>
+		<SFXEvent_Hardpoint_Destroyed>HARD_POINT_DUMMY_ART, null</SFXEvent_Hardpoint_Destroyed>
+	</Props_Coresaga>
+
+	<Props_Coresaga Name="TR_SHIP_Acclamator_I">
+		<Land_Model_Name>ev_acclamator_i.ALO</Land_Model_Name>
+		<Scale_Factor>6.0</Scale_Factor>
+		<Exclude_From_Distance_Fade>Yes</Exclude_From_Distance_Fade>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+		<HardPoints>
+			Generic_Prop_Ion_Proxy_Cap
+		</HardPoints>
+		<SFXEvent_Hardpoint_Destroyed>HARD_POINT_DUMMY_ART, null</SFXEvent_Hardpoint_Destroyed>
+	</Props_Coresaga>
+
+	<Props_Coresaga Name="TR_SHIP_Acclamator_II">
+		<Land_Model_Name>ev_acclamator_II.ALO</Land_Model_Name>
+		<Scale_Factor>6.0</Scale_Factor>
+		<Exclude_From_Distance_Fade>Yes</Exclude_From_Distance_Fade>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+		<HardPoints>
+			Generic_Prop_Ion_Proxy_Cap
+		</HardPoints>
+		<SFXEvent_Hardpoint_Destroyed>HARD_POINT_DUMMY_ART, null</SFXEvent_Hardpoint_Destroyed>
+	</Props_Coresaga>
+
+	<Props_Coresaga Name="TR_SHIP_Acclamator_Leveler">
+		<Land_Model_Name>ev_acclamator_leveler.ALO</Land_Model_Name>
+		<Scale_Factor>6.0</Scale_Factor>
+		<Exclude_From_Distance_Fade>Yes</Exclude_From_Distance_Fade>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+		<HardPoints>
+			Generic_Prop_Ion_Proxy_Cap
+		</HardPoints>
+		<SFXEvent_Hardpoint_Destroyed>HARD_POINT_DUMMY_ART, null</SFXEvent_Hardpoint_Destroyed>
+	</Props_Coresaga>
+
 	<Props_Coresaga Name="TR_SHIP_RV_Corvette">
 		<Land_Model_Name>RV_CORVETTE.ALO</Land_Model_Name>
 		<Scale_Factor>5.64</Scale_Factor>
 		<!-- CR90 space scale is to 0.47 instead of 0.5 -->
+		<Exclude_From_Distance_Fade>Yes</Exclude_From_Distance_Fade>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<HardPoints>
+			Generic_Prop_Ion_Proxy_Small
+		</HardPoints>
+		<SFXEvent_Hardpoint_Destroyed>HARD_POINT_DUMMY_ART, null</SFXEvent_Hardpoint_Destroyed>
+	</Props_Coresaga>
+
+	<Props_Coresaga Name="TR_SHIP_Space_Arc">
+		<Land_Model_Name>SpaceARC.ALO</Land_Model_Name>
+		<Scale_Factor>6.0</Scale_Factor>
+		<Exclude_From_Distance_Fade>Yes</Exclude_From_Distance_Fade>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Props_Coresaga>
+
+
+	<Props_Coresaga Name="TR_SHIP_Consular">
+		<Land_Model_Name>Consular-class_cruiser.ALO</Land_Model_Name>
+		<Scale_Factor>6.0</Scale_Factor>
+		<Exclude_From_Distance_Fade>Yes</Exclude_From_Distance_Fade>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<HardPoints>
+			Generic_Prop_Ion_Proxy_Small
+		</HardPoints>
+		<SFXEvent_Hardpoint_Destroyed>HARD_POINT_DUMMY_ART, null</SFXEvent_Hardpoint_Destroyed>
+	</Props_Coresaga>
+
+	<Props_Coresaga Name="TR_SHIP_Charger_C70">
+		<Land_Model_Name>Consular-class_c70.ALO</Land_Model_Name>
+		<Scale_Factor>6.0</Scale_Factor>
 		<Exclude_From_Distance_Fade>Yes</Exclude_From_Distance_Fade>
 		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
 		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
@@ -286,18 +426,91 @@
 		<SFXEvent_Hardpoint_Destroyed>HARD_POINT_DUMMY_ART, null</SFXEvent_Hardpoint_Destroyed>
 	</Props_Coresaga>
 
-	<Props_Coresaga Name="TR_SHIP_YWing">
-		<Land_Model_Name>RV_ywing.ALO</Land_Model_Name>
+	<Props_Coresaga Name="TR_SHIP_Minstrel">
+		<Land_Model_Name>Minstrel-class_space_yacht_heavy.ALO</Land_Model_Name>
+		<Scale_Factor>6.0</Scale_Factor>
+		<Exclude_From_Distance_Fade>Yes</Exclude_From_Distance_Fade>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<HardPoints>
+			Generic_Prop_Ion_Proxy_Cap
+		</HardPoints>
+		<SFXEvent_Hardpoint_Destroyed>HARD_POINT_DUMMY_ART, null</SFXEvent_Hardpoint_Destroyed>
+	</Props_Coresaga>
+
+	<Props_Coresaga Name="TR_SHIP_Kaloth">
+		<Land_Model_Name>Kaloth-class_battlecruiser.ALO</Land_Model_Name>
+		<Scale_Factor>6.0</Scale_Factor>
+		<Exclude_From_Distance_Fade>Yes</Exclude_From_Distance_Fade>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<HardPoints>
+			Generic_Prop_Ion_Proxy_Cap
+		</HardPoints>
+		<SFXEvent_Hardpoint_Destroyed>HARD_POINT_DUMMY_ART, null</SFXEvent_Hardpoint_Destroyed>
+	</Props_Coresaga>
+
+	<Props_Coresaga Name="TR_SHIP_Raka">
+		<Land_Model_Name>Raka_cartell_freighter.ALO</Land_Model_Name>
+		<Scale_Factor>6.0</Scale_Factor>
+		<Exclude_From_Distance_Fade>Yes</Exclude_From_Distance_Fade>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<HardPoints>
+			Generic_Prop_Ion_Proxy_Cap
+		</HardPoints>
+		<SFXEvent_Hardpoint_Destroyed>HARD_POINT_DUMMY_ART, null</SFXEvent_Hardpoint_Destroyed>
+	</Props_Coresaga>
+
+	<Props_Coresaga Name="TR_SHIP_Pelta_Tender">
+		<Land_Model_Name>Rep_Pelta_Tender.alo</Land_Model_Name>
+		<Scale_Factor>12.0</Scale_Factor>
+		<Exclude_From_Distance_Fade>Yes</Exclude_From_Distance_Fade>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<HardPoints>
+			Generic_Prop_Ion_Proxy_Small
+		</HardPoints>
+		<SFXEvent_Hardpoint_Destroyed>HARD_POINT_DUMMY_ART, null</SFXEvent_Hardpoint_Destroyed>
+	</Props_Coresaga>
+
+	<Props_Coresaga Name="TR_SHIP_N1_Starfighter">
+		<Land_Model_Name>Naboo_N1_Starfighter.ALO</Land_Model_Name>
 		<Scale_Factor>6.0</Scale_Factor>
 		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
 		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
 	</Props_Coresaga>
+   
+	<Props_Coresaga Name="TR_SHIP_YWing">
+        	<Land_Model_Name>RV_ywing.ALO</Land_Model_Name>
+        	<Scale_Factor>6.0</Scale_Factor>
+        	<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+        	<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+    	</Props_Coresaga>
 
 	<Props_Coresaga Name="TR_SHIP_YWingB">
 		<Land_Model_Name>btl-b_y-wing.ALO</Land_Model_Name>
 		<Scale_Factor>6.0</Scale_Factor>
 		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
 		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</Props_Coresaga>
+
+	<Props_Coresaga Name="TR_SHIP_YWingS1">
+		<Land_Model_Name>btl_s1_y-wing_starfighter.ALO</Land_Model_Name>
+		<Scale_Factor>6.0</Scale_Factor>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</Props_Coresaga>
+
+	<Props_Coresaga Name="TR_SHIP_ARC170">
+		<Land_Model_Name>ARC-170_starfighter.ALO</Land_Model_Name>
+		<Scale_Factor>6.0</Scale_Factor>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
 	</Props_Coresaga>
 
 	<Props_Coresaga Name="TR_SHIP_Warpod">
@@ -305,13 +518,23 @@
 		<Scale_Factor>6.0</Scale_Factor>
 		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
 		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
 	</Props_Coresaga>
-	
+
+	<Props_Coresaga Name="TR_SHIP_Scurrg">
+		<Land_Model_Name>Scurrg_H-6_bomber.ALO</Land_Model_Name>
+		<Scale_Factor>6.0</Scale_Factor>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</Props_Coresaga>
+
 	<Props_Coresaga Name="TR_SHIP_Cloakshape">
 		<Land_Model_Name>cloakshape.ALO</Land_Model_Name>
 		<Scale_Factor>6.0</Scale_Factor>
 		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
 		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
 	</Props_Coresaga>
 
 	<Props_Coresaga Name="TR_SHIP_Cloakshape_Stock">
@@ -319,6 +542,7 @@
 		<Scale_Factor>6.0</Scale_Factor>
 		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
 		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
 	</Props_Coresaga>
 
 	<Props_Coresaga Name="TR_SHIP_Headhunter">
@@ -326,6 +550,7 @@
 		<Scale_Factor>6.0</Scale_Factor>
 		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
 		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
 	</Props_Coresaga>
 
 	<Props_Coresaga Name="TR_SHIP_Headhunter_Bomber">
@@ -333,13 +558,15 @@
 		<Scale_Factor>6.0</Scale_Factor>
 		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
 		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
 	</Props_Coresaga>
-	
+
 	<Props_Coresaga Name="TR_SHIP_Skipray">
 		<Land_Model_Name>UV_Skipray_Prop.ALO</Land_Model_Name>
 		<Scale_Factor>6.0</Scale_Factor>
 		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
 		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
 	</Props_Coresaga>
 
 	<Props_Coresaga Name="TR_SHIP_Jumpmaster">
@@ -348,24 +575,40 @@
 		<!-- Model not to scale -->
 		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
 		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
 	</Props_Coresaga>
 
 	<Props_Coresaga Name="TR_SHIP_GR75">
 		<Land_Model_Name>RV_gr75.alo</Land_Model_Name>
 		<Scale_Factor>6.0</Scale_Factor>
-		<!-- Model not to scale -->
 		<Exclude_From_Distance_Fade>Yes</Exclude_From_Distance_Fade>
 		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
 		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
 	</Props_Coresaga>
-	
+
 	<Props_Coresaga Name="UM05_PROP_Z95">
 		<Land_Model_Name>z-95_xt.ALO</Land_Model_Name>
 		<Scale_Factor>6.0</Scale_Factor>
 		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
 		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
 	</Props_Coresaga>
-	
+
+	<Props_Coresaga Name="TR_SHIP_Secutor_Construction">
+		<Land_Model_Name>W_Construction_Secutor.alo</Land_Model_Name>
+		<Scale_Factor>6.0</Scale_Factor>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</Props_Coresaga>
+
+	<Props_Coresaga Name="TR_SHIP_VSD_Construction">
+		<Land_Model_Name>W_Construction_VSD.alo</Land_Model_Name>
+		<Scale_Factor>6.0</Scale_Factor>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</Props_Coresaga>
+
 	<!-- Slightly reduced scale -->
 	<Props_Coresaga Name="Prop_C9979_Lander">
 		<Land_Model_Name>w_c-9979_lander_prop.alo</Land_Model_Name>
@@ -387,6 +630,19 @@
 		<Land_Model_Name>CIS_Munificent.alo</Land_Model_Name>
 		<No_Colorization_Color> 44, 121, 216, 255 </No_Colorization_Color>
 		<Scale_Factor>5.0</Scale_Factor>
+		<Exclude_From_Distance_Fade>Yes</Exclude_From_Distance_Fade>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<HardPoints>
+			Generic_Prop_Ion_Proxy_Cap
+		</HardPoints>
+		<SFXEvent_Hardpoint_Destroyed>HARD_POINT_DUMMY_ART, null</SFXEvent_Hardpoint_Destroyed>
+	</Props_Coresaga>
+
+	<Props_Coresaga Name="Prop_Munificent_Full">
+		<Land_Model_Name>CIS_Munificent.alo</Land_Model_Name>
+		<No_Colorization_Color> 44, 121, 216, 255 </No_Colorization_Color>
+		<Scale_Factor>14.0</Scale_Factor>
 		<Exclude_From_Distance_Fade>Yes</Exclude_From_Distance_Fade>
 		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
 		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
@@ -432,6 +688,14 @@
 		</HardPoints>
 		<SFXEvent_Hardpoint_Destroyed>HARD_POINT_DUMMY_ART, null</SFXEvent_Hardpoint_Destroyed>
 	</Props_Coresaga>
+	
+	<Props_Coresaga Name="Prop_Carrack">
+		<Land_Model_Name>EV_Carrack.ALO</Land_Model_Name>
+		<Scale_Factor>6.0</Scale_Factor>
+		<Exclude_From_Distance_Fade>Yes</Exclude_From_Distance_Fade>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Props_Coresaga>
 
 	<Props_Coresaga Name="TR_SHIP_Super_Transport_VI">
 		<Land_Model_Name>NV_SupertransportVI.ALO</Land_Model_Name>
@@ -475,7 +739,7 @@
 		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
 		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
 	</Props_Coresaga>
-	
+
 	<Props_Coresaga Name="UMP_DEADATPT">
 		<Land_Model_Name>W_Prop_DeadAT-PT.alo</Land_Model_Name>
 		<Scale_Factor>0.33</Scale_Factor>
@@ -483,7 +747,7 @@
 		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
 		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
 	</Props_Coresaga>
-	
+
 	<Props_Coresaga Name="UMP_DEADESPO">
 		<Land_Model_Name>W_Prop_DeadEspo_Walker.alo</Land_Model_Name>
 		<Scale_Factor>4.0</Scale_Factor>
@@ -491,7 +755,7 @@
 		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
 		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
 	</Props_Coresaga>
-	
+
 	<Props_Coresaga Name="Overracer_Speeder">
 		<Land_Model_Name>W_overracer_prop.alo</Land_Model_Name>
 		<Scale_Factor>1.1</Scale_Factor>
@@ -516,7 +780,52 @@
 		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
 		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
 	</Props_Coresaga>
-	
+
+	<Props_Coresaga Name="V19_Speeder">
+		<Land_Model_Name>V-19_Gian_Speeder.alo</Land_Model_Name>
+		<Scale_Factor>1.2</Scale_Factor>
+		<LandBehavior> IDLE, SURFACE_FX</LandBehavior>
+		<SurfaceFX_Name>Hover</SurfaceFX_Name>
+		<HardPoints>
+			Generic_Prop_Hide_Head, Generic_Prop_Hide_Body
+		</HardPoints>
+		<Loop_Idle_Anim_00>Yes</Loop_Idle_Anim_00>
+		<Overall_Length>20.0</Overall_Length> <!-- For vehicle pitching up and down on terrain -->
+		<Overall_Width>10.0</Overall_Width> <!-- For vehicle rolling left and right on terrain value (20 by geometry)-->
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		
+		<SFXEvent_Hardpoint_Destroyed>HARD_POINT_DUMMY_ART, null</SFXEvent_Hardpoint_Destroyed>
+	</Props_Coresaga>
+
+	<Props_Coresaga Name="V19_Speeder_Green">
+		<Land_Model_Name>V-19_Gian_Speeder_Green.alo</Land_Model_Name>
+		<Scale_Factor>1.2</Scale_Factor>
+		<LandBehavior> IDLE, SURFACE_FX</LandBehavior>
+		<SurfaceFX_Name>Hover</SurfaceFX_Name>
+		<HardPoints>
+			Generic_Prop_Hide_Head, Generic_Prop_Hide_Body
+		</HardPoints>
+		<Loop_Idle_Anim_00>Yes</Loop_Idle_Anim_00>
+		<Overall_Length>20.0</Overall_Length> <!-- For vehicle pitching up and down on terrain -->
+		<Overall_Width>10.0</Overall_Width> <!-- For vehicle rolling left and right on terrain value (20 by geometry)-->
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<SFXEvent_Hardpoint_Destroyed>HARD_POINT_DUMMY_ART, null</SFXEvent_Hardpoint_Destroyed>
+	</Props_Coresaga>
+
+	<Props_Coresaga Name="V19_Cabin_Speeder">
+		<Land_Model_Name>V-25_Gian_Speeder_Green_Prop.alo</Land_Model_Name>
+		<Scale_Factor>1.2</Scale_Factor>
+		<LandBehavior> IDLE, SURFACE_FX</LandBehavior>
+		<SurfaceFX_Name>Hover</SurfaceFX_Name>
+		<Loop_Idle_Anim_00>Yes</Loop_Idle_Anim_00>
+		<Overall_Length>20.0</Overall_Length> <!-- For vehicle pitching up and down on terrain -->
+		<Overall_Width>10.0</Overall_Width> <!-- For vehicle rolling left and right on terrain value (20 by geometry)-->
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Props_Coresaga>
+
 	<Props_Coresaga Name="TR_Venator_Construction">
 		<Space_Model_Name>W_Construction_Venator.alo</Space_Model_Name>
 		<Exclude_From_Distance_Fade>Yes</Exclude_From_Distance_Fade>
@@ -528,13 +837,13 @@
 		<Exclude_From_Distance_Fade>Yes</Exclude_From_Distance_Fade>
 		<Scale_Factor>0.5</Scale_Factor>
 	</Props_Coresaga>
-	
+
 	<Props_Coresaga Name="Star_Destroyer_Construction">
 		<Space_Model_Name>W_Construction_ISD.ALO</Space_Model_Name>
 		<Exclude_From_Distance_Fade>Yes</Exclude_From_Distance_Fade>
 		<Scale_Factor>0.5</Scale_Factor>
 	</Props_Coresaga>
-	
+
 	<Props_Coresaga Name="Mon_Cal_Cruiser_Under_Repair">
 		<Space_Model_Name>W_Construction_Liberty.alo</Space_Model_Name>
 		<Exclude_From_Distance_Fade>Yes</Exclude_From_Distance_Fade>
@@ -549,14 +858,6 @@
 		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
 		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
 	</Props_Coresaga>
-
-	<Props_Volcanic Name="Prop_Nkllon_Nomad_City">
-		<Land_Model_Name>Dreadnaught_Prop.ALO</Land_Model_Name>
-		<Scale_Factor>30.0</Scale_Factor>
-		<Exclude_From_Distance_Fade>Yes</Exclude_From_Distance_Fade>
-		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
-		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
-	</Props_Volcanic>
 
 	<Props_Coresaga Name="TR_ShipPart_Headhunter_Chasis">
 		<Land_Model_Name>w_prop_z95_chasis.ALO</Land_Model_Name>
@@ -578,13 +879,13 @@
 		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
 		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
 	</Props_Coresaga>
-	
+
 	<Props_Coresaga Name="Secutor_Construction">
 		<Space_Model_Name>W_Construction_Secutor.alo</Space_Model_Name>
 		<Exclude_From_Distance_Fade>Yes</Exclude_From_Distance_Fade>
 		<Scale_Factor>0.5</Scale_Factor>
 	</Props_Coresaga>
-	
+
 	<Props_Coresaga Name="VSD_Construction">
 		<Space_Model_Name>W_Construction_VSD.alo</Space_Model_Name>
 		<Exclude_From_Distance_Fade>Yes</Exclude_From_Distance_Fade>
@@ -634,19 +935,43 @@
 		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
 	</Props_Generic>
 
-	<Props_Generic Name="Prop_Juggernaut_Wheel">
+	<Props_Wreckage Name="Prop_Juggernaut_Wheel">
 		<Land_Model_Name>w_prop_juggernaut_wheel.alo</Land_Model_Name>
 		<Scale_Factor>1.0</Scale_Factor>
 		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
 		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
-	</Props_Generic>
+	</Props_Wreckage>
 
-	<Props_Generic Name="Prop_Hailfire_Wheel">
+	<Props_Wreckage Name="Prop_Hailfire_Wheel">
 		<Land_Model_Name>w_prop_hailfire_wheel.alo</Land_Model_Name>
 		<Scale_Factor>1.0</Scale_Factor>
 		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
 		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
-	</Props_Generic>
+	</Props_Wreckage>
+
+	<Props_Coresaga Name="Land_Speeder">
+		<Land_Model_Name>NV_Sandspeeder.alo</Land_Model_Name>
+		<Scale_Factor>0.55</Scale_Factor>
+		<LandBehavior> IDLE, SURFACE_FX</LandBehavior>
+		<SurfaceFX_Name>Hover</SurfaceFX_Name>
+		<Loop_Idle_Anim_00>Yes</Loop_Idle_Anim_00>
+		<Overall_Length>45.0</Overall_Length> <!-- For vehicle pitching up and down on terrain -->
+		<Overall_Width>20.0</Overall_Width> <!-- For vehicle rolling left and right on terrain value (20 by geometry)-->
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Props_Coresaga>
+
+	<Props_Coresaga Name="Land_Speeder_Operated">
+		<Land_Model_Name>x-34_landspeeder.alo</Land_Model_Name>
+		<Scale_Factor>1.2</Scale_Factor>
+		<LandBehavior> IDLE, SURFACE_FX</LandBehavior>
+		<SurfaceFX_Name>Hover</SurfaceFX_Name>
+		<Loop_Idle_Anim_00>Yes</Loop_Idle_Anim_00>
+		<Overall_Length>45.0</Overall_Length> <!-- For vehicle pitching up and down on terrain -->
+		<Overall_Width>20.0</Overall_Width> <!-- For vehicle rolling left and right on terrain value (20 by geometry)-->
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Props_Coresaga>
 
 	<Props_Coresaga Name="Prop_SPHA-T">
 		<Land_Model_Name>self_propelled_heavy_artillery_prop.ALO</Land_Model_Name>
@@ -655,5 +980,951 @@
 		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
 		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
 	</Props_Coresaga>
+
+
+	<Indigenous_Passive Name="Passive_Arrow_23_Speeder">
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_INDIGENOUS </Encyclopedia_Unit_Class>
+		<Land_Model_Name>passive_arrow-23_landspeeder.alo</Land_Model_Name>
+		<Land_Model_Anim_Override_Name>w_passive_unit.alo</Land_Model_Anim_Override_Name>
+		<Scale_Factor>1.2</Scale_Factor>
+		<Movie_Object>false</Movie_Object>
+		<Mass>0.985</Mass>
+
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Size_Value>15</Size_Value>
+
+		<Mass> 1.0 </Mass>
+		<Max_Speed>4.0</Max_Speed>
+		<Min_Speed> 2.5 </Min_Speed>
+		<Max_Rate_Of_Turn>1.0</Max_Rate_Of_Turn>
+		<Max_Thrust>0.1</Max_Thrust>
+		<Max_Rate_Of_Roll>1.5</Max_Rate_Of_Roll>
+		<Max_Lift>0.0</Max_Lift>
+		<Bank_Turn_Angle>60</Bank_Turn_Angle>
+		<Begin_Turn_Towards_Distance>100.0</Begin_Turn_Towards_Distance>
+
+		<LandBehavior>FIGHTER_LOCOMOTOR,IDLE,INDIGENOUS_UNIT</LandBehavior>
+		<Allow_Idle_When_Moving>Yes</Allow_Idle_When_Moving>
+
+		<Affiliation>Neutral</Affiliation>
+		<Influences_Capture_Point> False </Influences_Capture_Point>
+		<Political_Control>0</Political_Control>
+
+		<Wind_Disturbance_Radius>100</Wind_Disturbance_Radius>
+		<Wind_Disturbance_Strength>5</Wind_Disturbance_Strength>
+		<Wind_Disturbance_Sphere_Alpha>0.1</Wind_Disturbance_Sphere_Alpha>
+
+		<SFXEvent_Ambient_Moving> Unit_Cloud_Car_Fly_By </SFXEvent_Ambient_Moving>
+		<SFXEvent_Ambient_Moving_Min_Delay_Seconds> 2 </SFXEvent_Ambient_Moving_Min_Delay_Seconds>
+		<SFXEvent_Ambient_Moving_Max_Delay_Seconds> 6 </SFXEvent_Ambient_Moving_Max_Delay_Seconds>
+		<SFXEvent_Engine_Cinematic_Focus_Loop> Unit_Cloud_Car_Cinematic_Engine_Loop </SFXEvent_Engine_Cinematic_Focus_Loop>
+
+		<Icon_Name>i_button_rebel_speeder.tga</Icon_Name>
+		<MovementClass> Flying </MovementClass>
+		<OccupationStyle>1x1</OccupationStyle>
+		<Victory_Relevant>no</Victory_Relevant>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Blob_Shadow_Below_Detail_Level>2</Blob_Shadow_Below_Detail_Level>
+		<Blob_Shadow_Scale>5.0, 5.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name>Generic_Shadow</Blob_Shadow_Material_Name>
+		<Occlusion_Silhouette_Enabled>0</Occlusion_Silhouette_Enabled>
+
+		<Air_Vehicle_Turret_Target> No </Air_Vehicle_Turret_Target>
+		<Is_Visible_On_Radar>No</Is_Visible_On_Radar>
+		<Is_Valid_Target>False</Is_Valid_Target>
+		
+		<Layer_Z_Adjust>200.0</Layer_Z_Adjust>
+		<Hover_Offset>200.0</Hover_Offset>
+		<Prepare_Strafe_Height>75.0</Prepare_Strafe_Height>
+		<MaxFacingLookAheadFrames>5.0</MaxFacingLookAheadFrames>
+		<Weather_Category>Flying</Weather_Category>
+		<Can_Indigenous_Unit_Stop>No</Can_Indigenous_Unit_Stop>
+		<Is_Indigenous_Unit_Corruptible>False</Is_Indigenous_Unit_Corruptible>
+
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</Indigenous_Passive>
+
+	<Indigenous_Passive Name="Passive_74Z_Speeder">
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_INDIGENOUS </Encyclopedia_Unit_Class>
+		<Land_Model_Name>passive_74Z.alo</Land_Model_Name>
+		<Land_Model_Anim_Override_Name>w_passive_unit.alo</Land_Model_Anim_Override_Name>
+		<Scale_Factor>1.2</Scale_Factor>
+		<Movie_Object>false</Movie_Object>
+		<Mass>0.985</Mass>
+
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Size_Value>15</Size_Value>
+
+		<Mass> 1.0 </Mass>
+		<Max_Speed>4.0</Max_Speed>
+		<Min_Speed> 2.5 </Min_Speed>
+		<Max_Rate_Of_Turn>1.0</Max_Rate_Of_Turn>
+		<Max_Thrust>0.1</Max_Thrust>
+		<Max_Rate_Of_Roll>1.5</Max_Rate_Of_Roll>
+		<Max_Lift>0.0</Max_Lift>
+		<Bank_Turn_Angle>60</Bank_Turn_Angle>
+		<Begin_Turn_Towards_Distance>100.0</Begin_Turn_Towards_Distance>
+
+		<LandBehavior>FIGHTER_LOCOMOTOR,IDLE,INDIGENOUS_UNIT</LandBehavior>
+		<Allow_Idle_When_Moving>Yes</Allow_Idle_When_Moving>
+
+		<Affiliation>Neutral</Affiliation>
+		<Influences_Capture_Point> False </Influences_Capture_Point>
+		<Political_Control>0</Political_Control>
+
+		<Wind_Disturbance_Radius>100</Wind_Disturbance_Radius>
+		<Wind_Disturbance_Strength>5</Wind_Disturbance_Strength>
+		<Wind_Disturbance_Sphere_Alpha>0.1</Wind_Disturbance_Sphere_Alpha>
+
+		<SFXEvent_Ambient_Moving> Unit_Cloud_Car_Fly_By </SFXEvent_Ambient_Moving>
+		<SFXEvent_Ambient_Moving_Min_Delay_Seconds> 2 </SFXEvent_Ambient_Moving_Min_Delay_Seconds>
+		<SFXEvent_Ambient_Moving_Max_Delay_Seconds> 6 </SFXEvent_Ambient_Moving_Max_Delay_Seconds>
+		<SFXEvent_Engine_Cinematic_Focus_Loop> Unit_Cloud_Car_Cinematic_Engine_Loop </SFXEvent_Engine_Cinematic_Focus_Loop>
+
+		<Icon_Name>i_button_rebel_speeder.tga</Icon_Name>
+		<MovementClass> Flying </MovementClass>
+		<OccupationStyle>1x1</OccupationStyle>
+		<Victory_Relevant>no</Victory_Relevant>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Blob_Shadow_Below_Detail_Level>2</Blob_Shadow_Below_Detail_Level>
+		<Blob_Shadow_Scale>5.0, 5.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name>Generic_Shadow</Blob_Shadow_Material_Name>
+		<Occlusion_Silhouette_Enabled>0</Occlusion_Silhouette_Enabled>
+
+		<Air_Vehicle_Turret_Target> No </Air_Vehicle_Turret_Target>
+		<Is_Visible_On_Radar>No</Is_Visible_On_Radar>
+		<Is_Valid_Target>False</Is_Valid_Target>
+		
+		<Layer_Z_Adjust>200.0</Layer_Z_Adjust>
+		<Hover_Offset>200.0</Hover_Offset>
+		<Prepare_Strafe_Height>75.0</Prepare_Strafe_Height>
+		<MaxFacingLookAheadFrames>5.0</MaxFacingLookAheadFrames>
+		<Weather_Category>Flying</Weather_Category>
+		<Can_Indigenous_Unit_Stop>No</Can_Indigenous_Unit_Stop>
+		<Is_Indigenous_Unit_Corruptible>False</Is_Indigenous_Unit_Corruptible>
+
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</Indigenous_Passive>
+
+	<Indigenous_Passive Name="Passive_Overracer_Speeder">
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_INDIGENOUS </Encyclopedia_Unit_Class>
+		<Land_Model_Name>passive_overracer.alo</Land_Model_Name>
+		<Land_Model_Anim_Override_Name>w_passive_unit.alo</Land_Model_Anim_Override_Name>
+		<Scale_Factor>1.1</Scale_Factor>
+		<Movie_Object>false</Movie_Object>
+		<Mass>0.985</Mass>
+
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Size_Value>15</Size_Value>
+
+		<Mass> 1.0 </Mass>
+		<Max_Speed>4.0</Max_Speed>
+		<Min_Speed> 2.5 </Min_Speed>
+		<Max_Rate_Of_Turn>1.0</Max_Rate_Of_Turn>
+		<Max_Thrust>0.1</Max_Thrust>
+		<Max_Rate_Of_Roll>1.5</Max_Rate_Of_Roll>
+		<Max_Lift>0.0</Max_Lift>
+		<Bank_Turn_Angle>60</Bank_Turn_Angle>
+		<Begin_Turn_Towards_Distance>100.0</Begin_Turn_Towards_Distance>
+
+		<LandBehavior>FIGHTER_LOCOMOTOR,IDLE,INDIGENOUS_UNIT</LandBehavior>
+		<Allow_Idle_When_Moving>Yes</Allow_Idle_When_Moving>
+
+		<Affiliation>Neutral</Affiliation>
+		<Influences_Capture_Point> False </Influences_Capture_Point>
+		<Political_Control>0</Political_Control>
+
+		<Wind_Disturbance_Radius>100</Wind_Disturbance_Radius>
+		<Wind_Disturbance_Strength>5</Wind_Disturbance_Strength>
+		<Wind_Disturbance_Sphere_Alpha>0.1</Wind_Disturbance_Sphere_Alpha>
+
+		<SFXEvent_Ambient_Moving> Unit_Cloud_Car_Fly_By </SFXEvent_Ambient_Moving>
+		<SFXEvent_Ambient_Moving_Min_Delay_Seconds> 2 </SFXEvent_Ambient_Moving_Min_Delay_Seconds>
+		<SFXEvent_Ambient_Moving_Max_Delay_Seconds> 6 </SFXEvent_Ambient_Moving_Max_Delay_Seconds>
+		<SFXEvent_Engine_Cinematic_Focus_Loop> Unit_Cloud_Car_Cinematic_Engine_Loop </SFXEvent_Engine_Cinematic_Focus_Loop>
+
+		<Icon_Name>i_button_rebel_speeder.tga</Icon_Name>
+		<MovementClass> Flying </MovementClass>
+		<OccupationStyle>1x1</OccupationStyle>
+		<Victory_Relevant>no</Victory_Relevant>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Blob_Shadow_Below_Detail_Level>2</Blob_Shadow_Below_Detail_Level>
+		<Blob_Shadow_Scale>5.0, 5.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name>Generic_Shadow</Blob_Shadow_Material_Name>
+		<Occlusion_Silhouette_Enabled>0</Occlusion_Silhouette_Enabled>
+
+		<Air_Vehicle_Turret_Target> No </Air_Vehicle_Turret_Target>
+		<Is_Visible_On_Radar>No</Is_Visible_On_Radar>
+		<Is_Valid_Target>False</Is_Valid_Target>
+		
+		<Layer_Z_Adjust>200.0</Layer_Z_Adjust>
+		<Hover_Offset>200.0</Hover_Offset>
+		<Prepare_Strafe_Height>75.0</Prepare_Strafe_Height>
+		<MaxFacingLookAheadFrames>5.0</MaxFacingLookAheadFrames>
+		<Weather_Category>Flying</Weather_Category>
+		<Can_Indigenous_Unit_Stop>No</Can_Indigenous_Unit_Stop>
+		<Is_Indigenous_Unit_Corruptible>False</Is_Indigenous_Unit_Corruptible>
+
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</Indigenous_Passive>
+
+	<Indigenous_Passive Name="Passive_Civilian_Jailspeeder">
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_INDIGENOUS </Encyclopedia_Unit_Class>
+		<Land_Model_Name>passive_civilian_jailspeeder.ALO</Land_Model_Name>
+		<Land_Model_Anim_Override_Name>w_passive_unit.alo</Land_Model_Anim_Override_Name>
+		<Scale_Factor>1.2</Scale_Factor>
+		<Movie_Object>false</Movie_Object>
+		<Mass>0.985</Mass>
+
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Size_Value>15</Size_Value>
+
+		<Mass> 1.0 </Mass>
+		<Max_Speed>4.0</Max_Speed>
+		<Min_Speed> 2.5 </Min_Speed>
+		<Max_Rate_Of_Turn>1.0</Max_Rate_Of_Turn>
+		<Max_Thrust>0.1</Max_Thrust>
+		<Max_Rate_Of_Roll>1.5</Max_Rate_Of_Roll>
+		<Max_Lift>0.0</Max_Lift>
+		<Bank_Turn_Angle>60</Bank_Turn_Angle>
+		<Begin_Turn_Towards_Distance>100.0</Begin_Turn_Towards_Distance>
+
+		<LandBehavior>FIGHTER_LOCOMOTOR,IDLE,INDIGENOUS_UNIT</LandBehavior>
+		<Allow_Idle_When_Moving>Yes</Allow_Idle_When_Moving>
+
+		<Affiliation>Neutral</Affiliation>
+		<Influences_Capture_Point> False </Influences_Capture_Point>
+		<Political_Control>0</Political_Control>
+
+		<Wind_Disturbance_Radius>100</Wind_Disturbance_Radius>
+		<Wind_Disturbance_Strength>5</Wind_Disturbance_Strength>
+		<Wind_Disturbance_Sphere_Alpha>0.1</Wind_Disturbance_Sphere_Alpha>
+
+		<SFXEvent_Ambient_Moving> Unit_Cloud_Car_Fly_By </SFXEvent_Ambient_Moving>
+		<SFXEvent_Ambient_Moving_Min_Delay_Seconds> 2 </SFXEvent_Ambient_Moving_Min_Delay_Seconds>
+		<SFXEvent_Ambient_Moving_Max_Delay_Seconds> 6 </SFXEvent_Ambient_Moving_Max_Delay_Seconds>
+		<SFXEvent_Engine_Cinematic_Focus_Loop> Unit_Cloud_Car_Cinematic_Engine_Loop </SFXEvent_Engine_Cinematic_Focus_Loop>
+
+		<Icon_Name>i_button_rebel_speeder.tga</Icon_Name>
+		<MovementClass> Flying </MovementClass>
+		<OccupationStyle>1x1</OccupationStyle>
+		<Victory_Relevant>no</Victory_Relevant>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Blob_Shadow_Below_Detail_Level>2</Blob_Shadow_Below_Detail_Level>
+		<Blob_Shadow_Scale>5.0, 5.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name>Generic_Shadow</Blob_Shadow_Material_Name>
+		<Occlusion_Silhouette_Enabled>0</Occlusion_Silhouette_Enabled>
+
+		<Air_Vehicle_Turret_Target> No </Air_Vehicle_Turret_Target>
+		<Is_Visible_On_Radar>No</Is_Visible_On_Radar>
+		<Is_Valid_Target>False</Is_Valid_Target>
+		
+		<Layer_Z_Adjust>200.0</Layer_Z_Adjust>
+		<Hover_Offset>200.0</Hover_Offset>
+		<Prepare_Strafe_Height>75.0</Prepare_Strafe_Height>
+		<MaxFacingLookAheadFrames>5.0</MaxFacingLookAheadFrames>
+		<Weather_Category>Flying</Weather_Category>
+		<Can_Indigenous_Unit_Stop>No</Can_Indigenous_Unit_Stop>
+		<Is_Indigenous_Unit_Corruptible>False</Is_Indigenous_Unit_Corruptible>
+
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</Indigenous_Passive>
+
+	<Indigenous_Passive Name="Passive_Civilian_SU40_Speeder">
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_INDIGENOUS </Encyclopedia_Unit_Class>
+		<Land_Model_Name>passive_civilian_su40_speeder.ALO</Land_Model_Name>
+		<Land_Model_Anim_Override_Name>w_passive_unit.alo</Land_Model_Anim_Override_Name>
+		<Scale_Factor>1.2</Scale_Factor>
+		<Movie_Object>false</Movie_Object>
+		<Mass>0.985</Mass>
+
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Size_Value>15</Size_Value>
+
+		<Mass> 1.0 </Mass>
+		<Max_Speed>4.0</Max_Speed>
+		<Min_Speed> 2.5 </Min_Speed>
+		<Max_Rate_Of_Turn>1.0</Max_Rate_Of_Turn>
+		<Max_Thrust>0.1</Max_Thrust>
+		<Max_Rate_Of_Roll>1.5</Max_Rate_Of_Roll>
+		<Max_Lift>0.0</Max_Lift>
+		<Bank_Turn_Angle>60</Bank_Turn_Angle>
+		<Begin_Turn_Towards_Distance>100.0</Begin_Turn_Towards_Distance>
+
+		<LandBehavior>FIGHTER_LOCOMOTOR,IDLE,INDIGENOUS_UNIT</LandBehavior>
+		<Allow_Idle_When_Moving>Yes</Allow_Idle_When_Moving>
+
+		<Affiliation>Neutral</Affiliation>
+		<Influences_Capture_Point> False </Influences_Capture_Point>
+		<Political_Control>0</Political_Control>
+
+		<Wind_Disturbance_Radius>100</Wind_Disturbance_Radius>
+		<Wind_Disturbance_Strength>5</Wind_Disturbance_Strength>
+		<Wind_Disturbance_Sphere_Alpha>0.1</Wind_Disturbance_Sphere_Alpha>
+
+		<SFXEvent_Ambient_Moving> Unit_Cloud_Car_Fly_By </SFXEvent_Ambient_Moving>
+		<SFXEvent_Ambient_Moving_Min_Delay_Seconds> 2 </SFXEvent_Ambient_Moving_Min_Delay_Seconds>
+		<SFXEvent_Ambient_Moving_Max_Delay_Seconds> 6 </SFXEvent_Ambient_Moving_Max_Delay_Seconds>
+		<SFXEvent_Engine_Cinematic_Focus_Loop> Unit_Cloud_Car_Cinematic_Engine_Loop </SFXEvent_Engine_Cinematic_Focus_Loop>
+
+		<Icon_Name>i_button_rebel_speeder.tga</Icon_Name>
+		<MovementClass> Flying </MovementClass>
+		<OccupationStyle>1x1</OccupationStyle>
+		<Victory_Relevant>no</Victory_Relevant>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Blob_Shadow_Below_Detail_Level>2</Blob_Shadow_Below_Detail_Level>
+		<Blob_Shadow_Scale>5.0, 5.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name>Generic_Shadow</Blob_Shadow_Material_Name>
+		<Occlusion_Silhouette_Enabled>0</Occlusion_Silhouette_Enabled>
+
+		<Air_Vehicle_Turret_Target> No </Air_Vehicle_Turret_Target>
+		<Is_Visible_On_Radar>No</Is_Visible_On_Radar>
+		<Is_Valid_Target>False</Is_Valid_Target>
+		
+		<Layer_Z_Adjust>250.0</Layer_Z_Adjust>
+		<Hover_Offset>250.0</Hover_Offset>
+		<Prepare_Strafe_Height>75.0</Prepare_Strafe_Height>
+		<MaxFacingLookAheadFrames>5.0</MaxFacingLookAheadFrames>
+		<Weather_Category>Flying</Weather_Category>
+		<Can_Indigenous_Unit_Stop>No</Can_Indigenous_Unit_Stop>
+		<Is_Indigenous_Unit_Corruptible>False</Is_Indigenous_Unit_Corruptible>
+
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</Indigenous_Passive>
+
+	<Indigenous_Passive Name="Passive_Civilian_Gaba_Speeder">
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_INDIGENOUS </Encyclopedia_Unit_Class>
+		<Land_Model_Name>passive_civilian_gaba_speeder.ALO</Land_Model_Name>
+		<Land_Model_Anim_Override_Name>w_passive_unit.alo</Land_Model_Anim_Override_Name>
+		<Scale_Factor>1.2</Scale_Factor>
+		<Movie_Object>false</Movie_Object>
+		<Mass>0.985</Mass>
+
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Size_Value>15</Size_Value>
+
+		<Mass> 1.0 </Mass>
+		<Max_Speed>4.0</Max_Speed>
+		<Min_Speed> 2.5 </Min_Speed>
+		<Max_Rate_Of_Turn>1.0</Max_Rate_Of_Turn>
+		<Max_Thrust>0.1</Max_Thrust>
+		<Max_Rate_Of_Roll>1.5</Max_Rate_Of_Roll>
+		<Max_Lift>0.0</Max_Lift>
+		<Bank_Turn_Angle>60</Bank_Turn_Angle>
+		<Begin_Turn_Towards_Distance>100.0</Begin_Turn_Towards_Distance>
+
+		<LandBehavior>FIGHTER_LOCOMOTOR,IDLE,INDIGENOUS_UNIT</LandBehavior>
+		<Allow_Idle_When_Moving>Yes</Allow_Idle_When_Moving>
+
+		<Affiliation>Neutral</Affiliation>
+		<Influences_Capture_Point> False </Influences_Capture_Point>
+		<Political_Control>0</Political_Control>
+
+		<Wind_Disturbance_Radius>100</Wind_Disturbance_Radius>
+		<Wind_Disturbance_Strength>5</Wind_Disturbance_Strength>
+		<Wind_Disturbance_Sphere_Alpha>0.1</Wind_Disturbance_Sphere_Alpha>
+
+		<SFXEvent_Ambient_Moving> Unit_Cloud_Car_Fly_By </SFXEvent_Ambient_Moving>
+		<SFXEvent_Ambient_Moving_Min_Delay_Seconds> 2 </SFXEvent_Ambient_Moving_Min_Delay_Seconds>
+		<SFXEvent_Ambient_Moving_Max_Delay_Seconds> 6 </SFXEvent_Ambient_Moving_Max_Delay_Seconds>
+		<SFXEvent_Engine_Cinematic_Focus_Loop> Unit_Cloud_Car_Cinematic_Engine_Loop </SFXEvent_Engine_Cinematic_Focus_Loop>
+
+		<Icon_Name>i_button_rebel_speeder.tga</Icon_Name>
+		<MovementClass> Flying </MovementClass>
+		<OccupationStyle>1x1</OccupationStyle>
+		<Victory_Relevant>no</Victory_Relevant>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Blob_Shadow_Below_Detail_Level>2</Blob_Shadow_Below_Detail_Level>
+		<Blob_Shadow_Scale>5.0, 5.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name>Generic_Shadow</Blob_Shadow_Material_Name>
+		<Occlusion_Silhouette_Enabled>0</Occlusion_Silhouette_Enabled>
+
+		<Air_Vehicle_Turret_Target> No </Air_Vehicle_Turret_Target>
+		<Is_Visible_On_Radar>No</Is_Visible_On_Radar>
+		<Is_Valid_Target>False</Is_Valid_Target>
+		
+		<Layer_Z_Adjust>200.0</Layer_Z_Adjust>
+		<Hover_Offset>200.0</Hover_Offset>
+		<Prepare_Strafe_Height>75.0</Prepare_Strafe_Height>
+		<MaxFacingLookAheadFrames>5.0</MaxFacingLookAheadFrames>
+		<Weather_Category>Flying</Weather_Category>
+		<Can_Indigenous_Unit_Stop>No</Can_Indigenous_Unit_Stop>
+		<Is_Indigenous_Unit_Corruptible>False</Is_Indigenous_Unit_Corruptible>
+
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</Indigenous_Passive>
+
+	<Indigenous_Passive Name="Passive_Civilian_Skyhoper">
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_INDIGENOUS </Encyclopedia_Unit_Class>
+		<Land_Model_Name>passive_Skyhopper.ALO</Land_Model_Name>
+		<Land_Model_Anim_Override_Name>w_passive_unit.alo</Land_Model_Anim_Override_Name>
+		<Scale_Factor>2.95</Scale_Factor>
+		<Movie_Object>false</Movie_Object>
+		<Mass>0.985</Mass>
+
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Size_Value>15</Size_Value>
+
+		<Mass> 1.0 </Mass>
+		<Max_Speed>4.0</Max_Speed>
+		<Min_Speed> 2.5 </Min_Speed>
+		<Max_Rate_Of_Turn>1.0</Max_Rate_Of_Turn>
+		<Max_Thrust>0.1</Max_Thrust>
+		<Max_Rate_Of_Roll>1.5</Max_Rate_Of_Roll>
+		<Max_Lift>0.0</Max_Lift>
+		<Bank_Turn_Angle>60</Bank_Turn_Angle>
+		<Begin_Turn_Towards_Distance>100.0</Begin_Turn_Towards_Distance>
+
+		<LandBehavior>FIGHTER_LOCOMOTOR,IDLE,INDIGENOUS_UNIT</LandBehavior>
+		<Allow_Idle_When_Moving>Yes</Allow_Idle_When_Moving>
+
+		<Affiliation>Neutral</Affiliation>
+		<Influences_Capture_Point> False </Influences_Capture_Point>
+		<Political_Control>0</Political_Control>
+
+		<Wind_Disturbance_Radius>100</Wind_Disturbance_Radius>
+		<Wind_Disturbance_Strength>5</Wind_Disturbance_Strength>
+		<Wind_Disturbance_Sphere_Alpha>0.1</Wind_Disturbance_Sphere_Alpha>
+
+		<SFXEvent_Ambient_Moving> Unit_Cloud_Car_Fly_By </SFXEvent_Ambient_Moving>
+		<SFXEvent_Ambient_Moving_Min_Delay_Seconds> 2 </SFXEvent_Ambient_Moving_Min_Delay_Seconds>
+		<SFXEvent_Ambient_Moving_Max_Delay_Seconds> 6 </SFXEvent_Ambient_Moving_Max_Delay_Seconds>
+		<SFXEvent_Engine_Cinematic_Focus_Loop> Unit_Cloud_Car_Cinematic_Engine_Loop </SFXEvent_Engine_Cinematic_Focus_Loop>
+
+		<Icon_Name>i_button_rebel_speeder.tga</Icon_Name>
+		<MovementClass> Flying </MovementClass>
+		<OccupationStyle>1x1</OccupationStyle>
+		<Victory_Relevant>no</Victory_Relevant>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Blob_Shadow_Below_Detail_Level>2</Blob_Shadow_Below_Detail_Level>
+		<Blob_Shadow_Scale>5.0, 5.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name>Generic_Shadow</Blob_Shadow_Material_Name>
+		<Occlusion_Silhouette_Enabled>0</Occlusion_Silhouette_Enabled>
+
+		<Air_Vehicle_Turret_Target> No </Air_Vehicle_Turret_Target>
+		<Is_Visible_On_Radar>No</Is_Visible_On_Radar>
+		<Is_Valid_Target>False</Is_Valid_Target>
+		
+		<Layer_Z_Adjust>250.0</Layer_Z_Adjust>
+		<Hover_Offset>250.0</Hover_Offset>
+		<Prepare_Strafe_Height>75.0</Prepare_Strafe_Height>
+		<MaxFacingLookAheadFrames>5.0</MaxFacingLookAheadFrames>
+		<Weather_Category>Flying</Weather_Category>
+		<Can_Indigenous_Unit_Stop>No</Can_Indigenous_Unit_Stop>
+		<Is_Indigenous_Unit_Corruptible>False</Is_Indigenous_Unit_Corruptible>
+
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</Indigenous_Passive>
+
+	<Indigenous_Passive Name="Passive_YWing">
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_INDIGENOUS </Encyclopedia_Unit_Class>
+        <Land_Model_Name>passive_ywing.ALO</Land_Model_Name>
+		<Land_Model_Anim_Override_Name>w_passive_unit.alo</Land_Model_Anim_Override_Name>
+        <Scale_Factor>6.0</Scale_Factor>
+		<Movie_Object>false</Movie_Object>
+		<Mass>0.985</Mass>
+
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Size_Value>15</Size_Value>
+
+		<Mass> 1.0 </Mass>
+		<Max_Speed>4.0</Max_Speed>
+		<Min_Speed> 2.5 </Min_Speed>
+		<Max_Rate_Of_Turn>1.0</Max_Rate_Of_Turn>
+		<Max_Thrust>0.1</Max_Thrust>
+		<Max_Rate_Of_Roll>1.5</Max_Rate_Of_Roll>
+		<Max_Lift>0.0</Max_Lift>
+		<Bank_Turn_Angle>60</Bank_Turn_Angle>
+		<Begin_Turn_Towards_Distance>100.0</Begin_Turn_Towards_Distance>
+
+		<LandBehavior>FIGHTER_LOCOMOTOR,IDLE,INDIGENOUS_UNIT</LandBehavior>
+		<Allow_Idle_When_Moving>Yes</Allow_Idle_When_Moving>
+
+		<Affiliation>Neutral</Affiliation>
+		<Influences_Capture_Point> False </Influences_Capture_Point>
+		<Political_Control>0</Political_Control>
+
+		<Wind_Disturbance_Radius>100</Wind_Disturbance_Radius>
+		<Wind_Disturbance_Strength>5</Wind_Disturbance_Strength>
+		<Wind_Disturbance_Sphere_Alpha>0.1</Wind_Disturbance_Sphere_Alpha>
+
+		<SFXEvent_Ambient_Moving> Unit_Cloud_Car_Fly_By </SFXEvent_Ambient_Moving>
+		<SFXEvent_Ambient_Moving_Min_Delay_Seconds> 2 </SFXEvent_Ambient_Moving_Min_Delay_Seconds>
+		<SFXEvent_Ambient_Moving_Max_Delay_Seconds> 6 </SFXEvent_Ambient_Moving_Max_Delay_Seconds>
+		<SFXEvent_Engine_Cinematic_Focus_Loop> Unit_Cloud_Car_Cinematic_Engine_Loop </SFXEvent_Engine_Cinematic_Focus_Loop>
+
+		<Icon_Name>i_button_rebel_speeder.tga</Icon_Name>
+		<MovementClass> Flying </MovementClass>
+		<OccupationStyle>1x1</OccupationStyle>
+		<Victory_Relevant>no</Victory_Relevant>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Blob_Shadow_Below_Detail_Level>2</Blob_Shadow_Below_Detail_Level>
+		<Blob_Shadow_Scale>5.0, 5.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name>Generic_Shadow</Blob_Shadow_Material_Name>
+		<Occlusion_Silhouette_Enabled>0</Occlusion_Silhouette_Enabled>
+
+		<Air_Vehicle_Turret_Target> No </Air_Vehicle_Turret_Target>
+		<Is_Visible_On_Radar>No</Is_Visible_On_Radar>
+		<Is_Valid_Target>False</Is_Valid_Target>
+		
+		<Layer_Z_Adjust>300.0</Layer_Z_Adjust>
+		<Hover_Offset>300.0</Hover_Offset>
+		<Prepare_Strafe_Height>75.0</Prepare_Strafe_Height>
+		<MaxFacingLookAheadFrames>5.0</MaxFacingLookAheadFrames>
+		<Weather_Category>Flying</Weather_Category>
+		<Can_Indigenous_Unit_Stop>No</Can_Indigenous_Unit_Stop>
+		<Is_Indigenous_Unit_Corruptible>False</Is_Indigenous_Unit_Corruptible>
+
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</Indigenous_Passive>
+
+	<Indigenous_Passive Name="Passive_YWingS1">
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_INDIGENOUS </Encyclopedia_Unit_Class>
+		<Land_Model_Name>passive_btl-b_y-wing.ALO</Land_Model_Name>
+		<Land_Model_Anim_Override_Name>w_passive_unit.alo</Land_Model_Anim_Override_Name>
+		<Scale_Factor>6.0</Scale_Factor>
+		<Movie_Object>false</Movie_Object>
+		<Mass>0.985</Mass>
+
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Size_Value>15</Size_Value>
+
+		<Mass> 1.0 </Mass>
+		<Max_Speed>4.0</Max_Speed>
+		<Min_Speed> 2.5 </Min_Speed>
+		<Max_Rate_Of_Turn>1.0</Max_Rate_Of_Turn>
+		<Max_Thrust>0.1</Max_Thrust>
+		<Max_Rate_Of_Roll>1.5</Max_Rate_Of_Roll>
+		<Max_Lift>0.0</Max_Lift>
+		<Bank_Turn_Angle>60</Bank_Turn_Angle>
+		<Begin_Turn_Towards_Distance>100.0</Begin_Turn_Towards_Distance>
+
+		<LandBehavior>FIGHTER_LOCOMOTOR,IDLE,INDIGENOUS_UNIT</LandBehavior>
+		<Allow_Idle_When_Moving>Yes</Allow_Idle_When_Moving>
+
+		<Affiliation>Neutral</Affiliation>
+		<Influences_Capture_Point> False </Influences_Capture_Point>
+		<Political_Control>0</Political_Control>
+
+		<Wind_Disturbance_Radius>100</Wind_Disturbance_Radius>
+		<Wind_Disturbance_Strength>5</Wind_Disturbance_Strength>
+		<Wind_Disturbance_Sphere_Alpha>0.1</Wind_Disturbance_Sphere_Alpha>
+
+		<SFXEvent_Ambient_Moving> Unit_Cloud_Car_Fly_By </SFXEvent_Ambient_Moving>
+		<SFXEvent_Ambient_Moving_Min_Delay_Seconds> 2 </SFXEvent_Ambient_Moving_Min_Delay_Seconds>
+		<SFXEvent_Ambient_Moving_Max_Delay_Seconds> 6 </SFXEvent_Ambient_Moving_Max_Delay_Seconds>
+		<SFXEvent_Engine_Cinematic_Focus_Loop> Unit_Cloud_Car_Cinematic_Engine_Loop </SFXEvent_Engine_Cinematic_Focus_Loop>
+
+		<Icon_Name>i_button_rebel_speeder.tga</Icon_Name>
+		<MovementClass> Flying </MovementClass>
+		<OccupationStyle>1x1</OccupationStyle>
+		<Victory_Relevant>no</Victory_Relevant>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Blob_Shadow_Below_Detail_Level>2</Blob_Shadow_Below_Detail_Level>
+		<Blob_Shadow_Scale>5.0, 5.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name>Generic_Shadow</Blob_Shadow_Material_Name>
+		<Occlusion_Silhouette_Enabled>0</Occlusion_Silhouette_Enabled>
+
+		<Air_Vehicle_Turret_Target> No </Air_Vehicle_Turret_Target>
+		<Is_Visible_On_Radar>No</Is_Visible_On_Radar>
+		<Is_Valid_Target>False</Is_Valid_Target>
+		
+		<Layer_Z_Adjust>300.0</Layer_Z_Adjust>
+		<Hover_Offset>300.0</Hover_Offset>
+		<Prepare_Strafe_Height>75.0</Prepare_Strafe_Height>
+		<MaxFacingLookAheadFrames>5.0</MaxFacingLookAheadFrames>
+		<Weather_Category>Flying</Weather_Category>
+		<Can_Indigenous_Unit_Stop>No</Can_Indigenous_Unit_Stop>
+		<Is_Indigenous_Unit_Corruptible>False</Is_Indigenous_Unit_Corruptible>
+
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</Indigenous_Passive>
+
+	<Indigenous_Passive Name="Passive_ARC170">
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_INDIGENOUS </Encyclopedia_Unit_Class>
+		<Land_Model_Name>passive_ARC-170_starfighter.ALO</Land_Model_Name>
+		<Land_Model_Anim_Override_Name>w_passive_unit.alo</Land_Model_Anim_Override_Name>
+		<Scale_Factor>6.0</Scale_Factor>
+		<Movie_Object>false</Movie_Object>
+		<Mass>0.985</Mass>
+
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Size_Value>15</Size_Value>
+
+		<Mass> 1.0 </Mass>
+		<Max_Speed>4.0</Max_Speed>
+		<Min_Speed> 2.5 </Min_Speed>
+		<Max_Rate_Of_Turn>1.0</Max_Rate_Of_Turn>
+		<Max_Thrust>0.1</Max_Thrust>
+		<Max_Rate_Of_Roll>1.5</Max_Rate_Of_Roll>
+		<Max_Lift>0.0</Max_Lift>
+		<Bank_Turn_Angle>60</Bank_Turn_Angle>
+		<Begin_Turn_Towards_Distance>100.0</Begin_Turn_Towards_Distance>
+
+		<LandBehavior>FIGHTER_LOCOMOTOR,IDLE,INDIGENOUS_UNIT</LandBehavior>
+		<Allow_Idle_When_Moving>Yes</Allow_Idle_When_Moving>
+
+		<Affiliation>Neutral</Affiliation>
+		<Influences_Capture_Point> False </Influences_Capture_Point>
+		<Political_Control>0</Political_Control>
+
+		<Wind_Disturbance_Radius>100</Wind_Disturbance_Radius>
+		<Wind_Disturbance_Strength>5</Wind_Disturbance_Strength>
+		<Wind_Disturbance_Sphere_Alpha>0.1</Wind_Disturbance_Sphere_Alpha>
+
+		<SFXEvent_Ambient_Moving> Unit_Cloud_Car_Fly_By </SFXEvent_Ambient_Moving>
+		<SFXEvent_Ambient_Moving_Min_Delay_Seconds> 2 </SFXEvent_Ambient_Moving_Min_Delay_Seconds>
+		<SFXEvent_Ambient_Moving_Max_Delay_Seconds> 6 </SFXEvent_Ambient_Moving_Max_Delay_Seconds>
+		<SFXEvent_Engine_Cinematic_Focus_Loop> Unit_Cloud_Car_Cinematic_Engine_Loop </SFXEvent_Engine_Cinematic_Focus_Loop>
+
+		<Icon_Name>i_button_rebel_speeder.tga</Icon_Name>
+		<MovementClass> Flying </MovementClass>
+		<OccupationStyle>1x1</OccupationStyle>
+		<Victory_Relevant>no</Victory_Relevant>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Blob_Shadow_Below_Detail_Level>2</Blob_Shadow_Below_Detail_Level>
+		<Blob_Shadow_Scale>5.0, 5.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name>Generic_Shadow</Blob_Shadow_Material_Name>
+		<Occlusion_Silhouette_Enabled>0</Occlusion_Silhouette_Enabled>
+
+		<Air_Vehicle_Turret_Target> No </Air_Vehicle_Turret_Target>
+		<Is_Visible_On_Radar>No</Is_Visible_On_Radar>
+		<Is_Valid_Target>False</Is_Valid_Target>
+		
+		<Layer_Z_Adjust>300.0</Layer_Z_Adjust>
+		<Hover_Offset>300.0</Hover_Offset>
+		<Prepare_Strafe_Height>75.0</Prepare_Strafe_Height>
+		<MaxFacingLookAheadFrames>5.0</MaxFacingLookAheadFrames>
+		<Weather_Category>Flying</Weather_Category>
+		<Can_Indigenous_Unit_Stop>No</Can_Indigenous_Unit_Stop>
+		<Is_Indigenous_Unit_Corruptible>False</Is_Indigenous_Unit_Corruptible>
+
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</Indigenous_Passive>
+
+	<Indigenous_Passive Name="Passive_N1_Starfighter">
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_INDIGENOUS </Encyclopedia_Unit_Class>
+		<Land_Model_Name>passive_N1_Starfighter.ALO</Land_Model_Name>
+		<Land_Model_Anim_Override_Name>w_passive_unit.alo</Land_Model_Anim_Override_Name>
+		<No_Colorization_Color> 255, 255, 0, 255 </No_Colorization_Color>
+		<Scale_Factor>6.0</Scale_Factor>
+		<Movie_Object>false</Movie_Object>
+		<Mass>0.985</Mass>
+
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Size_Value>15</Size_Value>
+
+		<Mass> 1.0 </Mass>
+		<Max_Speed>4.0</Max_Speed>
+		<Min_Speed> 2.5 </Min_Speed>
+		<Max_Rate_Of_Turn>1.0</Max_Rate_Of_Turn>
+		<Max_Thrust>0.1</Max_Thrust>
+		<Max_Rate_Of_Roll>1.5</Max_Rate_Of_Roll>
+		<Max_Lift>0.0</Max_Lift>
+		<Bank_Turn_Angle>60</Bank_Turn_Angle>
+		<Begin_Turn_Towards_Distance>100.0</Begin_Turn_Towards_Distance>
+
+		<LandBehavior>FIGHTER_LOCOMOTOR,IDLE,INDIGENOUS_UNIT</LandBehavior>
+		<Allow_Idle_When_Moving>Yes</Allow_Idle_When_Moving>
+
+		<Affiliation>Neutral</Affiliation>
+		<Influences_Capture_Point> False </Influences_Capture_Point>
+		<Political_Control>0</Political_Control>
+
+		<Wind_Disturbance_Radius>100</Wind_Disturbance_Radius>
+		<Wind_Disturbance_Strength>5</Wind_Disturbance_Strength>
+		<Wind_Disturbance_Sphere_Alpha>0.1</Wind_Disturbance_Sphere_Alpha>
+
+		<SFXEvent_Ambient_Moving> Unit_Cloud_Car_Fly_By </SFXEvent_Ambient_Moving>
+		<SFXEvent_Ambient_Moving_Min_Delay_Seconds> 2 </SFXEvent_Ambient_Moving_Min_Delay_Seconds>
+		<SFXEvent_Ambient_Moving_Max_Delay_Seconds> 6 </SFXEvent_Ambient_Moving_Max_Delay_Seconds>
+		<SFXEvent_Engine_Cinematic_Focus_Loop> Unit_Cloud_Car_Cinematic_Engine_Loop </SFXEvent_Engine_Cinematic_Focus_Loop>
+
+		<Icon_Name>i_button_rebel_speeder.tga</Icon_Name>
+		<MovementClass> Flying </MovementClass>
+		<OccupationStyle>1x1</OccupationStyle>
+		<Victory_Relevant>no</Victory_Relevant>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Blob_Shadow_Below_Detail_Level>2</Blob_Shadow_Below_Detail_Level>
+		<Blob_Shadow_Scale>5.0, 5.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name>Generic_Shadow</Blob_Shadow_Material_Name>
+		<Occlusion_Silhouette_Enabled>0</Occlusion_Silhouette_Enabled>
+
+		<Air_Vehicle_Turret_Target> No </Air_Vehicle_Turret_Target>
+		<Is_Visible_On_Radar>No</Is_Visible_On_Radar>
+		<Is_Valid_Target>False</Is_Valid_Target>
+		
+		<Layer_Z_Adjust>300.0</Layer_Z_Adjust>
+		<Hover_Offset>300.0</Hover_Offset>
+		<Prepare_Strafe_Height>75.0</Prepare_Strafe_Height>
+		<MaxFacingLookAheadFrames>5.0</MaxFacingLookAheadFrames>
+		<Weather_Category>Flying</Weather_Category>
+		<Can_Indigenous_Unit_Stop>No</Can_Indigenous_Unit_Stop>
+		<Is_Indigenous_Unit_Corruptible>False</Is_Indigenous_Unit_Corruptible>
+
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</Indigenous_Passive>
+
+	<Indigenous_Passive Name="Passive_Cloakshape">
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_INDIGENOUS </Encyclopedia_Unit_Class>
+		<Land_Model_Name>passive_cloakshape.ALO</Land_Model_Name>
+		<Land_Model_Anim_Override_Name>w_passive_unit.alo</Land_Model_Anim_Override_Name>
+		<Scale_Factor>6.0</Scale_Factor>
+		<Movie_Object>false</Movie_Object>
+		<Mass>0.985</Mass>
+
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Size_Value>15</Size_Value>
+
+		<Mass> 1.0 </Mass>
+		<Max_Speed>4.0</Max_Speed>
+		<Min_Speed> 2.5 </Min_Speed>
+		<Max_Rate_Of_Turn>1.0</Max_Rate_Of_Turn>
+		<Max_Thrust>0.1</Max_Thrust>
+		<Max_Rate_Of_Roll>1.5</Max_Rate_Of_Roll>
+		<Max_Lift>0.0</Max_Lift>
+		<Bank_Turn_Angle>60</Bank_Turn_Angle>
+		<Begin_Turn_Towards_Distance>100.0</Begin_Turn_Towards_Distance>
+
+		<LandBehavior>FIGHTER_LOCOMOTOR,IDLE,INDIGENOUS_UNIT</LandBehavior>
+		<Allow_Idle_When_Moving>Yes</Allow_Idle_When_Moving>
+
+		<Affiliation>Neutral</Affiliation>
+		<Influences_Capture_Point> False </Influences_Capture_Point>
+		<Political_Control>0</Political_Control>
+
+		<Wind_Disturbance_Radius>100</Wind_Disturbance_Radius>
+		<Wind_Disturbance_Strength>5</Wind_Disturbance_Strength>
+		<Wind_Disturbance_Sphere_Alpha>0.1</Wind_Disturbance_Sphere_Alpha>
+
+		<SFXEvent_Ambient_Moving> Unit_Cloud_Car_Fly_By </SFXEvent_Ambient_Moving>
+		<SFXEvent_Ambient_Moving_Min_Delay_Seconds> 2 </SFXEvent_Ambient_Moving_Min_Delay_Seconds>
+		<SFXEvent_Ambient_Moving_Max_Delay_Seconds> 6 </SFXEvent_Ambient_Moving_Max_Delay_Seconds>
+		<SFXEvent_Engine_Cinematic_Focus_Loop> Unit_Cloud_Car_Cinematic_Engine_Loop </SFXEvent_Engine_Cinematic_Focus_Loop>
+
+		<Icon_Name>i_button_rebel_speeder.tga</Icon_Name>
+		<MovementClass> Flying </MovementClass>
+		<OccupationStyle>1x1</OccupationStyle>
+		<Victory_Relevant>no</Victory_Relevant>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Blob_Shadow_Below_Detail_Level>2</Blob_Shadow_Below_Detail_Level>
+		<Blob_Shadow_Scale>5.0, 5.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name>Generic_Shadow</Blob_Shadow_Material_Name>
+		<Occlusion_Silhouette_Enabled>0</Occlusion_Silhouette_Enabled>
+
+		<Air_Vehicle_Turret_Target> No </Air_Vehicle_Turret_Target>
+		<Is_Visible_On_Radar>No</Is_Visible_On_Radar>
+		<Is_Valid_Target>False</Is_Valid_Target>
+		
+		<Layer_Z_Adjust>300.0</Layer_Z_Adjust>
+		<Hover_Offset>300.0</Hover_Offset>
+		<Prepare_Strafe_Height>75.0</Prepare_Strafe_Height>
+		<MaxFacingLookAheadFrames>5.0</MaxFacingLookAheadFrames>
+		<Weather_Category>Flying</Weather_Category>
+		<Can_Indigenous_Unit_Stop>No</Can_Indigenous_Unit_Stop>
+		<Is_Indigenous_Unit_Corruptible>False</Is_Indigenous_Unit_Corruptible>
+
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</Indigenous_Passive>
+
+	<Indigenous_Passive Name="Passive_Cloakshape_Stock">
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_INDIGENOUS </Encyclopedia_Unit_Class>
+		<Land_Model_Name>passive_cloakshape_stock.ALO</Land_Model_Name>
+		<Land_Model_Anim_Override_Name>w_passive_unit.alo</Land_Model_Anim_Override_Name>
+		<Scale_Factor>6.0</Scale_Factor>
+		<Movie_Object>false</Movie_Object>
+		<Mass>0.985</Mass>
+
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Size_Value>15</Size_Value>
+
+		<Mass> 1.0 </Mass>
+		<Max_Speed>4.0</Max_Speed>
+		<Min_Speed> 2.5 </Min_Speed>
+		<Max_Rate_Of_Turn>1.0</Max_Rate_Of_Turn>
+		<Max_Thrust>0.1</Max_Thrust>
+		<Max_Rate_Of_Roll>1.5</Max_Rate_Of_Roll>
+		<Max_Lift>0.0</Max_Lift>
+		<Bank_Turn_Angle>60</Bank_Turn_Angle>
+		<Begin_Turn_Towards_Distance>100.0</Begin_Turn_Towards_Distance>
+
+		<LandBehavior>FIGHTER_LOCOMOTOR,IDLE,INDIGENOUS_UNIT</LandBehavior>
+		<Allow_Idle_When_Moving>Yes</Allow_Idle_When_Moving>
+
+		<Affiliation>Neutral</Affiliation>
+		<Influences_Capture_Point> False </Influences_Capture_Point>
+		<Political_Control>0</Political_Control>
+
+		<Wind_Disturbance_Radius>100</Wind_Disturbance_Radius>
+		<Wind_Disturbance_Strength>5</Wind_Disturbance_Strength>
+		<Wind_Disturbance_Sphere_Alpha>0.1</Wind_Disturbance_Sphere_Alpha>
+
+		<SFXEvent_Ambient_Moving> Unit_Cloud_Car_Fly_By </SFXEvent_Ambient_Moving>
+		<SFXEvent_Ambient_Moving_Min_Delay_Seconds> 2 </SFXEvent_Ambient_Moving_Min_Delay_Seconds>
+		<SFXEvent_Ambient_Moving_Max_Delay_Seconds> 6 </SFXEvent_Ambient_Moving_Max_Delay_Seconds>
+		<SFXEvent_Engine_Cinematic_Focus_Loop> Unit_Cloud_Car_Cinematic_Engine_Loop </SFXEvent_Engine_Cinematic_Focus_Loop>
+
+		<Icon_Name>i_button_rebel_speeder.tga</Icon_Name>
+		<MovementClass> Flying </MovementClass>
+		<OccupationStyle>1x1</OccupationStyle>
+		<Victory_Relevant>no</Victory_Relevant>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Blob_Shadow_Below_Detail_Level>2</Blob_Shadow_Below_Detail_Level>
+		<Blob_Shadow_Scale>5.0, 5.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name>Generic_Shadow</Blob_Shadow_Material_Name>
+		<Occlusion_Silhouette_Enabled>0</Occlusion_Silhouette_Enabled>
+
+		<Air_Vehicle_Turret_Target> No </Air_Vehicle_Turret_Target>
+		<Is_Visible_On_Radar>No</Is_Visible_On_Radar>
+		<Is_Valid_Target>False</Is_Valid_Target>
+		
+		<Layer_Z_Adjust>300.0</Layer_Z_Adjust>
+		<Hover_Offset>300.0</Hover_Offset>
+		<Prepare_Strafe_Height>75.0</Prepare_Strafe_Height>
+		<MaxFacingLookAheadFrames>5.0</MaxFacingLookAheadFrames>
+		<Weather_Category>Flying</Weather_Category>
+		<Can_Indigenous_Unit_Stop>No</Can_Indigenous_Unit_Stop>
+		<Is_Indigenous_Unit_Corruptible>False</Is_Indigenous_Unit_Corruptible>
+
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</Indigenous_Passive>
+
+<!--	<Indigenous_Passive Name="Passive_Z95_Headhunter">
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_INDIGENOUS </Encyclopedia_Unit_Class>
+		<Land_Model_Name>passive_z-95_headhunter.ALO</Land_Model_Name>
+		<Land_Model_Anim_Override_Name>w_passive_unit.alo</Land_Model_Anim_Override_Name>
+		<Scale_Factor>6.0</Scale_Factor>
+		<Movie_Object>false</Movie_Object>
+		<Mass>0.985</Mass>
+
+		<Size_Value>15</Size_Value>
+
+		<Mass> 1.0 </Mass>
+		<Max_Speed>4.0</Max_Speed>
+		<Min_Speed> 2.5 </Min_Speed>
+		<Max_Rate_Of_Turn>1.0</Max_Rate_Of_Turn>
+		<Max_Thrust>0.1</Max_Thrust>
+		<Max_Rate_Of_Roll>1.5</Max_Rate_Of_Roll>
+		<Max_Lift>0.0</Max_Lift>
+		<Bank_Turn_Angle>60</Bank_Turn_Angle>
+		<Begin_Turn_Towards_Distance>100.0</Begin_Turn_Towards_Distance>
+
+		<LandBehavior>FIGHTER_LOCOMOTOR,IDLE,INDIGENOUS_UNIT</LandBehavior>
+		<Allow_Idle_When_Moving>Yes</Allow_Idle_When_Moving>
+
+		<Affiliation>Neutral</Affiliation>
+		<Influences_Capture_Point> False </Influences_Capture_Point>
+		<Political_Control>0</Political_Control>
+
+		<Wind_Disturbance_Radius>100</Wind_Disturbance_Radius>
+		<Wind_Disturbance_Strength>5</Wind_Disturbance_Strength>
+		<Wind_Disturbance_Sphere_Alpha>0.1</Wind_Disturbance_Sphere_Alpha>
+
+		<SFXEvent_Ambient_Moving> Unit_Cloud_Car_Fly_By </SFXEvent_Ambient_Moving>
+		<SFXEvent_Ambient_Moving_Min_Delay_Seconds> 2 </SFXEvent_Ambient_Moving_Min_Delay_Seconds>
+		<SFXEvent_Ambient_Moving_Max_Delay_Seconds> 6 </SFXEvent_Ambient_Moving_Max_Delay_Seconds>
+		<SFXEvent_Engine_Cinematic_Focus_Loop> Unit_Cloud_Car_Cinematic_Engine_Loop </SFXEvent_Engine_Cinematic_Focus_Loop>
+
+		<Icon_Name>i_button_rebel_speeder.tga</Icon_Name>
+		<MovementClass> Flying </MovementClass>
+		<OccupationStyle>1x1</OccupationStyle>
+		<Victory_Relevant>no</Victory_Relevant>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Blob_Shadow_Below_Detail_Level>2</Blob_Shadow_Below_Detail_Level>
+		<Blob_Shadow_Scale>5.0, 5.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name>Generic_Shadow</Blob_Shadow_Material_Name>
+		<Occlusion_Silhouette_Enabled>0</Occlusion_Silhouette_Enabled>
+
+		<Air_Vehicle_Turret_Target> No </Air_Vehicle_Turret_Target>
+		<Is_Visible_On_Radar>No</Is_Visible_On_Radar>
+		<Is_Valid_Target>False</Is_Valid_Target>
+		
+		<Layer_Z_Adjust>300.0</Layer_Z_Adjust>
+		<Hover_Offset>300.0</Hover_Offset>
+		<Prepare_Strafe_Height>75.0</Prepare_Strafe_Height>
+		<MaxFacingLookAheadFrames>5.0</MaxFacingLookAheadFrames>
+		<Weather_Category>Flying</Weather_Category>
+		<Can_Indigenous_Unit_Stop>No</Can_Indigenous_Unit_Stop>
+		<Is_Indigenous_Unit_Corruptible>False</Is_Indigenous_Unit_Corruptible>
+
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</Indigenous_Passive> -->
+
+	<Indigenous_Passive Name="Passive_Warpod">
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_INDIGENOUS </Encyclopedia_Unit_Class>
+		<Land_Model_Name>2warpod.ALO</Land_Model_Name>
+		<Land_Model_Anim_Override_Name>w_passive_unit.alo</Land_Model_Anim_Override_Name>
+		<Scale_Factor>6.0</Scale_Factor>
+		<Movie_Object>false</Movie_Object>
+		<Mass>0.985</Mass>
+
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Size_Value>15</Size_Value>
+
+		<Mass> 1.0 </Mass>
+		<Max_Speed>4.0</Max_Speed>
+		<Min_Speed> 2.5 </Min_Speed>
+		<Max_Rate_Of_Turn>1.0</Max_Rate_Of_Turn>
+		<Max_Thrust>0.1</Max_Thrust>
+		<Max_Rate_Of_Roll>1.5</Max_Rate_Of_Roll>
+		<Max_Lift>0.0</Max_Lift>
+		<Bank_Turn_Angle>60</Bank_Turn_Angle>
+		<Begin_Turn_Towards_Distance>100.0</Begin_Turn_Towards_Distance>
+
+		<LandBehavior>FIGHTER_LOCOMOTOR,IDLE,INDIGENOUS_UNIT</LandBehavior>
+		<Allow_Idle_When_Moving>Yes</Allow_Idle_When_Moving>
+
+		<Affiliation>Neutral</Affiliation>
+		<Influences_Capture_Point> False </Influences_Capture_Point>
+		<Political_Control>0</Political_Control>
+
+		<Wind_Disturbance_Radius>100</Wind_Disturbance_Radius>
+		<Wind_Disturbance_Strength>5</Wind_Disturbance_Strength>
+		<Wind_Disturbance_Sphere_Alpha>0.1</Wind_Disturbance_Sphere_Alpha>
+
+		<SFXEvent_Ambient_Moving> Unit_Cloud_Car_Fly_By </SFXEvent_Ambient_Moving>
+		<SFXEvent_Ambient_Moving_Min_Delay_Seconds> 2 </SFXEvent_Ambient_Moving_Min_Delay_Seconds>
+		<SFXEvent_Ambient_Moving_Max_Delay_Seconds> 6 </SFXEvent_Ambient_Moving_Max_Delay_Seconds>
+		<SFXEvent_Engine_Cinematic_Focus_Loop> Unit_Cloud_Car_Cinematic_Engine_Loop </SFXEvent_Engine_Cinematic_Focus_Loop>
+
+		<Icon_Name>i_button_rebel_speeder.tga</Icon_Name>
+		<MovementClass> Flying </MovementClass>
+		<OccupationStyle>1x1</OccupationStyle>
+		<Victory_Relevant>no</Victory_Relevant>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Blob_Shadow_Below_Detail_Level>2</Blob_Shadow_Below_Detail_Level>
+		<Blob_Shadow_Scale>5.0, 5.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name>Generic_Shadow</Blob_Shadow_Material_Name>
+		<Occlusion_Silhouette_Enabled>0</Occlusion_Silhouette_Enabled>
+
+		<Air_Vehicle_Turret_Target> No </Air_Vehicle_Turret_Target>
+		<Is_Visible_On_Radar>No</Is_Visible_On_Radar>
+		<Is_Valid_Target>False</Is_Valid_Target>
+		
+		<Layer_Z_Adjust>300.0</Layer_Z_Adjust>
+		<Hover_Offset>300.0</Hover_Offset>
+		<Prepare_Strafe_Height>75.0</Prepare_Strafe_Height>
+		<MaxFacingLookAheadFrames>5.0</MaxFacingLookAheadFrames>
+		<Weather_Category>Flying</Weather_Category>
+		<Can_Indigenous_Unit_Stop>No</Can_Indigenous_Unit_Stop>
+		<Is_Indigenous_Unit_Corruptible>False</Is_Indigenous_Unit_Corruptible>
+
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</Indigenous_Passive>
 
 </Props_Coresaga>

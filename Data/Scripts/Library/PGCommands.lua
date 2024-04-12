@@ -431,6 +431,10 @@ end
 
 function Try_Garrison(tf, unit, offensive_only, range)
 
+	if unit.Is_Category("LandHero") then
+		return false
+	end
+
 	lib_nearest_garrison = Find_Nearest(unit, "GarrisonCanFire", unit.Get_Owner(), true)
 	
 	if TestValid(lib_nearest_garrison) and unit.Can_Garrison(lib_nearest_garrison) then
@@ -526,8 +530,12 @@ function Try_Weapon_Switch(object, target)
 
 	if not lib_aat_type then
 		lib_aat_type = Find_Object_Type("AAT")
+		lib_aat_pdf_type = Find_Object_Type("AAT_PDF")	
+		lib_supertank_tf_type = Find_Object_Type("SUPER_TANK")
+		lib_supertank_cis_type = Find_Object_Type("CIS_SUPER_TANK")
 		lib_bossk_type = Find_Object_Type("BOSSK")
-		lib_clone_commando_type = Find_Object_Type("CLONE_COMMANDO_SQUAD")		
+		lib_clone_commando_type = Find_Object_Type("CLONE_COMMANDO_SQUAD")
+		lib_nimbus_commando_type = Find_Object_Type("NIMBUS_COMMANDO_TEAM")		
 		lib_at_st_type = Find_Object_Type("AT_ST_WALKER")
 		lib_at_st_a_type = Find_Object_Type("AT_ST_A_WALKER")
 		lib_espo_walker_type = Find_Object_Type("ESPO_WALKER")
@@ -536,9 +544,17 @@ function Try_Weapon_Switch(object, target)
 
 	if lib_switcher_type == lib_aat_type then
 		object.Activate_Ability("ROCKET_ATTACK", target.Is_Category("LandHero") or target.Is_Category("Infantry"))
+	elseif lib_switcher_type == lib_aat_pdf_type then
+		object.Activate_Ability("ROCKET_ATTACK", (target.Is_Category("Infantry") or target.Is_Category("LandHero")) and GameRandom.Get_Float() > 0.6)
+	elseif lib_switcher_type == lib_supertank_tf_type then
+		object.Activate_Ability("DEPLOY", (target.Is_Category("Structure") or target.Is_Category("Vehicle")) and GameRandom.Get_Float() > 0.4)
+	elseif lib_switcher_type == lib_supertank_cis_type then
+		object.Activate_Ability("DEPLOY", (target.Is_Category("Structure") or target.Is_Category("Vehicle")) and GameRandom.Get_Float() > 0.4)
 	elseif lib_switcher_type == lib_bossk_type then
 		object.Activate_Ability("ROCKET_ATTACK", (target.Is_Category("Infantry") or target.Is_Category("LandHero")) and GameRandom.Get_Float() > 0.6)
 	elseif lib_switcher_type == lib_clone_commando_type then
+		object.Activate_Ability("ROCKET_ATTACK", (target.Is_Category("Infantry") or target.Is_Category("LandHero")) and GameRandom.Get_Float() > 0.33)		
+	elseif lib_switcher_type == lib_nimbus_commando_type then
 		object.Activate_Ability("ROCKET_ATTACK", (target.Is_Category("Infantry") or target.Is_Category("LandHero")) and GameRandom.Get_Float() > 0.33)		
 	elseif lib_switcher_type == lib_at_st_type then
 		object.Activate_Ability("ROCKET_ATTACK", target.Is_Category("Structure") or target.Is_Category("Vehicle"))

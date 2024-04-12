@@ -16,6 +16,7 @@ return {
             GalacticEventsNewsSource(
             ctx.galactic_conquest.Events.PlanetOwnerChanged,
             ctx.galactic_conquest.Events.GalacticHeroKilled,
+            ctx.galactic_conquest.Events.GalacticSSDKilled,
             incoming_fleet_event,
             blockade_attrition.blockade_attrition_unit_killed,
             influence_service.influence_unrest_growing,

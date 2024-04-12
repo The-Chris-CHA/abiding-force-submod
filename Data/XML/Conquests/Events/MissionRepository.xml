@@ -58,7 +58,8 @@
 	</Event>
 
 	<Event Name="Accumulate_Credits_05">
-		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>2</Event_Param1>
 		<Reward_Type>REMOVE_STORY_GOAL</Reward_Type>
 		<Reward_Param1>Accumulate_Credits_Act_III</Reward_Param1>
 		<Prereq>Accumulate_Credits_04</Prereq>
@@ -103,12 +104,12 @@
 
 	<Event Name="Conquer_Planet_Flash_Remove">
 		<Event_Type>STORY_ELAPSED</Event_Type>
-		<Event_Param1>17</Event_Param1>
+		<Event_Param1>10</Event_Param1>
 		<Reward_Type>HIDE_TUTORIAL_CURSOR</Reward_Type>
 		<Reward_Param1>Planet_GUI_Flash</Reward_Param1>
 		<Prereq>Conquer_Planet_Flash</Prereq>
 		<Branch>Conquer_Planet</Branch>
-		<Perpetual>false</Perpetual>
+		<Perpetual>true</Perpetual>
 	</Event>
 
 	<Event Name="Conquer_Planet_02">
@@ -153,7 +154,8 @@
 	</Event>
 
 	<Event Name="Conquer_Planet_05">
-		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>2</Event_Param1>
 		<Reward_Type>REMOVE_STORY_GOAL</Reward_Type>
 		<Reward_Param1>Conquer_Planet_Act_III</Reward_Param1>
 		<Prereq>Conquer_Planet_04</Prereq>
@@ -226,7 +228,8 @@
 	</Event>
 
 	<Event Name="Construct_Structure_05">
-		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>2</Event_Param1>
 		<Reward_Type>REMOVE_STORY_GOAL</Reward_Type>
 		<Reward_Param1>Construct_Structure_Act_III</Reward_Param1>
 		<Prereq>Construct_Structure_04</Prereq>
@@ -286,7 +289,7 @@
 	</Event>
 
 	<Event Name="Upgrade_Structure_04">
-				<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Type>STORY_ELAPSED</Event_Type>
 		<Event_Param1>2</Event_Param1>
 		<Reward_Type>REMOVE_STORY_GOAL</Reward_Type>
 		<Reward_Param1>Upgrade_Structure_Act_I</Reward_Param1>
@@ -299,7 +302,8 @@
 	</Event>
 
 	<Event Name="Upgrade_Structure_05">
-		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>2</Event_Param1>
 		<Reward_Type>REMOVE_STORY_GOAL</Reward_Type>
 		<Reward_Param1>Upgrade_Structure_Act_III</Reward_Param1>
 		<Prereq>Upgrade_Structure_04</Prereq>
@@ -317,105 +321,106 @@
 	</Event>
 
 	<!--************************************-->
-	<!--**********  Hunt Convoy  ***********-->
+	<!--********  Hunt Hero Convoy  ********-->
 	<!--************************************-->
 
-	<Event Name="Hunt_Convoy_01">
+	<Event Name="Hunt_Hero_Convoy_01">
 		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
-		<Event_Param2>CONVOY_ASSIGN</Event_Param2>
+		<Event_Param2>HERO_CONVOY_ASSIGN</Event_Param2>
 		<Story_Chapter>16</Story_Chapter>
 		<Story_Dialog_Popup>False</Story_Dialog_Popup>
-		<Story_Tag>Hunt_Convoy_Act_I</Story_Tag>
-		<Branch>Hunt_Convoy</Branch>
+		<Story_Tag>Hunt_Hero_Convoy_Act_I</Story_Tag>
+		<Branch>Hunt_Hero_Convoy</Branch>
 		<Perpetual>false</Perpetual>
 	</Event>
 
-	<Event Name="Hunt_Convoy_Flash">
+	<Event Name="Hunt_Hero_Convoy_Flash">
 		<Event_Type>STORY_TRIGGER</Event_Type>
 		<Reward_Type>FLASH_PLANET_GUI</Reward_Type>
 		<Reward_Param1></Reward_Param1>
 		<Reward_Param2>FLASH_PLANET</Reward_Param2>
 		<Reward_Param4>Planet_GUI_Flash</Reward_Param4>
 		<Reward_Param5>True</Reward_Param5>
-		<Prereq>Hunt_Convoy_01</Prereq>
-		<Branch>Hunt_Convoy</Branch>
+		<Prereq>Hunt_Hero_Convoy_01</Prereq>
+		<Branch>Hunt_Hero_Convoy</Branch>
 		<Perpetual>false</Perpetual>
 	</Event>
 
-	<Event Name="Hunt_Convoy_Flash_Remove">
+	<Event Name="Hunt_Hero_Convoy_Flash_Remove">
 		<Event_Type>STORY_ELAPSED</Event_Type>
-		<Event_Param1>17</Event_Param1>
+		<Event_Param1>10</Event_Param1>
 		<Reward_Type>HIDE_TUTORIAL_CURSOR</Reward_Type>
 		<Reward_Param1>Planet_GUI_Flash</Reward_Param1>
-		<Prereq>Hunt_Convoy_Flash</Prereq>
-		<Branch>Hunt_Convoy</Branch>
-		<Perpetual>false</Perpetual>
+		<Prereq>Hunt_Hero_Convoy_Flash</Prereq>
+		<Branch>Hunt_Hero_Convoy</Branch>
+		<Perpetual>true</Perpetual>
 	</Event>
 
-	<Event Name="Hunt_Convoy_Fulfilled_Timer">
+	<Event Name="Hunt_Hero_Convoy_Fulfilled_Timer">
 		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
-		<Event_Param2>CONVOY_COMPLETE</Event_Param2>
-		<Branch>Hunt_Convoy</Branch>
+		<Event_Param2>HERO_CONVOY_COMPLETE</Event_Param2>
+		<Branch>Hunt_Hero_Convoy</Branch>
 		<Perpetual>false</Perpetual>
 	</Event>
 
-	<Event Name="Hunt_Convoy_02">
+	<Event Name="Hunt_Hero_Convoy_02">
 		<Event_Type>STORY_ELAPSED</Event_Type>
 		<Event_Param1>0.5</Event_Param1>
 		<Reward_Type>REMOVE_STORY_GOAL</Reward_Type>
-		<Reward_Param1>Hunt_Convoy_Act_I</Reward_Param1>
+		<Reward_Param1>Hunt_Hero_Convoy_Act_I</Reward_Param1>
 		<Story_Chapter>17</Story_Chapter>
 		<Story_Dialog_Popup>True</Story_Dialog_Popup>
-		<Story_Tag>Hunt_Convoy_Act_II</Story_Tag>
-		<Prereq>Hunt_Convoy_Fulfilled_Timer</Prereq>
-		<Branch>Hunt_Convoy</Branch>
+		<Story_Tag>Hunt_Hero_Convoy_Act_II</Story_Tag>
+		<Prereq>Hunt_Hero_Convoy_Fulfilled_Timer</Prereq>
+		<Branch>Hunt_Hero_Convoy</Branch>
 		<Perpetual>false</Perpetual>
 	</Event>
 
-	<Event Name="Hunt_Convoy_03">
+	<Event Name="Hunt_Hero_Convoy_03">
 		<Event_Type>STORY_TRIGGER</Event_Type>
 		<Reward_Type>STORY_GOAL_COMPLETED</Reward_Type>
-		<Reward_Param1>Hunt_Convoy_Act_II</Reward_Param1>
-		<Prereq>Hunt_Convoy_02</Prereq>
-		<Branch>Hunt_Convoy</Branch>
+		<Reward_Param1>Hunt_Hero_Convoy_Act_II</Reward_Param1>
+		<Prereq>Hunt_Hero_Convoy_02</Prereq>
+		<Branch>Hunt_Hero_Convoy</Branch>
 		<Perpetual>false</Perpetual>
 	</Event>
 
-	<Event Name="Hunt_Convoy_Failure_Timer">
+	<Event Name="Hunt_Hero_Convoy_Failure_Timer">
 		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
-		<Event_Param2>CONVOY_FAILED</Event_Param2>
-		<Branch>Hunt_Convoy</Branch>
+		<Event_Param2>HERO_CONVOY_FAILED</Event_Param2>
+		<Branch>Hunt_Hero_Convoy</Branch>
 		<Perpetual>false</Perpetual>
 	</Event>
 
-	<Event Name="Hunt_Convoy_04">
-				<Event_Type>STORY_ELAPSED</Event_Type>
+	<Event Name="Hunt_Hero_Convoy_04">
+		<Event_Type>STORY_ELAPSED</Event_Type>
 		<Event_Param1>2</Event_Param1>
 		<Reward_Type>REMOVE_STORY_GOAL</Reward_Type>
-		<Reward_Param1>Hunt_Convoy_Act_I</Reward_Param1>
+		<Reward_Param1>Hunt_Hero_Convoy_Act_I</Reward_Param1>
 		<Story_Chapter>18</Story_Chapter>
 		<Story_Dialog_Popup>True</Story_Dialog_Popup>
-		<Story_Tag>Hunt_Convoy_Act_III</Story_Tag>
-		<Prereq>Hunt_Convoy_Failure_Timer</Prereq>
-		<Branch>Hunt_Convoy</Branch>
+		<Story_Tag>Hunt_Hero_Convoy_Act_III</Story_Tag>
+		<Prereq>Hunt_Hero_Convoy_Failure_Timer</Prereq>
+		<Branch>Hunt_Hero_Convoy</Branch>
 		<Perpetual>false</Perpetual>
 	</Event>
 
-	<Event Name="Hunt_Convoy_05">
-		<Event_Type>STORY_TRIGGER</Event_Type>
+	<Event Name="Hunt_Hero_Convoy_05">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>2</Event_Param1>
 		<Reward_Type>REMOVE_STORY_GOAL</Reward_Type>
-		<Reward_Param1>Hunt_Convoy_Act_III</Reward_Param1>
-		<Prereq>Hunt_Convoy_04</Prereq>
-		<Branch>Hunt_Convoy</Branch>
+		<Reward_Param1>Hunt_Hero_Convoy_Act_III</Reward_Param1>
+		<Prereq>Hunt_Hero_Convoy_04</Prereq>
+		<Branch>Hunt_Hero_Convoy</Branch>
 		<Perpetual>false</Perpetual>
 	</Event>
 
-	<Event Name="Hunt_Convoy_Reset">
+	<Event Name="Hunt_Hero_Convoy_Reset">
 		<Event_Type>STORY_TRIGGER</Event_Type>
 		<Reward_Type>RESET_BRANCH</Reward_Type>
-		<Reward_Param1>Hunt_Convoy</Reward_Param1>
-		<Prereq>Hunt_Convoy_03</Prereq>
-		<Prereq>Hunt_Convoy_05</Prereq>
+		<Reward_Param1>Hunt_Hero_Convoy</Reward_Param1>
+		<Prereq>Hunt_Hero_Convoy_03</Prereq>
+		<Prereq>Hunt_Hero_Convoy_05</Prereq>
 		<Perpetual>true</Perpetual>
 	</Event>
 
@@ -447,12 +452,12 @@
 
 	<Event Name="Liberate_Planet_Flash_Remove">
 		<Event_Type>STORY_ELAPSED</Event_Type>
-		<Event_Param1>17</Event_Param1>
+		<Event_Param1>10</Event_Param1>
 		<Reward_Type>HIDE_TUTORIAL_CURSOR</Reward_Type>
 		<Reward_Param1>Planet_GUI_Flash</Reward_Param1>
 		<Prereq>Liberate_Planet_Flash</Prereq>
 		<Branch>Liberate_Planet</Branch>
-		<Perpetual>false</Perpetual>
+		<Perpetual>true</Perpetual>
 	</Event>
 
 	<Event Name="Liberate_Planet_02">
@@ -497,7 +502,8 @@
 	</Event>
 
 	<Event Name="Liberate_Planet_05">
-		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>2</Event_Param1>
 		<Reward_Type>REMOVE_STORY_GOAL</Reward_Type>
 		<Reward_Param1>Liberate_Planet_Act_III</Reward_Param1>
 		<Prereq>Liberate_Planet_04</Prereq>
@@ -541,11 +547,11 @@
 
 	<Event Name="Rescue_Senator_Flash_01_Remove">
 		<Event_Type>STORY_ELAPSED</Event_Type>
-		<Event_Param1>17</Event_Param1>
+		<Event_Param1>10</Event_Param1>
 		<Reward_Type>HIDE_TUTORIAL_CURSOR</Reward_Type>
 		<Reward_Param1>Planet_GUI_Flash</Reward_Param1>
 		<Prereq>Rescue_Senator_Flash_01</Prereq>
-		<Perpetual>false</Perpetual>
+		<Perpetual>true</Perpetual>
 	</Event>
 
 	<Event Name="Rescue_Senator_Enter_01">
@@ -618,7 +624,8 @@
 	</Event>
 
 	<Event Name="Rescue_Senator_05">
-		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>2</Event_Param1>
 		<Reward_Type>REMOVE_STORY_GOAL</Reward_Type>
 		<Reward_Param1>Rescue_Senator_Act_III</Reward_Param1>
 		<Prereq>Rescue_Senator_04</Prereq>
@@ -662,11 +669,11 @@
 
 	<Event Name="Infiltration_Flash_01_Remove">
 		<Event_Type>STORY_ELAPSED</Event_Type>
-		<Event_Param1>17</Event_Param1>
+		<Event_Param1>10</Event_Param1>
 		<Reward_Type>HIDE_TUTORIAL_CURSOR</Reward_Type>
 		<Reward_Param1>Planet_GUI_Flash</Reward_Param1>
 		<Prereq>Infiltration_Flash_01</Prereq>
-		<Perpetual>false</Perpetual>
+		<Perpetual>true</Perpetual>
 	</Event>
 
 	<Event Name="Infiltration_Enter_01">
@@ -721,7 +728,8 @@
 	</Event>
 
 	<Event Name="Infiltration_05">
-		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>2</Event_Param1>
 		<Reward_Type>REMOVE_STORY_GOAL</Reward_Type>
 		<Reward_Param1>Infiltration_Act_III</Reward_Param1>
 		<Prereq>Infiltration_04</Prereq>
@@ -815,7 +823,8 @@
 	</Event>
 
 	<Event Name="Hunt_Unit_05">
-		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>2</Event_Param1>
 		<Reward_Type>REMOVE_STORY_GOAL</Reward_Type>
 		<Reward_Param1>Hunt_Unit_Act_III</Reward_Param1>
 		<Prereq>Hunt_Unit_04</Prereq>
@@ -829,6 +838,356 @@
 		<Reward_Param1>Hunt_Unit</Reward_Param1>
 		<Prereq>Hunt_Unit_03</Prereq>
 		<Prereq>Hunt_Unit_05</Prereq>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+	<!--************************************-->
+	<!--*******  Hunt Cargo Convoy  ********-->
+	<!--************************************-->
+
+	<Event Name="Hunt_Cargo_Convoy_01">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>CARGO_CONVOY_ASSIGN</Event_Param2>
+		<Story_Chapter>31</Story_Chapter>
+		<Story_Dialog_Popup>False</Story_Dialog_Popup>
+		<Story_Tag>Hunt_Cargo_Convoy_Act_I</Story_Tag>
+		<Branch>Hunt_Cargo_Convoy</Branch>
+		<Perpetual>false</Perpetual>
+	</Event>
+
+	<Event Name="Hunt_Cargo_Convoy_Flash">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>FLASH_PLANET_GUI</Reward_Type>
+		<Reward_Param1></Reward_Param1>
+		<Reward_Param2>FLASH_PLANET</Reward_Param2>
+		<Reward_Param4>Planet_GUI_Flash</Reward_Param4>
+		<Reward_Param5>True</Reward_Param5>
+		<Prereq>Hunt_Cargo_Convoy_01</Prereq>
+		<Branch>Hunt_Cargo_Convoy</Branch>
+		<Perpetual>false</Perpetual>
+	</Event>
+
+	<Event Name="Hunt_Cargo_Convoy_Flash_Remove">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>10</Event_Param1>
+		<Reward_Type>HIDE_TUTORIAL_CURSOR</Reward_Type>
+		<Reward_Param1>Planet_GUI_Flash</Reward_Param1>
+		<Prereq>Hunt_Cargo_Convoy_Flash</Prereq>
+		<Branch>Hunt_Cargo_Convoy</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+	<Event Name="Hunt_Cargo_Convoy_Fulfilled_Timer">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>CARGO_CONVOY_COMPLETE</Event_Param2>
+		<Branch>Hunt_Cargo_Convoy</Branch>
+		<Perpetual>false</Perpetual>
+	</Event>
+
+	<Event Name="Hunt_Cargo_Convoy_02">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>0.5</Event_Param1>
+		<Reward_Type>REMOVE_STORY_GOAL</Reward_Type>
+		<Reward_Param1>Hunt_Cargo_Convoy_Act_I</Reward_Param1>
+		<Story_Chapter>32</Story_Chapter>
+		<Story_Dialog_Popup>True</Story_Dialog_Popup>
+		<Story_Tag>Hunt_Cargo_Convoy_Act_II</Story_Tag>
+		<Prereq>Hunt_Cargo_Convoy_Fulfilled_Timer</Prereq>
+		<Branch>Hunt_Cargo_Convoy</Branch>
+		<Perpetual>false</Perpetual>
+	</Event>
+
+	<Event Name="Hunt_Cargo_Convoy_03">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>STORY_GOAL_COMPLETED</Reward_Type>
+		<Reward_Param1>Hunt_Cargo_Convoy_Act_II</Reward_Param1>
+		<Prereq>Hunt_Cargo_Convoy_02</Prereq>
+		<Branch>Hunt_Cargo_Convoy</Branch>
+		<Perpetual>false</Perpetual>
+	</Event>
+
+	<Event Name="Hunt_Cargo_Convoy_Failure_Timer">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>CARGO_CONVOY_FAILED</Event_Param2>
+		<Branch>Hunt_Cargo_Convoy</Branch>
+		<Perpetual>false</Perpetual>
+	</Event>
+
+	<Event Name="Hunt_Cargo_Convoy_04">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>2</Event_Param1>
+		<Reward_Type>REMOVE_STORY_GOAL</Reward_Type>
+		<Reward_Param1>Hunt_Cargo_Convoy_Act_I</Reward_Param1>
+		<Story_Chapter>33</Story_Chapter>
+		<Story_Dialog_Popup>True</Story_Dialog_Popup>
+		<Story_Tag>Hunt_Cargo_Convoy_Act_III</Story_Tag>
+		<Prereq>Hunt_Cargo_Convoy_Failure_Timer</Prereq>
+		<Branch>Hunt_Cargo_Convoy</Branch>
+		<Perpetual>false</Perpetual>
+	</Event>
+
+	<Event Name="Hunt_Cargo_Convoy_05">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>2</Event_Param1>
+		<Reward_Type>REMOVE_STORY_GOAL</Reward_Type>
+		<Reward_Param1>Hunt_Cargo_Convoy_Act_III</Reward_Param1>
+		<Prereq>Hunt_Cargo_Convoy_04</Prereq>
+		<Branch>Hunt_Cargo_Convoy</Branch>
+		<Perpetual>false</Perpetual>
+	</Event>
+
+	<Event Name="Hunt_Cargo_Convoy_Reset">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>RESET_BRANCH</Reward_Type>
+		<Reward_Param1>Hunt_Cargo_Convoy</Reward_Param1>
+		<Prereq>Hunt_Cargo_Convoy_03</Prereq>
+		<Prereq>Hunt_Cargo_Convoy_05</Prereq>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+	<!--************************************-->
+	<!--********  Crew Recruitment  ********-->
+	<!--************************************-->
+
+	<Event Name="Crew_Recruitment_01">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>CREW_RECRUITMENT_ASSIGN</Event_Param2>
+		<Story_Chapter>34</Story_Chapter>
+		<Story_Dialog_Popup>False</Story_Dialog_Popup>
+		<Story_Tag>Crew_Recruitment_Act_I</Story_Tag>
+		<Branch>Crew_Recruitment</Branch>
+		<Perpetual>false</Perpetual>
+	</Event>
+
+	<Event Name="Crew_Recruitment_Fulfilled_Timer">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>CREW_RECRUITMENT_COMPLETE</Event_Param2>
+		<Branch>Crew_Recruitment</Branch>
+		<Perpetual>false</Perpetual>
+	</Event>
+
+	<Event Name="Crew_Recruitment_02">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>0.5</Event_Param1>
+		<Reward_Type>REMOVE_STORY_GOAL</Reward_Type>
+		<Reward_Param1>Crew_Recruitment_Act_I</Reward_Param1>
+		<Story_Chapter>35</Story_Chapter>
+		<Story_Dialog_Popup>True</Story_Dialog_Popup>
+		<Story_Tag>Crew_Recruitment_Act_II</Story_Tag>
+		<Prereq>Crew_Recruitment_Fulfilled_Timer</Prereq>
+		<Branch>Crew_Recruitment</Branch>
+		<Perpetual>false</Perpetual>
+	</Event>
+
+	<Event Name="Crew_Recruitment_03">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>STORY_GOAL_COMPLETED</Reward_Type>
+		<Reward_Param1>Crew_Recruitment_Act_II</Reward_Param1>
+		<Prereq>Crew_Recruitment_02</Prereq>
+		<Branch>Crew_Recruitment</Branch>
+		<Perpetual>false</Perpetual>
+	</Event>
+
+	<Event Name="Crew_Recruitment_Failure_Timer">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>CREW_RECRUITMENT_FAILED</Event_Param2>
+		<Branch>Crew_Recruitment</Branch>
+		<Perpetual>false</Perpetual>
+	</Event>
+
+	<Event Name="Crew_Recruitment_04">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>2</Event_Param1>
+		<Reward_Type>REMOVE_STORY_GOAL</Reward_Type>
+		<Reward_Param1>Crew_Recruitment_Act_I</Reward_Param1>
+		<Story_Chapter>36</Story_Chapter>
+		<Story_Dialog_Popup>True</Story_Dialog_Popup>
+		<Story_Tag>Crew_Recruitment_Act_III</Story_Tag>
+		<Prereq>Crew_Recruitment_Failure_Timer</Prereq>
+		<Branch>Crew_Recruitment</Branch>
+		<Perpetual>false</Perpetual>
+	</Event>
+
+	<Event Name="Crew_Recruitment_05">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>2</Event_Param1>
+		<Reward_Type>REMOVE_STORY_GOAL</Reward_Type>
+		<Reward_Param1>Crew_Recruitment_Act_III</Reward_Param1>
+		<Prereq>Crew_Recruitment_04</Prereq>
+		<Branch>Crew_Recruitment</Branch>
+		<Perpetual>false</Perpetual>
+	</Event>
+
+	<Event Name="Crew_Recruitment_Reset">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>RESET_BRANCH</Reward_Type>
+		<Reward_Param1>Crew_Recruitment</Reward_Param1>
+		<Prereq>Crew_Recruitment_03</Prereq>
+		<Prereq>Crew_Recruitment_05</Prereq>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+	<!--************************************-->
+	<!--****  Expanding Infrastructure  ****-->
+	<!--************************************-->
+
+	<Event Name="Expanding_Infrastructure_01">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>INFRASTRUCTURE_EXPANSION_ASSIGN</Event_Param2>
+		<Story_Chapter>37</Story_Chapter>
+		<Story_Dialog_Popup>False</Story_Dialog_Popup>
+		<Story_Tag>Expanding_Infrastructure_Act_I</Story_Tag>
+		<Branch>Expanding_Infrastructure</Branch>
+		<Perpetual>false</Perpetual>
+	</Event>
+
+	<Event Name="Expanding_Infrastructure_Fulfilled_Timer">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>INFRASTRUCTURE_EXPANSION_COMPLETE</Event_Param2>
+		<Branch>Expanding_Infrastructure</Branch>
+		<Perpetual>false</Perpetual>
+	</Event>
+
+	<Event Name="Expanding_Infrastructure_02">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>0.5</Event_Param1>
+		<Reward_Type>REMOVE_STORY_GOAL</Reward_Type>
+		<Reward_Param1>Expanding_Infrastructure_Act_I</Reward_Param1>
+		<Story_Chapter>38</Story_Chapter>
+		<Story_Dialog_Popup>True</Story_Dialog_Popup>
+		<Story_Tag>Expanding_Infrastructure_Act_II</Story_Tag>
+		<Prereq>Expanding_Infrastructure_Fulfilled_Timer</Prereq>
+		<Branch>Expanding_Infrastructure</Branch>
+		<Perpetual>false</Perpetual>
+	</Event>
+
+	<Event Name="Expanding_Infrastructure_03">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>STORY_GOAL_COMPLETED</Reward_Type>
+		<Reward_Param1>Expanding_Infrastructure_Act_II</Reward_Param1>
+		<Prereq>Expanding_Infrastructure_02</Prereq>
+		<Branch>Expanding_Infrastructure</Branch>
+		<Perpetual>false</Perpetual>
+	</Event>
+
+	<Event Name="Expanding_Infrastructure_Failure_Timer">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>INFRASTRUCTURE_EXPANSION_FAILED</Event_Param2>
+		<Branch>Expanding_Infrastructure</Branch>
+		<Perpetual>false</Perpetual>
+	</Event>
+
+	<Event Name="Expanding_Infrastructure_04">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>2</Event_Param1>
+		<Reward_Type>REMOVE_STORY_GOAL</Reward_Type>
+		<Reward_Param1>Expanding_Infrastructure_Act_I</Reward_Param1>
+		<Story_Chapter>39</Story_Chapter>
+		<Story_Dialog_Popup>True</Story_Dialog_Popup>
+		<Story_Tag>Expanding_Infrastructure_Act_III</Story_Tag>
+		<Prereq>Expanding_Infrastructure_Failure_Timer</Prereq>
+		<Branch>Expanding_Infrastructure</Branch>
+		<Perpetual>false</Perpetual>
+	</Event>
+
+	<Event Name="Expanding_Infrastructure_05">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>2</Event_Param1>
+		<Reward_Type>REMOVE_STORY_GOAL</Reward_Type>
+		<Reward_Param1>Expanding_Infrastructure_Act_III</Reward_Param1>
+		<Prereq>Expanding_Infrastructure_04</Prereq>
+		<Branch>Expanding_Infrastructure</Branch>
+		<Perpetual>false</Perpetual>
+	</Event>
+
+	<Event Name="Expanding_Infrastructure_Reset">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>RESET_BRANCH</Reward_Type>
+		<Reward_Param1>Expanding_Infrastructure</Reward_Param1>
+		<Prereq>Expanding_Infrastructure_03</Prereq>
+		<Prereq>Expanding_Infrastructure_05</Prereq>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+	<!--************************************-->
+	<!--*********  Raise Influence  ********-->
+	<!--************************************-->
+
+	<Event Name="Raise_Influence_01">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>RAISE_INFLUENCE_ASSIGN</Event_Param2>
+		<Story_Chapter>40</Story_Chapter>
+		<Story_Dialog_Popup>False</Story_Dialog_Popup>
+		<Story_Tag>Raise_Influence_Act_I</Story_Tag>
+		<Branch>Raise_Influence</Branch>
+		<Perpetual>false</Perpetual>
+	</Event>
+
+	<Event Name="Raise_Influence_Fulfilled_Timer">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>RAISE_INFLUENCE_COMPLETE</Event_Param2>
+		<Branch>Raise_Influence</Branch>
+		<Perpetual>false</Perpetual>
+	</Event>
+
+	<Event Name="Raise_Influence_02">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>0.5</Event_Param1>
+		<Reward_Type>REMOVE_STORY_GOAL</Reward_Type>
+		<Reward_Param1>Raise_Influence_Act_I</Reward_Param1>
+		<Story_Chapter>41</Story_Chapter>
+		<Story_Dialog_Popup>True</Story_Dialog_Popup>
+		<Story_Tag>Raise_Influence_Act_II</Story_Tag>
+		<Prereq>Raise_Influence_Fulfilled_Timer</Prereq>
+		<Branch>Raise_Influence</Branch>
+		<Perpetual>false</Perpetual>
+	</Event>
+
+	<Event Name="Raise_Influence_03">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>STORY_GOAL_COMPLETED</Reward_Type>
+		<Reward_Param1>Raise_Influence_Act_II</Reward_Param1>
+		<Prereq>Raise_Influence_02</Prereq>
+		<Branch>Raise_Influence</Branch>
+		<Perpetual>false</Perpetual>
+	</Event>
+
+	<Event Name="Raise_Influence_Failure_Timer">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>RAISE_INFLUENCE_FAILED</Event_Param2>
+		<Branch>Raise_Influence</Branch>
+		<Perpetual>false</Perpetual>
+	</Event>
+
+	<Event Name="Raise_Influence_04">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>2</Event_Param1>
+		<Reward_Type>REMOVE_STORY_GOAL</Reward_Type>
+		<Reward_Param1>Raise_Influence_Act_I</Reward_Param1>
+		<Story_Chapter>42</Story_Chapter>
+		<Story_Dialog_Popup>True</Story_Dialog_Popup>
+		<Story_Tag>Raise_Influence_Act_III</Story_Tag>
+		<Prereq>Raise_Influence_Failure_Timer</Prereq>
+		<Branch>Raise_Influence</Branch>
+		<Perpetual>false</Perpetual>
+	</Event>
+
+	<Event Name="Raise_Influence_05">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>2</Event_Param1>
+		<Reward_Type>REMOVE_STORY_GOAL</Reward_Type>
+		<Reward_Param1>Raise_Influence_Act_III</Reward_Param1>
+		<Prereq>Raise_Influence_04</Prereq>
+		<Branch>Raise_Influence</Branch>
+		<Perpetual>false</Perpetual>
+	</Event>
+
+	<Event Name="Raise_Influence_Reset">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>RESET_BRANCH</Reward_Type>
+		<Reward_Param1>Raise_Influence</Reward_Param1>
+		<Prereq>Raise_Influence_03</Prereq>
+		<Prereq>Raise_Influence_05</Prereq>
 		<Perpetual>true</Perpetual>
 	</Event>
 

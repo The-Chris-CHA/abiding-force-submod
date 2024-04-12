@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <Dummy_Objects>
 
-	<SpaceUnit Name="Persistent_Damage_Shield_Heal">
+	<DummyStructure Name="Persistent_Damage_Shield_Heal">
 		<Variant_Of_Existing_Type>Template_Spawner_Unit</Variant_Of_Existing_Type>
 		<Affiliation>Rebel</Affiliation>
 		
@@ -17,13 +17,11 @@
 		
 			<Combat_Bonus_Ability Name="Shield_Replacement_Bonus">
 				<Activation_Style>Space_Automatic</Activation_Style>
-				<Unit_Strength_Category>SuperCapital</Unit_Strength_Category>
 				<Applicable_Unit_Categories>SuperCapital</Applicable_Unit_Categories>
 				<Applicable_Unit_Types />
 				<Excluded_Unit_Types> </Excluded_Unit_Types>
 				<Health_Bonus_Percentage>0.0</Health_Bonus_Percentage>
-				<Damage_Bonus_Percentage>0.0</Damage_Bonus_Percentage>
-				<Energy_Pool_Bonus_Percentage>0.0</Energy_Pool_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.0</Damage_Bonus_Percentage>    
 				<Shield_Bonus_Percentage>0.67</Shield_Bonus_Percentage>
 				<Defense_Bonus_Percentage>0.3</Defense_Bonus_Percentage>
 				<Movement_Speed_Bonus_Percentage>0</Movement_Speed_Bonus_Percentage>
@@ -60,9 +58,9 @@
 
 
 
-	</SpaceUnit>
+	</DummyStructure>
 
-	<SpaceUnit Name="Persistent_Damage_Shield_Heal_Light">
+	<DummyStructure Name="Persistent_Damage_Shield_Heal_Light">
 		<Variant_Of_Existing_Type>Template_Spawner_Unit</Variant_Of_Existing_Type>
 		<Affiliation>Rebel</Affiliation>
 		
@@ -78,13 +76,11 @@
 		
 			<Combat_Bonus_Ability Name="Shield_Replacement_Bonus">
 				<Activation_Style>Space_Automatic</Activation_Style>
-				<Unit_Strength_Category>SuperCapital</Unit_Strength_Category>
 				<Applicable_Unit_Categories>SuperCapital</Applicable_Unit_Categories>
 				<Applicable_Unit_Types />
 				<Excluded_Unit_Types> </Excluded_Unit_Types>
 				<Health_Bonus_Percentage>0.0</Health_Bonus_Percentage>
-				<Damage_Bonus_Percentage>0.0</Damage_Bonus_Percentage>
-				<Energy_Pool_Bonus_Percentage>0.0</Energy_Pool_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.0</Damage_Bonus_Percentage>    
 				<Shield_Bonus_Percentage>0.33</Shield_Bonus_Percentage>
 				<Defense_Bonus_Percentage>0.3</Defense_Bonus_Percentage>
 				<Movement_Speed_Bonus_Percentage>0</Movement_Speed_Bonus_Percentage>
@@ -121,10 +117,10 @@
 
 
 
-	</SpaceUnit>
+	</DummyStructure>
 
 
-	<SpaceUnit Name="Interdiction_Mine">
+	<DummyStructure Name="Interdiction_Mine">
 		<Text_ID>TEXT_UNIT_INTERDICTION_MINE</Text_ID>
 		<Encyclopedia_Text> TEXT_TOOLTIP_INTERDICTION_MINE</Encyclopedia_Text>
 		<Space_Model_Name>W_interdictor_mine.ALO</Space_Model_Name>
@@ -210,7 +206,7 @@
 
 		<Strafe_Distance>500.0</Strafe_Distance>
 		<Population_Value>0</Population_Value>
-	</SpaceUnit>
+	</DummyStructure>
 
 	<Squadron Name="Interdiction_Minefield">
 		<GUI_Row> 0 </GUI_Row>
@@ -238,10 +234,6 @@
 
 		<Max_Squad_Size> 4 </Max_Squad_Size>
 		<Icon_Name>i_button_interdiction_mine.tga</Icon_Name>
-		<GUI_Model_Name>EV_TieFighter.ALO</GUI_Model_Name>
-		<GUI_Distance>120</GUI_Distance>
-		<GUI_Offset>0 0 0</GUI_Offset>
-		<GUI_Velocity>45</GUI_Velocity>
 
 		<SFXEvent_Build_Started>EHD_Build_Vehicle</SFXEvent_Build_Started>
 		<SFXEvent_Build_Cancelled>EHD_Unit_Canceled</SFXEvent_Build_Cancelled>
@@ -264,8 +256,8 @@
 				<Type>INTERDICT</Type>
 				<Disable_Movement>Yes</Disable_Movement>
 				<Supports_Autofire>True</Supports_Autofire>
-				<SFXEvent_GUI_Unit_Ability_Activated>Unit_Interdictor_Interdictor</SFXEvent_GUI_Unit_Ability_Activated>
-				<SFXEvent_GUI_Unit_Ability_Deactivated />
+				<SFXEvent_GUI_Unit_Ability_Activated>Unit_Grav_Online_Interdictor</SFXEvent_GUI_Unit_Ability_Activated>
+				<SFXEvent_GUI_Unit_Ability_Deactivated>Unit_Grav_Offline_Interdictor</SFXEvent_GUI_Unit_Ability_Deactivated>
 		</Unit_Ability>
 
 		</Unit_Abilities_Data>
@@ -319,13 +311,13 @@
 				<Type>INTERDICT</Type>
 				<Disable_Movement>Yes</Disable_Movement>
 				<Supports_Autofire>True</Supports_Autofire>
-				<SFXEvent_GUI_Unit_Ability_Activated>Unit_Interdictor_Interdictor</SFXEvent_GUI_Unit_Ability_Activated>
-				<SFXEvent_GUI_Unit_Ability_Deactivated />
+				<SFXEvent_GUI_Unit_Ability_Activated>Unit_Grav_Online_Interdictor</SFXEvent_GUI_Unit_Ability_Activated>
+				<SFXEvent_GUI_Unit_Ability_Deactivated>Unit_Grav_Offline_Interdictor</SFXEvent_GUI_Unit_Ability_Deactivated>
 		</Unit_Ability>
 		</Unit_Abilities_Data>
 	</Container>
 
-	<SpaceUnit Name="Microjump_Marker">
+	<DummyStructure Name="Microjump_Marker">
 
 		<GUI_Row> 1 </GUI_Row>
 		<Space_Model_Name>W_LASER_INVISIBLE.ALO</Space_Model_Name>
@@ -360,7 +352,6 @@
 
 		<Affiliation>Underworld</Affiliation>
 		<Tech_Level>99</Tech_Level>
-		<Required_Timeline>0</Required_Timeline>
 		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
 		<Required_Star_Base_Level>1</Required_Star_Base_Level>
 		<Required_Special_Structures></Required_Special_Structures>
@@ -398,10 +389,6 @@
 
 
 		<Icon_Name>i_button_vigilance.tga</Icon_Name>
-		<GUI_Model_Name>diamond_planet.alo</GUI_Model_Name>
-		<GUI_Distance>600</GUI_Distance>
-		<GUI_Offset>0 0 0</GUI_Offset>
-		<GUI_Velocity>45</GUI_Velocity>
 		<Victory_Relevant>no</Victory_Relevant>
 		<Has_Space_Evaluator>True</Has_Space_Evaluator>
 
@@ -416,9 +403,9 @@
 		<Score_Cost_Credits> 1350</Score_Cost_Credits>
 
 		<Population_Value>0</Population_Value>
-	</SpaceUnit>
+	</DummyStructure>
 
-	<SpaceUnit Name="Private_Microjump_Marker">
+	<DummyStructure Name="Private_Microjump_Marker">
 
 		<GUI_Row> 1 </GUI_Row>
 		<Space_Model_Name>W_LASER_INVISIBLE.ALO</Space_Model_Name>
@@ -453,7 +440,6 @@
 
 		<Affiliation>Underworld</Affiliation>
 		<Tech_Level>99</Tech_Level>
-		<Required_Timeline>0</Required_Timeline>
 		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
 		<Required_Star_Base_Level>1</Required_Star_Base_Level>
 		<Required_Special_Structures></Required_Special_Structures>
@@ -491,10 +477,6 @@
 
 
 		<Icon_Name>i_button_vigilance.tga</Icon_Name>
-		<GUI_Model_Name>diamond_planet.alo</GUI_Model_Name>
-		<GUI_Distance>600</GUI_Distance>
-		<GUI_Offset>0 0 0</GUI_Offset>
-		<GUI_Velocity>45</GUI_Velocity>
 		<Victory_Relevant>no</Victory_Relevant>
 		<Has_Space_Evaluator>True</Has_Space_Evaluator>
 
@@ -509,131 +491,10 @@
 		<Score_Cost_Credits> 1350</Score_Cost_Credits>
 
 		<Population_Value>0</Population_Value>
-	</SpaceUnit>
-
-
-	<SpaceUnit Name="World_Devastator_Bonus_Dummy">
-
-		<GUI_Row> 1 </GUI_Row>
-		<Space_Model_Name>W_LASER_INVISIBLE.ALO</Space_Model_Name>
-		<Select_Box_Scale>200</Select_Box_Scale>
-		<Select_Box_Z_Adjust>-30</Select_Box_Z_Adjust>
-		<Mass>0.9995</Mass>
-		<Scale_Factor>0.01</Scale_Factor>
-		<Dense_FOW_Reveal_Range_Multiplier>0.2</Dense_FOW_Reveal_Range_Multiplier>
-
-		<Ranking_In_Category>7</Ranking_In_Category>
-		<Max_Speed>0</Max_Speed>  <!-- was 3.0 -->
-		<Max_Rate_Of_Turn>1.2</Max_Rate_Of_Turn> <!-- was 1.6 -->
-		<MovementClass> Space </MovementClass>
-		<Space_Layer> Corvette </Space_Layer>
-		<Layer_Z_Adjust>-30.0</Layer_Z_Adjust>
-		<Max_Rate_Of_Roll>0.2</Max_Rate_Of_Roll>
-		<Bank_Turn_Angle>15</Bank_Turn_Angle>
-		<OverrideAcceleration> .05 </OverrideAcceleration>
-		<OverrideDeceleration> .05 </OverrideDeceleration>
-
-		<Ranged_Target_Z_Adjust>0</Ranged_Target_Z_Adjust>
-		<Armor_Type> Armor_Frigate </Armor_Type>
-		<Shield_Armor_Type>Shield_Capital</Shield_Armor_Type>
-		<Max_Thrust>0.9</Max_Thrust>
-		<Hyperspace>Yes</Hyperspace>
-		<Hyperspace_Speed>1.5</Hyperspace_Speed>
-		<Maintenance_Cost>0.0</Maintenance_Cost>
-
-		<Space_FOW_Reveal_Range>0.0</Space_FOW_Reveal_Range>
-		<Targeting_Max_Attack_Distance>1200.0</Targeting_Max_Attack_Distance>
-
-		<Affiliation>Empire</Affiliation>
-		<Tech_Level>99</Tech_Level>
-		<Required_Timeline>0</Required_Timeline>
-		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
-		<Required_Star_Base_Level>6</Required_Star_Base_Level>
-		<Required_Special_Structures></Required_Special_Structures>
-		<Required_Planets />
-		<Shield_Points>700</Shield_Points>
-		<Tactical_Health>700</Tactical_Health>
-		<Shield_Refresh_Rate>20</Shield_Refresh_Rate>
-		<Energy_Capacity>1500</Energy_Capacity>
-		<Energy_Refresh_Rate>350</Energy_Refresh_Rate>
-		<Damage>25</Damage>
-		<Autoresolve_Health>1400</Autoresolve_Health>
-		<Ship_Class>corvette</Ship_Class>
-		<Formation_Priority>3</Formation_Priority>
-		<Is_Escort>Yes</Is_Escort>
-		<Is_Bomber>no</Is_Bomber>
-		<Political_Control>0</Political_Control>
-		<Squadron_Capacity>0</Squadron_Capacity>
-		<Transport_Capacity>6</Transport_Capacity>
-		<Number_per_Squadron>1</Number_per_Squadron>
-		<Build_Cost_Credits>1300</Build_Cost_Credits>
-		<Piracy_Value_Credits>50</Piracy_Value_Credits>
-		<AI_Combat_Power>1350</AI_Combat_Power>
-		<Build_Time_Seconds>20</Build_Time_Seconds>
-		<Build_Tab_Space_Units>Yes</Build_Tab_Space_Units>
-		<Size_Value>120</Size_Value>
-		<Behavior>DUMMY_STARSHIP, SELECTABLE, POWERED, SHIELDED</Behavior>
-		<SpaceBehavior> ABILITY_COUNTDOWN, SIMPLE_SPACE_LOCOMOTOR, HIDE_WHEN_FOGGED, UNIT_AI, DAMAGE_TRACKING, ION_STUN_EFFECT, NEBULA</SpaceBehavior>
-		<SFXEvent_Select>Null</SFXEvent_Select>
-
-		<Space_FOW_Reveal_Range>25000.0</Space_FOW_Reveal_Range>
-		<Targeting_Max_Attack_Distance>1400.0</Targeting_Max_Attack_Distance>
-		<CategoryMask> Wall </CategoryMask>
-		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
-		<Death_Explosions>Large_Explosion_Space</Death_Explosions>
-
-
-		<Icon_Name>i_button_vigilance.tga</Icon_Name>
-		<GUI_Model_Name>diamond_planet.alo</GUI_Model_Name>
-		<GUI_Distance>600</GUI_Distance>
-		<GUI_Offset>0 0 0</GUI_Offset>
-		<GUI_Velocity>45</GUI_Velocity>
-		<Victory_Relevant>no</Victory_Relevant>
-		<Has_Space_Evaluator>True</Has_Space_Evaluator>
-
-		<MovementClass> Space </MovementClass>
-		<Guard_Chase_Range>1000.0</Guard_Chase_Range>
-		<Idle_Chase_Range>400.0</Idle_Chase_Range>
-		<Attack_Move_Response_Range>400.0</Attack_Move_Response_Range>
-		<Targeting_Stickiness_Time_Threshold>5.0</Targeting_Stickiness_Time_Threshold>
-		<Targeting_Priority_Set>Corvette</Targeting_Priority_Set>
-		<Autonomous_Move_Extension_Vs_Attacker>300.0</Autonomous_Move_Extension_Vs_Attacker>
-
-		<Score_Cost_Credits> 1350</Score_Cost_Credits>
-
-		<Abilities SubObjectList="Yes">
-			<Combat_Bonus_Ability Name="World_Devastator_Bonus">
-				<Activation_Style>Space_Automatic</Activation_Style>
-				<Unit_Strength_Category />
-				<Applicable_Unit_Categories />
-				<Applicable_Unit_Types> World_Devastator_Frigate, World_Devastator_Capital, World_Devastator_Battlecruiser</Applicable_Unit_Types>
-				<Health_Bonus_Percentage>0.20</Health_Bonus_Percentage>
-				<Damage_Bonus_Percentage>0.0</Damage_Bonus_Percentage>
-				<Energy_Pool_Bonus_Percentage>0.0</Energy_Pool_Bonus_Percentage>
-				<Shield_Bonus_Percentage>0.0</Shield_Bonus_Percentage>
-				<Defense_Bonus_Percentage>0.0</Defense_Bonus_Percentage>
-				<Movement_Speed_Bonus_Percentage>0.0</Movement_Speed_Bonus_Percentage>
-				<Stacking_Category>1</Stacking_Category>
-			</Combat_Bonus_Ability>
-		</Abilities>
-
-		<Unit_Abilities_Data>
-			<Unit_Ability>
-				<Type>STEALTH</Type>
-				<Alternate_Icon_Name>i_sa_stealth.tga</Alternate_Icon_Name>
-				<Alternate_Name_Text>TEXT_TOOLTIP_CLOAK</Alternate_Name_Text>
-				<GUI_Activated_Ability_Name>Stealth_Vengeance</GUI_Activated_Ability_Name>
-				<Recharge_Seconds>15.0</Recharge_Seconds>
-				<Expiration_Seconds>-1</Expiration_Seconds>
-				<SFXEvent_GUI_Unit_Ability_Activated>Unit_Stealth_On_Vengeance_Frigate</SFXEvent_GUI_Unit_Ability_Activated>
-				<SFXEvent_GUI_Unit_Ability_Deactivated>Unit_Stealth_Off_Vengeance_Frigate</SFXEvent_GUI_Unit_Ability_Deactivated>
-			</Unit_Ability>
-		</Unit_Abilities_Data>
-		<Population_Value>0</Population_Value>
-	</SpaceUnit>
+	</DummyStructure>
 
 	<!-- Used by the Destroy_Planet function -->
-	<SpaceUnit Name="Dummy_Planet_Killer">
+	<DummyStructure Name="Dummy_Planet_Killer">
 		<Text_ID></Text_ID>
 		<GUI_Row> 1 </GUI_Row>
 		<Space_Model_Name>w_planet_deathstar.alo</Space_Model_Name>
@@ -651,14 +512,13 @@
 		<Max_Rate_Of_Roll>0.2</Max_Rate_Of_Roll>
 		<Bank_Turn_Angle>15</Bank_Turn_Angle>
 		<Hyperspace>Yes</Hyperspace>
-		<Hyperspace_Speed>0.25</Hyperspace_Speed>
+		<Hyperspace_Speed>1.5</Hyperspace_Speed>
 		<Maintenance_Cost>0.0</Maintenance_Cost>
 		
 		<Collision_Box_Modifier>250.0</Collision_Box_Modifier>
 
 		<Affiliation>Hostile</Affiliation>
 		<Tech_Level>99</Tech_Level>
-		<Required_Timeline>0</Required_Timeline>
 		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
 		<Required_Star_Base_Level>5</Required_Star_Base_Level>
 		<Required_Special_Structures />
@@ -760,6 +620,6 @@
 		<!-- it's kind of a special case and we don't want to limit the number of 'real' space units -->
 		<!-- based on its presence in the background.  -->
 		<Space_Override_Population_Value>0</Space_Override_Population_Value>
-   </SpaceUnit>
+   </DummyStructure>
 
 </Dummy_Objects>

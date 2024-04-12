@@ -11,6 +11,9 @@ return {
 		},
 		["REBEL_X-WING_SQUADRON"] = {
 			REBEL = {Initial = 1, Reserve = 1}
+		},
+		["DUNELIZARD_FIGHTER_SQUADRON"] = {
+			HUTT_CARTELS = {Initial = 1, Reserve = 1}
 		}
 	},
 	Scripts = {"multilayer", "fighter-spawn", "interdictor-ai"}

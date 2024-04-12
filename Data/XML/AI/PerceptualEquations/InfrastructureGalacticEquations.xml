@@ -56,8 +56,8 @@
 		/
 		7.0
 	</Needs_Groundbase_Upgrade>
-	
-	
+
+
 	<!-- Returns 0 to turn off production if slots need to be saved for a company. Returns 1 otherwise -->
 	<Needs_Build_Slots_Saved_For_Company>
 		((Function_Open_Ground_Structure_Slots.Evaluate - Function_Is_Company_Planet.Evaluate) > 0)
@@ -92,7 +92,7 @@
 		)
 	</Needs_Starbase_Upgrade>
 
-	
+
 	<Needs_Shipyard>
 		5.0
 		*
@@ -114,8 +114,8 @@
 			Function_Needs_Better_Buying_Capability_Space.Evaluate
 		)
 	</Needs_Shipyard>
-	
-	
+
+
 	<Needs_Better_Buying_Capability_Space>
 		6 * ((0.5 - (Function_Level_Two_Shipyards.Evaluate / clamp(Variable_Self.PlanetsControlledUnnormalized, 1, 500))) > 0) *
 		(Function_Shipyard_Level.Evaluate == 2.0)
@@ -137,6 +137,7 @@
 													Parameter_Type = "U_Ground_Vehicle_Factory",
 													Parameter_Type = "HC_Ground_Light_Vehicle_Factory",
 													Parameter_Type = "M_Ground_Light_Vehicle_Factory",
+													Parameter_Type = "H_Ground_Light_Vehicle_Factory",
 													Parameter_Only_Consider_Complete = 1.0} == 0)
 		)
 		*
@@ -150,6 +151,7 @@
 													Parameter_Type = "U_Ground_Vehicle_Factory",
 													Parameter_Type = "HC_Ground_Light_Vehicle_Factory",
 													Parameter_Type = "M_Ground_Light_Vehicle_Factory",
+													Parameter_Type = "H_Ground_Light_Vehicle_Factory",
 													Parameter_Only_Consider_Complete = 1.0} /
 													clamp(Variable_Self.PlanetsControlledUnnormalized, 1, 500)), 0.01, 0.3)
 		*
@@ -165,6 +167,7 @@
 													Parameter_Type = "U_Ground_Vehicle_Factory",
 													Parameter_Type = "HC_Ground_Light_Vehicle_Factory",
 													Parameter_Type = "M_Ground_Light_Vehicle_Factory",
+													Parameter_Type = "H_Ground_Light_Vehicle_Factory",
 													Parameter_Only_Consider_Complete = 1.0})
 		*
 		(Function_Should_Save_For_Desirable_Structures.Evaluate == 0)
@@ -174,7 +177,7 @@
 		Function_Planet_Has_Local_Government_Building.Evaluate
 	</Need_Light_Vehicle_Factory>
 
-	
+
 	<Need_Barracks>
 		(
 			1 + 50 * (Variable_Self.StructureCount {Parameter_Type = "E_Ground_Barracks",
@@ -187,6 +190,7 @@
 													Parameter_Type = "U_Ground_Barracks",
 													Parameter_Type = "HC_Ground_Barracks",
 													Parameter_Type = "M_Ground_Barracks",
+													Parameter_Type = "H_Ground_Barracks",
 													Parameter_Only_Consider_Complete = 1.0} == 0)
 		)
 		*
@@ -200,6 +204,7 @@
 														Parameter_Type = "U_Ground_Barracks",
 														Parameter_Type = "HC_Ground_Barracks",
 														Parameter_Type = "M_Ground_Barracks",
+														Parameter_Type = "H_Ground_Barracks",
 														Parameter_Only_Consider_Complete = 1.0} /
 														clamp(Variable_Self.PlanetsControlledUnnormalized, 1, 500)), 0.01, 0.3)
 		*
@@ -215,6 +220,7 @@
 													Parameter_Type = "U_Ground_Barracks",
 													Parameter_Type = "HC_Ground_Barracks",
 													Parameter_Type = "M_Ground_Barracks",
+													Parameter_Type = "H_Ground_Barracks",
 													Parameter_Only_Consider_Complete = 1.0})
 		*
 		(Function_Should_Save_For_Desirable_Structures.Evaluate == 0)
@@ -237,6 +243,7 @@
 													Parameter_Type = "U_Ground_Droid_Works",
 													Parameter_Type = "HC_Ground_Heavy_Vehicle_Factory",
 													Parameter_Type = "M_Ground_Heavy_Vehicle_Factory",
+													Parameter_Type = "H_Ground_Heavy_Vehicle_Factory",
 													Parameter_Only_Consider_Complete = 1.0} == 0)
 		)
 		*
@@ -253,6 +260,7 @@
 														Parameter_Type = "U_Ground_Droid_Works",
 														Parameter_Type = "HC_Ground_Heavy_Vehicle_Factory",
 														Parameter_Type = "M_Ground_Heavy_Vehicle_Factory",
+														Parameter_Type = "H_Ground_Heavy_Vehicle_Factory",
 														Parameter_Only_Consider_Complete = 1.0} /
 														clamp(Variable_Self.PlanetsControlledUnnormalized, 1, 500)), 0.01, 0.25)
 			+
@@ -266,6 +274,7 @@
 													Parameter_Type = "U_Ground_Droid_Works",
 													Parameter_Type = "HC_Ground_Heavy_Vehicle_Factory",
 													Parameter_Type = "M_Ground_Heavy_Vehicle_Factory",
+													Parameter_Type = "H_Ground_Heavy_Vehicle_Factory",
 													Parameter_Only_Consider_Complete = 1.0})
 		)
 		*
@@ -279,6 +288,7 @@
 													Parameter_Type = "U_Ground_Droid_Works",
 													Parameter_Type = "HC_Ground_Heavy_Vehicle_Factory",
 													Parameter_Type = "M_Ground_Heavy_Vehicle_Factory",
+													Parameter_Type = "H_Ground_Heavy_Vehicle_Factory",
 													Parameter_Only_Consider_Complete = 1.0})
 		*
 		Function_Needs_Build_Slots_Saved_For_Company.Evaluate
@@ -300,6 +310,7 @@
 													Parameter_Type = "T_Ground_Advanced_Vehicle_Factory",
 													Parameter_Type = "Z_Ground_Advanced_Vehicle_Factory",
 													Parameter_Type = "P_Ground_Advanced_Vehicle_Factory",
+													Parameter_Type = "R_Ground_Advanced_Vehicle_Factory",
 													Parameter_Only_Consider_Complete = 1.0} == 0)
 		)
 		*
@@ -311,6 +322,7 @@
 															Parameter_Type = "T_Ground_Advanced_Vehicle_Factory",
 															Parameter_Type = "Z_Ground_Advanced_Vehicle_Factory",
 															Parameter_Type = "P_Ground_Advanced_Vehicle_Factory",
+															Parameter_Type = "R_Ground_Advanced_Vehicle_Factory",
 														Parameter_Only_Consider_Complete = 1.0} /
 														clamp(Variable_Self.PlanetsControlledUnnormalized, 1, 500)), 0.01, 0.2)
 			+
@@ -319,6 +331,7 @@
 													Parameter_Type = "T_Ground_Advanced_Vehicle_Factory",
 													Parameter_Type = "Z_Ground_Advanced_Vehicle_Factory",
 													Parameter_Type = "P_Ground_Advanced_Vehicle_Factory",
+													Parameter_Type = "R_Ground_Advanced_Vehicle_Factory",
 													Parameter_Only_Consider_Complete = 1.0})
 		)
 		*
@@ -327,14 +340,15 @@
 											Parameter_Type = "T_Ground_Advanced_Vehicle_Factory",
 											Parameter_Type = "Z_Ground_Advanced_Vehicle_Factory",
 											Parameter_Type = "P_Ground_Advanced_Vehicle_Factory",
+											Parameter_Type = "R_Ground_Advanced_Vehicle_Factory",
 											Parameter_Only_Consider_Complete = 1.0})
 		*
 		Function_Needs_Build_Slots_Saved_For_Company.Evaluate
 		*
 		Function_Planet_Has_Local_Government_Building.Evaluate
 	</Need_Advanced_Vehicle_Factory>
-	
-	
+
+
 	<Needs_Initial_Groundbase>
 		50.0
 		*
@@ -368,7 +382,7 @@
 		(Variable_Target.BaseIncome > 0.0)
 	</Needs_Tax_Agency>
 
-	
+
 	<Needs_Mining_Facility>
 		50.0
 		*
@@ -377,7 +391,7 @@
 		(1 > Variable_Target.StructureCount {Parameter_Type = "Mining_Facility", Parameter_Only_Consider_Complete = 1.0})
 	</Needs_Mining_Facility>
 
-	
+
 	<Needs_Tradestation>
 		(
 			clamp(Function_Defense_Level.Evaluate - 1, 0.1, 2.0)
@@ -402,7 +416,7 @@
 		Variable_Target.ActiveTradeRoutes
 	</Needs_Tradestation>
 
-	
+
 	<Should_Save_For_Desirable_Structures>
 		(Variable_Target.GroundBaseLevelUnnormalized > 1.0)
 		*
@@ -418,18 +432,18 @@
 			(Function_Needs_Turbolasers.Evaluate > 4.0)
 		)
 	</Should_Save_For_Desirable_Structures>
-	
-	
+
+
 	<Ground_Base_Level>
 		Variable_Target.GroundBaseLevelUnnormalized
 	</Ground_Base_Level>
-	
-	
+
+
 	<Has_Starbase>
 		Variable_Target.StarbaseLevel > 0
 	</Has_Starbase>
 
-	
+
 	<Need_Ground_Company>
 		(Variable_Target.StarbaseLevelUnnormalized > 0)
 		*
@@ -441,8 +455,8 @@
 		*
 		(1 - Function_Has_Upgradeable_Hero.Evaluate)
 	</Need_Ground_Company>
-	
-	
+
+
 	<Need_Space_Company>
 		(Variable_Target.StarbaseLevelUnnormalized > 1)
 		*
@@ -458,8 +472,8 @@
 		*
 		(1 - Function_Has_Upgradeable_Hero.Evaluate)
 	</Need_Space_Company>
-	
-	
+
+
 	<Need_Capital_Building>
 		10
 		*
@@ -473,9 +487,11 @@
 		*
 		(1.1 - clamp(Function_Is_Connected_To_Enemy.Evaluate, 0.0, 1.0))
 	</Need_Capital_Building>
-	
-	
+
+
 	<Needs_Ground_Defenses>
+		0.5
+		*
 		(Function_Open_Ground_Structure_Slots.Evaluate > 0)
 		*
 		(
@@ -506,9 +522,11 @@
 		*
 		Function_Planet_Has_Local_Government_Building.Evaluate
 	</Needs_Ground_Defenses>
-	
-	
+
+
 	<Needs_Weapon>
+		0.5
+		*
 		(Function_Current_Income.Evaluate > 2000)
 		*
 		(Function_Open_Ground_Structure_Slots.Evaluate > 0)
@@ -548,7 +566,7 @@
 		(1.0 - 0.5 * Variable_Target.HasStructure {Parameter_Type = "Generic_Planetary_Shield", Parameter_Only_Consider_Complete = 1.0})		
 	</Needs_Weapon>
 
-	
+
 	<Needs_Planetary_Shield>
 		Function_Needs_Ground_Defenses.Evaluate
 		*
@@ -559,7 +577,7 @@
 		(1.0 - 0.5 * Variable_Target.HasStructure {Parameter_Type = "Ground_Ion_Cannon", Parameter_Type = "Ground_Hypervelocity_Gun", Parameter_Only_Consider_Complete = 1.0})
 	</Needs_Planetary_Shield>
 
-	
+
 	<Needs_Turbolasers>
 		Function_Needs_Ground_Defenses.Evaluate
 		*
@@ -570,13 +588,14 @@
 		(1.0 - 0.5 * Variable_Target.HasStructure {Parameter_Type = "Generic_Planetary_Shield", Parameter_Only_Consider_Complete = 1.0})
 	</Needs_Turbolasers>
 
-	
+
 	<Needs_Space_Defensive_Structure>
 		(Variable_Target.StarbaseLevel == Variable_Target.MaxStarbaseLevel) 
 		*
 		(
-			(1.0 + Variable_Target.FriendlyForce.SpaceTotalNBTD) *
-			(1.0 + Function_DefensiveValue.Evaluate)
+			Variable_Target.FriendlyForce.SpaceTotalNBTD
+			+
+			Function_DefensiveValue.Evaluate
 			+
 			4.0 * Function_Planet_Has_Capital_Building.Evaluate
 			+
@@ -600,10 +619,10 @@
 											}
 		)
 	</Needs_Space_Defensive_Structure>
-	
-	
+
+
 	<Needs_Special_Shipyard>
-		(2 > Variable_Self.StructureCount {Parameter_Type = "CSA_Ship_Market", Parameter_Type = "Pirate_Base", Parameter_Only_Consider_Complete = 1.0})
+		(2 > Variable_Self.StructureCount {Parameter_Type = "CSA_Ship_Market", Parameter_Type = "Sabaoth_HQ", Parameter_Type = "Pirate_Base", Parameter_Only_Consider_Complete = 1.0})
 		*
 		(3 > Function_Max_Shipyard_Level.Evaluate)
 		*
@@ -616,5 +635,36 @@
 		(1 - Function_Planet_Has_Rancor_Base.Evaluate)
 	</Needs_Special_Shipyard>
 
-	
+
+	<Suitable_Smuggler_Target>
+		1.5
+		*
+		Variable_Target.BaseIncome
+		*
+		(5 - Script_GetSmugglingLevel.Evaluate)
+	</Suitable_Smuggler_Target>
+
+
+	<Needs_Cantina>
+		(
+			clamp(Function_Defense_Level.Evaluate - 1, 0.5, 2.0)
+			+
+			2.0 * Function_Economic_Personality.Evaluate
+			+
+			50
+		)
+		*
+		(0.2 + 0.8 * (Function_Is_Connected_To_Enemy.Evaluate == 0))
+		*
+		(1 > Variable_Target.StructureCount {Parameter_Type = "Smuggler_Cantina", Parameter_Only_Consider_Complete = 1.0})
+		*
+		Function_Needs_Build_Slots_Saved_For_Company.Evaluate
+		*
+		(Function_Open_Ground_Structure_Slots.Evaluate > 1)
+		*
+		Function_Planet_Has_Local_Government_Building.Evaluate
+		*
+		clamp(0.3 - (Variable_Self.StructureCount {Parameter_Type = "Smuggler_Cantina", Parameter_Only_Consider_Complete = 1.0} / Variable_Self.PlanetsControlledUnnormalized), 0.1, 0.3)
+	</Needs_Cantina>
+
 </Equations>

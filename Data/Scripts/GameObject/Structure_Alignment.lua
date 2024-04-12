@@ -2,7 +2,7 @@ require("PGBase")
 require("PGStateMachine")
 require("PGStoryMode")
 require("PGSpawnUnits")
-require("eawx-util/StoryUtil")
+require("eawx-util/MissionFunctions")
 
 function Definitions()
     DebugMessage("%s -- In Definitions", tostring(Script))
@@ -15,7 +15,7 @@ function State_Init(message)
 	end
 
 	Sleep(1.0)
-	local p_attacker = StoryUtil.Find_Attacking_Player(true)
+	local p_attacker = StoryUtil.Find_Attacking_Player()
 	local p_defender = StoryUtil.Find_Defending_Player()
 	local p_hostile = Find_Player("Independent_Forces")
 

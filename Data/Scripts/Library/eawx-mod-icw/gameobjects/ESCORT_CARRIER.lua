@@ -34,7 +34,7 @@ return {
 			WARLORDS = {Initial = 1, Reserve = 2},
 			ZSINJ_EMPIRE = {Initial = 1, Reserve = 2},
 		},
-		["SCIMMY_SQUADRON"] = {
+		["SCIMITAR_SQUADRON"] = {
 			EMPIRE = {Initial = 1, Reserve = 2, TechLevel = IsOneOf({3, 7, 8, 9, 10, 11})}
 		}
 	},

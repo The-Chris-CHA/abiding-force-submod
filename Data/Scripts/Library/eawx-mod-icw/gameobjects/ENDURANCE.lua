@@ -12,6 +12,9 @@ return {
 		["TIE_AVENGER_SQUADRON"] = {
 			IMPERIAL = {Initial = 1, Reserve = 3}
 		},
+		["DUNELIZARD_FIGHTER_SQUADRON"] = {
+			HUTT_CARTELS = {Initial = 1, Reserve = 3}
+		},
 		["B-WING_SQUADRON"] = {
 			HOSTILE = {Initial = 1, Reserve = 3, TechLevel = LessThan(4)},
 			REBEL = {Initial = 1, Reserve = 3, ResearchType = "~BwingE"},
@@ -21,9 +24,6 @@ return {
 			HOSTILE = {Initial = 1, Reserve = 3, TechLevel = GreaterOrEqualTo(4)},
 			REBEL = {Initial = 1, Reserve = 3, ResearchType = "BwingE"},
 			INDEPENDENT_FORCES = {Initial = 1, Reserve = 3, TechLevel = GreaterOrEqualTo(4)}
-		},
-		["MIYTIL_BOMBER_SQUADRON"] = {
-			HAPES_CONSORTIUM = {Initial = 1, Reserve = 3}
 		},
 		["STARWING_SQUADRON"] = {
 			IMPERIAL = {Initial = 1, Reserve = 3}
@@ -35,6 +35,9 @@ return {
 		},
 		["MIYTIL_BOMBER_SQUADRON_DOUBLE"] = {
 			HAPES_CONSORTIUM = {Initial = 1, Reserve = 3}
+		},
+		["KIMOGILA_SQUADRON_DOUBLE"] = {
+			HUTT_CARTELS = {Initial = 1, Reserve = 3}
 		},
 		["TIE_HEAVY_BOMBER_SQUADRON"] = {
 			IMPERIAL = {Initial = 1, Reserve = 3}

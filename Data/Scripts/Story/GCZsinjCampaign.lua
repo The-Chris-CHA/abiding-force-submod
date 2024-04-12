@@ -77,8 +77,9 @@ function Initialize(message)
     if message == OnEnter then
 		
 		crossplot:galactic()
+		crossplot:publish("INITIALIZE_AI", "empty")
 		crossplot:publish("NR_ADMIRAL_DECREMENT", 2, 1)
-		crossplot:publish("NR_ADMIRAL_LOCKIN", {"Solo"}, 1)
+		crossplot:publish("NR_ADMIRAL_LOCKIN", {"Han_Solo_Mon_Remonda"}, 1)
 		crossplot:publish("NR_ADMIRAL_EXIT", {"Iblis"}, 1)
 	else
 		crossplot:update()
@@ -105,7 +106,7 @@ function On_Zsinj_Death(message)
         local start_planet = FindPlanet("Centares")
         if TestValid(start_planet) then
             if start_planet.Get_Owner() == p_maldrood then
-                spawn_list_kosh = {"Lancet_Kosh"}
+                spawn_list_kosh = {"Kosh_Lancet"}
                 KoshSpawn = SpawnList(spawn_list_kosh, start_planet, p_maldrood, true, false)
             end
         end

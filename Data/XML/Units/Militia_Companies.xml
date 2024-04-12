@@ -4,7 +4,74 @@
 <!-- Local Forces not meant for factional use - Revolt spawns and abandonded factories are fair game -->
 <!-- A good portion of these are downgrades of extant stuff, so often company power is on the lower side for npc vehicles -->
 
+	<GroundCompany Name="SD_9_Assault_Droid_Company">
 
+		<Text_ID>TEXT_UNIT_SD_9_ASSAULT_BATTLE_DROID_SQUAD</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_DROID</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_SD_9_ASSAULT
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_SD_9_ASSAULT_COMPANY
+		TEXT_TOOLTIP_SD_9_ASSAULT_HEALTH
+		TEXT_TOOLTIP_SD_9_SHIELD
+		TEXT_TOOLTIP_SD_9_MOVE
+		TEXT_TOOLTIP_SD_9_ASSAULT_WEAP1
+		TEXT_TOOLTIP_SD_9_WEAP2
+		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
+		TEXT_TOOLTIP_BONUS_REFLECTIVE_ARMOR
+		</Encyclopedia_Text>
+		<Icon_Name>i_button_SD9_ASSAULT.TGA</Icon_Name>
+
+		<Autoresolve_Health>200</Autoresolve_Health>
+
+		<Autoresolve_Health>200</Autoresolve_Health>
+		<Damage>24</Damage>
+
+		<Ship_Class>infantry</Ship_Class>
+		<Formation_Priority>6</Formation_Priority>
+		<Is_Dummy>Yes</Is_Dummy>
+		<Is_Escort>yes</Is_Escort>
+
+		<GUI_Row> 1 </GUI_Row>
+		<Build_Cost_Credits>500</Build_Cost_Credits>
+		<Build_Time_Seconds>30</Build_Time_Seconds>
+		<Slice_Cost_Credits/>
+		<Required_Special_Structures/>
+		<Build_Time_Reduced_By_Multiple_Factories> Yes </Build_Time_Reduced_By_Multiple_Factories>
+		<Build_Tab_Land_Units>Yes</Build_Tab_Land_Units>
+		<Build_Initially_Locked>no</Build_Initially_Locked>
+		
+		<Piracy_Value_Credits>50</Piracy_Value_Credits>
+		<Score_Cost_Credits>240</Score_Cost_Credits>
+		<Population_Value>1</Population_Value>
+
+		<Tech_Level>99</Tech_Level>
+		<Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+
+		<Behavior>DUMMY_GROUND_COMPANY</Behavior>
+
+		<Create_Team_Type/>
+		<Max_Squad_Size> 1 </Max_Squad_Size>
+		<Company_Units>SD_9_Assault_Battle_Droid, SD_9_Assault_Battle_Droid, SD_9_Assault_Battle_Droid</Company_Units>
+		<Company_Units>SD_9_Assault_Battle_Droid, SD_9_Assault_Battle_Droid</Company_Units>
+		<Company_Transport_Unit>Gallofree_Transport_Light_Vehicles</Company_Transport_Unit>
+
+		<SFXEvent_Build_Started>UHD_Build_Troops</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>UHD_Recruitment_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Complete_Dark_Trooper_2</SFXEvent_Build_Complete>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Dark_Trooper_2</SFXEvent_Fleet_Move>
+		
+		
+	<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>51180</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>45</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->
+			
+	</GroundCompany>
+	
 	<GroundCompany Name="X34_Technical_Company">
 
 		<Text_ID>TEXT_UNIT_X34_TECHNICAL_COMPANY</Text_ID>
@@ -44,7 +111,6 @@
 		<Population_Value>1</Population_Value>
 
 		<Tech_Level>0</Tech_Level>
-		<Required_Timeline>0</Required_Timeline>
 		<Required_Ground_Base_Level>1</Required_Ground_Base_Level>
 		
 		<Affiliation>Warlords</Affiliation>
@@ -116,7 +182,6 @@
 		<Population_Value>1</Population_Value>
 
 		<Tech_Level>0</Tech_Level>
-		<Required_Timeline>0</Required_Timeline>
 		<Required_Ground_Base_Level>1</Required_Ground_Base_Level>
 		
 		<Affiliation>Warlords</Affiliation>
@@ -150,7 +215,7 @@
 	<GroundCompany Name="Espo_Walker_Early_Squad">
 
 		<Text_ID>TEXT_UNIT_ESPO_WALKER_EARLY_COMPANY</Text_ID>
-		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_LIGHT_VEHICLE</Encyclopedia_Unit_Class>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_LIGHT_WALKER</Encyclopedia_Unit_Class>
 		<Encyclopedia_Text>
 		TEXT_TOOLTIP_ESPO_WALKER_EARLY
 		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
@@ -192,7 +257,6 @@
 		<Population_Value>1</Population_Value>
 
 		<Tech_Level>0</Tech_Level>
-		<Required_Timeline>0</Required_Timeline>
 		<Required_Ground_Base_Level>1</Required_Ground_Base_Level>
 		
 		<Affiliation>Warlords</Affiliation>
@@ -236,7 +300,7 @@
 	<GroundCompany Name="AAC_1_Company">
 		<Variant_Of_Existing_Type>Rebel_AAC_2_Company</Variant_Of_Existing_Type>
 		<Text_ID>TEXT_UNIT_AAC_1_COMPANY</Text_ID>
-		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_TANK</Encyclopedia_Unit_Class>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_LIGHT_VEHICLE</Encyclopedia_Unit_Class>
 		<Encyclopedia_Text>
 		TEXT_TOOLTIP_AAC_1
 		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
@@ -262,13 +326,196 @@
 		<Population_Value>1</Population_Value>
 
 		<Tech_Level>99</Tech_Level>
-		<Required_Timeline>0</Required_Timeline>
 		<Required_Ground_Base_Level>1</Required_Ground_Base_Level>
 		
 		<Affiliation>Warlords</Affiliation>
 
 		<Company_Units>AAC_1, AAC_1, AAC_1, AAC_1</Company_Units>
 
+	</GroundCompany>
+
+	<GroundCompany Name="Gian_Company">
+
+		<Text_ID>TEXT_UNIT_GIAN_COMPANY</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_MEDIUM_VEHICLE</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_GIAN
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
+		TEXT_TOOLTIP_GIAN_HEALTH 
+		TEXT_TOOLTIP_GIAN_MOVE 
+		TEXT_TOOLTIP_GIAN_WEAP1 
+		TEXT_TOOLTIP_GIAN_WEAP2
+		</Encyclopedia_Text>
+		<Icon_Name>i_button_gian.tga</Icon_Name>
+
+		<Autoresolve_Health>100</Autoresolve_Health>
+		<Damage>20</Damage>
+
+		<Ship_Class>tank</Ship_Class>
+		<Formation_Priority>2</Formation_Priority>
+		<Is_Dummy>Yes</Is_Dummy>
+		<Is_Escort>yes</Is_Escort>
+
+		<GUI_Row> 1 </GUI_Row>
+		<Build_Cost_Credits>600</Build_Cost_Credits>
+		<Build_Time_Seconds>20</Build_Time_Seconds>
+		<Slice_Cost_Credits/>
+		<Required_Special_Structures/>
+		<Build_Time_Reduced_By_Multiple_Factories> Yes </Build_Time_Reduced_By_Multiple_Factories>
+		<Build_Tab_Land_Units>Yes</Build_Tab_Land_Units>
+		<Build_Initially_Locked>Yes</Build_Initially_Locked>
+		<Tactical_Build_Cost_Multiplayer>750</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>15</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites>Ground_Level_Two_Tech_Upgrade</Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<Piracy_Value_Credits>1</Piracy_Value_Credits>
+		<Score_Cost_Credits>180</Score_Cost_Credits>
+		<Population_Value>1</Population_Value>
+
+		<Tech_Level>99</Tech_Level>
+		<Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+		
+		<Affiliation>Warlords, Independent_Forces</Affiliation>
+		<Political_Control/>
+
+		<Behavior>DUMMY_GROUND_COMPANY</Behavior>
+
+		<Create_Team_Type/>
+		<Max_Squad_Size> 1 </Max_Squad_Size>
+		<Company_Transport_Unit>Gallofree_Transport_Light_Vehicles</Company_Transport_Unit>
+
+		<SFXEvent_Build_Started>EHD_Build_Vehicle</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Vehicle_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Complete_Tie_Mauler</SFXEvent_Build_Complete>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Tie_Mauler</SFXEvent_Fleet_Move>
+
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+		<Required_Planets/>
+		<Company_Units>Gian_Speeder, Gian_Speeder, Gian_Speeder, Gian_Speeder</Company_Units>
+		<Maintenance_Cost>0.0</Maintenance_Cost>
+	</GroundCompany>
+
+	<GroundCompany Name="Gian_PDF_Company">
+
+		<Text_ID>TEXT_UNIT_GIAN_PDF_COMPANY</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_MEDIUM_VEHICLE</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_GIAN_PDF
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
+		TEXT_TOOLTIP_GIAN_HEALTH 
+		TEXT_TOOLTIP_GIAN_SHIELD 
+		TEXT_TOOLTIP_GIAN_MOVE 
+		TEXT_TOOLTIP_GIAN_WEAP2
+		</Encyclopedia_Text>
+		<Icon_Name>i_button_gian_pdf.tga</Icon_Name>
+
+		<Autoresolve_Health>100</Autoresolve_Health>
+		<Damage>20</Damage>
+
+		<Ship_Class>tank</Ship_Class>
+		<Formation_Priority>2</Formation_Priority>
+		<Is_Dummy>Yes</Is_Dummy>
+		<Is_Escort>yes</Is_Escort>
+
+		<GUI_Row> 1 </GUI_Row>
+		<Build_Cost_Credits>600</Build_Cost_Credits>
+		<Build_Time_Seconds>20</Build_Time_Seconds>
+		<Slice_Cost_Credits/>
+		<Required_Special_Structures/>
+		<Build_Time_Reduced_By_Multiple_Factories> Yes </Build_Time_Reduced_By_Multiple_Factories>
+		<Build_Tab_Land_Units>Yes</Build_Tab_Land_Units>
+		<Build_Initially_Locked>Yes</Build_Initially_Locked>
+		<Tactical_Build_Cost_Multiplayer>750</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>15</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites>Ground_Level_Two_Tech_Upgrade</Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<Piracy_Value_Credits>1</Piracy_Value_Credits>
+		<Score_Cost_Credits>180</Score_Cost_Credits>
+		<Population_Value>1</Population_Value>
+
+		<Tech_Level>99</Tech_Level>
+		<Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+		
+		<Affiliation>Warlords, Independent_Forces</Affiliation>
+		<Political_Control/>
+
+		<Behavior>DUMMY_GROUND_COMPANY</Behavior>
+
+		<Create_Team_Type/>
+		<Max_Squad_Size> 1 </Max_Squad_Size>
+		<Company_Transport_Unit>Gallofree_Transport_Light_Vehicles</Company_Transport_Unit>
+
+		<SFXEvent_Build_Started>EHD_Build_Vehicle</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Vehicle_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Complete_Tie_Mauler</SFXEvent_Build_Complete>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Tie_Mauler</SFXEvent_Fleet_Move>
+
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+		<Required_Planets/>
+		<Company_Units>Gian_PDF, Gian_PDF, Gian_PDF, Gian_PDF</Company_Units>
+		<Maintenance_Cost>0.0</Maintenance_Cost>
+	</GroundCompany>
+
+	<GroundCompany Name="Gian_Rebel_Company">
+
+		<Text_ID>TEXT_UNIT_GIAN_REBEL_COMPANY</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_MEDIUM_VEHICLE</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_GIAN_REBEL
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
+		TEXT_TOOLTIP_GIAN_REBEL_HEALTH 
+		TEXT_TOOLTIP_GIAN_MOVE 
+		TEXT_TOOLTIP_GIAN_REBEL_WEAP1 
+		TEXT_TOOLTIP_GIAN_REBEL_WEAP2
+		TEXT_TOOLTIP_GIAN_REBEL_WEAP3
+		</Encyclopedia_Text>
+		<Icon_Name>i_button_gian_rebel.tga</Icon_Name>
+
+		<Autoresolve_Health>100</Autoresolve_Health>
+		<Damage>20</Damage>
+
+		<Ship_Class>tank</Ship_Class>
+		<Formation_Priority>2</Formation_Priority>
+		<Is_Dummy>Yes</Is_Dummy>
+		<Is_Escort>yes</Is_Escort>
+
+		<GUI_Row> 1 </GUI_Row>
+		<Build_Cost_Credits>600</Build_Cost_Credits>
+		<Build_Time_Seconds>20</Build_Time_Seconds>
+		<Slice_Cost_Credits/>
+		<Required_Special_Structures/>
+		<Build_Time_Reduced_By_Multiple_Factories> Yes </Build_Time_Reduced_By_Multiple_Factories>
+		<Build_Tab_Land_Units>Yes</Build_Tab_Land_Units>
+		<Build_Initially_Locked>Yes</Build_Initially_Locked>
+		<Tactical_Build_Cost_Multiplayer>750</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>15</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites>Ground_Level_Two_Tech_Upgrade</Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<Piracy_Value_Credits>1</Piracy_Value_Credits>
+		<Score_Cost_Credits>180</Score_Cost_Credits>
+		<Population_Value>1</Population_Value>
+
+		<Tech_Level>99</Tech_Level>
+		<Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+		
+		<Affiliation>Warlords, Independent_Forces</Affiliation>
+		<Political_Control/>
+
+		<Behavior>DUMMY_GROUND_COMPANY</Behavior>
+
+		<Create_Team_Type/>
+		<Max_Squad_Size> 1 </Max_Squad_Size>
+		<Company_Transport_Unit>Gallofree_Transport_Light_Vehicles</Company_Transport_Unit>
+
+		<SFXEvent_Build_Started>EHD_Build_Vehicle</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Vehicle_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Complete_Tie_Mauler</SFXEvent_Build_Complete>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Tie_Mauler</SFXEvent_Fleet_Move>
+
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+		<Required_Planets/>
+		<Company_Units>Gian_Rebel, Gian_Rebel, Gian_Rebel, Gian_Rebel</Company_Units>
+		<Maintenance_Cost>0.0</Maintenance_Cost>
 	</GroundCompany>
 
 	<!-- Relegated to militia for TR -->	
@@ -315,10 +562,9 @@
 		<Population_Value>1</Population_Value>
 
 		<Tech_Level>99</Tech_Level>
-		<Required_Timeline>0</Required_Timeline>
 		<Required_Ground_Base_Level>1</Required_Ground_Base_Level>
 		
-		<Affiliation>Warlords</Affiliation>
+		<Affiliation>Warlords, Independent_Forces</Affiliation>
 		<Political_Control/>
 
 		<Behavior>DUMMY_GROUND_COMPANY</Behavior>
@@ -329,8 +575,8 @@
 
 		<SFXEvent_Build_Started>EHD_Build_Vehicle</SFXEvent_Build_Started>
 		<SFXEvent_Build_Cancelled>EHD_Vehicle_Canceled</SFXEvent_Build_Cancelled>
-		<SFXEvent_Build_Complete>Unit_Complete_Tie_Mauler</SFXEvent_Build_Complete>
-		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Tie_Mauler</SFXEvent_Fleet_Move>
+		<SFXEvent_Build_Complete>Unit_Complete_Chariot_LAV</SFXEvent_Build_Complete>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Chariot_LAV</SFXEvent_Fleet_Move>
 
 		<Required_Star_Base_Level>0</Required_Star_Base_Level>
 		<Required_Planets/>
@@ -342,7 +588,7 @@
 	<GroundCompany Name="AA70_Company">
 		<Variant_Of_Existing_Type>Rebel_AA5_Company</Variant_Of_Existing_Type>
 		<Text_ID>TEXT_UNIT_AA70_TRUCK_COMPANY</Text_ID>
-		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_TRANSPORT</Encyclopedia_Unit_Class>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_LIGHT_VEHICLE</Encyclopedia_Unit_Class>
 		<Encyclopedia_Text>
 		TEXT_TOOLTIP_AA70_TRUCK 
 		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
@@ -370,7 +616,6 @@
 		<Population_Value>1</Population_Value>
 
 		<Tech_Level>99</Tech_Level>
-		<Required_Timeline>0</Required_Timeline>
 		<Required_Ground_Base_Level>1</Required_Ground_Base_Level>
 		
 		<Affiliation>Warlords</Affiliation>
@@ -383,7 +628,7 @@
 	<GroundCompany Name="T1A_Company">
 		<Variant_Of_Existing_Type>Rebel_T1B_Company</Variant_Of_Existing_Type>
 		<Text_ID>TEXT_UNIT_T1A_HOVERTANK_COMPANY</Text_ID>
-		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_TANK</Encyclopedia_Unit_Class>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_LIGHT_VEHICLE</Encyclopedia_Unit_Class>
 		<Encyclopedia_Text>
 		TEXT_TOOLTIP_T1A_HOVERTANK 
 		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
@@ -410,7 +655,6 @@
 		<Population_Value>1</Population_Value>
 
 		<Tech_Level>99</Tech_Level>
-		<Required_Timeline>0</Required_Timeline>
 		<Required_Ground_Base_Level>1</Required_Ground_Base_Level>
 		
 		<Affiliation>Warlords</Affiliation>
@@ -422,7 +666,7 @@
 	<GroundCompany Name="T2A_Company">
 		<Variant_Of_Existing_Type>Rebel_T2B_Company</Variant_Of_Existing_Type>
 		<Text_ID>TEXT_UNIT_T2A_TANK_COMPANY</Text_ID>
-		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_TANK</Encyclopedia_Unit_Class>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_LIGHT_VEHICLE</Encyclopedia_Unit_Class>
 		<Encyclopedia_Text>
 		TEXT_TOOLTIP_T2A
 		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
@@ -448,7 +692,6 @@
 		<Population_Value>1</Population_Value>
 
 		<Tech_Level>99</Tech_Level>
-		<Required_Timeline>0</Required_Timeline>
 		<Required_Ground_Base_Level>1</Required_Ground_Base_Level>
 		
 		<Affiliation>Warlords</Affiliation>
@@ -460,7 +703,7 @@
 	<GroundCompany Name="Freerunner_Early_Company">
 		<Variant_Of_Existing_Type>Rebel_Freerunner_Company</Variant_Of_Existing_Type>
 		<Text_ID>TEXT_UNIT_FREERUNNER_EARLY_COMPANY</Text_ID>
-		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_TANK</Encyclopedia_Unit_Class>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_LIGHT_VEHICLE</Encyclopedia_Unit_Class>
 		<Encyclopedia_Text>
 		TEXT_TOOLTIP_FREERUNNER_EARLY
 		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
@@ -487,7 +730,6 @@
 		<Population_Value>1</Population_Value>
 
 		<Tech_Level>99</Tech_Level>
-		<Required_Timeline>0</Required_Timeline>
 		<Required_Ground_Base_Level>1</Required_Ground_Base_Level>
 		
 		<Affiliation>Warlords</Affiliation>
@@ -499,7 +741,7 @@
 	<GroundCompany Name="Freerunner_Assault_Company">
 		<Variant_Of_Existing_Type>Rebel_Freerunner_Company</Variant_Of_Existing_Type>
 		<Text_ID>TEXT_UNIT_FREERUNNER_ASSAULT_COMPANY</Text_ID>
-		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_TANK</Encyclopedia_Unit_Class>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_LIGHT_VEHICLE</Encyclopedia_Unit_Class>
 		<Encyclopedia_Text>
 		TEXT_TOOLTIP_FREERUNNER_ASSAULT
 		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
@@ -525,7 +767,6 @@
 		<Population_Value>1</Population_Value>
 
 		<Tech_Level>99</Tech_Level>
-		<Required_Timeline>0</Required_Timeline>
 		<Required_Ground_Base_Level>1</Required_Ground_Base_Level>
 		
 		<Affiliation>Warlords</Affiliation>
@@ -537,7 +778,7 @@
 	<GroundCompany Name="Freerunner_AA_Company">
 		<Variant_Of_Existing_Type>Rebel_Freerunner_Company</Variant_Of_Existing_Type>
 		<Text_ID>TEXT_UNIT_FREERUNNER_AA_COMPANY</Text_ID>
-		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_TANK</Encyclopedia_Unit_Class>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_LIGHT_VEHICLE</Encyclopedia_Unit_Class>
 		<Encyclopedia_Text>
 		TEXT_TOOLTIP_FREERUNNER_AA
 		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
@@ -564,7 +805,6 @@
 		<Population_Value>1</Population_Value>
 
 		<Tech_Level>99</Tech_Level>
-		<Required_Timeline>0</Required_Timeline>
 		<Required_Ground_Base_Level>1</Required_Ground_Base_Level>
 		
 		<Affiliation>Warlords</Affiliation>
@@ -604,7 +844,6 @@
 		<Population_Value>1</Population_Value>
 
 		<Tech_Level>99</Tech_Level>
-		<Required_Timeline>0</Required_Timeline>
 		<Required_Ground_Base_Level>1</Required_Ground_Base_Level>
 		
 		<Affiliation>Warlords</Affiliation>
@@ -619,7 +858,7 @@
 	<GroundCompany Name="T3A_Company">
 		<Variant_Of_Existing_Type>Rebel_T3B_Company</Variant_Of_Existing_Type>
 		<Text_ID>TEXT_UNIT_T3A_TANK_COMPANY</Text_ID>
-		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_HEAVY_VEHICLE</Encyclopedia_Unit_Class>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_HEAVY_TANK</Encyclopedia_Unit_Class>
 		<Encyclopedia_Text>
 		TEXT_TOOLTIP_T3A_TRACKEDTANK 
 		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
@@ -647,7 +886,6 @@
 		<Population_Value>1</Population_Value>
 
 		<Tech_Level>99</Tech_Level>
-		<Required_Timeline>0</Required_Timeline>
 		<Required_Ground_Base_Level>1</Required_Ground_Base_Level>
 		
 		<Affiliation>Warlords</Affiliation>
@@ -659,7 +897,7 @@
 	<GroundCompany Name="T4A_Company">
 		<Variant_Of_Existing_Type>Rebel_T4B_Company</Variant_Of_Existing_Type>
 		<Text_ID>TEXT_UNIT_T4A_TANK_COMPANY</Text_ID>
-		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_HEAVY_VEHICLE</Encyclopedia_Unit_Class>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_HEAVY_TANK</Encyclopedia_Unit_Class>
 		<Encyclopedia_Text>
 		TEXT_TOOLTIP_T4A 
 		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
@@ -686,7 +924,6 @@
 		<Population_Value>1</Population_Value>
 
 		<Tech_Level>99</Tech_Level>
-		<Required_Timeline>0</Required_Timeline>
 		<Required_Ground_Base_Level>1</Required_Ground_Base_Level>
 		
 		<Affiliation>Warlords</Affiliation>
@@ -698,7 +935,7 @@
 	<GroundCompany Name="MZ8_Tank_Company">
 
 		<Text_ID>TEXT_UNIT_MZ8_COMPANY</Text_ID>
-		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_HEAVY_VEHICLE</Encyclopedia_Unit_Class>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_MEDIUM_TANK</Encyclopedia_Unit_Class>
 		<Encyclopedia_Text>
 		TEXT_TOOLTIP_MZ8 
 		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
@@ -737,7 +974,6 @@
 		<Population_Value>1</Population_Value>
 
 		<Tech_Level>0</Tech_Level>
-		<Required_Timeline>0</Required_Timeline>
 		<Required_Ground_Base_Level>1</Required_Ground_Base_Level>
 		
 		<Affiliation>Warlords</Affiliation>
@@ -760,49 +996,72 @@
 
 		<Maintenance_Cost>0.0</Maintenance_Cost>
 	</GroundCompany>
-
-	<GroundCompany Name="A4_Juggernaut_Company">
-		<Variant_Of_Existing_Type>Imperial_A5_Juggernaut_Company</Variant_Of_Existing_Type>
-		<Text_ID>TEXT_UNIT_JUGGERNAUT_A4</Text_ID>
+	
+	<GroundCompany Name="Canderous_Assault_Tank_Lasers_Company">
+	
+		<Text_ID>TEXT_UNIT_CANDEROUS_TANK_LASERS</Text_ID>
 		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_HEAVY_VEHICLE</Encyclopedia_Unit_Class>
 		<Encyclopedia_Text>
-		TEXT_TOOLTIP_JUGGERNAUT_A4
+		TEXT_TOOLTIP_CANDEROUS_TANK_LASERS
 		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
-		TEXT_TOOLTIP_JUGGERNAUT_A4_COMPANY
-		TEXT_TOOLTIP_JUGGERNAUT_A4_HEALTH
-		TEXT_TOOLTIP_JUGGERNAUT_A4_MOVE 
-		TEXT_TOOLTIP_JUGGERNAUT_A4_WEAP1
-		TEXT_TOOLTIP_JUGGERNAUT_A4_WEAP2
-		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
-		TEXT_TOOLTIP_CAPABILITY_SUPER_TRANSPORT
-		TEXT_TOOLTIP_CAPABILITY_CRUSH
+		TEXT_TOOLTIP_CANDEROUS_TANK_LASERS_COMPANY
+		TEXT_TOOLTIP_CANDEROUS_TANK_HEALTH
+		TEXT_TOOLTIP_CANDEROUS_TANK_LASERS_MOVE 
+		TEXT_TOOLTIP_CANDEROUS_TANK_LASERS_WEAP1
+		TEXT_TOOLTIP_CANDEROUS_TANK_WEAP2
 		</Encyclopedia_Text>
-		<Icon_Name>i_button_a4_juggernaut.tga</Icon_Name>
+		<Icon_Name>i_button_uv_cander_tank_lasers.tga</Icon_Name>
 
+		<Autoresolve_Health>100</Autoresolve_Health>
+		<Damage>60</Damage>
+
+		<Ship_Class>walker</Ship_Class>
+		<Formation_Priority>3</Formation_Priority>
+		<Is_Dummy>Yes</Is_Dummy>
+		<Is_Escort>yes</Is_Escort>
+
+		<GUI_Row> 1 </GUI_Row>
+		<Build_Cost_Credits>950</Build_Cost_Credits>
+		<Build_Time_Seconds>40</Build_Time_Seconds>
+		<Slice_Cost_Credits/>
 		<Required_Special_Structures/>
 		<Build_Time_Reduced_By_Multiple_Factories> Yes </Build_Time_Reduced_By_Multiple_Factories>
-		<Build_Tab_Land_Units>No</Build_Tab_Land_Units>
+		<Build_Tab_Land_Units>no</Build_Tab_Land_Units>
 		<Build_Initially_Locked>Yes</Build_Initially_Locked>
-		<Tactical_Build_Cost_Multiplayer>1000</Tactical_Build_Cost_Multiplayer>
-		<Tactical_Build_Time_Seconds>15</Tactical_Build_Time_Seconds>
-		<Tactical_Build_Prerequisites/>
+		<Tactical_Build_Cost_Multiplayer>1400</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>10</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites>Ground_Level_Three_Tech_Upgrade</Tactical_Build_Prerequisites>
 		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
 		<Piracy_Value_Credits>50</Piracy_Value_Credits>
-		<Score_Cost_Credits>500</Score_Cost_Credits>
+		<Score_Cost_Credits>600</Score_Cost_Credits>
 		<Population_Value>1</Population_Value>
 
-		<Tech_Level>99</Tech_Level>
-		<Required_Timeline>0</Required_Timeline>
+		<Tech_Level>0</Tech_Level>
 		<Required_Ground_Base_Level>1</Required_Ground_Base_Level>
 		
 		<Affiliation>Warlords</Affiliation>
+		<Political_Control/>
 
-		<Company_Units>A4_Juggernaut</Company_Units>
+		<Behavior>DUMMY_GROUND_COMPANY</Behavior>
 
-		<Company_Transport_Unit>Gallofree_Transport_Heavy</Company_Transport_Unit>
+		<Create_Team_Type/>
+		<Max_Squad_Size> 1 </Max_Squad_Size>
+		<Company_Transport_Unit>Gallofree_Transport_Tanks</Company_Transport_Unit>
 
+		<SFXEvent_Build_Started>RHD_Build_Vehicle</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Vehicle_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Complete_T4B_Tank</SFXEvent_Build_Complete>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_T4B_Tank</SFXEvent_Fleet_Move>
+
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+		<Required_Planets/>
+		<Company_Units>Canderous_Assault_Tank_Lasers</Company_Units>
+
+		<Maintenance_Cost>0.0</Maintenance_Cost>
+		
+		
 	</GroundCompany>
-
+	
 	<GroundCompany Name="Aratech_Battle_Platform_Company">
 
 		<Text_ID>TEXT_UNIT_ARATECH_BP</Text_ID>
@@ -846,10 +1105,9 @@
 		<Population_Value>1</Population_Value>
 
 		<Tech_Level>99</Tech_Level>
-		<Required_Timeline>0</Required_Timeline>
 		<Required_Ground_Base_Level>1</Required_Ground_Base_Level>
 		
-		<Affiliation>Warlords</Affiliation>
+		<Affiliation>Warlords, Rebel</Affiliation>
 		<Political_Control/>
 
 		<Behavior>DUMMY_GROUND_COMPANY</Behavior>
@@ -873,7 +1131,7 @@
 	<GroundCompany Name="Skyhopper_Group">
 
 		<Text_ID>TEXT_UNIT_SKYHOPPER_COMPANY</Text_ID>
-		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_SPEEDER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_MEDIUM_AIRSPEEDER</Encyclopedia_Unit_Class>
 		<Encyclopedia_Text>
 		TEXT_TOOLTIP_SKYHOPPER
 		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
@@ -909,7 +1167,6 @@
 		<Population_Value>1</Population_Value>
 
 		<Tech_Level>0</Tech_Level>
-		<Required_Timeline>0</Required_Timeline>
 		<Required_Ground_Base_Level>1</Required_Ground_Base_Level>
 		
 		<Affiliation>Warlords</Affiliation>
@@ -941,7 +1198,7 @@
 	<GroundCompany Name="Skyhopper_Antivehicle_Group">
 		<Variant_Of_Existing_Type>Skyhopper_Group</Variant_Of_Existing_Type>
 		<Text_ID>TEXT_UNIT_SKYHOPPER_LASER_COMPANY</Text_ID>
-		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_SPEEDER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_MEDIUM_AIRSPEEDER</Encyclopedia_Unit_Class>
 		<Encyclopedia_Text>
 		TEXT_TOOLTIP_SKYHOPPER_LASER
 		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
@@ -958,7 +1215,7 @@
 	<GroundCompany Name="Skyhopper_Primitive_Group">
 		<Variant_Of_Existing_Type>Skyhopper_Group</Variant_Of_Existing_Type>
 		<Text_ID>TEXT_UNIT_SKYHOPPER_PRIMITIVE_COMPANY</Text_ID>
-		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_SPEEDER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_MEDIUM_AIRSPEEDER</Encyclopedia_Unit_Class>
 		<Encyclopedia_Text>
 		TEXT_TOOLTIP_SKYHOPPER_PRIMITIVE
 		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
@@ -975,7 +1232,7 @@
 	<GroundCompany Name="Skyhopper_Security_Group">
 		<Variant_Of_Existing_Type>Skyhopper_Group</Variant_Of_Existing_Type>
 		<Text_ID>TEXT_UNIT_SKYHOPPER_ION_COMPANY</Text_ID>
-		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_SPEEDER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_MEDIUM_AIRSPEEDER</Encyclopedia_Unit_Class>
 		<Encyclopedia_Text>
 		TEXT_TOOLTIP_SKYHOPPER_ION
 		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
@@ -992,7 +1249,7 @@
 	<GroundCompany Name="Storm_Cloud_Car_Group">
 
 		<Text_ID>TEXT_UNIT_CLOUDCAR_COMPANY</Text_ID>
-		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_SPEEDER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_MEDIUM_AIRSPEEDER</Encyclopedia_Unit_Class>
 		<Encyclopedia_Text>
 		TEXT_TOOLTIP_CLOUDCAR
 		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
@@ -1030,7 +1287,6 @@
 		<Population_Value>1</Population_Value>
 
 		<Tech_Level>0</Tech_Level>
-		<Required_Timeline>0</Required_Timeline>
 		<Required_Ground_Base_Level>1</Required_Ground_Base_Level>
 		
 		<Affiliation>Warlords</Affiliation>
@@ -1072,7 +1328,7 @@
 	<GroundCompany Name="JX30_Group">
 
 		<Text_ID>TEXT_UNIT_JX30_COMPANY</Text_ID>
-		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_TRANSPORT</Encyclopedia_Unit_Class>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_HEAVY_TRANSPORT</Encyclopedia_Unit_Class>
 		<Encyclopedia_Text>
 		TEXT_TOOLTIP_JX30
 		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
@@ -1111,7 +1367,6 @@
 		<Population_Value>1</Population_Value>
 
 		<Tech_Level>0</Tech_Level>
-		<Required_Timeline>0</Required_Timeline>
 		<Required_Ground_Base_Level>1</Required_Ground_Base_Level>
 		
 		<Affiliation>Warlords</Affiliation>
@@ -1125,8 +1380,8 @@
 
 		<SFXEvent_Build_Started>EHD_Build_Vehicle</SFXEvent_Build_Started>
 		<SFXEvent_Build_Cancelled>EHD_Vehicle_Canceled</SFXEvent_Build_Cancelled>
-		<SFXEvent_Build_Complete>Unit_Complete_2M_Tank</SFXEvent_Build_Complete>
-		<SFXEvent_Fleet_Move>Unit_Fleet_Move_2M_Tank</SFXEvent_Fleet_Move>
+		<SFXEvent_Build_Complete>Unit_Complete_Gallofree_HTT</SFXEvent_Build_Complete>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Gallofree_HTT</SFXEvent_Fleet_Move>
 
 		<Required_Star_Base_Level>0</Required_Star_Base_Level>
 		<Required_Planets/>
@@ -1134,5 +1389,913 @@
 		<Maintenance_Cost>0.0</Maintenance_Cost>
 	</GroundCompany>		
 
+	<!-- Companies for local groups because otherwise they can't have a required structure assigned  -->
 
+	<GroundCompany Name="Sun_Guard_Squad">
+
+		<Text_ID>TEXT_UNIT_SUN_GUARD_PLATOON</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_INFANTRY</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_SUN_GUARD
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_SUN_GUARD_COMPANY
+		TEXT_TOOLTIP_SUN_GUARD_SQUAD
+		TEXT_TOOLTIP_SUN_GUARD_HEALTH
+		TEXT_TOOLTIP_SUN_GUARD_MOVE
+		TEXT_TOOLTIP_SUN_GUARD_COMPANY_WEAP1
+		TEXT_TOOLTIP_SUN_GUARD_COMPANY_WEAP2
+		TEXT_TOOLTIP_SUN_GUARD_COMPANY_WEAP3
+		TEXT_TOOLTIP_SUN_GUARD_COMPANY_WEAP4
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_INFANTRY_CAPTURE
+		</Encyclopedia_Text>
+		<Icon_Name>I_BUTTON_SUN_GUARD.tga</Icon_Name>
+
+		<Autoresolve_Health>100</Autoresolve_Health>
+		<Damage>18</Damage>
+
+		<Ship_Class>infantry</Ship_Class>
+		<Formation_Priority>1</Formation_Priority>
+		<Is_Dummy>Yes</Is_Dummy>
+		<Is_Escort>yes</Is_Escort>
+
+		<GUI_Row> 1 </GUI_Row>
+		<Build_Cost_Credits>320</Build_Cost_Credits>
+		<Build_Time_Seconds>20</Build_Time_Seconds>
+		<Slice_Cost_Credits/>
+		<Required_Special_Structures/>
+		<Build_Time_Reduced_By_Multiple_Factories> Yes </Build_Time_Reduced_By_Multiple_Factories>
+		<Build_Tab_Land_Units>Yes</Build_Tab_Land_Units>
+		<Build_Initially_Locked>no</Build_Initially_Locked>
+		<Piracy_Value_Credits>50</Piracy_Value_Credits>
+		<Score_Cost_Credits>54</Score_Cost_Credits>
+		<Population_Value>1</Population_Value>
+
+		<Tech_Level>99</Tech_Level>
+		<Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+		
+		<Affiliation/>
+
+		<Behavior>DUMMY_GROUND_COMPANY</Behavior>
+
+		<Create_Team_Type> Sun_Guard_Team </Create_Team_Type>
+		<Max_Squad_Size> 5 </Max_Squad_Size>
+		<Company_Transport_Unit>Gallofree_Transport</Company_Transport_Unit>
+
+		<SFXEvent_Build_Started>EHD_Build_Troops</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Recruitment_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>EHD_Reinforcements_Available</SFXEvent_Build_Complete>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Imp_Guard</SFXEvent_Fleet_Move>
+
+		<LOD_Bias>5</LOD_Bias>
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+		<Required_Planets/>
+		<Company_Units> Sun_Guard, Sun_Guard, Sun_Guard, Sun_Guard_Sergeant, Sun_Guard_Lieutenant_Spawner</Company_Units>
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<!-- Primary ability -->
+			<Unit_Ability>
+				<Type>SPREAD_OUT</Type>
+				<Mod_Multiplier>SPEED_MULTIPLIER,	 0.5f</Mod_Multiplier>
+				<Mod_Multiplier>TAKE_DAMAGE_MULTIPLIER, 0.75f</Mod_Multiplier>
+			</Unit_Ability>
+
+		</Unit_Abilities_Data>
+		<Maintenance_Cost>0.0</Maintenance_Cost>
+		
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>310</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>2</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Upgrades</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->  
+		<!--<MULTIPLAYER SKIRMISH VALUES END>-->
+	</GroundCompany>
+
+	<GroundCompany Name="Sun_Guard_Squad_Deployed">
+		<Variant_Of_Existing_Type>Sun_Guard_Squad</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_UNIT_SUN_GUARD_SQUAD</Text_ID>
+		<Company_Units> Sun_Guard, Sun_Guard, Sun_Guard, Sun_Guard, Sun_Guard_Sergeant</Company_Units>
+		<Max_Squad_Size> 5 </Max_Squad_Size>
+		<Tech_Level>6</Tech_Level>
+		<Population_Value>0</Population_Value>
+		<Build_Tab_Land_Units>No</Build_Tab_Land_Units>
+	</GroundCompany>
+
+	<Container Name="Sun_Guard_Team">
+
+		<Text_ID>TEXT_UNIT_SUN_GUARD_SQUAD</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_INFANTRY</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_SUN_GUARD
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_SUN_GUARD_SQUAD
+		TEXT_TOOLTIP_SUN_GUARD_HEALTH
+		TEXT_TOOLTIP_SUN_GUARD_MOVE
+		TEXT_TOOLTIP_SUN_GUARD_SQUAD_WEAP1
+		TEXT_TOOLTIP_SUN_GUARD_SQUAD_WEAP2
+		TEXT_TOOLTIP_SUN_GUARD_SQUAD_WEAP3
+		TEXT_TOOLTIP_SUN_GUARD_SQUAD_WEAP4
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_INFANTRY_CAPTURE
+		</Encyclopedia_Text>
+		<Icon_Name>I_BUTTON_SUN_GUARD.tga</Icon_Name>
+
+		<Select_Box_Scale>45</Select_Box_Scale>
+		<Select_Box_Z_Adjust>0</Select_Box_Z_Adjust>
+		
+		<Land_Model_Name/>
+
+		<Max_Speed> 1.1 </Max_Speed>
+		<OverrideAcceleration>0.1</OverrideAcceleration>
+		<OverrideDeceleration>0.1</OverrideDeceleration>
+		<Max_Rate_Of_Turn>12.0</Max_Rate_Of_Turn>
+
+		<CategoryMask>Infantry | AntiInfantry</CategoryMask>
+		<Show_Name>No</Show_Name>
+
+		<Tactical_Bribe_Cost>25</Tactical_Bribe_Cost>
+
+		<Behavior>TEAM,SELECTABLE,UNIT_AI</Behavior>
+		<LandBehavior>REVEAL, LAND_TEAM_CONTAINER_LOCOMOTOR, TEAM_TARGETING, GARRISON_UNIT</LandBehavior>
+		
+		<Lua_Script/>
+
+		<Garrison_Category> Infantry </Garrison_Category>
+		<Garrison_Value>1</Garrison_Value>
+
+		<Is_Squashable> true </Is_Squashable>
+		
+		<SFXEvent_Select>null</SFXEvent_Select>
+
+		<MovementClass>Infantry</MovementClass>
+		<Space_Layer> Land </Space_Layer>
+		<UnitCollisionClass> Infantry </UnitCollisionClass>
+		<OccupationStyle>1x1</OccupationStyle>
+		<ContainerArrangement> Dartboard </ContainerArrangement>
+		<FormationSpacing> 1 </FormationSpacing>
+		<FormationOrder> 2 </FormationOrder>
+		<MovementPredictionInterval> 0.1 </MovementPredictionInterval>
+
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+
+		<Land_FOW_Reveal_Range>250.0</Land_FOW_Reveal_Range>
+
+		<Targeting_Max_Attack_Distance>275.0</Targeting_Max_Attack_Distance>
+		<Targeting_Min_Attack_Distance>0.0</Targeting_Min_Attack_Distance>
+		<Idle_Chase_Range>50.0</Idle_Chase_Range>
+		<Guard_Chase_Range>300.0</Guard_Chase_Range>
+		<Attack_Move_Response_Range>300.0</Attack_Move_Response_Range>
+		<Autonomous_Move_Extension_Vs_Attacker>50.0</Autonomous_Move_Extension_Vs_Attacker>
+
+		<SpaceBehavior>REVEAL</SpaceBehavior>
+		<Space_FOW_Reveal_Range>800.0</Space_FOW_Reveal_Range>
+		<Override_Acceleration> .1 </Override_Acceleration>
+		<Override_Deceleration> .1 </Override_Deceleration>
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<!-- Primary ability -->
+			<Unit_Ability>
+				<Type>SPREAD_OUT</Type>
+				<Mod_Multiplier>SPEED_MULTIPLIER,	 0.5f</Mod_Multiplier>
+				<Mod_Multiplier>TAKE_DAMAGE_MULTIPLIER, 0.75f</Mod_Multiplier>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+	</Container>
+
+
+	<GroundCompany Name="Antarian_Ranger_Squad">
+
+		<Text_ID>TEXT_UNIT_ANTARIAN_RANGER_PLATOON</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_INFANTRY</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_ANTARIAN_RANGER
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_ANTARIAN_RANGER_COMPANY
+		TEXT_TOOLTIP_ANTARIAN_RANGER_SQUAD
+		TEXT_TOOLTIP_ANTARIAN_RANGER_HEALTH
+		TEXT_TOOLTIP_ANTARIAN_RANGER_MOVE
+		TEXT_TOOLTIP_ANTARIAN_RANGER_COMPANY_WEAP1
+		TEXT_TOOLTIP_ANTARIAN_RANGER_COMPANY_WEAP2
+		TEXT_TOOLTIP_ANTARIAN_RANGER_COMPANY_WEAP3
+		TEXT_TOOLTIP_ANTARIAN_RANGER_COMPANY_WEAP4
+		TEXT_TOOLTIP_ANTARIAN_RANGER_COMPANY_WEAP5
+		TEXT_TOOLTIP_ANTARIAN_RANGER_COMPANY_WEAP6
+		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
+		TEXT_TOOLTIP_BONUS_FORCE_SELF_HEAL
+		TEXT_TOOLTIP_BONUS_FORCE_TRAINING
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_INFANTRY_CAPTURE
+		</Encyclopedia_Text>
+		<Icon_Name>I_BUTTON_ANTARIAN_RANGER.tga</Icon_Name>
+
+		<Autoresolve_Health>100</Autoresolve_Health>
+		<Damage>18</Damage>
+
+		<Ship_Class>infantry</Ship_Class>
+		<Formation_Priority>1</Formation_Priority>
+		<Is_Dummy>Yes</Is_Dummy>
+		<Is_Escort>yes</Is_Escort>
+
+		<GUI_Row> 1 </GUI_Row>
+		<Build_Cost_Credits>355</Build_Cost_Credits>
+		<Build_Time_Seconds>20</Build_Time_Seconds>
+		<Slice_Cost_Credits/>
+		<Required_Special_Structures/>
+		<Build_Time_Reduced_By_Multiple_Factories> Yes </Build_Time_Reduced_By_Multiple_Factories>
+		<Build_Tab_Land_Units>Yes</Build_Tab_Land_Units>
+		<Build_Initially_Locked>Yes</Build_Initially_Locked>
+		<Piracy_Value_Credits>50</Piracy_Value_Credits>
+		<Score_Cost_Credits>54</Score_Cost_Credits>
+		<Population_Value>1</Population_Value>
+
+		<Tech_Level>99</Tech_Level>
+		<Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+		
+		<Affiliation>Rebel, Independent_Forces</Affiliation>
+		<Political_Control/>
+
+		<Behavior>DUMMY_GROUND_COMPANY</Behavior>
+
+		<Create_Team_Type> Antarian_Ranger_Heavy_Team </Create_Team_Type>
+		<Max_Squad_Size> 5 </Max_Squad_Size>
+		<Company_Transport_Unit>Gallofree_Transport</Company_Transport_Unit>
+
+		<SFXEvent_Build_Started>EHD_Build_Troops</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Recruitment_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Complete_Militia</SFXEvent_Build_Complete>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Militia</SFXEvent_Fleet_Move>
+
+		<LOD_Bias>5</LOD_Bias>
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+		<Required_Planets/>
+		<Company_Units> Antarian_Ranger_Rifle, Antarian_Ranger_Rifle, Antarian_Ranger_Rifle, Antarian_Ranger_Rifle_Grenadier, Antarian_Ranger_Rifle_Captain_Spawner </Company_Units>
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<!-- Primary ability -->
+			<Unit_Ability>
+				<Type>SPREAD_OUT</Type>
+				<Mod_Multiplier>SPEED_MULTIPLIER,	 0.5f</Mod_Multiplier>
+				<Mod_Multiplier>TAKE_DAMAGE_MULTIPLIER, 0.75f</Mod_Multiplier>
+				<SFXEvent_GUI_Unit_Ability_Activated>Unit_Take_Cover_Militia</SFXEvent_GUI_Unit_Ability_Activated>
+			</Unit_Ability>
+			
+			<Unit_Ability>
+				<Type>STEALTH</Type>
+				<Recharge_Seconds>60.0</Recharge_Seconds>
+				<Expiration_Seconds>15.0</Expiration_Seconds>
+				<GUI_Activated_Ability_Name>Antarian_Ranger_Stealth</GUI_Activated_Ability_Name> 
+				<SFXEvent_GUI_Unit_Ability_Activated></SFXEvent_GUI_Unit_Ability_Activated>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+		<Maintenance_Cost>0.0</Maintenance_Cost>
+		
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>185</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>10</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites>Ground_Level_Five_Tech_Upgrade</Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->
+	</GroundCompany>
+
+	<GroundCompany Name="Antarian_Ranger_Heavy_Squad_Deployed">
+		<Variant_Of_Existing_Type>Antarian_Ranger_Squad</Variant_Of_Existing_Type>
+		
+		<Text_ID>TEXT_UNIT_ANTARIAN_RANGER_HEAVY_SQUAD</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_ANTARIAN_RANGER
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_ANTARIAN_RANGER_SQUAD
+		TEXT_TOOLTIP_ANTARIAN_RANGER_HEALTH
+		TEXT_TOOLTIP_ANTARIAN_RANGER_MOVE
+		TEXT_TOOLTIP_ANTARIAN_RANGER_SQUAD1_WEAP1
+		TEXT_TOOLTIP_ANTARIAN_RANGER_SQUAD1_WEAP2
+		TEXT_TOOLTIP_ANTARIAN_RANGER_SQUAD1_WEAP3
+		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
+		TEXT_TOOLTIP_BONUS_FORCE_SELF_HEAL
+		TEXT_TOOLTIP_BONUS_FORCE_TRAINING
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_INFANTRY_CAPTURE
+		</Encyclopedia_Text>
+		<Create_Team_Type> Antarian_Ranger_Heavy_Team </Create_Team_Type>
+		<Company_Units> Antarian_Ranger_Rifle, Antarian_Ranger_Rifle, Antarian_Ranger_Rifle, Antarian_Ranger_Rifle_Grenadier, Antarian_Ranger_Rifle_Lieutenant </Company_Units>
+		<Icon_Name>I_BUTTON_ANTARIAN_RANGER_HEAVY.tga</Icon_Name>
+
+		<Max_Squad_Size> 5 </Max_Squad_Size>
+		
+		<Tech_Level>6</Tech_Level>
+		<Population_Value>0</Population_Value>
+		<Build_Tab_Land_Units>No</Build_Tab_Land_Units>
+	</GroundCompany>
+
+	<GroundCompany Name="Antarian_Ranger_Assault_Squad_Deployed">
+		<Variant_Of_Existing_Type>Antarian_Ranger_Squad</Variant_Of_Existing_Type>
+		
+		<Text_ID>TEXT_UNIT_ANTARIAN_RANGER_ASSAULT_SQUAD</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_ANTARIAN_RANGER
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_ANTARIAN_RANGER_SQUAD
+		TEXT_TOOLTIP_ANTARIAN_RANGER_HEALTH
+		TEXT_TOOLTIP_ANTARIAN_RANGER_MOVE
+		TEXT_TOOLTIP_ANTARIAN_RANGER_SQUAD2_WEAP1
+		TEXT_TOOLTIP_ANTARIAN_RANGER_SQUAD2_WEAP2
+		TEXT_TOOLTIP_ANTARIAN_RANGER_SQUAD2_WEAP3
+		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
+		TEXT_TOOLTIP_BONUS_FORCE_SELF_HEAL
+		TEXT_TOOLTIP_BONUS_FORCE_TRAINING
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_INFANTRY_CAPTURE
+		</Encyclopedia_Text>
+		<Create_Team_Type> Antarian_Ranger_Assault_Team </Create_Team_Type>
+		<Company_Units> Antarian_Ranger_Carbine, Antarian_Ranger_Carbine, Antarian_Ranger_Gunner_Light, Antarian_Ranger_Carbine_Grenadier, Antarian_Ranger_Carbine_Lieutenant </Company_Units>
+		<Icon_Name>I_BUTTON_ANTARIAN_RANGER_ASSAULT.tga</Icon_Name>
+
+		<Max_Squad_Size> 5 </Max_Squad_Size>
+		
+		<Tech_Level>6</Tech_Level>
+		<Population_Value>0</Population_Value>
+		<Build_Tab_Land_Units>No</Build_Tab_Land_Units>
+	</GroundCompany>
+
+	<Container Name="Antarian_Ranger_Heavy_Team">
+
+		<Text_ID>TEXT_UNIT_ANTARIAN_RANGER_HEAVY_SQUAD</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_INFANTRY</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_ANTARIAN_RANGER
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_ANTARIAN_RANGER_SQUAD
+		TEXT_TOOLTIP_ANTARIAN_RANGER_HEALTH
+		TEXT_TOOLTIP_ANTARIAN_RANGER_MOVE
+		TEXT_TOOLTIP_ANTARIAN_RANGER_SQUAD1_WEAP1
+		TEXT_TOOLTIP_ANTARIAN_RANGER_SQUAD1_WEAP2
+		TEXT_TOOLTIP_ANTARIAN_RANGER_SQUAD1_WEAP3
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_INFANTRY_CAPTURE
+		</Encyclopedia_Text>
+		<Icon_Name>I_BUTTON_ANTARIAN_RANGER_HEAVY.tga</Icon_Name>
+
+		<Select_Box_Scale>45</Select_Box_Scale>
+		<Select_Box_Z_Adjust>0</Select_Box_Z_Adjust>
+		
+		<Land_Model_Name/>
+
+		<Max_Speed>1.3</Max_Speed>
+		<OverrideAcceleration>0.1</OverrideAcceleration>
+		<OverrideDeceleration>0.1</OverrideDeceleration>
+		<Max_Rate_Of_Turn>12.0</Max_Rate_Of_Turn>
+
+		<CategoryMask>Infantry | AntiInfantry</CategoryMask>
+		<Show_Name>No</Show_Name>
+
+		<Tactical_Bribe_Cost>25</Tactical_Bribe_Cost>
+
+		<Behavior>TEAM,SELECTABLE,UNIT_AI</Behavior>
+		<LandBehavior>REVEAL, LAND_TEAM_CONTAINER_LOCOMOTOR, TEAM_TARGETING, GARRISON_UNIT</LandBehavior>
+		
+		<Lua_Script/>
+		
+		<SFXEvent_Select>Null</SFXEvent_Select>
+
+		<Garrison_Category> Infantry </Garrison_Category>
+		<Garrison_Value>1</Garrison_Value>
+
+		<Is_Squashable> true </Is_Squashable>
+
+		<MovementClass>Infantry</MovementClass>
+		<Space_Layer> Land </Space_Layer>
+		<UnitCollisionClass> Infantry </UnitCollisionClass>
+		<OccupationStyle>1x1</OccupationStyle>
+		<ContainerArrangement> Dartboard </ContainerArrangement>
+		<FormationSpacing> 1 </FormationSpacing>
+		<FormationOrder> 1 </FormationOrder>
+		<MovementPredictionInterval> 0.1 </MovementPredictionInterval>
+
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+
+		<Land_FOW_Reveal_Range>300.0</Land_FOW_Reveal_Range>
+
+		<Targeting_Max_Attack_Distance>300.0</Targeting_Max_Attack_Distance>
+		<Targeting_Min_Attack_Distance>0.0</Targeting_Min_Attack_Distance>
+		<Idle_Chase_Range>50.0</Idle_Chase_Range>
+		<Guard_Chase_Range>300.0</Guard_Chase_Range>
+		<Attack_Move_Response_Range>300.0</Attack_Move_Response_Range>
+		<Autonomous_Move_Extension_Vs_Attacker>50.0</Autonomous_Move_Extension_Vs_Attacker>
+
+		<SpaceBehavior>REVEAL</SpaceBehavior>
+		<Space_FOW_Reveal_Range>800.0</Space_FOW_Reveal_Range>
+		<Override_Acceleration> .1 </Override_Acceleration>
+		<Override_Deceleration> .1 </Override_Deceleration>
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<!-- Primary ability -->
+			<Unit_Ability>
+				<Type>SPREAD_OUT</Type>
+				<Mod_Multiplier>SPEED_MULTIPLIER,	 0.5f</Mod_Multiplier>
+				<Mod_Multiplier>TAKE_DAMAGE_MULTIPLIER, 0.75f</Mod_Multiplier>
+				<SFXEvent_GUI_Unit_Ability_Activated>Unit_Take_Cover_Militia</SFXEvent_GUI_Unit_Ability_Activated>
+			</Unit_Ability>
+			
+			<Unit_Ability>
+				<Type>STEALTH</Type>
+				<Recharge_Seconds>60.0</Recharge_Seconds>
+				<Expiration_Seconds>15.0</Expiration_Seconds>
+				<GUI_Activated_Ability_Name>Antarian_Ranger_Stealth</GUI_Activated_Ability_Name> 
+				<SFXEvent_GUI_Unit_Ability_Activated></SFXEvent_GUI_Unit_Ability_Activated>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+	</Container>
+
+	<Container Name="Antarian_Ranger_Assault_Team">
+
+		<Text_ID>TEXT_UNIT_ANTARIAN_RANGER_ASSAULT_SQUAD</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_INFANTRY</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_ANTARIAN_RANGER
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_ANTARIAN_RANGER_SQUAD
+		TEXT_TOOLTIP_ANTARIAN_RANGER_HEALTH
+		TEXT_TOOLTIP_ANTARIAN_RANGER_MOVE
+		TEXT_TOOLTIP_ANTARIAN_RANGER_SQUAD2_WEAP1
+		TEXT_TOOLTIP_ANTARIAN_RANGER_SQUAD2_WEAP2
+		TEXT_TOOLTIP_ANTARIAN_RANGER_SQUAD2_WEAP3
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_INFANTRY_CAPTURE
+		</Encyclopedia_Text>
+		<Icon_Name>I_BUTTON_ANTARIAN_RANGER_ASSAULT.tga</Icon_Name>
+
+		<Select_Box_Scale>45</Select_Box_Scale>
+		<Select_Box_Z_Adjust>0</Select_Box_Z_Adjust>
+		
+		<Land_Model_Name/>
+
+		<Max_Speed>1.3</Max_Speed>
+		<OverrideAcceleration>0.1</OverrideAcceleration>
+		<OverrideDeceleration>0.1</OverrideDeceleration>
+		<Max_Rate_Of_Turn>12.0</Max_Rate_Of_Turn>
+
+		<CategoryMask>Infantry | AntiInfantry</CategoryMask>
+		<Show_Name>No</Show_Name>
+
+		<Tactical_Bribe_Cost>25</Tactical_Bribe_Cost>
+
+		<Behavior>TEAM,SELECTABLE,UNIT_AI</Behavior>
+		<LandBehavior>REVEAL, LAND_TEAM_CONTAINER_LOCOMOTOR, TEAM_TARGETING, GARRISON_UNIT</LandBehavior>
+		
+		<Lua_Script/>
+		
+		<SFXEvent_Select>Null</SFXEvent_Select>
+
+		<Garrison_Category> Infantry </Garrison_Category>
+		<Garrison_Value>1</Garrison_Value>
+
+		<Is_Squashable> true </Is_Squashable>
+
+		<MovementClass>Infantry</MovementClass>
+		<Space_Layer> Land </Space_Layer>
+		<UnitCollisionClass> Infantry </UnitCollisionClass>
+		<OccupationStyle>1x1</OccupationStyle>
+		<ContainerArrangement> Dartboard </ContainerArrangement>
+		<FormationSpacing> 1 </FormationSpacing>
+		<FormationOrder> 1 </FormationOrder>
+		<MovementPredictionInterval> 0.1 </MovementPredictionInterval>
+
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+
+		<Land_FOW_Reveal_Range>300.0</Land_FOW_Reveal_Range>
+
+		<Targeting_Max_Attack_Distance>275.0</Targeting_Max_Attack_Distance>
+		<Targeting_Min_Attack_Distance>0.0</Targeting_Min_Attack_Distance>
+		<Idle_Chase_Range>50.0</Idle_Chase_Range>
+		<Guard_Chase_Range>275.0</Guard_Chase_Range>
+		<Attack_Move_Response_Range>275.0</Attack_Move_Response_Range>
+		<Autonomous_Move_Extension_Vs_Attacker>50.0</Autonomous_Move_Extension_Vs_Attacker>
+
+		<SpaceBehavior>REVEAL</SpaceBehavior>
+		<Space_FOW_Reveal_Range>800.0</Space_FOW_Reveal_Range>
+		<Override_Acceleration> .1 </Override_Acceleration>
+		<Override_Deceleration> .1 </Override_Deceleration>
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<!-- Primary ability -->
+			<Unit_Ability>
+				<Type>SPREAD_OUT</Type>
+				<Mod_Multiplier>SPEED_MULTIPLIER,	 0.5f</Mod_Multiplier>
+				<Mod_Multiplier>TAKE_DAMAGE_MULTIPLIER, 0.75f</Mod_Multiplier>
+				<SFXEvent_GUI_Unit_Ability_Activated>Unit_Take_Cover_Militia</SFXEvent_GUI_Unit_Ability_Activated>
+			</Unit_Ability>
+			
+			<Unit_Ability>
+				<Type>STEALTH</Type>
+				<Recharge_Seconds>60.0</Recharge_Seconds>
+				<Expiration_Seconds>15.0</Expiration_Seconds>
+				<GUI_Activated_Ability_Name>Antarian_Ranger_Stealth</GUI_Activated_Ability_Name> 
+				<SFXEvent_GUI_Unit_Ability_Activated></SFXEvent_GUI_Unit_Ability_Activated>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+		<Presence_Induced_Animations/>
+	</Container>
+
+
+	<GroundCompany Name="Nimbus_Commando_Squad">
+
+		<Text_ID>TEXT_UNIT_NIMBUS_COMMANDO_PLATOON</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_COMMANDO</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_NIMBUS_COMMANDO
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_NIMBUS_COMMANDO_COMPANY
+		TEXT_TOOLTIP_NIMBUS_COMMANDO_SQUAD
+		TEXT_TOOLTIP_NIMBUS_COMMANDO_HEALTH
+		TEXT_TOOLTIP_NIMBUS_COMMANDO_MOVE
+		TEXT_TOOLTIP_NIMBUS_COMMANDO_COMPANY_WEAP1
+		TEXT_TOOLTIP_SEPARATOR_ABILITY_BLOCK
+		TEXT_TOOLTIP_NIMBUS_COMMANDO_COMPANY_WEAP2
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_BONUS_INFANTRY_REPULSOR
+		TEXT_TOOLTIP_CAPABILITY_INFANTRY_CAPTURE
+		</Encyclopedia_Text>
+		<Icon_Name>I_BUTTON_NIMBUS_COMMANDO.tga</Icon_Name>
+
+		<Autoresolve_Health>100</Autoresolve_Health>
+		<Damage>18</Damage>
+
+		<Ship_Class>infantry</Ship_Class>
+		<Formation_Priority>1</Formation_Priority>
+		<Is_Dummy>Yes</Is_Dummy>
+		<Is_Escort>yes</Is_Escort>
+
+		<GUI_Row> 1 </GUI_Row>
+		<Build_Cost_Credits>335</Build_Cost_Credits>
+		<Build_Time_Seconds>30</Build_Time_Seconds>
+		<Slice_Cost_Credits/>
+		<Required_Special_Structures></Required_Special_Structures>
+		<Build_Time_Reduced_By_Multiple_Factories> Yes </Build_Time_Reduced_By_Multiple_Factories>
+		<Build_Tab_Land_Units>Yes</Build_Tab_Land_Units>
+		<Build_Initially_Locked>no</Build_Initially_Locked>
+
+		<Piracy_Value_Credits>50</Piracy_Value_Credits>
+		<Score_Cost_Credits>54</Score_Cost_Credits>
+		<Population_Value>1</Population_Value>
+
+		<Tech_Level>99</Tech_Level>
+		<Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+		
+		<Affiliation/>
+		<Political_Control/>
+
+		<Behavior>DUMMY_GROUND_COMPANY</Behavior>
+
+		<Create_Team_Type> Nimbus_Commando_Team </Create_Team_Type>
+		<Max_Squad_Size> 6 </Max_Squad_Size>
+		<Company_Transport_Unit>Gallofree_Transport</Company_Transport_Unit>
+
+		<SFXEvent_Build_Started>EHD_Build_Troops</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Recruitment_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Complete_Nimbus_Commando</SFXEvent_Build_Complete>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Nimbus_Commando</SFXEvent_Fleet_Move>
+
+		<LOD_Bias>5</LOD_Bias>
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+		<Required_Planets/>
+		<Company_Units> Nimbus_Commando, Nimbus_Commando, Nimbus_Commando, Nimbus_Commando, Nimbus_Commando, Nimbus_Commando_Spawner</Company_Units>
+		<Maintenance_Cost>0.0</Maintenance_Cost>
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<!-- Primary ability -->
+			<Unit_Ability>
+				<Type>PROXIMITY_MINES</Type>
+				<Recharge_Seconds>150.0</Recharge_Seconds>
+				<GUI_Activated_Ability_Name>Nimbus_Proximity_Mines_AV</GUI_Activated_Ability_Name>
+				<SFXEvent_Target_Ability/>
+				<Area_Effect_Decal_Distance>50.0</Area_Effect_Decal_Distance>
+				<Effective_Radius> 80.0 </Effective_Radius>
+
+				<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_PROXIMITY_MINES_AV_NAME</Alternate_Name_Text>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_PROXIMITY_MINES_AV_DESCRIPTION</Alternate_Description_Text>
+				<Alternate_Icon_Name>I_SA_ANTITANK_MINES.tga</Alternate_Icon_Name>
+			</Unit_Ability>
+			<!-- Secondary ability -->
+			<Unit_Ability>
+				<Type>ROCKET_ATTACK</Type>
+				<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_WEAPON_SWAP</Alternate_Name_Text>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_NIMBUS_COMMANDO_SWAP_DESCRIPTION</Alternate_Description_Text>
+				<Alternate_Icon_Name>I_SA_SWAP_WEAPONS.TGA</Alternate_Icon_Name>
+				<Targeting_Max_Attack_Distance>375</Targeting_Max_Attack_Distance>
+				<Recharge_Seconds> 9.0 </Recharge_Seconds>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+		<Abilities SubObjectList="Yes">
+			<Proximity_Mines_Ability Name="Nimbus_Proximity_Mines_AV">
+				<Activation_Style>User_Input</Activation_Style>
+				<Activation_Min_Range>0.0</Activation_Min_Range>
+				<Activation_Max_Range>25.0</Activation_Max_Range>
+				<Mine_Type>Mine_Land_Prox_Antivehicle</Mine_Type>
+				<Trigger_Radius>5</Trigger_Radius>
+				<Number_Of_Mines>3</Number_Of_Mines>
+				<Activation_Time_In_Seconds>0.5</Activation_Time_In_Seconds>
+				<Activate_SFX>Unit_Lightsaber_Projectile_Block</Activate_SFX>
+			</Proximity_Mines_Ability>
+		</Abilities>
+
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>666</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>9</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Upgrades</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->  
+		<!--<MULTIPLAYER SKIRMISH VALUES END>-->
+		
+	</GroundCompany>
+
+	<GroundCompany Name="Nimbus_Commando_Team_Deployed">
+		<Variant_Of_Existing_Type>Nimbus_Commando_Squad</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_UNIT_NIMBUS_COMMANDO_SQUAD</Text_ID>
+		<Company_Units> Nimbus_Commando, Nimbus_Commando, Nimbus_Commando, Nimbus_Commando, Nimbus_Commando, Nimbus_Commando</Company_Units>
+		<Tech_Level>6</Tech_Level>
+		<Build_Tab_Land_Units>No</Build_Tab_Land_Units>
+		<Max_Squad_Size> 6 </Max_Squad_Size>
+		<Icon_Name>I_BUTTON_NIMBUS_COMMANDO.tga</Icon_Name>
+		<Damage>9</Damage>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_NIMBUS_COMMANDO
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_NIMBUS_COMMANDO_SQUAD
+		TEXT_TOOLTIP_NIMBUS_COMMANDO_HEALTH
+		TEXT_TOOLTIP_NIMBUS_COMMANDO_MOVE
+		TEXT_TOOLTIP_NIMBUS_COMMANDO_SQUAD_WEAP1
+		TEXT_TOOLTIP_SEPARATOR_ABILITY_BLOCK
+		TEXT_TOOLTIP_NIMBUS_COMMANDO_SQUAD_WEAP2
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_BONUS_INFANTRY_REPULSOR
+		TEXT_TOOLTIP_CAPABILITY_INFANTRY_CAPTURE
+		</Encyclopedia_Text>
+		<Create_Team_Type> Nimbus_Commando_Team </Create_Team_Type>
+		
+	</GroundCompany>
+
+	<Container Name="Nimbus_Commando_Team">
+
+		<Text_ID>TEXT_UNIT_NIMBUS_COMMANDO_SQUAD</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_COMMANDO</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>	
+		TEXT_TOOLTIP_NIMBUS_COMMANDO
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_NIMBUS_COMMANDO_SQUAD
+		TEXT_TOOLTIP_NIMBUS_COMMANDO_HEALTH
+		TEXT_TOOLTIP_NIMBUS_COMMANDO_MOVE
+		TEXT_TOOLTIP_NIMBUS_COMMANDO_SQUAD_WEAP1
+		TEXT_TOOLTIP_SEPARATOR_ABILITY_BLOCK
+		TEXT_TOOLTIP_NIMBUS_COMMANDO_SQUAD_WEAP2
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_BONUS_INFANTRY_REPULSOR
+		TEXT_TOOLTIP_CAPABILITY_INFANTRY_CAPTURE
+		</Encyclopedia_Text>
+		<Icon_Name>I_BUTTON_NIMBUS_COMMANDO.tga</Icon_Name>
+
+		<Select_Box_Scale>65</Select_Box_Scale>
+		<Select_Box_Z_Adjust>0</Select_Box_Z_Adjust>
+		
+		<Land_Model_Name/>
+
+		<Max_Speed> 1.2 </Max_Speed>
+		<OverrideAcceleration>0.1</OverrideAcceleration>
+		<OverrideDeceleration>0.1</OverrideDeceleration>
+		<Max_Rate_Of_Turn>12.0</Max_Rate_Of_Turn>
+
+		<CategoryMask>Infantry</CategoryMask>
+		<Show_Name>No</Show_Name>
+
+		<Tactical_Bribe_Cost>25</Tactical_Bribe_Cost>
+
+		<Behavior>TEAM,SELECTABLE,UNIT_AI</Behavior>
+		<LandBehavior>REVEAL, LAND_TEAM_CONTAINER_LOCOMOTOR, TEAM_TARGETING, GARRISON_UNIT</LandBehavior>
+		
+		<Lua_Script/>
+		
+		<SFXEvent_Select>Null</SFXEvent_Select>
+
+		<CategoryMask>Infantry | AntiInfantry</CategoryMask>
+		<Garrison_Value>1</Garrison_Value>
+
+		<Is_Squashable> true </Is_Squashable>
+
+		<MovementClass>LightHover</MovementClass>
+		<Space_Layer> Land </Space_Layer>
+		<UnitCollisionClass> Infantry </UnitCollisionClass>
+		<OccupationStyle>1x1</OccupationStyle>
+		<ContainerArrangement> Dartboard </ContainerArrangement>
+		<FormationSpacing> 1 </FormationSpacing>
+		<FormationOrder> 2 </FormationOrder>
+		<MovementPredictionInterval> 4.0 </MovementPredictionInterval>
+
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+
+		<Land_FOW_Reveal_Range>350.0</Land_FOW_Reveal_Range>
+
+		<Targeting_Max_Attack_Distance>250.0</Targeting_Max_Attack_Distance>
+		<Targeting_Min_Attack_Distance>0.0</Targeting_Min_Attack_Distance>
+		<Idle_Chase_Range>50.0</Idle_Chase_Range>
+		<Guard_Chase_Range>275.0</Guard_Chase_Range>
+		<Attack_Move_Response_Range>275.0</Attack_Move_Response_Range>
+		<Autonomous_Move_Extension_Vs_Attacker>50.0</Autonomous_Move_Extension_Vs_Attacker>
+
+		<SpaceBehavior>REVEAL</SpaceBehavior>
+		<Space_FOW_Reveal_Range>800.0</Space_FOW_Reveal_Range>
+		<Override_Acceleration> .1 </Override_Acceleration>
+		<Override_Deceleration> .1 </Override_Deceleration>
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<!-- Primary ability -->
+			<Unit_Ability>
+				<Type>PROXIMITY_MINES</Type>
+				<Recharge_Seconds>150.0</Recharge_Seconds>
+				<GUI_Activated_Ability_Name>Nimbus_Proximity_Mines_AV</GUI_Activated_Ability_Name>
+				<SFXEvent_Target_Ability/>
+				<Area_Effect_Decal_Distance>50.0</Area_Effect_Decal_Distance>
+				<Effective_Radius> 80.0 </Effective_Radius>
+
+				<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_PROXIMITY_MINES_AV_NAME</Alternate_Name_Text>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_PROXIMITY_MINES_AV_DESCRIPTION</Alternate_Description_Text>
+				<Alternate_Icon_Name>I_SA_ANTITANK_MINES.tga</Alternate_Icon_Name>
+			</Unit_Ability>
+			<!-- Secondary ability -->
+			<Unit_Ability>
+				<Type>ROCKET_ATTACK</Type>
+				<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_WEAPON_SWAP</Alternate_Name_Text>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_NIMBUS_COMMANDO_SWAP_DESCRIPTION</Alternate_Description_Text>
+				<Alternate_Icon_Name>I_SA_SWAP_WEAPONS.TGA</Alternate_Icon_Name>
+				<Targeting_Max_Attack_Distance>375</Targeting_Max_Attack_Distance>
+				<Recharge_Seconds> 9.0 </Recharge_Seconds>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+		<Abilities SubObjectList="Yes">
+			<Proximity_Mines_Ability Name="Nimbus_Proximity_Mines_AV">
+				<Activation_Style>User_Input</Activation_Style>
+				<Activation_Min_Range>0.0</Activation_Min_Range>
+				<Activation_Max_Range>25.0</Activation_Max_Range>
+				<Mine_Type>Mine_Land_Prox_Antivehicle</Mine_Type>
+				<Trigger_Radius>5</Trigger_Radius>
+				<Number_Of_Mines>3</Number_Of_Mines>
+				<Activation_Time_In_Seconds>0.5</Activation_Time_In_Seconds>
+				<Activate_SFX>Unit_Lightsaber_Projectile_Block</Activate_SFX>
+			</Proximity_Mines_Ability>
+		</Abilities>
+	</Container>	
+
+<!-- T-Posing do not use until fixed
+	<GroundCompany Name="Protocol_Legionnaire_Team">
+
+		<Text_ID>TEXT_UNIT_PROTOCOL_LEGIONNAIRE_PLATOON</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_DROID</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_PROTOCOL_LEGIONNAIRE
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_PROTOCOL_LEGIONNAIRE_COMPANY
+		TEXT_TOOLTIP_PROTOCOL_LEGIONNAIRE_SQUAD
+		TEXT_TOOLTIP_PROTOCOL_LEGIONNAIRE_HEALTH
+		TEXT_TOOLTIP_PROTOCOL_LEGIONNAIRE_MOVE
+		TEXT_TOOLTIP_PROTOCOL_LEGIONNAIRE_COMPANY_WEAP1
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_INFANTRY_CAPTURE
+		</Encyclopedia_Text>
+		<Icon_Name>I_BUTTON_PROTOCOL_LEGIONNAIRE.TGA</Icon_Name>
+
+		<Autoresolve_Health>100</Autoresolve_Health>
+		<Damage>18</Damage>
+
+		<Ship_Class>infantry</Ship_Class>
+		<Formation_Priority>1</Formation_Priority>
+		<Is_Dummy>Yes</Is_Dummy>
+		<Is_Escort>yes</Is_Escort>
+
+		<GUI_Row> 1 </GUI_Row>
+		<Build_Cost_Credits>190</Build_Cost_Credits>
+		<Build_Time_Seconds>20</Build_Time_Seconds>
+		<Slice_Cost_Credits/>
+		<Required_Special_Structures/>
+		<Build_Time_Reduced_By_Multiple_Factories> Yes </Build_Time_Reduced_By_Multiple_Factories>
+		<Build_Tab_Land_Units>Yes</Build_Tab_Land_Units>
+		<Build_Initially_Locked>no</Build_Initially_Locked>
+		<Piracy_Value_Credits>50</Piracy_Value_Credits>
+		<Score_Cost_Credits>54</Score_Cost_Credits>
+		<Population_Value>1</Population_Value>
+
+		<Tech_Level>99</Tech_Level>
+		<Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+		
+		<Affiliation>Warlords, Independent_Forces, Mandalorians</Affiliation>
+
+		<Behavior>DUMMY_GROUND_COMPANY</Behavior>
+
+		<Create_Team_Type> Protocol_Legionnaire_Droid_Team </Create_Team_Type>
+		<Max_Squad_Size> 9 </Max_Squad_Size>
+		<Company_Transport_Unit>Gallofree_Transport</Company_Transport_Unit>
+
+		<SFXEvent_Build_Started>EHD_Build_Troops</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Recruitment_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Respawn_C3PO</SFXEvent_Build_Complete>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_C3PO</SFXEvent_Fleet_Move>
+
+		<LOD_Bias>5</LOD_Bias>
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+		<Required_Planets/>
+		<Company_Units> Protocol_Legionnaire, Protocol_Legionnaire, Protocol_Legionnaire, Protocol_Legionnaire, Protocol_Legionnaire, Protocol_Legionnaire, Protocol_Legionnaire, Protocol_Legionnaire, Protocol_Legionnaire_Officer_Spawner</Company_Units>
+		<Unit_Abilities_Data SubObjectList="No">
+		</Unit_Abilities_Data>
+		<Maintenance_Cost>0.0</Maintenance_Cost>
+	</GroundCompany>
+
+	<GroundCompany Name="Protocol_Legionnaire_Team_Deployed">
+		<Variant_Of_Existing_Type>Protocol_Legionnaire_Team</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_UNIT_PROTOCOL_LEGIONNAIRE_SQUAD</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_PROTOCOL_LEGIONNAIRE
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_PROTOCOL_LEGIONNAIRE_SQUAD
+		TEXT_TOOLTIP_PROTOCOL_LEGIONNAIRE_HEALTH
+		TEXT_TOOLTIP_PROTOCOL_LEGIONNAIRE_MOVE
+		TEXT_TOOLTIP_PROTOCOL_LEGIONNAIRE_SQUAD_WEAP1
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_INFANTRY_CAPTURE
+		</Encyclopedia_Text>
+		<Create_Team_Type> Protocol_Legionnaire_Droid_Team </Create_Team_Type>
+		<Company_Units> Protocol_Legionnaire, Protocol_Legionnaire, Protocol_Legionnaire, Protocol_Legionnaire, Protocol_Legionnaire, Protocol_Legionnaire, Protocol_Legionnaire, Protocol_Legionnaire, Protocol_Legionnaire_Officer</Company_Units>
+
+		<Icon_Name>I_BUTTON_PROTOCOL_LEGIONNAIRE.TGA</Icon_Name>
+		<Max_Squad_Size> 9 </Max_Squad_Size>
+		
+		<Tech_Level>6</Tech_Level>
+		<Population_Value>0</Population_Value>
+		<Build_Tab_Land_Units>No</Build_Tab_Land_Units>
+	</GroundCompany>
+
+	<Container Name="Protocol_Legionnaire_Droid_Team">
+
+		<Text_ID>TEXT_UNIT_PROTOCOL_LEGIONNAIRE_SQUAD</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_DROID</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_PROTOCOL_LEGIONNAIRE
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_PROTOCOL_LEGIONNAIRE_SQUAD
+		TEXT_TOOLTIP_PROTOCOL_LEGIONNAIRE_HEALTH
+		TEXT_TOOLTIP_PROTOCOL_LEGIONNAIRE_MOVE
+		TEXT_TOOLTIP_PROTOCOL_LEGIONNAIRE_SQUAD_WEAP1
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_INFANTRY_CAPTURE
+		</Encyclopedia_Text>
+		<Icon_Name>I_BUTTON_PROTOCOL_LEGIONNAIRE.TGA</Icon_Name>
+
+		<Select_Box_Scale>45</Select_Box_Scale>
+		<Select_Box_Z_Adjust>0</Select_Box_Z_Adjust>
+		
+		<Land_Model_Name/>
+
+		<Max_Speed> 0.8 </Max_Speed>
+		<OverrideAcceleration>0.1</OverrideAcceleration>
+		<OverrideDeceleration>0.1</OverrideDeceleration>
+		<Max_Rate_Of_Turn>12.0</Max_Rate_Of_Turn>
+
+		<CategoryMask>Infantry | AntiInfantry</CategoryMask>
+		<Show_Name>No</Show_Name>
+
+		<Tactical_Bribe_Cost>25</Tactical_Bribe_Cost>
+
+		<Behavior>TEAM,SELECTABLE,UNIT_AI</Behavior>
+		<LandBehavior>REVEAL, LAND_TEAM_CONTAINER_LOCOMOTOR, TEAM_TARGETING, GARRISON_UNIT</LandBehavior>
+		
+		<Lua_Script/>
+		
+		<SFXEvent_Select>null</SFXEvent_Select>
+
+		<Garrison_Category> Infantry </Garrison_Category>
+		<Garrison_Value>2</Garrison_Value>
+
+		<Is_Squashable> true </Is_Squashable>
+
+		<MovementClass>Infantry</MovementClass>
+		<Space_Layer> Land </Space_Layer>
+		<UnitCollisionClass> Infantry </UnitCollisionClass>
+		<OccupationStyle>1x1</OccupationStyle>
+		<ContainerArrangement> Rows </ContainerArrangement>
+		<FormationSpacing> 1 </FormationSpacing>
+		<FormationOrder> 2 </FormationOrder>
+		<MovementPredictionInterval> 0.1 </MovementPredictionInterval>
+
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+
+		<Land_FOW_Reveal_Range>250.0</Land_FOW_Reveal_Range>
+
+		<Targeting_Max_Attack_Distance>250.0</Targeting_Max_Attack_Distance>
+		<Targeting_Min_Attack_Distance>0.0</Targeting_Min_Attack_Distance>
+		<Idle_Chase_Range>50.0</Idle_Chase_Range>
+		<Guard_Chase_Range>300.0</Guard_Chase_Range>
+		<Attack_Move_Response_Range>300.0</Attack_Move_Response_Range>
+		<Autonomous_Move_Extension_Vs_Attacker>50.0</Autonomous_Move_Extension_Vs_Attacker>
+
+		<SpaceBehavior>REVEAL</SpaceBehavior>
+		<Space_FOW_Reveal_Range>800.0</Space_FOW_Reveal_Range>
+		<Override_Acceleration> .1 </Override_Acceleration>
+		<Override_Deceleration> .1 </Override_Deceleration>
+		<Unit_Abilities_Data SubObjectList="No">
+		</Unit_Abilities_Data>
+	</Container>
+-->
 </Militia_Companies>

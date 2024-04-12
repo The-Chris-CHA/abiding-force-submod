@@ -1,0 +1,106 @@
+<?xml version="1.0" ?>
+
+<Story>
+
+	<Event Name="Universal_Story_Start">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>0</Event_Param1>
+	</Event>
+
+	<Event Name="Spawn_Carnor">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Carnor_Jax_Team</Reward_Param1>
+		<Reward_Param2>Ord_Cantrell</Reward_Param2>
+		<Prereq>Universal_Story_Start</Prereq>
+	</Event>
+	
+	<Event Name="Spawn_Kanos">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Kanos_Team</Reward_Param1>
+		<Reward_Param2>Byss</Reward_Param2>
+		<Prereq>Universal_Story_Start</Prereq>
+	</Event>	
+	
+	<Event Name="Spawn_Redd">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+       	<Reward_Type>UNIQUE_UNIT</Reward_Type>
+        <Reward_Param1>Wessel_Emperors_Revenge</Reward_Param1>
+        <Reward_Param2>Brentaal</Reward_Param2>
+		<Prereq>Universal_Story_Start</Prereq>
+	</Event>
+	
+	<Event Name="Spawn_Jeratai">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Jeratai_Allegiance</Reward_Param1>
+		<Reward_Param2>Ord_Cantrell</Reward_Param2>
+		<Prereq>Universal_Story_Start</Prereq>
+	</Event>	
+	
+	<Event Name="Spawn_Xexus_Shev">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Xexus_Shev_Team</Reward_Param1>
+		<Reward_Param2>Phaeda</Reward_Param2>
+		<Prereq>Universal_Story_Start</Prereq>
+	</Event>
+
+	<Event Name="Spawn_Kooloota">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Kooloota_Team</Reward_Param1>
+		<Reward_Param2>Ord_Cantrell</Reward_Param2>
+		<Prereq>Universal_Story_Start</Prereq>
+	</Event>
+	
+	<Event Name="Spawn_Windcaller">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Windcaller_Team</Reward_Param1>
+		<Reward_Param2>Ord_Cantrell</Reward_Param2>
+		<Prereq>Universal_Story_Start</Prereq>
+	</Event>
+	
+	<Event Name="Spawn_Manos">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Manos_Team</Reward_Param1>
+		<Reward_Param2>Ord_Cantrell</Reward_Param2>
+		<Prereq>Universal_Story_Start</Prereq>
+	</Event>
+	
+	<Event Name="Spawn_Za">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Za_Team</Reward_Param1>
+		<Reward_Param2>Ord_Cantrell</Reward_Param2>
+		<Prereq>Universal_Story_Start</Prereq>
+	</Event>
+	
+	<Event Name="Spawn_Banjeer">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Banjeer_Neutron</Reward_Param1>
+		<Reward_Param2>Ord_Cantrell</Reward_Param2>
+		<Prereq>Universal_Story_Start</Prereq>
+	</Event>
+	
+	<Event Name="Spawn_Immodet">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Immodet_Fortress_Company</Reward_Param1>
+		<Reward_Param2>Ord_Cantrell</Reward_Param2>
+		<Prereq>Universal_Story_Start</Prereq>
+	</Event>
+	
+	<Event Name="Spawn_Norym_Kim">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Norym_Kim_Blood_Gains</Reward_Param1>
+		<Reward_Param2>Ord_Cantrell</Reward_Param2>
+		<Prereq>Universal_Story_Start</Prereq>
+	</Event>
+
+</Story>

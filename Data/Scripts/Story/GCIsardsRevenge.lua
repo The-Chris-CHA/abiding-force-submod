@@ -27,6 +27,7 @@ require("PGSpawnUnits")
 require("eawx-util/ChangeOwnerUtilities")
 StoryUtil = require("eawx-util/StoryUtil")
 require("deepcore/crossplot/crossplot")
+require("SetFighterResearch")
 
 function Definitions()
 
@@ -35,6 +36,7 @@ function Definitions()
   StoryModeEvents =
     {
 	  Determine_Faction_LUA = Find_Faction,
+	  Rogue_Disappearance = Kill_Rogues,
 	  Requiem_Appears = Requiem_Spawn,
 	  NR_Builds_Lusankya = NR_Lusankya,
 	  Isard_Takes_Lusankya = CH_Lusankya,
@@ -61,12 +63,30 @@ end
 function Initialize(message)
     if message == OnEnter then
 		crossplot:galactic()
-		crossplot:publish("NR_ADMIRAL_DECREMENT", 10, 1)
-		crossplot:publish("NR_ADMIRAL_DECREMENT", 10, 2)
+		crossplot:publish("INITIALIZE_AI", "empty")
+		crossplot:publish("NR_ADMIRAL_DECREMENT", {10, 10, 10}, 0)
 		crossplot:publish("NR_ADMIRAL_LOCKIN", {"Ackbar", "Vantai", "Iblis", "Ragab"}, 1)
+		crossplot:publish("NR_ADMIRAL_LOCKIN", {"Cracken"}, 2)
+		Set_Fighter_Hero("WEDGE_ANTILLES_ROGUE_TEAM", "BELL_SWIFT_LIBERTY")
+		
+		Set_Fighter_Hero("SALM_B-WING_SQUADRON", "VANTAI_MOONSHADOW")
+		Clear_Fighter_Hero("SALM_Y-WING_SQUADRON")
+		crossplot:publish("NR_FILTER_REMOVE", {"SalmY_Location_Set","Ranulf_Trommer_Location_Set"}, 2)
+		crossplot:publish("NR_FILTER_ADD", {"SalmB_Location_Set"}, 2)
 	else
 		crossplot:update()
     end
+end
+
+function Kill_Rogues(message)
+	if message == OnEnter then
+		local p_rebel = Find_Player("Rebel")
+		
+		crossplot:publish("NR_FILTER_REMOVE", {"Wedge_Rogues_Location_Set"}, 2)
+		Clear_Fighter_Hero("WEDGE_ANTILLES_ROGUE_TEAM")
+	else
+		crossplot:update()
+	end
 end
 
 function Requiem_Spawn(message)
@@ -111,7 +131,7 @@ function CH_Lusankya(message)
 		start_planet = StoryUtil.FindFriendlyPlanet(p_empire)
 	end
 
-    local spawn_list_lusankya = { "Lusankya", "TIE_Defender_Squadron_Buildable", "TIE_Defender_Squadron_Buildable" }
+    local spawn_list_lusankya = { "Isard_Lusankya", "TIE_Defender_Squadron_Buildable", "TIE_Defender_Squadron_Buildable" }
     local LusankyaSpawn = SpawnList(spawn_list_lusankya, start_planet, p_empire,false,false)
 
   end

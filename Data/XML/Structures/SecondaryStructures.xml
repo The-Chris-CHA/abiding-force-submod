@@ -27,7 +27,6 @@
 		<Size_Value>50</Size_Value>
 		<Base_Position>Out_Base</Base_Position>
 		<Tech_Level>99</Tech_Level>
-		<Required_Timeline>0</Required_Timeline>
 		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
 		<Required_Star_Base_Level>0</Required_Star_Base_Level>
 		<Required_Special_Structures />
@@ -147,12 +146,10 @@
 		<Abilities SubObjectList="Yes">
 			<Combat_Bonus_Ability Name="Secondary_Fuel_Movement_Bonus">
 				<Activation_Style>Ground_Automatic</Activation_Style>
-				<Unit_Strength_Category>Vehicle | Air</Unit_Strength_Category>
 				<Applicable_Unit_Categories>Vehicle | Air</Applicable_Unit_Categories>
 				<Applicable_Unit_Types />
 				<Health_Bonus_Percentage>0.0</Health_Bonus_Percentage>
-				<Damage_Bonus_Percentage>0.0</Damage_Bonus_Percentage>
-				<Energy_Pool_Bonus_Percentage>0.0</Energy_Pool_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.0</Damage_Bonus_Percentage>    
 				<Shield_Bonus_Percentage>0.0</Shield_Bonus_Percentage>
 				<Defense_Bonus_Percentage>0.0</Defense_Bonus_Percentage>
 				<Movement_Speed_Bonus_Percentage>0.1</Movement_Speed_Bonus_Percentage>
@@ -239,12 +236,10 @@
 		<Abilities SubObjectList="Yes">
 			<Combat_Bonus_Ability Name="Secondary_Research_Combat_Bonus">
 				<Activation_Style>Ground_Automatic</Activation_Style>
-				<Unit_Strength_Category>Vehicle | Infantry | Air</Unit_Strength_Category>
 				<Applicable_Unit_Categories>Vehicle | Infantry | Air</Applicable_Unit_Categories>
 				<Applicable_Unit_Types />
 				<Health_Bonus_Percentage>0.0</Health_Bonus_Percentage>
-				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
-				<Energy_Pool_Bonus_Percentage>0.0</Energy_Pool_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>    
 				<Shield_Bonus_Percentage>0.0</Shield_Bonus_Percentage>
 				<Defense_Bonus_Percentage>0.0</Defense_Bonus_Percentage>
 				<Movement_Speed_Bonus_Percentage>0.0</Movement_Speed_Bonus_Percentage>
@@ -329,7 +324,6 @@
 				<Heal_Range_Blob_Material>Heal_Vehicle_Radius_Overlay</Heal_Range_Blob_Material>
 				<!-- We can heal the following unit types: -->
 				<Applicable_Unit_Categories>Vehicle, Air</Applicable_Unit_Categories>
-				<Applicable_Unit_Types>Scout_Trooper, MPTL_Spotter, Veers_AT_AT_Walker, </Applicable_Unit_Types>
 				<SFXEvent_Target_Affected>Unit_Force_Healing_Pulse</SFXEvent_Target_Affected>
 				<Target_Particle_Effect>Shield_Sparks_Medium</Target_Particle_Effect>
 				<Target_Particle_Bone_Name>B_TURRET, TURRET_00, B_TURRET_BASE</Target_Particle_Bone_Name>
@@ -581,11 +575,8 @@
 				<Heal_Percent> 0.0 </Heal_Percent>
 				<Heal_Interval_In_Secs>1.0</Heal_Interval_In_Secs>
 				<Heal_Range_Blob_Material>Heal_Infantry_Radius_Overlay</Heal_Range_Blob_Material>
-				
 				<!-- We can heal the following unit types: -->
 				<Applicable_Unit_Categories>Infantry | LandHero</Applicable_Unit_Categories>
-				<Applicable_Unit_Types/>
-				<Excluded_Unit_Types>Scout_Trooper, MPTL_Spotter, Veers_AT_AT_Walker, Carvin, Melvar_Juggernaut, </Excluded_Unit_Types>
 				<SFXEvent_Target_Affected>Unit_Force_Healing_Pulse</SFXEvent_Target_Affected>
 				<Target_Particle_Effect>Unit_Healed_Particles</Target_Particle_Effect>
 				<Target_Particle_Bone_Name>B_HEAD</Target_Particle_Bone_Name>
@@ -659,7 +650,7 @@
 		<Mass>1.0</Mass>
 
 		<Shield_Points>0</Shield_Points>
-		<Tactical_Health>700</Tactical_Health>
+		<Tactical_Health>600</Tactical_Health>
 		<Energy_Capacity>500</Energy_Capacity>
 		<Energy_Refresh_Rate>40</Energy_Refresh_Rate>
 		<Projectile_Types>Proj_AV_Turbolaser_Green</Projectile_Types>
@@ -668,7 +659,6 @@
 		
 		<Land_FOW_Reveal_Range>700.0</Land_FOW_Reveal_Range>
 		<Targeting_Max_Attack_Distance>600.0</Targeting_Max_Attack_Distance>
-		<Tactical_Health>400</Tactical_Health>
 
 		<Ranged_Target_Z_Adjust>20.0</Ranged_Target_Z_Adjust>
 
@@ -729,7 +719,6 @@
 		<Affiliation>Neutral, Rebel, Empire, Zsinj_Empire, EmpireoftheHand, Pentastar, Hapes_Consortium, Greater_Maldrood, Eriadu_Authority, Hutt_Cartels, Corporate_Sector, Warlords, Chiss,  SsiRuuvi_Imperium</Affiliation>
 
 		<Tech_Level>0</Tech_Level>
-		<Required_Timeline>0</Required_Timeline>
 		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
 		<Required_Star_Base_Level>0</Required_Star_Base_Level>
 		<Required_Special_Structures />

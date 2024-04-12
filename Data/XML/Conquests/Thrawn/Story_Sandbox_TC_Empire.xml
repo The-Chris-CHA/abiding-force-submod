@@ -32,16 +32,8 @@
 	<Event Name="Spawn_Thrawn">
 		<Event_Type>STORY_TRIGGER</Event_Type>
 		<Reward_Type>SPAWN_HERO</Reward_Type>
-		<Reward_Param1>Chimera</Reward_Param1>
+		<Reward_Param1>Thrawn_Chimaera</Reward_Param1>
 		<Reward_Param2>Myrkr</Reward_Param2>
-		<Prereq>Universal_Story_Start</Prereq>
-	</Event>
-
-	<Event Name="Spawn_Phennir">
-		<Event_Type>STORY_TRIGGER</Event_Type>
-		<Reward_Type>SPAWN_HERO</Reward_Type>
-		<Reward_Param1>181st_TIE_Interceptor_Squadron</Reward_Param1>
-		<Reward_Param2>Bastion</Reward_Param2>
 		<Prereq>Universal_Story_Start</Prereq>
 	</Event>
 
@@ -56,7 +48,7 @@
 	<Event Name="Spawn_Brandei">
 		<Event_Type>STORY_TRIGGER</Event_Type>
 		<Reward_Type>SPAWN_HERO</Reward_Type>
-		<Reward_Param1>Judicator_Star_Destroyer</Reward_Param1>
+		<Reward_Param1>Brandei_Judicator</Reward_Param1>
 		<Reward_Param2>Bastion</Reward_Param2>
 		<Prereq>Universal_Story_Start</Prereq>
 	</Event>
@@ -64,7 +56,7 @@
 	<Event Name="Spawn_Dorja">
 		<Event_Type>STORY_TRIGGER</Event_Type>
 		<Reward_Type>SPAWN_HERO</Reward_Type>
-		<Reward_Param1>Relentless_Star_Destroyer</Reward_Param1>
+		<Reward_Param1>Dorja_Relentless</Reward_Param1>
 		<Reward_Param2>Bastion</Reward_Param2>
 		<Prereq>Universal_Story_Start</Prereq>
 	</Event>
@@ -119,7 +111,7 @@
 	
 	<Event Name="Unlock_on_Death">
   		<Event_Type>STORY_TACTICAL_DESTROY</Event_Type>
-  		<Event_Param1>Chimera</Event_Param1>
+  		<Event_Param1>Thrawn_Chimaera</Event_Param1>
 		<Event_Param2></Event_Param2>
 		<Event_Param3>1</Event_Param3>
 		<Event_Param4>Pentastar, Rebel, Zsinj_Empire, EmpireoftheHand, Hapes_Consortium, Eriadu_Authority</Event_Param4>
@@ -518,7 +510,7 @@
 	
 	<Event Name="Unlock_Katana">
 		<Event_Type>STORY_MOVE</Event_Type>
-		<Event_Param1>Chimera</Event_Param1>
+		<Event_Param1>Thrawn_Chimaera</Event_Param1>
 		<Event_Param2>Katana_Space</Event_Param2>
 		<Reward_Type>SET_PLANET_RESTRICTED</Reward_Type>
 		<Reward_Param1>0</Reward_Param1>
@@ -527,7 +519,7 @@
 	
 	<Event Name="Make_It_Happen">
 		<Event_Type>STORY_MOVE</Event_Type>
-		<Event_Param1>Chimera</Event_Param1>
+		<Event_Param1>Thrawn_Chimaera</Event_Param1>
 		<Event_Param2>Katana_Space</Event_Param2>
 		<Reward_Type>TRIGGER_EVENT</Reward_Type>
 		<Reward_Param1>Dummy</Reward_Param1>

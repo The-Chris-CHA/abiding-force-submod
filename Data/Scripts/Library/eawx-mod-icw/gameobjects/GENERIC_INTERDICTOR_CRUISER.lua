@@ -14,6 +14,7 @@ return {
 			INDEPENDENT_FORCES = {Initial = 1, Reserve = 3},
 			WARLORDS = {Initial = 1, Reserve = 3},
 			ZSINJ_EMPIRE = {Initial = 1, Reserve = 3},
+			HUTT_CARTELS = {Initial = 1, Reserve = 3}
 		},
 		["SUPER_TIE_SQUADRON"] = {
 			EMPIRE = {Initial = 1, Reserve = 3, TechLevel = GreaterOrEqualTo(6)}

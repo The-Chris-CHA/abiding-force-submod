@@ -60,8 +60,6 @@
 		<Victory_Relevant>yes</Victory_Relevant>
 		<Create_Team>No</Create_Team>
 
-		<Override_Bounty_SP/>
-		<Override_Bounty_MP/>
 		<Tactical_Bribe_Cost>1</Tactical_Bribe_Cost>
 
 		<GalacticBehavior> SELECTABLE </GalacticBehavior>
@@ -99,9 +97,9 @@
         <Death_Clone>DamageL_Ion, Infantry_Electric_Death_Clone_00</Death_Clone>
         <Death_Clone>DamageL_Ion, Infantry_Electric_Death_Clone_01</Death_Clone>
 
-		<SFXEvent_Tactical_Build_Started> RHD_Reinforcements_En_Route </SFXEvent_Tactical_Build_Started>
-		<SFXEvent_Tactical_Build_Complete> RHD_Reinforcements_Available </SFXEvent_Tactical_Build_Complete>
-		<SFXEvent_Tactical_Build_Cancelled> RHD_Reinforcements_Cancelled  </SFXEvent_Tactical_Build_Cancelled>
+		<SFXEvent_Tactical_Build_Started> EHD_Reinforcements_En_Route </SFXEvent_Tactical_Build_Started>
+		<SFXEvent_Tactical_Build_Complete> EHD_Reinforcements_Available </SFXEvent_Tactical_Build_Complete>
+		<SFXEvent_Tactical_Build_Cancelled> EHD_Reinforcements_Cancelled  </SFXEvent_Tactical_Build_Cancelled>
 
 		<SFXEvent_Select>Unit_Select_Rebel_Infiltrator</SFXEvent_Select>
 		<SFXEvent_Move>Unit_Move_Rebel_Infiltrator</SFXEvent_Move>
@@ -169,8 +167,8 @@
 		<Targeting_Fire_Inaccuracy> Vehicle, 7.0 </Targeting_Fire_Inaccuracy>
 		<Targeting_Fire_Inaccuracy> Air, 70.0 </Targeting_Fire_Inaccuracy>
 		<Targeting_Fire_Inaccuracy> Structure, 7.0 </Targeting_Fire_Inaccuracy>
-		<SFXEvent_Fire>Unit_Rebel_Infantry_Fire</SFXEvent_Fire>
 		<Influences_Capture_Point>True</Influences_Capture_Point>
+		
 		<Unit_Abilities_Data SubObjectList="Yes">
 			<!-- Primary ability -->
 			<Unit_Ability>
@@ -247,7 +245,6 @@
 		<Population_Value>1</Population_Value>
 
 		<Tech_Level>99</Tech_Level>
-		<Required_Timeline>0</Required_Timeline>
 		<Required_Ground_Base_Level>1</Required_Ground_Base_Level>
 		
 		<Affiliation>EmpireoftheHand</Affiliation>
@@ -259,8 +256,8 @@
 		<Max_Squad_Size> 1 </Max_Squad_Size>
 		<Company_Transport_Unit>Imperial_Landing_Craft_Commando</Company_Transport_Unit>
 
-		<SFXEvent_Build_Started>RHD_Build_Troops</SFXEvent_Build_Started>
-		<SFXEvent_Build_Cancelled>RHD_Recruitment_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Started>EHD_Build_Troops</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Recruitment_Canceled</SFXEvent_Build_Cancelled>
 		<SFXEvent_Build_Complete>Unit_Complete_Rebel_Infiltrator</SFXEvent_Build_Complete>
 		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Rebel_Infiltrator</SFXEvent_Fleet_Move>
 
@@ -278,6 +275,7 @@
 		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
 		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->
 	</GroundCompany>
+
 
 	<GroundInfantry Name="Phalanx_Trooper">
 
@@ -338,8 +336,6 @@
 		<Victory_Relevant>yes</Victory_Relevant>
 		<Create_Team>Yes</Create_Team>
 
-		<Override_Bounty_SP/>
-		<Override_Bounty_MP/>
 		<Tactical_Bribe_Cost>25</Tactical_Bribe_Cost>
 
 		<GalacticBehavior> SELECTABLE </GalacticBehavior>
@@ -377,6 +373,7 @@
         	<Death_Clone>DamageL_Ion, Infantry_Electric_Death_Clone_01</Death_Clone>
 		<Death_Clone>Damage_Infection, Infantry_Melt_Death_Clone_00</Death_Clone>
 		<Death_Clone>Damage_Remote_Bomb, Phalanx_Remote_Bomb_Death_Clone</Death_Clone>
+		
 		<SFXEvent_Tactical_Build_Started> EHD_Reinforcements_En_Route </SFXEvent_Tactical_Build_Started>
 		<SFXEvent_Tactical_Build_Complete> EHD_Reinforcements_Available </SFXEvent_Tactical_Build_Complete>
 		<SFXEvent_Tactical_Build_Cancelled> EHD_Reinforcements_Cancelled  </SFXEvent_Tactical_Build_Cancelled>
@@ -389,7 +386,6 @@
 		<SFXEvent_Assist_Attack> Unit_Assist_Attack_Storm_Trooper </SFXEvent_Assist_Attack>
 		<SFXEvent_Guard>Unit_Guard_Storm_Trooper</SFXEvent_Guard>
 		
-				
 		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_LASER, null </SFXEvent_Hardpoint_Destroyed>
 		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_MISSILE, null </SFXEvent_Hardpoint_Destroyed>
 		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_TORPEDO, null </SFXEvent_Hardpoint_Destroyed>
@@ -540,7 +536,6 @@
 				<Heal_Range_Blob_Material>Heal_Support_Radius_Overlay</Heal_Range_Blob_Material>
 				<!-- We can heal the following unit types: -->
 				<Applicable_Unit_Categories>Infantry, LandHero, Vehicle, Air</Applicable_Unit_Categories>
-				<Applicable_Unit_Types>Scout_Trooper, MPTL_Spotter, Veers_AT_AT_Walker, </Applicable_Unit_Types>
 				<SFXEvent_Target_Affected>Unit_Force_Healing_Pulse</SFXEvent_Target_Affected>
 				<Target_Particle_Effect>Shield_Sparks_Medium</Target_Particle_Effect>
 				<Target_Particle_Bone_Name>ROOT</Target_Particle_Bone_Name>
@@ -628,7 +623,6 @@
 		<Population_Value>1</Population_Value>
 
 		<Tech_Level>1</Tech_Level>
-		<Required_Timeline>0</Required_Timeline>
 		<Required_Ground_Base_Level>1</Required_Ground_Base_Level>
 		
 		<Affiliation>EmpireoftheHand</Affiliation>
@@ -706,18 +700,18 @@
     <GroundCompany Name="Phalanx_Medic_Squad">
 		<Text_ID>TEXT_UNIT_PHALANX_MEDIC_COMPANY</Text_ID>
 		<Variant_Of_Existing_Type>Phalanx_Trooper_Squad</Variant_Of_Existing_Type>
-		<Company_Units> Phalanx_Trooper, Phalanx_Medic, Phalanx_Trooper</Company_Units>
+		<Company_Units> Phalanx_Trooper, Phalanx_Trooper, Phalanx_Trooper, Phalanx_Medic,  Phalanx_Trooper, Phalanx_Trooper</Company_Units>
 		<Tech_Level>99</Tech_Level>
 		<Build_Tab_Land_Units>No</Build_Tab_Land_Units>
-		<Max_Squad_Size> 3 </Max_Squad_Size>
+		<Max_Squad_Size> 6 </Max_Squad_Size>
 		<Damage>3</Damage>
 		<Encyclopedia_Text>
 		TEXT_TOOLTIP_PHALANX_TROOPER
 		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
-		TEXT_TOOLTIP_PHALANX_MEDIC_FIELD_COMPANY
+		TEXT_TOOLTIP_PHALANX_TROOPER_SQUAD
 		TEXT_TOOLTIP_PHALANX_TROOPER_HEALTH
 		TEXT_TOOLTIP_PHALANX_TROOPER_MOVE
-		TEXT_TOOLTIP_PHALANX_TROOPER_MINI_WEAP1
+		TEXT_TOOLTIP_PHALANX_TROOPER_SQUAD_MEDIC_WEAP1
 		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
 		TEXT_TOOLTIP_BONUS_MEDIC_HEAL_REPAIR
 		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
@@ -735,6 +729,166 @@
 		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->
 		
 	</GroundCompany>
+
+	<Container Name="Phalanx_Trooper_Team">
+
+		<Text_ID>TEXT_UNIT_PHALANX_TROOPER_SQUAD</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_INFANTRY</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_PHALANX_TROOPER
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
+		TEXT_TOOLTIP_PHALANX_TROOPER_SQUAD
+		TEXT_TOOLTIP_PHALANX_TROOPER_HEALTH
+		TEXT_TOOLTIP_PHALANX_TROOPER_MOVE
+		TEXT_TOOLTIP_PHALANX_TROOPER_SQUAD_WEAP1
+		TEXT_TOOLTIP_PHALANX_TROOPER_SQUAD_WEAP2
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_INFANTRY_CAPTURE
+		</Encyclopedia_Text>
+		<Icon_Name>i_button_phalanxtrooper.tga</Icon_Name>
+
+		<Select_Box_Scale>65</Select_Box_Scale>
+		<Select_Box_Z_Adjust>0</Select_Box_Z_Adjust>
+		
+		<Land_Model_Name/>
+
+		<Max_Speed> 1.0 </Max_Speed>
+		<OverrideAcceleration>0.1</OverrideAcceleration>
+		<OverrideDeceleration>0.1</OverrideDeceleration>
+		<Max_Rate_Of_Turn>12.0</Max_Rate_Of_Turn>
+
+		<CategoryMask>Infantry | AntiInfantry</CategoryMask>
+		<Show_Name>No</Show_Name>
+
+		<Tactical_Bribe_Cost>25</Tactical_Bribe_Cost>
+
+		<Behavior>TEAM,SELECTABLE,UNIT_AI</Behavior>
+		<LandBehavior>REVEAL, LAND_TEAM_CONTAINER_LOCOMOTOR, TEAM_TARGETING, GARRISON_UNIT</LandBehavior>
+		
+		<Lua_Script/>
+		
+		<SFXEvent_Select>Null</SFXEvent_Select>
+
+		<Garrison_Category> Infantry </Garrison_Category>
+		<Garrison_Value>2</Garrison_Value>
+
+		<Is_Squashable> true </Is_Squashable>
+
+		<MovementClass>Infantry</MovementClass>
+		<Space_Layer> Land </Space_Layer>
+		<UnitCollisionClass> Infantry </UnitCollisionClass>
+		<OccupationStyle>1x1</OccupationStyle>
+		<ContainerArrangement> Dartboard </ContainerArrangement>
+		<FormationSpacing> 1 </FormationSpacing>
+		<FormationOrder> 2 </FormationOrder>
+		<MovementPredictionInterval> 4.0 </MovementPredictionInterval>
+
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+
+		<Land_FOW_Reveal_Range>300.0</Land_FOW_Reveal_Range>
+
+		<Targeting_Max_Attack_Distance>300.0</Targeting_Max_Attack_Distance>
+		<Targeting_Min_Attack_Distance>0.0</Targeting_Min_Attack_Distance>
+		<Idle_Chase_Range>50.0</Idle_Chase_Range>
+		<Guard_Chase_Range>300.0</Guard_Chase_Range>
+		<Attack_Move_Response_Range>300.0</Attack_Move_Response_Range>
+		<Autonomous_Move_Extension_Vs_Attacker>50.0</Autonomous_Move_Extension_Vs_Attacker>
+
+		<SpaceBehavior>REVEAL</SpaceBehavior>
+		<Space_FOW_Reveal_Range>800.0</Space_FOW_Reveal_Range>
+		<Override_Acceleration> .1 </Override_Acceleration>
+		<Override_Deceleration> .1 </Override_Deceleration>
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<!-- Primary ability -->
+			<Unit_Ability>
+				<Type>SPREAD_OUT</Type>
+				<Mod_Multiplier>SPEED_MULTIPLIER,	 0.5f</Mod_Multiplier>
+				<Mod_Multiplier>TAKE_DAMAGE_MULTIPLIER, 0.75f</Mod_Multiplier>
+				<SFXEvent_GUI_Unit_Ability_Activated>Unit_Take_Cover_Storm_Trooper</SFXEvent_GUI_Unit_Ability_Activated>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+	</Container>
+
+	<Container Name="Phalanx_Trooper_Medic_Team">
+
+		<Text_ID>TEXT_UNIT_PHALANX_MEDIC_COMPANY</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_SUPPORT</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_PHALANX_TROOPER
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
+		TEXT_TOOLTIP_PHALANX_TROOPER_SQUAD
+		TEXT_TOOLTIP_PHALANX_TROOPER_HEALTH
+		TEXT_TOOLTIP_PHALANX_TROOPER_MOVE
+		TEXT_TOOLTIP_PHALANX_TROOPER_SQUAD_MEDIC_WEAP1
+		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
+		TEXT_TOOLTIP_BONUS_MEDIC_HEAL_REPAIR
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_INFANTRY_CAPTURE
+		</Encyclopedia_Text>
+		<Icon_Name>i_button_phalanxtrooper.tga</Icon_Name>
+
+		<Select_Box_Scale>65</Select_Box_Scale>
+		<Select_Box_Z_Adjust>0</Select_Box_Z_Adjust>
+		
+		<Land_Model_Name/>
+
+		<Max_Speed> 1.0 </Max_Speed>
+		<OverrideAcceleration>0.1</OverrideAcceleration>
+		<OverrideDeceleration>0.1</OverrideDeceleration>
+		<Max_Rate_Of_Turn>12.0</Max_Rate_Of_Turn>
+
+		<CategoryMask>Infantry | AntiInfantry</CategoryMask>
+		<Show_Name>No</Show_Name>
+
+		<Tactical_Bribe_Cost>25</Tactical_Bribe_Cost>
+
+		<Behavior>TEAM,SELECTABLE,UNIT_AI</Behavior>
+		<LandBehavior>REVEAL, LAND_TEAM_CONTAINER_LOCOMOTOR, TEAM_TARGETING, GARRISON_UNIT</LandBehavior>
+		
+		<Lua_Script/>
+		
+		<SFXEvent_Select>Null</SFXEvent_Select>
+
+		<Garrison_Category> Infantry </Garrison_Category>
+		<Garrison_Value>1</Garrison_Value>
+
+		<Is_Squashable> true </Is_Squashable>
+
+		<MovementClass>Infantry</MovementClass>
+		<Space_Layer> Land </Space_Layer>
+		<UnitCollisionClass> Infantry </UnitCollisionClass>
+		<OccupationStyle>1x1</OccupationStyle>
+		<ContainerArrangement> Dartboard </ContainerArrangement>
+		<FormationSpacing> 1 </FormationSpacing>
+		<FormationOrder> 2 </FormationOrder>
+		<MovementPredictionInterval> 4.0 </MovementPredictionInterval>
+
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+
+		<Land_FOW_Reveal_Range>300.0</Land_FOW_Reveal_Range>
+
+		<Targeting_Max_Attack_Distance>300.0</Targeting_Max_Attack_Distance>
+		<Targeting_Min_Attack_Distance>0.0</Targeting_Min_Attack_Distance>
+		<Idle_Chase_Range>50.0</Idle_Chase_Range>
+		<Guard_Chase_Range>300.0</Guard_Chase_Range>
+		<Attack_Move_Response_Range>300.0</Attack_Move_Response_Range>
+		<Autonomous_Move_Extension_Vs_Attacker>50.0</Autonomous_Move_Extension_Vs_Attacker>
+
+		<SpaceBehavior>REVEAL</SpaceBehavior>
+		<Space_FOW_Reveal_Range>800.0</Space_FOW_Reveal_Range>
+		<Override_Acceleration> .1 </Override_Acceleration>
+		<Override_Deceleration> .1 </Override_Deceleration>
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<!-- Primary ability -->
+			<Unit_Ability>
+				<Type>SPREAD_OUT</Type>
+				<Mod_Multiplier>SPEED_MULTIPLIER,	 0.5f</Mod_Multiplier>
+				<Mod_Multiplier>TAKE_DAMAGE_MULTIPLIER, 0.75f</Mod_Multiplier>
+				<SFXEvent_GUI_Unit_Ability_Activated>Unit_Take_Cover_Storm_Trooper</SFXEvent_GUI_Unit_Ability_Activated>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+	</Container>
+
 	
 	<GroundInfantry Name="Ysalamiri_Phalanx">
 		<Variant_Of_Existing_Type>Phalanx_Trooper</Variant_Of_Existing_Type>
@@ -788,12 +942,93 @@
 		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->
 		
 	</GroundCompany>
+
+	<Container Name="Ysalamiri_Phalanx_Trooper_Team">
+
+		<Text_ID>TEXT_UNIT_YSALAMIRI_PHALANX_SQUAD</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_INFANTRY</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_YSALAMIRI_PHALANX
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
+		TEXT_TOOLTIP_PHALANX_TROOPER_SQUAD
+		TEXT_TOOLTIP_PHALANX_TROOPER_HEALTH
+		TEXT_TOOLTIP_PHALANX_TROOPER_MOVE
+		TEXT_TOOLTIP_PHALANX_TROOPER_SQUAD_WEAP1
+		TEXT_TOOLTIP_PHALANX_TROOPER_SQUAD_WEAP2
+		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
+		TEXT_TOOLTIP_BONUS_YSALAMIRI_EQUIPMENT
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_INFANTRY_CAPTURE
+		</Encyclopedia_Text>
+		<Icon_Name>i_button_phalanxtrooper.tga</Icon_Name>
+
+		<Select_Box_Scale>65</Select_Box_Scale>
+		<Select_Box_Z_Adjust>0</Select_Box_Z_Adjust>
+		
+		<Land_Model_Name/>
+
+		<Max_Speed> 1.0 </Max_Speed>
+		<OverrideAcceleration>0.1</OverrideAcceleration>
+		<OverrideDeceleration>0.1</OverrideDeceleration>
+		<Max_Rate_Of_Turn>12.0</Max_Rate_Of_Turn>
+
+		<CategoryMask>Infantry | AntiInfantry</CategoryMask>
+		<Show_Name>No</Show_Name>
+
+		<Tactical_Bribe_Cost>25</Tactical_Bribe_Cost>
+
+		<Behavior>TEAM,SELECTABLE,UNIT_AI</Behavior>
+		<LandBehavior>REVEAL, LAND_TEAM_CONTAINER_LOCOMOTOR, TEAM_TARGETING, GARRISON_UNIT</LandBehavior>
+		
+		<Lua_Script/>
+		
+		<SFXEvent_Select>Null</SFXEvent_Select>
+
+		<Garrison_Category> Infantry </Garrison_Category>
+		<Garrison_Value>2</Garrison_Value>
+
+		<Is_Squashable> true </Is_Squashable>
+
+		<MovementClass>Infantry</MovementClass>
+		<Space_Layer> Land </Space_Layer>
+		<UnitCollisionClass> Infantry </UnitCollisionClass>
+		<OccupationStyle>1x1</OccupationStyle>
+		<ContainerArrangement> Dartboard </ContainerArrangement>
+		<FormationSpacing> 1 </FormationSpacing>
+		<FormationOrder> 2 </FormationOrder>
+		<MovementPredictionInterval> 4.0 </MovementPredictionInterval>
+
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+
+		<Land_FOW_Reveal_Range>300.0</Land_FOW_Reveal_Range>
+
+		<Targeting_Max_Attack_Distance>300.0</Targeting_Max_Attack_Distance>
+		<Targeting_Min_Attack_Distance>0.0</Targeting_Min_Attack_Distance>
+		<Idle_Chase_Range>50.0</Idle_Chase_Range>
+		<Guard_Chase_Range>300.0</Guard_Chase_Range>
+		<Attack_Move_Response_Range>300.0</Attack_Move_Response_Range>
+		<Autonomous_Move_Extension_Vs_Attacker>50.0</Autonomous_Move_Extension_Vs_Attacker>
+
+		<SpaceBehavior>REVEAL</SpaceBehavior>
+		<Space_FOW_Reveal_Range>800.0</Space_FOW_Reveal_Range>
+		<Override_Acceleration> .1 </Override_Acceleration>
+		<Override_Deceleration> .1 </Override_Deceleration>
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<!-- Primary ability -->
+			<Unit_Ability>
+				<Type>SPREAD_OUT</Type>
+				<Mod_Multiplier>SPEED_MULTIPLIER,	 0.5f</Mod_Multiplier>
+				<Mod_Multiplier>TAKE_DAMAGE_MULTIPLIER, 0.75f</Mod_Multiplier>
+				<SFXEvent_GUI_Unit_Ability_Activated>Unit_Take_Cover_Storm_Trooper</SFXEvent_GUI_Unit_Ability_Activated>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+	</Container>
 	
 
 	<GroundInfantry Name="EotH_Scout_Bike">
 
 		<Text_ID>TEXT_UNIT_SCOUT_EOTH</Text_ID>
-		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_SCOUT </Encyclopedia_Unit_Class>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_SPEEDER_BIKE </Encyclopedia_Unit_Class>
 		<Encyclopedia_Text>
 		TEXT_TOOLTIP_SCOUTTROOPER_EOTH
 		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
@@ -846,8 +1081,6 @@
 		<Victory_Relevant>yes</Victory_Relevant>
 		<Create_Team>no</Create_Team>
 
-		<Override_Bounty_SP/>
-		<Override_Bounty_MP/>
 		<Tactical_Bribe_Cost>50</Tactical_Bribe_Cost>
 
 		<LandBehavior>ABILITY_COUNTDOWN, WALK_LOCOMOTOR, IDLE, TARGETING, WEAPON, STUNNABLE, POWERED, REVEAL, HIDE_WHEN_FOGGED, WIND_DISTURBANCE,DAMAGE_TRACKING, AMBIENT_SFX, SURFACE_FX, AFFECTED_BY_SHIELD </LandBehavior>
@@ -883,6 +1116,13 @@
 		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_MISSILE, null </SFXEvent_Hardpoint_Destroyed>
 
 		<Death_SFXEvent_Start_Die>Unit_Speeder_Bike_Death_SFX</Death_SFXEvent_Start_Die>
+		
+		<SFXEvent_Ambient_Moving> Unit_Speederbike_Fly_By </SFXEvent_Ambient_Moving>
+		<SFXEvent_Engine_Moving_Loop> Unit_SpeederBike_Engine_Loop </SFXEvent_Engine_Moving_Loop>
+		<SFXEvent_Engine_Idle_Loop> Unit_SpeederBike_Idle_Engine_Loop </SFXEvent_Engine_Idle_Loop>
+		<SFXEvent_Engine_Cinematic_Focus_Loop> Unit_SpeederBike_Cinematic_Engine_Loop </SFXEvent_Engine_Cinematic_Focus_Loop>
+		<SFXEvent_Ambient_Moving_Min_Delay_Seconds> 7 </SFXEvent_Ambient_Moving_Min_Delay_Seconds>
+		<SFXEvent_Ambient_Moving_Max_Delay_Seconds> 12 </SFXEvent_Ambient_Moving_Max_Delay_Seconds>
 
 		<MovementClass> LightHover </MovementClass>
 		<Space_Layer> Land </Space_Layer>
@@ -952,12 +1192,6 @@
 		<Spin_Away_On_Death_Explosion>Small_Explosion_Land</Spin_Away_On_Death_Explosion>
 		<Spin_Away_On_Death_SFXEvent_Start_Die>Unit_A_Wing_Spinning_By</Spin_Away_On_Death_SFXEvent_Start_Die>
 		<Remove_Upon_Death>true</Remove_Upon_Death>
-		<SFXEvent_Fire>Unit_Scout_Trooper_Fire</SFXEvent_Fire>
-		<SFXEvent_Ambient_Moving> Unit_Speederbike_Fly_By </SFXEvent_Ambient_Moving>
-		<SFXEvent_Engine_Moving_Loop> Unit_SpeederBike_Engine_Loop </SFXEvent_Engine_Moving_Loop>
-		<SFXEvent_Ambient_Moving_Min_Delay_Seconds> 7 </SFXEvent_Ambient_Moving_Min_Delay_Seconds>
-		<SFXEvent_Ambient_Moving_Max_Delay_Seconds> 12 </SFXEvent_Ambient_Moving_Max_Delay_Seconds>
-		<SFXEvent_Engine_Cinematic_Focus_Loop> Unit_SpeederBike_Cinematic_Engine_Loop </SFXEvent_Engine_Cinematic_Focus_Loop>
 		<Is_Squashable_By_Supercrusher>Yes</Is_Squashable_By_Supercrusher>
 		<Influences_Capture_Point> False </Influences_Capture_Point>
 	</GroundInfantry>
@@ -966,7 +1200,7 @@
 	<GroundCompany Name="EotH_Scout_Brigade">
 
 		<Text_ID>TEXT_UNIT_SCOUT_EOTH_COMPANY</Text_ID>
-		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_SCOUT</Encyclopedia_Unit_Class>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_SPEEDER_BIKE</Encyclopedia_Unit_Class>
 		<Encyclopedia_Text>
 		TEXT_TOOLTIP_SCOUTTROOPER_EOTH
 		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
@@ -1000,7 +1234,6 @@
 		<Population_Value>1</Population_Value>
 
 		<Tech_Level>99</Tech_Level>
-		<Required_Timeline>0</Required_Timeline>
 		<Required_Ground_Base_Level>1</Required_Ground_Base_Level>
 		
 		<Affiliation>EmpireoftheHand</Affiliation>
@@ -1014,8 +1247,8 @@
 
 		<SFXEvent_Build_Started>RHD_Build_Vehicle</SFXEvent_Build_Started>
 		<SFXEvent_Build_Cancelled>RHD_Vehicle_Canceled</SFXEvent_Build_Cancelled>
-		<SFXEvent_Build_Complete>Unit_Complete_T2B_Tank</SFXEvent_Build_Complete>
-		<SFXEvent_Fleet_Move>Unit_Fleet_Move_T2B_Tank</SFXEvent_Fleet_Move>
+		<SFXEvent_Build_Complete>Unit_Complete_Scout_Trooper</SFXEvent_Build_Complete>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Scout_Trooper</SFXEvent_Fleet_Move>
 
 		<Required_Star_Base_Level>0</Required_Star_Base_Level>
 		<Required_Planets/>
@@ -1088,8 +1321,6 @@
 		
 		<Influences_Capture_Point> False </Influences_Capture_Point>
 
-		<Override_Bounty_SP/>
-		<Override_Bounty_MP/>
 		<Tactical_Bribe_Cost>1</Tactical_Bribe_Cost>
 		<Score_Cost_Credits>36</Score_Cost_Credits>
 
@@ -1121,16 +1352,21 @@
 		<Land_Damage_Alternates>0, 1, 2</Land_Damage_Alternates>
 		<Land_Damage_SFX>null,SFX_Grenade_Detonation, SFX_Grenade_Detonation</Land_Damage_SFX>
 
-		<SFXEvent_Tactical_Build_Started> RHD_Reinforcements_En_Route </SFXEvent_Tactical_Build_Started>
-		<SFXEvent_Tactical_Build_Complete> RHD_Reinforcements_Available </SFXEvent_Tactical_Build_Complete>
-		<SFXEvent_Tactical_Build_Cancelled> RHD_Reinforcements_Cancelled  </SFXEvent_Tactical_Build_Cancelled>
-		<SFXEvent_Unit_Lost> RHD_Unit_Destroyed </SFXEvent_Unit_Lost>
+		<SFXEvent_Tactical_Build_Started> EHD_Reinforcements_En_Route </SFXEvent_Tactical_Build_Started>
+		<SFXEvent_Tactical_Build_Complete> Unit_Complete_UT_AA </SFXEvent_Tactical_Build_Complete>
+		<SFXEvent_Tactical_Build_Cancelled> EHD_Reinforcements_Cancelled  </SFXEvent_Tactical_Build_Cancelled>
+		<SFXEvent_Unit_Lost> EHD_Unit_Destroyed </SFXEvent_Unit_Lost>
 
-		<SFXEvent_Select>Unit_Select_T2B_Tank</SFXEvent_Select>
-		<SFXEvent_Move>Unit_Move_T2B_Tank</SFXEvent_Move>
-		<SFXEvent_Fleet_Move>Unit_Fleet_Move_T2B_Tank</SFXEvent_Fleet_Move>
-		<SFXEvent_Attack>Unit_Attack_T2B_Tank</SFXEvent_Attack>
-		<SFXEvent_Guard>Unit_Guard_T2B_Tank</SFXEvent_Guard>
+		<SFXEvent_Select>Unit_Select_UT_AA</SFXEvent_Select>
+		<SFXEvent_Move>Unit_Move_UT_AA</SFXEvent_Move>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_UT_AA</SFXEvent_Fleet_Move>
+		<SFXEvent_Attack>Unit_Attack_UT_AA</SFXEvent_Attack>
+		<SFXEvent_Guard>Unit_Guard_UT_AA</SFXEvent_Guard>
+		<SFXEvent_Assist_Move> Unit_Assist_Move_UT_AA </SFXEvent_Assist_Move>
+		<SFXEvent_Assist_Attack> Unit_Assist_Attack_UT_AA </SFXEvent_Assist_Attack>
+		<SFXEvent_Health_Low_Warning> Unit_Health_Low_UT_AA </SFXEvent_Health_Low_Warning>
+		<SFXEvent_Health_Critical_Warning> Unit_Health_Critical_UT_AA </SFXEvent_Health_Critical_Warning>
+		<Death_SFXEvent_Start_Die> Unit_Death_UT_AA </Death_SFXEvent_Start_Die>
 		
 		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_LASER, null </SFXEvent_Hardpoint_Destroyed>
 		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_MISSILE, null </SFXEvent_Hardpoint_Destroyed>
@@ -1206,21 +1442,30 @@
 		<Wind_Disturbance_Sphere_Alpha>0.4</Wind_Disturbance_Sphere_Alpha>
 		<Base_Shield_Penetration_Particle>Shield_Penetration_Effect_Particle</Base_Shield_Penetration_Particle>
 		<SFXEvent_Fire>Unit_Tank_T2B_Fire</SFXEvent_Fire>
-		<SFXEvent_Assist_Move> Unit_Assist_Move_T2B_Tank </SFXEvent_Assist_Move>
-		<SFXEvent_Assist_Attack> Unit_Assist_Attack_T2B_Tank</SFXEvent_Assist_Attack>
 		<Icon_Name>i_button_kirov.tga</Icon_Name>
 		<Base_Shield_Penetration_Particle>Shield_Penetration_Effect_Particle</Base_Shield_Penetration_Particle>
-		<Vehicle_Thief_Inside_Clone>Kirov</Vehicle_Thief_Inside_Clone>
+		<Vehicle_Thief_Inside_Clone>Kirov_Captured</Vehicle_Thief_Inside_Clone>
 		
 		<!-- Enhanced sensors capability -->
 		<Target_Stealth_Units>Yes</Target_Stealth_Units>
 		
 	</GroundVehicle>
-	
+
+	<GroundVehicle Name="Kirov_Captured">
+		<Variant_Of_Existing_Type>Kirov</Variant_Of_Existing_Type>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>EJECT_VEHICLE_THIEF</Type>
+				<Recharge_Seconds>10</Recharge_Seconds> <!-- time that the user can't eject thief, kicks in right away -->
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+	</GroundVehicle>
+
 	<GroundCompany Name="EotH_Kirov_Brigade">
 
 		<Text_ID>TEXT_UNIT_KIROV_COMPANY</Text_ID>
-		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_TANK</Encyclopedia_Unit_Class>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_LIGHT_TANK</Encyclopedia_Unit_Class>
 		<Encyclopedia_Text>
 		TEXT_TOOLTIP_KIROV
 		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
@@ -1257,7 +1502,6 @@
 		<Population_Value>1</Population_Value>
 
 		<Tech_Level>1</Tech_Level>
-		<Required_Timeline>0</Required_Timeline>
 		<Required_Ground_Base_Level>1</Required_Ground_Base_Level>
 		
 		<Affiliation>EmpireoftheHand</Affiliation>
@@ -1269,10 +1513,10 @@
 		<Max_Squad_Size> 1 </Max_Squad_Size>
 		<Company_Transport_Unit>Imperial_Landing_Craft_Light_Vehicles</Company_Transport_Unit>
 
-		<SFXEvent_Build_Started>RHD_Build_Vehicle</SFXEvent_Build_Started>
-		<SFXEvent_Build_Cancelled>RHD_Vehicle_Canceled</SFXEvent_Build_Cancelled>
-		<SFXEvent_Build_Complete>Unit_Complete_T2B_Tank</SFXEvent_Build_Complete>
-		<SFXEvent_Fleet_Move>Unit_Fleet_Move_T2B_Tank</SFXEvent_Fleet_Move>
+		<SFXEvent_Build_Started>EHD_Build_Vehicle</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Vehicle_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Complete_UT_AA</SFXEvent_Build_Complete>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_UT_AA</SFXEvent_Fleet_Move>
 
 	<Required_Star_Base_Level>0</Required_Star_Base_Level>
 		<Required_Planets/>
@@ -1298,7 +1542,7 @@
 	<GroundVehicle Name="Flame_Tank">
 
 		<Text_ID>TEXT_UNIT_FLAME_TANK</Text_ID>
-		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_HEAVY_VEHICLE</Encyclopedia_Unit_Class>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_MEDIUM_TANK</Encyclopedia_Unit_Class>
 		<Encyclopedia_Text>
 		TEXT_TOOLTIP_FLAME_TANK 
 		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
@@ -1348,8 +1592,6 @@
 		
 		<Influences_Capture_Point> False </Influences_Capture_Point>
 
-		<Override_Bounty_SP/>
-		<Override_Bounty_MP/>
 		<Tactical_Bribe_Cost>100</Tactical_Bribe_Cost>
 		<Score_Cost_Credits>125</Score_Cost_Credits>
 
@@ -1381,22 +1623,26 @@
 		<Land_Damage_Alternates>0, 1, 2</Land_Damage_Alternates>
 		<Land_Damage_SFX>null,SFX_Grenade_Detonation, SFX_Grenade_Detonation</Land_Damage_SFX>
 
-		<SFXEvent_Tactical_Build_Started> UHD_Reinforcements_En_Route </SFXEvent_Tactical_Build_Started>
-		<SFXEvent_Tactical_Build_Complete> UHD_Reinforcements_Available </SFXEvent_Tactical_Build_Complete>
-		<SFXEvent_Tactical_Build_Cancelled> UHD_Reinforcements_Cancelled  </SFXEvent_Tactical_Build_Cancelled>
-		<SFXEvent_Unit_Lost> UHD_Unit_Destroyed </SFXEvent_Unit_Lost>
-
-		<SFXEvent_Select>Unit_Select_Canderous_Tank</SFXEvent_Select>
-		<SFXEvent_Move>Unit_Move_Canderous_Tank</SFXEvent_Move>
-		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Canderous_Tank</SFXEvent_Fleet_Move>
-		<SFXEvent_Attack>Unit_Attack_Canderous_Tank</SFXEvent_Attack>
-		<SFXEvent_Guard>Unit_Guard_Canderous_Tank</SFXEvent_Guard>
+		<SFXEvent_Tactical_Build_Started> EHD_Reinforcements_En_Route </SFXEvent_Tactical_Build_Started>
+		<SFXEvent_Tactical_Build_Complete> EHD_Reinforcements_Available </SFXEvent_Tactical_Build_Complete>
+		<SFXEvent_Tactical_Build_Cancelled> EHD_Reinforcements_Cancelled  </SFXEvent_Tactical_Build_Cancelled>
+		<SFXEvent_Unit_Lost> EHD_Unit_Destroyed </SFXEvent_Unit_Lost>
+		
+		<SFXEvent_Select>Unit_Select_Mobile_Defense</SFXEvent_Select>
+		<SFXEvent_Move>Unit_Move_Mobile_Defense</SFXEvent_Move>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Mobile_Defense</SFXEvent_Fleet_Move>
+		<SFXEvent_Attack>Unit_Attack_Mobile_Defense</SFXEvent_Attack>
+		<SFXEvent_Guard>Unit_Guard_Mobile_Defense</SFXEvent_Guard>
+		<SFXEvent_Assist_Move> Unit_Assist_Move_Mobile_Defense </SFXEvent_Assist_Move>
+		<SFXEvent_Assist_Attack> Unit_Assist_Attack_Mobile_Defense </SFXEvent_Assist_Attack>
 
 		<SFXEvent_Engine_Idle_Loop> Unit_2M_Idle_Engine_Loop </SFXEvent_Engine_Idle_Loop>
 		<SFXEvent_Engine_Moving_Loop> Unit_2M_Moving_Engine_Loop </SFXEvent_Engine_Moving_Loop>
 		<SFXEvent_Turret_Rotating_Loop> Vehicle_Turret_Motor </SFXEvent_Turret_Rotating_Loop>
 		<Death_SFXEvent_Start_Die>Unit_Tank_Death_SFX</Death_SFXEvent_Start_Die>
-
+		
+		<SFXEvent_Fire>SFX_Flameon</SFXEvent_Fire>
+		
 		<MovementClass>Tracked</MovementClass>
 		<Space_Layer> Land </Space_Layer>
 		<UnitCollisionClass> Vehicle </UnitCollisionClass>
@@ -1472,11 +1718,18 @@
 
 		<Is_Squashable_By_Supercrusher>No</Is_Squashable_By_Supercrusher>
 		<Death_Clone>Damage_Normal, Flame_Death_Clone</Death_Clone>
-		<SFXEvent_Fire>SFX_Flameon</SFXEvent_Fire>
-		<SFXEvent_Assist_Move> Unit_Assist_Move_Canderous_Tank </SFXEvent_Assist_Move>
-		<SFXEvent_Assist_Attack> Unit_Assist_Attack_Canderous_Tank</SFXEvent_Assist_Attack>
-		<Vehicle_Thief_Inside_Clone>Flame_Tank</Vehicle_Thief_Inside_Clone>
+		<Vehicle_Thief_Inside_Clone>Flame_Tank_Captured</Vehicle_Thief_Inside_Clone>
+	</GroundVehicle>
+	
+	<GroundVehicle Name="Flame_Tank_Captured">
+		<Variant_Of_Existing_Type>Flame_Tank</Variant_Of_Existing_Type>
 
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>EJECT_VEHICLE_THIEF</Type>
+				<Recharge_Seconds>10</Recharge_Seconds> <!-- time that the user can't eject thief, kicks in right away -->
+			</Unit_Ability>
+		</Unit_Abilities_Data>
 	</GroundVehicle>
 	
 	<Death_Clone Name="Flame_Death_Clone">
@@ -1500,7 +1753,7 @@
 	<GroundCompany Name="Flame_Tank_Company">
 
 		<Text_ID>TEXT_UNIT_FLAME_TANK_COMPANY</Text_ID>
-		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_HEAVY_VEHICLE</Encyclopedia_Unit_Class>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_MEDIUM_TANK</Encyclopedia_Unit_Class>
 		<Encyclopedia_Text>
 		TEXT_TOOLTIP_FLAME_TANK
 		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
@@ -1536,7 +1789,6 @@
 		<Population_Value>1</Population_Value>
 
 		<Tech_Level>1</Tech_Level>
-		<Required_Timeline>0</Required_Timeline>
 		<Required_Ground_Base_Level>1</Required_Ground_Base_Level>
 		
 		<Affiliation>EmpireoftheHand</Affiliation>
@@ -1548,10 +1800,10 @@
 		<Max_Squad_Size> 1 </Max_Squad_Size>
 		<Company_Transport_Unit>Imperial_Landing_Craft_Light_Vehicles</Company_Transport_Unit>
 
-		<SFXEvent_Build_Started>UHD_Build_Vehicle</SFXEvent_Build_Started>
-		<SFXEvent_Build_Cancelled>UHD_Vehicle_Canceled</SFXEvent_Build_Cancelled>
-		<SFXEvent_Build_Complete>Unit_Complete_Canderous_Tank</SFXEvent_Build_Complete>
-		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Canderous_Tank</SFXEvent_Fleet_Move>
+		<SFXEvent_Build_Started>EHD_Build_Vehicle</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Vehicle_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Complete_Mobile_Defense</SFXEvent_Build_Complete>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Mobile_Defense</SFXEvent_Fleet_Move>
 
 		<Required_Star_Base_Level>0</Required_Star_Base_Level>
 		<Required_Planets/>
@@ -1567,10 +1819,8 @@
 				<GUI_Activated_Ability_Name>Tank_Flame_Thrower </GUI_Activated_Ability_Name> 
 				<Supports_Autofire>True</Supports_Autofire>
 			</Unit_Ability>
-			
-
-			
 		</Unit_Abilities_Data>
+		
 		<Abilities SubObjectList="Yes">
 
 			<Personal_Flame_Thrower_Ability Name="Tank_Flame_Thrower">
@@ -1600,13 +1850,12 @@
 		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
 		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
 		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->
-		
 	</GroundCompany>
 
 	<GroundVehicle Name="AirStraeker">
 
 		<Text_ID>TEXT_UNIT_AIRSTRAEKER</Text_ID>
-		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_SPEEDER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_MEDIUM_AIRSPEEDER</Encyclopedia_Unit_Class>
 		<Encyclopedia_Text>
 		TEXT_TOOLTIP_AIRSTRAEKER
 		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
@@ -1653,8 +1902,6 @@
 		
 		<Influences_Capture_Point>False</Influences_Capture_Point>
 
-		<Override_Bounty_SP/>
-		<Override_Bounty_MP/>
 		<Tactical_Bribe_Cost>100</Tactical_Bribe_Cost>
 		<Score_Cost_Credits>50</Score_Cost_Credits>
 
@@ -1688,22 +1935,25 @@
 		<Land_Damage_Alternates>0, 1, 2</Land_Damage_Alternates>
 		<Land_Damage_SFX>null, SFX_Grenade_Detonation, SFX_Grenade_Detonation</Land_Damage_SFX>
 
-		<SFXEvent_Tactical_Build_Started> RHD_Reinforcements_En_Route </SFXEvent_Tactical_Build_Started>
-		<SFXEvent_Tactical_Build_Complete> RHD_Reinforcements_Available </SFXEvent_Tactical_Build_Complete>
-		<SFXEvent_Tactical_Build_Cancelled> RHD_Reinforcements_Cancelled  </SFXEvent_Tactical_Build_Cancelled>
-		<SFXEvent_Unit_Lost> RHD_Unit_Destroyed </SFXEvent_Unit_Lost>
+		<SFXEvent_Tactical_Build_Started> EHD_Reinforcements_En_Route </SFXEvent_Tactical_Build_Started>
+		<SFXEvent_Tactical_Build_Complete> EHD_Reinforcements_Available </SFXEvent_Tactical_Build_Complete>
+		<SFXEvent_Tactical_Build_Cancelled> EHD_Reinforcements_Cancelled  </SFXEvent_Tactical_Build_Cancelled>
+		<SFXEvent_Unit_Lost> EHD_Unit_Destroyed </SFXEvent_Unit_Lost>
 
 		<SFXEvent_Select>Unit_Select_Assault_Speeder</SFXEvent_Select>
 		<SFXEvent_Move>Unit_Move_Assault_Speeder</SFXEvent_Move>
 		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Assault_Speeder</SFXEvent_Fleet_Move>
 		<SFXEvent_Attack>Unit_Attack_Assault_Speeder</SFXEvent_Attack>
 		<SFXEvent_Guard>Unit_Guard_Assault_Speeder</SFXEvent_Guard>
+		<SFXEvent_Assist_Move> Unit_Assist_Move_Assault_Speeder </SFXEvent_Assist_Move>
+		<SFXEvent_Assist_Attack> Unit_Assist_Attack_Assault_Speeder </SFXEvent_Assist_Attack>
 		
 		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_LASER, null </SFXEvent_Hardpoint_Destroyed>
-
-		<SFXEvent_Engine_Idle_Loop></SFXEvent_Engine_Idle_Loop>
-		<SFXEvent_Engine_Moving_Loop></SFXEvent_Engine_Moving_Loop>
-		<SFXEvent_Turret_Rotating_Loop>Structure_Turret_Motor_Turbo</SFXEvent_Turret_Rotating_Loop>
+		
+		<SFXEvent_Ambient_Moving> Unit_SnowSpeeder_Fly_By </SFXEvent_Ambient_Moving>
+		<SFXEvent_Ambient_Moving_Min_Delay_Seconds> 5 </SFXEvent_Ambient_Moving_Min_Delay_Seconds>
+		<SFXEvent_Ambient_Moving_Max_Delay_Seconds> 7 </SFXEvent_Ambient_Moving_Max_Delay_Seconds>
+		<SFXEvent_Engine_Cinematic_Focus_Loop> Unit_SnowSpeeder_Cinematic_Engine_Loop </SFXEvent_Engine_Cinematic_Focus_Loop>
 		<Death_SFXEvent_Start_Die>Unit_Snow_Speeder_Death_SFX</Death_SFXEvent_Start_Die>
 
 		<MovementClass> Flying </MovementClass>
@@ -1777,39 +2027,31 @@
 		<Spin_Away_On_Death_Time>2.0f</Spin_Away_On_Death_Time>
 		<Spin_Away_On_Death_Explosion>Medium_Explosion_Land</Spin_Away_On_Death_Explosion>
 		<Spin_Away_On_Death_SFXEvent_Start_Die>Unit_A_Wing_Spinning_By</Spin_Away_On_Death_SFXEvent_Start_Die>
-		<SFXEvent_Fire>Unit_Snow_Speeder_Fire</SFXEvent_Fire>
-		<SFXEvent_Assist_Move> Unit_Assist_Move_Assault_Speeder </SFXEvent_Assist_Move>
-		<SFXEvent_Assist_Attack> Unit_Assist_Attack_Assault_Speeder </SFXEvent_Assist_Attack>
-		<SFXEvent_Ambient_Moving> Unit_SnowSpeeder_Fly_By </SFXEvent_Ambient_Moving>
-		<SFXEvent_Ambient_Moving_Min_Delay_Seconds> 5 </SFXEvent_Ambient_Moving_Min_Delay_Seconds>
-		<SFXEvent_Ambient_Moving_Max_Delay_Seconds> 7 </SFXEvent_Ambient_Moving_Max_Delay_Seconds>
-		<SFXEvent_Engine_Cinematic_Focus_Loop> Unit_SnowSpeeder_Cinematic_Engine_Loop </SFXEvent_Engine_Cinematic_Focus_Loop>
 		<Air_Vehicle_Turret_Target> Yes </Air_Vehicle_Turret_Target>
 		<Unit_Abilities_Data SubObjectList="Yes">
 			<!-- Primary ability -->
-           		<Unit_Ability>
+           	<Unit_Ability>
 				<Type>POWER_TO_WEAPONS</Type>
 				<Mod_Multiplier>TAKE_DAMAGE_MULTIPLIER, 	0.75f</Mod_Multiplier>
 				<Mod_Multiplier>SPEED_MULTIPLIER,		0.5</Mod_Multiplier>
 				<Mod_Multiplier>WEAPON_DELAY_MULTIPLIER ,	0.75</Mod_Multiplier>
 				<Recharge_Seconds>50</Recharge_Seconds>
 				<Expiration_Seconds>7</Expiration_Seconds>
-                		<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_ATTACK_RUN_NAME</Alternate_Name_Text>
-                		<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_ATTACK_RUN_DESCRIPTION</Alternate_Description_Text>
-                		<Alternate_Icon_Name>I_SA_LUCKY_SHOT.tga</Alternate_Icon_Name>
+                <Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_ATTACK_RUN_NAME</Alternate_Name_Text>
+                <Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_ATTACK_RUN_DESCRIPTION</Alternate_Description_Text>
+                <Alternate_Icon_Name>I_SA_LUCKY_SHOT.tga</Alternate_Icon_Name>
 			</Unit_Ability>
 			
 			<Unit_Ability>
 				<Type>HUNT</Type>
 			</Unit_Ability>
-			
 		</Unit_Abilities_Data>
-		</GroundVehicle>
+	</GroundVehicle>
 
 	<GroundCompany Name="AirStraeker_Company">
 
 		<Text_ID>TEXT_UNIT_AIRSTRAEKER_COMPANY</Text_ID>
-		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_SPEEDER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_MEDIUM_AIRSPEEDER</Encyclopedia_Unit_Class>
 		<Encyclopedia_Text>
 		TEXT_TOOLTIP_AIRSTRAEKER 
 		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
@@ -1842,7 +2084,6 @@
 		<Population_Value>1</Population_Value>
 
 		<Tech_Level>1</Tech_Level>
-		<Required_Timeline>0</Required_Timeline>
 		<Required_Ground_Base_Level>1</Required_Ground_Base_Level>
 		
 		<Affiliation>EmpireoftheHand</Affiliation>
@@ -1854,10 +2095,10 @@
 		<Max_Squad_Size> 1 </Max_Squad_Size>
 		<Company_Transport_Unit>Imperial_Landing_Craft_Air</Company_Transport_Unit>
 
-		<SFXEvent_Build_Started>UHD_Build_Vehicle</SFXEvent_Build_Started>
-		<SFXEvent_Build_Cancelled>UHD_Vehicle_Canceled</SFXEvent_Build_Cancelled>
-		<SFXEvent_Build_Complete>Unit_Complete_Canderous_Tank</SFXEvent_Build_Complete>
-		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Canderous_Tank</SFXEvent_Fleet_Move>
+		<SFXEvent_Build_Started>EHD_Build_Vehicle</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Vehicle_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Complete_Assault_Speeder</SFXEvent_Build_Complete>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Assault_Speeder</SFXEvent_Fleet_Move>
 
 		<Required_Star_Base_Level>0</Required_Star_Base_Level>
 		<Required_Planets/>
@@ -1879,7 +2120,7 @@
 	<GroundVehicle Name="RFT">
 
 		<Text_ID>TEXT_UNIT_RFT</Text_ID>
-		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_LIGHT_VEHICLE</Encyclopedia_Unit_Class>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_LIGHT_TANK</Encyclopedia_Unit_Class>
 		<Encyclopedia_Text>
 		TEXT_TOOLTIP_RFT
 		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
@@ -1928,8 +2169,6 @@
 		
 		<Influences_Capture_Point> False </Influences_Capture_Point>
 
-		<Override_Bounty_SP/>
-		<Override_Bounty_MP/>
 		<Tactical_Bribe_Cost>200</Tactical_Bribe_Cost>
 		<Score_Cost_Credits>200</Score_Cost_Credits>
 
@@ -2051,7 +2290,7 @@
 		<Turret_Targets_Ground_Infantry> 2 </Turret_Targets_Ground_Infantry>
 		<Turret_Targets_Air_Vehicles> 9999 </Turret_Targets_Air_Vehicles>
 		<Turret_Targets_Anything_Else> 3 </Turret_Targets_Anything_Else>
-		<Vehicle_Thief_Inside_Clone>RFT</Vehicle_Thief_Inside_Clone>
+		<Vehicle_Thief_Inside_Clone>RFT_Captured</Vehicle_Thief_Inside_Clone>
 		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
 		<Collidable_By_Projectile_Dead>Yes</Collidable_By_Projectile_Dead>
 		<SFXEvent_Fire>Unit_Tank_T4B_Fire</SFXEvent_Fire>
@@ -2059,11 +2298,22 @@
 		<SFXEvent_Assist_Attack> Unit_Assist_Attack_T4B_Tank</SFXEvent_Assist_Attack>
 		<Tread_Scroll_Rate>0.037</Tread_Scroll_Rate>
 	</GroundVehicle>
+	
+	<GroundVehicle Name="RFT_Captured">
+		<Variant_Of_Existing_Type>RFT</Variant_Of_Existing_Type>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>EJECT_VEHICLE_THIEF</Type>
+				<Recharge_Seconds>10</Recharge_Seconds> <!-- time that the user can't eject thief, kicks in right away -->
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+	</GroundVehicle>
 
 	<GroundCompany Name="RFT_Brigade">
 
 		<Text_ID>TEXT_UNIT_RFT_COMPANY</Text_ID>
-		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_TANK</Encyclopedia_Unit_Class>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_LIGHT_TANK</Encyclopedia_Unit_Class>
 		<Encyclopedia_Text>
 		TEXT_TOOLTIP_RFT
 		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
@@ -2098,7 +2348,6 @@
 		<Population_Value>1</Population_Value>
 
 		<Tech_Level>0</Tech_Level>
-		<Required_Timeline>0</Required_Timeline>
 		<Required_Ground_Base_Level>1</Required_Ground_Base_Level>
 		
 		<Affiliation>EmpireoftheHand</Affiliation>
@@ -2110,9 +2359,9 @@
 		<Max_Squad_Size> 1 </Max_Squad_Size>
 		<Company_Transport_Unit>Imperial_Landing_Craft_Light_Vehicles</Company_Transport_Unit>
 
-		<SFXEvent_Build_Started>RHD_Build_Vehicle</SFXEvent_Build_Started>
-		<SFXEvent_Build_Cancelled>RHD_Vehicle_Canceled</SFXEvent_Build_Cancelled>
-		<SFXEvent_Build_Complete>Unit_Complete_T2B_Tank</SFXEvent_Build_Complete>
+		<SFXEvent_Build_Started>EHD_Build_Vehicle</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Vehicle_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Complete_Tank</SFXEvent_Build_Complete>
 		<SFXEvent_Fleet_Move>Unit_Fleet_Move_T2B_Tank</SFXEvent_Fleet_Move>
 
 		<Required_Star_Base_Level>0</Required_Star_Base_Level>
@@ -2135,7 +2384,7 @@
 	<GroundVehicle Name="MMT">
 
 		<Text_ID>TEXT_UNIT_MMT</Text_ID>
-		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_HEAVY_VEHICLE</Encyclopedia_Unit_Class>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_HEAVY_TANK</Encyclopedia_Unit_Class>
 		<Encyclopedia_Text>
 		TEXT_TOOLTIP_MMT
 		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
@@ -2185,8 +2434,6 @@
 		
 		<Influences_Capture_Point> False </Influences_Capture_Point>
 
-		<Override_Bounty_SP/>
-		<Override_Bounty_MP/>
 		<Tactical_Bribe_Cost>200</Tactical_Bribe_Cost>
 		<Score_Cost_Credits>200</Score_Cost_Credits>
 
@@ -2220,16 +2467,18 @@
 		<Land_Damage_Alternates>0, 1, 2</Land_Damage_Alternates>
 		<Land_Damage_SFX>null,SFX_Grenade_Detonation, SFX_Grenade_Detonation</Land_Damage_SFX>
 
-		<SFXEvent_Tactical_Build_Started> RHD_Reinforcements_En_Route </SFXEvent_Tactical_Build_Started>
-		<SFXEvent_Tactical_Build_Complete> RHD_Reinforcements_Available </SFXEvent_Tactical_Build_Complete>
-		<SFXEvent_Tactical_Build_Cancelled> RHD_Reinforcements_Cancelled  </SFXEvent_Tactical_Build_Cancelled>
-		<SFXEvent_Unit_Lost> RHD_Unit_Destroyed </SFXEvent_Unit_Lost>
+		<SFXEvent_Tactical_Build_Started> EHD_Reinforcements_En_Route </SFXEvent_Tactical_Build_Started>
+		<SFXEvent_Tactical_Build_Complete> EHD_Reinforcements_Available </SFXEvent_Tactical_Build_Complete>
+		<SFXEvent_Tactical_Build_Cancelled> EHD_Reinforcements_Cancelled  </SFXEvent_Tactical_Build_Cancelled>
+		<SFXEvent_Unit_Lost> EHD_Unit_Destroyed </SFXEvent_Unit_Lost>
 
-		<SFXEvent_Select>Unit_Select_T4B_Tank</SFXEvent_Select>
-		<SFXEvent_Move>Unit_Move_T4B_Tank</SFXEvent_Move>
-		<SFXEvent_Fleet_Move>Unit_Fleet_Move_T4B_Tank</SFXEvent_Fleet_Move>
-		<SFXEvent_Attack>Unit_Attack_T4B_Tank</SFXEvent_Attack>
-		<SFXEvent_Guard>Unit_Guard_T4B_Tank</SFXEvent_Guard>
+		<SFXEvent_Select>Unit_Select_Pulse_Cannon</SFXEvent_Select>
+		<SFXEvent_Move>Unit_Move_Pulse_Cannon</SFXEvent_Move>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Pulse_Cannon</SFXEvent_Fleet_Move>
+		<SFXEvent_Attack>Unit_Attack_Pulse_Cannon</SFXEvent_Attack>
+		<SFXEvent_Guard>Unit_Guard_Pulse_Cannon</SFXEvent_Guard>
+		<SFXEvent_Assist_Move> Unit_Assist_Move_Pulse_Cannon </SFXEvent_Assist_Move>
+		<SFXEvent_Assist_Attack> Unit_Assist_Attack_Pulse_Cannon</SFXEvent_Assist_Attack>
 		
 		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_LASER, null </SFXEvent_Hardpoint_Destroyed>
 
@@ -2306,14 +2555,22 @@
 		<Turret_Targets_Ground_Infantry> 2 </Turret_Targets_Ground_Infantry>
 		<Turret_Targets_Air_Vehicles> 9999 </Turret_Targets_Air_Vehicles>
 		<Turret_Targets_Anything_Else> 3 </Turret_Targets_Anything_Else>
-		<Vehicle_Thief_Inside_Clone>MMT</Vehicle_Thief_Inside_Clone>
+		<Vehicle_Thief_Inside_Clone>MMT_Captured</Vehicle_Thief_Inside_Clone>
 		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
 		<Collidable_By_Projectile_Dead>Yes</Collidable_By_Projectile_Dead>
-		<SFXEvent_Fire>Unit_Tank_T4B_Fire</SFXEvent_Fire>
-		<SFXEvent_Assist_Move> Unit_Assist_Move_T4B_Tank </SFXEvent_Assist_Move>
-		<SFXEvent_Assist_Attack> Unit_Assist_Attack_T4B_Tank</SFXEvent_Assist_Attack>
 		<Tread_Scroll_Rate>0.037</Tread_Scroll_Rate>
 		<Death_Clone>Damage_Normal, MMT_Death_Clone</Death_Clone>
+	</GroundVehicle>
+
+	<GroundVehicle Name="MMT_Captured">
+		<Variant_Of_Existing_Type>MMT</Variant_Of_Existing_Type>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>EJECT_VEHICLE_THIEF</Type>
+				<Recharge_Seconds>10</Recharge_Seconds> <!-- time that the user can't eject thief, kicks in right away -->
+			</Unit_Ability>
+		</Unit_Abilities_Data>
 	</GroundVehicle>
 
 	<Death_Clone Name="MMT_Death_Clone">
@@ -2336,7 +2593,7 @@
 	<GroundCompany Name="MMT_Brigade">
 
 		<Text_ID>TEXT_UNIT_MMT_COMPANY</Text_ID>
-		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_ARTILLERY</Encyclopedia_Unit_Class>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_HEAVY_TANK</Encyclopedia_Unit_Class>
 		<Encyclopedia_Text>
 		TEXT_TOOLTIP_MMT 
 		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
@@ -2372,7 +2629,6 @@
 		<Population_Value>1</Population_Value>
 
 		<Tech_Level>0</Tech_Level>
-		<Required_Timeline>0</Required_Timeline>
 		<Required_Ground_Base_Level>1</Required_Ground_Base_Level>
 		
 		<Affiliation>EmpireoftheHand</Affiliation>
@@ -2384,10 +2640,10 @@
 		<Max_Squad_Size> 1 </Max_Squad_Size>
 		<Company_Transport_Unit>Imperial_Landing_Craft_Heavy</Company_Transport_Unit>
 
-		<SFXEvent_Build_Started>RHD_Build_Vehicle</SFXEvent_Build_Started>
-		<SFXEvent_Build_Cancelled>RHD_Vehicle_Canceled</SFXEvent_Build_Cancelled>
-		<SFXEvent_Build_Complete>Unit_Complete_T2B_Tank</SFXEvent_Build_Complete>
-		<SFXEvent_Fleet_Move>Unit_Fleet_Move_T2B_Tank</SFXEvent_Fleet_Move>
+		<SFXEvent_Build_Started>EHD_Build_Vehicle</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Vehicle_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Complete_Pulse_Cannon</SFXEvent_Build_Complete>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Pulse_Cannon</SFXEvent_Fleet_Move>
 
 		<Required_Star_Base_Level>0</Required_Star_Base_Level>
 		<Required_Planets/>
@@ -2407,7 +2663,7 @@
 	<GroundVehicle Name="Plasma_Mortar">
 
 		<Text_ID>TEXT_UNIT_MORTAR</Text_ID>
-		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_ARTILLERY</Encyclopedia_Unit_Class>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_HEAVY_ARTILLERY</Encyclopedia_Unit_Class>
 		<Encyclopedia_Text>
 		TEXT_TOOLTIP_MORTAR
 		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
@@ -2456,8 +2712,6 @@
 		
 		<Influences_Capture_Point> False </Influences_Capture_Point>
 
-		<Override_Bounty_SP/>
-		<Override_Bounty_MP/>
 		<Tactical_Bribe_Cost>300</Tactical_Bribe_Cost>
 		<Score_Cost_Credits>333</Score_Cost_Credits>
 
@@ -2499,6 +2753,10 @@
 		<SFXEvent_Fleet_Move>Unit_Fleet_Move_SPMAT</SFXEvent_Fleet_Move>
 		<SFXEvent_Attack>Unit_Attack_SPMAT</SFXEvent_Attack>
 		<SFXEvent_Guard>Unit_Guard_SPMAT</SFXEvent_Guard>
+		<SFXEvent_Assist_Move> Unit_Assist_Move_SPMAT </SFXEvent_Assist_Move>
+		<SFXEvent_Assist_Attack> Unit_Assist_Attack_SPMAT </SFXEvent_Assist_Attack>
+		
+		<SFXEvent_Fire>Unit_SPMAT_Projectile_Fire</SFXEvent_Fire>
 
 		<SFXEvent_Engine_Idle_Loop></SFXEvent_Engine_Idle_Loop>
 		<SFXEvent_Engine_Moving_Loop></SFXEvent_Engine_Moving_Loop>
@@ -2584,20 +2842,15 @@
 		<Turret_Targets_Ground_Vehicles> 2 </Turret_Targets_Ground_Vehicles>
 		<Turret_Targets_Air_Vehicles> 9999 </Turret_Targets_Air_Vehicles>
 		<Turret_Targets_Anything_Else> 1 </Turret_Targets_Anything_Else>
-
-		<Targeting_Fire_Inaccuracy_Fixed_Radius> 40 </Targeting_Fire_Inaccuracy_Fixed_Radius>
-		<Projectile_Types>Proj_Ground_Mortar</Projectile_Types>
-		<Projectile_Fire_Recharge_Seconds>8.33</Projectile_Fire_Recharge_Seconds>
+		<Projectile_Types>Proj_Thermal_Artillery</Projectile_Types>
+		<Projectile_Fire_Recharge_Seconds>8.333</Projectile_Fire_Recharge_Seconds>
 		<Projectile_Fire_Pulse_Count>1</Projectile_Fire_Pulse_Count>
 		<Projectile_Fire_Pulse_Delay_Seconds>0.3</Projectile_Fire_Pulse_Delay_Seconds>
-		<Targeting_Fire_Inaccuracy> Infantry, 80.0 </Targeting_Fire_Inaccuracy>
-		<Targeting_Fire_Inaccuracy> Vehicle, 40.0 </Targeting_Fire_Inaccuracy>
+		<Targeting_Fire_Inaccuracy> Infantry, 180.0 </Targeting_Fire_Inaccuracy>
+		<Targeting_Fire_Inaccuracy> Vehicle, 15.0 </Targeting_Fire_Inaccuracy>
 		<Targeting_Fire_Inaccuracy> Air, 70.0 </Targeting_Fire_Inaccuracy>
 		<Targeting_Fire_Inaccuracy> Structure, 1.0 </Targeting_Fire_Inaccuracy>
-
-		<SFXEvent_Fire>Unit_SPMAT_Projectile_Fire</SFXEvent_Fire>
-		<SFXEvent_Assist_Move> Unit_Assist_Move_SPMAT </SFXEvent_Assist_Move>
-		<SFXEvent_Assist_Attack> Unit_Assist_Attack_SPMAT </SFXEvent_Assist_Attack>
+		
 		<Unit_Abilities_Data SubObjectList="Yes">
 			<!-- Primary ability -->
 			<Unit_Ability>
@@ -2610,7 +2863,7 @@
 	<GroundCompany Name="Mortar_Company">
 
 		<Text_ID>TEXT_UNIT_MORTAR</Text_ID>
-		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_ARTILLERY</Encyclopedia_Unit_Class>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_HEAVY_ARTILLERY</Encyclopedia_Unit_Class>
 		<Encyclopedia_Text>
 		TEXT_TOOLTIP_MORTAR
 		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
@@ -2645,7 +2898,6 @@
 		<Population_Value>1</Population_Value>
 
 		<Tech_Level>0</Tech_Level>
-		<Required_Timeline>0</Required_Timeline>
 		<Required_Ground_Base_Level>1</Required_Ground_Base_Level>
 		
 		<Affiliation>EmpireoftheHand</Affiliation>
@@ -2657,10 +2909,10 @@
 		<Max_Squad_Size> 1 </Max_Squad_Size>
 		<Company_Transport_Unit>Imperial_Landing_Craft_Artillery</Company_Transport_Unit>
 
-		<SFXEvent_Build_Started>UHD_Build_Vehicle</SFXEvent_Build_Started>
-		<SFXEvent_Build_Cancelled>UHD_Vehicle_Canceled</SFXEvent_Build_Cancelled>
-		<SFXEvent_Build_Complete>Unit_Complete_Canderous_Tank</SFXEvent_Build_Complete>
-		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Canderous_Tank</SFXEvent_Fleet_Move>
+		<SFXEvent_Build_Started>EHD_Build_Vehicle</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Vehicle_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Complete_SPMAT</SFXEvent_Build_Complete>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_SPMAT</SFXEvent_Fleet_Move>
 
 	<Required_Star_Base_Level>0</Required_Star_Base_Level>
 		<Required_Planets/>
@@ -2682,7 +2934,7 @@
 	<GroundVehicle Name="Gilzean">
 
 		<Text_ID>TEXT_UNIT_GILZEAN</Text_ID>
-		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_HEAVY_VEHICLE</Encyclopedia_Unit_Class>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_HEAVY_TANK</Encyclopedia_Unit_Class>
 		<Encyclopedia_Text>
 		TEXT_TOOLTIP_GILZEAN 
 		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
@@ -2731,8 +2983,6 @@
 		
 		<Influences_Capture_Point> False </Influences_Capture_Point>
 
-		<Override_Bounty_SP/>
-		<Override_Bounty_MP/>
 		<Tactical_Bribe_Cost>200</Tactical_Bribe_Cost>
 		<Score_Cost_Credits>200</Score_Cost_Credits>
 
@@ -2766,16 +3016,18 @@
 		<Land_Damage_Alternates>0, 1, 2</Land_Damage_Alternates>
 		<Land_Damage_SFX>null,SFX_Grenade_Detonation, SFX_Grenade_Detonation</Land_Damage_SFX>
 
-		<SFXEvent_Tactical_Build_Started> RHD_Reinforcements_En_Route </SFXEvent_Tactical_Build_Started>
-		<SFXEvent_Tactical_Build_Complete> RHD_Reinforcements_Available </SFXEvent_Tactical_Build_Complete>
-		<SFXEvent_Tactical_Build_Cancelled> RHD_Reinforcements_Cancelled  </SFXEvent_Tactical_Build_Cancelled>
-		<SFXEvent_Unit_Lost> RHD_Unit_Destroyed </SFXEvent_Unit_Lost>
+		<SFXEvent_Tactical_Build_Started> EHD_Reinforcements_En_Route </SFXEvent_Tactical_Build_Started>
+		<SFXEvent_Tactical_Build_Complete> EHD_Reinforcements_Available </SFXEvent_Tactical_Build_Complete>
+		<SFXEvent_Tactical_Build_Cancelled> EHD_Reinforcements_Cancelled  </SFXEvent_Tactical_Build_Cancelled>
+		<SFXEvent_Unit_Lost> EHD_Unit_Destroyed </SFXEvent_Unit_Lost>
 
-		<SFXEvent_Select>Unit_Select_T4B_Tank</SFXEvent_Select>
-		<SFXEvent_Move>Unit_Move_T4B_Tank</SFXEvent_Move>
-		<SFXEvent_Fleet_Move>Unit_Fleet_Move_T4B_Tank</SFXEvent_Fleet_Move>
-		<SFXEvent_Attack>Unit_Attack_T4B_Tank</SFXEvent_Attack>
-		<SFXEvent_Guard>Unit_Guard_T4B_Tank</SFXEvent_Guard>
+		<SFXEvent_Select>Unit_Select_2M_Tank</SFXEvent_Select>
+		<SFXEvent_Move>Unit_Move_2M_Tank</SFXEvent_Move>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_2M_Tank</SFXEvent_Fleet_Move>
+		<SFXEvent_Attack>Unit_Attack_2M_Tank</SFXEvent_Attack>
+		<SFXEvent_Guard>Unit_Guard_2M_Tank</SFXEvent_Guard>
+		<SFXEvent_Assist_Move> Unit_Assist_Move_T4B_Tank </SFXEvent_Assist_Move>
+		<SFXEvent_Assist_Attack> Unit_Assist_Attack_T4B_Tank</SFXEvent_Assist_Attack>
 		
 		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_LASER, null </SFXEvent_Hardpoint_Destroyed>
 
@@ -2849,18 +3101,26 @@
 		<Turret_Targets_Ground_Infantry> 2 </Turret_Targets_Ground_Infantry>
 		<Turret_Targets_Air_Vehicles> 3 </Turret_Targets_Air_Vehicles>
 		<Turret_Targets_Anything_Else> 4 </Turret_Targets_Anything_Else>
-		<Vehicle_Thief_Inside_Clone>Gilzean</Vehicle_Thief_Inside_Clone>
-		<SFXEvent_Fire>Unit_Tank_T4B_Fire</SFXEvent_Fire>
-		<SFXEvent_Assist_Move> Unit_Assist_Move_T4B_Tank </SFXEvent_Assist_Move>
-		<SFXEvent_Assist_Attack> Unit_Assist_Attack_T4B_Tank</SFXEvent_Assist_Attack>
+		<Vehicle_Thief_Inside_Clone>Gilzean_Captured</Vehicle_Thief_Inside_Clone>
 		<Tread_Scroll_Rate>0.037</Tread_Scroll_Rate>
 		<Death_Clone>Damage_Normal, Large_Explosion_Land</Death_Clone>
+	</GroundVehicle>
+
+	<GroundVehicle Name="Gilzean_Captured">
+		<Variant_Of_Existing_Type>Gilzean</Variant_Of_Existing_Type>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>EJECT_VEHICLE_THIEF</Type>
+				<Recharge_Seconds>10</Recharge_Seconds> <!-- time that the user can't eject thief, kicks in right away -->
+			</Unit_Ability>
+		</Unit_Abilities_Data>
 	</GroundVehicle>
 
 	<GroundCompany Name="Gilzean_Brigade">
 
 		<Text_ID>TEXT_UNIT_GILZEAN_COMPANY</Text_ID>
-		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_HEAVY_VEHICLE</Encyclopedia_Unit_Class>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_HEAVY_TANK</Encyclopedia_Unit_Class>
 		<Encyclopedia_Text>
 		TEXT_TOOLTIP_GILZEAN 
 		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
@@ -2895,7 +3155,6 @@
 		<Population_Value>1</Population_Value>
 
 		<Tech_Level>0</Tech_Level>
-		<Required_Timeline>0</Required_Timeline>
 		<Required_Ground_Base_Level>1</Required_Ground_Base_Level>
 		
 		<Affiliation>EmpireoftheHand</Affiliation>
@@ -2907,10 +3166,10 @@
 		<Max_Squad_Size> 1 </Max_Squad_Size>
 		<Company_Transport_Unit>Imperial_Landing_Craft_Tanks</Company_Transport_Unit>
 
-		<SFXEvent_Build_Started>RHD_Build_Vehicle</SFXEvent_Build_Started>
-		<SFXEvent_Build_Cancelled>RHD_Vehicle_Canceled</SFXEvent_Build_Cancelled>
-		<SFXEvent_Build_Complete>Unit_Complete_T2B_Tank</SFXEvent_Build_Complete>
-		<SFXEvent_Fleet_Move>Unit_Fleet_Move_T2B_Tank</SFXEvent_Fleet_Move>
+		<SFXEvent_Build_Started>EHD_Build_Vehicle</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Vehicle_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Complete_2M_Tank</SFXEvent_Build_Complete>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_2M_Tank</SFXEvent_Fleet_Move>
 
 		<Required_Star_Base_Level>0</Required_Star_Base_Level>
 		<Required_Planets/>

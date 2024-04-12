@@ -13,7 +13,8 @@ function Definitions()
 	unit_table = {
 	"MC75",
 	"STARHAWK_MK1",
-	"IMPELLOR"
+	"IMPELLOR",
+	"COMPELLOR"
 	}
 
 	Define_State("State_Init", State_Init);

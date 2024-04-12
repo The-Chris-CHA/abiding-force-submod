@@ -1,6 +1,12 @@
 return {
 	Ship_Crew_Requirement = 10,
 	Fighters = {
+		["KIMOGILA_SQUADRON_DOUBLE"] = {
+			HUTT_CARTELS = {Initial = 1, Reserve = 3}
+		},
+		["DUNELIZARD_FIGHTER_SQUADRON_DOUBLE"] = {
+			HUTT_CARTELS = {Initial = 1, Reserve = 4}
+		},
 		["ARC_170_SQUADRON"] = {
 			INDEPENDENT_FORCES = {Initial = 1, Reserve = 3}
 		},

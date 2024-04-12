@@ -39,74 +39,70 @@ return function(dsl)
         :when(policy:global_era(4))
         :with_effects(
             effect:eawx_set_tech_level(2)
-            :for_factions({"Rebel", "Empire", "Pentastar", "Eriadu_Authority", "Zsinj_Empire", "Greater_Maldrood", "EmpireoftheHand", "Corporate_Sector", "Hapes_Consortium"})
+            :for_factions({"Rebel", "Empire", "Pentastar", "Eriadu_Authority", "Zsinj_Empire", "Greater_Maldrood", "EmpireoftheHand", "Corporate_Sector", "Hapes_Consortium", "Hutt_Cartels"})
         ):end_()
     dsl.transition(setup)
         :to(era_five)
         :when(policy:global_era(5))
         :with_effects(
             effect:eawx_set_tech_level(2)
-            :for_factions({"Rebel", "Empire", "Pentastar", "Eriadu_Authority", "Zsinj_Empire", "Greater_Maldrood", "EmpireoftheHand", "Corporate_Sector", "Hapes_Consortium"})
+            :for_factions({"Rebel", "Empire", "Pentastar", "Eriadu_Authority", "Zsinj_Empire", "Greater_Maldrood", "EmpireoftheHand", "Corporate_Sector", "Hapes_Consortium", "Hutt_Cartels"})
         ):end_()
     dsl.transition(setup)
         :to(era_six)
         :when(policy:global_era(6))
         :with_effects(
             effect:eawx_set_tech_level(3)
-            :for_factions({"Rebel", "Empire", "Pentastar", "Eriadu_Authority", "Zsinj_Empire", "Greater_Maldrood", "EmpireoftheHand", "Corporate_Sector", "Hapes_Consortium"})
+            :for_factions({"Rebel", "Empire", "Pentastar", "Eriadu_Authority", "Zsinj_Empire", "Greater_Maldrood", "EmpireoftheHand", "Corporate_Sector", "Hapes_Consortium", "Hutt_Cartels"})
         ):end_()
     dsl.transition(setup)
         :to(era_seven)
         :when(policy:global_era(7))
         :with_effects(
             effect:eawx_set_tech_level(3)
-            :for_factions({"Rebel", "Empire", "Pentastar", "Eriadu_Authority", "Zsinj_Empire", "Greater_Maldrood", "EmpireoftheHand", "Corporate_Sector", "Hapes_Consortium"})
+            :for_factions({"Rebel", "Empire", "Pentastar", "Eriadu_Authority", "Zsinj_Empire", "Greater_Maldrood", "EmpireoftheHand", "Corporate_Sector", "Hapes_Consortium", "Hutt_Cartels"})
         ):end_()
 
 
-    -- 6 ABY
-
+    -- 4 ABY month 1 (Pestage start)
+	
+    -- 6 ABY month 1 (Isard start)
     dsl.transition(era_one)
         :to(era_two)
         :when(policy:timed(960))
         :end_()
    
-    -- Exiting Isard
-
+    -- 9 ABY month 1 (Thrawn start)
     dsl.transition(era_two)
         :to(era_three)
         :when(policy:timed(1440))
         :end_()
 
-    -- Exiting Thrawn
-   
+    -- 10 ABY month 1 (Palpatine start)
     dsl.transition(era_three)
         :to(era_four)
         :when(policy:timed(480))
         :with_effects(
             effect:eawx_set_tech_level(2)
-            :for_factions({"Rebel", "Empire", "Pentastar", "Eriadu_Authority", "Zsinj_Empire", "Greater_Maldrood", "EmpireoftheHand", "Corporate_Sector", "Hapes_Consortium"})
+            :for_factions({"Rebel", "Empire", "Pentastar", "Eriadu_Authority", "Zsinj_Empire", "Greater_Maldrood", "EmpireoftheHand", "Corporate_Sector", "Hapes_Consortium", "Hutt_Cartels"})
         ):end_()
 
-    -- Exiting Palpatine
-
+    --11 ABY month 1 (Jax start)
     dsl.transition(era_four)
         :to(era_five)
         :when(policy:timed(480))
         :end_()
 
-    -- Exiting Carnor
-
+    --11 ABY month 7 (Daala start)
     dsl.transition(era_five)
         :to(era_six)
         :when(policy:timed(240))
         :with_effects(
             effect:eawx_set_tech_level(3)
-            :for_factions({"Rebel", "Empire", "Pentastar", "Eriadu_Authority", "Zsinj_Empire", "Greater_Maldrood", "EmpireoftheHand", "Corporate_Sector", "Hapes_Consortium"})
+            :for_factions({"Rebel", "Empire", "Pentastar", "Eriadu_Authority", "Zsinj_Empire", "Greater_Maldrood", "EmpireoftheHand", "Corporate_Sector", "Hapes_Consortium", "Hutt_Cartels"})
         ):end_()
  
-    -- Exiting Daala
-
+    --12 ABY month 1 (Pellaeon start)
     dsl.transition(era_six)
         :to(era_seven)
         :when(policy:timed(240))

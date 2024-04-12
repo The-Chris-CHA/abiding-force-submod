@@ -7,6 +7,9 @@ return {
 		["MIYTIL_FIGHTER_SQUADRON_HALF"] = {
 			HAPES_CONSORTIUM = {Initial = 1, Reserve = 1}
 		},
+		["CLOAKSHAPE_NEW_SQUADRON"] = {
+			HUTT_CARTELS = {Initial = 1, Reserve = 1}
+		},
 		["REBEL_X-WING_SQUADRON_HALF"] = {
 			HOSTILE = {Initial = 1, Reserve = 1},
 			REBEL = {Initial = 1, Reserve = 1},

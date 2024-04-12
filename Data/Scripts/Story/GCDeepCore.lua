@@ -31,6 +31,7 @@ function Definitions()
 
     StoryModeEvents = {
         Determine_Faction_LUA = Find_Faction,
+        Delayed_Initialize = Initialize,
         Era_Selection = Era_Setup,
         Night_Hammer_Complete = Night_Hammer_Spawn,
         The_game_has_gone_too_long = Duo_spawn,
@@ -64,6 +65,15 @@ function Find_Faction(message)
         elseif p_maldrood.Is_Human() then
             Story_Event("ENABLE_BRANCH_TERADOC_FLAG")
         end
+    end
+end
+
+function Initialize(message)
+    if message == OnEnter then
+		crossplot:galactic()
+		crossplot:publish("INITIALIZE_AI", "empty")
+	else
+		crossplot:update()
     end
 end
 
@@ -121,7 +131,7 @@ function Maldrood_Spawns(early)
 		--Kosh in the core, Crimson Command out in Maldrood sector with Treutan
 		start_planet = FindPlanet("Hakassi")
 		spawn_list_hakassi = {
-			"Lancet_Kosh",
+			"Kosh_Lancet",
 			"Generic_Star_Destroyer",
 			"Generic_Procursator",
 			"Strike_Cruiser",
@@ -143,8 +153,8 @@ function Maldrood_Spawns(early)
 	else
 		start_planet = FindPlanet("Hakassi")
 		spawn_list_hakassi = {
-			"13X_Pellaeon",
-			"CrimsonSunrise_Star_Destroyer",
+			"Pellaeon_13X",
+			"Treuten_Crimson_Sunrise",
 			"Crimson_Victory",
 			"Crimson_Victory",
 			"Crimson_Victory",
@@ -172,7 +182,7 @@ function Other_Spawns(early)
 	if early then
 		start_planet = FindPlanet("Kalist")
 		spawn_list_kalist = {
-			"Whirlwind_Star_Destroyer",
+			"Harrsk_Whirlwind",
 			"Noils_Team",
 			"Ilthmars_Fist",
 			"Agamar_Meniscus",
@@ -195,7 +205,7 @@ function Other_Spawns(early)
 	else
 		start_planet = FindPlanet("Kalist")
 		spawn_list_kalist = {
-			"Shockwave_Star_Destroyer",
+			"Harrsk_Shockwave",
 			"Noils_Team",
 			"Generic_Tector",
 			"Lancer_Frigate",

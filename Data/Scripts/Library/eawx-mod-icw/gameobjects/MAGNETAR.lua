@@ -9,6 +9,9 @@ return {
 		["REBEL_X-WING_SQUADRON"] = {
 			REBEL = {Initial = 1, Reserve = 2}
 		},
+		["CLOAKSHAPE_NEW_SQUADRON"] = {
+			HUTT_CARTELS = {Initial = 1, Reserve = 2}
+		},
 		["TIE_FIGHTER_SQUADRON"] = {
 			IMPERIAL = {Initial = 1, Reserve = 2}
 		},
@@ -22,6 +25,9 @@ return {
 		},
 		["Y-WING_SQUADRON"] = {
 			REBEL = {Initial = 1, Reserve = 2}
+		},
+		["SCURRG_H6_SQUADRON"] = {
+			HUTT_CARTELS = {Initial = 1, Reserve = 2}
 		}
 	},
 	Scripts = {"multilayer", "fighter-spawn"}

@@ -1,13 +1,16 @@
 return {
 	Ship_Crew_Requirement = 10,
 	Fighters = {
-		["CLAWCRAFT_SQUADRON_HALF"] = {
+		["NSSIS_SQUADRON_HALF"] = {
 			EMPIREOFTHEHAND = {Initial = 1, Reserve = 2},
 			HOSTILE = {Initial = 1, Reserve = 2},
 			INDEPENDENT_FORCES = {Initial = 1, Reserve = 2}
 		},
 		["MIYTIL_FIGHTER_SQUADRON_HALF"] = {
 			HAPES_CONSORTIUM = {Initial = 1, Reserve = 2}
+		},
+		["DUNELIZARD_FIGHTER_SQUADRON"] = {
+			HUTT_CARTELS = {Initial = 1, Reserve = 2}
 		},
 		["REBEL_X-WING_SQUADRON_HALF"] = {
 			REBEL = {Initial = 1, Reserve = 2}

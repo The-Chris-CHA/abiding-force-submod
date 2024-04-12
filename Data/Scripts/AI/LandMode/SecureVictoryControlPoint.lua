@@ -51,11 +51,31 @@ function Definitions()
 		{
 			"MainForce"
 			,"Infantry = 1, 20"
+			,"-B2_RP_Team"
+			,"-Clone_Jumptrooper_One_Team"
+			,"-Clone_Jumptrooper_Two_Team"
+			,"-Mando_Commando_Team"
+			,"-Jumptrooper_Team"
 		},
 		{
-			"EscortForce"		
-			,"Vehicle | Air | LandHero = 1, 20"
+			"EscortForce"	
+			,"Vehicle | Air | LandHero = 0, 20"
 			,"EscortForce"
+			,"-Republic_AV7"
+			,"-HAG"
+			,"-CA_Artillery"
+			,"-MAL_Rocket_Vehicle"
+			,"-Plasma_Mortar"
+			,"-Hapan_Artillery"
+			,"-SPMAG_Walker"
+			,"-SPMAT_Walker"
+			,"-Imperial_Light_Artillery"
+			,"-Imperial_Heavy_Artillery"
+			,"-Imperial_Missile_Artillery"
+			,"-MPTL"
+			,"-Mando_Artillery_Platform"
+			,"-VX_Artillery_Droid"
+			,"-Sith_Krath_Artillery"
 		}
 	}
 
@@ -69,7 +89,7 @@ function MainForce_Thread()
 	
 	Set_Land_AI_Targeting_Priorities(MainForce)
 	-- move to contestables
-	BlockOnCommand(MainForce.Attack_Move(AITarget, MainForce.Get_Self_Threat_Max()))
+	BlockOnCommand(MainForce.Attack_Move(AITarget))
 	
 	MainForce.Set_As_Goal_System_Removable(false)
 					

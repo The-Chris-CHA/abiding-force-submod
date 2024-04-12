@@ -42,8 +42,7 @@ function Begin_GC(message)
         CONSTANTS = ModContentLoader.get("GameConstants")
         GameObjectLibrary = ModContentLoader.get("GameObjectLibrary")
         local plot = StoryUtil.GetPlayerAgnosticPlot()
-
-        local holocron_event = plot.Get_Event("Show_Debug_Display")
+        StoryUtil.ShowScreenText("TEXT_GUI_INITIALIZING", 10)
 
         local era = Find_Player("local").Get_Credits()/1000 + 1
    
@@ -54,28 +53,32 @@ function Begin_GC(message)
         GlobalValue.Set("REGIME_INDEX", era)
 
         local year_start = 4
+        local month_start = 1 -- Era 1
         if era == 2 then
             year_start = 6
         elseif era == 3 then
-            year_start = 8   
+            year_start = 9   
         elseif era == 4 then
             year_start = 10
         elseif era == 5 then
-            year_start = 12
+            year_start = 11
         elseif era == 6 then
-            year_start = 12
+            year_start = 11
+            month_start = 6
         elseif era == 7 then
-            year_start = 13
+            year_start = 12
         end
 
         GlobalValue.Set("PROGRESS_REGIME", false)
         
-        local holocron_sink = require("deepcore/log/sinks/holocron-window")
-                                :with_event(holocron_event)
+        --local holocron_event = plot.Get_Event("Show_Debug_Display")
+        
+        --local holocron_sink = require("deepcore/log/sinks/holocron-window")
+        --                        :with_event(holocron_event)
 
-        Logger = require("deepcore/log/logger")
-                :with_sink(holocron_sink)
-                :with_log_level(3)
+        --Logger = require("deepcore/log/logger")
+        --        :with_sink(holocron_sink)
+        --        :with_log_level(3)
 
         local plugin_list = ModContentLoader.get("InstalledPlugins")
         local context = {

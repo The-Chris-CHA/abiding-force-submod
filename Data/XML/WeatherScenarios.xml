@@ -340,7 +340,7 @@
 	</Weather_Scenario>
 
 	<Weather_Scenario name="Sandstorm_Constant" emitter_name="p_dust_storm_large.alo">
-		
+
 		<Phase name="SANDSTORM">
 			<Emitter_Intensity>1.0</Emitter_Intensity>
 			<Lightning_Intensity>0.0</Lightning_Intensity>
@@ -373,6 +373,57 @@
 			<Ease_Out_Duration>5</Ease_Out_Duration>
 		</Phase>		
 		
+	</Weather_Scenario>
+
+	<Weather_Scenario name="Thunderstorm_Lightning" emitter_name="p_rain_med00.alo">
+
+		<Phase name="RAIN">
+			<Emitter_Intensity>1.0</Emitter_Intensity>
+			<Lightning_Intensity>0.4</Lightning_Intensity>
+			<Duration>500</Duration>
+			<Ease_Out_Duration>5</Ease_Out_Duration>
+		</Phase>
+
+	</Weather_Scenario>
+
+	<Weather_Scenario name="Ash_Storm_Lightning" emitter_name="p_rain_of_ash.alo">
+
+		<Phase name="ASH">
+			<Emitter_Intensity>1.0</Emitter_Intensity>
+			<Lightning_Intensity>0.4</Lightning_Intensity>
+			<Duration>500</Duration>
+			<Ease_Out_Duration>5</Ease_Out_Duration>
+		</Phase>
+
+	</Weather_Scenario>
+
+	<Weather_Scenario name="Sand_Storm_Lightning" emitter_name="p_dust_storm_large.alo">
+
+		<Phase name="SANDSTORM">
+			<Emitter_Intensity>1.0</Emitter_Intensity>
+			<Lightning_Intensity>0.4</Lightning_Intensity>
+			<Duration>500</Duration>
+			<Ease_Out_Duration>5</Ease_Out_Duration>
+		</Phase>
+
+	</Weather_Scenario>
+
+	<Weather_Scenario name="Ash_Late_Activation" emitter_name="p_rain_of_ash.alo">
+
+		<Phase name="CLEAR">
+			<Emitter_Intensity>0.0</Emitter_Intensity>
+			<Lightning_Intensity>0.0</Lightning_Intensity>
+			<Duration>23</Duration>
+			<Ease_Out_Duration>5</Ease_Out_Duration>
+		</Phase>
+
+		<Phase name="ASH">
+			<Emitter_Intensity>0.5</Emitter_Intensity>
+			<Lightning_Intensity>0.0</Lightning_Intensity>
+			<Duration>500</Duration>
+			<Ease_Out_Duration>5</Ease_Out_Duration>
+		</Phase>		
+
 	</Weather_Scenario>
 
 </Weather_Scenarios>

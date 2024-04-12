@@ -96,7 +96,7 @@ function Boarding.boarding_prox_trigger(prox_obj, trigger_obj, self)
         return
     end
 
-    if trigger_obj.Is_Category("Boardable") then
+    if trigger_obj.Has_Property("Boardable") then
         TR_Cancel_Prox(Object, self.boarding_prox_trigger)
         self.boardingTarget = trigger_obj
         self:toggle_boarding_effects()

@@ -57,6 +57,7 @@ function Definitions()
 		,"Capital = 0, 3"
 		,"Frigate = 0, 3"
 		,"Corvette = 0, 3"
+		,"Gunship = 0, 2"
 		,"AntiBomber = 0, 1"
 		,"Fighter | Bomber = 0, 5"
 		,"Defense_Station_Level_One | Defense_Station_Level_Two | Defense_Station_Level_Three = 0, 3"

@@ -2,12 +2,7 @@ return {
 	Ship_Crew_Requirement = 20,
 	Fighters = {
 		["AGGRESSOR_ASSAULT_FIGHTER_SQUADRON_HALF"] = {
-			CORPORATE_SECTOR = {Initial = 1, Reserve = 1},
-			HAPES_CONSORTIUM = {Initial = 1, Reserve = 1},
-			HOSTILE = {Initial = 1, Reserve = 1},
-			IMPERIAL = {Initial = 1, Reserve = 1},
-			REBEL = {Initial = 1, Reserve = 1},
-			INDEPENDENT_FORCES = {Initial = 1, Reserve = 1}
+			DEFAULT = {Initial = 1, Reserve = 1}
 		},
 		["IRD_SQUADRON"] = {
 			CORPORATE_SECTOR = {Initial = 1, Reserve = 1}
@@ -23,7 +18,8 @@ return {
 			IMPERIAL = {Initial = 1, Reserve = 1}
 		},
 		["Z95_HEADHUNTER_SQUADRON"] = {
-			REBEL = {Initial = 1, Reserve = 1, TechLevel = LessThan(4)}
+			REBEL = {Initial = 1, Reserve = 1, TechLevel = LessThan(4)},
+			HUTT_CARTELS = {Initial = 1, Reserve = 1}
 		},
 		["DEFENDER_STARFIGHTER_SQUADRON"] = {
 			REBEL = {Initial = 1, Reserve = 1, TechLevel = GreaterOrEqualTo(4)}

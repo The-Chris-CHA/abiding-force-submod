@@ -9,7 +9,7 @@ return {
 		},
 		["A-WING_SQUADRON"] = {
 			HOSTILE = {Initial = 1, Reserve = 2},
-			REBEL = {Initial = 1, Reserve = 2, ResearchType = "~CoS_Shesh"},
+			REBEL = {Initial = 1, Reserve = 2, ResearchType = "~CoS_Shesh", HeroOverride = {{"TALLON_SILENT_WATER"}, {"A-WING_SQUADRON_DOUBLE"}}},
 			INDEPENDENT_FORCES = {Initial = 1, Reserve = 2},
 			WARLORDS = {Initial = 1, Reserve = 2}
 		},

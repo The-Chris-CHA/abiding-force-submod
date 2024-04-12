@@ -46,7 +46,7 @@ function Place_Informant(message)
 end
 
 function DeltaLoop()
-		local checkObject = Find_First_Object("Chimera")
+		local checkObject = Find_First_Object("Thrawn_Chimaera")
 		
 		local p_empire = Find_Player("Empire")
 
@@ -68,7 +68,7 @@ end
 function Trigger_Speech(message)
   if message == OnEnter then
   
-	local checkObject = Find_First_Object("Chimera")
+	local checkObject = Find_First_Object("Thrawn_Chimaera")
   
 	local p_empire = Find_Player("Empire")
 	

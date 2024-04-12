@@ -1,0 +1,78 @@
+<?xml version="1.0" ?>
+<!--**************************************************-->
+<!--************  Campaign: Reunification ************-->
+<!--**************************************************-->
+<Story>
+	<Event Name="Universal_Story_Start">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>0</Event_Param1>
+	</Event>
+
+	<Event Name="Reveal_All_Planets">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>REVEAL_ALL_PLANETS</Reward_Type>
+		<Prereq>Universal_Story_Start</Prereq>
+	</Event>
+
+	<Event Name="Delayed_Initialize">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>7</Event_Param1>
+	</Event>
+
+<!--***********************************************************-->
+<!--******************** UNIVERSAL EVENTS *********************-->
+<!--***********************************************************-->
+
+	<Event Name="Reunification_Stop_Monitoring_Gorgon_Death">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>STOP_MONITORING_GORGON</Event_Param2>
+		<Reward_Type>DISABLE_BRANCH</Reward_Type>
+		<Reward_Param1>Branch_Monitor_Gorgon_Death</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+	</Event>
+
+	<Event Name="Gorgon_Destroyed">
+		<Event_Type>STORY_TACTICAL_DESTROY</Event_Type>
+		<Event_Param1>Daala_Gorgon</Event_Param1>
+		<Event_Param3>1</Event_Param3>
+		<Branch>Branch_Monitor_Gorgon_Death</Branch>
+	</Event>
+
+	<Event Name="Trigger_Gorgon_Destroyed">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Prereq>Gorgon_Destroyed</Prereq>
+	</Event>
+
+	<Event Name="Reunification_Timer">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>800</Event_Param1>
+	</Event>
+
+	<Event Name="Trigger_Reunification_Timer">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Prereq>Reunification_Timer</Prereq>
+	</Event>
+
+	<Event Name="Reunification_Timer_Long">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>1200</Event_Param1>
+	</Event>
+
+	<Event Name="Trigger_Reunification_Timer_Long">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Prereq>Reunification_Timer_Long</Prereq>
+	</Event>
+
+	<Event Name="Lore_Holocron_Tsoss_Conference_Timer">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>LORE_TSOSS_CONFERENCE</Event_Param2>
+	</Event>
+	
+	<Event Name="Lore_Holocron_Tsoss_Conference">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>15</Event_Param1>
+		<Prereq>Lore_Holocron_Tsoss_Conference_Timer</Prereq>
+		<Story_Dialog>Dialog_Lore_Events</Story_Dialog>
+		<Story_Chapter>3</Story_Chapter>
+	</Event>
+</Story>

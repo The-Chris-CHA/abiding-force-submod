@@ -2,7 +2,7 @@ return {
 	Ship_Crew_Requirement = 35,
 	Fighters = {
 		["IRDA_SQUADRON_DOUBLE"] = {
-			CORPORATE_SECTOR = {Initial = 1, Reserve = 2},
+			CORPORATE_SECTOR = {Initial = 1, Reserve = 2, HeroOverride = {{"KRIN_INVINCIBLE"}, {"SHIELDED_IRDA_SQUADRON_DOUBLE"}}},
 			HOSTILE = {Initial = 1, Reserve = 2},
 			INDEPENDENT_FORCES = {Initial = 1, Reserve = 2}
 		},
@@ -28,7 +28,8 @@ return {
 			CORPORATE_SECTOR = {Initial = 1, Reserve = 4},
 			HAPES_CONSORTIUM = {Initial = 1, Reserve = 4},
 			HOSTILE = {Initial = 1, Reserve = 4},
-			INDEPENDENT_FORCES = {Initial = 1, Reserve = 4}
+			INDEPENDENT_FORCES = {Initial = 1, Reserve = 4},
+			HUTT_CARTELS = {Initial = 1, Reserve = 4}
 		},
 		["2_WARPOD_SQUADRON_DOUBLE"] = {
 			CORPORATE_SECTOR = {Initial = 1, Reserve = 1},
@@ -37,6 +38,9 @@ return {
 		},
 		["MIYTIL_BOMBER_SQUADRON_DOUBLE"] = {
 			HAPES_CONSORTIUM = {Initial = 1, Reserve = 1}
+		},
+		["BTLS1_Y-WING_SQUADRON"] = {
+			HUTT_CARTELS = {Initial = 1, Reserve = 1}
 		},
 		["TIE_BOMBER_SQUADRON_DOUBLE"] = {
 			IMPERIAL = {Initial = 1, Reserve = 1}

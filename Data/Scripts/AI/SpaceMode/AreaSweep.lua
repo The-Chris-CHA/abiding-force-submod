@@ -54,7 +54,7 @@ function Definitions()
 	-- First Task Force
 	{
 		"MainForce"
-		,"Fighter | Corvette = 100%"
+		,"Fighter | Gunship | Corvette = 100%"
 	}
 	}
 

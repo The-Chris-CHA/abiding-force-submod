@@ -112,7 +112,7 @@ function SubEra_Change(message)
             start_planet = StoryUtil.FindFriendlyPlanet(p_empire)
         end
 
-        spawn_list_isard = {"Lusankya", "Implacable_Star_Destroyer"}
+        spawn_list_isard = {"Isard_Lusankya", "Trigit_Implacable"}
         IsardSpawn = SpawnList(spawn_list_isard, start_planet, p_empire, true, false)
 
         checkPestage = Find_First_Object("Sate_Pestage")
@@ -120,14 +120,14 @@ function SubEra_Change(message)
             checkPestage.Despawn()
         end
 
-        checkHarrsk = Find_First_Object("Whirlwind_Star_Destroyer")
+        checkHarrsk = Find_First_Object("Harrsk_Whirlwind")
         if TestValid(checkHarrsk) then
             checkHarrsk.Despawn()
         end
 
         ProjectAmbition = Find_First_Object("Project_Ambition_Dummy")
         if TestValid(ProjectAmbition) then
-            spawn_list_ambition = {"Makati_Steadfast", "Takel_MagicDragon", "Corrupter_Star_Destroyer"}
+            spawn_list_ambition = {"Makati_Steadfast", "Takel_MagicDragon", "Convarion_Corrupter"}
             AmbitionRewards = SpawnList(spawn_list_ambition, start_planet, p_empire, true, false)
             ProjectAmbition.Despawn()
         end
@@ -138,7 +138,7 @@ function SubEra_Change(message)
         if start_planet.Get_Owner() == p_empire then
             ChangePlanetOwnerAndRetreat(start_planet, p_harrsk)
 
-            spawn_list = {"Whirlwind_Star_Destroyer"}
+            spawn_list = {"Harrsk_Whirlwind"}
             HarrskForces = SpawnList(spawn_list, start_planet, p_harrsk, false, false)
         end
 
@@ -162,7 +162,7 @@ function Pentastar_Talks(message)
             if p_pentastar.Is_Human() then
                 Story_Event("KAINE_JOINS_SPEECH")
             end
-            local spawn_list_Reaper = {"Ardus_Kaine_Team", "Gregor_Team", "Dekeet_Intractable", "Dynamic_Besk", "Otro_Enforcer"}
+            local spawn_list_Reaper = {"Ardus_Kaine_Team", "Gregor_Raquoran_Team", "Dekeet_Intractable", "Dynamic_Besk", "Otro_Enforcer"}
             local ReaperSpawn = SpawnList(spawn_list_Reaper, start_planet, p_pentastar, true, false)
         end
     elseif message == OnUpdate then

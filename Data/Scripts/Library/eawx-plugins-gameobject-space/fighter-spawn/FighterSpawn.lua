@@ -1,5 +1,4 @@
 require("deepcore/std/class")
-require("StandardFighterLibrary")
 
 ---@class FighterSpawn
 FighterSpawn = class()
@@ -24,7 +23,7 @@ function FighterSpawn:new(unit_entry)
     self.restoreTable = {}
 
     ---@private
-    self.spawned_fighers = self:get_initial_fighters(self.fighter_data) or {}
+    self.spawned_fighers = self:get_initial_fighters(self.fighter_data, self.original_owner) or {}
 
     ---@private
     self.fighters_docking = false
@@ -154,8 +153,8 @@ function FighterSpawn:check_fighters()
 end
 
 ---@private
-function FighterSpawn:get_initial_fighters(fighter_data)
-    local initial_fighters = {}
+function FighterSpawn:get_initial_fighters(fighter_data, original_owner)
+	local initial_fighters = {}
 	local heroes = GlobalValue.Get("HERO_FIGHTERS")
 	local hosts = GlobalValue.Get("HERO_FIGHTER_HOSTS")
 	if heroes ~= nil then
@@ -165,30 +164,61 @@ function FighterSpawn:get_initial_fighters(fighter_data)
 			end
 		end
 	end
-		
-    for type_string, tab in pairs(fighter_data) do
-        local entry = self:get_fighter_entry(tab)
-        if entry then
+
+	if self.unit_entry.Flags then
+		if self.unit_entry.Flags.SHIPYARD then
+			local regionals = require("RegionalFighterLibrary")
+			for index, entry in pairs(regionals) do
+				fighter_data[index] = entry
+			end
+		end
+	end
+
+	for type_string, tab in pairs(fighter_data) do
+		local entry = self:get_fighter_entry(tab)
+		if entry then
 			local type_string_new = type_string
+			if entry.Random then
+				local RandomList = require(entry.Random)
+				local year = GlobalValue.Get("GALACTIC_YEAR")
+				if year == nil then
+					year = 0.0
+				end
+				local choice = nil
+				while choice == nil do
+					choice = RandomList[GameRandom(1, table.getn(RandomList))]
+					local start = choice["StartYear"]
+					local last = choice["LastYear"]
+					if not ((start == nil or year >= start) and (last == nil or year <= last)) then
+						choice = nil
+					end
+				end
+				type_string_new = choice[1]
+				if entry.Suffix then
+					type_string_new = type_string_new .. entry.Suffix
+				end
+			end
+			--Do hero override after random so it can win if both are defined
 			if entry.HeroOverride then
 				for i, hero in pairs(entry.HeroOverride[1]) do
 					local checkHero = Find_First_Object(hero)
 					if TestValid(checkHero) then
-						type_string_new = entry.HeroOverride[2][i]
-						break
+						if checkHero.Get_Owner() == original_owner then
+							type_string_new = entry.HeroOverride[2][i]
+							break
+						end
 					end
 				end
 			end
-			local type_string_new = self:evaluate_standard_fighters(type_string_new)
-            local squadronType = Find_Object_Type(type_string_new)
-            entry.Reserve = entry.Reserve + entry.Initial
-            for i = 1, entry.Initial do
-                table.insert(initial_fighters, {Squadron = nil, ObjectType = squadronType, TypeString = type_string_new, RefString = type_string})
-            end
-        end
-    end
+			local squadronType = Find_Object_Type(type_string_new)
+			entry.Reserve = entry.Reserve + entry.Initial
+			for i = 1, entry.Initial do
+				table.insert(initial_fighters, {Squadron = nil, ObjectType = squadronType, TypeString = type_string_new, RefString = type_string})
+			end
+		end
+	end
 
-    return initial_fighters
+	return initial_fighters
 end
 
 ---@private
@@ -222,7 +252,58 @@ function FighterSpawn:get_fighter_entry(tab)
 		if techIsEqual then
 			techIsEqual = (fighter_tab.ResearchType == nil) or self:evaluate_research(fighter_tab.ResearchType)
 			if techIsEqual then
-				return fighter_tab
+				local okToSpawn = false
+				if fighter_tab.Region == nil then
+					okToSpawn = true
+				else
+						
+					local regionTable = {
+						[1] = "SIENAR",
+						[2] = "KDY",
+						[3] = "KOENSAYR",
+						[4] = "INCOM",
+						[5] = "CORELLIA",
+						[6] = "SULLUST",
+						[7] = "TRANSGALMEG",
+						[8] = "YEVETHA",			
+						[9] = "HAPES",
+						[10] = "ZSINJ",
+						[11] = "MANDALORE",
+						[12] = "UTAPAU",
+						[13] = "ROCHE",
+						[14] = "TWILEK",
+						[15] = "CSA",
+						[16] = "GEONOSIS",
+						[17] = "XICHAR",
+						[18] = "NABOO",
+						[19] = "COLICOID",
+						[20] = "CYGNUS",
+						[21] = "TRILON",
+						[22] = "HOERSCHKESSEL",
+						[23] = "MAW",
+						[24] = "BAKURA",
+					}
+					local region = nil
+					repeat    
+					-- The AI may not yet be initialized
+					Sleep(1)
+					region = Evaluate_In_Galactic_Context("Regional_Fighter_Planets", self.original_owner)
+					until (region ~= nil)
+					
+					if fighter_tab.Region == regionTable[region] then
+						if fighter_tab.Influence == nil then
+							okToSpawn = true
+						else
+							local influenceVal = Evaluate_In_Galactic_Context("Planet_Influence_Value", self.original_owner)
+							if fighter_tab.Influence:evaluate(influenceVal) then
+								okToSpawn = true
+							end
+						end
+					end
+				end
+				if okToSpawn then
+					return fighter_tab
+				end
 			end
 		end
 	end
@@ -328,43 +409,6 @@ function FighterSpawn:evaluate_research(rtable)
 		end
 	end
 	return true
-end
-
-function FighterSpawn:evaluate_standard_fighters(fighterType)
-	local containCheck = string.find(fighterType, "STANDARD_")
-	if containCheck ~= nil then
-		local region
-		
-		repeat    
-		-- The AI may not yet be initialized
-		Sleep(1)
-		region = Evaluate_In_Galactic_Context("Regional_Fighter_Planets", self.original_owner)
-		until (region ~= nil)
-		
-		local influence = Evaluate_In_Galactic_Context("Planet_Influence_Value", self.original_owner)
-	
-		local suffix = ""
-		local squadronName = fighterType
-		containCheck = string.find(squadronName, "_HALF")
-		if containCheck ~= nil then
-			suffix = "_HALF"
-			squadronName = string.gsub(squadronName, suffix, "")
-		end
-		containCheck = string.find(squadronName, "_DOUBLE")
-		if containCheck ~= nil then
-			suffix = "_DOUBLE"
-			squadronName = string.gsub(squadronName, suffix, "")
-		end
-		containCheck = string.find(squadronName, "_TRIPLE")
-		if containCheck ~= nil then
-			suffix = "_TRIPLE"
-			squadronName = string.gsub(squadronName, suffix, "")
-		end
-		
-		squadronName = Get_Standard_Entry(squadronName, self.original_owner.Get_Faction_Name(), GlobalValue.Get("CURRENT_ERA"), region, influence)
-		return squadronName .. suffix
-	end
-	return fighterType
 end
 
 return FighterSpawn

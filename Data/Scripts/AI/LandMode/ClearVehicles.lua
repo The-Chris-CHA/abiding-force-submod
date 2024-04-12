@@ -53,6 +53,7 @@ function Definitions()
 	{
 		"MainForce"					
 		,"DenyHeroAttach"
+		,"MinimumTotalForce = 400"
 		,"Infantry = 0,5"
 		,"Vehicle | Air = 1, 20"
 	}

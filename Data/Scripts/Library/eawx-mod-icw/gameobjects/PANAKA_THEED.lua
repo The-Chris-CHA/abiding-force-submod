@@ -3,7 +3,7 @@ return {
 		["TIE_FIGHTER_SQUADRON"] = {
 			DEFAULT = {Initial = 1, Reserve = 2}
 		},
-		["N1_SQUADRON"] = {
+		["G1_SQUADRON"] = {
 			DEFAULT = {Initial = 1, Reserve = 2}
 		},
 		["SKIPRAY_SQUADRON_HALF"] = {

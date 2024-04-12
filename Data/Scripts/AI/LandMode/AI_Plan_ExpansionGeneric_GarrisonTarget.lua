@@ -70,7 +70,7 @@ function MainForce_Thread()
 	MainForce.Activate_Ability("SPREAD_OUT", false)	
 	
 	Set_Land_AI_Targeting_Priorities(MainForce)
-	BlockOnCommand(MainForce.Attack_Move(Target.Get_Position(), MainForce.Get_Self_Threat_Max()))
+	BlockOnCommand(MainForce.Attack_Move(Target.Get_Position()))
 		
 	Sleep(5)
 

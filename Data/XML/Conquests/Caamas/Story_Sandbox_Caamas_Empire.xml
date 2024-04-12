@@ -1,0 +1,206 @@
+<?xml version="1.0" ?>
+<!--********************************************-->
+<!--******  Campaign: Caamas Crisis  ***********-->
+<!--********************************************-->
+<Story>
+	<Event Name="Universal_Story_Start">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>0</Event_Param1>
+	</Event>
+
+	<Event Name="Trigger_IR_Player_Checker">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Prereq>Universal_Story_Start</Prereq>
+	</Event>
+
+	<Event Name="Trigger_IR_Story_Start">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>IR_STORY_START</Event_Param2>
+	</Event>
+	
+	<!--************************************-->
+	<!--*********** Story Handler **********-->
+	<!--************************************-->
+	
+	<Event Name="Spawn_Pellaeon">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Pellaeon_Grand_Chimaera</Reward_Param1>
+		<Reward_Param2>Yaga_Minor</Reward_Param2>
+		<Prereq>Universal_Story_Start</Prereq>
+	</Event>
+
+	<Event Name="Spawn_Vilim_Disra">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Vilim_Disra_Team</Reward_Param1>
+		<Reward_Param2>Bastion</Reward_Param2>
+		<Prereq>Universal_Story_Start</Prereq>
+	</Event>
+
+	<Event Name="Spawn_Grodin_Tierce">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Grodin_Tierce_Team</Reward_Param1>
+		<Reward_Param2>Borosk</Reward_Param2>
+		<Prereq>Universal_Story_Start</Prereq>
+	</Event>
+	
+	<Event Name="Spawn_Navett">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Navett_Team</Reward_Param1>
+		<Reward_Param2>Entralla</Reward_Param2>
+		<Prereq>Universal_Story_Start</Prereq>
+	</Event>
+
+	<Event Name="Spawn_Meizh_Vermel">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Ascian</Reward_Param1>
+		<Reward_Param2>Borosk</Reward_Param2>
+		<Prereq>Universal_Story_Start</Prereq>
+	</Event>
+	
+	<Event Name="Spawn_Hestiv">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Hestiv_Team</Reward_Param1>
+		<Reward_Param2>Yaga_Minor</Reward_Param2>
+		<Prereq>Universal_Story_Start</Prereq>
+	</Event>
+	
+	<Event Name="Spawn_Dorja">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Dorja_Relentless</Reward_Param1>
+		<Reward_Param2>Prefsbelt</Reward_Param2>
+		<Prereq>Universal_Story_Start</Prereq>
+	</Event>
+	
+	<!--************************************-->
+	<!--*********** Tech Handler ***********-->
+	<!--************************************-->
+
+	<!--************************************-->
+	<!--*************** Act I **************-->
+	<!--************************************-->
+	
+	<Event Name="IR_Caamas_Crisis_Speech_01">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>0.5</Event_Param1>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_CONQUEST_CAAMAS_IR_INTRO</Reward_Param1>
+		<Reward_Param2>15</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6 />
+		<Reward_Param7 />
+		<Reward_Param8 />
+		<Reward_Param9>Pellaeon_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+		<Prereq>Trigger_IR_Story_Start</Prereq>
+	</Event>
+	
+	<Event Name="IR_Caamas_Crisis_Speech_Act_I_Dialog">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>15</Event_Param1>
+		<Prereq>IR_Caamas_Crisis_Speech_01</Prereq>
+		<Story_Dialog>Dialog_Caamas_Empire</Story_Dialog>
+		<Story_Chapter>1</Story_Chapter>
+		<Story_Tag>Caamas_Crisis_IR_Act_1</Story_Tag>
+	</Event>
+
+	<!--************************************-->
+	<!--*************** Act II *************-->
+	<!--************************************-->
+
+	<Event Name="IR_Caamas_Crisis_Speech_02">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>THRAWN_RETURNS</Event_Param2>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_CONQUEST_CAAMAS_THRAWN_RETURNS</Reward_Param1>
+		<Reward_Param2>15.0</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6 />
+		<Reward_Param7 />
+		<Reward_Param8 />
+		<Reward_Param9>Thrawn_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+	</Event>
+
+	<Event Name="IR_Caamas_Crisis_Speech_03A">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>IR_CLONE_THRAWN</Event_Param2>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_CONQUEST_CAAMAS_RETURN_PELLAEON_DOUBT</Reward_Param1>
+		<Reward_Param2>15.0</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6 />
+		<Reward_Param7 />
+		<Reward_Param8 />
+		<Reward_Param9>Pellaeon_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+	</Event>
+
+	<Event Name="IR_Caamas_Crisis_Speech_03B">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>IR_IMPOSTER_THRAWN</Event_Param2>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_CONQUEST_CAAMAS_RETURN_PELLAEON_DEFECT</Reward_Param1>
+		<Reward_Param2>15.0</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6 />
+		<Reward_Param7 />
+		<Reward_Param8 />
+		<Reward_Param9>Pellaeon_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+	</Event>
+
+	<!--************************************-->
+	<!--*************** Act III ************-->
+	<!--************************************-->
+
+	<Event Name="IR_Caamas_Crisis_Speech_04">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>IR_DOCUMENT_FOUND</Event_Param2>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_CONQUEST_CAAMAS_DOCUMENT_FOUND_IR</Reward_Param1>
+		<Reward_Param2>15.0</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6 />
+		<Reward_Param7 />
+		<Reward_Param8 />
+		<Reward_Param9>Pellaeon_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+	</Event>
+
+	<!--************************************-->
+	<!--*************** Act IV *************-->
+	<!--************************************-->
+
+	<Event Name="IR_Caamas_Crisis_Speech_Pellaeon_Killed">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>IR_PELLAEON_KILLED</Event_Param2>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_CONQUEST_CAAMAS_PELLAEON_KILLED_IR</Reward_Param1>
+		<Reward_Param2>15.0</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6 />
+		<Reward_Param7 />
+		<Reward_Param8 />
+		<Reward_Param9>Imperial_Naval_Officer_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+	</Event>
+</Story>

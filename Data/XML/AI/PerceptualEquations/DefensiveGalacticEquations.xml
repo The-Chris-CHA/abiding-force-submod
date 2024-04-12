@@ -30,7 +30,7 @@
 		(Variable_Target.TimeSinceSpaceConflict > Function_Blockade_Wait_Time.Evaluate)
 	</Needs_Blockade_Lifted>
 
-	
+
 	<Blockade_Wait_Time>
 		Variable_Self.IsDifficulty{Parameter_Difficulty_Level_Type = DifficultyLevelType[Easy]}
 		* 40.0
@@ -53,7 +53,7 @@
 		+ 
 		Variable_Target.Hints.PriorityTarget
 	</DefensiveValue>
-	
+
 
 	<Defense_Level>
 		Variable_Target.StarbaseLevelUnnormalized
@@ -75,7 +75,7 @@
 		+ Variable_Target.HasStructure {Parameter_Type = "Generic_Planetary_Shield"}
 	</Defense_Level>
 
-	
+
 	<Can_Park_Ground_Unit>
 		(Variable_Target.EnemyForce.HasSpaceForce == 0.0) 
 		*
@@ -83,8 +83,8 @@
 		*
 		Variable_Target.IsSurfaceAccessible
 	</Can_Park_Ground_Unit>
-	
-	
+
+
 	<Low_Ground_Defense_Score>
 		(1.0 - Variable_Target.FriendlyForce.GroundTotalNBTD)
 		*
@@ -93,7 +93,7 @@
 		Variable_Target.FriendlyForce.GroundTotal{Parameter_Category = GameObjectCategoryType[LandHero]}
 	</Low_Ground_Defense_Score>
 
-	
+
 	<Low_Space_Defense_Score>
 		(1.0 - Variable_Target.FriendlyForce.SpaceTotalNBTD)
 		*
@@ -102,12 +102,12 @@
 		Function_Self_Present.Evaluate
 	</Low_Space_Defense_Score>
 
-	
+
 	<Recent_Conversion>
 		(1.0 - (Variable_Target.TimeSinceConversion > 120.0)) * (120.0 - Variable_Target.TimeSinceConversion) / 120.0
 	</Recent_Conversion>
-	
-	
+
+
 	<Ground_Priority_Defense_Score>
 		(
 			Variable_Target.Hints.Chokepoint
@@ -134,7 +134,7 @@
 		*
 		Function_Can_Park_Ground_Unit.Evaluate
 	</Ground_Priority_Defense_Score>
-	
+
 	<Ground_Priority_Defense_Score_Hero>
 		(
 			Variable_Target.Hints.Chokepoint
@@ -159,7 +159,7 @@
 		Function_Can_Park_Ground_Unit.Evaluate
 	</Ground_Priority_Defense_Score_Hero>
 
-	
+
 	<Space_Priority_Defense_Score>
 		(Variable_Target.Hints.Chokepoint
 		+
@@ -183,7 +183,7 @@
 		*
 		Function_Self_Present.Evaluate
 	</Space_Priority_Defense_Score>
-	
+
 	<Space_Priority_Defense_Score_Hero>
 		(Variable_Target.Hints.Chokepoint
 		+
@@ -201,8 +201,8 @@
 		*
 		Function_Self_Present.Evaluate
 	</Space_Priority_Defense_Score_Hero>
-	
-	
+
+
 	<CIS_Ground_Priority_Defense_Score>
 		(
 			Variable_Target.Hints.Chokepoint
@@ -233,7 +233,7 @@
 		Function_Can_Park_Ground_Unit.Evaluate
 	</CIS_Ground_Priority_Defense_Score>
 
-	
+
 	<CIS_Space_Priority_Defense_Score>
 		(Variable_Target.Hints.Chokepoint
 		+
@@ -256,7 +256,7 @@
 		Function_Self_Present.Evaluate
 	</CIS_Space_Priority_Defense_Score>
 
-	
+
 	<Ground_Staging_Planet>
 		Variable_Target.StarbaseLevelUnnormalized
 		*
@@ -264,37 +264,37 @@
 		*
 		Function_Friendly_Space_Unit_Raw_Total.Evaluate
 	</Ground_Staging_Planet>
-	
-	
+
+
 	<Friendly_Space_Unit_Raw_Total>
 		Variable_Target.FriendlyForce.SpaceTotalUnnormalized
 	</Friendly_Space_Unit_Raw_Total>
 
-	
+
 	<Friendly_Global_Space_Unit_Raw_Total>
 		Variable_Self.SpaceTotalUnnormalized
 	</Friendly_Global_Space_Unit_Raw_Total>
 
-	
+
 	<Friendly_Land_Unit_Raw_Total>
 		Variable_Target.FriendlyForce.GroundTotalUnnormalized
 	</Friendly_Land_Unit_Raw_Total>
 
-	
+
 	<Friendly_Global_Land_Unit_Raw_Total>
 		Variable_Self.GroundTotalUnnormalized
 	</Friendly_Global_Land_Unit_Raw_Total>
-	
-	
+
+
 	<Enemy_Global_Space_Unit_Raw_Total>
 		Game.EnemyForce.SpaceTotalUnnormalized
 	</Enemy_Global_Space_Unit_Raw_Total>
 
-	
+
 	<Enemy_Global_Land_Unit_Raw_Total>
 		Game.EnemyForce.GroundTotalUnnormalized
 	</Enemy_Global_Land_Unit_Raw_Total>
-	
+
 
 	<Needs_Defensive_Fleet>
 		(5000 > Function_Friendly_Space_Unit_Raw_Total.Evaluate) 
@@ -326,7 +326,7 @@
 		*
 		(0 # 1)
 	</Needs_Defensive_Fleet>
-	
+
 	<Keep_Defensive_Fleet>
 		(5000 > Function_Friendly_Space_Unit_Raw_Total.Evaluate) 
 		*
@@ -334,8 +334,8 @@
 		*
 		(Variable_Target.EnemyForce.HasSpaceForce == 0.0) 
 	</Keep_Defensive_Fleet>
-	
-	
+
+
 	<Major_Defensive_World>
 		50.0
 		*
@@ -343,5 +343,5 @@
 		*
 		(10000 > Function_Friendly_Space_Unit_Raw_Total.Evaluate) 
 	</Major_Defensive_World>
-	
+
 </Equations>

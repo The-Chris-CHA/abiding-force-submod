@@ -51,8 +51,7 @@ function Definitions()
 		"ReserveForce"
 		,"DenyHeroAttach"
 		,"MinimumTotalForce = 5000"
-		,"Corvette = 20%"
-		,"Frigate|Capital = 80%"
+		,"Corvette|Frigate|Capital = 100%"
 	}
 	}
 end

@@ -1,7 +1,7 @@
 <?xml version="1.0" ?>
 <SecondaryStructures>
 
-	<SecondaryStructure Name="Secondary_Barracks_Template">
+	<Template_Ground_Structure Name="Secondary_Barracks_Template">
 		<Text_ID>TEXT_GROUND_MERCENARY_OUTFITTER</Text_ID>
 		<Encyclopedia_Text>
 		TEXT_ENCYCLOPEDIA_SECONDARY_BARRACKS_MERC 
@@ -71,7 +71,7 @@
 		
 		<Lua_Script>SecondaryHeavyFactory</Lua_Script>
 		<Death_Clone_Is_Obstacle>True</Death_Clone_Is_Obstacle>
-	</SecondaryStructure>
+	</Template_Ground_Structure>
 
 	<!-- Mercenary Outfitter variants provide a platoon of their type when captured -->
 	<!-- Corporate Security also included here since they often get rented out as mercs -->
@@ -127,7 +127,87 @@
 		<Affiliation>Neutral, Rebel, Empire, Zsinj_Empire, EmpireoftheHand, Pentastar, Hapes_Consortium, Greater_Maldrood, Eriadu_Authority, Hutt_Cartels, Corporate_Sector, Warlords, Chiss,  SsiRuuvi_Imperium</Affiliation>
 		<Starting_Spawned_Units_Tech_0>Security_Trooper_Team, 1</Starting_Spawned_Units_Tech_0>
 	</SecondaryStructure>
+	
+	<!-- Merc Assault SD-9 Conversion -->
+	<SecondaryStructure Name="Secondary_Barracks_SD9">
+		<Variant_Of_Existing_Type>Secondary_Barracks_Template</Variant_Of_Existing_Type>
+		<Encyclopedia_Text>
+		TEXT_ENCYCLOPEDIA_SECONDARY_BARRACKS_MERC 
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_TOOLTIP_SECONDARY_BARRACKS_SD9
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		</Encyclopedia_Text>
+		<Affiliation>Neutral, Rebel, Empire, Zsinj_Empire, EmpireoftheHand, Pentastar, Hapes_Consortium, Greater_Maldrood, Eriadu_Authority, Hutt_Cartels, Corporate_Sector, Warlords, Chiss,  SsiRuuvi_Imperium</Affiliation>
+		<Starting_Spawned_Units_Tech_0>SD_9_Assault_Battle_Droid, 5</Starting_Spawned_Units_Tech_0>
+	</SecondaryStructure>
 
+	<SecondaryStructure Name="Secondary_Barracks_Mandalorian_Regulars">
+		<Variant_Of_Existing_Type>Secondary_Barracks_Template</Variant_Of_Existing_Type>
+		<Encyclopedia_Text>
+		TEXT_ENCYCLOPEDIA_SECONDARY_BARRACKS_MANDO_SOLDIER
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_TOOLTIP_SECONDARY_BARRACKS_MANDO_SOLDIER
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_UNIT_CAPTUREABLE_STRUCTURE 
+		</Encyclopedia_Text>
+		<Affiliation>Neutral, Rebel, Empire, Zsinj_Empire, EmpireoftheHand, Pentastar, Hapes_Consortium, Greater_Maldrood, Eriadu_Authority, Hutt_Cartels, Corporate_Sector, Warlords, Chiss,  SsiRuuvi_Imperium</Affiliation>
+		<Starting_Spawned_Units_Tech_0>Mandalorian_Soldier_Company, 1</Starting_Spawned_Units_Tech_0>
+	</SecondaryStructure>
+
+	<SecondaryStructure Name="Secondary_Barracks_Mandalorian_Commando">
+		<Variant_Of_Existing_Type>Secondary_Barracks_Template</Variant_Of_Existing_Type>
+		<Encyclopedia_Text>
+		TEXT_ENCYCLOPEDIA_SECONDARY_BARRACKS_MANDO_COMMANDO
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_TOOLTIP_SECONDARY_BARRACKS_MANDO_COMMANDO
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_UNIT_CAPTUREABLE_STRUCTURE 
+		</Encyclopedia_Text>
+		<Affiliation>Neutral, Rebel, Empire, Zsinj_Empire, EmpireoftheHand, Pentastar, Hapes_Consortium, Greater_Maldrood, Eriadu_Authority, Hutt_Cartels, Corporate_Sector, Warlords, Chiss,  SsiRuuvi_Imperium</Affiliation>
+		<Starting_Spawned_Units_Tech_0>Mandalorian_Commando_Company, 1</Starting_Spawned_Units_Tech_0>
+	</SecondaryStructure>
+
+	<SecondaryStructure Name="Secondary_Barracks_Sun_Guard">
+		<Variant_Of_Existing_Type>Secondary_Barracks_Template</Variant_Of_Existing_Type>
+		<Encyclopedia_Text>
+		TEXT_ENCYCLOPEDIA_SECONDARY_BARRACKS_SUN_GUARD
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_TOOLTIP_SECONDARY_BARRACKS_SUN_GUARD
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_UNIT_CAPTUREABLE_STRUCTURE 
+		</Encyclopedia_Text>
+		<Affiliation>Neutral, Rebel, Empire, Zsinj_Empire, EmpireoftheHand, Pentastar, Hapes_Consortium, Greater_Maldrood, Eriadu_Authority, Hutt_Cartels, Corporate_Sector, Warlords, Chiss,  SsiRuuvi_Imperium</Affiliation>
+		<Starting_Spawned_Units_Tech_0>Sun_Guard_Company, 1</Starting_Spawned_Units_Tech_0>
+	</SecondaryStructure>
+
+	<SecondaryStructure Name="Secondary_Barracks_Ailon">
+		<Variant_Of_Existing_Type>Secondary_Barracks_Template</Variant_Of_Existing_Type>
+		<Encyclopedia_Text>
+		TEXT_ENCYCLOPEDIA_SECONDARY_BARRACKS_AILON
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_TOOLTIP_SECONDARY_BARRACKS_AILON
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_UNIT_CAPTUREABLE_STRUCTURE 
+		</Encyclopedia_Text>
+		<Affiliation>Neutral, Rebel, Empire, Zsinj_Empire, EmpireoftheHand, Pentastar, Hapes_Consortium, Greater_Maldrood, Eriadu_Authority, Hutt_Cartels, Corporate_Sector, Warlords, Chiss,  SsiRuuvi_Imperium</Affiliation>
+		<Starting_Spawned_Units_Tech_0>Ailon_Nova_Guard_Company, 1</Starting_Spawned_Units_Tech_0>
+	</SecondaryStructure>
+
+
+	<!-- TR specific due to Nimbus setup in Era -->
+	<SecondaryStructure Name="Secondary_Barracks_Nimbus">
+		<Variant_Of_Existing_Type>Secondary_Barracks_Template</Variant_Of_Existing_Type>
+		<Encyclopedia_Text>
+		TEXT_ENCYCLOPEDIA_SECONDARY_BARRACKS_NIMBUS
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_TOOLTIP_SECONDARY_BARRACKS_NIMBUS
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_UNIT_CAPTUREABLE_STRUCTURE 
+		</Encyclopedia_Text>
+		<Affiliation>Neutral, Rebel, Empire, Zsinj_Empire, EmpireoftheHand, Pentastar, Hapes_Consortium, Greater_Maldrood, Eriadu_Authority, Hutt_Cartels, Corporate_Sector, Warlords, Chiss,  SsiRuuvi_Imperium</Affiliation>
+		<Starting_Spawned_Units_Tech_0>Nimbus_Commando_Company, 1</Starting_Spawned_Units_Tech_0>
+	</SecondaryStructure>
+	
 	<!-- Calling these hesitant or affilitation unsure local forces -->
 	<!-- Basically you sway a local garrison in the chaos and they support you with a few waves of troops -->
 

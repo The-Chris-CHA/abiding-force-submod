@@ -4,6 +4,9 @@ return {
 		["A-WING_SQUADRON"] = {
 			REBEL = {Initial = 1, Reserve = 1}
 		},
+		["CLOAKSHAPE_NEW_SQUADRON"] = {
+			HUTT_CARTELS = {Initial = 1, Reserve = 1}
+		},
 		["TIE_INTERCEPTOR_SQUADRON"] = {
 			EMPIRE = {Initial = 1, Reserve = 1},
 			ERIADU_AUTHORITY = {Initial = 1, Reserve = 1, ResearchType = "~EATIEShields"},

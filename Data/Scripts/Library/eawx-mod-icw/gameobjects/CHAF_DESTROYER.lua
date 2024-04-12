@@ -1,7 +1,7 @@
 return {
 	Ship_Crew_Requirement = 15,
 	Fighters = {
-		["CLAWCRAFT_SQUADRON"] = {
+		["NSSIS_SQUADRON"] = {
 			EMPIREOFTHEHAND = {Initial = 1, Reserve = 2},
 			HOSTILE = {Initial = 1, Reserve = 2},
 			INDEPENDENT_FORCES = {Initial = 1, Reserve = 2}
@@ -14,6 +14,9 @@ return {
 		},
 		["REBEL_X-WING_SQUADRON"] = {
 			REBEL = {Initial = 1, Reserve = 2}
+		},
+		["DUNELIZARD_FIGHTER_SQUADRON"] = {
+			HUTT_CARTELS = {Initial = 1, Reserve = 2}
 		}
 	},
 	Scripts = {"multilayer", "fighter-spawn", "single-unit-retreat"}

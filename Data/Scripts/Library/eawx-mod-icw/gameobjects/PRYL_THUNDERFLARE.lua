@@ -12,7 +12,7 @@ return {
 		["TIE_PUNISHER_SQUADRON_HALF"] = {
 			DEFAULT = {Initial = 1, Reserve = 1}
 		},
-		["OBSIDIAN_SQUADRON"] = {
+		["CIVE_RASHON_OBSIDIAN_SQUADRON"] = {
 			DEFAULT = {Initial = 1, Reserve = 0}
 		}
 	},

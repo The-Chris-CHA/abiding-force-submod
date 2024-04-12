@@ -1,4 +1,5 @@
 require("deepcore/std/class")
+require("eawx-util/StoryUtil")
 
 MultiLayer = class()
 
@@ -32,6 +33,14 @@ function MultiLayer:new()
     Object.Prevent_All_Fire(false)
     Object.Make_Invulnerable(false)
     Object.Prevent_AI_Usage(false)
+
+    if GlobalValue.Get("PATRON_PLAYTHROUGH") then
+        if Object.Get_Owner() == Find_Player("local") then
+            if string.find(string.upper(Object.Get_Type().Get_Name()), "PATRON") then
+                StoryUtil.ShowScreenText("%s has entered the battle", 10, Object.Get_Type())
+            end
+        end
+    end
 end
 
 return MultiLayer

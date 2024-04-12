@@ -60,13 +60,21 @@ function ReserveForce_Thread()
 	local faction = PlayerObject.Get_Faction_Name()
 	
 	if faction == "EMPIRE" then
-		Cycle_Hero("Ysanne_Isard", "Lusankya")
+		Cycle_Hero("Ysanne_Isard", "Isard_Lusankya")
 	elseif faction == "PENTASTAR" then
-		Cycle_Hero("Ardus_Kaine", "Reaper_Kaine")
+		Cycle_Hero("Ardus_Kaine", "Kaine_Reaper")
 	elseif faction == "ERIADU_AUTHORITY" then
-		Cycle_Hero("Delvardus_Brilliant", "Night_Hammer_Delvardus")
+		if GlobalValue.Get("CURRENT_ERA") > 1 then
+			if TestValid(Find_First_Object("Delvardus_Brilliant")) then
+				Cycle_Hero("Delvardus_Brilliant", "Delvardus_Night_Hammer")
+			else
+				Cycle_Hero("Delvardus_Thalassa", "Delvardus_Night_Hammer")
+			end
+		else
+			Cycle_Hero("Delvardus_Brilliant", "Delvardus_Thalassa")
+		end
 	elseif faction == "ZSINJ_EMPIRE" then
-		Cycle_Hero("Iron_Fist_VSD", "Iron_Fist")
+		Cycle_Hero("Zsinj_Iron_Fist_VSD", "Zsinj_Iron_Fist_Executor")
 	else
 		DebugMessage("%s -- Invalid faction, aborting", tostring(Script))
 		ScriptExit()
@@ -74,13 +82,17 @@ function ReserveForce_Thread()
 end
 
 function Cycle_Hero(hero_name, ssd)
-	hero = Find_First_Object(hero_name)
+	local hero = Find_First_Object(hero_name)
+	local cost = -22500
+	if ssd == "Delvardus_Thalassa" or hero == "Delvardus_Thalassa" then
+		cost = -15000
+	end
 
 	if TestValid(hero) then
 		local new_transport = Spawn_Unit(Find_Object_Type(ssd), Target, PlayerObject)
 		hero.Despawn()
 		new_transport[1].Prevent_AI_Usage(false)
-		PlayerObject.Give_Money(-22500)
+		PlayerObject.Give_Money(cost)
 		ReserveForce.Set_Plan_Result(true)
 		ScriptExit()
 	else

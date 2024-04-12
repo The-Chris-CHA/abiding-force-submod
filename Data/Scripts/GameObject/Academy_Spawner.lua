@@ -51,7 +51,7 @@ function State_Init(message)
 			space_V_list = {"Commander_VSD1_V", "Commander_VSD2_V"}
 			space_IV_list = {"Commander_Imperial_IV", "Commander_Broadside_IV"}
 			space_III_list = {"Commander_Vindicator_III"}
-			land_IV_list = {"Commander_Army_GE_IV_Company", "Commander_Stormtrooper_IV_Company", "Commander_House_Tarkin_IV_Company", "Commander_1M_Tank_IV_Company", "Commander_Century_Tank_IV_Company", "Commander_RTT_IV_Company", "Commander_Chariot_IV_Company"}
+			land_IV_list = {"Commander_Army_GE_IV_Company", "Commander_Stormtrooper_IV_Company", "Commander_Galactic_Marine_IV_Company", "Commander_1M_Tank_IV_Company", "Commander_Century_Tank_IV_Company", "Commander_RTT_IV_Company", "Commander_Chariot_IV_Company"}
 			land_III_list  = {"Commander_Army_GE_III_Company", "Commander_Stormtrooper_III_Company", "Commander_Army_Special_III_Company", "Commander_1M_Tank_III_Company", "Commander_Century_Tank_III_Company", "Commander_RTT_III_Company", "Commander_Chariot_III_Company"}
 		elseif faction == Find_Player("Pentastar") then
 			space_V_list = {"Commander_Venator_V", "Commander_VSD2_V"}

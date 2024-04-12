@@ -5,6 +5,6 @@ return {
     type = "plugin",
     target = PluginTargets.never(),
     init = function(self, ctx)
-        return RandomSpawnManager(ctx.galactic_conquest, ctx.is_generated)
+        return RandomSpawnManager(ctx.galactic_conquest, ctx.is_generated, ctx.id)
     end
 }

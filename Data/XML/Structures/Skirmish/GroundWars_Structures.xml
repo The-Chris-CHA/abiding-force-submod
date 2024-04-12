@@ -233,7 +233,6 @@
 		<Size_Value>50</Size_Value>
 		<Base_Position>In_Base</Base_Position>
 		<Tech_Level>99</Tech_Level>
-		<Required_Timeline>0</Required_Timeline>
 		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
 		<Required_Star_Base_Level>0</Required_Star_Base_Level>
 		<Required_Special_Structures/>
@@ -1127,9 +1126,9 @@
 		
 		<Tactical_Buildable_Objects_Multiplayer>
 			Rebel,
-				GW_NR_AAE,
-				GW_NR_AAG,
 				GW_NR_AAF,
+				GW_NR_AAG,
+				GW_NR_AAI,
 				GW_NR_AAJ,		
 				GW_NR_AAN,
 				GW_NR_AAO,
@@ -1223,7 +1222,7 @@
 		<Is_Visible_On_Radar> Yes </Is_Visible_On_Radar>
 		<Radar_Icon_Size>0.08  0.08</Radar_Icon_Size>
 		
-		<Select_Box_Scale> 110 </Select_Box_Scale>
+		<Select_Box_Scale> 550 </Select_Box_Scale>
 		<Scale_Factor> 1.0 </Scale_Factor>
 		<Mass>1.0</Mass>		
 		<Affiliation>Neutral, Empire, Pentastar, Greater_Maldrood, EmpireoftheHand, Zsinj_Empire, Eriadu_Authority, Corporate_Sector, Hapes_Consortium, Rebel </Affiliation>
@@ -1283,8 +1282,11 @@
 		<Faction_Anim_Subindex>Hutt_Cartels, 13</Faction_Anim_Subindex>
 
 
+		<Highlight_Blob_Material_Name>Reinforcement_GW_01</Highlight_Blob_Material_Name>		
+		<Reinforcement_Region_Blob_Name>Reinforcement_No_Blob</Reinforcement_Region_Blob_Name>
+
 		<Reinforcement_Enabling_Radius>250.0</Reinforcement_Enabling_Radius>
-		<Targeting_Max_Attack_Distance>300.0</Targeting_Max_Attack_Distance> <!-- For showing reinforcement radius in map editor. Larger than reinforcement radius to accommodate placing units on the edge of the reinforcement zone -->
+		<Targeting_Max_Attack_Distance>300.0</Targeting_Max_Attack_Distance> <!--Reinforcement_No_Blob For showing reinforcement radius in map editor. Larger than reinforcement radius to accommodate placing units on the edge of the reinforcement zone -->
 		
 		
 		<Capture_Point_Radius>200</Capture_Point_Radius>
@@ -1339,6 +1341,7 @@
 		
 		<Obstacle_Proxy_Type> Bunker_Pad </Obstacle_Proxy_Type>
 		<Affiliation>Neutral, Empire, Pentastar, Greater_Maldrood, EmpireoftheHand, Zsinj_Empire, Eriadu_Authority, Corporate_Sector, Hapes_Consortium, Rebel </Affiliation><Icon_Name>I_BUTTON_EV_BUNKER.tga</Icon_Name>
+		<Icon_Name>I_BUTTON_EV_BUNKER.tga</Icon_Name>
 		
 		<Space_Layer> Land </Space_Layer>
         <UnitCollisionClass> Vehicle </UnitCollisionClass>	
@@ -1366,6 +1369,10 @@
 		<Radar_Icon_Size>0.08  0.08</Radar_Icon_Size>
 		<Influences_Capture_Point> False </Influences_Capture_Point>
 		
+		 <Highlight_Blob_Material_Name>Reinforcement_GW_ECO</Highlight_Blob_Material_Name>
+		<Reinforcement_Region_Blob_Name>Reinforcement_No_Blob</Reinforcement_Region_Blob_Name>
+
+
 		<Reinforcement_Enabling_Radius>250.0</Reinforcement_Enabling_Radius>
 		<Targeting_Max_Attack_Distance>300.0</Targeting_Max_Attack_Distance> <!-- For showing reinforcement radius in map editor. Larger than reinforcement radius to accommodate placing units on the edge of the reinforcement zone -->
 		
@@ -1426,7 +1433,7 @@
         <Custom_Hard_YExtent> 26.0 </Custom_Hard_YExtent>
 
 
-		<Select_Box_Scale>110</Select_Box_Scale>
+		<Select_Box_Scale>550</Select_Box_Scale>
 		<GUI_Row> 0 </GUI_Row>
 		<Loop_Idle_Anim_00>Yes</Loop_Idle_Anim_00>
 		<SFXEvent_Ambient_Loop>Structure_Barracks_Loop</SFXEvent_Ambient_Loop>
@@ -1468,6 +1475,10 @@
 		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
 		<Required_Star_Base_Level>0</Required_Star_Base_Level>
 		
+		<Highlight_Blob_Material_Name>Reinforcement_GW_ECO</Highlight_Blob_Material_Name>
+		<Reinforcement_Region_Blob_Name>Reinforcement_No_Blob</Reinforcement_Region_Blob_Name>
+
+
 		<Reinforcement_Enabling_Radius>250.0</Reinforcement_Enabling_Radius>
 		<Targeting_Max_Attack_Distance>300.0</Targeting_Max_Attack_Distance> <!-- For showing reinforcement radius in map editor. Larger than reinforcement radius to accommodate placing units on the edge of the reinforcement zone -->
 		
@@ -1581,6 +1592,7 @@
 		
 		<Obstacle_Proxy_Type> Bunker_Pad </Obstacle_Proxy_Type>
 		<Affiliation>Neutral, Empire, Pentastar, Greater_Maldrood, EmpireoftheHand, Zsinj_Empire, Eriadu_Authority, Corporate_Sector, Hapes_Consortium, Rebel </Affiliation><Icon_Name>i_button_bunker.tga</Icon_Name>
+		<Icon_Name>i_button_bunker.tga</Icon_Name>
 		
 		<Space_Layer> Land </Space_Layer>
         <UnitCollisionClass> Vehicle </UnitCollisionClass>	
@@ -1607,7 +1619,11 @@
 		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
 		<Radar_Icon_Size>0.08  0.08</Radar_Icon_Size>
 		<Influences_Capture_Point> False </Influences_Capture_Point>
-		
+
+		<Highlight_Blob_Material_Name>Reinforcement_GW_BUNKER</Highlight_Blob_Material_Name>	
+		<Reinforcement_Region_Blob_Name>Reinforcement_No_Blob</Reinforcement_Region_Blob_Name>
+
+
 		<Reinforcement_Enabling_Radius>250.0</Reinforcement_Enabling_Radius>
 		<Targeting_Max_Attack_Distance>300.0</Targeting_Max_Attack_Distance> <!-- For showing reinforcement radius in map editor. Larger than reinforcement radius to accommodate placing units on the edge of the reinforcement zone -->
 		
@@ -1680,7 +1696,7 @@
 		</HardPoints>
 
 
-		<Select_Box_Scale>110</Select_Box_Scale>
+		<Select_Box_Scale>550</Select_Box_Scale>
 		<GUI_Row> 0 </GUI_Row>
 		<Loop_Idle_Anim_00>Yes</Loop_Idle_Anim_00>
 		<SFXEvent_Ambient_Loop>Structure_Barracks_Loop</SFXEvent_Ambient_Loop>
@@ -1722,7 +1738,10 @@
 		
 		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
 		<Required_Star_Base_Level>0</Required_Star_Base_Level>
-		
+
+		<Highlight_Blob_Material_Name>Reinforcement_GW_BUNKER</Highlight_Blob_Material_Name>	
+		<Reinforcement_Region_Blob_Name>Reinforcement_No_Blob</Reinforcement_Region_Blob_Name>
+
 		<Reinforcement_Enabling_Radius>250.0</Reinforcement_Enabling_Radius>
 		<Targeting_Max_Attack_Distance>500.0</Targeting_Max_Attack_Distance> <!-- For showing reinforcement radius in map editor. Larger than reinforcement radius to accommodate placing units on the edge of the reinforcement zone -->
 		

@@ -44,7 +44,7 @@ return {
 			INDEPENDENT_FORCES = {Initial = 1, Reserve = 5},
 			WARLORDS = {Initial = 1, Reserve = 5}
 		},
-		["SCIMMY_SQUADRON_DOUBLE"] = {
+		["SCIMITAR_SQUADRON_DOUBLE"] = {
 			EMPIRE = {Initial = 1, Reserve = 5, TechLevel = EqualTo(3)}
 		},
 		["SKIRMISH_CUSTOMS_CORVETTE"] = {

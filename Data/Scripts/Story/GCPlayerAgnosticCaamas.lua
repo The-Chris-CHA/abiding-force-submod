@@ -1,22 +1,6 @@
---******************************************************************************
---     _______ __
---    |_     _|  |--.----.---.-.--.--.--.-----.-----.
---      |   | |     |   _|  _  |  |  |  |     |__ --|
---      |___| |__|__|__| |___._|________|__|__|_____|
---     ______
---    |   __ \.-----.--.--.-----.-----.-----.-----.
---    |      <|  -__|  |  |  -__|     |  _  |  -__|
---    |___|__||_____|\___/|_____|__|__|___  |_____|
---                                    |_____|
---*   @Author:              [TR]Pox
---*   @Date:                2017-11-24T12:43:51+01:00
---*   @Project:             Imperial Civil War
---*   @Filename:            GCPlayerAgnostic.lua
---*   @Last modified by:    [TR]Pox
---*   @Last modified time:  2018-03-19T22:04:47+01:00
---*   @License:             This source code may only be used with explicit permission from the developers
---*   @Copyright:           © TR: Imperial Civil War Development Team
---******************************************************************************
+--********************************************
+--******  Campaign: Caamas Crisis  ***********
+--********************************************
 
 require("PGDebug")
 require("PGStateMachine")
@@ -28,6 +12,7 @@ require("deepcore-extensions/initialize")
 
 require("eawx-statemachine/dsl/TransitionPolicyFactory")
 require("eawx-statemachine/dsl/TransitionEffectBuilderFactory")
+require("SetFighterResearch")
 
 function Definitions()
     DebugMessage("%s -- In Definitions", tostring(Script))
@@ -42,27 +27,30 @@ function Begin_GC(message)
         CONSTANTS = ModContentLoader.get("GameConstants")
         GameObjectLibrary = ModContentLoader.get("GameObjectLibrary")
         local plot = StoryUtil.GetPlayerAgnosticPlot()
+        StoryUtil.ShowScreenText("TEXT_GUI_INITIALIZING", 10)
 
-        local holocron_event = plot.Get_Event("Show_Debug_Display")
+
+        --local holocron_event = plot.Get_Event("Show_Debug_Display")
         
-        local holocron_sink = require("deepcore/log/sinks/holocron-window")
-                                :with_event(holocron_event)
+        --local holocron_sink = require("deepcore/log/sinks/holocron-window")
+        --                        :with_event(holocron_event)
 
-        Logger = require("deepcore/log/logger")
-                :with_sink(holocron_sink)
-                :with_log_level(3)
+        --Logger = require("deepcore/log/logger")
+        --        :with_sink(holocron_sink)
+        --        :with_log_level(3)
 
         GlobalValue.Set("CURRENT_ERA", 7)
         GlobalValue.Set("REGIME_INDEX", 7)
         GlobalValue.Set("PROGRESS_REGIME", false)
-        GlobalValue.Set("ChiefOfState","DUMMY_CHIEFOFSTATE_LEIA")
+        GlobalValue.Set("ChiefOfState","DUMMY_CHIEFOFSTATE_GAVRISOM")
  
         local plugin_list = ModContentLoader.get("InstalledPlugins")
         local context = {
             plot = plot,
             maxroutes = 5,
             id = "DEFAULT",
-			year_start = 19,
+            year_start = 19,
+            month_start = 8,
             is_generated = false,
             statemachine_dsl_config = {
                 transition_policy_factory = EawXTransitionPolicyFactory,
@@ -79,7 +67,6 @@ function Begin_GC(message)
                 return Planet(planet_name)
             end
         }
-
     elseif message == OnUpdate then
         ActiveMod:update()
     end

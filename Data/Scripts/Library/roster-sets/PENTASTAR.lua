@@ -21,6 +21,8 @@ return {
 	["GENERIC_MANDATOR_III"] = 0,
 	-- Heroes
 	["VENGEANCE_JEREC"] = 0,
+	["KAINEUPGRADE"] = 0,
+	["REAPER"] = 0,
 	-- Legitimacy
 	["COMBAT_ESCORT_CARRIER"] = 0,
 	["CRIMSON_VICTORY"] = 0,
@@ -29,6 +31,11 @@ return {
 	["HUNTER_KILLER_PROBOT"] = 0,
 	["MTC_SENSOR"] = 0,
 	["MTC_SUPPORT"] = 0,
+	["WORLD_DEVASTATOR_FRIGATE"] = 0,
 	["SOVEREIGN"] = 0,
 	["ECLIPSE_STAR_DESTROYER"] = 0,
+	["DAALAUPGRADE"] = 0,
+	["PELLAEONUPGRADE"] = 0,
+	["PELLAEONUPGRADE2"] = 0,
+	["ROGRISSUPGRADE"] = 0,
 }

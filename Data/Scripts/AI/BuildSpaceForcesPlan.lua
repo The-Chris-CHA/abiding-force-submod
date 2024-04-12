@@ -52,9 +52,9 @@ function Definitions()
 	{
 		"ReserveForce"
 		,"DenyHeroAttach"
-		,"AntiBomber = 0,5"
-		,"Corvette = 0,5"
-		,"Frigate = 0,5"
+		,"AntiBomber = 0,10"
+		,"Corvette = 0,15"
+		,"Frigate = 0,15"
 		,"Capital = 0,5"
 	}
 	}

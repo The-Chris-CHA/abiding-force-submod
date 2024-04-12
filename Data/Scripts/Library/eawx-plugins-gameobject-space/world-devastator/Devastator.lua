@@ -1,24 +1,3 @@
---**************************************************************************************************
---*    _______ __                                                                                  *
---*   |_     _|  |--.----.---.-.--.--.--.-----.-----.                                              *
---*     |   | |     |   _|  _  |  |  |  |     |__ --|                                              *
---*     |___| |__|__|__| |___._|________|__|__|_____|                                              *
---*    ______                                                                                      *
---*   |   __ \.-----.--.--.-----.-----.-----.-----.                                                *
---*   |      <|  -__|  |  |  -__|     |  _  |  -__|                                                *
---*   |___|__||_____|\___/|_____|__|__|___  |_____|                                                *
---*                                   |_____|                                                      *
---*                                                                                                *
---*                                                                                                *
---*       File:              Devastator.lua                                                          *
---*       File Created:      Saturday, 7th March 2020 21:42                                        *
---*       Author:            [TR] Pox                                                              *
---*       Last Modified:     Monday, 8th June 2020 08:28                                           *
---*       Modified By:       [TR] Pox                                                              *
---*       Copyright:         Thrawns Revenge Development Team                                      *
---*       License:           This code may not be used without the author's explicit permission    *
---**************************************************************************************************
-
 require("PGCommands")
 require("TRCommands")
 require("eawx-util/StoryUtil")
@@ -29,38 +8,55 @@ require("deepcore/crossplot/crossplot")
 Devastator = class()
 
 function Devastator:new()
-    self.DevastatorID = Object.Get_Type().Get_Name()
-
-    crossplot:subscribe("TACTICAL_UNIT_DESTROYED", self.object_detroyed, self)
-end
-
-function Devastator:object_detroyed(object_name, owner_name, killer_name, category)
-
-    if Find_Player(killer_name) ~= Object.Get_Owner() or category == "None" then
+    if Find_Player("local") == Object.Get_Owner() then
+        self.enabled = true
+    else
+        self.enabled = false
         return
     end
-        local devastator_material = GlobalValue.Get(self.DevastatorID)
-        local added_material = 1
-		if category == "STRUCTURE" or category == "SPACESTRUCTURE" then
-            added_material = 10
-        elseif category == "SUPERCAPITAL" then
-            added_material = 50
-        elseif category == "SPACEHERO" then
-            added_material = 20
-        elseif category == "CAPITAL" then
-            added_material = 10
-        elseif category == "FRIGATE" then
-            added_material = 3
-        elseif category == "CORVETTE" then
-            added_material = 1
-        end 
 
-        Object.Attach_Particle_Effect("World_Devastator_Particle")
-        
-        StoryUtil.ShowScreenText("World Devastator has gained ".. tostring(added_material).. " material for a total of ".. tostring(added_material + devastator_material) , 10)
-        
-        GlobalValue.Set(self.DevastatorID, devastator_material + added_material)
+    self.DevastatorID = Object.Get_Type().Get_Name()
+    self.target_reached = false
 
+    crossplot:subscribe("TACTICAL_UNIT_DESTROYED", self.object_detroyed, self)
+
+    local StageMultiplier = 100
+
+    self.target_materials = StageMultiplier
+    if self.DevastatorID == "KLEV_CAPITAL_DEVASTATOR" or self.DevastatorID == "WORLD_DEVASTATOR_CAPITAL" then
+        self.target_materials = self.target_materials * 2
+    end
+
+    StoryUtil.ShowScreenText("World Devastator online. Current materials: "..GlobalValue.Get(self.DevastatorID).." of "..self.target_materials.." to grow.", 10)
+end
+
+function Devastator:object_detroyed(object_name, object_power, object_is_hero)
+    if self.enabled ~= true then
+        return
+    end
+
+    local current_materials = GlobalValue.Get(self.DevastatorID)
+
+    local clampmax = 50
+    if object_is_hero then
+        object_power = object_power * 2
+        clampmax = 60
+    end
+
+    local added_materials = Clamp(tonumber(Dirty_Floor((object_power + 150) / 300)),1,clampmax)
+
+    current_materials = current_materials + added_materials
+
+    GlobalValue.Set(self.DevastatorID, current_materials)
+
+    Object.Attach_Particle_Effect("World_Devastator_Particle")
+
+    StoryUtil.ShowScreenText("Materials +" .. tostring(added_materials) .. " (Total: " .. tostring(current_materials)..")", 10)
+
+    if current_materials >= self.target_materials and self.target_reached ~= true then
+        StoryUtil.ShowScreenText("Materials target reached. The World Devastator will grow after this battle, if it survives.", 20)
+        self.target_reached = true
+    end
 end
 
 return Devastator

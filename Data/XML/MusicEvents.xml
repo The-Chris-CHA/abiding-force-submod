@@ -6,6 +6,7 @@
 		<Files>
 			Prequels_Across_the_Stars.mp3
 			Fan_Dark_Side_Themes_Reimagined_by_Daniel_Ciurlizza.mp3
+			FA_The_Might_Of_The_Empire.mp3
 		</Files>
         <Volume_Percent>100</Volume_Percent>
         <Fade_In_Seconds>0.0</Fade_In_Seconds>
@@ -61,7 +62,14 @@
 <!-- START GALACTIC THEMES -->
 
 	<MusicEvent Name="Galactic_Map_Rebel_Music_Event">
-		<Files> AOTC_Ambush_On_Coruscant.mp3, ROTJ_Alliance_Assembly.mp3, ROTJ_Shuttle_Tydirium_Appraches_Endor.mp3, ANH_Tales_of_a_Jedi_Knight.mp3, ANH_Millenium_Falcon.mp3 </Files>
+		<Files>
+		AOTC_Ambush_On_Coruscant.mp3,
+		ROTJ_Alliance_Assembly.mp3,
+		ROTJ_Shuttle_Tydirium_Appraches_Endor.mp3,
+		ANH_Tales_of_a_Jedi_Knight.mp3,
+		ANH_Millenium_Falcon.mp3,
+		BF2_Galactic_Conquest_Mix.mp3
+		</Files>
         <Volume_Percent>60</Volume_Percent>
         <Fade_In_Seconds>2.0</Fade_In_Seconds>
         <Fade_Out_Previous_Seconds>2.0</Fade_Out_Previous_Seconds>
@@ -69,7 +77,15 @@
     </MusicEvent>
 
 	<MusicEvent Name="Galactic_Map_Empire_Music_Event">
-		<Files> ESB_The_Imperial_Probe.mp3, ROTJ_Approaching_The_Death_Star.mp3, ROTJ_Emperors_Throne_Room.mp3, ANH_Imperial_Attack_2.mp3, ANH_The_Tractor_Beam.mp3 </Files>
+		<Files>
+		ESB_The_Imperial_Probe.mp3,
+		ROTJ_Approaching_The_Death_Star.mp3,
+		ROTJ_Emperors_Throne_Room.mp3,
+		ANH_Imperial_Attack_2.mp3,
+		ANH_The_Tractor_Beam.mp3
+		BF2_Galactic_Conquest_Mix.mp3,
+		FA_The_Might_Of_The_Empire.mp3
+		</Files>
         <Volume_Percent>60</Volume_Percent>
         <Fade_In_Seconds>2.0</Fade_In_Seconds>
         <Fade_Out_Previous_Seconds>2.0</Fade_Out_Previous_Seconds>
@@ -77,7 +93,14 @@
     </MusicEvent>
 
 	<MusicEvent Name="Galactic_Map_Underworld_Music_Event">
-		<Files> ESB_The_Imperial_Probe.mp3, ROTJ_Approaching_The_Death_Star.mp3, ROTJ_Emperors_Throne_Room.mp3, ANH_Imperial_Attack_2.mp3, ANH_The_Tractor_Beam.mp3 </Files>
+		<Files>
+		ESB_The_Imperial_Probe.mp3,
+		ROTJ_Approaching_The_Death_Star.mp3,
+		ROTJ_Emperors_Throne_Room.mp3,
+		ANH_Imperial_Attack_2.mp3,
+		ANH_The_Tractor_Beam.mp3,
+		BF2_Galactic_Conquest_Mix.mp3
+		</Files>
         <Volume_Percent>140</Volume_Percent>
         <Fade_In_Seconds>2.0</Fade_In_Seconds>
         <Fade_Out_Previous_Seconds>2.0</Fade_Out_Previous_Seconds>
@@ -383,7 +406,7 @@
     </MusicEvent>
 
 	<MusicEvent Name="Urban_Land_Empire_Battle_Music_Event">
-        <Files> E_The_Chase_Through_Coruscant_2.MP3, R_The_Chase_Through_Coruscant_1.MP3, Advance_on_the_City.MP3</Files>
+        <Files> E_The_Chase_Through_Coruscant_2.MP3, R_The_Chase_Through_Coruscant_1.MP3, Advance_on_the_City.MP3, FA_The_Might_Of_The_Empire.mp3 </Files>
         <Volume_Percent>55</Volume_Percent>
         <Fade_In_Seconds>0.0</Fade_In_Seconds>
         <Fade_Out_Previous_Seconds>2.0</Fade_Out_Previous_Seconds>
@@ -427,7 +450,7 @@
 
 
 	<MusicEvent Name="EotH_Battle_Music_Event">
-		 <Files> Escape_From_Naboo.MP3, Fighting_The_Destroyer_Droids.MP3, Tie_Fighter_Attack.MP3, Imperial_Cruiser_Pursuit.MP3, The_Asteroid_Field.MP3, Space_Pursuit.MP3, Rebellion_Advantage.MP3, Attacking_the_Blockade.MP3 </Files>
+		 <Files> Escape_From_Naboo.MP3, Fighting_The_Destroyer_Droids.MP3, Tie_Fighter_Attack.MP3, Imperial_Cruiser_Pursuit.MP3, The_Asteroid_Field.MP3, Space_Pursuit.MP3, Rebellion_Advantage.MP3, Attacking_the_Blockade.MP3, FA_The_Might_Of_The_Empire.mp3 </Files>
 		 <Volume_Percent>55</Volume_Percent>
 		 <Fade_In_Seconds>2.0</Fade_In_Seconds>
 		 <Fade_Out_Previous_Seconds>2.0</Fade_Out_Previous_Seconds>
@@ -435,7 +458,7 @@
 	</MusicEvent>
 
 	<MusicEvent Name="Space_Map_Rebel_Battle_Music_Event">
-		 <Files> UEscape_From_Naboo.MP3, Fighting_The_Destroyer_Droids.MP3, Tie_Fighter_Attack.MP3, Imperial_Cruiser_Pursuit.MP3, The_Asteroid_Field.MP3, Space_Pursuit.MP3, Rebellion_Advantage.MP3, Attacking_the_Blockade.MP3 </Files>
+		 <Files> Escape_From_Naboo.MP3, Fighting_The_Destroyer_Droids.MP3, Tie_Fighter_Attack.MP3, Imperial_Cruiser_Pursuit.MP3, The_Asteroid_Field.MP3, Space_Pursuit.MP3, Rebellion_Advantage.MP3, Attacking_the_Blockade.MP3, Rogue_Squadron_Main_Theme.mp3 </Files>
 		 <Volume_Percent>55</Volume_Percent>
 		 <Fade_In_Seconds>0.5</Fade_In_Seconds>
 		 <Fade_Out_Previous_Seconds>2.0</Fade_Out_Previous_Seconds>
@@ -566,7 +589,7 @@
 
 
     <MusicEvent Name="Underworld_Win_Tactical_Event">
-        <Files>Imperial_March_Edit.MP3</Files>
+        <Files>UND_Zann_Consortium_Theme_Edit.MP3</Files>
         <Volume_Percent>75</Volume_Percent>
         <Fade_In_Seconds>0.0</Fade_In_Seconds>
         <Fade_Out_Previous_Seconds>2.0</Fade_Out_Previous_Seconds>
@@ -574,7 +597,7 @@
     </MusicEvent>
 
     <MusicEvent Name="Underworld_Win_Strategic_Event">
-        <Files>Imperial_March_Edit.MP3</Files>
+        <Files>UND_Zann_Consortium_Theme_Edit.MP3</Files>
         <Volume_Percent>75</Volume_Percent>
         <Fade_In_Seconds>0.0</Fade_In_Seconds>
         <Fade_Out_Previous_Seconds>2.0</Fade_Out_Previous_Seconds>
@@ -582,7 +605,7 @@
     </MusicEvent>
 
     <MusicEvent Name="Underworld_Lose_Tactical_Event">
-        <Files>Empire_Lose_1.MP3</Files>
+        <Files>Rebel_Lose_1.MP3</Files>
         <Volume_Percent>75</Volume_Percent>
         <Fade_In_Seconds>0.0</Fade_In_Seconds>
         <Fade_Out_Previous_Seconds>2.0</Fade_Out_Previous_Seconds>
@@ -590,7 +613,7 @@
     </MusicEvent>
 
     <MusicEvent Name="Underworld_Lose_Strategic_Event">
-        <Files>Empire_Lose_1.MP3</Files>
+        <Files>Rebel_Lose_1.MP3</Files>
         <Volume_Percent>75</Volume_Percent>
         <Fade_In_Seconds>0.0</Fade_In_Seconds>
         <Fade_Out_Previous_Seconds>2.0</Fade_Out_Previous_Seconds>

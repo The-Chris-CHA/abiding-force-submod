@@ -17,7 +17,8 @@ return {
 		},
 		["Z95_HEADHUNTER_SQUADRON"] = {
 			CORPORATE_SECTOR = {Initial = 1, Reserve = 1},
-			INDEPENDENT_FORCES = {Initial = 1, Reserve = 1}
+			INDEPENDENT_FORCES = {Initial = 1, Reserve = 1},
+			HUTT_CARTELS = {Initial = 2, Reserve = 3}
 		},
 		["A-WING_SQUADRON"] = {
 			REBEL = {Initial = 1, Reserve = 1}
@@ -43,6 +44,9 @@ return {
 		},
 		["MIYTIL_BOMBER_SQUADRON"] = {
 			HAPES_CONSORTIUM = {Initial = 1, Reserve = 2}
+		},
+		["SCURRG_H6_SQUADRON"] = {
+			HUTT_CARTELS = {Initial = 1, Reserve = 2}
 		},
 		["Y-WING_SQUADRON"] = {
 			REBEL = {Initial = 1, Reserve = 2}

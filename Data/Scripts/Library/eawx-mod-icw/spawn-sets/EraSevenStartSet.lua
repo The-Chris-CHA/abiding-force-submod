@@ -1,17 +1,4 @@
 return {
-    ["EMPIRE"] = {
-        ["BASTION"] = {
-            "Chimera_Pellaeon_Grand",
-            "Tierce_Team",
-			"Brakiss_Team",
-            "Ascian",
-            "Agonizer_Star_Destroyer",
-            "Navett_Team",
-            "181st_Stele",
-            "Hestiv_Team"
-        },
-        ["HAKASSI"] = {"Scylla"}
-    },
     ["REBEL"] = {
         ["YAVIN"] = {"Luke_Skywalker_Jedi_Team", "Mara_Saber_Team", "Cilghal_Team"},
 		["ORD_MANTELL"] = {"Galactic_Voyager"},
@@ -24,13 +11,12 @@ return {
     },
     ["EMPIREOFTHEHAND"] = {
         ["NIRAUAN"] =  {
-            "Soontir_Fel_Squadron",
             "Niriz_Admonitor",
             "Parck_Strikefast",
+			"Ashik_Team",
 			"Hand_of_Judgement_Team"
 		},
 		["SYCA"] = { 
-			"Chak_Fel_Krsiss_Squadron_Association",
 			"Siath_Battlehammer",
             "Stent_Thrawns_Hand",
 			"Tasse_Team",
@@ -39,7 +25,7 @@ return {
     },
 	["GREATER_MALDROOD"] = {
 		["RYVESTER"] = {
-			"Lancet_Kosh",
+			"Kosh_Lancet",
 			"Nervi_Blood_Ambition",
 			"Neomen_Ion_Storm",
 			"Somos_Team",
@@ -88,6 +74,33 @@ return {
             "Vor_Duull_Team"
         }
     },
+	["HUTT_CARTELS"] = {
+		["GAMORR"]  = {
+			"Zorba_The_Hutt_Team"
+		},
+        ["LATHARRA"]  = {
+			"Borvo_Prosperous_Secret"
+		},
+		["CIRCUMTORE"]  = {
+			"Tronox_Team",
+			"Reshul_Team",
+        },
+		["MULATAN"]  = {
+            "Troonol_Agrelcu_Haalta"
+        },
+        ["NAL_HUTTA"]  = {
+			"Bossato_Team",
+			"Plakot_Team",
+        },
+		["NAR_SHADDAA"]  = {
+            "Popara_Imru_Ootmian",
+			"Parella_Team",
+			"Smebba_Dunk_Team",
+        },
+		["UBRIKKIA"]  = {
+            "Quaffug_Lorda"
+        }
+	},
 	["CHISS"] = {
 		["CSILLA"] = {
 			"Aralani_Frontier"

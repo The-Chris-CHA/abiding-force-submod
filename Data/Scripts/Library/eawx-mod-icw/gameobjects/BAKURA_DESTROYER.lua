@@ -12,7 +12,8 @@ return {
 		},
 		["Z95_HEADHUNTER_SQUADRON"] = {
 			HOSTILE = {Initial = 1, Reserve = 1},
-			REBEL = {Initial = 1, Reserve = 1}
+			REBEL = {Initial = 1, Reserve = 1},
+			HUTT_CARTELS = {Initial = 1, Reserve = 1}
 		},
 		["BAKURAN_GPA_SQUADRON"] = {
 			INDEPENDENT_FORCES = {Initial = 1, Reserve = 1}

@@ -75,7 +75,7 @@
 	<GenericInfrastructureBudgetAllocation>
 		5.0 
 		* 
-		(3.0 - Function_Maxed_Shipyards.Evaluate - Variable_Self.MaxedGroundbases - Variable_Self.MaxedStarbases) 
+		(3.25 - Function_Maxed_Shipyards.Evaluate - Variable_Self.MaxedGroundbases - Variable_Self.MaxedStarbases) 
 		*
 		(
 			1.0 
@@ -85,6 +85,8 @@
 			(15 > Variable_Self.StructureCount {Parameter_Type = "Tax_Agency", Parameter_Type = "Generic_Tradestation" })
 			+
 			0.5 * Function_Has_Upgradeable_Hero.Evaluate
+			+
+			0.25 * Function_Isolationist_Personality.Evaluate
 		)
 	</GenericInfrastructureBudgetAllocation>
 	

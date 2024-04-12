@@ -1,6 +1,6 @@
 return {
 	Fighters = {
-		["CLAWCRAFT_SQUADRON"] = {
+		["NSSIS_SQUADRON"] = {
 			DEFAULT = {Initial = 1, Reserve = 1}
 		},
 		["SKIRMISH_MUQARAEA"] = {

@@ -99,7 +99,7 @@ return function(dsl)
         :end_()
 	dsl.transition(isard)
         :to(thrawn)
-        :when(policy:hero_dies("Lusankya"))
+        :when(policy:hero_dies("Isard_Lusankya"))
         :end_()
     dsl.transition(isard)
         :to(thrawn)
@@ -119,7 +119,7 @@ return function(dsl)
    
     dsl.transition(thrawn)
         :to(interregnum)
-        :when(policy:hero_dies("Chimera"))
+        :when(policy:hero_dies("Thrawn_Chimaera"))
         :with_effects(
             effect:transfer_planets("CIUTRIC", "VROSYNRI", "CORVIS_MINOR")
             :to_owner("Warlords")
@@ -133,7 +133,7 @@ return function(dsl)
         :when(policy:crossplot_trigger("DARK_EMPIRE_TRIGGER"))
         :with_effects(
             effect:eawx_set_tech_level(2)
-            :for_factions({"Rebel", "Empire", "Pentastar", "Eriadu_Authority", "Zsinj_Empire", "Greater_Maldrood", "EmpireoftheHand", "Corporate_Sector", "Hapes_Consortium"})
+            :for_factions({"Rebel", "Empire", "Pentastar", "Eriadu_Authority", "Zsinj_Empire", "Greater_Maldrood", "EmpireoftheHand", "Corporate_Sector", "Hapes_Consortium", "Hutt_Cartels"})
         ):end_()
 
     dsl.transition(isard)
@@ -141,7 +141,7 @@ return function(dsl)
         :when(policy:crossplot_trigger("DARK_EMPIRE_TRIGGER"))
         :with_effects(
             effect:eawx_set_tech_level(2)
-            :for_factions({"Rebel", "Empire", "Pentastar", "Eriadu_Authority", "Zsinj_Empire", "Greater_Maldrood", "EmpireoftheHand", "Corporate_Sector", "Hapes_Consortium"})
+            :for_factions({"Rebel", "Empire", "Pentastar", "Eriadu_Authority", "Zsinj_Empire", "Greater_Maldrood", "EmpireoftheHand", "Corporate_Sector", "Hapes_Consortium", "Hutt_Cartels"})
         ):end_()
 
     dsl.transition(ccogm)
@@ -149,7 +149,7 @@ return function(dsl)
         :when(policy:crossplot_trigger("DARK_EMPIRE_TRIGGER"))
         :with_effects(
             effect:eawx_set_tech_level(2)
-            :for_factions({"Rebel", "Empire", "Pentastar", "Eriadu_Authority", "Zsinj_Empire", "Greater_Maldrood", "EmpireoftheHand", "Corporate_Sector", "Hapes_Consortium"})
+            :for_factions({"Rebel", "Empire", "Pentastar", "Eriadu_Authority", "Zsinj_Empire", "Greater_Maldrood", "EmpireoftheHand", "Corporate_Sector", "Hapes_Consortium", "Hutt_Cartels"})
         ):end_()
 
     dsl.transition(thrawn)
@@ -157,7 +157,7 @@ return function(dsl)
         :when(policy:crossplot_trigger("DARK_EMPIRE_TRIGGER"))
         :with_effects(
             effect:eawx_set_tech_level(2)
-            :for_factions({"Rebel", "Empire", "Pentastar", "Eriadu_Authority", "Zsinj_Empire", "Greater_Maldrood", "EmpireoftheHand", "Corporate_Sector", "Hapes_Consortium"})
+            :for_factions({"Rebel", "Empire", "Pentastar", "Eriadu_Authority", "Zsinj_Empire", "Greater_Maldrood", "EmpireoftheHand", "Corporate_Sector", "Hapes_Consortium", "Hutt_Cartels"})
         ):end_()
    
     dsl.transition(interregnum)
@@ -165,7 +165,7 @@ return function(dsl)
         :when(policy:crossplot_trigger("DARK_EMPIRE_TRIGGER"))
         :with_effects(
             effect:eawx_set_tech_level(2)
-            :for_factions({"Rebel", "Empire", "Pentastar", "Eriadu_Authority", "Zsinj_Empire", "Greater_Maldrood", "EmpireoftheHand", "Corporate_Sector", "Hapes_Consortium"})
+            :for_factions({"Rebel", "Empire", "Pentastar", "Eriadu_Authority", "Zsinj_Empire", "Greater_Maldrood", "EmpireoftheHand", "Corporate_Sector", "Hapes_Consortium", "Hutt_Cartels"})
         ):end_()
 
     -- Exiting Dark Empire
@@ -190,21 +190,21 @@ return function(dsl)
         :when(policy:hero_dies("Carnor_Jax_Team"))
         :with_effects(
             effect:eawx_set_tech_level(3)
-            :for_factions({"Rebel", "Empire", "Pentastar", "Eriadu_Authority", "Zsinj_Empire", "Greater_Maldrood", "EmpireoftheHand", "Corporate_Sector", "Hapes_Consortium"})
+            :for_factions({"Rebel", "Empire", "Pentastar", "Eriadu_Authority", "Zsinj_Empire", "Greater_Maldrood", "EmpireoftheHand", "Corporate_Sector", "Hapes_Consortium", "Hutt_Cartels"})
         ):end_()
     dsl.transition(carnor)
         :to(daala)
         :when(policy:object_constructed("Dummy_Regicide_Daala"))
         :with_effects(
             effect:eawx_set_tech_level(3)
-            :for_factions({"Rebel", "Empire", "Pentastar", "Eriadu_Authority", "Zsinj_Empire", "Greater_Maldrood", "EmpireoftheHand", "Corporate_Sector", "Hapes_Consortium"})
+            :for_factions({"Rebel", "Empire", "Pentastar", "Eriadu_Authority", "Zsinj_Empire", "Greater_Maldrood", "EmpireoftheHand", "Corporate_Sector", "Hapes_Consortium", "Hutt_Cartels"})
         ):end_()
 
     -- Exiting Daala
 
     dsl.transition(daala)
         :to(pellaeon)
-        :when(policy:hero_dies("Gorgon"))
+        :when(policy:hero_dies("Daala_Gorgon"))
         :end_()
 	dsl.transition(daala)
         :to(pellaeon)
@@ -213,11 +213,7 @@ return function(dsl)
     dsl.transition(daala)
         :to(pellaeon)
         :when(policy:object_constructed("Dummy_Regicide_Pellaeon"))
-        :with_effects(
-            effect:spawn_hero("Scylla")
-            :on_planet("HAKASSI")
-            :for_faction("Empire")
-        ):end_()
+        :end_()
 
     return initialize
 end

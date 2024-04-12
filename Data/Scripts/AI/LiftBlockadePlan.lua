@@ -57,6 +57,7 @@ function Definitions()
 		"MainForce"						-- Name of the MainForce, Variable and thread function.				
 		,"Frigate | Capital | Corvette | SuperCapital = 100%"
 		,"SpaceHero = 0,2"
+		,"Gunship = 0,10"
 	}
 	}	
 end

@@ -7,6 +7,7 @@ require("PGBase")
 require("PGStateMachine")
 require("PGStoryMode")
 require("PGSpawnUnits")
+require("eawx-util/MissionFunctions")
 
 function Definitions()
 	

@@ -1,37 +1,27 @@
 --////////////////////////////////////////////////
--- Katana Mission (New Republic)
+-- Tactical: Battle of Coruscant (New Republic)
 --////////////////////////////////////////////////
 
 require("PGStoryMode")
 require("PGSpawnUnits")
 require("PGMoveUnits")
 
-
-
 function Definitions()
-
 	DebugMessage("%s -- In Definitions", tostring(Script))
 	
-	StoryModeEvents = 
-	{
-		Battle_Start = Begin_Battle,
-		Imps_Enter_System = First_Wave,
-		Wave2_Spawn = More_Foes,
-		Wave3_Spawn = Moar_Foes,
+	StoryModeEvents = {
+		Battle_Start = Battle_Start_Lua,
+		Wave1_Spawn = Wave1_Spawn_Lua,
+		Wave2_Spawn = Wave2_Spawn_Lua,
+		Wave3_Spawn = Wave3_Spawn_Lua,
 	}
 
 	invaders = Find_Player("Hostile")
-	empire = Find_Player("Empire")
-	rebels = Find_Player("Rebel")
-
 	intro_skipped = false
-	mission_started = false
-
 end
 
-function Begin_Battle(message)
+function Battle_Start_Lua(message)
 	if message == OnEnter then
-
 		evil_1 = Find_Hint("STORY_TRIGGER_ZONE_00","entry1")
 		evil_2 = Find_Hint("STORY_TRIGGER_ZONE_00","entry2")
 		evil_3 = Find_Hint("STORY_TRIGGER_ZONE_00","entry3")
@@ -56,44 +46,49 @@ function Begin_Battle(message)
 		entry_marker = Find_First_Object("Attacker Entry Position")
 		defender_entry_marker = Find_First_Object("Defending Forces Position")
 
-		mission_started = true
 		current_cinematic_thread = Create_Thread("Start_Cinematic_Intro")
 	end
 end
 
 function Start_Cinematic_Intro ()
-
 	Start_Cinematic_Camera()
 	Suspend_AI(1)
 	Lock_Controls(1)
 	Fade_Screen_In(5)
-
-	Stop_All_Music()
 	Cancel_Fast_Forward()
 
 	Set_Cinematic_Camera_Key(defender_entry_marker, 1800, 40, 0, 1, 0, 0, 0)
-	Set_Cinematic_Target_Key(evil_20, 0, 0, 0, 0, 0, 0, 0) Sleep(1.0)
+	Set_Cinematic_Target_Key(evil_20, 0, 0, 0, 0, 0, 0, 0) 
+	Sleep(1.0)
 
 	Transition_Cinematic_Camera_Key(evil_3, 16, 400, 20, 0, 1, 0, 0, 0)
-	Transition_Cinematic_Target_Key(evil_3, 10, 0, 0, 0, 0, 0, 0, 0) Sleep(2.5)
-
-	Fade_Screen_Out(4) Sleep(2.5) Point_Camera_At(defender_entry_marker)
+	Transition_Cinematic_Target_Key(evil_3, 10, 0, 0, 0, 0, 0, 0, 0) 
+	Sleep(1.0)
+	Story_Event("OSH_CORUSCANT_SPEECH_1")
+	Sleep(1.5)
+	
+	Fade_Screen_Out(4) 
+	Sleep(2.5) 
+	Point_Camera_At(defender_entry_marker)
 	Set_Cinematic_Camera_Key(defender_entry_marker, 2800, 200, 155, 1, 0, 0, 0)
 	Set_Cinematic_Target_Key(defender_entry_marker, 0, 0, 0, 0, 0, 0, 0)
-	Fade_Screen_In(4) Play_Music("Evacuation_of_Coruscant_Music_Event")
+	Fade_Screen_In(4) 
 
-	Sleep(2) Letter_Box_In(3) Sleep(1) Story_Event("BEGIN_BRIEFING_OSH") Sleep(5.5)
-
-	Story_Event("NEXT_BRIEFING_OSH") Sleep(5.5)
+	Sleep(2) 
+	Letter_Box_In(3) 
+	Sleep(4) 
+	Story_Event("OSH_CORUSCANT_SPEECH_2") 
+	Sleep(8)
 
 	Transition_Cinematic_Camera_Key(evil_17, 6, 500, 100, 45, 1, 0, 0, 0)
-	Sleep(3) Transition_Cinematic_Target_Key(evil_19, 4, 0, 0, 40, 0, 0, 0, 0)
-	Story_Event("END_BRIEFING_OSH")
+	Sleep(3) 
+	Transition_Cinematic_Target_Key(evil_19, 4, 0, 0, 40, 0, 0, 0, 0)
+	Story_Event("OSH_CORUSCANT_SPEECH_3")
 
 	Transition_Cinematic_Camera_Key(evil_17, 5, 800, 80, 10, 1, 0, 0, 0)
 	Transition_Cinematic_Target_Key(defender_entry_marker, 4, 0, 0, 40, 0, 0, 0, 0)
-	Sleep(4.5) Create_Thread("End_Camera")
-
+	Sleep(4.5) 
+	Create_Thread("End_Camera")
 end
 
 function Story_Handle_Esc()
@@ -111,21 +106,20 @@ function End_Camera()
 	if intro_skipped then
 		Fade_Screen_In(.1)
 		Story_Event("END_BRIEFING_OSH")
-		end
+	end
 
 	Point_Camera_At(defender_entry_marker)
 	Transition_To_Tactical_Camera(4)
-	Sleep(4.3) Letter_Box_Out(3) Suspend_AI(0)
+	Sleep(4.3) 
+	Letter_Box_Out(3) 
+	Suspend_AI(0)
 	Sleep(1.4)
 	End_Cinematic_Camera()
 	Lock_Controls(0)
 end
 
-function First_Wave(message)
+function Wave1_Spawn_Lua(message)
 	if message == OnEnter then
-
-		local invaders = Find_Player("Hostile")
-
 		Resume_Hyperspace_In()
 
 		invader1 = Spawn_Unit(Find_Object_Type("Skirmish_Star_Destroyer_Two"), evil_1, invaders)
@@ -202,13 +196,11 @@ function First_Wave(message)
 		invader15 = Find_Nearest(evil_20, invaders, true)
 		invader15.Teleport_And_Face(evil_20)
 		invader15.Cinematic_Hyperspace_In(350)
-
 	end
 end
 
-function More_Foes(message)
+function Wave2_Spawn_Lua(message)
 	if message == OnEnter then
-
 		invader_1 = Spawn_Unit(Find_Object_Type("Skirmish_Star_Destroyer_Two"), evil_1, invaders)
 		invader_1 = Find_Nearest(evil_1, invaders, true)
 		invader_1.Teleport_And_Face(evil_1)
@@ -286,9 +278,8 @@ function More_Foes(message)
 	end
 end
 
-function Moar_Foes(message)
+function Wave3_Spawn_Lua(message)
 	if message == OnEnter then
-		
 		invader__1 = Spawn_Unit(Find_Object_Type("Skirmish_Gladiator"), evil_1, invaders)
 		invader__1 = Find_Nearest(evil_1, invaders, true)
 		invader__1.Teleport_And_Face(evil_1)
@@ -363,14 +354,5 @@ function Moar_Foes(message)
 		invader__15 = Find_Nearest(evil_15, invaders, true)
 		invader__15.Teleport_And_Face(evil_15)
 		invader__15.Cinematic_Hyperspace_In(350)
-		Stop_All_Music()
-		Sleep(2)
-		Play_Music("Evacuation_of_Coruscant_3_Music_Event")
-		Sleep(120) Resume_Mode_Based_Music()
 	end
-end
-
-function spawnFleet(param)
-  local self = param[1]
-  self.spawnList = SpawnList(param[2], param[3], param[4], true, true)
 end

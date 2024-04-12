@@ -35,17 +35,14 @@ function Definitions()
 
 	StoryModeEvents = { Setup_Start = Begin_GC,
 						Battle_Start = Begin_Battle}
-
 	GlobalValue.Set("CURRENT_ERA", 1)
 	GlobalValue.Set("REGIME_INDEX", 1)
-
+	GlobalValue.Set("SHOULD_RESTART", 0)
 end
 
 
 function Begin_GC(message)
 	if message == OnEnter then
-
-		
 		for _, faction in pairs(CONSTANTS.ALL_FACTIONS_NOT_NEUTRAL) do
 			local faction_object = Find_Player(faction)
 			for _, second_faction in pairs(CONSTANTS.ALL_FACTIONS_NOT_NEUTRAL) do
@@ -55,13 +52,17 @@ function Begin_GC(message)
 				end
 			end
 		end
-		 
+		GlobalValue.Set("SHOULD_RESTART", 0)
+	elseif message == OnUpdate then
+		local should_restart = GlobalValue.Get("SHOULD_RESTART")
+		if should_restart == 1 then
+			Story_Event("IA_RESTART_MODE")
+		end
 	end
 end
 
 function Begin_Battle(message)
 	if message == OnEnter then
-		
 		for _, faction in pairs(CONSTANTS.ALL_FACTIONS_NOT_NEUTRAL) do
 			local faction_object = Find_Player(faction)
 			for _, second_faction in pairs(CONSTANTS.ALL_FACTIONS_NOT_NEUTRAL) do

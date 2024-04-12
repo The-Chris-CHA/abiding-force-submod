@@ -1,22 +1,553 @@
 <?xml version="1.0"?>
 <Campaigns>
 
+	<Campaign Name="Sandbox_Align_Rebel">
+		<Campaign_Set> Sandbox_Align </Campaign_Set>
+		<Sort_Order>213</Sort_Order>
+
+		<Text_ID> TEXT_CAMPAIGN_SINGLE_ALIGN </Text_ID>
+		<Description_Text> TEXT_CAMPAIGN_SINGLE_DESCRIPTION_ALIGN </Description_Text>
+
+		<Camera_Shift_X> 40.0 </Camera_Shift_X>
+		<Camera_Shift_Y> 0.0 </Camera_Shift_Y>
+		<Camera_Distance> 1200.0 </Camera_Distance>
+
+		<Locations> 
+			Galaxy_Core_Art_Model, 
+			<!-- Pentastar Alignment -->
+			Bastion,
+			Borosk,
+			Dubrillion,
+			Entralla,
+			Gabredor,
+			Jaemus,
+			Muunilinst,
+			Sernpidal,
+			<!-- Imperial Remnants -->
+			Anx_Minor,
+			Garqi,
+			Ketaris,
+			Ord_Mantell,
+			Orinda,
+			Phaeda,
+			Ord_Trasi,
+			Wistril,
+			<!-- New Republic -->
+			Brentaal,
+			Champala,
+			Contruum,
+			Dantooine,
+			Farrfin,
+			Generis,
+			Ithor,
+			Levian,
+			<!-- Independent Forces -->
+			Agamar,
+			Ord_Biniir,
+			Gravlex_Med,
+			Morishim,
+			Yaga_Minor
+		</Locations>
+
+		<Trade_Routes>
+		Agamar_Gravlex_Med,
+		Agamar_Ithor,
+		Agamar_Ketaris,
+		Anx_Minor_Dantooine,
+		Anx_Minor_Gravlex_Med,
+		Anx_Minor_Ord_Trasi,
+		Bastion_Dubrillion,
+		Bastion_Gabredor,
+		Bastion_Jaemus,
+		Garqi_Ord_Biniir,
+		Morishim_Ord_Biniir,
+		Ord_Biniir_Phaeda,
+		Borosk_Wistril,
+		Borosk_Yaga_Minor,
+		Brentaal_Contruum,
+		Brentaal_Farrfin,
+		Brentaal_Levian,
+		Champala_Farrfin,
+		Champala_Levian,
+		Champala_Ord_Mantell,
+		Contruum_Levian,
+		Dantooine_Dubrillion,
+		Dubrillion_Gabredor,
+		Dubrillion_Sernpidal,
+		Entralla_Jaemus,
+		Entralla_Muunilinst,
+		Entralla_Yaga_Minor,
+		Gabredor_Muunilinst,
+		Gabredor_Morishim,
+		Garqi_Wistril,
+		Generis_Gravlex_Med,
+		Generis_Ketaris,
+		Generis_Ord_Trasi,
+		Gravlex_Med_Sernpidal,
+		Ithor_Levian,
+		Ithor_Ord_Mantell,
+		Ithor_Phaeda,
+		Ketaris_Phaeda,
+		Ord_Mantell_Orinda,
+		Ord_Mantell_Phaeda,
+		Morishim_Ord_Trasi,
+		Morishim_Yaga_Minor,
+		Orinda_Phaeda,
+		Orinda_Wistril,
+		</Trade_Routes>
+
+		<Home_Location> Rebel, Levian </Home_Location>
+		<Home_Location> Empire, Ketaris </Home_Location>
+		<Home_Location> Pentastar, Entralla </Home_Location>
+		<Home_Location> Warlords, Agamar </Home_Location>
+
+		<Starting_Active_Player> Rebel </Starting_Active_Player>
+
+		<Rebel_Story_Name>Conquests\Align\Story_Plots_Sandbox_Align_Rebel.xml</Rebel_Story_Name>
+		<Empire_Story_Name>Conquests\Align\Story_Plots_Sandbox_Align_Empire.xml</Empire_Story_Name>
+		<Underworld_Story_Name>Conquests\Align\Story_Plots_Sandbox_Align_Container.xml</Underworld_Story_Name>
+		<Story_Name>Pentastar, Conquests\Story_Plots_Generic_Pentastar.xml</Story_Name>
+
+		<AI_Player_Control> Empire, None </AI_Player_Control>      
+		<AI_Player_Control> Rebel, SandboxHuman </AI_Player_Control>
+		<AI_Player_Control> Pentastar, None </AI_Player_Control>
+		<AI_Player_Control> Warlords, None </AI_Player_Control>	
+
+		<AI_Player_Control>Chiss, None</AI_Player_Control>
+		<AI_Player_Control>Corellia, None</AI_Player_Control>
+		<AI_Player_Control>Corporate_Sector, None</AI_Player_Control>
+		<AI_Player_Control>EmpireoftheHand, None</AI_Player_Control>
+		<AI_Player_Control>Eriadu_Authority, None</AI_Player_Control>
+		<AI_Player_Control>Greater_Maldrood, None</AI_Player_Control>
+		<AI_Player_Control>Hapes_Consortium, None</AI_Player_Control>
+		<AI_Player_Control>Hostile, None</AI_Player_Control>
+		<AI_Player_Control>Hutt_Cartels, None</AI_Player_Control>
+		<AI_Player_Control>Independent_Forces, None</AI_Player_Control>
+		<AI_Player_Control>Killik_Hives, None</AI_Player_Control>
+		<AI_Player_Control>Mandalorians, None</AI_Player_Control>
+		<AI_Player_Control>SsiRuuvi_Imperium, None</AI_Player_Control>
+		<AI_Player_Control>Underworld, None</AI_Player_Control>
+		<AI_Player_Control>Warlords, None</AI_Player_Control>
+		<AI_Player_Control>Yevetha, None</AI_Player_Control>
+		<AI_Player_Control>Zsinj_Empire, None</AI_Player_Control>
+
+		<Markup_Filename>Chiss, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Corellia, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Corporate_Sector, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Empire, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>EmpireoftheHand, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Eriadu_Authority, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Greater_Maldrood, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Hapes_Consortium, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Hostile, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Hutt_Cartels, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Independent_Forces, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Killik_Hives, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Mandalorians, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Pentastar, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Rebel, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>SsiRuuvi_Imperium, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Underworld, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Warlords, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Yevetha, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Zsinj_Empire, DefaultGalacticHints</Markup_Filename>
+
+		<Supports_Custom_Settings>False</Supports_Custom_Settings>
+		<Show_Completed_Tab>True</Show_Completed_Tab>
+
+		<!-- Win Conditions -->
+
+		<Human_Victory_Conditions>
+				Galactic_All_Planets_Controlled
+		</Human_Victory_Conditions>
+
+		<AI_Victory_Conditions>
+				Galactic_All_Planets_Controlled
+		</AI_Victory_Conditions>
+
+		<!-- Resources for quick organization/editing -->
+
+		<!-- Rebel Starting Forces -->
+		<Starting_Credits> Rebel,  8000 </Starting_Credits>
+		<Starting_Tech_Level> Rebel, 0 </Starting_Tech_Level>
+		<Max_Tech_Level> Rebel, 0 </Max_Tech_Level>
+
+
+		<!-- Capitals -->
+		<Starting_Forces> Empire, Orinda, Remnant_Capital </Starting_Forces>
+		<Starting_Forces> Pentastar, Entralla, PA_Capital </Starting_Forces>
+		<Starting_Forces> Rebel, Brentaal, NewRep_Senate </Starting_Forces>
+
+
+		<!-- Brentaal Space Forces -->
+		<Starting_Forces> Rebel, Brentaal, Generate_Force </Starting_Forces>
+
+		<!-- Champala Space Forces -->
+		<Starting_Forces> Rebel, Champala, Generate_Force </Starting_Forces>
+		<!-- Contruum Space Forces -->
+		<Starting_Forces> Rebel, Contruum, Generate_Force </Starting_Forces>
+		<!-- Dantooine Space Forces -->
+		<Starting_Forces> Rebel, Dantooine, Generate_Force </Starting_Forces>	
+		<!-- Farrfin Space Forces -->
+		<Starting_Forces> Rebel, Farrfin, Generate_Force </Starting_Forces>
+		<!-- Generis Space Forces -->
+		<Starting_Forces> Rebel, Generis, Generate_Force </Starting_Forces>
+		<!-- Ithor Space Forces -->
+		<Starting_Forces> Rebel, Ithor, Generate_Force </Starting_Forces>
+		<!-- Levian Space Forces -->
+		<Starting_Forces> Rebel, Levian, Generate_Force </Starting_Forces>
 
 
 
+		<!-- Empire Starting Forces -->
 
-    
-<!-- ******************************************************************** -->
-<!-- ******************** SANDBOX CAMPAIGN "The Stars Aligh" ************** -->
-<!-- ******************************************************************** -->
-
-
+		<Starting_Credits> Empire,  12000 </Starting_Credits>
+		<Starting_Tech_Level> Empire, 1 </Starting_Tech_Level>
+		<Max_Tech_Level> Empire, 1 </Max_Tech_Level>
 
 
-	
+
+		<!-- Anx_Minor Space Forces -->
+		<Starting_Forces> Empire, Anx_Minor, Generate_Force </Starting_Forces>
+		<!-- Garqi Space Forces -->
+		<Starting_Forces> Empire, Garqi, Generate_Force </Starting_Forces>
+		<!-- Ketaris Space Forces -->
+		<Starting_Forces> Empire, Ketaris, Generate_Force </Starting_Forces>
+		<!-- Ord_Mantell Space Forces -->
+		<Starting_Forces> Empire, Ord_Mantell, Generate_Force </Starting_Forces>
+		<!-- Orinda Space Forces -->
+		<Starting_Forces> Empire, Orinda, Generate_Force </Starting_Forces>
+			<!-- Phaeda Space Forces -->
+		<Starting_Forces> Empire, Phaeda, Generate_Force </Starting_Forces>
+			<!-- Ord_Trasi Space Forces -->
+		<Starting_Forces> Empire, Ord_Trasi, Generate_Force </Starting_Forces>
+		<!-- Wistril Space Forces -->
+		<Starting_Forces> Empire, Wistril, Generate_Force </Starting_Forces>
+
+
+		<Starting_Credits> Pentastar,  15000 </Starting_Credits>
+		<Starting_Tech_Level> Pentastar, 1 </Starting_Tech_Level>
+		<Max_Tech_Level> Pentastar, 1 </Max_Tech_Level>
+
+		<!-- Bastion Space Forces -->
+		<Starting_Forces> Pentastar, Bastion, Generate_Force </Starting_Forces>
+		<Starting_Forces> Pentastar, Bastion, Grant_Oriflamme </Starting_Forces>
+		<!-- Bastion Land Forces -->
+		<Starting_Forces> Pentastar, Bastion, Jerec_Team </Starting_Forces>
+		<Starting_Forces> Pentastar, Bastion, Sariss_Team </Starting_Forces>
+		<Starting_Forces> Pentastar, Bastion, Slosin_Ironhand </Starting_Forces>
+
+		<!-- Borosk Space Forces -->
+		<Starting_Forces> Pentastar, Borosk, Generate_Force </Starting_Forces>
+		<!-- Dubrillion Space Forces -->
+		<Starting_Forces> Pentastar, Dubrillion, Generate_Force </Starting_Forces>
+		<!-- Entralla Space Forces -->
+		<Starting_Forces> Pentastar, Entralla, Generate_Force </Starting_Forces>
+		<!-- Gabredor Space Forces -->
+		<Starting_Forces> Pentastar, Gabredor, Generate_Force </Starting_Forces>
+
+		<!-- Jaemus Space Forces -->
+		<Starting_Forces> Pentastar, Jaemus, Generate_Force </Starting_Forces>
+
+		<!-- Muunilinst Space Forces -->
+		<Starting_Forces> Pentastar, Muunilinst, Generate_Force </Starting_Forces>		
+		<!-- Sernpidal Space Forces -->
+		<Starting_Forces> Pentastar, Sernpidal, Generate_Force </Starting_Forces>
+
+		<Starting_Credits> Warlords,  8000 </Starting_Credits>
+		<Starting_Tech_Level> Warlords, 1 </Starting_Tech_Level>
+		<Max_Tech_Level> Warlords, 1 </Max_Tech_Level>
+
+		<!-- Agamar Space Forces -->
+		<Starting_Forces> Warlords, Agamar, Generate_Force </Starting_Forces>
+
+		<!-- Ord_Biniir Space Forces -->
+		<Starting_Forces> Warlords, Ord_Biniir, Generate_Force </Starting_Forces>
+		<!-- Gravlex Med Space Forces -->
+		<Starting_Forces> Warlords, Gravlex_Med, Generate_Force </Starting_Forces>
+		<!--Morishim Space Forces -->
+		<Starting_Forces> Warlords, Morishim, Generate_Force </Starting_Forces>
+		<!--Yaga_Minor Space Forces -->
+		<Starting_Forces> Warlords, Yaga_Minor, Generate_Force </Starting_Forces>
+
+	</Campaign>	
+
+	<Campaign Name="Sandbox_Align_Empire">
+		<Campaign_Set> Sandbox_Align </Campaign_Set>
+		<Sort_Order>213</Sort_Order>
+
+		<Text_ID> TEXT_CAMPAIGN_SINGLE_ALIGN </Text_ID>
+		<Description_Text> TEXT_CAMPAIGN_SINGLE_DESCRIPTION_ALIGN </Description_Text>
+
+		<Camera_Shift_X> 40.0 </Camera_Shift_X>
+		<Camera_Shift_Y> 0.0 </Camera_Shift_Y>
+		<Camera_Distance> 1200.0 </Camera_Distance>
+
+		<Locations> 
+			Galaxy_Core_Art_Model, 
+			<!-- Pentastar Alignment -->
+			Bastion,
+			Borosk,
+			Dubrillion,
+			Entralla,
+			Gabredor,
+			Jaemus,
+			Muunilinst,
+			Sernpidal,
+			<!-- Imperial Remnants -->
+			Anx_Minor,
+			Garqi,
+			Ketaris,
+			Ord_Mantell,
+			Orinda,
+			Phaeda,
+			Ord_Trasi,
+			Wistril,
+			<!-- New Republic -->
+			Brentaal,
+			Champala,
+			Contruum,
+			Dantooine,
+			Farrfin,
+			Generis,
+			Ithor,
+			Levian,
+			<!-- Independent Forces -->
+			Agamar,
+			Ord_Biniir,
+			Gravlex_Med,
+			Morishim,
+			Yaga_Minor
+		</Locations>
+
+		<Trade_Routes>
+		Agamar_Gravlex_Med,
+		Agamar_Ithor,
+		Agamar_Ketaris,
+		Anx_Minor_Dantooine,
+		Anx_Minor_Gravlex_Med,
+		Anx_Minor_Ord_Trasi,
+		Bastion_Dubrillion,
+		Bastion_Gabredor,
+		Bastion_Jaemus,
+		Garqi_Ord_Biniir,
+		Morishim_Ord_Biniir,
+		Ord_Biniir_Phaeda,
+		Borosk_Wistril,
+		Borosk_Yaga_Minor,
+		Brentaal_Contruum,
+		Brentaal_Farrfin,
+		Brentaal_Levian,
+		Champala_Farrfin,
+		Champala_Levian,
+		Champala_Ord_Mantell,
+		Contruum_Levian,
+		Dantooine_Dubrillion,
+		Dubrillion_Gabredor,
+		Dubrillion_Sernpidal,
+		Entralla_Jaemus,
+		Entralla_Muunilinst,
+		Entralla_Yaga_Minor,
+		Gabredor_Muunilinst,
+		Gabredor_Morishim,
+		Garqi_Wistril,
+		Generis_Gravlex_Med,
+		Generis_Ketaris,
+		Generis_Ord_Trasi,
+		Gravlex_Med_Sernpidal,
+		Ithor_Levian,
+		Ithor_Ord_Mantell,
+		Ithor_Phaeda,
+		Ketaris_Phaeda,
+		Ord_Mantell_Orinda,
+		Ord_Mantell_Phaeda,
+		Morishim_Ord_Trasi,
+		Morishim_Yaga_Minor,
+		Orinda_Phaeda,
+		Orinda_Wistril,
+		</Trade_Routes>
+
+		<Home_Location> Rebel, Levian </Home_Location>
+		<Home_Location> Empire, Ketaris </Home_Location>
+		 <Home_Location> Pentastar, Entralla </Home_Location>
+		 <Home_Location> Warlords, Agamar </Home_Location>
+
+		<Starting_Active_Player> Empire </Starting_Active_Player>
+
+		<Rebel_Story_Name>Conquests\Align\Story_Plots_Sandbox_Align_Rebel.xml</Rebel_Story_Name>
+		<Empire_Story_Name>Conquests\Align\Story_Plots_Sandbox_Align_Empire.xml</Empire_Story_Name>
+		<Underworld_Story_Name>Conquests\Align\Story_Plots_Sandbox_Align_Container.xml</Underworld_Story_Name>
+
+		<Story_Name>
+			Pentastar, Conquests\Story_Plots_Generic_Pentastar.xml
+		</Story_Name>
+			 
+		<AI_Player_Control> Empire, SandboxHuman </AI_Player_Control>      
+		<AI_Player_Control> Rebel, None </AI_Player_Control>
+		<AI_Player_Control> Pentastar, None </AI_Player_Control>
+		<AI_Player_Control> Warlords, None </AI_Player_Control>	
+
+		<AI_Player_Control>Chiss, None</AI_Player_Control>
+		<AI_Player_Control>Corellia, None</AI_Player_Control>
+		<AI_Player_Control>Corporate_Sector, None</AI_Player_Control>
+		<AI_Player_Control>EmpireoftheHand, None</AI_Player_Control>
+		<AI_Player_Control>Eriadu_Authority, None</AI_Player_Control>
+		<AI_Player_Control>Greater_Maldrood, None</AI_Player_Control>
+		<AI_Player_Control>Hapes_Consortium, None</AI_Player_Control>
+		<AI_Player_Control>Hostile, None</AI_Player_Control>
+		<AI_Player_Control>Hutt_Cartels, None</AI_Player_Control>
+		<AI_Player_Control>Independent_Forces, None</AI_Player_Control>
+		<AI_Player_Control>Killik_Hives, None</AI_Player_Control>
+		<AI_Player_Control>Mandalorians, None</AI_Player_Control>
+		<AI_Player_Control>SsiRuuvi_Imperium, None</AI_Player_Control>
+		<AI_Player_Control>Underworld, None</AI_Player_Control>
+		<AI_Player_Control>Warlords, None</AI_Player_Control>
+		<AI_Player_Control>Yevetha, None</AI_Player_Control>
+		<AI_Player_Control>Zsinj_Empire, None</AI_Player_Control>
+
+		<Markup_Filename>Chiss, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Corellia, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Corporate_Sector, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Empire, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>EmpireoftheHand, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Eriadu_Authority, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Greater_Maldrood, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Hapes_Consortium, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Hostile, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Hutt_Cartels, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Independent_Forces, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Killik_Hives, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Mandalorians, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Pentastar, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Rebel, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>SsiRuuvi_Imperium, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Underworld, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Warlords, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Yevetha, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Zsinj_Empire, DefaultGalacticHints</Markup_Filename>
+
+		<Supports_Custom_Settings>False</Supports_Custom_Settings>
+		<Show_Completed_Tab>True</Show_Completed_Tab>
+
+		<!-- Win Conditions -->
+
+		<Human_Victory_Conditions>
+				Galactic_All_Planets_Controlled
+		</Human_Victory_Conditions>
+
+		<AI_Victory_Conditions>
+				Galactic_All_Planets_Controlled
+		</AI_Victory_Conditions>
+
+		<!-- Resources for quick organization/editing -->
+
+
+
+		<!-- Rebel Starting Forces -->
+		<Starting_Credits> Rebel,  8000 </Starting_Credits>
+		<Starting_Tech_Level> Rebel, 0 </Starting_Tech_Level>
+		<Max_Tech_Level> Rebel, 0 </Max_Tech_Level>
+
+
+		<!-- Capitals -->
+		<Starting_Forces> Empire, Orinda, Remnant_Capital </Starting_Forces>
+		<Starting_Forces> Pentastar, Entralla, PA_Capital </Starting_Forces>
+		<Starting_Forces> Rebel, Brentaal, NewRep_Senate </Starting_Forces>
+
+
+		<!-- Brentaal Space Forces -->
+		<Starting_Forces> Rebel, Brentaal, Generate_Force </Starting_Forces>
+
+		<!-- Champala Space Forces -->
+		<Starting_Forces> Rebel, Champala, Generate_Force </Starting_Forces>
+		<!-- Contruum Space Forces -->
+		<Starting_Forces> Rebel, Contruum, Generate_Force </Starting_Forces>
+		<!-- Dantooine Space Forces -->
+		<Starting_Forces> Rebel, Dantooine, Generate_Force </Starting_Forces>	
+		<!-- Farrfin Space Forces -->
+		<Starting_Forces> Rebel, Farrfin, Generate_Force </Starting_Forces>
+		<!-- Generis Space Forces -->
+		<Starting_Forces> Rebel, Generis, Generate_Force </Starting_Forces>
+		<!-- Ithor Space Forces -->
+		<Starting_Forces> Rebel, Ithor, Generate_Force </Starting_Forces>
+		<!-- Levian Space Forces -->
+		<Starting_Forces> Rebel, Levian, Generate_Force </Starting_Forces>
+
+
+
+		<!-- Empire Starting Forces -->
+
+		<Starting_Credits> Empire,  12000 </Starting_Credits>
+		<Starting_Tech_Level> Empire, 1 </Starting_Tech_Level>
+		<Max_Tech_Level> Empire, 1 </Max_Tech_Level>
+
+
+
+		<!-- Anx_Minor Space Forces -->
+		<Starting_Forces> Empire, Anx_Minor, Generate_Force </Starting_Forces>
+		<!-- Garqi Space Forces -->
+		<Starting_Forces> Empire, Garqi, Generate_Force </Starting_Forces>
+		<!-- Ketaris Space Forces -->
+		<Starting_Forces> Empire, Ketaris, Generate_Force </Starting_Forces>
+		<!-- Ord_Mantell Space Forces -->
+		<Starting_Forces> Empire, Ord_Mantell, Generate_Force </Starting_Forces>
+		<!-- Orinda Space Forces -->
+		<Starting_Forces> Empire, Orinda, Generate_Force </Starting_Forces>
+			<!-- Phaeda Space Forces -->
+		<Starting_Forces> Empire, Phaeda, Generate_Force </Starting_Forces>
+			<!-- Ord_Trasi Space Forces -->
+		<Starting_Forces> Empire, Ord_Trasi, Generate_Force </Starting_Forces>
+		<!-- Wistril Space Forces -->
+		<Starting_Forces> Empire, Wistril, Generate_Force </Starting_Forces>
+
+
+		<Starting_Credits> Pentastar,  15000 </Starting_Credits>
+		<Starting_Tech_Level> Pentastar, 1 </Starting_Tech_Level>
+		<Max_Tech_Level> Pentastar, 1 </Max_Tech_Level>
+
+		<!-- Bastion Space Forces -->
+		<Starting_Forces> Pentastar, Bastion, Generate_Force </Starting_Forces>
+		<Starting_Forces> Pentastar, Bastion, Grant_Oriflamme </Starting_Forces>
+		<!-- Bastion Land Forces -->
+		<Starting_Forces> Pentastar, Bastion, Jerec_Team </Starting_Forces>
+		<Starting_Forces> Pentastar, Bastion, Sariss_Team </Starting_Forces>
+		<Starting_Forces> Pentastar, Bastion, Slosin_Ironhand </Starting_Forces>
+
+		<!-- Borosk Space Forces -->
+		<Starting_Forces> Pentastar, Borosk, Generate_Force </Starting_Forces>
+		<!-- Dubrillion Space Forces -->
+		<Starting_Forces> Pentastar, Dubrillion, Generate_Force </Starting_Forces>
+		<!-- Entralla Space Forces -->
+		<Starting_Forces> Pentastar, Entralla, Generate_Force </Starting_Forces>
+		<!-- Gabredor Space Forces -->
+		<Starting_Forces> Pentastar, Gabredor, Generate_Force </Starting_Forces>
+
+		<!-- Jaemus Space Forces -->
+		<Starting_Forces> Pentastar, Jaemus, Generate_Force </Starting_Forces>
+
+		<!-- Muunilinst Space Forces -->
+		<Starting_Forces> Pentastar, Muunilinst, Generate_Force </Starting_Forces>		
+		<!-- Sernpidal Space Forces -->
+		<Starting_Forces> Pentastar, Sernpidal, Generate_Force </Starting_Forces>
+
+		<Starting_Credits> Warlords,  8000 </Starting_Credits>
+		<Starting_Tech_Level> Warlords, 1 </Starting_Tech_Level>
+		<Max_Tech_Level> Warlords, 1 </Max_Tech_Level>
+
+		<!-- Agamar Space Forces -->
+		<Starting_Forces> Warlords, Agamar, Generate_Force </Starting_Forces>
+
+		<!-- Ord_Biniir Space Forces -->
+		<Starting_Forces> Warlords, Ord_Biniir, Generate_Force </Starting_Forces>
+		<!-- Gravlex Med Space Forces -->
+		<Starting_Forces> Warlords, Gravlex_Med, Generate_Force </Starting_Forces>
+		<!--Morishim Space Forces -->
+		<Starting_Forces> Warlords, Morishim, Generate_Force </Starting_Forces>
+		<!--Yaga_Minor Space Forces -->
+		<Starting_Forces> Warlords, Yaga_Minor, Generate_Force </Starting_Forces>
+	</Campaign>	
 
 	<Campaign Name="Sandbox_Align_Pentastar">
-
 		<Campaign_Set> Sandbox_Align </Campaign_Set>
 		<Sort_Order>213</Sort_Order>
 
@@ -125,34 +656,50 @@
 		<Story_Name>
 			Pentastar, Conquests\Story_Plots_Generic_Pentastar.xml
 		</Story_Name>
-        	 
-		<AI_Player_Control> Empire, GenericAI </AI_Player_Control>      
-		<AI_Player_Control> Rebel, GenericAI </AI_Player_Control>
+        
+		<AI_Player_Control> Empire, None </AI_Player_Control>      
+		<AI_Player_Control> Rebel, None </AI_Player_Control>
 		<AI_Player_Control> Pentastar, SandboxHuman </AI_Player_Control>
-		<AI_Player_Control> Warlords, None </AI_Player_Control>	
 
-		<AI_Player_Control> EmpireoftheHand, None </AI_Player_Control>
-		<AI_Player_Control> Zsinj_Empire, None </AI_Player_Control>
-		
-		<AI_Player_Control> Hapes_Consortium, None </AI_Player_Control>
-		<AI_Player_Control> Greater_Maldrood, None </AI_Player_Control>      
-		<AI_Player_Control> Eriadu_Authority, None </AI_Player_Control>				
-		<AI_Player_Control> Corporate_Sector, None </AI_Player_Control>		
-		<AI_Player_Control> Hutt_Cartels, None </AI_Player_Control>	
-		
-		<Markup_Filename>Empire, DefaultGalacticHints </Markup_Filename>
-		<Markup_Filename>Rebel, DefaultGalacticHints </Markup_Filename>
-		<Markup_Filename>EmpireoftheHand, DefaultGalacticHints </Markup_Filename>
-		<Markup_Filename>Zsinj_Empire, DefaultGalacticHints </Markup_Filename>
-		<Markup_Filename>Greater_Maldrood, DefaultMaldroodHints </Markup_Filename>			
-		<Markup_Filename>Pentastar, DefaultGalacticHints </Markup_Filename>
-		<Markup_Filename>Eriadu_Authority, DefaultEriaduHints </Markup_Filename>				
-		<Markup_Filename>Corporate_Sector, DefaultGalacticHints </Markup_Filename>		
-		<Markup_Filename>Warlords, DefaultGalacticHints </Markup_Filename>			
-		<Markup_Filename>Hapes_Consortium, DefaultGalacticHints </Markup_Filename>
-		<Markup_Filename>Hutt_Cartels, DefaultGalacticHints </Markup_Filename>
-		
-		
+		<AI_Player_Control>Chiss, None</AI_Player_Control>
+		<AI_Player_Control>Corellia, None</AI_Player_Control>
+		<AI_Player_Control>Corporate_Sector, None</AI_Player_Control>
+		<AI_Player_Control>EmpireoftheHand, None</AI_Player_Control>
+		<AI_Player_Control>Eriadu_Authority, None</AI_Player_Control>
+		<AI_Player_Control>Greater_Maldrood, None</AI_Player_Control>
+		<AI_Player_Control>Hapes_Consortium, None</AI_Player_Control>
+		<AI_Player_Control>Hostile, None</AI_Player_Control>
+		<AI_Player_Control>Hutt_Cartels, None</AI_Player_Control>
+		<AI_Player_Control>Independent_Forces, None</AI_Player_Control>
+		<AI_Player_Control>Killik_Hives, None</AI_Player_Control>
+		<AI_Player_Control>Mandalorians, None</AI_Player_Control>
+		<AI_Player_Control>SsiRuuvi_Imperium, None</AI_Player_Control>
+		<AI_Player_Control>Underworld, None</AI_Player_Control>
+		<AI_Player_Control>Warlords, None</AI_Player_Control>
+		<AI_Player_Control>Yevetha, None</AI_Player_Control>
+		<AI_Player_Control>Zsinj_Empire, None</AI_Player_Control>
+
+		<Markup_Filename>Chiss, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Corellia, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Corporate_Sector, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Empire, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>EmpireoftheHand, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Eriadu_Authority, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Greater_Maldrood, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Hapes_Consortium, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Hostile, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Hutt_Cartels, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Independent_Forces, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Killik_Hives, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Mandalorians, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Pentastar, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Rebel, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>SsiRuuvi_Imperium, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Underworld, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Warlords, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Yevetha, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Zsinj_Empire, DefaultGalacticHints</Markup_Filename>
+
 		<Supports_Custom_Settings>False</Supports_Custom_Settings>
 		<Show_Completed_Tab>True</Show_Completed_Tab>
 
@@ -283,533 +830,4 @@
 
 	</Campaign>	
 
-	<Campaign Name="Sandbox_Align_Empire">
-
-		<Campaign_Set> Sandbox_Align </Campaign_Set>
-		<Sort_Order>213</Sort_Order>
-
-        <Text_ID> TEXT_CAMPAIGN_SINGLE_ALIGN </Text_ID>
-        <Description_Text> TEXT_CAMPAIGN_SINGLE_DESCRIPTION_ALIGN </Description_Text>
-
-        <Camera_Shift_X> 40.0 </Camera_Shift_X>
-        <Camera_Shift_Y> 0.0 </Camera_Shift_Y>
-        <Camera_Distance> 1200.0 </Camera_Distance>
-
-		<Locations> 
-			Galaxy_Core_Art_Model, 
-			<!-- Pentastar Alignment -->
-			Bastion,
-			Borosk,
-			Dubrillion,
-			Entralla,
-			Gabredor,
-			Jaemus,
-			Muunilinst,
-			Sernpidal,
-			<!-- Imperial Remnants -->
-			Anx_Minor,
-			Garqi,
-			Ketaris,
-			Ord_Mantell,
-			Orinda,
-			Phaeda,
-			Ord_Trasi,
-			Wistril,
-			<!-- New Republic -->
-			Brentaal,
-			Champala,
-			Contruum,
-			Dantooine,
-			Farrfin,
-			Generis,
-			Ithor,
-			Levian,
-			<!-- Independent Forces -->
-			Agamar,
-			Ord_Biniir,
-			Gravlex_Med,
-			Morishim,
-			Yaga_Minor
-		</Locations>
-
-        <Trade_Routes>
-		Agamar_Gravlex_Med,
-		Agamar_Ithor,
-		Agamar_Ketaris,
-		Anx_Minor_Dantooine,
-		Anx_Minor_Gravlex_Med,
-		Anx_Minor_Ord_Trasi,
-		Bastion_Dubrillion,
-		Bastion_Gabredor,
-		Bastion_Jaemus,
-		Garqi_Ord_Biniir,
-		Morishim_Ord_Biniir,
-		Ord_Biniir_Phaeda,
-		Borosk_Wistril,
-		Borosk_Yaga_Minor,
-		Brentaal_Contruum,
-		Brentaal_Farrfin,
-		Brentaal_Levian,
-		Champala_Farrfin,
-		Champala_Levian,
-		Champala_Ord_Mantell,
-		Contruum_Levian,
-		Dantooine_Dubrillion,
-		Dubrillion_Gabredor,
-		Dubrillion_Sernpidal,
-		Entralla_Jaemus,
-		Entralla_Muunilinst,
-		Entralla_Yaga_Minor,
-		Gabredor_Muunilinst,
-		Gabredor_Morishim,
-		Garqi_Wistril,
-		Generis_Gravlex_Med,
-		Generis_Ketaris,
-		Generis_Ord_Trasi,
-		Gravlex_Med_Sernpidal,
-		Ithor_Levian,
-		Ithor_Ord_Mantell,
-		Ithor_Phaeda,
-		Ketaris_Phaeda,
-		Ord_Mantell_Orinda,
-		Ord_Mantell_Phaeda,
-		Morishim_Ord_Trasi,
-		Morishim_Yaga_Minor,
-		Orinda_Phaeda,
-		Orinda_Wistril,
-		</Trade_Routes>
-		
-        <Home_Location> Rebel, Levian </Home_Location>
-        <Home_Location> Empire, Ketaris </Home_Location>
-		 <Home_Location> Pentastar, Entralla </Home_Location>
-		 <Home_Location> Warlords, Agamar </Home_Location>
-	 
-        <Starting_Active_Player> Empire </Starting_Active_Player>
-
-		<Rebel_Story_Name>Conquests\Align\Story_Plots_Sandbox_Align_Rebel.xml</Rebel_Story_Name>
-        <Empire_Story_Name>Conquests\Align\Story_Plots_Sandbox_Align_Empire.xml</Empire_Story_Name>
-		<Underworld_Story_Name>Conquests\Align\Story_Plots_Sandbox_Align_Container.xml</Underworld_Story_Name>
-		
-		<Story_Name>
-			Pentastar, Conquests\Story_Plots_Generic_Pentastar.xml
-		</Story_Name>
-        	 
-		<AI_Player_Control> Empire, SandboxHuman </AI_Player_Control>      
-		<AI_Player_Control> Rebel, GenericAI </AI_Player_Control>
-		<AI_Player_Control> Pentastar, GenericAI </AI_Player_Control>
-		<AI_Player_Control> Warlords, None </AI_Player_Control>	
-
-		<AI_Player_Control> EmpireoftheHand, None </AI_Player_Control>
-		<AI_Player_Control> Zsinj_Empire, None </AI_Player_Control>
-		
-		<AI_Player_Control> Hapes_Consortium, None </AI_Player_Control>
-		<AI_Player_Control> Greater_Maldrood, None </AI_Player_Control>      
-		<AI_Player_Control> Eriadu_Authority, None </AI_Player_Control>				
-		<AI_Player_Control> Corporate_Sector, None </AI_Player_Control>		
-		<AI_Player_Control> Hutt_Cartels, None </AI_Player_Control>	
-		
-		<Markup_Filename>Empire, DefaultGalacticHints </Markup_Filename>
-		<Markup_Filename>Rebel, DefaultGalacticHints </Markup_Filename>
-		<Markup_Filename>EmpireoftheHand, DefaultGalacticHints </Markup_Filename>
-		<Markup_Filename>Zsinj_Empire, DefaultGalacticHints </Markup_Filename>
-		<Markup_Filename>Greater_Maldrood, DefaultMaldroodHints </Markup_Filename>			
-		<Markup_Filename>Pentastar, DefaultGalacticHints </Markup_Filename>
-		<Markup_Filename>Eriadu_Authority, DefaultEriaduHints </Markup_Filename>				
-		<Markup_Filename>Corporate_Sector, DefaultGalacticHints </Markup_Filename>		
-		<Markup_Filename>Warlords, DefaultGalacticHints </Markup_Filename>			
-		<Markup_Filename>Hapes_Consortium, DefaultGalacticHints </Markup_Filename>
-		<Markup_Filename>Hutt_Cartels, DefaultGalacticHints </Markup_Filename>
-		
-		
-		<Supports_Custom_Settings>False</Supports_Custom_Settings>
-		<Show_Completed_Tab>True</Show_Completed_Tab>
-
-		<!-- Win Conditions -->
-
-		<Human_Victory_Conditions>
-				Galactic_All_Planets_Controlled
-		</Human_Victory_Conditions>
-
-		<AI_Victory_Conditions>
-				Galactic_All_Planets_Controlled
-		</AI_Victory_Conditions>
-
-        <!-- Resources for quick organization/editing -->
-		
-		
-		
-		<!-- Rebel Starting Forces -->
-		<Starting_Credits> Rebel,  8000 </Starting_Credits>
-		<Starting_Tech_Level> Rebel, 0 </Starting_Tech_Level>
-		<Max_Tech_Level> Rebel, 0 </Max_Tech_Level>
-		
-	
-		<!-- Capitals -->
-		<Starting_Forces> Empire, Orinda, Remnant_Capital </Starting_Forces>
-		<Starting_Forces> Pentastar, Entralla, PA_Capital </Starting_Forces>
-		<Starting_Forces> Rebel, Brentaal, NewRep_Senate </Starting_Forces>
-		
-
-		<!-- Brentaal Space Forces -->
-		<Starting_Forces> Rebel, Brentaal, Generate_Force </Starting_Forces>
-
-		<!-- Champala Space Forces -->
-		<Starting_Forces> Rebel, Champala, Generate_Force </Starting_Forces>
-		<!-- Contruum Space Forces -->
-		<Starting_Forces> Rebel, Contruum, Generate_Force </Starting_Forces>
-		<!-- Dantooine Space Forces -->
-		<Starting_Forces> Rebel, Dantooine, Generate_Force </Starting_Forces>	
-		<!-- Farrfin Space Forces -->
-		<Starting_Forces> Rebel, Farrfin, Generate_Force </Starting_Forces>
-		<!-- Generis Space Forces -->
-		<Starting_Forces> Rebel, Generis, Generate_Force </Starting_Forces>
-		<!-- Ithor Space Forces -->
-		<Starting_Forces> Rebel, Ithor, Generate_Force </Starting_Forces>
-		<!-- Levian Space Forces -->
-		<Starting_Forces> Rebel, Levian, Generate_Force </Starting_Forces>
-
-
-
-		<!-- Empire Starting Forces -->
-
-		<Starting_Credits> Empire,  12000 </Starting_Credits>
-		<Starting_Tech_Level> Empire, 1 </Starting_Tech_Level>
-		<Max_Tech_Level> Empire, 1 </Max_Tech_Level>
-		
-		
-
-		<!-- Anx_Minor Space Forces -->
-		<Starting_Forces> Empire, Anx_Minor, Generate_Force </Starting_Forces>
-		<!-- Garqi Space Forces -->
-		<Starting_Forces> Empire, Garqi, Generate_Force </Starting_Forces>
-		<!-- Ketaris Space Forces -->
-		<Starting_Forces> Empire, Ketaris, Generate_Force </Starting_Forces>
-		<!-- Ord_Mantell Space Forces -->
-		<Starting_Forces> Empire, Ord_Mantell, Generate_Force </Starting_Forces>
-		<!-- Orinda Space Forces -->
-		<Starting_Forces> Empire, Orinda, Generate_Force </Starting_Forces>
-			<!-- Phaeda Space Forces -->
-		<Starting_Forces> Empire, Phaeda, Generate_Force </Starting_Forces>
-			<!-- Ord_Trasi Space Forces -->
-		<Starting_Forces> Empire, Ord_Trasi, Generate_Force </Starting_Forces>
-		<!-- Wistril Space Forces -->
-		<Starting_Forces> Empire, Wistril, Generate_Force </Starting_Forces>
-
-
-
-		
-
-		
-		<Starting_Credits> Pentastar,  15000 </Starting_Credits>
-		<Starting_Tech_Level> Pentastar, 1 </Starting_Tech_Level>
-		<Max_Tech_Level> Pentastar, 1 </Max_Tech_Level>
-		
-		<!-- Bastion Space Forces -->
-		<Starting_Forces> Pentastar, Bastion, Generate_Force </Starting_Forces>
-		<Starting_Forces> Pentastar, Bastion, Grant_Oriflamme </Starting_Forces>
-		<!-- Bastion Land Forces -->
-		<Starting_Forces> Pentastar, Bastion, Jerec_Team </Starting_Forces>
-		<Starting_Forces> Pentastar, Bastion, Sariss_Team </Starting_Forces>
-		<Starting_Forces> Pentastar, Bastion, Slosin_Ironhand </Starting_Forces>
-		
-		<!-- Borosk Space Forces -->
-		<Starting_Forces> Pentastar, Borosk, Generate_Force </Starting_Forces>
-		<!-- Dubrillion Space Forces -->
-		<Starting_Forces> Pentastar, Dubrillion, Generate_Force </Starting_Forces>
-		<!-- Entralla Space Forces -->
-		<Starting_Forces> Pentastar, Entralla, Generate_Force </Starting_Forces>
-		<!-- Gabredor Space Forces -->
-		<Starting_Forces> Pentastar, Gabredor, Generate_Force </Starting_Forces>
-
-		<!-- Jaemus Space Forces -->
-		<Starting_Forces> Pentastar, Jaemus, Generate_Force </Starting_Forces>
-
-		<!-- Muunilinst Space Forces -->
-		<Starting_Forces> Pentastar, Muunilinst, Generate_Force </Starting_Forces>		
-		<!-- Sernpidal Space Forces -->
-		<Starting_Forces> Pentastar, Sernpidal, Generate_Force </Starting_Forces>
-
-		<Starting_Credits> Warlords,  8000 </Starting_Credits>
-		<Starting_Tech_Level> Warlords, 1 </Starting_Tech_Level>
-		<Max_Tech_Level> Warlords, 1 </Max_Tech_Level>
-
-		<!-- Agamar Space Forces -->
-		<Starting_Forces> Warlords, Agamar, Generate_Force </Starting_Forces>
-	
-		<!-- Ord_Biniir Space Forces -->
-		<Starting_Forces> Warlords, Ord_Biniir, Generate_Force </Starting_Forces>
-		<!-- Gravlex Med Space Forces -->
-		<Starting_Forces> Warlords, Gravlex_Med, Generate_Force </Starting_Forces>
-		<!--Morishim Space Forces -->
-		<Starting_Forces> Warlords, Morishim, Generate_Force </Starting_Forces>
-		<!--Yaga_Minor Space Forces -->
-		<Starting_Forces> Warlords, Yaga_Minor, Generate_Force </Starting_Forces>
-
-
-	</Campaign>	
-
-	<Campaign Name="Sandbox_Align_Rebel">
-
-		<Campaign_Set> Sandbox_Align </Campaign_Set>
-		<Sort_Order>213</Sort_Order>
-
-        <Text_ID> TEXT_CAMPAIGN_SINGLE_ALIGN </Text_ID>
-        <Description_Text> TEXT_CAMPAIGN_SINGLE_DESCRIPTION_ALIGN </Description_Text>
-
-        <Camera_Shift_X> 40.0 </Camera_Shift_X>
-        <Camera_Shift_Y> 0.0 </Camera_Shift_Y>
-        <Camera_Distance> 1200.0 </Camera_Distance>
-
-		<Locations> 
-			Galaxy_Core_Art_Model, 
-			<!-- Pentastar Alignment -->
-			Bastion,
-			Borosk,
-			Dubrillion,
-			Entralla,
-			Gabredor,
-			Jaemus,
-			Muunilinst,
-			Sernpidal,
-			<!-- Imperial Remnants -->
-			Anx_Minor,
-			Garqi,
-			Ketaris,
-			Ord_Mantell,
-			Orinda,
-			Phaeda,
-			Ord_Trasi,
-			Wistril,
-			<!-- New Republic -->
-			Brentaal,
-			Champala,
-			Contruum,
-			Dantooine,
-			Farrfin,
-			Generis,
-			Ithor,
-			Levian,
-			<!-- Independent Forces -->
-			Agamar,
-			Ord_Biniir,
-			Gravlex_Med,
-			Morishim,
-			Yaga_Minor
-		</Locations>
-
-        <Trade_Routes>
-		Agamar_Gravlex_Med,
-		Agamar_Ithor,
-		Agamar_Ketaris,
-		Anx_Minor_Dantooine,
-		Anx_Minor_Gravlex_Med,
-		Anx_Minor_Ord_Trasi,
-		Bastion_Dubrillion,
-		Bastion_Gabredor,
-		Bastion_Jaemus,
-		Garqi_Ord_Biniir,
-		Morishim_Ord_Biniir,
-		Ord_Biniir_Phaeda,
-		Borosk_Wistril,
-		Borosk_Yaga_Minor,
-		Brentaal_Contruum,
-		Brentaal_Farrfin,
-		Brentaal_Levian,
-		Champala_Farrfin,
-		Champala_Levian,
-		Champala_Ord_Mantell,
-		Contruum_Levian,
-		Dantooine_Dubrillion,
-		Dubrillion_Gabredor,
-		Dubrillion_Sernpidal,
-		Entralla_Jaemus,
-		Entralla_Muunilinst,
-		Entralla_Yaga_Minor,
-		Gabredor_Muunilinst,
-		Gabredor_Morishim,
-		Garqi_Wistril,
-		Generis_Gravlex_Med,
-		Generis_Ketaris,
-		Generis_Ord_Trasi,
-		Gravlex_Med_Sernpidal,
-		Ithor_Levian,
-		Ithor_Ord_Mantell,
-		Ithor_Phaeda,
-		Ketaris_Phaeda,
-		Ord_Mantell_Orinda,
-		Ord_Mantell_Phaeda,
-		Morishim_Ord_Trasi,
-		Morishim_Yaga_Minor,
-		Orinda_Phaeda,
-		Orinda_Wistril,
-		</Trade_Routes>
-		
-        <Home_Location> Rebel, Levian </Home_Location>
-        <Home_Location> Empire, Ketaris </Home_Location>
-		 <Home_Location> Pentastar, Entralla </Home_Location>
-		 <Home_Location> Warlords, Agamar </Home_Location>
-	 
-        <Starting_Active_Player> Rebel </Starting_Active_Player>
-
-		<Rebel_Story_Name>Conquests\Align\Story_Plots_Sandbox_Align_Rebel.xml</Rebel_Story_Name>
-        <Empire_Story_Name>Conquests\Align\Story_Plots_Sandbox_Align_Empire.xml</Empire_Story_Name>
-		<Underworld_Story_Name>Conquests\Align\Story_Plots_Sandbox_Align_Container.xml</Underworld_Story_Name>
-		
-		<Story_Name>
-
-			Pentastar, Conquests\Story_Plots_Generic_Pentastar.xml
-		</Story_Name>
-        	 
-		<AI_Player_Control> Empire, GenericAI </AI_Player_Control>      
-		<AI_Player_Control> Rebel, SandboxHuman </AI_Player_Control>
-		<AI_Player_Control> Pentastar, GenericAI </AI_Player_Control>
-		<AI_Player_Control> Warlords, None </AI_Player_Control>	
-
-		<AI_Player_Control> EmpireoftheHand, None </AI_Player_Control>
-		<AI_Player_Control> Zsinj_Empire, None </AI_Player_Control>
-		
-		<AI_Player_Control> Hapes_Consortium, None </AI_Player_Control>
-		<AI_Player_Control> Greater_Maldrood, None </AI_Player_Control>      
-		<AI_Player_Control> Eriadu_Authority, None </AI_Player_Control>				
-		<AI_Player_Control> Corporate_Sector, None </AI_Player_Control>		
-		<AI_Player_Control> Hutt_Cartels, None </AI_Player_Control>	
-		
-		<Markup_Filename>Empire, DefaultGalacticHints </Markup_Filename>
-		<Markup_Filename>Rebel, DefaultGalacticHints </Markup_Filename>
-		<Markup_Filename>EmpireoftheHand, DefaultGalacticHints </Markup_Filename>
-		<Markup_Filename>Zsinj_Empire, DefaultGalacticHints </Markup_Filename>
-		<Markup_Filename>Greater_Maldrood, DefaultMaldroodHints </Markup_Filename>			
-		<Markup_Filename>Pentastar, DefaultGalacticHints </Markup_Filename>
-		<Markup_Filename>Eriadu_Authority, DefaultEriaduHints </Markup_Filename>				
-		<Markup_Filename>Corporate_Sector, DefaultGalacticHints </Markup_Filename>		
-		<Markup_Filename>Warlords, DefaultGalacticHints </Markup_Filename>			
-		<Markup_Filename>Hapes_Consortium, DefaultGalacticHints </Markup_Filename>
-		<Markup_Filename>Hutt_Cartels, DefaultGalacticHints </Markup_Filename>
-		
-		<Supports_Custom_Settings>False</Supports_Custom_Settings>
-		<Show_Completed_Tab>True</Show_Completed_Tab>
-
-		<!-- Win Conditions -->
-
-		<Human_Victory_Conditions>
-				Galactic_All_Planets_Controlled
-		</Human_Victory_Conditions>
-
-		<AI_Victory_Conditions>
-				Galactic_All_Planets_Controlled
-		</AI_Victory_Conditions>
-
-        <!-- Resources for quick organization/editing -->
-		
-		<!-- Rebel Starting Forces -->
-		<Starting_Credits> Rebel,  8000 </Starting_Credits>
-		<Starting_Tech_Level> Rebel, 0 </Starting_Tech_Level>
-		<Max_Tech_Level> Rebel, 0 </Max_Tech_Level>
-		
-	
-		<!-- Capitals -->
-		<Starting_Forces> Empire, Orinda, Remnant_Capital </Starting_Forces>
-		<Starting_Forces> Pentastar, Entralla, PA_Capital </Starting_Forces>
-		<Starting_Forces> Rebel, Brentaal, NewRep_Senate </Starting_Forces>
-		
-
-		<!-- Brentaal Space Forces -->
-		<Starting_Forces> Rebel, Brentaal, Generate_Force </Starting_Forces>
-
-		<!-- Champala Space Forces -->
-		<Starting_Forces> Rebel, Champala, Generate_Force </Starting_Forces>
-		<!-- Contruum Space Forces -->
-		<Starting_Forces> Rebel, Contruum, Generate_Force </Starting_Forces>
-		<!-- Dantooine Space Forces -->
-		<Starting_Forces> Rebel, Dantooine, Generate_Force </Starting_Forces>	
-		<!-- Farrfin Space Forces -->
-		<Starting_Forces> Rebel, Farrfin, Generate_Force </Starting_Forces>
-		<!-- Generis Space Forces -->
-		<Starting_Forces> Rebel, Generis, Generate_Force </Starting_Forces>
-		<!-- Ithor Space Forces -->
-		<Starting_Forces> Rebel, Ithor, Generate_Force </Starting_Forces>
-		<!-- Levian Space Forces -->
-		<Starting_Forces> Rebel, Levian, Generate_Force </Starting_Forces>
-
-
-
-		<!-- Empire Starting Forces -->
-
-		<Starting_Credits> Empire,  12000 </Starting_Credits>
-		<Starting_Tech_Level> Empire, 1 </Starting_Tech_Level>
-		<Max_Tech_Level> Empire, 1 </Max_Tech_Level>
-		
-		
-
-		<!-- Anx_Minor Space Forces -->
-		<Starting_Forces> Empire, Anx_Minor, Generate_Force </Starting_Forces>
-		<!-- Garqi Space Forces -->
-		<Starting_Forces> Empire, Garqi, Generate_Force </Starting_Forces>
-		<!-- Ketaris Space Forces -->
-		<Starting_Forces> Empire, Ketaris, Generate_Force </Starting_Forces>
-		<!-- Ord_Mantell Space Forces -->
-		<Starting_Forces> Empire, Ord_Mantell, Generate_Force </Starting_Forces>
-		<!-- Orinda Space Forces -->
-		<Starting_Forces> Empire, Orinda, Generate_Force </Starting_Forces>
-			<!-- Phaeda Space Forces -->
-		<Starting_Forces> Empire, Phaeda, Generate_Force </Starting_Forces>
-			<!-- Ord_Trasi Space Forces -->
-		<Starting_Forces> Empire, Ord_Trasi, Generate_Force </Starting_Forces>
-		<!-- Wistril Space Forces -->
-		<Starting_Forces> Empire, Wistril, Generate_Force </Starting_Forces>
-
-
-
-		
-
-		
-		<Starting_Credits> Pentastar,  15000 </Starting_Credits>
-		<Starting_Tech_Level> Pentastar, 1 </Starting_Tech_Level>
-		<Max_Tech_Level> Pentastar, 1 </Max_Tech_Level>
-		
-		<!-- Bastion Space Forces -->
-		<Starting_Forces> Pentastar, Bastion, Generate_Force </Starting_Forces>
-		<Starting_Forces> Pentastar, Bastion, Grant_Oriflamme </Starting_Forces>
-		<!-- Bastion Land Forces -->
-		<Starting_Forces> Pentastar, Bastion, Jerec_Team </Starting_Forces>
-		<Starting_Forces> Pentastar, Bastion, Sariss_Team </Starting_Forces>
-		<Starting_Forces> Pentastar, Bastion, Slosin_Ironhand </Starting_Forces>
-		
-		<!-- Borosk Space Forces -->
-		<Starting_Forces> Pentastar, Borosk, Generate_Force </Starting_Forces>
-		<!-- Dubrillion Space Forces -->
-		<Starting_Forces> Pentastar, Dubrillion, Generate_Force </Starting_Forces>
-		<!-- Entralla Space Forces -->
-		<Starting_Forces> Pentastar, Entralla, Generate_Force </Starting_Forces>
-		<!-- Gabredor Space Forces -->
-		<Starting_Forces> Pentastar, Gabredor, Generate_Force </Starting_Forces>
-
-		<!-- Jaemus Space Forces -->
-		<Starting_Forces> Pentastar, Jaemus, Generate_Force </Starting_Forces>
-
-		<!-- Muunilinst Space Forces -->
-		<Starting_Forces> Pentastar, Muunilinst, Generate_Force </Starting_Forces>		
-		<!-- Sernpidal Space Forces -->
-		<Starting_Forces> Pentastar, Sernpidal, Generate_Force </Starting_Forces>
-
-		<Starting_Credits> Warlords,  8000 </Starting_Credits>
-		<Starting_Tech_Level> Warlords, 1 </Starting_Tech_Level>
-		<Max_Tech_Level> Warlords, 1 </Max_Tech_Level>
-
-		<!-- Agamar Space Forces -->
-		<Starting_Forces> Warlords, Agamar, Generate_Force </Starting_Forces>
-	
-		<!-- Ord_Biniir Space Forces -->
-		<Starting_Forces> Warlords, Ord_Biniir, Generate_Force </Starting_Forces>
-		<!-- Gravlex Med Space Forces -->
-		<Starting_Forces> Warlords, Gravlex_Med, Generate_Force </Starting_Forces>
-		<!--Morishim Space Forces -->
-		<Starting_Forces> Warlords, Morishim, Generate_Force </Starting_Forces>
-		<!--Yaga_Minor Space Forces -->
-		<Starting_Forces> Warlords, Yaga_Minor, Generate_Force </Starting_Forces>
-
-	</Campaign>	
-
-
-
- </Campaigns>
+</Campaigns>

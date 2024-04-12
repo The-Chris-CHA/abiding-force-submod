@@ -34,7 +34,7 @@ function State_Init(message)
 			{"Sait_Blackguard"},
 			{"Rneeklii_Sumpntodo"},
 			{"Hilma_Bloodthirsty"},
-			{"Donnel_Detainer"},
+			{"Lon_Donell_Detainer"},
 			{"Slagorth_ARC"},
 		}
 		

@@ -250,6 +250,42 @@
 		<Variant_Of_Existing_Type>Proj_Special_Emperor_Instant_Dark_Side_Corrupt_Blast</Variant_Of_Existing_Type>
 	</Projectile>
 	
+	<Projectile Name="Proj_Special_Head_Master_Instant_Dark_Side_Corrupt_Blast">
+		<Variant_Of_Existing_Type>Proj_Special_Emperor_Instant_Dark_Side_Corrupt_Blast</Variant_Of_Existing_Type>
+	</Projectile>
+
+	<!-- Force Pyro Ability -->
+	<Projectile Name="Proj_Special_Force_Pyrokinesis">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_LASER_INVISIBLE.ALO</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Max_Speed>0.0</Max_Speed>
+		<Max_Rate_Of_Turn>0.0</Max_Rate_Of_Turn>
+		<Damage_Type> DamageL_Flamer </Damage_Type>
+		<Behavior>PROJECTILE, HIDE_WHEN_FOGGED</Behavior>
+		<Projectile_Category>DEFAULT</Projectile_Category>
+		<Projectile_Max_Flight_Distance>0.0</Projectile_Max_Flight_Distance>
+		<Projectile_Damage>50.0</Projectile_Damage>
+		<Projectile_Blast_Area_Damage> 175.0 </Projectile_Blast_Area_Damage>
+		<Projectile_Blast_Area_Range> 55 </Projectile_Blast_Area_Range>
+		<Projectile_Does_Shield_Damage>No</Projectile_Does_Shield_Damage>
+		<Projectile_Does_Energy_Damage>No</Projectile_Does_Energy_Damage>
+		<Projectile_Does_Hitpoint_Damage>Yes</Projectile_Does_Hitpoint_Damage>
+		<Projectile_Energy_Per_Shot>0</Projectile_Energy_Per_Shot>
+		<Projectile_SFXEvent_Detonate>SFX_Proton_Torpedo_Detonation</Projectile_SFXEvent_Detonate>
+		<!-- Frank STUB PLACEHOLDER -->
+		<Projectile_Object_Detonation_Particle>Ewok_Suicide_Bomb_Explosion</Projectile_Object_Detonation_Particle>
+		<!-- Gary STUB PLACEHOLDER -->
+		<Projectile_Ground_Detonation_Particle>Ewok_Suicide_Bomb_Explosion</Projectile_Ground_Detonation_Particle>
+		<!-- Gary STUB PLACEHOLDER -->
+		<Projectile_Lifetime_Detonation_Particle>Ewok_Suicide_Bomb_Explosion</Projectile_Lifetime_Detonation_Particle>
+		<!-- Gary STUB PLACEHOLDER -->
+		<Projectile_Absorbed_By_Shields_Particle/>
+		<AI_Combat_Power>5</AI_Combat_Power>
+		<Projectile_SFXEvent_Detonate>Unit_Flamethrower_Fire</Projectile_SFXEvent_Detonate>
+		<Projectile_SFXEvent_Detonate_Reduced_By_Armor> Unit_Flamethrower_Fire </Projectile_SFXEvent_Detonate_Reduced_By_Armor>
+	</Projectile>	
+
 	<!-- Special land projectile to instantly detonate and reveal the map via the "FOW Reveal Ping" unit ability -->
 	<Projectile Name="Proj_Special_Land_FOW_Reveal_Ping_Blast">
 		<Text_ID>TEXT_NONE</Text_ID>
@@ -445,6 +481,16 @@
 	<Projectile Name="Proj_Republic_Bombardment_Turbolaser">
 		<Variant_Of_Existing_Type>Proj_Empire_Bombardment_Turbolaser</Variant_Of_Existing_Type>
 		<Land_Model_Name>P_TURBOLASER_BLUE_BOMBARD.alo</Land_Model_Name>
+	</Projectile>
+	
+	<Projectile Name="Proj_Hapan_Bombardment_Turbolaser">
+		<Variant_Of_Existing_Type>Proj_Empire_Bombardment_Turbolaser</Variant_Of_Existing_Type>
+		<Land_Model_Name>P_TURBOLASER_PURPLE_BOMBARD.alo</Land_Model_Name>
+	</Projectile>
+	
+	<Projectile Name="Proj_Hutt_Bombardment_Turbolaser">
+		<Variant_Of_Existing_Type>Proj_Empire_Bombardment_Turbolaser</Variant_Of_Existing_Type>
+		<Land_Model_Name>P_TURBOLASER_GOLD_BOMBARD.alo</Land_Model_Name>
 	</Projectile>
 	
 	
@@ -763,7 +809,7 @@
 		<Space_Model_Name>W_LASER_INVISIBLE.ALO</Space_Model_Name>
 		<Loop_Idle_Anim_00>No</Loop_Idle_Anim_00>
 		<Max_Speed>0.0</Max_Speed>
-		<Damage_Type> Damage_StickyBomb </Damage_Type>
+		<Damage_Type> Damage_Default </Damage_Type>
 		<Scale_Factor>3.0</Scale_Factor>
 		<Max_Rate_Of_Turn>0.0</Max_Rate_Of_Turn>
 		<Behavior>PROJECTILE, BOMB</Behavior>
@@ -805,13 +851,11 @@
 		<Abilities SubObjectList="Yes">
 			<Combat_Bonus_Ability Name="No_Retreat_Bonus">
 				<Activation_Style>Space_Automatic</Activation_Style>
-				<Unit_Strength_Category>Capital | Corvette | Frigate | Fighter</Unit_Strength_Category>
 				<Applicable_Unit_Categories>Capital | Corvette | Frigate | Fighter</Applicable_Unit_Categories>
 				<Applicable_Unit_Types />
 				<Excluded_Unit_Types> </Excluded_Unit_Types>
 				<Health_Bonus_Percentage>0.00</Health_Bonus_Percentage>
-				<Damage_Bonus_Percentage>0.00</Damage_Bonus_Percentage>
-				<Energy_Pool_Bonus_Percentage>0.0</Energy_Pool_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.00</Damage_Bonus_Percentage>    
 				<Shield_Bonus_Percentage>0.0</Shield_Bonus_Percentage>
 				<Defense_Bonus_Percentage>-0.2</Defense_Bonus_Percentage>
 				<Movement_Speed_Bonus_Percentage>-0.10</Movement_Speed_Bonus_Percentage>
@@ -874,7 +918,7 @@
 		<Space_Model_Name>W_LASER_INVISIBLE.ALO</Space_Model_Name>
 		<Loop_Idle_Anim_00>No</Loop_Idle_Anim_00>
 		<Max_Speed>0.0</Max_Speed>
-		<Damage_Type> Damage_StickyBomb </Damage_Type>
+		<Damage_Type> Damage_Default </Damage_Type>
 		<Scale_Factor>3.0</Scale_Factor>
 		<Max_Rate_Of_Turn>0.0</Max_Rate_Of_Turn>
 		<Behavior>PROJECTILE</Behavior>
@@ -984,6 +1028,24 @@
 		<Projectile_Does_Hitpoint_Damage>No</Projectile_Does_Hitpoint_Damage>
 		<Projectile_Energy_Per_Shot>0</Projectile_Energy_Per_Shot>
 	</Projectile>
+	
+	<Projectile Name="Proj_Attack_Animations">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_LASER_INVISIBLE.ALO</Land_Model_Name>
+		<Scale_Factor>0.1</Scale_Factor>
+		<Damage_Type> Damage_Default </Damage_Type>
+		<Max_Speed>17</Max_Speed>
+		<Max_Rate_Of_Turn>0.0</Max_Rate_Of_Turn>
+		<Behavior>PROJECTILE, HIDE_WHEN_FOGGED</Behavior>
+		<Projectile_Category>Laser</Projectile_Category>
+		<Projectile_Max_Flight_Distance>400.0</Projectile_Max_Flight_Distance>
+		<Projectile_Damage>0.0</Projectile_Damage>
+		<Projectile_Does_Shield_Damage>No</Projectile_Does_Shield_Damage>
+		<Projectile_Does_Energy_Damage>No</Projectile_Does_Energy_Damage>
+		<Projectile_Does_Hitpoint_Damage>No</Projectile_Does_Hitpoint_Damage>
+		<Projectile_Energy_Per_Shot>0</Projectile_Energy_Per_Shot>
+		<AI_Combat_Power>40</AI_Combat_Power>
+	</Projectile>
 
 	<Projectile Name="Proj_Space_Maximum_Firepower_Dummy_Laser">
 		<Text_ID>TEXT_NONE</Text_ID>
@@ -1089,7 +1151,7 @@
 		
 		<Max_Secs_For_AE_Delayed_Damage>0</Max_Secs_For_AE_Delayed_Damage>
 
-		<Damage_Type>Damage_Bomb</Damage_Type>
+		<Damage_Type>Damage_Default</Damage_Type>
 		<Projectile_Damage_Delay_Secs>0</Projectile_Damage_Delay_Secs>
 
 		<Projectile_SFXEvent_Detonate />
@@ -1177,7 +1239,7 @@
 		<Space_Model_Name>p_seismic_bomb00.ALO</Space_Model_Name>
 		<Loop_Idle_Anim_00>No</Loop_Idle_Anim_00>
 		<Max_Speed>0.0</Max_Speed>
-		<Damage_Type> Damage_StickyBomb </Damage_Type>
+		<Damage_Type> DamageS_ProtonBomb </Damage_Type>
 		<Scale_Factor>3.0</Scale_Factor>
 		<Max_Rate_Of_Turn>0.0</Max_Rate_Of_Turn>
 		<Behavior>PROJECTILE, BOMB</Behavior>
@@ -1383,4 +1445,35 @@
 		
 	</Projectile>
 
+	<!-- Wraith Squadron's "hack" ability -->
+	<Projectile Name="Proj_Harmonic_Bomb_Wraith_Squadron">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_LASER_INVISIBLE.alo</Land_Model_Name>
+		<Space_Model_Name>W_LASER_INVISIBLE.alo</Space_Model_Name>
+		<Loop_Idle_Anim_00>No</Loop_Idle_Anim_00>
+		<Max_Speed>0.0</Max_Speed>
+		<Damage_Type> Damage_Default </Damage_Type>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Max_Rate_Of_Turn>0.0</Max_Rate_Of_Turn>
+		<Behavior>PROJECTILE, BOMB</Behavior>
+		<Projectile_Category>STATIC_BOMB</Projectile_Category>
+		<Projectile_Blast_Area_Range>400.0</Projectile_Blast_Area_Range>
+		<Projectile_Blast_Area_Damage>300.0</Projectile_Blast_Area_Damage>
+		<Max_Secs_For_AE_Delayed_Damage>0</Max_Secs_For_AE_Delayed_Damage>
+		<Projectile_Grenade_Sticks_On_Collision>no</Projectile_Grenade_Sticks_On_Collision>
+		<Projectile_Damage>0.0</Projectile_Damage>
+		<Projectile_Does_Shield_Damage>Yes</Projectile_Does_Shield_Damage>
+		<Projectile_Does_Energy_Damage>No</Projectile_Does_Energy_Damage>
+		<Projectile_Does_Hitpoint_Damage>No</Projectile_Does_Hitpoint_Damage>
+		<Projectile_Energy_Per_Shot>0</Projectile_Energy_Per_Shot>
+		<Death_Explosions> Corrupt_Systems_Flare_Effect </Death_Explosions>
+		<Death_SFXEvent_Start_Die> Unit_Shields_Go_Down </Death_SFXEvent_Start_Die>
+		<AI_Combat_Power>100</AI_Combat_Power>
+		<Projectile_Blast_Area_Dropoff>False</Projectile_Blast_Area_Dropoff>
+		<Projectile_Blast_Area_Dropoff_Tiers>1</Projectile_Blast_Area_Dropoff_Tiers>
+		<!-- detonation particle and SFX -->
+		<Projectile_Object_Detonation_Particle> Corrupt_Systems_Flare_Effect </Projectile_Object_Detonation_Particle>
+		<Projectile_Lifetime_Detonation_Particle> Corrupt_Systems_Flare_Effect </Projectile_Lifetime_Detonation_Particle>
+		<Projectile_SFXEvent_Detonate> Unit_Shields_Go_Down </Projectile_SFXEvent_Detonate>
+	</Projectile>
 </Projectiles>

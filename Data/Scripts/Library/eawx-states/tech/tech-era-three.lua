@@ -1,6 +1,7 @@
 require("eawx-util/UnitUtil")
 require("PGStoryMode")
 require("PGSpawnUnits")
+require("SetFighterResearch")
 
 return {
     on_enter = function(self, state_context)
@@ -11,12 +12,11 @@ return {
         self.entry_time = GetCurrentTime()
 
         if self.entry_time <= 5 then
-		
             UnitUtil.SetLockList("REBEL", {
 				"Bulwark_III", 
-				"Rebel_Vwing_Group",
 				"MC90", "AckbarHO2GV", "NantzIn2FW", 
 				"Defense_Trooper_Squad",
+				"Rebel_Vwing_Group",
 				"Jedi_Temple",
 				"Jedi_Squad"
 			}, false)
@@ -26,8 +26,6 @@ return {
 				"Generic_Praetor",
 				"Eidolon",
 				"TaggeCo_HQ",
-				"Incom_HQ",
-				"SoroSuub_HQ",
 				"Imperial_PX10_Company",
 				"Imperial_AT_AT_Refit_Company",
                 "Imperial_AT_ST_A_Company",
@@ -36,20 +34,21 @@ return {
             }, false)
 			
 			UnitUtil.SetLockList("REBEL", {
-				"Wedge_Lusankya"
+				"Wedge_Lusankya",
 			})
+			
+			Set_Fighter_Hero("WEDGE_ANTILLES_ROGUE_TEAM", "HOME_ONE")
 			
 			UnitUtil.SetLockList("EMPIRE", {
 				"Imperial_Boarding_Shuttle",
-				"Mekuun_HQ",
-				"Cygnus_HQ",
-				"Ysalamiri_Stormtrooper_Squad",
+				"Imperial_Ysalamiri_Stormtrooper_Squad",
 				"Noghri_Assassin_Squad"
             })
 			
 			UnitUtil.SetLockList("PENTASTAR", {
+				"Cygnus_HQ",
 				"Merkuni_HQ"
-            })
+			})
 
             UnitUtil.SetLockList("ERIADU_AUTHORITY", {
                 "TaggeCo_HQ",
@@ -67,9 +66,6 @@ return {
             UnitUtil.SetLockList("ZSINJ_EMPIRE", {
                 "TaggeCo_HQ"
             }, false)
-
-		else
-			
         end
     end,
     on_update = function(self, state_context)  

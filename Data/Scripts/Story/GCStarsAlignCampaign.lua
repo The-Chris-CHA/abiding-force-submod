@@ -100,7 +100,7 @@ function Begin_GC(message)
 			start_planet = StoryUtil.FindFriendlyPlanet(p_pentastar)
 		end
 		if start_planet then
-			spawn_list_Reaper = { "Ardus_Kaine_Team", "Gregor_Team", "Dekeet_Intractable", "Dynamic_Besk", "Otro_Enforcer"  }
+			spawn_list_Reaper = { "Ardus_Kaine_Team", "Gregor_Raquoran_Team", "Dekeet_Intractable", "Dynamic_Besk", "Otro_Enforcer"  }
 			ReaperSpawn = SpawnList(spawn_list_Reaper, start_planet, p_pentastar,true,false)
 		end
 		
@@ -119,6 +119,7 @@ end
 function Initialize(message)
     if message == OnEnter then
 		crossplot:galactic()
+		crossplot:publish("INITIALIZE_AI", "empty")
 		crossplot:publish("NR_ADMIRAL_DECREMENT", 2, 1)
 	else
 		crossplot:update()

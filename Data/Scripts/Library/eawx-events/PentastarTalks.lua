@@ -10,7 +10,7 @@ function PentastarTalks:new(gc)
     self.is_active = false
     self.ForPlayer = Find_Player("Pentastar")
     self.HumanPlayer = Find_Player("local")
-    self.spawn_list = { "Ardus_Kaine_Team", "Gregor_Team", "Dekeet_Intractable", "Dynamic_Besk", "Otro_Enforcer"}
+    self.spawn_list = { "Ardus_Kaine_Team", "Gregor_Raquoran_Team", "Dekeet_Intractable", "Dynamic_Besk", "Otro_Enforcer"}
     self.Active_Planets = StoryUtil.GetSafePlanetTable()
 end
 

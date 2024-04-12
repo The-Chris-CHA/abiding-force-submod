@@ -1,7 +1,513 @@
 <?xml version="1.0"?>
 <Hapes_Heroes>
 
-	<SpaceUnit Name="Isolder_Song_of_War">
+	<!-- Assignable squadron heroes -->
+	
+	<DummyStructure Name="Vhork_Squadron_Location_Set">
+		<Variant_Of_Existing_Type>Template_Research_Dummy</Variant_Of_Existing_Type>
+		<GUI_Row> 0 </GUI_Row>
+
+		<Population_Value>0</Population_Value>
+		<Build_Cost_Credits>1</Build_Cost_Credits>
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+		<Build_Time_Seconds>1</Build_Time_Seconds>
+		<Required_Star_Base_Level>1</Required_Star_Base_Level>
+		<AI_Combat_Power>10000</AI_Combat_Power>
+		
+		<CategoryMask>Wall</CategoryMask>
+		
+		<Text_ID>TEXT_HERO_VHORK</Text_ID>
+		<Build_Initially_Locked>No</Build_Initially_Locked>
+		<Affiliation>Hapes_Consortium</Affiliation>
+		<Icon_Name>I_BUTTON_VHORK_LEADER_SET.tga</Icon_Name>
+		
+		<Lua_Script>DelayedSelfDelete</Lua_Script>
+
+		<Tech_Level>0</Tech_Level>
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_ASSIGN_HERO_SQUAD
+		TEXT_TOOLTIP_SEPARATOR_COMMANDS_BLOCK
+		TEXT_TOOLTIP_COMMAND_VHORK_SQUADRON
+		TEXT_TOOLTIP_SEPARATOR_NONE_BLOCK
+		TEXT_TOOLTIP_ASSIGN_LOCATIONS
+		TEXT_HERO_TAA_CHUME
+		TEXT_HERO_ISOLDER
+		TEXT_HERO_ASTARTA
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_STORYEVENT</Encyclopedia_Unit_Class>
+
+		<Required_Special_Structures>AI_Category_Dummy | Story_Category_Dummy</Required_Special_Structures>
+	</DummyStructure>
+
+	<UniqueUnit Name="Vhork_Leader_Miytil_Fighter">
+		<Variant_Of_Existing_Type>Miytil_Fighter</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_HERO_VHORK</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_SEPARATOR_TRAITS_BLOCK
+		TEXT_TOOLTIP_TRAIT_ACEPILOT
+		TEXT_TOOLTIP_SEPARATOR_BIO_BLOCK
+		TEXT_TOOLTIP_VHORK_LEADER
+		TEXT_TOOLTIP_SEPARATOR_COMMANDS_BLOCK
+		TEXT_TOOLTIP_COMMAND_VHORK_SQUADRON
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_STATBLOCK_VHORK_MIYTIL_FIGHTER_BASE
+		TEXT_STATBLOCK_MIYTIL_FIGHTER_MOVE
+		TEXT_STATBLOCK_MIYTIL_FIGHTER_WEAP1
+		TEXT_STATBLOCK_MIYTIL_FIGHTER_WEAP2
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_MIST_IMMUNE
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_PILOT </Encyclopedia_Unit_Class>
+		<Icon_Name>I_BUTTON_VHORK_LEADER.tga</Icon_Name>
+
+		<Redirect_Damage_To_Teammates>Yes</Redirect_Damage_To_Teammates>
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+
+		<Tactical_Health>220</Tactical_Health>
+		<Shield_Points>150</Shield_Points>
+		<Shield_Refresh_Rate>5</Shield_Refresh_Rate>	
+
+		<SpaceBehavior>ABILITY_COUNTDOWN, TELEKINESIS_TARGET, HUNT, FIGHTER_LOCOMOTOR, SELECTABLE, TARGETING, WEAPON, POWERED, SHIELDED, HIDE_WHEN_FOGGED, AMBIENT_SFX, DAMAGE_TRACKING</SpaceBehavior>
+		
+		<SFXEvent_Select>Unit_Select_X_Wing</SFXEvent_Select>
+		<SFXEvent_Move>Unit_Move_X_Wing</SFXEvent_Move>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_X_Wing</SFXEvent_Fleet_Move>
+		<SFXEvent_Attack>Unit_Attack_X_Wing</SFXEvent_Attack>
+		<SFXEvent_Guard>Unit_Guard_X_Wing</SFXEvent_Guard>
+		<SFXEvent_Assist_Move> Unit_Assist_Move_X_Wing </SFXEvent_Assist_Move>
+		<SFXEvent_Assist_Attack> Unit_Assist_Attack_X_Wing </SFXEvent_Assist_Attack>
+		<SFXEvent_Move_Into_Asteroid_Field> Unit_Asteroids_X_Wing </SFXEvent_Move_Into_Asteroid_Field>
+		<SFXEvent_Move_Into_Nebula> Unit_Nebula_X_Wing </SFXEvent_Move_Into_Nebula>
+		<SFXEvent_Enemy_Damaged_Health_Low_Warning> Unit_Enemy_Health_Low_X_Wing </SFXEvent_Enemy_Damaged_Health_Low_Warning>
+		<SFXEvent_Enemy_Damaged_Health_Critical_Warning> Unit_Enemy_Health_Critical_X_Wing </SFXEvent_Enemy_Damaged_Health_Critical_Warning>
+		<SFXEvent_Health_Low_Warning> Unit_Health_Low_X_Wing </SFXEvent_Health_Low_Warning>
+		<SFXEvent_Health_Critical_Warning> Unit_Health_Critical_X_Wing </SFXEvent_Health_Critical_Warning>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_LASER, Unit_HP_LASER_X_Wing </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MISSILE, Unit_HP_MISSILE_X_Wing </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_TORPEDO, Unit_HP_TORP_X_Wing </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_ION_CANNON, Unit_HP_ION_X_Wing </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_SHIELD_GENERATOR, Unit_HP_SHIELDS_X_Wing </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENGINE, Unit_HP_ENGINES_X_Wing </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_GRAVITY_WELL, Unit_HP_GRAV_X_Wing </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_FIGHTER_BAY, Unit_HP_Bay_X_Wing </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_TRACTOR_BEAM, Unit_Attack_X_Wing </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MASS_DRIVER, Unit_Attack_X_Wing </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_SPECIAL, Unit_Attack_X_Wing </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENABLE_SPECIAL_ABILITY, Unit_Attack_X_Wing </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_DUMMY_ART, Unit_Attack_X_Wing </SFXEvent_Attack_Hardpoint>
+
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_LASER, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_MISSILE, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_TORPEDO, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_ION_CANNON, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_SHIELD_GENERATOR, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENGINE, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_GRAVITY_WELL, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_FIGHTER_BAY, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_TRACTOR_BEAM, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_MASS_DRIVER, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_SPECIAL, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENABLE_SPECIAL_ABILITY, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_DUMMY_ART, null </SFXEvent_Hardpoint_Destroyed>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>POWER_TO_WEAPONS</Type>
+				<Mod_Multiplier>WEAPON_DELAY_MULTIPLIER, 0.2f</Mod_Multiplier>
+				<Mod_Multiplier>CAUSE_DAMAGE_MULTIPLIER, 0.5f</Mod_Multiplier>
+				<Recharge_Seconds>60</Recharge_Seconds>
+				<Expiration_Seconds>15</Expiration_Seconds>
+				<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_RAPID_FIRE_NAME</Alternate_Name_Text>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_RAPID_FIRE_DESCRIPTION</Alternate_Description_Text>
+				<Alternate_Icon_Name>i_sa_strike.tga</Alternate_Icon_Name>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Vhork_Leader_Combat_Bonus_Ace_Pilot">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories> Fighter | Bomber </Applicable_Unit_Categories>
+				<Applicable_Unit_Types />
+				<Health_Bonus_Percentage>0.10</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.0</Damage_Bonus_Percentage>    
+				<Shield_Bonus_Percentage>0.0</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.0</Defense_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.10</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>0</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+ 	</UniqueUnit>
+	
+	<UniqueUnit Name="Vhork_Miytil_Escort">
+		<Variant_Of_Existing_Type>Miytil_Fighter</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_UNIT_VHORK_MIYTIL_FIGHTER</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_MIYTIL_FIGHTER
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_STATBLOCK_MIYTIL_FIGHTER_ESCORT_BASE
+		TEXT_STATBLOCK_MIYTIL_FIGHTER_MOVE
+		TEXT_STATBLOCK_MIYTIL_FIGHTER_WEAP1
+		TEXT_STATBLOCK_MIYTIL_FIGHTER_WEAP2
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_MIST_IMMUNE
+		</Encyclopedia_Text>
+		
+		<Tactical_Health>100</Tactical_Health>
+		<Shield_Points>40</Shield_Points>
+		<Shield_Refresh_Rate>5</Shield_Refresh_Rate>	
+
+		<SpaceBehavior>ABILITY_COUNTDOWN, TELEKINESIS_TARGET, HUNT, FIGHTER_LOCOMOTOR, SELECTABLE, TARGETING, WEAPON, POWERED, SHIELDED, HIDE_WHEN_FOGGED, AMBIENT_SFX, DAMAGE_TRACKING</SpaceBehavior>
+		
+		<SFXEvent_Select>Unit_Select_X_Wing</SFXEvent_Select>
+		<SFXEvent_Move>Unit_Move_X_Wing</SFXEvent_Move>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_X_Wing</SFXEvent_Fleet_Move>
+		<SFXEvent_Attack>Unit_Attack_X_Wing</SFXEvent_Attack>
+		<SFXEvent_Guard>Unit_Guard_X_Wing</SFXEvent_Guard>
+		<SFXEvent_Assist_Move> Unit_Assist_Move_X_Wing </SFXEvent_Assist_Move>
+		<SFXEvent_Assist_Attack> Unit_Assist_Attack_X_Wing </SFXEvent_Assist_Attack>
+		<SFXEvent_Move_Into_Asteroid_Field> Unit_Asteroids_X_Wing </SFXEvent_Move_Into_Asteroid_Field>
+		<SFXEvent_Move_Into_Nebula> Unit_Nebula_X_Wing </SFXEvent_Move_Into_Nebula>
+		<SFXEvent_Enemy_Damaged_Health_Low_Warning> Unit_Enemy_Health_Low_X_Wing </SFXEvent_Enemy_Damaged_Health_Low_Warning>
+		<SFXEvent_Enemy_Damaged_Health_Critical_Warning> Unit_Enemy_Health_Critical_X_Wing </SFXEvent_Enemy_Damaged_Health_Critical_Warning>
+		<SFXEvent_Health_Low_Warning> Unit_Health_Low_X_Wing </SFXEvent_Health_Low_Warning>
+		<SFXEvent_Health_Critical_Warning> Unit_Health_Critical_X_Wing </SFXEvent_Health_Critical_Warning>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_LASER, Unit_HP_LASER_X_Wing </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MISSILE, Unit_HP_MISSILE_X_Wing </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_TORPEDO, Unit_HP_TORP_X_Wing </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_ION_CANNON, Unit_HP_ION_X_Wing </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_SHIELD_GENERATOR, Unit_HP_SHIELDS_X_Wing </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENGINE, Unit_HP_ENGINES_X_Wing </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_GRAVITY_WELL, Unit_HP_GRAV_X_Wing </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_FIGHTER_BAY, Unit_HP_Bay_X_Wing </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_TRACTOR_BEAM, Unit_Attack_X_Wing </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MASS_DRIVER, Unit_Attack_X_Wing </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_SPECIAL, Unit_Attack_X_Wing </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENABLE_SPECIAL_ABILITY, Unit_Attack_X_Wing </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_DUMMY_ART, Unit_Attack_X_Wing </SFXEvent_Attack_Hardpoint>
+
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_LASER, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_MISSILE, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_TORPEDO, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_ION_CANNON, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_SHIELD_GENERATOR, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENGINE, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_GRAVITY_WELL, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_FIGHTER_BAY, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_TRACTOR_BEAM, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_MASS_DRIVER, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_SPECIAL, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENABLE_SPECIAL_ABILITY, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_DUMMY_ART, null </SFXEvent_Hardpoint_Destroyed>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>POWER_TO_WEAPONS</Type>
+				<Mod_Multiplier>WEAPON_DELAY_MULTIPLIER, 0.2f</Mod_Multiplier>
+				<Mod_Multiplier>CAUSE_DAMAGE_MULTIPLIER, 0.5f</Mod_Multiplier>
+				<Recharge_Seconds>60</Recharge_Seconds>
+				<Expiration_Seconds>15</Expiration_Seconds>
+				<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_RAPID_FIRE_NAME</Alternate_Name_Text>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_RAPID_FIRE_DESCRIPTION</Alternate_Description_Text>
+				<Alternate_Icon_Name>i_sa_strike.tga</Alternate_Icon_Name>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+ 	</UniqueUnit>
+	
+	<Container Name="Vhork_Squadron_Container">
+		<Variant_Of_Existing_Type>Miytil_Fighter_Squadron_Container</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_HERO_VHORK</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_SEPARATOR_TRAITS_BLOCK
+		TEXT_TOOLTIP_TRAIT_ACEPILOT
+		TEXT_TOOLTIP_SEPARATOR_BIO_BLOCK
+		TEXT_TOOLTIP_VHORK_LEADER
+		TEXT_TOOLTIP_SEPARATOR_COMMANDS_BLOCK
+		TEXT_TOOLTIP_COMMAND_VHORK_SQUADRON
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_STATBLOCK_VHORK_MIYTIL_FIGHTER_BASE
+		TEXT_TOOLTIP_SEPARATOR_FIGHTER_ESCORT_STAT_BLOCK
+		TEXT_STATBLOCK_MIYTIL_FIGHTER_ESCORT_BASE
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_STATBLOCK_MIYTIL_FIGHTER_SQUADRON
+		TEXT_STATBLOCK_MIYTIL_FIGHTER_BASE
+		TEXT_STATBLOCK_MIYTIL_FIGHTER_MOVE
+		TEXT_STATBLOCK_MIYTIL_FIGHTER_WEAP1
+		TEXT_STATBLOCK_MIYTIL_FIGHTER_WEAP2
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_MIST_IMMUNE
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_PILOT </Encyclopedia_Unit_Class>
+		<Icon_Name>I_BUTTON_VHORK_LEADER.tga</Icon_Name>
+		
+		<Radar_Icon_Size>0.03  0.03</Radar_Icon_Size>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>POWER_TO_WEAPONS</Type>
+				<Alternate_Icon_Name>i_sa_strike.tga</Alternate_Icon_Name>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+		
+		<Abilities SubObjectList="Yes">
+			<Lucky_Shot_Attack_Ability Name="Vhork_Critical_Strike">
+				<Activation_Style> User_Input </Activation_Style>
+				<Applicable_Unit_Categories> Corvette | Frigate | Capital | SuperCapital | SpaceStructure | SpaceHero </Applicable_Unit_Categories>
+			</Lucky_Shot_Attack_Ability>
+		</Abilities>
+	</Container>
+
+	<Squadron Name="Vhork_Squadron">
+		<Variant_Of_Existing_Type>Miytil_Fighter_Squadron</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_HERO_VHORK</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_SEPARATOR_TRAITS_BLOCK
+		TEXT_TOOLTIP_TRAIT_ACEPILOT
+		TEXT_TOOLTIP_SEPARATOR_BIO_BLOCK
+		TEXT_TOOLTIP_VHORK_LEADER
+		TEXT_TOOLTIP_SEPARATOR_COMMANDS_BLOCK
+		TEXT_TOOLTIP_COMMAND_VHORK_SQUADRON
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_STATBLOCK_VHORK_MIYTIL_FIGHTER_BASE
+		TEXT_TOOLTIP_SEPARATOR_FIGHTER_ESCORT_STAT_BLOCK
+		TEXT_STATBLOCK_MIYTIL_FIGHTER_ESCORT_BASE
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_STATBLOCK_MIYTIL_FIGHTER_SQUADRON
+		TEXT_STATBLOCK_MIYTIL_FIGHTER_BASE
+		TEXT_STATBLOCK_MIYTIL_FIGHTER_MOVE
+		TEXT_STATBLOCK_MIYTIL_FIGHTER_WEAP1
+		TEXT_STATBLOCK_MIYTIL_FIGHTER_WEAP2
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_MIST_IMMUNE
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_PILOT</Encyclopedia_Unit_Class>
+		<Icon_Name>I_BUTTON_VHORK_LEADER.tga</Icon_Name>
+
+		<Create_Team_Type>Vhork_Squadron_Container</Create_Team_Type>
+		<Squadron_Units>Vhork_Miytil_Escort, Vhork_Miytil_Escort, Vhork_Miytil_Escort, Vhork_Miytil_Escort</Squadron_Units>
+		<Squadron_Units>Vhork_Miytil_Escort, Vhork_Miytil_Escort, Vhork_Miytil_Escort, Vhork_Miytil_Escort</Squadron_Units>
+		<Squadron_Units>Vhork_Miytil_Escort, Vhork_Miytil_Escort, Vhork_Miytil_Escort, Vhork_Leader_Miytil_Fighter</Squadron_Units>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>POWER_TO_WEAPONS</Type>
+				<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_RAPID_FIRE_NAME</Alternate_Name_Text>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_RAPID_FIRE_DESCRIPTION</Alternate_Description_Text>
+				<Alternate_Icon_Name>i_sa_strike.tga</Alternate_Icon_Name>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+	</Squadron>
+	
+	<DummyStructure Name="Aegel_Squadron_Location_Set">
+		<Variant_Of_Existing_Type>Template_Research_Dummy</Variant_Of_Existing_Type>
+		<GUI_Row> 0 </GUI_Row>
+
+		<Population_Value>0</Population_Value>
+		<Build_Cost_Credits>1</Build_Cost_Credits>
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+		<Build_Time_Seconds>1</Build_Time_Seconds>
+		<Required_Star_Base_Level>1</Required_Star_Base_Level>
+		<AI_Combat_Power>10000</AI_Combat_Power>
+		
+		<CategoryMask>Wall</CategoryMask>
+		
+		<Text_ID>TEXT_HERO_AEGEL</Text_ID>
+		<Build_Initially_Locked>No</Build_Initially_Locked>
+		<Affiliation>Hapes_Consortium</Affiliation>
+		<Icon_Name>I_BUTTON_AEGEL_LEADER_SET.tga</Icon_Name>
+		
+		<Lua_Script>DelayedSelfDelete</Lua_Script>
+
+		<Tech_Level>0</Tech_Level>
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_ASSIGN_HERO_SQUAD
+		TEXT_TOOLTIP_SEPARATOR_COMMANDS_BLOCK
+		TEXT_TOOLTIP_COMMAND_AEGEL_SQUADRON
+		TEXT_TOOLTIP_SEPARATOR_NONE_BLOCK
+		TEXT_TOOLTIP_ASSIGN_LOCATIONS
+		TEXT_HERO_ALYSSIA
+		TEXT_HERO_CHELIK
+		TEXT_HERO_ALESON
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_STORYEVENT</Encyclopedia_Unit_Class>
+
+		<Required_Special_Structures>AI_Category_Dummy | Story_Category_Dummy</Required_Special_Structures>
+	</DummyStructure>
+
+	<UniqueUnit Name="Aegel_Leader_Miytil_Bomber">
+		<Variant_Of_Existing_Type>Miytil_Bomber</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_HERO_AEGEL</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_SEPARATOR_TRAITS_BLOCK
+		TEXT_TOOLTIP_TRAIT_UNINTERESTING
+		TEXT_TOOLTIP_SEPARATOR_BIO_BLOCK
+		TEXT_TOOLTIP_AEGEL_LEADER
+		TEXT_TOOLTIP_SEPARATOR_COMMANDS_BLOCK
+		TEXT_TOOLTIP_COMMAND_AEGEL_SQUADRON
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_STATBLOCK_AEGEL_MIYTIL_BOMBER_BASE
+		TEXT_STATBLOCK_MIYTIL_BOMBER_MOVE
+		TEXT_STATBLOCK_MIYTIL_BOMBER_WEAP1
+		TEXT_STATBLOCK_MIYTIL_BOMBER_WEAP2
+		TEXT_STATBLOCK_MIYTIL_BOMBER_WEAP3
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_MIST_IMMUNE
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_PILOT </Encyclopedia_Unit_Class>
+		<Icon_Name>I_BUTTON_AEGEL_LEADER.tga</Icon_Name>
+
+		<Redirect_Damage_To_Teammates>Yes</Redirect_Damage_To_Teammates>
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+
+		<Tactical_Health>180</Tactical_Health>
+		<Shield_Points>135</Shield_Points>
+		<Shield_Refresh_Rate>5</Shield_Refresh_Rate>	
+
+		<SpaceBehavior>ABILITY_COUNTDOWN, TELEKINESIS_TARGET, HUNT, FIGHTER_LOCOMOTOR, SELECTABLE, TARGETING, WEAPON, POWERED, SHIELDED, HIDE_WHEN_FOGGED, AMBIENT_SFX, DAMAGE_TRACKING</SpaceBehavior>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>LUCKY_SHOT</Type>
+				<Projectile_Types_Override>Proj_Ship_Bomber_Critical_Strike</Projectile_Types_Override>
+				<Supports_Autofire>True</Supports_Autofire>
+				<Alternate_Icon_Name>i_sa_strike.tga</Alternate_Icon_Name>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+ 	</UniqueUnit>
+	
+	<UniqueUnit Name="Aegel_Miytil_Bomber_Escort">
+		<Variant_Of_Existing_Type>Miytil_Bomber</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_UNIT_AEGEL_MIYTIL_BOMBER</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_MIYTIL_BOMBER
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_STATBLOCK_MIYTIL_BOMBER_ESCORT_BASE
+		TEXT_STATBLOCK_MIYTIL_BOMBER_MOVE
+		TEXT_STATBLOCK_MIYTIL_BOMBER_WEAP1
+		TEXT_STATBLOCK_MIYTIL_BOMBER_WEAP2
+		TEXT_STATBLOCK_MIYTIL_BOMBER_WEAP3
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_MIST_IMMUNE
+		</Encyclopedia_Text>
+		
+		<Tactical_Health>110</Tactical_Health>
+		<Shield_Points>50</Shield_Points>
+		<Shield_Refresh_Rate>5</Shield_Refresh_Rate>	
+
+		<SpaceBehavior>ABILITY_COUNTDOWN, TELEKINESIS_TARGET, HUNT, FIGHTER_LOCOMOTOR, SELECTABLE, TARGETING, WEAPON, POWERED, SHIELDED, HIDE_WHEN_FOGGED, AMBIENT_SFX, DAMAGE_TRACKING</SpaceBehavior>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>LUCKY_SHOT</Type>
+				<Projectile_Types_Override>Proj_Ship_Bomber_Critical_Strike</Projectile_Types_Override>
+				<Supports_Autofire>True</Supports_Autofire>
+				<Alternate_Icon_Name>i_sa_strike.tga</Alternate_Icon_Name>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+ 	</UniqueUnit>
+	
+	<Container Name="Aegel_Squadron_Container">
+		<Variant_Of_Existing_Type>Miytil_Bomber_Squadron_Container</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_HERO_AEGEL</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_SEPARATOR_TRAITS_BLOCK
+		TEXT_TOOLTIP_TRAIT_UNINTERESTING
+		TEXT_TOOLTIP_SEPARATOR_BIO_BLOCK
+		TEXT_TOOLTIP_AEGEL_LEADER
+		TEXT_TOOLTIP_SEPARATOR_COMMANDS_BLOCK
+		TEXT_TOOLTIP_COMMAND_AEGEL_SQUADRON
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_STATBLOCK_AEGEL_MIYTIL_BOMBER_BASE
+		TEXT_TOOLTIP_SEPARATOR_FIGHTER_ESCORT_STAT_BLOCK
+		TEXT_STATBLOCK_MIYTIL_BOMBER_ESCORT_BASE
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_STATBLOCK_MIYTIL_BOMBER_SQUADRON
+		TEXT_STATBLOCK_MIYTIL_BOMBER_BASE 
+		TEXT_STATBLOCK_MIYTIL_BOMBER_MOVE
+		TEXT_STATBLOCK_MIYTIL_BOMBER_WEAP1
+		TEXT_STATBLOCK_MIYTIL_BOMBER_WEAP2
+		TEXT_STATBLOCK_MIYTIL_BOMBER_WEAP3
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_MIST_IMMUNE
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_PILOT </Encyclopedia_Unit_Class>
+		<Icon_Name>I_BUTTON_AEGEL_LEADER.tga</Icon_Name>
+		
+		<Radar_Icon_Size>0.03  0.03</Radar_Icon_Size>
+		
+		<SpaceBehavior> REVEAL, ABILITY_COUNTDOWN</SpaceBehavior>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>LUCKY_SHOT</Type>
+				<Recharge_Seconds>60</Recharge_Seconds>
+				<Projectile_Types_Override>Proj_Ship_Bomber_Critical_Strike</Projectile_Types_Override>
+				<GUI_Activated_Ability_Name>Aegel_Critical_Strike</GUI_Activated_Ability_Name> 
+				<Supports_Autofire>True</Supports_Autofire>
+				<Alternate_Icon_Name>i_sa_strike.tga</Alternate_Icon_Name>
+				<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_CRITICAL_STRIKE_NAME</Alternate_Name_Text>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_CRITICAL_STRIKE_DESCRIPTION</Alternate_Description_Text>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+		
+		<Abilities SubObjectList="Yes">
+			<Lucky_Shot_Attack_Ability Name="Aegel_Critical_Strike">
+				<Activation_Style> User_Input </Activation_Style>
+				<Applicable_Unit_Categories> Corvette | Frigate | Capital | SuperCapital | SpaceStructure | SpaceHero </Applicable_Unit_Categories>
+			</Lucky_Shot_Attack_Ability>
+		</Abilities>
+	</Container>
+
+	<Squadron Name="Aegel_Squadron">
+		<Variant_Of_Existing_Type>Miytil_Bomber_Squadron</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_HERO_AEGEL</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_SEPARATOR_TRAITS_BLOCK
+		TEXT_TOOLTIP_TRAIT_UNINTERESTING
+		TEXT_TOOLTIP_SEPARATOR_BIO_BLOCK
+		TEXT_TOOLTIP_AEGEL_LEADER
+		TEXT_TOOLTIP_SEPARATOR_COMMANDS_BLOCK
+		TEXT_TOOLTIP_COMMAND_AEGEL_SQUADRON
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_STATBLOCK_AEGEL_MIYTIL_BOMBER_BASE
+		TEXT_TOOLTIP_SEPARATOR_FIGHTER_ESCORT_STAT_BLOCK
+		TEXT_STATBLOCK_MIYTIL_BOMBER_ESCORT_BASE
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_STATBLOCK_MIYTIL_BOMBER_SQUADRON
+		TEXT_STATBLOCK_MIYTIL_BOMBER_BASE 
+		TEXT_STATBLOCK_MIYTIL_BOMBER_MOVE
+		TEXT_STATBLOCK_MIYTIL_BOMBER_WEAP1
+		TEXT_STATBLOCK_MIYTIL_BOMBER_WEAP2
+		TEXT_STATBLOCK_MIYTIL_BOMBER_WEAP3
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_MIST_IMMUNE
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_PILOT</Encyclopedia_Unit_Class>
+		<Icon_Name>I_BUTTON_AEGEL_LEADER.tga</Icon_Name>
+
+		<Create_Team_Type>Aegel_Squadron_Container</Create_Team_Type>
+		<Squadron_Units>Aegel_Miytil_Bomber_Escort, Aegel_Miytil_Bomber_Escort, Aegel_Miytil_Bomber_Escort, Aegel_Miytil_Bomber_Escort</Squadron_Units>
+		<Squadron_Units>Aegel_Miytil_Bomber_Escort, Aegel_Miytil_Bomber_Escort, Aegel_Miytil_Bomber_Escort, Aegel_Miytil_Bomber_Escort</Squadron_Units>
+		<Squadron_Units>Aegel_Miytil_Bomber_Escort, Aegel_Miytil_Bomber_Escort, Aegel_Miytil_Bomber_Escort, Aegel_Leader_Miytil_Bomber</Squadron_Units>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>POWER_TO_WEAPONS</Type>
+				<Alternate_Icon_Name>i_sa_strike.tga</Alternate_Icon_Name>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+	</Squadron>
+
+	<UniqueUnit Name="Isolder_Song_of_War">
 		<Variant_Of_Existing_Type> BattleDragon </Variant_Of_Existing_Type>
 		
 		<Text_ID>TEXT_HERO_ISOLDER</Text_ID>
@@ -27,6 +533,7 @@
 		TEXT_TOOLTIP_CAPABILITY_ORBITAL_BOMBARDMENT
 		TEXT_TOOLTIP_CAPABILITY_BOMBING_RUN
 		</Encyclopedia_Text>
+		<Icon_Name>i_button_song.tga</Icon_Name>
 		
 		<SpaceBehavior>ABILITY_COUNTDOWN, SIMPLE_SPACE_LOCOMOTOR, TARGETING, POWERED, SHIELDED, REVEAL, HIDE_WHEN_FOGGED, UNIT_AI, DAMAGE_TRACKING, ION_STUN_EFFECT </SpaceBehavior>
 
@@ -39,19 +546,13 @@
         <Affiliation>Hapes_Consortium</Affiliation>
 		<Tech_Level>99</Tech_Level>
 		
-		<Icon_Name>i_button_song.tga</Icon_Name>
 		<CategoryMask> SpaceHero | AntiFrigate </CategoryMask>
+		<Property_Flags>GTSImmune</Property_Flags>
 		
 		<Starting_Spawned_Units_Tech_1>House_Miytil_Fighter_Squadron, 1</Starting_Spawned_Units_Tech_1>
 		<Starting_Spawned_Units_Tech_1>Miytil_Bomber_Squadron_Half, 1</Starting_Spawned_Units_Tech_1>
 		<Reserve_Spawned_Units_Tech_1>House_Miytil_Fighter_Squadron, 1</Reserve_Spawned_Units_Tech_1>
 		<Reserve_Spawned_Units_Tech_1>Miytil_Bomber_Squadron_Half, 1</Reserve_Spawned_Units_Tech_1>
-		
-		<SFXEvent_Build_Started>RHD_Build_Vehicle</SFXEvent_Build_Started>
-		<SFXEvent_Build_Cancelled>RHD_Unit_Canceled</SFXEvent_Build_Cancelled>
-		<SFXEvent_Build_Complete/>
-		<SFXEvent_Bombard_Select_Target/>
-		<SFXEvent_Bombard_Incoming>Orbital_Bombardment_SFX</SFXEvent_Bombard_Incoming>
 		
 		<SFXEvent_Select>Unit_Select_Mandator</SFXEvent_Select>
 		<SFXEvent_Move>Unit_Move_Mandator</SFXEvent_Move>
@@ -112,13 +613,11 @@
 
 			<Combat_Bonus_Ability Name="Isolder_Combat_Bonus">
 				<Activation_Style>Space_Automatic</Activation_Style>
-				<Unit_Strength_Category>All</Unit_Strength_Category>
 				<Applicable_Unit_Categories>All</Applicable_Unit_Categories>
 				<Applicable_Unit_Types/>
-				<Excluded_Unit_Types> </Excluded_Unit_Types>
+				<Excluded_Unit_Types> Ground_Ion_Cannon, Ground_Hypervelocity_Gun </Excluded_Unit_Types>
 				<Health_Bonus_Percentage>0.05</Health_Bonus_Percentage>
-				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
-				<Energy_Pool_Bonus_Percentage>0.0</Energy_Pool_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>    
 				<Shield_Bonus_Percentage>0.05</Shield_Bonus_Percentage>
 				<Defense_Bonus_Percentage>0.05</Defense_Bonus_Percentage>
 				<Movement_Speed_Bonus_Percentage>0.0</Movement_Speed_Bonus_Percentage>
@@ -127,9 +626,9 @@
 
 		</Abilities>
 		
-	</SpaceUnit>
+	</UniqueUnit>
 	
-	<SpaceUnit Name="Taa_Chume_Star_Home">
+	<UniqueUnit Name="Taa_Chume_Star_Home">
 		
 		<Variant_Of_Existing_Type> Star_Home </Variant_Of_Existing_Type>
 		
@@ -158,6 +657,7 @@
 		TEXT_TOOLTIP_CAPABILITY_ORBITAL_BOMBARDMENT
 		TEXT_TOOLTIP_CAPABILITY_BOMBING_RUN
 		</Encyclopedia_Text>
+		<Icon_Name>i_button_taa_chume.tga</Icon_Name>
 		
 		<SpaceBehavior>ABILITY_COUNTDOWN, SIMPLE_SPACE_LOCOMOTOR, TARGETING, POWERED, SHIELDED, REVEAL, HIDE_WHEN_FOGGED, UNIT_AI, DAMAGE_TRACKING, ION_STUN_EFFECT </SpaceBehavior>
 		
@@ -168,8 +668,8 @@
         <Affiliation>Hapes_Consortium</Affiliation>
 		<Tech_Level>99</Tech_Level>
 		
-		<Icon_Name>i_button_taa_chume.tga</Icon_Name>
 		<CategoryMask> SpaceHero | AntiFrigate </CategoryMask>
+		<Property_Flags>GTSImmune</Property_Flags>
 		
 		<Unit_Abilities_Data SubObjectList="Yes">
 			  <!-- Primary ability -->
@@ -220,13 +720,11 @@
 			
 			<Combat_Bonus_Ability Name="Ta'a_Chume_Combat_Bonus">
 				<Activation_Style>Space_Automatic</Activation_Style>
-				<Unit_Strength_Category>All</Unit_Strength_Category>
 				<Applicable_Unit_Categories>All</Applicable_Unit_Categories>
 				<Applicable_Unit_Types/>
-				<Excluded_Unit_Types> </Excluded_Unit_Types>
+				<Excluded_Unit_Types> Ground_Ion_Cannon, Ground_Hypervelocity_Gun </Excluded_Unit_Types>
 				<Health_Bonus_Percentage>0.05</Health_Bonus_Percentage>
-				<Damage_Bonus_Percentage>0.0</Damage_Bonus_Percentage>
-				<Energy_Pool_Bonus_Percentage>0.0</Energy_Pool_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.0</Damage_Bonus_Percentage>    
 				<Shield_Bonus_Percentage>0.0</Shield_Bonus_Percentage>
 				<Defense_Bonus_Percentage>0.0</Defense_Bonus_Percentage>
 				<Movement_Speed_Bonus_Percentage>0.0</Movement_Speed_Bonus_Percentage>
@@ -242,9 +740,9 @@
 
 		</Abilities>
 		
-	</SpaceUnit>
+	</UniqueUnit>
 	
-	<SpaceUnit Name="Alyssia_Starsong">
+	<UniqueUnit Name="Alyssia_Starsong">
 		
 		<Variant_Of_Existing_Type> BattleDragon </Variant_Of_Existing_Type>
 		
@@ -272,6 +770,7 @@
 		TEXT_TOOLTIP_CAPABILITY_ORBITAL_BOMBARDMENT
 		TEXT_TOOLTIP_CAPABILITY_BOMBING_RUN
 		</Encyclopedia_Text>
+		<Icon_Name>i_button_alyssia.tga</Icon_Name>
 		
 		<SpaceBehavior>ABILITY_COUNTDOWN, SIMPLE_SPACE_LOCOMOTOR, TARGETING, POWERED, SHIELDED, REVEAL, HIDE_WHEN_FOGGED, UNIT_AI, DAMAGE_TRACKING, ION_STUN_EFFECT </SpaceBehavior>
 		
@@ -284,8 +783,8 @@
         <Affiliation>Hapes_Consortium</Affiliation>
 		<Tech_Level>99</Tech_Level>
 		
-		<Icon_Name>i_button_alyssia.tga</Icon_Name>
 		<CategoryMask> SpaceHero | AntiFrigate </CategoryMask>
+		<Property_Flags>GTSImmune</Property_Flags>
 		
 		<Starting_Spawned_Units_Tech_1>House_Miytil_Fighter_Squadron, 1</Starting_Spawned_Units_Tech_1>
 		<Starting_Spawned_Units_Tech_1>Miytil_Bomber_Squadron_Half, 1</Starting_Spawned_Units_Tech_1>
@@ -296,13 +795,11 @@
 
 			<Combat_Bonus_Ability Name="Alyssia_Combat_Bonus">
 				<Activation_Style>Space_Automatic</Activation_Style>
-				<Unit_Strength_Category>All</Unit_Strength_Category>
 				<Applicable_Unit_Categories>All</Applicable_Unit_Categories>
 				<Applicable_Unit_Types/>
-				<Excluded_Unit_Types> </Excluded_Unit_Types>
+				<Excluded_Unit_Types> Ground_Ion_Cannon, Ground_Hypervelocity_Gun </Excluded_Unit_Types>
 				<Health_Bonus_Percentage>0.05</Health_Bonus_Percentage>
-				<Damage_Bonus_Percentage>0.15</Damage_Bonus_Percentage>
-				<Energy_Pool_Bonus_Percentage>0.0</Energy_Pool_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.15</Damage_Bonus_Percentage>    
 				<Shield_Bonus_Percentage>0.05</Shield_Bonus_Percentage>
 				<Defense_Bonus_Percentage>0.05</Defense_Bonus_Percentage>
 				<Movement_Speed_Bonus_Percentage>0.0</Movement_Speed_Bonus_Percentage>
@@ -311,9 +808,9 @@
 
 		</Abilities>
 		
-	</SpaceUnit>
+	</UniqueUnit>
 	
-	<SpaceUnit Name="Chelik_Dangerous_Dance">
+	<UniqueUnit Name="Chelik_Dangerous_Dance">
 		
 		<Variant_Of_Existing_Type> BattleDragon </Variant_Of_Existing_Type>
 		
@@ -354,18 +851,17 @@
 		
 		<Icon_Name>i_button_chelik.tga</Icon_Name>
 		<CategoryMask> SpaceHero | AntiFrigate </CategoryMask>
+		<Property_Flags>GTSImmune</Property_Flags>
 		
 		<Abilities SubObjectList="Yes">
 
 			<Combat_Bonus_Ability Name="Chelik_Combat_Bonus">
 				<Activation_Style>Space_Automatic</Activation_Style>
-				<Unit_Strength_Category>All</Unit_Strength_Category>
 				<Applicable_Unit_Categories>All</Applicable_Unit_Categories>
 				<Applicable_Unit_Types/>
-				<Excluded_Unit_Types> </Excluded_Unit_Types>
+				<Excluded_Unit_Types> Ground_Ion_Cannon, Ground_Hypervelocity_Gun </Excluded_Unit_Types>
 				<Health_Bonus_Percentage>0.05</Health_Bonus_Percentage>
-				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
-				<Energy_Pool_Bonus_Percentage>0.0</Energy_Pool_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>    
 				<Shield_Bonus_Percentage>0.05</Shield_Bonus_Percentage>
 				<Defense_Bonus_Percentage>0.05</Defense_Bonus_Percentage>
 				<Movement_Speed_Bonus_Percentage>0.0</Movement_Speed_Bonus_Percentage>
@@ -374,9 +870,9 @@
 
 		</Abilities>
 		
-	</SpaceUnit>
+	</UniqueUnit>
 	
-	<SpaceUnit Name="Astarta_Siren_Star">
+	<UniqueUnit Name="Astarta_Siren_Star">
 		
 		<Variant_Of_Existing_Type> BattleDragon </Variant_Of_Existing_Type>
 		
@@ -403,6 +899,7 @@
 		TEXT_TOOLTIP_CAPABILITY_ORBITAL_BOMBARDMENT
 		TEXT_TOOLTIP_CAPABILITY_BOMBING_RUN
 		</Encyclopedia_Text>
+		<Icon_Name>i_button_astarta.tga</Icon_Name>
 		
 		<SpaceBehavior>ABILITY_COUNTDOWN, SIMPLE_SPACE_LOCOMOTOR, TARGETING, POWERED, SHIELDED, REVEAL, HIDE_WHEN_FOGGED, UNIT_AI, DAMAGE_TRACKING, ION_STUN_EFFECT </SpaceBehavior>
 		
@@ -415,8 +912,8 @@
         <Affiliation>Hapes_Consortium</Affiliation>
 		<Tech_Level>99</Tech_Level>
 		
-		<Icon_Name>i_button_astarta.tga</Icon_Name>
 		<CategoryMask> SpaceHero | AntiFrigate </CategoryMask>
+		<Property_Flags>GTSImmune</Property_Flags>
 		
 		<Starting_Spawned_Units_Tech_1>House_Miytil_Fighter_Squadron, 1</Starting_Spawned_Units_Tech_1>
 		<Starting_Spawned_Units_Tech_1>Miytil_Bomber_Squadron_Half, 1</Starting_Spawned_Units_Tech_1>
@@ -427,13 +924,11 @@
 
 			<Combat_Bonus_Ability Name="Astarta_Combat_Bonus">
 				<Activation_Style>Space_Automatic</Activation_Style>
-				<Unit_Strength_Category>All</Unit_Strength_Category>
 				<Applicable_Unit_Categories>All</Applicable_Unit_Categories>
 				<Applicable_Unit_Types />
-				<Excluded_Unit_Types> </Excluded_Unit_Types>
+				<Excluded_Unit_Types> Ground_Ion_Cannon, Ground_Hypervelocity_Gun </Excluded_Unit_Types>
 				<Health_Bonus_Percentage>0.10</Health_Bonus_Percentage>
-				<Damage_Bonus_Percentage>0.10</Damage_Bonus_Percentage>
-				<Energy_Pool_Bonus_Percentage>0.0</Energy_Pool_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.10</Damage_Bonus_Percentage>    
 				<Shield_Bonus_Percentage>0.10</Shield_Bonus_Percentage>
 				<Defense_Bonus_Percentage>0.10</Defense_Bonus_Percentage>
 				<Movement_Speed_Bonus_Percentage>0.05</Movement_Speed_Bonus_Percentage>
@@ -441,9 +936,9 @@
 			</Combat_Bonus_Ability>
 		</Abilities>
 		
-	</SpaceUnit>
+	</UniqueUnit>
 	
-	<SpaceUnit Name="Gray_Kendall">
+	<UniqueUnit Name="Gray_Kendall">
 		
 		<Variant_Of_Existing_Type> BattleDragon </Variant_Of_Existing_Type>
 		
@@ -470,6 +965,7 @@
 		TEXT_TOOLTIP_CAPABILITY_ORBITAL_BOMBARDMENT
 		TEXT_TOOLTIP_CAPABILITY_BOMBING_RUN
 		</Encyclopedia_Text>
+		<Icon_Name>i_button_aleson.tga</Icon_Name>
 		
 		<SpaceBehavior>ABILITY_COUNTDOWN, SIMPLE_SPACE_LOCOMOTOR, TARGETING, POWERED, SHIELDED, REVEAL, HIDE_WHEN_FOGGED, UNIT_AI, DAMAGE_TRACKING, ION_STUN_EFFECT </SpaceBehavior>
 		
@@ -482,8 +978,8 @@
         <Affiliation>Hapes_Consortium</Affiliation>
 		<Tech_Level>99</Tech_Level>
 		
-		<Icon_Name>i_button_aleson.tga</Icon_Name>
 		<CategoryMask> SpaceHero | AntiFrigate </CategoryMask>
+		<Property_Flags>GTSImmune</Property_Flags>
 		
 		<SFXEvent_Build_Started>EHD_Build_Vehicle</SFXEvent_Build_Started>
 		<SFXEvent_Build_Cancelled>EHD_Unit_Canceled</SFXEvent_Build_Cancelled>
@@ -548,13 +1044,11 @@
 
 			<Combat_Bonus_Ability Name="Aleson_Combat_Bonus">
 				<Activation_Style>Space_Automatic</Activation_Style>
-				<Unit_Strength_Category>All</Unit_Strength_Category>
 				<Applicable_Unit_Categories>All</Applicable_Unit_Categories>
 				<Applicable_Unit_Types/>
-				<Excluded_Unit_Types> </Excluded_Unit_Types>
+				<Excluded_Unit_Types> Ground_Ion_Cannon, Ground_Hypervelocity_Gun </Excluded_Unit_Types>
 				<Health_Bonus_Percentage>0.05</Health_Bonus_Percentage>
-				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
-				<Energy_Pool_Bonus_Percentage>0.0</Energy_Pool_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>    
 				<Shield_Bonus_Percentage>0.05</Shield_Bonus_Percentage>
 				<Defense_Bonus_Percentage>0.05</Defense_Bonus_Percentage>
 				<Movement_Speed_Bonus_Percentage>0.0</Movement_Speed_Bonus_Percentage>
@@ -563,9 +1057,9 @@
 
 		</Abilities>
 		
-	</SpaceUnit>
+	</UniqueUnit>
 	
-	<SpaceUnit Name="Lovett_Riverlord">
+	<UniqueUnit Name="Lovett_Riverlord">
 		
 		<Variant_Of_Existing_Type> Coronal </Variant_Of_Existing_Type>
 		
@@ -593,6 +1087,7 @@
 		TEXT_TOOLTIP_CAPABILITY_MIST_IMMUNE
 		TEXT_TOOLTIP_CAPABILITY_ORBITAL_BOMBARDMENT
 		</Encyclopedia_Text>
+		<Icon_Name>i_button_lovett.tga</Icon_Name>
 		<!-- no fighters, just mines for now -->
 		
 		<SpaceBehavior>ABILITY_COUNTDOWN, SPAWN_SQUADRON, SIMPLE_SPACE_LOCOMOTOR, TARGETING, POWERED, SHIELDED, REVEAL, HIDE_WHEN_FOGGED, UNIT_AI, DAMAGE_TRACKING, ION_STUN_EFFECT </SpaceBehavior>
@@ -606,8 +1101,8 @@
         <Affiliation>Hapes_Consortium</Affiliation>
 		<Tech_Level>99</Tech_Level>
 		
-		<Icon_Name>i_button_lovett.tga</Icon_Name>
 		<CategoryMask> SpaceHero | AntiFrigate | Interdictor </CategoryMask>
+		<Property_Flags>GTSImmune</Property_Flags>
 		
 		<Unit_Abilities_Data SubObjectList="Yes">
 			  <!-- Primary ability -->
@@ -668,13 +1163,11 @@
 			
 			<Combat_Bonus_Ability Name="Lovett_Combat_Bonus">
 				<Activation_Style>Space_Automatic</Activation_Style>
-				<Unit_Strength_Category>All</Unit_Strength_Category>
 				<Applicable_Unit_Categories>All</Applicable_Unit_Categories>
 				<Applicable_Unit_Types/>
-				<Excluded_Unit_Types> </Excluded_Unit_Types>
+				<Excluded_Unit_Types> Ground_Ion_Cannon, Ground_Hypervelocity_Gun </Excluded_Unit_Types>
 				<Health_Bonus_Percentage>0.05</Health_Bonus_Percentage>
-				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
-				<Energy_Pool_Bonus_Percentage>0.0</Energy_Pool_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>    
 				<Shield_Bonus_Percentage>0.05</Shield_Bonus_Percentage>
 				<Defense_Bonus_Percentage>0.05</Defense_Bonus_Percentage>
 				<Movement_Speed_Bonus_Percentage>0.0</Movement_Speed_Bonus_Percentage>
@@ -684,7 +1177,7 @@
 
 		</Abilities>
 		
-	</SpaceUnit>
+	</UniqueUnit>
 	
 	<HeroUnit Name="Beed_Thane">
 		<Is_Named_Hero>Yes</Is_Named_Hero>
@@ -696,7 +1189,7 @@
 		TEXT_TOOLTIP_SEPARATOR_BIO_BLOCK
 		TEXT_TOOLTIP_BEED_THANE
 		</Encyclopedia_Text>
-		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_HERO_MAJOR </Encyclopedia_Unit_Class>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_ARCHON </Encyclopedia_Unit_Class>
 		
 		<Icon_Name>i_button_beedthane.tga</Icon_Name>
 		<Mass>1.0</Mass>
@@ -707,7 +1200,6 @@
 		<!-- must use a special ability to modify political control in order to stack correctly -->
 		<Political_Control>0</Political_Control>
 		<Political_Faction>Hapes_Consortium</Political_Faction>
-		<Required_Timeline>0</Required_Timeline>
 		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
 		<Required_Star_Base_Level>0</Required_Star_Base_Level>
 		<Required_Special_Structures/>
@@ -749,9 +1241,7 @@
 		<Is_Dummy>Yes</Is_Dummy>
 		<Affiliation>Hapes_Consortium</Affiliation>
 		<Build_Time_Seconds>0</Build_Time_Seconds>
-		<Combat_Power_Value>0</Combat_Power_Value>
 		<Tech_Level>99</Tech_Level>
-		<Required_Timeline>0</Required_Timeline>
 		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
 		<Required_Star_Base_Level>0</Required_Star_Base_Level>
 		<Required_Special_Structures/>
@@ -767,7 +1257,7 @@
 		TEXT_TOOLTIP_SEPARATOR_BIO_BLOCK
 		TEXT_TOOLTIP_BEED_THANE
 		</Encyclopedia_Text>
-		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_HERO_MAJOR </Encyclopedia_Unit_Class>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_ARCHON </Encyclopedia_Unit_Class>
 		<Score_Cost_Credits> 25000 </Score_Cost_Credits>
 		<SFXEvent_Build_Started>RHD_Request_Assistance</SFXEvent_Build_Started>
 		<SFXEvent_Build_Cancelled>RHD_Request_Canceled</SFXEvent_Build_Cancelled>
@@ -828,16 +1318,18 @@
 		<Projectile_Fire_Pulse_Count>1</Projectile_Fire_Pulse_Count>
 		<Projectile_Fire_Pulse_Delay_Seconds>0.2</Projectile_Fire_Pulse_Delay_Seconds>
 		<Projectile_Appearance_Delay_Frames> 8 </Projectile_Appearance_Delay_Frames>
+        	<SFXEvent_Fire>Unit_Grenade_Throw</SFXEvent_Fire>
 
-		<SFXEvent_Select>Unit_Select_Mara_Jade</SFXEvent_Select>
-		<SFXEvent_Move>Unit_Move_Mara_Jade</SFXEvent_Move>
-		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Mara_Jade</SFXEvent_Fleet_Move>
-		<SFXEvent_Attack>Unit_Attack_Mara_Jade</SFXEvent_Attack>
-		<SFXEvent_Assist_Move> Unit_Assist_Move_Rebel_Soldier </SFXEvent_Assist_Move>
-		<SFXEvent_Assist_Attack> Unit_Assist_Attack_Rebel_Soldier </SFXEvent_Assist_Attack>
-		<SFXEvent_Guard>Unit_Guard_Mara_Jade</SFXEvent_Guard>
-
-		<Death_SFXEvent_Start_Die>Unit_Rebel_Soldier_Death</Death_SFXEvent_Start_Die>
+		<SFXEvent_Select>Unit_Select_Hapan_Guard</SFXEvent_Select>
+		<SFXEvent_Move>Unit_Move_Hapan_Guard</SFXEvent_Move>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Hapan_Guard</SFXEvent_Fleet_Move>
+		<SFXEvent_Attack>Unit_Attack_Hapan_Guard</SFXEvent_Attack>
+		<SFXEvent_Assist_Move> Unit_Assist_Move_Hapan_Guard </SFXEvent_Assist_Move>
+		<SFXEvent_Assist_Attack> Unit_Assist_Attack_Hapan_Guard </SFXEvent_Assist_Attack>
+		<SFXEvent_Guard>Unit_Guard_Hapan_Guard</SFXEvent_Guard>
+		<SFXEvent_Health_Low_Warning>Unit_Health_Low_Hapan_Guard</SFXEvent_Health_Low_Warning>
+		<SFXEvent_Health_Critical_Warning>Unit_Health_Critical_Hapan_Guard</SFXEvent_Health_Critical_Warning>
+		<Death_SFXEvent_Start_Die>Unit_Hapan_Guard_Death</Death_SFXEvent_Start_Die>
 		
 		<Selection_Blob_Material_Name>Selection_Hapan_Hero</Selection_Blob_Material_Name>
         <Highlight_Blob_Material_Name>Highlight_Hapan_Hero</Highlight_Blob_Material_Name>
@@ -854,7 +1346,7 @@
 				<Type>SPREAD_OUT</Type>
 				<Mod_Multiplier>SPEED_MULTIPLIER,	 0.5f</Mod_Multiplier>
 				<Mod_Multiplier>TAKE_DAMAGE_MULTIPLIER, 0.75f</Mod_Multiplier>
-				<SFXEvent_GUI_Unit_Ability_Activated>Unit_Take_Cover_Storm_Trooper</SFXEvent_GUI_Unit_Ability_Activated>
+				<SFXEvent_GUI_Unit_Ability_Activated>Unit_Take_Cover_Hapan_Guard</SFXEvent_GUI_Unit_Ability_Activated>
 			</Unit_Ability>
 			
 			<!-- Secondary ability -->
@@ -867,6 +1359,7 @@
 				<Area_Effect_Decal_Distance> 250.0 </Area_Effect_Decal_Distance>
 				<GUI_Activated_Ability_Name>
 				</GUI_Activated_Ability_Name>
+				<SFXEvent_Target_Ability>Unit_Ping_Hapan_Guard</SFXEvent_Target_Ability>
 			</Unit_Ability>
 		</Unit_Abilities_Data>
 
@@ -874,12 +1367,10 @@
 
 			<Combat_Bonus_Ability Name="Livette_Land_Combat_Bonus">
 				<Activation_Style>Ground_Automatic</Activation_Style>
-				<Unit_Strength_Category>Vehicle | Infantry | Air</Unit_Strength_Category>
 				<Applicable_Unit_Categories>Vehicle | Infantry | Air</Applicable_Unit_Categories>
 				<Applicable_Unit_Types />
 				<Health_Bonus_Percentage>0.15</Health_Bonus_Percentage>
-				<Damage_Bonus_Percentage>0.25</Damage_Bonus_Percentage>
-				<Energy_Pool_Bonus_Percentage>0.0</Energy_Pool_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.25</Damage_Bonus_Percentage>    
 				<Shield_Bonus_Percentage>0.15</Shield_Bonus_Percentage>
 				<Defense_Bonus_Percentage>0.15</Defense_Bonus_Percentage>
 				<Movement_Speed_Bonus_Percentage>0.10</Movement_Speed_Bonus_Percentage>
@@ -919,10 +1410,8 @@
 		<Build_Limit_Lifetime_Per_Player>1</Build_Limit_Lifetime_Per_Player>
 		<Required_Special_Structures>R_Ground_Officer_Academy</Required_Special_Structures>
 		<Build_Time_Seconds>15</Build_Time_Seconds>
-		<Combat_Power_Value>0</Combat_Power_Value>
 		<Build_Initially_Locked>Yes</Build_Initially_Locked>
 		<Tech_Level>99</Tech_Level>
-		<Required_Timeline>0</Required_Timeline>
 		<Behavior>DUMMY_GROUND_COMPANY</Behavior>
 		<Company_Transport_Unit>Yacht_Shuttle</Company_Transport_Unit>
 		<Company_Units>Livette</Company_Units>
@@ -942,9 +1431,9 @@
 		
 		<SFXEvent_Build_Started>RHD_Request_Assistance</SFXEvent_Build_Started>
 		<SFXEvent_Build_Cancelled>RHD_Request_Canceled</SFXEvent_Build_Cancelled>		
-		<SFXEvent_Build_Complete></SFXEvent_Build_Complete>
+		<SFXEvent_Build_Complete>Unit_Complete_Hapan_Guard</SFXEvent_Build_Complete>
 		<SFXEvent_Hero_Respawned></SFXEvent_Hero_Respawned>
-		<SFXEvent_Fleet_Move></SFXEvent_Fleet_Move>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Hapan_Guard</SFXEvent_Fleet_Move>
 		<Population_Value>1</Population_Value>
 		<CategoryMask>LandHero</CategoryMask>
 		<Ranking_In_Category> 3 </Ranking_In_Category>

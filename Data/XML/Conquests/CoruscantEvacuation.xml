@@ -3,7 +3,7 @@
 
 
 <!--******************************************************-->
-<!--******	Campaign: Rim World Conflict (Empire)	******-->
+<!--******	Coruscant Evacuation                    ******-->
 <!--******************************************************-->
 
 <Story>
@@ -17,19 +17,19 @@
 		<Event_Param2>GC_CORUSCANT_EVAC_LONG</Event_Param2>
 	</Event>
 	
-	<Event Name="Init_on_Long">
+	<Event Name="Init_Long_Delay">
 		<Event_Type>STORY_ELAPSED</Event_Type>
-		<Event_Param1>30</Event_Param1>
+		<Event_Param1>12</Event_Param1>
 		<Prereq>Init_Long</Prereq>
 	</Event>
 
-	<Event Name="Start_Chain">
+	<Event Name="Start_Chain"> <!--calls Lua-->
 		<Event_Type>STORY_TRIGGER</Event_Type>
 		<Prereq>Init_Short</Prereq>
-		<Prereq>Init_on_Long</Prereq>
+		<Prereq>Init_Long_Delay</Prereq>
 	</Event>
 	
-	<Event Name="Evac_Prereq">
+	<Event Name="Mothma_Evac_Speech">
 		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
 		<Event_Param2>CORUSCANT_EVAC_START</Event_Param2>
 		<Reward_Type>MULTIMEDIA</Reward_Type>
@@ -44,28 +44,40 @@
 		<Reward_Param9>Mon_Mothma_Loop</Reward_Param9>
 		<Reward_Param10>0</Reward_Param10>
 	</Event>
+
+	<Event Name="Zoom_Out">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>ZOOM_OUT</Reward_Type>
+		<Prereq>Mothma_Evac_Speech</Prereq>
+	</Event>	
+
+	<Event Name="Disable_Zoom">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>DISABLE_EVENT</Reward_Type>
+		<Reward_Param1>TUTORIAL_ZOOM </Reward_Param1>
+		<Prereq>Zoom_Out</Prereq>
+	</Event>
 	
 	<Event Name="Jump_Camera_Coruscant">
 		<Event_Type>STORY_TRIGGER</Event_Type>
 		<Reward_Type>POSITION_CAMERA</Reward_Type>
 		<Reward_Param1>Coruscant</Reward_Param1>
 		<Reward_Param2>0,0,0</Reward_Param2>
-		<Prereq>Evac_Prereq</Prereq>
+		<Prereq>Disable_Zoom</Prereq>
+	</Event>
+
+	<Event Name="Flash_Coruscant">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>FLASH_PLANET_GUI</Reward_Type>
+		<Reward_Param1>Coruscant</Reward_Param1>
+		<Reward_Param2>FLASH_PLANET</Reward_Param2>
+		<Reward_Param4>Coruscant_GUI_Flash</Reward_Param4>
+		<Reward_Param5>True</Reward_Param5>
+		<Prereq>Jump_Camera_Coruscant</Prereq>
 	</Event>
 	
-	<Event Name="Flash_Coruscant">
-        <Event_Type>STORY_TRIGGER</Event_Type>
-        <Reward_Type>FLASH_PLANET_GUI</Reward_Type>
-        <Reward_Param1>Coruscant</Reward_Param1>
-        <Reward_Param2>FLASH_PLANET</Reward_Param2>
-        <Reward_Param4>Coruscant_GUI_Flash</Reward_Param4>
-        <Reward_Param5>True</Reward_Param5>
-        <Prereq>Evac_Prereq</Prereq>
-    </Event>
-	
 	<Event Name="Battle_of_Coruscant">
-		<Event_Type>STORY_ELAPSED</Event_Type>
-		<Event_Param1>16</Event_Param1>
+		<Event_Type>STORY_TRIGGER</Event_Type>
 		<Reward_Type>LINK_TACTICAL</Reward_Type>
 		<Reward_Param1>Coruscant</Reward_Param1> <!-- the planet -->
 		<Reward_Param2>SPACE</Reward_Param2> <!-- LAND or SPACE, MUST be capitalized -->
@@ -73,23 +85,29 @@
 		<Reward_Param4>_FOTG_SPACE_CORUSCANT_EVACUATION.TED</Reward_Param4> <!-- the map you want to load for your mission -->
 		<Reward_Param5>Rebel</Reward_Param5> <!-- defending faction -->
 		<Reward_Param7>Battle_of_Coruscant.xml</Reward_Param7> <!-- the story plot file -->
-		<Reward_Param8>1</Reward_Param8> <!-- explained below -->
+		<Reward_Param8>1</Reward_Param8> <!--use persistence-->
 		<Reward_Param9>2</Reward_Param9>
 		<Reward_Param13>1</Reward_Param13> <!-- 1: displays the "Launch Battle" dialog before battle; 0: skips the dialog and launches battle without asking the player -->
-		<Prereq>Evac_Prereq</Prereq>
+		<Prereq>Flash_Coruscant</Prereq>
 	</Event>
 	
 	<Event Name="Remove_Flash_Coruscant">
-        <Event_Type>STORY_ELAPSED</Event_Type>
-        <Event_Param1>2</Event_Param1>
-        <Reward_Type>HIDE_TUTORIAL_CURSOR</Reward_Type>
-        <Reward_Param1>Coruscant_GUI_Flash</Reward_Param1>
-        <Prereq>Battle_of_Coruscant</Prereq>
-    </Event>
-	
-	<Event Name="Empire_wins_Coruscant">  <!-- This exists to trigger Lua events -->
 		<Event_Type>STORY_MISSION_LOST</Event_Type>
 		<Event_Param1>Battle_of_Coruscant.xml</Event_Param1>
+		<Reward_Type>HIDE_TUTORIAL_CURSOR</Reward_Type>
+		<Reward_Param1>Coruscant_GUI_Flash</Reward_Param1>
+	</Event>
+	
+	<Event Name="Reenable_Zoom">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>ENABLE_EVENT</Reward_Type>
+		<Reward_Param1>TUTORIAL_ZOOM </Reward_Param1>
+		<Prereq>Remove_Flash_Coruscant</Prereq>
+	</Event>	
+	
+	<Event Name="Empire_Wins_Coruscant"> <!--calls Lua-->
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Prereq>Remove_Flash_Coruscant</Prereq>
 	</Event>
 	
 </Story>

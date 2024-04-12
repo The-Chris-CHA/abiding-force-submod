@@ -16,7 +16,8 @@ return {
 			EMPIRE = {Initial = 1, Reserve = 1, TechLevel = GreaterOrEqualTo(6)}
 		},
 		["Z95_HEADHUNTER_SQUADRON"] = {
-			REBEL = {Initial = 1, Reserve = 1, TechLevel = LessThan(4)}
+			REBEL = {Initial = 1, Reserve = 1, TechLevel = LessThan(4)},
+			HUTT_CARTELS = {Initial = 1, Reserve = 1}
 		},
 		["DEFENDER_STARFIGHTER_SQUADRON"] = {
 			REBEL = {Initial = 1, Reserve = 1, TechLevel = GreaterOrEqualTo(4)}

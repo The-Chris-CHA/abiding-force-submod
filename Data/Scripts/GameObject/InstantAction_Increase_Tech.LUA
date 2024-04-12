@@ -8,6 +8,7 @@ require("PGStateMachine")
 require("PGStoryMode")
 require("eawx-std/class")
 StoryUtil = require("eawx-util/StoryUtil")
+require("eawx-util/MissionFunctions")
 
 function Definitions()
 	

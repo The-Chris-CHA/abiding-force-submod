@@ -4,6 +4,9 @@ return {
 		["MIYTIL_FIGHTER_SQUADRON_DOUBLE"] = {
 			HAPES_CONSORTIUM = {Initial = 2, Reserve = 5}
 		},
+		["CLOAKSHAPE_NEW_SQUADRON_DOUBLE"] = {
+			HUTT_CARTELS = {Initial = 2, Reserve = 5}
+		},
 		["REBEL_X-WING_SQUADRON"] = {
 			REBEL = {Initial = 3, Reserve = 8}
 		},
@@ -26,7 +29,16 @@ return {
 			ZSINJ_EMPIRE = {Initial = 1, Reserve = 2}
 		},
 		["MIYTIL_BOMBER_SQUADRON_DOUBLE"] = {
-			HAPES_CONSORTIUM = {Initial = 2, Reserve = 6}
+			HAPES_CONSORTIUM = {Initial = 1, Reserve = 3}
+		},
+		["MIYTIL_BOMBER_SQUADRON"] = {
+			HAPES_CONSORTIUM = {Initial = 1, Reserve = 2}
+		},
+		["SCURRG_H6_SQUADRON_DOUBLE"] = {
+			HUTT_CARTELS = {Initial = 1, Reserve = 3}
+		},
+		["KIMOGILA_SQUADRON"] = {
+			HUTT_CARTELS = {Initial = 1, Reserve = 2}
 		},
 		["TIE_BOMBER_SQUADRON_DOUBLE"] = {
 			EMPIRE = {Initial = 1, Reserve = 2, TechLevel = IsOneOf({1, 2, 4, 5, 6})},
@@ -38,7 +50,7 @@ return {
 			WARLORDS = {Initial = 1, Reserve = 2},
 			ZSINJ_EMPIRE = {Initial = 1, Reserve = 2}
 		},
-		["SCIMMY_SQUADRON_DOUBLE"] = {
+		["SCIMITAR_SQUADRON_DOUBLE"] = {
 			EMPIRE = {Initial = 1, Reserve = 2, TechLevel = IsOneOf({3, 7, 8, 9, 10, 11})}
 		},
 		["Y-WING_SQUADRON_DOUBLE"] = {

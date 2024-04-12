@@ -21,7 +21,7 @@
 		<Icon_Name>i_button_oto.tga</Icon_Name>
 
 		<Land_Model_Name>nb_baseshieldgen.alo</Land_Model_Name>
-		<Scale_Factor>22.3</Scale_Factor>
+		<Scale_Factor>0.5</Scale_Factor>
 		<Select_Box_Scale>90</Select_Box_Scale>
 		<Size_Value>2</Size_Value>
 
@@ -55,7 +55,6 @@
 		<Is_Dummy>Yes</Is_Dummy>
 
 		<Tech_Level>99</Tech_Level>
-		<Required_Timeline>0</Required_Timeline>
 		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
 		<Required_Star_Base_Level>1</Required_Star_Base_Level>
 		<Required_Special_Structures>AI_Category_Dummy | Structure_Category_Dummy</Required_Special_Structures>
@@ -69,8 +68,6 @@
 		<Build_Max_Instances_Per_Planet> 1 </Build_Max_Instances_Per_Planet>
 		<Build_Limit_Current_Per_Player>5</Build_Limit_Current_Per_Player>
 		<Build_Initially_Locked/>
-		<Override_Bounty_SP>1</Override_Bounty_SP>
-		<Override_Bounty_MP>1</Override_Bounty_MP>
 		<Score_Cost_Credits> 1500 </Score_Cost_Credits>
 		<Sabotage_Cost_Credits>5000</Sabotage_Cost_Credits>
 
@@ -457,6 +454,8 @@
 		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
 		TEXT_TOOLTIP_L_FACTORY_EOTH1
 		TEXT_TOOLTIP_L_FACTORY_EOTH2
+		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
+		TEXT_TOOLTIP_UPKEEP_FACTORY_L
 		</Encyclopedia_Text>
 		
 		<MP_Encyclopedia_Text> TEXT_TOOLTIP_L_FACTORY </MP_Encyclopedia_Text>
@@ -519,6 +518,8 @@
 		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
 		TEXT_TOOLTIP_H_FACTORY_EOTH1
 		TEXT_TOOLTIP_H_FACTORY_EOTH2
+		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
+		TEXT_TOOLTIP_UPKEEP_FACTORY_H
 		</Encyclopedia_Text>
 		
 		<MP_Encyclopedia_Text> TEXT_TOOLTIP_H_FACTORY </MP_Encyclopedia_Text>

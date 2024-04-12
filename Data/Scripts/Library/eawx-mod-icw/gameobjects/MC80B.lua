@@ -10,6 +10,9 @@ return {
 		["MIYTIL_FIGHTER_SQUADRON_DOUBLE"] = {
 			HAPES_CONSORTIUM = {Initial = 1, Reserve = 1}
 		},
+		["DUNELIZARD_FIGHTER_SQUADRON_DOUBLE"] = {
+			HUTT_CARTELS = {Initial = 1, Reserve = 1}
+		},
 		["REBEL_X-WING_SQUADRON_DOUBLE"] = {
 			HOSTILE = {Initial = 1, Reserve = 1},
 			REBEL = {Initial = 1, Reserve = 1, TechLevel = LessOrEqualTo(6)},

@@ -42,15 +42,19 @@
 require("pgevents")
 
 function Definitions()
-	Category = "AlwaysOff"
+	Category = "Build_Cantina"
 	TaskForce = {
 	{
 		"StructureForce",
-		"TaskForceRequired"
+		"Smuggler_Cantina = 1"
 	}
 	}
 end
 
 function StructureForce_Thread()
+	StructureForce.Set_As_Goal_System_Removable(false)
+	AssembleForce(StructureForce)
+	
+	StructureForce.Set_Plan_Result(true)
 	ScriptExit()
 end

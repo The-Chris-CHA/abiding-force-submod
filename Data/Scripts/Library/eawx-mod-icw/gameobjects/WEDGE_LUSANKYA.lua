@@ -2,7 +2,7 @@ return {
 	Ship_Crew_Requirement = 300,
 	Fighters = {
 		["A-WING_SQUADRON"] = {
-			DEFAULT = {Initial = 1, Reserve = 5}
+			DEFAULT = {Initial = 1, Reserve = 5, HeroOverride = {{"TALLON_SILENT_WATER"}, {"A-WING_SQUADRON_DOUBLE"}}}
 		},
 		["REBEL_X-WING_SQUADRON_DOUBLE"] = {
 			DEFAULT = {Initial = 2, Reserve = 10}

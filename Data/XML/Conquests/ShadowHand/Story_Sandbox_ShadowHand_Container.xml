@@ -1,0 +1,661 @@
+<?xml version="1.0" ?>
+<Story>
+<!--******************************************************-->
+<!--******  Campaign: Operation Shadow Hand         ******-->
+<!--******************************************************-->
+
+	<Event Name="Universal_Story_Start">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>0</Event_Param1>
+	</Event>
+
+	<Event Name="Delayed_Initialize">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>7</Event_Param1>
+	</Event>
+
+	<Event Name="Reveal_All_Planets">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>REVEAL_ALL_PLANETS</Reward_Type>
+		<Prereq>Universal_Story_Start</Prereq>
+	</Event>
+
+
+<!--******************************************************-->
+<!--***************	Faction Determiners	******************-->
+<!--******************************************************-->
+
+	<Event Name="Faction_Branch_Disabler_NewRep">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>0</Event_Param1>
+		<Reward_Type>DISABLE_BRANCH</Reward_Type>
+		<Reward_Param1>Faction_Branch_NewRep</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+	</Event>
+
+	<Event Name="Faction_Branch_Disabler_Empire">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>0</Event_Param1>
+		<Reward_Type>DISABLE_BRANCH</Reward_Type>
+		<Reward_Param1>Faction_Branch_Empire</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+	</Event>
+
+	<Event Name="Determine_Faction"> <!--calls Lua-->
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>0</Event_Param1>
+	</Event>
+
+	<Event Name="Faction_Branch_Enabler_NewRep">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>ENABLE_BRANCH_NR_FLAG</Event_Param2>
+		<Reward_Type>DISABLE_BRANCH</Reward_Type>
+		<Reward_Param1>Faction_Branch_NewRep</Reward_Param1>
+		<Reward_Param2>0</Reward_Param2>
+	</Event>
+
+	<Event Name="Faction_Branch_Enabler_Empire">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>ENABLE_BRANCH_EMPIRE_FLAG</Event_Param2>
+		<Reward_Type>DISABLE_BRANCH</Reward_Type>
+		<Reward_Param1>Faction_Branch_Empire</Reward_Param1>
+		<Reward_Param2>0</Reward_Param2>
+	</Event>
+
+
+<!--***********************************************************-->
+<!--******************** UNIVERSAL EVENTS *********************-->
+<!--***********************************************************-->
+
+	<Event Name="Universal_Byss_Lock">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>0</Event_Param1>
+		<Reward_Type>SET_PLANET_RESTRICTED</Reward_Type>
+		<Reward_Param1>Byss</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+	</Event>
+
+	<Event Name="Universal_Mutiny_Dialog">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>80</Event_Param1>
+		<Story_Dialog>Dialog_Lore_Events</Story_Dialog>
+		<Story_Chapter>0</Story_Chapter>
+	</Event>
+
+	<Event Name="Universal_Byss_Unlock"> <!--calls Lua-->
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SET_PLANET_RESTRICTED</Reward_Type>
+		<Reward_Param1>Byss</Reward_Param1>
+		<Reward_Param2>0</Reward_Param2>
+		<Prereq>Empire_Coruscant_Conquered</Prereq>
+		<Prereq>NR_Byss_Timer</Prereq>
+	</Event>
+	
+	<Event Name="Universal_Cloning_Facility_Dies">
+		<Event_Type>STORY_TACTICAL_DESTROY</Event_Type>
+  		<Event_Param1>Dark_Empire_Cloning_Facility</Event_Param1>
+		<Event_Param3>1</Event_Param3>
+		<Reward_Type>REMOVE_UNIT</Reward_Type>
+		<Reward_Param1>Emperor_Palpatine</Reward_Param1>
+	</Event>
+
+	<Event Name="Universal_Palpatine_Dies"> <!--calls Lua-->
+		<Event_Type>STORY_TACTICAL_DESTROY</Event_Type>
+  		<Event_Param1>Emperor_Palpatine</Event_Param1>
+		<Event_Param3>1</Event_Param3>
+		<Reward_Type>DISABLE_BRANCH</Reward_Type>
+		<Reward_Param1>Branch_Palpatine_Dialog_Events</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+	</Event>
+
+	<Event Name="Universal_New_Boss_Evil_Luke_Speech">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>LUKE_LEADS_EMPIRE</Event_Param2>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_CONQUEST_PALPATINE_NEW_BOSS_LUKE</Reward_Param1>
+		<Reward_Param2>15</Reward_Param2>
+		<Reward_Param9>Luke_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+	</Event>
+
+	<Event Name="Universal_New_Boss_Sedriss_Speech">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>SEDRISS_LEADS_EMPIRE</Event_Param2>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_CONQUEST_PALPATINE_NEW_BOSS_SEDRISS</Reward_Param1>
+		<Reward_Param2>15</Reward_Param2>
+		<Reward_Param9></Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+	</Event>
+
+	<Event Name="Universal_New_Boss_Carnor_Speech">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>CARNOR_LEADS_EMPIRE</Event_Param2>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_CONQUEST_PALPATINE_NEW_BOSS_CARNOR</Reward_Param1>
+		<Reward_Param2>15</Reward_Param2>
+		<Reward_Param9>Carnor_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+	</Event>
+
+<!--***********************************************************-->
+<!--******************* IMPERIAL STORYLINE ********************-->
+<!--***********************************************************-->
+
+<!--***************** Objective Speeches (Empire) ******************-->
+
+	<Event Name="Empire_Intro_Palpatine_Speech">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_CONQUEST_PALPATINE_IR_INTRO_ONE</Reward_Param1>
+		<Reward_Param2>10</Reward_Param2>
+		<Reward_Param9>Palpatine_Reborn_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+		<Prereq>Faction_Branch_Enabler_Empire</Prereq>
+	</Event>
+
+	<Event Name="Empire_Intro_Mission_Dialog">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>11</Event_Param1>
+		<Prereq>Empire_Intro_Palpatine_Speech</Prereq>
+		<Story_Dialog>Dialog_Empire_Palpatine</Story_Dialog>
+		<Story_Chapter>0</Story_Chapter>
+		<Story_Tag>Empire_Main_Campaign_Tag</Story_Tag>
+	</Event>
+
+	<Event Name="Empire_Capture_Luke_Palpatine_Speech">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>1</Event_Param1>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_CONQUEST_PALPATINE_NEW_APPRENTICE</Reward_Param1>
+		<Reward_Param2>10</Reward_Param2>
+		<Reward_Param9>Palpatine_Reborn_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+		<Prereq>Empire_Intro_Mission_Dialog</Prereq>
+	</Event>
+ 
+    <Event Name="Empire_Capture_Luke_Mission_Dialog">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>11</Event_Param1>
+		<Prereq>Empire_Capture_Luke_Palpatine_Speech</Prereq>
+		<Story_Dialog>Dialog_Empire_Palpatine</Story_Dialog>
+		<Story_Chapter>2</Story_Chapter>
+		<Story_Tag>Empire_Capture_Luke_Tag</Story_Tag>
+	</Event>
+
+	<Event Name="Empire_Coruscant_Palpatine_Speech">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>1</Event_Param1>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_CONQUEST_PALPATINE_CONQUER_CORUSCANT</Reward_Param1>
+		<Reward_Param2>10</Reward_Param2>
+		<Reward_Param9>Palpatine_Reborn_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+		<Prereq>Empire_Capture_Luke_Mission_Dialog</Prereq>
+	</Event>
+
+	<Event Name="Empire_Coruscant_Mission_Dialog">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>11</Event_Param1>
+		<Prereq>Empire_Coruscant_Palpatine_Speech</Prereq>
+		<Story_Dialog>Dialog_Empire_Palpatine</Story_Dialog>
+		<Story_Chapter>1</Story_Chapter>
+		<Story_Tag>Empire_Coruscant_Tag</Story_Tag>
+	</Event>
+
+<!--***************** Coruscant Events (Empire) ******************-->
+
+	<Event Name="Empire_Coruscant_Conquered">
+  		<Event_Type>STORY_CONQUER</Event_Type>
+  		<Event_Param1>Coruscant</Event_Param1>
+  		<Event_Param3>Empire</Event_Param3>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_CONQUEST_PALPATINE_CORUSCANT_TAKEN</Reward_Param1>
+		<Reward_Param2>15</Reward_Param2>
+		<Reward_Param9>Palpatine_Reborn_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+		<Prereq>Faction_Branch_Enabler_Empire</Prereq>
+	</Event>
+
+	<Event Name="Empire_Coruscant_Conquered_2">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>STORY_GOAL_COMPLETED</Reward_Type>
+		<Reward_Param1>Empire_Coruscant_Tag</Reward_Param1>
+		<Prereq>Empire_Coruscant_Conquered</Prereq>
+	</Event>
+
+
+<!--***************** Eclipse Events (Empire) ******************-->
+
+	<Event Name="Empire_Eclipse_Appears"> <!--calls Lua-->
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>200</Event_Param1>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_CONQUEST_PALPATINE_ECLIPSE_APPEARS</Reward_Param1>
+		<Reward_Param2>15</Reward_Param2>
+		<Reward_Param9>Palpatine_Reborn_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+		<Prereq>Faction_Branch_Enabler_Empire Universal_Byss_Unlock</Prereq>
+		<Branch>Branch_Palpatine_Dialog_Events</Branch>
+	</Event>
+	
+	<Event Name="Empire_Eclipse_Jump_Camera_Byss">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>POSITION_CAMERA</Reward_Type>
+		<Reward_Param1>Byss</Reward_Param1>
+		<Reward_Param2>0,0,0</Reward_Param2>
+		<Prereq>Empire_Eclipse_Appears</Prereq>
+	</Event>
+
+<!--***************** Luke Fall/Return Events (Empire) ******************-->
+	
+	<Event Name="Empire_Capture_Luke_Success">
+  		<Event_Type>STORY_TACTICAL_DESTROY</Event_Type>
+  		<Event_Param1>Luke_Skywalker_Jedi</Event_Param1>
+		<Event_Param3>1</Event_Param3>
+		<Reward_Type>DISABLE_STORY_EVENT</Reward_Type>
+		<Reward_Param1>Empire_Capture_Luke_Palpatine_Speech</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+		<Prereq>Faction_Branch_Enabler_Empire</Prereq>
+		<Branch>Branch_Palpatine_Dialog_Events</Branch>
+	</Event>
+	
+	<Event Name="Empire_Evil_Luke_Appears"> <!--calls Lua-->
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>STORY_GOAL_COMPLETED</Reward_Type>
+		<Reward_Param1>Empire_Capture_Luke_Tag</Reward_Param1>
+		<Prereq>Empire_Capture_Luke_Success</Prereq>
+	</Event>
+
+	<Event Name="Empire_Evil_Luke_Appears_Palpatine_Speech">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_CONQUEST_PALPATINE_NEW_APPRENTICE_DONE</Reward_Param1>
+		<Reward_Param2>15</Reward_Param2>
+		<Reward_Param9>Palpatine_Reborn_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+		<Prereq>Empire_Capture_Luke_Success</Prereq>
+	</Event>
+
+	<Event Name="Empire_Stop_Monitoring_Evil_Luke_Death">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>STOP_MONITOR_EVIL_LUKE_DEATH</Event_Param2>
+		<Reward_Type>DISABLE_BRANCH</Reward_Type>
+		<Reward_Param1>Branch_Monitor_Evil_Luke_Death</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+	</Event>
+
+	<Event Name="Empire_Resume_Monitoring_Evil_Luke_Death">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>RESUME_MONITOR_EVIL_LUKE_DEATH</Event_Param2>
+		<Reward_Type>DISABLE_BRANCH</Reward_Type>
+		<Reward_Param1>Branch_Monitor_Evil_Luke_Death</Reward_Param1>
+		<Reward_Param2>0</Reward_Param2>
+	</Event>
+
+	<Event Name="Empire_Evil_Luke_Defeated">
+  		<Event_Type>STORY_TACTICAL_DESTROY</Event_Type>
+  		<Event_Param1>Luke_Skywalker_Darkside</Event_Param1>
+		<Event_Param3>1</Event_Param3>
+		<Reward_Type>REMOVE_STORY_GOAL</Reward_Type>
+		<Reward_Param1>Empire_Capture_Luke_Tag</Reward_Param1>
+		<Prereq>Empire_Evil_Luke_Appears</Prereq>
+		<Branch>Branch_Monitor_Evil_Luke_Death</Branch>
+	</Event>
+
+	<Event Name="Empire_Evil_Luke_Defeated_Palpatine_Speech">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_CONQUEST_PALPATINE_NEW_APPRENTICE_LOST</Reward_Param1>
+		<Reward_Param2>15</Reward_Param2>
+		<Reward_Param9>Palpatine_Reborn_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+		<Prereq>Faction_Branch_Enabler_Empire Empire_Evil_Luke_Defeated</Prereq>
+		<Branch>Branch_Palpatine_Dialog_Events</Branch>
+	</Event>
+
+<!--***************** Balmorra Revolt Events (Empire) ******************-->
+
+	<Event Name="Empire_Balmorra_Cancel">
+  		<Event_Type>STORY_CONQUER</Event_Type>
+  		<Event_Param1>Balmorra</Event_Param1>
+		<Event_Param3>Rebel</Event_Param3>
+		<Reward_Type>DISABLE_STORY_EVENT</Reward_Type>
+		<Reward_Param1>Empire_Balmorra_Revolt</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+		<Branch>Faction_Branch_Empire</Branch>
+	</Event>
+	
+	<Event Name="Empire_Balmorra_Revolt"> <!--calls Lua-->
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>900</Event_Param1>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_CONQUEST_PALPATINE_BALMORRAN_REVOLT</Reward_Param1>
+		<Reward_Param2>15</Reward_Param2>
+		<Reward_Param9>Imperial_Naval_Officer_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+		<Branch>Faction_Branch_Empire</Branch>
+	</Event>
+	
+	<Event Name="Empire_Balmorra_Spacer">  <!-- Prevent Empire_Balmorra_Reconquered from happening immediately after Empire_Balmorra_Revolt, as you technically still own it for a few milliseconds -->
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>2</Event_Param1>
+		<Prereq>Empire_Balmorra_Revolt</Prereq>
+	</Event>
+	
+	<Event Name="Empire_Balmorra_Reconquered"> <!--calls Lua-->
+  		<Event_Type>STORY_CONQUER</Event_Type>
+  		<Event_Param1>Balmorra</Event_Param1>
+		<Event_Param3>Empire</Event_Param3>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_CONQUEST_PALPATINE_BALMORRAN_CONQUEST</Reward_Param1>
+		<Reward_Param2>15</Reward_Param2>
+		<Reward_Param9>Imperial_Naval_Officer_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+		<Prereq>Empire_Balmorra_Spacer</Prereq>
+	</Event>
+
+
+<!--***********************************************************-->
+<!--***************** New Republic Storyline ******************-->
+<!--***********************************************************-->
+
+	<Event Name="NR_Post_Evacuation_Wait">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>NR_PLAYER_SHADOWHAND_INTRO</Event_Param2>
+	</Event>
+
+	<Event Name="NR_Intro_Mothma_Speech">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>2</Event_Param1>
+		<Prereq>NR_Post_Evacuation_Wait</Prereq>
+		<Story_Dialog>Dialog_NewRep_Palpatine</Story_Dialog>
+		<Story_Chapter>0</Story_Chapter>
+		<Story_Tag>NewRep_Main_Campaign_Tag</Story_Tag>
+	</Event>
+	
+	<Event Name="NR_Byss_Timer">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>235</Event_Param1>
+		<Prereq>Faction_Branch_Enabler_NewRep</Prereq>
+	</Event>
+
+<!--***************** Luke Fall/Return Events (NR) ******************-->
+
+	<Event Name="NR_Stop_Monitoring_Luke_Death">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>STOP_MONITOR_LUKE_DEATH</Event_Param2>
+		<Reward_Type>DISABLE_BRANCH</Reward_Type>
+		<Reward_Param1>Branch_Monitor_Luke_Death</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+	</Event>
+
+	<Event Name="NR_Resume_Monitoring_Luke_Death">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>RESUME_MONITOR_LUKE_DEATH</Event_Param2>
+		<Reward_Type>DISABLE_BRANCH</Reward_Type>
+		<Reward_Param1>Branch_Monitor_Luke_Death</Reward_Param1>
+		<Reward_Param2>0</Reward_Param2>
+	</Event>
+
+	<Event Name="NR_Luke_Captured">
+		<Event_Type>STORY_TACTICAL_DESTROY</Event_Type>
+		<Event_Param1>Luke_Skywalker_Jedi</Event_Param1>
+		<Event_Param2></Event_Param2>
+		<Event_Param3>1</Event_Param3>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_CONQUEST_PALPATINE_LUKE_MISSION_D</Reward_Param1>
+		<Reward_Param2>15</Reward_Param2>
+		<Reward_Param9>Leia_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+		<Prereq>Faction_Branch_Enabler_NewRep</Prereq>
+		<Branch>Branch_Monitor_Luke_Death</Branch>
+	</Event>
+
+	<Event Name="NR_Luke_Investigates_Cancel">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>DISABLE_BRANCH</Reward_Type>
+		<Reward_Param1>Luke_Investigates_Branch</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+		<Prereq>NR_Luke_Captured</Prereq>
+	</Event>
+
+	<Event Name="NR_Luke_Captured_Cancel">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>160</Event_Param1>
+		<Reward_Type>DISABLE_STORY_EVENT</Reward_Type>
+		<Reward_Param1>NR_Luke_Captured</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+		<Prereq>Faction_Branch_Enabler_NewRep</Prereq>
+		<Branch>Luke_Investigates_Branch</Branch>
+	</Event>
+
+	<Event Name="NR_Luke_Investigates">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>REMOVE_UNIT</Reward_Type>
+		<Reward_Param1>Luke_Skywalker_Jedi_Team</Reward_Param1>
+		<Prereq>NR_Luke_Captured_Cancel</Prereq>
+		<Branch>Luke_Investigates_Branch</Branch>
+	</Event>
+
+	<Event Name="NR_Luke_Investigates_Speech">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_CONQUEST_PALPATINE_LUKE_MISSION</Reward_Param1>
+		<Reward_Param2>15</Reward_Param2>
+		<Reward_Param9>Luke_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+		<Prereq>NR_Luke_Captured_Cancel</Prereq>
+		<Branch>Luke_Investigates_Branch</Branch>
+	</Event>
+
+	<Event Name="NR_Byss_Unlock_Mothma_Speech">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_CONQUEST_PALPATINE_NR_INTRO_ONE</Reward_Param1>
+		<Reward_Param2>15</Reward_Param2>
+		<Reward_Param9>Mon_Mothma_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+		<Prereq>Faction_Branch_Enabler_NewRep Universal_Byss_Unlock</Prereq>
+	</Event>
+
+	<Event Name="NR_Save_Luke_Cancel">
+		<Event_Type>STORY_TACTICAL_DESTROY</Event_Type>
+		<Event_Param1>Princess_Leia</Event_Param1>
+		<Event_Param2></Event_Param2>
+		<Event_Param3>1</Event_Param3>
+		<Reward_Type>DISABLE_BRANCH</Reward_Type>
+		<Reward_Param1>Save_Luke_Branch</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+	</Event>
+
+	<Event Name="NR_Save_Luke_Cancel2">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>REMOVE_STORY_GOAL</Reward_Type>
+		<Reward_Param1>NewRep_Rescue_Luke_Tag</Reward_Param1>
+		<Prereq>NR_Save_Luke_Cancel</Prereq>
+	</Event>
+
+	<Event Name="NR_Save_Luke_Leia_Speech">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>35</Event_Param1>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_CONQUEST_PALPATINE_LEIA_PLEA</Reward_Param1>
+		<Reward_Param2>15</Reward_Param2>
+		<Reward_Param9>Leia_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+		<Prereq>NR_Byss_Unlock_Mothma_Speech</Prereq>
+		<Branch>Save_Luke_Branch</Branch>
+	</Event>
+
+	<Event Name="NR_Save_Luke_Mission_Dialog">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>16</Event_Param1>
+		<Prereq>NR_Save_Luke_Leia_Speech</Prereq>
+		<Story_Dialog>Dialog_NewRep_Palpatine</Story_Dialog>
+		<Story_Chapter>1</Story_Chapter>
+		<Story_Tag>NewRep_Rescue_Luke_Tag</Story_Tag>
+		<Branch>Save_Luke_Branch</Branch>
+	</Event>
+
+	<Event Name="NR_Save_Luke_Success"> <!--calls Lua-->
+  		<Event_Type>STORY_TACTICAL_DESTROY</Event_Type>
+  		<Event_Param1>Luke_Skywalker_Darkside</Event_Param1>
+		<Event_Param2></Event_Param2>
+		<Event_Param3>1</Event_Param3>
+		<Reward_Type>STORY_GOAL_COMPLETED</Reward_Type>
+		<Reward_Param1>NewRep_Rescue_Luke_Tag</Reward_Param1>
+		<Prereq>Faction_Branch_Enabler_NewRep</Prereq>
+		<Branch>Save_Luke_Branch</Branch>
+	 </Event>
+
+	<Event Name="NR_Save_Luke_Luke_Speech">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_CONQUEST_PALPATINE_LUKE_RETURNED</Reward_Param1>
+		<Reward_Param2>15</Reward_Param2>
+		<Reward_Param9>Luke_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+		<Prereq>NR_Save_Luke_Success</Prereq>
+	</Event>
+
+<!--***************** Byss Raid Events ******************-->
+
+	<Event Name="NR_Byss_Raid_Cancel">
+  		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>DISABLE_BRANCH</Reward_Type>
+		<Reward_Param1>Byss_Raid_Branch</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+		<Prereq>Universal_Palpatine_Dies</Prereq>
+	</Event>	
+
+<!--These events are disabled because the Byss Raid mission doesn't work. I'm leaving them intact in hopes we can restore it later. ~Mord -->
+	<!-- <Event Name="NR_Byss_Raid_Mothma_Speech"> -->
+		<!-- <Event_Type>STORY_ELAPSED</Event_Type> -->
+		<!-- <Event_Param1>10</Event_Param1> -->
+		<!-- <Reward_Type>MULTIMEDIA</Reward_Type> -->
+		<!-- <Reward_Param1>TEXT_CAMPAIGN_OBJECTIVE_BALMORRA_MISSION_DIALOG</Reward_Param1> -->
+		<!-- <Reward_Param2>15</Reward_Param2> -->
+		<!-- <Reward_Param9>Mon_Mothma_Loop</Reward_Param9> -->
+		<!-- <Reward_Param10>0</Reward_Param10> -->
+		<!-- <Prereq>Faction_Branch_Enabler_NewRep</Prereq> -->
+		<!-- <Branch>Byss_Raid_Branch</Branch> -->
+	<!-- </Event> -->
+
+	<Event Name="NR_Byss_Raid_Mission_Dialog">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>16</Event_Param1>
+		<Prereq>NR_Byss_Raid_Mothma_Speech</Prereq>
+		<Story_Dialog>Dialog_NewRep_Palpatine</Story_Dialog>
+		<Story_Chapter>2</Story_Chapter>	
+		<Story_Tag>NR_Byss_Raid_Tag</Story_Tag>
+		<Branch>Byss_Raid_Branch</Branch>
+	</Event>
+
+	<Event Name="NR_Byss_Raid_Travel_Trigger_Lusankya">
+		<Event_Type>STORY_MOVE</Event_Type>
+		<Event_Param1>Wedge_Lusankya</Event_Param1>
+		<Event_Param2>Balmorra</Event_Param2>
+		<Prereq>NR_Byss_Raid_Mothma_Speech</Prereq>
+		<Branch>Byss_Raid_Branch</Branch>
+	</Event>
+
+	<Event Name="NR_Byss_Raid_Travel_Trigger_Lando">
+		<Event_Type>STORY_MOVE</Event_Type>
+		<Event_Param1>Lando_Calrissian</Event_Param1>
+		<Event_Param2>Balmorra</Event_Param2>
+		<Prereq>NR_Byss_Raid_Mothma_Speech</Prereq>
+		<Branch>Byss_Raid_Branch</Branch>
+	</Event>
+
+	<Event Name="NR_Byss_Raid_Travel_Trigger_Liberator">
+		<Event_Type>STORY_MOVE</Event_Type>
+		<Event_Param1>Lando_Liberator</Event_Param1>
+		<Event_Param2>Balmorra</Event_Param2>
+		<Prereq>NR_Byss_Raid_Mothma_Speech</Prereq>
+		<Branch>Byss_Raid_Branch</Branch>
+	</Event>
+
+	<Event Name="NR_Byss_Raid_Departs_Balmorra">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_CAMPAIGN_OBJECTIVE_BALMORRA_MISSION_SET_OUT</Reward_Param1>
+		<Reward_Param2>15</Reward_Param2>
+		<Reward_Param9>Rebel_Trooper_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+		<Prereq>NR_Byss_Raid_Travel_Trigger_Lando</Prereq>
+		<Prereq>NR_Byss_Raid_Travel_Trigger_Lusankya</Prereq>
+		<Prereq>NR_Byss_Raid_Travel_Trigger_Liberator</Prereq>
+		<Branch>Byss_Raid_Branch</Branch>
+	</Event>
+
+	<Event Name="NR_Byss_Raid_Arrives_Byss">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>60</Event_Param1>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_CAMPAIGN_OBJECTIVE_BALMORRA_MISSION_COMPLETE</Reward_Param1>
+		<Reward_Param2>15</Reward_Param2>
+		<Reward_Param9>Rebel_Trooper_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+		<Prereq>NR_Byss_Raid_Departs_Balmorra</Prereq>
+		<Branch>Byss_Raid_Branch</Branch>
+	</Event>
+
+	<Event Name="NR_Byss_Raid_Battle">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>LINK_TACTICAL</Reward_Type>
+		<Reward_Param1>Byss</Reward_Param1> <!--the planet-->
+		<Reward_Param2>LAND</Reward_Param2> <!--LAND or SPACE, MUST be capitalized-->
+		<Reward_Param3>Rebel</Reward_Param3> <!--attacking faction-->
+		<Reward_Param4>_LAND_PLANET_BYSS_02.ted</Reward_Param4> <!--the map you want to load for your mission-->
+		<Reward_Param5>Empire</Reward_Param5> <!--defending faction-->
+		<Reward_Param7>Byss_Raid.xml</Reward_Param7> <!--the story plot file-->
+		<Reward_Param8>1</Reward_Param8> <!--use persistence-->
+		<Reward_Param13>1</Reward_Param13> <!--1: displays the "Launch Battle" dialog before battle; 0: skips the dialog and launches battle without asking the player-->
+		<Prereq>NR_Byss_Raid_Arrives_Byss</Prereq>
+	</Event>
+
+	<Event Name="NR_Byss_Raid_Success"> <!--calls Lua-->
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>2</Event_Param1>
+		<Reward_Type>STORY_GOAL_COMPLETED</Reward_Type>
+		<Reward_Param1>NR_Byss_Raid_Tag</Reward_Param1>
+		<Prereq>NR_Byss_Raid_Battle</Prereq>
+		<Branch>Byss_Raid_Victory_Branch</Branch>
+	</Event>
+
+	<Event Name="NR_Byss_Raid_Success_Zev_Speech">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_CAMPAIGN_OBJECTIVE_BALMORRA_MISSION_WON</Reward_Param1>
+		<Reward_Param2>15</Reward_Param2>
+		<Reward_Param9>Rebel_Trooper_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+		<Prereq>NR_Byss_Raid_Success</Prereq>
+	</Event>
+
+	<Event Name="NR_Byss_Raid_Failure"> 
+		<Event_Type>STORY_MISSION_LOST</Event_Type>
+		<Event_Param1>Byss_Raid.xml</Event_Param1>
+		<Reward_Type>DISABLE_STORY_EVENT</Reward_Type>
+		<Reward_Param1>NR_Byss_Raid_Success</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+	</Event>
+
+	<Event Name="NR_Byss_Raid_Failure2">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>REMOVE_STORY_GOAL</Reward_Type>
+		<Reward_Param1>NR_Byss_Raid_Tag</Reward_Param1>
+		<Prereq>NR_Byss_Raid_Failure</Prereq>
+	</Event>
+
+	<Event Name="NR_Byss_Raid_Failure_Mothma_Speech">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_CAMPAIGN_OBJECTIVE_BALMORRA_MISSION_LOST</Reward_Param1>
+		<Reward_Param2>20</Reward_Param2>
+		<Reward_Param9>Mon_Mothma_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+		<Prereq>NR_Byss_Raid_Failure</Prereq>
+	</Event>
+</Story>

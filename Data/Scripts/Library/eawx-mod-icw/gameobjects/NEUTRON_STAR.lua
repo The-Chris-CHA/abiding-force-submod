@@ -11,6 +11,9 @@ return {
 		["MIYTIL_FIGHTER_SQUADRON"] = {
 			HAPES_CONSORTIUM = {Initial = 1, Reserve = 0}
 		},
+		["CLOAKSHAPE_NEW_SQUADRON"] = {
+			HUTT_CARTELS = {Initial = 1, Reserve = 0}
+		},
 		["TIE_INTERCEPTOR_SQUADRON"] = {
 			EMPIRE = {Initial = 1, Reserve = 0},
 			ERIADU_AUTHORITY = {Initial = 1, Reserve = 0},
@@ -33,6 +36,9 @@ return {
 		},
 		["MIYTIL_BOMBER_SQUADRON"] = {
 			HAPES_CONSORTIUM = {Initial = 1, Reserve = 1}
+		},
+		["SCURRG_H6_SQUADRON"] = {
+			HUTT_CARTELS = {Initial = 1, Reserve = 1}
 		},
 		["STARWING_SQUADRON"] = {
 			HOSTILE = {Initial = 1, Reserve = 1},

@@ -1,19 +1,9 @@
 <?xml version="1.0"?>
 <Campaigns>
 
-
-
-
-
-    
 <!-- ******************************************************************** -->
 <!-- ******************* SANDBOX CAMPAIGN "Thrawn Campaign" ************* -->
 <!-- ******************************************************************** -->
-
-
-
-
-	
 
 	<Campaign Name="Sandbox_T_Empire">
 
@@ -27,67 +17,66 @@
         <Camera_Shift_Y> 0.0 </Camera_Shift_Y>
         <Camera_Distance> 1200.0 </Camera_Distance>
 
-        <Locations> 
-				Galaxy_Core_Art_Model, 
-				Abregado_Rae,
-				Anx_Minor,
-				Bastion,
-				Bilbringi,
-				Bimmisaari,
-				Borosk,
-				Bothawui,
-				Bpfassh,
-				Carida,
-				Cejansij,
-				Chrondre,
-				Ciutric,
-				Commenor,
-				Corellia,
-				Corulag,
-				Coruscant,
-				Denon,
-				Dolomar,
-				Dubrillion,
-				Duro,
-				Endor,
-				Eriadu,
-				Farrfin,
-				Filve,
-				Fondor,
-				Garqi,
-				Gravlex_Med,
-				Honoghr,
-				Jomark,
-				Kashyyyk,
-				Ketaris,
-				Kothlis,
-				Kuat,
-				Ord_Mantell,
-				Mon_Calamari,
-				Morishim,
-				Mrisst,
-				Muunilinst,
-				Myrkr,
-				New_Cov,
-				Nkllon,
-				Obroa_Skai,
-				Pakrik_Minor,
-				Pantolomin,
-				Ord_Pardron,
-				Poderis,
-				Qat_Chrystac,
-				Sluis_Van,
-				Svivren,
-				Ord_Trasi,
-				Ukio,
-				Wayland,
-				Wistril,
-				Woostri,
-				Yaga_Minor,
-				Katana_Space
-			</Locations>
-
-        <Trade_Routes> 
+		<Locations>
+			Abregado_Rae,
+			Anx_Minor,
+			Bastion,
+			Bilbringi,
+			Bimmisaari,
+			Borosk,
+			Bothawui,
+			Bpfassh,
+			Carida,
+			Cejansij,
+			Chrondre,
+			Ciutric,
+			Commenor,
+			Corellia,
+			Corulag,
+			Coruscant,
+			Denon,
+			Dolomar,
+			Dubrillion,
+			Duro,
+			Endor,
+			Eriadu,
+			Farrfin,
+			Filve,
+			Fondor,
+			Galaxy_Core_Art_Model,
+			Garqi,
+			Gravlex_Med,
+			Honoghr,
+			Jomark,
+			Kashyyyk,
+			Katana_Space,
+			Ketaris,
+			Kothlis,
+			Kuat,
+			Mon_Calamari,
+			Morishim,
+			Mrisst,
+			Muunilinst,
+			Myrkr,
+			New_Cov,
+			Nkllon,
+			Obroa_Skai,
+			Ord_Mantell,
+			Ord_Pardron,
+			Ord_Trasi,
+			Pakrik_Minor,
+			Pantolomin,
+			Poderis,
+			Qat_Chrystac,
+			Sluis_Van,
+			Svivren,
+			Ukio,
+			Wayland,
+			Wistril,
+			Woostri,
+			Yaga_Minor,
+		</Locations>
+		<Trade_Routes>
 			Abregado_Rae_Fondor,
 			Abregado_Rae_Pakrik_Minor,
 			Anx_Minor_Gravlex_Med,
@@ -120,7 +109,7 @@
 			Corellia_Fondor,
 			Corellia_Kuat,
 			Corulag_Coruscant,
-			Coruscant_Dolomar,
+			Corulag_Dolomar,
 			Coruscant_Farrfin,
 			Coruscant_Kuat,
 			Coruscant_Pakrik_Minor,
@@ -129,7 +118,8 @@
 			Dolomar_Farrfin,
 			Dolomar_Poderis,
 			Dubrillion_Gravlex_Med,
-			Endor_Qat_Chrystac,
+			Endor_Katana_Space,
+			Eriadu_Qat_Chrystac,
 			Eriadu_Sluis_Van,
 			Eriadu_Woostri,
 			Farrfin_Pantolomin,
@@ -142,22 +132,23 @@
 			Honoghr_Jomark,
 			Jomark_Mon_Calamari,
 			Jomark_Myrkr,
+			Katana_Space_Nkllon,
+			Katana_Space_Pakrik_Minor,
 			Ketaris_Ord_Mantell,
 			Kothlis_Ukio,
-			Ord_Mantell_Wistril,
 			Morishim_Ord_Trasi,
 			Morishim_Yaga_Minor,
-			Muunilinst_Yaga_Minor,
 			Mrisst_Pakrik_Minor,
 			Mrisst_Pantolomin,
+			Muunilinst_Yaga_Minor,
 			Myrkr_Obroa_Skai,
 			Myrkr_Wayland,
 			Nkllon_Qat_Chrystac,
 			Nkllon_Woostri,
 			Obroa_Skai_Poderis,
+			Ord_Mantell_Wistril,
 			Ord_Pardron_Ukio,
 			Sluis_Van_Svivren,
-			Katana_Space_Pakrik_Minor
 		</Trade_Routes>
 		
         <Home_Location> Rebel, Coruscant </Home_Location>
@@ -168,34 +159,51 @@
         <Starting_Active_Player> Empire </Starting_Active_Player>
 		
 		
-	<Rebel_Story_Name>Conquests\Thrawn\Story_Plots_Sandbox_TC_Rebel_AI.xml</Rebel_Story_Name>
-    <Empire_Story_Name>Conquests\Thrawn\Story_Plots_Sandbox_TC_Empire.xml</Empire_Story_Name>
+		<Rebel_Story_Name>Conquests\Thrawn\Story_Plots_Sandbox_TC_Rebel_AI.xml</Rebel_Story_Name>
+    	<Empire_Story_Name>Conquests\Thrawn\Story_Plots_Sandbox_TC_Empire.xml</Empire_Story_Name>
 			
 		<AI_Player_Control> Rebel, GenericAI </AI_Player_Control>
 		<AI_Player_Control> Empire, SandboxHuman </AI_Player_Control>
 		
-		<AI_Player_Control> Pentastar, None</AI_Player_Control>
-		<AI_Player_Control> EmpireoftheHand, None </AI_Player_Control>
-		<AI_Player_Control> Zsinj_Empire, None </AI_Player_Control>
-		
-		<AI_Player_Control> Hapes_Consortium, None </AI_Player_Control>
-		<AI_Player_Control> Greater_Maldrood, None </AI_Player_Control>      
-		<AI_Player_Control> Eriadu_Authority, None </AI_Player_Control>				
-		<AI_Player_Control> Corporate_Sector, None </AI_Player_Control>		
-		<AI_Player_Control> Warlords, None </AI_Player_Control>			
+		<AI_Player_Control>Chiss, None</AI_Player_Control>
+		<AI_Player_Control>Corellia, None</AI_Player_Control>
+		<AI_Player_Control>Corporate_Sector, None</AI_Player_Control>
+		<AI_Player_Control>EmpireoftheHand, None</AI_Player_Control>
+		<AI_Player_Control>Eriadu_Authority, None</AI_Player_Control>
+		<AI_Player_Control>Greater_Maldrood, None</AI_Player_Control>
+		<AI_Player_Control>Hapes_Consortium, None</AI_Player_Control>
+		<AI_Player_Control>Hostile, None</AI_Player_Control>
+		<AI_Player_Control>Hutt_Cartels, None</AI_Player_Control>
+		<AI_Player_Control>Independent_Forces, None</AI_Player_Control>
+		<AI_Player_Control>Killik_Hives, None</AI_Player_Control>
+		<AI_Player_Control>Mandalorians, None</AI_Player_Control>
+		<AI_Player_Control>Pentastar, None</AI_Player_Control>
+		<AI_Player_Control>SsiRuuvi_Imperium, None</AI_Player_Control>
+		<AI_Player_Control>Underworld, None</AI_Player_Control>
+		<AI_Player_Control>Warlords, None</AI_Player_Control>
+		<AI_Player_Control>Yevetha, None</AI_Player_Control>
+		<AI_Player_Control>Zsinj_Empire, None</AI_Player_Control>
 
-		<Markup_Filename>Empire, DefaultGalacticHints </Markup_Filename>
-		<Markup_Filename>Rebel, DefaultGalacticHints </Markup_Filename>
-		<Markup_Filename>EmpireoftheHand, DefaultGalacticHints </Markup_Filename>
-		<Markup_Filename>Zsinj_Empire, DefaultGalacticHints </Markup_Filename>
-		<Markup_Filename>Greater_Maldrood, DefaultMaldroodHints </Markup_Filename>			
-		<Markup_Filename>Pentastar, DefaultGalacticHints </Markup_Filename>
-		<Markup_Filename>Eriadu_Authority, DefaultEriaduHints </Markup_Filename>				
-		<Markup_Filename>Corporate_Sector, DefaultGalacticHints </Markup_Filename>		
-		<Markup_Filename>Warlords, DefaultGalacticHints </Markup_Filename>			
-		<Markup_Filename>Hapes_Consortium, DefaultGalacticHints </Markup_Filename>
-		
-
+		<Markup_Filename>Chiss, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Corellia, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Corporate_Sector, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Empire, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>EmpireoftheHand, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Eriadu_Authority, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Greater_Maldrood, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Hapes_Consortium, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Hostile, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Hutt_Cartels, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Independent_Forces, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Killik_Hives, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Mandalorians, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Pentastar, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Rebel, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>SsiRuuvi_Imperium, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Underworld, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Warlords, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Yevetha, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Zsinj_Empire, DefaultGalacticHints</Markup_Filename>
 		
 		<Supports_Custom_Settings>False</Supports_Custom_Settings>
 		<Show_Completed_Tab>True</Show_Completed_Tab>
@@ -248,7 +256,7 @@
 		
 	
 		
-	<!-- Kothlis Space Forces -->		
+		<!-- Kothlis Space Forces -->		
 		<Starting_Forces> Rebel, Kothlis, Generate_Force </Starting_Forces>
 		
 		<!-- Bothawui Space Forces -->
@@ -395,7 +403,7 @@
 		<Starting_Forces> Empire, Bastion, E_Ground_Light_Vehicle_Factory </Starting_Forces>
 		<Starting_Forces> Empire, Bastion, Remnant_Capital </Starting_Forces>
 		<Starting_Forces> Empire, Bastion, Imperial_Stormtrooper_Squad </Starting_Forces>
-		<Starting_Forces> Empire, Bastion, Army_Guard_Squad </Starting_Forces>
+		<Starting_Forces> Empire, Bastion, Imperial_Army_Guard_Squad </Starting_Forces>
 		<Starting_Forces> Empire, Bastion, Imperial_AT_ST_Company </Starting_Forces>
 		<Starting_Forces> Empire, Bastion, Imperial_AT_AT_Company </Starting_Forces>
 
@@ -498,67 +506,66 @@
         <Camera_Shift_Y> 0.0 </Camera_Shift_Y>
         <Camera_Distance> 1200.0 </Camera_Distance>
 
-          <Locations> 
-				Galaxy_Core_Art_Model, 
-				Abregado_Rae,
-				Anx_Minor,
-				Bastion,
-				Bilbringi,
-				Bimmisaari,
-				Borosk,
-				Bothawui,
-				Bpfassh,
-				Carida,
-				Cejansij,
-				Chrondre,
-				Ciutric,
-				Commenor,
-				Corellia,
-				Corulag,
-				Coruscant,
-				Denon,
-				Dolomar,
-				Dubrillion,
-				Duro,
-				Endor,
-				Eriadu,
-				Farrfin,
-				Filve,
-				Fondor,
-				Garqi,
-				Gravlex_Med,
-				Honoghr,
-				Jomark,
-				Kashyyyk,
-				Ketaris,
-				Kothlis,
-				Kuat,
-				Ord_Mantell,
-				Mon_Calamari,
-				Morishim,
-				Mrisst,
-				Muunilinst,
-				Myrkr,
-				New_Cov,
-				Nkllon,
-				Obroa_Skai,
-				Pakrik_Minor,
-				Pantolomin,
-				Ord_Pardron,
-				Poderis,
-				Qat_Chrystac,
-				Sluis_Van,
-				Svivren,
-				Ord_Trasi,
-				Ukio,
-				Wayland,
-				Wistril,
-				Woostri,
-				Yaga_Minor,
-				Katana_Space
-			</Locations>
-
-        <Trade_Routes> 
+		<Locations>
+			Abregado_Rae,
+			Anx_Minor,
+			Bastion,
+			Bilbringi,
+			Bimmisaari,
+			Borosk,
+			Bothawui,
+			Bpfassh,
+			Carida,
+			Cejansij,
+			Chrondre,
+			Ciutric,
+			Commenor,
+			Corellia,
+			Corulag,
+			Coruscant,
+			Denon,
+			Dolomar,
+			Dubrillion,
+			Duro,
+			Endor,
+			Eriadu,
+			Farrfin,
+			Filve,
+			Fondor,
+			Galaxy_Core_Art_Model,
+			Garqi,
+			Gravlex_Med,
+			Honoghr,
+			Jomark,
+			Kashyyyk,
+			Katana_Space,
+			Ketaris,
+			Kothlis,
+			Kuat,
+			Mon_Calamari,
+			Morishim,
+			Mrisst,
+			Muunilinst,
+			Myrkr,
+			New_Cov,
+			Nkllon,
+			Obroa_Skai,
+			Ord_Mantell,
+			Ord_Pardron,
+			Ord_Trasi,
+			Pakrik_Minor,
+			Pantolomin,
+			Poderis,
+			Qat_Chrystac,
+			Sluis_Van,
+			Svivren,
+			Ukio,
+			Wayland,
+			Wistril,
+			Woostri,
+			Yaga_Minor,
+		</Locations>
+		<Trade_Routes>
 			Abregado_Rae_Fondor,
 			Abregado_Rae_Pakrik_Minor,
 			Anx_Minor_Gravlex_Med,
@@ -591,7 +598,7 @@
 			Corellia_Fondor,
 			Corellia_Kuat,
 			Corulag_Coruscant,
-			Coruscant_Dolomar,
+			Corulag_Dolomar,
 			Coruscant_Farrfin,
 			Coruscant_Kuat,
 			Coruscant_Pakrik_Minor,
@@ -600,7 +607,8 @@
 			Dolomar_Farrfin,
 			Dolomar_Poderis,
 			Dubrillion_Gravlex_Med,
-			Endor_Qat_Chrystac,
+			Endor_Katana_Space,
+			Eriadu_Qat_Chrystac,
 			Eriadu_Sluis_Van,
 			Eriadu_Woostri,
 			Farrfin_Pantolomin,
@@ -613,22 +621,23 @@
 			Honoghr_Jomark,
 			Jomark_Mon_Calamari,
 			Jomark_Myrkr,
+			Katana_Space_Nkllon,
+			Katana_Space_Pakrik_Minor,
 			Ketaris_Ord_Mantell,
 			Kothlis_Ukio,
-			Ord_Mantell_Wistril,
 			Morishim_Ord_Trasi,
 			Morishim_Yaga_Minor,
-			Muunilinst_Yaga_Minor,
 			Mrisst_Pakrik_Minor,
 			Mrisst_Pantolomin,
+			Muunilinst_Yaga_Minor,
 			Myrkr_Obroa_Skai,
 			Myrkr_Wayland,
 			Nkllon_Qat_Chrystac,
 			Nkllon_Woostri,
 			Obroa_Skai_Poderis,
+			Ord_Mantell_Wistril,
 			Ord_Pardron_Ukio,
 			Sluis_Van_Svivren,
-			Katana_Space_Pakrik_Minor
 		</Trade_Routes>
 		
         <Home_Location> Rebel, Coruscant </Home_Location>
@@ -645,28 +654,45 @@
 		<AI_Player_Control> Rebel, SandboxHuman </AI_Player_Control>
 		<AI_Player_Control> Empire, GenericAI </AI_Player_Control>
 
-		<AI_Player_Control> Pentastar, None</AI_Player_Control>
-		<AI_Player_Control> EmpireoftheHand, None </AI_Player_Control>
-		<AI_Player_Control> Zsinj_Empire, None </AI_Player_Control>
-		
-		<AI_Player_Control> Hapes_Consortium, None </AI_Player_Control>
-		<AI_Player_Control> Greater_Maldrood, None </AI_Player_Control>      
-		<AI_Player_Control> Eriadu_Authority, None </AI_Player_Control>				
-		<AI_Player_Control> Corporate_Sector, None </AI_Player_Control>		
-		<AI_Player_Control> Warlords, None </AI_Player_Control>				
+		<AI_Player_Control>Chiss, None</AI_Player_Control>
+		<AI_Player_Control>Corellia, None</AI_Player_Control>
+		<AI_Player_Control>Corporate_Sector, None</AI_Player_Control>
+		<AI_Player_Control>EmpireoftheHand, None</AI_Player_Control>
+		<AI_Player_Control>Eriadu_Authority, None</AI_Player_Control>
+		<AI_Player_Control>Greater_Maldrood, None</AI_Player_Control>
+		<AI_Player_Control>Hapes_Consortium, None</AI_Player_Control>
+		<AI_Player_Control>Hostile, None</AI_Player_Control>
+		<AI_Player_Control>Hutt_Cartels, None</AI_Player_Control>
+		<AI_Player_Control>Independent_Forces, None</AI_Player_Control>
+		<AI_Player_Control>Killik_Hives, None</AI_Player_Control>
+		<AI_Player_Control>Mandalorians, None</AI_Player_Control>
+		<AI_Player_Control>Pentastar, None</AI_Player_Control>
+		<AI_Player_Control>SsiRuuvi_Imperium, None</AI_Player_Control>
+		<AI_Player_Control>Underworld, None</AI_Player_Control>
+		<AI_Player_Control>Warlords, None</AI_Player_Control>
+		<AI_Player_Control>Yevetha, None</AI_Player_Control>
+		<AI_Player_Control>Zsinj_Empire, None</AI_Player_Control>
 
-		<Markup_Filename>Empire, DefaultGalacticHints </Markup_Filename>
-		<Markup_Filename>Rebel, DefaultGalacticHints </Markup_Filename>
-		<Markup_Filename>EmpireoftheHand, DefaultGalacticHints </Markup_Filename>
-		<Markup_Filename>Zsinj_Empire, DefaultGalacticHints </Markup_Filename>
-		<Markup_Filename>Greater_Maldrood, DefaultMaldroodHints </Markup_Filename>			
-		<Markup_Filename>Pentastar, DefaultGalacticHints </Markup_Filename>
-		<Markup_Filename>Eriadu_Authority, DefaultEriaduHints </Markup_Filename>				
-		<Markup_Filename>Corporate_Sector, DefaultGalacticHints </Markup_Filename>		
-		<Markup_Filename>Warlords, DefaultGalacticHints </Markup_Filename>			
-		<Markup_Filename>Hapes_Consortium, DefaultGalacticHints </Markup_Filename>
-		
-
+		<Markup_Filename>Chiss, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Corellia, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Corporate_Sector, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Empire, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>EmpireoftheHand, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Eriadu_Authority, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Greater_Maldrood, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Hapes_Consortium, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Hostile, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Hutt_Cartels, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Independent_Forces, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Killik_Hives, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Mandalorians, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Pentastar, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Rebel, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>SsiRuuvi_Imperium, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Underworld, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Warlords, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Yevetha, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Zsinj_Empire, DefaultGalacticHints</Markup_Filename>
 		
 		<Supports_Custom_Settings>False</Supports_Custom_Settings>
 		<Show_Completed_Tab>True</Show_Completed_Tab>
@@ -719,7 +745,7 @@
 		
 	
 		
-	<!-- Kothlis Space Forces -->		
+		<!-- Kothlis Space Forces -->		
 		<Starting_Forces> Rebel, Kothlis, Generate_Force </Starting_Forces>
 		
 		<!-- Bothawui Space Forces -->
@@ -866,7 +892,7 @@
 		<Starting_Forces> Empire, Bastion, E_Ground_Light_Vehicle_Factory </Starting_Forces>
 		<Starting_Forces> Empire, Bastion, Remnant_Capital </Starting_Forces>
 		<Starting_Forces> Empire, Bastion, Imperial_Stormtrooper_Squad </Starting_Forces>
-		<Starting_Forces> Empire, Bastion, Army_Guard_Squad </Starting_Forces>
+		<Starting_Forces> Empire, Bastion, Imperial_Army_Guard_Squad </Starting_Forces>
 		<Starting_Forces> Empire, Bastion, Imperial_AT_ST_Company </Starting_Forces>
 		<Starting_Forces> Empire, Bastion, Imperial_AT_AT_Company </Starting_Forces>
 
@@ -957,9 +983,4 @@
 				
 	</Campaign>			
 		
-    
-    
-
-
-
  </Campaigns>

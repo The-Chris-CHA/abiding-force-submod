@@ -27,7 +27,6 @@ StoryUtil = require("eawx-util/StoryUtil")
 VictoryHandler = class()
 
 function VictoryHandler:new(gc)
-    
     self.player = Find_Player("local")
     self.player_name = self.player.Get_Faction_Name()
 
@@ -52,9 +51,16 @@ function VictoryHandler:on_planet_owner_changed(planet, new_owner_name, old_owne
     --Logger:trace("entering VictoryHandler:on_planet_owner_changed")
     if new_owner_name == self.player_name then
         local unowned_shipyards = 0
+		
+        --this is a kludge until we set up a locked planet handler ~Mord
+        local current_era = GlobalValue.Get("CURRENT_ERA")
         for _, planet_name in pairs(self.Shipyard_Planets) do
-            if FindPlanet(planet_name).Get_Owner() ~= self.player then
-                unowned_shipyards = unowned_shipyards + 1
+            if current_era < 4 and planet_name == "BYSS" then
+            elseif current_era < 6 and planet_name == "THE_MAW" then 
+            elseif current_era < 7 and planet_name == "NZOTH" then 
+            elseif FindPlanet(planet_name).Get_Owner() == self.player then
+            else
+                unowned_shipyards = unowned_shipyards + 1	
             end
         end
         if unowned_shipyards == 0 then
@@ -64,8 +70,6 @@ function VictoryHandler:on_planet_owner_changed(planet, new_owner_name, old_owne
                 "Shipyard_Victory_Object"
             })
         end
-    else 
-        return
     end
 end
 

@@ -19,16 +19,8 @@
 	<Event Name="Spawn_Thrawn">
 		<Event_Type>STORY_TRIGGER</Event_Type>
 		<Reward_Type>SPAWN_HERO</Reward_Type>
-		<Reward_Param1>Chimera</Reward_Param1>
+		<Reward_Param1>Thrawn_Chimaera</Reward_Param1>
 		<Reward_Param2>Obroa_Skai</Reward_Param2>
-		<Prereq>Universal_Story_Start</Prereq>
-	</Event>
-
-	<Event Name="Spawn_Phennir">
-		<Event_Type>STORY_TRIGGER</Event_Type>
-		<Reward_Type>SPAWN_HERO</Reward_Type>
-		<Reward_Param1>181st_TIE_Interceptor_Squadron</Reward_Param1>
-		<Reward_Param2>Bastion</Reward_Param2>
 		<Prereq>Universal_Story_Start</Prereq>
 	</Event>
 
@@ -43,7 +35,7 @@
 	<Event Name="Spawn_Brandei">
 		<Event_Type>STORY_TRIGGER</Event_Type>
 		<Reward_Type>SPAWN_HERO</Reward_Type>
-		<Reward_Param1>Judicator_Star_Destroyer</Reward_Param1>
+		<Reward_Param1>Brandei_Judicator</Reward_Param1>
 		<Reward_Param2>Bastion</Reward_Param2>
 		<Prereq>Universal_Story_Start</Prereq>
 	</Event>
@@ -51,7 +43,7 @@
 	<Event Name="Spawn_Dorja">
 		<Event_Type>STORY_TRIGGER</Event_Type>
 		<Reward_Type>SPAWN_HERO</Reward_Type>
-		<Reward_Param1>Relentless_Star_Destroyer</Reward_Param1>
+		<Reward_Param1>Dorja_Relentless</Reward_Param1>
 		<Reward_Param2>Bastion</Reward_Param2>
 		<Prereq>Universal_Story_Start</Prereq>
 	</Event>

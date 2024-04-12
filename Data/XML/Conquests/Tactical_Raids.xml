@@ -148,6 +148,22 @@
 		<Reward_Param2></Reward_Param2>
 		<Perpetual>true</Perpetual>
 	</Event>
+	<Event Name="Template_New_Ability">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>NEW_ABILITY</Event_Param2>
+		<Reward_Type>NEW_POWER_FOR_ALL</Reward_Type>	
+		<Reward_Param1></Reward_Param1>
+		<Reward_Param2></Reward_Param2>
+		<Perpetual>true</Perpetual>
+	</Event>
+	<Event Name="Template_Remove_Ability">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>REMOVE_ABILITY</Event_Param2>
+		<Reward_Type>REMOVE_POWER_FOR_ALL</Reward_Type>	
+		<Reward_Param1></Reward_Param1>
+		<Reward_Param2></Reward_Param2>
+		<Perpetual>true</Perpetual>
+	</Event>
 
 	<Event Name="Template_AI_Activation">
 		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
@@ -225,6 +241,13 @@
 		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
 		<Event_Param2>REMOVE_OBJECTIVE</Event_Param2>
 		<Reward_Type>REMOVE_OBJECTIVE</Reward_Type>	
+		<Reward_Param1></Reward_Param1>
+		<Perpetual>true</Perpetual>
+	</Event>
+	<Event Name="Template_Objective_New">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>ADD_OBJECTIVE</Event_Param2>
+		<Reward_Type>ADD_OBJECTIVE</Reward_Type>	
 		<Reward_Param1></Reward_Param1>
 		<Perpetual>true</Perpetual>
 	</Event>
@@ -729,6 +752,14 @@
 		<Event_Param1>ACKBAR_GUARDIAN</Event_Param1>
 		<Reward_Type>TRIGGER_AI</Reward_Type>
 		<Reward_Param1>SELECTED_ACKBAR_GUARDIAN</Reward_Param1>
+		<Reward_Param2></Reward_Param2>
+		<Perpetual>true</Perpetual>
+	</Event>
+	<Event Name="Select_REAPER">
+		<Event_Type>STORY_SELECT_UNIT</Event_Type>
+		<Event_Param1>REAPER</Event_Param1>
+		<Reward_Type>TRIGGER_AI</Reward_Type>
+		<Reward_Param1>SELECTED_REAPER</Reward_Param1>
 		<Reward_Param2></Reward_Param2>
 		<Perpetual>true</Perpetual>
 	</Event>

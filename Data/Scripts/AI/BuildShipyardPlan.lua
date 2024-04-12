@@ -63,7 +63,8 @@ function Definitions()
 		"Hapan_Shipyard_Corr | Hapan_Shipyard_Requud | Hapan_Shipyard_Galney | Hapan_Shipyard_AlGray |"..
 		"Chiss_Shipyard_Level_One | Chiss_Shipyard_Level_Two | Chiss_Shipyard_Level_Three | Chiss_Shipyard_Level_Four |"..
 		"EotH_Shipyard_Level_One | EotH_Shipyard_Level_Two | EotH_Shipyard_Level_Three | EotH_Shipyard_Level_Four |"..
-		"CSA_Shipyard_Level_One | CSA_Shipyard_Level_Two | CSA_Shipyard_Level_Three | CSA_Shipyard_Level_Four = 1"
+		"CSA_Shipyard_Level_One | CSA_Shipyard_Level_Two | CSA_Shipyard_Level_Three | CSA_Shipyard_Level_Four |"..
+		"Hutt_Shipyard_Level_One | Hutt_Shipyard_Level_Two | Hutt_Shipyard_Level_Three | Hutt_Shipyard_Level_Four = 1"
 	}
 	}
 

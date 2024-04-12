@@ -2,7 +2,7 @@ return {
 	Ship_Crew_Requirement = 15,
 	Fighters = {
 		["A-WING_SQUADRON"] = {
-			REBEL = {Initial = 1, Reserve = 1}
+			REBEL = {Initial = 1, Reserve = 1, HeroOverride = {{"TALLON_SILENT_WATER"}, {"A-WING_SQUADRON_DOUBLE"}}}
 		},
 		["T-WING_SQUADRON"] = {
 			CORPORATE_SECTOR = {Initial = 1, Reserve = 1},
@@ -12,6 +12,9 @@ return {
 		},
 		["V38_SQUADRON"] = {
 			EMPIRE = {Initial = 1, Reserve = 1}
+		},
+		["DUNELIZARD_FIGHTER_SQUADRON"] = {
+			HUTT_CARTELS = {Initial = 1, Reserve = 1}
 		},
 		["B-WING_SQUADRON"] = {
 			HAPES_CONSORTIUM = {Initial = 1, Reserve = 1},
@@ -26,6 +29,9 @@ return {
 		},
 		["BTLB_Y-WING_SQUADRON"] = {
 			CORPORATE_SECTOR = {Initial = 1, Reserve = 1}
+		},
+		["KIMOGILA_SQUADRON"] = {
+			HUTT_CARTELS = {Initial = 1, Reserve = 1}
 		},
 		["STARWING_SQUADRON"] = {
 			EMPIRE = {Initial = 1, Reserve = 1}

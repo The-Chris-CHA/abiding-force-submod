@@ -13,6 +13,9 @@ return {
 		["A-WING_SQUADRON"] = {
 			REBEL = {Initial = 2, Reserve = 3}
 		},
+		["CLOAKSHAPE_NEW_SQUADRON"] = {
+			HUTT_CARTELS = {Initial = 2, Reserve = 3}
+		},
 		["T-WING_SQUADRON"] = {
 			CORPORATE_SECTOR = {Initial = 1, Reserve = 1},
 			HAPES_CONSORTIUM = {Initial = 1, Reserve = 1},

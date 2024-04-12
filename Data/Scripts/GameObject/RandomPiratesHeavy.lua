@@ -38,7 +38,9 @@ function State_Init(message)
 			{"Veiled_Queen_Savrip"},
 			{"Trillili_Personal_Profit"},
 			{"Targrim_Quasar"},
-			{"Skandrei_Bandits"}
+			{"Skandrei_Bandits"},
+			{"Thalassian_Harmzuay"},
+			{"Aycen_Freejack"}
 		}
 		
 		Random_Replacement(Object, PirateHeroes, true)

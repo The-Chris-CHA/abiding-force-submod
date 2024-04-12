@@ -160,6 +160,27 @@
 		
 	</LightningEffect>
 
+    <LightningEffect name="Force_Choke">
+
+        <Texture_Name>lightning_default.tga</Texture_Name>
+        <Texture_Repeat>0.0</Texture_Repeat>
+        <Texture_Scroll>0.0</Texture_Scroll>
+
+        <Width_Max>0</Width_Max>
+        <Width_Min>0</Width_Min>
+        <Displace>0.3, 0.3, 0.0</Displace>
+        <Detail>.5</Detail>
+        <Color_Start>100,100,255,255</Color_Start>
+        <Color_End>0,0,0,0</Color_End>
+        <Fadeout_Time_Max>0.4</Fadeout_Time_Max>
+        <Fadeout_Time_Min>0.15</Fadeout_Time_Min>
+
+        <Number_Bolts>0</Number_Bolts>
+        <Bolt_Creation_Interval_Min>0.1</Bolt_Creation_Interval_Min>
+        <Bolt_Creation_Interval_Max>0.5</Bolt_Creation_Interval_Max>
+
+    </LightningEffect>
+
     <LightningEffect name="Electro_Grapple">
 		
 		<Texture_Name>W_Cable.tga</Texture_Name>

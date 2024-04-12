@@ -1,16 +1,16 @@
 return {
     Ship_Crew_Requirement = 150,
     Fighters = {
-        TIE_FIGHTER_SQUADRON_DOUBLE = {
+        ["TIE_FIGHTER_SQUADRON_DOUBLE"] = {
 			DEFAULT = {Initial = 2, Reserve = 4}
 		},
-        TIE_INTERCEPTOR_SQUADRON_DOUBLE = {
+        ["TIE_INTERCEPTOR_SQUADRON_DOUBLE"] = {
 			DEFAULT = {Initial = 2, Reserve = 4}
 		},
-        TIE_BOMBER_SQUADRON_DOUBLE = {
+        ["TIE_BOMBER_SQUADRON_DOUBLE"] = {
 			DEFAULT = {Initial = 1, Reserve = 2}
 		},
-        SCIMMY_SQUADRON_DOUBLE = {
+        ["SCIMITAR_SQUADRON_DOUBLE"] = {
 			DEFAULT = {Initial = 2, Reserve = 4}
 		}
     },

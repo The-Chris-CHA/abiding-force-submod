@@ -1,13 +1,13 @@
 return {
 	Ship_Crew_Requirement = 5,
 	Fighters = {
-		["STANDARD_CIVILIAN_FIGHTER_HALF"] = {
-			DEFAULT = {Initial = 1, Reserve = 2}
+		["CIVILIAN_FIGHTER_HALF"] = {
+			DEFAULT = {Initial = 1, Reserve = 2, Random = "random-fighters/CivilianFighter", Suffix = "_HALF"}
 		},
-		["STANDARD_CIVILIAN_BOMBER_HALF"] = {
-			DEFAULT = {Initial = 1, Reserve = 2}
+		["CIVILIAN_BOMBER_HALF"] = {
+			DEFAULT = {Initial = 1, Reserve = 2, Random = "random-fighters/CivilianBomber", Suffix = "_HALF"}
 		}
 	},
-	Scripts = {"multilayer", "fighter-spawn", "single-unit-retreat"},
+	Scripts = {"multilayer", "fighter-spawn", "single-unit-retreat", "interdictor-ai"},
 	Flags = {HANGAR = true}
 }

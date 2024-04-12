@@ -1,0 +1,491 @@
+<?xml version="1.0" ?>
+
+
+
+<!--******************************************************-->
+<!--******	Campaign: Rim World Conflict (Empire)	******-->
+<!--******************************************************-->
+
+<Story>
+
+	<Event Name="Universal_Story_Start">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>0</Event_Param1>
+	</Event>
+	
+	<Event Name="Delayed_Initialize">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>7</Event_Param1>
+	</Event>
+
+	<Event Name="Reveal_All_Planets">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>REVEAL_ALL_PLANETS</Reward_Type>
+		<Prereq>Universal_Story_Start</Prereq>
+	</Event>
+	
+	<Event Name="Nantz_B_Here">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>400</Event_Param1>
+	</Event>
+	
+	<Event Name="Got_Storm_Commando">
+  		<Event_Type>STORY_CONSTRUCT</Event_Type>
+  		<Event_Param1>Dummy_Recruit_Group_Storm_Commando</Event_Param1>
+		<Event_Param2>1</Event_Param2>
+		<Event_Param3>FILTER_FRIENDLY_AND_ENEMY</Event_Param3>
+	</Event>
+	
+	<Event Name="Got_Storm_Commando_Debounce">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>2</Event_Param1>
+		<Prereq>Got_Storm_Commando</Prereq>
+	</Event>
+
+
+<!--******************************************************-->
+<!--***************	Faction Determiners	******************-->
+<!--******************************************************-->
+
+
+	<Event Name="Faction_Branch_Disabler_NewRep">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>0</Event_Param1>
+		<Reward_Type>DISABLE_BRANCH</Reward_Type>
+		<Reward_Param1>Faction_Branch_NewRep</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+	</Event>
+
+	<Event Name="Faction_Branch_Disabler_Remnant">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>0</Event_Param1>
+		<Reward_Type>DISABLE_BRANCH</Reward_Type>
+		<Reward_Param1>Faction_Branch_Remnant</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+	</Event>
+	
+	<Event Name="Faction_Branch_Disabler_Naboo">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>0</Event_Param1>
+		<Reward_Type>DISABLE_BRANCH</Reward_Type>
+		<Reward_Param1>Faction_Branch_Naboo</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+	</Event>
+	
+	<Event Name="Faction_Branch_Disabler_Kamino">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>0</Event_Param1>
+		<Reward_Type>DISABLE_BRANCH</Reward_Type>
+		<Reward_Param1>Faction_Branch_Kamino</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+	</Event>
+
+	<Event Name="Faction_Branch_Disabler_Eriadu">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>0</Event_Param1>
+		<Reward_Type>DISABLE_BRANCH</Reward_Type>
+		<Reward_Param1>Faction_Branch_Eriadu</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+	</Event>
+
+	<Event Name="Faction_Branch_Disabler_CSA">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>0</Event_Param1>
+		<Reward_Type>DISABLE_BRANCH</Reward_Type>
+		<Reward_Param1>Faction_Branch_CSA</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+	</Event>
+
+	<Event Name="Faction_Branch_Disabler_Hutt">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>0</Event_Param1>
+		<Reward_Type>DISABLE_BRANCH</Reward_Type>
+		<Reward_Param1>Faction_Branch_Hutt</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+	</Event>
+
+	<Event Name="Determine_Faction_LUA">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>0</Event_Param1>
+	</Event>
+
+
+	<Event Name="Faction_Branch_Enabler_NewRep">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>ENABLE_BRANCH_NEWREP_FLAG</Event_Param2>
+		<Reward_Type>DISABLE_BRANCH</Reward_Type>
+		<Reward_Param1>Faction_Branch_NewRep</Reward_Param1>
+		<Reward_Param2>0</Reward_Param2>
+	</Event>
+
+	<Event Name="Faction_Branch_Enabler_Remnant">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>ENABLE_BRANCH_EMPIRE_FLAG</Event_Param2>
+		<Reward_Type>DISABLE_BRANCH</Reward_Type>
+		<Reward_Param1>Faction_Branch_Remnant</Reward_Param1>
+		<Reward_Param2>0</Reward_Param2>
+	</Event>
+	
+	<Event Name="Faction_Branch_Enabler_Naboo">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>ENABLE_BRANCH_NABOO_FLAG</Event_Param2>
+		<Reward_Type>DISABLE_BRANCH</Reward_Type>
+		<Reward_Param1>Faction_Branch_Naboo</Reward_Param1>
+		<Reward_Param2>0</Reward_Param2>
+	</Event>
+	
+	<Event Name="Faction_Branch_Enabler_Kamino">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>ENABLE_BRANCH_KAMINO_FLAG</Event_Param2>
+		<Reward_Type>DISABLE_BRANCH</Reward_Type>
+		<Reward_Param1>Faction_Branch_Kamino</Reward_Param1>
+		<Reward_Param2>0</Reward_Param2>
+	</Event>
+
+	<Event Name="Faction_Branch_Enabler_EotH">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>ENABLE_BRANCH_EOTH_FLAG</Event_Param2>
+		<Reward_Type>DISABLE_BRANCH</Reward_Type>
+		<Reward_Param1>Faction_Branch_Remnant</Reward_Param1>
+		<Reward_Param2>0</Reward_Param2>
+	</Event>
+
+	<Event Name="Faction_Branch_Enabler_Eriadu">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>ENABLE_BRANCH_ERIADU_FLAG</Event_Param2>
+		<Reward_Type>DISABLE_BRANCH</Reward_Type>
+		<Reward_Param1>Faction_Branch_Eriadu</Reward_Param1>
+		<Reward_Param2>0</Reward_Param2>
+	</Event>
+
+	<Event Name="Faction_Branch_Enabler_CSA">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>ENABLE_BRANCH_CSA_FLAG</Event_Param2>
+		<Reward_Type>DISABLE_BRANCH</Reward_Type>
+		<Reward_Param1>Faction_Branch_CSA</Reward_Param1>
+		<Reward_Param2>0</Reward_Param2>
+	</Event>
+
+	<Event Name="Faction_Branch_Enabler_Hutts">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>ENABLE_BRANCH_HUTT_FLAG</Event_Param2>
+		<Reward_Type>DISABLE_BRANCH</Reward_Type>
+		<Reward_Param1>Faction_Branch_Hutt</Reward_Param1>
+		<Reward_Param2>0</Reward_Param2>
+	</Event>
+	
+	  <!-- ==================== BEGIN SAVE CRASH RE-ENABLE EVENTS ==================== -->
+
+	<Event Name="Filter_AI_Challenge_Clicked">
+		<Event_Type>STORY_CLICK_GUI</Event_Type>
+		<Event_Param1>b_save_fixer</Event_Param1>
+		<Perpetual>true</Perpetual>
+	</Event>	
+		
+	<Event Name="Faction_Branch_Playing_NewRep">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+
+		<Reward_Type>DISABLE_BRANCH</Reward_Type>
+		<Reward_Param1>Faction_Branch_NewRep_Save</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+		<Prereq>Faction_Branch_Enabler_NewRep</Prereq>
+	</Event>
+	
+	
+	<Event Name="Faction_Branch_Playing_Remnant">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+
+		<Reward_Type>DISABLE_BRANCH</Reward_Type>
+		<Reward_Param1>Faction_Branch_Empire_Save</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+		<Prereq>Faction_Branch_Enabler_Remnant</Prereq>
+	</Event>
+		
+	<Event Name="Faction_Branch_Playing_EotH">
+			<Event_Type>STORY_TRIGGER</Event_Type>
+
+		<Reward_Type>DISABLE_BRANCH</Reward_Type>
+		<Reward_Param1>Faction_Branch_EotH_Save</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+		<Prereq>Faction_Branch_Enabler_EotH</Prereq>
+	</Event>
+	
+	<Event Name="Faction_Branch_Playing_Pentastar">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+
+		<Reward_Type>DISABLE_BRANCH</Reward_Type>
+		<Reward_Param1>Faction_Branch_Pentastar_Save</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+		<Prereq>Faction_Branch_Enabler_Pentastar</Prereq>
+	</Event>
+		
+	
+	<Event Name="Faction_Branch_Playing_Teradoc">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+
+		<Reward_Type>DISABLE_BRANCH</Reward_Type>
+		<Reward_Param1>Faction_Branch_Teradoc_Save</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+		<Prereq>Faction_Branch_Enabler_Teradoc</Prereq>
+	</Event>
+
+	
+	<Event Name="Faction_Branch_Playing_Zsinj">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+
+		<Reward_Type>DISABLE_BRANCH</Reward_Type>
+		<Reward_Param1>Faction_Branch_Zsinj_Save</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+		<Prereq>Faction_Branch_Enabler_Zsinj</Prereq>
+	</Event>
+
+	<Event Name="Faction_Branch_Playing_Eriadu">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+
+		<Reward_Type>DISABLE_BRANCH</Reward_Type>
+		<Reward_Param1>Faction_Branch_Eriadu_Save</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+		<Prereq>Faction_Branch_Enabler_Eriadu</Prereq>
+	</Event>
+
+	
+	<Event Name="Faction_Branch_Playing_Corporate_Sector">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+
+		<Reward_Type>DISABLE_BRANCH</Reward_Type>
+		<Reward_Param1>Faction_Branch_Corporate_Sector_Save</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+		<Prereq>Faction_Branch_Enabler_CSA</Prereq>
+	</Event>
+
+	<!--***********************************************************-->
+	<!--***********************************************************-->
+	<!--******************* LAMBDA STORYLINE ********************-->
+	<!--***********************************************************-->
+	<!--***********************************************************-->
+
+	<Event Name="Intro_Welcome_Empire">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_CONQUEST_LAMBDASECTOR_IR_INTRO_ONE</Reward_Param1>
+		<Reward_Param2>15</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6 />
+		<Reward_Param7 />
+		<Reward_Param8 />
+		<Reward_Param9>Lankin_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+		<Prereq>Faction_Branch_Enabler_Remnant</Prereq>
+		<Branch>Faction_Branch_Remnant</Branch>
+	</Event>
+
+	<Event Name="Intro_Welcome_Empire_Dialog">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>15</Event_Param1>
+		<Story_Dialog>Dialog_Lambda</Story_Dialog>
+		<Story_Chapter>0</Story_Chapter>
+		<Story_Tag>Main_Tag_Empire</Story_Tag>
+		<Prereq>Faction_Branch_Enabler_Remnant</Prereq>
+		<Branch>Faction_Branch_Remnant</Branch>
+	</Event>
+	
+	<!--***********************************************************-->
+	<!--***********************************************************-->
+	<!--**************** IMPERIAL NABOO STORYLINE ******************-->
+	<!--***********************************************************-->
+	<!--***********************************************************-->
+
+	<Event Name="Intro_Welcome_Naboo">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_CONQUEST_LAMBDASECTOR_NABOO_INTRO_ONE</Reward_Param1>
+		<Reward_Param2>15</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6 />
+		<Reward_Param7 />
+		<Reward_Param8 />
+		<Reward_Param9>Panaka_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+		<Prereq>Faction_Branch_Enabler_Naboo</Prereq>
+		<Branch>Faction_Branch_Naboo</Branch>
+	</Event>
+
+	<Event Name="Intro_Welcome_Naboo_Dialog">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>15</Event_Param1>
+		<Story_Dialog>Dialog_Lambda</Story_Dialog>
+		<Story_Chapter>1</Story_Chapter>
+		<Story_Tag>Main_Tag_Empire</Story_Tag>
+		<Prereq>Faction_Branch_Enabler_Naboo</Prereq>
+		<Branch>Faction_Branch_Naboo</Branch>
+	</Event>
+	
+	<!--***********************************************************-->
+	<!--***********************************************************-->
+	<!--*************** IMPERIAL KAMINO STORYLINE ******************-->
+	<!--***********************************************************-->
+	<!--***********************************************************-->
+
+	<Event Name="Intro_Welcome_Kamino">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_CONQUEST_LAMBDASECTOR_KAMINO_INTRO_ONE</Reward_Param1>
+		<Reward_Param2>15</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6 />
+		<Reward_Param7 />
+		<Reward_Param8 />
+		<Reward_Param9>Generic_Sith_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+		<Prereq>Faction_Branch_Enabler_Kamino</Prereq>
+		<Branch>Faction_Branch_Kamino</Branch>
+	</Event>
+
+	<Event Name="Intro_Welcome_Kamino_Dialog">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>15</Event_Param1>
+		<Story_Dialog>Dialog_Lambda</Story_Dialog>
+		<Story_Chapter>6</Story_Chapter>
+		<Story_Tag>Main_Tag_Empire</Story_Tag>
+		<Prereq>Faction_Branch_Enabler_Kamino</Prereq>
+		<Branch>Faction_Branch_Kamino</Branch>
+	</Event>
+
+	<!--***********************************************************-->
+	<!--***********************************************************-->
+	<!--***************** New Republic Storyline ******************-->
+	<!--***********************************************************-->
+	<!--***********************************************************-->
+
+	<Event Name="Intro_Welcome_NewRep">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_CONQUEST_LAMBDASECTOR_NR_INTRO_ONE</Reward_Param1>
+		<Reward_Param2>15</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6 />
+		<Reward_Param7 />
+		<Reward_Param8 />
+		<Reward_Param9>Leia_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+		<Prereq>Faction_Branch_Enabler_NewRep</Prereq>
+		<Branch>Faction_Branch_NewRep</Branch>
+	</Event>
+
+	<Event Name="Intro_Welcome_NewRep_Dialog">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>15</Event_Param1>
+		<Story_Dialog>Dialog_Lambda</Story_Dialog>
+		<Story_Chapter>2</Story_Chapter>
+		<Story_Tag>Main_Tag</Story_Tag>
+		<Prereq>Intro_Welcome_NewRep</Prereq>
+		<Branch>Faction_Branch_Newrep</Branch>
+	</Event>
+	
+	<!--***********************************************************-->
+	<!--***********************************************************-->
+	<!--******************* ERIADU STORYLINE **********************-->
+	<!--***********************************************************-->
+	<!--***********************************************************-->
+
+	<Event Name="Intro_Welcome_Eriadu">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_CONQUEST_LAMBDASECTOR_EA_INTRO_ONE</Reward_Param1>
+		<Reward_Param2>15</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6 />
+		<Reward_Param7 />
+		<Reward_Param8 />
+		<Reward_Param9>Delvardus_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+		<Prereq>Faction_Branch_Enabler_Eriadu</Prereq>
+		<Branch>Faction_Branch_Eriadu</Branch>
+	</Event>
+
+	<Event Name="Intro_Welcome_Eriadu_Dialog">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>15</Event_Param1>
+		<Story_Dialog>Dialog_Lambda</Story_Dialog>
+		<Story_Chapter>3</Story_Chapter>
+		<Story_Tag>Main_Tag_Empire</Story_Tag>
+		<Prereq>Faction_Branch_Enabler_Eriadu</Prereq>
+		<Branch>Faction_Branch_Eriadu</Branch>
+	</Event>
+	
+	<!--***********************************************************-->
+	<!--***********************************************************-->
+	<!--******************** HUTT STORYLINE ***********************-->
+	<!--***********************************************************-->
+	<!--***********************************************************-->
+
+	<Event Name="Intro_Welcome_Hutt">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_CONQUEST_LAMBDASECTOR_HUTT_INTRO_ONE</Reward_Param1>
+		<Reward_Param2>15</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6 />
+		<Reward_Param7 />
+		<Reward_Param8 />
+		<Reward_Param9>Borvo_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+		<Prereq>Faction_Branch_Enabler_Hutts</Prereq>
+		<Branch>Faction_Branch_Hutt</Branch>
+	</Event>
+
+	<Event Name="Intro_Welcome_Hutt_Dialog">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>15</Event_Param1>
+		<Story_Dialog>Dialog_Lambda</Story_Dialog>
+		<Story_Chapter>4</Story_Chapter>
+		<Story_Tag>Main_Tag_Empire</Story_Tag>
+		<Prereq>Faction_Branch_Enabler_Hutts</Prereq>
+		<Branch>Faction_Branch_Hutt</Branch>
+	</Event>
+	
+	<!--***********************************************************-->
+	<!--***********************************************************-->
+	<!--********************* CSA STORYLINE ***********************-->
+	<!--***********************************************************-->
+	<!--***********************************************************-->
+
+	<Event Name="Intro_Welcome_CSA">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_CONQUEST_LAMBDASECTOR_CSA_INTRO_ONE</Reward_Param1>
+		<Reward_Param2>15</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6 />
+		<Reward_Param7 />
+		<Reward_Param8 />
+		<Reward_Param9>Sloane_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+		<Prereq>Faction_Branch_Enabler_CSA</Prereq>
+		<Branch>Faction_Branch_CSA</Branch>
+	</Event>
+
+	<Event Name="Intro_Welcome_CSA_Dialog">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>15</Event_Param1>
+		<Story_Dialog>Dialog_Lambda</Story_Dialog>
+		<Story_Chapter>5</Story_Chapter>
+		<Story_Tag>Main_Tag_Empire</Story_Tag>
+		<Prereq>Faction_Branch_Enabler_CSA</Prereq>
+		<Branch>Faction_Branch_CSA</Branch>
+	</Event>
+</Story>

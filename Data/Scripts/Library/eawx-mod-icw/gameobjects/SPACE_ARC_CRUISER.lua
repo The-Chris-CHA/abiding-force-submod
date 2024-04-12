@@ -5,6 +5,5 @@ return {
 			DEFAULT = {Initial = 1, Reserve = 1}
 		}
 	},
-	Scripts = {"multilayer", "fighter-spawn"},
-	Flags = {HANGAR = true}
+	Scripts = {"multilayer", "fighter-spawn"}
 }

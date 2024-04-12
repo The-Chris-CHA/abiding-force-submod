@@ -1,0 +1,251 @@
+<?xml version='1.0' encoding='ASCII'?>
+<Hutt_Structures>
+
+	<SpecialStructure Name="Hutt_Palace">
+		<Variant_Of_Existing_Type>Template_Faction_Capital</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_COMPANY_HUTT_CAPITAL</Text_ID>
+
+		<Encyclopedia_Text>
+		TEXT_COMPANY_CAPITAL_DESCRIPTION 
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
+		TEXT_TOOLTIP_CAPITAL_HUTT_HEALTH
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_TOOLTIP_CAPITAL_HUTT_1 
+		TEXT_TOOLTIP_CAPITAL_HUTT_2
+		TEXT_TOOLTIP_CAPITAL_HUTT_3
+		TEXT_TOOLTIP_CAPITAL_HUTT_4
+		TEXT_TOOLTIP_CAPITAL_HUTT_5
+		TEXT_TOOLTIP_CAPITAL_HUTT_6
+		TEXT_TOOLTIP_CAPITAL_HUTT_7
+		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
+		TEXT_TOOLTIP_BONUS_BLOCK_OB
+		TEXT_TOOLTIP_BONUS_BLOCK_BR
+		TEXT_TOOLTIP_BONUS_BLOCK_VP
+		TEXT_TOOLTIP_INCOME_CAPITAL
+		TEXT_TOOLTIP_INCOME_CAPITAL_SHIPCREWS
+		TEXT_TOOLTIP_BUILDLIMIT_SMUGGLERS_DEPLOY
+		TEXT_TOOLTIP_INFLUENCE_CAPITAL
+		TEXT_TOOLTIP_SEPARATOR_LIMITS_BLOCK
+		TEXT_TOOLTIP_BUILDLIMIT_CAPITAL
+		</Encyclopedia_Text>
+
+		<Icon_Name>I_BUTTON_HUTTS_CAPITAL.TGA</Icon_Name>
+
+		<Land_Model_Name>W_HUTTPALACE_VARIANT.alo</Land_Model_Name>
+		<Scale_Factor>0.75</Scale_Factor>
+
+		<Affiliation>Hutt_Cartels</Affiliation>
+
+		<Starting_Spawned_Units_Tech_0>Hutt_Crimson_Condottiere_Squad, 5</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Hutt_Crimson_Condottiere_Squad, 15</Reserve_Spawned_Units_Tech_0>
+
+		<Starting_Spawned_Units_Tech_0>Hutt_Armored_Squad_Deployed, 2</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Hutt_Armored_Squad_Deployed, 6</Reserve_Spawned_Units_Tech_0>
+
+		<Starting_Spawned_Units_Tech_0>Minor_Shell_Hutt_Squad_Deployed, 2</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Minor_Shell_Hutt_Squad_Deployed, 6</Reserve_Spawned_Units_Tech_0>
+
+		
+		<Starting_Spawned_Units_Tech_0>Hutt_Desert_Sail20, 4</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Hutt_Desert_Sail20, 8</Reserve_Spawned_Units_Tech_0>
+		
+		<Starting_Spawned_Units_Tech_0>WLO5_Tank, 2</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>WLO5_Tank, 4</Reserve_Spawned_Units_Tech_0>
+		
+		<Starting_Spawned_Units_Tech_0>Hutt_Pod_Walker, 1</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Hutt_Pod_Walker, 2</Reserve_Spawned_Units_Tech_0>	
+		
+		<Starting_Spawned_Units_Tech_0>Luxury_Barge, 1</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Luxury_Barge, 2</Reserve_Spawned_Units_Tech_0>
+
+
+		<!-- Needs CrimsCond -->
+
+		<Death_CLone>Damage_Normal, W_HUTTPALACE_VARIANT_Death_Clone</Death_CLone>
+
+	</SpecialStructure>
+
+	<SpecialStructure Name="Hutt_LocalOffice">
+		<Variant_Of_Existing_Type>Template_Planetary_Government</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_COMPANY_HUTT_OFFICE</Text_ID>
+
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_SENATORSOFFICE_DESCRIPTION
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_OFFICE_HUTT_HEALTH 
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_TOOLTIP_OFFICE_HUTT_1
+		TEXT_TOOLTIP_OFFICE_HUTT_2 
+		TEXT_TOOLTIP_OFFICE_HUTT_3
+		TEXT_TOOLTIP_OFFICE_HUTT_4
+		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
+		TEXT_TOOLTIP_INFLUENCE_OFFICE
+		</Encyclopedia_Text>
+
+		<Icon_Name>I_BUTTON_HUTTS.TGA</Icon_Name>
+
+		<Land_Model_Name>W_HUTTPALACE.alo</Land_Model_Name>
+		<Scale_Factor>0.75</Scale_Factor>
+
+		<Affiliation>Hutt_Cartels</Affiliation>
+
+		<Starting_Spawned_Units_Tech_0>GuardianCorps_Squad, 3</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>GuardianCorps_Squad, 9</Reserve_Spawned_Units_Tech_0>
+
+		<Starting_Spawned_Units_Tech_0>Hutt_Armored_Squad_Deployed, 1</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Hutt_Armored_Squad_Deployed, 3</Reserve_Spawned_Units_Tech_0>
+	
+		<Starting_Spawned_Units_Tech_0>Hutt_Flare_S, 2</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Hutt_Flare_S, 4</Reserve_Spawned_Units_Tech_0>
+
+		<Starting_Spawned_Units_Tech_0>WLO5_Tank, 1</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>WLO5_Tank, 2</Reserve_Spawned_Units_Tech_0>
+
+	
+		<Tactical_Additional_Structure_Type>Generic_Power_Generator</Tactical_Additional_Structure_Type>
+	</SpecialStructure>
+
+	<SpecialStructure Name="H_Ground_Barracks">
+		<Variant_Of_Existing_Type>Template_Barracks</Variant_Of_Existing_Type>
+		<Icon_Name>i_button_hutt_barracks.tga</Icon_Name>
+
+		<Land_Model_Name>UB_BARRACKS.alo</Land_Model_Name>
+		<Scale_Factor>1.1</Scale_Factor>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_BARRACKS
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
+		TEXT_TOOLTIP_BARRACKS_HUTT_HEALTH 
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_TOOLTIP_BARRACKS_HUTT_1
+		TEXT_TOOLTIP_BARRACKS_HUTT_2
+		TEXT_TOOLTIP_BARRACKS_HUTT_3
+		TEXT_TOOLTIP_BARRACKS_HUTT_4
+		</Encyclopedia_Text>
+
+		<MP_Encyclopedia_Text> TEXT_TOOLTIP_BARRACKS </MP_Encyclopedia_Text>
+
+		<Affiliation>Hutt_Cartels</Affiliation>
+
+		<Starting_Spawned_Units_Tech_0>Hutt_Guard_Heavy_Team_Deployed, 2</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Hutt_Guard_Heavy_Team_Deployed, -1</Reserve_Spawned_Units_Tech_0>
+		
+		<Starting_Spawned_Units_Tech_0>Hutt_Guard_Assault_Team_Deployed, 1</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Hutt_Guard_Assault_Team_Deployed, -1</Reserve_Spawned_Units_Tech_0>
+
+		<Starting_Spawned_Units_Tech_0>Hutt_Armored_Squad_Deployed, 1</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Hutt_Armored_Squad_Deployed, 3</Reserve_Spawned_Units_Tech_0>
+
+		<Starting_Spawned_Units_Tech_0>Hutt_Desert_Sail20, 1</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Hutt_Desert_Sail20, 2</Reserve_Spawned_Units_Tech_0>
+
+		<Required_Special_Structures>Hutt_LocalOffice</Required_Special_Structures>
+		
+		<Tactical_Buildable_Objects_Multiplayer>
+		
+			Hutt_Cartels,
+				Hutt_Guard_Squad,
+				Hutt_Armored_Platoon,
+				Hutt_Minor_Shell_Hutt_Platoon,
+				Hutt_Flare_S_Company,
+				
+		</Tactical_Buildable_Objects_Multiplayer>
+
+		<Tactical_Health>500</Tactical_Health>
+
+	</SpecialStructure>
+
+	<SpecialStructure Name="H_Ground_Light_Vehicle_Factory">
+		<Variant_Of_Existing_Type>Template_Light_Vehicle_Factory</Variant_Of_Existing_Type>
+
+		<Land_Model_Name>rb_lightvehiclefactory.alo</Land_Model_Name>
+		<Icon_Name>i_button_r_vehicle_factory.tga</Icon_Name>
+
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_L_FACTORY
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
+		TEXT_TOOLTIP_L_FACTORY_HUTT_HEALTH 
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK 
+		TEXT_TOOLTIP_L_FACTORY_HUTT_1
+		TEXT_TOOLTIP_L_FACTORY_HUTT_2
+		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
+		TEXT_TOOLTIP_UPKEEP_FACTORY_L
+		</Encyclopedia_Text>
+
+		<MP_Encyclopedia_Text> TEXT_TOOLTIP_L_FACTORY </MP_Encyclopedia_Text>
+
+		<Obstacle_Proxy_Type> R_Ground_Light_Vehicle_Factory_Build_Pad </Obstacle_Proxy_Type>
+
+		<Affiliation>Hutt_Cartels</Affiliation>
+
+		<Required_Special_Structures>Hutt_LocalOffice</Required_Special_Structures>
+
+		<Tactical_Health>750</Tactical_Health>
+
+		<Starting_Spawned_Units_Tech_0>SuperHaul_II_Skiff, 2</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>SuperHaul_II_Skiff, 4</Reserve_Spawned_Units_Tech_0>
+
+		<Starting_Spawned_Units_Tech_0>Hutt_Personnel_Skiff_IV, 2</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Hutt_Personnel_Skiff_IV, 4</Reserve_Spawned_Units_Tech_0>
+		
+		
+		<Tactical_Buildable_Objects_Multiplayer>
+		
+			Hutt_Cartels,
+				Hutt_Desert_Sail20_Company,
+				Hutt_Bantha_II_Skiff_Company,
+				Hutt_SuperHaul_II_Skiff_Company,
+				Hutt_AA_Skiff_Company,
+				Hutt_AST5_Company,
+				Hutt_Personnel_Skiff_IV_Company,
+		
+		</Tactical_Buildable_Objects_Multiplayer>
+
+	</SpecialStructure>
+
+	<SpecialStructure Name="H_Ground_Heavy_Vehicle_Factory">
+		<Variant_Of_Existing_Type>Template_Heavy_Vehicle_Factory</Variant_Of_Existing_Type>
+
+		<Icon_Name>i_button_hutt_heavyfactory.tga</Icon_Name>
+
+		<Land_Model_Name>UB_HeavyFactory.alo</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_H_FACTORY 
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_H_FACTORY_HUTT_HEALTH 
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_TOOLTIP_H_FACTORY_HUTT_1
+		TEXT_TOOLTIP_H_FACTORY_HUTT_2
+		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
+		TEXT_TOOLTIP_UPKEEP_FACTORY_H
+		</Encyclopedia_Text>
+		<MP_Encyclopedia_Text> TEXT_TOOLTIP_H_FACTORY</MP_Encyclopedia_Text>
+
+		<Obstacle_Proxy_Type> R_Ground_Heavy_Vehicle_Factory_Build_Pad </Obstacle_Proxy_Type>
+
+		<Affiliation>Hutt_Cartels</Affiliation>
+
+		<Required_Special_Structures>Hutt_LocalOffice</Required_Special_Structures>
+
+		<Starting_Spawned_Units_Tech_0>Luxury_Barge, 1</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Luxury_Barge, 2</Reserve_Spawned_Units_Tech_0>
+		
+		<Starting_Spawned_Units_Tech_0>WLO5_Tank, 2</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>WLO5_Tank, 4</Reserve_Spawned_Units_Tech_0>
+		
+		<Tactical_Buildable_Objects_Multiplayer>
+		
+			Hutt_Cartels,
+				WLO5_Tank_Company,
+				MAL_Rocket_Vehicle_Company,
+				Hutt_Guardian_5E_Speeder_Company,
+				Hutt_Pod_Walker_Company,
+				Luxury_Yacht_Company,
+		</Tactical_Buildable_Objects_Multiplayer>
+
+	</SpecialStructure>
+
+</Hutt_Structures>

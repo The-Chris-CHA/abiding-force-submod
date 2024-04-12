@@ -1,30 +1,25 @@
 <?xml version="1.0"?>
 <Campaigns>
 
-  
-<!-- ******************************************************************** -->
-<!-- ******************** SANDBOX CAMPAIGN "Endor Aftermath" ************** -->
-<!-- ******************************************************************** -->
-
 	<Campaign Name="Borderlands_Region_Hapes">
 
 		<Campaign_Set> Borderlands_Region </Campaign_Set>
 		<Sort_Order>103</Sort_Order>
 
-    <Text_ID>TEXT_CAMPAIGN_SINGLE_BORDERLANDS</Text_ID>
-    <Description_Text>TEXT_CAMPAIGN_SINGLE_DESCRIPTION_BORDERLANDS</Description_Text>
+		<Text_ID>TEXT_CAMPAIGN_SINGLE_BORDERLANDS</Text_ID>
+		<Description_Text>TEXT_CAMPAIGN_SINGLE_DESCRIPTION_BORDERLANDS</Description_Text>
 
         <Camera_Shift_X> 40.0 </Camera_Shift_X>
         <Camera_Shift_Y> 0.0 </Camera_Shift_Y>
         <Camera_Distance> 1200.0 </Camera_Distance>
 
-			<Locations>
+		<Locations>
 			Borderlands_Region
-	</Locations>
+		</Locations>
 
-	<Trade_Routes>
+		<Trade_Routes>
 
-</Trade_Routes>
+		</Trade_Routes>
 		<Home_Location> Rebel, Mon_Calamari </Home_Location>
         <Home_Location> Empire, Coruscant </Home_Location>
 		<Home_Location> Pentastar, Bastion </Home_Location>
@@ -34,24 +29,26 @@
 		<Home_Location> Corporate_Sector, Etti </Home_Location> 
 		<Home_Location> Warlords, Moorja </Home_Location> 
 		<Home_Location> EmpireoftheHand, Entralla </Home_Location>
-		<Home_Location> Hapes_Consortium, Hapes </Home_Location> 
+		<Home_Location> Hapes_Consortium, Hapes </Home_Location>
+		<Home_Location> Hutt_Cartels, Nal_Hutta </Home_Location>
 	 
         <Starting_Active_Player> Hapes_Consortium </Starting_Active_Player>
 		
 		<Supports_Custom_Settings>True</Supports_Custom_Settings>
 		<Show_Completed_Tab>True</Show_Completed_Tab>
-  <Underworld_Story_Name>Conquests\Progressive\Story_Plots_Sandbox_Loader.xml</Underworld_Story_Name>
+		<Underworld_Story_Name>Conquests\Progressive\Story_Plots_Sandbox_Loader.xml</Underworld_Story_Name>
 		
 		<AI_Player_Control> Greater_Maldrood, WarlordAI </AI_Player_Control>      
 		<AI_Player_Control> Rebel, GenericAI </AI_Player_Control>
 		<AI_Player_Control> EmpireoftheHand, None </AI_Player_Control>
 		<AI_Player_Control> Pentastar, PentastarAI </AI_Player_Control>
 		<AI_Player_Control> Zsinj_Empire, WarlordAI </AI_Player_Control>	
-		<AI_Player_Control> Empire, None </AI_Player_Control>		
+		<AI_Player_Control> Empire, GenericAI </AI_Player_Control>		
 		<AI_Player_Control> Eriadu_Authority, EriaduAI </AI_Player_Control>			
 		<AI_Player_Control> Corporate_Sector, Hapes_Consortium </AI_Player_Control>		
 		<AI_Player_Control> Warlords, None </AI_Player_Control>						
 		<AI_Player_Control> Hapes_Consortium, SandboxHuman </AI_Player_Control>
+		<AI_Player_Control> Hutt_Cartels, None </AI_Player_Control>
 
 		<Markup_Filename>Empire, DefaultGalacticHints </Markup_Filename>
 		<Markup_Filename>Rebel, DefaultGalacticHints </Markup_Filename>
@@ -63,6 +60,7 @@
 		<Markup_Filename>Corporate_Sector, DefaultGalacticHints </Markup_Filename>		
 		<Markup_Filename>Warlords, DefaultGalacticHints </Markup_Filename>			
 		<Markup_Filename>Hapes_Consortium, DefaultGalacticHints </Markup_Filename>
+		<Markup_Filename>Hutt_Cartels, DefaultGalacticHints </Markup_Filename>
 				
 		
 		<Supports_Custom_Settings>True</Supports_Custom_Settings>		<Show_Completed_Tab>True</Show_Completed_Tab>
@@ -133,7 +131,7 @@
 		<Starting_Tech_Level> Eriadu_Authority, 1 </Starting_Tech_Level>
 		<Max_Tech_Level> Eriadu_Authority, 5 </Max_Tech_Level>
 	
-	<Starting_Forces> Eriadu_Authority, Eriadu, Placement_Dummy </Starting_Forces>
+		<Starting_Forces> Eriadu_Authority, Eriadu, Placement_Dummy </Starting_Forces>
 
 		<!-- ******************** FACTION: Corporate Sector ************** -->
 												
@@ -157,7 +155,7 @@
 		<Max_Tech_Level> Hapes_Consortium, 5 </Max_Tech_Level>
 		
 			
-		<!-- ******************** FACTION: Eriadu_Authority ************** -->
+		<!-- ******************** FACTION: Hutts ************** -->
 																				
 		<Starting_Credits> Hutt_Cartels,  0 </Starting_Credits>
 		<Starting_Tech_Level> Hutt_Cartels, 1 </Starting_Tech_Level>
@@ -174,20 +172,20 @@
 		<Campaign_Set> Borderlands_Region </Campaign_Set>
 		<Sort_Order>103</Sort_Order>
 
-    <Text_ID>TEXT_CAMPAIGN_SINGLE_BORDERLANDS</Text_ID>
-    <Description_Text>TEXT_CAMPAIGN_SINGLE_DESCRIPTION_BORDERLANDS</Description_Text>
+		<Text_ID>TEXT_CAMPAIGN_SINGLE_BORDERLANDS</Text_ID>
+		<Description_Text>TEXT_CAMPAIGN_SINGLE_DESCRIPTION_BORDERLANDS</Description_Text>
 
         <Camera_Shift_X> 40.0 </Camera_Shift_X>
         <Camera_Shift_Y> 0.0 </Camera_Shift_Y>
         <Camera_Distance> 1200.0 </Camera_Distance>
 
-			<Locations>
+		<Locations>
 			Borderlands_Region
-	</Locations>
+		</Locations>
 
-	<Trade_Routes>
+		<Trade_Routes>
 
-</Trade_Routes>
+		</Trade_Routes>
 		<Home_Location> Rebel, Mon_Calamari </Home_Location>
         <Home_Location> Empire, Coruscant </Home_Location>
 		<Home_Location> Pentastar, Bastion </Home_Location>
@@ -198,12 +196,13 @@
 		<Home_Location> Warlords, Moorja </Home_Location> 
 		<Home_Location> EmpireoftheHand, Entralla </Home_Location>
 		<Home_Location> Hapes_Consortium, Hapes </Home_Location> 
+		<Home_Location> Hutt_Cartels, Nal_Hutta </Home_Location>
 	 
         <Starting_Active_Player> Empire </Starting_Active_Player>
 		
 		<Supports_Custom_Settings>True</Supports_Custom_Settings>
 		<Show_Completed_Tab>True</Show_Completed_Tab>
-  <Underworld_Story_Name>Conquests\Progressive\Story_Plots_Sandbox_Loader.xml</Underworld_Story_Name>
+		<Underworld_Story_Name>Conquests\Progressive\Story_Plots_Sandbox_Loader.xml</Underworld_Story_Name>
 		
 		<AI_Player_Control> Greater_Maldrood, WarlordAI </AI_Player_Control>      
 		<AI_Player_Control> Rebel, GenericAI </AI_Player_Control>
@@ -215,6 +214,7 @@
 		<AI_Player_Control> Corporate_Sector, CorporateAI </AI_Player_Control>		
 		<AI_Player_Control> Warlords, None </AI_Player_Control>						
 		<AI_Player_Control> Hapes_Consortium, GenericAI </AI_Player_Control>
+		<AI_Player_Control> Hutt_Cartels, None </AI_Player_Control>
 
 		<Markup_Filename>Empire, DefaultGalacticHints </Markup_Filename>
 		<Markup_Filename>Rebel, DefaultGalacticHints </Markup_Filename>
@@ -226,6 +226,7 @@
 		<Markup_Filename>Corporate_Sector, DefaultGalacticHints </Markup_Filename>		
 		<Markup_Filename>Warlords, DefaultGalacticHints </Markup_Filename>			
 		<Markup_Filename>Hapes_Consortium, DefaultGalacticHints </Markup_Filename>
+		<Markup_Filename>Hutt_Cartels, DefaultGalacticHints </Markup_Filename>
 				
 		
 		<Supports_Custom_Settings>True</Supports_Custom_Settings>		<Show_Completed_Tab>True</Show_Completed_Tab>
@@ -296,7 +297,7 @@
 		<Starting_Tech_Level> Eriadu_Authority, 1 </Starting_Tech_Level>
 		<Max_Tech_Level> Eriadu_Authority, 5 </Max_Tech_Level>
 	
-	<Starting_Forces> Eriadu_Authority, Eriadu, Placement_Dummy </Starting_Forces>
+		<Starting_Forces> Eriadu_Authority, Eriadu, Placement_Dummy </Starting_Forces>
 
 		<!-- ******************** FACTION: Corporate Sector ************** -->
 												
@@ -320,7 +321,7 @@
 		<Max_Tech_Level> Hapes_Consortium, 5 </Max_Tech_Level>
 		
 			
-		<!-- ******************** FACTION: Eriadu_Authority ************** -->
+		<!-- ******************** FACTION: Hutts ************** -->
 																				
 		<Starting_Credits> Hutt_Cartels,  0 </Starting_Credits>
 		<Starting_Tech_Level> Hutt_Cartels, 1 </Starting_Tech_Level>
@@ -337,20 +338,20 @@
 		<Campaign_Set> Borderlands_Region </Campaign_Set>
 		<Sort_Order>103</Sort_Order>
 
-    <Text_ID>TEXT_CAMPAIGN_SINGLE_BORDERLANDS</Text_ID>
-    <Description_Text>TEXT_CAMPAIGN_SINGLE_DESCRIPTION_BORDERLANDS</Description_Text>
+		<Text_ID>TEXT_CAMPAIGN_SINGLE_BORDERLANDS</Text_ID>
+		<Description_Text>TEXT_CAMPAIGN_SINGLE_DESCRIPTION_BORDERLANDS</Description_Text>
 
         <Camera_Shift_X> 40.0 </Camera_Shift_X>
         <Camera_Shift_Y> 0.0 </Camera_Shift_Y>
         <Camera_Distance> 1200.0 </Camera_Distance>
 
-			<Locations>
+		<Locations>
 			Borderlands_Region
-	</Locations>
+		</Locations>
 
-	<Trade_Routes>
+		<Trade_Routes>
 
-</Trade_Routes>
+		</Trade_Routes>
 		<Home_Location> Rebel, Mon_Calamari </Home_Location>
         <Home_Location> Empire, Coruscant </Home_Location>
 		<Home_Location> Pentastar, Bastion </Home_Location>
@@ -361,23 +362,25 @@
 		<Home_Location> Warlords, Moorja </Home_Location> 
 		<Home_Location> EmpireoftheHand, Entralla </Home_Location>
 		<Home_Location> Hapes_Consortium, Hapes </Home_Location> 
+		<Home_Location> Hutt_Cartels, Nal_Hutta </Home_Location>
 	 
         <Starting_Active_Player> Rebel </Starting_Active_Player>
 		
 		<Supports_Custom_Settings>True</Supports_Custom_Settings>
 		<Show_Completed_Tab>True</Show_Completed_Tab>
-  <Underworld_Story_Name>Conquests\Progressive\Story_Plots_Sandbox_Loader.xml</Underworld_Story_Name>
+		<Underworld_Story_Name>Conquests\Progressive\Story_Plots_Sandbox_Loader.xml</Underworld_Story_Name>
 		
 		<AI_Player_Control> Greater_Maldrood, WarlordAI </AI_Player_Control>      
 		<AI_Player_Control> Rebel, SandboxHuman </AI_Player_Control>
 		<AI_Player_Control> EmpireoftheHand, None </AI_Player_Control>
 		<AI_Player_Control> Pentastar, PentastarAI </AI_Player_Control>
 		<AI_Player_Control> Zsinj_Empire, WarlordAI </AI_Player_Control>	
-		<AI_Player_Control> Empire, None </AI_Player_Control>		
+		<AI_Player_Control> Empire, GenericAI </AI_Player_Control>		
 		<AI_Player_Control> Eriadu_Authority, EriaduAI </AI_Player_Control>			
 		<AI_Player_Control> Corporate_Sector, CorporateAI </AI_Player_Control>		
 		<AI_Player_Control> Warlords, None </AI_Player_Control>						
 		<AI_Player_Control> Hapes_Consortium, GenericAI </AI_Player_Control>
+		<AI_Player_Control> Hutt_Cartels, None </AI_Player_Control>
 
 		<Markup_Filename>Empire, DefaultGalacticHints </Markup_Filename>
 		<Markup_Filename>Rebel, DefaultGalacticHints </Markup_Filename>
@@ -389,6 +392,7 @@
 		<Markup_Filename>Corporate_Sector, DefaultGalacticHints </Markup_Filename>		
 		<Markup_Filename>Warlords, DefaultGalacticHints </Markup_Filename>			
 		<Markup_Filename>Hapes_Consortium, DefaultGalacticHints </Markup_Filename>
+		<Markup_Filename>Hutt_Cartels, DefaultGalacticHints </Markup_Filename>
 				
 		
 		<Supports_Custom_Settings>True</Supports_Custom_Settings>		<Show_Completed_Tab>True</Show_Completed_Tab>
@@ -459,7 +463,7 @@
 		<Starting_Tech_Level> Eriadu_Authority, 1 </Starting_Tech_Level>
 		<Max_Tech_Level> Eriadu_Authority, 5 </Max_Tech_Level>
 	
-	<Starting_Forces> Eriadu_Authority, Eriadu, Placement_Dummy </Starting_Forces>
+		<Starting_Forces> Eriadu_Authority, Eriadu, Placement_Dummy </Starting_Forces>
 
 		<!-- ******************** FACTION: Corporate Sector ************** -->
 												
@@ -483,7 +487,7 @@
 		<Max_Tech_Level> Hapes_Consortium, 5 </Max_Tech_Level>
 		
 			
-		<!-- ******************** FACTION: Eriadu_Authority ************** -->
+		<!-- ******************** FACTION: Hutts ************** -->
 																				
 		<Starting_Credits> Hutt_Cartels,  0 </Starting_Credits>
 		<Starting_Tech_Level> Hutt_Cartels, 1 </Starting_Tech_Level>
@@ -500,20 +504,20 @@
 		<Campaign_Set> Borderlands_Region </Campaign_Set>
 		<Sort_Order>103</Sort_Order>
 
-    <Text_ID>TEXT_CAMPAIGN_SINGLE_BORDERLANDS</Text_ID>
-    <Description_Text>TEXT_CAMPAIGN_SINGLE_DESCRIPTION_BORDERLANDS</Description_Text>
+		<Text_ID>TEXT_CAMPAIGN_SINGLE_BORDERLANDS</Text_ID>
+		<Description_Text>TEXT_CAMPAIGN_SINGLE_DESCRIPTION_BORDERLANDS</Description_Text>
 
         <Camera_Shift_X> 40.0 </Camera_Shift_X>
         <Camera_Shift_Y> 0.0 </Camera_Shift_Y>
         <Camera_Distance> 1200.0 </Camera_Distance>
 
-			<Locations>
+		<Locations>
 			Borderlands_Region
-	</Locations>
+		</Locations>
 
-	<Trade_Routes>
+		<Trade_Routes>
 
-</Trade_Routes>
+		</Trade_Routes>
 		<Home_Location> Rebel, Mon_Calamari </Home_Location>
         <Home_Location> Empire, Coruscant </Home_Location>
 		<Home_Location> Pentastar, Bastion </Home_Location>
@@ -524,23 +528,25 @@
 		<Home_Location> Warlords, Moorja </Home_Location> 
 		<Home_Location> EmpireoftheHand, Entralla </Home_Location>
 		<Home_Location> Hapes_Consortium, Hapes </Home_Location> 
+		<Home_Location> Hutt_Cartels, Nal_Hutta </Home_Location>
 	 
         <Starting_Active_Player> Corporate_Sector </Starting_Active_Player>
 		
 		<Supports_Custom_Settings>True</Supports_Custom_Settings>
 		<Show_Completed_Tab>True</Show_Completed_Tab>
-  <Underworld_Story_Name>Conquests\Progressive\Story_Plots_Sandbox_Loader.xml</Underworld_Story_Name>
+		<Underworld_Story_Name>Conquests\Progressive\Story_Plots_Sandbox_Loader.xml</Underworld_Story_Name>
 		
 		<AI_Player_Control> Greater_Maldrood, WarlordAI </AI_Player_Control>      
 		<AI_Player_Control> Rebel, GenericAI </AI_Player_Control>
 		<AI_Player_Control> EmpireoftheHand, None </AI_Player_Control>
 		<AI_Player_Control> Pentastar, PentastarAI </AI_Player_Control>
 		<AI_Player_Control> Zsinj_Empire, WarlordAI </AI_Player_Control>	
-		<AI_Player_Control> Empire, None </AI_Player_Control>		
+		<AI_Player_Control> Empire, GenericAI </AI_Player_Control>		
 		<AI_Player_Control> Eriadu_Authority, EriaduAI </AI_Player_Control>			
 		<AI_Player_Control> Corporate_Sector, SandboxHuman </AI_Player_Control>		
 		<AI_Player_Control> Warlords, None </AI_Player_Control>						
 		<AI_Player_Control> Hapes_Consortium, GenericAI </AI_Player_Control>
+		<AI_Player_Control> Hutt_Cartels, None </AI_Player_Control>
 
 		<Markup_Filename>Empire, DefaultGalacticHints </Markup_Filename>
 		<Markup_Filename>Rebel, DefaultGalacticHints </Markup_Filename>
@@ -552,6 +558,7 @@
 		<Markup_Filename>Corporate_Sector, DefaultGalacticHints </Markup_Filename>		
 		<Markup_Filename>Warlords, DefaultGalacticHints </Markup_Filename>			
 		<Markup_Filename>Hapes_Consortium, DefaultGalacticHints </Markup_Filename>
+		<Markup_Filename>Hutt_Cartels, DefaultGalacticHints </Markup_Filename>
 				
 		
 		<Supports_Custom_Settings>True</Supports_Custom_Settings>		<Show_Completed_Tab>True</Show_Completed_Tab>
@@ -622,7 +629,7 @@
 		<Starting_Tech_Level> Eriadu_Authority, 1 </Starting_Tech_Level>
 		<Max_Tech_Level> Eriadu_Authority, 5 </Max_Tech_Level>
 	
-	<Starting_Forces> Eriadu_Authority, Eriadu, Placement_Dummy </Starting_Forces>
+		<Starting_Forces> Eriadu_Authority, Eriadu, Placement_Dummy </Starting_Forces>
 
 		<!-- ******************** FACTION: Corporate Sector ************** -->
 												
@@ -646,7 +653,7 @@
 		<Max_Tech_Level> Hapes_Consortium, 5 </Max_Tech_Level>
 		
 			
-		<!-- ******************** FACTION: Eriadu_Authority ************** -->
+		<!-- ******************** FACTION: Hutts ************** -->
 																				
 		<Starting_Credits> Hutt_Cartels,  0 </Starting_Credits>
 		<Starting_Tech_Level> Hutt_Cartels, 1 </Starting_Tech_Level>
@@ -663,20 +670,20 @@
 		<Campaign_Set> Borderlands_Region </Campaign_Set>
 		<Sort_Order>103</Sort_Order>
 
-    <Text_ID>TEXT_CAMPAIGN_SINGLE_BORDERLANDS</Text_ID>
-    <Description_Text>TEXT_CAMPAIGN_SINGLE_DESCRIPTION_BORDERLANDS</Description_Text>
+		<Text_ID>TEXT_CAMPAIGN_SINGLE_BORDERLANDS</Text_ID>
+		<Description_Text>TEXT_CAMPAIGN_SINGLE_DESCRIPTION_BORDERLANDS</Description_Text>
 
         <Camera_Shift_X> 40.0 </Camera_Shift_X>
         <Camera_Shift_Y> 0.0 </Camera_Shift_Y>
         <Camera_Distance> 1200.0 </Camera_Distance>
 
-			<Locations>
+		<Locations>
 			Borderlands_Region
-	</Locations>
+		</Locations>
 
-	<Trade_Routes>
+		<Trade_Routes>
 
-</Trade_Routes>
+		</Trade_Routes>
 		<Home_Location> Rebel, Mon_Calamari </Home_Location>
         <Home_Location> Empire, Coruscant </Home_Location>
 		<Home_Location> Pentastar, Bastion </Home_Location>
@@ -687,23 +694,25 @@
 		<Home_Location> Warlords, Moorja </Home_Location> 
 		<Home_Location> EmpireoftheHand, Entralla </Home_Location>
 		<Home_Location> Hapes_Consortium, Hapes </Home_Location> 
+		<Home_Location> Hutt_Cartels, Nal_Hutta </Home_Location>
 	 
         <Starting_Active_Player> Greater_Maldrood </Starting_Active_Player>
 		
 		<Supports_Custom_Settings>True</Supports_Custom_Settings>
 		<Show_Completed_Tab>True</Show_Completed_Tab>
-  <Underworld_Story_Name>Conquests\Progressive\Story_Plots_Sandbox_Loader.xml</Underworld_Story_Name>
+		<Underworld_Story_Name>Conquests\Progressive\Story_Plots_Sandbox_Loader.xml</Underworld_Story_Name>
 		
 		<AI_Player_Control> Greater_Maldrood, SandboxHuman </AI_Player_Control>      
 		<AI_Player_Control> Rebel, GenericAI </AI_Player_Control>
 		<AI_Player_Control> EmpireoftheHand, None </AI_Player_Control>
 		<AI_Player_Control> Pentastar, PentastarAI </AI_Player_Control>
 		<AI_Player_Control> Zsinj_Empire, WarlordAI </AI_Player_Control>	
-		<AI_Player_Control> Empire, None </AI_Player_Control>		
+		<AI_Player_Control> Empire, GenericAI </AI_Player_Control>		
 		<AI_Player_Control> Eriadu_Authority, EriaduAI </AI_Player_Control>			
 		<AI_Player_Control> Corporate_Sector, Hapes_Consortium </AI_Player_Control>		
 		<AI_Player_Control> Warlords, None </AI_Player_Control>						
 		<AI_Player_Control> Hapes_Consortium, None </AI_Player_Control>
+		<AI_Player_Control> Hutt_Cartels, None </AI_Player_Control>
 
 		<Markup_Filename>Empire, DefaultGalacticHints </Markup_Filename>
 		<Markup_Filename>Rebel, DefaultGalacticHints </Markup_Filename>
@@ -715,6 +724,7 @@
 		<Markup_Filename>Corporate_Sector, DefaultGalacticHints </Markup_Filename>		
 		<Markup_Filename>Warlords, DefaultGalacticHints </Markup_Filename>			
 		<Markup_Filename>Hapes_Consortium, DefaultGalacticHints </Markup_Filename>
+		<Markup_Filename>Hutt_Cartels, DefaultGalacticHints </Markup_Filename>
 				
 		
 		<Supports_Custom_Settings>True</Supports_Custom_Settings>		<Show_Completed_Tab>True</Show_Completed_Tab>
@@ -785,7 +795,7 @@
 		<Starting_Tech_Level> Eriadu_Authority, 1 </Starting_Tech_Level>
 		<Max_Tech_Level> Eriadu_Authority, 5 </Max_Tech_Level>
 	
-	<Starting_Forces> Eriadu_Authority, Eriadu, Placement_Dummy </Starting_Forces>
+		<Starting_Forces> Eriadu_Authority, Eriadu, Placement_Dummy </Starting_Forces>
 
 		<!-- ******************** FACTION: Corporate Sector ************** -->
 												
@@ -809,7 +819,7 @@
 		<Max_Tech_Level> Hapes_Consortium, 5 </Max_Tech_Level>
 		
 			
-		<!-- ******************** FACTION: Eriadu_Authority ************** -->
+		<!-- ******************** FACTION: Hutts ************** -->
 																				
 		<Starting_Credits> Hutt_Cartels,  0 </Starting_Credits>
 		<Starting_Tech_Level> Hutt_Cartels, 1 </Starting_Tech_Level>
@@ -826,20 +836,20 @@
 		<Campaign_Set> Borderlands_Region </Campaign_Set>
 		<Sort_Order>103</Sort_Order>
 
-    <Text_ID>TEXT_CAMPAIGN_SINGLE_BORDERLANDS</Text_ID>
-    <Description_Text>TEXT_CAMPAIGN_SINGLE_DESCRIPTION_BORDERLANDS</Description_Text>
+		<Text_ID>TEXT_CAMPAIGN_SINGLE_BORDERLANDS</Text_ID>
+		<Description_Text>TEXT_CAMPAIGN_SINGLE_DESCRIPTION_BORDERLANDS</Description_Text>
 
         <Camera_Shift_X> 40.0 </Camera_Shift_X>
         <Camera_Shift_Y> 0.0 </Camera_Shift_Y>
         <Camera_Distance> 1200.0 </Camera_Distance>
 
-			<Locations>
+		<Locations>
 			Borderlands_Region
-	</Locations>
+		</Locations>
 
-	<Trade_Routes>
+		<Trade_Routes>
 
-</Trade_Routes>
+		</Trade_Routes>
 		<Home_Location> Rebel, Mon_Calamari </Home_Location>
         <Home_Location> Empire, Coruscant </Home_Location>
 		<Home_Location> Pentastar, Bastion </Home_Location>
@@ -850,23 +860,25 @@
 		<Home_Location> Warlords, Moorja </Home_Location> 
 		<Home_Location> EmpireoftheHand, Entralla </Home_Location>
 		<Home_Location> Hapes_Consortium, Hapes </Home_Location> 
+		<Home_Location> Hutt_Cartels, Nal_Hutta </Home_Location>
 	 
         <Starting_Active_Player> Zsinj_Empire </Starting_Active_Player>
 		
 		<Supports_Custom_Settings>True</Supports_Custom_Settings>
 		<Show_Completed_Tab>True</Show_Completed_Tab>
-  <Underworld_Story_Name>Conquests\Progressive\Story_Plots_Sandbox_Loader.xml</Underworld_Story_Name>
+		<Underworld_Story_Name>Conquests\Progressive\Story_Plots_Sandbox_Loader.xml</Underworld_Story_Name>
 		
 		<AI_Player_Control> Greater_Maldrood, None </AI_Player_Control>      
 		<AI_Player_Control> Rebel, GenericAI </AI_Player_Control>
 		<AI_Player_Control> EmpireoftheHand, None </AI_Player_Control>
 		<AI_Player_Control> Pentastar, PentastarAI </AI_Player_Control>
 		<AI_Player_Control> Zsinj_Empire, SandboxHuman </AI_Player_Control>	
-		<AI_Player_Control> Empire, None </AI_Player_Control>		
+		<AI_Player_Control> Empire, GenericAI </AI_Player_Control>		
 		<AI_Player_Control> Eriadu_Authority, EriaduAI </AI_Player_Control>			
 		<AI_Player_Control> Corporate_Sector, Hapes_Consortium </AI_Player_Control>		
 		<AI_Player_Control> Warlords, None </AI_Player_Control>						
 		<AI_Player_Control> Hapes_Consortium, None </AI_Player_Control>
+		<AI_Player_Control> Hutt_Cartels, None </AI_Player_Control>
 
 		<Markup_Filename>Empire, DefaultGalacticHints </Markup_Filename>
 		<Markup_Filename>Rebel, DefaultGalacticHints </Markup_Filename>
@@ -878,6 +890,7 @@
 		<Markup_Filename>Corporate_Sector, DefaultGalacticHints </Markup_Filename>		
 		<Markup_Filename>Warlords, DefaultGalacticHints </Markup_Filename>			
 		<Markup_Filename>Hapes_Consortium, DefaultGalacticHints </Markup_Filename>
+		<Markup_Filename>Hutt_Cartels, DefaultGalacticHints </Markup_Filename>
 				
 		
 		<Supports_Custom_Settings>True</Supports_Custom_Settings>		<Show_Completed_Tab>True</Show_Completed_Tab>
@@ -948,7 +961,7 @@
 		<Starting_Tech_Level> Eriadu_Authority, 1 </Starting_Tech_Level>
 		<Max_Tech_Level> Eriadu_Authority, 5 </Max_Tech_Level>
 	
-	<Starting_Forces> Eriadu_Authority, Eriadu, Placement_Dummy </Starting_Forces>
+		<Starting_Forces> Eriadu_Authority, Eriadu, Placement_Dummy </Starting_Forces>
 
 		<!-- ******************** FACTION: Corporate Sector ************** -->
 												
@@ -972,7 +985,7 @@
 		<Max_Tech_Level> Hapes_Consortium, 5 </Max_Tech_Level>
 		
 			
-		<!-- ******************** FACTION: Eriadu_Authority ************** -->
+		<!-- ******************** FACTION: Hutts ************** -->
 																				
 		<Starting_Credits> Hutt_Cartels,  0 </Starting_Credits>
 		<Starting_Tech_Level> Hutt_Cartels, 1 </Starting_Tech_Level>

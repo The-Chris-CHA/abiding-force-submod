@@ -1,0 +1,449 @@
+﻿<?xml version="1.0" ?>
+
+
+
+<!--***************************************************-->
+<!--***** CAMPAIGN: EQUAL FOOTING (Rebel Version) *****-->
+<!--***************************************************-->
+
+
+
+<Story>
+
+	<Event Name="Bacta_War_Start">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>0</Event_Param1>
+	</Event>
+
+ 	<Event Name="Unlock_Rylca_One">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>BUILDABLE_UNIT</Reward_Type>
+		<Reward_Param1>Dummy_Research_Rylca</Reward_Param1>
+		<Prereq>Bacta_War_Start</Prereq>
+	</Event>
+
+	<!--****************************************************************************-->
+	<!--*****  *****  *****        Borleias Branch           ************* **** *** -->
+	<!--****************************************************************************-->	
+
+	
+	<Event Name="Intro_Welcome">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_CONQUEST_ISARD_NR_BACTA_ONE</Reward_Param1>
+		<Reward_Param2>25</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6 />
+		<Reward_Param7 />
+		<Reward_Param8 />
+		<Reward_Param9>Wedge_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+		<Prereq>Bacta_War_Start</Prereq>
+	</Event>
+	
+	<Event Name="Intro_Dialog">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>15</Event_Param1>
+		<Story_Dialog>Dialog_Bacta_NR</Story_Dialog>
+		<Story_Chapter>0</Story_Chapter>
+		<Story_Tag>Intro_Tag</Story_Tag>
+		<Prereq>Bacta_War_Start</Prereq>
+	</Event>  
+  
+  	<Event Name="Objective_One">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>15</Event_Param1>
+		<Story_Dialog>Dialog_Bacta_War</Story_Dialog>
+		<Story_Chapter>0</Story_Chapter>
+		<Story_Dialog_Popup>True</Story_Dialog_Popup>	
+		<Story_Tag>Bacta_War_Story</Story_Tag>
+		<Prereq>Bacta_War_Start</Prereq>
+	</Event>
+	
+   <Event Name="Select_Borleias">
+      <Event_Type>STORY_ELAPSED</Event_Type>
+      <Event_Param1>0</Event_Param1>
+      <Reward_Type>SELECT_PLANET</Reward_Type>
+      <Reward_Param1>Borleias</Reward_Param1>
+      <Prereq>Bacta_War_Start</Prereq>
+   </Event>
+
+	   <Event Name="Borleias_Center_Camera">
+      <Event_Type>STORY_ELAPSED</Event_Type>
+      <Event_Param1>0</Event_Param1>
+	<Reward_Type>POSITION_CAMERA</Reward_Type>
+      <Reward_Param1>Borleias</Reward_Param1>
+      <Prereq>Bacta_War_Start</Prereq>
+   </Event>
+   
+   	   <Event Name="Borleias_Flash_Research">
+      <Event_Type>STORY_ELAPSED</Event_Type>
+      <Event_Param1>0</Event_Param1>
+	<Reward_Type>FLASH_PRODUCTION_CHOICE</Reward_Type>
+      <Reward_Param1>Dummy_Research_Rylca</Reward_Param1>
+      <Prereq>Bacta_War_Start</Prereq>
+   </Event>
+ 
+	
+	<!--***********************************************************************-->
+	<!--*******************  *****   Ryloth Branch ***** ****************** *** -->
+	<!--***********************************************************************-->	
+	
+	<Event Name="Research_Finish">
+		<Event_Type>STORY_CONSTRUCT</Event_Type>
+		<Event_Param1>Dummy_Research_Rylca</Event_Param1>
+		<Event_Param2>1</Event_Param2>
+		<Event_Param3>Rebel</Event_Param3>
+		<Reward_Type>DESTROY_OBJECT</Reward_Type>
+		<Reward_Param1>Dummy_Research_Rylca</Reward_Param1>
+		<Prereq>Bacta_War_Start</Prereq>
+	</Event>
+	
+	<Event Name="Goal_Completed_One">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>STORY_GOAL_COMPLETED</Reward_Type>
+		<Reward_Param1>Bacta_War_Story</Reward_Param1>
+		<Prereq>Research_Finish</Prereq>
+	</Event>
+	
+ 	<Event Name="Unlock_Ryll">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>BUILDABLE_UNIT</Reward_Type>
+		<Reward_Param1>Dummy_Ryll_Kor</Reward_Param1>
+		<Prereq>Research_Finish</Prereq>
+	</Event>
+	
+<Event Name="Ryloth_Direction">
+    <Event_Type>STORY_TRIGGER</Event_Type>
+    <Reward_Type>MULTIMEDIA</Reward_Type>
+    <Reward_Param1>TEXT_CONQUEST_ISARD_NR_BACTA_TWO</Reward_Param1>
+    <Reward_Param2>25</Reward_Param2>
+    <Reward_Param3 />
+    <Reward_Param4 />
+    <Reward_Param5 />
+    <Reward_Param6 />
+    <Reward_Param7 />
+    <Reward_Param8 />
+    <Reward_Param9>Wedge_Loop</Reward_Param9>
+    <Reward_Param10>0</Reward_Param10>
+	<Prereq>Research_Finish</Prereq>
+  </Event>
+  
+    <Event Name="Objective_Two">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>15</Event_Param1>
+		<Story_Dialog>Dialog_Bacta_War</Story_Dialog>
+		<Story_Chapter>1</Story_Chapter>
+		<Story_Dialog_Popup>True</Story_Dialog_Popup>	
+		<Story_Tag>Bacta_War_Story_Two</Story_Tag>
+		<Prereq>Research_Finish</Prereq>
+	</Event>
+	
+   <Event Name="Select_Ryloth">
+      <Event_Type>STORY_ELAPSED</Event_Type>
+      <Event_Param1>0</Event_Param1>
+      <Reward_Type>SELECT_PLANET</Reward_Type>
+      <Reward_Param1>Ryloth</Reward_Param1>
+      <Prereq>Research_Finish</Prereq>
+   </Event>
+
+	   <Event Name="Ryloth_Center_Camera">
+      <Event_Type>STORY_ELAPSED</Event_Type>
+      <Event_Param1>0</Event_Param1>
+	<Reward_Type>POSITION_CAMERA</Reward_Type>
+      <Reward_Param1>Ryloth</Reward_Param1>
+      <Prereq>Research_Finish</Prereq>
+   </Event>
+
+   	<!--***********************************************************************-->
+	<!--**************************   Final Cure   **************************** -->
+	<!--***********************************************************************-->	
+	
+	<Event Name="Ryll_Finish">
+		<Event_Type>STORY_CONSTRUCT</Event_Type>
+		<Event_Param1>Dummy_Ryll_Kor</Event_Param1>
+		<Event_Param2>1</Event_Param2>
+		<Event_Param3>Rebel</Event_Param3>
+		<Prereq>Bacta_War_start</Prereq>
+	</Event>
+			
+	<Event Name="Goal_Completed_Two">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>STORY_GOAL_COMPLETED</Reward_Type>
+		<Reward_Param1>Bacta_War_Story_Two</Reward_Param1>
+		<Prereq>Ryll_Finish</Prereq>
+	</Event>
+	
+	 	<Event Name="Unlock_Ryll_kor">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>BUILDABLE_UNIT</Reward_Type>
+		<Reward_Param1>Dummy_Ryll_Kor</Reward_Param1>
+		<Prereq>Ryll_Finish</Prereq>
+	</Event>
+
+<Event Name="Cure_Direction">
+    <Event_Type>STORY_TRIGGER</Event_Type>
+    <Reward_Type>MULTIMEDIA</Reward_Type>
+    <Reward_Param1>TEXT_CONQUEST_ISARD_NR_BACTA_THREE</Reward_Param1>
+    <Reward_Param2>25</Reward_Param2>
+    <Reward_Param3 />
+    <Reward_Param4 />
+    <Reward_Param5 />
+    <Reward_Param6 />
+    <Reward_Param7 />
+    <Reward_Param8 />
+    <Reward_Param9>Wedge_Loop</Reward_Param9>
+    <Reward_Param10>0</Reward_Param10>
+	<Prereq>Ryll_Finish</Prereq>
+  </Event>
+  
+     <Event Name="Objective_Three">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>15</Event_Param1>
+		<Story_Dialog>Dialog_Bacta_War</Story_Dialog>
+		<Story_Chapter>2</Story_Chapter>
+		<Story_Dialog_Popup>True</Story_Dialog_Popup>	
+		<Story_Tag>Bacta_War_Story_Three</Story_Tag>
+		<Prereq>Ryll_Finish</Prereq>
+	</Event>
+	
+   <Event Name="Select_Borleias_Two">
+      <Event_Type>STORY_ELAPSED</Event_Type>
+      <Event_Param1>0</Event_Param1>
+      <Reward_Type>SELECT_PLANET</Reward_Type>
+      <Reward_Param1>Ryloth</Reward_Param1>
+      <Prereq>Ryll_Finish</Prereq>
+   </Event>
+
+	   <Event Name="Borleias_Center_Camera">
+      <Event_Type>STORY_ELAPSED</Event_Type>
+      <Event_Param1>0</Event_Param1>
+	<Reward_Type>POSITION_CAMERA</Reward_Type>
+      <Reward_Param1>Borleias</Reward_Param1>
+      <Prereq>Ryll_Finish</Prereq>
+   </Event>
+
+	<!--***********************************************************************-->
+	<!--**************************   On the Way   **************************** -->
+	<!--***********************************************************************-->	
+	
+		<Event Name="Move_To_Borleias">
+		<Event_Type>STORY_ENTER</Event_Type>
+		<Event_Param1>Borleias</Event_Param1>
+		<Event_Param2>FILTER_FRIENDLY_ONLY</Event_Param2>
+		<Event_Param3>Mirax_Team</Event_Param3>
+		<Reward_Type>BUILDABLE_UNIT</Reward_Type>
+		<Reward_Param1>Dummy_Produce_Rylca</Reward_Param1>
+		<Prereq>Ryll_Finish</Prereq>
+	</Event>
+	
+	<Event Name="Despawn_Ryll_Korr">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>REMOVE_UNIT</Reward_Type>
+		<Reward_Param1>Dummy_Ryll_Kor</Reward_Param1>
+		<Prereq>Ryll_Finish</Prereq>
+	</Event>
+	
+	<Event Name="Spawn_Mirax">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Mirax_Team</Reward_Param1>
+		<Reward_Param2>Ryloth</Reward_Param2>
+		<Prereq>Ryll_Finish</Prereq>
+	</Event>
+	
+	<Event Name="Unlock_Taldira">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>BUILDABLE_UNIT</Reward_Type>
+		<Reward_Param1>TalDira_Location_Set</Reward_Param1>
+		<Prereq>Ryll_Finish</Prereq>
+	</Event>
+	
+	<Event Name="Spawn_Booster">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Errant_Venture_Full</Reward_Param1>
+		<Reward_Param2>Kashyyyk</Reward_Param2>
+		<Prereq>Ryll_Finish</Prereq>
+	</Event>
+	
+	<Event Name="Goal_Completed_Three">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>STORY_GOAL_COMPLETED</Reward_Type>
+		<Reward_Param1>Bacta_War_Story_Three</Reward_Param1>
+		<Prereq>Move_To_Borleias</Prereq>
+	</Event>
+	
+	<Event Name="Cure_Creation_Direction">
+    <Event_Type>STORY_TRIGGER</Event_Type>
+    <Reward_Type>MULTIMEDIA</Reward_Type>
+    <Reward_Param1>TEXT_CONQUEST_ISARD_NR_BACTA_FOUR</Reward_Param1>
+    <Reward_Param2>10</Reward_Param2>
+    <Reward_Param3 />
+    <Reward_Param4 />
+    <Reward_Param5 />
+    <Reward_Param6 />
+    <Reward_Param7 />
+    <Reward_Param8 />
+    <Reward_Param9>Wedge_Loop</Reward_Param9>
+    <Reward_Param10>0</Reward_Param10>
+	<Prereq>Move_To_Borleias</Prereq>
+  </Event>
+  
+    
+     <Event Name="Objective_Four">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>15</Event_Param1>
+		<Story_Dialog>Dialog_Bacta_War</Story_Dialog>
+		<Story_Chapter>3</Story_Chapter>
+		<Story_Dialog_Popup>True</Story_Dialog_Popup>	
+		<Story_Tag>Bacta_War_Story_Four</Story_Tag>
+		<Prereq>Move_To_Borleias</Prereq>
+	</Event>
+	
+  
+     	<!--***********************************************************************-->
+	<!--**************************   Final Cure   **************************** -->
+	<!--***********************************************************************-->	
+	
+	<Event Name="Rylca_Finish">
+		<Event_Type>STORY_CONSTRUCT</Event_Type>
+		<Event_Param1>Dummy_Produce_Rylca</Event_Param1>
+		<Event_Param2>1</Event_Param2>
+		<Event_Param3>Rebel</Event_Param3>
+		<Reward_Type>REMOVE_UNIT</Reward_Type>
+		<Reward_Param1>Dummy_Produce_Rylca</Reward_Param1>
+		<Prereq>Bacta_War_start</Prereq>
+	</Event>
+	
+		<Event Name="Cure_Creation">
+    <Event_Type>STORY_TRIGGER</Event_Type>
+    <Reward_Type>MULTIMEDIA</Reward_Type>
+    <Reward_Param1>TEXT_CONQUEST_ISARD_NR_BACTA_FIVE</Reward_Param1>
+    <Reward_Param2>10</Reward_Param2>
+    <Reward_Param3 />
+    <Reward_Param4 />
+    <Reward_Param5 />
+    <Reward_Param6 />
+    <Reward_Param7 />
+    <Reward_Param8 />
+    <Reward_Param9>Wedge_Loop</Reward_Param9>
+    <Reward_Param10>0</Reward_Param10>
+	<Prereq>Rylca_Finish</Prereq>
+  </Event>
+  
+
+  	<Event Name="Goal_Completed_Four">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>STORY_GOAL_COMPLETED</Reward_Type>
+		<Reward_Param1>Bacta_War_Story_Four</Reward_Param1>
+		<Prereq>Rylca_Finish</Prereq>
+	</Event>
+	
+	<Event Name="Yonka_Defect_Start">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>500</Event_Param1>
+		<Branch>Yonka_Defects_Branch</Branch>
+		<Prereq>Bacta_War_Start</Prereq>
+	</Event>
+	
+	<Event Name="Yonka_Defects_Disable">
+		<Event_Type>STORY_TACTICAL_DESTROY</Event_Type>
+  		<Event_Param1>Yonka_Avarice</Event_Param1>
+		<Event_Param2></Event_Param2>
+		<Event_Param3>1</Event_Param3>
+		<Reward_Type>DISABLE_BRANCH</Reward_Type>
+		<Reward_Param1>Yonka_Defects_Branch</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+		<Branch>Yonka_Disable_Branch</Branch>
+		<Prereq>Bacta_War_start</Prereq>
+	</Event>
+	
+	<Event Name="Yonka_Lock">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>LOCK_UNIT</Reward_Type>
+		<Reward_Param1>Dummy_Yonka_Bribe</Reward_Param1>
+		<Branch>Yonka_Disable_Branch</Branch>
+		<Prereq>Yonka_Defects_Disable</Prereq>
+	</Event>
+	
+	<Event Name="Yonka_Intro_Dialog">
+    <Event_Type>STORY_TRIGGER</Event_Type>
+    <Reward_Type>MULTIMEDIA</Reward_Type>
+    <Reward_Param1>TEXT_CONQUEST_ISARD_YONKA_INTRO</Reward_Param1>
+    <Reward_Param2>10</Reward_Param2>
+    <Reward_Param3 />
+    <Reward_Param4 />
+    <Reward_Param5 />
+    <Reward_Param6 />
+    <Reward_Param7 />
+    <Reward_Param8 />
+    <Reward_Param9>Wedge_Loop</Reward_Param9>
+    <Reward_Param10>0</Reward_Param10>
+	<Prereq>Yonka_Defect_Start</Prereq>
+  </Event>
+	
+	<Event Name="Unlock_Yonka_Bribe">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>BUILDABLE_UNIT</Reward_Type>
+		<Reward_Param1>Dummy_Yonka_Bribe</Reward_Param1>
+		<Branch>Yonka_Defects_Branch</Branch>
+		<Prereq>Yonka_Defect_Start</Prereq>
+	</Event>
+
+	<Event Name="Yonka_Finish">
+		<Event_Type>STORY_CONSTRUCT</Event_Type>
+		<Event_Param1>Dummy_Yonka_Bribe</Event_Param1>
+		<Event_Param2>1</Event_Param2>
+		<Event_Param3>Rebel</Event_Param3>
+		<Reward_Type>DISABLE_BRANCH</Reward_Type>
+		<Reward_Param1>Yonka_Disable_Branch</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>		
+		<Prereq>Bacta_War_start</Prereq>
+	</Event>
+	
+	<Event Name="Despawn_Yonka_Bribe">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>REMOVE_UNIT</Reward_Type>
+		<Reward_Param1>Dummy_Yonka_Bribe</Reward_Param1>
+		<Prereq>Yonka_Finish</Prereq>
+	</Event>
+	
+	<Event Name="Yonka_Deserts">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>5</Event_Param1>
+		<Reward_Type>REMOVE_UNIT</Reward_Type>
+		<Reward_Param1>Yonka_Avarice</Reward_Param1>
+		<Branch>Yonka_Defects_Branch</Branch>
+		<Prereq>Yonka_Finish</Prereq>
+	</Event>
+	
+	<Event Name="Yonka_Spawn">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>5</Event_Param1>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Yonka_Freedom</Reward_Param1>
+		<Reward_Param2>Coruscant</Reward_Param2>
+		<Branch>Yonka_Defects_Branch</Branch>
+		<Prereq>Yonka_Finish</Prereq>
+	</Event>
+	
+	<Event Name="Yonka_Defect_Dialog">
+    <Event_Type>STORY_TRIGGER</Event_Type>
+    <Reward_Type>MULTIMEDIA</Reward_Type>
+    <Reward_Param1>TEXT_CONQUEST_ISARD_YONKA_DEFECTS</Reward_Param1>
+    <Reward_Param2>10</Reward_Param2>
+    <Reward_Param3 />
+    <Reward_Param4 />
+    <Reward_Param5 />
+    <Reward_Param6 />
+    <Reward_Param7 />
+    <Reward_Param8 />
+    <Reward_Param9>Wedge_Loop</Reward_Param9>
+    <Reward_Param10>0</Reward_Param10>
+	<Prereq>Yonka_Finish</Prereq>
+  </Event>
+
+</Story>

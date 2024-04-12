@@ -32,10 +32,12 @@ return {
 	["BULWARK_III"] = 0,
 	["BLUEDIVER"] = 0,
 	["MEDIATOR"] = 0,
+	["MINI_VISCOUNT"] = 0,
 	["VISCOUNT"] = 0,
 	-- Heroes
 	["ERRANT_VENTURE_TWO"] = 0,
 	["WEDGE_LUSANKYA"] = 0,
+	["ACKBAR_GUARDIAN"] = 0,
 	-- Submods
 	["MC75"] = 0,
 	["STARHAWK_MK1"] = 0,

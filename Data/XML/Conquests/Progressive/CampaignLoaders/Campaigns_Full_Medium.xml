@@ -1,14 +1,9 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-
-<Campaigns_All>
-<!-- ******************************************************************** -->
-<!-- ******************** SANDBOX CAMPAIGN "All Leaders" ************** -->
-<!-- ******************************************************************** -->
+﻿<?xml version="1.0"?>
+<Campaigns>
 
 	<Campaign Name="Full_Galaxy_Medium_Remnant">
-	
-	
-		<Campaign_Set>Full_Galaxy_Medium</Campaign_Set>
+
+		<Campaign_Set> Full_Galaxy_Medium </Campaign_Set>
 		<Sort_Order>006</Sort_Order>
 
         <Text_ID> TEXT_CAMPAIGN_SINGLE_FULL_MEDIUM </Text_ID>
@@ -17,599 +12,71 @@
         <Camera_Shift_X> 40.0 </Camera_Shift_X>
         <Camera_Shift_Y> 0.0 </Camera_Shift_Y>
         <Camera_Distance> 1200.0 </Camera_Distance>
-		
-		
-	<Locations>
+
+		<Locations>
 			Full_Galaxy_Medium
-	</Locations>
+		</Locations>
 
 		<Trade_Routes>
-		
-			
-</Trade_Routes>
-	
-	
-		<Home_Location> Rebel, Endor </Home_Location>
+
+		</Trade_Routes>
+		<Home_Location> Rebel, Mon_Calamari </Home_Location>
         <Home_Location> Empire, Coruscant </Home_Location>
-        <Home_Location> EmpireoftheHand, Nirauan </Home_Location>
-		<Home_Location> Pentastar, Entralla </Home_Location>
+		<Home_Location> Pentastar, Bastion </Home_Location>
 		<Home_Location> Greater_Maldrood, Centares </Home_Location>
 		<Home_Location> Eriadu_Authority, Eriadu </Home_Location>
-		<Home_Location> Zsinj_Empire, Serenno </Home_Location>
+		<Home_Location> Zsinj_Empire, Dathomir </Home_Location>
 		<Home_Location> Corporate_Sector, Etti </Home_Location> 
 		<Home_Location> Warlords, Moorja </Home_Location> 
-		<Home_Location> Hutt_Cartels, Nal_Hutta </Home_Location> 
+		<Home_Location> EmpireoftheHand, Entralla </Home_Location>
 		<Home_Location> Hapes_Consortium, Hapes </Home_Location>
-		
-		<Starting_Active_Player> Empire </Starting_Active_Player>
-
-		
-
-        <Underworld_Story_Name>Conquests\Progressive\Story_Plots_Sandbox_Loader.xml</Underworld_Story_Name>
-		
-
-		
-		<AI_Player_Control> Empire, SandboxHuman </AI_Player_Control>
-		<AI_Player_Control> Pentastar, PentastarAI </AI_Player_Control>
-		<AI_Player_Control> Rebel, GenericAI </AI_Player_Control>
-		<AI_Player_Control> Zsinj_Empire, WarlordAI </AI_Player_Control>
-		<AI_Player_Control> EmpireoftheHand, EotHAI </AI_Player_Control>
-		<AI_Player_Control> Hapes_Consortium, None </AI_Player_Control>
-		<AI_Player_Control> Greater_Maldrood, WarlordAI </AI_Player_Control>      
-		<AI_Player_Control> Eriadu_Authority, EriaduAI </AI_Player_Control>				
-		<AI_Player_Control> Corporate_Sector, CorporateAI </AI_Player_Control>		
-		<AI_Player_Control> Warlords, None </AI_Player_Control>				
-				
-
-		<Markup_Filename>Empire, DefaultGalacticHints </Markup_Filename>
-		<Markup_Filename>Rebel, DefaultGalacticHints </Markup_Filename>
-		<Markup_Filename>EmpireoftheHand, DefaultGalacticHints </Markup_Filename>
-		<Markup_Filename>Zsinj_Empire, DefaultGalacticHints </Markup_Filename>
-		<Markup_Filename>Greater_Maldrood, DefaultMaldroodHints </Markup_Filename>			
-		<Markup_Filename>Pentastar, DefaultGalacticHints </Markup_Filename>
-		<Markup_Filename>Eriadu_Authority, DefaultEriaduHints </Markup_Filename>				
-		<Markup_Filename>Corporate_Sector, DefaultGalacticHints </Markup_Filename>		
-		<Markup_Filename>Warlords, DefaultGalacticHints </Markup_Filename>			
-		<Markup_Filename>Hapes_Consortium, DefaultGalacticHints </Markup_Filename>
-		
-
-		<Supports_Custom_Settings>True</Supports_Custom_Settings>		<Show_Completed_Tab>True</Show_Completed_Tab>
-		
-		<Human_Victory_Conditions>
-			Galactic_Opponent_Controls_No_Planets
-		</Human_Victory_Conditions>
-
-		<AI_Victory_Conditions>
-				Galactic_All_Planets_Controlled
-		</AI_Victory_Conditions>
-		
-		<!-- ******************** FACTION: New Republic ************** -->
-		
-		<Starting_Credits> Rebel,  0 </Starting_Credits>
-		<Starting_Tech_Level> Rebel, 0 </Starting_Tech_Level>
-		<Max_Tech_Level> Rebel, 4 </Max_Tech_Level>
-		
-		
-		
-			
-		<!-- ******************** FACTION: Empire ************** -->
-		
-		<Starting_Credits> Empire,  0 </Starting_Credits>
-		<Starting_Tech_Level> Empire, 1 </Starting_Tech_Level>
-		<Max_Tech_Level> Empire, 5 </Max_Tech_Level>
-		
-		
-
-			
-		<!-- ******************** FACTION: Hand ************** -->
-				
-		<Starting_Credits> EmpireoftheHand,  0 </Starting_Credits>
-		<Starting_Tech_Level> EmpireoftheHand, 1 </Starting_Tech_Level>
-		<Max_Tech_Level> EmpireoftheHand, 5 </Max_Tech_Level>
-		
-		
-	
-		
-		<!-- ******************** FACTION: Zsinj ************** -->
-						
-		<Starting_Credits> Zsinj_Empire,  0 </Starting_Credits>
-		<Starting_Tech_Level> Zsinj_Empire, 1 </Starting_Tech_Level>
-		<Max_Tech_Level> Zsinj_Empire, 5 </Max_Tech_Level>
-		
-			
-		
-
-			<!-- ******************** FACTION: Maldrood ************** -->
-								
-		<Starting_Credits> Greater_Maldrood,  0 </Starting_Credits>
-		<Starting_Tech_Level> Greater_Maldrood, 1 </Starting_Tech_Level>
-		<Max_Tech_Level> Greater_Maldrood, 5 </Max_Tech_Level>
-		
-		<!-- Hakassi Space Forces -->
-
-		
-		
-		
-		<!-- ******************** FACTION: Pentastar ************** -->
-				
-		<Starting_Credits> Pentastar,  0 </Starting_Credits>
-		<Starting_Tech_Level> Pentastar, 1 </Starting_Tech_Level>
-		<Max_Tech_Level> Pentastar, 5 </Max_Tech_Level>
-		
-
-		
-		
-		
-		
-		<!-- ******************** FACTION: Eriadu ************** -->
-						
-		<Starting_Credits> Eriadu_Authority,  0 </Starting_Credits>
-		<Starting_Tech_Level> Eriadu_Authority, 1 </Starting_Tech_Level>
-		<Max_Tech_Level> Eriadu_Authority, 4 </Max_Tech_Level>
-		
-				
-	
-		
-	
-	
-		
-		<!-- ******************** FACTION: Corporate Sector ************** -->
-												
-		<Starting_Credits> Corporate_Sector,  0 </Starting_Credits>
-		<Starting_Tech_Level> Corporate_Sector, 1 </Starting_Tech_Level>
-		<Max_Tech_Level> Corporate_Sector, 5 </Max_Tech_Level>
-		
-		
-		
-		<!-- ******************** FACTION: Moorja ************** DONE -->
-														
-		<Starting_Credits> Warlords,  45000 </Starting_Credits>
-		<Starting_Tech_Level> Warlords, 1 </Starting_Tech_Level>
-		<Max_Tech_Level> Warlords, 5 </Max_Tech_Level>
-		
-
-		
-		<!-- ******************** FACTION: Hapes ************** -->
-																		
-		<Starting_Credits> Hapes_Consortium,  0 </Starting_Credits>
-		<Starting_Tech_Level> Hapes_Consortium, 1 </Starting_Tech_Level>
-		<Max_Tech_Level> Hapes_Consortium, 5 </Max_Tech_Level>
-		
-			
-		<!-- ******************** FACTION: Eriadu_Authority ************** -->
-																				
-		<Starting_Credits> Hutt_Cartels,  0 </Starting_Credits>
-		<Starting_Tech_Level> Hutt_Cartels, 1 </Starting_Tech_Level>
-		<Max_Tech_Level> Hutt_Cartels, 5 </Max_Tech_Level>
-		
-				
-
-	</Campaign>
-	
-	<Campaign Name="Full_Galaxy_Medium_Rebel">
-	
-	
-		<Campaign_Set>Full_Galaxy_Medium</Campaign_Set>
-		<Sort_Order>006</Sort_Order>
-
-        <Text_ID> TEXT_CAMPAIGN_SINGLE_FULL_MEDIUM </Text_ID>
-        <Description_Text> TEXT_CAMPAIGN_SINGLE_DESCRIPTION_FULL_MEDIUM </Description_Text>
-
-        <Camera_Shift_X> 40.0 </Camera_Shift_X>
-        <Camera_Shift_Y> 0.0 </Camera_Shift_Y>
-        <Camera_Distance> 1200.0 </Camera_Distance>
-		
-		
-	<Locations>
-			Full_Galaxy_Medium
-	</Locations>
-
-		<Trade_Routes>
-		
-			
-</Trade_Routes>
-	
-		<Home_Location> Rebel, Endor </Home_Location>
-        <Home_Location> Empire, Coruscant </Home_Location>
-        <Home_Location> EmpireoftheHand, Nirauan </Home_Location>
-		<Home_Location> Pentastar, Entralla </Home_Location>
-		<Home_Location> Greater_Maldrood, Centares </Home_Location>
-		<Home_Location> Eriadu_Authority, Eriadu </Home_Location>
-		<Home_Location> Zsinj_Empire, Serenno </Home_Location>
-		<Home_Location> Corporate_Sector, Etti </Home_Location> 
-		<Home_Location> Warlords, Moorja </Home_Location> 
 		<Home_Location> Hutt_Cartels, Nal_Hutta </Home_Location> 
-		<Home_Location> Hapes_Consortium, Hapes </Home_Location>
+	 
+        <Starting_Active_Player> Empire </Starting_Active_Player>
 		
-		<Starting_Active_Player> Rebel </Starting_Active_Player>
-
-		
-  <Underworld_Story_Name>Conquests\Progressive\Story_Plots_Sandbox_Loader.xml</Underworld_Story_Name>
-  
-		<AI_Player_Control> Empire, RemnantAI </AI_Player_Control>
-		<AI_Player_Control> Pentastar, PentastarAI </AI_Player_Control>
-		<AI_Player_Control> Rebel, SandboxHuman </AI_Player_Control>
-		<AI_Player_Control> Zsinj_Empire, WarlordAI </AI_Player_Control>
-		<AI_Player_Control> EmpireoftheHand, EotHAI </AI_Player_Control>
-		<AI_Player_Control> Hapes_Consortium, None </AI_Player_Control>
-		<AI_Player_Control> Greater_Maldrood, WarlordAI </AI_Player_Control>      
-		<AI_Player_Control> Eriadu_Authority, EriaduAI </AI_Player_Control>				
-		<AI_Player_Control> Corporate_Sector, CorporateAI </AI_Player_Control>		
-		<AI_Player_Control> Warlords, None </AI_Player_Control>				
-				
-
-		<Markup_Filename>Empire, DefaultGalacticHints </Markup_Filename>
-		<Markup_Filename>Rebel, DefaultGalacticHints </Markup_Filename>
-		<Markup_Filename>EmpireoftheHand, DefaultGalacticHints </Markup_Filename>
-		<Markup_Filename>Zsinj_Empire, DefaultGalacticHints </Markup_Filename>
-		<Markup_Filename>Greater_Maldrood, DefaultMaldroodHints </Markup_Filename>			
-		<Markup_Filename>Pentastar, DefaultGalacticHints </Markup_Filename>
-		<Markup_Filename>Eriadu_Authority, DefaultEriaduHints </Markup_Filename>				
-		<Markup_Filename>Corporate_Sector, DefaultGalacticHints </Markup_Filename>		
-		<Markup_Filename>Warlords, DefaultGalacticHints </Markup_Filename>			
-		<Markup_Filename>Hapes_Consortium, DefaultGalacticHints </Markup_Filename>
-		
-
-		<Supports_Custom_Settings>True</Supports_Custom_Settings>		<Show_Completed_Tab>True</Show_Completed_Tab>
-		
-		<Human_Victory_Conditions>
-			Galactic_Opponent_Controls_No_Planets
-		</Human_Victory_Conditions>
-
-		<AI_Victory_Conditions>
-				Galactic_All_Planets_Controlled
-		</AI_Victory_Conditions>
-		
-		<!-- ******************** FACTION: New Republic ************** -->
-		
-		<Starting_Credits> Rebel,  0 </Starting_Credits>
-		<Starting_Tech_Level> Rebel, 0 </Starting_Tech_Level>
-		<Max_Tech_Level> Rebel, 4 </Max_Tech_Level>
-		
-		
-		
-			
-		<!-- ******************** FACTION: Empire ************** -->
-		
-		<Starting_Credits> Empire,  0 </Starting_Credits>
-		<Starting_Tech_Level> Empire, 1 </Starting_Tech_Level>
-		<Max_Tech_Level> Empire, 5 </Max_Tech_Level>
-		
-		
-
-			
-		<!-- ******************** FACTION: Hand ************** -->
-				
-		<Starting_Credits> EmpireoftheHand,  0 </Starting_Credits>
-		<Starting_Tech_Level> EmpireoftheHand, 1 </Starting_Tech_Level>
-		<Max_Tech_Level> EmpireoftheHand, 5 </Max_Tech_Level>
-		
-		
-	
-		
-		<!-- ******************** FACTION: Zsinj ************** -->
-						
-		<Starting_Credits> Zsinj_Empire,  0 </Starting_Credits>
-		<Starting_Tech_Level> Zsinj_Empire, 1 </Starting_Tech_Level>
-		<Max_Tech_Level> Zsinj_Empire, 5 </Max_Tech_Level>
-		
-			
-		
-
-			<!-- ******************** FACTION: Maldrood ************** -->
-								
-		<Starting_Credits> Greater_Maldrood,  0 </Starting_Credits>
-		<Starting_Tech_Level> Greater_Maldrood, 1 </Starting_Tech_Level>
-		<Max_Tech_Level> Greater_Maldrood, 5 </Max_Tech_Level>
-		
-		<!-- Hakassi Space Forces -->
-
-		
-		
-		
-		<!-- ******************** FACTION: Pentastar ************** -->
-				
-		<Starting_Credits> Pentastar,  0 </Starting_Credits>
-		<Starting_Tech_Level> Pentastar, 1 </Starting_Tech_Level>
-		<Max_Tech_Level> Pentastar, 5 </Max_Tech_Level>
-		
-
-		
-		
-		
-		
-		<!-- ******************** FACTION: Eriadu ************** -->
-						
-		<Starting_Credits> Eriadu_Authority,  0 </Starting_Credits>
-		<Starting_Tech_Level> Eriadu_Authority, 1 </Starting_Tech_Level>
-		<Max_Tech_Level> Eriadu_Authority, 4 </Max_Tech_Level>
-		
-				
-	
-		
-	
-	
-		
-		<!-- ******************** FACTION: Corporate Sector ************** -->
-												
-		<Starting_Credits> Corporate_Sector,  0 </Starting_Credits>
-		<Starting_Tech_Level> Corporate_Sector, 1 </Starting_Tech_Level>
-		<Max_Tech_Level> Corporate_Sector, 5 </Max_Tech_Level>
-		
-		
-		
-		<!-- ******************** FACTION: Moorja ************** DONE -->
-														
-		<Starting_Credits> Warlords,  45000 </Starting_Credits>
-		<Starting_Tech_Level> Warlords, 1 </Starting_Tech_Level>
-		<Max_Tech_Level> Warlords, 5 </Max_Tech_Level>
-		
-
-		
-		<!-- ******************** FACTION: Hapes ************** -->
-																		
-		<Starting_Credits> Hapes_Consortium,  0 </Starting_Credits>
-		<Starting_Tech_Level> Hapes_Consortium, 1 </Starting_Tech_Level>
-		<Max_Tech_Level> Hapes_Consortium, 5 </Max_Tech_Level>
-		
-			
-		<!-- ******************** FACTION: Eriadu_Authority ************** -->
-																				
-		<Starting_Credits> Hutt_Cartels,  0 </Starting_Credits>
-		<Starting_Tech_Level> Hutt_Cartels, 1 </Starting_Tech_Level>
-		<Max_Tech_Level> Hutt_Cartels, 5 </Max_Tech_Level>
-		
-	</Campaign>
-	
-	<Campaign Name="Full_Galaxy_Medium_EotH">
-	
-	
-		<Campaign_Set>Full_Galaxy_Medium</Campaign_Set>
-		<Sort_Order>006</Sort_Order>
-
-        <Text_ID> TEXT_CAMPAIGN_SINGLE_FULL_MEDIUM </Text_ID>
-        <Description_Text> TEXT_CAMPAIGN_SINGLE_DESCRIPTION_FULL_MEDIUM </Description_Text>
-
-        <Camera_Shift_X> 40.0 </Camera_Shift_X>
-        <Camera_Shift_Y> 0.0 </Camera_Shift_Y>
-        <Camera_Distance> 1200.0 </Camera_Distance>
-		
-		
-	<Locations>
-			Full_Galaxy_Medium
-	</Locations>
-
-		<Trade_Routes>
-		
-			
-</Trade_Routes>
-	
-		<Home_Location> Rebel, Endor </Home_Location>
-        <Home_Location> Empire, Coruscant </Home_Location>
-        <Home_Location> EmpireoftheHand, Nirauan </Home_Location>
-		<Home_Location> Pentastar, Entralla </Home_Location>
-		<Home_Location> Greater_Maldrood, Centares </Home_Location>
-		<Home_Location> Eriadu_Authority, Eriadu </Home_Location>
-		<Home_Location> Zsinj_Empire, Serenno </Home_Location>
-		<Home_Location> Corporate_Sector, Etti </Home_Location> 
-		<Home_Location> Warlords, Moorja </Home_Location> 
-		<Home_Location> Hutt_Cartels, Nal_Hutta </Home_Location> 
-		<Home_Location> Hapes_Consortium, Hapes </Home_Location>
-		
-		<Starting_Active_Player> EmpireoftheHand </Starting_Active_Player>
-
-		
-	  <Underworld_Story_Name>Conquests\Progressive\Story_Plots_Sandbox_Loader.xml</Underworld_Story_Name>
-		
-		<AI_Player_Control> Empire, RemnantAI </AI_Player_Control>
-		<AI_Player_Control> Pentastar, PentastarAI </AI_Player_Control>
-		<AI_Player_Control> Rebel, GenericAI </AI_Player_Control>
-		<AI_Player_Control> Zsinj_Empire, WarlordAI </AI_Player_Control>
-		<AI_Player_Control> EmpireoftheHand, SandboxHuman </AI_Player_Control>
-		<AI_Player_Control> Hapes_Consortium, None </AI_Player_Control>
-		<AI_Player_Control> Greater_Maldrood, WarlordAI </AI_Player_Control>      
-		<AI_Player_Control> Eriadu_Authority, EriaduAI </AI_Player_Control>				
-		<AI_Player_Control> Corporate_Sector, CorporateAI </AI_Player_Control>		
-		<AI_Player_Control> Warlords, None </AI_Player_Control>				
-				
-
-		<Markup_Filename>Empire, DefaultGalacticHints </Markup_Filename>
-		<Markup_Filename>Rebel, DefaultGalacticHints </Markup_Filename>
-		<Markup_Filename>EmpireoftheHand, DefaultGalacticHints </Markup_Filename>
-		<Markup_Filename>Zsinj_Empire, DefaultGalacticHints </Markup_Filename>
-		<Markup_Filename>Greater_Maldrood, DefaultMaldroodHints </Markup_Filename>			
-		<Markup_Filename>Pentastar, DefaultGalacticHints </Markup_Filename>
-		<Markup_Filename>Eriadu_Authority, DefaultEriaduHints </Markup_Filename>				
-		<Markup_Filename>Corporate_Sector, DefaultGalacticHints </Markup_Filename>		
-		<Markup_Filename>Warlords, DefaultGalacticHints </Markup_Filename>			
-		<Markup_Filename>Hapes_Consortium, DefaultGalacticHints </Markup_Filename>
-		
-
-		<Supports_Custom_Settings>True</Supports_Custom_Settings>		<Show_Completed_Tab>True</Show_Completed_Tab>
-		
-		<Human_Victory_Conditions>
-			Galactic_Opponent_Controls_No_Planets
-		</Human_Victory_Conditions>
-
-		<AI_Victory_Conditions>
-				Galactic_All_Planets_Controlled
-		</AI_Victory_Conditions>
-		
-		<!-- ******************** FACTION: New Republic ************** -->
-		
-		<Starting_Credits> Rebel,  0 </Starting_Credits>
-		<Starting_Tech_Level> Rebel, 0 </Starting_Tech_Level>
-		<Max_Tech_Level> Rebel, 4 </Max_Tech_Level>
-		
-		
-		
-			
-		<!-- ******************** FACTION: Empire ************** -->
-		
-		<Starting_Credits> Empire,  0 </Starting_Credits>
-		<Starting_Tech_Level> Empire, 1 </Starting_Tech_Level>
-		<Max_Tech_Level> Empire, 5 </Max_Tech_Level>
-		
-		
-
-			
-		<!-- ******************** FACTION: Hand ************** -->
-				
-		<Starting_Credits> EmpireoftheHand,  0 </Starting_Credits>
-		<Starting_Tech_Level> EmpireoftheHand, 1 </Starting_Tech_Level>
-		<Max_Tech_Level> EmpireoftheHand, 5 </Max_Tech_Level>
-		
-		
-	
-		
-		<!-- ******************** FACTION: Zsinj ************** -->
-						
-		<Starting_Credits> Zsinj_Empire,  0 </Starting_Credits>
-		<Starting_Tech_Level> Zsinj_Empire, 1 </Starting_Tech_Level>
-		<Max_Tech_Level> Zsinj_Empire, 5 </Max_Tech_Level>
-		
-			
-		
-
-			<!-- ******************** FACTION: Maldrood ************** -->
-								
-		<Starting_Credits> Greater_Maldrood,  0 </Starting_Credits>
-		<Starting_Tech_Level> Greater_Maldrood, 1 </Starting_Tech_Level>
-		<Max_Tech_Level> Greater_Maldrood, 5 </Max_Tech_Level>
-		
-		<!-- Hakassi Space Forces -->
-
-		
-		
-		
-		<!-- ******************** FACTION: Pentastar ************** -->
-				
-		<Starting_Credits> Pentastar,  0 </Starting_Credits>
-		<Starting_Tech_Level> Pentastar, 1 </Starting_Tech_Level>
-		<Max_Tech_Level> Pentastar, 5 </Max_Tech_Level>
-		
-
-		
-		
-		
-		
-		<!-- ******************** FACTION: Eriadu ************** -->
-						
-		<Starting_Credits> Eriadu_Authority,  0 </Starting_Credits>
-		<Starting_Tech_Level> Eriadu_Authority, 1 </Starting_Tech_Level>
-		<Max_Tech_Level> Eriadu_Authority, 4 </Max_Tech_Level>
-		
-				
-	
-		
-	
-	
-		
-		<!-- ******************** FACTION: Corporate Sector ************** -->
-												
-		<Starting_Credits> Corporate_Sector,  0 </Starting_Credits>
-		<Starting_Tech_Level> Corporate_Sector, 1 </Starting_Tech_Level>
-		<Max_Tech_Level> Corporate_Sector, 5 </Max_Tech_Level>
-		
-		
-		
-		<!-- ******************** FACTION: Moorja ************** DONE -->
-														
-		<Starting_Credits> Warlords,  45000 </Starting_Credits>
-		<Starting_Tech_Level> Warlords, 1 </Starting_Tech_Level>
-		<Max_Tech_Level> Warlords, 5 </Max_Tech_Level>
-		
-
-		
-		<!-- ******************** FACTION: Hapes ************** -->
-																		
-		<Starting_Credits> Hapes_Consortium,  0 </Starting_Credits>
-		<Starting_Tech_Level> Hapes_Consortium, 1 </Starting_Tech_Level>
-		<Max_Tech_Level> Hapes_Consortium, 5 </Max_Tech_Level>
-		
-			
-		<!-- ******************** FACTION: Eriadu_Authority ************** -->
-																				
-		<Starting_Credits> Hutt_Cartels,  0 </Starting_Credits>
-		<Starting_Tech_Level> Hutt_Cartels, 1 </Starting_Tech_Level>
-		<Max_Tech_Level> Hutt_Cartels, 5 </Max_Tech_Level>
-		
-
-	</Campaign>
-	
-	<Campaign Name="Full_Galaxy_Medium_Pentastar">
-	
-	
-		<Campaign_Set>Full_Galaxy_Medium</Campaign_Set>
-		<Sort_Order>006</Sort_Order>
-
-        <Text_ID> TEXT_CAMPAIGN_SINGLE_FULL_MEDIUM </Text_ID>
-        <Description_Text> TEXT_CAMPAIGN_SINGLE_DESCRIPTION_FULL_MEDIUM </Description_Text>
-
-        <Camera_Shift_X> 40.0 </Camera_Shift_X>
-        <Camera_Shift_Y> 0.0 </Camera_Shift_Y>
-        <Camera_Distance> 1200.0 </Camera_Distance>
-		
-		
-	<Locations>
-			Full_Galaxy_Medium
-	</Locations>
-
-		<Trade_Routes>
-		
-			
-</Trade_Routes>
-		<Home_Location> Rebel, Endor </Home_Location>
-        <Home_Location> Empire, Coruscant </Home_Location>
-        <Home_Location> EmpireoftheHand, Nirauan </Home_Location>
-		<Home_Location> Pentastar, Entralla </Home_Location>
-		<Home_Location> Greater_Maldrood, Centares </Home_Location>
-		<Home_Location> Eriadu_Authority, Eriadu </Home_Location>
-		<Home_Location> Zsinj_Empire, Serenno </Home_Location>
-		<Home_Location> Corporate_Sector, Etti </Home_Location> 
-		<Home_Location> Warlords, Moorja </Home_Location> 
-		<Home_Location> Hutt_Cartels, Nal_Hutta </Home_Location> 
-		<Home_Location> Hapes_Consortium, Hapes </Home_Location>
-		
-		<Starting_Active_Player> Pentastar </Starting_Active_Player>
-
-		
-		  <Underworld_Story_Name>Conquests\Progressive\Story_Plots_Sandbox_Loader.xml</Underworld_Story_Name>
-		
-		<AI_Player_Control> Empire, RemnantAI </AI_Player_Control>
-		<AI_Player_Control> Pentastar, SandboxHuman </AI_Player_Control>
-		<AI_Player_Control> Rebel, GenericAI </AI_Player_Control>
-		<AI_Player_Control> Zsinj_Empire, WarlordAI </AI_Player_Control>
-		<AI_Player_Control> EmpireoftheHand, EotHAI </AI_Player_Control>
-		<AI_Player_Control> Hapes_Consortium, None </AI_Player_Control>
-		<AI_Player_Control> Greater_Maldrood, WarlordAI </AI_Player_Control>      
-		<AI_Player_Control> Eriadu_Authority, EriaduAI </AI_Player_Control>				
-		<AI_Player_Control> Corporate_Sector, CorporateAI </AI_Player_Control>		
-		<AI_Player_Control> Warlords, None </AI_Player_Control>				
-				
-
-		<Markup_Filename>Empire, DefaultGalacticHints </Markup_Filename>
-		<Markup_Filename>Rebel, DefaultGalacticHints </Markup_Filename>
-		<Markup_Filename>EmpireoftheHand, DefaultGalacticHints </Markup_Filename>
-		<Markup_Filename>Zsinj_Empire, DefaultGalacticHints </Markup_Filename>
-		<Markup_Filename>Greater_Maldrood, DefaultMaldroodHints </Markup_Filename>			
-		<Markup_Filename>Pentastar, DefaultGalacticHints </Markup_Filename>
-		<Markup_Filename>Eriadu_Authority, DefaultEriaduHints </Markup_Filename>				
-		<Markup_Filename>Corporate_Sector, DefaultGalacticHints </Markup_Filename>		
-		<Markup_Filename>Warlords, DefaultGalacticHints </Markup_Filename>			
-		<Markup_Filename>Hapes_Consortium, DefaultGalacticHints </Markup_Filename>
-		
-
-		<Supports_Custom_Settings>True</Supports_Custom_Settings>		
+		<Supports_Custom_Settings>True</Supports_Custom_Settings>
 		<Show_Completed_Tab>True</Show_Completed_Tab>
+		<Underworld_Story_Name>Conquests\Progressive\Story_Plots_Sandbox_Loader.xml</Underworld_Story_Name>
 		
+		<AI_Player_Control> Greater_Maldrood, WarlordAI </AI_Player_Control>      
+		<AI_Player_Control> Rebel, GenericAI </AI_Player_Control>
+		<AI_Player_Control> EmpireoftheHand, None </AI_Player_Control>
+		<AI_Player_Control> Pentastar, PentastarAI </AI_Player_Control>
+		<AI_Player_Control> Zsinj_Empire, WarlordAI </AI_Player_Control>	
+		<AI_Player_Control> Empire, SandboxHuman </AI_Player_Control>		
+		<AI_Player_Control> Eriadu_Authority, EriaduAI </AI_Player_Control>			
+		<AI_Player_Control> Corporate_Sector, CorporateAI </AI_Player_Control>		
+		<AI_Player_Control> Warlords, None </AI_Player_Control>						
+		<AI_Player_Control> Hapes_Consortium, GenericAI </AI_Player_Control>
+		<AI_Player_Control> Hutt_Cartels, GenericAI </AI_Player_Control>
+
+		<Markup_Filename>Empire, DefaultGalacticHints </Markup_Filename>
+		<Markup_Filename>Rebel, DefaultGalacticHints </Markup_Filename>
+		<Markup_Filename>EmpireoftheHand, DefaultGalacticHints </Markup_Filename>
+		<Markup_Filename>Zsinj_Empire, DefaultGalacticHints </Markup_Filename>
+		<Markup_Filename>Greater_Maldrood, DefaultMaldroodHints </Markup_Filename>			
+		<Markup_Filename>Pentastar, DefaultGalacticHints </Markup_Filename>
+		<Markup_Filename>Eriadu_Authority, DefaultEriaduHints </Markup_Filename>				
+		<Markup_Filename>Corporate_Sector, DefaultGalacticHints </Markup_Filename>		
+		<Markup_Filename>Warlords, DefaultGalacticHints </Markup_Filename>			
+		<Markup_Filename>Hapes_Consortium, DefaultGalacticHints </Markup_Filename>
+		<Markup_Filename>Hutt_Cartels, DefaultGalacticHints </Markup_Filename>
+				
+		
+		<Supports_Custom_Settings>True</Supports_Custom_Settings>		<Show_Completed_Tab>True</Show_Completed_Tab>
+
+		<!-- Win Conditions -->
+
 		<Human_Victory_Conditions>
-			Galactic_Opponent_Controls_No_Planets
+				Galactic_All_Planets_Controlled
 		</Human_Victory_Conditions>
 
 		<AI_Victory_Conditions>
 				Galactic_All_Planets_Controlled
 		</AI_Victory_Conditions>
+
+        <!-- Special Case Planets for Cantinas and Hutt Palaces -->
+		
 		
 		<!-- ******************** FACTION: New Republic ************** -->
 		
@@ -617,8 +84,7 @@
 		<Starting_Tech_Level> Rebel, 0 </Starting_Tech_Level>
 		<Max_Tech_Level> Rebel, 4 </Max_Tech_Level>
 		
-		
-		
+		<Starting_Forces> Rebel, Bespin, Placement_Dummy </Starting_Forces>
 			
 		<!-- ******************** FACTION: Empire ************** -->
 		
@@ -627,16 +93,13 @@
 		<Max_Tech_Level> Empire, 5 </Max_Tech_Level>
 		
 		
-
-			
+		<Starting_Forces> Empire, Carida, Placement_Dummy </Starting_Forces>
+		
 		<!-- ******************** FACTION: Hand ************** -->
-				
+		
 		<Starting_Credits> EmpireoftheHand,  0 </Starting_Credits>
 		<Starting_Tech_Level> EmpireoftheHand, 1 </Starting_Tech_Level>
 		<Max_Tech_Level> EmpireoftheHand, 5 </Max_Tech_Level>
-		
-		
-	
 		
 		<!-- ******************** FACTION: Zsinj ************** -->
 						
@@ -644,59 +107,535 @@
 		<Starting_Tech_Level> Zsinj_Empire, 1 </Starting_Tech_Level>
 		<Max_Tech_Level> Zsinj_Empire, 5 </Max_Tech_Level>
 		
-			
 		
 
-			<!-- ******************** FACTION: Maldrood ************** -->
+		<!-- ******************** FACTION: Maldrood ************** -->
 								
 		<Starting_Credits> Greater_Maldrood,  0 </Starting_Credits>
 		<Starting_Tech_Level> Greater_Maldrood, 1 </Starting_Tech_Level>
 		<Max_Tech_Level> Greater_Maldrood, 5 </Max_Tech_Level>
 		
-		<!-- Hakassi Space Forces -->
+		<Starting_Forces> Greater_Maldrood, Centares, Placement_Dummy </Starting_Forces>
 
+		<!-- ******************** FACTION: Pentastar ************** -->
+				
+		<Starting_Credits> Pentastar,  0 </Starting_Credits>
+		<Starting_Tech_Level> Pentastar, 1 </Starting_Tech_Level>
+		<Max_Tech_Level> Pentastar, 5 </Max_Tech_Level>
 		
 		
 		
+		<!-- ******************** FACTION: Eriadu ************** -->
+						
+		<Starting_Credits> Eriadu_Authority,  0 </Starting_Credits>
+		<Starting_Tech_Level> Eriadu_Authority, 1 </Starting_Tech_Level>
+		<Max_Tech_Level> Eriadu_Authority, 5 </Max_Tech_Level>
+	
+		<Starting_Forces> Eriadu_Authority, Eriadu, Placement_Dummy </Starting_Forces>
+
+		<!-- ******************** FACTION: Corporate Sector ************** -->
+												
+		<Starting_Credits> Corporate_Sector,  0 </Starting_Credits>
+		<Starting_Tech_Level> Corporate_Sector, 1 </Starting_Tech_Level>
+		<Max_Tech_Level> Corporate_Sector, 5 </Max_Tech_Level>
+		
+		<Starting_Forces> Corporate_Sector, Ession, Placement_Dummy </Starting_Forces>		
+		<!-- ******************** FACTION: Moorja ************** DONE -->
+														
+		<Starting_Credits> Warlords,  45000 </Starting_Credits>
+		<Starting_Tech_Level> Warlords, 1 </Starting_Tech_Level>
+		<Max_Tech_Level> Warlords, 5 </Max_Tech_Level>
+		
+	
+
+		<!-- ******************** FACTION: Hapes ************** -->
+																		
+		<Starting_Credits> Hapes_Consortium,  0 </Starting_Credits>
+		<Starting_Tech_Level> Hapes_Consortium, 1 </Starting_Tech_Level>
+		<Max_Tech_Level> Hapes_Consortium, 5 </Max_Tech_Level>
+		
+			
+		<!-- ******************** FACTION: Hutts ************** -->
+																				
+		<Starting_Credits> Hutt_Cartels,  0 </Starting_Credits>
+		<Starting_Tech_Level> Hutt_Cartels, 1 </Starting_Tech_Level>
+		<Max_Tech_Level> Hutt_Cartels, 5 </Max_Tech_Level>
+		
+		<!-- ******************** FACTION: Mandalore ************** -->
+																						
+		
+	
+	</Campaign>	
+
+	<Campaign Name="Full_Galaxy_Medium_Eriadu">
+
+		<Campaign_Set> Full_Galaxy_Medium </Campaign_Set>
+		<Sort_Order>006</Sort_Order>
+
+        <Text_ID> TEXT_CAMPAIGN_SINGLE_FULL_MEDIUM </Text_ID>
+        <Description_Text> TEXT_CAMPAIGN_SINGLE_DESCRIPTION_FULL_MEDIUM </Description_Text>
+
+        <Camera_Shift_X> 40.0 </Camera_Shift_X>
+        <Camera_Shift_Y> 0.0 </Camera_Shift_Y>
+        <Camera_Distance> 1200.0 </Camera_Distance>
+
+		<Locations>
+			Full_Galaxy_Medium
+		</Locations>
+
+		<Trade_Routes>
+
+		</Trade_Routes>
+        <Home_Location> Rebel, Mon_Calamari </Home_Location>
+        <Home_Location> Empire, Coruscant </Home_Location>
+		<Home_Location> Pentastar, Bastion </Home_Location>
+		<Home_Location> Greater_Maldrood, Centares </Home_Location>
+		<Home_Location> Eriadu_Authority, Eriadu </Home_Location>
+		<Home_Location> Zsinj_Empire, Dathomir </Home_Location>
+		<Home_Location> Corporate_Sector, Etti </Home_Location> 
+		<Home_Location> Warlords, Moorja </Home_Location> 
+		<Home_Location> EmpireoftheHand, Entralla </Home_Location>
+		<Home_Location> Hapes_Consortium, Hapes </Home_Location>
+		<Home_Location> Hutt_Cartels, Nal_Hutta </Home_Location> 
+	 
+        <Starting_Active_Player> Eriadu_Authority </Starting_Active_Player>
+
+		<Underworld_Story_Name>Conquests\Progressive\Story_Plots_Sandbox_Loader.xml</Underworld_Story_Name>
+		<AI_Player_Control> Greater_Maldrood, WarlordAI </AI_Player_Control>      
+		<AI_Player_Control> Rebel, GenericAI </AI_Player_Control>
+		<AI_Player_Control> EmpireoftheHand, None </AI_Player_Control>
+		<AI_Player_Control> Pentastar, PentastarAI </AI_Player_Control>
+		<AI_Player_Control> Zsinj_Empire, WarlordAI </AI_Player_Control>	
+		<AI_Player_Control> Empire, GenericAI </AI_Player_Control>		
+		<AI_Player_Control> Eriadu_Authority, SandboxHuman </AI_Player_Control>			
+		<AI_Player_Control> Corporate_Sector, CorporateAI </AI_Player_Control>		
+		<AI_Player_Control> Warlords, None </AI_Player_Control>			
+		<AI_Player_Control> Hapes_Consortium, GenericAI </AI_Player_Control>
+		<AI_Player_Control> Hutt_Cartels, GenericAI </AI_Player_Control>
+
+		<Markup_Filename>Empire, DefaultGalacticHints </Markup_Filename>
+		<Markup_Filename>Rebel, DefaultGalacticHints </Markup_Filename>
+		<Markup_Filename>EmpireoftheHand, DefaultGalacticHints </Markup_Filename>
+		<Markup_Filename>Zsinj_Empire, DefaultGalacticHints </Markup_Filename>
+		<Markup_Filename>Greater_Maldrood, DefaultMaldroodHints </Markup_Filename>			
+		<Markup_Filename>Pentastar, DefaultGalacticHints </Markup_Filename>
+		<Markup_Filename>Eriadu_Authority, DefaultEriaduHints </Markup_Filename>				
+		<Markup_Filename>Corporate_Sector, DefaultGalacticHints </Markup_Filename>		
+		<Markup_Filename>Warlords, DefaultGalacticHints </Markup_Filename>			
+		<Markup_Filename>Hapes_Consortium, DefaultGalacticHints </Markup_Filename>
+		<Markup_Filename>Hutt_Cartels, DefaultGalacticHints </Markup_Filename>
+				
+		
+		<Supports_Custom_Settings>True</Supports_Custom_Settings>
+		<Show_Completed_Tab>True</Show_Completed_Tab>
+
+		<!-- Win Conditions -->
+
+		<Human_Victory_Conditions>
+				Galactic_All_Planets_Controlled
+		</Human_Victory_Conditions>
+
+		<AI_Victory_Conditions>
+				Galactic_All_Planets_Controlled
+		</AI_Victory_Conditions>
+
+        <!-- Special Case Planets for Cantinas and Hutt Palaces -->
+		
+		
+		<!-- ******************** FACTION: New Republic ************** -->
+		
+		<Starting_Credits> Rebel,  0 </Starting_Credits>
+		<Starting_Tech_Level> Rebel, 0 </Starting_Tech_Level>
+		<Max_Tech_Level> Rebel, 4 </Max_Tech_Level>
+		
+		<Starting_Forces> Rebel, Bespin, Placement_Dummy </Starting_Forces>
+			
+		<!-- ******************** FACTION: Empire ************** -->
+		
+		<Starting_Credits> Empire,  0 </Starting_Credits>
+		<Starting_Tech_Level> Empire, 1 </Starting_Tech_Level>
+		<Max_Tech_Level> Empire, 5 </Max_Tech_Level>
+		
+		
+		<Starting_Forces> Empire, Carida, Placement_Dummy </Starting_Forces>
+		
+		<!-- ******************** FACTION: Hand ************** -->
+		
+		<Starting_Credits> EmpireoftheHand,  0 </Starting_Credits>
+		<Starting_Tech_Level> EmpireoftheHand, 1 </Starting_Tech_Level>
+		<Max_Tech_Level> EmpireoftheHand, 5 </Max_Tech_Level>
+		
+		<!-- ******************** FACTION: Zsinj ************** -->
+						
+		<Starting_Credits> Zsinj_Empire,  0 </Starting_Credits>
+		<Starting_Tech_Level> Zsinj_Empire, 1 </Starting_Tech_Level>
+		<Max_Tech_Level> Zsinj_Empire, 5 </Max_Tech_Level>
+		
+		
+
+		<!-- ******************** FACTION: Maldrood ************** -->
+								
+		<Starting_Credits> Greater_Maldrood,  0 </Starting_Credits>
+		<Starting_Tech_Level> Greater_Maldrood, 1 </Starting_Tech_Level>
+		<Max_Tech_Level> Greater_Maldrood, 5 </Max_Tech_Level>
+		
+		<Starting_Forces> Greater_Maldrood, Centares, Placement_Dummy </Starting_Forces>
+
+		<!-- ******************** FACTION: Pentastar ************** -->
+				
+		<Starting_Credits> Pentastar,  0 </Starting_Credits>
+		<Starting_Tech_Level> Pentastar, 1 </Starting_Tech_Level>
+		<Max_Tech_Level> Pentastar, 5 </Max_Tech_Level>
+		
+		
+		
+		<!-- ******************** FACTION: Eriadu ************** -->
+						
+		<Starting_Credits> Eriadu_Authority,  0 </Starting_Credits>
+		<Starting_Tech_Level> Eriadu_Authority, 1 </Starting_Tech_Level>
+		<Max_Tech_Level> Eriadu_Authority, 4 </Max_Tech_Level>
+	
+		<Starting_Forces> Eriadu_Authority, Eriadu, Placement_Dummy </Starting_Forces>
+	
+
+		<!-- ******************** FACTION: Corporate Sector ************** -->
+												
+		<Starting_Credits> Corporate_Sector,  0 </Starting_Credits>
+		<Starting_Tech_Level> Corporate_Sector, 1 </Starting_Tech_Level>
+		<Max_Tech_Level> Corporate_Sector, 5 </Max_Tech_Level>
+		<Starting_Forces> Corporate_Sector, Ession, Placement_Dummy </Starting_Forces>		
+		<!-- ******************** FACTION: Moorja ************** DONE -->
+														
+		<Starting_Credits> Warlords,  45000 </Starting_Credits>
+		<Starting_Tech_Level> Warlords, 1 </Starting_Tech_Level>
+		<Max_Tech_Level> Warlords, 5 </Max_Tech_Level>
+		
+	
+
+		<!-- ******************** FACTION: Hapes ************** -->
+																		
+		<Starting_Credits> Hapes_Consortium,  0 </Starting_Credits>
+		<Starting_Tech_Level> Hapes_Consortium, 1 </Starting_Tech_Level>
+		<Max_Tech_Level> Hapes_Consortium, 5 </Max_Tech_Level>
+		
+			
+		<!-- ******************** FACTION: Hutts ************** -->
+																				
+		<Starting_Credits> Hutt_Cartels,  0 </Starting_Credits>
+		<Starting_Tech_Level> Hutt_Cartels, 1 </Starting_Tech_Level>
+		<Max_Tech_Level> Hutt_Cartels, 5 </Max_Tech_Level>
+		
+		<!-- ******************** FACTION: Mandalore ************** -->
+																						
+		
+	
+	</Campaign>	
+	
+	<Campaign Name="Full_Galaxy_Medium_Greater_Maldrood">
+
+		<Campaign_Set> Full_Galaxy_Medium </Campaign_Set>
+		<Sort_Order>006</Sort_Order>
+
+        <Text_ID> TEXT_CAMPAIGN_SINGLE_FULL_MEDIUM </Text_ID>
+        <Description_Text> TEXT_CAMPAIGN_SINGLE_DESCRIPTION_FULL_MEDIUM </Description_Text>
+
+        <Camera_Shift_X> 40.0 </Camera_Shift_X>
+        <Camera_Shift_Y> 0.0 </Camera_Shift_Y>
+        <Camera_Distance> 1200.0 </Camera_Distance>
+		<Locations>
+			Full_Galaxy_Medium
+		</Locations>
+
+		<Trade_Routes>
+
+		</Trade_Routes>
+        <Home_Location> Rebel, Mon_Calamari </Home_Location>
+        <Home_Location> Empire, Coruscant </Home_Location>
+		<Home_Location> Pentastar, Bastion </Home_Location>
+		<Home_Location> Greater_Maldrood, Centares </Home_Location>
+		<Home_Location> Eriadu_Authority, Eriadu </Home_Location>
+		<Home_Location> Zsinj_Empire, Dathomir </Home_Location>
+		<Home_Location> Corporate_Sector, Etti </Home_Location> 
+		<Home_Location> Warlords, Moorja </Home_Location> 
+		<Home_Location> EmpireoftheHand, Entralla </Home_Location>
+		<Home_Location> Hapes_Consortium, Hapes </Home_Location>
+		<Home_Location> Hutt_Cartels, Nal_Hutta </Home_Location> 
+	 
+        <Starting_Active_Player> Greater_Maldrood </Starting_Active_Player>
+
+		<Underworld_Story_Name>Conquests\Progressive\Story_Plots_Sandbox_Loader.xml</Underworld_Story_Name>
+		
+		<AI_Player_Control> Greater_Maldrood, SandboxHuman </AI_Player_Control>      
+		<AI_Player_Control> Rebel, GenericAI </AI_Player_Control>
+		<AI_Player_Control> EmpireoftheHand, None </AI_Player_Control>
+		<AI_Player_Control> Pentastar, PentastarAI </AI_Player_Control>
+		<AI_Player_Control> Zsinj_Empire, WarlordAI </AI_Player_Control>	
+		<AI_Player_Control> Empire, GenericAI </AI_Player_Control>		
+		<AI_Player_Control> Eriadu_Authority, EriaduAI </AI_Player_Control>			
+		<AI_Player_Control> Corporate_Sector, CorporateAI </AI_Player_Control>		
+		<AI_Player_Control> Warlords, None </AI_Player_Control>						
+		<AI_Player_Control> Hapes_Consortium, GenericAI </AI_Player_Control>
+		<AI_Player_Control> Hutt_Cartels, GenericAI </AI_Player_Control>
+
+		<Markup_Filename>Empire, DefaultGalacticHints </Markup_Filename>
+		<Markup_Filename>Rebel, DefaultGalacticHints </Markup_Filename>
+		<Markup_Filename>EmpireoftheHand, DefaultGalacticHints </Markup_Filename>
+		<Markup_Filename>Zsinj_Empire, DefaultGalacticHints </Markup_Filename>
+		<Markup_Filename>Greater_Maldrood, DefaultMaldroodHints </Markup_Filename>			
+		<Markup_Filename>Pentastar, DefaultGalacticHints </Markup_Filename>
+		<Markup_Filename>Eriadu_Authority, DefaultEriaduHints </Markup_Filename>				
+		<Markup_Filename>Corporate_Sector, DefaultGalacticHints </Markup_Filename>		
+		<Markup_Filename>Warlords, DefaultGalacticHints </Markup_Filename>			
+		<Markup_Filename>Hapes_Consortium, DefaultGalacticHints </Markup_Filename>
+		<Markup_Filename>Hutt_Cartels, DefaultGalacticHints </Markup_Filename>
+					
+		
+		<Supports_Custom_Settings>True</Supports_Custom_Settings>		<Show_Completed_Tab>True</Show_Completed_Tab>
+
+		<!-- Win Conditions -->
+
+		<Human_Victory_Conditions>
+				Galactic_All_Planets_Controlled
+		</Human_Victory_Conditions>
+
+		<AI_Victory_Conditions>
+				Galactic_All_Planets_Controlled
+		</AI_Victory_Conditions>
+
+        <!-- Special Case Planets for Cantinas and Hutt Palaces -->
+		
+		
+		<!-- ******************** FACTION: New Republic ************** -->
+		
+		<Starting_Credits> Rebel,  0 </Starting_Credits>
+		<Starting_Tech_Level> Rebel, 0 </Starting_Tech_Level>
+		<Max_Tech_Level> Rebel, 4 </Max_Tech_Level>
+		
+		<Starting_Forces> Rebel, Bespin, Placement_Dummy </Starting_Forces>
+			
+		<!-- ******************** FACTION: Empire ************** -->
+		
+		<Starting_Credits> Empire,  0 </Starting_Credits>
+		<Starting_Tech_Level> Empire, 1 </Starting_Tech_Level>
+		<Max_Tech_Level> Empire, 5 </Max_Tech_Level>
+		
+		
+		<Starting_Forces> Empire, Carida, Placement_Dummy </Starting_Forces>
+		
+		<!-- ******************** FACTION: Hand ************** -->
+		
+		<Starting_Credits> EmpireoftheHand,  0 </Starting_Credits>
+		<Starting_Tech_Level> EmpireoftheHand, 1 </Starting_Tech_Level>
+		<Max_Tech_Level> EmpireoftheHand, 5 </Max_Tech_Level>
+		
+		<!-- ******************** FACTION: Zsinj ************** -->
+						
+		<Starting_Credits> Zsinj_Empire,  0 </Starting_Credits>
+		<Starting_Tech_Level> Zsinj_Empire, 1 </Starting_Tech_Level>
+		<Max_Tech_Level> Zsinj_Empire, 5 </Max_Tech_Level>
+		
+		
+
+		<!-- ******************** FACTION: Maldrood ************** -->
+								
+		<Starting_Credits> Greater_Maldrood,  0 </Starting_Credits>
+		<Starting_Tech_Level> Greater_Maldrood, 1 </Starting_Tech_Level>
+		<Max_Tech_Level> Greater_Maldrood, 4 </Max_Tech_Level>
+		
+		<Starting_Forces> Greater_Maldrood, Centares, Placement_Dummy </Starting_Forces>
+
+			<!-- ******************** FACTION: Pentastar ************** -->
+				
+		<Starting_Credits> Pentastar,  0 </Starting_Credits>
+		<Starting_Tech_Level> Pentastar, 1 </Starting_Tech_Level>
+		<Max_Tech_Level> Pentastar, 5 </Max_Tech_Level>
+		
+		
+		
+		<!-- ******************** FACTION: Eriadu ************** -->
+						
+		<Starting_Credits> Eriadu_Authority,  0 </Starting_Credits>
+		<Starting_Tech_Level> Eriadu_Authority, 1 </Starting_Tech_Level>
+		<Max_Tech_Level> Eriadu_Authority, 5 </Max_Tech_Level>
+	
+		<Starting_Forces> Eriadu_Authority, Eriadu, Placement_Dummy </Starting_Forces>
+
+		<!-- ******************** FACTION: Corporate Sector ************** -->
+												
+		<Starting_Credits> Corporate_Sector,  0 </Starting_Credits>
+		<Starting_Tech_Level> Corporate_Sector, 1 </Starting_Tech_Level>
+		<Max_Tech_Level> Corporate_Sector, 5 </Max_Tech_Level>
+		<Starting_Forces> Corporate_Sector, Ession, Placement_Dummy </Starting_Forces>		
+		<!-- ******************** FACTION: Moorja ************** DONE -->
+														
+		<Starting_Credits> Warlords,  45000 </Starting_Credits>
+		<Starting_Tech_Level> Warlords, 1 </Starting_Tech_Level>
+		<Max_Tech_Level> Warlords, 5 </Max_Tech_Level>
+		
+	
+
+		<!-- ******************** FACTION: Hapes ************** -->
+																		
+		<Starting_Credits> Hapes_Consortium,  0 </Starting_Credits>
+		<Starting_Tech_Level> Hapes_Consortium, 1 </Starting_Tech_Level>
+		<Max_Tech_Level> Hapes_Consortium, 5 </Max_Tech_Level>
+		
+			
+		<!-- ******************** FACTION: Hutts ************** -->
+																				
+		<Starting_Credits> Hutt_Cartels,  0 </Starting_Credits>
+		<Starting_Tech_Level> Hutt_Cartels, 1 </Starting_Tech_Level>
+		<Max_Tech_Level> Hutt_Cartels, 5 </Max_Tech_Level>
+		
+		<!-- ******************** FACTION: Mandalore ************** -->
+																						
+		
+	
+	</Campaign>	
+
+	<Campaign Name="Full_Galaxy_Medium_Pentastar">
+
+		<Campaign_Set> Full_Galaxy_Medium </Campaign_Set>
+		<Sort_Order>006</Sort_Order>
+
+        <Text_ID> TEXT_CAMPAIGN_SINGLE_FULL_MEDIUM </Text_ID>
+        <Description_Text> TEXT_CAMPAIGN_SINGLE_DESCRIPTION_FULL_MEDIUM </Description_Text>
+
+        <Camera_Shift_X> 40.0 </Camera_Shift_X>
+        <Camera_Shift_Y> 0.0 </Camera_Shift_Y>
+        <Camera_Distance> 1200.0 </Camera_Distance>
+
+		<Locations>
+			Full_Galaxy_Medium
+		</Locations>
+
+		<Trade_Routes>
+
+		</Trade_Routes>
+        <Home_Location> Rebel, Mon_Calamari </Home_Location>
+        <Home_Location> Empire, Coruscant </Home_Location>
+		<Home_Location> Pentastar, Bastion </Home_Location>
+		<Home_Location> Greater_Maldrood, Centares </Home_Location>
+		<Home_Location> Eriadu_Authority, Eriadu </Home_Location>
+		<Home_Location> Zsinj_Empire, Dathomir </Home_Location>
+		<Home_Location> Corporate_Sector, Etti </Home_Location> 
+		<Home_Location> Warlords, Moorja </Home_Location> 
+		<Home_Location> EmpireoftheHand, Entralla </Home_Location>
+		<Home_Location> Hapes_Consortium, Hapes </Home_Location>
+		<Home_Location> Hutt_Cartels, Nal_Hutta </Home_Location> 		
+	 
+        <Starting_Active_Player> Pentastar </Starting_Active_Player>
+
+		<Underworld_Story_Name>Conquests\Progressive\Story_Plots_Sandbox_Loader.xml</Underworld_Story_Name>
+		<AI_Player_Control> Greater_Maldrood, WarlordAI </AI_Player_Control>      
+		<AI_Player_Control> Rebel, GenericAI </AI_Player_Control>
+		<AI_Player_Control> EmpireoftheHand, None </AI_Player_Control>
+		<AI_Player_Control> Pentastar, SandboxHuman </AI_Player_Control>
+		<AI_Player_Control> Zsinj_Empire, WarlordAI </AI_Player_Control>	
+		<AI_Player_Control> Empire, GenericAI </AI_Player_Control>		
+		<AI_Player_Control> Eriadu_Authority, EriaduAI </AI_Player_Control>			
+		<AI_Player_Control> Corporate_Sector, CorporateAI </AI_Player_Control>		
+		<AI_Player_Control> Warlords, None </AI_Player_Control>					
+		<AI_Player_Control> Hapes_Consortium, GenericAI </AI_Player_Control>
+		<AI_Player_Control> Hutt_Cartels, GenericAI </AI_Player_Control>
+
+		<Markup_Filename>Empire, DefaultGalacticHints </Markup_Filename>
+		<Markup_Filename>Rebel, DefaultGalacticHints </Markup_Filename>
+		<Markup_Filename>EmpireoftheHand, DefaultGalacticHints </Markup_Filename>
+		<Markup_Filename>Zsinj_Empire, DefaultGalacticHints </Markup_Filename>
+		<Markup_Filename>Greater_Maldrood, DefaultMaldroodHints </Markup_Filename>			
+		<Markup_Filename>Pentastar, DefaultGalacticHints </Markup_Filename>
+		<Markup_Filename>Eriadu_Authority, DefaultEriaduHints </Markup_Filename>				
+		<Markup_Filename>Corporate_Sector, DefaultGalacticHints </Markup_Filename>		
+		<Markup_Filename>Warlords, DefaultGalacticHints </Markup_Filename>			
+		<Markup_Filename>Hapes_Consortium, DefaultGalacticHints </Markup_Filename>
+		<Markup_Filename>Hutt_Cartels, DefaultGalacticHints </Markup_Filename>
+					
+		
+		<Supports_Custom_Settings>True</Supports_Custom_Settings>		<Show_Completed_Tab>True</Show_Completed_Tab>
+
+		<!-- Win Conditions -->
+
+		<Human_Victory_Conditions>
+				Galactic_All_Planets_Controlled
+		</Human_Victory_Conditions>
+
+		<AI_Victory_Conditions>
+				Galactic_All_Planets_Controlled
+		</AI_Victory_Conditions>
+
+        <!-- Special Case Planets for Cantinas and Hutt Palaces -->
+		
+		
+		<!-- ******************** FACTION: New Republic ************** -->
+		
+		<Starting_Credits> Rebel,  0 </Starting_Credits>
+		<Starting_Tech_Level> Rebel, 0 </Starting_Tech_Level>
+		<Max_Tech_Level> Rebel, 4 </Max_Tech_Level>
+		
+		<Starting_Forces> Rebel, Bespin, Placement_Dummy </Starting_Forces>
+			
+		<!-- ******************** FACTION: Empire ************** -->
+		
+		<Starting_Credits> Empire,  0 </Starting_Credits>
+		<Starting_Tech_Level> Empire, 1 </Starting_Tech_Level>
+		<Max_Tech_Level> Empire, 5 </Max_Tech_Level>
+		
+		
+		<Starting_Forces> Empire, Carida, Placement_Dummy </Starting_Forces>
+		
+		<!-- ******************** FACTION: Hand ************** -->
+		
+		<Starting_Credits> EmpireoftheHand,  0 </Starting_Credits>
+		<Starting_Tech_Level> EmpireoftheHand, 1 </Starting_Tech_Level>
+		<Max_Tech_Level> EmpireoftheHand, 5 </Max_Tech_Level>
+		
+		<!-- ******************** FACTION: Zsinj ************** -->
+						
+		<Starting_Credits> Zsinj_Empire,  0 </Starting_Credits>
+		<Starting_Tech_Level> Zsinj_Empire, 1 </Starting_Tech_Level>
+		<Max_Tech_Level> Zsinj_Empire, 5 </Max_Tech_Level>
+		
+		
+
+		<!-- ******************** FACTION: Maldrood ************** -->
+								
+		<Starting_Credits> Greater_Maldrood,  0 </Starting_Credits>
+		<Starting_Tech_Level> Greater_Maldrood, 1 </Starting_Tech_Level>
+		<Max_Tech_Level> Greater_Maldrood, 5 </Max_Tech_Level>
+		
+		<Starting_Forces> Greater_Maldrood, Centares, Placement_Dummy </Starting_Forces>
+
 		<!-- ******************** FACTION: Pentastar ************** -->
 				
 		<Starting_Credits> Pentastar,  0 </Starting_Credits>
 		<Starting_Tech_Level> Pentastar, 1 </Starting_Tech_Level>
 		<Max_Tech_Level> Pentastar, 4 </Max_Tech_Level>
 		
-
-		
-		
 		
 		
 		<!-- ******************** FACTION: Eriadu ************** -->
 						
 		<Starting_Credits> Eriadu_Authority,  0 </Starting_Credits>
 		<Starting_Tech_Level> Eriadu_Authority, 1 </Starting_Tech_Level>
-		<Max_Tech_Level> Eriadu_Authority, 4 </Max_Tech_Level>
-		
-				
+		<Max_Tech_Level> Eriadu_Authority, 5 </Max_Tech_Level>
 	
-		
-	
-	
-		
+		<Starting_Forces> Eriadu_Authority, Eriadu, Placement_Dummy </Starting_Forces>
+
 		<!-- ******************** FACTION: Corporate Sector ************** -->
 												
 		<Starting_Credits> Corporate_Sector,  0 </Starting_Credits>
 		<Starting_Tech_Level> Corporate_Sector, 1 </Starting_Tech_Level>
 		<Max_Tech_Level> Corporate_Sector, 5 </Max_Tech_Level>
-		
-		
-		
+		<Starting_Forces> Corporate_Sector, Ession, Placement_Dummy </Starting_Forces>		
 		<!-- ******************** FACTION: Moorja ************** DONE -->
 														
 		<Starting_Credits> Warlords,  45000 </Starting_Credits>
 		<Starting_Tech_Level> Warlords, 1 </Starting_Tech_Level>
 		<Max_Tech_Level> Warlords, 5 </Max_Tech_Level>
 		
+	
 
-		
 		<!-- ******************** FACTION: Hapes ************** -->
 																		
 		<Starting_Credits> Hapes_Consortium,  0 </Starting_Credits>
@@ -710,14 +649,15 @@
 		<Starting_Tech_Level> Hutt_Cartels, 1 </Starting_Tech_Level>
 		<Max_Tech_Level> Hutt_Cartels, 5 </Max_Tech_Level>
 		
-				
+		<!-- ******************** FACTION: Mandalore ************** -->
+																						
+		
+	
+	</Campaign>	
 
-	</Campaign>
-	
-	<Campaign Name="Full_Galaxy_Medium_Greater_Maldrood">
-	
-	
-		<Campaign_Set>Full_Galaxy_Medium</Campaign_Set>
+	<Campaign Name="Full_Galaxy_Medium_Zsinj">
+
+		<Campaign_Set> Full_Galaxy_Medium </Campaign_Set>
 		<Sort_Order>006</Sort_Order>
 
         <Text_ID> TEXT_CAMPAIGN_SINGLE_FULL_MEDIUM </Text_ID>
@@ -726,218 +666,41 @@
         <Camera_Shift_X> 40.0 </Camera_Shift_X>
         <Camera_Shift_Y> 0.0 </Camera_Shift_Y>
         <Camera_Distance> 1200.0 </Camera_Distance>
-		
-	<Locations>
+
+		<Locations>
 			Full_Galaxy_Medium
-	</Locations>
+		</Locations>
 
 		<Trade_Routes>
-		
-			
-</Trade_Routes>
-		<Home_Location> Rebel, Endor </Home_Location>
+
+		</Trade_Routes>
+        <Home_Location> Rebel, Mon_Calamari </Home_Location>
         <Home_Location> Empire, Coruscant </Home_Location>
-        <Home_Location> EmpireoftheHand, Nirauan </Home_Location>
-		<Home_Location> Pentastar, Entralla </Home_Location>
+		<Home_Location> Pentastar, Bastion </Home_Location>
 		<Home_Location> Greater_Maldrood, Centares </Home_Location>
 		<Home_Location> Eriadu_Authority, Eriadu </Home_Location>
-		<Home_Location> Zsinj_Empire, Serenno </Home_Location>
+		<Home_Location> Zsinj_Empire, Dathomir </Home_Location>
 		<Home_Location> Corporate_Sector, Etti </Home_Location> 
 		<Home_Location> Warlords, Moorja </Home_Location> 
-		<Home_Location> Hutt_Cartels, Nal_Hutta </Home_Location> 
+		<Home_Location> EmpireoftheHand, Entralla </Home_Location>
 		<Home_Location> Hapes_Consortium, Hapes </Home_Location>
-		
-		<Starting_Active_Player> Greater_Maldrood </Starting_Active_Player>
+		<Home_Location> Hutt_Cartels, Nal_Hutta </Home_Location> 
+	 
+        <Starting_Active_Player> Zsinj_Empire </Starting_Active_Player>
 
-		
 		<Underworld_Story_Name>Conquests\Progressive\Story_Plots_Sandbox_Loader.xml</Underworld_Story_Name>
 		
-		<AI_Player_Control> Empire, RemnantAI </AI_Player_Control>
-		<AI_Player_Control> Pentastar, PentastarAI </AI_Player_Control>
-		<AI_Player_Control> Rebel, GenericAI </AI_Player_Control>
-		<AI_Player_Control> Zsinj_Empire, WarlordAI </AI_Player_Control>
-		<AI_Player_Control> EmpireoftheHand, EotHAI </AI_Player_Control>
-		<AI_Player_Control> Hapes_Consortium, None </AI_Player_Control>
-		<AI_Player_Control> Greater_Maldrood, SandboxHuman </AI_Player_Control>      
-		<AI_Player_Control> Eriadu_Authority, EriaduAI </AI_Player_Control>				
-		<AI_Player_Control> Corporate_Sector, CorporateAI </AI_Player_Control>		
-		<AI_Player_Control> Warlords, None </AI_Player_Control>				
-				
-
-		<Markup_Filename>Empire, DefaultGalacticHints </Markup_Filename>
-		<Markup_Filename>Rebel, DefaultGalacticHints </Markup_Filename>
-		<Markup_Filename>EmpireoftheHand, DefaultGalacticHints </Markup_Filename>
-		<Markup_Filename>Zsinj_Empire, DefaultGalacticHints </Markup_Filename>
-		<Markup_Filename>Greater_Maldrood, DefaultMaldroodHints </Markup_Filename>			
-		<Markup_Filename>Pentastar, DefaultGalacticHints </Markup_Filename>
-		<Markup_Filename>Eriadu_Authority, DefaultEriaduHints </Markup_Filename>				
-		<Markup_Filename>Corporate_Sector, DefaultGalacticHints </Markup_Filename>		
-		<Markup_Filename>Warlords, DefaultGalacticHints </Markup_Filename>			
-		<Markup_Filename>Hapes_Consortium, DefaultGalacticHints </Markup_Filename>
-		
-
-		<Supports_Custom_Settings>True</Supports_Custom_Settings>		<Show_Completed_Tab>True</Show_Completed_Tab>
-		
-		<Human_Victory_Conditions>
-			Galactic_Opponent_Controls_No_Planets
-		</Human_Victory_Conditions>
-
-		<AI_Victory_Conditions>
-				Galactic_All_Planets_Controlled
-		</AI_Victory_Conditions>
-		
-		<!-- ******************** FACTION: New Republic ************** -->
-		
-		<Starting_Credits> Rebel,  0 </Starting_Credits>
-		<Starting_Tech_Level> Rebel, 0 </Starting_Tech_Level>
-		<Max_Tech_Level> Rebel, 4 </Max_Tech_Level>
-		
-		
-		
-			
-		<!-- ******************** FACTION: Empire ************** -->
-		
-		<Starting_Credits> Empire,  0 </Starting_Credits>
-		<Starting_Tech_Level> Empire, 1 </Starting_Tech_Level>
-		<Max_Tech_Level> Empire, 5 </Max_Tech_Level>
-		
-		
-
-			
-		<!-- ******************** FACTION: Hand ************** -->
-				
-		<Starting_Credits> EmpireoftheHand,  0 </Starting_Credits>
-		<Starting_Tech_Level> EmpireoftheHand, 1 </Starting_Tech_Level>
-		<Max_Tech_Level> EmpireoftheHand, 5 </Max_Tech_Level>
-		
-		
-	
-		
-		<!-- ******************** FACTION: Zsinj ************** -->
-						
-		<Starting_Credits> Zsinj_Empire,  0 </Starting_Credits>
-		<Starting_Tech_Level> Zsinj_Empire, 1 </Starting_Tech_Level>
-		<Max_Tech_Level> Zsinj_Empire, 5 </Max_Tech_Level>
-		
-			
-		
-
-			<!-- ******************** FACTION: Maldrood ************** -->
-								
-		<Starting_Credits> Greater_Maldrood,  0 </Starting_Credits>
-		<Starting_Tech_Level> Greater_Maldrood, 1 </Starting_Tech_Level>
-		<Max_Tech_Level> Greater_Maldrood, 4 </Max_Tech_Level>
-		
-		<!-- Hakassi Space Forces -->
-
-		
-		
-		
-		<!-- ******************** FACTION: Pentastar ************** -->
-				
-		<Starting_Credits> Pentastar,  0 </Starting_Credits>
-		<Starting_Tech_Level> Pentastar, 1 </Starting_Tech_Level>
-		<Max_Tech_Level> Pentastar, 5 </Max_Tech_Level>
-		
-
-		
-		
-		
-		
-		<!-- ******************** FACTION: Eriadu ************** -->
-						
-		<Starting_Credits> Eriadu_Authority,  0 </Starting_Credits>
-		<Starting_Tech_Level> Eriadu_Authority, 1 </Starting_Tech_Level>
-		<Max_Tech_Level> Eriadu_Authority, 4 </Max_Tech_Level>
-		
-				
-	
-		
-	
-	
-		
-		<!-- ******************** FACTION: Corporate Sector ************** -->
-												
-		<Starting_Credits> Corporate_Sector,  0 </Starting_Credits>
-		<Starting_Tech_Level> Corporate_Sector, 1 </Starting_Tech_Level>
-		<Max_Tech_Level> Corporate_Sector, 5 </Max_Tech_Level>
-		
-		
-		
-		<!-- ******************** FACTION: Moorja ************** DONE -->
-														
-		<Starting_Credits> Warlords,  45000 </Starting_Credits>
-		<Starting_Tech_Level> Warlords, 1 </Starting_Tech_Level>
-		<Max_Tech_Level> Warlords, 5 </Max_Tech_Level>
-		
-
-		
-		<!-- ******************** FACTION: Hapes ************** -->
-																		
-		<Starting_Credits> Hapes_Consortium,  0 </Starting_Credits>
-		<Starting_Tech_Level> Hapes_Consortium, 1 </Starting_Tech_Level>
-		<Max_Tech_Level> Hapes_Consortium, 5 </Max_Tech_Level>
-		
-			
-		<!-- ******************** FACTION: Eriadu_Authority ************** -->
-																				
-		<Starting_Credits> Hutt_Cartels,  0 </Starting_Credits>
-		<Starting_Tech_Level> Hutt_Cartels, 1 </Starting_Tech_Level>
-		<Max_Tech_Level> Hutt_Cartels, 5 </Max_Tech_Level>
-		
-
-	</Campaign>
-	
-	<Campaign Name="Full_Galaxy_Medium_Zsinj_Empire">
-	
-	
-		<Campaign_Set>Full_Galaxy_Medium</Campaign_Set>
-		<Sort_Order>006</Sort_Order>
-
-        <Text_ID> TEXT_CAMPAIGN_SINGLE_FULL_MEDIUM </Text_ID>
-        <Description_Text> TEXT_CAMPAIGN_SINGLE_DESCRIPTION_FULL_MEDIUM </Description_Text>
-
-        <Camera_Shift_X> 40.0 </Camera_Shift_X>
-        <Camera_Shift_Y> 0.0 </Camera_Shift_Y>
-        <Camera_Distance> 1200.0 </Camera_Distance>
-		
-	<Locations>
-			Full_Galaxy_Medium
-	</Locations>
-
-		<Trade_Routes>
-		
-			
-</Trade_Routes>
-	
-		<Home_Location> Rebel, Endor </Home_Location>
-        <Home_Location> Empire, Coruscant </Home_Location>
-        <Home_Location> EmpireoftheHand, Nirauan </Home_Location>
-		<Home_Location> Pentastar, Entralla </Home_Location>
-		<Home_Location> Greater_Maldrood, Centares </Home_Location>
-		<Home_Location> Eriadu_Authority, Eriadu </Home_Location>
-		<Home_Location> Zsinj_Empire, Serenno </Home_Location>
-		<Home_Location> Corporate_Sector, Etti </Home_Location> 
-		<Home_Location> Warlords, Moorja </Home_Location> 
-		<Home_Location> Hutt_Cartels, Nal_Hutta </Home_Location> 
-		<Home_Location> Hapes_Consortium, Hapes </Home_Location>
-		
-		<Starting_Active_Player> Zsinj_Empire </Starting_Active_Player>
-
-		
-		  <Underworld_Story_Name>Conquests\Progressive\Story_Plots_Sandbox_Loader.xml</Underworld_Story_Name>
-		
-		<AI_Player_Control> Empire, RemnantAI </AI_Player_Control>
-		<AI_Player_Control> Pentastar, PentastarAI </AI_Player_Control>
-		<AI_Player_Control> Rebel, GenericAI </AI_Player_Control>
-		<AI_Player_Control> Zsinj_Empire, SandboxHuman </AI_Player_Control>
-		<AI_Player_Control> EmpireoftheHand, EotHAI </AI_Player_Control>
-		<AI_Player_Control> Hapes_Consortium, None </AI_Player_Control>
 		<AI_Player_Control> Greater_Maldrood, WarlordAI </AI_Player_Control>      
-		<AI_Player_Control> Eriadu_Authority, EriaduAI </AI_Player_Control>				
+		<AI_Player_Control> Rebel, GenericAI </AI_Player_Control>
+		<AI_Player_Control> EmpireoftheHand, None </AI_Player_Control>
+		<AI_Player_Control> Pentastar, PentastarAI </AI_Player_Control>
+		<AI_Player_Control> Zsinj_Empire, SandboxHuman </AI_Player_Control>	
+		<AI_Player_Control> Empire, GenericAI </AI_Player_Control>		
+		<AI_Player_Control> Eriadu_Authority, EriaduAI </AI_Player_Control>			
 		<AI_Player_Control> Corporate_Sector, CorporateAI </AI_Player_Control>		
-		<AI_Player_Control> Warlords, None </AI_Player_Control>				
-				
+		<AI_Player_Control> Warlords, None </AI_Player_Control>						
+		<AI_Player_Control> Hapes_Consortium, GenericAI </AI_Player_Control>
+		<AI_Player_Control> Hutt_Cartels, GenericAI </AI_Player_Control>
 
 		<Markup_Filename>Empire, DefaultGalacticHints </Markup_Filename>
 		<Markup_Filename>Rebel, DefaultGalacticHints </Markup_Filename>
@@ -949,17 +712,23 @@
 		<Markup_Filename>Corporate_Sector, DefaultGalacticHints </Markup_Filename>		
 		<Markup_Filename>Warlords, DefaultGalacticHints </Markup_Filename>			
 		<Markup_Filename>Hapes_Consortium, DefaultGalacticHints </Markup_Filename>
+		<Markup_Filename>Hutt_Cartels, DefaultGalacticHints </Markup_Filename>
+					
 		
-
 		<Supports_Custom_Settings>True</Supports_Custom_Settings>		<Show_Completed_Tab>True</Show_Completed_Tab>
-		
+
+		<!-- Win Conditions -->
+
 		<Human_Victory_Conditions>
-			Galactic_Opponent_Controls_No_Planets
+				Galactic_All_Planets_Controlled
 		</Human_Victory_Conditions>
 
 		<AI_Victory_Conditions>
 				Galactic_All_Planets_Controlled
 		</AI_Victory_Conditions>
+
+        <!-- Special Case Planets for Cantinas and Hutt Palaces -->
+		
 		
 		<!-- ******************** FACTION: New Republic ************** -->
 		
@@ -967,8 +736,7 @@
 		<Starting_Tech_Level> Rebel, 0 </Starting_Tech_Level>
 		<Max_Tech_Level> Rebel, 4 </Max_Tech_Level>
 		
-		
-		
+		<Starting_Forces> Rebel, Bespin, Placement_Dummy </Starting_Forces>
 			
 		<!-- ******************** FACTION: Empire ************** -->
 		
@@ -977,16 +745,13 @@
 		<Max_Tech_Level> Empire, 5 </Max_Tech_Level>
 		
 		
-
-			
+		<Starting_Forces> Empire, Carida, Placement_Dummy </Starting_Forces>
+		
 		<!-- ******************** FACTION: Hand ************** -->
-				
+		
 		<Starting_Credits> EmpireoftheHand,  0 </Starting_Credits>
 		<Starting_Tech_Level> EmpireoftheHand, 1 </Starting_Tech_Level>
 		<Max_Tech_Level> EmpireoftheHand, 5 </Max_Tech_Level>
-		
-		
-	
 		
 		<!-- ******************** FACTION: Zsinj ************** -->
 						
@@ -994,28 +759,21 @@
 		<Starting_Tech_Level> Zsinj_Empire, 1 </Starting_Tech_Level>
 		<Max_Tech_Level> Zsinj_Empire, 1 </Max_Tech_Level>
 		
-			
 		
 
-			<!-- ******************** FACTION: Maldrood ************** -->
+		<!-- ******************** FACTION: Maldrood ************** -->
 								
 		<Starting_Credits> Greater_Maldrood,  0 </Starting_Credits>
 		<Starting_Tech_Level> Greater_Maldrood, 1 </Starting_Tech_Level>
 		<Max_Tech_Level> Greater_Maldrood, 5 </Max_Tech_Level>
 		
-		<!-- Hakassi Space Forces -->
+		<Starting_Forces> Greater_Maldrood, Centares, Placement_Dummy </Starting_Forces>
 
-		
-		
-		
 		<!-- ******************** FACTION: Pentastar ************** -->
 				
 		<Starting_Credits> Pentastar,  0 </Starting_Credits>
 		<Starting_Tech_Level> Pentastar, 1 </Starting_Tech_Level>
 		<Max_Tech_Level> Pentastar, 5 </Max_Tech_Level>
-		
-
-		
 		
 		
 		
@@ -1023,30 +781,24 @@
 						
 		<Starting_Credits> Eriadu_Authority,  0 </Starting_Credits>
 		<Starting_Tech_Level> Eriadu_Authority, 1 </Starting_Tech_Level>
-		<Max_Tech_Level> Eriadu_Authority, 4 </Max_Tech_Level>
-		
-				
+		<Max_Tech_Level> Eriadu_Authority, 5 </Max_Tech_Level>
 	
-		
-	
-	
-		
+		<Starting_Forces> Eriadu_Authority, Eriadu, Placement_Dummy </Starting_Forces>
+
 		<!-- ******************** FACTION: Corporate Sector ************** -->
 												
 		<Starting_Credits> Corporate_Sector,  0 </Starting_Credits>
 		<Starting_Tech_Level> Corporate_Sector, 1 </Starting_Tech_Level>
 		<Max_Tech_Level> Corporate_Sector, 5 </Max_Tech_Level>
-		
-		
-		
+		<Starting_Forces> Corporate_Sector, Ession, Placement_Dummy </Starting_Forces>		
 		<!-- ******************** FACTION: Moorja ************** DONE -->
 														
 		<Starting_Credits> Warlords,  45000 </Starting_Credits>
 		<Starting_Tech_Level> Warlords, 1 </Starting_Tech_Level>
 		<Max_Tech_Level> Warlords, 5 </Max_Tech_Level>
 		
+	
 
-		
 		<!-- ******************** FACTION: Hapes ************** -->
 																		
 		<Starting_Credits> Hapes_Consortium,  0 </Starting_Credits>
@@ -1054,20 +806,21 @@
 		<Max_Tech_Level> Hapes_Consortium, 5 </Max_Tech_Level>
 		
 			
-		<!-- ******************** FACTION: Eriadu_Authority ************** -->
+		<!-- ******************** FACTION: Hutts ************** -->
 																				
 		<Starting_Credits> Hutt_Cartels,  0 </Starting_Credits>
 		<Starting_Tech_Level> Hutt_Cartels, 1 </Starting_Tech_Level>
 		<Max_Tech_Level> Hutt_Cartels, 5 </Max_Tech_Level>
 		
-				
+		<!-- ******************** FACTION: Mandalore ************** -->
+																						
+		
+	
+	</Campaign>	
 
-	</Campaign>
-	
-	<Campaign Name="Full_Galaxy_Medium_Eriadu">
-	
-	
-		<Campaign_Set>Full_Galaxy_Medium</Campaign_Set>
+	<Campaign Name="Full_Galaxy_Medium_NewRep">
+
+		<Campaign_Set> Full_Galaxy_Medium </Campaign_Set>
 		<Sort_Order>006</Sort_Order>
 
         <Text_ID> TEXT_CAMPAIGN_SINGLE_FULL_MEDIUM </Text_ID>
@@ -1076,219 +829,40 @@
         <Camera_Shift_X> 40.0 </Camera_Shift_X>
         <Camera_Shift_Y> 0.0 </Camera_Shift_Y>
         <Camera_Distance> 1200.0 </Camera_Distance>
-		
-	<Locations>
-			Full_Galaxy_Medium
-	</Locations>
 
-	<Trade_Routes>
-			
-	</Trade_Routes>
-	
-		<Home_Location> Rebel, Endor </Home_Location>
-        <Home_Location> Empire, Coruscant </Home_Location>
-        <Home_Location> EmpireoftheHand, Nirauan </Home_Location>
-		<Home_Location> Pentastar, Entralla </Home_Location>
-		<Home_Location> Greater_Maldrood, Centares </Home_Location>
-		<Home_Location> Eriadu_Authority, Eriadu </Home_Location>
-		<Home_Location> Zsinj_Empire, Serenno </Home_Location>
-		<Home_Location> Corporate_Sector, Etti </Home_Location> 
-		<Home_Location> Warlords, Moorja </Home_Location> 
-		<Home_Location> Hutt_Cartels, Nal_Hutta </Home_Location> 
-		<Home_Location> Hapes_Consortium, Hapes </Home_Location>
-		
-		<Starting_Active_Player> Eriadu_Authority </Starting_Active_Player>
-
-		
-		  <Underworld_Story_Name>Conquests\Progressive\Story_Plots_Sandbox_Loader.xml</Underworld_Story_Name>
-		
-		<AI_Player_Control> Empire, RemnantAI </AI_Player_Control>
-		<AI_Player_Control> Pentastar, PentastarAI </AI_Player_Control>
-		<AI_Player_Control> Rebel, GenericAI </AI_Player_Control>
-		<AI_Player_Control> Zsinj_Empire, WarlordAI </AI_Player_Control>
-		<AI_Player_Control> EmpireoftheHand, EotHAI </AI_Player_Control>
-		<AI_Player_Control> Hapes_Consortium, None </AI_Player_Control>
-		<AI_Player_Control> Greater_Maldrood, WarlordAI </AI_Player_Control>      
-		<AI_Player_Control> Eriadu_Authority, SandboxHuman </AI_Player_Control>				
-		<AI_Player_Control> Corporate_Sector, CorporateAI </AI_Player_Control>		
-		<AI_Player_Control> Warlords, None </AI_Player_Control>				
-				
-
-		<Markup_Filename>Empire, DefaultGalacticHints </Markup_Filename>
-		<Markup_Filename>Rebel, DefaultGalacticHints </Markup_Filename>
-		<Markup_Filename>EmpireoftheHand, DefaultGalacticHints </Markup_Filename>
-		<Markup_Filename>Zsinj_Empire, DefaultGalacticHints </Markup_Filename>
-		<Markup_Filename>Greater_Maldrood, DefaultMaldroodHints </Markup_Filename>			
-		<Markup_Filename>Pentastar, DefaultGalacticHints </Markup_Filename>
-		<Markup_Filename>Eriadu_Authority, DefaultEriaduHints </Markup_Filename>				
-		<Markup_Filename>Corporate_Sector, DefaultGalacticHints </Markup_Filename>		
-		<Markup_Filename>Warlords, DefaultGalacticHints </Markup_Filename>			
-		<Markup_Filename>Hapes_Consortium, DefaultGalacticHints </Markup_Filename>
-		
-
-		<Supports_Custom_Settings>True</Supports_Custom_Settings>		<Show_Completed_Tab>True</Show_Completed_Tab>
-		
-		<Human_Victory_Conditions>
-			Galactic_Opponent_Controls_No_Planets
-		</Human_Victory_Conditions>
-
-		<AI_Victory_Conditions>
-				Galactic_All_Planets_Controlled
-		</AI_Victory_Conditions>
-		
-		<!-- ******************** FACTION: New Republic ************** -->
-		
-		<Starting_Credits> Rebel,  0 </Starting_Credits>
-		<Starting_Tech_Level> Rebel, 0 </Starting_Tech_Level>
-		<Max_Tech_Level> Rebel, 4 </Max_Tech_Level>
-		
-		
-		
-			
-		<!-- ******************** FACTION: Empire ************** -->
-		
-		<Starting_Credits> Empire,  0 </Starting_Credits>
-		<Starting_Tech_Level> Empire, 1 </Starting_Tech_Level>
-		<Max_Tech_Level> Empire, 5 </Max_Tech_Level>
-		
-		
-
-			
-		<!-- ******************** FACTION: Hand ************** -->
-				
-		<Starting_Credits> EmpireoftheHand,  0 </Starting_Credits>
-		<Starting_Tech_Level> EmpireoftheHand, 1 </Starting_Tech_Level>
-		<Max_Tech_Level> EmpireoftheHand, 5 </Max_Tech_Level>
-		
-		
-	
-		
-		<!-- ******************** FACTION: Zsinj ************** -->
-						
-		<Starting_Credits> Zsinj_Empire,  0 </Starting_Credits>
-		<Starting_Tech_Level> Zsinj_Empire, 1 </Starting_Tech_Level>
-		<Max_Tech_Level> Zsinj_Empire, 5 </Max_Tech_Level>
-		
-			
-		
-
-			<!-- ******************** FACTION: Maldrood ************** -->
-								
-		<Starting_Credits> Greater_Maldrood,  0 </Starting_Credits>
-		<Starting_Tech_Level> Greater_Maldrood, 1 </Starting_Tech_Level>
-		<Max_Tech_Level> Greater_Maldrood, 5 </Max_Tech_Level>
-		
-		<!-- Hakassi Space Forces -->
-
-		
-		
-		
-		<!-- ******************** FACTION: Pentastar ************** -->
-				
-		<Starting_Credits> Pentastar,  0 </Starting_Credits>
-		<Starting_Tech_Level> Pentastar, 1 </Starting_Tech_Level>
-		<Max_Tech_Level> Pentastar, 5 </Max_Tech_Level>
-		
-
-		
-		
-		
-		
-		<!-- ******************** FACTION: Eriadu ************** -->
-						
-		<Starting_Credits> Eriadu_Authority,  0 </Starting_Credits>
-		<Starting_Tech_Level> Eriadu_Authority, 1 </Starting_Tech_Level>
-		<Max_Tech_Level> Eriadu_Authority, 4 </Max_Tech_Level>
-		
-				
-	
-		
-	
-	
-		
-		<!-- ******************** FACTION: Corporate Sector ************** -->
-												
-		<Starting_Credits> Corporate_Sector,  0 </Starting_Credits>
-		<Starting_Tech_Level> Corporate_Sector, 1 </Starting_Tech_Level>
-		<Max_Tech_Level> Corporate_Sector, 5 </Max_Tech_Level>
-		
-		
-		
-		<!-- ******************** FACTION: Moorja ************** DONE -->
-														
-		<Starting_Credits> Warlords,  45000 </Starting_Credits>
-		<Starting_Tech_Level> Warlords, 1 </Starting_Tech_Level>
-		<Max_Tech_Level> Warlords, 5 </Max_Tech_Level>
-		
-
-		
-		<!-- ******************** FACTION: Hapes ************** -->
-																		
-		<Starting_Credits> Hapes_Consortium,  0 </Starting_Credits>
-		<Starting_Tech_Level> Hapes_Consortium, 1 </Starting_Tech_Level>
-		<Max_Tech_Level> Hapes_Consortium, 5 </Max_Tech_Level>
-		
-			
-		<!-- ******************** FACTION: Eriadu_Authority ************** -->
-																				
-		<Starting_Credits> Hutt_Cartels,  0 </Starting_Credits>
-		<Starting_Tech_Level> Hutt_Cartels, 1 </Starting_Tech_Level>
-		<Max_Tech_Level> Hutt_Cartels, 5 </Max_Tech_Level>
-
-				
-	</Campaign>
-	
-	
-	
-		<Campaign Name="Full_Galaxy_Medium_CSA">
-	
-	
-		<Campaign_Set>Full_Galaxy_Medium</Campaign_Set>
-		<Sort_Order>006</Sort_Order>
-
-        <Text_ID> TEXT_CAMPAIGN_SINGLE_FULL_MEDIUM </Text_ID>
-        <Description_Text> TEXT_CAMPAIGN_SINGLE_DESCRIPTION_FULL_MEDIUM </Description_Text>
-
-        <Camera_Shift_X> 40.0 </Camera_Shift_X>
-        <Camera_Shift_Y> 0.0 </Camera_Shift_Y>
-        <Camera_Distance> 1200.0 </Camera_Distance>
-	
 		<Locations>
 			Full_Galaxy_Medium
 		</Locations>
-	
+
 		<Trade_Routes>
-					
+
 		</Trade_Routes>
-	
-	
-		<Home_Location> Rebel, Endor </Home_Location>
+        <Home_Location> Rebel, Mon_Calamari </Home_Location>
         <Home_Location> Empire, Coruscant </Home_Location>
-        <Home_Location> EmpireoftheHand, Nirauan </Home_Location>
-		<Home_Location> Pentastar, Entralla </Home_Location>
+		<Home_Location> Pentastar, Bastion </Home_Location>
 		<Home_Location> Greater_Maldrood, Centares </Home_Location>
 		<Home_Location> Eriadu_Authority, Eriadu </Home_Location>
-		<Home_Location> Zsinj_Empire, Serenno </Home_Location>
+		<Home_Location> Zsinj_Empire, Dathomir </Home_Location>
 		<Home_Location> Corporate_Sector, Etti </Home_Location> 
 		<Home_Location> Warlords, Moorja </Home_Location> 
-		<Home_Location> Hutt_Cartels, Nal_Hutta </Home_Location> 
+		<Home_Location> EmpireoftheHand, Entralla </Home_Location>
 		<Home_Location> Hapes_Consortium, Hapes </Home_Location>
-		
-		<Starting_Active_Player> Corporate_Sector </Starting_Active_Player>
+		<Home_Location> Hutt_Cartels, Nal_Hutta </Home_Location> 
+	 
+        <Starting_Active_Player> Rebel </Starting_Active_Player>
 
-	  <Underworld_Story_Name>Conquests\Progressive\Story_Plots_Sandbox_Loader.xml</Underworld_Story_Name>
-	  
-		<AI_Player_Control> Empire, RemnantAI </AI_Player_Control>
-		<AI_Player_Control> Pentastar, PentastarAI </AI_Player_Control>
-		<AI_Player_Control> Rebel, GenericAI </AI_Player_Control>
-		<AI_Player_Control> Zsinj_Empire, WarlordAI </AI_Player_Control>
-		<AI_Player_Control> EmpireoftheHand, EotHAI </AI_Player_Control>
-		<AI_Player_Control> Hapes_Consortium, None </AI_Player_Control>
+		<Underworld_Story_Name>Conquests\Progressive\Story_Plots_Sandbox_Loader.xml</Underworld_Story_Name>
 		<AI_Player_Control> Greater_Maldrood, WarlordAI </AI_Player_Control>      
-		<AI_Player_Control> Eriadu_Authority, EriaduAI </AI_Player_Control>				
-		<AI_Player_Control> Corporate_Sector, SandboxHuman </AI_Player_Control>		
-		<AI_Player_Control> Warlords, None </AI_Player_Control>				
-				
+		<AI_Player_Control> Rebel, SandboxHuman </AI_Player_Control>
+		<AI_Player_Control> EmpireoftheHand, None </AI_Player_Control>
+		<AI_Player_Control> Pentastar, PentastarAI </AI_Player_Control>
+		<AI_Player_Control> Zsinj_Empire, WarlordAI </AI_Player_Control>	
+		<AI_Player_Control> Empire, GenericAI </AI_Player_Control>		
+		<AI_Player_Control> Eriadu_Authority, EriaduAI </AI_Player_Control>			
+		<AI_Player_Control> Corporate_Sector, CorporateAI </AI_Player_Control>		
+		<AI_Player_Control> Warlords, None </AI_Player_Control>						
+		<AI_Player_Control> Hapes_Consortium, GenericAI </AI_Player_Control>
+		<AI_Player_Control> Hutt_Cartels, GenericAI </AI_Player_Control>
 
 		<Markup_Filename>Empire, DefaultGalacticHints </Markup_Filename>
 		<Markup_Filename>Rebel, DefaultGalacticHints </Markup_Filename>
@@ -1300,17 +874,23 @@
 		<Markup_Filename>Corporate_Sector, DefaultGalacticHints </Markup_Filename>		
 		<Markup_Filename>Warlords, DefaultGalacticHints </Markup_Filename>			
 		<Markup_Filename>Hapes_Consortium, DefaultGalacticHints </Markup_Filename>
+		<Markup_Filename>Hutt_Cartels, DefaultGalacticHints </Markup_Filename>
+					
 		
-
 		<Supports_Custom_Settings>True</Supports_Custom_Settings>		<Show_Completed_Tab>True</Show_Completed_Tab>
-		
+
+		<!-- Win Conditions -->
+
 		<Human_Victory_Conditions>
-			Galactic_Opponent_Controls_No_Planets
+				Galactic_All_Planets_Controlled
 		</Human_Victory_Conditions>
 
 		<AI_Victory_Conditions>
 				Galactic_All_Planets_Controlled
 		</AI_Victory_Conditions>
+
+        <!-- Special Case Planets for Cantinas and Hutt Palaces -->
+		
 		
 		<!-- ******************** FACTION: New Republic ************** -->
 		
@@ -1318,8 +898,7 @@
 		<Starting_Tech_Level> Rebel, 0 </Starting_Tech_Level>
 		<Max_Tech_Level> Rebel, 4 </Max_Tech_Level>
 		
-		
-		
+		<Starting_Forces> Rebel, Bespin, Placement_Dummy </Starting_Forces>
 			
 		<!-- ******************** FACTION: Empire ************** -->
 		
@@ -1328,16 +907,13 @@
 		<Max_Tech_Level> Empire, 5 </Max_Tech_Level>
 		
 		
-
-			
+		<Starting_Forces> Empire, Carida, Placement_Dummy </Starting_Forces>
+		
 		<!-- ******************** FACTION: Hand ************** -->
-				
+		
 		<Starting_Credits> EmpireoftheHand,  0 </Starting_Credits>
 		<Starting_Tech_Level> EmpireoftheHand, 1 </Starting_Tech_Level>
 		<Max_Tech_Level> EmpireoftheHand, 5 </Max_Tech_Level>
-		
-		
-	
 		
 		<!-- ******************** FACTION: Zsinj ************** -->
 						
@@ -1345,28 +921,21 @@
 		<Starting_Tech_Level> Zsinj_Empire, 1 </Starting_Tech_Level>
 		<Max_Tech_Level> Zsinj_Empire, 5 </Max_Tech_Level>
 		
-			
 		
 
-			<!-- ******************** FACTION: Maldrood ************** -->
+		<!-- ******************** FACTION: Maldrood ************** -->
 								
 		<Starting_Credits> Greater_Maldrood,  0 </Starting_Credits>
 		<Starting_Tech_Level> Greater_Maldrood, 1 </Starting_Tech_Level>
 		<Max_Tech_Level> Greater_Maldrood, 5 </Max_Tech_Level>
 		
-		<!-- Hakassi Space Forces -->
+		<Starting_Forces> Greater_Maldrood, Centares, Placement_Dummy </Starting_Forces>
 
-		
-		
-		
 		<!-- ******************** FACTION: Pentastar ************** -->
 				
 		<Starting_Credits> Pentastar,  0 </Starting_Credits>
 		<Starting_Tech_Level> Pentastar, 1 </Starting_Tech_Level>
 		<Max_Tech_Level> Pentastar, 5 </Max_Tech_Level>
-		
-
-		
 		
 		
 		
@@ -1374,30 +943,24 @@
 						
 		<Starting_Credits> Eriadu_Authority,  0 </Starting_Credits>
 		<Starting_Tech_Level> Eriadu_Authority, 1 </Starting_Tech_Level>
-		<Max_Tech_Level> Eriadu_Authority, 4 </Max_Tech_Level>
-		
-				
+		<Max_Tech_Level> Eriadu_Authority, 5 </Max_Tech_Level>
 	
-		
-	
-	
-		
+		<Starting_Forces> Eriadu_Authority, Eriadu, Placement_Dummy </Starting_Forces>
+
 		<!-- ******************** FACTION: Corporate Sector ************** -->
 												
 		<Starting_Credits> Corporate_Sector,  0 </Starting_Credits>
 		<Starting_Tech_Level> Corporate_Sector, 1 </Starting_Tech_Level>
 		<Max_Tech_Level> Corporate_Sector, 5 </Max_Tech_Level>
-		
-		
-		
+		<Starting_Forces> Corporate_Sector, Ession, Placement_Dummy </Starting_Forces>		
 		<!-- ******************** FACTION: Moorja ************** DONE -->
 														
 		<Starting_Credits> Warlords,  45000 </Starting_Credits>
 		<Starting_Tech_Level> Warlords, 1 </Starting_Tech_Level>
 		<Max_Tech_Level> Warlords, 5 </Max_Tech_Level>
 		
+	
 
-		
 		<!-- ******************** FACTION: Hapes ************** -->
 																		
 		<Starting_Credits> Hapes_Consortium,  0 </Starting_Credits>
@@ -1405,19 +968,184 @@
 		<Max_Tech_Level> Hapes_Consortium, 5 </Max_Tech_Level>
 		
 			
-		<!-- ******************** FACTION: Eriadu_Authority ************** -->
+		<!-- ******************** FACTION: Hutts ************** -->
 																				
 		<Starting_Credits> Hutt_Cartels,  0 </Starting_Credits>
 		<Starting_Tech_Level> Hutt_Cartels, 1 </Starting_Tech_Level>
 		<Max_Tech_Level> Hutt_Cartels, 5 </Max_Tech_Level>
 		
+		<!-- ******************** FACTION: Mandalore ************** -->
+																						
 		
-	</Campaign>
+	
+	</Campaign>	
+
+	<Campaign Name="Full_Galaxy_Medium_CSA">
+
+		<Campaign_Set> Full_Galaxy_Medium </Campaign_Set>
+		<Sort_Order>006</Sort_Order>
+
+        <Text_ID> TEXT_CAMPAIGN_SINGLE_FULL_MEDIUM </Text_ID>
+        <Description_Text> TEXT_CAMPAIGN_SINGLE_DESCRIPTION_FULL_MEDIUM </Description_Text>
+
+        <Camera_Shift_X> 40.0 </Camera_Shift_X>
+        <Camera_Shift_Y> 0.0 </Camera_Shift_Y>
+        <Camera_Distance> 1200.0 </Camera_Distance>
+
+		<Locations>
+			Full_Galaxy_Medium
+		</Locations>
+
+		<Trade_Routes>
+
+		</Trade_Routes>
+        <Home_Location> Rebel, Mon_Calamari </Home_Location>
+        <Home_Location> Empire, Coruscant </Home_Location>
+		<Home_Location> Pentastar, Bastion </Home_Location>
+		<Home_Location> Greater_Maldrood, Centares </Home_Location>
+		<Home_Location> Eriadu_Authority, Eriadu </Home_Location>
+		<Home_Location> Zsinj_Empire, Dathomir </Home_Location>
+		<Home_Location> Corporate_Sector, Etti </Home_Location> 
+		<Home_Location> Warlords, Moorja </Home_Location> 
+		<Home_Location> EmpireoftheHand, Entralla </Home_Location> 
+		<Home_Location> Hapes_Consortium, Hapes </Home_Location>
+		<Home_Location> Hutt_Cartels, Nal_Hutta </Home_Location> 
+	 
+        <Starting_Active_Player> Corporate_Sector </Starting_Active_Player>
+
+		<Underworld_Story_Name>Conquests\Progressive\Story_Plots_Sandbox_Loader.xml</Underworld_Story_Name>
+		
+		<AI_Player_Control> Greater_Maldrood, WarlordAI </AI_Player_Control>      
+		<AI_Player_Control> Rebel, GenericAI </AI_Player_Control>
+		<AI_Player_Control> EmpireoftheHand, GenericAI </AI_Player_Control>
+		<AI_Player_Control> Pentastar, PentastarAI </AI_Player_Control>
+		<AI_Player_Control> Zsinj_Empire, WarlordAI </AI_Player_Control>	
+		<AI_Player_Control> Empire, GenericAI </AI_Player_Control>		
+		<AI_Player_Control> Eriadu_Authority, EriaduAI </AI_Player_Control>			
+		<AI_Player_Control> Corporate_Sector, SandboxHuman </AI_Player_Control>		
+		<AI_Player_Control> Warlords, None </AI_Player_Control>						
+		<AI_Player_Control> Hapes_Consortium, GenericAI </AI_Player_Control>
+		<AI_Player_Control> Hutt_Cartels, GenericAI </AI_Player_Control>
+
+		<Markup_Filename>Empire, DefaultGalacticHints </Markup_Filename>
+		<Markup_Filename>Rebel, DefaultGalacticHints </Markup_Filename>
+		<Markup_Filename>EmpireoftheHand, DefaultGalacticHints </Markup_Filename>
+		<Markup_Filename>Zsinj_Empire, DefaultGalacticHints </Markup_Filename>
+		<Markup_Filename>Greater_Maldrood, DefaultMaldroodHints </Markup_Filename>			
+		<Markup_Filename>Pentastar, DefaultGalacticHints </Markup_Filename>
+		<Markup_Filename>Eriadu_Authority, DefaultEriaduHints </Markup_Filename>				
+		<Markup_Filename>Corporate_Sector, DefaultGalacticHints </Markup_Filename>		
+		<Markup_Filename>Warlords, DefaultGalacticHints </Markup_Filename>			
+		<Markup_Filename>Hapes_Consortium, DefaultGalacticHints </Markup_Filename>
+		<Markup_Filename>Hutt_Cartels, DefaultGalacticHints </Markup_Filename>
+					
+		
+		<Supports_Custom_Settings>True</Supports_Custom_Settings>		<Show_Completed_Tab>True</Show_Completed_Tab>
+
+		<!-- Win Conditions -->
+
+		<Human_Victory_Conditions>
+				Galactic_All_Planets_Controlled
+		</Human_Victory_Conditions>
+
+		<AI_Victory_Conditions>
+				Galactic_All_Planets_Controlled
+		</AI_Victory_Conditions>
+
+        <!-- Special Case Planets for Cantinas and Hutt Palaces -->
+		
+		
+		<!-- ******************** FACTION: New Republic ************** -->
+		
+		<Starting_Credits> Rebel,  0 </Starting_Credits>
+		<Starting_Tech_Level> Rebel, 0 </Starting_Tech_Level>
+		<Max_Tech_Level> Rebel, 4 </Max_Tech_Level>
+		
+		<Starting_Forces> Rebel, Bespin, Placement_Dummy </Starting_Forces>
+			
+		<!-- ******************** FACTION: Empire ************** -->
+		
+		<Starting_Credits> Empire,  0 </Starting_Credits>
+		<Starting_Tech_Level> Empire, 1 </Starting_Tech_Level>
+		<Max_Tech_Level> Empire, 5 </Max_Tech_Level>
+		
+		
+		<Starting_Forces> Empire, Carida, Placement_Dummy </Starting_Forces>
+		
+		<!-- ******************** FACTION: Hand ************** -->
+		
+		<Starting_Credits> EmpireoftheHand,  0 </Starting_Credits>
+		<Starting_Tech_Level> EmpireoftheHand, 1 </Starting_Tech_Level>
+		<Max_Tech_Level> EmpireoftheHand, 5 </Max_Tech_Level>
+		
+		<!-- ******************** FACTION: Zsinj ************** -->
+						
+		<Starting_Credits> Zsinj_Empire,  0 </Starting_Credits>
+		<Starting_Tech_Level> Zsinj_Empire, 1 </Starting_Tech_Level>
+		<Max_Tech_Level> Zsinj_Empire, 5 </Max_Tech_Level>
+		
+		
+
+		<!-- ******************** FACTION: Maldrood ************** -->
+								
+		<Starting_Credits> Greater_Maldrood,  0 </Starting_Credits>
+		<Starting_Tech_Level> Greater_Maldrood, 1 </Starting_Tech_Level>
+		<Max_Tech_Level> Greater_Maldrood, 5 </Max_Tech_Level>
+		
+		<Starting_Forces> Greater_Maldrood, Centares, Placement_Dummy </Starting_Forces>
+
+		<!-- ******************** FACTION: Pentastar ************** -->
+				
+		<Starting_Credits> Pentastar,  0 </Starting_Credits>
+		<Starting_Tech_Level> Pentastar, 1 </Starting_Tech_Level>
+		<Max_Tech_Level> Pentastar, 5 </Max_Tech_Level>
+		
+		
+		
+		<!-- ******************** FACTION: Eriadu ************** -->
+						
+		<Starting_Credits> Eriadu_Authority,  0 </Starting_Credits>
+		<Starting_Tech_Level> Eriadu_Authority, 1 </Starting_Tech_Level>
+		<Max_Tech_Level> Eriadu_Authority, 5 </Max_Tech_Level>
+	
+		<Starting_Forces> Eriadu_Authority, Eriadu, Placement_Dummy </Starting_Forces>
+
+		<!-- ******************** FACTION: Corporate Sector ************** -->
+												
+		<Starting_Credits> Corporate_Sector,  0 </Starting_Credits>
+		<Starting_Tech_Level> Corporate_Sector, 1 </Starting_Tech_Level>
+		<Max_Tech_Level> Corporate_Sector, 5 </Max_Tech_Level>
+		<Starting_Forces> Corporate_Sector, Ession, Placement_Dummy </Starting_Forces>		
+		<!-- ******************** FACTION: Moorja ************** DONE -->
+														
+		<Starting_Credits> Warlords,  45000 </Starting_Credits>
+		<Starting_Tech_Level> Warlords, 1 </Starting_Tech_Level>
+		<Max_Tech_Level> Warlords, 5 </Max_Tech_Level>
+		
+	
+
+		<!-- ******************** FACTION: Hapes ************** -->
+																		
+		<Starting_Credits> Hapes_Consortium,  0 </Starting_Credits>
+		<Starting_Tech_Level> Hapes_Consortium, 1 </Starting_Tech_Level>
+		<Max_Tech_Level> Hapes_Consortium, 5 </Max_Tech_Level>
+		
+			
+		<!-- ******************** FACTION: Hutts ************** -->
+																				
+		<Starting_Credits> Hutt_Cartels,  0 </Starting_Credits>
+		<Starting_Tech_Level> Hutt_Cartels, 1 </Starting_Tech_Level>
+		<Max_Tech_Level> Hutt_Cartels, 5 </Max_Tech_Level>
+		
+		<!-- ******************** FACTION: Mandalore ************** -->
+																						
+		
+	
+	</Campaign>	
 	
 	<Campaign Name="Full_Galaxy_Medium_Hapes_Consortium">
-	
-	
-		<Campaign_Set>Full_Galaxy_Medium</Campaign_Set>
+
+		<Campaign_Set> Full_Galaxy_Medium </Campaign_Set>
 		<Sort_Order>006</Sort_Order>
 
         <Text_ID> TEXT_CAMPAIGN_SINGLE_FULL_MEDIUM </Text_ID>
@@ -1426,43 +1154,43 @@
         <Camera_Shift_X> 40.0 </Camera_Shift_X>
         <Camera_Shift_Y> 0.0 </Camera_Shift_Y>
         <Camera_Distance> 1200.0 </Camera_Distance>
-	
+
 		<Locations>
 			Full_Galaxy_Medium
 		</Locations>
-	
+
 		<Trade_Routes>
-					
+
 		</Trade_Routes>
-	
-	
-		<Home_Location> Rebel, Endor </Home_Location>
+		<Home_Location> Rebel, Mon_Calamari </Home_Location>
         <Home_Location> Empire, Coruscant </Home_Location>
-        <Home_Location> EmpireoftheHand, Nirauan </Home_Location>
-		<Home_Location> Pentastar, Entralla </Home_Location>
+		<Home_Location> Pentastar, Bastion </Home_Location>
 		<Home_Location> Greater_Maldrood, Centares </Home_Location>
 		<Home_Location> Eriadu_Authority, Eriadu </Home_Location>
-		<Home_Location> Zsinj_Empire, Serenno </Home_Location>
+		<Home_Location> Zsinj_Empire, Dathomir </Home_Location>
 		<Home_Location> Corporate_Sector, Etti </Home_Location> 
 		<Home_Location> Warlords, Moorja </Home_Location> 
-		<Home_Location> Hutt_Cartels, Nal_Hutta </Home_Location> 
+		<Home_Location> EmpireoftheHand, Entralla </Home_Location> 
 		<Home_Location> Hapes_Consortium, Hapes </Home_Location>
+		<Home_Location> Hutt_Cartels, Nal_Hutta </Home_Location> 
+	 
+        <Starting_Active_Player> Hapes_Consortium </Starting_Active_Player>
 		
-		<Starting_Active_Player> Hapes_Consortium </Starting_Active_Player>
-
-	  <Underworld_Story_Name>Conquests\Progressive\Story_Plots_Sandbox_Loader.xml</Underworld_Story_Name>
-	  
-		<AI_Player_Control> Empire, RemnantAI </AI_Player_Control>
-		<AI_Player_Control> Pentastar, PentastarAI </AI_Player_Control>
-		<AI_Player_Control> Rebel, GenericAI </AI_Player_Control>
-		<AI_Player_Control> Zsinj_Empire, WarlordAI </AI_Player_Control>
-		<AI_Player_Control> EmpireoftheHand, EotHAI </AI_Player_Control>
-		<AI_Player_Control> Hapes_Consortium, SandboxHuman </AI_Player_Control>
+		<Supports_Custom_Settings>True</Supports_Custom_Settings>
+		<Show_Completed_Tab>True</Show_Completed_Tab>
+		<Underworld_Story_Name>Conquests\Progressive\Story_Plots_Sandbox_Loader.xml</Underworld_Story_Name>
+		
 		<AI_Player_Control> Greater_Maldrood, WarlordAI </AI_Player_Control>      
-		<AI_Player_Control> Eriadu_Authority, EriaduAI </AI_Player_Control>				
-		<AI_Player_Control> Corporate_Sector, None </AI_Player_Control>		
-		<AI_Player_Control> Warlords, None </AI_Player_Control>				
-				
+		<AI_Player_Control> Rebel, GenericAI </AI_Player_Control>
+		<AI_Player_Control> EmpireoftheHand, GenericAI </AI_Player_Control>
+		<AI_Player_Control> Pentastar, PentastarAI </AI_Player_Control>
+		<AI_Player_Control> Zsinj_Empire, WarlordAI </AI_Player_Control>	
+		<AI_Player_Control> Empire, GenericAI </AI_Player_Control>		
+		<AI_Player_Control> Eriadu_Authority, EriaduAI </AI_Player_Control>			
+		<AI_Player_Control> Corporate_Sector, CorporateAI </AI_Player_Control>		
+		<AI_Player_Control> Warlords, None </AI_Player_Control>						
+		<AI_Player_Control> Hapes_Consortium, SandboxHuman </AI_Player_Control>
+		<AI_Player_Control> Hutt_Cartels, GenericAI </AI_Player_Control>
 
 		<Markup_Filename>Empire, DefaultGalacticHints </Markup_Filename>
 		<Markup_Filename>Rebel, DefaultGalacticHints </Markup_Filename>
@@ -1474,17 +1202,23 @@
 		<Markup_Filename>Corporate_Sector, DefaultGalacticHints </Markup_Filename>		
 		<Markup_Filename>Warlords, DefaultGalacticHints </Markup_Filename>			
 		<Markup_Filename>Hapes_Consortium, DefaultGalacticHints </Markup_Filename>
+		<Markup_Filename>Hutt_Cartels, DefaultGalacticHints </Markup_Filename>
+				
 		
-
 		<Supports_Custom_Settings>True</Supports_Custom_Settings>		<Show_Completed_Tab>True</Show_Completed_Tab>
-		
+
+		<!-- Win Conditions -->
+
 		<Human_Victory_Conditions>
-			Galactic_Opponent_Controls_No_Planets
+				Galactic_All_Planets_Controlled
 		</Human_Victory_Conditions>
 
 		<AI_Victory_Conditions>
 				Galactic_All_Planets_Controlled
 		</AI_Victory_Conditions>
+
+        <!-- Special Case Planets for Cantinas and Hutt Palaces -->
+		
 		
 		<!-- ******************** FACTION: New Republic ************** -->
 		
@@ -1492,8 +1226,7 @@
 		<Starting_Tech_Level> Rebel, 0 </Starting_Tech_Level>
 		<Max_Tech_Level> Rebel, 4 </Max_Tech_Level>
 		
-		
-		
+		<Starting_Forces> Rebel, Bespin, Placement_Dummy </Starting_Forces>
 			
 		<!-- ******************** FACTION: Empire ************** -->
 		
@@ -1502,16 +1235,13 @@
 		<Max_Tech_Level> Empire, 5 </Max_Tech_Level>
 		
 		
-
-			
+		<Starting_Forces> Empire, Carida, Placement_Dummy </Starting_Forces>
+		
 		<!-- ******************** FACTION: Hand ************** -->
-				
+		
 		<Starting_Credits> EmpireoftheHand,  0 </Starting_Credits>
 		<Starting_Tech_Level> EmpireoftheHand, 1 </Starting_Tech_Level>
 		<Max_Tech_Level> EmpireoftheHand, 5 </Max_Tech_Level>
-		
-		
-	
 		
 		<!-- ******************** FACTION: Zsinj ************** -->
 						
@@ -1519,28 +1249,21 @@
 		<Starting_Tech_Level> Zsinj_Empire, 1 </Starting_Tech_Level>
 		<Max_Tech_Level> Zsinj_Empire, 5 </Max_Tech_Level>
 		
-			
 		
 
-			<!-- ******************** FACTION: Maldrood ************** -->
+		<!-- ******************** FACTION: Maldrood ************** -->
 								
 		<Starting_Credits> Greater_Maldrood,  0 </Starting_Credits>
 		<Starting_Tech_Level> Greater_Maldrood, 1 </Starting_Tech_Level>
 		<Max_Tech_Level> Greater_Maldrood, 5 </Max_Tech_Level>
 		
-		<!-- Hakassi Space Forces -->
+		<Starting_Forces> Greater_Maldrood, Centares, Placement_Dummy </Starting_Forces>
 
-		
-		
-		
-		<!-- ******************** FACTION: Pentastar ************** -->
+			<!-- ******************** FACTION: Pentastar ************** -->
 				
 		<Starting_Credits> Pentastar,  0 </Starting_Credits>
 		<Starting_Tech_Level> Pentastar, 1 </Starting_Tech_Level>
 		<Max_Tech_Level> Pentastar, 5 </Max_Tech_Level>
-		
-
-		
 		
 		
 		
@@ -1548,30 +1271,25 @@
 						
 		<Starting_Credits> Eriadu_Authority,  0 </Starting_Credits>
 		<Starting_Tech_Level> Eriadu_Authority, 1 </Starting_Tech_Level>
-		<Max_Tech_Level> Eriadu_Authority, 4 </Max_Tech_Level>
-		
-				
+		<Max_Tech_Level> Eriadu_Authority, 5 </Max_Tech_Level>
 	
-		
-	
-	
-		
+		<Starting_Forces> Eriadu_Authority, Eriadu, Placement_Dummy </Starting_Forces>
+
 		<!-- ******************** FACTION: Corporate Sector ************** -->
 												
 		<Starting_Credits> Corporate_Sector,  0 </Starting_Credits>
 		<Starting_Tech_Level> Corporate_Sector, 1 </Starting_Tech_Level>
 		<Max_Tech_Level> Corporate_Sector, 5 </Max_Tech_Level>
 		
-		
-		
+		<Starting_Forces> Corporate_Sector, Ession, Placement_Dummy </Starting_Forces>		
 		<!-- ******************** FACTION: Moorja ************** DONE -->
 														
 		<Starting_Credits> Warlords,  45000 </Starting_Credits>
 		<Starting_Tech_Level> Warlords, 1 </Starting_Tech_Level>
 		<Max_Tech_Level> Warlords, 5 </Max_Tech_Level>
 		
+	
 
-		
 		<!-- ******************** FACTION: Hapes ************** -->
 																		
 		<Starting_Credits> Hapes_Consortium,  0 </Starting_Credits>
@@ -1579,12 +1297,348 @@
 		<Max_Tech_Level> Hapes_Consortium, 5 </Max_Tech_Level>
 		
 			
-		<!-- ******************** FACTION: Eriadu_Authority ************** -->
+		<!-- ******************** FACTION: Hutts ************** -->
 																				
 		<Starting_Credits> Hutt_Cartels,  0 </Starting_Credits>
 		<Starting_Tech_Level> Hutt_Cartels, 1 </Starting_Tech_Level>
 		<Max_Tech_Level> Hutt_Cartels, 5 </Max_Tech_Level>
-
-	</Campaign>
+		
+		<!-- ******************** FACTION: Mandalore ************** -->
+																						
+		
 	
-</Campaigns_All>
+	</Campaign>	
+	
+	<Campaign Name="Full_Galaxy_Medium_EmpireoftheHand">
+
+		<Campaign_Set> Full_Galaxy_Medium </Campaign_Set>
+		<Sort_Order>006</Sort_Order>
+
+        <Text_ID> TEXT_CAMPAIGN_SINGLE_FULL_MEDIUM </Text_ID>
+        <Description_Text> TEXT_CAMPAIGN_SINGLE_DESCRIPTION_FULL_MEDIUM </Description_Text>
+
+        <Camera_Shift_X> 40.0 </Camera_Shift_X>
+        <Camera_Shift_Y> 0.0 </Camera_Shift_Y>
+        <Camera_Distance> 1200.0 </Camera_Distance>
+
+		<Locations>
+			Full_Galaxy_Medium
+		</Locations>
+
+		<Trade_Routes>
+
+		</Trade_Routes>
+		<Home_Location> Rebel, Mon_Calamari </Home_Location>
+        <Home_Location> Empire, Coruscant </Home_Location>
+		<Home_Location> Pentastar, Bastion </Home_Location>
+		<Home_Location> Greater_Maldrood, Centares </Home_Location>
+		<Home_Location> Eriadu_Authority, Eriadu </Home_Location>
+		<Home_Location> Zsinj_Empire, Dathomir </Home_Location>
+		<Home_Location> Corporate_Sector, Etti </Home_Location> 
+		<Home_Location> Warlords, Moorja </Home_Location> 
+		<Home_Location> EmpireoftheHand, Entralla </Home_Location> 
+		<Home_Location> Hapes_Consortium, Hapes </Home_Location>
+		<Home_Location> Hutt_Cartels, Nal_Hutta </Home_Location> 
+	 
+        <Starting_Active_Player> EmpireoftheHand </Starting_Active_Player>
+		
+		<Supports_Custom_Settings>True</Supports_Custom_Settings>
+		<Show_Completed_Tab>True</Show_Completed_Tab>
+		<Underworld_Story_Name>Conquests\Progressive\Story_Plots_Sandbox_Loader.xml</Underworld_Story_Name>
+		
+		<AI_Player_Control> Greater_Maldrood, WarlordAI </AI_Player_Control>      
+		<AI_Player_Control> Rebel, GenericAI </AI_Player_Control>
+		<AI_Player_Control> EmpireoftheHand, SandboxHuman </AI_Player_Control>
+		<AI_Player_Control> Pentastar, PentastarAI </AI_Player_Control>
+		<AI_Player_Control> Zsinj_Empire, WarlordAI </AI_Player_Control>	
+		<AI_Player_Control> Empire, GenericAI </AI_Player_Control>		
+		<AI_Player_Control> Eriadu_Authority, EriaduAI </AI_Player_Control>			
+		<AI_Player_Control> Corporate_Sector, CorporateAI </AI_Player_Control>		
+		<AI_Player_Control> Warlords, None </AI_Player_Control>						
+		<AI_Player_Control> Hapes_Consortium, GenericAI </AI_Player_Control>
+		<AI_Player_Control> Hutt_Cartels, GenericAI </AI_Player_Control>
+
+		<Markup_Filename>Empire, DefaultGalacticHints </Markup_Filename>
+		<Markup_Filename>Rebel, DefaultGalacticHints </Markup_Filename>
+		<Markup_Filename>EmpireoftheHand, DefaultGalacticHints </Markup_Filename>
+		<Markup_Filename>Zsinj_Empire, DefaultGalacticHints </Markup_Filename>
+		<Markup_Filename>Greater_Maldrood, DefaultMaldroodHints </Markup_Filename>			
+		<Markup_Filename>Pentastar, DefaultGalacticHints </Markup_Filename>
+		<Markup_Filename>Eriadu_Authority, DefaultEriaduHints </Markup_Filename>				
+		<Markup_Filename>Corporate_Sector, DefaultGalacticHints </Markup_Filename>		
+		<Markup_Filename>Warlords, DefaultGalacticHints </Markup_Filename>			
+		<Markup_Filename>Hapes_Consortium, DefaultGalacticHints </Markup_Filename>
+		<Markup_Filename>Hutt_Cartels, DefaultGalacticHints </Markup_Filename>
+				
+		
+		<Supports_Custom_Settings>True</Supports_Custom_Settings>		<Show_Completed_Tab>True</Show_Completed_Tab>
+
+		<!-- Win Conditions -->
+
+		<Human_Victory_Conditions>
+				Galactic_All_Planets_Controlled
+		</Human_Victory_Conditions>
+
+		<AI_Victory_Conditions>
+				Galactic_All_Planets_Controlled
+		</AI_Victory_Conditions>
+
+        <!-- Special Case Planets for Cantinas and Hutt Palaces -->
+		
+		
+		<!-- ******************** FACTION: New Republic ************** -->
+		
+		<Starting_Credits> Rebel,  0 </Starting_Credits>
+		<Starting_Tech_Level> Rebel, 0 </Starting_Tech_Level>
+		<Max_Tech_Level> Rebel, 4 </Max_Tech_Level>
+		
+		<Starting_Forces> Rebel, Bespin, Placement_Dummy </Starting_Forces>
+			
+		<!-- ******************** FACTION: Empire ************** -->
+		
+		<Starting_Credits> Empire,  0 </Starting_Credits>
+		<Starting_Tech_Level> Empire, 1 </Starting_Tech_Level>
+		<Max_Tech_Level> Empire, 5 </Max_Tech_Level>
+		
+		
+		<Starting_Forces> Empire, Carida, Placement_Dummy </Starting_Forces>
+		
+		<!-- ******************** FACTION: Hand ************** -->
+		
+		<Starting_Credits> EmpireoftheHand,  0 </Starting_Credits>
+		<Starting_Tech_Level> EmpireoftheHand, 1 </Starting_Tech_Level>
+		<Max_Tech_Level> EmpireoftheHand, 5 </Max_Tech_Level>
+		
+		<!-- ******************** FACTION: Zsinj ************** -->
+						
+		<Starting_Credits> Zsinj_Empire,  0 </Starting_Credits>
+		<Starting_Tech_Level> Zsinj_Empire, 1 </Starting_Tech_Level>
+		<Max_Tech_Level> Zsinj_Empire, 5 </Max_Tech_Level>
+		
+		
+
+		<!-- ******************** FACTION: Maldrood ************** -->
+								
+		<Starting_Credits> Greater_Maldrood,  0 </Starting_Credits>
+		<Starting_Tech_Level> Greater_Maldrood, 1 </Starting_Tech_Level>
+		<Max_Tech_Level> Greater_Maldrood, 5 </Max_Tech_Level>
+		
+		<Starting_Forces> Greater_Maldrood, Centares, Placement_Dummy </Starting_Forces>
+
+		<!-- ******************** FACTION: Pentastar ************** -->
+				
+		<Starting_Credits> Pentastar,  0 </Starting_Credits>
+		<Starting_Tech_Level> Pentastar, 1 </Starting_Tech_Level>
+		<Max_Tech_Level> Pentastar, 5 </Max_Tech_Level>
+		
+		
+		
+		<!-- ******************** FACTION: Eriadu ************** -->
+						
+		<Starting_Credits> Eriadu_Authority,  0 </Starting_Credits>
+		<Starting_Tech_Level> Eriadu_Authority, 1 </Starting_Tech_Level>
+		<Max_Tech_Level> Eriadu_Authority, 5 </Max_Tech_Level>
+	
+		<Starting_Forces> Eriadu_Authority, Eriadu, Placement_Dummy </Starting_Forces>
+
+		<!-- ******************** FACTION: Corporate Sector ************** -->
+												
+		<Starting_Credits> Corporate_Sector,  0 </Starting_Credits>
+		<Starting_Tech_Level> Corporate_Sector, 1 </Starting_Tech_Level>
+		<Max_Tech_Level> Corporate_Sector, 5 </Max_Tech_Level>
+		
+		<Starting_Forces> Corporate_Sector, Ession, Placement_Dummy </Starting_Forces>		
+		<!-- ******************** FACTION: Moorja ************** DONE -->
+														
+		<Starting_Credits> Warlords,  45000 </Starting_Credits>
+		<Starting_Tech_Level> Warlords, 1 </Starting_Tech_Level>
+		<Max_Tech_Level> Warlords, 5 </Max_Tech_Level>
+		
+	
+
+		<!-- ******************** FACTION: Hapes ************** -->
+																		
+		<Starting_Credits> Hapes_Consortium,  0 </Starting_Credits>
+		<Starting_Tech_Level> Hapes_Consortium, 1 </Starting_Tech_Level>
+		<Max_Tech_Level> Hapes_Consortium, 5 </Max_Tech_Level>
+		
+			
+		<!-- ******************** FACTION: Hutts ************** -->
+																				
+		<Starting_Credits> Hutt_Cartels,  0 </Starting_Credits>
+		<Starting_Tech_Level> Hutt_Cartels, 1 </Starting_Tech_Level>
+		<Max_Tech_Level> Hutt_Cartels, 5 </Max_Tech_Level>
+		
+		<!-- ******************** FACTION: Mandalore ************** -->
+																						
+		
+	
+	</Campaign>	
+
+	<Campaign Name="Full_Galaxy_Medium_Hutts">
+
+		<Campaign_Set> Full_Galaxy_Medium </Campaign_Set>
+		<Sort_Order>006</Sort_Order>
+
+        <Text_ID> TEXT_CAMPAIGN_SINGLE_FULL_MEDIUM </Text_ID>
+        <Description_Text> TEXT_CAMPAIGN_SINGLE_DESCRIPTION_FULL_MEDIUM </Description_Text>
+
+        <Camera_Shift_X> 40.0 </Camera_Shift_X>
+        <Camera_Shift_Y> 0.0 </Camera_Shift_Y>
+        <Camera_Distance> 1200.0 </Camera_Distance>
+
+		<Locations>
+			Full_Galaxy_Medium
+		</Locations>
+
+		<Trade_Routes>
+
+		</Trade_Routes>
+		<Home_Location> Rebel, Mon_Calamari </Home_Location>
+        <Home_Location> Empire, Coruscant </Home_Location>
+		<Home_Location> Pentastar, Bastion </Home_Location>
+		<Home_Location> Greater_Maldrood, Centares </Home_Location>
+		<Home_Location> Eriadu_Authority, Eriadu </Home_Location>
+		<Home_Location> Zsinj_Empire, Dathomir </Home_Location>
+		<Home_Location> Corporate_Sector, Etti </Home_Location> 
+		<Home_Location> Warlords, Moorja </Home_Location> 
+		<Home_Location> EmpireoftheHand, Entralla </Home_Location> 
+		<Home_Location> Hapes_Consortium, Hapes </Home_Location>
+		<Home_Location> Hutt_Cartels, Nal_Hutta </Home_Location> 
+	 
+        <Starting_Active_Player> Hutt_Cartels </Starting_Active_Player>
+		
+		<Supports_Custom_Settings>True</Supports_Custom_Settings>
+		<Show_Completed_Tab>True</Show_Completed_Tab>
+		<Underworld_Story_Name>Conquests\Progressive\Story_Plots_Sandbox_Loader.xml</Underworld_Story_Name>
+		
+		<AI_Player_Control> Greater_Maldrood, WarlordAI </AI_Player_Control>      
+		<AI_Player_Control> Rebel, GenericAI </AI_Player_Control>
+		<AI_Player_Control> EmpireoftheHand, SandboxHuman </AI_Player_Control>
+		<AI_Player_Control> Pentastar, PentastarAI </AI_Player_Control>
+		<AI_Player_Control> Zsinj_Empire, WarlordAI </AI_Player_Control>	
+		<AI_Player_Control> Empire, GenericAI </AI_Player_Control>		
+		<AI_Player_Control> Eriadu_Authority, EriaduAI </AI_Player_Control>			
+		<AI_Player_Control> Corporate_Sector, CorporateAI </AI_Player_Control>		
+		<AI_Player_Control> Warlords, None </AI_Player_Control>						
+		<AI_Player_Control> Hapes_Consortium, GenericAI </AI_Player_Control>
+		<AI_Player_Control> Hutt_Cartels, SandboxHuman </AI_Player_Control>
+
+		<Markup_Filename>Empire, DefaultGalacticHints </Markup_Filename>
+		<Markup_Filename>Rebel, DefaultGalacticHints </Markup_Filename>
+		<Markup_Filename>EmpireoftheHand, DefaultGalacticHints </Markup_Filename>
+		<Markup_Filename>Zsinj_Empire, DefaultGalacticHints </Markup_Filename>
+		<Markup_Filename>Greater_Maldrood, DefaultMaldroodHints </Markup_Filename>			
+		<Markup_Filename>Pentastar, DefaultGalacticHints </Markup_Filename>
+		<Markup_Filename>Eriadu_Authority, DefaultEriaduHints </Markup_Filename>				
+		<Markup_Filename>Corporate_Sector, DefaultGalacticHints </Markup_Filename>		
+		<Markup_Filename>Warlords, DefaultGalacticHints </Markup_Filename>			
+		<Markup_Filename>Hapes_Consortium, DefaultGalacticHints </Markup_Filename>
+		<Markup_Filename>Hutt_Cartels, DefaultGalacticHints </Markup_Filename>
+				
+		
+		<Supports_Custom_Settings>True</Supports_Custom_Settings>		<Show_Completed_Tab>True</Show_Completed_Tab>
+
+		<!-- Win Conditions -->
+
+		<Human_Victory_Conditions>
+				Galactic_All_Planets_Controlled
+		</Human_Victory_Conditions>
+
+		<AI_Victory_Conditions>
+				Galactic_All_Planets_Controlled
+		</AI_Victory_Conditions>
+
+        <!-- Special Case Planets for Cantinas and Hutt Palaces -->
+		
+		
+		<!-- ******************** FACTION: New Republic ************** -->
+		
+		<Starting_Credits> Rebel,  0 </Starting_Credits>
+		<Starting_Tech_Level> Rebel, 0 </Starting_Tech_Level>
+		<Max_Tech_Level> Rebel, 4 </Max_Tech_Level>
+		
+		<Starting_Forces> Rebel, Bespin, Placement_Dummy </Starting_Forces>
+			
+		<!-- ******************** FACTION: Empire ************** -->
+		
+		<Starting_Credits> Empire,  0 </Starting_Credits>
+		<Starting_Tech_Level> Empire, 1 </Starting_Tech_Level>
+		<Max_Tech_Level> Empire, 5 </Max_Tech_Level>
+		
+		
+		<Starting_Forces> Empire, Carida, Placement_Dummy </Starting_Forces>
+		
+		<!-- ******************** FACTION: Hand ************** -->
+		
+		<Starting_Credits> EmpireoftheHand,  0 </Starting_Credits>
+		<Starting_Tech_Level> EmpireoftheHand, 1 </Starting_Tech_Level>
+		<Max_Tech_Level> EmpireoftheHand, 5 </Max_Tech_Level>
+		
+		<!-- ******************** FACTION: Zsinj ************** -->
+						
+		<Starting_Credits> Zsinj_Empire,  0 </Starting_Credits>
+		<Starting_Tech_Level> Zsinj_Empire, 1 </Starting_Tech_Level>
+		<Max_Tech_Level> Zsinj_Empire, 5 </Max_Tech_Level>
+		
+		
+
+		<!-- ******************** FACTION: Maldrood ************** -->
+								
+		<Starting_Credits> Greater_Maldrood,  0 </Starting_Credits>
+		<Starting_Tech_Level> Greater_Maldrood, 1 </Starting_Tech_Level>
+		<Max_Tech_Level> Greater_Maldrood, 5 </Max_Tech_Level>
+		
+		<Starting_Forces> Greater_Maldrood, Centares, Placement_Dummy </Starting_Forces>
+
+		<!-- ******************** FACTION: Pentastar ************** -->
+				
+		<Starting_Credits> Pentastar,  0 </Starting_Credits>
+		<Starting_Tech_Level> Pentastar, 1 </Starting_Tech_Level>
+		<Max_Tech_Level> Pentastar, 5 </Max_Tech_Level>
+		
+		
+		
+		<!-- ******************** FACTION: Eriadu ************** -->
+						
+		<Starting_Credits> Eriadu_Authority,  0 </Starting_Credits>
+		<Starting_Tech_Level> Eriadu_Authority, 1 </Starting_Tech_Level>
+		<Max_Tech_Level> Eriadu_Authority, 5 </Max_Tech_Level>
+	
+		<Starting_Forces> Eriadu_Authority, Eriadu, Placement_Dummy </Starting_Forces>
+
+		<!-- ******************** FACTION: Corporate Sector ************** -->
+												
+		<Starting_Credits> Corporate_Sector,  0 </Starting_Credits>
+		<Starting_Tech_Level> Corporate_Sector, 1 </Starting_Tech_Level>
+		<Max_Tech_Level> Corporate_Sector, 5 </Max_Tech_Level>
+		
+		<Starting_Forces> Corporate_Sector, Ession, Placement_Dummy </Starting_Forces>		
+		<!-- ******************** FACTION: Moorja ************** DONE -->
+														
+		<Starting_Credits> Warlords,  45000 </Starting_Credits>
+		<Starting_Tech_Level> Warlords, 1 </Starting_Tech_Level>
+		<Max_Tech_Level> Warlords, 5 </Max_Tech_Level>
+		
+	
+
+		<!-- ******************** FACTION: Hapes ************** -->
+																		
+		<Starting_Credits> Hapes_Consortium,  0 </Starting_Credits>
+		<Starting_Tech_Level> Hapes_Consortium, 1 </Starting_Tech_Level>
+		<Max_Tech_Level> Hapes_Consortium, 5 </Max_Tech_Level>
+		
+			
+		<!-- ******************** FACTION: Hutts ************** -->
+																				
+		<Starting_Credits> Hutt_Cartels,  0 </Starting_Credits>
+		<Starting_Tech_Level> Hutt_Cartels, 1 </Starting_Tech_Level>
+		<Max_Tech_Level> Hutt_Cartels, 5 </Max_Tech_Level>
+		
+		<!-- ******************** FACTION: Mandalore ************** -->
+																						
+		
+	
+	</Campaign>	
+
+ </Campaigns>

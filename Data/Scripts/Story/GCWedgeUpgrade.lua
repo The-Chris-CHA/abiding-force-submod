@@ -24,33 +24,27 @@ require("PGStoryMode")
 require("PGSpawnUnits")
 require("eawx-util/ChangeOwnerUtilities")
 StoryUtil = require("eawx-util/StoryUtil")
+require("deepcore/crossplot/crossplot")
+require("SetFighterResearch")
 
 function Definitions()
     DebugMessage("%s -- In Definitions", tostring(Script))
 
     StoryModeEvents = {
-        Spawn_Rogue_Squadron = Tycho_appears
+        Spawn_Tycho_Celchu_Rogue_Team = fn_Spawn_Tycho_Celchu_Rogue_Team
     }
 end
 
-function Tycho_appears(message)
+function fn_Spawn_Tycho_Celchu_Rogue_Team(message)
     if message == OnEnter then
+		crossplot:galactic()
         p_rebel = Find_Player("Rebel")
 
-        start_planet = FindPlanet("Coruscant")
-        --checkWedge = Find_First_Object("Wedge_Rogue_Squadron_Space") --tried to spawn Tycho in Wedge's location, but it wasn't working. I blame squadron/unit confusion, probably
-        --if TestValid(checkWedge) then
-        --start_planet = checkWedge.Get_Planet_Location()
-        --checkWedge.Despawn()
-        --end
-
-        if not StoryUtil.CheckFriendlyPlanet(start_planet,p_rebel) then
-            start_planet = StoryUtil.FindFriendlyPlanet(p_rebel)
-        end
-        spawn_list_Tycho = {"Rogue_Squadron_Space"}
-        TychoSpawn = SpawnList(spawn_list_Tycho, start_planet, p_rebel, true, false)
-
-        ScriptExit()
+		crossplot:publish("NR_FILTER_REMOVE", {"Wedge_Rogues_Location_Set"}, 2)
+		Clear_Fighter_Hero("WEDGE_ANTILLES_ROGUE_TEAM")
+		Set_Fighter_Hero("TYCHO_CELCHU_ROGUE_TEAM", "WEDGE_LUSANKYA")
+		crossplot:publish("NR_FILTER_ADD", {"Tycho_Rogues_Location_Set"}, 2)
     elseif message == OnUpdate then
+		crossplot:update()
     end
 end

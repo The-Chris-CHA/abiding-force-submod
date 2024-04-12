@@ -1,0 +1,628 @@
+<?xml version="1.0"?>
+<Hutt_Heroes>
+	
+	<UniqueUnit Name="Troonol_Agrelcu_Haalta">
+		<Variant_Of_Existing_Type>Ubrikkian_Cruiser_GCW</Variant_Of_Existing_Type>
+		<Icon_Name>i_button_troonol.tga</Icon_Name>
+
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+		<Text_ID>TEXT_UNIT_TROONOL</Text_ID>
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_SEPARATOR_TRAITS_BLOCK 
+		TEXT_TOOLTIP_TRAIT_COMMAND3_SPACE
+		TEXT_TOOLTIP_TRAIT_AGGRESSIVE
+		TEXT_TOOLTIP_SEPARATOR_BIO_BLOCK 
+		TEXT_TOOLTIP_TROONOL
+		TEXT_TOOLTIP_SEPARATOR_COMMANDS_BLOCK
+		TEXT_TOOLTIP_COMMAND_AGRELCU_HAALTA
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_UBRIKKIAN_CRUISER_HULL
+		TEXT_TOOLTIP_UBRIKKIAN_CRUISER_SHIELD_GCW
+		TEXT_TOOLTIP_UBRIKKIAN_CRUISER_MOVE_GCW
+		TEXT_TOOLTIP_UBRIKKIAN_CRUISER_WEAP1_GCW
+		TEXT_TOOLTIP_UBRIKKIAN_CRUISER_WEAP2_GCW
+		TEXT_TOOLTIP_UBRIKKIAN_CRUISER_WEAP3
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_ORBITAL_BOMBARDMENT
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_COMMANDER </Encyclopedia_Unit_Class>
+
+		<SpaceBehavior> ABILITY_COUNTDOWN, SIMPLE_SPACE_LOCOMOTOR, POWERED, SHIELDED, SELECTABLE, TARGETING, REVEAL, HIDE_WHEN_FOGGED, UNIT_AI, DAMAGE_TRACKING, ASTEROID_FIELD_DAMAGE, ION_STUN_EFFECT, NEBULA, LURE</SpaceBehavior>
+		<Lua_Script>GenericGameObject</Lua_Script>
+		<Tech_Level>99</Tech_Level>
+		<Affiliation>Hutt_Cartels</Affiliation>
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+		<Build_Limit_Lifetime_Per_Player>1</Build_Limit_Lifetime_Per_Player>
+		<Build_Limit_Lifetime_For_All_Allies></Build_Limit_Lifetime_For_All_Allies>  
+
+		<CategoryMask> SpaceHero | AntiCapital </CategoryMask>
+		<Property_Flags>GTSImmune</Property_Flags>
+		
+		<SFXEvent_Build_Started>UHD_Build_Vehicle</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>UHD_Unit_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Complete_Hutt_Boss</SFXEvent_Build_Complete>
+		
+		<SFXEvent_Select>Unit_Select_Hutt_Boss</SFXEvent_Select>
+		<SFXEvent_Move>Unit_Move_Hutt_Boss</SFXEvent_Move>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Hutt_Boss</SFXEvent_Fleet_Move>
+		<SFXEvent_Attack>Unit_Attack_Hutt_Boss</SFXEvent_Attack>
+		<SFXEvent_Guard>Unit_Guard_Hutt_Boss</SFXEvent_Guard>
+		<SFXEvent_Move_Into_Nebula> Unit_Move_Hutt_Boss </SFXEvent_Move_Into_Nebula>
+		<SFXEvent_Move_Into_Asteroid_Field> Unit_Move_Hutt_Boss </SFXEvent_Move_Into_Asteroid_Field>
+		<SFXEvent_Health_Low_Warning>null</SFXEvent_Health_Low_Warning>
+		<Death_SFXEvent_Start_Die> Unit_Death_Hutt_Boss </Death_SFXEvent_Start_Die>
+		
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_LASER, Unit_Attack_Hutt_Boss </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MISSILE, Unit_Attack_Hutt_Boss </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_TORPEDO, Unit_Attack_Hutt_Boss </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_ION_CANNON, Unit_Attack_Hutt_Boss </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_SHIELD_GENERATOR, Unit_Attack_Hutt_Boss </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENGINE, Unit_Attack_Hutt_Boss </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_GRAVITY_WELL, Unit_Attack_Hutt_Boss </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_FIGHTER_BAY, Unit_Attack_Hutt_Boss </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_TRACTOR_BEAM, Unit_Attack_Hutt_Boss </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MASS_DRIVER, Unit_Attack_Hutt_Boss </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_SPECIAL, Unit_Attack_Hutt_Boss </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENABLE_SPECIAL_ABILITY, Unit_Attack_Hutt_Boss </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_DUMMY_ART, Unit_Attack_Hutt_Boss </SFXEvent_Attack_Hardpoint>
+				
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_LASER, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_MISSILE, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_TORPEDO, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_ION_CANNON, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_SHIELD_GENERATOR, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENGINE, Unit_Death_Hutt_Boss </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_GRAVITY_WELL, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_FIGHTER_BAY, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_TRACTOR_BEAM, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_MASS_DRIVER, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_SPECIAL, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENABLE_SPECIAL_ABILITY, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_DUMMY_ART, null </SFXEvent_Hardpoint_Destroyed>
+		
+		<Abilities SubObjectList="Yes">
+
+			<Combat_Bonus_Ability Name="Troonol_Combat_Bonus">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories> All </Applicable_Unit_Categories>
+				<Applicable_Unit_Types />
+				<Excluded_Unit_Types> Ground_Ion_Cannon, Ground_Hypervelocity_Gun </Excluded_Unit_Types>
+				<Health_Bonus_Percentage>0.10</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.15</Damage_Bonus_Percentage>    
+				<Shield_Bonus_Percentage>0.10</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.10</Defense_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.05</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>0</Stacking_Category>
+			</Combat_Bonus_Ability>
+
+		</Abilities>
+
+	</UniqueUnit>
+	
+	<UniqueUnit Name="Troonol_Karabos">
+		<Variant_Of_Existing_Type>Karabos_Destroyer</Variant_Of_Existing_Type>
+		<Icon_Name>i_button_troonol.tga</Icon_Name>
+
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+		<Text_ID>TEXT_UNIT_TROONOL</Text_ID>
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_SEPARATOR_TRAITS_BLOCK 
+		TEXT_TOOLTIP_TRAIT_COMMAND3_SPACE
+		TEXT_TOOLTIP_TRAIT_AGGRESSIVE
+		TEXT_TOOLTIP_SEPARATOR_BIO_BLOCK 
+		TEXT_TOOLTIP_TROONOL
+		TEXT_TOOLTIP_SEPARATOR_COMMANDS_BLOCK
+		TEXT_TOOLTIP_COMMAND_TROONOL_KARABOS
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_KARABOS_HULL
+		TEXT_TOOLTIP_KARABOS_SHIELD
+		TEXT_TOOLTIP_KARABOS_MOVE 
+		TEXT_TOOLTIP_KARABOS_WEAP1
+		TEXT_TOOLTIP_KARABOS_WEAP2 
+		TEXT_TOOLTIP_KARABOS_WEAP3 
+		TEXT_TOOLTIP_KARABOS_WEAP4
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_ORBITAL_BOMBARDMENT
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_COMMANDER </Encyclopedia_Unit_Class>
+
+		<SpaceBehavior> ABILITY_COUNTDOWN, SIMPLE_SPACE_LOCOMOTOR, POWERED, SHIELDED, SELECTABLE, TARGETING, REVEAL, HIDE_WHEN_FOGGED, UNIT_AI, DAMAGE_TRACKING, ASTEROID_FIELD_DAMAGE, ION_STUN_EFFECT, NEBULA, LURE</SpaceBehavior>
+		<Lua_Script>GenericGameObject</Lua_Script>
+		<Tech_Level>99</Tech_Level>
+		<Affiliation>Hutt_Cartels</Affiliation>
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+		<Build_Limit_Lifetime_Per_Player>1</Build_Limit_Lifetime_Per_Player>
+		<Build_Limit_Lifetime_For_All_Allies></Build_Limit_Lifetime_For_All_Allies>  
+
+		<CategoryMask> SpaceHero | AntiCapital </CategoryMask>
+		<Property_Flags>GTSImmune</Property_Flags>
+		
+		<SFXEvent_Build_Started>UHD_Build_Vehicle</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>UHD_Unit_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Complete_Hutt_Boss</SFXEvent_Build_Complete>
+		
+		<SFXEvent_Select>Unit_Select_Hutt_Boss</SFXEvent_Select>
+		<SFXEvent_Move>Unit_Move_Hutt_Boss</SFXEvent_Move>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Hutt_Boss</SFXEvent_Fleet_Move>
+		<SFXEvent_Attack>Unit_Attack_Hutt_Boss</SFXEvent_Attack>
+		<SFXEvent_Guard>Unit_Guard_Hutt_Boss</SFXEvent_Guard>
+		<SFXEvent_Move_Into_Nebula> Unit_Move_Hutt_Boss </SFXEvent_Move_Into_Nebula>
+		<SFXEvent_Move_Into_Asteroid_Field> Unit_Move_Hutt_Boss </SFXEvent_Move_Into_Asteroid_Field>
+		<SFXEvent_Health_Low_Warning>null</SFXEvent_Health_Low_Warning>
+		<Death_SFXEvent_Start_Die> Unit_Death_Hutt_Boss </Death_SFXEvent_Start_Die>
+		
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_LASER, Unit_Attack_Hutt_Boss </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MISSILE, Unit_Attack_Hutt_Boss </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_TORPEDO, Unit_Attack_Hutt_Boss </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_ION_CANNON, Unit_Attack_Hutt_Boss </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_SHIELD_GENERATOR, Unit_Attack_Hutt_Boss </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENGINE, Unit_Attack_Hutt_Boss </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_GRAVITY_WELL, Unit_Attack_Hutt_Boss </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_FIGHTER_BAY, Unit_Attack_Hutt_Boss </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_TRACTOR_BEAM, Unit_Attack_Hutt_Boss </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MASS_DRIVER, Unit_Attack_Hutt_Boss </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_SPECIAL, Unit_Attack_Hutt_Boss </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENABLE_SPECIAL_ABILITY, Unit_Attack_Hutt_Boss </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_DUMMY_ART, Unit_Attack_Hutt_Boss </SFXEvent_Attack_Hardpoint>
+				
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_LASER, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_MISSILE, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_TORPEDO, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_ION_CANNON, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_SHIELD_GENERATOR, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENGINE, Unit_Death_Hutt_Boss </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_GRAVITY_WELL, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_FIGHTER_BAY, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_TRACTOR_BEAM, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_MASS_DRIVER, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_SPECIAL, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENABLE_SPECIAL_ABILITY, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_DUMMY_ART, null </SFXEvent_Hardpoint_Destroyed>
+		
+		<Abilities SubObjectList="Yes">
+
+			<Combat_Bonus_Ability Name="Troonol_Combat_Bonus">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories> All </Applicable_Unit_Categories>
+				<Applicable_Unit_Types />
+				<Excluded_Unit_Types> Ground_Ion_Cannon, Ground_Hypervelocity_Gun </Excluded_Unit_Types>
+				<Health_Bonus_Percentage>0.10</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.15</Damage_Bonus_Percentage>    
+				<Shield_Bonus_Percentage>0.10</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.10</Defense_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.05</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>0</Stacking_Category>
+			</Combat_Bonus_Ability>
+
+		</Abilities>
+
+	</UniqueUnit>
+	
+	<DummyStructure Name="TroonolUpgrade">
+		<Variant_Of_Existing_Type>Template_Flagship_Swap_NoSelfDelete</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_TOOLTIP_COMMAND_TROONOL_KARABOS</Text_ID>
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_UPGRADE_FLAG
+		</Encyclopedia_Text>
+		
+		<Affiliation>Hutt_Cartels</Affiliation>
+		<Icon_Name>i_button_troonol.tga</Icon_Name>
+		<Build_Cost_Credits>4700</Build_Cost_Credits>
+
+		<Tech_Level>1</Tech_Level>
+		<Build_Initially_Locked>Yes</Build_Initially_Locked>
+		<Required_Orbiting_Units>Troonol_Agrelcu_Haalta</Required_Orbiting_Units>
+		<Required_Special_Structures>AI_Category_Dummy | Story_Category_Dummy, Hutt_Shipyard_Level_Three | Hutt_Shipyard_Level_Four </Required_Special_Structures>
+	</DummyStructure>
+	
+	<UniqueUnit Name="Quaffug_Lorda">
+		<Variant_Of_Existing_Type>Juvard_Frigate</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_HERO_QUAFFUG</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_SEPARATOR_TRAITS_BLOCK
+		TEXT_TOOLTIP_TRAIT_HUTT_LORD
+		TEXT_TOOLTIP_SEPARATOR_BIO_BLOCK
+		TEXT_TOOLTIP_QUAFFUG
+		TEXT_TOOLTIP_SEPARATOR_COMMANDS_BLOCK
+		TEXT_TOOLTIP_COMMAND_LORDA
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_JUVARD_FRIGATE_HULL 
+		TEXT_TOOLTIP_JUVARD_FRIGATE_SHIELD 
+		TEXT_TOOLTIP_JUVARD_FRIGATE_MOVE
+		TEXT_TOOLTIP_JUVARD_FRIGATE_WEAP1 
+		TEXT_TOOLTIP_JUVARD_FRIGATE_WEAP2
+		TEXT_TOOLTIP_JUVARD_FRIGATE_WEAP3
+		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
+		TEXT_TOOLTIP_JUVARD_FRIGATE_PD
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_ORBITAL_BOMBARDMENT
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_CRIMELORD </Encyclopedia_Unit_Class>
+		<Icon_Name>I_BUTTON_QUAFFUG.tga</Icon_Name>
+		
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+		
+		<Tech_Level>99</Tech_Level>
+		
+		<Lua_Script>GenericGameObject</Lua_Script>
+		
+		<CategoryMask> SpaceHero | AntiFighter | AntiBomber | AntiFrigate </CategoryMask>
+		<Property_Flags>GTSImmune</Property_Flags>
+
+		<Abilities SubObjectList="Yes">
+			
+			<Combat_Bonus_Ability Name="Hutt_Lord_Space_Combat_Bonus">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories> All </Applicable_Unit_Categories>
+				<Applicable_Unit_Types />
+				<Excluded_Unit_Types> Ground_Ion_Cannon, Ground_Hypervelocity_Gun </Excluded_Unit_Types>
+				<Health_Bonus_Percentage>0.00</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>    
+				<Shield_Bonus_Percentage>0.05</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.0</Defense_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.05</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>1</Stacking_Category>
+			</Combat_Bonus_Ability>
+			
+			<Bounty_On_Faction_Ability Name="Hutt_Lord_Bounty_Ability">
+				<Bounty_Percentage_Amount> 1 </Bounty_Percentage_Amount>
+				<Stacking_Category> 1 </Stacking_Category>
+				<Target_Faction_Names> Empire, Rebel, Underworld, Eriadu_Authority, Pentastar, Greater_Maldrood, Zsinj_Empire, EmpireoftheHand, Chiss, Corporate_Sector, Hapes_Consortium, Hutt_Cartels, Corellia, Yevetha, SsiRuuvi_Imperium, Killik_Hives, Mandalorians, Independent_Forces, Warlords, Neutral, Hostile, Sector_Forces, Techno_Union, Trade_Federation, Banking_Clan, Commerce_Guild </Target_Faction_Names>
+				<Apply_To_All_Allies> Yes </Apply_To_All_Allies>
+			</Bounty_On_Faction_Ability>
+			
+			<Laser_Defense_Ability Name="Juvard_Frigate_Laser_Defense">
+                <Activation_Style> Space_Automatic </Activation_Style>
+                <Defense_Duration_In_Secs> 4800.0 </Defense_Duration_In_Secs>
+                <Laser_Color>255, 218, 13, 255</Laser_Color>
+                <Bone_Names>WEAP_LASER_LS_01_185_FP00, WEAP_LASER_LS_01_185_FP01, WEAP_LASER_LS_02_185_FP00, WEAP_LASER_LS_02_185_FP01</Bone_Names>
+                <Projectile_Types_Targeted>ROCKET, MISSILE</Projectile_Types_Targeted>
+                 <Protection_Radius>625.0</Protection_Radius>
+                <Laser_Beam_Frames>2</Laser_Beam_Frames>
+                <Laser_Beam_Width>4</Laser_Beam_Width>
+                <Projectile_Dist_Travelled>100</Projectile_Dist_Travelled>
+                <Lightning_Effect_Name>Force_Lightning</Lightning_Effect_Name>
+                <Laser_Beam_Texture>tractor_beam00.tga</Laser_Beam_Texture>
+                <Recharge_Time_In_Secs>0.39</Recharge_Time_In_Secs>
+                <Must_Be_Bought_On_Black_Market>No</Must_Be_Bought_On_Black_Market>
+                <Zap_SFXEvent>Unit_Point_Laser_Fire</Zap_SFXEvent>
+            </Laser_Defense_Ability>
+
+		</Abilities>
+		
+	</UniqueUnit>
+
+	<UniqueUnit Name="Otto_ATST">
+		<Variant_Of_Existing_Type>AT_ST_Walker</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_HERO_OTTO</Text_ID>
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_SEPARATOR_TRAITS_BLOCK
+		TEXT_TOOLTIP_TRAIT_COMMAND4_LAND
+		TEXT_TOOLTIP_SEPARATOR_BIO_BLOCK
+		TEXT_TOOLTIP_OTTO
+		TEXT_TOOLTIP_SEPARATOR_COMMANDS_BLOCK
+		TEXT_UNIT_AT_ST_WALKER
+		TEXT_TOOLTIP_SEPARATOR_ESCORTS_BLOCK 
+		TEXT_TOOLTIP_ESCORT_OTTO
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_ATST_HEALTH
+		TEXT_TOOLTIP_ATST_MOVE
+		TEXT_TOOLTIP_ATST_WEAP1
+		TEXT_TOOLTIP_ATST_WEAP2 
+		TEXT_TOOLTIP_ATST_WEAP3
+		TEXT_TOOLTIP_SEPARATOR_ABILITY_BLOCK
+		TEXT_TOOLTIP_ATST_WEAP4
+		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
+		TEXT_TOOLTIP_BONUS_ENHANCED_SENSORS
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_CRUSH
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_GENERAL </Encyclopedia_Unit_Class>
+		<Icon_Name>I_BUTTON_GENERAL_OTTO.TGA</Icon_Name>
+		
+		<LandBehavior>SPAWN_SQUADRON, BARRAGE, ABILITY_COUNTDOWN,AFFECTED_BY_SHIELD,HUNT, WALK_LOCOMOTOR,TARGETING,IDLE,WEAPON,TURRET,POWERED,REVEAL,HIDE_WHEN_FOGGED,UNIT_AI,TELEKINESIS_TARGET,STUNNABLE,DAMAGE_TRACKING, SQUASH, GARRISON_UNIT</LandBehavior>
+
+		<Affiliation>Hutt_Cartels</Affiliation>
+
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+		<Property_Flags> GoodInfantryCrusher | GTSImmune</Property_Flags>
+		
+        <Highlight_Blob_Material_Name>Highlight_Hutt_Hero</Highlight_Blob_Material_Name>
+		
+		<Starting_Spawned_Units_Tech_0>Mercenary_Team_Deployed, 4</Starting_Spawned_Units_Tech_0>
+		
+		<SFXEvent_Select>Unit_Select_General_Otto</SFXEvent_Select>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_General_Otto</SFXEvent_Fleet_Move>
+		<SFXEvent_Move>Unit_Move_General_Otto</SFXEvent_Move>
+		<SFXEvent_Attack>Unit_Attack_General_Otto</SFXEvent_Attack>
+		<SFXEvent_Guard>Unit_Move_General_Otto</SFXEvent_Guard>
+		<SFXEvent_Assist_Move>null</SFXEvent_Assist_Move>
+		<SFXEvent_Assist_Attack>null</SFXEvent_Assist_Attack>
+		<SFXEvent_Health_Low_Warning> Unit_Health_Low_General_Otto </SFXEvent_Health_Low_Warning>
+		<SFXEvent_Health_Critical_Warning> Unit_Health_Critical_General_Otto </SFXEvent_Health_Critical_Warning>
+		<Death_SFXEvent_Start_Die>Unit_Defeat_General_Otto</Death_SFXEvent_Start_Die>
+		
+		<Unit_Abilities_Data SubObjectList="Yes">
+		
+		<!-- Primary ability -->
+			<Unit_Ability>
+				<Type>ROCKET_ATTACK</Type>
+				<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_AMMOSWAP</Alternate_Name_Text>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_AMMOSWAP_DESCRIPTION_ATST</Alternate_Description_Text>
+				<Alternate_Icon_Name>i_sa_swap_weapons.tga</Alternate_Icon_Name>
+				<Recharge_Seconds> 40.0 </Recharge_Seconds>
+			</Unit_Ability>
+			
+			<Unit_Ability>
+				<Type>STIM_PACK</Type>
+				<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_FANATICISM_NAME</Alternate_Name_Text>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_FANATICISM_DESCRIPTION</Alternate_Description_Text>
+				<Alternate_Icon_Name>I_SA_FANATICISM.TGA</Alternate_Icon_Name>
+				<Expiration_Seconds> 10.0 </Expiration_Seconds>
+				<Recharge_Seconds> 45.0 </Recharge_Seconds>
+				<Mod_Multiplier>SPEED_MULTIPLIER, 1.5f</Mod_Multiplier>
+				<Mod_Multiplier>WEAPON_DELAY_MULTIPLIER, 0.65f</Mod_Multiplier>
+				<Mod_Multiplier>TAKE_DAMAGE_MULTIPLIER, 0.4f</Mod_Multiplier>
+				<Damage_Percent_When_Activated>.25</Damage_Percent_When_Activated>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+		
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Otto_Combat_Bonus">
+				<Activation_Style>Ground_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Vehicle | Infantry | Air</Applicable_Unit_Categories>
+				<Applicable_Unit_Types />
+				<Health_Bonus_Percentage>0.05</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>    
+				<Shield_Bonus_Percentage>0.05</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.05</Defense_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.0</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>0</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UniqueUnit>
+
+	<HeroCompany Name="Otto_Team">
+		<Text_ID>TEXT_HERO_OTTO</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_SEPARATOR_TRAITS_BLOCK
+		TEXT_TOOLTIP_TRAIT_COMMAND4_LAND
+		TEXT_TOOLTIP_SEPARATOR_BIO_BLOCK
+		TEXT_TOOLTIP_OTTO
+		TEXT_TOOLTIP_SEPARATOR_COMMANDS_BLOCK
+		TEXT_UNIT_AT_ST_WALKER
+		TEXT_TOOLTIP_SEPARATOR_ESCORTS_BLOCK 
+		TEXT_TOOLTIP_ESCORT_OTTO
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_ATST_HEALTH
+		TEXT_TOOLTIP_ATST_MOVE
+		TEXT_TOOLTIP_ATST_WEAP1
+		TEXT_TOOLTIP_ATST_WEAP2 
+		TEXT_TOOLTIP_ATST_WEAP3
+		TEXT_TOOLTIP_SEPARATOR_ABILITY_BLOCK
+		TEXT_TOOLTIP_ATST_WEAP4
+		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
+		TEXT_TOOLTIP_BONUS_ENHANCED_SENSORS
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_CRUSH
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_GENERAL </Encyclopedia_Unit_Class>
+		<Icon_Name>I_BUTTON_GENERAL_OTTO.TGA</Icon_Name>
+		<GUI_Row> 1 </GUI_Row>
+		<Is_Dummy>Yes</Is_Dummy>
+		<Damage>20</Damage>
+		<Autoresolve_Health>400</Autoresolve_Health>
+		<Affiliation>Hutt_Cartels</Affiliation>
+		<Build_Time_Reduced_By_Multiple_Factories> Yes </Build_Time_Reduced_By_Multiple_Factories>
+		<Build_Tab_Land_Units>No</Build_Tab_Land_Units>
+		<Tech_Level>99</Tech_Level>
+		<!--<Required_Ground_Base_Level>2</Required_Ground_Base_Level>-->
+		<Required_Ground_Base_Level></Required_Ground_Base_Level>
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+		<Required_Special_Structures></Required_Special_Structures>
+		<Required_Planets />
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+		<Behavior>DUMMY_GROUND_COMPANY</Behavior>
+		<Formation_Priority>2</Formation_Priority>
+		<Is_Escort>yes</Is_Escort>
+		<Ship_Class>tank</Ship_Class>
+		<Company_Transport_Unit>Imperial_Landing_Craft</Company_Transport_Unit>
+		<Company_Units> Otto_ATST </Company_Units>
+		<Max_Squad_Size> 1 </Max_Squad_Size>
+		<Score_Cost_Credits>180</Score_Cost_Credits>
+		<Population_Value>1</Population_Value>
+		
+		<SFXEvent_Build_Started>EHD_Build_Vehicle</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Vehicle_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Complete_General_Otto</SFXEvent_Build_Complete>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_General_Otto</SFXEvent_Fleet_Move>
+		
+			<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>1100</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>11</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites>Ground_Level_Two_Tech_Upgrade</Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+		<Build_Limit_Lifetime_Per_Player>1</Build_Limit_Lifetime_Per_Player>
+		
+	</HeroCompany>
+	
+	<!-- Assignable Squadron Heroes -->
+	
+	<DummyStructure Name="Oberos_Location_Set">
+		<Variant_Of_Existing_Type>Template_Research_Dummy</Variant_Of_Existing_Type>
+		<GUI_Row> 0 </GUI_Row>
+
+		<Population_Value>0</Population_Value>
+		<Build_Cost_Credits>1</Build_Cost_Credits>
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+		<Build_Time_Seconds>1</Build_Time_Seconds>
+		<Required_Star_Base_Level>1</Required_Star_Base_Level>
+		<AI_Combat_Power>10000</AI_Combat_Power>
+		
+		<CategoryMask>Wall</CategoryMask>
+		
+		<Text_ID>TEXT_HERO_OBEROS</Text_ID>
+		<Build_Initially_Locked>No</Build_Initially_Locked>
+		<Affiliation>Hutt_Cartels</Affiliation>
+		<Icon_Name>I_BUTTON_OBEROS_SET.tga</Icon_Name>
+		
+		<Lua_Script>DelayedSelfDelete</Lua_Script>
+
+		<Tech_Level>0</Tech_Level>
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_ASSIGN_HERO_SQUAD
+		TEXT_TOOLTIP_SEPARATOR_COMMANDS_BLOCK
+		TEXT_KIMOGILA_SQUADRON
+		TEXT_TOOLTIP_SEPARATOR_NONE_BLOCK
+		TEXT_TOOLTIP_ASSIGN_LOCATIONS
+		TEXT_HERO_MIKA
+		TEXT_HERO_GANIS
+		TEXT_HERO_TOBBA
+		TEXT_HERO_RIBOGA
+		TEXT_UNIT_DARKSABER
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_STORYEVENT</Encyclopedia_Unit_Class>
+
+		<Required_Special_Structures>AI_Category_Dummy | Story_Category_Dummy</Required_Special_Structures>
+	</DummyStructure>
+
+	<UniqueUnit Name="Oberos_Kimogila">
+		<Variant_Of_Existing_Type>Kimogila</Variant_Of_Existing_Type>
+		
+		<Text_ID>TEXT_HERO_OBEROS</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_SEPARATOR_TRAITS_BLOCK
+		TEXT_TOOLTIP_TRAIT_ACEPILOT
+		TEXT_TOOLTIP_SEPARATOR_BIO_BLOCK 
+		TEXT_TOOLTIP_OBEROS
+		TEXT_TOOLTIP_SEPARATOR_COMMANDS_BLOCK
+		TEXT_KIMOGILA_SQUADRON
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_STATBLOCK_OBEROS_KIMOGILA_BASE
+		TEXT_STATBLOCK_KIMOGILA_MOVE
+		TEXT_STATBLOCK_KIMOGILA_WEAP1
+		TEXT_STATBLOCK_KIMOGILA_WEAP2
+		TEXT_STATBLOCK_KIMOGILA_WEAP3
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_BOUNTY_HUNTER</Encyclopedia_Unit_Class>
+		<Icon_Name>I_BUTTON_OBEROS.tga</Icon_Name>
+
+		<Redirect_Damage_To_Teammates>Yes</Redirect_Damage_To_Teammates>
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+
+		<Tactical_Health>300</Tactical_Health>
+		<Shield_Points>135</Shield_Points>
+		<Shield_Refresh_Rate>5</Shield_Refresh_Rate>
+
+		<SpaceBehavior>ABILITY_COUNTDOWN, TELEKINESIS_TARGET, FIGHTER_LOCOMOTOR, SELECTABLE, TARGETING, WEAPON, POWERED, REVEAL, SHIELDED, HIDE_WHEN_FOGGED, AMBIENT_SFX, DAMAGE_TRACKING, NEBULA</SpaceBehavior>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>LUCKY_SHOT</Type>
+				<Projectile_Types_Override>Proj_Ship_Bomber_Critical_Strike</Projectile_Types_Override>
+				<Supports_Autofire>True</Supports_Autofire>
+				<Alternate_Icon_Name>i_sa_strike.tga</Alternate_Icon_Name>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+		
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Oberos_Combat_Bonus_Ace_Pilot">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories> Fighter | Bomber </Applicable_Unit_Categories>
+				<Applicable_Unit_Types />
+				<Health_Bonus_Percentage>0.10</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.0</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.0</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.0</Defense_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.10</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>0</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UniqueUnit>
+
+	<Squadron Name="Oberos_Kimogila_Squadron">
+		<Variant_Of_Existing_Type>Kimogila_Squadron</Variant_Of_Existing_Type>
+		
+		<Text_ID>TEXT_HERO_OBEROS</Text_ID>
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_SEPARATOR_TRAITS_BLOCK
+		TEXT_TOOLTIP_TRAIT_ACEPILOT
+		TEXT_TOOLTIP_SEPARATOR_BIO_BLOCK 
+		TEXT_TOOLTIP_OBEROS
+		TEXT_TOOLTIP_SEPARATOR_COMMANDS_BLOCK
+		TEXT_KIMOGILA_SQUADRON
+		TEXT_TOOLTIP_SEPARATOR_FIGHTER_LEADER_STAT_BLOCK
+		TEXT_STATBLOCK_OBEROS_KIMOGILA_BASE
+		TEXT_TOOLTIP_SEPARATOR_FIGHTER_ESCORT_STAT_BLOCK
+		TEXT_STATBLOCK_KIMOGILA_ESCORT_BASE
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
+		TEXT_STATBLOCK_KIMOGILA_SQUADRON
+		TEXT_STATBLOCK_KIMOGILA_BASE
+		TEXT_STATBLOCK_KIMOGILA_MOVE
+		TEXT_STATBLOCK_KIMOGILA_WEAP1
+		TEXT_STATBLOCK_KIMOGILA_WEAP2
+		TEXT_STATBLOCK_KIMOGILA_WEAP3
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_BOUNTY_HUNTER</Encyclopedia_Unit_Class>
+		<Icon_Name>I_BUTTON_OBEROS.tga</Icon_Name>
+
+		<Create_Team_Type>Oberos_Kimogila_Container</Create_Team_Type>
+		<Squadron_Units>Kimogila_Escort, Kimogila_Escort, Kimogila_Escort, Kimogila_Escort</Squadron_Units>
+		<Squadron_Units>Kimogila_Escort, Kimogila_Escort, Kimogila_Escort, Kimogila_Escort</Squadron_Units>
+		<Squadron_Units>Kimogila_Escort, Kimogila_Escort, Kimogila_Escort, Oberos_Kimogila</Squadron_Units>
+	</Squadron>
+
+	<Container Name="Oberos_Kimogila_Container">
+		<Variant_Of_Existing_Type>Kimogila_Squadron_Container</Variant_Of_Existing_Type>
+		
+		<Text_ID>TEXT_HERO_OBEROS</Text_ID>
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_SEPARATOR_TRAITS_BLOCK
+		TEXT_TOOLTIP_TRAIT_ACEPILOT
+		TEXT_TOOLTIP_SEPARATOR_BIO_BLOCK 
+		TEXT_TOOLTIP_OBEROS
+		TEXT_TOOLTIP_SEPARATOR_COMMANDS_BLOCK
+		TEXT_KIMOGILA_SQUADRON
+		TEXT_TOOLTIP_SEPARATOR_FIGHTER_LEADER_STAT_BLOCK
+		TEXT_STATBLOCK_OBEROS_KIMOGILA_BASE
+		TEXT_TOOLTIP_SEPARATOR_FIGHTER_ESCORT_STAT_BLOCK
+		TEXT_STATBLOCK_KIMOGILA_ESCORT_BASE
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
+		TEXT_STATBLOCK_KIMOGILA_SQUADRON
+		TEXT_STATBLOCK_KIMOGILA_BASE
+		TEXT_STATBLOCK_KIMOGILA_MOVE
+		TEXT_STATBLOCK_KIMOGILA_WEAP1
+		TEXT_STATBLOCK_KIMOGILA_WEAP2
+		TEXT_STATBLOCK_KIMOGILA_WEAP3
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_BOUNTY_HUNTER</Encyclopedia_Unit_Class>
+		<Icon_Name>I_BUTTON_OBEROS.tga</Icon_Name>
+		
+		<Radar_Icon_Size>0.03  0.03</Radar_Icon_Size>
+		
+		<SpaceBehavior> REVEAL, ABILITY_COUNTDOWN</SpaceBehavior>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>LUCKY_SHOT</Type>
+				<Recharge_Seconds>60</Recharge_Seconds>
+				<Projectile_Types_Override>Proj_Ship_Bomber_Critical_Strike</Projectile_Types_Override>
+				<GUI_Activated_Ability_Name>Oberos_Critical_Strike</GUI_Activated_Ability_Name> 
+				<Supports_Autofire>True</Supports_Autofire>
+				<Alternate_Icon_Name>i_sa_strike.tga</Alternate_Icon_Name>
+				<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_CRITICAL_STRIKE_NAME</Alternate_Name_Text>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_CRITICAL_STRIKE_DESCRIPTION</Alternate_Description_Text>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+		
+		<Abilities SubObjectList="Yes">
+			<Lucky_Shot_Attack_Ability Name="Oberos_Critical_Strike">
+				<Activation_Style> User_Input </Activation_Style>
+				<Applicable_Unit_Categories> Corvette | Frigate | Capital | SuperCapital | SpaceStructure | SpaceHero </Applicable_Unit_Categories>
+			</Lucky_Shot_Attack_Ability>
+		</Abilities>
+	</Container>
+
+</Hutt_Heroes>

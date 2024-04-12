@@ -39,14 +39,6 @@
 		<Prereq>Universal_Story_Start</Prereq>
 	</Event>
 	
-	<Event Name="E_Lock_Knight_Hammer">
-		<Event_Type>STORY_ELAPSED</Event_Type>
-		<Event_Param1>3</Event_Param1>
-		<Reward_Type>LOCK_UNIT</Reward_Type>
-		<Reward_Param1>Knight_Hammer</Reward_Param1>
-		<Prereq>Universal_Story_Start</Prereq>
-	</Event>
-	
 	<Event Name="E_Lock_Sovereign">
 		<Event_Type>STORY_ELAPSED</Event_Type>
 		<Event_Param1>3</Event_Param1>
@@ -178,7 +170,7 @@
 		<Event_Type>STORY_ELAPSED</Event_Type>
 		<Event_Param1>3</Event_Param1>
 		<Reward_Type>BUILDABLE_UNIT</Reward_Type>
-		<Reward_Param1>Navy_Trooper_Squad</Reward_Param1>
+		<Reward_Param1>Imperial_Navy_Trooper_Squad</Reward_Param1>
 		<Prereq>Universal_Story_Start</Prereq>
 	</Event>
 	

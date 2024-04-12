@@ -16,7 +16,12 @@ function Definitions()
 end		
 
 function Spawn_Starting_Forces(message)
-    if message == OnEnter then		
+    if message == OnEnter then
+		
+--		dead_planet = FindPlanet("Despayre")
+--		if dead_planet ~= nil then
+--			Destroy_Planet("Despayre")
+--		end
 	
 		p_newrep = Find_Player("Rebel")
 		p_empire = Find_Player("Empire")
@@ -27,6 +32,7 @@ function Spawn_Starting_Forces(message)
 		p_maldrood = Find_Player("Greater_Maldrood")
 		p_corporate = Find_Player("Corporate_Sector")
 		p_hapes = Find_Player("Hapes_Consortium")
+		p_hutts = Find_Player("Hutt_Cartels")
 		
 
 		if p_newrep.Is_Human() then
@@ -47,6 +53,8 @@ function Spawn_Starting_Forces(message)
 			Story_Event("ENABLE_BRANCH_CORPORATE_SECTOR_FLAG")
 		elseif p_hapes.Is_Human() then
 			Story_Event("ENABLE_BRANCH_HAPES_CONSORTIUM_FLAG")
+		elseif p_hutts.Is_Human() then
+			Story_Event("FACTION_BRANCH_ENABLER_HUTT_CARTELS")
 		end
 		
 		credits = Find_Player("local").Get_Credits()
@@ -62,6 +70,7 @@ function Spawn_Starting_Forces(message)
 		p_maldrood.Give_Money(8000-credits)
 		p_corporate.Give_Money(8000-credits)
 		p_hapes.Give_Money(8000-credits)
+		p_hutts.Give_Money(8000-credits)
 		
 		if techLevel > 7 then
 			techLevel = 7
@@ -77,6 +86,7 @@ function Spawn_Starting_Forces(message)
 			StoryUtil.SetTechLevel(p_maldrood, 3)
 			StoryUtil.SetTechLevel(p_corporate, 3)
 			StoryUtil.SetTechLevel(p_hapes, 3)
+			StoryUtil.SetTechLevel(p_hutts, 3)
 		elseif techLevel > 3 then
 			StoryUtil.SetTechLevel(p_newrep, 1)
 			StoryUtil.SetTechLevel(p_empire, 2)
@@ -87,21 +97,11 @@ function Spawn_Starting_Forces(message)
 			StoryUtil.SetTechLevel(p_maldrood, 2)
 			StoryUtil.SetTechLevel(p_corporate, 2)
 			StoryUtil.SetTechLevel(p_hapes, 2)
+			StoryUtil.SetTechLevel(p_hutts, 2)
 		end
 		
 		GlobalValue.Set("CURRENT_ERA", techLevel)
-		
-		if not p_newrep.Is_Human() then
-			Story_Event("SET_NR_TECH")
-		end
-		
-		if not p_empire.Is_Human() then
-			Story_Event("SET_IR_TECH")
-		end
-		
-		if not p_eoth.Is_Human() then
-			Story_Event("SET_EH_TECH")
-		end
+
 		--Randomly spawn units at all planets owned by neutral or hostile
 		--Probably want some screen text to tell the player the game is loading still
 		local p_independent = Find_Player("Independent_Forces")
@@ -112,7 +112,7 @@ function Spawn_Starting_Forces(message)
 		for _, planet in pairs(FindPlanet.Get_All_Planets()) do	
 			if planet.Get_Owner() == (p_neutral or p_independent) then	
 				scaled_combat_power = 7500 * EvaluatePerception("GenericPlanetValue", p_independent, planet) * (1.5 - EvaluatePerception("Is_Connected_To_Player", p_independent, planet))
-				ChangePlanetOwnerAndPopulate(planet, p_independent, scaled_combat_power, false, true)
+				ChangePlanetOwnerAndPopulate(planet, p_independent, scaled_combat_power, "RANDOM", true)
 			end
 		end
 		
@@ -147,13 +147,12 @@ function Spawn_Starting_Forces(message)
 				end
 			end
 		end
-		
 	end
 end
 
 function Delete_Old(message)
     if message == OnEnter then
-		local capital_table = Find_All_Objects_Of_Type("Remnant_Capital")
+		local capital_table = Find_All_Objects_Of_Type("Kamino_Capital")
         for i, unit in pairs(capital_table) do
 			if unit.Get_Owner() == Find_Player("Zsinj_Empire") then
 				unit.Despawn()

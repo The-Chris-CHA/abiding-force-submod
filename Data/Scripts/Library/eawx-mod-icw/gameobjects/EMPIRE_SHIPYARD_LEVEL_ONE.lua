@@ -26,7 +26,7 @@ return {
 		},
 		["SKIRMISH_CARRACK_CRUISER"] = {
 			DEFAULT = {Initial = 2, Reserve = 0}
-		}
+		},
 	},
 	Scripts = {"fighter-spawn"},
 	Flags = {SHIPYARD = true, HANGAR = true}

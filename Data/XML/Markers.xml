@@ -73,6 +73,7 @@
 		CSA_Shipyard_Level_One,
 		Chiss_Shipyard_Level_One,
 		EotH_Shipyard_Level_One,
+		Hutt_Shipyard_Level_One,
 
 		Generic_Shipyard_Level_Two,
 		Republic_Shipyard_Level_Two,
@@ -87,6 +88,7 @@
 		CSA_Shipyard_Level_Two,
 		Chiss_Shipyard_Level_Two,
 		EotH_Shipyard_Level_Two,
+		Hutt_Shipyard_Level_Two,
 
 		Generic_Shipyard_Level_Three,
 		Republic_Shipyard_Level_Three,
@@ -100,6 +102,8 @@
 		CSA_Shipyard_Level_Three,
 		Chiss_Shipyard_Level_Three,
 		EotH_Shipyard_Level_Three,
+		Hutt_Shipyard_Level_Three,
+		
 		Generic_Shipyard_Level_Four,
 		Republic_Shipyard_Level_Four,
 		CIS_Shipyard_Level_Four,
@@ -113,6 +117,7 @@
 		CSA_Shipyard_Level_Four,
 		Chiss_Shipyard_Level_Four,
 		EotH_Shipyard_Level_Four,
+		Hutt_Shipyard_Level_Four,
 
 		Hapan_Shipyard_Royal,
 		Hapan_Shipyard_Thane,
@@ -162,6 +167,7 @@
 		<Reveal_For_Attacker>true</Reveal_For_Attacker>
 		<Is_Discardable>false</Is_Discardable>
 		<Affiliation>Neutral</Affiliation>
+		<Always_Side_With_Invader>true</Always_Side_With_Invader>
 		<Lua_Script>GroundBattleHandler</Lua_Script>
 	</Marker>
 
@@ -187,7 +193,7 @@
 		<Affiliation>Neutral</Affiliation>
 		<Always_Side_With_Defender>true</Always_Side_With_Defender>
 		<Include_In_UI_Map_Header>true</Include_In_UI_Map_Header>
-		<Lua_Script>AlignmentNeutral</Lua_Script>
+		<Lua_Script>IndigenousHandlerSpawner</Lua_Script>
 	</Marker>
 
 	<Marker Name="Defender Setup Phase Reveal">
@@ -947,12 +953,12 @@
 		<Faction_Anim_Subindex>SsiRuuvi_Imperium, 10</Faction_Anim_Subindex>
 		<Faction_Anim_Subindex>Chiss, 11</Faction_Anim_Subindex>
 		<Faction_Anim_Subindex>Corellia, 12</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Warlords, 13</Faction_Anim_Subindex>
+		<Faction_Anim_Subindex>Warlords, 7</Faction_Anim_Subindex>
 		<Faction_Anim_Subindex>Independent_Forces, 13</Faction_Anim_Subindex>
 		<Faction_Anim_Subindex>Mandalorians, 13</Faction_Anim_Subindex>
 		<Faction_Anim_Subindex>Killik_Hives, 13</Faction_Anim_Subindex>
 		<Faction_Anim_Subindex>Yevetha, 13</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Hutt_Cartels, 13</Faction_Anim_Subindex>
+		<Faction_Anim_Subindex>Hutt_Cartels, 14</Faction_Anim_Subindex>
 
 		<Influences_Capture_Point>True</Influences_Capture_Point>
 		<Control_Point_Domination_Condition_Relevant>Yes</Control_Point_Domination_Condition_Relevant>
@@ -1008,12 +1014,12 @@
 		<Faction_Anim_Subindex>SsiRuuvi_Imperium, 10</Faction_Anim_Subindex>
 		<Faction_Anim_Subindex>Chiss, 11</Faction_Anim_Subindex>
 		<Faction_Anim_Subindex>Corellia, 12</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Warlords, 13</Faction_Anim_Subindex>
+		<Faction_Anim_Subindex>Warlords, 7</Faction_Anim_Subindex>
 		<Faction_Anim_Subindex>Independent_Forces, 13</Faction_Anim_Subindex>
 		<Faction_Anim_Subindex>Mandalorians, 13</Faction_Anim_Subindex>
 		<Faction_Anim_Subindex>Killik_Hives, 13</Faction_Anim_Subindex>
 		<Faction_Anim_Subindex>Yevetha, 13</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Hutt_Cartels, 13</Faction_Anim_Subindex>
+		<Faction_Anim_Subindex>Hutt_Cartels, 14</Faction_Anim_Subindex>
 
 		<Influences_Capture_Point>True</Influences_Capture_Point>
 		<Control_Point_Domination_Condition_Relevant>Yes</Control_Point_Domination_Condition_Relevant>
@@ -1097,10 +1103,10 @@
 	</Marker>
 
 	<Marker Name="Reinforcement_Point_Rebel">
-		<Text_ID>TEXT_TOOLTIP_REINFORCEMENT_POINT_NAME</Text_ID>
-		<Encyclopedia_Text> TEXT_TOOLTIP_REINFORCEMENT_POINT_DESCRIPTION  </Encyclopedia_Text>
+		<Text_ID>TEXT_TOOLTIP_REINFORCEMENT_POINT_SKIRMISH_NAME</Text_ID>
+		<Encyclopedia_Text> TEXT_TOOLTIP_REINFORCEMENT_POINT_SKIRMISH_DESCRIPTION  </Encyclopedia_Text>
 		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
-		<Land_Model_Name>W_Pedistal_Faction.alo</Land_Model_Name>
+		<Land_Model_Name>W_Pedistal_Faction_Skirmish.alo</Land_Model_Name>
 		<Scale_Factor>1.2</Scale_Factor>
 		<Space_Model_Name/>
 		<Behavior> REVEAL, REINFORCEMENT_POINT, HIDE_WHEN_FOGGED, DUMMY_TOOLTIP </Behavior>
@@ -1123,25 +1129,7 @@
 		<End_Control_Transition_Radar_Event>DEFAULT_CONTROL_POINT_TRANSITION</End_Control_Transition_Radar_Event>
 		<Reinforcement_Region_Blob_Name>Reinforcement_Point_Radius_Overlay</Reinforcement_Region_Blob_Name>
 
-		<Faction_Anim_Subindex>Empire, 0</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Rebel, 1</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Neutral, 2</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>EmpireoftheHand, 3</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Corporate_Sector, 4</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Hapes_Consortium, 5</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Pentastar, 6</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Eriadu_Authority, 7</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Greater_Maldrood, 8</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Zsinj_Empire, 9</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>SsiRuuvi_Imperium, 10</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Chiss, 11</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Corellia, 12</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Warlords, 13</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Independent_Forces, 13</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Mandalorians, 13</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Killik_Hives, 13</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Yevetha, 13</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Hutt_Cartels, 13</Faction_Anim_Subindex>
+		<Faction_Anim_Subindex>Rebel, 0</Faction_Anim_Subindex>
 
 		<Influences_Capture_Point>True</Influences_Capture_Point>
 		<Affiliation>Rebel</Affiliation>
@@ -1153,10 +1141,10 @@
 	</Marker>
 
 	<Marker Name="Reinforcement_Point_Empire">
-		<Text_ID>TEXT_TOOLTIP_REINFORCEMENT_POINT_NAME</Text_ID>
-		<Encyclopedia_Text> TEXT_TOOLTIP_REINFORCEMENT_POINT_DESCRIPTION  </Encyclopedia_Text>
+		<Text_ID>TEXT_TOOLTIP_REINFORCEMENT_POINT_SKIRMISH_NAME</Text_ID>
+		<Encyclopedia_Text> TEXT_TOOLTIP_REINFORCEMENT_POINT_SKIRMISH_DESCRIPTION  </Encyclopedia_Text>
 		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
-		<Land_Model_Name>W_Pedistal_Faction.alo</Land_Model_Name>
+		<Land_Model_Name>W_Pedistal_Faction_Skirmish.alo</Land_Model_Name>
 		<Scale_Factor>1.2</Scale_Factor>
 		<Space_Model_Name/>
 		<Behavior> REVEAL, REINFORCEMENT_POINT, HIDE_WHEN_FOGGED, DUMMY_TOOLTIP </Behavior>
@@ -1180,24 +1168,6 @@
 		<Reinforcement_Region_Blob_Name>Reinforcement_Point_Radius_Overlay</Reinforcement_Region_Blob_Name>
 
 		<Faction_Anim_Subindex>Empire, 0</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Rebel, 1</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Neutral, 2</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>EmpireoftheHand, 3</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Corporate_Sector, 4</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Hapes_Consortium, 5</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Pentastar, 6</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Eriadu_Authority, 7</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Greater_Maldrood, 8</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Zsinj_Empire, 9</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>SsiRuuvi_Imperium, 10</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Chiss, 11</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Corellia, 12</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Warlords, 13</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Independent_Forces, 13</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Mandalorians, 13</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Killik_Hives, 13</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Yevetha, 13</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Hutt_Cartels, 13</Faction_Anim_Subindex>
 
 		<Influences_Capture_Point>True</Influences_Capture_Point>
 		<Affiliation>Empire</Affiliation>
@@ -1208,11 +1178,11 @@
 		<Include_In_UI_Map_Header>true</Include_In_UI_Map_Header>
 	</Marker>
 
-	<Marker Name="Reinforcement_Point_Pentastar">
-		<Text_ID>TEXT_TOOLTIP_REINFORCEMENT_POINT_NAME</Text_ID>
-		<Encyclopedia_Text> TEXT_TOOLTIP_REINFORCEMENT_POINT_DESCRIPTION  </Encyclopedia_Text>
+	<Marker Name="Reinforcement_Point_PA">
+		<Text_ID>TEXT_TOOLTIP_REINFORCEMENT_POINT_SKIRMISH_NAME</Text_ID>
+		<Encyclopedia_Text> TEXT_TOOLTIP_REINFORCEMENT_POINT_SKIRMISH_DESCRIPTION  </Encyclopedia_Text>
 		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
-		<Land_Model_Name>W_Pedistal_Faction.alo</Land_Model_Name>
+		<Land_Model_Name>W_Pedistal_Faction_Skirmish.alo</Land_Model_Name>
 		<Scale_Factor>1.2</Scale_Factor>
 		<Space_Model_Name/>
 		<Behavior> REVEAL, REINFORCEMENT_POINT, HIDE_WHEN_FOGGED, DUMMY_TOOLTIP </Behavior>
@@ -1235,25 +1205,7 @@
 		<End_Control_Transition_Radar_Event>DEFAULT_CONTROL_POINT_TRANSITION</End_Control_Transition_Radar_Event>
 		<Reinforcement_Region_Blob_Name>Reinforcement_Point_Radius_Overlay</Reinforcement_Region_Blob_Name>
 
-		<Faction_Anim_Subindex>Empire, 0</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Rebel, 1</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Neutral, 2</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>EmpireoftheHand, 3</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Corporate_Sector, 4</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Hapes_Consortium, 5</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Pentastar, 6</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Eriadu_Authority, 7</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Greater_Maldrood, 8</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Zsinj_Empire, 9</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>SsiRuuvi_Imperium, 10</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Chiss, 11</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Corellia, 12</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Warlords, 13</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Independent_Forces, 13</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Mandalorians, 13</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Killik_Hives, 13</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Yevetha, 13</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Hutt_Cartels, 13</Faction_Anim_Subindex>
+		<Faction_Anim_Subindex>Pentastar, 0</Faction_Anim_Subindex>
 
 		<Influences_Capture_Point>True</Influences_Capture_Point>
 		<Affiliation>Pentastar</Affiliation>
@@ -1264,10 +1216,10 @@
 		<Include_In_UI_Map_Header>true</Include_In_UI_Map_Header>
 	</Marker>
 
-	<Marker Name="Reinforcement_Point_Underworld">
-		<Encyclopedia_Text> TEXT_TOOLTIP_REINFORCEMENT_POINT_DESCRIPTION  </Encyclopedia_Text>
+	<Marker Name="Reinforcement_Point_EotH">
+		<Encyclopedia_Text> TEXT_TOOLTIP_REINFORCEMENT_POINT_SKIRMISH_DESCRIPTION  </Encyclopedia_Text>
 		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
-		<Land_Model_Name>W_Pedistal_Faction.alo</Land_Model_Name>
+		<Land_Model_Name>W_Pedistal_Faction_Skirmish.alo</Land_Model_Name>
 		<Scale_Factor>1.2</Scale_Factor>
 		<Space_Model_Name/>
 		<Behavior> REVEAL, REINFORCEMENT_POINT, HIDE_WHEN_FOGGED, DUMMY_TOOLTIP </Behavior>
@@ -1290,25 +1242,7 @@
 		<End_Control_Transition_Radar_Event>DEFAULT_CONTROL_POINT_TRANSITION</End_Control_Transition_Radar_Event>
 		<Reinforcement_Region_Blob_Name>Reinforcement_Point_Radius_Overlay</Reinforcement_Region_Blob_Name>
 
-		<Faction_Anim_Subindex>Empire, 0</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Rebel, 1</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Neutral, 2</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>EmpireoftheHand, 3</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Corporate_Sector, 4</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Hapes_Consortium, 5</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Pentastar, 6</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Eriadu_Authority, 7</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Greater_Maldrood, 8</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Zsinj_Empire, 9</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>SsiRuuvi_Imperium, 10</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Chiss, 11</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Corellia, 12</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Warlords, 13</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Independent_Forces, 13</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Mandalorians, 13</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Killik_Hives, 13</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Yevetha, 13</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Hutt_Cartels, 13</Faction_Anim_Subindex>
+		<Faction_Anim_Subindex>EmpireoftheHand, 0</Faction_Anim_Subindex>
 
 		<Influences_Capture_Point>True</Influences_Capture_Point>
 		<Affiliation>EmpireoftheHand</Affiliation>
@@ -1319,11 +1253,11 @@
 		<Include_In_UI_Map_Header>true</Include_In_UI_Map_Header>
 	</Marker>
 
-	<Marker Name="Reinforcement_Point_Teradoc">
-		<Text_ID>TEXT_TOOLTIP_REINFORCEMENT_POINT_NAME</Text_ID>
-		<Encyclopedia_Text> TEXT_TOOLTIP_REINFORCEMENT_POINT_DESCRIPTION  </Encyclopedia_Text>
+	<Marker Name="Reinforcement_Point_GM">
+		<Text_ID>TEXT_TOOLTIP_REINFORCEMENT_POINT_SKIRMISH_NAME</Text_ID>
+		<Encyclopedia_Text> TEXT_TOOLTIP_REINFORCEMENT_POINT_SKIRMISH_DESCRIPTION  </Encyclopedia_Text>
 		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
-		<Land_Model_Name>W_Pedistal_Faction.alo</Land_Model_Name>
+		<Land_Model_Name>W_Pedistal_Faction_Skirmish.alo</Land_Model_Name>
 		<Scale_Factor>1.2</Scale_Factor>
 		<Space_Model_Name/>
 		<Behavior> REVEAL, REINFORCEMENT_POINT, HIDE_WHEN_FOGGED, DUMMY_TOOLTIP </Behavior>
@@ -1346,25 +1280,7 @@
 		<End_Control_Transition_Radar_Event>DEFAULT_CONTROL_POINT_TRANSITION</End_Control_Transition_Radar_Event>
 		<Reinforcement_Region_Blob_Name>Reinforcement_Point_Radius_Overlay</Reinforcement_Region_Blob_Name>
 
-		<Faction_Anim_Subindex>Empire, 0</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Rebel, 1</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Neutral, 2</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>EmpireoftheHand, 3</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Corporate_Sector, 4</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Hapes_Consortium, 5</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Pentastar, 6</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Eriadu_Authority, 7</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Greater_Maldrood, 8</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Zsinj_Empire, 9</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>SsiRuuvi_Imperium, 10</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Chiss, 11</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Corellia, 12</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Warlords, 13</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Independent_Forces, 13</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Mandalorians, 13</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Killik_Hives, 13</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Yevetha, 13</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Hutt_Cartels, 13</Faction_Anim_Subindex>
+		<Faction_Anim_Subindex>Greater_Maldrood, 0</Faction_Anim_Subindex>
 
 		<Influences_Capture_Point>True</Influences_Capture_Point>
 		<Affiliation>Greater_Maldrood</Affiliation>
@@ -1375,11 +1291,11 @@
 		<Include_In_UI_Map_Header>true</Include_In_UI_Map_Header>
 	</Marker>
 
-	<Marker Name="Reinforcement_Point_Eriadu">
-		<Text_ID>TEXT_TOOLTIP_REINFORCEMENT_POINT_NAME</Text_ID>
-		<Encyclopedia_Text> TEXT_TOOLTIP_REINFORCEMENT_POINT_DESCRIPTION  </Encyclopedia_Text>
+	<Marker Name="Reinforcement_Point_EA">
+		<Text_ID>TEXT_TOOLTIP_REINFORCEMENT_POINT_SKIRMISH_NAME</Text_ID>
+		<Encyclopedia_Text> TEXT_TOOLTIP_REINFORCEMENT_POINT_SKIRMISH_DESCRIPTION  </Encyclopedia_Text>
 		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
-		<Land_Model_Name>W_Pedistal_Faction.alo</Land_Model_Name>
+		<Land_Model_Name>W_Pedistal_Faction_Skirmish.alo</Land_Model_Name>
 		<Scale_Factor>1.2</Scale_Factor>
 		<Space_Model_Name/>
 		<Behavior> REVEAL, REINFORCEMENT_POINT, HIDE_WHEN_FOGGED, DUMMY_TOOLTIP </Behavior>
@@ -1402,25 +1318,7 @@
 		<End_Control_Transition_Radar_Event>DEFAULT_CONTROL_POINT_TRANSITION</End_Control_Transition_Radar_Event>
 		<Reinforcement_Region_Blob_Name>Reinforcement_Point_Radius_Overlay</Reinforcement_Region_Blob_Name>
 
-		<Faction_Anim_Subindex>Empire, 0</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Rebel, 1</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Neutral, 2</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>EmpireoftheHand, 3</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Corporate_Sector, 4</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Hapes_Consortium, 5</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Pentastar, 6</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Eriadu_Authority, 7</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Greater_Maldrood, 8</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Zsinj_Empire, 9</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>SsiRuuvi_Imperium, 10</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Chiss, 11</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Corellia, 12</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Warlords, 13</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Independent_Forces, 13</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Mandalorians, 13</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Killik_Hives, 13</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Yevetha, 13</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Hutt_Cartels, 13</Faction_Anim_Subindex>
+		<Faction_Anim_Subindex>Eriadu_Authority, 0</Faction_Anim_Subindex>
 
 		<Influences_Capture_Point>True</Influences_Capture_Point>
 		<Affiliation>Eriadu_Authority</Affiliation>
@@ -1432,10 +1330,10 @@
 	</Marker>
 
 	<Marker Name="Reinforcement_Point_Zsinj">
-		<Text_ID>TEXT_TOOLTIP_REINFORCEMENT_POINT_NAME</Text_ID>
-		<Encyclopedia_Text> TEXT_TOOLTIP_REINFORCEMENT_POINT_DESCRIPTION  </Encyclopedia_Text>
+		<Text_ID>TEXT_TOOLTIP_REINFORCEMENT_POINT_SKIRMISH_NAME</Text_ID>
+		<Encyclopedia_Text> TEXT_TOOLTIP_REINFORCEMENT_POINT_SKIRMISH_DESCRIPTION  </Encyclopedia_Text>
 		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
-		<Land_Model_Name>W_Pedistal_Faction.alo</Land_Model_Name>
+		<Land_Model_Name>W_Pedistal_Faction_Skirmish.alo</Land_Model_Name>
 		<Scale_Factor>1.2</Scale_Factor>
 		<Space_Model_Name/>
 		<Behavior> REVEAL, REINFORCEMENT_POINT, HIDE_WHEN_FOGGED, DUMMY_TOOLTIP </Behavior>
@@ -1458,25 +1356,7 @@
 		<End_Control_Transition_Radar_Event>DEFAULT_CONTROL_POINT_TRANSITION</End_Control_Transition_Radar_Event>
 		<Reinforcement_Region_Blob_Name>Reinforcement_Point_Radius_Overlay</Reinforcement_Region_Blob_Name>
 
-		<Faction_Anim_Subindex>Empire, 0</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Rebel, 1</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Neutral, 2</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>EmpireoftheHand, 3</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Corporate_Sector, 4</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Hapes_Consortium, 5</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Pentastar, 6</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Eriadu_Authority, 7</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Greater_Maldrood, 8</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Zsinj_Empire, 9</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>SsiRuuvi_Imperium, 10</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Chiss, 11</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Corellia, 12</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Warlords, 13</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Independent_Forces, 13</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Mandalorians, 13</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Killik_Hives, 13</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Yevetha, 13</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Hutt_Cartels, 13</Faction_Anim_Subindex>
+		<Faction_Anim_Subindex>Zsinj_Empire, 0</Faction_Anim_Subindex>
 
 		<Influences_Capture_Point>True</Influences_Capture_Point>
 		<Affiliation>Zsinj_Empire</Affiliation>
@@ -1487,67 +1367,11 @@
 		<Include_In_UI_Map_Header>true</Include_In_UI_Map_Header>
 	</Marker>
 
-	<Marker Name="Reinforcement_Point_Duskhan">
-		<Text_ID>TEXT_TOOLTIP_REINFORCEMENT_POINT_NAME</Text_ID>
-		<Encyclopedia_Text> TEXT_TOOLTIP_REINFORCEMENT_POINT_DESCRIPTION  </Encyclopedia_Text>
-		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
-		<Land_Model_Name>W_Pedistal_Faction.alo</Land_Model_Name>
-		<Scale_Factor>1.2</Scale_Factor>
-		<Space_Model_Name/>
-		<Behavior> REVEAL, REINFORCEMENT_POINT, HIDE_WHEN_FOGGED, DUMMY_TOOLTIP </Behavior>
-		<Capture_Point_Transition_Time_Seconds>10.0</Capture_Point_Transition_Time_Seconds>
-		<Is_Decoration>No</Is_Decoration>
-		<Has_Land_Evaluator>Yes</Has_Land_Evaluator>
-		<Reinforcement_Enabling_Radius>250.0</Reinforcement_Enabling_Radius>
-		<Targeting_Max_Attack_Distance>300.0</Targeting_Max_Attack_Distance> <!-- For showing reinforcement radius in map editor. Larger than reinforcement radius to accommodate placing units on the edge of the reinforcement zone -->
-		<Land_FOW_Reveal_Range>275.0</Land_FOW_Reveal_Range>
-		<Capture_Point_Radius>100.0</Capture_Point_Radius>
-
-		<Is_Visible_On_Radar>True</Is_Visible_On_Radar>
-		<Radar_Range_Icon_Name>i_radar_landing.tga</Radar_Range_Icon_Name>
-		<Radar_Show_Facing>No</Radar_Show_Facing>
-		<Radar_Icon_Name>mini_map_reinforcement.tga</Radar_Icon_Name>
-		<Radar_Icon_Size>0.08  0.08</Radar_Icon_Size>
-
-		<Is_Valid_Target>No</Is_Valid_Target>
-		<Begin_Control_Transition_Radar_Event>DEFAULT_CONTROL_POINT_TRANSITION</Begin_Control_Transition_Radar_Event>
-		<End_Control_Transition_Radar_Event>DEFAULT_CONTROL_POINT_TRANSITION</End_Control_Transition_Radar_Event>
-		<Reinforcement_Region_Blob_Name>Reinforcement_Point_Radius_Overlay</Reinforcement_Region_Blob_Name>
-
-		<Faction_Anim_Subindex>Empire, 0</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Rebel, 1</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Neutral, 2</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>EmpireoftheHand, 3</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Corporate_Sector, 4</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Hapes_Consortium, 5</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Pentastar, 6</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Eriadu_Authority, 7</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Greater_Maldrood, 8</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Zsinj_Empire, 9</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>SsiRuuvi_Imperium, 10</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Chiss, 11</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Corellia, 12</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Warlords, 13</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Independent_Forces, 13</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Mandalorians, 13</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Killik_Hives, 13</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Yevetha, 13</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Hutt_Cartels, 13</Faction_Anim_Subindex>
-
-		<Influences_Capture_Point>True</Influences_Capture_Point>
-		<Affiliation>Yevetha</Affiliation>
-		<Last_State_Visible_Under_FOW> Yes </Last_State_Visible_Under_FOW>
-		<Initial_State_Visible_Under_FOW>True</Initial_State_Visible_Under_FOW>
-		<Additional_Population_Capacity>100</Additional_Population_Capacity>
-		<Immune_To_Damage>True</Immune_To_Damage>
-		<Include_In_UI_Map_Header>true</Include_In_UI_Map_Header>
-	</Marker>
-
 	<Marker Name="Reinforcement_Point_Hapes">
-		<Text_ID>TEXT_TOOLTIP_REINFORCEMENT_POINT_NAME</Text_ID>
-		<Encyclopedia_Text> TEXT_TOOLTIP_REINFORCEMENT_POINT_DESCRIPTION  </Encyclopedia_Text>
+		<Text_ID>TEXT_TOOLTIP_REINFORCEMENT_POINT_SKIRMISH_NAME</Text_ID>
+		<Encyclopedia_Text> TEXT_TOOLTIP_REINFORCEMENT_POINT_SKIRMISH_DESCRIPTION  </Encyclopedia_Text>
 		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
-		<Land_Model_Name>W_Pedistal_Faction.alo</Land_Model_Name>
+		<Land_Model_Name>W_Pedistal_Faction_Skirmish.alo</Land_Model_Name>
 		<Scale_Factor>1.2</Scale_Factor>
 		<Space_Model_Name/>
 		<Behavior> REVEAL, REINFORCEMENT_POINT, HIDE_WHEN_FOGGED, DUMMY_TOOLTIP </Behavior>
@@ -1570,25 +1394,7 @@
 		<End_Control_Transition_Radar_Event>DEFAULT_CONTROL_POINT_TRANSITION</End_Control_Transition_Radar_Event>
 		<Reinforcement_Region_Blob_Name>Reinforcement_Point_Radius_Overlay</Reinforcement_Region_Blob_Name>
 
-		<Faction_Anim_Subindex>Empire, 0</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Rebel, 1</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Neutral, 2</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>EmpireoftheHand, 3</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Corporate_Sector, 4</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Hapes_Consortium, 5</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Pentastar, 6</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Eriadu_Authority, 7</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Greater_Maldrood, 8</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Zsinj_Empire, 9</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>SsiRuuvi_Imperium, 10</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Chiss, 11</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Corellia, 12</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Warlords, 13</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Independent_Forces, 13</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Mandalorians, 13</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Killik_Hives, 13</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Yevetha, 13</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Hutt_Cartels, 13</Faction_Anim_Subindex>
+		<Faction_Anim_Subindex>Hapes_Consortium, 0</Faction_Anim_Subindex>
 
 		<Influences_Capture_Point>True</Influences_Capture_Point>
 		<Affiliation>Hapes_Consortium</Affiliation>
@@ -1599,67 +1405,11 @@
 		<Include_In_UI_Map_Header>true</Include_In_UI_Map_Header>
 	</Marker>
 
-	<Marker Name="Reinforcement_Point_Cartels">
-		<Text_ID>TEXT_TOOLTIP_REINFORCEMENT_POINT_NAME</Text_ID>
-		<Encyclopedia_Text> TEXT_TOOLTIP_REINFORCEMENT_POINT_DESCRIPTION  </Encyclopedia_Text>
-		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
-		<Land_Model_Name>W_Pedistal_Faction.alo</Land_Model_Name>
-		<Scale_Factor>1.2</Scale_Factor>
-		<Space_Model_Name/>
-		<Behavior> REVEAL, REINFORCEMENT_POINT, HIDE_WHEN_FOGGED, DUMMY_TOOLTIP </Behavior>
-		<Capture_Point_Transition_Time_Seconds>10.0</Capture_Point_Transition_Time_Seconds>
-		<Is_Decoration>No</Is_Decoration>
-		<Has_Land_Evaluator>Yes</Has_Land_Evaluator>
-		<Reinforcement_Enabling_Radius>250.0</Reinforcement_Enabling_Radius>
-		<Targeting_Max_Attack_Distance>300.0</Targeting_Max_Attack_Distance> <!-- For showing reinforcement radius in map editor. Larger than reinforcement radius to accommodate placing units on the edge of the reinforcement zone -->
-		<Land_FOW_Reveal_Range>275.0</Land_FOW_Reveal_Range>
-		<Capture_Point_Radius>100.0</Capture_Point_Radius>
-
-		<Is_Visible_On_Radar>True</Is_Visible_On_Radar>
-		<Radar_Range_Icon_Name>i_radar_landing.tga</Radar_Range_Icon_Name>
-		<Radar_Show_Facing>No</Radar_Show_Facing>
-		<Radar_Icon_Name>mini_map_reinforcement.tga</Radar_Icon_Name>
-		<Radar_Icon_Size>0.08  0.08</Radar_Icon_Size>
-
-		<Is_Valid_Target>No</Is_Valid_Target>
-		<Begin_Control_Transition_Radar_Event>DEFAULT_CONTROL_POINT_TRANSITION</Begin_Control_Transition_Radar_Event>
-		<End_Control_Transition_Radar_Event>DEFAULT_CONTROL_POINT_TRANSITION</End_Control_Transition_Radar_Event>
-		<Reinforcement_Region_Blob_Name>Reinforcement_Point_Radius_Overlay</Reinforcement_Region_Blob_Name>
-
-		<Faction_Anim_Subindex>Empire, 0</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Rebel, 1</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Neutral, 2</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>EmpireoftheHand, 3</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Corporate_Sector, 4</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Hapes_Consortium, 5</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Pentastar, 6</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Eriadu_Authority, 7</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Greater_Maldrood, 8</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Zsinj_Empire, 9</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>SsiRuuvi_Imperium, 10</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Chiss, 11</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Corellia, 12</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Warlords, 13</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Independent_Forces, 13</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Mandalorians, 13</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Killik_Hives, 13</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Yevetha, 13</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Hutt_Cartels, 13</Faction_Anim_Subindex>
-
-		<Influences_Capture_Point>True</Influences_Capture_Point>
-		<Affiliation>Hutt_Cartels</Affiliation>
-		<Last_State_Visible_Under_FOW> Yes </Last_State_Visible_Under_FOW>
-		<Initial_State_Visible_Under_FOW>True</Initial_State_Visible_Under_FOW>
-		<Additional_Population_Capacity>100</Additional_Population_Capacity>
-		<Immune_To_Damage>True</Immune_To_Damage>
-		<Include_In_UI_Map_Header>true</Include_In_UI_Map_Header>
-	</Marker>
-
 	<Marker Name="Reinforcement_Point_CSA">
-		<Text_ID>TEXT_TOOLTIP_REINFORCEMENT_POINT_NAME</Text_ID>
-		<Encyclopedia_Text> TEXT_TOOLTIP_REINFORCEMENT_POINT_DESCRIPTION  </Encyclopedia_Text>
+		<Text_ID>TEXT_TOOLTIP_REINFORCEMENT_POINT_SKIRMISH_NAME</Text_ID>
+		<Encyclopedia_Text> TEXT_TOOLTIP_REINFORCEMENT_POINT_SKIRMISH_DESCRIPTION  </Encyclopedia_Text>
 		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
-		<Land_Model_Name>W_Pedistal_Faction.alo</Land_Model_Name>
+		<Land_Model_Name>W_Pedistal_Faction_Skirmish.alo</Land_Model_Name>
 		<Scale_Factor>1.2</Scale_Factor>
 		<Space_Model_Name/>
 		<Behavior> REVEAL, REINFORCEMENT_POINT, HIDE_WHEN_FOGGED, DUMMY_TOOLTIP </Behavior>
@@ -1682,25 +1432,7 @@
 		<End_Control_Transition_Radar_Event>DEFAULT_CONTROL_POINT_TRANSITION</End_Control_Transition_Radar_Event>
 		<Reinforcement_Region_Blob_Name>Reinforcement_Point_Radius_Overlay</Reinforcement_Region_Blob_Name>
 
-		<Faction_Anim_Subindex>Empire, 0</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Rebel, 1</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Neutral, 2</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>EmpireoftheHand, 3</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Corporate_Sector, 4</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Hapes_Consortium, 5</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Pentastar, 6</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Eriadu_Authority, 7</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Greater_Maldrood, 8</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Zsinj_Empire, 9</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>SsiRuuvi_Imperium, 10</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Chiss, 11</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Corellia, 12</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Warlords, 13</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Independent_Forces, 13</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Mandalorians, 13</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Killik_Hives, 13</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Yevetha, 13</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Hutt_Cartels, 13</Faction_Anim_Subindex>
+		<Faction_Anim_Subindex>Corporate_Sector, 0</Faction_Anim_Subindex>
 
 		<Influences_Capture_Point>True</Influences_Capture_Point>
 		<Affiliation>Corporate_Sector</Affiliation>
@@ -1710,12 +1442,12 @@
 		<Immune_To_Damage>True</Immune_To_Damage>
 		<Include_In_UI_Map_Header>true</Include_In_UI_Map_Header>
 	</Marker>
-
-	<Marker Name="Reinforcement_Point_Warlords">
-		<Text_ID>TEXT_TOOLTIP_REINFORCEMENT_POINT_NAME</Text_ID>
-		<Encyclopedia_Text> TEXT_TOOLTIP_REINFORCEMENT_POINT_DESCRIPTION  </Encyclopedia_Text>
+	
+	<Marker Name="Reinforcement_Point_Hutts">
+		<Text_ID>TEXT_TOOLTIP_REINFORCEMENT_POINT_SKIRMISH_NAME</Text_ID>
+		<Encyclopedia_Text> TEXT_TOOLTIP_REINFORCEMENT_POINT_SKIRMISH_DESCRIPTION  </Encyclopedia_Text>
 		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
-		<Land_Model_Name>W_Pedistal_Faction.alo</Land_Model_Name>
+		<Land_Model_Name>W_Pedistal_Faction_Skirmish.alo</Land_Model_Name>
 		<Scale_Factor>1.2</Scale_Factor>
 		<Space_Model_Name/>
 		<Behavior> REVEAL, REINFORCEMENT_POINT, HIDE_WHEN_FOGGED, DUMMY_TOOLTIP </Behavior>
@@ -1738,140 +1470,10 @@
 		<End_Control_Transition_Radar_Event>DEFAULT_CONTROL_POINT_TRANSITION</End_Control_Transition_Radar_Event>
 		<Reinforcement_Region_Blob_Name>Reinforcement_Point_Radius_Overlay</Reinforcement_Region_Blob_Name>
 
-		<Faction_Anim_Subindex>Empire, 0</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Rebel, 1</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Neutral, 2</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>EmpireoftheHand, 3</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Corporate_Sector, 4</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Hapes_Consortium, 5</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Pentastar, 6</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Eriadu_Authority, 7</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Greater_Maldrood, 8</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Zsinj_Empire, 9</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>SsiRuuvi_Imperium, 10</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Chiss, 11</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Corellia, 12</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Warlords, 13</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Independent_Forces, 13</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Mandalorians, 13</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Killik_Hives, 13</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Yevetha, 13</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Hutt_Cartels, 13</Faction_Anim_Subindex>
+		<Faction_Anim_Subindex>Hutt_Cartels, 0</Faction_Anim_Subindex>
 
 		<Influences_Capture_Point>True</Influences_Capture_Point>
-		<Affiliation>Warlords</Affiliation>
-		<Last_State_Visible_Under_FOW> Yes </Last_State_Visible_Under_FOW>
-		<Initial_State_Visible_Under_FOW>True</Initial_State_Visible_Under_FOW>
-		<Additional_Population_Capacity>100</Additional_Population_Capacity>
-		<Immune_To_Damage>True</Immune_To_Damage>
-		<Include_In_UI_Map_Header>true</Include_In_UI_Map_Header>
-	</Marker>
-
-	<Marker Name="Reinforcement_Point_Chiss">
-		<Text_ID>TEXT_TOOLTIP_REINFORCEMENT_POINT_NAME</Text_ID>
-		<Encyclopedia_Text> TEXT_TOOLTIP_REINFORCEMENT_POINT_DESCRIPTION  </Encyclopedia_Text>
-		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
-		<Land_Model_Name>W_Pedistal_Faction.alo</Land_Model_Name>
-		<Scale_Factor>1.2</Scale_Factor>
-		<Space_Model_Name/>
-		<Behavior> REVEAL, REINFORCEMENT_POINT, HIDE_WHEN_FOGGED, DUMMY_TOOLTIP </Behavior>
-		<Capture_Point_Transition_Time_Seconds>10.0</Capture_Point_Transition_Time_Seconds>
-		<Is_Decoration>No</Is_Decoration>
-		<Has_Land_Evaluator>Yes</Has_Land_Evaluator>
-		<Reinforcement_Enabling_Radius>250.0</Reinforcement_Enabling_Radius>
-		<Targeting_Max_Attack_Distance>300.0</Targeting_Max_Attack_Distance> <!-- For showing reinforcement radius in map editor. Larger than reinforcement radius to accommodate placing units on the edge of the reinforcement zone -->
-		<Land_FOW_Reveal_Range>275.0</Land_FOW_Reveal_Range>
-		<Capture_Point_Radius>100.0</Capture_Point_Radius>
-
-		<Is_Visible_On_Radar>True</Is_Visible_On_Radar>
-		<Radar_Range_Icon_Name>i_radar_landing.tga</Radar_Range_Icon_Name>
-		<Radar_Show_Facing>No</Radar_Show_Facing>
-		<Radar_Icon_Name>mini_map_reinforcement.tga</Radar_Icon_Name>
-		<Radar_Icon_Size>0.08  0.08</Radar_Icon_Size>
-
-		<Is_Valid_Target>No</Is_Valid_Target>
-		<Begin_Control_Transition_Radar_Event>DEFAULT_CONTROL_POINT_TRANSITION</Begin_Control_Transition_Radar_Event>
-		<End_Control_Transition_Radar_Event>DEFAULT_CONTROL_POINT_TRANSITION</End_Control_Transition_Radar_Event>
-		<Reinforcement_Region_Blob_Name>Reinforcement_Point_Radius_Overlay</Reinforcement_Region_Blob_Name>
-
-		<Faction_Anim_Subindex>Empire, 0</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Rebel, 1</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Neutral, 2</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>EmpireoftheHand, 3</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Corporate_Sector, 4</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Hapes_Consortium, 5</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Pentastar, 6</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Eriadu_Authority, 7</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Greater_Maldrood, 8</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Zsinj_Empire, 9</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>SsiRuuvi_Imperium, 10</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Chiss, 11</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Corellia, 12</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Warlords, 13</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Independent_Forces, 13</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Mandalorians, 13</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Killik_Hives, 13</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Yevetha, 13</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Hutt_Cartels, 13</Faction_Anim_Subindex>
-
-		<Influences_Capture_Point>True</Influences_Capture_Point>
-		<Affiliation>Chiss</Affiliation>
-		<Last_State_Visible_Under_FOW> Yes </Last_State_Visible_Under_FOW>
-		<Initial_State_Visible_Under_FOW>True</Initial_State_Visible_Under_FOW>
-		<Additional_Population_Capacity>100</Additional_Population_Capacity>
-		<Immune_To_Damage>True</Immune_To_Damage>
-		<Include_In_UI_Map_Header>true</Include_In_UI_Map_Header>
-	</Marker>
-
-	<Marker Name="Reinforcement_Point_SsiRuuvi">
-		<Text_ID>TEXT_TOOLTIP_REINFORCEMENT_POINT_NAME</Text_ID>
-		<Encyclopedia_Text> TEXT_TOOLTIP_REINFORCEMENT_POINT_DESCRIPTION  </Encyclopedia_Text>
-		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
-		<Land_Model_Name>W_Pedistal_Faction.alo</Land_Model_Name>
-		<Scale_Factor>1.2</Scale_Factor>
-		<Space_Model_Name/>
-		<Behavior> REVEAL, REINFORCEMENT_POINT, HIDE_WHEN_FOGGED, DUMMY_TOOLTIP </Behavior>
-		<Capture_Point_Transition_Time_Seconds>10.0</Capture_Point_Transition_Time_Seconds>
-		<Is_Decoration>No</Is_Decoration>
-		<Has_Land_Evaluator>Yes</Has_Land_Evaluator>
-		<Reinforcement_Enabling_Radius>250.0</Reinforcement_Enabling_Radius>
-		<Targeting_Max_Attack_Distance>300.0</Targeting_Max_Attack_Distance> <!-- For showing reinforcement radius in map editor. Larger than reinforcement radius to accommodate placing units on the edge of the reinforcement zone -->
-		<Land_FOW_Reveal_Range>275.0</Land_FOW_Reveal_Range>
-		<Capture_Point_Radius>100.0</Capture_Point_Radius>
-
-		<Is_Visible_On_Radar>True</Is_Visible_On_Radar>
-		<Radar_Range_Icon_Name>i_radar_landing.tga</Radar_Range_Icon_Name>
-		<Radar_Show_Facing>No</Radar_Show_Facing>
-		<Radar_Icon_Name>mini_map_reinforcement.tga</Radar_Icon_Name>
-		<Radar_Icon_Size>0.08  0.08</Radar_Icon_Size>
-
-		<Is_Valid_Target>No</Is_Valid_Target>
-		<Begin_Control_Transition_Radar_Event>DEFAULT_CONTROL_POINT_TRANSITION</Begin_Control_Transition_Radar_Event>
-		<End_Control_Transition_Radar_Event>DEFAULT_CONTROL_POINT_TRANSITION</End_Control_Transition_Radar_Event>
-		<Reinforcement_Region_Blob_Name>Reinforcement_Point_Radius_Overlay</Reinforcement_Region_Blob_Name>
-
-		<Faction_Anim_Subindex>Empire, 0</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Rebel, 1</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Neutral, 2</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>EmpireoftheHand, 3</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Corporate_Sector, 4</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Hapes_Consortium, 5</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Pentastar, 6</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Eriadu_Authority, 7</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Greater_Maldrood, 8</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Zsinj_Empire, 9</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>SsiRuuvi_Imperium, 10</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Chiss, 11</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Corellia, 12</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Warlords, 13</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Independent_Forces, 13</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Mandalorians, 13</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Killik_Hives, 13</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Yevetha, 13</Faction_Anim_Subindex>
-		<Faction_Anim_Subindex>Hutt_Cartels, 13</Faction_Anim_Subindex>
-
-		<Influences_Capture_Point>True</Influences_Capture_Point>
-		<Affiliation>SsiRuuvi_Imperium</Affiliation>
+		<Affiliation>Hutt_Cartels</Affiliation>
 		<Last_State_Visible_Under_FOW> Yes </Last_State_Visible_Under_FOW>
 		<Initial_State_Visible_Under_FOW>True</Initial_State_Visible_Under_FOW>
 		<Additional_Population_Capacity>100</Additional_Population_Capacity>
@@ -2044,11 +1646,10 @@
 		<Is_Decoration>No</Is_Decoration>
 		<Affiliation>Neutral</Affiliation>
 		<Map_Load_Spawn_Table>
-		Secondary_Heavy_Factory_AT-AP, 0.2,
-		Secondary_Heavy_Factory_AT_TE_Walker, 0.2,
-		Secondary_Heavy_Factory_A4, 0.2,
-		Secondary_Heavy_Factory_T4A, 0.2,
-		Secondary_Heavy_Factory_TNT, 0.2,
+		Secondary_Heavy_Factory_AT-AP, 0.25,
+		Secondary_Heavy_Factory_AT_TE_Walker, 0.25,
+		Secondary_Heavy_Factory_T4A, 0.25,
+		Secondary_Heavy_Factory_TNT, 0.25,
 		</Map_Load_Spawn_Table>	 
 	</Marker>
 
@@ -2062,13 +1663,33 @@
 		Secondary_Heavy_Factory_E, 0.1,
 		Secondary_Heavy_Factory_R, 0.1,
 		Secondary_Heavy_Factory_Skiff, 0.1,
-		Secondary_Heavy_Factory_T2A, 0.1,
+		Secondary_Heavy_Factory_T2A, 0.075,
 		Secondary_Heavy_Factory_Arrow, 0.1,
-		Secondary_Heavy_Factory_ULAV, 0.1,
-		Secondary_Heavy_Factory_Riot_Hailfire, 0.1,
-		Secondary_Heavy_Factory_M91, 0.1,
-		Secondary_Heavy_Factory_AAT, 0.1,
-		Secondary_Heavy_Factory_TX130, 0.1,
+		Secondary_Heavy_Factory_ULAV, 0.075,
+		Secondary_Heavy_Factory_Riot_Hailfire, 0.075,
+		Secondary_Heavy_Factory_M91, 0.075,
+		Secondary_Heavy_Factory_AAT, 0.075,
+		Secondary_Heavy_Factory_TX130, 0.075,
+		Secondary_Heavy_Factory_Gian_PDF, 0.075,
+		Secondary_Heavy_Factory_Gian, 0.075,
+		</Map_Load_Spawn_Table>	 
+	</Marker>
+
+	<Marker Name="Random_Secondary_Structure_Light_Factory_Hover">
+		<Land_Model_Name>EB_VehicleFactory.alo</Land_Model_Name>
+		<Scale_Factor>1.50</Scale_Factor>
+		<Is_Decoration>No</Is_Decoration>
+		<Affiliation>Neutral</Affiliation>
+		<Map_Load_Spawn_Table>
+		Secondary_Heavy_Factory_R, 0.1,
+		Secondary_Heavy_Factory_Skiff, 0.1,
+		Secondary_Heavy_Factory_T2A, 0.1,
+		Secondary_Heavy_Factory_Arrow, 0.125,
+		Secondary_Heavy_Factory_ULAV, 0.125,
+		Secondary_Heavy_Factory_AAT, 0.125,
+		Secondary_Heavy_Factory_TX130, 0.125,
+		Secondary_Heavy_Factory_Gian_PDF, 0.1,
+		Secondary_Heavy_Factory_Gian, 0.1,
 		</Map_Load_Spawn_Table>	 
 	</Marker>
 
@@ -2093,9 +1714,13 @@
 		<Is_Decoration>No</Is_Decoration>
 		<Affiliation>Neutral</Affiliation>
 		<Map_Load_Spawn_Table>
-		Secondary_Heavy_Factory_B1, 0.3,
-		Secondary_Heavy_Factory_B2, 0.4,
-		Secondary_Heavy_Factory_SD6, 0.3,
+		Secondary_Heavy_Factory_B1, 0.15,
+		Secondary_Heavy_Factory_B1_RC, 0.05,
+		Secondary_Heavy_Factory_Destroyer_Droid, 0.1,
+		Secondary_Heavy_Factory_Destroyer_Droid_MK2, 0.1,
+		Secondary_Heavy_Factory_Dwarf_Spider_Droid, 0.1,
+		Secondary_Heavy_Factory_B2, 0.3,
+		Secondary_Heavy_Factory_SD6, 0.2,
 		<!--Secondary_Heavy_Factory_Protocol_Legionnaire, 0.25,  T-Posing-->
 		</Map_Load_Spawn_Table>	 
 	</Marker>
@@ -2106,11 +1731,17 @@
 		<Is_Decoration>No</Is_Decoration>
 		<Affiliation>Neutral</Affiliation>
 		<Map_Load_Spawn_Table>
-		Secondary_Barracks_Mercs_Light, 0.25,
-		Secondary_Barracks_Mercs, 0.3,
-		Secondary_Barracks_Mercs_Elite, 0.25,
-		Secondary_Barracks_Corp_Security, 0.2,
-		</Map_Load_Spawn_Table>	 
+			Secondary_Barracks_Mercs_Light, 0.2,
+			Secondary_Barracks_Mercs, 0.225,
+			Secondary_Barracks_Mercs_Elite, 0.2,
+			Secondary_Barracks_Corp_Security, 0.125,
+			Secondary_Barracks_SD9, 0.05,
+			Secondary_Barracks_Mandalorian_Regulars, 0.025,
+			Secondary_Barracks_Mandalorian_Commando, 0.025,
+			Secondary_Barracks_Ailon, 0.05,
+			Secondary_Barracks_Sun_Guard, 0.05,
+			Secondary_Barracks_Nimbus, 0.05,
+		</Map_Load_Spawn_Table>
 	</Marker>
 
 	<Marker Name="Random_Secondary_Structure_Infantry_Garrison">
@@ -2496,6 +2127,29 @@
 		<Affiliation>Neutral</Affiliation>
 	</Marker>
 
+	<Marker Name="Survival_Alternate_Research_Position">
+		<Is_Marker>Yes</Is_Marker>
+		<Marker_For_Specific_Object_Type>
+			Survival_Empire_Alternate_Research_Starbase,
+			Survival_NewRepublic_Alternate_Research_Starbase,
+			Survival_Pentastar_Alternate_Research_Starbase,
+			Survival_Eriadu_Authority_Alternate_Research_Starbase,
+			Survival_Greater_Maldrood_Alternate_Research_Starbase,
+			Survival_Zsinj_Empire_Alternate_Research_Starbase,
+			Survival_Corporate_Sector_Alternate_Research_Starbase,
+			Survival_Hapes_Consortium_Alternate_Research_Starbase,
+			Survival_EmpireoftheHand_Alternate_Research_Starbase,
+			Survival_EmpireoftheHand_Alternate_Research_Starbase
+		</Marker_For_Specific_Object_Type>
+		<Galactic_Model_Name/>
+		<Space_Model_Name>Golan1Colony.alo</Space_Model_Name>
+		<Behavior>MARKER</Behavior>
+		<Is_Discardable>false</Is_Discardable>
+		<Affiliation>Neutral</Affiliation>
+		<Scale_Factor>0.5</Scale_Factor>
+		<Include_In_UI_Map_Header>true</Include_In_UI_Map_Header>	
+	</Marker>
+
 	<Marker Name="Survival_Resource_Position_00">
 		<Is_Marker>Yes</Is_Marker>
 		<Galactic_Model_Name>w_flag_marker_Yellow.alo</Galactic_Model_Name>
@@ -2561,13 +2215,40 @@
 		<Affiliation>Neutral</Affiliation>
 	</Marker>
 
-	<Marker Name="Main_Menu_Spawn_00">
+	<Marker Name="Main_Menu_Bilbringi">
 		<Is_Marker>Yes</Is_Marker>
 		<Galactic_Model_Name>w_flag_marker_Green.alo</Galactic_Model_Name>
 		<Space_Model_Name>w_flag_marker_Green.alo</Space_Model_Name>
 		<Behavior>Marker, HINT</Behavior>
 		<Is_Decoration>false</Is_Decoration>
-		<Lua_Script>Menu_Battle_Space</Lua_Script>
+		<Lua_Script>Menu_Battle_Space_Bilbringi</Lua_Script>
+	</Marker>
+
+	<Marker Name="Main_Menu_Hapan_Assault">
+		<Is_Marker>Yes</Is_Marker>
+		<Galactic_Model_Name>w_flag_marker_Green.alo</Galactic_Model_Name>
+		<Space_Model_Name>w_flag_marker_Green.alo</Space_Model_Name>
+		<Behavior>Marker, HINT</Behavior>
+		<Is_Decoration>false</Is_Decoration>
+		<Lua_Script>Menu_Battle_Space_Hapan_Assault</Lua_Script>
+	</Marker>
+
+	<Marker Name="Main_Menu_Orinda">
+		<Is_Marker>Yes</Is_Marker>
+		<Galactic_Model_Name>w_flag_marker_Green.alo</Galactic_Model_Name>
+		<Space_Model_Name>w_flag_marker_Green.alo</Space_Model_Name>
+		<Behavior>Marker, HINT</Behavior>
+		<Is_Decoration>false</Is_Decoration>
+		<Lua_Script>Menu_Battle_Space_Orinda</Lua_Script>
+	</Marker>
+
+	<Marker Name="Main_Menu_EotH_Defence">
+		<Is_Marker>Yes</Is_Marker>
+		<Galactic_Model_Name>w_flag_marker_Green.alo</Galactic_Model_Name>
+		<Space_Model_Name>w_flag_marker_Green.alo</Space_Model_Name>
+		<Behavior>Marker, HINT</Behavior>
+		<Is_Decoration>false</Is_Decoration>
+		<Lua_Script>Menu_Battle_Space_EotH_Defence</Lua_Script>
 	</Marker>
 
 </Markers>

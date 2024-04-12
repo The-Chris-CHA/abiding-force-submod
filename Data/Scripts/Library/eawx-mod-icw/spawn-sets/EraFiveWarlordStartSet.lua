@@ -1,5 +1,5 @@
 return {
 	["KALIST"] = {
-		"Shockwave_Star_Destroyer"
+		"Harrsk_Shockwave"
     }
 }

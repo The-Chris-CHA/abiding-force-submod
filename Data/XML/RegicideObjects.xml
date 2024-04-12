@@ -1,10 +1,10 @@
 <?xml version="1.0" ?>
-<Remnant_Space_Units>
+<Dummy_Structures>
 
 	
 <!-- Regicide -->
 
-	<SpaceUnit Name="Project_Ambition_Dummy">
+	<DummyStructure Name="Project_Ambition_Dummy">
 		<Variant_Of_Existing_Type>Template_Research_Dummy</Variant_Of_Existing_Type>
 		
 		<Text_ID>TEXT_EVENT_DUMMY_PROJECT_AMBITION_NAME</Text_ID>
@@ -22,9 +22,9 @@
 		
 		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
 		<Build_Limit_Lifetime_Per_Player>1</Build_Limit_Lifetime_Per_Player>
-	</SpaceUnit>
+	</DummyStructure>
 	
-	<SpaceUnit Name="Dummy_Regicide_CCoGM">
+	<DummyStructure Name="Dummy_Regicide_CCoGM">
 		<Variant_Of_Existing_Type>Template_Research_Dummy</Variant_Of_Existing_Type>
 		
 		<Text_ID>TEXT_REGICIDE_NAME_CCOGM</Text_ID>
@@ -42,9 +42,9 @@
 		
 		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
 		<Build_Limit_Lifetime_Per_Player>1</Build_Limit_Lifetime_Per_Player>
-	</SpaceUnit>
+	</DummyStructure>
 	
-	<SpaceUnit Name="Dummy_Regicide_Thrawn">
+	<DummyStructure Name="Dummy_Regicide_Thrawn">
 		<Variant_Of_Existing_Type>Template_Research_Dummy</Variant_Of_Existing_Type>
 		
 		<Text_ID>TEXT_REGICIDE_NAME_THRAWN</Text_ID>
@@ -62,9 +62,9 @@
 		
 		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
 		<Build_Limit_Lifetime_Per_Player>1</Build_Limit_Lifetime_Per_Player>
-	</SpaceUnit>
+	</DummyStructure>
 	
-	<SpaceUnit Name="Dummy_Regicide_Palpatine">
+	<DummyStructure Name="Dummy_Regicide_Palpatine">
 		<Variant_Of_Existing_Type>Template_Research_Dummy</Variant_Of_Existing_Type>
 		
 		<Text_ID>TEXT_REGICIDE_NAME_PALPATINE</Text_ID>
@@ -82,9 +82,13 @@
 		
 		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
 		<Build_Limit_Lifetime_Per_Player>1</Build_Limit_Lifetime_Per_Player>
-	</SpaceUnit>
+		
+		<SFXEvent_Build_Complete>Unit_Respawn_Emperor</SFXEvent_Build_Complete>
+		<SFXEvent_Build_Started></SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled></SFXEvent_Build_Cancelled>
+	</DummyStructure>
 	
-	<SpaceUnit Name="Dummy_Regicide_Jax">
+	<DummyStructure Name="Dummy_Regicide_Jax">
 		<Variant_Of_Existing_Type>Template_Research_Dummy</Variant_Of_Existing_Type>
 		
 		<Text_ID>TEXT_REGICIDE_NAME_JAX</Text_ID>
@@ -102,9 +106,9 @@
 		
 		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
 		<Build_Limit_Lifetime_Per_Player>1</Build_Limit_Lifetime_Per_Player>
-	</SpaceUnit>
+	</DummyStructure>
 
-	<SpaceUnit Name="Dummy_Regicide_Daala">
+	<DummyStructure Name="Dummy_Regicide_Daala">
 		<Variant_Of_Existing_Type>Template_Research_Dummy</Variant_Of_Existing_Type>
 		
 		<Text_ID>TEXT_REGICIDE_NAME_DAALA</Text_ID>
@@ -122,9 +126,9 @@
 		
 		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
 		<Build_Limit_Lifetime_Per_Player>1</Build_Limit_Lifetime_Per_Player>
-	</SpaceUnit>
+	</DummyStructure>
 	
-	<SpaceUnit Name="Dummy_Regicide_Pellaeon">
+	<DummyStructure Name="Dummy_Regicide_Pellaeon">
 		<Variant_Of_Existing_Type>Template_Research_Dummy</Variant_Of_Existing_Type>
 		
 		<Text_ID>TEXT_REGICIDE_NAME_PELLAEON</Text_ID>
@@ -142,11 +146,11 @@
 		
 		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
 		<Build_Limit_Lifetime_Per_Player>1</Build_Limit_Lifetime_Per_Player>
-	</SpaceUnit>
+	</DummyStructure>
 	
 	<!-- Bacta War -->
 	
-	<SpaceUnit Name="Dummy_Research_Rylca">
+	<DummyStructure Name="Dummy_Research_Rylca">
 		<Variant_Of_Existing_Type>Template_Research_Dummy</Variant_Of_Existing_Type>
 		
 		<Text_ID>TEXT_STORYOBJECT_RYLCA</Text_ID>
@@ -165,9 +169,9 @@
 		
 		<Build_Limit_Lifetime_Per_Player>1</Build_Limit_Lifetime_Per_Player>		
 		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
-	</SpaceUnit>
+	</DummyStructure>
 	
-	<SpaceUnit Name="Dummy_Ryll_Kor">
+	<DummyStructure Name="Dummy_Ryll_Kor">
 		<Variant_Of_Existing_Type>Template_Research_Dummy</Variant_Of_Existing_Type>
 		
 		<Text_ID>TEXT_STORYOBJECT_RYLLKOR</Text_ID>
@@ -190,9 +194,9 @@
 
 		<Build_Limit_Lifetime_Per_Player>1</Build_Limit_Lifetime_Per_Player>		
 		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
-	</SpaceUnit>
+	</DummyStructure>
 	
-	<SpaceUnit Name="Dummy_Produce_Rylca">
+	<DummyStructure Name="Dummy_Produce_Rylca">
 		<Variant_Of_Existing_Type>Template_Research_Dummy</Variant_Of_Existing_Type>
 		
 		<Text_ID>TEXT_STORYOBJECT_RYLCA_FINAL</Text_ID>
@@ -215,9 +219,9 @@
 		
 		<Build_Limit_Lifetime_Per_Player>1</Build_Limit_Lifetime_Per_Player>		
 		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
-	</SpaceUnit>
+	</DummyStructure>
 
-	<SpaceUnit Name="Dummy_Yonka_Bribe">
+	<DummyStructure Name="Dummy_Yonka_Bribe">
 		<Variant_Of_Existing_Type>Template_Research_Dummy</Variant_Of_Existing_Type>
 		
 		<Text_ID>TEXT_STORYOBJECT_YONKA_BRIBE</Text_ID>
@@ -236,9 +240,9 @@
 		
 		<Build_Limit_Lifetime_Per_Player>1</Build_Limit_Lifetime_Per_Player>		
 		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
-	</SpaceUnit>
+	</DummyStructure>
 	
-	<SpaceUnit Name="Dummy_Find_Thrawn_Clone">
+	<DummyStructure Name="Dummy_Find_Thrawn_Clone">
 		<Variant_Of_Existing_Type>Template_Research_Dummy</Variant_Of_Existing_Type>
 		
 		<Text_ID>TEXT_STORYOBJECT_THRAWN_RUMORS</Text_ID>
@@ -257,11 +261,34 @@
 		
 		<Build_Limit_Lifetime_Per_Player>1</Build_Limit_Lifetime_Per_Player>		
 		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
-	</SpaceUnit>
+	</DummyStructure>
+	
+	<DummyStructure Name="Dummy_Treaty_Victory">
+		<Variant_Of_Existing_Type>Template_Research_Dummy</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_EVENT_DUMMY_DECLARE_VICTORY_TREATY</Text_ID>
+		<Encyclopedia_Text>TEXT_EVENT_DUMMY_DECLARE_VICTORY_DESCRIPTION</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_STORYEVENT </Encyclopedia_Unit_Class>
+
+		<Icon_Name>I_Button_Treaty_Victory_PG.tga</Icon_Name>
+
+		<Affiliation>Empire, Rebel</Affiliation>
+
+		<Build_Initially_Locked>Yes</Build_Initially_Locked>
+		<Tech_Level>0</Tech_Level>
+		<Required_Special_Structures>AI_Category_Dummy | Story_Category_Dummy</Required_Special_Structures>
+		<Build_Cost_Credits>1</Build_Cost_Credits>
+		<Build_Time_Seconds>3</Build_Time_Seconds>
+
+		<Required_Star_Base_Level>1</Required_Star_Base_Level>
+
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+		<Build_Limit_Lifetime_Per_Player>1</Build_Limit_Lifetime_Per_Player>
+	</DummyStructure>
 	
 	<!-- Shield swap for EA -->
 	
-	<SpaceUnit Name="Dummy_Research_Fighters_Shielded">
+	<DummyStructure Name="Dummy_Research_Fighters_Shielded">
 		<Variant_Of_Existing_Type>Template_Research_Dummy</Variant_Of_Existing_Type>
 		
 		<Text_ID>TEXT_UNIT_FIGHTER_SHIELDED_RESEARCH</Text_ID>
@@ -280,9 +307,9 @@
 		<Lua_Script>ResearchShieldedTIE</Lua_Script>
 		
 		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
-	</SpaceUnit>
+	</DummyStructure>
 	
-	<SpaceUnit Name="Dummy_Research_Fighters_Unshielded">
+	<DummyStructure Name="Dummy_Research_Fighters_Unshielded">
 		<Variant_Of_Existing_Type>Template_Research_Dummy</Variant_Of_Existing_Type>
 		
 		<Text_ID>TEXT_UNIT_FIGHTER_UNSHIELDED_RESEARCH</Text_ID>
@@ -301,11 +328,11 @@
 		<Lua_Script>ResearchShieldedTIEReset</Lua_Script>
 		
 		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
-	</SpaceUnit>
+	</DummyStructure>
 	
 	<!-- Corona Research for ZE -->
 	
-	<SpaceUnit Name="Dummy_Research_Corona">
+	<DummyStructure Name="Dummy_Research_Corona">
 		<Variant_Of_Existing_Type>Template_Research_Dummy</Variant_Of_Existing_Type>
 		
 		<Text_ID>TEXT_UNIT_CORONA_RESEARCH</Text_ID>
@@ -324,11 +351,11 @@
 		
 		<Build_Limit_Lifetime_Per_Player>1</Build_Limit_Lifetime_Per_Player>		
 		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
-	</SpaceUnit>
+	</DummyStructure>
 	
 	<!-- Gorath Research for GM -->
 	
-	<SpaceUnit Name="Dummy_Research_Gorath">
+	<DummyStructure Name="Dummy_Research_Gorath">
 		<Variant_Of_Existing_Type>Template_Research_Dummy</Variant_Of_Existing_Type>
 		
 		<Text_ID>TEXT_UNIT_GORATH_RESEARCH</Text_ID>
@@ -346,6 +373,6 @@
 		
 		<Build_Limit_Lifetime_Per_Player>1</Build_Limit_Lifetime_Per_Player>		
 		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
-	</SpaceUnit>
+	</DummyStructure>
 	
-</Remnant_Space_Units>
+</Dummy_Structures>

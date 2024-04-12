@@ -19,7 +19,8 @@ return {
 			EMPIRE = {Initial = 1, Reserve = 2, TechLevel = GreaterOrEqualTo(6)}
 		},
 		["Z95_HEADHUNTER_SQUADRON"] = {
-			REBEL = {Initial = 1, Reserve = 2, TechLevel = LessThan(4)}
+			REBEL = {Initial = 1, Reserve = 2, TechLevel = LessThan(4)},
+			HUTT_CARTELS = {Initial = 1, Reserve = 2}
 		},
 		["DEFENDER_STARFIGHTER_SQUADRON"] = {
 			REBEL = {Initial = 1, Reserve = 2, TechLevel = GreaterOrEqualTo(4)}
@@ -29,6 +30,9 @@ return {
 			HAPES_CONSORTIUM = {Initial = 1, Reserve = 1},
 			INDEPENDENT_FORCES = {Initial = 1, Reserve = 1},
 			REBEL = {Initial = 1, Reserve = 1}
+		},
+		["CLOAKSHAPE_NEW_SQUADRON_HALF"] = {
+			HUTT_CARTELS = {Initial = 1, Reserve = 1}
 		},
 		["SKIPRAY_SQUADRON_HALF"] = {
 			IMPERIAL = {Initial = 1, Reserve = 1}

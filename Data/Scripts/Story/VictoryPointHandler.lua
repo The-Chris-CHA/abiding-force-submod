@@ -1,11 +1,13 @@
 require("PGStoryMode")
 require("PGSpawnUnits")
-require("eawx-util/ChangeOwnerUtilities")
 require("deepcore/std/class")
 StoryUtil = require("eawx-util/StoryUtil")
+require("eawx-util/MissionFunctions")
 UnitUtil = require("eawx-util/UnitUtil")
 require("deepcore/crossplot/crossplot")
 require("TRCommands")
+require("HeroFighterLibrary")
+require("SetFighterResearch")
 
 function Definitions()
 
@@ -54,7 +56,7 @@ function State_Init(message)
 			end
 		end
 
-		p_attacker = StoryUtil.Find_Attacking_Player(true)
+		p_attacker = StoryUtil.Find_Attacking_Player()
 		p_defender = StoryUtil.Find_Defending_Player()
 
 		victory_point_present = false
@@ -65,6 +67,41 @@ function State_Init(message)
 			victory_point_present = true
 		end
 		Sleep(2)
+		local FighterHeroes = Get_Hero_Entries()
+		for index, entry in pairs(FighterHeroes) do
+			if entry.GroundCompany ~= nil then
+				local perception
+				local reinforce = false
+				if entry.GroundReinforcementPerception ~= nil then
+					perception = entry.GroundReinforcementPerception
+					reinforce = true
+					if entry.NoSpawnFlag ~= nil then
+						local nope = GlobalValue.Get(entry.NoSpawnFlag)
+						if nope then
+							reinforce = false
+						end
+					end
+				else
+					local host = Get_Fighter_Hero(entry.Hero_Squadron)
+					if host ~= nil then
+						for index2, option in pairs(entry.Options) do
+							for index3, Location in pairs(option.Locations) do
+								if Location == host then
+									perception = option.GroundPerceptions[index3]
+									reinforce = true
+								end
+							end
+						end
+					end
+				end
+				if reinforce then
+					local Rogue_host = Evaluate_In_Galactic_Context(perception, Find_Player(entry.Faction))
+					if Rogue_host > 0 then
+						Add_Reinforcement(entry.GroundCompany, Find_Player(entry.Faction))
+					end
+				end
+			end
+		end
 		if EvaluatePerception("Is_Defender", p_human_object) == 0 then
 			if victory_point_present then
 				victoryPoint.Highlight(true)
@@ -90,17 +127,16 @@ function State_Init(message)
 		DebugMessage("DetermineEvents Victory Point Handler Update Started")
 		if victory_point_present then
 			if victoryPoint.Get_Owner() == p_attacker and (EvaluatePerception("Disable_VictoryPoint", p_attacker) == 0) then
-				StoryUtil.DeclareVictory(p_attacker, true)
 				if p_human_object == p_attacker then
 					StoryUtil.SetObjectiveComplete(Objective_Name_Attacker)
 				end
 				if p_human_object == p_defender then
 					StoryUtil.SetObjectiveFailed(Objective_Name_Defender)
 				end
-
-				Point_Camera_At(victoryPoint)
-				Create_Cinematic_Transport(CONSTANTS.TRANSPORTS[p_attacker.Get_Faction_Name()], p_attacker.Get_ID(), victoryPoint.Get_Position(), 0, 1, 0.25, 60, 1)
+				StoryUtil.DeclareVictory(p_attacker, true)
 				
+				Point_Camera_At(victoryPoint)
+				Create_Cinematic_Transport(CONSTANTS.TRANSPORTS[p_attacker.Get_Faction_Name()], p_attacker.Get_ID(), victoryPoint.Get_Position(), 0, 1, 0.25, 60, 1)				
 				ScriptExit()
 			end
 		end

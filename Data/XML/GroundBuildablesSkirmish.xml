@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <GroundBuildables>
 
-	<GroundBuildable Name="Skirmish_Build_Pad">
+	<Tactical_Capturable Name="Skirmish_Build_Pad">
 
 		<Behavior> TACTICAL_BUILD_OBJECTS, REVEAL, HIDE_WHEN_FOGGED, CAPTURE_POINT </Behavior>
 
@@ -150,7 +150,7 @@
 				UC_Buildable_Repair_Facility, 
 				UC_Buildable_Sensor_Node,
 		</Tactical_Buildable_Objects_Campaign>
-		
+
 		<Tactical_Buildable_Objects_Multiplayer> 
 			Empire, 
 				UC_Empire_Buildable_Anti_Vehicle_Turret, 
@@ -286,7 +286,7 @@
 				UC_Buildable_Repair_Facility, 
 				UC_Buildable_Sensor_Node,
 		</Tactical_Buildable_Objects_Multiplayer>
-		
+
 		<Text_ID> TEXT_BUILD_PAD </Text_ID>
 		<Encyclopedia_Text> TEXT_TOOLTIP_UNIT_CAPTUREABLE_STRUCTURE </Encyclopedia_Text>
 		<Land_Model_Name> NB_BasePad.alo </Land_Model_Name>
@@ -303,7 +303,6 @@
 		<Scale_Factor> 1.0 </Scale_Factor>
 		<Shield_Points> 0 </Shield_Points>
 		<Tactical_Health> 10000 </Tactical_Health>
-		<Affiliation> Neutral </Affiliation>
 		<Base_Level_Available> 1 </Base_Level_Available>
 		<Required_Ground_Base_Level> 0 </Required_Ground_Base_Level>
 		<Reveal_During_Setup_Phase> False </Reveal_During_Setup_Phase>
@@ -322,9 +321,9 @@
 		<Immune_To_Damage>True</Immune_To_Damage>
       <Include_In_UI_Map_Header>True</Include_In_UI_Map_Header>
 		
-	</GroundBuildable>
-	
-	<GroundBuildable Name="Base_Buildable_Turret_Pad">
+	</Tactical_Capturable>
+
+	<Tactical_Capturable Name="Base_Buildable_Turret_Pad">
 
 		<Behavior> TACTICAL_BUILD_OBJECTS, REVEAL, HIDE_WHEN_FOGGED </Behavior>
 		<!-- This is a list of the buildable objects at this pad (defined below) - that will be under construction -->
@@ -463,7 +462,7 @@
 				UC_Buildable_Repair_Facility, 
 				UC_Buildable_Sensor_Node,
 		</Tactical_Buildable_Objects_Campaign>
-		
+
 		<Tactical_Buildable_Objects_Multiplayer>
 			Empire, 
 				UC_Empire_Buildable_Anti_Vehicle_Turret, 
@@ -599,7 +598,7 @@
 				UC_Buildable_Repair_Facility, 
 				UC_Buildable_Sensor_Node,
 		</Tactical_Buildable_Objects_Multiplayer>
-		
+
 		<Text_ID> TEXT_BUILD_PAD </Text_ID>
 		<Land_Model_Name> NB_BasePad_Imperial.alo </Land_Model_Name>
 		<Capture_Point_Radius>0</Capture_Point_Radius>
@@ -662,10 +661,629 @@
 			</Force_Healing_Ability>
 		</Abilities>
 
-	</GroundBuildable>
+	</Tactical_Capturable>
+
+	<Tactical_Capturable Name="Skirmish_Build_Pad_Simple">
+		<Behavior> TACTICAL_BUILD_OBJECTS, REVEAL, HIDE_WHEN_FOGGED, CAPTURE_POINT </Behavior>
+
+		<Space_Layer> Land </Space_Layer>
+		<UnitCollisionClass> Build Pad </UnitCollisionClass>	
+		<Custom_Hard_XExtent> 10.0 </Custom_Hard_XExtent>
+		<Custom_Hard_YExtent> 10.0 </Custom_Hard_YExtent>
+		<Minimum_Time_Before_Pad_Can_Build_Again> 15.0 </Minimum_Time_Before_Pad_Can_Build_Again>
+
+		<Multisample_FOW_Check>Yes</Multisample_FOW_Check>
+		<Last_State_Visible_Under_FOW> Yes </Last_State_Visible_Under_FOW>
+
+		<!-- This is a list of the buildable objects at this pad (defined below) - that will be under construction -->
+		<Tactical_Buildable_Objects_Campaign> 
+			Empire, 
+				UC_Empire_Buildable_Anti_Infantry_Turret, 
+				UC_Buildable_Bacta_Tank, 
+				UC_Buildable_Repair_Facility, 
+			Greater_Maldrood, 
+				UC_Empire_Buildable_Anti_Infantry_Turret, 
+				UC_Buildable_Bacta_Tank, 
+				UC_Buildable_Repair_Facility, 
+			Eriadu_Authority, 
+				UC_Empire_Buildable_Anti_Infantry_Turret, 
+				UC_Buildable_Bacta_Tank, 
+				UC_Buildable_Repair_Facility, 
+			Zsinj_Empire,
+				UC_Empire_Buildable_Anti_Infantry_Turret, 
+				UC_Buildable_Bacta_Tank, 
+				UC_Buildable_Repair_Facility, 
+			Corporate_Sector,
+				UC_Empire_Buildable_Anti_Infantry_Turret, 
+				UC_Buildable_Bacta_Tank, 
+				UC_Buildable_Repair_Facility, 
+			Pentastar, 
+				UC_Empire_Buildable_Anti_Infantry_Turret, 
+				UC_Buildable_Bacta_Tank, 
+				UC_Buildable_Repair_Facility, 
+			Warlords, 
+				UC_Empire_Buildable_Anti_Infantry_Turret, 
+				UC_Buildable_Bacta_Tank, 
+				UC_Buildable_Repair_Facility, 
+			Corellia,
+				UC_Empire_Buildable_Anti_Infantry_Turret, 
+				UC_Buildable_Bacta_Tank, 
+				UC_Buildable_Repair_Facility, 
+			Rebel,
+				UC_Rebel_Buildable_Anti_Infantry_Turret, 
+				UC_Buildable_Bacta_Tank, 
+				UC_Buildable_Repair_Facility, 
+			Hapes_Consortium,
+				UC_Rebel_Buildable_Anti_Infantry_Turret, 
+				UC_Buildable_Bacta_Tank, 
+				UC_Buildable_Repair_Facility, 
+			Hutt_Cartels,
+				UC_Rebel_Buildable_Anti_Infantry_Turret, 
+				UC_Buildable_Bacta_Tank, 
+				UC_Buildable_Repair_Facility, 
+			SsiRuuvi_Imperium,
+				UC_Rebel_Buildable_Anti_Infantry_Turret, 
+				UC_Buildable_Bacta_Tank, 
+				UC_Buildable_Repair_Facility, 
+			Killik_Hives,
+				UC_Rebel_Buildable_Anti_Infantry_Turret, 
+				UC_Buildable_Bacta_Tank, 
+				UC_Buildable_Repair_Facility, 
+			EmpireoftheHand,
+				UC_Rebel_Buildable_Anti_Infantry_Turret, 
+				UC_Buildable_Bacta_Tank, 
+				UC_Buildable_Repair_Facility, 
+			Chiss,
+				UC_Rebel_Buildable_Anti_Infantry_Turret, 
+				UC_Buildable_Bacta_Tank, 
+				UC_Buildable_Repair_Facility, 
+			Underworld,
+				UC_Rebel_Buildable_Anti_Infantry_Turret, 
+				UC_Buildable_Bacta_Tank, 
+				UC_Buildable_Repair_Facility, 
+			Mandalorians,
+				UC_Rebel_Buildable_Anti_Infantry_Turret, 
+				UC_Buildable_Bacta_Tank, 
+				UC_Buildable_Repair_Facility, 
+			Yevetha,
+				UC_Rebel_Buildable_Anti_Infantry_Turret, 
+				UC_Buildable_Bacta_Tank, 
+				UC_Buildable_Repair_Facility, 
+			Independent_Forces,
+				UC_Rebel_Buildable_Anti_Infantry_Turret, 
+				UC_Buildable_Bacta_Tank, 
+				UC_Buildable_Repair_Facility, 
+		</Tactical_Buildable_Objects_Campaign>
+
+		<Tactical_Buildable_Objects_Multiplayer> 
+			Empire, 
+				UC_Empire_Buildable_Anti_Infantry_Turret, 
+				UC_Buildable_Bacta_Tank, 
+				UC_Buildable_Repair_Facility, 
+			Greater_Maldrood, 
+				UC_Empire_Buildable_Anti_Infantry_Turret, 
+				UC_Buildable_Bacta_Tank, 
+				UC_Buildable_Repair_Facility, 
+			Eriadu_Authority, 
+				UC_Empire_Buildable_Anti_Infantry_Turret, 
+				UC_Buildable_Bacta_Tank, 
+				UC_Buildable_Repair_Facility, 
+			Zsinj_Empire,
+				UC_Empire_Buildable_Anti_Infantry_Turret, 
+				UC_Buildable_Bacta_Tank, 
+				UC_Buildable_Repair_Facility, 
+			Corporate_Sector,
+				UC_Empire_Buildable_Anti_Infantry_Turret, 
+				UC_Buildable_Bacta_Tank, 
+				UC_Buildable_Repair_Facility, 
+			Pentastar, 
+				UC_Empire_Buildable_Anti_Infantry_Turret, 
+				UC_Buildable_Bacta_Tank, 
+				UC_Buildable_Repair_Facility, 
+			Warlords, 
+				UC_Empire_Buildable_Anti_Infantry_Turret, 
+				UC_Buildable_Bacta_Tank, 
+				UC_Buildable_Repair_Facility, 
+			Corellia,
+				UC_Empire_Buildable_Anti_Infantry_Turret, 
+				UC_Buildable_Bacta_Tank, 
+				UC_Buildable_Repair_Facility, 
+			Rebel,
+				UC_Rebel_Buildable_Anti_Infantry_Turret, 
+				UC_Buildable_Bacta_Tank, 
+				UC_Buildable_Repair_Facility, 
+			Hapes_Consortium,
+				UC_Rebel_Buildable_Anti_Infantry_Turret, 
+				UC_Buildable_Bacta_Tank, 
+				UC_Buildable_Repair_Facility, 
+			Hutt_Cartels,
+				UC_Rebel_Buildable_Anti_Infantry_Turret, 
+				UC_Buildable_Bacta_Tank, 
+				UC_Buildable_Repair_Facility, 
+			SsiRuuvi_Imperium,
+				UC_Rebel_Buildable_Anti_Infantry_Turret, 
+				UC_Buildable_Bacta_Tank, 
+				UC_Buildable_Repair_Facility, 
+			Killik_Hives,
+				UC_Rebel_Buildable_Anti_Infantry_Turret, 
+				UC_Buildable_Bacta_Tank, 
+				UC_Buildable_Repair_Facility, 
+			EmpireoftheHand,
+				UC_Rebel_Buildable_Anti_Infantry_Turret, 
+				UC_Buildable_Bacta_Tank, 
+				UC_Buildable_Repair_Facility, 
+			Chiss,
+				UC_Rebel_Buildable_Anti_Infantry_Turret, 
+				UC_Buildable_Bacta_Tank, 
+				UC_Buildable_Repair_Facility, 
+			Underworld,
+				UC_Rebel_Buildable_Anti_Infantry_Turret, 
+				UC_Buildable_Bacta_Tank, 
+				UC_Buildable_Repair_Facility, 
+			Mandalorians,
+				UC_Rebel_Buildable_Anti_Infantry_Turret, 
+				UC_Buildable_Bacta_Tank, 
+				UC_Buildable_Repair_Facility, 
+			Yevetha,
+				UC_Rebel_Buildable_Anti_Infantry_Turret, 
+				UC_Buildable_Bacta_Tank, 
+				UC_Buildable_Repair_Facility, 
+			Independent_Forces,
+				UC_Rebel_Buildable_Anti_Infantry_Turret, 
+				UC_Buildable_Bacta_Tank, 
+				UC_Buildable_Repair_Facility, 
+		</Tactical_Buildable_Objects_Multiplayer>
+	
+		<Text_ID> TEXT_BUILD_PAD </Text_ID>
+		<Encyclopedia_Text> TEXT_TOOLTIP_UNIT_CAPTUREABLE_STRUCTURE </Encyclopedia_Text>
+		<Land_Model_Name> NB_BasePad.alo </Land_Model_Name>
+		<Capture_Point_Radius>100</Capture_Point_Radius>
+		<Influences_Capture_Point>no</Influences_Capture_Point>
+		<Capture_Point_Transition_Time_Seconds>5.0</Capture_Point_Transition_Time_Seconds>
+		<Visible_To_Enemies_When_Empty>True</Visible_To_Enemies_When_Empty>
+		<Loop_Idle_Anim_00> No </Loop_Idle_Anim_00>
+		<Collidable_By_Projectile_Living> No </Collidable_By_Projectile_Living>
+		<Is_Visible_On_Radar> No </Is_Visible_On_Radar>
+		<Radar_Icon_Size>0.00  0.00</Radar_Icon_Size>
+		<Select_Box_Scale> 50 </Select_Box_Scale>
+		
+		<Scale_Factor> 1.0 </Scale_Factor>
+		<Shield_Points> 0 </Shield_Points>
+		<Tactical_Health> 10000 </Tactical_Health>
+		<Base_Level_Available> 1 </Base_Level_Available>
+		<Required_Ground_Base_Level> 0 </Required_Ground_Base_Level>
+		<Reveal_During_Setup_Phase> False </Reveal_During_Setup_Phase>
+		<Reveal_During_Setup_Phase_Only> True </Reveal_During_Setup_Phase_Only>
+		<Land_FOW_Reveal_Range>100.0</Land_FOW_Reveal_Range>
+		<Victory_Relevant> No </Victory_Relevant>
+		<No_Reflection_Below_Detail_Level> 1 </No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level> 1 </No_Refraction_Below_Detail_Level>
+		<CategoryMask> Structure </CategoryMask>
+		<GUI_Bracket_Width> 20 </GUI_Bracket_Width>
+		<GUI_Bracket_Height> 0 </GUI_Bracket_Height>
+		<GUI_Bracket_Size> 1 </GUI_Bracket_Size> 
+		<Has_Land_Evaluator>True</Has_Land_Evaluator>
+		<Influences_Capture_Point> False </Influences_Capture_Point>
+		<Affiliation>Neutral, Rebel, Empire, Trade_Federation, Underworld, Techno_Union, Banking_Clan, Commerce_Guild, Hapes_Consortium, Warlords, Independent_Forces, Sector_Forces, Hutt_Cartels</Affiliation>
+		<Immune_To_Damage>True</Immune_To_Damage>
+	  <Include_In_UI_Map_Header>True</Include_In_UI_Map_Header>
+	</Tactical_Capturable>
+
+	<Tactical_Capturable Name="Skirmish_Build_Pad_Offensive">
+		<Behavior> TACTICAL_BUILD_OBJECTS, REVEAL, HIDE_WHEN_FOGGED, CAPTURE_POINT </Behavior>
+
+		<Space_Layer> Land </Space_Layer>
+		<UnitCollisionClass> Build Pad </UnitCollisionClass>	
+		<Custom_Hard_XExtent> 10.0 </Custom_Hard_XExtent>
+		<Custom_Hard_YExtent> 10.0 </Custom_Hard_YExtent>
+		<Minimum_Time_Before_Pad_Can_Build_Again> 15.0 </Minimum_Time_Before_Pad_Can_Build_Again>
+
+		<Multisample_FOW_Check>Yes</Multisample_FOW_Check>
+		<Last_State_Visible_Under_FOW> Yes </Last_State_Visible_Under_FOW>
+
+		<!-- This is a list of the buildable objects at this pad (defined below) - that will be under construction -->
+		<Tactical_Buildable_Objects_Campaign> 
+			Empire, 
+				UC_Empire_Buildable_Anti_Vehicle_Turret, 
+				UC_Empire_Buildable_Anti_Infantry_Turret, 
+				UC_Empire_Buildable_Anti_Aircraft_Turret, 
+			Greater_Maldrood, 
+				UC_Empire_Buildable_Anti_Vehicle_Turret, 
+				UC_Empire_Buildable_Anti_Infantry_Turret, 
+				UC_Empire_Buildable_Anti_Aircraft_Turret, 
+			Eriadu_Authority, 
+				UC_Empire_Buildable_Anti_Vehicle_Turret,
+				UC_Empire_Buildable_Anti_Infantry_Turret,
+				UC_Empire_Buildable_Anti_Aircraft_Turret,
+			Zsinj_Empire,
+				UC_Empire_Buildable_Anti_Vehicle_Turret,
+				UC_Empire_Buildable_Anti_Infantry_Turret,
+				UC_Empire_Buildable_Anti_Aircraft_Turret,
+			Corporate_Sector,
+				UC_Empire_Buildable_Anti_Vehicle_Turret,
+				UC_Empire_Buildable_Anti_Infantry_Turret,
+				UC_Empire_Buildable_Anti_Aircraft_Turret,
+			Pentastar, 
+				UC_Empire_Buildable_Anti_Vehicle_Turret,
+				UC_Empire_Buildable_Anti_Infantry_Turret,
+				UC_Empire_Buildable_Anti_Aircraft_Turret,
+			Warlords, 
+				UC_Empire_Buildable_Anti_Vehicle_Turret,
+				UC_Empire_Buildable_Anti_Infantry_Turret,
+				UC_Empire_Buildable_Anti_Aircraft_Turret,
+			Corellia,
+				UC_Empire_Buildable_Anti_Vehicle_Turret,
+				UC_Empire_Buildable_Anti_Infantry_Turret,
+				UC_Empire_Buildable_Anti_Aircraft_Turret,
+			Rebel,
+				UC_Rebel_Buildable_Anti_Vehicle_Turret,
+				UC_Rebel_Buildable_Anti_Infantry_Turret,
+				UC_Rebel_Buildable_Anti_Aircraft_Turret,
+			Hapes_Consortium,
+				UC_Rebel_Buildable_Anti_Vehicle_Turret,
+				UC_Rebel_Buildable_Anti_Infantry_Turret,
+				UC_Rebel_Buildable_Anti_Aircraft_Turret,
+			Hutt_Cartels,
+				UC_Rebel_Buildable_Anti_Vehicle_Turret,
+				UC_Rebel_Buildable_Anti_Infantry_Turret,
+				UC_Rebel_Buildable_Anti_Aircraft_Turret,
+			SsiRuuvi_Imperium,
+				UC_Rebel_Buildable_Anti_Vehicle_Turret,
+				UC_Rebel_Buildable_Anti_Infantry_Turret,
+				UC_Rebel_Buildable_Anti_Aircraft_Turret,
+			Killik_Hives,
+				UC_Rebel_Buildable_Anti_Vehicle_Turret,
+				UC_Rebel_Buildable_Anti_Infantry_Turret,
+				UC_Rebel_Buildable_Anti_Aircraft_Turret,
+			EmpireoftheHand,
+				UC_Rebel_Buildable_Anti_Vehicle_Turret,
+				UC_Rebel_Buildable_Anti_Infantry_Turret,
+				UC_Rebel_Buildable_Anti_Aircraft_Turret,
+			Chiss,
+				UC_Rebel_Buildable_Anti_Vehicle_Turret,
+				UC_Rebel_Buildable_Anti_Infantry_Turret,
+				UC_Rebel_Buildable_Anti_Aircraft_Turret,
+			Underworld,
+				UC_Rebel_Buildable_Anti_Vehicle_Turret,
+				UC_Rebel_Buildable_Anti_Infantry_Turret,
+				UC_Rebel_Buildable_Anti_Aircraft_Turret,
+			Mandalorians,
+				UC_Rebel_Buildable_Anti_Vehicle_Turret,
+				UC_Rebel_Buildable_Anti_Infantry_Turret,
+				UC_Rebel_Buildable_Anti_Aircraft_Turret,
+			Yevetha,
+				UC_Rebel_Buildable_Anti_Vehicle_Turret,
+				UC_Rebel_Buildable_Anti_Infantry_Turret,
+				UC_Rebel_Buildable_Anti_Aircraft_Turret,
+			Independent_Forces,
+				UC_Rebel_Buildable_Anti_Vehicle_Turret,
+				UC_Rebel_Buildable_Anti_Infantry_Turret,
+				UC_Rebel_Buildable_Anti_Aircraft_Turret,
+		</Tactical_Buildable_Objects_Campaign>
+
+		<Tactical_Buildable_Objects_Multiplayer> 
+			Empire, 
+				UC_Empire_Buildable_Anti_Vehicle_Turret, 
+				UC_Empire_Buildable_Anti_Infantry_Turret, 
+				UC_Empire_Buildable_Anti_Aircraft_Turret, 
+			Greater_Maldrood, 
+				UC_Empire_Buildable_Anti_Vehicle_Turret, 
+				UC_Empire_Buildable_Anti_Infantry_Turret, 
+				UC_Empire_Buildable_Anti_Aircraft_Turret, 
+			Eriadu_Authority, 
+				UC_Empire_Buildable_Anti_Vehicle_Turret,
+				UC_Empire_Buildable_Anti_Infantry_Turret,
+				UC_Empire_Buildable_Anti_Aircraft_Turret,
+			Zsinj_Empire,
+				UC_Empire_Buildable_Anti_Vehicle_Turret,
+				UC_Empire_Buildable_Anti_Infantry_Turret,
+				UC_Empire_Buildable_Anti_Aircraft_Turret,
+			Corporate_Sector,
+				UC_Empire_Buildable_Anti_Vehicle_Turret,
+				UC_Empire_Buildable_Anti_Infantry_Turret,
+				UC_Empire_Buildable_Anti_Aircraft_Turret,
+			Pentastar, 
+				UC_Empire_Buildable_Anti_Vehicle_Turret,
+				UC_Empire_Buildable_Anti_Infantry_Turret,
+				UC_Empire_Buildable_Anti_Aircraft_Turret,
+			Warlords, 
+				UC_Empire_Buildable_Anti_Vehicle_Turret,
+				UC_Empire_Buildable_Anti_Infantry_Turret,
+				UC_Empire_Buildable_Anti_Aircraft_Turret,
+			Corellia,
+				UC_Empire_Buildable_Anti_Vehicle_Turret,
+				UC_Empire_Buildable_Anti_Infantry_Turret,
+				UC_Empire_Buildable_Anti_Aircraft_Turret,
+			Rebel,
+				UC_Rebel_Buildable_Anti_Vehicle_Turret,
+				UC_Rebel_Buildable_Anti_Infantry_Turret,
+				UC_Rebel_Buildable_Anti_Aircraft_Turret,
+			Hapes_Consortium,
+				UC_Rebel_Buildable_Anti_Vehicle_Turret,
+				UC_Rebel_Buildable_Anti_Infantry_Turret,
+				UC_Rebel_Buildable_Anti_Aircraft_Turret,
+			Hutt_Cartels,
+				UC_Rebel_Buildable_Anti_Vehicle_Turret,
+				UC_Rebel_Buildable_Anti_Infantry_Turret,
+				UC_Rebel_Buildable_Anti_Aircraft_Turret,
+			SsiRuuvi_Imperium,
+				UC_Rebel_Buildable_Anti_Vehicle_Turret,
+				UC_Rebel_Buildable_Anti_Infantry_Turret,
+				UC_Rebel_Buildable_Anti_Aircraft_Turret,
+			Killik_Hives,
+				UC_Rebel_Buildable_Anti_Vehicle_Turret,
+				UC_Rebel_Buildable_Anti_Infantry_Turret,
+				UC_Rebel_Buildable_Anti_Aircraft_Turret,
+			EmpireoftheHand,
+				UC_Rebel_Buildable_Anti_Vehicle_Turret,
+				UC_Rebel_Buildable_Anti_Infantry_Turret,
+				UC_Rebel_Buildable_Anti_Aircraft_Turret,
+			Chiss,
+				UC_Rebel_Buildable_Anti_Vehicle_Turret,
+				UC_Rebel_Buildable_Anti_Infantry_Turret,
+				UC_Rebel_Buildable_Anti_Aircraft_Turret,
+			Underworld,
+				UC_Rebel_Buildable_Anti_Vehicle_Turret,
+				UC_Rebel_Buildable_Anti_Infantry_Turret,
+				UC_Rebel_Buildable_Anti_Aircraft_Turret,
+			Mandalorians,
+				UC_Rebel_Buildable_Anti_Vehicle_Turret,
+				UC_Rebel_Buildable_Anti_Infantry_Turret,
+				UC_Rebel_Buildable_Anti_Aircraft_Turret,
+			Yevetha,
+				UC_Rebel_Buildable_Anti_Vehicle_Turret,
+				UC_Rebel_Buildable_Anti_Infantry_Turret,
+				UC_Rebel_Buildable_Anti_Aircraft_Turret,
+			Independent_Forces,
+				UC_Rebel_Buildable_Anti_Vehicle_Turret,
+				UC_Rebel_Buildable_Anti_Infantry_Turret,
+				UC_Rebel_Buildable_Anti_Aircraft_Turret,
+		</Tactical_Buildable_Objects_Multiplayer>
+
+		<Text_ID> TEXT_BUILD_PAD </Text_ID>
+		<Encyclopedia_Text> TEXT_TOOLTIP_UNIT_CAPTUREABLE_STRUCTURE </Encyclopedia_Text>
+		<Land_Model_Name> NB_BasePad.alo </Land_Model_Name>
+		<Capture_Point_Radius>100</Capture_Point_Radius>
+		<Influences_Capture_Point>no</Influences_Capture_Point>
+		<Capture_Point_Transition_Time_Seconds>5.0</Capture_Point_Transition_Time_Seconds>
+		<Visible_To_Enemies_When_Empty>True</Visible_To_Enemies_When_Empty>
+		<Loop_Idle_Anim_00> No </Loop_Idle_Anim_00>
+		<Collidable_By_Projectile_Living> No </Collidable_By_Projectile_Living>
+		<Is_Visible_On_Radar> No </Is_Visible_On_Radar>
+		<Radar_Icon_Size>0.00  0.00</Radar_Icon_Size>
+		<Select_Box_Scale> 50 </Select_Box_Scale>
+		
+		<Scale_Factor> 1.0 </Scale_Factor>
+		<Shield_Points> 0 </Shield_Points>
+		<Tactical_Health> 10000 </Tactical_Health>
+		<Base_Level_Available> 1 </Base_Level_Available>
+		<Required_Ground_Base_Level> 0 </Required_Ground_Base_Level>
+		<Reveal_During_Setup_Phase> False </Reveal_During_Setup_Phase>
+		<Reveal_During_Setup_Phase_Only> True </Reveal_During_Setup_Phase_Only>
+		<Land_FOW_Reveal_Range>100.0</Land_FOW_Reveal_Range>
+		<Victory_Relevant> No </Victory_Relevant>
+		<No_Reflection_Below_Detail_Level> 1 </No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level> 1 </No_Refraction_Below_Detail_Level>
+		<CategoryMask> Structure </CategoryMask>
+		<GUI_Bracket_Width> 20 </GUI_Bracket_Width>
+		<GUI_Bracket_Height> 0 </GUI_Bracket_Height>
+		<GUI_Bracket_Size> 1 </GUI_Bracket_Size> 
+		<Has_Land_Evaluator>True</Has_Land_Evaluator>
+		<Influences_Capture_Point> False </Influences_Capture_Point>
+		<Affiliation>Neutral, Rebel, Empire, Trade_Federation, Underworld, Techno_Union, Banking_Clan, Commerce_Guild, Hapes_Consortium, Warlords, Independent_Forces, Sector_Forces, Hutt_Cartels</Affiliation>
+		<Immune_To_Damage>True</Immune_To_Damage>
+	  <Include_In_UI_Map_Header>True</Include_In_UI_Map_Header>
+	</Tactical_Capturable>
+
+	<Tactical_Capturable Name="Skirmish_Build_Pad_Defensive">
+		<Behavior> TACTICAL_BUILD_OBJECTS, REVEAL, HIDE_WHEN_FOGGED, CAPTURE_POINT </Behavior>
+
+		<Space_Layer> Land </Space_Layer>
+		<UnitCollisionClass> Build Pad </UnitCollisionClass>	
+		<Custom_Hard_XExtent> 10.0 </Custom_Hard_XExtent>
+		<Custom_Hard_YExtent> 10.0 </Custom_Hard_YExtent>
+		<Minimum_Time_Before_Pad_Can_Build_Again> 15.0 </Minimum_Time_Before_Pad_Can_Build_Again>
+
+		<Multisample_FOW_Check>Yes</Multisample_FOW_Check>
+		<Last_State_Visible_Under_FOW> Yes </Last_State_Visible_Under_FOW>
+
+		<!-- This is a list of the buildable objects at this pad (defined below) - that will be under construction -->
+		<Tactical_Buildable_Objects_Campaign> 
+			Empire, 
+				UC_Buildable_Bacta_Tank, 
+				UC_Buildable_Repair_Facility, 
+				UC_Buildable_Sensor_Node,	
+			Greater_Maldrood, 
+				UC_Buildable_Bacta_Tank, 
+				UC_Buildable_Repair_Facility, 
+				UC_Buildable_Sensor_Node,
+			Eriadu_Authority, 
+				UC_Buildable_Bacta_Tank, 
+				UC_Buildable_Repair_Facility, 
+				UC_Buildable_Sensor_Node,
+			Zsinj_Empire,
+				UC_Buildable_Bacta_Tank, 
+				UC_Buildable_Repair_Facility, 
+				UC_Buildable_Sensor_Node,
+			Corporate_Sector,
+				UC_Buildable_Bacta_Tank, 
+				UC_Buildable_Repair_Facility, 
+				UC_Buildable_Sensor_Node,
+			Pentastar, 
+				UC_Buildable_Bacta_Tank, 
+				UC_Buildable_Repair_Facility, 
+				UC_Buildable_Sensor_Node,
+			Warlords, 
+				UC_Buildable_Bacta_Tank, 
+				UC_Buildable_Repair_Facility, 
+				UC_Buildable_Sensor_Node,
+			Corellia,
+				UC_Buildable_Bacta_Tank, 
+				UC_Buildable_Repair_Facility, 
+				UC_Buildable_Sensor_Node,
+			Rebel,
+				UC_Buildable_Bacta_Tank, 
+				UC_Buildable_Repair_Facility, 
+				UC_Buildable_Sensor_Node,
+			Hapes_Consortium,
+				UC_Buildable_Bacta_Tank, 
+				UC_Buildable_Repair_Facility, 
+				UC_Buildable_Sensor_Node,
+			Hutt_Cartels,
+				UC_Buildable_Bacta_Tank, 
+				UC_Buildable_Repair_Facility, 
+				UC_Buildable_Sensor_Node,
+			SsiRuuvi_Imperium,
+				UC_Buildable_Bacta_Tank, 
+				UC_Buildable_Repair_Facility, 
+				UC_Buildable_Sensor_Node,
+			Killik_Hives,
+				UC_Buildable_Bacta_Tank, 
+				UC_Buildable_Repair_Facility, 
+				UC_Buildable_Sensor_Node,
+			EmpireoftheHand,
+				UC_Buildable_Bacta_Tank, 
+				UC_Buildable_Repair_Facility, 
+				UC_Buildable_Sensor_Node,
+			Chiss,
+				UC_Buildable_Bacta_Tank, 
+				UC_Buildable_Repair_Facility, 
+				UC_Buildable_Sensor_Node,
+			Underworld,
+				UC_Buildable_Bacta_Tank, 
+				UC_Buildable_Repair_Facility, 
+				UC_Buildable_Sensor_Node,
+			Mandalorians,
+				UC_Buildable_Bacta_Tank, 
+				UC_Buildable_Repair_Facility, 
+				UC_Buildable_Sensor_Node,
+			Yevetha,
+				UC_Buildable_Bacta_Tank, 
+				UC_Buildable_Repair_Facility, 
+				UC_Buildable_Sensor_Node,
+			Independent_Forces,
+				UC_Buildable_Bacta_Tank, 
+				UC_Buildable_Repair_Facility, 
+				UC_Buildable_Sensor_Node,
+		</Tactical_Buildable_Objects_Campaign>
+
+		<Tactical_Buildable_Objects_Multiplayer> 
+			Empire, 
+				UC_Buildable_Bacta_Tank, 
+				UC_Buildable_Repair_Facility, 
+				UC_Buildable_Sensor_Node,	
+			Greater_Maldrood, 
+				UC_Buildable_Bacta_Tank, 
+				UC_Buildable_Repair_Facility, 
+				UC_Buildable_Sensor_Node,
+			Eriadu_Authority, 
+				UC_Buildable_Bacta_Tank, 
+				UC_Buildable_Repair_Facility, 
+				UC_Buildable_Sensor_Node,
+			Zsinj_Empire,
+				UC_Buildable_Bacta_Tank, 
+				UC_Buildable_Repair_Facility, 
+				UC_Buildable_Sensor_Node,
+			Corporate_Sector,
+				UC_Buildable_Bacta_Tank, 
+				UC_Buildable_Repair_Facility, 
+				UC_Buildable_Sensor_Node,
+			Pentastar, 
+				UC_Buildable_Bacta_Tank, 
+				UC_Buildable_Repair_Facility, 
+				UC_Buildable_Sensor_Node,
+			Warlords, 
+				UC_Buildable_Bacta_Tank, 
+				UC_Buildable_Repair_Facility, 
+				UC_Buildable_Sensor_Node,
+			Corellia,
+				UC_Buildable_Bacta_Tank, 
+				UC_Buildable_Repair_Facility, 
+				UC_Buildable_Sensor_Node,
+			Rebel,
+				UC_Buildable_Bacta_Tank, 
+				UC_Buildable_Repair_Facility, 
+				UC_Buildable_Sensor_Node,
+			Hapes_Consortium,
+				UC_Buildable_Bacta_Tank, 
+				UC_Buildable_Repair_Facility, 
+				UC_Buildable_Sensor_Node,
+			Hutt_Cartels,
+				UC_Buildable_Bacta_Tank, 
+				UC_Buildable_Repair_Facility, 
+				UC_Buildable_Sensor_Node,
+			SsiRuuvi_Imperium,
+				UC_Buildable_Bacta_Tank, 
+				UC_Buildable_Repair_Facility, 
+				UC_Buildable_Sensor_Node,
+			Killik_Hives,
+				UC_Buildable_Bacta_Tank, 
+				UC_Buildable_Repair_Facility, 
+				UC_Buildable_Sensor_Node,
+			EmpireoftheHand,
+				UC_Buildable_Bacta_Tank, 
+				UC_Buildable_Repair_Facility, 
+				UC_Buildable_Sensor_Node,
+			Chiss,
+				UC_Buildable_Bacta_Tank, 
+				UC_Buildable_Repair_Facility, 
+				UC_Buildable_Sensor_Node,
+			Underworld,
+				UC_Buildable_Bacta_Tank, 
+				UC_Buildable_Repair_Facility, 
+				UC_Buildable_Sensor_Node,
+			Mandalorians,
+				UC_Buildable_Bacta_Tank, 
+				UC_Buildable_Repair_Facility, 
+				UC_Buildable_Sensor_Node,
+			Yevetha,
+				UC_Buildable_Bacta_Tank, 
+				UC_Buildable_Repair_Facility, 
+				UC_Buildable_Sensor_Node,
+			Independent_Forces,
+				UC_Buildable_Bacta_Tank, 
+				UC_Buildable_Repair_Facility, 
+				UC_Buildable_Sensor_Node,
+		</Tactical_Buildable_Objects_Multiplayer>
+
+		<Text_ID> TEXT_BUILD_PAD </Text_ID>
+		<Encyclopedia_Text> TEXT_TOOLTIP_UNIT_CAPTUREABLE_STRUCTURE </Encyclopedia_Text>
+		<Land_Model_Name> NB_BasePad.alo </Land_Model_Name>
+		<Capture_Point_Radius>100</Capture_Point_Radius>
+		<Influences_Capture_Point>no</Influences_Capture_Point>
+		<Capture_Point_Transition_Time_Seconds>5.0</Capture_Point_Transition_Time_Seconds>
+		<Visible_To_Enemies_When_Empty>True</Visible_To_Enemies_When_Empty>
+		<Loop_Idle_Anim_00> No </Loop_Idle_Anim_00>
+		<Collidable_By_Projectile_Living> No </Collidable_By_Projectile_Living>
+		<Is_Visible_On_Radar> No </Is_Visible_On_Radar>
+		<Radar_Icon_Size>0.00  0.00</Radar_Icon_Size>
+		<Select_Box_Scale> 50 </Select_Box_Scale>
+		
+		<Scale_Factor> 1.0 </Scale_Factor>
+		<Shield_Points> 0 </Shield_Points>
+		<Tactical_Health> 10000 </Tactical_Health>
+		<Base_Level_Available> 1 </Base_Level_Available>
+		<Required_Ground_Base_Level> 0 </Required_Ground_Base_Level>
+		<Reveal_During_Setup_Phase> False </Reveal_During_Setup_Phase>
+		<Reveal_During_Setup_Phase_Only> True </Reveal_During_Setup_Phase_Only>
+		<Land_FOW_Reveal_Range>100.0</Land_FOW_Reveal_Range>
+		<Victory_Relevant> No </Victory_Relevant>
+		<No_Reflection_Below_Detail_Level> 1 </No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level> 1 </No_Refraction_Below_Detail_Level>
+		<CategoryMask> Structure </CategoryMask>
+		<GUI_Bracket_Width> 20 </GUI_Bracket_Width>
+		<GUI_Bracket_Height> 0 </GUI_Bracket_Height>
+		<GUI_Bracket_Size> 1 </GUI_Bracket_Size> 
+		<Has_Land_Evaluator>True</Has_Land_Evaluator>
+		<Influences_Capture_Point> False </Influences_Capture_Point>
+		<Affiliation>Neutral, Rebel, Empire, Trade_Federation, Underworld, Techno_Union, Banking_Clan, Commerce_Guild, Hapes_Consortium, Warlords, Independent_Forces, Sector_Forces, Hutt_Cartels</Affiliation>
+		<Immune_To_Damage>True</Immune_To_Damage>
+	  <Include_In_UI_Map_Header>True</Include_In_UI_Map_Header>
+	</Tactical_Capturable>
+
 
 <!--************************************************************************************************************-->	
-	<GroundBuildable Name="Generic_Power_Generator_Build_Pad">
+	<Tactical_Capturable Name="Generic_Power_Generator_Build_Pad">
 		<GUI_Bounds_Scale>0.25</GUI_Bounds_Scale>
 		<Land_Damage_Thresholds>1</Land_Damage_Thresholds>
 		<Land_Damage_Alternates>3</Land_Damage_Alternates>
@@ -751,7 +1369,7 @@
 		<Last_State_Visible_Under_FOW> True </Last_State_Visible_Under_FOW>
 		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
 		<Immune_To_Damage>True</Immune_To_Damage>
-	</GroundBuildable>
+	</Tactical_Capturable>
 	
 	<GroundBuildable Name="UC_Generic_Power_Generator">
 		<GUI_Bounds_Scale>0.25</GUI_Bounds_Scale>
@@ -816,12 +1434,15 @@
 		
 		<Last_State_Visible_Under_FOW> True </Last_State_Visible_Under_FOW>
 		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
+
+		<Override_Bounty_SP>0</Override_Bounty_SP>
+		<Override_Bounty_MP>0</Override_Bounty_MP>
 	</GroundBuildable>
 
 
 <!--************************************************************************************************************-->
 
-	<GroundBuildable Name="Generic_Ground_Base_Shield_Build_Pad">
+	<Tactical_Capturable Name="Generic_Ground_Base_Shield_Build_Pad">
 		<GUI_Bounds_Scale>0.05</GUI_Bounds_Scale>
 		<Behavior> TACTICAL_BUILD_OBJECTS, REVEAL, HIDE_WHEN_FOGGED, CAPTURE_POINT, BASE_SHIELD </Behavior>
 		<LandBehavior>TERRAIN_TEXTURE_MODIFICATION, LAND_OBSTACLE, SPACE_OBSTACLE</LandBehavior>
@@ -927,7 +1548,7 @@
 		<Last_State_Visible_Under_FOW> True </Last_State_Visible_Under_FOW>
 		<Initial_State_Visible_Under_FOW>True</Initial_State_Visible_Under_FOW>
 		<Immune_To_Damage>True</Immune_To_Damage>
-	</GroundBuildable>	
+	</Tactical_Capturable>	
 
 	<GroundBuildable Name="UC_Generic_Ground_Base_Shield">
 	
@@ -1007,13 +1628,16 @@
 		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
 
 		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+
+		<Override_Bounty_SP>0</Override_Bounty_SP>
+		<Override_Bounty_MP>0</Override_Bounty_MP>
 	</GroundBuildable>
 
 <!--************************************************************************************************************-->
 	
 <!--************************************************************************************************************-->
 
-	<GroundBuildable Name="Generic_Ground_Umbrella_Shield_Build_Pad">
+	<Tactical_Capturable Name="Generic_Ground_Umbrella_Shield_Build_Pad">
 		
 		<Affiliation>Neutral, Empire, Greater_Maldrood, Eriadu_Authority, Zsinj_Empire, Corporate_Sector, Pentastar, Warlords, Corellia, Rebel, Hapes_Consortium, Hutt_Cartels, SsiRuuvi_Imperium, Killik_Hives, EmpireoftheHand, Chiss, Underworld, Mandalorians, Yevetha, Independent_Forces</Affiliation>
 	
@@ -1118,7 +1742,7 @@
 		<Last_State_Visible_Under_FOW> True </Last_State_Visible_Under_FOW>
 		<Initial_State_Visible_Under_FOW>True</Initial_State_Visible_Under_FOW>
 		<Immune_To_Damage>True</Immune_To_Damage>
-	</GroundBuildable>
+	</Tactical_Capturable>
 	
 	<GroundBuildable Name="UC_Generic_Ground_Umbrella_Shield">
 		
@@ -1198,12 +1822,15 @@
 		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
 
 		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+
+		<Override_Bounty_SP>0</Override_Bounty_SP>
+		<Override_Bounty_MP>0</Override_Bounty_MP>
 	</GroundBuildable>
 	
 	
 <!--************************************************************************************************************-->	
-	
-	<GroundBuildable Name="Ground_Mining_Facility_Build_Pad">
+
+	<Tactical_Capturable Name="Ground_Mining_Facility_Build_Pad">
 		<GUI_Bounds_Scale>0.33</GUI_Bounds_Scale>
 		<Tactical_Buildable_Objects_Multiplayer>
 			Empire, 
@@ -1290,7 +1917,7 @@
 		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>	
 		<Has_Land_Evaluator>True</Has_Land_Evaluator>
 		<Immune_To_Damage>True</Immune_To_Damage>
-	</GroundBuildable>
+	</Tactical_Capturable>
 	
 	<GroundBuildable Name="UC_Ground_Mining_Facility">
 		<GUI_Bounds_Scale>0.33</GUI_Bounds_Scale>
@@ -1350,8 +1977,11 @@
 		
 		<Last_State_Visible_Under_FOW> True </Last_State_Visible_Under_FOW>
 		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>		
+
+		<Override_Bounty_SP>0</Override_Bounty_SP>
+		<Override_Bounty_MP>0</Override_Bounty_MP>
 	</GroundBuildable>	
-		
+
 	<GroundBuildable Name="Skirmish_Ground_Mining_Facility">
 		<Variant_Of_Existing_Type>Mining_Facility</Variant_Of_Existing_Type>
 		<Behavior>TACTICAL_SELL, SELECTABLE, DUMMY_GROUND_STRUCTURE</Behavior>
@@ -1370,7 +2000,7 @@
 
 <!--************************************************************************************************************-->
 
-	<GroundBuildable Name="Generic_Ground_Turbolaser_Tower_Build_Pad">
+	<Tactical_Capturable Name="Generic_Ground_Turbolaser_Tower_Build_Pad">
 		<Land_Damage_Thresholds>1</Land_Damage_Thresholds>
 		<Land_Damage_Alternates>3</Land_Damage_Alternates>
 		<Land_Damage_SFX>null,null,null,null</Land_Damage_SFX>
@@ -1460,7 +2090,7 @@
 		<Last_State_Visible_Under_FOW> True </Last_State_Visible_Under_FOW>
 		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
 		<Immune_To_Damage>True</Immune_To_Damage>
-	</GroundBuildable>
+	</Tactical_Capturable>
 
 	<GroundBuildable Name="UC_Generic_Ground_Turbolaser_Tower">
 		<Behavior>TACTICAL_UNDER_CONSTRUCTION, REVEAL, HIDE_WHEN_FOGGED</Behavior>
@@ -1470,7 +2100,7 @@
 		<Tactical_Buildable_Constructed> Generic_Ground_Turbolaser_Tower </Tactical_Buildable_Constructed>
 		<Tactical_Build_Start_Lower_Z> 50.0 </Tactical_Build_Start_Lower_Z>
 		<Text_ID>TEXT_GROUND_TURBOLASER_TOWER</Text_ID>
-		<Affiliation>Neutral, Empire, Rebel</Affiliation>
+		<Affiliation>Neutral, Empire, Greater_Maldrood, Eriadu_Authority, Zsinj_Empire, Corporate_Sector, Pentastar, Warlords, Corellia, Rebel, Hapes_Consortium, Hutt_Cartels, SsiRuuvi_Imperium, Killik_Hives, EmpireoftheHand, Chiss, Underworld, Mandalorians, Yevetha, Independent_Forces</Affiliation>
 		<Land_Model_Name>EB_TLTower.ALO</Land_Model_Name>
 		<Is_Dummy>No</Is_Dummy>
 		<Terrain_Texture_Modifier_Material>62</Terrain_Texture_Modifier_Material>			
@@ -1522,11 +2152,14 @@
 		
 		<Last_State_Visible_Under_FOW> True </Last_State_Visible_Under_FOW>
 		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
+
+		<Override_Bounty_SP>0</Override_Bounty_SP>
+		<Override_Bounty_MP>0</Override_Bounty_MP>
 	</GroundBuildable>
 
 <!--************************************************************************************************************-->
-		
-	<GroundBuildable Name="E_Ground_Barracks_Build_Pad">
+
+	<Tactical_Capturable Name="E_Ground_Barracks_Build_Pad">
 		<GUI_Bounds_Scale>0.3</GUI_Bounds_Scale>
 		<Land_Damage_Thresholds>1</Land_Damage_Thresholds>
 		<Land_Damage_Alternates>3</Land_Damage_Alternates>
@@ -1576,7 +2209,7 @@
 		<Last_State_Visible_Under_FOW> True </Last_State_Visible_Under_FOW>
 		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
 		<Immune_To_Damage>True</Immune_To_Damage>
-	</GroundBuildable>
+	</Tactical_Capturable>
 
 	<GroundBuildable Name="UC_E_Ground_Barracks">
 		<GUI_Bounds_Scale>0.3</GUI_Bounds_Scale>
@@ -1638,10 +2271,127 @@
 		
 		<Last_State_Visible_Under_FOW> True </Last_State_Visible_Under_FOW>
 		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
+
+		<Override_Bounty_SP>0</Override_Bounty_SP>
+		<Override_Bounty_MP>0</Override_Bounty_MP>
+	</GroundBuildable>
+	
+	<Tactical_Capturable Name="H_Ground_Barracks_Build_Pad">
+		<GUI_Bounds_Scale>0.3</GUI_Bounds_Scale>
+		<Land_Damage_Thresholds>1</Land_Damage_Thresholds>
+		<Land_Damage_Alternates>3</Land_Damage_Alternates>
+		<Land_Damage_SFX>null,null,null,null</Land_Damage_SFX>
+		<Tactical_Buildable_Objects_Multiplayer>Hutt_Cartels, UC_H_Ground_Barracks</Tactical_Buildable_Objects_Multiplayer>
+		
+		<Minimum_Time_Before_Pad_Can_Build_Again> 60 </Minimum_Time_Before_Pad_Can_Build_Again>
+		<Collidable_By_Projectile_Living>No</Collidable_By_Projectile_Living>
+		<Behavior>TACTICAL_BUILD_OBJECTS, REVEAL,HIDE_WHEN_FOGGED</Behavior>
+		<LandBehavior>TERRAIN_TEXTURE_MODIFICATION, LAND_OBSTACLE, SPACE_OBSTACLE</LandBehavior>
+		<Victory_Relevant>No</Victory_Relevant>
+		<Hides_When_Built_On>True</Hides_When_Built_On>
+		<Visible_To_Enemies_When_Empty>True</Visible_To_Enemies_When_Empty>
+		<Text_ID>TEXT_GROUND_BARRACKS</Text_ID>
+		<Land_Model_Name>UB_BARRACKS.alo</Land_Model_Name>
+		<Terrain_Texture_Modifier_Material>62</Terrain_Texture_Modifier_Material>			
+		<Terrain_Texture_Modifier_Join_Distance>500.0</Terrain_Texture_Modifier_Join_Distance>	
+		<Terrain_Texture_Modifier_Square>false</Terrain_Texture_Modifier_Square>			
+		<Land_FOW_Reveal_Range>300.0</Land_FOW_Reveal_Range>
+		<Is_Community_Property>Yes</Is_Community_Property>
+		<Is_Visible_On_Radar>True</Is_Visible_On_Radar>
+		<Radar_Icon_Size>0.1  0.1</Radar_Icon_Size>
+		<Mass>1.0</Mass>
+		<Scale_Factor>1.8</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Dummy>No</Is_Dummy>
+		
+		<Space_Layer> Corvette </Space_Layer>
+		
+		<Armor_Type> ArmourG_Structure </Armor_Type>
+		<Reveal_During_Setup_Phase> true </Reveal_During_Setup_Phase>
+		<Affiliation>Hutt_Cartels</Affiliation>
+		<Size_Value>50</Size_Value>
+		<Icon_Name>i_button_hutt_barracks.tga</Icon_Name>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<CategoryMask> Structure </CategoryMask>
+		<Has_Land_Evaluator>True</Has_Land_Evaluator>		
+		<Encyclopedia_Text> TEXT_ENCYCLOPEDIA_BARRACKS </Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>	
+		<Property_Flags>InBase</Property_Flags>
+		<Influences_Capture_Point> False </Influences_Capture_Point>
+		
+		<Last_State_Visible_Under_FOW> True </Last_State_Visible_Under_FOW>
+		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
+		<Immune_To_Damage>True</Immune_To_Damage>
+	</Tactical_Capturable>
+
+	<GroundBuildable Name="UC_H_Ground_Barracks">
+		<GUI_Bounds_Scale>0.3</GUI_Bounds_Scale>
+		<Behavior>TACTICAL_UNDER_CONSTRUCTION, REVEAL, HIDE_WHEN_FOGGED</Behavior>
+		<LandBehavior>TERRAIN_TEXTURE_MODIFICATION, LAND_OBSTACLE, SPACE_OBSTACLE</LandBehavior>
+		<Obstacle_Proxy_Type> H_Ground_Barracks_Build_Pad </Obstacle_Proxy_Type>
+		<Victory_Relevant>No</Victory_Relevant>
+		<Tactical_Buildable_Constructed> H_Ground_Barracks </Tactical_Buildable_Constructed>
+		<Tactical_Build_Start_Lower_Z> 50.0 </Tactical_Build_Start_Lower_Z>
+		<Text_ID>TEXT_BUILD_PAD</Text_ID>
+		<Terrain_Texture_Modifier_Material>62</Terrain_Texture_Modifier_Material>			
+		<Terrain_Texture_Modifier_Join_Distance>500.0</Terrain_Texture_Modifier_Join_Distance>	
+		<Terrain_Texture_Modifier_Square>false</Terrain_Texture_Modifier_Square>			
+		<Land_FOW_Reveal_Range>300.0</Land_FOW_Reveal_Range>
+		<Is_Community_Property>Yes</Is_Community_Property>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Death_Explosions>Huge_Explosion_Land</Death_Explosions>
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Radar_Icon_Size>0.1  0.1</Radar_Icon_Size>
+		<Mass>1.0</Mass>
+		<Scale_Factor>1.8</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Dummy>No</Is_Dummy>
+		<Land_Model_Name>UB_BARRACKS.alo</Land_Model_Name>
+		
+		<Space_Layer> Corvette </Space_Layer>
+		
+		<Armor_Type> ArmourG_Structure </Armor_Type>
+		<Reveal_During_Setup_Phase> true </Reveal_During_Setup_Phase>
+		<Land_Damage_Thresholds>1, 0.66, 0.33, 0</Land_Damage_Thresholds>
+		<Land_Damage_Alternates>0, 1, 2, 3</Land_Damage_Alternates>
+		<Land_Damage_SFX>null,SFX_Grenade_Detonation, SFX_Grenade_Detonation,null</Land_Damage_SFX>
+		<Affiliation>Hutt_Cartels</Affiliation>
+		<Size_Value>50</Size_Value>
+		<Icon_Name>i_button_hutt_barracks.tga</Icon_Name>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		
+		<SFXEvent_Build_Started>EHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>EHD_Construction_Complete</SFXEvent_Build_Complete>
+		<Death_SFXEvent_Start_Die>Unit_Generic_Building_Death_SFX</Death_SFXEvent_Start_Die>
+		<SFXEvent_Unit_Under_Attack> EHD_Barracks_Under_Attack </SFXEvent_Unit_Under_Attack>
+		<SFXEvent_Unit_Lost> EHD_Barracks_Destroyed </SFXEvent_Unit_Lost>
+		<SFXEvent_Select>Structure_Barracks_Select_SFX</SFXEvent_Select>
+
+		<Death_Explosions>Large_Explosion_Land</Death_Explosions>
+		<CategoryMask> Structure </CategoryMask>
+		<Has_Land_Evaluator>True</Has_Land_Evaluator>		
+		<Encyclopedia_Text> TEXT_ENCYCLOPEDIA_BARRACKS </Encyclopedia_Text>
+		<MP_Encyclopedia_Text> MP_TEXT_ENCYCLOPEDIA_BARRACKS_PAD_00 </MP_Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>	
+
+		<Influences_Capture_Point> False </Influences_Capture_Point>
+		
+		<Tactical_Health>400</Tactical_Health>
+		<Tactical_Build_Cost_Multiplayer> 500 </Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds> 25 </Tactical_Build_Time_Seconds>
+		
+		<Last_State_Visible_Under_FOW> True </Last_State_Visible_Under_FOW>
+		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
+
+		<Override_Bounty_SP>0</Override_Bounty_SP>
+		<Override_Bounty_MP>0</Override_Bounty_MP>
 	</GroundBuildable>
 	
 	
-	<GroundBuildable Name="R_Ground_Barracks_Build_Pad">
+	<Tactical_Capturable Name="R_Ground_Barracks_Build_Pad">
 		<GUI_Bounds_Scale>0.3</GUI_Bounds_Scale>
 		<Land_Damage_Thresholds>1</Land_Damage_Thresholds>
 		<Land_Damage_Alternates>3</Land_Damage_Alternates>
@@ -1688,7 +2438,7 @@
 		<Last_State_Visible_Under_FOW> True </Last_State_Visible_Under_FOW>
 		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
 		<Immune_To_Damage>True</Immune_To_Damage>
-	</GroundBuildable>
+	</Tactical_Capturable>
 
 	<GroundBuildable Name="UC_R_Ground_Barracks">
 		<GUI_Bounds_Scale>0.3</GUI_Bounds_Scale>
@@ -1749,11 +2499,14 @@
 		
 		<Last_State_Visible_Under_FOW> True </Last_State_Visible_Under_FOW>
 		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>	
+
+		<Override_Bounty_SP>0</Override_Bounty_SP>
+		<Override_Bounty_MP>0</Override_Bounty_MP>
 	</GroundBuildable>		
 
 <!--************************************************************************************************************-->
 
-	<GroundBuildable Name="E_Ground_Light_Vehicle_Factory_Build_Pad">
+	<Tactical_Capturable Name="E_Ground_Light_Vehicle_Factory_Build_Pad">
 		<GUI_Bounds_Scale>0.45</GUI_Bounds_Scale>
 		<Land_Damage_Thresholds>1</Land_Damage_Thresholds>
 		<Land_Damage_Alternates>3</Land_Damage_Alternates>
@@ -1803,7 +2556,7 @@
 		<Last_State_Visible_Under_FOW> True </Last_State_Visible_Under_FOW>
 		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
 		<Immune_To_Damage>True</Immune_To_Damage>
-	</GroundBuildable>
+	</Tactical_Capturable>
 
 	<GroundBuildable Name="UC_E_Ground_Light_Vehicle_Factory">
 		<GUI_Bounds_Scale>0.45</GUI_Bounds_Scale>
@@ -1865,9 +2618,126 @@
 		
 		<Last_State_Visible_Under_FOW> True </Last_State_Visible_Under_FOW>
 		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
+
+		<Override_Bounty_SP>0</Override_Bounty_SP>
+		<Override_Bounty_MP>0</Override_Bounty_MP>
 	</GroundBuildable>	
 	
-	<GroundBuildable Name="R_Ground_Light_Vehicle_Factory_Build_Pad">
+	<Tactical_Capturable Name="H_Ground_Light_Vehicle_Factory_Build_Pad">
+		<GUI_Bounds_Scale>0.45</GUI_Bounds_Scale>
+		<Land_Damage_Thresholds>1</Land_Damage_Thresholds>
+		<Land_Damage_Alternates>3</Land_Damage_Alternates>
+		<Land_Damage_SFX>null,null,null,null</Land_Damage_SFX>
+		<Tactical_Buildable_Objects_Multiplayer>Hutt_Cartels, UC_H_Ground_Light_Vehicle_Factory</Tactical_Buildable_Objects_Multiplayer>
+		
+		<Minimum_Time_Before_Pad_Can_Build_Again> 60.0 </Minimum_Time_Before_Pad_Can_Build_Again>
+		<Collidable_By_Projectile_Living>No</Collidable_By_Projectile_Living>
+		<Behavior>TACTICAL_BUILD_OBJECTS, REVEAL, HIDE_WHEN_FOGGED</Behavior>
+		<LandBehavior>TERRAIN_TEXTURE_MODIFICATION, LAND_OBSTACLE, SPACE_OBSTACLE</LandBehavior>
+		<Victory_Relevant>No</Victory_Relevant>
+		<Hides_When_Built_On>True</Hides_When_Built_On>
+		<Visible_To_Enemies_When_Empty>True</Visible_To_Enemies_When_Empty>
+		<Text_ID>TEXT_GROUND_LIGHT_VEHICLE_FACTORY</Text_ID>
+		<Land_Model_Name>rb_lightvehiclefactory.alo</Land_Model_Name>
+		<Terrain_Texture_Modifier_Material>62</Terrain_Texture_Modifier_Material>			
+		<Terrain_Texture_Modifier_Join_Distance>500.0</Terrain_Texture_Modifier_Join_Distance>	
+		<Terrain_Texture_Modifier_Square>false</Terrain_Texture_Modifier_Square>			
+		<Land_FOW_Reveal_Range>300.0</Land_FOW_Reveal_Range>
+		<Is_Community_Property>Yes</Is_Community_Property>
+		<Ranged_Target_Z_Adjust>5.0</Ranged_Target_Z_Adjust>
+		<Is_Visible_On_Radar>True</Is_Visible_On_Radar>
+		<Radar_Icon_Size>0.1  0.1</Radar_Icon_Size>
+		<Mass>1.0</Mass>
+		<Scale_Factor>1.25</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Dummy>No</Is_Dummy>
+		
+		<Space_Layer> Corvette </Space_Layer>
+		
+		<Armor_Type> ArmourG_Structure </Armor_Type>
+		<Reveal_During_Setup_Phase> true </Reveal_During_Setup_Phase>
+		<Affiliation>Hutt_Cartels</Affiliation>
+		<Size_Value>50</Size_Value>
+		<Icon_Name>i_button_r_vehicle_factory.tga</Icon_Name>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<CategoryMask> Structure </CategoryMask>
+		<Has_Land_Evaluator>True</Has_Land_Evaluator>	
+		<Encyclopedia_Text> TEXT_ENCYCLOPEDIA_LIGHT_FACTORY  </Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+		<Influences_Capture_Point> False </Influences_Capture_Point>
+		
+		<Last_State_Visible_Under_FOW> True </Last_State_Visible_Under_FOW>
+		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
+		<Immune_To_Damage>True</Immune_To_Damage>
+	</Tactical_Capturable>
+
+	<GroundBuildable Name="UC_H_Ground_Light_Vehicle_Factory">
+		<GUI_Bounds_Scale>0.45</GUI_Bounds_Scale>
+		<Behavior>TACTICAL_UNDER_CONSTRUCTION, REVEAL, HIDE_WHEN_FOGGED</Behavior>
+		<LandBehavior>TERRAIN_TEXTURE_MODIFICATION, LAND_OBSTACLE, SPACE_OBSTACLE</LandBehavior>
+		<Obstacle_Proxy_Type> H_Ground_Light_Vehicle_Factory_Build_Pad </Obstacle_Proxy_Type>
+		<Victory_Relevant>No</Victory_Relevant>
+		<Tactical_Buildable_Constructed> H_Ground_Light_Vehicle_Factory </Tactical_Buildable_Constructed>
+		<Tactical_Build_Start_Lower_Z> 50.0 </Tactical_Build_Start_Lower_Z>
+		<Text_ID>TEXT_BUILD_PAD</Text_ID>
+		<Land_Model_Name>rb_lightvehiclefactory.alo</Land_Model_Name>
+		<Terrain_Texture_Modifier_Material>62</Terrain_Texture_Modifier_Material>			
+		<Terrain_Texture_Modifier_Join_Distance>500.0</Terrain_Texture_Modifier_Join_Distance>	
+		<Terrain_Texture_Modifier_Square>false</Terrain_Texture_Modifier_Square>			
+		<Land_FOW_Reveal_Range>300.0</Land_FOW_Reveal_Range>
+		<Is_Community_Property>Yes</Is_Community_Property>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Death_Explosions>Huge_Explosion_Land</Death_Explosions>
+		<Ranged_Target_Z_Adjust>5.0</Ranged_Target_Z_Adjust>
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Radar_Icon_Size>0.1  0.1</Radar_Icon_Size>
+		<Mass>1.0</Mass>
+		<Scale_Factor>1.25</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Dummy>No</Is_Dummy>
+		
+		<Space_Layer> Corvette </Space_Layer>
+		
+		<Armor_Type> ArmourG_Structure </Armor_Type>
+		<Reveal_During_Setup_Phase> true </Reveal_During_Setup_Phase>
+		<Land_Damage_Thresholds>1, 0.66, 0.33, 0</Land_Damage_Thresholds>
+		<Land_Damage_Alternates>0, 1, 2, 3</Land_Damage_Alternates>
+		<Land_Damage_SFX>null,SFX_Grenade_Detonation, SFX_Grenade_Detonation,null</Land_Damage_SFX>
+		<Affiliation>Hutt_Cartels</Affiliation>
+		<Size_Value>50</Size_Value>
+		<Icon_Name>i_button_r_vehicle_factory.tga</Icon_Name>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+
+		<SFXEvent_Build_Started>EHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>EHD_Construction_Complete</SFXEvent_Build_Complete>
+		<Death_SFXEvent_Start_Die>Unit_Generic_Building_Death_SFX</Death_SFXEvent_Start_Die>
+		<SFXEvent_Unit_Under_Attack> EHD_Light_Vehicle_Factory_Under_Attack </SFXEvent_Unit_Under_Attack>
+		<SFXEvent_Unit_Lost> EHD_Light_Vehicle_Factory_Destroyed </SFXEvent_Unit_Lost>
+		<SFXEvent_Select>Structure_Light_Factory_Select_SFX</SFXEvent_Select>
+
+		<Death_Explosions>Large_Explosion_Land</Death_Explosions>
+		<CategoryMask> Structure </CategoryMask>
+		<Has_Land_Evaluator>True</Has_Land_Evaluator>	
+		<Encyclopedia_Text> TEXT_ENCYCLOPEDIA_LIGHT_FACTORY  </Encyclopedia_Text>
+		<MP_Encyclopedia_Text> MP_TEXT_ENCYCLOPEDIA_LIGHT_FACTORY_PAD_00 </MP_Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+		<Influences_Capture_Point> False </Influences_Capture_Point>
+		
+		<Tactical_Health>700</Tactical_Health>
+		<Tactical_Build_Cost_Multiplayer> 1000 </Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds> 33 </Tactical_Build_Time_Seconds>
+		
+		<Last_State_Visible_Under_FOW> True </Last_State_Visible_Under_FOW>
+		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
+
+		<Override_Bounty_SP>0</Override_Bounty_SP>
+		<Override_Bounty_MP>0</Override_Bounty_MP>
+	</GroundBuildable>	
+	
+	<Tactical_Capturable Name="R_Ground_Light_Vehicle_Factory_Build_Pad">
 		<GUI_Bounds_Scale>0.5</GUI_Bounds_Scale>
 		<Land_Damage_Thresholds>1</Land_Damage_Thresholds>
 		<Land_Damage_Alternates>3</Land_Damage_Alternates>
@@ -1915,7 +2785,7 @@
 		<Last_State_Visible_Under_FOW> True </Last_State_Visible_Under_FOW>
 		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
 		<Immune_To_Damage>True</Immune_To_Damage>
-	</GroundBuildable>
+	</Tactical_Capturable>
 
 	<GroundBuildable Name="UC_R_Ground_Light_Vehicle_Factory">
 		<GUI_Bounds_Scale>0.5</GUI_Bounds_Scale>
@@ -1977,11 +2847,14 @@
 		
 		<Last_State_Visible_Under_FOW> True </Last_State_Visible_Under_FOW>
 		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
+
+		<Override_Bounty_SP>0</Override_Bounty_SP>
+		<Override_Bounty_MP>0</Override_Bounty_MP>
 	</GroundBuildable>		
 
 <!--************************************************************************************************************-->
 
-	<GroundBuildable Name="E_Ground_Heavy_Vehicle_Factory_Build_Pad">
+	<Tactical_Capturable Name="E_Ground_Heavy_Vehicle_Factory_Build_Pad">
 		<GUI_Bounds_Scale>0.4</GUI_Bounds_Scale>
 		<Land_Damage_Thresholds>1</Land_Damage_Thresholds>
 		<Land_Damage_Alternates>3</Land_Damage_Alternates>
@@ -2031,7 +2904,7 @@
 		<Last_State_Visible_Under_FOW> True </Last_State_Visible_Under_FOW>
 		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
 		<Immune_To_Damage>True</Immune_To_Damage>
-	</GroundBuildable>
+	</Tactical_Capturable>
 
 	<GroundBuildable Name="UC_E_Ground_Heavy_Vehicle_Factory">
 		<GUI_Bounds_Scale>0.4</GUI_Bounds_Scale>
@@ -2093,10 +2966,127 @@
 		
 		<Last_State_Visible_Under_FOW> True </Last_State_Visible_Under_FOW>
 		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
+
+		<Override_Bounty_SP>0</Override_Bounty_SP>
+		<Override_Bounty_MP>0</Override_Bounty_MP>
+	</GroundBuildable>
+	
+	<Tactical_Capturable Name="H_Ground_Heavy_Vehicle_Factory_Build_Pad">
+		<GUI_Bounds_Scale>0.4</GUI_Bounds_Scale>
+		<Land_Damage_Thresholds>1</Land_Damage_Thresholds>
+		<Land_Damage_Alternates>3</Land_Damage_Alternates>
+		<Land_Damage_SFX>null,null,null,null</Land_Damage_SFX>
+		<Tactical_Buildable_Objects_Multiplayer>Hutt_Cartels, UC_H_Ground_Heavy_Vehicle_Factory</Tactical_Buildable_Objects_Multiplayer>
+		
+		<Minimum_Time_Before_Pad_Can_Build_Again> 60.0 </Minimum_Time_Before_Pad_Can_Build_Again>
+		<Collidable_By_Projectile_Living>No</Collidable_By_Projectile_Living>
+		<Behavior>TACTICAL_BUILD_OBJECTS, REVEAL,HIDE_WHEN_FOGGED</Behavior>
+		<LandBehavior>TERRAIN_TEXTURE_MODIFICATION, LAND_OBSTACLE, SPACE_OBSTACLE</LandBehavior>
+		<Victory_Relevant>No</Victory_Relevant>
+		<Hides_When_Built_On>True</Hides_When_Built_On>
+		<Visible_To_Enemies_When_Empty>True</Visible_To_Enemies_When_Empty>
+		<Text_ID>TEXT_GROUND_HEAVY_VEHICLE_FACTORY</Text_ID>
+		<Land_Model_Name>UB_HeavyFactory.alo</Land_Model_Name>
+		<Terrain_Texture_Modifier_Material>62</Terrain_Texture_Modifier_Material>			
+		<Terrain_Texture_Modifier_Join_Distance>500.0</Terrain_Texture_Modifier_Join_Distance>	
+		<Terrain_Texture_Modifier_Square>false</Terrain_Texture_Modifier_Square>			
+		<Land_FOW_Reveal_Range>300.0</Land_FOW_Reveal_Range>
+		<Is_Community_Property>Yes</Is_Community_Property>
+		<Ranged_Target_Z_Adjust>5.0</Ranged_Target_Z_Adjust>
+		<Is_Visible_On_Radar>True</Is_Visible_On_Radar>
+		<Radar_Icon_Size>0.1  0.1</Radar_Icon_Size>
+		<Mass>1.0</Mass>
+		<Scale_Factor>1.50</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Dummy>No</Is_Dummy>
+		
+		<Space_Layer> Corvette </Space_Layer>
+				
+		<Armor_Type> ArmourG_Structure </Armor_Type>
+		<Reveal_During_Setup_Phase> true </Reveal_During_Setup_Phase>
+		<Affiliation>Hutt_Cartels</Affiliation>
+		<Size_Value>50</Size_Value>
+		<Icon_Name>i_button_hutt_heavyfactory.tga</Icon_Name>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<CategoryMask> Structure </CategoryMask>
+		<Has_Land_Evaluator>True</Has_Land_Evaluator>
+		<Encyclopedia_Text> TEXT_ENCYCLOPEDIA_HEAVY_FACTORY</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+		<Influences_Capture_Point> False </Influences_Capture_Point>
+		
+		<Last_State_Visible_Under_FOW> True </Last_State_Visible_Under_FOW>
+		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
+		<Immune_To_Damage>True</Immune_To_Damage>
+	</Tactical_Capturable>
+
+	<GroundBuildable Name="UC_H_Ground_Heavy_Vehicle_Factory">
+		<GUI_Bounds_Scale>0.4</GUI_Bounds_Scale>
+		<Behavior>TACTICAL_UNDER_CONSTRUCTION, REVEAL, HIDE_WHEN_FOGGED</Behavior>
+		<LandBehavior>TERRAIN_TEXTURE_MODIFICATION, LAND_OBSTACLE, SPACE_OBSTACLE</LandBehavior>
+		<Obstacle_Proxy_Type> H_Ground_Heavy_Vehicle_Factory_Build_Pad </Obstacle_Proxy_Type>
+		<Victory_Relevant>No</Victory_Relevant>
+		<Tactical_Buildable_Constructed> H_Ground_Heavy_Vehicle_Factory </Tactical_Buildable_Constructed>
+		<Tactical_Build_Start_Lower_Z> 50.0 </Tactical_Build_Start_Lower_Z>
+		<Text_ID>TEXT_BUILD_PAD</Text_ID>
+		<Land_Model_Name>UB_HeavyFactory.alo</Land_Model_Name>
+		<Terrain_Texture_Modifier_Material>62</Terrain_Texture_Modifier_Material>			
+		<Terrain_Texture_Modifier_Join_Distance>500.0</Terrain_Texture_Modifier_Join_Distance>	
+		<Terrain_Texture_Modifier_Square>false</Terrain_Texture_Modifier_Square>			
+		<Land_FOW_Reveal_Range>300.0</Land_FOW_Reveal_Range>
+		<Is_Community_Property>Yes</Is_Community_Property>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Death_Explosions>Huge_Explosion_Land</Death_Explosions>
+		<Ranged_Target_Z_Adjust>5.0</Ranged_Target_Z_Adjust>
+		<Is_Visible_On_Radar>No</Is_Visible_On_Radar>
+		<Radar_Icon_Size>0.1  0.1</Radar_Icon_Size>
+		<Mass>1.0</Mass>
+		<Scale_Factor>1.50</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Dummy>No</Is_Dummy>
+		
+		<Space_Layer> Corvette </Space_Layer>
+		
+		<Armor_Type> ArmourG_Structure </Armor_Type>
+		<Reveal_During_Setup_Phase> true </Reveal_During_Setup_Phase>
+		<Land_Damage_Thresholds>1, 0.66, 0.33, 0</Land_Damage_Thresholds>
+		<Land_Damage_Alternates>0, 1, 2, 3</Land_Damage_Alternates>
+		<Land_Damage_SFX>null,SFX_Grenade_Detonation, SFX_Grenade_Detonation,null</Land_Damage_SFX>
+		<Affiliation>Hutt_Cartels</Affiliation>
+		<Size_Value>50</Size_Value>
+		<Icon_Name>i_button_hutt_heavyfactory.tga</Icon_Name>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		
+		<SFXEvent_Build_Started>EHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>EHD_Construction_Complete</SFXEvent_Build_Complete>
+		<Death_SFXEvent_Start_Die>Unit_Generic_Building_Death_SFX</Death_SFXEvent_Start_Die>
+		<SFXEvent_Unit_Under_Attack> EHD_Heavy_Vehicle_Factory_Under_Attack </SFXEvent_Unit_Under_Attack>
+		<SFXEvent_Unit_Lost> EHD_Heavy_Vehicle_Factory_Destroyed </SFXEvent_Unit_Lost>
+		<SFXEvent_Select>Structure_Heavy_Factory_Select_SFX</SFXEvent_Select>
+
+		<Death_Explosions>Large_Explosion_Land</Death_Explosions>
+		<CategoryMask> Structure </CategoryMask>
+		<Has_Land_Evaluator>True</Has_Land_Evaluator>		
+		<Encyclopedia_Text> TEXT_ENCYCLOPEDIA_HEAVY_FACTORY</Encyclopedia_Text>
+		<MP_Encyclopedia_Text> MP_TEXT_ENCYCLOPEDIA_HEAVY_FACTORY_PAD_00 </MP_Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+		<Influences_Capture_Point> False </Influences_Capture_Point>
+		
+		<Tactical_Health>1200</Tactical_Health>
+		<Tactical_Build_Cost_Multiplayer> 1600 </Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds> 40 </Tactical_Build_Time_Seconds>
+		
+		<Last_State_Visible_Under_FOW> True </Last_State_Visible_Under_FOW>
+		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
+
+		<Override_Bounty_SP>0</Override_Bounty_SP>
+		<Override_Bounty_MP>0</Override_Bounty_MP>
 	</GroundBuildable>
 	
 		
-	<GroundBuildable Name="R_Ground_Heavy_Vehicle_Factory_Build_Pad">
+	<Tactical_Capturable Name="R_Ground_Heavy_Vehicle_Factory_Build_Pad">
 		<GUI_Bounds_Scale>0.2</GUI_Bounds_Scale>
 		<Land_Damage_Thresholds>1</Land_Damage_Thresholds>
 		<Land_Damage_Alternates>3</Land_Damage_Alternates>
@@ -2144,7 +3134,7 @@
 		<Last_State_Visible_Under_FOW> True </Last_State_Visible_Under_FOW>
 		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
 		<Immune_To_Damage>True</Immune_To_Damage>
-	</GroundBuildable>
+	</Tactical_Capturable>
 
 	<GroundBuildable Name="UC_R_Ground_Heavy_Vehicle_Factory">
 		<GUI_Bounds_Scale>0.2</GUI_Bounds_Scale>
@@ -2206,12 +3196,15 @@
 		
 		<Last_State_Visible_Under_FOW> True </Last_State_Visible_Under_FOW>
 		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
+
+		<Override_Bounty_SP>0</Override_Bounty_SP>
+		<Override_Bounty_MP>0</Override_Bounty_MP>
 	</GroundBuildable>	
 	
 
 <!--************************************************************************************************************-->
 
-	<GroundBuildable Name="E_Ground_Advanced_Vehicle_Factory_Build_Pad">
+	<Tactical_Capturable Name="E_Ground_Advanced_Vehicle_Factory_Build_Pad">
 		<GUI_Bounds_Scale>0.4</GUI_Bounds_Scale>
 		<Land_Damage_Thresholds>1</Land_Damage_Thresholds>
 		<Land_Damage_Alternates>3</Land_Damage_Alternates>
@@ -2261,7 +3254,7 @@
 		<Last_State_Visible_Under_FOW> True </Last_State_Visible_Under_FOW>
 		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
 		<Immune_To_Damage>True</Immune_To_Damage>
-	</GroundBuildable>
+	</Tactical_Capturable>
 
 	<GroundBuildable Name="UC_E_Ground_Advanced_Vehicle_Factory">
 		<GUI_Bounds_Scale>0.4</GUI_Bounds_Scale>
@@ -2321,12 +3314,15 @@
 		
 		<Last_State_Visible_Under_FOW> True </Last_State_Visible_Under_FOW>
 		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
+
+		<Override_Bounty_SP>0</Override_Bounty_SP>
+		<Override_Bounty_MP>0</Override_Bounty_MP>
 	</GroundBuildable>
 	
 	
 <!--************************************************************************************************************-->
 
-	<GroundBuildable Name="E_Ground_Officer_Academy_Build_Pad">
+	<Tactical_Capturable Name="E_Ground_Officer_Academy_Build_Pad">
 		<GUI_Bounds_Scale>0.4</GUI_Bounds_Scale>
 		<Land_Damage_Thresholds>1</Land_Damage_Thresholds>
 		<Land_Damage_Alternates>3</Land_Damage_Alternates>
@@ -2371,7 +3367,7 @@
 		<Last_State_Visible_Under_FOW> True </Last_State_Visible_Under_FOW>
 		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
 		<Immune_To_Damage>True</Immune_To_Damage>
-	</GroundBuildable>
+	</Tactical_Capturable>
 
 	<GroundBuildable Name="UC_E_Ground_Officer_Academy">
 		<GUI_Bounds_Scale>0.4</GUI_Bounds_Scale>
@@ -2431,9 +3427,12 @@
 		
 		<Last_State_Visible_Under_FOW> True </Last_State_Visible_Under_FOW>
 		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
+
+		<Override_Bounty_SP>0</Override_Bounty_SP>
+		<Override_Bounty_MP>0</Override_Bounty_MP>
 	</GroundBuildable>
 	
-	<GroundBuildable Name="R_Ground_Officer_Academy_Build_Pad">
+	<Tactical_Capturable Name="R_Ground_Officer_Academy_Build_Pad">
 		<GUI_Bounds_Scale>0.45</GUI_Bounds_Scale>
 		<Land_Damage_Thresholds>1</Land_Damage_Thresholds>
 		<Land_Damage_Alternates>3</Land_Damage_Alternates>
@@ -2478,7 +3477,7 @@
 		<Last_State_Visible_Under_FOW> True </Last_State_Visible_Under_FOW>
 		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
 		<Immune_To_Damage>True</Immune_To_Damage>
-	</GroundBuildable>
+	</Tactical_Capturable>
 
 	<GroundBuildable Name="UC_R_Ground_Officer_Academy">
 		<GUI_Bounds_Scale>0.45</GUI_Bounds_Scale>
@@ -2538,13 +3537,14 @@
 		
 		<Last_State_Visible_Under_FOW> True </Last_State_Visible_Under_FOW>
 		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
+
+		<Override_Bounty_SP>0</Override_Bounty_SP>
+		<Override_Bounty_MP>0</Override_Bounty_MP>
 	</GroundBuildable>				
 
 <!--************************************************************************************************************-->	
-		
-	<!--************************************************************************************************************-->
-		
-	<GroundBuildable Name="Generic_Ground_Research_Facility_Build_Pad">
+
+	<Tactical_Capturable Name="Generic_Ground_Research_Facility_Build_Pad">
 		<GUI_Bounds_Scale>0.5</GUI_Bounds_Scale>
 		
 		<Land_Damage_Thresholds>1</Land_Damage_Thresholds>
@@ -2631,7 +3631,7 @@
 		<Last_State_Visible_Under_FOW> True </Last_State_Visible_Under_FOW>
 		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
 		<Immune_To_Damage>True</Immune_To_Damage>
-	</GroundBuildable>
+	</Tactical_Capturable>
 
 	<GroundBuildable Name="UC_Generic_Ground_Research_Facility">
 		<GUI_Bounds_Scale>0.5</GUI_Bounds_Scale>
@@ -2665,7 +3665,7 @@
 		<Land_Damage_Thresholds>1, 0.66, 0.33, 0</Land_Damage_Thresholds>
 		<Land_Damage_Alternates>0, 1, 2, 3</Land_Damage_Alternates>
 		<Land_Damage_SFX>null,SFX_Grenade_Detonation, SFX_Grenade_Detonation,null</Land_Damage_SFX>
-		<Affiliation>Empire</Affiliation>
+		<Affiliation>Empire, Greater_Maldrood, Eriadu_Authority, Zsinj_Empire, Corporate_Sector, Pentastar, Warlords, Corellia, Rebel, Hapes_Consortium, Hutt_Cartels, SsiRuuvi_Imperium, Killik_Hives, EmpireoftheHand, Chiss, Underworld, Mandalorians, Yevetha, Independent_Forces</Affiliation>
 		<Size_Value>50</Size_Value>
 		<Icon_Name>i_button_e_research_facility.tga</Icon_Name>
 		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
@@ -2693,22 +3693,28 @@
 		
 		<Last_State_Visible_Under_FOW> True </Last_State_Visible_Under_FOW>
 		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
+
+		<Override_Bounty_SP>0</Override_Bounty_SP>
+		<Override_Bounty_MP>0</Override_Bounty_MP>
 	</GroundBuildable>
 
 <!--************************************************************************************************************-->
 
-	<GroundBuildable Name="Imperial_Command_Center_Build_Pad">
+	<Tactical_Capturable Name="Imperial_Command_Center_Build_Pad">
 		<GUI_Bounds_Scale>0.33</GUI_Bounds_Scale>
 		<Text_ID>TEXT_STRUCTURE_IMPERIAL_COMMAND_CENTER</Text_ID>
 		<Behavior>TACTICAL_BUILD_OBJECTS, REVEAL, HIDE_WHEN_FOGGED</Behavior>
 		<LandBehavior>TERRAIN_TEXTURE_MODIFICATION, LAND_OBSTACLE, SPACE_OBSTACLE</LandBehavior>	
 		<Land_Model_Name>EB_CommandCenter.alo</Land_Model_Name>
 		<Is_Community_Property>Yes</Is_Community_Property>
+		
 		<Tactical_Buildable_Objects_Multiplayer>Empire, UC_Imperial_Command_Center</Tactical_Buildable_Objects_Multiplayer>
 		<Tactical_Buildable_Objects_Multiplayer>Pentastar, UC_Imperial_Command_Center</Tactical_Buildable_Objects_Multiplayer>
 		<Tactical_Buildable_Objects_Multiplayer>Zsinj_Empire, UC_Imperial_Command_Center</Tactical_Buildable_Objects_Multiplayer>
 		<Tactical_Buildable_Objects_Multiplayer>Greater_Maldrood, UC_Imperial_Command_Center</Tactical_Buildable_Objects_Multiplayer>
 		<Tactical_Buildable_Objects_Multiplayer>Eriadu_Authority, UC_Imperial_Command_Center</Tactical_Buildable_Objects_Multiplayer>
+		<Tactical_Buildable_Objects_Multiplayer>Hutt_Cartels, UC_Imperial_Command_Center</Tactical_Buildable_Objects_Multiplayer>
+		
 		<Minimum_Time_Before_Pad_Can_Build_Again> 60 </Minimum_Time_Before_Pad_Can_Build_Again>
 		<Ranged_Target_Z_Adjust>20.0</Ranged_Target_Z_Adjust>
 		<Terrain_Texture_Modifier_Material>62</Terrain_Texture_Modifier_Material>			
@@ -2735,7 +3741,7 @@
 		<Shield_Refresh_Rate>0</Shield_Refresh_Rate>
 		<Energy_Capacity>0</Energy_Capacity>
 		<Energy_Refresh_Rate>0</Energy_Refresh_Rate>
-		<Affiliation>Empire, Pentastar, Zsinj_Empire, Greater_Maldrood, Eriadu_Authority</Affiliation>
+		<Affiliation>Empire, Pentastar, Zsinj_Empire, Greater_Maldrood, Eriadu_Authority, Hutt_Cartels</Affiliation>
 		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
 		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
 		<CategoryMask>Structure</CategoryMask>
@@ -2754,7 +3760,7 @@
 		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
 		<Immune_To_Damage>True</Immune_To_Damage>
 			
-   </GroundBuildable>	
+   </Tactical_Capturable>	
 
 	<GroundBuildable Name="UC_Imperial_Command_Center">
 		<GUI_Bounds_Scale>0.33</GUI_Bounds_Scale>
@@ -2794,7 +3800,7 @@
 		<Shield_Refresh_Rate>0</Shield_Refresh_Rate>
 		<Energy_Capacity>0</Energy_Capacity>
 		<Energy_Refresh_Rate>0</Energy_Refresh_Rate>
-		<Affiliation>Empire, Pentastar, Zsinj_Empire, Greater_Maldrood, Eriadu_Authority</Affiliation>
+		<Affiliation>Empire, Pentastar, Zsinj_Empire, Greater_Maldrood, Eriadu_Authority, Hutt_Cartels</Affiliation>
 		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
 		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
 		<CategoryMask>Structure</CategoryMask>
@@ -2821,11 +3827,13 @@
 		
 		<Last_State_Visible_Under_FOW> True </Last_State_Visible_Under_FOW>
 		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
-		
+
+		<Override_Bounty_SP>0</Override_Bounty_SP>
+		<Override_Bounty_MP>0</Override_Bounty_MP>		
    </GroundBuildable>	
 
 	
-	<GroundBuildable Name="Rebel_Command_Center_Build_Pad">
+	<Tactical_Capturable Name="Rebel_Command_Center_Build_Pad">
 		<GUI_Bounds_Scale>0.33</GUI_Bounds_Scale>
 		<Text_ID>TEXT_STRUCTURE_REBEL_COMMAND_CENTER</Text_ID>
 		<Behavior>TACTICAL_BUILD_OBJECTS, REVEAL, HIDE_WHEN_FOGGED</Behavior>
@@ -2878,7 +3886,7 @@
 		<Last_State_Visible_Under_FOW> True </Last_State_Visible_Under_FOW>
 		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
  		<Immune_To_Damage>True</Immune_To_Damage>
-  </GroundBuildable>	
+  </Tactical_Capturable>	
 
 	<GroundBuildable Name="UC_Rebel_Command_Center">
 		<GUI_Bounds_Scale>0.33</GUI_Bounds_Scale>
@@ -2945,11 +3953,14 @@
 		
 		<Last_State_Visible_Under_FOW> True </Last_State_Visible_Under_FOW>
 		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
+
+		<Override_Bounty_SP>0</Override_Bounty_SP>
+		<Override_Bounty_MP>0</Override_Bounty_MP>
    </GroundBuildable>	
 
 <!--************************************************************************************************************-->	
 
-	<GroundBuildable Name="Skirmish_Mineral_Processor_Pad">
+	<Tactical_Capturable Name="Skirmish_Mineral_Processor_Pad">
 		<Behavior> IDLE, TACTICAL_BUILD_OBJECTS, REVEAL, CAPTURE_POINT, HIDE_WHEN_FOGGED </Behavior>
 		<LandBehavior>TERRAIN_TEXTURE_MODIFICATION, LAND_OBSTACLE</LandBehavior>
 		<Tactical_Buildable_Objects_Multiplayer>
@@ -3042,7 +4053,7 @@
 		<Last_State_Visible_Under_FOW> True </Last_State_Visible_Under_FOW>
 		<Initial_State_Visible_Under_FOW>True</Initial_State_Visible_Under_FOW>
 		<Immune_To_Damage>True</Immune_To_Damage>
-	</GroundBuildable>
+	</Tactical_Capturable>
 	
 	<GroundBuildable Name="UC_Mineral_Processor">
 		<Text_ID> TEXT_STRUCTURE_NEUTRAL_RESOURCE_PAD </Text_ID>
@@ -3106,8 +4117,10 @@
 		
 		<Last_State_Visible_Under_FOW> True </Last_State_Visible_Under_FOW>
 		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
-		
-   </GroundBuildable>
+
+		<Override_Bounty_SP>0</Override_Bounty_SP>
+		<Override_Bounty_MP>0</Override_Bounty_MP>		
+    </GroundBuildable>
 
 	<GroundBuildable Name="Mineral_Processor">
 		<Behavior> TACTICAL_SELL, SELECTABLE, IDLE, REVEAL, DAMAGE_TRACKING, UNIT_AI </Behavior>
@@ -3204,7 +4217,7 @@
 <!--*****************************************Underworld Outpost Pads and Structures**********************************************-->
 <!--************************************************************************************************************-->
 	
-	<GroundBuildable Name="Skirmish_Outpost_Pad">
+	<Tactical_Capturable Name="Skirmish_Outpost_Pad">
 		<GUI_Bounds_Scale>0.15</GUI_Bounds_Scale>
 
 		<Behavior> TACTICAL_BUILD_OBJECTS, REVEAL, HIDE_WHEN_FOGGED, CAPTURE_POINT </Behavior>
@@ -3268,7 +4281,6 @@
 		<Scale_Factor> 0.75 </Scale_Factor>
 		<Shield_Points> 0 </Shield_Points>
 		<Tactical_Health> 10000 </Tactical_Health>
-		<Affiliation> Neutral </Affiliation>
 		<Base_Level_Available> 1 </Base_Level_Available>
 		<Required_Ground_Base_Level> 0 </Required_Ground_Base_Level>
 		<Reveal_During_Setup_Phase> False </Reveal_During_Setup_Phase>
@@ -3293,10 +4305,10 @@
 		<Last_State_Visible_Under_FOW> True </Last_State_Visible_Under_FOW>
 		<Initial_State_Visible_Under_FOW>True</Initial_State_Visible_Under_FOW>
 		
-	</GroundBuildable>
+	</Tactical_Capturable>
 
 <!--*****************************************Skirmish Alternative Recruitment Structure**********************************************-->
-	<GroundBuildable Name="Skirmish_Alternative_Recruitment_Structure_Build_Pad">
+	<Tactical_Capturable Name="Skirmish_Alternative_Recruitment_Structure_Build_Pad">
 		<GUI_Bounds_Scale>0.15</GUI_Bounds_Scale>
 
 		<Behavior> TACTICAL_BUILD_OBJECTS, REVEAL, HIDE_WHEN_FOGGED, CAPTURE_POINT </Behavior>
@@ -3348,6 +4360,7 @@
 		<Text_ID> TEXT_TOOLTIP_SKIRMISH_ALT_RECRUITMENT </Text_ID>
 		<Encyclopedia_Text> 
 		TEXT_GROUND_SKIRMISH_ALT_RECRUITMENT
+		TEXT_TOOLTIP_SEPARATOR_FLUFF_BLOCK
 		TEXT_ENCYCLOPEDIA_SKIRMISH_ALT_RECRUITMENT
 		TEXT_TOOLTIP_UNIT_CAPTUREABLE_STRUCTURE
 		</Encyclopedia_Text>
@@ -3365,7 +4378,6 @@
 		<Scale_Factor> 0.75 </Scale_Factor>
 		<Shield_Points> 0 </Shield_Points>
 		<Tactical_Health> 10000 </Tactical_Health>
-		<Affiliation> Neutral </Affiliation>
 		<Base_Level_Available> 1 </Base_Level_Available>
 		<Required_Ground_Base_Level> 0 </Required_Ground_Base_Level>
 		<Reveal_During_Setup_Phase> False </Reveal_During_Setup_Phase>
@@ -3390,7 +4402,7 @@
 		<Last_State_Visible_Under_FOW> True </Last_State_Visible_Under_FOW>
 		<Initial_State_Visible_Under_FOW>True</Initial_State_Visible_Under_FOW>
 		
-	</GroundBuildable>
+	</Tactical_Capturable>
 	
 	<GroundBuildable Name="UC_Skirmish_Alternative_Recruitment_Structure">
 		<GUI_Bounds_Scale>0.3</GUI_Bounds_Scale>
@@ -3448,6 +4460,7 @@
 		<Text_ID> TEXT_TOOLTIP_SKIRMISH_ALT_RECRUITMENT </Text_ID>
 		<Encyclopedia_Text> 
 		TEXT_GROUND_SKIRMISH_ALT_RECRUITMENT
+		TEXT_TOOLTIP_SEPARATOR_FLUFF_BLOCK
 		TEXT_ENCYCLOPEDIA_SKIRMISH_ALT_RECRUITMENT
 		TEXT_TOOLTIP_UNIT_CAPTUREABLE_STRUCTURE
 		</Encyclopedia_Text>
@@ -3462,9 +4475,12 @@
 		
 		<Last_State_Visible_Under_FOW> True </Last_State_Visible_Under_FOW>
 		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>	
+
+		<Override_Bounty_SP>0</Override_Bounty_SP>
+		<Override_Bounty_MP>0</Override_Bounty_MP>
 	</GroundBuildable>
 	
-	<SpecialStructure Name="Ground_Hutt_Palace_R">
+	<GroundBuildable Name="Ground_Hutt_Palace_R">
 		<GUI_Bounds_Scale>0.4</GUI_Bounds_Scale>
 		<Land_Model_Name>W_HUTTPALACE.ALO</Land_Model_Name>
 		<Icon_Name>i_button_jabba_palace.tga</Icon_Name>
@@ -3478,7 +4494,6 @@
 		<Build_Max_Instances_Per_Planet> -1 </Build_Max_Instances_Per_Planet>
 		<Size_Value>50</Size_Value>
 		<Tech_Level>0</Tech_Level>
-		<Required_Timeline>0</Required_Timeline>
 		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
 		<Required_Star_Base_Level>0</Required_Star_Base_Level>
 		<Required_Special_Structures />
@@ -3533,16 +4548,16 @@
 		<Text_ID> TEXT_TOOLTIP_SKIRMISH_ALT_RECRUITMENT </Text_ID>
 		<Encyclopedia_Text> 
 		TEXT_GROUND_SKIRMISH_ALT_RECRUITMENT
+		TEXT_TOOLTIP_SEPARATOR_FLUFF_BLOCK
 		TEXT_ENCYCLOPEDIA_SKIRMISH_ALT_RECRUITMENT
 		TEXT_TOOLTIP_UNIT_CAPTUREABLE_STRUCTURE
 		</Encyclopedia_Text>
 		
 		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
 		<Score_Cost_Credits> 6000 </Score_Cost_Credits>
-		
-		
-	</SpecialStructure>
-		
+
+	</GroundBuildable>
+
 	<GroundBuildable Name="Skirmish_Alternative_Recruitment_Structure">
 		<Variant_Of_Existing_Type>Ground_Hutt_Palace_R</Variant_Of_Existing_Type>
 		<Affiliation>Neutral, Empire, Greater_Maldrood, Eriadu_Authority, Zsinj_Empire, Corporate_Sector, Pentastar, Warlords, Corellia, Rebel, Hapes_Consortium, Hutt_Cartels, SsiRuuvi_Imperium, Killik_Hives, EmpireoftheHand, Chiss, Underworld, Mandalorians, Yevetha, Independent_Forces</Affiliation>
@@ -3550,6 +4565,7 @@
 		<Text_ID> TEXT_TOOLTIP_SKIRMISH_ALT_RECRUITMENT </Text_ID>
 		<Encyclopedia_Text> 
 		TEXT_GROUND_SKIRMISH_ALT_RECRUITMENT
+		TEXT_TOOLTIP_SEPARATOR_FLUFF_BLOCK
 		TEXT_ENCYCLOPEDIA_SKIRMISH_ALT_RECRUITMENT
 		TEXT_TOOLTIP_UNIT_CAPTUREABLE_STRUCTURE
 		</Encyclopedia_Text>
@@ -3568,6 +4584,9 @@
 			
 			Rebel,
 				Mandalorian_Soldier_Company,
+				Sun_Guard_Company,
+				Nimbus_Commando_Company,
+				Ailon_Nova_Guard_Company,
 				SD_6_Droid_Company,
 				SD_9_Droid_Company,
 				Destroyer_Droid_II_Company,
@@ -3577,110 +4596,154 @@
 				X1_Viper_Company,
 
 			Empire,
-				Army_Guard_Squad,
+				Imperial_Army_Guard_Squad,
 				Mandalorian_Soldier_Company,
 				SD_6_Droid_Company,
 				Imperial_Compforce_Assault_Squad,
+				Sun_Guard_Company,
 				SD_9_Droid_Company,
-				Storm_Commando_Platoon,
+				Imperial_Storm_Commando_Squad,
+				Nimbus_Commando_Company,
 				Destroyer_Droid_II_Company,
 				Storm_Cloud_Car_Company,
 				Imperial_Dark_Stormtrooper_Squad,
+				Ailon_Nova_Guard_Company,
 				Canderous_Assault_Tank_Company,
 				SD_10_Droid_Company,
 				X1_Viper_Company,
 				
 			Pentastar,
-				Army_Guard_Squad,
+				Imperial_Army_Guard_Squad,
 				Mandalorian_Soldier_Company,
 				SD_6_Droid_Company,
 				Imperial_Stormtrooper_Squad,
 				Imperial_Compforce_Assault_Squad,
 				SD_9_Droid_Company,
-				Storm_Commando_Platoon,
+				Sun_Guard_Company,
+				Nimbus_Commando_Company,
+				Imperial_Storm_Commando_Squad,
 				Destroyer_Droid_II_Company,
 				Storm_Cloud_Car_Company,
 				Imperial_IntSec_Operator_Squad,
+				Ailon_Nova_Guard_Company,
 				Canderous_Assault_Tank_Company,
 				SD_10_Droid_Company,
 				X1_Viper_Company,
 				
 			Zsinj_Empire,
-				Army_Guard_Squad,
+				Imperial_Army_Guard_Squad,
 				Mandalorian_Soldier_Company,
 				SD_6_Droid_Company,
+				Sun_Guard_Company,
 				Imperial_Stormtrooper_Squad,
 				Imperial_Compforce_Assault_Squad,
 				SD_9_Droid_Company,
-				Storm_Commando_Platoon,
+				Imperial_Storm_Commando_Squad,
 				Destroyer_Droid_II_Company,
+				Nimbus_Commando_Company,
 				Storm_Cloud_Car_Company,
 				Imperial_IntSec_Operator_Squad,
 				Canderous_Assault_Tank_Company,
 				SD_10_Droid_Company,
+				Ailon_Nova_Guard_Company,
 				X1_Viper_Company,
 				
 			Greater_Maldrood,
-				Army_Guard_Squad,
+				Imperial_Army_Guard_Squad,
 				Mandalorian_Soldier_Company,
 				SD_6_Droid_Company,
 				Imperial_Stormtrooper_Squad,
 				Imperial_Compforce_Assault_Squad,
 				SD_9_Droid_Company,
+				Sun_Guard_Company,
 				Imperial_ISB_Infiltrator_Squad, 
-				Storm_Commando_Platoon,
+				Imperial_Storm_Commando_Squad,
 				Destroyer_Droid_II_Company,
+				Nimbus_Commando_Company,
 				Storm_Cloud_Car_Company,
 				Canderous_Assault_Tank_Company,
 				SD_10_Droid_Company,
+				Ailon_Nova_Guard_Company,
 				X1_Viper_Company,
 				
-			Eriadu_Authority,
-				Army_Guard_Squad,
+			Eriadu_Authority,	
+				Imperial_Army_Guard_Squad,
 				Mandalorian_Soldier_Company,
 				SD_6_Droid_Company,
+				Sun_Guard_Company,
 				Imperial_Stormtrooper_Squad,
 				Imperial_Compforce_Assault_Squad,
 				SD_9_Droid_Company,
 				Imperial_ISB_Infiltrator_Squad,
-				Storm_Commando_Platoon,
+				Imperial_Storm_Commando_Squad,
 				Destroyer_Droid_II_Company,
+				Nimbus_Commando_Company,
 				Storm_Cloud_Car_Company,
 				Canderous_Assault_Tank_Company,
 				SD_10_Droid_Company,
+				Ailon_Nova_Guard_Company,
 				X1_Viper_Company,
 				
 			Corporate_Sector,
 				Mandalorian_Soldier_Company,
 				SD_6_Droid_Company,
 				SD_9_Droid_Company,
+				Sun_Guard_Company,
+				Nimbus_Commando_Company,
 				Destroyer_Droid_II_Company,
+				Ailon_Nova_Guard_Company,
 				Storm_Cloud_Car_Company,
 				Canderous_Assault_Tank_Company,
 				SD_10_Droid_Company,
 				X1_Viper_Company,
+	
 				
+
+					
 			
 			Hapes_Consortium,
 				Mandalorian_Soldier_Company,
 				SD_6_Droid_Company,
 				SD_9_Droid_Company,
+				Sun_Guard_Company,
+				Nimbus_Commando_Company,
 				Destroyer_Droid_II_Company,
-				Storm_Cloud_Car_Company,
-				Canderous_Assault_Tank_Company,
-				SD_10_Droid_Company,
-				X1_Viper_Company,
-			
-			EmpireoftheHand,
-				Mandalorian_Soldier_Company,
-				SD_6_Droid_Company,
-				SD_9_Droid_Company,
-				Destroyer_Droid_II_Company,
+				Ailon_Nova_Guard_Company,
 				Storm_Cloud_Car_Company,
 				Canderous_Assault_Tank_Company,
 				SD_10_Droid_Company,
 				X1_Viper_Company,
 				
+				
+				
+			
+			EmpireoftheHand,
+				Mandalorian_Soldier_Company,
+				SD_6_Droid_Company,
+				SD_9_Droid_Company,
+				Sun_Guard_Company,
+				Nimbus_Commando_Company,
+				Destroyer_Droid_II_Company,		
+				Ailon_Nova_Guard_Company,
+				Storm_Cloud_Car_Company,
+				Canderous_Assault_Tank_Company,
+				SD_10_Droid_Company,
+				X1_Viper_Company,
+				
+				
+				
+			Hutt_Cartels,
+				Mandalorian_Soldier_Company,
+				SD_6_Droid_Company,
+				SD_9_Droid_Company,
+				Sun_Guard_Company,
+				Nimbus_Commando_Company,
+				Destroyer_Droid_II_Company,		
+				Ailon_Nova_Guard_Company,
+				Storm_Cloud_Car_Company,
+				Canderous_Assault_Tank_Company,
+				SD_10_Droid_Company,
+				X1_Viper_Company,
 				
 		</Tactical_Buildable_Objects_Multiplayer>
 		
@@ -3694,7 +4757,7 @@
 <!--*****************************************EmpireoftheHand Build Pads**********************************************-->
 <!--************************************************************************************************************-->
 
-	<GroundBuildable Name="U_Ground_Merc_Outpost_Build_Pad">
+	<Tactical_Capturable Name="U_Ground_Merc_Outpost_Build_Pad">
 		<GUI_Bounds_Scale>0.3</GUI_Bounds_Scale>
 		<Land_Damage_Thresholds>1</Land_Damage_Thresholds>
 		<Land_Damage_Alternates>3</Land_Damage_Alternates>
@@ -3741,7 +4804,7 @@
 		<Last_State_Visible_Under_FOW> True </Last_State_Visible_Under_FOW>
 		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
 		<Immune_To_Damage>True</Immune_To_Damage>
-	</GroundBuildable>
+	</Tactical_Capturable>
 
 	<GroundBuildable Name="UC_U_Ground_Merc_Outpost">
 		<GUI_Bounds_Scale>0.3</GUI_Bounds_Scale>
@@ -3803,10 +4866,13 @@
 		
 		<Last_State_Visible_Under_FOW> True </Last_State_Visible_Under_FOW>
 		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
+
+		<Override_Bounty_SP>0</Override_Bounty_SP>
+		<Override_Bounty_MP>0</Override_Bounty_MP>
 	</GroundBuildable>
 	
 	
-	<GroundBuildable Name="Underworld_Palace_Build_Pad">
+	<Tactical_Capturable Name="Underworld_Palace_Build_Pad">
 		<GUI_Bounds_Scale>0.3</GUI_Bounds_Scale>
 		<Text_ID>TEXT_GROUND_PALACE_UNDERWORLD</Text_ID>
 		<Behavior>TACTICAL_BUILD_OBJECTS, REVEAL, HIDE_WHEN_FOGGED</Behavior>
@@ -3856,7 +4922,7 @@
 		<Last_State_Visible_Under_FOW> True </Last_State_Visible_Under_FOW>
 		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
  		<Immune_To_Damage>True</Immune_To_Damage>
-  </GroundBuildable>	
+  </Tactical_Capturable>	
 
 	<GroundBuildable Name="UC_Underworld_Palace">
 		<GUI_Bounds_Scale>0.3</GUI_Bounds_Scale>
@@ -3922,10 +4988,13 @@
 		
 		<Last_State_Visible_Under_FOW> True </Last_State_Visible_Under_FOW>
 		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
+
+		<Override_Bounty_SP>0</Override_Bounty_SP>
+		<Override_Bounty_MP>0</Override_Bounty_MP>
    </GroundBuildable>
    
    
-	<GroundBuildable Name="U_Ground_Droid_Works_Build_Pad">
+	<Tactical_Capturable Name="U_Ground_Droid_Works_Build_Pad">
 		<GUI_Bounds_Scale>0.3</GUI_Bounds_Scale>
 		<Land_Damage_Thresholds>1</Land_Damage_Thresholds>
 		<Land_Damage_Alternates>3</Land_Damage_Alternates>
@@ -3972,7 +5041,7 @@
 		<Last_State_Visible_Under_FOW> True </Last_State_Visible_Under_FOW>
 		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
 		<Immune_To_Damage>True</Immune_To_Damage>
-	</GroundBuildable>
+	</Tactical_Capturable>
 
 	<GroundBuildable Name="UC_U_Ground_Droid_Works">
 		<GUI_Bounds_Scale>0.3</GUI_Bounds_Scale>
@@ -4034,10 +5103,13 @@
 		
 		<Last_State_Visible_Under_FOW> True </Last_State_Visible_Under_FOW>
 		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
+
+		<Override_Bounty_SP>0</Override_Bounty_SP>
+		<Override_Bounty_MP>0</Override_Bounty_MP>
 	</GroundBuildable>
 	
 	
-	<GroundBuildable Name="U_Ground_Arms_Depot_Build_Pad">
+	<Tactical_Capturable Name="U_Ground_Arms_Depot_Build_Pad">
 		<GUI_Bounds_Scale>0.4</GUI_Bounds_Scale>
 		<Land_Damage_Thresholds>1</Land_Damage_Thresholds>
 		<Land_Damage_Alternates>3</Land_Damage_Alternates>
@@ -4084,7 +5156,7 @@
 		<Last_State_Visible_Under_FOW> True </Last_State_Visible_Under_FOW>
 		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
 		<Immune_To_Damage>True</Immune_To_Damage>
-	</GroundBuildable>
+	</Tactical_Capturable>
 
 	<GroundBuildable Name="UC_U_Ground_Arms_Depot">
 		<GUI_Bounds_Scale>0.4</GUI_Bounds_Scale>
@@ -4146,13 +5218,16 @@
 		
 		<Last_State_Visible_Under_FOW> True </Last_State_Visible_Under_FOW>
 		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
+
+		<Override_Bounty_SP>0</Override_Bounty_SP>
+		<Override_Bounty_MP>0</Override_Bounty_MP>
 	</GroundBuildable>
 
 <!--***************************************************************************************-->	
 
 <!-- ************************************************************************************* -->
 
-	<GroundBuildable Name="Skirmish_Build_Pad_Bunker">
+	<Tactical_Capturable Name="Skirmish_Build_Pad_Bunker">
 
 		<Behavior> TACTICAL_BUILD_OBJECTS, REVEAL, HIDE_WHEN_FOGGED, CAPTURE_POINT </Behavior>
 
@@ -4223,7 +5298,6 @@
 		<Scale_Factor> 0.15 </Scale_Factor>
 		<Shield_Points> 0 </Shield_Points>
 		<Tactical_Health> 10000 </Tactical_Health>
-		<Affiliation> Neutral </Affiliation>
 		<Base_Level_Available> 1 </Base_Level_Available>
 		<Required_Ground_Base_Level> 0 </Required_Ground_Base_Level>
 		<Reveal_During_Setup_Phase> False </Reveal_During_Setup_Phase>
@@ -4242,7 +5316,7 @@
 		<Immune_To_Damage>True</Immune_To_Damage>
       <Include_In_UI_Map_Header>True</Include_In_UI_Map_Header>
 		
-	</GroundBuildable>
+	</Tactical_Capturable>
 	
 	<GroundBuildable Name="UC_Empire_Bunker">
 		<GUI_Bounds_Scale>0.25</GUI_Bounds_Scale>
@@ -4303,6 +5377,9 @@
 
 		<Last_State_Visible_Under_FOW> True </Last_State_Visible_Under_FOW>
 		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>		
+
+		<Override_Bounty_SP>0</Override_Bounty_SP>
+		<Override_Bounty_MP>0</Override_Bounty_MP>
 	</GroundBuildable>
 	
 	<GroundBuildable Name="UC_Rebel_Bunker">
@@ -4363,10 +5440,13 @@
 		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
 
 		<Last_State_Visible_Under_FOW> True </Last_State_Visible_Under_FOW>
-		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>		
+		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
+
+		<Override_Bounty_SP>0</Override_Bounty_SP>
+		<Override_Bounty_MP>0</Override_Bounty_MP>
 	</GroundBuildable>
 	
-	<GroundBuildable Name="Bunker_Pad">
+	<Tactical_Capturable Name="Bunker_Pad">
 		<GUI_Bounds_Scale>0.3</GUI_Bounds_Scale>
 
 		<Behavior>DUMMY_GROUND_STRUCTURE</Behavior>
@@ -4511,9 +5591,9 @@
 		<Land_Damage_Alternates>3</Land_Damage_Alternates>
 		<Land_Damage_SFX>null,null,null,null</Land_Damage_SFX>
 		
-	</GroundBuildable>
+	</Tactical_Capturable>
 	
-	<GroundBuildable Name="Skirmish_Build_Pad_Turbolaser">
+	<Tactical_Capturable Name="Skirmish_Build_Pad_Turbolaser">
 
 		<Behavior> TACTICAL_BUILD_OBJECTS, REVEAL, HIDE_WHEN_FOGGED, CAPTURE_POINT </Behavior>
 
@@ -4602,7 +5682,7 @@
 		<Immune_To_Damage>True</Immune_To_Damage>
       <Include_In_UI_Map_Header>True</Include_In_UI_Map_Header>
 		
-	</GroundBuildable>
+	</Tactical_Capturable>
 	
 
 </GroundBuildables>

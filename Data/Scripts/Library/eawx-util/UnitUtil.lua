@@ -52,40 +52,85 @@ function UnitUtil.SetLockList(faction, lock_list, state)
     return
 end
 
+--These require a second prereq object to exist, then spawn that
+function UnitUtil.TacticalUnlock(object, player)
+
+    local position = Find_First_Object("Defending Forces Position").Get_Position()
+    local prereq_name = object .. "_Prereq"
+    Create_Generic_Object(prereq_name, position, Find_Player(player))
+
+end
+
+function UnitUtil.TacticalLock(object)
+
+    local prereq_name = object .. "_Prereq"
+    local object = Find_First_Object(prereq_name)
+    if TestValid(object) then
+        object.Despawn()
+    end
+
+    return
+end
+
 function UnitUtil.ReplaceAtLocation(original, upgrade)
-    local checkObject = Find_First_Object(original)
+    local checkObject = original
+    if type(checkObject) == "string" then 
+        checkObject = Find_First_Object(original)
+    end
     if TestValid(checkObject) then
-        local planet = checkObject.Get_Planet_Location()
         local objectOwner = checkObject.Get_Owner()
-        checkObject.Despawn()
+        local planet = checkObject.Get_Planet_Location()
+        
         if not planet then
-            planet = StoryUtil.FindFriendlyPlanet(objectOwner)
+            planet = StoryUtil.FindFriendlyPlanet(objectOwner, true)
         end
-        local spawnList = {upgrade}
-        SpawnList(spawnList, planet, objectOwner, true, false)
+
+        if not planet then
+            return
+        end
+
+        local planetOwner = planet.Get_Owner()
+
+        if planetOwner ~= objectOwner then
+            if EvaluatePerception("Enemy_Present_In_Space", objectOwner, planet) > 0 then
+                planet = StoryUtil.FindFriendlyPlanet(objectOwner, true)
+            end
+        end
+
+        checkObject.Despawn()
+        SpawnList({upgrade}, planet, objectOwner, true, false)
     end
 end
 
 function UnitUtil.SpawnAtObjectLocation(target, object)
     local checkObject = Find_First_Object(target)
     if TestValid(checkObject) then
-        local planet = checkObject.Get_Planet_Location()
         local objectOwner = checkObject.Get_Owner()
+        local planet = checkObject.Get_Planet_Location()
         if not planet then
-            planet = StoryUtil.FindFriendlyPlanet(objectOwner)
+            planet = StoryUtil.FindFriendlyPlanet(objectOwner, true)
         end
-        local spawnList = {object}
-        SpawnList(spawnList, planet, objectOwner, true, false)
+        if not planet then
+            return
+        end
+        SpawnList({object}, planet, objectOwner, true, false)
     end
 end
 
 function UnitUtil.DespawnList(despawn_list)
     for _, object in pairs(despawn_list) do
-        checkObject = Find_First_Object(object)
-        if TestValid(checkObject) then
-            checkObject.Despawn()
-        end
+		local checkObject = Find_All_Objects_Of_Type(object)
+		for i, unit in pairs(checkObject) do
+			unit.Despawn()
+		end
     end
+end
+
+function UnitUtil.DespawnCompany(company)
+    local plot = Get_Story_Plot("Conquests\\Player_Agnostic_Plot.xml")
+    local event = plot.Get_Event("Template_Company_Remove")
+	event.Set_Reward_Parameter(0, company)
+	Story_Event("REMOVE_UNIT")
 end
 
 function UnitUtil.SetBuildable(player, unitType, state)
@@ -111,7 +156,6 @@ function UnitUtil.SetBuildable(player, unitType, state)
 
     buildableUnitEvent.Set_Reward_Parameter(0, unitType)
     Story_Event(tag)
-    
 
 end
 

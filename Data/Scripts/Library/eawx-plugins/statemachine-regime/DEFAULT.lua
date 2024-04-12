@@ -1,4 +1,4 @@
-require("eawx-statemachine/EawXState")
+require("deepcore/statemachine/DeepCoreState")
 
 ---@param dsl dsl
 return function(dsl)
@@ -6,7 +6,7 @@ return function(dsl)
     local effect = dsl.effect
     local owned_by = dsl.conditions.owned_by
 
-    local initialize = EawXState.with_empty_policy()
+    local initialize = DeepCoreState.with_empty_policy()
       
     return initialize
 end

@@ -2,7 +2,7 @@
 <Remnant_Space_Units>
 
 	<GenericHeroUnit Name="Generic_Probe_Droid">
-		<Text_ID>TEXT_HERO_UNIT_PROBE_DROID</Text_ID>
+		<Text_ID>TEXT_UNIT_VIPER_PROBE_DROID</Text_ID>
 		<GUI_Row> 0 </GUI_Row>
 		<Icon_Name>i_button_scout_droid.tga</Icon_Name>
 		<Mass>1.0</Mass>
@@ -63,14 +63,12 @@
 
 	<HeroCompany Name="Probe_Droid_Team">
 		<GUI_Row>0</GUI_Row>
-		<Text_ID>TEXT_HERO_UNIT_PROBE_DROID</Text_ID>
+		<Text_ID>TEXT_UNIT_VIPER_PROBE_DROID</Text_ID>
 		<Is_Dummy>Yes</Is_Dummy>
 		<Build_Cost_Credits>500</Build_Cost_Credits>
 		<Build_Time_Seconds>20</Build_Time_Seconds>
 		<Build_Tab_Heroes>Yes</Build_Tab_Heroes>
-		<Combat_Power_Value>0</Combat_Power_Value>
 		<Tech_Level>0</Tech_Level>
-		<Required_Timeline>0</Required_Timeline>
 		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
 		<Required_Star_Base_Level>1</Required_Star_Base_Level>
 		<Required_Special_Structures>AI_Category_Dummy | Structure_Category_Dummy</Required_Special_Structures>
@@ -95,8 +93,18 @@
 		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_DROID</Encyclopedia_Unit_Class>
 		<CategoryMask>NonCombatHero</CategoryMask>
 		<Population_Value>0</Population_Value>
-		<Affiliation>Empire, Pentastar, Greater_Maldrood, Eriadu_Authority, Zsinj_Empire, EmpireoftheHand</Affiliation>
+		<Affiliation>Empire, Pentastar, Greater_Maldrood, Eriadu_Authority, Zsinj_Empire</Affiliation>
 	</HeroCompany>
+	
+	<GenericHeroUnit Name="Probe_Droid_Hand">
+		<Variant_Of_Existing_Type>Generic_Probe_Droid</Variant_Of_Existing_Type>
+	</GenericHeroUnit>
+		
+	<HeroCompany Name="Probe_Droid_Hand_Team">
+		<Variant_Of_Existing_Type>Probe_Droid_Team</Variant_Of_Existing_Type>
+		<Affiliation>EmpireoftheHand</Affiliation>
+	</HeroCompany>
+	
 	
 	<HeroCompany Name="Skirmish_Probe_Droid_Team">
 		<Variant_Of_Existing_Type>Probe_Droid_Team</Variant_Of_Existing_Type>
@@ -170,9 +178,7 @@
 		<Build_Cost_Credits>500</Build_Cost_Credits>
 		<Build_Time_Seconds>20</Build_Time_Seconds>
 		<Build_Tab_Heroes>Yes</Build_Tab_Heroes>
-		<Combat_Power_Value>0</Combat_Power_Value>
 		<Tech_Level>0</Tech_Level>
-		<Required_Timeline>0</Required_Timeline>
 		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
 		<Required_Star_Base_Level>1</Required_Star_Base_Level>
 		<Required_Special_Structures>AI_Category_Dummy | Structure_Category_Dummy</Required_Special_Structures>
@@ -267,9 +273,7 @@
 		<Build_Cost_Credits>500</Build_Cost_Credits>
 		<Build_Time_Seconds>20</Build_Time_Seconds>
 		<Build_Tab_Heroes>Yes</Build_Tab_Heroes>
-		<Combat_Power_Value>0</Combat_Power_Value>
 		<Tech_Level>0</Tech_Level>
-		<Required_Timeline>0</Required_Timeline>
 		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
 		<Required_Star_Base_Level>1</Required_Star_Base_Level>
 		<Required_Special_Structures>AI_Category_Dummy | Structure_Category_Dummy</Required_Special_Structures>

@@ -103,6 +103,54 @@
 <Prereq>Battle_Start</Prereq>
 </Event>
 
+<Event Name="Disable_Retreat_Hutts">
+<Event_Type>STORY_TRIGGER</Event_Type>
+<Reward_Type>DISABLE_RETREAT</Reward_Type>
+<Reward_Param1>Hutt_Cartels</Reward_Param1>
+<Reward_Param2>1</Reward_Param2>
+<Prereq>Battle_Start</Prereq>
+</Event>
+
+<Event Name="Disable_Retreat_Corellia">
+<Event_Type>STORY_TRIGGER</Event_Type>
+<Reward_Type>DISABLE_RETREAT</Reward_Type>
+<Reward_Param1>Corellia</Reward_Param1>
+<Reward_Param2>1</Reward_Param2>
+<Prereq>Battle_Start</Prereq>
+</Event>
+
+<Event Name="Disable_Retreat_Chiss">
+<Event_Type>STORY_TRIGGER</Event_Type>
+<Reward_Type>DISABLE_RETREAT</Reward_Type>
+<Reward_Param1>Chiss</Reward_Param1>
+<Reward_Param2>1</Reward_Param2>
+<Prereq>Battle_Start</Prereq>
+</Event>
+
+<Event Name="Disable_Retreat_Yevetha">
+<Event_Type>STORY_TRIGGER</Event_Type>
+<Reward_Type>DISABLE_RETREAT</Reward_Type>
+<Reward_Param1>Yevetha</Reward_Param1>
+<Reward_Param2>1</Reward_Param2>
+<Prereq>Battle_Start</Prereq>
+</Event>
+
+<Event Name="Disable_Retreat_SsiRuuvi">
+<Event_Type>STORY_TRIGGER</Event_Type>
+<Reward_Type>DISABLE_RETREAT</Reward_Type>
+<Reward_Param1>SsiRuuvi_Imperium</Reward_Param1>
+<Reward_Param2>1</Reward_Param2>
+<Prereq>Battle_Start</Prereq>
+</Event>
+
+<Event Name="Disable_Retreat_Killiks">
+<Event_Type>STORY_TRIGGER</Event_Type>
+<Reward_Type>DISABLE_RETREAT</Reward_Type>
+<Reward_Param1>Killik_Hives</Reward_Param1>
+<Reward_Param2>1</Reward_Param2>
+<Prereq>Battle_Start</Prereq>
+</Event>
+
 <Event Name="Disable_Autoresolve">
 <Event_Type>STORY_TRIGGER</Event_Type>
 <Reward_Type>DISABLE_AUTORESOLVE</Reward_Type>
@@ -273,6 +321,114 @@
     <Prereq>Battle_Start</Prereq>
   </Event>
   
+  <Event Name="Katana_Troonol_Speech_Two">
+    <Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+	<Event_Param2>START_SPEECH_HUTTS</Event_Param2>
+    <Reward_Type>SCREEN_TEXT</Reward_Type>
+    <Reward_Param1>TEXT_CONQUEST_THRAWN_HUTTS_KATANA_BATTLE</Reward_Param1>
+    <Reward_Param2>-1</Reward_Param2>
+    <Prereq>Battle_Start</Prereq>
+  </Event>
+  
+  <Event Name="Katana_Troonol_Speech_End">
+          <Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+      <Event_Param2>END_SPEECH_HUTTS</Event_Param2>
+    <Reward_Type>SCREEN_TEXT</Reward_Type>
+		<Reward_Param1>TEXT_CONQUEST_THRAWN_HUTTS_KATANA_BATTLE</Reward_Param1>
+		<Reward_Param4>remove</Reward_Param4>
+    <Prereq>Battle_Start</Prereq>
+  </Event>
+  
+  <Event Name="Katana_SalSolo_Speech_Two">
+    <Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+	<Event_Param2>START_SPEECH_CORELLIA</Event_Param2>
+    <Reward_Type>SCREEN_TEXT</Reward_Type>
+    <Reward_Param1>TEXT_CONQUEST_THRAWN_CORELLIA_KATANA_BATTLE</Reward_Param1>
+    <Reward_Param2>-1</Reward_Param2>
+    <Prereq>Battle_Start</Prereq>
+  </Event>
+  
+  <Event Name="Katana_SalSolo_Speech_End">
+          <Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+      <Event_Param2>END_SPEECH_CORELLIA</Event_Param2>
+    <Reward_Type>SCREEN_TEXT</Reward_Type>
+		<Reward_Param1>TEXT_CONQUEST_THRAWN_CORELLIA_KATANA_BATTLE</Reward_Param1>
+		<Reward_Param4>remove</Reward_Param4>
+    <Prereq>Battle_Start</Prereq>
+  </Event>
+  
+  <Event Name="Katana_Aralani_Speech_Two">
+    <Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+	<Event_Param2>START_SPEECH_CHISS</Event_Param2>
+    <Reward_Type>SCREEN_TEXT</Reward_Type>
+    <Reward_Param1>TEXT_CONQUEST_THRAWN_CHISS_KATANA_BATTLE</Reward_Param1>
+    <Reward_Param2>-1</Reward_Param2>
+    <Prereq>Battle_Start</Prereq>
+  </Event>
+  
+  <Event Name="Katana_Aralani_Speech_End">
+          <Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+      <Event_Param2>END_SPEECH_CHISS</Event_Param2>
+    <Reward_Type>SCREEN_TEXT</Reward_Type>
+		<Reward_Param1>TEXT_CONQUEST_THRAWN_CHISS_KATANA_BATTLE</Reward_Param1>
+		<Reward_Param4>remove</Reward_Param4>
+    <Prereq>Battle_Start</Prereq>
+  </Event>
+  
+  <Event Name="Katana_Spaar_Speech_Two">
+    <Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+	<Event_Param2>START_SPEECH_YEVETHA</Event_Param2>
+    <Reward_Type>SCREEN_TEXT</Reward_Type>
+    <Reward_Param1>TEXT_CONQUEST_THRAWN_YEVETHA_KATANA_BATTLE</Reward_Param1>
+    <Reward_Param2>-1</Reward_Param2>
+    <Prereq>Battle_Start</Prereq>
+  </Event>
+  
+  <Event Name="Katana_Spaar_Speech_End">
+          <Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+      <Event_Param2>END_SPEECH_YEVETHA</Event_Param2>
+    <Reward_Type>SCREEN_TEXT</Reward_Type>
+		<Reward_Param1>TEXT_CONQUEST_THRAWN_YEVETHA_KATANA_BATTLE</Reward_Param1>
+		<Reward_Param4>remove</Reward_Param4>
+    <Prereq>Battle_Start</Prereq>
+  </Event>
+  
+  <Event Name="Katana_Ivpikkis_Speech_Two">
+    <Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+	<Event_Param2>START_SPEECH_SSI</Event_Param2>
+    <Reward_Type>SCREEN_TEXT</Reward_Type>
+    <Reward_Param1>TEXT_CONQUEST_THRAWN_SSIRUUK_KATANA_BATTLE</Reward_Param1>
+    <Reward_Param2>-1</Reward_Param2>
+    <Prereq>Battle_Start</Prereq>
+  </Event>
+  
+  <Event Name="Katana_Ivpikkis_Speech_End">
+          <Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+      <Event_Param2>END_SPEECH_SSI</Event_Param2>
+    <Reward_Type>SCREEN_TEXT</Reward_Type>
+		<Reward_Param1>TEXT_CONQUEST_THRAWN_SSIRUUK_KATANA_BATTLE</Reward_Param1>
+		<Reward_Param4>remove</Reward_Param4>
+    <Prereq>Battle_Start</Prereq>
+  </Event>
+  
+  <Event Name="Katana_Saras_Speech_Two">
+    <Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+	<Event_Param2>START_SPEECH_KILLIK</Event_Param2>
+    <Reward_Type>SCREEN_TEXT</Reward_Type>
+    <Reward_Param1>TEXT_CONQUEST_THRAWN_KILLIKS_KATANA_BATTLE</Reward_Param1>
+    <Reward_Param2>-1</Reward_Param2>
+    <Prereq>Battle_Start</Prereq>
+  </Event>
+  
+  <Event Name="Katana_Saras_Speech_End">
+          <Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+      <Event_Param2>END_SPEECH_KILLIK</Event_Param2>
+    <Reward_Type>SCREEN_TEXT</Reward_Type>
+		<Reward_Param1>TEXT_CONQUEST_THRAWN_KILLIKS_KATANA_BATTLE</Reward_Param1>
+		<Reward_Param4>remove</Reward_Param4>
+    <Prereq>Battle_Start</Prereq>
+  </Event>
+  
   
 	<Event Name="Reinforcements_Appear">
 		<Event_Type>STORY_ELAPSED</Event_Type>
@@ -346,6 +502,42 @@
 		<Event_Param1>Hapes_Consortium</Event_Param1>
 		<Prereq>Katana_Isolder_Speech_Two</Prereq>
 	</Event>
+	
+	<Event Name="STORY_VICTORY_Hutt_Player">
+		<Event_Type>STORY_VICTORY</Event_Type>
+		<Event_Param1>Hutt_Cartels</Event_Param1>
+		<Prereq>Katana_Troonol_Speech_Two</Prereq>
+	</Event>
+	
+	<Event Name="STORY_VICTORY_Chiss_Player">
+		<Event_Type>STORY_VICTORY</Event_Type>
+		<Event_Param1>Chiss</Event_Param1>
+		<Prereq>Katana_Aralani_Speech_Two</Prereq>
+	</Event>
+	
+	<Event Name="STORY_VICTORY_Corellia_Player">
+		<Event_Type>STORY_VICTORY</Event_Type>
+		<Event_Param1>Corellia</Event_Param1>
+		<Prereq>Katana_SalSolo_Speech_Two</Prereq>
+	</Event>
+	
+	<Event Name="STORY_VICTORY_Yevetha_Player">
+		<Event_Type>STORY_VICTORY</Event_Type>
+		<Event_Param1>Yevetha</Event_Param1>
+		<Prereq>Katana_Spaar_Speech_Two</Prereq>
+	</Event>
+	
+	<Event Name="STORY_VICTORY_Ssi_Player">
+		<Event_Type>STORY_VICTORY</Event_Type>
+		<Event_Param1>SsiRuuvi_Imperium</Event_Param1>
+		<Prereq>Katana_Ivpikkis_Speech_Two</Prereq>
+	</Event>
+	
+	<Event Name="STORY_VICTORY_Killik_Player">
+		<Event_Type>STORY_VICTORY</Event_Type>
+		<Event_Param1>Killik_Hives</Event_Param1>
+		<Prereq>Katana_Saras_Speech_Two</Prereq>
+	</Event>
 
 	<Event Name="STORY_VICTORY_Player">
 		<Event_Type>STORY_TRIGGER</Event_Type>
@@ -358,6 +550,12 @@
 		<Prereq>STORY_VICTORY_EA_Player</Prereq>
 		<Prereq>STORY_VICTORY_CSA_Player</Prereq>
 		<Prereq>STORY_VICTORY_Hapes_Player</Prereq>
+		<Prereq>STORY_VICTORY_Hutt_Player</Prereq>
+		<Prereq>STORY_VICTORY_Chiss_Player</Prereq>
+		<Prereq>STORY_VICTORY_Corellia_Player</Prereq>
+		<Prereq>STORY_VICTORY_Yevetha_Player</Prereq>
+		<Prereq>STORY_VICTORY_Ssi_Player</Prereq>
+		<Prereq>STORY_VICTORY_Killik_Player</Prereq>
 	</Event>
 	
 	<Event Name="Reveal_FOW">
@@ -478,6 +676,54 @@
 		<Event_Param2>HAPES_LOSE</Event_Param2>
     	<Reward_Type>VICTORY</Reward_Type>
     	<Reward_Param1>Hapes_Consortium</Reward_Param1>
+    	<Reward_Param2>1</Reward_Param2>
+  </Event>
+  
+  <Event Name="Hutts_Autolose">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>HUTTS_LOSE</Event_Param2>
+    	<Reward_Type>VICTORY</Reward_Type>
+    	<Reward_Param1>Hutt_Cartels</Reward_Param1>
+    	<Reward_Param2>1</Reward_Param2>
+  </Event>
+  
+  <Event Name="Corellia_Autolose">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>CORELLIANS_LOSE</Event_Param2>
+    	<Reward_Type>VICTORY</Reward_Type>
+    	<Reward_Param1>Corellia</Reward_Param1>
+    	<Reward_Param2>1</Reward_Param2>
+  </Event>
+  
+  <Event Name="Chiss_Autolose">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>CHISS_LOSE</Event_Param2>
+    	<Reward_Type>VICTORY</Reward_Type>
+    	<Reward_Param1>Chiss</Reward_Param1>
+    	<Reward_Param2>1</Reward_Param2>
+  </Event>
+  
+  <Event Name="Yevetha_Autolose">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>YEVETHA_LOSE</Event_Param2>
+    	<Reward_Type>VICTORY</Reward_Type>
+    	<Reward_Param1>Yevetha</Reward_Param1>
+    	<Reward_Param2>1</Reward_Param2>
+  </Event>
+  
+  <Event Name="Ssi_Autolose">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>SSIRUUVI_LOSE</Event_Param2>
+    	<Reward_Type>VICTORY</Reward_Type>
+    	<Reward_Param1>SsiRuuvi_Imperium</Reward_Param1>
+    	<Reward_Param2>1</Reward_Param2>
+  </Event>
+  
+  <Event Name="Killik_Autolose">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>KILLIKS_LOSE</Event_Param2>
+    	<Reward_Type>VICTORY</Reward_Type>
+    	<Reward_Param1>Corporate_Sector</Reward_Param1>
     	<Reward_Param2>1</Reward_Param2>
   </Event>
        

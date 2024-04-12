@@ -9,7 +9,8 @@ return {
 			HAPES_CONSORTIUM = {Initial = 1, Reserve = 2},
 			INDEPENDENT_FORCES = {Initial = 1, Reserve = 2},
 			WARLORDS = {Initial = 1, Reserve = 2},
-			CORPORATE_SECTOR = {Initial = 1, Reserve = 2}
+			CORPORATE_SECTOR = {Initial = 1, Reserve = 2},
+			HUTT_CARTELS = {Initial = 1, Reserve = 2}
 		},
 		["EARLY_SKIPRAY_SQUADRON_HALF"] = {
 			CORPORATE_SECTOR = {Initial = 1, Reserve = 1},
@@ -22,6 +23,9 @@ return {
 			EMPIRE = {Initial = 1, Reserve = 1},
 			ZSINJ_EMPIRE = {Initial = 1, Reserve = 1},
 			WARLORDS = {Initial = 1, Reserve = 1}
+		},
+		["CLOAKSHAPE_NEW_SQUADRON_HALF"] = {
+			HUTT_CARTELS = {Initial = 1, Reserve = 1}
 		},
 		["TIE_GT_SQUADRON"] = {
 			EMPIRE = {Initial = 1, Reserve = 2}

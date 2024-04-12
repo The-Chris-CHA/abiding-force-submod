@@ -7,6 +7,9 @@ return {
 		["MIYTIL_FIGHTER_SQUADRON"] = {
 			HAPES_CONSORTIUM = {Initial = 1, Reserve = 1}
 		},
+		["CLOAKSHAPE_NEW_SQUADRON"] = {
+			HUTT_CARTELS = {Initial = 1, Reserve = 1}
+		},
 		["TIE_DROID_SQUADRON"] = {
 			EMPIRE = {Initial = 1, Reserve = 1, TechLevel = IsOneOf({4, 5})}
 		},
@@ -31,6 +34,7 @@ return {
 		["EARLY_SKIPRAY_SQUADRON"] = {
 			CORPORATE_SECTOR = {Initial = 1, Reserve = 1},
 			HAPES_CONSORTIUM = {Initial = 1, Reserve = 1},
+			HUTT_CARTELS = {Initial = 1, Reserve = 1},
 			HOSTILE = {Initial = 1, Reserve = 1},
 			REBEL = {Initial = 1, Reserve =1},
 			INDEPENDENT_FORCES = {Initial = 1, Reserve = 1}

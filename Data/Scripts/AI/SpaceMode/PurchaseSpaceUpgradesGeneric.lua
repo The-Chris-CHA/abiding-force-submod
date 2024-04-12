@@ -53,9 +53,13 @@ function Definitions()
 		,"DenyHeroAttach"
 		,"Space_Starbase_Increased_Supplies_L1_Upgrade | Space_Starbase_Increased_Supplies_L2_Upgrade | Space_Starbase_Increased_Supplies_L3_Upgrade | Space_Starbase_Increased_Supplies_L4_Upgrade | Space_Starbase_Increased_Supplies_L5_Upgrade".. 
 		"| Space_Asteroid_Mine_Increased_Supplies_L1_Upgrade | Space_Asteroid_Mine_Increased_Supplies_L2_Upgrade | Space_Asteroid_Mine_Increased_Supplies_L3_Upgrade | Space_Asteroid_Mine_Increased_Supplies_L4_Upgrade | Space_Asteroid_Mine_Increased_Supplies_L5_Upgrade = 0,10"
-			
+		
+		,"Space_Starbase_Increased_Defence_L1_Upgrade | Space_Starbase_Increased_Defence_L2_Upgrade | Space_Starbase_Increased_Shield_L1_Upgrade | Space_Starbase_Increased_Shield_L2_Upgrade | Space_Secondary_Increased_Health_L1_Upgrade".. 
+		"| Space_Secondary_Increased_Health_L2_Upgrade | Space_Asteroid_Mine_Increased_Health_L1_Upgrade | Space_Asteroid_Mine_Increased_Health_L2_Upgrade = 0,1"
+		
+		
 		,"NR_Mon_Cal_Shielding | NR_Fighter_Supremacy | IR_Superweapon_Desires | IR_Pondering_Giant | EOTH_Skirmish_Tactics | EOTH_Enhanced_Mobility | CSA_Corporate_Focus | CSA_Cutting_Corners | Republic_PDF_Fleets | Republic_Secret_Fleets | Republic_Ace_Cloning_Program".. 
-		"| PA_Corporate_Allies | PA_Isolationism | Zsinj_Friends_In_Low_Places | Zsinj_Warlordism | Malrood_The_Crimson_Fleet | Malrood_Constant_Raids | Eriadu_Experimental_focus | Eriadu_Reckless | CIS_Secret_Hyperspace_Route | CIS_Design_Trade_Offs = 0,1"
+		"| PA_Corporate_Allies | PA_Isolationism | Zsinj_Friends_In_Low_Places | Zsinj_Warlordism | Malrood_The_Crimson_Fleet | Malrood_Constant_Raids | Eriadu_Experimental_focus | Eriadu_Reckless | CIS_Secret_Hyperspace_Route | CIS_Design_Trade_Offs | Hutt_Cartels_Profit_motive | Hutt_Cartels_Bootana_Hutta_Reinforcement = 0,5"
 		
 	}
 	}

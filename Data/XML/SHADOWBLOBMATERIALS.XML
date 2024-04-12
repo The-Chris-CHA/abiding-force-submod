@@ -206,6 +206,12 @@ Format:
         <Shader_Name>BlobStencilMasked.fx</Shader_Name>
     </Material>
 	
+	<Material name="Selection_Hutts">
+        <Texture_Name>i_selection_cutout.tga</Texture_Name>
+        <Texture_Name_2>i_selection_Hutts.tga</Texture_Name_2>
+        <Shader_Name>BlobStencilMasked.fx</Shader_Name>
+    </Material>
+	
 		<Material name="Selection_Maldrood">
         <Texture_Name>i_selection_cutout.tga</Texture_Name>
         <Texture_Name_2>i_selection_Maldrood.tga</Texture_Name_2>
@@ -259,6 +265,25 @@ Format:
         <Texture_Name_2>i_selection_Republic.tga</Texture_Name_2>
         <Shader_Name>BlobStencilMasked.fx</Shader_Name>
     </Material>
+	
+	<Material name="Selection_Sith">
+        <Texture_Name>i_selection_cutout.tga</Texture_Name>
+        <Texture_Name_2>i_selection_sith.tga</Texture_Name_2>
+        <Shader_Name>BlobStencilMasked.fx</Shader_Name>
+    </Material>
+	
+	<Material name="Selection_Mandalorians">
+        <Texture_Name>i_selection_cutout.tga</Texture_Name>
+        <Texture_Name_2>i_selection_mandalorians.tga</Texture_Name_2>
+        <Shader_Name>BlobStencilMasked.fx</Shader_Name>
+    </Material>
+	
+		<Material name="Selection_Old_Republic">
+        <Texture_Name>i_selection_cutout.tga</Texture_Name>
+        <Texture_Name_2>i_selection_republic.tga</Texture_Name_2>
+        <Shader_Name>BlobStencilMasked.fx</Shader_Name>
+    </Material>
+	
 	
 	<Material name="Selection_Garrison_Land">
 		<Texture_Name>i_selection_cutout.tga</Texture_Name>
@@ -375,6 +400,11 @@ Format:
         <Render_Mode>ALPHA</Render_Mode>
     </Material>
 	
+    <Material name="Highlight_Hutt_Hero">
+        <Texture_Name>i_highlight_hutt_hero.tga</Texture_Name>
+        <Render_Mode>ALPHA</Render_Mode>
+    </Material>
+	
     <Material name="Sensor_Jamming_Blob">
         <Texture_Name>i_circle00.tga</Texture_Name>
         <Render_Mode>ALPHA</Render_Mode>
@@ -436,6 +466,29 @@ Format:
 	<Material name="Highlight_Infantry_Special">
         <Texture_Name>I_highlight_special.tga</Texture_Name>
         <Render_Mode>ALPHA</Render_Mode>
+    </Material>
+	
+	<Material name="Reinforcement_No_Blob">
+		<Texture_Name>Reinforcement_No_Blob.tga</Texture_Name>
+		<Render_Mode>ALPHA</Render_Mode>
+	</Material>
+
+	<Material name="Reinforcement_GW_01">
+         <Texture_Name>i_selection_cutout_2.tga</Texture_Name>
+        <Texture_Name_2>I_CIRCLE_GW_01.tga</Texture_Name_2>
+        <Shader_Name>BlobStencilMasked.fx</Shader_Name>
+    </Material>
+
+    <Material name="Reinforcement_GW_ECO">
+         <Texture_Name>i_selection_cutout_2.tga</Texture_Name>
+        <Texture_Name_2>I_CIRCLE_GW_ECO.tga</Texture_Name_2>
+        <Shader_Name>BlobStencilMasked.fx</Shader_Name>
+    </Material>
+
+    <Material name="Reinforcement_GW_BUNKER">
+         <Texture_Name>i_selection_cutout_2.tga</Texture_Name>
+        <Texture_Name_2>I_CIRCLE_GW_BUNKER.tga</Texture_Name_2>
+        <Shader_Name>BlobStencilMasked.fx</Shader_Name>
     </Material>
 
 </Shadow_Blob_Materials>

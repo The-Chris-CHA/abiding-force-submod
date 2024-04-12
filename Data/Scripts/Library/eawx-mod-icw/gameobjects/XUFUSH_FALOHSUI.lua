@@ -12,7 +12,7 @@ return {
 		["SKIRMISH_ZSINJ_CR90"] = {
 			DEFAULT = {Initial = 2, Reserve = 0}
 		},
-		["NEUTRON_STAR"] = {
+		["TEMPLATE_NEUTRON_STAR"] = {
 			DEFAULT = {Initial = 1, Reserve = 0}
 		}
 	},

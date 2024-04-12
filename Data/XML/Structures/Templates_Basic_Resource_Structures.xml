@@ -109,6 +109,7 @@
 		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
 		TEXT_TOOLTIP_RESOURCE_GARRISON
 		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
+		TEXT_TOOLTIP_INFRASTRUCTURE_LOCAL_INFRASTRUCTURE
 		TEXT_TOOLTIP_INFLUENCE_LOCAL_INFRASTRUCTURE
 		TEXT_TOOLTIP_UPKEEP_INFLUENCE
 		</Encyclopedia_Text>
@@ -248,9 +249,9 @@
 
 		<Build_Cost_Credits>2000</Build_Cost_Credits>
 		<Build_Time_Seconds>60</Build_Time_Seconds>
-		<Required_Planets> Aargau, Aeten, Alaris, Alzoc, Ambria, Ando_Prime, Arkania, Bandomeer, Bassadro, Begeren, Bespin, Bpfassh, Celwis, Danuta, Dathomir, Eadu, Ebaq, Elom, Empress_Teta, EolSha, Galantos, Gannaria, Garos, Iol, Jabiim, Jakku, Jazbina, Jebble, Jedha, Kessel, Kirima, Lothal, Makem_Te, Malastare, Moorja, Mrlsst, Mustafar, Muunilinst, Mygeeto, Naboo, Nam_Chorios, Nkllon, Obredaan, Ojom, Omonoth, Ord_Pardron, Poln_Major, Polus, Prakith, Quethold, Ralltiir, Rendili, Rhommamool, Rishi, Ryloth, Sarapin, Sernpidal, Sleheyron, Sunrise, Taloraan, Troukree, Umbara, Vanquo, Veroleem, Woteba </Required_Planets>
-		<!-- Minerals/etc: Aargau, Aeten, Alaris, Alzoc, Ambria, Ando_Prime, Arkania, Bandomeer, Bassadro, Begeren, Celwis, Danuta, Dathomir, Eadu, Ebaq, Elom, Empress_Teta, Galantos, Garos, Iol, Jabiim, Jakku, Jazbina, Jebble, Jedha, Kirima, Lothal, Makem_Te, Moorja, Mrlsst, Mustafar, Muunilinst, Mygeeto, Nam_Chorios, Nkllon, Obredaan, Ojom, Omonoth, Ord_Pardron, Poln_Major, Polus, Prakith, Quethold, Ralltiir, Rhommamool, Rishi, Sernpidal, Sunrise, Troukree, Umbara, Vanquo, Veroleem, Woteba -->
-		<!-- Spice: Gannaria, Kessel, Makem_Te, Ryloth, Veroleem -->
+		<Required_Planets> Aargau, Aeten, Alaris, Allyuen, Alzoc, Ambria, Ando_Prime, Arkania, Bandomeer, Bassadro, Begeren, Bespin, Bpfassh, Burnin_Konn, Celwis, Danuta, Dathomir, Eadu, Ebaq, Elom, Empress_Teta, EolSha, Galantos, Gannaria, Garos, Iol, Jabiim, Jakku, Jazbina, Jebble, Jedha, Kessel, Kirima, Lothal, Makeb, Makem_Te, Malastare, Mataou, Mon_Gazza, Moorja, Mrlsst, Mustafar, Muunilinst, Mygeeto, Naboo, Nam_Chorios, Nkllon, Obredaan, Ojom, Omonoth, Ord_Pardron, Poln_Major, Polus, Prakith, Quethold, Ralltiir, Rendili, Rhommamool, Rishi, Roxuli, Ryloth, Sarapin, Sernpidal, Sleheyron, Sunrise, Taloraan, Troukree, Umbara, Vanquo, Veroleem, Woteba </Required_Planets>
+		<!-- Minerals/etc: Aargau, Aeten, Alaris, Allyuen, Alzoc, Ambria, Ando_Prime, Arkania, Bandomeer, Bassadro, Begeren, Burnin_Konn, Celwis, Danuta, Dathomir, Eadu, Ebaq, Elom, Empress_Teta, Galantos, Garos, Iol, Jabiim, Jakku, Jazbina, Jebble, Jedha, Kirima, Lothal, Makeb, Makem_Te, Mataou, Moorja, Mrlsst, Mustafar, Muunilinst, Mygeeto, Nam_Chorios, Nkllon, Obredaan, Ojom, Omonoth, Ord_Pardron, Poln_Major, Polus, Prakith, Quethold, Ralltiir, Rhommamool, Rishi, Roxuli, Sernpidal, Sunrise, Troukree, Umbara, Vanquo, Veroleem, Woteba -->
+		<!-- Spice: Gannaria, Kessel, Makem_Te, Mon_Gazza, Ryloth, Veroleem -->
 		<!-- Tibanna/fuel: Bespin, Bpfassh, EolSha, Malastare, Naboo, Rendili, Sarapin, Sleheyron, Taloraan -->
 		<Land_Model_Name> NB_CMC22Mining.ALO </Land_Model_Name>
 		<Scale_Factor>0.75</Scale_Factor>
@@ -305,6 +306,44 @@
 		</Abilities>
 	</SpecialStructure>
 	
+	<SpecialStructure Name="Template_Cantina">
+		<Variant_Of_Existing_Type>Template_Galactic_Company</Variant_Of_Existing_Type>
+		
+		<Text_ID>TEXT_GROUND_CANTINA_SMUGGLERS</Text_ID>
+		
+		<Encyclopedia_Text>
+		TEXT_ENCYCLOPEDIA_CANTINA_SMUGGLERS
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
+		TEXT_TOOLTIP_TAX_FACILITY_HEALTH
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_TOOLTIP_CANTINA_GARRISON
+		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
+		TEXT_TOOLTIP_BUILDLIMIT_SMUGGLERS_DEPLOY
+		TEXT_TOOLTIP_SEPARATOR_LIMITS_BLOCK
+		TEXT_TOOLTIP_BUILDLIMIT_TAXES
+		</Encyclopedia_Text>
+		
+		<Affiliation/>
+		
+		<Build_Cost_Credits>1500</Build_Cost_Credits>
+		<Build_Time_Seconds>60</Build_Time_Seconds>
+		<Required_Planets></Required_Planets>
+		
+		<Required_Special_Structures/>
+		
+		<Icon_Name>i_button_cantina.tga</Icon_Name>
+		<Land_Model_Name> W_CANTINATAT.alo </Land_Model_Name>
+		<Scale_Factor>0.60</Scale_Factor>
+		
+		<Tactical_Health>700</Tactical_Health>
+		
+		<Obstacle_Proxy_Type> Ground_Mining_Facility_Build_Pad </Obstacle_Proxy_Type>
+		
+		<Build_Max_Instances_Per_Planet> 2 </Build_Max_Instances_Per_Planet>
+		<Build_Limit_Current_Per_Player> -1 </Build_Limit_Current_Per_Player>
+	
+	</SpecialStructure>
+	
 	<SpecialStructure Name="Template_Labour_Camp">
 		
 		<Variant_Of_Existing_Type>Template_Galactic_Company</Variant_Of_Existing_Type>
@@ -346,6 +385,13 @@
 				<Galaxy_Wide> No </Galaxy_Wide>
 			</Reduce_Production_Time_Ability>
 			
+			<Reduce_Production_Price_Ability Name="Forced_Labour_Price">
+				<Applicable_Unit_Categories>All</Applicable_Unit_Categories>
+				<Applicable_Unit_Types />
+				<Price_Reduction_Percentage>0.01</Price_Reduction_Percentage>
+				<Stacking_Category>0</Stacking_Category>
+			</Reduce_Production_Price_Ability>
+			
 			<Planet_Income_Bonus_Ability Name="Maintenance_Cost">
 				<Specific_Mod_Source_Text>TEXT_ECONOMY_PRISON_UPKEEP</Specific_Mod_Source_Text>
 				<!-- 3% bonus to base planetary income -->
@@ -372,6 +418,7 @@
 		TEXT_TOOLTIP_TRADESTATION_SQUADRON
 		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
 		TEXT_TOOLTIP_INCOME_TRADE_STATION
+		TEXT_TOOLTIP_BONUS_FIGHTER_POOL
 		TEXT_TOOLTIP_SEPARATOR_LIMITS_BLOCK
 		TEXT_TOOLTIP_BUILDLIMIT_TRADE_STATION
 		</Encyclopedia_Text>
@@ -405,7 +452,6 @@
 		<Build_Tab_Space_Units>Yes</Build_Tab_Space_Units>
 		<Base_Position>Orbital</Base_Position>
 		<Tech_Level>0</Tech_Level>
-		<Required_Timeline>0</Required_Timeline>
 		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
 		<Required_Star_Base_Level>1</Required_Star_Base_Level>
 		<Required_Special_Structures>AI_Category_Dummy | Structure_Category_Dummy</Required_Special_Structures>
@@ -501,7 +547,6 @@
 		<Base_Position>In_Base</Base_Position>
 		<Shield_Points>0</Shield_Points>
 		<Tech_Level>99</Tech_Level>
-		<Required_Timeline>0</Required_Timeline>
 		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
 		<Required_Star_Base_Level>6</Required_Star_Base_Level>
 		<Required_Special_Structures>Placeholder_Category_Dummy</Required_Special_Structures>
@@ -592,7 +637,6 @@
 		<Base_Position>In_Base</Base_Position>
 		<Shield_Points>0</Shield_Points>
 		<Tech_Level>99</Tech_Level>
-		<Required_Timeline>0</Required_Timeline>
 		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
 		<Required_Star_Base_Level>6</Required_Star_Base_Level>
 		<Required_Special_Structures>Placeholder_Category_Dummy</Required_Special_Structures>
@@ -676,6 +720,7 @@
 		TEXT_TOOLTIP_COLONY_ONE_SQUADRON
 		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
 		TEXT_TOOLTIP_POPULATION_COLONY_ONE
+		TEXT_TOOLTIP_BONUS_FIGHTER_POOL
 		</Encyclopedia_Text>
 		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE_SECONDARY_ECONOMIC</Encyclopedia_Unit_Class>
 		
@@ -706,7 +751,6 @@
 		<Build_Tab_Space_Units>Yes</Build_Tab_Space_Units>
 		<Base_Position>Orbital</Base_Position>
 		<Tech_Level>0</Tech_Level>
-		<Required_Timeline>0</Required_Timeline>
 		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
 		<Required_Star_Base_Level>1</Required_Star_Base_Level>
 		<Required_Special_Structures>AI_Category_Dummy | Structure_Category_Dummy</Required_Special_Structures>
@@ -797,6 +841,7 @@
 		TEXT_TOOLTIP_COLONY_TWO_SQUADRON
 		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
 		TEXT_TOOLTIP_POPULATION_COLONY_TWO
+		TEXT_TOOLTIP_BONUS_FIGHTER_POOL
 		</Encyclopedia_Text>
 		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE_SECONDARY_ECONOMIC</Encyclopedia_Unit_Class>
 		
@@ -869,7 +914,6 @@
 		<Base_Position>In_Base</Base_Position>
 		<Shield_Points>0</Shield_Points>
 		<Tech_Level>99</Tech_Level>
-		<Required_Timeline>0</Required_Timeline>
 		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
 		<Required_Star_Base_Level>6</Required_Star_Base_Level>
 		<Required_Special_Structures>Placeholder_Category_Dummy</Required_Special_Structures>
@@ -937,7 +981,6 @@
 		<Base_Position>In_Base</Base_Position>
 		<Shield_Points>0</Shield_Points>
 		<Tech_Level>99</Tech_Level>
-		<Required_Timeline>0</Required_Timeline>
 		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
 		<Required_Star_Base_Level>6</Required_Star_Base_Level>
 		<Required_Special_Structures>Placeholder_Category_Dummy</Required_Special_Structures>
@@ -976,15 +1019,6 @@
 				<Stacking_Category>95</Stacking_Category>
 			</Reduce_Production_Price_Ability>
 
-			<Reduce_Production_Time_Ability Name="Infrastructure_Adjust_Time">
-				<Unit_Strength_Category/>
-				<Applicable_Unit_Categories>All</Applicable_Unit_Categories>
-				<Applicable_Unit_Types />
-				<Excluded_Unit_Types> Local_Infrastructure</Excluded_Unit_Types>
-				<Time_Reduction_Percentage>-0.50</Time_Reduction_Percentage>
-				<Stacking_Category>95</Stacking_Category>
-				<Galaxy_Wide> No </Galaxy_Wide>
-			</Reduce_Production_Time_Ability>
 		</Abilities>
 	</SpecialStructure>
 	
@@ -1007,7 +1041,6 @@
 		<Base_Position>In_Base</Base_Position>
 		<Shield_Points>0</Shield_Points>
 		<Tech_Level>99</Tech_Level>
-		<Required_Timeline>0</Required_Timeline>
 		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
 		<Required_Star_Base_Level>6</Required_Star_Base_Level>
 		<Required_Special_Structures>Placeholder_Category_Dummy</Required_Special_Structures>
@@ -1051,7 +1084,7 @@
 				<Applicable_Unit_Categories>All</Applicable_Unit_Categories>
 				<Applicable_Unit_Types />
 				<Excluded_Unit_Types> Local_Infrastructure</Excluded_Unit_Types>
-				<Time_Reduction_Percentage>-2.00</Time_Reduction_Percentage>
+				<Time_Reduction_Percentage>-1.00</Time_Reduction_Percentage>
 				<Stacking_Category>95</Stacking_Category>
 				<Galaxy_Wide> No </Galaxy_Wide>
 			</Reduce_Production_Time_Ability>

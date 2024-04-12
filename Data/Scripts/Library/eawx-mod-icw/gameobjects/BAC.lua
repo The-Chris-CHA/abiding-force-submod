@@ -8,7 +8,8 @@ return {
 			HAPES_CONSORTIUM = {Initial = 1, Reserve = 3},
 			HOSTILE = {Initial = 1, Reserve = 3, TechLevel = LessThan(4)},
 			REBEL = {Initial = 1, Reserve = 3, TechLevel = LessThan(4), ResearchType = "~CoS_Shesh"},
-			INDEPENDENT_FORCES = {Initial = 1, Reserve = 3}
+			INDEPENDENT_FORCES = {Initial = 1, Reserve = 3},
+			HUTT_CARTELS = {Initial = 1, Reserve = 3}
 		},
 		["DEFENDER_STARFIGHTER_SQUADRON_HALF"] = {
 			HOSTILE = {Initial = 1, Reserve = 3, TechLevel = GreaterOrEqualTo(4)},
@@ -28,6 +29,9 @@ return {
 		},
 		["DREXL_SQUADRON_HALF"] = {
 			REBEL = {Initial = 1, Reserve = 3, ResearchType = "CoS_Tevv"}
+		},
+		["DUNELIZARD_FIGHTER_SQUADRON_HALF"] = {
+			HUTT_CARTELS = {Initial = 1, Reserve = 3}
 		},
 	},
 	Scripts = {"multilayer", "fighter-spawn", "single-unit-retreat"}

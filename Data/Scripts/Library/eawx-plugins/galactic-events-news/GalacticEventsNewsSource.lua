@@ -10,6 +10,7 @@ GalacticEventsNewsSource = class(Observable)
 function GalacticEventsNewsSource:new(
     planet_owner_changed_event,
     galactic_hero_killed_event,
+    galactic_ssd_killed_event,
     incoming_fleet_event,
     blockade_attrition_unit_killed,
     influence_unrest_growing,
@@ -20,6 +21,7 @@ function GalacticEventsNewsSource:new(
     victory_handler_shipyards_available)
     planet_owner_changed_event:attach_listener(self.on_planet_owner_changed, self)
     galactic_hero_killed_event:attach_listener(self.on_galactic_hero_killed, self)
+    galactic_ssd_killed_event:attach_listener(self.on_galactic_ssd_killed, self)
     incoming_fleet_event:attach_listener(self.on_incoming_fleet, self)
     blockade_attrition_unit_killed:attach_listener(self.on_blockade_unit_killed, self)
     influence_unrest_growing:attach_listener(self.on_unrest_growing, self)
@@ -49,6 +51,19 @@ function GalacticEventsNewsSource:on_galactic_hero_killed(hero_name, owner)
     self:notify {
         headline = "TEXT_NEWS_HERO_KILLED_GALACTIC",
         var = Find_Object_Type(hero_name),
+        color = {r = 255, g = 0, b = 0}
+    }
+end
+
+---@param hero_name string
+function GalacticEventsNewsSource:on_galactic_ssd_killed(ssd_name, owner)
+    --Logger:trace("entering GalacticEventsNewsSource:on_galactic_ssd_killed")
+    local ssd_name = Find_Object_Type(ssd_name).Get_Name()
+    local ssd_death_text = Find_Player(owner).Get_Name() .. "'s %s has been destroyed!"
+
+    self:notify {
+        headline = ssd_death_text,
+        var = ssd_name,
         color = {r = 255, g = 0, b = 0}
     }
 end
@@ -103,7 +118,7 @@ function GalacticEventsNewsSource:on_revolt_occured(planet)
 end
 
 function GalacticEventsNewsSource:on_structure_swap_warning(planet, new_structure, structure_type)
-    --Logger:trace("entering GalacticEventsNewsSource:on_structure_swapped")
+    --Logger:trace("entering GalacticEventsNewsSource:on_structure_swap_warning")
     self:notify {
         headline = "Queued "..structure_type.." category station will replace an existing %s on ".. tostring(planet:get_readable_name()),
         duration = 20,

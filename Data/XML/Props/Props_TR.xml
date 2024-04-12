@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <Props_TR>
 
-	<!-- Need to check lambda scale -->
+
 	<Props_TR Name="PropOnly_Landed_Empire_Shuttle">
 		<Land_Model_Name>EV_LAMBDASHUTTLE.alo</Land_Model_Name>
 		<!-- Model on vanilla scale for 20m figure -->
@@ -13,11 +13,10 @@
 		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>	
 	</Props_TR>
 	
-	<!-- Should probably be Y-4 or something when done -->
+
 	<Props_TR Name="PropOnly_Landed_Empire_Shuttle_Big">
-		<Land_Model_Name>EV_LAMBDASHUTTLE.alo</Land_Model_Name>
-		<!-- Model on vanilla scale for 30.1m figure  -->
-		<Scale_Factor>1.81</Scale_Factor>
+		<Land_Model_Name>Delta-class_JV7_Land.alo</Land_Model_Name>
+		<Scale_Factor>1.2</Scale_Factor>
 		<Behavior>IDLE</Behavior>
 		<Loop_Idle_Anim_00>IDLE_00</Loop_Idle_Anim_00>
 		<Exclude_From_Distance_Fade>Yes</Exclude_From_Distance_Fade>
@@ -72,6 +71,18 @@
 		<Scale_Factor>6.0</Scale_Factor>
 		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
 		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Props_TR>
+
+	<Props_TR Name="TR_SHIP_Consular_Variant">
+		<Land_Model_Name>Consular-class_c70.ALO</Land_Model_Name>
+		<Scale_Factor>6.0</Scale_Factor>
+		<Exclude_From_Distance_Fade>Yes</Exclude_From_Distance_Fade>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<HardPoints>
+			Generic_Prop_Ion_Proxy_Small
+		</HardPoints>
+		<SFXEvent_Hardpoint_Destroyed>HARD_POINT_DUMMY_ART, null</SFXEvent_Hardpoint_Destroyed>
 	</Props_TR>
 	
 	<Props_TR Name="UMP_DEADATST1">

@@ -27,56 +27,36 @@ require("PGSpawnUnits")
 require("deepcore/crossplot/crossplot")
 require("deepcore/std/class")
 StoryUtil = require("eawx-util/StoryUtil")
+require("SetFighterResearch")
 
 function Definitions()
 
   DebugMessage("%s -- In Definitions", tostring(Script))
 
   StoryModeEvents =
-  {
-    Universal_Story_Start = Find_Faction,
-	Delayed_Initialize = Initialize
-  }
-
+	{
+		--Generic
+		Delayed_Initialize = Delayed_Initialize_Lua,
+	}
+	
+	p_newrep = Find_Player("Rebel")
+	p_empire = Find_Player("Empire")
 end
 
-function Find_Faction(message)
-  if message == OnEnter then
-
-	local p_newrep = Find_Player("Rebel")
-	local p_empire = Find_Player("Empire")
-	local p_eoth = Find_Player("EmpireoftheHand")
-	local p_eriadu = Find_Player("Eriadu_Authority")
-	local p_pentastar = Find_Player("Pentastar")
-	local p_zsinj = Find_Player("Zsinj_Empire")
-	local p_maldrood = Find_Player("Greater_Maldrood")
-
-	if p_newrep.Is_Human() then
-		Story_Event("ENABLE_BRANCH_NEWREP_FLAG")
-	elseif p_empire.Is_Human() then
-		Story_Event("ENABLE_BRANCH_EMPIRE_FLAG")
-	elseif p_eoth.Is_Human() then
-		Story_Event("ENABLE_BRANCH_EOTH_FLAG")
-	elseif p_eriadu.Is_Human() then
-		Story_Event("ENABLE_BRANCH_ERIADU_FLAG")
-	elseif p_pentastar.Is_Human() then
-		Story_Event("ENABLE_BRANCH_PENTASTAR_FLAG")
-	elseif p_zsinj.Is_Human() then
-		Story_Event("ENABLE_BRANCH_ZSINJ_FLAG")
-	elseif p_maldrood.Is_Human() then
-		Story_Event("ENABLE_BRANCH_TERADOC_FLAG")
-	end
-  end
-end
-
-function Initialize(message)
+function Delayed_Initialize_Lua(message)
     if message == OnEnter then
-		local p_newrep = Find_Player("Rebel")
 		crossplot:galactic()
-		if p_newrep.Is_Human() then
-			crossplot:publish("NR_ADMIRAL_DECREMENT", 3, 1)
-			crossplot:publish("NR_ADMIRAL_LOCKIN", {"Ackbar"}, 1)
-		end
+		crossplot:publish("INITIALIZE_AI", "empty")
+		crossplot:publish("NR_ADMIRAL_DECREMENT", 3, 1)
+		crossplot:publish("NR_ADMIRAL_LOCKIN", {"Ackbar"}, 1)
+		
+		crossplot:publish("NR_FILTER_REMOVE", {"SalmY_Location_Set"}, 2)
+		Set_Fighter_Hero("SALM_Y-WING_SQUADRON", "HOME_ONE")
+		
+		p_empire.Lock_Tech(Find_Object_Type("TURR_PHENNIR_TIE_INTERCEPTOR_LOCATION_SET"))
+		Clear_Fighter_Hero("VESSERY_STRANGER_SQUADRON")
+		Set_Fighter_Hero("ERISI_DLARIT_ELITE_SQUADRON", "ISARD_LUSANKYA")
+		p_empire.Unlock_Tech(Find_Object_Type("ERISI_DLARIT_LOCATION_SET"))
 	else
 		crossplot:update()
     end

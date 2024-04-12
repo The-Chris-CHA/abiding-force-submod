@@ -59,6 +59,7 @@ function Definitions()
 		,"MinimumTotalSize = 20"				
 		,"Corvette | Frigate | Capital = 100%"
 		,"AntiBomber = 0, 50"
+		,"Gunship = 0,10"
 		,"SuperCapital = 0, 1"
 		,"SpaceHero = 0, 2"
 	},

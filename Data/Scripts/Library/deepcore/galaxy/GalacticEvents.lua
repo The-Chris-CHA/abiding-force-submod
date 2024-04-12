@@ -91,6 +91,28 @@ function GalacticHeroKilledEvent:galactic_hero_killed(hero_name, owner_name, kil
     self:notify(hero_name, owner_name, killer_name)
 end
 
+---@class GalacticHeroNeutralizedEvent : Observable
+GalacticHeroNeutralizedEvent = class(Observable)
+
+function GalacticHeroNeutralizedEvent:new()
+    crossplot:subscribe("GALACTIC_HERO_NEUTRALIZED", self.galactic_hero_neutralized, self)
+end
+
+function GalacticHeroNeutralizedEvent:galactic_hero_neutralized(hero_name, killer_name)
+    self:notify(hero_name, killer_name)
+end
+
+---@class GalacticSSDKilledEvent : Observable
+GalacticSSDKilledEvent = class(Observable)
+
+function GalacticSSDKilledEvent:new()
+    crossplot:subscribe("GALACTIC_SSD_KILLED", self.galactic_ssd_killed, self)
+end
+
+function GalacticSSDKilledEvent:galactic_ssd_killed(ssd_name, owner_name, killer_name)
+    self:notify(ssd_name, owner_name, killer_name)
+end
+
 ---@class TacticalBattleEndedEvent : Observable
 TacticalBattleEndedEvent = class(Observable)
 

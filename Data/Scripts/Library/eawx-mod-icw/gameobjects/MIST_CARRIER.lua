@@ -9,6 +9,9 @@ return {
 		["REBEL_X-WING_SQUADRON_DOUBLE"] = {
 			REBEL = {Initial = 1, Reserve = 2}
 		},
+		["DUNELIZARD_FIGHTER_SQUADRON"] = {
+			HUTT_CARTELS = {Initial = 1, Reserve = 2}
+		},
 		["TIE_FIGHTER_SQUADRON_DOUBLE"] = {
 			IMPERIAL = {Initial = 1, Reserve = 2}
 		},
@@ -22,6 +25,9 @@ return {
 		},
 		["Y-WING_SQUADRON_DOUBLE"] = {
 			REBEL = {Initial = 1, Reserve = 2}
+		},
+		["KIMOGILA_SQUADRON_DOUBLE"] = {
+			HUTT_CARTELS = {Initial = 1, Reserve = 2}
 		}
 	},
 	Scripts = {"multilayer", "fighter-spawn"}

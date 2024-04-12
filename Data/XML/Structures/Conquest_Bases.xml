@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <Conquest_Bases>
 
-	<GroundBuildable Name="Field_Base_Pad">
+	<Tactical_Capturable Name="Field_Base_Pad">
 		<GUI_Bounds_Scale>0.3</GUI_Bounds_Scale>
 
 		<Behavior>DUMMY_GROUND_STRUCTURE</Behavior>
@@ -53,6 +53,9 @@
 				UC_Hapes_Field_Galney_Base,
 				UC_Hapes_Field_Maluri_Base,
 				UC_Hapes_Field_Requud_Base,
+			Hutt_Cartels,
+				UC_Hutt_Cartels_Field_Military_Base,
+				UC_Hutt_Cartels_Field_Support_Base,
 		</Tactical_Buildable_Objects_Campaign>
 		
 		<Tactical_Buildable_Objects_Multiplayer> 
@@ -94,6 +97,9 @@
 				UC_Hapes_Field_Galney_Base,
 				UC_Hapes_Field_Maluri_Base,
 				UC_Hapes_Field_Requud_Base,
+			Hutt_Cartels,
+				UC_Hutt_Cartels_Field_Military_Base,
+				UC_Hutt_Cartels_Field_Support_Base,
 		</Tactical_Buildable_Objects_Multiplayer>
 		
 		<Land_Model_Name>W_BuildBaseFOC.alo</Land_Model_Name>
@@ -114,7 +120,7 @@
 		<Shield_Points> 0 </Shield_Points>
 		<Tactical_Health> 10000 </Tactical_Health>
 		
-		<Affiliation>Neutral, Rebel, Empire, Zsinj_Empire, EmpireoftheHand, Pentastar, Greater_Maldrood, Warlords, Eriadu_Authority, Corporate_Sector, Hapes_Consortium</Affiliation>
+		<Affiliation>Neutral, Rebel, Empire, Hutt_Cartels, Zsinj_Empire, EmpireoftheHand, Pentastar, Greater_Maldrood, Warlords, Eriadu_Authority, Corporate_Sector, Hapes_Consortium</Affiliation>
 		
 		<Hides_When_Built_On>True</Hides_When_Built_On>
 		<Base_Level_Available> 1 </Base_Level_Available>
@@ -142,7 +148,7 @@
 		<Land_Damage_Alternates>3</Land_Damage_Alternates>
 		<Land_Damage_SFX>null,null,null,null</Land_Damage_SFX>
 		
-	</GroundBuildable>
+	</Tactical_Capturable>
 	
 	<!-- IR Military FB  -->
 	<GroundBuildable Name="UC_Empire_Field_Military_Base">
@@ -207,6 +213,9 @@
 
 		<Last_State_Visible_Under_FOW> True </Last_State_Visible_Under_FOW>
 		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>		
+
+		<Override_Bounty_SP>0</Override_Bounty_SP>
+		<Override_Bounty_MP>0</Override_Bounty_MP>
 	</GroundBuildable>
 	
 	<SpecialStructure Name="Empire_Field_Military_Base">
@@ -557,9 +566,9 @@
 		<Scale_Factor>0.1</Scale_Factor>
 
 		<Starting_Spawned_Units_Tech_0>Imperial_Guardian_Protector_Squad_Deployed, 2</Starting_Spawned_Units_Tech_0>
-		<Starting_Spawned_Units_Tech_0>Enforcer_Trooper_Squad_Deployed, 3</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Pentastar_Enforcer_Trooper_Squad_Deployed, 3</Starting_Spawned_Units_Tech_0>
         <Reserve_Spawned_Units_Tech_0>Imperial_Guardian_Protector_Squad_Deployed, 10</Reserve_Spawned_Units_Tech_0>
-		<Reserve_Spawned_Units_Tech_0>Enforcer_Trooper_Squad_Deployed, 10</Reserve_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Pentastar_Enforcer_Trooper_Squad_Deployed, 10</Reserve_Spawned_Units_Tech_0>
         <Spawned_Squadron_Delay_Seconds>30.0</Spawned_Squadron_Delay_Seconds>
 
 	</Marker>
@@ -792,6 +801,76 @@
 
 	</Marker>
 	
+	<!-- Hutt Military FB  -->
+	<GroundBuildable Name="UC_Hutt_Cartels_Field_Military_Base">
+		<Variant_Of_Existing_Type>UC_Empire_Field_Military_Base</Variant_Of_Existing_Type>
+		<Encyclopedia_Text> 
+			TEXT_TOOLTIP_FIELD_BASE_MILITARY
+			TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+			TEXT_TOOLTIP_FIELD_BASE_MILITARY_HUTT_HEALTH
+			TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+			TEXT_TOOLTIP_FIELD_BASE_MILITARY_HUTT1
+			TEXT_TOOLTIP_FIELD_BASE_MILITARY_HUTT2
+		</Encyclopedia_Text>
+		<Tactical_Buildable_Constructed> Hutt_Cartels_Field_Military_Base </Tactical_Buildable_Constructed>
+		<Affiliation>Hutt_Cartels</Affiliation>
+	</GroundBuildable>
+
+	<SpecialStructure Name="Hutt_Cartels_Field_Military_Base">
+		<Variant_Of_Existing_Type>Garrison_Bunker_Template</Variant_Of_Existing_Type>
+		<Icon_Name>I_BUTTON_EV_BUNKER.tga</Icon_Name>
+		
+		<Text_ID>TEXT_FIELD_BASE_MILITARY</Text_ID>
+		<Encyclopedia_Text>
+			TEXT_TOOLTIP_FIELD_BASE_MILITARY
+			TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+			TEXT_TOOLTIP_FIELD_BASE_MILITARY_HUTT_HEALTH
+			TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+			TEXT_TOOLTIP_FIELD_BASE_MILITARY_HUTT1
+			TEXT_TOOLTIP_FIELD_BASE_MILITARY_HUTT2
+		</Encyclopedia_Text>
+		<Land_Model_Name> EB_TestBunker.alo </Land_Model_Name>
+		<Affiliation>Hutt_Cartels</Affiliation>
+		<Scale_Factor>1.0</Scale_Factor>
+        <Garrison_Radius>10</Garrison_Radius>
+		<Num_Garrison_Slots>0</Num_Garrison_Slots>
+		<Property_Flags>TacticalStructure </Property_Flags>
+		<Garrison_Category/>
+
+		<LandBehavior> SPAWN_SQUADRON, REVEAL, SELECTABLE, HIDE_WHEN_FOGGED, DAMAGE_TRACKING, EARTHQUAKE_TARGET, UNIT_AI</LandBehavior>
+
+		<Starting_Spawned_Units_Tech_0>Hutt_Cartels_Field_Military, 1</Starting_Spawned_Units_Tech_0>
+        <!--<Starting_Spawned_Units_Tech_0>Field_Pad_Offense, 1</Starting_Spawned_Units_Tech_0>-->
+
+		<Spawned_Squadron_Delay_Seconds>5</Spawned_Squadron_Delay_Seconds>
+		<Spawned_Squadron_Location_Bones>B_GARRISON_03</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>40.0</Spawned_Squadron_Location_Flyout_Distances>
+		<Spawn_Garrison_On_Load>True</Spawn_Garrison_On_Load>
+
+
+
+	</SpecialStructure>
+
+	<Marker Name="Hutt_Cartels_Field_Military">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Galactic_Model_Name/>
+		<Space_Model_Name>W_LASER_INVISIBLE.ALO</Space_Model_Name>
+		<Land_Model_Name>W_LASER_INVISIBLE.ALO</Land_Model_Name>
+		<Behavior></Behavior>
+		<LandBehavior>SPAWN_SQUADRON</LandBehavior>
+		<Lua_Script>FieldBaseSpawner</Lua_Script>
+		<Is_Discardable>false</Is_Discardable>
+		<Affiliation>Neutral</Affiliation>
+		<Scale_Factor>0.1</Scale_Factor>
+		
+		<Starting_Spawned_Units_Tech_0>Hutt_Guard_Heavy_Team_Deployed, 3</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Hutt_Guard_Heavy_Team_Deployed, 10</Reserve_Spawned_Units_Tech_0>
+		
+		<Starting_Spawned_Units_Tech_0>Hutt_Armored_Squad_Deployed, 2</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Hutt_Armored_Squad_Deployed, 10</Reserve_Spawned_Units_Tech_0>
+        <Spawned_Squadron_Delay_Seconds>30.0</Spawned_Squadron_Delay_Seconds>
+
+	</Marker>
 
 	
 	<!-- IR Support FB  -->
@@ -1301,11 +1380,79 @@
 		<Affiliation>Neutral</Affiliation>
 		<Scale_Factor>0.1</Scale_Factor>
 
-        <Starting_Spawned_Units_Tech_0>Army_Special_Missions_Heavy_Team_Deployed, 1</Starting_Spawned_Units_Tech_0>
+        <Starting_Spawned_Units_Tech_0>Imperial_Army_Special_Missions_Heavy_Team_Deployed, 1</Starting_Spawned_Units_Tech_0>
 		<Starting_Spawned_Units_Tech_0>Imperial_Medic_Armytrooper_Squad, 2</Starting_Spawned_Units_Tech_0>
-		<Reserve_Spawned_Units_Tech_0>Army_Special_Missions_Heavy_Team_Deployed, 10</Reserve_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Imperial_Army_Special_Missions_Heavy_Team_Deployed, 10</Reserve_Spawned_Units_Tech_0>
 		<Reserve_Spawned_Units_Tech_0>Imperial_Medic_Armytrooper_Squad, 10</Reserve_Spawned_Units_Tech_0>
 
+        <Spawned_Squadron_Delay_Seconds>30.0</Spawned_Squadron_Delay_Seconds>
+
+	</Marker>
+	
+	<!-- Hutt Support FB  -->
+	<GroundBuildable Name="UC_Hutt_Cartels_Field_Support_Base">
+		<Variant_Of_Existing_Type>UC_Empire_Field_Support_Base</Variant_Of_Existing_Type>
+		<Encyclopedia_Text>
+			TEXT_TOOLTIP_FIELD_BASE_SUPPORT
+			TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+			TEXT_TOOLTIP_FIELD_BASE_SUPPORT_HUTT_HEALTH
+			TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+			TEXT_TOOLTIP_FIELD_BASE_SUPPORT_HUTT1
+			TEXT_TOOLTIP_FIELD_BASE_SUPPORT_HUTT2
+		</Encyclopedia_Text>
+		<Tactical_Buildable_Constructed> Hutt_Cartels_Field_Support_Base </Tactical_Buildable_Constructed>
+		<Affiliation>Hutt_Cartels</Affiliation>
+	</GroundBuildable>
+
+	<SpecialStructure Name="Hutt_Cartels_Field_Support_Base">
+		<Variant_Of_Existing_Type>Garrison_Bunker_Template</Variant_Of_Existing_Type>
+		<Icon_Name>I_BUTTON_EV_BUNKER.tga</Icon_Name>
+		<Text_ID>TEXT_FIELD_BASE_SUPPORT</Text_ID>
+		<Encyclopedia_Text>
+			TEXT_TOOLTIP_FIELD_BASE_SUPPORT
+			TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+			TEXT_TOOLTIP_FIELD_BASE_SUPPORT_HUTT_HEALTH
+			TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+			TEXT_TOOLTIP_FIELD_BASE_SUPPORT_HUTT1
+			TEXT_TOOLTIP_FIELD_BASE_SUPPORT_HUTT2
+		</Encyclopedia_Text>
+		<Land_Model_Name>EB_TestBunker.alo</Land_Model_Name>
+		<Land_Model_Anim_Override_Name>EB_TestBunker.alo</Land_Model_Anim_Override_Name>
+		<Affiliation>Hutt_Cartels</Affiliation>
+		<Scale_Factor>1.0</Scale_Factor>
+        <Garrison_Radius>10</Garrison_Radius>
+		<Num_Garrison_Slots>0</Num_Garrison_Slots>
+		<Property_Flags>TacticalStructure </Property_Flags>
+		<Garrison_Category/>
+
+		<LandBehavior> SPAWN_SQUADRON, REVEAL, SELECTABLE, HIDE_WHEN_FOGGED, DAMAGE_TRACKING, EARTHQUAKE_TARGET, UNIT_AI</LandBehavior>
+
+		<Starting_Spawned_Units_Tech_0>Hutt_Cartels_Field_Support, 1</Starting_Spawned_Units_Tech_0>
+        <!--<Starting_Spawned_Units_Tech_0>Field_Pad_Defense, 1</Starting_Spawned_Units_Tech_0>-->
+
+		<Spawned_Squadron_Delay_Seconds>5</Spawned_Squadron_Delay_Seconds>
+		<Spawned_Squadron_Location_Bones>B_GARRISON_03</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>40.0</Spawned_Squadron_Location_Flyout_Distances>
+		<Spawn_Garrison_On_Load>True</Spawn_Garrison_On_Load>
+
+	</SpecialStructure>
+
+	<Marker Name="Hutt_Cartels_Field_Support">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Galactic_Model_Name/>
+		<Space_Model_Name>W_LASER_INVISIBLE.ALO</Space_Model_Name>
+		<Land_Model_Name>W_LASER_INVISIBLE.ALO</Land_Model_Name>
+		<Behavior></Behavior>
+		<LandBehavior>SPAWN_SQUADRON</LandBehavior>
+		<Lua_Script>FieldBaseSpawner</Lua_Script>
+		<Is_Discardable>false</Is_Discardable>
+		<Affiliation>Neutral</Affiliation>
+		<Scale_Factor>0.1</Scale_Factor>
+
+		<Starting_Spawned_Units_Tech_0>Hutt_Guard_Heavy_Team_Deployed, 2</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Hutt_Guard_Medic_Team_Deployed, 2</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Hutt_Guard_Heavy_Team_Deployed, 10</Reserve_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Hutt_Guard_Medic_Team_Deployed, 10</Reserve_Spawned_Units_Tech_0>
         <Spawned_Squadron_Delay_Seconds>30.0</Spawned_Squadron_Delay_Seconds>
 
 	</Marker>
@@ -1586,8 +1733,8 @@
 		<Affiliation>Neutral</Affiliation>
 		<Scale_Factor>0.1</Scale_Factor>
 
-		<Starting_Spawned_Units_Tech_0>EVO_Trooper_Team_Deployed, 4</Starting_Spawned_Units_Tech_0>
-		<Reserve_Spawned_Units_Tech_0>EVO_Trooper_Team_Deployed, 10</Reserve_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Zsinj_EVO_Trooper_Team_Deployed, 4</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Zsinj_EVO_Trooper_Team_Deployed, 10</Reserve_Spawned_Units_Tech_0>
         <Spawned_Squadron_Delay_Seconds>30.0</Spawned_Squadron_Delay_Seconds>
 
 	</Marker>

@@ -28,6 +28,7 @@ require("deepcore-extensions/initialize")
 
 require("eawx-statemachine/dsl/TransitionPolicyFactory")
 require("eawx-statemachine/dsl/TransitionEffectBuilderFactory")
+require("SetFighterResearch")
 
 function Definitions()
     DebugMessage("%s -- In Definitions", tostring(Script))
@@ -42,15 +43,16 @@ function Begin_GC(message)
         CONSTANTS = ModContentLoader.get("GameConstants")
         GameObjectLibrary = ModContentLoader.get("GameObjectLibrary")
         local plot = StoryUtil.GetPlayerAgnosticPlot()
+        StoryUtil.ShowScreenText("TEXT_GUI_INITIALIZING", 10)
 
-        local holocron_event = plot.Get_Event("Show_Debug_Display")
+        --local holocron_event = plot.Get_Event("Show_Debug_Display")
         
-        local holocron_sink = require("deepcore/log/sinks/holocron-window")
-                                :with_event(holocron_event)
+        --local holocron_sink = require("deepcore/log/sinks/holocron-window")
+        --                        :with_event(holocron_event)
 
-        Logger = require("deepcore/log/logger")
-                :with_sink(holocron_sink)
-                :with_log_level(3)
+        --Logger = require("deepcore/log/logger")
+        --        :with_sink(holocron_sink)
+        --        :with_log_level(3)
 
         GlobalValue.Set("CURRENT_ERA", 3)
         GlobalValue.Set("REGIME_INDEX", 3)

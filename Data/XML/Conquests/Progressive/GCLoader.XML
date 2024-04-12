@@ -18,6 +18,19 @@
 		<Reward_Type>LOAD_CAMPAIGN</Reward_Type>
 		<Reward_Param1>Full_Galaxy_Medium_Rebel_Era_1</Reward_Param1>
 		<Reward_Param2>0</Reward_Param2>
+		<Reward_Param3>0</Reward_Param3> 
+	</Event>
+	
+	<Event Name="Delayed_Initialize">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>12</Event_Param1>
+		<Perpetual>true</Perpetual>
+	</Event>
+	
+	<Event Name="Loop_Clearer">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>LOOP_CLEAR</Event_Param2>
+		<Perpetual>true</Perpetual>
 	</Event>
 
 </Story>

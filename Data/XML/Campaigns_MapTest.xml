@@ -26,16 +26,18 @@
 		<Is_Listed>false</Is_Listed>
 		<Tutorial>true</Tutorial>
 
-        <Locations> 
+       <Locations> 
 				Galaxy_Core_Art_Model, 
 				Coruscant,
 				Test_Land,
 				Test_Space,
+				Test_SFX,
 		</Locations>
 
 		<Trade_Routes>
 			Coruscant_Test_Land,
-			Coruscant_Test_Space
+			Coruscant_Test_Space,
+			Coruscant_Test_SFX
 		</Trade_Routes> 	
 		
         <Home_Location> Rebel, Test_Land </Home_Location>
@@ -76,24 +78,20 @@
 		<Starting_Tech_Level> Rebel, 2 </Starting_Tech_Level>
 		<Max_Tech_Level> Rebel, 4 </Max_Tech_Level>
 		
+		<Starting_Forces> Rebel, Test_SFX, Generic_Planetary_Shield</Starting_Forces>
+		
 		<!-- <Starting_Forces> Rebel, Test_Space, Ground_Hypervelocity_Gun</Starting_Forces>
 		<Starting_Forces> Rebel, Test_Space, Ground_Ion_Cannon</Starting_Forces> -->
 		<Starting_Forces> Rebel, Test_Space, NewRepublic_Shipyard_Level_One</Starting_Forces>
 		<Starting_Forces> Rebel, Test_Space, Generic_Mandator_II</Starting_Forces>
 		
-		<Starting_Forces> Rebel, Test_Land, R_Ground_Barracks </Starting_Forces>
 		<Starting_Forces> Rebel, Test_Land, R_Ground_Light_Vehicle_Factory </Starting_Forces>
-		<Starting_Forces> Rebel, Test_Land, R_Ground_Heavy_Vehicle_Factory </Starting_Forces>
 		<Starting_Forces> Rebel, Test_Land, Generic_Galactic_Turbolaser_Tower_Defenses </Starting_Forces>
 		<Starting_Forces> Rebel, Test_Land, Generic_Planetary_Shield </Starting_Forces>
 		
 		<Starting_Forces> Rebel, Test_Land, Rebel_Infantry_Squad </Starting_Forces>
-		<Starting_Forces> Rebel, Test_Land, Rebel_Infantry_Squad </Starting_Forces>
 		<Starting_Forces> Rebel, Test_Land, Rebel_Marine_Squad </Starting_Forces>
 		<Starting_Forces> Rebel, Test_Land, Rebel_T1B_Company </Starting_Forces>
-		<Starting_Forces> Rebel, Test_Land, Rebel_T2B_Company </Starting_Forces>
-		<Starting_Forces> Rebel, Test_Land, Rebel_AAC_2_Company </Starting_Forces>
-		<Starting_Forces> Rebel, Test_Land, Rebel_Freerunner_Company </Starting_Forces>
 		<Starting_Forces> Rebel, Test_Land, Rebel_AA5_Company </Starting_Forces>
 		<Starting_Forces> Rebel, Test_Land, Rebel_Snowspeeder_Wing </Starting_Forces>
 		<Starting_Forces> Rebel, Test_Land, Rebel_T4B_Company </Starting_Forces>
@@ -105,27 +103,12 @@
 		<Max_Tech_Level> Empire, 5 </Max_Tech_Level>
 		
 		<Starting_Forces> Empire, Coruscant, Empire_Star_Base_2 </Starting_Forces>
-		<Starting_Forces> Empire, Coruscant, Dreadnaught_Empire </Starting_Forces>
-		<Starting_Forces> Empire, Coruscant, Starhawk_MK1 </Starting_Forces>
-		<Starting_Forces> Empire, Coruscant, Starhawk_MK1 </Starting_Forces>
-		<Starting_Forces> Empire, Coruscant, Generic_Star_Destroyer </Starting_Forces>
-		<Starting_Forces> Empire, Coruscant, Generic_Star_Destroyer </Starting_Forces>
-		<Starting_Forces> Empire, Coruscant, Generic_Star_Destroyer </Starting_Forces>
-		<Starting_Forces> Empire, Coruscant, Generic_Star_Destroyer </Starting_Forces>
-		<Starting_Forces> Empire, Coruscant, Generic_Star_Destroyer </Starting_Forces>
 		<Starting_Forces> Empire, Coruscant, Vindicator_Cruiser </Starting_Forces>		
-		<Starting_Forces> Empire, Coruscant, Vindicator_Cruiser </Starting_Forces>		
-		<Starting_Forces> Empire, Coruscant, Vindicator_Cruiser </Starting_Forces>		
-		<Starting_Forces> Empire, Coruscant, Vindicator_Cruiser </Starting_Forces>		
-		<Starting_Forces> Empire, Coruscant, Vindicator_Cruiser </Starting_Forces>		
-		<Starting_Forces> Empire, Coruscant, Vindicator_Cruiser </Starting_Forces>		
+		<Starting_Forces> Empire, Coruscant, Carrack_Cruiser </Starting_Forces>		
 		<Starting_Forces> Empire, Coruscant, Carrack_Cruiser </Starting_Forces>
 		<Starting_Forces> Empire, Coruscant, Carrack_Cruiser </Starting_Forces>		
 		<Starting_Forces> Empire, Coruscant, Carrack_Cruiser </Starting_Forces>		
 		<Starting_Forces> Empire, Coruscant, Carrack_Cruiser </Starting_Forces>		
-		<Starting_Forces> Empire, Coruscant, Carrack_Cruiser </Starting_Forces>		
-		<Starting_Forces> Empire, Coruscant, Carrack_Cruiser </Starting_Forces>		
-		<Starting_Forces> Empire, Coruscant, Carrack_Cruiser </Starting_Forces>		
 		<Starting_Forces> Empire, Coruscant, Strike_Cruiser </Starting_Forces>
 		<Starting_Forces> Empire, Coruscant, Strike_Cruiser </Starting_Forces>
 		<Starting_Forces> Empire, Coruscant, Strike_Cruiser </Starting_Forces>
@@ -142,7 +125,7 @@
 		
 		<Starting_Forces> Empire, Coruscant, E_Ground_Barracks </Starting_Forces>
 		<Starting_Forces> Empire, Coruscant, E_Ground_Barracks </Starting_Forces>
-		<Starting_Forces> Empire, Coruscant, Imperial_Stormtrooper_Squad </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Gatecrashers_Team </Starting_Forces>
 		<Starting_Forces> Empire, Coruscant, Imperial_Stormtrooper_Squad </Starting_Forces>
 		<Starting_Forces> Empire, Coruscant, Imperial_Stormtrooper_Squad </Starting_Forces>
 		<Starting_Forces> Empire, Coruscant, Imperial_Stormtrooper_Squad </Starting_Forces>
@@ -212,9 +195,258 @@
 		<Starting_Forces> Empire, Coruscant, Imperial_A6_Juggernaut_Company </Starting_Forces>
 		<Starting_Forces> Empire, Coruscant, Imperial_A6_Juggernaut_Company </Starting_Forces>
 		<Starting_Forces> Empire, Coruscant, Imperial_A6_Juggernaut_Company </Starting_Forces>
+		
+		
+		<!-- Keep in case we need to test fighters
+		<Starting_Forces> Empire, Test_Land, Strike_Interdictor </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Citadel_Cruiser_Squadron </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Komrk_Gunship_Squadron </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Decimator_Squadron </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Gozanti_Cruiser_Squadron </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Gamma_ATR_6_Squadron </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Guardian_Squadron </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Guardian_Lasers_Squadron </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, YZ_775_Squadron </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Beta_ETR_3_Squadron </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, X4_Gunship_Squadron </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Delta_JV7_Squadron </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Raptor_Gunship_Squadron </Starting_Forces>
+		
+		<Starting_Forces> Empire, Coruscant, TIE_Fighter_Squadron </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, TIE_Fighter_Squadron_Double </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, TIE_Fighter_Squadron_Half </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, TIE_Fighter_Squadron_Third </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, TIE_Bomber_Squadron </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, TIE_Bomber_Squadron_Double </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, TIE_Bomber_Squadron_Half </Starting_Forces>
+		
+		<Starting_Forces> Empire, Coruscant, TIE_Light_Duty_Squadron </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, TIE_Light_Duty_Squadron_Double </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, TIE_Light_Duty_Squadron_Half </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Shielded_TIE_Squadron </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Shielded_TIE_Squadron_Double </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Shielded_TIE_Squadron_Half </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Super_TIE_Squadron </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Super_TIE_Squadron_Double </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Super_TIE_Squadron_Half </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, A9_Squadron </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, A9_Squadron_Double </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, A9_Squadron_Half </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Scimitar_Squadron </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Scimitar_Squadron_Double </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Scimitar_Squadron_Half </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, TIE_Interceptor_Squadron </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, TIE_Interceptor_Squadron_Double </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, TIE_Interceptor_Squadron_Half </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Royal_Guard_Interceptor_Squadron </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Royal_Guard_Interceptor_Squadron_Double </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Royal_Guard_Interceptor_Squadron_Half </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Howlrunner_Squadron </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Howlrunner_Squadron_Double </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Howlrunner_Squadron_Half </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Preybird_Squadron </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Preybird_Squadron_Double </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Preybird_Squadron_Half </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, TIE_Droid_Squadron </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, TIE_Droid_Squadron_Double </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, TIE_Droid_Squadron_Half </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Shielded_TIE_Droid_Squadron </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Shielded_TIE_Droid_Squadron_Double </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Shielded_TIE_Droid_Squadron_Half </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Shadow_Droid_Light_Squadron </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Shadow_Droid_Light_Squadron_Double </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Shadow_Droid_Light_Squadron_Half </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Shadow_Droid_Heavy_Squadron </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Shadow_Droid_Heavy_Squadron_Double </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Shadow_Droid_Heavy_Squadron_Half </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, TIE_Defender_Squadron </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, TIE_Defender_Squadron_Double </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, TIE_Defender_Squadron_Half </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, TIE_gt_Squadron </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, TIE_gt_Squadron_Double </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, TIE_gt_Squadron_Half </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, TIE_X2_Squadron </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, TIE_X2_Squadron_Double </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, TIE_X2_Squadron_Half </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, TIE_X3_Squadron </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, TIE_X3_Squadron_Double </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, TIE_X3_Squadron_Half </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, TIE_X7_Squadron </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, TIE_X7_Squadron_Double </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, TIE_X7_Squadron_Half </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, TIE_Aggressor_Squadron </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, TIE_Aggressor_Squadron_Double </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, TIE_Aggressor_Squadron_Half </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, V38_Squadron </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, V38_Squadron_Double </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, V38_Squadron_Half </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Missile_Boat_Squadron </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Missile_Boat_Squadron_Double </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Missile_Boat_Squadron_Half </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, TIE_Avenger_Squadron </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, TIE_Avenger_Squadron_Double </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, TIE_Avenger_Squadron_Half </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Clutch_Squadron </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Clutch_Squadron_Double </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Clutch_Squadron_Half </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, TIE_Heavy_Bomber_Squadron </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, TIE_Heavy_Bomber_Squadron_Double </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, TIE_Heavy_Bomber_Squadron_Half </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Starwing_Squadron </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Starwing_Squadron_Double </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Starwing_Squadron_Half </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, TIE_Sentinel_Squadron </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, TIE_Sentinel_Squadron_Double </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, TIE_Sentinel_Squadron_Half </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, TIE_Raptor_Squadron </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, TIE_Raptor_Squadron_Double </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, TIE_Raptor_Squadron_Third </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, TIE_Raptor_Squadron_Half </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Shielded_Raptor_Squadron </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Shielded_Raptor_Squadron_Double </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Shielded_Raptor_Squadron_Half </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, TIE_Oppressor_Squadron </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, TIE_Oppressor_Squadron_Double </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, TIE_Oppressor_Squadron_Half </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, TIE_Terror_Squadron </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, TIE_Terror_Squadron_Double </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, TIE_Terror_Squadron_Half </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, TIE_Hunter_Squadron </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, TIE_Hunter_Squadron_Double </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, TIE_Hunter_Squadron_Half </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, TIE_Punisher_Squadron </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, TIE_Punisher_Squadron_Double </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, TIE_Punisher_Squadron_Half </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Advanced_Skipray_Squadron </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Advanced_Skipray_Squadron_Double </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Advanced_Skipray_Squadron_Half </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Scurrg_H6_Squadron </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Scurrg_H6_Squadron_Double </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Scurrg_H6_Squadron_Half </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, B-Wing_Squadron </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, B-Wing_Squadron_Double </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, B-Wing_Squadron_Half </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, B-Wing_E_Squadron </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, B-Wing_E_Squadron_Double </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, B-Wing_E_Squadron_Half </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, A-Wing_Squadron </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, A-Wing_Squadron_Double </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, A-Wing_Squadron_Half </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Rebel_X-Wing_Squadron </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Rebel_X-Wing_Squadron_Double </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Rebel_X-Wing_Squadron_Half </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Chirdaki_Squadron </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Chirdaki_Squadron_Double </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Chirdaki_Squadron_Half </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Defender_Starfighter_Squadron </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Defender_Starfighter_Squadron_Double </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Defender_Starfighter_Squadron_Half </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, E-Wing_Squadron </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, E-Wing_Squadron_Double </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, E-Wing_Squadron_Half </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, K-Wing_Squadron </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, K-Wing_Squadron_Double </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, K-Wing_Squadron_Half </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, HWing_Squadron </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, HWing_Squadron_Double </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, HWing_Squadron_Half </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, IRD_Squadron </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, IRD_Squadron_Double </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, IRD_Squadron_Half </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, IRDA_Squadron </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, IRDA_Squadron_Double </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, IRDA_Squadron_Half </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Shielded_IRDA_Squadron </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Shielded_IRDA_Squadron_Double </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Shielded_IRDA_Squadron_Half </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, T-Wing_Squadron </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, T-Wing_Squadron_Double </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, T-Wing_Squadron_Half </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Drexl_Squadron </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Drexl_Squadron_Double </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Drexl_Squadron_Half </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Trifoil_Squadron </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Trifoil_Squadron_Double </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Trifoil_Squadron_Triple </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Trifoil_Squadron_Half </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Trifoil_Squadron_Third </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, HLAF_Squadron </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, HLAF_Squadron_Double </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, HLAF_Squadron_Half </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, StarViper_Squadron </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, StarViper_Squadron_Double </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, StarViper_Squadron_Half </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, StarViper_II_Squadron </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, StarViper_II_Squadron_Double </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, StarViper_II_Squadron_Half </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Rihkxyrk_Squadron </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Rihkxyrk_Squadron_Double </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Rihkxyrk_Squadron_Half </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Die_Wing_Squadron </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Die_Wing_Squadron_Double </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Die_Wing_Squadron_Half </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, X_Ceptor_Squadron </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, X_Ceptor_Squadron_Double </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, X_Ceptor_Squadron_Half </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, X-TIE_Squadron </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, X-TIE_Squadron_Double </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, X-TIE_Squadron_Half </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Y-TIE_Squadron </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Y-TIE_Squadron_Double </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Y-TIE_Squadron_Half </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Z-TIE_Squadron </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Z-TIE_Squadron_Double </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Z-TIE_Squadron_Half </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Mixed_Ugly_Squadron </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Mixed_Ugly_Squadron_Double </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Mixed_Ugly_Squadron_Half </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Bakuran_GPA_Squadron </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Bakuran_GPA_Squadron_Double </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Bakuran_GPA_Squadron_Half </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Kimogila_Squadron </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Kimogila_Squadron_Double </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Kimogila_Squadron_Half </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, BTLA4_YWing_Starfighter_Squadron </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, BTLA4_YWing_Starfighter_Squadron_Double </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, BTLA4_YWing_Starfighter_Squadron_Half </Starting_Forces>
 
+		<Starting_Forces> Empire, Coruscant, Syca_Bomber_Squadron </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Syca_Bomber_Squadron_Double </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Syca_Bomber_Squadron_Half </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Krssis_Interceptor_Squadron </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Krssis_Interceptor_Squadron_Double </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Krssis_Interceptor_Squadron_Half </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Nssis_Squadron </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Nssis_Squadron_Double </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Nssis_Squadron_Half </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Furion_Squadron </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Furion_Squadron_Double </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Furion_Squadron_Half </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Scarssis_Squadron </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Scarssis_Squadron_Double </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Scarssis_Squadron_Half </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Miytil_Bomber_Squadron </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Miytil_Bomber_Squadron_Double </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Miytil_Bomber_Squadron_Triple </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Miytil_Bomber_Squadron_Half </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Miytil_Fighter_Squadron </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Miytil_Fighter_Squadron_Double </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Miytil_Fighter_Squadron_Half </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Patrol_Miytil_Fighter_Squadron </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Patrol_Miytil_Fighter_Squadron_Double </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Patrol_Miytil_Fighter_Squadron_Half </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, House_Miytil_Fighter_Squadron </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, House_Miytil_Fighter_Squadron_Double </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, House_Miytil_Fighter_Squadron_Half </Starting_Forces>
 
-	
+		<Starting_Forces> Empire, Coruscant, Dunelizard_Fighter_Squadron </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Dunelizard_Fighter_Squadron_Double </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Dunelizard_Fighter_Squadron_Half </Starting_Forces>
+
+		<Starting_Forces> Empire, Coruscant, Swarm_Squadron </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Swarm_Squadron_Double </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Swarm_Squadron_Triple </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Swarm_Squadron_Half </Starting_Forces> -->
 	</Campaign>	
 
     
@@ -233,7 +465,7 @@
 		<Is_Listed>false</Is_Listed>
 		<Tutorial>true</Tutorial>
 
-        <Locations> 
+       <Locations> 
 				Galaxy_Core_Art_Model, 
 				Coruscant,
 				Test_Land,
@@ -287,80 +519,21 @@
 		<Starting_Forces> Rebel, Test_Space, NewRepublic_Shipyard_Level_Two</Starting_Forces>
 		<Starting_Forces> Rebel, Test_Space, NewRepublic_Star_Base_3</Starting_Forces>
 		
-		<Starting_Forces> Rebel, Test_Land, R_Ground_Barracks </Starting_Forces>
+		<Starting_Forces> Rebel, Test_Land, NewRep_SenatorsOffice </Starting_Forces>
 		<Starting_Forces> Rebel, Test_Land, R_Ground_Barracks </Starting_Forces>
 		<Starting_Forces> Rebel, Test_Land, R_Ground_Light_Vehicle_Factory </Starting_Forces>
-		<Starting_Forces> Rebel, Test_Land, R_Ground_Light_Vehicle_Factory </Starting_Forces>
-		<Starting_Forces> Rebel, Test_Land, R_Ground_Heavy_Vehicle_Factory </Starting_Forces>
-		<Starting_Forces> Rebel, Test_Land, R_Ground_Heavy_Vehicle_Factory </Starting_Forces>
 		<Starting_Forces> Rebel, Test_Land, Generic_Galactic_Turbolaser_Tower_Defenses </Starting_Forces>
 		<Starting_Forces> Rebel, Test_Land, Generic_Planetary_Shield </Starting_Forces>
 		
 		<Starting_Forces> Rebel, Test_Land, Rebel_Infantry_Squad </Starting_Forces>
-		<Starting_Forces> Rebel, Test_Land, Rebel_Infantry_Squad </Starting_Forces>
-		<Starting_Forces> Rebel, Test_Land, Rebel_Infantry_Squad </Starting_Forces>
-		<Starting_Forces> Rebel, Test_Land, Rebel_Infantry_Squad </Starting_Forces>
-		<Starting_Forces> Rebel, Test_Land, Rebel_Marine_Squad </Starting_Forces>
-		<Starting_Forces> Rebel, Test_Land, Rebel_Marine_Squad </Starting_Forces>
-		<Starting_Forces> Rebel, Test_Land, Rebel_Marine_Squad </Starting_Forces>
-		<Starting_Forces> Rebel, Test_Land, Rebel_Marine_Squad </Starting_Forces>
 		<Starting_Forces> Rebel, Test_Land, Defense_Trooper_Squad </Starting_Forces>
-		<Starting_Forces> Rebel, Test_Land, Defense_Trooper_Squad </Starting_Forces>
-		<Starting_Forces> Rebel, Test_Land, Defense_Trooper_Squad </Starting_Forces>
-		<Starting_Forces> Rebel, Test_Land, Defense_Trooper_Squad </Starting_Forces>
-		<Starting_Forces> Rebel, Test_Land, Rebel_Infiltrator_Squad </Starting_Forces>
-		<Starting_Forces> Rebel, Test_Land, Rebel_Infiltrator_Squad </Starting_Forces>
-		<Starting_Forces> Rebel, Test_Land, Rebel_Infiltrator_Squad </Starting_Forces>
-		<Starting_Forces> Rebel, Test_Land, Rebel_Infiltrator_Squad </Starting_Forces>
 		<Starting_Forces> Rebel, Test_Land, Rebel_T1B_Company </Starting_Forces>
-		<Starting_Forces> Rebel, Test_Land, Rebel_T1B_Company </Starting_Forces>
-		<Starting_Forces> Rebel, Test_Land, Rebel_T1B_Company </Starting_Forces>
-		<Starting_Forces> Rebel, Test_Land, Rebel_T1B_Company </Starting_Forces>
-		<Starting_Forces> Rebel, Test_Land, Rebel_T2B_Company </Starting_Forces>
-		<Starting_Forces> Rebel, Test_Land, Rebel_T2B_Company </Starting_Forces>
-		<Starting_Forces> Rebel, Test_Land, Rebel_T2B_Company </Starting_Forces>
-		<Starting_Forces> Rebel, Test_Land, Rebel_T2B_Company </Starting_Forces>
 		<Starting_Forces> Rebel, Test_Land, Rebel_AAC_2_Company </Starting_Forces>
-		<Starting_Forces> Rebel, Test_Land, Rebel_AAC_2_Company </Starting_Forces>
-		<Starting_Forces> Rebel, Test_Land, Rebel_AAC_2_Company </Starting_Forces>
-		<Starting_Forces> Rebel, Test_Land, Rebel_AAC_2_Company </Starting_Forces>
-		<Starting_Forces> Rebel, Test_Land, Rebel_Freerunner_Company </Starting_Forces>
-		<Starting_Forces> Rebel, Test_Land, Rebel_Freerunner_Company </Starting_Forces>
-		<Starting_Forces> Rebel, Test_Land, Rebel_Freerunner_Company </Starting_Forces>
-		<Starting_Forces> Rebel, Test_Land, Rebel_Freerunner_Company </Starting_Forces>
-		<Starting_Forces> Rebel, Test_Land, Rebel_AA5_Company </Starting_Forces>
-		<Starting_Forces> Rebel, Test_Land, Rebel_AA5_Company </Starting_Forces>
-		<Starting_Forces> Rebel, Test_Land, Rebel_AA5_Company </Starting_Forces>
-		<Starting_Forces> Rebel, Test_Land, Rebel_SRV1_Company </Starting_Forces>
-		<Starting_Forces> Rebel, Test_Land, Rebel_SRV1_Company </Starting_Forces>
-		<Starting_Forces> Rebel, Test_Land, Rebel_SRV1_Company </Starting_Forces>
 		<Starting_Forces> Rebel, Test_Land, Rebel_SRV1_Company </Starting_Forces>
 		<Starting_Forces> Rebel, Test_Land, Rebel_Vwing_Group </Starting_Forces>
-		<Starting_Forces> Rebel, Test_Land, Rebel_Vwing_Group </Starting_Forces>
-		<Starting_Forces> Rebel, Test_Land, Rebel_Vwing_Group </Starting_Forces>
-		<Starting_Forces> Rebel, Test_Land, Rebel_Gallofree_HTT_Company </Starting_Forces>
-		<Starting_Forces> Rebel, Test_Land, Rebel_Gallofree_HTT_Company </Starting_Forces>
-		<Starting_Forces> Rebel, Test_Land, Rebel_Gallofree_HTT_Company </Starting_Forces>
 		<Starting_Forces> Rebel, Test_Land, MAS_2xB_Company </Starting_Forces>
-		<Starting_Forces> Rebel, Test_Land, MAS_2xB_Company </Starting_Forces>
-		<Starting_Forces> Rebel, Test_Land, MAS_2xB_Company </Starting_Forces>
-		<Starting_Forces> Rebel, Test_Land, Rebel_Snowspeeder_Wing </Starting_Forces>
-		<Starting_Forces> Rebel, Test_Land, Rebel_Snowspeeder_Wing </Starting_Forces>
-		<Starting_Forces> Rebel, Test_Land, Rebel_Snowspeeder_Wing </Starting_Forces>
-		<Starting_Forces> Rebel, Test_Land, Rebel_Tracker_Company </Starting_Forces>
-		<Starting_Forces> Rebel, Test_Land, Rebel_Tracker_Company </Starting_Forces>
-		<Starting_Forces> Rebel, Test_Land, Rebel_Tracker_Company </Starting_Forces>
-		<Starting_Forces> Rebel, Test_Land, Rebel_T3B_Company </Starting_Forces>
-		<Starting_Forces> Rebel, Test_Land, Rebel_T3B_Company </Starting_Forces>
-		<Starting_Forces> Rebel, Test_Land, Rebel_T3B_Company </Starting_Forces>
 		<Starting_Forces> Rebel, Test_Land, Rebel_T3B_Company </Starting_Forces>
 		<Starting_Forces> Rebel, Test_Land, Rebel_T4B_Company </Starting_Forces>
-		<Starting_Forces> Rebel, Test_Land, Rebel_T4B_Company </Starting_Forces>
-		<Starting_Forces> Rebel, Test_Land, Rebel_T4B_Company </Starting_Forces>
-		<Starting_Forces> Rebel, Test_Land, Rebel_T4B_Company </Starting_Forces>
-		<Starting_Forces> Rebel, Test_Land, Rebel_MPTL_Company </Starting_Forces>
-		<Starting_Forces> Rebel, Test_Land, Rebel_MPTL_Company </Starting_Forces>
-		<Starting_Forces> Rebel, Test_Land, Rebel_MPTL_Company </Starting_Forces>
 		<Starting_Forces> Rebel, Test_Land, Rebel_MPTL_Company </Starting_Forces>
 
 		

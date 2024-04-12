@@ -51,7 +51,7 @@ function Definitions()
 	TaskForce = {
 	{
 		"MainForce"						
-		,"Corvette | Frigate | Capital | SuperCapital | SpaceHero = 1, 20"
+		,"Gunship | Corvette | Frigate | Capital | SuperCapital | SpaceHero = 1, 20"
 	}
 	}
 	

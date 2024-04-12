@@ -50,7 +50,7 @@ function Definitions()
 	TaskForce = {
 	{
 		"BaseForce",
-		"E_Ground_Heavy_Vehicle_Factory | A_Ground_Heavy_Vehicle_Factory | T_Ground_Heavy_Vehicle_Factory | Z_Ground_Heavy_Vehicle_Factory | C_Ground_Heavy_Vehicle_Factory | R_Ground_Heavy_Vehicle_Factory| P_Ground_Heavy_Vehicle_Factory | U_Ground_Droid_Works | HC_Ground_Heavy_Vehicle_Factory = 1"
+		"E_Ground_Heavy_Vehicle_Factory | A_Ground_Heavy_Vehicle_Factory | T_Ground_Heavy_Vehicle_Factory | Z_Ground_Heavy_Vehicle_Factory | C_Ground_Heavy_Vehicle_Factory | R_Ground_Heavy_Vehicle_Factory| P_Ground_Heavy_Vehicle_Factory | U_Ground_Droid_Works | HC_Ground_Heavy_Vehicle_Factory | H_Ground_Heavy_Vehicle_Factory = 1"
 	}
 	}
 

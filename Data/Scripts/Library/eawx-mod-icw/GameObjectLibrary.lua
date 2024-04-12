@@ -28,6 +28,7 @@ GameObjectLibrary = {
         "Mothma_Star_Destroyer",
 		"Generic_Interdictor_Cruiser",
 		"Generic_Twin_Well_Cruiser",
+		"Super_Transport_VII_Interdictor",
 		"Strike_Interdictor",
 		"Coronal",
 		"Prolipsi",
@@ -41,7 +42,7 @@ GameObjectLibrary = {
         "Kaerobani_Interdictor",
         "Voota_Splendor",
 		"Dezon_Constrainer",
-		"Donnel_Detainer",
+		"Lon_Donell_Detainer",
 		"Iblis_Bail_Organa",
 		"Lovett_Riverlord"
     },

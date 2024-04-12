@@ -74,7 +74,7 @@
 	<Event Name="SWITCH_CONTROL_EVENT_ZSINJ">
 		<Event_Type>STORY_TRIGGER</Event_Type>
 		<Reward_Type>SWITCH_CONTROL</Reward_Type>
-		<Reward_Param1>Pirates</Reward_Param1>
+		<Reward_Param1>Zsinj_Empire</Reward_Param1>
 		<Reward_Param2>AI_Player_UnderworldStoryOpponent</Reward_Param2>
 		<Prereq>Setup_Start</Prereq>
 	</Event>
@@ -82,7 +82,7 @@
 	<Event Name="SWITCH_CONTROL_EVENT_MALDROOD">
 		<Event_Type>STORY_TRIGGER</Event_Type>
 		<Reward_Type>SWITCH_CONTROL</Reward_Type>
-		<Reward_Param1>Teradoc</Reward_Param1>
+		<Reward_Param1>Greater_Maldrood</Reward_Param1>
 		<Reward_Param2>AI_Player_UnderworldStoryOpponent</Reward_Param2>
 		<Prereq>Setup_Start</Prereq>
 	</Event>
@@ -90,7 +90,7 @@
 	<Event Name="SWITCH_CONTROL_EVENT_ERIADU">
 		<Event_Type>STORY_TRIGGER</Event_Type>
 		<Reward_Type>SWITCH_CONTROL</Reward_Type>
-		<Reward_Param1>Hutts</Reward_Param1>
+		<Reward_Param1>Eriadu_Authority</Reward_Param1>
 		<Reward_Param2>AI_Player_UnderworldStoryOpponent</Reward_Param2>
 		<Prereq>Setup_Start</Prereq>
 	</Event>
@@ -99,6 +99,14 @@
 		<Event_Type>STORY_TRIGGER</Event_Type>
 		<Reward_Type>SWITCH_CONTROL</Reward_Type>
 		<Reward_Param1>Corporate_Sector</Reward_Param1>
+		<Reward_Param2>AI_Player_UnderworldStoryOpponent</Reward_Param2>
+		<Prereq>Setup_Start</Prereq>
+	</Event>
+
+	<Event Name="SWITCH_CONTROL_EVENT_HUTTS">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SWITCH_CONTROL</Reward_Type>
+		<Reward_Param1>Hutt_Cartels</Reward_Param1>
 		<Reward_Param2>AI_Player_UnderworldStoryOpponent</Reward_Param2>
 		<Prereq>Setup_Start</Prereq>
 	</Event>
@@ -178,5 +186,20 @@
 		<Reward_Param1>0</Reward_Param1>
 		<Prereq>Battle_Start</Prereq>
 	</Event> -->
+
+	<Event Name="Restart_Mode">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>IA_RESTART_MODE</Event_Param2>
+		<Reward_Type>ENABLE_VICTORY</Reward_Type>
+		<Reward_Param1>1</Reward_Param1>
+	</Event>
+
+	<Event Name="Win_Battle">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>VICTORY</Reward_Type>
+		<Reward_Param1>Rebel</Reward_Param1>
+		<Reward_Param2>0</Reward_Param2>
+		<Prereq>Restart_Mode</Prereq>
+	</Event>
 
 </Story>

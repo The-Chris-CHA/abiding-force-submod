@@ -50,8 +50,9 @@ end
 function OrbitalStructureHandler:on_production_finished(planet, game_object_type_name)
     --Logger:trace("entering OrbitalStructureHandler:on_production_finished")
     --Has to be structured differently than other ones since otherwise gunships will crash it.
-	if Find_First_Object(game_object_type_name) then
-        if Find_First_Object(game_object_type_name).Is_Category("SpaceStructure") == true then       
+	local first = Find_First_Object(game_object_type_name)
+	if first then
+        if first.Is_Category("SpaceStructure") == true or first.Is_Category("Structure") == true then       
             local player = planet:get_owner()
             
             for structure_type, structure_list in pairs(self.Structure_Table) do

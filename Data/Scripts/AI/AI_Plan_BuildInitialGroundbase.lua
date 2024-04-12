@@ -52,7 +52,7 @@ function Definitions()
 	TaskForce = {
 	{
 		"BaseForce",
-		"Empire_MoffPalace | Maldrood_MoffPalace | Zsinj_MoffPalace | Eriadu_MoffPalace | Pentastar_MoffPalace | Hand_GovernorOffice | NewRep_SenatorsOffice | CSA_LocalOffice | House_Royal | House_Requud | House_Galney | House_Maluri | House_Corr | House_Thane | House_AlGray = 1"
+		"Empire_MoffPalace | Maldrood_MoffPalace | Zsinj_MoffPalace | Eriadu_MoffPalace | Pentastar_MoffPalace | Hand_GovernorOffice | NewRep_SenatorsOffice | CSA_LocalOffice | Hutt_LocalOffice | House_Royal | House_Requud | House_Galney | House_Maluri | House_Corr | House_Thane | House_AlGray = 1"
 	}
 	}
 
@@ -64,7 +64,7 @@ function BaseForce_Thread()
 	
 	Sleep(1)
 	
---	BaseForce.Set_As_Goal_System_Removable(false)
+	BaseForce.Set_As_Goal_System_Removable(false)
 	AssembleForce(BaseForce)
 	
 	BaseForce.Set_Plan_Result(true)

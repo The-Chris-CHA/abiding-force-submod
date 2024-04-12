@@ -1146,7 +1146,7 @@ function LoyaltyPolicyRepository.yaga_minor(planet)
 end
 
 ---@param planet Planet
-function LoyaltyPolicyRepository.yagduhl(planet)
+function LoyaltyPolicyRepository.yagdhul(planet)
     local preferred_owner = Find_Player("Rebel")
     if planet:get_owner() == Find_Player("Rebel") then
         preferred_owner = Find_Player("Warlords")

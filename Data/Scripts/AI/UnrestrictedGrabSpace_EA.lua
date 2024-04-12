@@ -54,7 +54,7 @@ function Definitions()
 	{
 		"MainForce"		
 		,"MinimumTotalSize = 10"
-		, "Corvette | Frigate | Capital  = 100%"
+		, "Gunship | Corvette | Frigate | Capital  = 100%"
 	}
 	}
 	RequiredCategories = {"Corvette | Frigate | Capital"}	--we want at least one heavier ship

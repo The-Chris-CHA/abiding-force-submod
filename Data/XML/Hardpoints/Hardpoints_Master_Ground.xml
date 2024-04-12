@@ -1,6 +1,62 @@
 <?xml version="1.0"?>
 <HardPoints>
 
+	<!-- Local Art Stuff-->
+
+	<HardPoint Name="HP_Handler_Hide_Bag2">
+		<Type> HARD_POINT_DUMMY_ART </Type>
+		<Is_Targetable>No</Is_Targetable>
+		<Is_Destroyable>No</Is_Destroyable>
+		
+		<Attachment_Bone>ROOT</Attachment_Bone>
+          	<Damage_Decal>bag_LOD2</Damage_Decal>
+	</HardPoint>
+
+	<HardPoint Name="HP_Handler_Hide_Bag1">
+		<Type> HARD_POINT_DUMMY_ART </Type>
+		<Is_Targetable>No</Is_Targetable>
+		<Is_Destroyable>No</Is_Destroyable>
+		
+		<Attachment_Bone>ROOT</Attachment_Bone>
+          	<Damage_Decal>bag_LOD1</Damage_Decal>
+	</HardPoint>
+
+	<HardPoint Name="HP_Handler_Hide_Bag0">
+		<Type> HARD_POINT_DUMMY_ART </Type>
+		<Is_Targetable>No</Is_Targetable>
+		<Is_Destroyable>No</Is_Destroyable>
+		
+		<Attachment_Bone>ROOT</Attachment_Bone>
+          	<Damage_Decal>bag_LOD0</Damage_Decal>
+	</HardPoint>
+
+	<HardPoint Name="HP_Handler_Hide_Stick2">
+		<Type> HARD_POINT_DUMMY_ART </Type>
+		<Is_Targetable>No</Is_Targetable>
+		<Is_Destroyable>No</Is_Destroyable>
+		
+		<Attachment_Bone>ROOT</Attachment_Bone>
+          	<Damage_Decal>gaffi_LOD2</Damage_Decal>
+	</HardPoint>
+
+	<HardPoint Name="HP_Handler_Hide_Stick1">
+		<Type> HARD_POINT_DUMMY_ART </Type>
+		<Is_Targetable>No</Is_Targetable>
+		<Is_Destroyable>No</Is_Destroyable>
+		
+		<Attachment_Bone>ROOT</Attachment_Bone>
+          	<Damage_Decal>gaffi_LOD1</Damage_Decal>
+	</HardPoint>
+
+	<HardPoint Name="HP_Handler_Hide_Stick0">
+		<Type> HARD_POINT_DUMMY_ART </Type>
+		<Is_Targetable>No</Is_Targetable>
+		<Is_Destroyable>No</Is_Destroyable>
+		
+		<Attachment_Bone>ROOT</Attachment_Bone>
+          	<Damage_Decal>gaffi_LOD0</Damage_Decal>
+	</HardPoint>
+
 	<!-- Hero Passive Effects-->
 
 	<HardPoint Name="HP_Hero_Special_Deadly_Sight_11"> <!-- Named for rig type it applies to-->
@@ -11,6 +67,28 @@
 
 		<Fire_Bone_A>BONE11</Fire_Bone_A>
 		<Fire_Bone_B>BONE11</Fire_Bone_B>
+		<Fire_Cone_Width>360.0</Fire_Cone_Width>
+		<Fire_Cone_Height>360.0</Fire_Cone_Height>
+		<Fire_Projectile_Type>Proj_Special_Deadly_Sight</Fire_Projectile_Type>
+		<Fire_Min_Recharge_Seconds>0.9</Fire_Min_Recharge_Seconds>
+		<Fire_Max_Recharge_Seconds>1.1</Fire_Max_Recharge_Seconds>
+		<Fire_Pulse_Count>1</Fire_Pulse_Count>
+		<Fire_Pulse_Delay_Seconds>0.1</Fire_Pulse_Delay_Seconds>
+		<Fire_Range_Distance>400.0</Fire_Range_Distance>
+		<Fire_SFXEvent></Fire_SFXEvent>
+
+		<Allow_Opportunity_Fire_When_Targeting>True</Allow_Opportunity_Fire_When_Targeting>
+		<Allow_Opportunity_Fire_When_Idle>True</Allow_Opportunity_Fire_When_Idle>
+	</HardPoint>
+
+	<HardPoint Name="HP_Hero_Special_Deadly_Sight_Jedi"> <!-- Named for rig type it applies to / Jedi.alo -->
+		<Type>HARD_POINT_WEAPON_LASER</Type>
+		<Is_Targetable>No</Is_Targetable>
+		<Is_Destroyable>No</Is_Destroyable>
+		<!--<Health>1000.0</Health>-->
+
+		<Fire_Bone_A>MUZZLEA_00</Fire_Bone_A>
+		<Fire_Bone_B>MUZZLEA_00</Fire_Bone_B>
 		<Fire_Cone_Width>360.0</Fire_Cone_Width>
 		<Fire_Cone_Height>360.0</Fire_Cone_Height>
 		<Fire_Projectile_Type>Proj_Special_Deadly_Sight</Fire_Projectile_Type>
@@ -271,6 +349,442 @@
 		<Fire_Inaccuracy_Distance>LandHero, 30.0 </Fire_Inaccuracy_Distance>
 	</HardPoint>
 
+	<!-- AV Bunker -->
+
+	<HardPoint Name="AV_Bunker_1">
+		<Type> HARD_POINT_WEAPON_LASER </Type>
+		<Is_Targetable>No</Is_Targetable>
+        <Is_Destroyable>No</Is_Destroyable>
+        <Tooltip_Text>TEXT_WEAPON_LASERCANNON_DUAL</Tooltip_Text>
+		<Health>150.0</Health>
+
+		<Death_Explosion_Particles> Large_Explosion_Space </Death_Explosion_Particles>
+		<Death_Explosion_SFXEvent>Unit_Hardpoint_Laser_Death</Death_Explosion_SFXEvent>
+
+		<Model_To_Attach>AV_Bunker_Turret1.ALO</Model_To_Attach>
+		<Attachment_Bone>Attach_00</Attachment_Bone>
+		<Collision_Mesh>Attach_col_00</Collision_Mesh>
+		<Damage_Decal>Attach_col_00</Damage_Decal>
+		<Damage_Particles>Attach_col_00</Damage_Particles>
+
+		<Death_Breakoff_Prop> </Death_Breakoff_Prop>
+
+			
+
+		<Fire_Bone_A>MuzzleA_00</Fire_Bone_A>
+		<Fire_Bone_B>MuzzleA_00</Fire_Bone_B>
+		<Randomize_Between_Fire_Bones> No </Randomize_Between_Fire_Bones>
+		<Fire_Cone_Width>20.0</Fire_Cone_Width>
+		<Fire_Cone_Height>5.0</Fire_Cone_Height>
+		
+		<Is_Turret> Yes </Is_Turret>
+		<Turret_Rest_Angle> 0.0, 0.0, 0.0 </Turret_Rest_Angle>
+		<Turret_Rotation_Offset> 0.0, 0.0, 0.0 </Turret_Rotation_Offset>
+		<Turret_Rotate_Speed> 4.0 </Turret_Rotate_Speed>
+		<Turret_Rotate_Extent_Degrees> 70.0 </Turret_Rotate_Extent_Degrees>
+		<Turret_Elevate_Extent_Degrees> 35.0 </Turret_Elevate_Extent_Degrees>
+		<Turret_Bone_Name> B_Turret_00 </Turret_Bone_Name>
+		<Barrel_Bone_Name> B_Barrel_00 </Barrel_Bone_Name>
+
+		<Fire_Projectile_Type>Proj_AV_Blaster_Red</Fire_Projectile_Type>
+		<Fire_Min_Recharge_Seconds>1.25</Fire_Min_Recharge_Seconds>
+		<Fire_Max_Recharge_Seconds>1.25</Fire_Max_Recharge_Seconds>
+        <Fire_Pulse_Count>1</Fire_Pulse_Count>
+        <Fire_Pulse_Delay_Seconds>0.2</Fire_Pulse_Delay_Seconds>
+        <Fire_Range_Distance>400.0</Fire_Range_Distance>
+		<Fire_SFXEvent>Unit_Turret_Fire</Fire_SFXEvent>
+		
+		<Allow_Opportunity_Fire_When_Targeting>True</Allow_Opportunity_Fire_When_Targeting>
+		<Allow_Opportunity_Fire_When_Idle>True</Allow_Opportunity_Fire_When_Idle>
+
+		<Fire_Inaccuracy_Distance> Infantry, 20.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Vehicle, 5.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Air, 50.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance>Structure, 10.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance>LandHero, 30.0 </Fire_Inaccuracy_Distance>
+        
+    </HardPoint>
+
+	<HardPoint Name="AV_Bunker_2">
+		<Type> HARD_POINT_WEAPON_LASER </Type>
+		<Is_Targetable>No</Is_Targetable>
+        <Is_Destroyable>No</Is_Destroyable>
+        <Tooltip_Text>TEXT_WEAPON_LASERCANNON_DUAL</Tooltip_Text>
+		<Health>150.0</Health>
+
+		<Death_Explosion_Particles> Large_Explosion_Space </Death_Explosion_Particles>
+		<Death_Explosion_SFXEvent>Unit_Hardpoint_Laser_Death</Death_Explosion_SFXEvent>
+
+		<Model_To_Attach>AV_Bunker_Turret2.ALO</Model_To_Attach>
+		<Attachment_Bone>Attach_01</Attachment_Bone>
+		<Collision_Mesh>Attach_col_01</Collision_Mesh>
+		<Damage_Decal>Attach_col_01</Damage_Decal>
+		<Damage_Particles>Attach_col_01</Damage_Particles>
+
+		<Death_Breakoff_Prop> </Death_Breakoff_Prop>
+
+			
+
+		<Fire_Bone_A>MuzzleA_00</Fire_Bone_A>
+		<Fire_Bone_B>MuzzleA_00</Fire_Bone_B>
+		<Randomize_Between_Fire_Bones> No </Randomize_Between_Fire_Bones>
+		<Fire_Cone_Width>20.0</Fire_Cone_Width>
+		<Fire_Cone_Height>5.0</Fire_Cone_Height>
+		
+		<Is_Turret> Yes </Is_Turret>
+		<Turret_Rest_Angle> 0.0, 0.0, 0.0 </Turret_Rest_Angle>
+		<Turret_Rotation_Offset> 0.0, 0.0, 0.0 </Turret_Rotation_Offset>
+		<Turret_Rotate_Speed> 4.0 </Turret_Rotate_Speed>
+		<Turret_Rotate_Extent_Degrees> 70.0 </Turret_Rotate_Extent_Degrees>
+		<Turret_Elevate_Extent_Degrees> 35.0 </Turret_Elevate_Extent_Degrees>
+		<Turret_Bone_Name> B_Turret_01 </Turret_Bone_Name>
+		<Barrel_Bone_Name> B_Barrel_01 </Barrel_Bone_Name>
+
+		<Fire_Projectile_Type>Proj_AV_Blaster_Red</Fire_Projectile_Type>
+		<Fire_Min_Recharge_Seconds>1.25</Fire_Min_Recharge_Seconds>
+		<Fire_Max_Recharge_Seconds>1.25</Fire_Max_Recharge_Seconds>
+        <Fire_Pulse_Count>1</Fire_Pulse_Count>
+        <Fire_Pulse_Delay_Seconds>0.2</Fire_Pulse_Delay_Seconds>
+        <Fire_Range_Distance>400.0</Fire_Range_Distance>
+		<Fire_SFXEvent>Unit_Turret_Fire</Fire_SFXEvent>
+		
+		<Allow_Opportunity_Fire_When_Targeting>True</Allow_Opportunity_Fire_When_Targeting>
+		<Allow_Opportunity_Fire_When_Idle>True</Allow_Opportunity_Fire_When_Idle>
+
+		<Fire_Inaccuracy_Distance> Infantry, 20.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Vehicle, 5.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Air, 50.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance>Structure, 10.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance>LandHero, 30.0 </Fire_Inaccuracy_Distance>
+        
+    </HardPoint>
+
+	<HardPoint Name="AV_Bunker_3">
+		<Type> HARD_POINT_WEAPON_LASER </Type>
+		<Is_Targetable>No</Is_Targetable>
+        <Is_Destroyable>No</Is_Destroyable>
+        <Tooltip_Text>TEXT_WEAPON_LASERCANNON_DUAL</Tooltip_Text>
+		<Health>150.0</Health>
+
+		<Death_Explosion_Particles> Large_Explosion_Space </Death_Explosion_Particles>
+		<Death_Explosion_SFXEvent>Unit_Hardpoint_Laser_Death</Death_Explosion_SFXEvent>
+
+		<Model_To_Attach>AV_Bunker_Turret3.ALO</Model_To_Attach>
+		<Attachment_Bone>Attach_02</Attachment_Bone>
+		<Collision_Mesh>Attach_col_02</Collision_Mesh>
+		<Damage_Decal>Attach_col_02</Damage_Decal>
+		<Damage_Particles>Attach_col_02</Damage_Particles>
+
+		<Death_Breakoff_Prop> </Death_Breakoff_Prop>
+
+			
+
+		<Fire_Bone_A>MuzzleA_00</Fire_Bone_A>
+		<Fire_Bone_B>MuzzleA_00</Fire_Bone_B>
+		<Randomize_Between_Fire_Bones> No </Randomize_Between_Fire_Bones>
+		<Fire_Cone_Width>20.0</Fire_Cone_Width>
+		<Fire_Cone_Height>5.0</Fire_Cone_Height>
+		
+		<Is_Turret> Yes </Is_Turret>
+		<Turret_Rest_Angle> 0.0, 0.0, 0.0 </Turret_Rest_Angle>
+		<Turret_Rotation_Offset> 0.0, 0.0, 0.0 </Turret_Rotation_Offset>
+		<Turret_Rotate_Speed> 4.0 </Turret_Rotate_Speed>
+		<Turret_Rotate_Extent_Degrees> 70.0 </Turret_Rotate_Extent_Degrees>
+		<Turret_Elevate_Extent_Degrees> 35.0 </Turret_Elevate_Extent_Degrees>
+		<Turret_Bone_Name> B_Turret_02 </Turret_Bone_Name>
+		<Barrel_Bone_Name> B_Barrel_02 </Barrel_Bone_Name>
+
+		<Fire_Projectile_Type>Proj_AV_Blaster_Red</Fire_Projectile_Type>
+		<Fire_Min_Recharge_Seconds>1.25</Fire_Min_Recharge_Seconds>
+		<Fire_Max_Recharge_Seconds>1.25</Fire_Max_Recharge_Seconds>
+        <Fire_Pulse_Count>1</Fire_Pulse_Count>
+        <Fire_Pulse_Delay_Seconds>0.2</Fire_Pulse_Delay_Seconds>
+        <Fire_Range_Distance>400.0</Fire_Range_Distance>
+		<Fire_SFXEvent>Unit_Turret_Fire</Fire_SFXEvent>
+		
+		<Allow_Opportunity_Fire_When_Targeting>True</Allow_Opportunity_Fire_When_Targeting>
+		<Allow_Opportunity_Fire_When_Idle>True</Allow_Opportunity_Fire_When_Idle>
+
+		<Fire_Inaccuracy_Distance> Infantry, 20.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Vehicle, 5.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Air, 50.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance>Structure, 10.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance>LandHero, 30.0 </Fire_Inaccuracy_Distance>
+        
+    </HardPoint>
+
+	<HardPoint Name="AV_Bunker_4">
+		<Type> HARD_POINT_WEAPON_LASER </Type>
+		<Is_Targetable>No</Is_Targetable>
+        <Is_Destroyable>No</Is_Destroyable>
+        <Tooltip_Text>TEXT_WEAPON_LASERCANNON_DUAL</Tooltip_Text>
+		<Health>150.0</Health>
+
+		<Death_Explosion_Particles> Large_Explosion_Space </Death_Explosion_Particles>
+		<Death_Explosion_SFXEvent>Unit_Hardpoint_Laser_Death</Death_Explosion_SFXEvent>
+
+		<Model_To_Attach>AV_Bunker_Turret4.ALO</Model_To_Attach>
+		<Attachment_Bone>Attach_03</Attachment_Bone>
+		<Collision_Mesh>Attach_col_03</Collision_Mesh>
+		<Damage_Decal>Attach_col_03</Damage_Decal>
+		<Damage_Particles>Attach_col_03</Damage_Particles>
+
+		<Death_Breakoff_Prop> </Death_Breakoff_Prop>
+
+			
+
+		<Fire_Bone_A>MuzzleA_00</Fire_Bone_A>
+		<Fire_Bone_B>MuzzleA_00</Fire_Bone_B>
+		<Randomize_Between_Fire_Bones> No </Randomize_Between_Fire_Bones>
+		<Fire_Cone_Width>20.0</Fire_Cone_Width>
+		<Fire_Cone_Height>5.0</Fire_Cone_Height>
+		
+		<Is_Turret> Yes </Is_Turret>
+		<Turret_Rest_Angle> 0.0, 0.0, 0.0 </Turret_Rest_Angle>
+		<Turret_Rotation_Offset> 0.0, 0.0, 0.0 </Turret_Rotation_Offset>
+		<Turret_Rotate_Speed> 4.0 </Turret_Rotate_Speed>
+		<Turret_Rotate_Extent_Degrees> 70.0 </Turret_Rotate_Extent_Degrees>
+		<Turret_Elevate_Extent_Degrees> 35.0 </Turret_Elevate_Extent_Degrees>
+		<Turret_Bone_Name> B_Turret_03 </Turret_Bone_Name>
+		<Barrel_Bone_Name> B_Barrel_03 </Barrel_Bone_Name>
+
+		<Fire_Projectile_Type>Proj_AV_Blaster_Red</Fire_Projectile_Type>
+		<Fire_Min_Recharge_Seconds>1.25</Fire_Min_Recharge_Seconds>
+		<Fire_Max_Recharge_Seconds>1.25</Fire_Max_Recharge_Seconds>
+        <Fire_Pulse_Count>1</Fire_Pulse_Count>
+        <Fire_Pulse_Delay_Seconds>0.2</Fire_Pulse_Delay_Seconds>
+        <Fire_Range_Distance>400.0</Fire_Range_Distance>
+		<Fire_SFXEvent>Unit_Turret_Fire</Fire_SFXEvent>
+		
+		<Allow_Opportunity_Fire_When_Targeting>True</Allow_Opportunity_Fire_When_Targeting>
+		<Allow_Opportunity_Fire_When_Idle>True</Allow_Opportunity_Fire_When_Idle>
+
+		<Fire_Inaccuracy_Distance> Infantry, 20.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Vehicle, 5.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Air, 50.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance>Structure, 10.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance>LandHero, 30.0 </Fire_Inaccuracy_Distance>
+        
+    </HardPoint>
+
+		<!-- AI Bunker -->
+
+		<HardPoint Name="AI_Bunker_1">
+			<Type> HARD_POINT_WEAPON_LASER </Type>
+			<Is_Targetable>No</Is_Targetable>
+			<Is_Destroyable>No</Is_Destroyable>
+			<Tooltip_Text>TEXT_WEAPON_LASERCANNON_DUAL</Tooltip_Text>
+			<Health>150.0</Health>
+	
+			<Death_Explosion_Particles> Large_Explosion_Space </Death_Explosion_Particles>
+			<Death_Explosion_SFXEvent>Unit_Hardpoint_Laser_Death</Death_Explosion_SFXEvent>
+	
+			<Model_To_Attach>AI_Bunker_Turret1.ALO</Model_To_Attach>
+			<Attachment_Bone>Attach_00</Attachment_Bone>
+			<Collision_Mesh>Attach_col_00</Collision_Mesh>
+			<Damage_Decal>Attach_col_00</Damage_Decal>
+			<Damage_Particles>Attach_col_00</Damage_Particles>
+	
+			<Death_Breakoff_Prop> </Death_Breakoff_Prop>
+	
+				
+	
+			<Fire_Bone_A>MuzzleA_00</Fire_Bone_A>
+			<Fire_Bone_B>MuzzleA_01</Fire_Bone_B>
+			<Randomize_Between_Fire_Bones> No </Randomize_Between_Fire_Bones>
+			<Fire_Cone_Width>20.0</Fire_Cone_Width>
+			<Fire_Cone_Height>5.0</Fire_Cone_Height>
+			
+			<Is_Turret> Yes </Is_Turret>
+			<Turret_Rest_Angle> 0.0, 0.0, 0.0 </Turret_Rest_Angle>
+			<Turret_Rotation_Offset> 0.0, 0.0, 0.0 </Turret_Rotation_Offset>
+			<Turret_Rotate_Speed> 4.0 </Turret_Rotate_Speed>
+			<Turret_Rotate_Extent_Degrees> 70.0 </Turret_Rotate_Extent_Degrees>
+			<Turret_Elevate_Extent_Degrees> 35.0 </Turret_Elevate_Extent_Degrees>
+			<Turret_Bone_Name> B_Turret_00 </Turret_Bone_Name>
+			<Barrel_Bone_Name> B_Barrel_00 </Barrel_Bone_Name>
+	
+			<Fire_Projectile_Type>Proj_Light_AI_Blaster_Red</Fire_Projectile_Type>
+			<Fire_Min_Recharge_Seconds>1.0</Fire_Min_Recharge_Seconds>
+			<Fire_Max_Recharge_Seconds>1.0</Fire_Max_Recharge_Seconds>
+			<Fire_Pulse_Count>6</Fire_Pulse_Count>
+			<Fire_Pulse_Delay_Seconds>0.1</Fire_Pulse_Delay_Seconds>
+			<Fire_Range_Distance>400.0</Fire_Range_Distance>
+			<Fire_SFXEvent>Unit_Storm_Trooper_Fire</Fire_SFXEvent>
+			
+			<Allow_Opportunity_Fire_When_Targeting>True</Allow_Opportunity_Fire_When_Targeting>
+			<Allow_Opportunity_Fire_When_Idle>True</Allow_Opportunity_Fire_When_Idle>
+	
+			<Fire_Inaccuracy_Distance> Infantry, 5.0 </Fire_Inaccuracy_Distance>
+			<Fire_Inaccuracy_Distance> Vehicle, 20.0 </Fire_Inaccuracy_Distance>
+			<Fire_Inaccuracy_Distance> Air, 50.0 </Fire_Inaccuracy_Distance>
+			<Fire_Inaccuracy_Distance> Structure, 10.0 </Fire_Inaccuracy_Distance>
+			<Fire_Inaccuracy_Distance> LandHero, 20.0 </Fire_Inaccuracy_Distance>
+			
+		</HardPoint>
+	
+		<HardPoint Name="AI_Bunker_2">
+			<Type> HARD_POINT_WEAPON_LASER </Type>
+			<Is_Targetable>No</Is_Targetable>
+			<Is_Destroyable>No</Is_Destroyable>
+			<Tooltip_Text>TEXT_WEAPON_LASERCANNON_DUAL</Tooltip_Text>
+			<Health>150.0</Health>
+	
+			<Death_Explosion_Particles> Large_Explosion_Space </Death_Explosion_Particles>
+			<Death_Explosion_SFXEvent>Unit_Hardpoint_Laser_Death</Death_Explosion_SFXEvent>
+	
+			<Model_To_Attach>AI_Bunker_Turret2.ALO</Model_To_Attach>
+			<Attachment_Bone>Attach_01</Attachment_Bone>
+			<Collision_Mesh>Attach_col_01</Collision_Mesh>
+			<Damage_Decal>_col</Damage_Decal>
+			<Damage_Particles>Attach_col_01</Damage_Particles>
+	
+			<Death_Breakoff_Prop> </Death_Breakoff_Prop>
+	
+				
+	
+			<Fire_Bone_A>MuzzleA_00</Fire_Bone_A>
+			<Fire_Bone_B>MuzzleA_01</Fire_Bone_B>
+			<Randomize_Between_Fire_Bones> No </Randomize_Between_Fire_Bones>
+			<Fire_Cone_Width>20.0</Fire_Cone_Width>
+			<Fire_Cone_Height>5.0</Fire_Cone_Height>
+			
+			<Is_Turret> Yes </Is_Turret>
+			<Turret_Rest_Angle> 0.0, 0.0, 0.0 </Turret_Rest_Angle>
+			<Turret_Rotation_Offset> 0.0, 0.0, 0.0 </Turret_Rotation_Offset>
+			<Turret_Rotate_Speed> 4.0 </Turret_Rotate_Speed>
+			<Turret_Rotate_Extent_Degrees> 70.0 </Turret_Rotate_Extent_Degrees>
+			<Turret_Elevate_Extent_Degrees> 35.0 </Turret_Elevate_Extent_Degrees>
+			<Turret_Bone_Name> B_Turret_01 </Turret_Bone_Name>
+			<Barrel_Bone_Name> B_Barrel_01 </Barrel_Bone_Name>
+	
+			<Fire_Projectile_Type>Proj_Light_AI_Blaster_Red</Fire_Projectile_Type>
+			<Fire_Min_Recharge_Seconds>1.0</Fire_Min_Recharge_Seconds>
+			<Fire_Max_Recharge_Seconds>1.0</Fire_Max_Recharge_Seconds>
+			<Fire_Pulse_Count>6</Fire_Pulse_Count>
+			<Fire_Pulse_Delay_Seconds>0.1</Fire_Pulse_Delay_Seconds>
+			<Fire_Range_Distance>400.0</Fire_Range_Distance>
+			<Fire_SFXEvent>Unit_Storm_Trooper_Fire</Fire_SFXEvent>
+			
+			<Allow_Opportunity_Fire_When_Targeting>True</Allow_Opportunity_Fire_When_Targeting>
+			<Allow_Opportunity_Fire_When_Idle>True</Allow_Opportunity_Fire_When_Idle>
+	
+			<Fire_Inaccuracy_Distance> Infantry, 5.0 </Fire_Inaccuracy_Distance>
+			<Fire_Inaccuracy_Distance> Vehicle, 20.0 </Fire_Inaccuracy_Distance>
+			<Fire_Inaccuracy_Distance> Air, 50.0 </Fire_Inaccuracy_Distance>
+			<Fire_Inaccuracy_Distance> Structure, 10.0 </Fire_Inaccuracy_Distance>
+			<Fire_Inaccuracy_Distance> LandHero, 20.0 </Fire_Inaccuracy_Distance>
+			
+		</HardPoint>
+	
+		<HardPoint Name="AI_Bunker_3">
+			<Type> HARD_POINT_WEAPON_LASER </Type>
+			<Is_Targetable>No</Is_Targetable>
+			<Is_Destroyable>No</Is_Destroyable>
+			<Tooltip_Text>TEXT_WEAPON_LASERCANNON_DUAL</Tooltip_Text>
+			<Health>150.0</Health>
+	
+			<Death_Explosion_Particles> Large_Explosion_Space </Death_Explosion_Particles>
+			<Death_Explosion_SFXEvent>Unit_Hardpoint_Laser_Death</Death_Explosion_SFXEvent>
+	
+			<Model_To_Attach>AI_Bunker_Turret3.ALO</Model_To_Attach>
+			<Attachment_Bone>Attach_02</Attachment_Bone>
+			<Collision_Mesh>Attach_col_02</Collision_Mesh>
+			<Damage_Decal>Attach_col_02</Damage_Decal>
+			<Damage_Particles>Attach_col_02</Damage_Particles>
+	
+			<Death_Breakoff_Prop> </Death_Breakoff_Prop>
+	
+				
+	
+			<Fire_Bone_A>MuzzleA_00</Fire_Bone_A>
+			<Fire_Bone_B>MuzzleA_01</Fire_Bone_B>
+			<Randomize_Between_Fire_Bones> No </Randomize_Between_Fire_Bones>
+			<Fire_Cone_Width>20.0</Fire_Cone_Width>
+			<Fire_Cone_Height>5.0</Fire_Cone_Height>
+			
+			<Is_Turret> Yes </Is_Turret>
+			<Turret_Rest_Angle> 0.0, 0.0, 0.0 </Turret_Rest_Angle>
+			<Turret_Rotation_Offset> 0.0, 0.0, 0.0 </Turret_Rotation_Offset>
+			<Turret_Rotate_Speed> 4.0 </Turret_Rotate_Speed>
+			<Turret_Rotate_Extent_Degrees> 70.0 </Turret_Rotate_Extent_Degrees>
+			<Turret_Elevate_Extent_Degrees> 35.0 </Turret_Elevate_Extent_Degrees>
+			<Turret_Bone_Name> B_Turret_02 </Turret_Bone_Name>
+			<Barrel_Bone_Name> B_Barrel_02 </Barrel_Bone_Name>
+	
+			<Fire_Projectile_Type>Proj_Light_AI_Blaster_Red</Fire_Projectile_Type>
+			<Fire_Min_Recharge_Seconds>1.0</Fire_Min_Recharge_Seconds>
+			<Fire_Max_Recharge_Seconds>1.0</Fire_Max_Recharge_Seconds>
+			<Fire_Pulse_Count>6</Fire_Pulse_Count>
+			<Fire_Pulse_Delay_Seconds>0.1</Fire_Pulse_Delay_Seconds>
+			<Fire_Range_Distance>400.0</Fire_Range_Distance>
+			<Fire_SFXEvent>Unit_Storm_Trooper_Fire</Fire_SFXEvent>
+			
+			<Allow_Opportunity_Fire_When_Targeting>True</Allow_Opportunity_Fire_When_Targeting>
+			<Allow_Opportunity_Fire_When_Idle>True</Allow_Opportunity_Fire_When_Idle>
+	
+			<Fire_Inaccuracy_Distance> Infantry, 5.0 </Fire_Inaccuracy_Distance>
+			<Fire_Inaccuracy_Distance> Vehicle, 20.0 </Fire_Inaccuracy_Distance>
+			<Fire_Inaccuracy_Distance> Air, 50.0 </Fire_Inaccuracy_Distance>
+			<Fire_Inaccuracy_Distance> Structure, 10.0 </Fire_Inaccuracy_Distance>
+			<Fire_Inaccuracy_Distance> LandHero, 20.0 </Fire_Inaccuracy_Distance>
+			
+		</HardPoint>
+	
+		<HardPoint Name="AI_Bunker_4">
+			<Type> HARD_POINT_WEAPON_LASER </Type>
+			<Is_Targetable>No</Is_Targetable>
+			<Is_Destroyable>No</Is_Destroyable>
+			<Tooltip_Text>TEXT_WEAPON_LASERCANNON_DUAL</Tooltip_Text>
+			<Health>150.0</Health>
+	
+			<Death_Explosion_Particles> Large_Explosion_Space </Death_Explosion_Particles>
+			<Death_Explosion_SFXEvent>Unit_Hardpoint_Laser_Death</Death_Explosion_SFXEvent>
+	
+			<Model_To_Attach>AI_Bunker_Turret4.ALO</Model_To_Attach>
+			<Attachment_Bone>Attach_03</Attachment_Bone>
+			<Collision_Mesh>Attach_col_03</Collision_Mesh>
+			<Damage_Decal>Attach_col_03</Damage_Decal>
+			<Damage_Particles>Attach_col_03</Damage_Particles>
+	
+			<Death_Breakoff_Prop> </Death_Breakoff_Prop>
+	
+				
+	
+			<Fire_Bone_A>MuzzleA_00</Fire_Bone_A>
+			<Fire_Bone_B>MuzzleA_01</Fire_Bone_B>
+			<Randomize_Between_Fire_Bones> No </Randomize_Between_Fire_Bones>
+			<Fire_Cone_Width>20.0</Fire_Cone_Width>
+			<Fire_Cone_Height>5.0</Fire_Cone_Height>
+			
+			<Is_Turret> Yes </Is_Turret>
+			<Turret_Rest_Angle> 0.0, 0.0, 0.0 </Turret_Rest_Angle>
+			<Turret_Rotation_Offset> 0.0, 0.0, 0.0 </Turret_Rotation_Offset>
+			<Turret_Rotate_Speed> 4.0 </Turret_Rotate_Speed>
+			<Turret_Rotate_Extent_Degrees> 70.0 </Turret_Rotate_Extent_Degrees>
+			<Turret_Elevate_Extent_Degrees> 35.0 </Turret_Elevate_Extent_Degrees>
+			<Turret_Bone_Name> B_Turret_03 </Turret_Bone_Name>
+			<Barrel_Bone_Name> B_Barrel_03 </Barrel_Bone_Name>
+	
+			<Fire_Projectile_Type>Proj_Light_AI_Blaster_Red</Fire_Projectile_Type>
+			<Fire_Min_Recharge_Seconds>1.0</Fire_Min_Recharge_Seconds>
+			<Fire_Max_Recharge_Seconds>1.0</Fire_Max_Recharge_Seconds>
+			<Fire_Pulse_Count>6</Fire_Pulse_Count>
+			<Fire_Pulse_Delay_Seconds>0.1</Fire_Pulse_Delay_Seconds>
+			<Fire_Range_Distance>400.0</Fire_Range_Distance>
+			<Fire_SFXEvent>Unit_Storm_Trooper_Fire</Fire_SFXEvent>
+			
+			<Allow_Opportunity_Fire_When_Targeting>True</Allow_Opportunity_Fire_When_Targeting>
+			<Allow_Opportunity_Fire_When_Idle>True</Allow_Opportunity_Fire_When_Idle>
+	
+			<Fire_Inaccuracy_Distance> Infantry, 5.0 </Fire_Inaccuracy_Distance>
+			<Fire_Inaccuracy_Distance> Vehicle, 20.0 </Fire_Inaccuracy_Distance>
+			<Fire_Inaccuracy_Distance> Air, 50.0 </Fire_Inaccuracy_Distance>
+			<Fire_Inaccuracy_Distance> Structure, 10.0 </Fire_Inaccuracy_Distance>
+			<Fire_Inaccuracy_Distance> LandHero, 20.0 </Fire_Inaccuracy_Distance>
+			
+		</HardPoint>
+
 	<!-- Plex Bunker -->
 
 	<HardPoint Name="Plex_Bunker_1">
@@ -439,7 +953,7 @@
         <Fire_Max_Recharge_Seconds>1.0</Fire_Max_Recharge_Seconds>
         <Fire_Pulse_Count>4</Fire_Pulse_Count>
         <Fire_Pulse_Delay_Seconds>0.1</Fire_Pulse_Delay_Seconds>
-        <Fire_Range_Distance>350.0</Fire_Range_Distance>
+        <Fire_Range_Distance>400.0</Fire_Range_Distance>
 		<Fire_SFXEvent>Unit_Blaster_Cannon_Fire</Fire_SFXEvent>
 
 		<Fire_Inaccuracy_Distance> Infantry, 10.0 </Fire_Inaccuracy_Distance>
@@ -466,7 +980,7 @@
         <Fire_Max_Recharge_Seconds>1.0</Fire_Max_Recharge_Seconds>
         <Fire_Pulse_Count>4</Fire_Pulse_Count>
         <Fire_Pulse_Delay_Seconds>0.1</Fire_Pulse_Delay_Seconds>
-        <Fire_Range_Distance>350.0</Fire_Range_Distance>
+        <Fire_Range_Distance>400.0</Fire_Range_Distance>
 		<Fire_SFXEvent>Unit_Blaster_Cannon_Fire</Fire_SFXEvent>
 
 		<Fire_Inaccuracy_Distance> Infantry, 10.0 </Fire_Inaccuracy_Distance>
@@ -618,6 +1132,48 @@
 		<Fire_Category_Restrictions> Infantry, Vehicle, Structure, LandHero </Fire_Category_Restrictions>
     </HardPoint>		
 
+	
+	<!-- Sith War Behemoth -->
+	
+	<HardPoint Name="HP_Sith_War_Behemoth_Turret">
+		<Type> HARD_POINT_WEAPON_LASER </Type>
+	    <Is_Targetable>No</Is_Targetable>
+        <Is_Destroyable>No</Is_Destroyable>
+		<Health>1.0</Health>
 
+		<Model_To_Attach>Sith_SithWarBehemoth_AVTurret.alo</Model_To_Attach>
+		<Attachment_Bone>AVTURRET_ATTACH</Attachment_Bone>
+
+		<Fire_Bone_A>MUZZLEA_00</Fire_Bone_A>
+		<Fire_Bone_B />
+		<Randomize_Between_Fire_Bones> No </Randomize_Between_Fire_Bones>
+		<Fire_Cone_Width>20.0</Fire_Cone_Width>
+		<Fire_Cone_Height>90.0</Fire_Cone_Height>
+		<Allow_Opportunity_Fire_When_Targeting>True</Allow_Opportunity_Fire_When_Targeting>
+		
+		<Is_Turret> Yes </Is_Turret>
+		<Turret_Rest_Angle> 0.0, 0.0, 0.0 </Turret_Rest_Angle>
+		<Turret_Rotation_Offset> 0.0, 0.0, 0.0 </Turret_Rotation_Offset>
+		<Turret_Rotate_Speed> 5.0 </Turret_Rotate_Speed>
+		<Turret_Rotate_Extent_Degrees> 90.0 </Turret_Rotate_Extent_Degrees>
+		<Turret_Elevate_Extent_Degrees> 15.0 </Turret_Elevate_Extent_Degrees>
+		<Turret_Bone_Name> BARREL_00  </Turret_Bone_Name>
+		<Barrel_Bone_Name> TURRET_00 </Barrel_Bone_Name>
+
+		<Fire_Projectile_Type>Proj_SuperHeavy_AV_Blaster_Red</Fire_Projectile_Type>
+		<Fire_Min_Recharge_Seconds>3.0</Fire_Min_Recharge_Seconds>
+        <Fire_Max_Recharge_Seconds>3.0</Fire_Max_Recharge_Seconds>
+        <Fire_Pulse_Count>2</Fire_Pulse_Count>
+        <Fire_Pulse_Delay_Seconds>0.25</Fire_Pulse_Delay_Seconds>
+        <Fire_Range_Distance>650.0</Fire_Range_Distance>
+		<Fire_Min_Range_Distance>50.0</Fire_Min_Range_Distance>
+		<Fire_SFXEvent>Unit_AT_AT_Fire</Fire_SFXEvent>
+
+		<Fire_Inaccuracy_Distance> Infantry, 20.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Vehicle, 5.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Air, 30.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Structure, 10.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> LandHero, 15.0 </Fire_Inaccuracy_Distance>
+	</HardPoint>
 
 </HardPoints>

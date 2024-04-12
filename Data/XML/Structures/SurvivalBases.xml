@@ -1,36 +1,46 @@
 <?xml version="1.0"?>
 <Survival_Starbases>
+
+<!--***********************************************************-->
+<!--************************Main Starbases*********************-->
+<!--***********************************************************-->
 	
-	<!-- CIS Survival Starbases -->
+	<!-- New Republic Survival Starbases -->
 	<StarBase Name="Survival_NewRepublic_Starbase">
 		<Variant_Of_Existing_Type>Generic_XQ_Starbase</Variant_Of_Existing_Type>
 		<Affiliation>Rebel</Affiliation>
 		<Tech_Level>99</Tech_Level>
 		<Next_Level_Base>Survival_NewRepublic_Starbase_2</Next_Level_Base>
-
+		
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_XQ5
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
+		TEXT_TOOLTIP_XQ5_HULL
+		TEXT_TOOLTIP_XQ5_SHIELD 
+		TEXT_TOOLTIP_XQ5_WEAP1 
+		TEXT_TOOLTIP_XQ5_WEAP2
+		</Encyclopedia_Text>
 
 		<!-- Tactical Production Options -->
-		<SpaceBehavior> SPACE_OBSTACLE, POWERED, SHIELDED, HIDE_WHEN_FOGGED, REVEAL, UNIT_AI, SPAWN_SQUADRON, ION_STUN_EFFECT</SpaceBehavior>
+		<SpaceBehavior> SPACE_OBSTACLE, POWERED, SHIELDED, HIDE_WHEN_FOGGED, REVEAL, UNIT_AI, ION_STUN_EFFECT</SpaceBehavior>
 		<Tactical_Buildable_Objects_Campaign> 
 			Rebel,
 				Corellian_Corvette,
+				Corellian_Gunboat,
 				Nebulon_B_Frigate,
-				Quasar,
 				Nebulon_B_Tender,
-				MC30a,
-				Marauder_Cruiser,
+				CC7700,
+				Quasar,
+
 				Survival_NewRepublic_Level_2_Starbase_Upgrade
 		</Tactical_Buildable_Objects_Campaign>
 		
 		<SFXEvent_Build_Started>RHD_Build_Structure</SFXEvent_Build_Started>
 		<SFXEvent_Build_Cancelled>RHD_Building_Canceled</SFXEvent_Build_Cancelled>
 		<SFXEvent_Build_Complete>RHD_Construction_Complete</SFXEvent_Build_Complete>
-		<SFXEvent_Ambient_Loop>Unit_Starbase_Engine_Loop</SFXEvent_Ambient_Loop>
-		<SFXEvent_Fire>Unit_Turbo_Fire</SFXEvent_Fire>
+		
 		<SFXEvent_Select>Unit_Select_Rebel_Space_Station</SFXEvent_Select>
 		<SFXEvent_Attack>Unit_Attack_Rebel_Space_Station</SFXEvent_Attack>
-		<SFXEvent_Barrage>Unit_Barrage_Rebel_Space_Station</SFXEvent_Barrage>
-		<Death_SFXEvent_Start_Die>Unit_Space_Station_Death_SFX</Death_SFXEvent_Start_Die>
 		<SFXEvent_Unit_Under_Attack> RHD_Space_Station_Under_Attack </SFXEvent_Unit_Under_Attack>
 
 		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_LASER, Unit_HP_LASER_Rebel_Space_Station</SFXEvent_Attack_Hardpoint>
@@ -60,7 +70,6 @@
 		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_SPECIAL, null </SFXEvent_Hardpoint_Destroyed>
 		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENABLE_SPECIAL_ABILITY, null </SFXEvent_Hardpoint_Destroyed>
 		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_DUMMY_ART, null </SFXEvent_Hardpoint_Destroyed>
-
 	</StarBase>
 	
 	<StarBase Name="Survival_NewRepublic_Starbase_2">
@@ -69,8 +78,17 @@
 		<Tech_Level>99</Tech_Level>
 		<Prev_Level_Base>Survival_NewRepublic_Starbase</Prev_Level_Base>
 		<Next_Level_Base>Survival_NewRepublic_Starbase_3</Next_Level_Base>
+		
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_GOLAN_ONE
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
+		TEXT_TOOLTIP_GOLAN_ONE_HULL
+		TEXT_TOOLTIP_GOLAN_ONE_SHIELD 
+		TEXT_TOOLTIP_GOLAN_ONE_WEAP1
+		TEXT_TOOLTIP_GOLAN_ONE_WEAP2
+		</Encyclopedia_Text>
 
-		<SpaceBehavior> SPACE_OBSTACLE, POWERED, SHIELDED, HIDE_WHEN_FOGGED, REVEAL, UNIT_AI, SPAWN_SQUADRON, ION_STUN_EFFECT</SpaceBehavior>
+		<SpaceBehavior> SPACE_OBSTACLE, POWERED, SHIELDED, HIDE_WHEN_FOGGED, REVEAL, UNIT_AI, ION_STUN_EFFECT</SpaceBehavior>
 
 		<Tactical_Buildable_Objects_Campaign> 
 			Rebel,
@@ -78,26 +96,22 @@
 				Corellian_Gunboat,
 				Nebulon_B_Frigate,
 				Nebulon_B_Tender,
+				CC7700,
 				Quasar,
-				MC30c,
-				Marauder_Cruiser,
 				
-				MC40a,
 				Alliance_Assault_Frigate,
+				MC30c,
+				MC40a,
 
-				Defence_Base_XQ5,
 				Survival_NewRepublic_Level_3_Starbase_Upgrade
 		</Tactical_Buildable_Objects_Campaign>
 		
 		<SFXEvent_Build_Started>RHD_Build_Structure</SFXEvent_Build_Started>
 		<SFXEvent_Build_Cancelled>RHD_Building_Canceled</SFXEvent_Build_Cancelled>
 		<SFXEvent_Build_Complete>RHD_Construction_Complete</SFXEvent_Build_Complete>
-		<SFXEvent_Ambient_Loop>Unit_Starbase_Engine_Loop</SFXEvent_Ambient_Loop>
-		<SFXEvent_Fire>Unit_Turbo_Fire</SFXEvent_Fire>
+		
 		<SFXEvent_Select>Unit_Select_Rebel_Space_Station</SFXEvent_Select>
 		<SFXEvent_Attack>Unit_Attack_Rebel_Space_Station</SFXEvent_Attack>
-		<SFXEvent_Barrage>Unit_Barrage_Rebel_Space_Station</SFXEvent_Barrage>
-		<Death_SFXEvent_Start_Die>Unit_Space_Station_Death_SFX</Death_SFXEvent_Start_Die>
 		<SFXEvent_Unit_Under_Attack> RHD_Space_Station_Under_Attack </SFXEvent_Unit_Under_Attack>
 
 		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_LASER, Unit_HP_LASER_Rebel_Space_Station</SFXEvent_Attack_Hardpoint>
@@ -127,7 +141,6 @@
 		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_SPECIAL, null </SFXEvent_Hardpoint_Destroyed>
 		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENABLE_SPECIAL_ABILITY, null </SFXEvent_Hardpoint_Destroyed>
 		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_DUMMY_ART, null </SFXEvent_Hardpoint_Destroyed>
-
 	</StarBase>
 
 	<StarBase Name="Survival_NewRepublic_Starbase_3">
@@ -136,35 +149,42 @@
 		<Tech_Level>99</Tech_Level>
 		<Prev_Level_Base>Survival_NewRepublic_Starbase_2</Prev_Level_Base>
 		<Next_Level_Base>Survival_NewRepublic_Starbase_4</Next_Level_Base>
+		
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_GOLAN_TWO
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_GOLAN_TWO_HULL
+		TEXT_TOOLTIP_GOLAN_TWO_SHIELD
+		TEXT_TOOLTIP_GOLAN_TWO_WEAP1
+		TEXT_TOOLTIP_GOLAN_TWO_WEAP2 
+		</Encyclopedia_Text>
 
 		<Tactical_Buildable_Objects_Campaign> 
 			Rebel,
-				Corellian_Corvette,
-				Corellian_Gunboat,
-				Hajen,
+				Agave_Corvette,
+				Warrior_Gunship,
 				Sacheen,
+				Hajen,
 				Corona,
+				CC7700_E,
+				Belarus,
+				Quasar,
 				
-				MC40a,
 				Alliance_Assault_Frigate,
-				Dauntless,
-				BAC,
-				Calamari_Cruiser,
 				
-				Survival_NewRepublic_Level_4_Starbase_Upgrade,
-				Defence_Base_XQ5,
-				Defence_Base_Golan_One
+				Liberator_Cruiser,
+				Dauntless,
+				Calamari_Cruiser,
+
+				Survival_NewRepublic_Level_4_Starbase_Upgrade
 		</Tactical_Buildable_Objects_Campaign>
 		
 		<SFXEvent_Build_Started>RHD_Build_Structure</SFXEvent_Build_Started>
 		<SFXEvent_Build_Cancelled>RHD_Building_Canceled</SFXEvent_Build_Cancelled>
 		<SFXEvent_Build_Complete>RHD_Construction_Complete</SFXEvent_Build_Complete>
-		<SFXEvent_Ambient_Loop>Unit_Starbase_Engine_Loop</SFXEvent_Ambient_Loop>
-		<SFXEvent_Fire>Unit_Turbo_Fire</SFXEvent_Fire>
+		
 		<SFXEvent_Select>Unit_Select_Rebel_Space_Station</SFXEvent_Select>
 		<SFXEvent_Attack>Unit_Attack_Rebel_Space_Station</SFXEvent_Attack>
-		<SFXEvent_Barrage>Unit_Barrage_Rebel_Space_Station</SFXEvent_Barrage>
-		<Death_SFXEvent_Start_Die>Unit_Space_Station_Death_SFX</Death_SFXEvent_Start_Die>
 		<SFXEvent_Unit_Under_Attack> RHD_Space_Station_Under_Attack </SFXEvent_Unit_Under_Attack>
 
 		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_LASER, Unit_HP_LASER_Rebel_Space_Station</SFXEvent_Attack_Hardpoint>
@@ -194,7 +214,6 @@
 		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_SPECIAL, null </SFXEvent_Hardpoint_Destroyed>
 		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENABLE_SPECIAL_ABILITY, null </SFXEvent_Hardpoint_Destroyed>
 		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_DUMMY_ART, null </SFXEvent_Hardpoint_Destroyed>
-
 	</StarBase>
 
 	<StarBase Name="Survival_NewRepublic_Starbase_4">
@@ -203,44 +222,50 @@
 		<Tech_Level>99</Tech_Level>
 		<Prev_Level_Base>Survival_NewRepublic_Starbase_3</Prev_Level_Base>
 		<Next_Level_Base>Survival_NewRepublic_Starbase_5</Next_Level_Base>
+		
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_GOLAN_THREE
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_GOLAN_THREE_HULL
+		TEXT_TOOLTIP_GOLAN_THREE_SHIELD
+		TEXT_TOOLTIP_GOLAN_THREE_WEAP1 
+		TEXT_TOOLTIP_GOLAN_THREE_WEAP2 
+		</Encyclopedia_Text>
 
 		<Tactical_Buildable_Objects_Campaign> 
 			Rebel,
 				Agave_Corvette,
 				Warrior_Gunship,
-				Hajen,
 				Sacheen,
+				Hajen,
 				Corona,
+				CC7700_E,
+				Belarus,
+				Quasar,
 				
-				MC40a,
 				Alliance_Assault_Frigate,
-				Dauntless,
-				BAC,
-				Calamari_Cruiser,
 				
+				Liberator_Cruiser,
+				Dauntless,
 				Majestic,
 				Defender_Carrier,
-				Alliance_Assault_Frigate_II,
+				
 				MC80B,
 				Republic_SD,
 				Home_One_Type,
 				MC90,
-				
-				Defence_Base_XQ5,
-				Survival_NewRepublic_Level_5_Starbase_Upgrade,
-				Defence_Base_Golan_One,
-				Defence_Base_Golan_Two
+				Nebula,
+				Endurance,
+
+				Survival_NewRepublic_Level_5_Starbase_Upgrade
 		</Tactical_Buildable_Objects_Campaign>
 		
 		<SFXEvent_Build_Started>RHD_Build_Structure</SFXEvent_Build_Started>
 		<SFXEvent_Build_Cancelled>RHD_Building_Canceled</SFXEvent_Build_Cancelled>
 		<SFXEvent_Build_Complete>RHD_Construction_Complete</SFXEvent_Build_Complete>
-		<SFXEvent_Ambient_Loop>Unit_Starbase_Engine_Loop</SFXEvent_Ambient_Loop>
-		<SFXEvent_Fire>Unit_Turbo_Fire</SFXEvent_Fire>
+		
 		<SFXEvent_Select>Unit_Select_Rebel_Space_Station</SFXEvent_Select>
 		<SFXEvent_Attack>Unit_Attack_Rebel_Space_Station</SFXEvent_Attack>
-		<SFXEvent_Barrage>Unit_Barrage_Rebel_Space_Station</SFXEvent_Barrage>
-		<Death_SFXEvent_Start_Die>Unit_Space_Station_Death_SFX</Death_SFXEvent_Start_Die>
 		<SFXEvent_Unit_Under_Attack> RHD_Space_Station_Under_Attack </SFXEvent_Unit_Under_Attack>
 
 		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_LASER, Unit_HP_LASER_Rebel_Space_Station</SFXEvent_Attack_Hardpoint>
@@ -270,7 +295,6 @@
 		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_SPECIAL, null </SFXEvent_Hardpoint_Destroyed>
 		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENABLE_SPECIAL_ABILITY, null </SFXEvent_Hardpoint_Destroyed>
 		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_DUMMY_ART, null </SFXEvent_Hardpoint_Destroyed>
-		
 	</StarBase>
 
 	<StarBase Name="Survival_NewRepublic_Starbase_5">
@@ -278,24 +302,37 @@
 		<Affiliation>Rebel</Affiliation>
 		<Tech_Level>99</Tech_Level>
 		<Prev_Level_Base>Survival_NewRepublic_Starbase_4</Prev_Level_Base>
+		
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_EMPRESS
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
+		TEXT_TOOLTIP_EMPRESS_HULL
+		TEXT_TOOLTIP_EMPRESS_SHIELD
+		TEXT_TOOLTIP_EMPRESS_WEAP1
+		TEXT_TOOLTIP_EMPRESS_WEAP2
+		TEXT_TOOLTIP_EMPRESS_WEAP3
+		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
+		TEXT_TOOLTIP_BONUS_FLEET_TENDER
+		</Encyclopedia_Text>
 
 		<Tactical_Buildable_Objects_Campaign> 
 			Rebel,
 				Agave_Corvette,
 				Warrior_Gunship,
-				Hajen,
 				Sacheen,
+				Hajen,
 				Corona,
+				CC7700_E,
+				Belarus,
+				Quasar,
 				
-				MC40a,
 				Alliance_Assault_Frigate,
-				Dauntless,
-				BAC,
-				Calamari_Cruiser,
 				
+				Liberator_Cruiser,
+				Dauntless,
 				Majestic,
 				Defender_Carrier,
-				Alliance_Assault_Frigate_II,
+				
 				MC80B,
 				Republic_SD,
 				Home_One_Type,
@@ -306,114 +343,68 @@
 				Mediator,
 				BlueDiver,
 				Mini_Viscount,
-				Viscount,
-				
-				Defence_Base_XQ5,
-				Defence_Base_Golan_One,
-				Defence_Base_Golan_Two,
-				Defence_Base_Golan_Three
+				Survival_Viscount				
 		</Tactical_Buildable_Objects_Campaign>
-		
-		<SFXEvent_Build_Started>RHD_Build_Structure</SFXEvent_Build_Started>
-		<SFXEvent_Build_Cancelled>RHD_Building_Canceled</SFXEvent_Build_Cancelled>
-		<SFXEvent_Build_Complete>RHD_Construction_Complete</SFXEvent_Build_Complete>
-		<SFXEvent_Ambient_Loop>Unit_Starbase_Engine_Loop</SFXEvent_Ambient_Loop>
-		<SFXEvent_Fire>Unit_Turbo_Fire</SFXEvent_Fire>
-		<SFXEvent_Select>Unit_Select_Rebel_Space_Station</SFXEvent_Select>
-		<SFXEvent_Attack>Unit_Attack_Rebel_Space_Station</SFXEvent_Attack>
-		<SFXEvent_Barrage>Unit_Barrage_Rebel_Space_Station</SFXEvent_Barrage>
-		<Death_SFXEvent_Start_Die>Unit_Space_Station_Death_SFX</Death_SFXEvent_Start_Die>
-		<SFXEvent_Unit_Under_Attack> RHD_Space_Station_Under_Attack </SFXEvent_Unit_Under_Attack>
 
-		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_LASER, Unit_HP_LASER_Rebel_Space_Station</SFXEvent_Attack_Hardpoint>
-		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MISSILE, Unit_HP_MISSILE_Rebel_Space_Station </SFXEvent_Attack_Hardpoint>
-		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_TORPEDO, Unit_HP_TORP_Rebel_Space_Station </SFXEvent_Attack_Hardpoint>
-		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_ION_CANNON, Unit_HP_ION_Rebel_Space_Station </SFXEvent_Attack_Hardpoint>
-		<SFXEvent_Attack_Hardpoint> HARD_POINT_SHIELD_GENERATOR, Unit_HP_SHIELDS_Rebel_Space_Station </SFXEvent_Attack_Hardpoint>
-		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENGINE, Unit_HP_ENGINES_Rebel_Space_Station </SFXEvent_Attack_Hardpoint>
-		<SFXEvent_Attack_Hardpoint> HARD_POINT_GRAVITY_WELL, Unit_HP_Grav_Rebel_Space_Station </SFXEvent_Attack_Hardpoint>
-		<SFXEvent_Attack_Hardpoint> HARD_POINT_FIGHTER_BAY, Unit_HP_BAY_Rebel_Space_Station </SFXEvent_Attack_Hardpoint>
-		<SFXEvent_Attack_Hardpoint> HARD_POINT_TRACTOR_BEAM, null </SFXEvent_Attack_Hardpoint>
-		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MASS_DRIVER, null </SFXEvent_Attack_Hardpoint>
-		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_SPECIAL, null </SFXEvent_Attack_Hardpoint>
-		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENABLE_SPECIAL_ABILITY, null </SFXEvent_Attack_Hardpoint>
-		<SFXEvent_Attack_Hardpoint> HARD_POINT_DUMMY_ART, null </SFXEvent_Attack_Hardpoint>
-				
-		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_LASER, Unit_Lost_Laser_Rebel_Space_Station </SFXEvent_Hardpoint_Destroyed>
-		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_MISSILE,  Unit_Lost_Missile_Rebel_Space_Station </SFXEvent_Hardpoint_Destroyed>
-		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_TORPEDO,  Unit_Lost_Torpedo_Rebel_Space_Station </SFXEvent_Hardpoint_Destroyed>
-		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_ION_CANNON, Unit_Lost_Ion_Rebel_Space_Station </SFXEvent_Hardpoint_Destroyed>
-		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_SHIELD_GENERATOR, Unit_Lost_Shields_Rebel_Space_Station </SFXEvent_Hardpoint_Destroyed>
-		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENGINE, null </SFXEvent_Hardpoint_Destroyed>
-		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_GRAVITY_WELL, null </SFXEvent_Hardpoint_Destroyed>
-		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_FIGHTER_BAY, Unit_Lost_Bay_Rebel_Space_Station </SFXEvent_Hardpoint_Destroyed>
-		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_TRACTOR_BEAM, null </SFXEvent_Hardpoint_Destroyed>
-		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_MASS_DRIVER, null </SFXEvent_Hardpoint_Destroyed>
-		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_SPECIAL, null </SFXEvent_Hardpoint_Destroyed>
-		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENABLE_SPECIAL_ABILITY, null </SFXEvent_Hardpoint_Destroyed>
-		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_DUMMY_ART, null </SFXEvent_Hardpoint_Destroyed>
-
+		<Abilities SubObjectList="Yes">
+			<Force_Healing_Ability Name="Fleet_Tender_Facility_Healing">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Heal_Range>1500.0</Heal_Range>
+				<Heal_Percent> 0.05 </Heal_Percent>
+                <Blob_Color>0, 255, 0, 255</Blob_Color>
+				<Heal_Interval_In_Secs>2.0</Heal_Interval_In_Secs>
+				<Single_Target_Heal>Yes</Single_Target_Heal>
+				<Heal_Range_Blob_Material>Reinforcement_Point_Radius_Overlay</Heal_Range_Blob_Material>
+				<!-- We can heal the following unit types: -->
+				<Applicable_Unit_Categories>Corvette, Frigate, Capital, Hero, SuperCapital, SpaceHero</Applicable_Unit_Categories>
+				<Applicable_Unit_Types />
+				<SFXEvent_Target_Affected>Unit_Force_Healing_Pulse</SFXEvent_Target_Affected>
+				<Target_Particle_Effect>Shield_Sparks_Medium</Target_Particle_Effect>
+				<Target_Particle_Bone_Name>B_TURRET, TURRET_00, B_TURRET_BASE</Target_Particle_Bone_Name>
+				<Target_Light_Effect_Type>Color_Flash</Target_Light_Effect_Type>
+				<Target_Light_Effect_Color>1.2, 1.2, 2.0</Target_Light_Effect_Color>
+				<Target_Light_Effect_Color2 />
+				<Target_Light_Effect_Duration>0.6</Target_Light_Effect_Duration>
+				<Target_Light_Effect_Pulse_Count>1</Target_Light_Effect_Pulse_Count>
+				<Owner_Particle_Bone_Name>ROOT</Owner_Particle_Bone_Name>
+				<Owner_Light_Effect_Type>Color_Flash</Owner_Light_Effect_Type>
+				<Owner_Light_Effect_Color>1.2, 1.2, 2.0</Owner_Light_Effect_Color>
+				<Owner_Light_Effect_Color2 />
+				<Owner_Light_Effect_Duration>0.6</Owner_Light_Effect_Duration>
+				<Owner_Light_Effect_Pulse_Count>1</Owner_Light_Effect_Pulse_Count>
+				<!--<Lightning_Effect_Name>Repair_Facility_Effect</Lightning_Effect_Name>-->
+			</Force_Healing_Ability>
+		</Abilities>
 	</StarBase>
 
-	<!-- Republic Survival Starbases -->
+	<!-- Empire Survival Starbases -->
 	<StarBase Name="Survival_Empire_Starbase">
 		<Variant_Of_Existing_Type>Generic_XQ_Starbase</Variant_Of_Existing_Type>
 		<Affiliation>Empire</Affiliation>
 		<Tech_Level>99</Tech_Level>
 		<Next_Level_Base>Survival_Empire_Starbase_2</Next_Level_Base>
+		
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_XQ5
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
+		TEXT_TOOLTIP_XQ5_HULL
+		TEXT_TOOLTIP_XQ5_SHIELD 
+		TEXT_TOOLTIP_XQ5_WEAP1 
+		TEXT_TOOLTIP_XQ5_WEAP2
+		</Encyclopedia_Text>
 
-
-		<SpaceBehavior> SPACE_OBSTACLE, POWERED, SHIELDED, HIDE_WHEN_FOGGED, REVEAL, UNIT_AI, SPAWN_SQUADRON, ION_STUN_EFFECT</SpaceBehavior>
+		<SpaceBehavior> SPACE_OBSTACLE, POWERED, SHIELDED, HIDE_WHEN_FOGGED, REVEAL, UNIT_AI, ION_STUN_EFFECT</SpaceBehavior>
 		<Tactical_Buildable_Objects_Campaign> 
 			Empire,
+				Beta_ETR_3_Squadron,
 				IPV1_System_Patrol_Craft,
-				Nebulon_B_Empire,
 				Carrack_Cruiser,
 				Escort_Carrier,
+				Star_Galleon,
 				Eidolon,
-				
+
 				Survival_Empire_Level_2_Starbase_Upgrade
 		</Tactical_Buildable_Objects_Campaign>
-		
-		<SFXEvent_Build_Started>EHD_Build_Structure</SFXEvent_Build_Started>
-		<SFXEvent_Build_Cancelled>EHD_Building_Canceled</SFXEvent_Build_Cancelled>
-		<SFXEvent_Build_Complete>EHD_Construction_Complete</SFXEvent_Build_Complete>
-		<SFXEvent_Ambient_Loop>Unit_Starbase_Engine_Loop</SFXEvent_Ambient_Loop>
-		<SFXEvent_Fire>Unit_Turbo_Fire</SFXEvent_Fire>
-		<SFXEvent_Select>Unit_Select_Empire_Space_Station</SFXEvent_Select>
-		<SFXEvent_Attack>Unit_Attack_Empire_Space_Station</SFXEvent_Attack>
-		<SFXEvent_Barrage>Unit_Barrage_Empire_Space_Station</SFXEvent_Barrage>
-		<Death_SFXEvent_Start_Die>Unit_Space_Station_Death_SFX</Death_SFXEvent_Start_Die>
-		<SFXEvent_Unit_Under_Attack> EHD_Space_Station_Under_Attack </SFXEvent_Unit_Under_Attack>
-
-		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_LASER, Unit_HP_LASER_Empire_Space_Station</SFXEvent_Attack_Hardpoint>
-		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MISSILE, Unit_HP_MISSILE_Empire_Space_Station </SFXEvent_Attack_Hardpoint>
-		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_TORPEDO, Unit_HP_TORP_Empire_Space_Station </SFXEvent_Attack_Hardpoint>
-		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_ION_CANNON, Unit_HP_ION_Empire_Space_Station </SFXEvent_Attack_Hardpoint>
-		<SFXEvent_Attack_Hardpoint> HARD_POINT_SHIELD_GENERATOR, Unit_HP_SHIELDS_Empire_Space_Station </SFXEvent_Attack_Hardpoint>
-		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENGINE, Unit_HP_ENGINES_Empire_Space_Station </SFXEvent_Attack_Hardpoint>
-		<SFXEvent_Attack_Hardpoint> HARD_POINT_GRAVITY_WELL, Unit_HP_Grav_Empire_Space_Station </SFXEvent_Attack_Hardpoint>
-		<SFXEvent_Attack_Hardpoint> HARD_POINT_FIGHTER_BAY, Unit_HP_BAY_Empire_Space_Station </SFXEvent_Attack_Hardpoint>
-		<SFXEvent_Attack_Hardpoint> HARD_POINT_TRACTOR_BEAM, null </SFXEvent_Attack_Hardpoint>
-		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MASS_DRIVER, null </SFXEvent_Attack_Hardpoint>
-		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_SPECIAL, null </SFXEvent_Attack_Hardpoint>
-		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENABLE_SPECIAL_ABILITY, null </SFXEvent_Attack_Hardpoint>
-		<SFXEvent_Attack_Hardpoint> HARD_POINT_DUMMY_ART, null </SFXEvent_Attack_Hardpoint>
-				
-		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_LASER, Unit_Lost_Laser_Empire_Space_Station </SFXEvent_Hardpoint_Destroyed>
-		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_MISSILE,  Unit_Lost_Missile_Empire_Space_Station </SFXEvent_Hardpoint_Destroyed>
-		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_TORPEDO,  Unit_Lost_Torpedo_Empire_Space_Station </SFXEvent_Hardpoint_Destroyed>
-		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_ION_CANNON, Unit_Lost_Ion_Empire_Space_Station </SFXEvent_Hardpoint_Destroyed>
-		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_SHIELD_GENERATOR, Unit_Lost_Shields_Empire_Space_Station </SFXEvent_Hardpoint_Destroyed>
-		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENGINE, null </SFXEvent_Hardpoint_Destroyed>
-		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_GRAVITY_WELL, null </SFXEvent_Hardpoint_Destroyed>
-		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_FIGHTER_BAY, Unit_Lost_Bay_Empire_Space_Station </SFXEvent_Hardpoint_Destroyed>
-		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_TRACTOR_BEAM, null </SFXEvent_Hardpoint_Destroyed>
-		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_MASS_DRIVER, null </SFXEvent_Hardpoint_Destroyed>
-		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_SPECIAL, null </SFXEvent_Hardpoint_Destroyed>
-		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENABLE_SPECIAL_ABILITY, null </SFXEvent_Hardpoint_Destroyed>
-		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_DUMMY_ART, null </SFXEvent_Hardpoint_Destroyed>
-
 	</StarBase>
 
 	<StarBase Name="Survival_Empire_Starbase_2">
@@ -422,64 +413,33 @@
 		<Tech_Level>99</Tech_Level>
 		<Next_Level_Base>Survival_Empire_Starbase_3</Next_Level_Base>
 		<Prev_Level_Base>Survival_Empire_Starbase</Prev_Level_Base>
+		
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_GOLAN_ONE
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
+		TEXT_TOOLTIP_GOLAN_ONE_HULL
+		TEXT_TOOLTIP_GOLAN_ONE_SHIELD 
+		TEXT_TOOLTIP_GOLAN_ONE_WEAP1
+		TEXT_TOOLTIP_GOLAN_ONE_WEAP2
+		</Encyclopedia_Text>
 
-		<SpaceBehavior> SPACE_OBSTACLE, POWERED, SHIELDED, HIDE_WHEN_FOGGED, REVEAL, UNIT_AI, SPAWN_SQUADRON, ION_STUN_EFFECT</SpaceBehavior>
+		<SpaceBehavior> SPACE_OBSTACLE, POWERED, SHIELDED, HIDE_WHEN_FOGGED, REVEAL, UNIT_AI, ION_STUN_EFFECT</SpaceBehavior>
 		<Tactical_Buildable_Objects_Campaign> 
 			Empire,
-				IPV1_System_Patrol_Craft,
-				Nebulon_B_Empire,
+				Beta_ETR_3_Squadron,
+				Lancer_Frigate,
 				Carrack_Cruiser,
 				Escort_Carrier,
+				Star_Galleon,
 				Strike_Cruiser,
 				
 				Dreadnaught_Empire,
 				Vindicator_Cruiser,
-				Star_Galleon,
 				Generic_Acclamator_Assault_Ship_II,
-				
-				Defence_Base_XQ5,
+				Generic_Interdictor_Cruiser,
+
 				Survival_Empire_Level_3_Starbase_Upgrade
 		</Tactical_Buildable_Objects_Campaign>
-		
-		<SFXEvent_Build_Started>EHD_Build_Structure</SFXEvent_Build_Started>
-		<SFXEvent_Build_Cancelled>EHD_Building_Canceled</SFXEvent_Build_Cancelled>
-		<SFXEvent_Build_Complete>EHD_Construction_Complete</SFXEvent_Build_Complete>
-		<SFXEvent_Ambient_Loop>Unit_Starbase_Engine_Loop</SFXEvent_Ambient_Loop>
-		<SFXEvent_Fire>Unit_Turbo_Fire</SFXEvent_Fire>
-		<SFXEvent_Select>Unit_Select_Empire_Space_Station</SFXEvent_Select>
-		<SFXEvent_Attack>Unit_Attack_Empire_Space_Station</SFXEvent_Attack>
-		<SFXEvent_Barrage>Unit_Barrage_Empire_Space_Station</SFXEvent_Barrage>
-		<Death_SFXEvent_Start_Die>Unit_Space_Station_Death_SFX</Death_SFXEvent_Start_Die>
-		<SFXEvent_Unit_Under_Attack> EHD_Space_Station_Under_Attack </SFXEvent_Unit_Under_Attack>
-
-		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_LASER, Unit_HP_LASER_Empire_Space_Station</SFXEvent_Attack_Hardpoint>
-		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MISSILE, Unit_HP_MISSILE_Empire_Space_Station </SFXEvent_Attack_Hardpoint>
-		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_TORPEDO, Unit_HP_TORP_Empire_Space_Station </SFXEvent_Attack_Hardpoint>
-		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_ION_CANNON, Unit_HP_ION_Empire_Space_Station </SFXEvent_Attack_Hardpoint>
-		<SFXEvent_Attack_Hardpoint> HARD_POINT_SHIELD_GENERATOR, Unit_HP_SHIELDS_Empire_Space_Station </SFXEvent_Attack_Hardpoint>
-		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENGINE, Unit_HP_ENGINES_Empire_Space_Station </SFXEvent_Attack_Hardpoint>
-		<SFXEvent_Attack_Hardpoint> HARD_POINT_GRAVITY_WELL, Unit_HP_Grav_Empire_Space_Station </SFXEvent_Attack_Hardpoint>
-		<SFXEvent_Attack_Hardpoint> HARD_POINT_FIGHTER_BAY, Unit_HP_BAY_Empire_Space_Station </SFXEvent_Attack_Hardpoint>
-		<SFXEvent_Attack_Hardpoint> HARD_POINT_TRACTOR_BEAM, null </SFXEvent_Attack_Hardpoint>
-		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MASS_DRIVER, null </SFXEvent_Attack_Hardpoint>
-		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_SPECIAL, null </SFXEvent_Attack_Hardpoint>
-		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENABLE_SPECIAL_ABILITY, null </SFXEvent_Attack_Hardpoint>
-		<SFXEvent_Attack_Hardpoint> HARD_POINT_DUMMY_ART, null </SFXEvent_Attack_Hardpoint>
-				
-		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_LASER, Unit_Lost_Laser_Empire_Space_Station </SFXEvent_Hardpoint_Destroyed>
-		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_MISSILE,  Unit_Lost_Missile_Empire_Space_Station </SFXEvent_Hardpoint_Destroyed>
-		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_TORPEDO,  Unit_Lost_Torpedo_Empire_Space_Station </SFXEvent_Hardpoint_Destroyed>
-		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_ION_CANNON, Unit_Lost_Ion_Empire_Space_Station </SFXEvent_Hardpoint_Destroyed>
-		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_SHIELD_GENERATOR, Unit_Lost_Shields_Empire_Space_Station </SFXEvent_Hardpoint_Destroyed>
-		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENGINE, null </SFXEvent_Hardpoint_Destroyed>
-		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_GRAVITY_WELL, null </SFXEvent_Hardpoint_Destroyed>
-		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_FIGHTER_BAY, Unit_Lost_Bay_Empire_Space_Station </SFXEvent_Hardpoint_Destroyed>
-		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_TRACTOR_BEAM, null </SFXEvent_Hardpoint_Destroyed>
-		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_MASS_DRIVER, null </SFXEvent_Hardpoint_Destroyed>
-		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_SPECIAL, null </SFXEvent_Hardpoint_Destroyed>
-		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENABLE_SPECIAL_ABILITY, null </SFXEvent_Hardpoint_Destroyed>
-		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_DUMMY_ART, null </SFXEvent_Hardpoint_Destroyed>
-		
 	</StarBase>
 	
 	<StarBase Name="Survival_Empire_Starbase_3">
@@ -488,74 +448,37 @@
 		<Tech_Level>99</Tech_Level>
 		<Next_Level_Base>Survival_Empire_Starbase_4</Next_Level_Base>
 		<Prev_Level_Base>Survival_Empire_Starbase_2</Prev_Level_Base>
+		
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_GOLAN_TWO
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_GOLAN_TWO_HULL
+		TEXT_TOOLTIP_GOLAN_TWO_SHIELD
+		TEXT_TOOLTIP_GOLAN_TWO_WEAP1
+		TEXT_TOOLTIP_GOLAN_TWO_WEAP2 
+		</Encyclopedia_Text>
 
-		<SpaceBehavior> SPACE_OBSTACLE, POWERED, SHIELDED, HIDE_WHEN_FOGGED, REVEAL, UNIT_AI, SPAWN_SQUADRON, ION_STUN_EFFECT</SpaceBehavior>
+		<SpaceBehavior> SPACE_OBSTACLE, POWERED, SHIELDED, HIDE_WHEN_FOGGED, REVEAL, UNIT_AI, ION_STUN_EFFECT</SpaceBehavior>
 		<Tactical_Buildable_Objects_Campaign> 
 			Empire,
-				Hunter_Killer_Probot,
-				Nebulon_B_Empire,
+				Beta_ETR_3_Squadron,
 				Lancer_Frigate,
 				Carrack_Cruiser,
 				Escort_Carrier,
-				Combat_Escort_Carrier,
+				Star_Galleon,
 				Strike_Cruiser,
 				
 				Dreadnaught_Empire,
 				Vindicator_Cruiser,
-				Star_Galleon,
 				Generic_Acclamator_Assault_Ship_II,
-				
-				MTC_Sensor,
-				MTC_Support,
+				Generic_Interdictor_Cruiser,
 				
 				Generic_Victory_Destroyer,
 				Generic_Victory_Destroyer_Two,
 				Generic_Procursator,
 
-				Defence_Base_XQ5,
-				Defence_Base_Golan_One,
 				Survival_Empire_Level_4_Starbase_Upgrade
 		</Tactical_Buildable_Objects_Campaign>
-		
-		<SFXEvent_Build_Started>EHD_Build_Structure</SFXEvent_Build_Started>
-		<SFXEvent_Build_Cancelled>EHD_Building_Canceled</SFXEvent_Build_Cancelled>
-		<SFXEvent_Build_Complete>EHD_Construction_Complete</SFXEvent_Build_Complete>
-		<SFXEvent_Ambient_Loop>Unit_Starbase_Engine_Loop</SFXEvent_Ambient_Loop>
-		<SFXEvent_Fire>Unit_Turbo_Fire</SFXEvent_Fire>
-		<SFXEvent_Select>Unit_Select_Empire_Space_Station</SFXEvent_Select>
-		<SFXEvent_Attack>Unit_Attack_Empire_Space_Station</SFXEvent_Attack>
-		<SFXEvent_Barrage>Unit_Barrage_Empire_Space_Station</SFXEvent_Barrage>
-		<Death_SFXEvent_Start_Die>Unit_Space_Station_Death_SFX</Death_SFXEvent_Start_Die>
-		<SFXEvent_Unit_Under_Attack> EHD_Space_Station_Under_Attack </SFXEvent_Unit_Under_Attack>
-
-		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_LASER, Unit_HP_LASER_Empire_Space_Station</SFXEvent_Attack_Hardpoint>
-		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MISSILE, Unit_HP_MISSILE_Empire_Space_Station </SFXEvent_Attack_Hardpoint>
-		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_TORPEDO, Unit_HP_TORP_Empire_Space_Station </SFXEvent_Attack_Hardpoint>
-		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_ION_CANNON, Unit_HP_ION_Empire_Space_Station </SFXEvent_Attack_Hardpoint>
-		<SFXEvent_Attack_Hardpoint> HARD_POINT_SHIELD_GENERATOR, Unit_HP_SHIELDS_Empire_Space_Station </SFXEvent_Attack_Hardpoint>
-		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENGINE, Unit_HP_ENGINES_Empire_Space_Station </SFXEvent_Attack_Hardpoint>
-		<SFXEvent_Attack_Hardpoint> HARD_POINT_GRAVITY_WELL, Unit_HP_Grav_Empire_Space_Station </SFXEvent_Attack_Hardpoint>
-		<SFXEvent_Attack_Hardpoint> HARD_POINT_FIGHTER_BAY, Unit_HP_BAY_Empire_Space_Station </SFXEvent_Attack_Hardpoint>
-		<SFXEvent_Attack_Hardpoint> HARD_POINT_TRACTOR_BEAM, null </SFXEvent_Attack_Hardpoint>
-		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MASS_DRIVER, null </SFXEvent_Attack_Hardpoint>
-		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_SPECIAL, null </SFXEvent_Attack_Hardpoint>
-		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENABLE_SPECIAL_ABILITY, null </SFXEvent_Attack_Hardpoint>
-		<SFXEvent_Attack_Hardpoint> HARD_POINT_DUMMY_ART, null </SFXEvent_Attack_Hardpoint>
-				
-		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_LASER, Unit_Lost_Laser_Empire_Space_Station </SFXEvent_Hardpoint_Destroyed>
-		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_MISSILE,  Unit_Lost_Missile_Empire_Space_Station </SFXEvent_Hardpoint_Destroyed>
-		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_TORPEDO,  Unit_Lost_Torpedo_Empire_Space_Station </SFXEvent_Hardpoint_Destroyed>
-		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_ION_CANNON, Unit_Lost_Ion_Empire_Space_Station </SFXEvent_Hardpoint_Destroyed>
-		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_SHIELD_GENERATOR, Unit_Lost_Shields_Empire_Space_Station </SFXEvent_Hardpoint_Destroyed>
-		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENGINE, null </SFXEvent_Hardpoint_Destroyed>
-		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_GRAVITY_WELL, null </SFXEvent_Hardpoint_Destroyed>
-		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_FIGHTER_BAY, Unit_Lost_Bay_Empire_Space_Station </SFXEvent_Hardpoint_Destroyed>
-		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_TRACTOR_BEAM, null </SFXEvent_Hardpoint_Destroyed>
-		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_MASS_DRIVER, null </SFXEvent_Hardpoint_Destroyed>
-		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_SPECIAL, null </SFXEvent_Hardpoint_Destroyed>
-		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENABLE_SPECIAL_ABILITY, null </SFXEvent_Hardpoint_Destroyed>
-		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_DUMMY_ART, null </SFXEvent_Hardpoint_Destroyed>
-		
 	</StarBase>
 	
 	<StarBase Name="Survival_Empire_Starbase_4">
@@ -564,82 +487,42 @@
 		<Tech_Level>99</Tech_Level>
 		<Next_Level_Base>Survival_Empire_Starbase_5</Next_Level_Base>
 		<Prev_Level_Base>Survival_Empire_Starbase_3</Prev_Level_Base>
+		
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_GOLAN_THREE
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_GOLAN_THREE_HULL
+		TEXT_TOOLTIP_GOLAN_THREE_SHIELD
+		TEXT_TOOLTIP_GOLAN_THREE_WEAP1 
+		TEXT_TOOLTIP_GOLAN_THREE_WEAP2 
+		</Encyclopedia_Text>
 
-		<SpaceBehavior> SPACE_OBSTACLE, POWERED, SHIELDED, HIDE_WHEN_FOGGED, REVEAL, UNIT_AI, SPAWN_SQUADRON, ION_STUN_EFFECT</SpaceBehavior>
+		<SpaceBehavior> SPACE_OBSTACLE, POWERED, SHIELDED, HIDE_WHEN_FOGGED, REVEAL, UNIT_AI, ION_STUN_EFFECT</SpaceBehavior>
 		<Tactical_Buildable_Objects_Campaign> 
 			Empire,
-				Hunter_Killer_Probot,
-				Nebulon_B_Empire,
+				Beta_ETR_3_Squadron,
 				Lancer_Frigate,
-				Crusader_Gunship,
 				Carrack_Cruiser,
 				Escort_Carrier,
-				Combat_Escort_Carrier,
+				Star_Galleon,
 				Strike_Cruiser,
 				
 				Dreadnaught_Empire,
 				Vindicator_Cruiser,
-				Star_Galleon,
 				Generic_Acclamator_Assault_Ship_II,
-				
-				MTC_Sensor,
-				MTC_Support,
+				Generic_Interdictor_Cruiser,
 				
 				Generic_Victory_Destroyer,
 				Generic_Victory_Destroyer_Two,
 				Generic_Procursator,
 				
 				Generic_Star_Destroyer,
-				Generic_Tector,
 				Generic_Star_Destroyer_Two,
-				World_Devastator_Frigate,
-				World_Devastator_Capital,
-				
-				Survival_Empire_Level_5_Starbase_Upgrade,
-				Defence_Base_XQ5,
-				Defence_Base_Golan_One,
-				Defence_Base_Golan_Two
-		</Tactical_Buildable_Objects_Campaign>
-		
-		<SFXEvent_Build_Started>EHD_Build_Structure</SFXEvent_Build_Started>
-		<SFXEvent_Build_Cancelled>EHD_Building_Canceled</SFXEvent_Build_Cancelled>
-		<SFXEvent_Build_Complete>EHD_Construction_Complete</SFXEvent_Build_Complete>
-		<SFXEvent_Ambient_Loop>Unit_Starbase_Engine_Loop</SFXEvent_Ambient_Loop>
-		<SFXEvent_Fire>Unit_Turbo_Fire</SFXEvent_Fire>
-		<SFXEvent_Select>Unit_Select_Empire_Space_Station</SFXEvent_Select>
-		<SFXEvent_Attack>Unit_Attack_Empire_Space_Station</SFXEvent_Attack>
-		<SFXEvent_Barrage>Unit_Barrage_Empire_Space_Station</SFXEvent_Barrage>
-		<Death_SFXEvent_Start_Die>Unit_Space_Station_Death_SFX</Death_SFXEvent_Start_Die>
-		<SFXEvent_Unit_Under_Attack> EHD_Space_Station_Under_Attack </SFXEvent_Unit_Under_Attack>
+				Generic_Tector,
+				Generic_Dominator,
 
-		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_LASER, Unit_HP_LASER_Empire_Space_Station</SFXEvent_Attack_Hardpoint>
-		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MISSILE, Unit_HP_MISSILE_Empire_Space_Station </SFXEvent_Attack_Hardpoint>
-		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_TORPEDO, Unit_HP_TORP_Empire_Space_Station </SFXEvent_Attack_Hardpoint>
-		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_ION_CANNON, Unit_HP_ION_Empire_Space_Station </SFXEvent_Attack_Hardpoint>
-		<SFXEvent_Attack_Hardpoint> HARD_POINT_SHIELD_GENERATOR, Unit_HP_SHIELDS_Empire_Space_Station </SFXEvent_Attack_Hardpoint>
-		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENGINE, Unit_HP_ENGINES_Empire_Space_Station </SFXEvent_Attack_Hardpoint>
-		<SFXEvent_Attack_Hardpoint> HARD_POINT_GRAVITY_WELL, Unit_HP_Grav_Empire_Space_Station </SFXEvent_Attack_Hardpoint>
-		<SFXEvent_Attack_Hardpoint> HARD_POINT_FIGHTER_BAY, Unit_HP_BAY_Empire_Space_Station </SFXEvent_Attack_Hardpoint>
-		<SFXEvent_Attack_Hardpoint> HARD_POINT_TRACTOR_BEAM, null </SFXEvent_Attack_Hardpoint>
-		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MASS_DRIVER, null </SFXEvent_Attack_Hardpoint>
-		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_SPECIAL, null </SFXEvent_Attack_Hardpoint>
-		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENABLE_SPECIAL_ABILITY, null </SFXEvent_Attack_Hardpoint>
-		<SFXEvent_Attack_Hardpoint> HARD_POINT_DUMMY_ART, null </SFXEvent_Attack_Hardpoint>
-				
-		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_LASER, Unit_Lost_Laser_Empire_Space_Station </SFXEvent_Hardpoint_Destroyed>
-		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_MISSILE,  Unit_Lost_Missile_Empire_Space_Station </SFXEvent_Hardpoint_Destroyed>
-		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_TORPEDO,  Unit_Lost_Torpedo_Empire_Space_Station </SFXEvent_Hardpoint_Destroyed>
-		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_ION_CANNON, Unit_Lost_Ion_Empire_Space_Station </SFXEvent_Hardpoint_Destroyed>
-		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_SHIELD_GENERATOR, Unit_Lost_Shields_Empire_Space_Station </SFXEvent_Hardpoint_Destroyed>
-		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENGINE, null </SFXEvent_Hardpoint_Destroyed>
-		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_GRAVITY_WELL, null </SFXEvent_Hardpoint_Destroyed>
-		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_FIGHTER_BAY, Unit_Lost_Bay_Empire_Space_Station </SFXEvent_Hardpoint_Destroyed>
-		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_TRACTOR_BEAM, null </SFXEvent_Hardpoint_Destroyed>
-		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_MASS_DRIVER, null </SFXEvent_Hardpoint_Destroyed>
-		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_SPECIAL, null </SFXEvent_Hardpoint_Destroyed>
-		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENABLE_SPECIAL_ABILITY, null </SFXEvent_Hardpoint_Destroyed>
-		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_DUMMY_ART, null </SFXEvent_Hardpoint_Destroyed>
-		
+				Survival_Empire_Level_5_Starbase_Upgrade
+		</Tactical_Buildable_Objects_Campaign>
 	</StarBase>
 	
 	<StarBase Name="Survival_Empire_Starbase_5">
@@ -648,49 +531,1192 @@
 		<Tech_Level>99</Tech_Level>
 		<Prev_Level_Base>Survival_Empire_Starbase_4</Prev_Level_Base>
 
-		<SpaceBehavior> SPACE_OBSTACLE, POWERED, SHIELDED, HIDE_WHEN_FOGGED, REVEAL, UNIT_AI, SPAWN_SQUADRON, ION_STUN_EFFECT</SpaceBehavior>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_VALIDUSIA
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
+		TEXT_TOOLTIP_VALIDUSIA_HULL 
+		TEXT_TOOLTIP_VALIDUSIA_SHIELD
+		TEXT_TOOLTIP_VALIDUSIA_WEAP1 
+		TEXT_TOOLTIP_VALIDUSIA_WEAP2
+		TEXT_TOOLTIP_VALIDUSIA_WEAP3 
+		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
+		TEXT_TOOLTIP_BONUS_FLEET_TENDER
+		</Encyclopedia_Text>
+
+		<SpaceBehavior> SPACE_OBSTACLE, POWERED, SHIELDED, HIDE_WHEN_FOGGED, REVEAL, UNIT_AI, ION_STUN_EFFECT</SpaceBehavior>
 		<Tactical_Buildable_Objects_Campaign> 
 			Empire,
-				Hunter_Killer_Probot,
-				Nebulon_B_Empire,
+				Beta_ETR_3_Squadron,
 				Lancer_Frigate,
-				Crusader_Gunship,
 				Carrack_Cruiser,
-				Combat_Escort_Carrier,
+				Escort_Carrier,
+				Star_Galleon,
 				Strike_Cruiser,
+				
 				Dreadnaught_Empire,
 				Vindicator_Cruiser,
-				Star_Galleon,
 				Generic_Acclamator_Assault_Ship_II,
+				Generic_Interdictor_Cruiser,
+				
 				Generic_Victory_Destroyer,
 				Generic_Victory_Destroyer_Two,
 				Generic_Procursator,
+				
+				Generic_Star_Destroyer,
+				Generic_Star_Destroyer_Two,
+				Generic_Tector,
+				Generic_Dominator,
+				
+				Generic_Allegiance,
+				Generic_Praetor,
+				Survival_Executor
+		</Tactical_Buildable_Objects_Campaign>
+		
+		<Abilities SubObjectList="Yes">
+			<Force_Healing_Ability Name="Fleet_Tender_Facility_Healing">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Heal_Range>1500.0</Heal_Range>
+				<Heal_Percent> 0.05 </Heal_Percent>
+                <Blob_Color>0, 255, 0, 255</Blob_Color>
+				<Heal_Interval_In_Secs>2.0</Heal_Interval_In_Secs>
+				<Single_Target_Heal>Yes</Single_Target_Heal>
+				<Heal_Range_Blob_Material>Reinforcement_Point_Radius_Overlay</Heal_Range_Blob_Material>
+				<!-- We can heal the following unit types: -->
+				<Applicable_Unit_Categories>Corvette, Frigate, Capital, Hero, SuperCapital, SpaceHero</Applicable_Unit_Categories>
+				<Applicable_Unit_Types />
+				<SFXEvent_Target_Affected>Unit_Force_Healing_Pulse</SFXEvent_Target_Affected>
+				<Target_Particle_Effect>Shield_Sparks_Medium</Target_Particle_Effect>
+				<Target_Particle_Bone_Name>B_TURRET, TURRET_00, B_TURRET_BASE</Target_Particle_Bone_Name>
+				<Target_Light_Effect_Type>Color_Flash</Target_Light_Effect_Type>
+				<Target_Light_Effect_Color>1.2, 1.2, 2.0</Target_Light_Effect_Color>
+				<Target_Light_Effect_Color2 />
+				<Target_Light_Effect_Duration>0.6</Target_Light_Effect_Duration>
+				<Target_Light_Effect_Pulse_Count>1</Target_Light_Effect_Pulse_Count>
+				<Owner_Particle_Bone_Name>ROOT</Owner_Particle_Bone_Name>
+				<Owner_Light_Effect_Type>Color_Flash</Owner_Light_Effect_Type>
+				<Owner_Light_Effect_Color>1.2, 1.2, 2.0</Owner_Light_Effect_Color>
+				<Owner_Light_Effect_Color2 />
+				<Owner_Light_Effect_Duration>0.6</Owner_Light_Effect_Duration>
+				<Owner_Light_Effect_Pulse_Count>1</Owner_Light_Effect_Pulse_Count>
+				<!--<Lightning_Effect_Name>Repair_Facility_Effect</Lightning_Effect_Name>-->
+			</Force_Healing_Ability>
+		</Abilities>
+	</StarBase>
+
+	<!-- Pentastar Survival Starbases -->
+	<StarBase Name="Survival_Pentastar_Starbase">
+		<Variant_Of_Existing_Type>Generic_XQ_Starbase</Variant_Of_Existing_Type>
+		<Affiliation>Pentastar</Affiliation>
+		<Tech_Level>99</Tech_Level>
+		<Next_Level_Base>Survival_Pentastar_Starbase_2</Next_Level_Base>
+		
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_XQ5
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
+		TEXT_TOOLTIP_XQ5_HULL
+		TEXT_TOOLTIP_XQ5_SHIELD 
+		TEXT_TOOLTIP_XQ5_WEAP1 
+		TEXT_TOOLTIP_XQ5_WEAP2
+		</Encyclopedia_Text>
+
+		<SpaceBehavior> SPACE_OBSTACLE, POWERED, SHIELDED, HIDE_WHEN_FOGGED, REVEAL, UNIT_AI, ION_STUN_EFFECT</SpaceBehavior>
+		<Tactical_Buildable_Objects_Campaign> 
+			Pentastar,
+				Decimator_Squadron,
+				Raider_Corvette,
+				Tartan_Patrol_Cruiser,
+				Corellian_Buccaneer,
+				Trenchant,
+				Escort_Carrier,
+				Victory_II_Frigate,
+
+				Survival_Pentastar_Level_2_Starbase_Upgrade
+		</Tactical_Buildable_Objects_Campaign>
+	</StarBase>
+
+	<StarBase Name="Survival_Pentastar_Starbase_2">
+		<Variant_Of_Existing_Type>Generic_Golan_One_Starbase</Variant_Of_Existing_Type>
+		<Affiliation>Pentastar</Affiliation>
+		<Tech_Level>99</Tech_Level>
+		<Next_Level_Base>Survival_Pentastar_Starbase_3</Next_Level_Base>
+		<Prev_Level_Base>Survival_Pentastar_Starbase</Prev_Level_Base>
+		
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_GOLAN_ONE
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
+		TEXT_TOOLTIP_GOLAN_ONE_HULL
+		TEXT_TOOLTIP_GOLAN_ONE_SHIELD 
+		TEXT_TOOLTIP_GOLAN_ONE_WEAP1
+		TEXT_TOOLTIP_GOLAN_ONE_WEAP2
+		</Encyclopedia_Text>
+
+		<SpaceBehavior> SPACE_OBSTACLE, POWERED, SHIELDED, HIDE_WHEN_FOGGED, REVEAL, UNIT_AI, ION_STUN_EFFECT</SpaceBehavior>
+		<Tactical_Buildable_Objects_Campaign> 
+			Pentastar,
+				Decimator_Squadron,
+				Raider_Corvette,
+				Tartan_Patrol_Cruiser,
+				Corellian_Buccaneer,
+				Trenchant,
+				Escort_Carrier,
+				Victory_II_Frigate,
+				
+				Battle_Horn,
+				Dreadnaught_Empire,
+				Enforcer,
+				Generic_Interdictor_Cruiser,
+				Generic_Acclamator_Assault_Ship_Leveler,
+
+				Survival_Pentastar_Level_3_Starbase_Upgrade
+		</Tactical_Buildable_Objects_Campaign>
+	</StarBase>
+	
+	<StarBase Name="Survival_Pentastar_Starbase_3">
+		<Variant_Of_Existing_Type>Generic_Golan_Two_Starbase</Variant_Of_Existing_Type>
+		<Affiliation>Pentastar</Affiliation>
+		<Tech_Level>99</Tech_Level>
+		<Next_Level_Base>Survival_Pentastar_Starbase_4</Next_Level_Base>
+		<Prev_Level_Base>Survival_Pentastar_Starbase_2</Prev_Level_Base>
+		
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_GOLAN_TWO
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_GOLAN_TWO_HULL
+		TEXT_TOOLTIP_GOLAN_TWO_SHIELD
+		TEXT_TOOLTIP_GOLAN_TWO_WEAP1
+		TEXT_TOOLTIP_GOLAN_TWO_WEAP2 
+		</Encyclopedia_Text>
+
+		<SpaceBehavior> SPACE_OBSTACLE, POWERED, SHIELDED, HIDE_WHEN_FOGGED, REVEAL, UNIT_AI, ION_STUN_EFFECT</SpaceBehavior>
+		<Tactical_Buildable_Objects_Campaign> 
+			Pentastar,
+				Decimator_Squadron,
+				Raider_Corvette,
+				Tartan_Patrol_Cruiser,
+				Corellian_Buccaneer,
+				Trenchant,
+				Escort_Carrier,
+				Victory_II_Frigate,
+				
+				Battle_Horn,
+				Dreadnaught_Empire,
+				Enforcer,
+				Generic_Interdictor_Cruiser,
+				Generic_Acclamator_Assault_Ship_Leveler,
+				
+				Imperial_Cargo_Ship,
+				Generic_Venator,
+				Generic_Procursator,
+
+				Survival_Pentastar_Level_4_Starbase_Upgrade
+		</Tactical_Buildable_Objects_Campaign>
+	</StarBase>
+	
+	<StarBase Name="Survival_Pentastar_Starbase_4">
+		<Variant_Of_Existing_Type>Generic_Golan_Three_Starbase</Variant_Of_Existing_Type>
+		<Affiliation>Pentastar</Affiliation>
+		<Tech_Level>99</Tech_Level>
+		<Next_Level_Base>Survival_Pentastar_Starbase_5</Next_Level_Base>
+		<Prev_Level_Base>Survival_Pentastar_Starbase_3</Prev_Level_Base>
+		
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_GOLAN_THREE
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_GOLAN_THREE_HULL
+		TEXT_TOOLTIP_GOLAN_THREE_SHIELD
+		TEXT_TOOLTIP_GOLAN_THREE_WEAP1 
+		TEXT_TOOLTIP_GOLAN_THREE_WEAP2 
+		</Encyclopedia_Text>
+
+		<SpaceBehavior> SPACE_OBSTACLE, POWERED, SHIELDED, HIDE_WHEN_FOGGED, REVEAL, UNIT_AI, ION_STUN_EFFECT</SpaceBehavior>
+		<Tactical_Buildable_Objects_Campaign> 
+			Pentastar,
+				Decimator_Squadron,
+				Raider_Corvette,
+				Tartan_Patrol_Cruiser,
+				Corellian_Buccaneer,
+				Trenchant,
+				Escort_Carrier,
+				Victory_II_Frigate,
+				
+				Battle_Horn,
+				Dreadnaught_Empire,
+				Enforcer,
+				Generic_Interdictor_Cruiser,
+				Generic_Acclamator_Assault_Ship_Leveler,
+				
+				Imperial_Cargo_Ship,
+				Generic_Venator,
+				Generic_Procursator,
+				
 				Generic_Star_Destroyer,
 				Generic_Tector,
+
+				Survival_Pentastar_Level_5_Starbase_Upgrade
+		</Tactical_Buildable_Objects_Campaign>
+	</StarBase>
+	
+	<StarBase Name="Survival_Pentastar_Starbase_5">
+		<Variant_Of_Existing_Type>Generic_Validusia_Starbase</Variant_Of_Existing_Type>
+		<Affiliation>Pentastar</Affiliation>
+		<Tech_Level>99</Tech_Level>
+		<Prev_Level_Base>Survival_Pentastar_Starbase_4</Prev_Level_Base>
+		
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_VALIDUSIA
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
+		TEXT_TOOLTIP_VALIDUSIA_HULL 
+		TEXT_TOOLTIP_VALIDUSIA_SHIELD
+		TEXT_TOOLTIP_VALIDUSIA_WEAP1 
+		TEXT_TOOLTIP_VALIDUSIA_WEAP2
+		TEXT_TOOLTIP_VALIDUSIA_WEAP3 
+		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
+		TEXT_TOOLTIP_BONUS_FLEET_TENDER
+		</Encyclopedia_Text>
+
+		<SpaceBehavior> SPACE_OBSTACLE, POWERED, SHIELDED, HIDE_WHEN_FOGGED, REVEAL, UNIT_AI, ION_STUN_EFFECT</SpaceBehavior>
+		<Tactical_Buildable_Objects_Campaign> 
+			Pentastar,
+				Decimator_Squadron,
+				Raider_Corvette,
+				Tartan_Patrol_Cruiser,
+				Corellian_Buccaneer,
+				Trenchant,
+				Escort_Carrier,
+				Victory_II_Frigate,
+				
+				Battle_Horn,
+				Imperial_Cargo_Ship,
+				Enforcer,
+				Generic_Interdictor_Cruiser,
+				Generic_Acclamator_Assault_Ship_Leveler,
+				
+				Imperial_Cargo_Ship,
+				Generic_Venator,
+				Generic_Procursator,
+				
+				Generic_Star_Destroyer,
+				Generic_Tector,
+				
+				Generic_Secutor,
+				Generic_Praetor_Carrier,
+				Survival_Mandator_III
+		</Tactical_Buildable_Objects_Campaign>
+		
+		<Abilities SubObjectList="Yes">
+			<Force_Healing_Ability Name="Fleet_Tender_Facility_Healing">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Heal_Range>1500.0</Heal_Range>
+				<Heal_Percent> 0.05 </Heal_Percent>
+                <Blob_Color>0, 255, 0, 255</Blob_Color>
+				<Heal_Interval_In_Secs>2.0</Heal_Interval_In_Secs>
+				<Single_Target_Heal>Yes</Single_Target_Heal>
+				<Heal_Range_Blob_Material>Reinforcement_Point_Radius_Overlay</Heal_Range_Blob_Material>
+				<!-- We can heal the following unit types: -->
+				<Applicable_Unit_Categories>Corvette, Frigate, Capital, Hero, SuperCapital, SpaceHero</Applicable_Unit_Categories>
+				<Applicable_Unit_Types />
+				<SFXEvent_Target_Affected>Unit_Force_Healing_Pulse</SFXEvent_Target_Affected>
+				<Target_Particle_Effect>Shield_Sparks_Medium</Target_Particle_Effect>
+				<Target_Particle_Bone_Name>B_TURRET, TURRET_00, B_TURRET_BASE</Target_Particle_Bone_Name>
+				<Target_Light_Effect_Type>Color_Flash</Target_Light_Effect_Type>
+				<Target_Light_Effect_Color>1.2, 1.2, 2.0</Target_Light_Effect_Color>
+				<Target_Light_Effect_Color2 />
+				<Target_Light_Effect_Duration>0.6</Target_Light_Effect_Duration>
+				<Target_Light_Effect_Pulse_Count>1</Target_Light_Effect_Pulse_Count>
+				<Owner_Particle_Bone_Name>ROOT</Owner_Particle_Bone_Name>
+				<Owner_Light_Effect_Type>Color_Flash</Owner_Light_Effect_Type>
+				<Owner_Light_Effect_Color>1.2, 1.2, 2.0</Owner_Light_Effect_Color>
+				<Owner_Light_Effect_Color2 />
+				<Owner_Light_Effect_Duration>0.6</Owner_Light_Effect_Duration>
+				<Owner_Light_Effect_Pulse_Count>1</Owner_Light_Effect_Pulse_Count>
+				<!--<Lightning_Effect_Name>Repair_Facility_Effect</Lightning_Effect_Name>-->
+			</Force_Healing_Ability>
+		</Abilities>
+	</StarBase>
+
+	<!-- Eriadu_Authority Survival Starbases -->
+	<StarBase Name="Survival_Eriadu_Authority_Starbase">
+		<Variant_Of_Existing_Type>Generic_XQ_Starbase</Variant_Of_Existing_Type>
+		<Affiliation>Eriadu_Authority</Affiliation>
+		<Tech_Level>99</Tech_Level>
+		<Next_Level_Base>Survival_Eriadu_Authority_Starbase_2</Next_Level_Base>
+
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_XQ5
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
+		TEXT_TOOLTIP_XQ5_HULL
+		TEXT_TOOLTIP_XQ5_SHIELD 
+		TEXT_TOOLTIP_XQ5_WEAP1 
+		TEXT_TOOLTIP_XQ5_WEAP2
+		</Encyclopedia_Text>
+
+		<SpaceBehavior> SPACE_OBSTACLE, POWERED, SHIELDED, HIDE_WHEN_FOGGED, REVEAL, UNIT_AI, ION_STUN_EFFECT</SpaceBehavior>
+		<Tactical_Buildable_Objects_Campaign> 
+			Eriadu_Authority,
+				Gamma_ATR_6_Squadron,
+				IPV1_System_Patrol_Craft,
+				Raider_II_Corvette,
+				Arquitens,
+				Galleon,
+				Eidolon,
+
+				Survival_Eriadu_Authority_Level_2_Starbase_Upgrade
+		</Tactical_Buildable_Objects_Campaign>
+	</StarBase>
+
+	<StarBase Name="Survival_Eriadu_Authority_Starbase_2">
+		<Variant_Of_Existing_Type>Generic_Golan_One_Starbase</Variant_Of_Existing_Type>
+		<Affiliation>Eriadu_Authority</Affiliation>
+		<Tech_Level>99</Tech_Level>
+		<Next_Level_Base>Survival_Eriadu_Authority_Starbase_3</Next_Level_Base>
+		<Prev_Level_Base>Survival_Eriadu_Authority_Starbase</Prev_Level_Base>
+		
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_GOLAN_ONE
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
+		TEXT_TOOLTIP_GOLAN_ONE_HULL
+		TEXT_TOOLTIP_GOLAN_ONE_SHIELD 
+		TEXT_TOOLTIP_GOLAN_ONE_WEAP1
+		TEXT_TOOLTIP_GOLAN_ONE_WEAP2
+		</Encyclopedia_Text>
+
+		<SpaceBehavior> SPACE_OBSTACLE, POWERED, SHIELDED, HIDE_WHEN_FOGGED, REVEAL, UNIT_AI, ION_STUN_EFFECT</SpaceBehavior>
+		<Tactical_Buildable_Objects_Campaign> 
+			Eriadu_Authority,
+				Gamma_ATR_6_Squadron,
+				IPV4,
+				Raider_II_Corvette,
+				Arquitens,
+				Galleon,
+				Eidolon,
+				
+				Generic_Twin_Well_Cruiser,
+				Generic_Imperial_I_Frigate,
+				Generic_Gladiator,
+
+				Survival_Eriadu_Authority_Level_3_Starbase_Upgrade
+		</Tactical_Buildable_Objects_Campaign>
+	</StarBase>
+	
+	<StarBase Name="Survival_Eriadu_Authority_Starbase_3">
+		<Variant_Of_Existing_Type>Generic_Golan_Two_Starbase</Variant_Of_Existing_Type>
+		<Affiliation>Eriadu_Authority</Affiliation>
+		<Tech_Level>99</Tech_Level>
+		<Next_Level_Base>Survival_Eriadu_Authority_Starbase_4</Next_Level_Base>
+		<Prev_Level_Base>Survival_Eriadu_Authority_Starbase_2</Prev_Level_Base>
+		
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_GOLAN_TWO
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_GOLAN_TWO_HULL
+		TEXT_TOOLTIP_GOLAN_TWO_SHIELD
+		TEXT_TOOLTIP_GOLAN_TWO_WEAP1
+		TEXT_TOOLTIP_GOLAN_TWO_WEAP2 
+		</Encyclopedia_Text>
+
+		<SpaceBehavior> SPACE_OBSTACLE, POWERED, SHIELDED, HIDE_WHEN_FOGGED, REVEAL, UNIT_AI, ION_STUN_EFFECT</SpaceBehavior>
+		<Tactical_Buildable_Objects_Campaign> 
+			Eriadu_Authority,
+				Gamma_ATR_6_Squadron,
+				IPV4,
+				Raider_II_Corvette,
+				Arquitens,
+				Galleon,
+				Eidolon,
+				
+				Generic_Twin_Well_Cruiser,
+				Generic_Imperial_I_Frigate,
+				Generic_Gladiator,
+				
+				Generic_Victory_Destroyer,
+
+				Survival_Eriadu_Authority_Level_4_Starbase_Upgrade
+		</Tactical_Buildable_Objects_Campaign>
+	</StarBase>
+	
+	<StarBase Name="Survival_Eriadu_Authority_Starbase_4">
+		<Variant_Of_Existing_Type>Generic_Golan_Three_Starbase</Variant_Of_Existing_Type>
+		<Affiliation>Eriadu_Authority</Affiliation>
+		<Tech_Level>99</Tech_Level>
+		<Next_Level_Base>Survival_Eriadu_Authority_Starbase_5</Next_Level_Base>
+		<Prev_Level_Base>Survival_Eriadu_Authority_Starbase_3</Prev_Level_Base>
+		
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_GOLAN_THREE
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_GOLAN_THREE_HULL
+		TEXT_TOOLTIP_GOLAN_THREE_SHIELD
+		TEXT_TOOLTIP_GOLAN_THREE_WEAP1 
+		TEXT_TOOLTIP_GOLAN_THREE_WEAP2 
+		</Encyclopedia_Text>
+
+		<SpaceBehavior> SPACE_OBSTACLE, POWERED, SHIELDED, HIDE_WHEN_FOGGED, REVEAL, UNIT_AI, ION_STUN_EFFECT</SpaceBehavior>
+		<Tactical_Buildable_Objects_Campaign> 
+			Eriadu_Authority,
+				Gamma_ATR_6_Squadron,
+				IPV4,
+				Raider_II_Corvette,
+				Arquitens,
+				Galleon,
+				Eidolon,
+				
+				Generic_Twin_Well_Cruiser,
+				Generic_Imperial_I_Frigate,
+				Generic_Gladiator,
+				
+				Generic_Victory_Destroyer,
+				
+				Generic_Star_Destroyer,
 				Generic_Star_Destroyer_Two,
-				World_Devastator_Frigate,
-				World_Devastator_Capital,
+
+				Survival_Eriadu_Authority_Level_5_Starbase_Upgrade
+		</Tactical_Buildable_Objects_Campaign>
+	</StarBase>
+	
+	<StarBase Name="Survival_Eriadu_Authority_Starbase_5">
+		<Variant_Of_Existing_Type>Generic_Validusia_Starbase</Variant_Of_Existing_Type>
+		<Affiliation>Eriadu_Authority</Affiliation>
+		<Tech_Level>99</Tech_Level>
+		<Prev_Level_Base>Survival_Eriadu_Authority_Starbase_4</Prev_Level_Base>
+		
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_VALIDUSIA
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
+		TEXT_TOOLTIP_VALIDUSIA_HULL 
+		TEXT_TOOLTIP_VALIDUSIA_SHIELD
+		TEXT_TOOLTIP_VALIDUSIA_WEAP1 
+		TEXT_TOOLTIP_VALIDUSIA_WEAP2
+		TEXT_TOOLTIP_VALIDUSIA_WEAP3 
+		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
+		TEXT_TOOLTIP_BONUS_FLEET_TENDER
+		</Encyclopedia_Text>
+
+		<SpaceBehavior> SPACE_OBSTACLE, POWERED, SHIELDED, HIDE_WHEN_FOGGED, REVEAL, UNIT_AI, ION_STUN_EFFECT</SpaceBehavior>
+		<Tactical_Buildable_Objects_Campaign> 
+			Eriadu_Authority,
+				Gamma_ATR_6_Squadron,
+				IPV4,
+				Raider_II_Corvette,
+				Arquitens,
+				Galleon,
+				Eidolon,
+				
+				Generic_Twin_Well_Cruiser,
+				Generic_Imperial_I_Frigate,
+				Generic_Gladiator,
+				
+				Generic_Victory_Destroyer,
+				
+				Generic_Star_Destroyer,
+				Generic_Star_Destroyer_Two,
+				
 				Generic_Allegiance,
-				World_Devastator_Battlecruiser,
+				Torpedo_Sphere,
 				Generic_Praetor,
-				Generic_Executor,
-				Defence_Base_XQ5,
-				Defence_Base_Golan_One,
-				Defence_Base_Golan_Two,
-				Defence_Base_Golan_Three
+				Survival_Bellator,
+				Survival_Assertor				
+		</Tactical_Buildable_Objects_Campaign>
+		
+		<Abilities SubObjectList="Yes">
+			<Force_Healing_Ability Name="Fleet_Tender_Facility_Healing">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Heal_Range>1500.0</Heal_Range>
+				<Heal_Percent> 0.05 </Heal_Percent>
+                <Blob_Color>0, 255, 0, 255</Blob_Color>
+				<Heal_Interval_In_Secs>2.0</Heal_Interval_In_Secs>
+				<Single_Target_Heal>Yes</Single_Target_Heal>
+				<Heal_Range_Blob_Material>Reinforcement_Point_Radius_Overlay</Heal_Range_Blob_Material>
+				<!-- We can heal the following unit types: -->
+				<Applicable_Unit_Categories>Corvette, Frigate, Capital, Hero, SuperCapital, SpaceHero</Applicable_Unit_Categories>
+				<Applicable_Unit_Types />
+				<SFXEvent_Target_Affected>Unit_Force_Healing_Pulse</SFXEvent_Target_Affected>
+				<Target_Particle_Effect>Shield_Sparks_Medium</Target_Particle_Effect>
+				<Target_Particle_Bone_Name>B_TURRET, TURRET_00, B_TURRET_BASE</Target_Particle_Bone_Name>
+				<Target_Light_Effect_Type>Color_Flash</Target_Light_Effect_Type>
+				<Target_Light_Effect_Color>1.2, 1.2, 2.0</Target_Light_Effect_Color>
+				<Target_Light_Effect_Color2 />
+				<Target_Light_Effect_Duration>0.6</Target_Light_Effect_Duration>
+				<Target_Light_Effect_Pulse_Count>1</Target_Light_Effect_Pulse_Count>
+				<Owner_Particle_Bone_Name>ROOT</Owner_Particle_Bone_Name>
+				<Owner_Light_Effect_Type>Color_Flash</Owner_Light_Effect_Type>
+				<Owner_Light_Effect_Color>1.2, 1.2, 2.0</Owner_Light_Effect_Color>
+				<Owner_Light_Effect_Color2 />
+				<Owner_Light_Effect_Duration>0.6</Owner_Light_Effect_Duration>
+				<Owner_Light_Effect_Pulse_Count>1</Owner_Light_Effect_Pulse_Count>
+				<!--<Lightning_Effect_Name>Repair_Facility_Effect</Lightning_Effect_Name>-->
+			</Force_Healing_Ability>
+		</Abilities>
+	</StarBase>
+
+	<!-- Greater_Maldrood Survival Starbases -->
+	<StarBase Name="Survival_Greater_Maldrood_Starbase">
+		<Variant_Of_Existing_Type>Generic_XQ_Starbase</Variant_Of_Existing_Type>
+		<Affiliation>Greater_Maldrood</Affiliation>
+		<Tech_Level>99</Tech_Level>
+		<Next_Level_Base>Survival_Greater_Maldrood_Starbase_2</Next_Level_Base>
+
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_XQ5
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
+		TEXT_TOOLTIP_XQ5_HULL
+		TEXT_TOOLTIP_XQ5_SHIELD 
+		TEXT_TOOLTIP_XQ5_WEAP1 
+		TEXT_TOOLTIP_XQ5_WEAP2
+		</Encyclopedia_Text>
+
+		<SpaceBehavior> SPACE_OBSTACLE, POWERED, SHIELDED, HIDE_WHEN_FOGGED, REVEAL, UNIT_AI, ION_STUN_EFFECT</SpaceBehavior>
+		<Tactical_Buildable_Objects_Campaign> 
+			Greater_Maldrood,
+				Guardian_Squadron,
+				Customs_Corvette,
+				Tartan_Patrol_Cruiser,
+				Vigil,
+				Carrack_Cruiser,
+				Star_Galleon,
+
+				Survival_Greater_Maldrood_Level_2_Starbase_Upgrade
+		</Tactical_Buildable_Objects_Campaign>
+	</StarBase>
+
+	<StarBase Name="Survival_Greater_Maldrood_Starbase_2">
+		<Variant_Of_Existing_Type>Generic_Golan_One_Starbase</Variant_Of_Existing_Type>
+		<Affiliation>Greater_Maldrood</Affiliation>
+		<Tech_Level>99</Tech_Level>
+		<Next_Level_Base>Survival_Greater_Maldrood_Starbase_3</Next_Level_Base>
+		<Prev_Level_Base>Survival_Greater_Maldrood_Starbase</Prev_Level_Base>
+		
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_GOLAN_ONE
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
+		TEXT_TOOLTIP_GOLAN_ONE_HULL
+		TEXT_TOOLTIP_GOLAN_ONE_SHIELD 
+		TEXT_TOOLTIP_GOLAN_ONE_WEAP1
+		TEXT_TOOLTIP_GOLAN_ONE_WEAP2
+		</Encyclopedia_Text>
+
+		<SpaceBehavior> SPACE_OBSTACLE, POWERED, SHIELDED, HIDE_WHEN_FOGGED, REVEAL, UNIT_AI, ION_STUN_EFFECT</SpaceBehavior>
+		<Tactical_Buildable_Objects_Campaign> 
+			Greater_Maldrood,
+				Guardian_Squadron,
+				Customs_Corvette,
+				Tartan_Patrol_Cruiser,
+				Vigil,
+				Carrack_Cruiser,
+				Star_Galleon,
+				
+				Strike_Cruiser,
+				Strike_Interdictor,
+				Generic_Pursuit,
+				Generic_Acclamator_Assault_Ship_II,
+				Generic_Imperial_II_Frigate,
+				Vindicator_Cruiser,
+
+				Survival_Greater_Maldrood_Level_3_Starbase_Upgrade
+		</Tactical_Buildable_Objects_Campaign>
+	</StarBase>
+	
+	<StarBase Name="Survival_Greater_Maldrood_Starbase_3">
+		<Variant_Of_Existing_Type>Generic_Golan_Two_Starbase</Variant_Of_Existing_Type>
+		<Affiliation>Greater_Maldrood</Affiliation>
+		<Tech_Level>99</Tech_Level>
+		<Next_Level_Base>Survival_Greater_Maldrood_Starbase_4</Next_Level_Base>
+		<Prev_Level_Base>Survival_Greater_Maldrood_Starbase_2</Prev_Level_Base>
+		
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_GOLAN_TWO
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_GOLAN_TWO_HULL
+		TEXT_TOOLTIP_GOLAN_TWO_SHIELD
+		TEXT_TOOLTIP_GOLAN_TWO_WEAP1
+		TEXT_TOOLTIP_GOLAN_TWO_WEAP2 
+		</Encyclopedia_Text>
+
+		<SpaceBehavior> SPACE_OBSTACLE, POWERED, SHIELDED, HIDE_WHEN_FOGGED, REVEAL, UNIT_AI, ION_STUN_EFFECT</SpaceBehavior>
+		<Tactical_Buildable_Objects_Campaign> 
+			Greater_Maldrood,
+				Guardian_Squadron,
+				Customs_Corvette,
+				Tartan_Patrol_Cruiser,
+				Vigil,
+				Carrack_Cruiser,
+				Star_Galleon,
+				
+				Strike_Cruiser,
+				Strike_Interdictor,
+				Generic_Pursuit,
+				Generic_Acclamator_Assault_Ship_II,
+				Generic_Imperial_II_Frigate,
+				Vindicator_Cruiser,
+				
+				Broadside_Cruiser,
+				Generic_Victory_Destroyer,
+				Crimson_Victory,
+
+				Survival_Greater_Maldrood_Level_4_Starbase_Upgrade
+		</Tactical_Buildable_Objects_Campaign>
+	</StarBase>
+	
+	<StarBase Name="Survival_Greater_Maldrood_Starbase_4">
+		<Variant_Of_Existing_Type>Generic_Golan_Three_Starbase</Variant_Of_Existing_Type>
+		<Affiliation>Greater_Maldrood</Affiliation>
+		<Tech_Level>99</Tech_Level>
+		<Next_Level_Base>Survival_Greater_Maldrood_Starbase_5</Next_Level_Base>
+		<Prev_Level_Base>Survival_Greater_Maldrood_Starbase_3</Prev_Level_Base>
+		
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_GOLAN_THREE
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_GOLAN_THREE_HULL
+		TEXT_TOOLTIP_GOLAN_THREE_SHIELD
+		TEXT_TOOLTIP_GOLAN_THREE_WEAP1 
+		TEXT_TOOLTIP_GOLAN_THREE_WEAP2 
+		</Encyclopedia_Text>
+
+		<SpaceBehavior> SPACE_OBSTACLE, POWERED, SHIELDED, HIDE_WHEN_FOGGED, REVEAL, UNIT_AI, ION_STUN_EFFECT</SpaceBehavior>
+		<Tactical_Buildable_Objects_Campaign> 
+			Greater_Maldrood,
+				Guardian_Squadron,
+				Customs_Corvette,
+				Tartan_Patrol_Cruiser,
+				Vigil,
+				Carrack_Cruiser,
+				Star_Galleon,
+				
+				Strike_Cruiser,
+				Strike_Interdictor,
+				Generic_Pursuit,
+				Generic_Acclamator_Assault_Ship_II,
+				Generic_Imperial_II_Frigate,
+				Vindicator_Cruiser,
+				
+				Broadside_Cruiser,
+				Generic_Victory_Destroyer,
+				Crimson_Victory,
+				
+				Generic_Star_Destroyer,
+				Generic_Dominator,
+				Generic_Tector,
+
+				Survival_Greater_Maldrood_Level_5_Starbase_Upgrade
+		</Tactical_Buildable_Objects_Campaign>
+	</StarBase>
+	
+	<StarBase Name="Survival_Greater_Maldrood_Starbase_5">
+		<Variant_Of_Existing_Type>Generic_Validusia_Starbase</Variant_Of_Existing_Type>
+		<Affiliation>Greater_Maldrood</Affiliation>
+		<Tech_Level>99</Tech_Level>
+		<Prev_Level_Base>Survival_Greater_Maldrood_Starbase_4</Prev_Level_Base>
+		
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_VALIDUSIA
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
+		TEXT_TOOLTIP_VALIDUSIA_HULL 
+		TEXT_TOOLTIP_VALIDUSIA_SHIELD
+		TEXT_TOOLTIP_VALIDUSIA_WEAP1 
+		TEXT_TOOLTIP_VALIDUSIA_WEAP2
+		TEXT_TOOLTIP_VALIDUSIA_WEAP3 
+		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
+		TEXT_TOOLTIP_BONUS_FLEET_TENDER
+		</Encyclopedia_Text>
+
+		<SpaceBehavior> SPACE_OBSTACLE, POWERED, SHIELDED, HIDE_WHEN_FOGGED, REVEAL, UNIT_AI, ION_STUN_EFFECT</SpaceBehavior>
+		<Tactical_Buildable_Objects_Campaign> 
+			Greater_Maldrood,
+				Guardian_Squadron,
+				Customs_Corvette,
+				Tartan_Patrol_Cruiser,
+				Vigil,
+				Carrack_Cruiser,
+				Star_Galleon,
+				
+				Strike_Cruiser,
+				Strike_Interdictor,
+				Generic_Pursuit,
+				Generic_Acclamator_Assault_Ship_II,
+				Generic_Imperial_II_Frigate,
+				Vindicator_Cruiser,
+				
+				Broadside_Cruiser,
+				Generic_Victory_Destroyer,
+				Crimson_Victory,
+				
+				Generic_Star_Destroyer,
+				Generic_Dominator,
+				Generic_Tector,
+
+				Altor_Replenishment_Ship,
+				Survival_Bellator
+		</Tactical_Buildable_Objects_Campaign>
+		
+		<Abilities SubObjectList="Yes">
+			<Force_Healing_Ability Name="Fleet_Tender_Facility_Healing">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Heal_Range>1500.0</Heal_Range>
+				<Heal_Percent> 0.05 </Heal_Percent>
+                <Blob_Color>0, 255, 0, 255</Blob_Color>
+				<Heal_Interval_In_Secs>2.0</Heal_Interval_In_Secs>
+				<Single_Target_Heal>Yes</Single_Target_Heal>
+				<Heal_Range_Blob_Material>Reinforcement_Point_Radius_Overlay</Heal_Range_Blob_Material>
+				<!-- We can heal the following unit types: -->
+				<Applicable_Unit_Categories>Corvette, Frigate, Capital, Hero, SuperCapital, SpaceHero</Applicable_Unit_Categories>
+				<Applicable_Unit_Types />
+				<SFXEvent_Target_Affected>Unit_Force_Healing_Pulse</SFXEvent_Target_Affected>
+				<Target_Particle_Effect>Shield_Sparks_Medium</Target_Particle_Effect>
+				<Target_Particle_Bone_Name>B_TURRET, TURRET_00, B_TURRET_BASE</Target_Particle_Bone_Name>
+				<Target_Light_Effect_Type>Color_Flash</Target_Light_Effect_Type>
+				<Target_Light_Effect_Color>1.2, 1.2, 2.0</Target_Light_Effect_Color>
+				<Target_Light_Effect_Color2 />
+				<Target_Light_Effect_Duration>0.6</Target_Light_Effect_Duration>
+				<Target_Light_Effect_Pulse_Count>1</Target_Light_Effect_Pulse_Count>
+				<Owner_Particle_Bone_Name>ROOT</Owner_Particle_Bone_Name>
+				<Owner_Light_Effect_Type>Color_Flash</Owner_Light_Effect_Type>
+				<Owner_Light_Effect_Color>1.2, 1.2, 2.0</Owner_Light_Effect_Color>
+				<Owner_Light_Effect_Color2 />
+				<Owner_Light_Effect_Duration>0.6</Owner_Light_Effect_Duration>
+				<Owner_Light_Effect_Pulse_Count>1</Owner_Light_Effect_Pulse_Count>
+				<!--<Lightning_Effect_Name>Repair_Facility_Effect</Lightning_Effect_Name>-->
+			</Force_Healing_Ability>
+		</Abilities>
+	</StarBase>
+
+	<!-- Zsinj_Empire Survival Starbases -->
+	<StarBase Name="Survival_Zsinj_Empire_Starbase">
+		<Variant_Of_Existing_Type>Generic_XQ_Starbase</Variant_Of_Existing_Type>
+		<Affiliation>Zsinj_Empire</Affiliation>
+		<Tech_Level>99</Tech_Level>
+		<Next_Level_Base>Survival_Zsinj_Empire_Starbase_2</Next_Level_Base>
+
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_XQ5
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
+		TEXT_TOOLTIP_XQ5_HULL
+		TEXT_TOOLTIP_XQ5_SHIELD 
+		TEXT_TOOLTIP_XQ5_WEAP1 
+		TEXT_TOOLTIP_XQ5_WEAP2
+		</Encyclopedia_Text>
+
+		<SpaceBehavior> SPACE_OBSTACLE, POWERED, SHIELDED, HIDE_WHEN_FOGGED, REVEAL, UNIT_AI, ION_STUN_EFFECT</SpaceBehavior>
+		<Tactical_Buildable_Objects_Campaign> 
+			Zsinj_Empire,
+				YZ_775_Squadron,
+				CR90_Zsinj,
+				CR92_Assassin,
+				Nebulon_B_Zsinj,
+				Surveyor_Frigate,
+				Star_Galleon,
+
+				Survival_Zsinj_Empire_Level_2_Starbase_Upgrade
+		</Tactical_Buildable_Objects_Campaign>
+	</StarBase>
+
+	<StarBase Name="Survival_Zsinj_Empire_Starbase_2">
+		<Variant_Of_Existing_Type>Generic_Golan_One_Starbase</Variant_Of_Existing_Type>
+		<Affiliation>Zsinj_Empire</Affiliation>
+		<Tech_Level>99</Tech_Level>
+		<Next_Level_Base>Survival_Zsinj_Empire_Starbase_3</Next_Level_Base>
+		<Prev_Level_Base>Survival_Zsinj_Empire_Starbase</Prev_Level_Base>
+		
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_GOLAN_ONE
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
+		TEXT_TOOLTIP_GOLAN_ONE_HULL
+		TEXT_TOOLTIP_GOLAN_ONE_SHIELD 
+		TEXT_TOOLTIP_GOLAN_ONE_WEAP1
+		TEXT_TOOLTIP_GOLAN_ONE_WEAP2
+		</Encyclopedia_Text>
+
+		<SpaceBehavior> SPACE_OBSTACLE, POWERED, SHIELDED, HIDE_WHEN_FOGGED, REVEAL, UNIT_AI, ION_STUN_EFFECT</SpaceBehavior>
+		<Tactical_Buildable_Objects_Campaign> 
+			Zsinj_Empire,
+				YZ_775_Squadron,
+				CR90_Zsinj,
+				CR92_Assassin,
+				Nebulon_B_Zsinj,
+				Surveyor_Frigate,
+				Star_Galleon,
+				
+				Vengeance_Frigate,
+				Neutron_Star,
+				Dragon_Heavy_Cruiser,
+				Generic_Twin_Well_Cruiser,				
+
+				Survival_Zsinj_Empire_Level_3_Starbase_Upgrade
+		</Tactical_Buildable_Objects_Campaign>
+	</StarBase>
+	
+	<StarBase Name="Survival_Zsinj_Empire_Starbase_3">
+		<Variant_Of_Existing_Type>Generic_Golan_Two_Starbase</Variant_Of_Existing_Type>
+		<Affiliation>Zsinj_Empire</Affiliation>
+		<Tech_Level>99</Tech_Level>
+		<Next_Level_Base>Survival_Zsinj_Empire_Starbase_4</Next_Level_Base>
+		<Prev_Level_Base>Survival_Zsinj_Empire_Starbase_2</Prev_Level_Base>
+		
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_GOLAN_TWO
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_GOLAN_TWO_HULL
+		TEXT_TOOLTIP_GOLAN_TWO_SHIELD
+		TEXT_TOOLTIP_GOLAN_TWO_WEAP1
+		TEXT_TOOLTIP_GOLAN_TWO_WEAP2 
+		</Encyclopedia_Text>
+
+		<SpaceBehavior> SPACE_OBSTACLE, POWERED, SHIELDED, HIDE_WHEN_FOGGED, REVEAL, UNIT_AI, ION_STUN_EFFECT</SpaceBehavior>
+		<Tactical_Buildable_Objects_Campaign> 
+			Zsinj_Empire,
+				YZ_775_Squadron,
+				CR90_Zsinj,
+				CR92_Assassin,
+				Nebulon_B_Zsinj,
+				Surveyor_Frigate,
+				Star_Galleon,
+				
+				Vengeance_Frigate,
+				Neutron_Star,
+				Dragon_Heavy_Cruiser,
+				Generic_Twin_Well_Cruiser,
+
+				Lancer_Frigate,
+				Super_Transport_XI_Modified,
+				Space_ARC_Cruiser,
+				Generic_Victory_Destroyer_Two,
+
+				Survival_Zsinj_Empire_Level_4_Starbase_Upgrade
+		</Tactical_Buildable_Objects_Campaign>
+	</StarBase>
+	
+	<StarBase Name="Survival_Zsinj_Empire_Starbase_4">
+		<Variant_Of_Existing_Type>Generic_Golan_Three_Starbase</Variant_Of_Existing_Type>
+		<Affiliation>Zsinj_Empire</Affiliation>
+		<Tech_Level>99</Tech_Level>
+		<Next_Level_Base>Survival_Zsinj_Empire_Starbase_5</Next_Level_Base>
+		<Prev_Level_Base>Survival_Zsinj_Empire_Starbase_3</Prev_Level_Base>
+		
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_GOLAN_THREE
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_GOLAN_THREE_HULL
+		TEXT_TOOLTIP_GOLAN_THREE_SHIELD
+		TEXT_TOOLTIP_GOLAN_THREE_WEAP1 
+		TEXT_TOOLTIP_GOLAN_THREE_WEAP2 
+		</Encyclopedia_Text>
+
+		<SpaceBehavior> SPACE_OBSTACLE, POWERED, SHIELDED, HIDE_WHEN_FOGGED, REVEAL, UNIT_AI, ION_STUN_EFFECT</SpaceBehavior>
+		<Tactical_Buildable_Objects_Campaign> 
+			Zsinj_Empire,
+				YZ_775_Squadron,
+				CR90_Zsinj,
+				CR92_Assassin,
+				Nebulon_B_Zsinj,
+				Surveyor_Frigate,
+				Star_Galleon,
+				
+				Vengeance_Frigate,
+				Neutron_Star,
+				Dragon_Heavy_Cruiser,
+				Generic_Twin_Well_Cruiser,
+
+				Lancer_Frigate,
+				Super_Transport_XI_Modified,
+				Space_ARC_Cruiser,
+				Generic_Victory_Destroyer_Two,
+				
+				Generic_Star_Destroyer,
+				Generic_Star_Destroyer_Two,
+				Generic_Aggressor,				
+
+				Survival_Zsinj_Empire_Level_5_Starbase_Upgrade
+		</Tactical_Buildable_Objects_Campaign>
+	</StarBase>
+	
+	<StarBase Name="Survival_Zsinj_Empire_Starbase_5">
+		<Variant_Of_Existing_Type>Generic_Validusia_Starbase</Variant_Of_Existing_Type>
+		<Affiliation>Zsinj_Empire</Affiliation>
+		<Tech_Level>99</Tech_Level>
+		<Prev_Level_Base>Survival_Zsinj_Empire_Starbase_4</Prev_Level_Base>
+		
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_VALIDUSIA
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
+		TEXT_TOOLTIP_VALIDUSIA_HULL 
+		TEXT_TOOLTIP_VALIDUSIA_SHIELD
+		TEXT_TOOLTIP_VALIDUSIA_WEAP1 
+		TEXT_TOOLTIP_VALIDUSIA_WEAP2
+		TEXT_TOOLTIP_VALIDUSIA_WEAP3 
+		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
+		TEXT_TOOLTIP_BONUS_FLEET_TENDER
+		</Encyclopedia_Text>
+
+		<SpaceBehavior> SPACE_OBSTACLE, POWERED, SHIELDED, HIDE_WHEN_FOGGED, REVEAL, UNIT_AI, ION_STUN_EFFECT</SpaceBehavior>
+		<Tactical_Buildable_Objects_Campaign> 
+			Zsinj_Empire,
+				YZ_775_Squadron,
+				CR90_Zsinj,
+				CR92_Assassin,
+				Nebulon_B_Zsinj,
+				Surveyor_Frigate,
+				Star_Galleon,
+				
+				Vengeance_Frigate,
+				Neutron_Star,
+				Dragon_Heavy_Cruiser,
+				Generic_Twin_Well_Cruiser,
+
+				Lancer_Frigate,
+				Super_Transport_XI_Modified,
+				Space_ARC_Cruiser,
+				Generic_Victory_Destroyer_Two,
+				
+				Generic_Star_Destroyer,
+				Generic_Star_Destroyer_Two,
+				Generic_Aggressor,
+				
+				Generic_Sorannan,
+				Survival_Vengeance				
+		</Tactical_Buildable_Objects_Campaign>
+		
+		<Abilities SubObjectList="Yes">
+			<Force_Healing_Ability Name="Fleet_Tender_Facility_Healing">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Heal_Range>1500.0</Heal_Range>
+				<Heal_Percent> 0.05 </Heal_Percent>
+                <Blob_Color>0, 255, 0, 255</Blob_Color>
+				<Heal_Interval_In_Secs>2.0</Heal_Interval_In_Secs>
+				<Single_Target_Heal>Yes</Single_Target_Heal>
+				<Heal_Range_Blob_Material>Reinforcement_Point_Radius_Overlay</Heal_Range_Blob_Material>
+				<!-- We can heal the following unit types: -->
+				<Applicable_Unit_Categories>Corvette, Frigate, Capital, Hero, SuperCapital, SpaceHero</Applicable_Unit_Categories>
+				<Applicable_Unit_Types />
+				<SFXEvent_Target_Affected>Unit_Force_Healing_Pulse</SFXEvent_Target_Affected>
+				<Target_Particle_Effect>Shield_Sparks_Medium</Target_Particle_Effect>
+				<Target_Particle_Bone_Name>B_TURRET, TURRET_00, B_TURRET_BASE</Target_Particle_Bone_Name>
+				<Target_Light_Effect_Type>Color_Flash</Target_Light_Effect_Type>
+				<Target_Light_Effect_Color>1.2, 1.2, 2.0</Target_Light_Effect_Color>
+				<Target_Light_Effect_Color2 />
+				<Target_Light_Effect_Duration>0.6</Target_Light_Effect_Duration>
+				<Target_Light_Effect_Pulse_Count>1</Target_Light_Effect_Pulse_Count>
+				<Owner_Particle_Bone_Name>ROOT</Owner_Particle_Bone_Name>
+				<Owner_Light_Effect_Type>Color_Flash</Owner_Light_Effect_Type>
+				<Owner_Light_Effect_Color>1.2, 1.2, 2.0</Owner_Light_Effect_Color>
+				<Owner_Light_Effect_Color2 />
+				<Owner_Light_Effect_Duration>0.6</Owner_Light_Effect_Duration>
+				<Owner_Light_Effect_Pulse_Count>1</Owner_Light_Effect_Pulse_Count>
+				<!--<Lightning_Effect_Name>Repair_Facility_Effect</Lightning_Effect_Name>-->
+			</Force_Healing_Ability>
+		</Abilities>
+	</StarBase>
+
+	<!-- Corporate_Sector Survival Starbases -->
+	<StarBase Name="Survival_Corporate_Sector_Starbase">
+		<Variant_Of_Existing_Type>Generic_XQ_Starbase</Variant_Of_Existing_Type>
+		<Affiliation>Corporate_Sector</Affiliation>
+		<Tech_Level>99</Tech_Level>
+		<Next_Level_Base>Survival_Corporate_Sector_Starbase_2</Next_Level_Base>
+
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_XQ5
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
+		TEXT_TOOLTIP_XQ5_HULL
+		TEXT_TOOLTIP_XQ5_SHIELD 
+		TEXT_TOOLTIP_XQ5_WEAP1 
+		TEXT_TOOLTIP_XQ5_WEAP2
+		</Encyclopedia_Text>
+
+		<SpaceBehavior> SPACE_OBSTACLE, POWERED, SHIELDED, HIDE_WHEN_FOGGED, REVEAL, UNIT_AI, ION_STUN_EFFECT</SpaceBehavior>
+		<Tactical_Buildable_Objects_Campaign> 
+			Corporate_Sector,
+				Citadel_Cruiser_Squadron,
+				Gozanti_Cruiser_Squadron,
+				Etti_Lighter,
+				Marauder_Cruiser,
+				Galleon,
+				Nebulon_B_Zsinj,
+				CC7700,
+
+				Survival_Corporate_Sector_Level_2_Starbase_Upgrade
+		</Tactical_Buildable_Objects_Campaign>
+	</StarBase>
+
+	<StarBase Name="Survival_Corporate_Sector_Starbase_2">
+		<Variant_Of_Existing_Type>Generic_Golan_One_Starbase</Variant_Of_Existing_Type>
+		<Affiliation>Corporate_Sector</Affiliation>
+		<Tech_Level>99</Tech_Level>
+		<Next_Level_Base>Survival_Corporate_Sector_Starbase_3</Next_Level_Base>
+		<Prev_Level_Base>Survival_Corporate_Sector_Starbase</Prev_Level_Base>
+		
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_GOLAN_ONE
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
+		TEXT_TOOLTIP_GOLAN_ONE_HULL
+		TEXT_TOOLTIP_GOLAN_ONE_SHIELD 
+		TEXT_TOOLTIP_GOLAN_ONE_WEAP1
+		TEXT_TOOLTIP_GOLAN_ONE_WEAP2
+		</Encyclopedia_Text>
+
+		<SpaceBehavior> SPACE_OBSTACLE, POWERED, SHIELDED, HIDE_WHEN_FOGGED, REVEAL, UNIT_AI, ION_STUN_EFFECT</SpaceBehavior>
+		<Tactical_Buildable_Objects_Campaign> 
+			Corporate_Sector,
+				Citadel_Cruiser_Squadron,
+				Gozanti_Cruiser_Squadron,
+				Etti_Lighter,
+				Marauder_Cruiser,
+				Galleon,
+				Nebulon_B_Zsinj,
+				CC7700,
+				
+				Dreadnaught_Carrier,
+				Generic_Gladiator,
+				Liberator_Cruiser,
+				Recusant,			
+
+				Survival_Corporate_Sector_Level_3_Starbase_Upgrade
+		</Tactical_Buildable_Objects_Campaign>
+	</StarBase>
+	
+	<StarBase Name="Survival_Corporate_Sector_Starbase_3">
+		<Variant_Of_Existing_Type>Generic_Golan_Two_Starbase</Variant_Of_Existing_Type>
+		<Affiliation>Corporate_Sector</Affiliation>
+		<Tech_Level>99</Tech_Level>
+		<Next_Level_Base>Survival_Corporate_Sector_Starbase_4</Next_Level_Base>
+		<Prev_Level_Base>Survival_Corporate_Sector_Starbase_2</Prev_Level_Base>
+		
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_GOLAN_TWO
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_GOLAN_TWO_HULL
+		TEXT_TOOLTIP_GOLAN_TWO_SHIELD
+		TEXT_TOOLTIP_GOLAN_TWO_WEAP1
+		TEXT_TOOLTIP_GOLAN_TWO_WEAP2 
+		</Encyclopedia_Text>
+
+		<SpaceBehavior> SPACE_OBSTACLE, POWERED, SHIELDED, HIDE_WHEN_FOGGED, REVEAL, UNIT_AI, ION_STUN_EFFECT</SpaceBehavior>
+		<Tactical_Buildable_Objects_Campaign> 
+			Corporate_Sector,
+				Citadel_Cruiser_Squadron,
+				Gozanti_Cruiser_Squadron,
+				Etti_Lighter,
+				Marauder_Cruiser,
+				Galleon,
+				Nebulon_B_Zsinj,
+				CC7700,
+				
+				Dreadnaught_Carrier,
+				Generic_Gladiator,
+				Liberator_Cruiser,
+				Recusant,
+				
+				Generic_Victory_Destroyer,
+				Bulwark_I,
+				Dauntless,
+				MTC_Combat,
+				MTC_Support,
+
+				Survival_Corporate_Sector_Level_4_Starbase_Upgrade
+		</Tactical_Buildable_Objects_Campaign>
+	</StarBase>
+	
+	<StarBase Name="Survival_Corporate_Sector_Starbase_4">
+		<Variant_Of_Existing_Type>Generic_Valor_Starbase</Variant_Of_Existing_Type>
+		<Affiliation>Corporate_Sector</Affiliation>
+		<Tech_Level>99</Tech_Level>
+		<Next_Level_Base>Survival_Corporate_Sector_Starbase_5</Next_Level_Base>
+		<Prev_Level_Base>Survival_Corporate_Sector_Starbase_3</Prev_Level_Base>
+		
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_VALOR
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
+		TEXT_TOOLTIP_VALOR_HULL
+		TEXT_TOOLTIP_VALOR_SHIELD
+		TEXT_TOOLTIP_VALOR_WEAP1
+		TEXT_TOOLTIP_VALOR_WEAP2 
+		TEXT_TOOLTIP_VALOR_WEAP3
+		</Encyclopedia_Text>
+
+		<SpaceBehavior> SPACE_OBSTACLE, POWERED, SHIELDED, HIDE_WHEN_FOGGED, REVEAL, UNIT_AI, ION_STUN_EFFECT</SpaceBehavior>
+		<Tactical_Buildable_Objects_Campaign> 
+			Corporate_Sector,
+				Citadel_Cruiser_Squadron,
+				Gozanti_Cruiser_Squadron,
+				Etti_Lighter,
+				Marauder_Cruiser,
+				Galleon,
+				Nebulon_B_Zsinj,
+				CC7700,
+				
+				Dreadnaught_Carrier,
+				Generic_Gladiator,
+				Liberator_Cruiser,
+				Recusant,
+				
+				Generic_Victory_Destroyer,
+				Bulwark_I,
+				Dauntless,
+				MTC_Combat,
+				MTC_Support,
+				
+				Invincible_Cruiser,
+
+				Survival_Corporate_Sector_Level_5_Starbase_Upgrade
+		</Tactical_Buildable_Objects_Campaign>
+	</StarBase>
+	
+	<StarBase Name="Survival_Corporate_Sector_Starbase_5">
+		<Variant_Of_Existing_Type>Generic_Empress_Starbase</Variant_Of_Existing_Type>
+		<Affiliation>Corporate_Sector</Affiliation>
+		<Tech_Level>99</Tech_Level>
+		<Prev_Level_Base>Survival_Corporate_Sector_Starbase_4</Prev_Level_Base>
+		
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_EMPRESS
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
+		TEXT_TOOLTIP_EMPRESS_HULL
+		TEXT_TOOLTIP_EMPRESS_SHIELD
+		TEXT_TOOLTIP_EMPRESS_WEAP1
+		TEXT_TOOLTIP_EMPRESS_WEAP2
+		TEXT_TOOLTIP_EMPRESS_WEAP3
+		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
+		TEXT_TOOLTIP_BONUS_FLEET_TENDER
+		</Encyclopedia_Text>
+
+		<SpaceBehavior> SPACE_OBSTACLE, POWERED, SHIELDED, HIDE_WHEN_FOGGED, REVEAL, UNIT_AI, ION_STUN_EFFECT</SpaceBehavior>
+		<Tactical_Buildable_Objects_Campaign> 
+			Corporate_Sector,
+				Citadel_Cruiser_Squadron,
+				Gozanti_Cruiser_Squadron,
+				Etti_Lighter,
+				Marauder_Cruiser,
+				Galleon,
+				Nebulon_B_Zsinj,
+				CC7700,
+				
+				Dreadnaught_Carrier,
+				Generic_Gladiator,
+				Liberator_Cruiser,
+				Recusant,
+				
+				Generic_Victory_Destroyer,
+				Bulwark_I,
+				Dauntless,
+				MTC_Combat,
+				MTC_Support,
+				
+				Invincible_Cruiser,
+				
+				Generic_Tagge_Battlecruiser_CSA,
+				Bulwark_III,
+				Lucrehulk_CSA,
+				Survival_Mandator_II
 		</Tactical_Buildable_Objects_Campaign>
 		
 		<SFXEvent_Build_Started>EHD_Build_Structure</SFXEvent_Build_Started>
 		<SFXEvent_Build_Cancelled>EHD_Building_Canceled</SFXEvent_Build_Cancelled>
 		<SFXEvent_Build_Complete>EHD_Construction_Complete</SFXEvent_Build_Complete>
 		<SFXEvent_Ambient_Loop>Unit_Starbase_Engine_Loop</SFXEvent_Ambient_Loop>
-		<SFXEvent_Fire>Unit_Turbo_Fire</SFXEvent_Fire>
+		
 		<SFXEvent_Select>Unit_Select_Empire_Space_Station</SFXEvent_Select>
 		<SFXEvent_Attack>Unit_Attack_Empire_Space_Station</SFXEvent_Attack>
-		<SFXEvent_Barrage>Unit_Barrage_Empire_Space_Station</SFXEvent_Barrage>
-		<Death_SFXEvent_Start_Die>Unit_Space_Station_Death_SFX</Death_SFXEvent_Start_Die>
 		<SFXEvent_Unit_Under_Attack> EHD_Space_Station_Under_Attack </SFXEvent_Unit_Under_Attack>
-
+		<Death_SFXEvent_Start_Die>Unit_Space_Station_Death_SFX</Death_SFXEvent_Start_Die>
+		
 		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_LASER, Unit_HP_LASER_Empire_Space_Station</SFXEvent_Attack_Hardpoint>
 		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MISSILE, Unit_HP_MISSILE_Empire_Space_Station </SFXEvent_Attack_Hardpoint>
 		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_TORPEDO, Unit_HP_TORP_Empire_Space_Station </SFXEvent_Attack_Hardpoint>
@@ -720,44 +1746,9 @@
 		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_DUMMY_ART, null </SFXEvent_Hardpoint_Destroyed>
 		
 		<Abilities SubObjectList="Yes">
-			<Planet_Income_Bonus_Ability Name="Station_Income_Bonus">
-				<Specific_Mod_Source_Text>TEXT_ECONOMY_MINING_FACILITIES</Specific_Mod_Source_Text>
-				<!-- 3% bonus to base planetary income -->
-				<Percentage_Income_Modifier>0.20</Percentage_Income_Modifier>
-				<!-- plus an absolute 0 credits to planetary income -->
-				<Absolute_Income_Modifier>0</Absolute_Income_Modifier>
-				<!-- net effect of +( (base income * 0%) + 20) credits -->
-				<!-- <Additional_Multiplier_On_Mining_Colonies>1.5</Additional_Multiplier_On_Mining_Colonies> -->
-				<!-- net result above multiplied by 2.0 if the affected planet is a mining colony -->
-			</Planet_Income_Bonus_Ability>
-			<Income_Stream_Ability Name="Station_Income_Stream">
-				<!-- Income streams only exist in tactical modes that are not spawned from galatic, so this will not affect campaign play. -->
-				<Base_Income_Value>125</Base_Income_Value>
-				<Base_Interval_In_Secs>5</Base_Interval_In_Secs>
-				<Split_Income_With_Allies>Yes</Split_Income_With_Allies>
-				<Split_Favors_Owner>No</Split_Favors_Owner>
-				<Full_Amount_To_Everyone>Yes</Full_Amount_To_Everyone>
-			</Income_Stream_Ability>
-			<Force_Healing_Ability Name="Trade_Facility_Self_Repair">
-				<Activation_Style>Skirmish_Automatic</Activation_Style>
-				<Heal_Range>0.0</Heal_Range>
-				<Heal_Percent>0.003</Heal_Percent>  <!-- Change from .025 to .003 for MP-->
-				<Heal_Amount>0.0</Heal_Amount>
-				<Heal_Interval_In_Secs>2.0</Heal_Interval_In_Secs> <!-- change from 5.0 to 2.0 for MP-->
-				<Single_Target_Heal>Yes</Single_Target_Heal>
-				<Applicable_Unit_Categories />
-				<Applicable_Unit_Types />
-				<SFXEvent_Target_Affected />
-				<Owner_Particle_Bone_Name>ROOT</Owner_Particle_Bone_Name>
-				<Owner_Light_Effect_Type>Color_Flash</Owner_Light_Effect_Type>
-				<Owner_Light_Effect_Color>1.2, 1.2, 1.2</Owner_Light_Effect_Color>
-				<Owner_Light_Effect_Color2 />
-				<Owner_Light_Effect_Duration>0.6</Owner_Light_Effect_Duration>
-				<Owner_Light_Effect_Pulse_Count>1</Owner_Light_Effect_Pulse_Count>
-			</Force_Healing_Ability>
 			<Force_Healing_Ability Name="Fleet_Tender_Facility_Healing">
 				<Activation_Style>Space_Automatic</Activation_Style>
-				<Heal_Range>2000.0</Heal_Range>
+				<Heal_Range>1500.0</Heal_Range>
 				<Heal_Percent> 0.05 </Heal_Percent>
                 <Blob_Color>0, 255, 0, 255</Blob_Color>
 				<Heal_Interval_In_Secs>2.0</Heal_Interval_In_Secs>
@@ -782,12 +1773,1123 @@
 				<Owner_Light_Effect_Pulse_Count>1</Owner_Light_Effect_Pulse_Count>
 				<!--<Lightning_Effect_Name>Repair_Facility_Effect</Lightning_Effect_Name>-->
 			</Force_Healing_Ability>
-
 		</Abilities>
 	</StarBase>
 
-	<!-- Defence Stations -->
+	<!-- Hapes_Consortium Survival Starbases -->
+	<StarBase Name="Survival_Hapes_Consortium_Starbase">
+		<Variant_Of_Existing_Type>Hapan_Star_Base_1</Variant_Of_Existing_Type>
+		<Affiliation>Hapes_Consortium</Affiliation>
+		<Tech_Level>99</Tech_Level>
+		<Next_Level_Base>Survival_Hapes_Consortium_Starbase_2</Next_Level_Base>
+		
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_MERIDIAN_I
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
+		TEXT_TOOLTIP_MERIDIAN_I_HULL
+		TEXT_TOOLTIP_MERIDIAN_I_SHIELD
+		TEXT_TOOLTIP_MERIDIAN_I_WEAP1
+		TEXT_TOOLTIP_MERIDIAN_I_WEAP2
+		</Encyclopedia_Text>
+
+		<SpaceBehavior> SPACE_OBSTACLE, POWERED, SHIELDED, HIDE_WHEN_FOGGED, REVEAL, UNIT_AI, ION_STUN_EFFECT</SpaceBehavior>
+		<Tactical_Buildable_Objects_Campaign> 
+			Hapes_Consortium,
+				Baidam,
+				Flare,
+				Beta_Cruiser,
+				Stella,
+
+				Survival_Hapes_Consortium_Level_2_Starbase_Upgrade
+		</Tactical_Buildable_Objects_Campaign>
+	</StarBase>
+
+	<StarBase Name="Survival_Hapes_Consortium_Starbase_2">
+		<Variant_Of_Existing_Type>Hapan_Star_Base_2</Variant_Of_Existing_Type>
+		<Affiliation>Hapes_Consortium</Affiliation>
+		<Tech_Level>99</Tech_Level>
+		<Next_Level_Base>Survival_Hapes_Consortium_Starbase_3</Next_Level_Base>
+		<Prev_Level_Base>Survival_Hapes_Consortium_Starbase</Prev_Level_Base>
+		
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_MERIDIAN_II
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
+		TEXT_TOOLTIP_MERIDIAN_II_HULL
+		TEXT_TOOLTIP_MERIDIAN_II_SHIELD
+		TEXT_TOOLTIP_MERIDIAN_II_WEAP1
+		TEXT_TOOLTIP_MERIDIAN_II_WEAP2
+		TEXT_TOOLTIP_MERIDIAN_II_WEAP3
+		</Encyclopedia_Text>
+
+		<SpaceBehavior> SPACE_OBSTACLE, POWERED, SHIELDED, HIDE_WHEN_FOGGED, REVEAL, UNIT_AI, ION_STUN_EFFECT</SpaceBehavior>
+		<Tactical_Buildable_Objects_Campaign> 
+			Hapes_Consortium,
+				Baidam,
+				Flare,
+				Beta_Cruiser,
+				Stella,
+				
+				Nova_Cruiser,
+				Nova_Cruiser_Refit,
+				Olanji_Frigate,
+				Charubah_Frigate,
+
+				Survival_Hapes_Consortium_Level_3_Starbase_Upgrade
+		</Tactical_Buildable_Objects_Campaign>
+	</StarBase>
 	
+	<StarBase Name="Survival_Hapes_Consortium_Starbase_3">
+		<Variant_Of_Existing_Type>Hapan_Star_Base_3</Variant_Of_Existing_Type>
+		<Affiliation>Hapes_Consortium</Affiliation>
+		<Tech_Level>99</Tech_Level>
+		<Next_Level_Base>Survival_Hapes_Consortium_Starbase_4</Next_Level_Base>
+		<Prev_Level_Base>Survival_Hapes_Consortium_Starbase_2</Prev_Level_Base>
+		
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_MERIDIAN_III
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
+		TEXT_TOOLTIP_MERIDIAN_III_HULL
+		TEXT_TOOLTIP_MERIDIAN_III_SHIELD
+		TEXT_TOOLTIP_MERIDIAN_III_WEAP1
+		TEXT_TOOLTIP_MERIDIAN_III_WEAP2
+		TEXT_TOOLTIP_MERIDIAN_III_WEAP3
+		</Encyclopedia_Text>
+
+		<SpaceBehavior> SPACE_OBSTACLE, POWERED, SHIELDED, HIDE_WHEN_FOGGED, REVEAL, UNIT_AI, ION_STUN_EFFECT</SpaceBehavior>
+		<Tactical_Buildable_Objects_Campaign> 
+			Hapes_Consortium,
+				Baidam,
+				Flare,
+				Beta_Cruiser,
+				Stella,
+				
+				Nova_Cruiser,
+				Nova_Cruiser_Refit,
+				Olanji_Frigate,
+				Charubah_Frigate,
+				
+				Magnetar,
+				Pulsar,
+				Coronal,
+
+				Survival_Hapes_Consortium_Level_4_Starbase_Upgrade
+		</Tactical_Buildable_Objects_Campaign>
+	</StarBase>
+	
+	<StarBase Name="Survival_Hapes_Consortium_Starbase_4">
+		<Variant_Of_Existing_Type>Hapan_Star_Base_4</Variant_Of_Existing_Type>
+		<Affiliation>Hapes_Consortium</Affiliation>
+		<Tech_Level>99</Tech_Level>
+		<Next_Level_Base>Survival_Hapes_Consortium_Starbase_5</Next_Level_Base>
+		<Prev_Level_Base>Survival_Hapes_Consortium_Starbase_3</Prev_Level_Base>
+		
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_MERIDIAN_IV
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
+		TEXT_TOOLTIP_MERIDIAN_IV_HULL
+		TEXT_TOOLTIP_MERIDIAN_IV_SHIELD
+		TEXT_TOOLTIP_MERIDIAN_IV_WEAP1
+		TEXT_TOOLTIP_MERIDIAN_IV_WEAP2
+		TEXT_TOOLTIP_MERIDIAN_IV_WEAP3
+		</Encyclopedia_Text>
+
+		<SpaceBehavior> SPACE_OBSTACLE, POWERED, SHIELDED, HIDE_WHEN_FOGGED, REVEAL, UNIT_AI, ION_STUN_EFFECT</SpaceBehavior>
+		<Tactical_Buildable_Objects_Campaign> 
+			Hapes_Consortium,
+				Baidam,
+				Flare,
+				Beta_Cruiser,
+				Stella,
+				
+				Nova_Cruiser,
+				Nova_Cruiser_Refit,
+				Olanji_Frigate,
+				Charubah_Frigate,
+				
+				Magnetar,
+				Pulsar,
+				Coronal,
+				
+				BattleDragon,
+				Mist_Carrier,
+				Terephon_Cruiser,
+
+				Survival_Hapes_Consortium_Level_5_Starbase_Upgrade
+		</Tactical_Buildable_Objects_Campaign>
+	</StarBase>
+	
+	<StarBase Name="Survival_Hapes_Consortium_Starbase_5">
+		<Variant_Of_Existing_Type>Hapan_Star_Base_5</Variant_Of_Existing_Type>
+		<Affiliation>Hapes_Consortium</Affiliation>
+		<Tech_Level>99</Tech_Level>
+		<Prev_Level_Base>Survival_Hapes_Consortium_Starbase_4</Prev_Level_Base>
+		
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_APHELION
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
+		TEXT_TOOLTIP_APHELION_HULL
+		TEXT_TOOLTIP_APHELION_SHIELD
+		TEXT_TOOLTIP_APHELION_WEAP1
+		TEXT_TOOLTIP_APHELION_WEAP2
+		TEXT_TOOLTIP_APHELION_WEAP3
+		TEXT_TOOLTIP_APHELION_WEAP4
+		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
+		TEXT_TOOLTIP_BONUS_FLEET_TENDER
+		</Encyclopedia_Text>
+
+		<SpaceBehavior> SPACE_OBSTACLE, POWERED, SHIELDED, HIDE_WHEN_FOGGED, REVEAL, UNIT_AI, ION_STUN_EFFECT</SpaceBehavior>
+		<Tactical_Buildable_Objects_Campaign> 
+			Hapes_Consortium,
+				Baidam,
+				Flare,
+				Beta_Cruiser,
+				Stella,
+				
+				Nova_Cruiser,
+				Nova_Cruiser_Refit,
+				Olanji_Frigate,
+				Charubah_Frigate,
+				
+				Magnetar,
+				Pulsar,
+				Coronal,
+				
+				BattleDragon,
+				Mist_Carrier,
+				Terephon_Cruiser,
+				
+				Neutron_Cruiser,
+				Survival_Star_Home				
+		</Tactical_Buildable_Objects_Campaign>
+		
+		<Abilities SubObjectList="Yes">
+			<Force_Healing_Ability Name="Fleet_Tender_Facility_Healing">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Heal_Range>1500.0</Heal_Range>
+				<Heal_Percent> 0.05 </Heal_Percent>
+                <Blob_Color>0, 255, 0, 255</Blob_Color>
+				<Heal_Interval_In_Secs>2.0</Heal_Interval_In_Secs>
+				<Single_Target_Heal>Yes</Single_Target_Heal>
+				<Heal_Range_Blob_Material>Reinforcement_Point_Radius_Overlay</Heal_Range_Blob_Material>
+				<!-- We can heal the following unit types: -->
+				<Applicable_Unit_Categories>Corvette, Frigate, Capital, Hero, SuperCapital, SpaceHero</Applicable_Unit_Categories>
+				<Applicable_Unit_Types />
+				<SFXEvent_Target_Affected>Unit_Force_Healing_Pulse</SFXEvent_Target_Affected>
+				<Target_Particle_Effect>Shield_Sparks_Medium</Target_Particle_Effect>
+				<Target_Particle_Bone_Name>B_TURRET, TURRET_00, B_TURRET_BASE</Target_Particle_Bone_Name>
+				<Target_Light_Effect_Type>Color_Flash</Target_Light_Effect_Type>
+				<Target_Light_Effect_Color>1.2, 1.2, 2.0</Target_Light_Effect_Color>
+				<Target_Light_Effect_Color2 />
+				<Target_Light_Effect_Duration>0.6</Target_Light_Effect_Duration>
+				<Target_Light_Effect_Pulse_Count>1</Target_Light_Effect_Pulse_Count>
+				<Owner_Particle_Bone_Name>ROOT</Owner_Particle_Bone_Name>
+				<Owner_Light_Effect_Type>Color_Flash</Owner_Light_Effect_Type>
+				<Owner_Light_Effect_Color>1.2, 1.2, 2.0</Owner_Light_Effect_Color>
+				<Owner_Light_Effect_Color2 />
+				<Owner_Light_Effect_Duration>0.6</Owner_Light_Effect_Duration>
+				<Owner_Light_Effect_Pulse_Count>1</Owner_Light_Effect_Pulse_Count>
+				<!--<Lightning_Effect_Name>Repair_Facility_Effect</Lightning_Effect_Name>-->
+			</Force_Healing_Ability>
+		</Abilities>
+	</StarBase>
+
+	<!-- EmpireoftheHand Survival Starbases -->
+	<StarBase Name="Survival_EmpireoftheHand_Starbase">
+		<Variant_Of_Existing_Type>Brask_Starbase</Variant_Of_Existing_Type>
+		<Affiliation>EmpireoftheHand</Affiliation>
+		<Tech_Level>99</Tech_Level>
+		<Next_Level_Base>Survival_EmpireoftheHand_Starbase_2</Next_Level_Base>
+		
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_BRASK
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_BRASK_HULL
+		TEXT_TOOLTIP_BRASK_SHIELD
+		TEXT_TOOLTIP_BRASK_WEAP1
+		</Encyclopedia_Text>
+
+		<SpaceBehavior> SPACE_OBSTACLE, POWERED, SHIELDED, HIDE_WHEN_FOGGED, REVEAL, UNIT_AI, ION_STUN_EFFECT</SpaceBehavior>
+		<Tactical_Buildable_Objects_Campaign> 
+			EmpireoftheHand,
+				Muqaraea,
+				Syzygos,
+				Kuuro,
+				Fruoro,
+				Ormos,
+				
+				Survival_EmpireoftheHand_Level_2_Starbase_Upgrade
+		</Tactical_Buildable_Objects_Campaign>
+	</StarBase>
+
+	<StarBase Name="Survival_EmpireoftheHand_Starbase_2">
+		<Variant_Of_Existing_Type>EotH_Star_Base_2</Variant_Of_Existing_Type>
+		<Affiliation>EmpireoftheHand</Affiliation>
+		<Tech_Level>99</Tech_Level>
+		<Next_Level_Base>Survival_EmpireoftheHand_Starbase_3</Next_Level_Base>
+		<Prev_Level_Base>Survival_EmpireoftheHand_Starbase</Prev_Level_Base>
+		
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_GOLAN_ONE
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
+		TEXT_TOOLTIP_GOLAN_ONE_HULL
+		TEXT_TOOLTIP_GOLAN_ONE_SHIELD 
+		TEXT_TOOLTIP_GOLAN_ONE_WEAP1
+		TEXT_TOOLTIP_GOLAN_ONE_WEAP2
+		</Encyclopedia_Text>
+
+		<SpaceBehavior> SPACE_OBSTACLE, POWERED, SHIELDED, HIDE_WHEN_FOGGED, REVEAL, UNIT_AI, ION_STUN_EFFECT</SpaceBehavior>
+		<Tactical_Buildable_Objects_Campaign> 
+			EmpireoftheHand,
+				Muqaraea,
+				Syzygos,
+				Kuuro,
+				Fruoro,
+				Ormos,
+				
+				Prolipsi,
+				Rohkea,
+				Kynigos,
+				Baomu,
+
+				Survival_EmpireoftheHand_Level_3_Starbase_Upgrade
+		</Tactical_Buildable_Objects_Campaign>
+	</StarBase>
+	
+	<StarBase Name="Survival_EmpireoftheHand_Starbase_3">
+		<Variant_Of_Existing_Type>EotH_Star_Base_3</Variant_Of_Existing_Type>
+		<Affiliation>EmpireoftheHand</Affiliation>
+		<Tech_Level>99</Tech_Level>
+		<Next_Level_Base>Survival_EmpireoftheHand_Starbase_4</Next_Level_Base>
+		<Prev_Level_Base>Survival_EmpireoftheHand_Starbase_2</Prev_Level_Base>
+		
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_GOLAN_TWO
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_GOLAN_TWO_HULL
+		TEXT_TOOLTIP_GOLAN_TWO_SHIELD
+		TEXT_TOOLTIP_GOLAN_TWO_WEAP1
+		TEXT_TOOLTIP_GOLAN_TWO_WEAP2 
+		</Encyclopedia_Text>
+
+		<SpaceBehavior> SPACE_OBSTACLE, POWERED, SHIELDED, HIDE_WHEN_FOGGED, REVEAL, UNIT_AI, ION_STUN_EFFECT</SpaceBehavior>
+		<Tactical_Buildable_Objects_Campaign> 
+			EmpireoftheHand,
+				Muqaraea,
+				Syzygos,
+				Kuuro,
+				Fruoro,
+				Ormos,
+				
+				Prolipsi,
+				Rohkea,
+				Kynigos,
+				Baomu,
+				
+				Chaf_Destroyer,
+				Chiss_Star_Destroyer,
+				
+				Survival_EmpireoftheHand_Level_4_Starbase_Upgrade
+		</Tactical_Buildable_Objects_Campaign>
+	</StarBase>
+	
+	<StarBase Name="Survival_EmpireoftheHand_Starbase_4">
+		<Variant_Of_Existing_Type>Visvia_Starbase</Variant_Of_Existing_Type>
+		<Affiliation>EmpireoftheHand</Affiliation>
+		<Tech_Level>99</Tech_Level>
+		<Next_Level_Base>Survival_EmpireoftheHand_Starbase_5</Next_Level_Base>
+		<Prev_Level_Base>Survival_EmpireoftheHand_Starbase_3</Prev_Level_Base>
+		
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_VISVIA
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_VISVIA_HULL
+		TEXT_TOOLTIP_VISVIA_SHIELD 
+		TEXT_TOOLTIP_VISVIA_WEAP1 
+		TEXT_TOOLTIP_VISVIA_WEAP2
+		</Encyclopedia_Text>
+
+		<SpaceBehavior> SPACE_OBSTACLE, POWERED, SHIELDED, HIDE_WHEN_FOGGED, REVEAL, UNIT_AI, ION_STUN_EFFECT</SpaceBehavior>
+		<Tactical_Buildable_Objects_Campaign> 
+			EmpireoftheHand,
+				Muqaraea,
+				Syzygos,
+				Kuuro,
+				Fruoro,
+				Ormos,
+				
+				Prolipsi,
+				Rohkea,
+				Kynigos,
+				Baomu,
+				
+				Chaf_Destroyer,
+				Chiss_Star_Destroyer,
+				
+				Syndic_Destroyer,
+				Efodio_Fleet_Tender,
+				Peltast,
+				
+				Survival_EmpireoftheHand_Level_5_Starbase_Upgrade
+		</Tactical_Buildable_Objects_Campaign>
+	</StarBase>
+	
+	<StarBase Name="Survival_EmpireoftheHand_Starbase_5">
+		<Variant_Of_Existing_Type>Oto_Starbase</Variant_Of_Existing_Type>
+		<Affiliation>EmpireoftheHand</Affiliation>
+		<Tech_Level>99</Tech_Level>
+		<Prev_Level_Base>Survival_EmpireoftheHand_Starbase_4</Prev_Level_Base>
+		
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_OTO
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
+		TEXT_TOOLTIP_OTO_HULL 
+		TEXT_TOOLTIP_OTO_SHIELD
+		TEXT_TOOLTIP_OTO_WEAP1 
+		TEXT_TOOLTIP_OTO_WEAP2
+		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
+		TEXT_TOOLTIP_BONUS_FLEET_TENDER
+		</Encyclopedia_Text>
+
+		<SpaceBehavior> SPACE_OBSTACLE, POWERED, SHIELDED, HIDE_WHEN_FOGGED, REVEAL, UNIT_AI, ION_STUN_EFFECT</SpaceBehavior>
+		<Tactical_Buildable_Objects_Campaign> 
+			EmpireoftheHand,
+				Muqaraea,
+				Syzygos,
+				Kuuro,
+				Fruoro,
+				Ormos,
+				
+				Prolipsi,
+				Rohkea,
+				Kynigos,
+				Baomu,
+				
+				Chaf_Destroyer,
+				Chiss_Star_Destroyer,
+				
+				Syndic_Destroyer,
+				Efodio_Fleet_Tender,
+				Peltast,
+				
+				Syndic_Destroyer,
+				Intego_Destroyer
+		</Tactical_Buildable_Objects_Campaign>
+		
+		<Abilities SubObjectList="Yes">
+			<Force_Healing_Ability Name="Fleet_Tender_Facility_Healing">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Heal_Range>1500.0</Heal_Range>
+				<Heal_Percent> 0.05 </Heal_Percent>
+                <Blob_Color>0, 255, 0, 255</Blob_Color>
+				<Heal_Interval_In_Secs>2.0</Heal_Interval_In_Secs>
+				<Single_Target_Heal>Yes</Single_Target_Heal>
+				<Heal_Range_Blob_Material>Reinforcement_Point_Radius_Overlay</Heal_Range_Blob_Material>
+				<!-- We can heal the following unit types: -->
+				<Applicable_Unit_Categories>Corvette, Frigate, Capital, Hero, SuperCapital, SpaceHero</Applicable_Unit_Categories>
+				<Applicable_Unit_Types />
+				<SFXEvent_Target_Affected>Unit_Force_Healing_Pulse</SFXEvent_Target_Affected>
+				<Target_Particle_Effect>Shield_Sparks_Medium</Target_Particle_Effect>
+				<Target_Particle_Bone_Name>B_TURRET, TURRET_00, B_TURRET_BASE</Target_Particle_Bone_Name>
+				<Target_Light_Effect_Type>Color_Flash</Target_Light_Effect_Type>
+				<Target_Light_Effect_Color>1.2, 1.2, 2.0</Target_Light_Effect_Color>
+				<Target_Light_Effect_Color2 />
+				<Target_Light_Effect_Duration>0.6</Target_Light_Effect_Duration>
+				<Target_Light_Effect_Pulse_Count>1</Target_Light_Effect_Pulse_Count>
+				<Owner_Particle_Bone_Name>ROOT</Owner_Particle_Bone_Name>
+				<Owner_Light_Effect_Type>Color_Flash</Owner_Light_Effect_Type>
+				<Owner_Light_Effect_Color>1.2, 1.2, 2.0</Owner_Light_Effect_Color>
+				<Owner_Light_Effect_Color2 />
+				<Owner_Light_Effect_Duration>0.6</Owner_Light_Effect_Duration>
+				<Owner_Light_Effect_Pulse_Count>1</Owner_Light_Effect_Pulse_Count>
+				<!--<Lightning_Effect_Name>Repair_Facility_Effect</Lightning_Effect_Name>-->
+			</Force_Healing_Ability>
+		</Abilities>
+	</StarBase>
+
+	<!-- Hutts Survival Starbases -->
+	<StarBase Name="Survival_Hutt_Cartels_Starbase">
+		<Variant_Of_Existing_Type>Generic_XQ_Starbase</Variant_Of_Existing_Type>
+		<Affiliation>Hutt_Cartels</Affiliation>
+		<Tech_Level>99</Tech_Level>
+		<Next_Level_Base>Survival_Hutt_Cartels_Starbase_2</Next_Level_Base>
+		
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_XQ5
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
+		TEXT_TOOLTIP_XQ5_HULL
+		TEXT_TOOLTIP_XQ5_SHIELD 
+		TEXT_TOOLTIP_XQ5_WEAP1 
+		TEXT_TOOLTIP_XQ5_WEAP2
+		</Encyclopedia_Text>
+
+		<SpaceBehavior> SPACE_OBSTACLE, POWERED, SHIELDED, HIDE_WHEN_FOGGED, REVEAL, UNIT_AI, ION_STUN_EFFECT</SpaceBehavior>
+		<Tactical_Buildable_Objects_Campaign> 
+			Hutt_Cartels,
+				Warlord_Cruiser,
+				Raka_Freighter_Tender,
+				Heavy_Minstrel_Yacht,
+				Kaloth_Battlecruiser,
+				Juvard_Frigate,
+
+				Survival_Hutt_Cartels_Level_2_Starbase_Upgrade
+		</Tactical_Buildable_Objects_Campaign>
+		
+		<SFXEvent_Build_Started>UHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>UHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>UHD_Construction_Complete</SFXEvent_Build_Complete>
+		
+		<SFXEvent_Select>Unit_Select_Rebel_Space_Station</SFXEvent_Select>
+		<SFXEvent_Attack>Unit_Attack_Rebel_Space_Station</SFXEvent_Attack>
+		<SFXEvent_Unit_Under_Attack> UHD_Space_Station_Under_Attack </SFXEvent_Unit_Under_Attack>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_LASER, Unit_HP_LASER_Rebel_Space_Station</SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MISSILE, Unit_HP_MISSILE_Rebel_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_TORPEDO, Unit_HP_TORP_Rebel_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_ION_CANNON, Unit_HP_ION_Rebel_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_SHIELD_GENERATOR, Unit_HP_SHIELDS_Rebel_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENGINE, Unit_HP_ENGINES_Rebel_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_GRAVITY_WELL, Unit_HP_Grav_Rebel_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_FIGHTER_BAY, Unit_HP_BAY_Rebel_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_TRACTOR_BEAM, null </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MASS_DRIVER, null </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_SPECIAL, null </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENABLE_SPECIAL_ABILITY, null </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_DUMMY_ART, null </SFXEvent_Attack_Hardpoint>
+				
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_LASER, Unit_Lost_Laser_Rebel_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_MISSILE,  Unit_Lost_Missile_Rebel_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_TORPEDO,  Unit_Lost_Torpedo_Rebel_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_ION_CANNON, Unit_Lost_Ion_Rebel_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_SHIELD_GENERATOR, Unit_Lost_Shields_Rebel_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENGINE, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_GRAVITY_WELL, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_FIGHTER_BAY, Unit_Lost_Bay_Rebel_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_TRACTOR_BEAM, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_MASS_DRIVER, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_SPECIAL, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENABLE_SPECIAL_ABILITY, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_DUMMY_ART, null </SFXEvent_Hardpoint_Destroyed>
+	</StarBase>
+
+	<StarBase Name="Survival_Hutt_Cartels_Starbase_2">
+		<Variant_Of_Existing_Type>Generic_Golan_One_Starbase</Variant_Of_Existing_Type>
+		<Affiliation>Hutt_Cartels</Affiliation>
+		<Tech_Level>99</Tech_Level>
+		<Next_Level_Base>Survival_Hutt_Cartels_Starbase_3</Next_Level_Base>
+		<Prev_Level_Base>Survival_Hutt_Cartels_Starbase</Prev_Level_Base>
+		
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_GOLAN_ONE
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
+		TEXT_TOOLTIP_GOLAN_ONE_HULL
+		TEXT_TOOLTIP_GOLAN_ONE_SHIELD 
+		TEXT_TOOLTIP_GOLAN_ONE_WEAP1
+		TEXT_TOOLTIP_GOLAN_ONE_WEAP2
+		</Encyclopedia_Text>
+
+		<SpaceBehavior> SPACE_OBSTACLE, POWERED, SHIELDED, HIDE_WHEN_FOGGED, REVEAL, UNIT_AI, ION_STUN_EFFECT</SpaceBehavior>
+		<Tactical_Buildable_Objects_Campaign> 
+			Hutt_Cartels,
+				Warlord_Cruiser,
+				Raka_Freighter_Tender,
+				Heavy_Minstrel_Yacht,
+				Kaloth_Battlecruiser,
+				Juvard_Frigate,
+
+				Barabbula_Frigate,
+				Kossak_Frigate,
+				Tarrada_Frigate,
+
+				Survival_Hutt_Cartels_Level_3_Starbase_Upgrade
+		</Tactical_Buildable_Objects_Campaign>
+		
+		<SFXEvent_Build_Started>UHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>UHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>UHD_Construction_Complete</SFXEvent_Build_Complete>
+		
+		<SFXEvent_Select>Unit_Select_Rebel_Space_Station</SFXEvent_Select>
+		<SFXEvent_Attack>Unit_Attack_Rebel_Space_Station</SFXEvent_Attack>
+		<SFXEvent_Unit_Under_Attack> UHD_Space_Station_Under_Attack </SFXEvent_Unit_Under_Attack>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_LASER, Unit_HP_LASER_Rebel_Space_Station</SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MISSILE, Unit_HP_MISSILE_Rebel_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_TORPEDO, Unit_HP_TORP_Rebel_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_ION_CANNON, Unit_HP_ION_Rebel_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_SHIELD_GENERATOR, Unit_HP_SHIELDS_Rebel_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENGINE, Unit_HP_ENGINES_Rebel_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_GRAVITY_WELL, Unit_HP_Grav_Rebel_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_FIGHTER_BAY, Unit_HP_BAY_Rebel_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_TRACTOR_BEAM, null </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MASS_DRIVER, null </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_SPECIAL, null </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENABLE_SPECIAL_ABILITY, null </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_DUMMY_ART, null </SFXEvent_Attack_Hardpoint>
+				
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_LASER, Unit_Lost_Laser_Rebel_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_MISSILE,  Unit_Lost_Missile_Rebel_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_TORPEDO,  Unit_Lost_Torpedo_Rebel_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_ION_CANNON, Unit_Lost_Ion_Rebel_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_SHIELD_GENERATOR, Unit_Lost_Shields_Rebel_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENGINE, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_GRAVITY_WELL, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_FIGHTER_BAY, Unit_Lost_Bay_Rebel_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_TRACTOR_BEAM, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_MASS_DRIVER, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_SPECIAL, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENABLE_SPECIAL_ABILITY, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_DUMMY_ART, null </SFXEvent_Hardpoint_Destroyed>
+	</StarBase>
+	
+	<StarBase Name="Survival_Hutt_Cartels_Starbase_3">
+		<Variant_Of_Existing_Type>Generic_Golan_Two_Starbase</Variant_Of_Existing_Type>
+		<Affiliation>Hutt_Cartels</Affiliation>
+		<Tech_Level>99</Tech_Level>
+		<Next_Level_Base>Survival_Hutt_Cartels_Starbase_4</Next_Level_Base>
+		<Prev_Level_Base>Survival_Hutt_Cartels_Starbase_2</Prev_Level_Base>
+		
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_GOLAN_TWO
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_GOLAN_TWO_HULL
+		TEXT_TOOLTIP_GOLAN_TWO_SHIELD
+		TEXT_TOOLTIP_GOLAN_TWO_WEAP1
+		TEXT_TOOLTIP_GOLAN_TWO_WEAP2 
+		</Encyclopedia_Text>
+
+		<SpaceBehavior> SPACE_OBSTACLE, POWERED, SHIELDED, HIDE_WHEN_FOGGED, REVEAL, UNIT_AI, ION_STUN_EFFECT</SpaceBehavior>
+		<Tactical_Buildable_Objects_Campaign> 
+			Hutt_Cartels,
+				Warlord_Cruiser,
+				Raka_Freighter_Tender,
+				Heavy_Minstrel_Yacht,
+				Kaloth_Battlecruiser,
+				Juvard_Frigate,
+
+				Barabbula_Frigate,
+				Kossak_Frigate,
+				Tarrada_Frigate,
+				
+				Batil_Carrier,
+				Ubrikkian_Frigate,
+				Szajin_Cruiser,
+				Karagga_Destroyer,
+				Chelandion_Cruiser,
+
+				Survival_Hutt_Cartels_Level_4_Starbase_Upgrade
+		</Tactical_Buildable_Objects_Campaign>
+		
+		<SFXEvent_Build_Started>UHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>UHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>UHD_Construction_Complete</SFXEvent_Build_Complete>
+		
+		<SFXEvent_Select>Unit_Select_Rebel_Space_Station</SFXEvent_Select>
+		<SFXEvent_Attack>Unit_Attack_Rebel_Space_Station</SFXEvent_Attack>
+		<SFXEvent_Unit_Under_Attack> UHD_Space_Station_Under_Attack </SFXEvent_Unit_Under_Attack>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_LASER, Unit_HP_LASER_Rebel_Space_Station</SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MISSILE, Unit_HP_MISSILE_Rebel_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_TORPEDO, Unit_HP_TORP_Rebel_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_ION_CANNON, Unit_HP_ION_Rebel_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_SHIELD_GENERATOR, Unit_HP_SHIELDS_Rebel_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENGINE, Unit_HP_ENGINES_Rebel_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_GRAVITY_WELL, Unit_HP_Grav_Rebel_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_FIGHTER_BAY, Unit_HP_BAY_Rebel_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_TRACTOR_BEAM, null </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MASS_DRIVER, null </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_SPECIAL, null </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENABLE_SPECIAL_ABILITY, null </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_DUMMY_ART, null </SFXEvent_Attack_Hardpoint>
+				
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_LASER, Unit_Lost_Laser_Rebel_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_MISSILE,  Unit_Lost_Missile_Rebel_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_TORPEDO,  Unit_Lost_Torpedo_Rebel_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_ION_CANNON, Unit_Lost_Ion_Rebel_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_SHIELD_GENERATOR, Unit_Lost_Shields_Rebel_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENGINE, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_GRAVITY_WELL, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_FIGHTER_BAY, Unit_Lost_Bay_Rebel_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_TRACTOR_BEAM, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_MASS_DRIVER, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_SPECIAL, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENABLE_SPECIAL_ABILITY, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_DUMMY_ART, null </SFXEvent_Hardpoint_Destroyed>
+	</StarBase>
+	
+	<StarBase Name="Survival_Hutt_Cartels_Starbase_4">
+		<Variant_Of_Existing_Type>Generic_Golan_Three_Starbase</Variant_Of_Existing_Type>
+		<Affiliation>Hutt_Cartels</Affiliation>
+		<Tech_Level>99</Tech_Level>
+		<Next_Level_Base>Survival_Hutt_Cartels_Starbase_5</Next_Level_Base>
+		<Prev_Level_Base>Survival_Hutt_Cartels_Starbase_3</Prev_Level_Base>
+		
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_GOLAN_THREE
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_GOLAN_THREE_HULL
+		TEXT_TOOLTIP_GOLAN_THREE_SHIELD
+		TEXT_TOOLTIP_GOLAN_THREE_WEAP1 
+		TEXT_TOOLTIP_GOLAN_THREE_WEAP2 
+		</Encyclopedia_Text>
+
+		<SpaceBehavior> SPACE_OBSTACLE, POWERED, SHIELDED, HIDE_WHEN_FOGGED, REVEAL, UNIT_AI, ION_STUN_EFFECT</SpaceBehavior>
+		<Tactical_Buildable_Objects_Campaign> 
+			Hutt_Cartels,
+				Warlord_Cruiser,
+				Raka_Freighter_Tender,
+				Heavy_Minstrel_Yacht,
+				Kaloth_Battlecruiser,
+				Juvard_Frigate,
+
+				Barabbula_Frigate,
+				Kossak_Frigate,
+				Tarrada_Frigate,
+				
+				Batil_Carrier,
+				Ubrikkian_Frigate,
+				Szajin_Cruiser,
+				Karagga_Destroyer,
+				Chelandion_Cruiser,
+				
+				Vontor_Destroyer,
+				Voracious_Carrier,
+
+				Survival_Hutt_Cartels_Level_5_Starbase_Upgrade
+		</Tactical_Buildable_Objects_Campaign>
+		
+		<SFXEvent_Build_Started>UHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>UHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>UHD_Construction_Complete</SFXEvent_Build_Complete>
+		
+		<SFXEvent_Select>Unit_Select_Rebel_Space_Station</SFXEvent_Select>
+		<SFXEvent_Attack>Unit_Attack_Rebel_Space_Station</SFXEvent_Attack>
+		<SFXEvent_Unit_Under_Attack> UHD_Space_Station_Under_Attack </SFXEvent_Unit_Under_Attack>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_LASER, Unit_HP_LASER_Rebel_Space_Station</SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MISSILE, Unit_HP_MISSILE_Rebel_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_TORPEDO, Unit_HP_TORP_Rebel_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_ION_CANNON, Unit_HP_ION_Rebel_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_SHIELD_GENERATOR, Unit_HP_SHIELDS_Rebel_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENGINE, Unit_HP_ENGINES_Rebel_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_GRAVITY_WELL, Unit_HP_Grav_Rebel_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_FIGHTER_BAY, Unit_HP_BAY_Rebel_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_TRACTOR_BEAM, null </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MASS_DRIVER, null </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_SPECIAL, null </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENABLE_SPECIAL_ABILITY, null </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_DUMMY_ART, null </SFXEvent_Attack_Hardpoint>
+				
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_LASER, Unit_Lost_Laser_Rebel_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_MISSILE,  Unit_Lost_Missile_Rebel_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_TORPEDO,  Unit_Lost_Torpedo_Rebel_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_ION_CANNON, Unit_Lost_Ion_Rebel_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_SHIELD_GENERATOR, Unit_Lost_Shields_Rebel_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENGINE, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_GRAVITY_WELL, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_FIGHTER_BAY, Unit_Lost_Bay_Rebel_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_TRACTOR_BEAM, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_MASS_DRIVER, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_SPECIAL, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENABLE_SPECIAL_ABILITY, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_DUMMY_ART, null </SFXEvent_Hardpoint_Destroyed>
+	</StarBase>
+	
+	<StarBase Name="Survival_Hutt_Cartels_Starbase_5">
+		<Variant_Of_Existing_Type>Generic_Validusia_Starbase</Variant_Of_Existing_Type>
+		<Affiliation>Hutt_Cartels</Affiliation>
+		<Tech_Level>99</Tech_Level>
+		<Prev_Level_Base>Survival_Hutt_Cartels_Starbase_4</Prev_Level_Base>
+
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_VALIDUSIA
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
+		TEXT_TOOLTIP_VALIDUSIA_HULL 
+		TEXT_TOOLTIP_VALIDUSIA_SHIELD
+		TEXT_TOOLTIP_VALIDUSIA_WEAP1 
+		TEXT_TOOLTIP_VALIDUSIA_WEAP2
+		TEXT_TOOLTIP_VALIDUSIA_WEAP3 
+		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
+		TEXT_TOOLTIP_BONUS_FLEET_TENDER
+		</Encyclopedia_Text>
+
+		<SpaceBehavior> SPACE_OBSTACLE, POWERED, SHIELDED, HIDE_WHEN_FOGGED, REVEAL, UNIT_AI, ION_STUN_EFFECT</SpaceBehavior>
+		<Tactical_Buildable_Objects_Campaign> 
+			Hutt_Cartels,
+				Warlord_Cruiser,
+				Raka_Freighter_Tender,
+				Heavy_Minstrel_Yacht,
+				Kaloth_Battlecruiser,
+				Juvard_Frigate,
+
+				Barabbula_Frigate,
+				Kossak_Frigate,
+				Tarrada_Frigate,
+				
+				Batil_Carrier,
+				Ubrikkian_Frigate,
+				Szajin_Cruiser,
+				Karagga_Destroyer,
+				Chelandion_Cruiser,
+				
+				Vontor_Destroyer,
+				Voracious_Carrier,
+				
+				Karabos_Destroyer,
+				DorBulla_Warship
+		</Tactical_Buildable_Objects_Campaign>
+		
+		<SFXEvent_Build_Started>UHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>UHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>UHD_Construction_Complete</SFXEvent_Build_Complete>
+		
+		<SFXEvent_Select>Unit_Select_Rebel_Space_Station</SFXEvent_Select>
+		<SFXEvent_Attack>Unit_Attack_Rebel_Space_Station</SFXEvent_Attack>
+		<SFXEvent_Unit_Under_Attack> UHD_Space_Station_Under_Attack </SFXEvent_Unit_Under_Attack>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_LASER, Unit_HP_LASER_Rebel_Space_Station</SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MISSILE, Unit_HP_MISSILE_Rebel_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_TORPEDO, Unit_HP_TORP_Rebel_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_ION_CANNON, Unit_HP_ION_Rebel_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_SHIELD_GENERATOR, Unit_HP_SHIELDS_Rebel_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENGINE, Unit_HP_ENGINES_Rebel_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_GRAVITY_WELL, Unit_HP_Grav_Rebel_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_FIGHTER_BAY, Unit_HP_BAY_Rebel_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_TRACTOR_BEAM, null </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MASS_DRIVER, null </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_SPECIAL, null </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENABLE_SPECIAL_ABILITY, null </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_DUMMY_ART, null </SFXEvent_Attack_Hardpoint>
+				
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_LASER, Unit_Lost_Laser_Rebel_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_MISSILE,  Unit_Lost_Missile_Rebel_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_TORPEDO,  Unit_Lost_Torpedo_Rebel_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_ION_CANNON, Unit_Lost_Ion_Rebel_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_SHIELD_GENERATOR, Unit_Lost_Shields_Rebel_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENGINE, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_GRAVITY_WELL, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_FIGHTER_BAY, Unit_Lost_Bay_Rebel_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_TRACTOR_BEAM, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_MASS_DRIVER, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_SPECIAL, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENABLE_SPECIAL_ABILITY, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_DUMMY_ART, null </SFXEvent_Hardpoint_Destroyed>
+		
+		<Abilities SubObjectList="Yes">
+			<Force_Healing_Ability Name="Fleet_Tender_Facility_Healing">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Heal_Range>1500.0</Heal_Range>
+				<Heal_Percent> 0.05 </Heal_Percent>
+                <Blob_Color>0, 255, 0, 255</Blob_Color>
+				<Heal_Interval_In_Secs>2.0</Heal_Interval_In_Secs>
+				<Single_Target_Heal>Yes</Single_Target_Heal>
+				<Heal_Range_Blob_Material>Reinforcement_Point_Radius_Overlay</Heal_Range_Blob_Material>
+				<!-- We can heal the following unit types: -->
+				<Applicable_Unit_Categories>Corvette, Frigate, Capital, Hero, SuperCapital, SpaceHero</Applicable_Unit_Categories>
+				<Applicable_Unit_Types />
+				<SFXEvent_Target_Affected>Unit_Force_Healing_Pulse</SFXEvent_Target_Affected>
+				<Target_Particle_Effect>Shield_Sparks_Medium</Target_Particle_Effect>
+				<Target_Particle_Bone_Name>B_TURRET, TURRET_00, B_TURRET_BASE</Target_Particle_Bone_Name>
+				<Target_Light_Effect_Type>Color_Flash</Target_Light_Effect_Type>
+				<Target_Light_Effect_Color>1.2, 1.2, 2.0</Target_Light_Effect_Color>
+				<Target_Light_Effect_Color2 />
+				<Target_Light_Effect_Duration>0.6</Target_Light_Effect_Duration>
+				<Target_Light_Effect_Pulse_Count>1</Target_Light_Effect_Pulse_Count>
+				<Owner_Particle_Bone_Name>ROOT</Owner_Particle_Bone_Name>
+				<Owner_Light_Effect_Type>Color_Flash</Owner_Light_Effect_Type>
+				<Owner_Light_Effect_Color>1.2, 1.2, 2.0</Owner_Light_Effect_Color>
+				<Owner_Light_Effect_Color2 />
+				<Owner_Light_Effect_Duration>0.6</Owner_Light_Effect_Duration>
+				<Owner_Light_Effect_Pulse_Count>1</Owner_Light_Effect_Pulse_Count>
+				<!--<Lightning_Effect_Name>Repair_Facility_Effect</Lightning_Effect_Name>-->
+			</Force_Healing_Ability>
+		</Abilities>
+	</StarBase>
+
+
+
+<!--***********************************************************-->
+<!--************************Defence Stations*******************-->
+<!--***********************************************************-->
+
+
+	<SpaceUnit Name="Survival_LD12_Defence_Satellite">
+		<Variant_Of_Existing_Type>Template_Defence_Station</Variant_Of_Existing_Type>
+		
+		<GUI_Bounds_Scale>0.5</GUI_Bounds_Scale>
+		<Text_ID>TEXT_LD12_DEFENSE_SATELLITE</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_LD12_DEFENSE_SATELLITE
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_LD12_DEFENSE_SATELLITE_HULL
+		TEXT_TOOLTIP_LD12_DEFENSE_SATELLITE_SHIELD 
+		TEXT_TOOLTIP_LD12_DEFENSE_SATELLITE_WEAP1
+		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
+		TEXT_TOOLTIP_LD12_DEFENSE_SATELLITE_PD
+		</Encyclopedia_Text>
+		
+		<Affiliation>Empire, Rebel, Pentastar, Eriadu_Authority, Zsinj_Empire, Greater_Maldrood, Corporate_Sector, Hapes_Consortium, EmpireoftheHand, Hutt_Cartels</Affiliation>
+		
+		<Space_Model_Name>NV_LD12_LaserSat.ALO</Space_Model_Name>
+		<Icon_Name>i_button_lds.tga</Icon_Name>
+		
+		<CategoryMask> SpaceStructure | AntiFighter </CategoryMask>
+		<AI_Combat_Power>126</AI_Combat_Power>
+		
+		<Behavior>DUMMY_STARSHIP, SELECTABLE</Behavior>
+		<SpaceBehavior> ABILITY_COUNTDOWN, SELECTABLE, TARGETING, POWERED, SHIELDED, REVEAL, HIDE_WHEN_FOGGED, UNIT_AI, DAMAGE_TRACKING, ION_STUN_EFFECT, NEBULA, TURRET, WEAPON</SpaceBehavior>
+		
+		<Shield_Armor_Type>ShieldS_Corvette</Shield_Armor_Type>
+		<Shield_Points>1000</Shield_Points>
+		<Shield_Refresh_Rate>20</Shield_Refresh_Rate>
+		<Armor_Type> ArmourS_Corvette </Armor_Type>
+		<Tactical_Health>800</Tactical_Health>
+		
+		<SFXEvent_Select>null</SFXEvent_Select>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_LASER, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_MISSILE, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_TORPEDO, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_ION_CANNON, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_SHIELD_GENERATOR, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENGINE, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_GRAVITY_WELL, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_FIGHTER_BAY, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_TRACTOR_BEAM, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_MASS_DRIVER, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_SPECIAL, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENABLE_SPECIAL_ABILITY, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_DUMMY_ART, null </SFXEvent_Hardpoint_Destroyed>
+		
+		<Turret_Rotate_Extent_Degrees>360</Turret_Rotate_Extent_Degrees>
+		<Turret_Elevate_Extent_Degrees>90</Turret_Elevate_Extent_Degrees>
+		<Turret_Rotate_Speed>5.0</Turret_Rotate_Speed>
+		<Turret_Bone_Name>B_Turret</Turret_Bone_Name>
+		<Barrel_Bone_Name>B_Barrel</Barrel_Bone_Name>
+		<Apply_Z_Turret_Rotate_To_Axis>2</Apply_Z_Turret_Rotate_To_Axis>
+		<Apply_Y_Turret_Rotate_To_Axis>1</Apply_Y_Turret_Rotate_To_Axis>
+
+		<HardPoints>
+			HP_LD12_Sat_00,
+			HP_LD12_Sat_01
+		</HardPoints>
+		
+		<Lua_Script>GenericGameObject</Lua_Script>
+		
+		<Radar_Icon_Name/>
+		<Radar_Icon_Size>0.1  0.1</Radar_Icon_Size>
+		
+		<Death_Explosions>Medium_Explosion_Space</Death_Explosions>
+		<Death_SFXEvent_Start_Die>Unit_Turret_Death_SFX</Death_SFXEvent_Start_Die>
+		
+		<Tactical_Build_Cost_Multiplayer>250</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>15</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites/>
+		<Tactical_Production_Queue>Tactical_Upgrades</Tactical_Production_Queue>
+		
+		<Abilities SubObjectList="Yes">
+			<Laser_Defense_Ability Name="LD12_Sat_Laser_Defense">
+				<Activation_Style> Space_Automatic </Activation_Style>
+				<Defense_Duration_In_Secs> 4800.0 </Defense_Duration_In_Secs>
+				<Laser_Color>134, 255, 134, 255</Laser_Color>
+				<Bone_Names>MuzzleA_00, MuzzleA_01</Bone_Names>
+				<Projectile_Types_Targeted>ROCKET, MISSILE</Projectile_Types_Targeted>
+				<Protection_Radius>1375.0</Protection_Radius>
+				<Laser_Beam_Frames>2</Laser_Beam_Frames>
+				<Laser_Beam_Width>4</Laser_Beam_Width>
+				<Projectile_Dist_Travelled>100</Projectile_Dist_Travelled>
+				<Lightning_Effect_Name>Force_Lightning</Lightning_Effect_Name>
+				<Laser_Beam_Texture>tractor_beam00.tga</Laser_Beam_Texture>
+				<Recharge_Time_In_Secs>0.99</Recharge_Time_In_Secs>
+				<Must_Be_Bought_On_Black_Market>No</Must_Be_Bought_On_Black_Market>
+			<Zap_SFXEvent>Unit_Point_Laser_Fire</Zap_SFXEvent>
+			</Laser_Defense_Ability>
+		</Abilities>
+	</SpaceUnit>
+	
+	<SpaceUnit Name="Survival_MD12_Defence_Satellite">
+		<Variant_Of_Existing_Type>Template_Defence_Station</Variant_Of_Existing_Type>
+		
+		<GUI_Bounds_Scale>0.5</GUI_Bounds_Scale>
+		<Text_ID>TEXT_MD12_DEFENSE_SATELLITE</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_MD12_DEFENSE_SATELLITE
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_MD12_DEFENSE_SATELLITE_HULL
+		TEXT_TOOLTIP_MD12_DEFENSE_SATELLITE_SHIELD 
+		TEXT_TOOLTIP_MD12_DEFENSE_SATELLITE_WEAP1
+		TEXT_TOOLTIP_MD12_DEFENSE_SATELLITE_WEAP2
+		</Encyclopedia_Text>
+		
+		<Affiliation>Empire, Rebel, Pentastar, Eriadu_Authority, Zsinj_Empire, Greater_Maldrood, Corporate_Sector, Hapes_Consortium, EmpireoftheHand, Hutt_Cartels</Affiliation>
+		
+		<Space_Model_Name>NV_MD12_MissileSat.ALO</Space_Model_Name>
+		<Icon_Name>i_button_mds.tga</Icon_Name>
+		
+		<CategoryMask> SpaceStructure | AntiFighter | AntiBomber </CategoryMask>
+		<AI_Combat_Power>170</AI_Combat_Power>
+		
+		<Behavior>DUMMY_STARSHIP, SELECTABLE</Behavior>
+		<SpaceBehavior> ABILITY_COUNTDOWN, SELECTABLE, TARGETING, POWERED, SHIELDED, REVEAL, HIDE_WHEN_FOGGED, UNIT_AI, DAMAGE_TRACKING, ION_STUN_EFFECT, NEBULA, TURRET, WEAPON</SpaceBehavior>
+		
+		<Shield_Armor_Type>ShieldS_Corvette</Shield_Armor_Type>
+		<Shield_Points>1000</Shield_Points>
+		<Shield_Refresh_Rate>20</Shield_Refresh_Rate>
+		<Armor_Type> ArmourS_Corvette </Armor_Type>
+		<Tactical_Health>800</Tactical_Health>
+		
+		<SFXEvent_Select>null</SFXEvent_Select>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_LASER, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_MISSILE, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_TORPEDO, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_ION_CANNON, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_SHIELD_GENERATOR, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENGINE, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_GRAVITY_WELL, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_FIGHTER_BAY, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_TRACTOR_BEAM, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_MASS_DRIVER, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_SPECIAL, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENABLE_SPECIAL_ABILITY, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_DUMMY_ART, null </SFXEvent_Hardpoint_Destroyed>
+		
+		<Turret_Rotate_Extent_Degrees>360</Turret_Rotate_Extent_Degrees>
+		<Turret_Elevate_Extent_Degrees>90</Turret_Elevate_Extent_Degrees>
+		<Turret_Rotate_Speed>5.0</Turret_Rotate_Speed>
+		<Turret_Bone_Name>B_Turret</Turret_Bone_Name>
+		<Barrel_Bone_Name>B_Barrel</Barrel_Bone_Name>
+		<Apply_Z_Turret_Rotate_To_Axis>2</Apply_Z_Turret_Rotate_To_Axis>
+		<Apply_Y_Turret_Rotate_To_Axis>1</Apply_Y_Turret_Rotate_To_Axis>
+
+		<HardPoints>
+			HP_MD12_Sat_00,
+			HP_MD12_Sat_01,
+			HP_MD12_Sat_02,
+			HP_MD12_Sat_03,
+			HP_MD12_Sat_04,
+			HP_MD12_Sat_05,
+			HP_MD12_Sat_06,
+			HP_MD12_Sat_07
+		</HardPoints>
+		
+		<Lua_Script>GenericGameObject</Lua_Script>
+		
+		<Radar_Icon_Name/>
+		<Radar_Icon_Size>0.1  0.1</Radar_Icon_Size>
+		
+		<Death_Explosions>Medium_Explosion_Space</Death_Explosions>
+		<Death_SFXEvent_Start_Die>Unit_Turret_Death_SFX</Death_SFXEvent_Start_Die>
+		<SFXEvent_Fire>Unit_Missile_Fire</SFXEvent_Fire>
+		
+		<Tactical_Build_Cost_Multiplayer>750</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>20</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites>Space_Level_Two_Tech_Upgrade</Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Upgrades</Tactical_Production_Queue>
+	</SpaceUnit>
+	
+	<SpaceUnit Name="Survival_Repair_Defence_Satellite">
+		<Variant_Of_Existing_Type>Template_Defence_Station</Variant_Of_Existing_Type>
+		
+		<GUI_Bounds_Scale>0.5</GUI_Bounds_Scale>
+		<Text_ID>TEXT_ORBITAL_DEFENSE_SATELLITE_REPAIR</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_REP_TURRET_SPACE
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_REPAIR_SATELLITE_HULL
+		TEXT_TOOLTIP_REPAIR_SATELLITE_SHIELD 
+		TEXT_TOOLTIP_SEPARATOR_ABILITY_BLOCK
+		TEXT_TOOLTIP_REPAIR_SATELLITE_HEALING
+		</Encyclopedia_Text>
+		
+		<Affiliation>Empire, Rebel, Pentastar, Eriadu_Authority, Zsinj_Empire, Greater_Maldrood, Corporate_Sector, Hapes_Consortium, EmpireoftheHand, Hutt_Cartels</Affiliation>
+		
+		<Space_Model_Name>RV_SATALLITE_REPAIR.ALO</Space_Model_Name>
+		<Icon_Name>i_button_repair.tga</Icon_Name>
+		
+		<CategoryMask> SpaceStructure </CategoryMask>
+		<Property_Flags>HealsVehicles</Property_Flags>
+		<AI_Combat_Power>429</AI_Combat_Power>
+		
+		<Behavior>DUMMY_STARSHIP, SELECTABLE</Behavior>
+		<SpaceBehavior> ABILITY_COUNTDOWN, SELECTABLE, TARGETING, POWERED, SHIELDED, REVEAL, HIDE_WHEN_FOGGED, UNIT_AI, DAMAGE_TRACKING, ION_STUN_EFFECT, NEBULA, TURRET, WEAPON</SpaceBehavior>
+		
+		<Armor_Type> ArmourS_HeavyFrigate </Armor_Type>
+		<Shield_Armor_Type>ShieldS_HeavyFrigate</Shield_Armor_Type>
+		<Shield_Points>750</Shield_Points>
+		<Shield_Refresh_Rate>15</Shield_Refresh_Rate>
+		<Tactical_Health>1500</Tactical_Health>
+		
+		<SFXEvent_Select>null</SFXEvent_Select>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_LASER, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_MISSILE, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_TORPEDO, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_ION_CANNON, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_SHIELD_GENERATOR, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENGINE, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_GRAVITY_WELL, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_FIGHTER_BAY, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_TRACTOR_BEAM, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_MASS_DRIVER, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_SPECIAL, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENABLE_SPECIAL_ABILITY, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_DUMMY_ART, null </SFXEvent_Hardpoint_Destroyed>
+		
+		<Lua_Script>GenericGameObject</Lua_Script>
+		
+		<Radar_Icon_Name/>
+		<Radar_Icon_Size>0.1  0.1</Radar_Icon_Size>
+		
+		<Tactical_Build_Cost_Multiplayer>1000</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>30</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites>Space_Level_Two_Tech_Upgrade</Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Upgrades</Tactical_Production_Queue>
+		
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<!-- Primary ability -->
+			<Unit_Ability>
+				<Type>HARMONIC_BOMB</Type>
+				<Recharge_Seconds>60</Recharge_Seconds>
+				<Spawned_Object_Type>Proj_Fleet_Tender_Fighter_Heal</Spawned_Object_Type>
+				<Bomb_Countdown_Seconds>0.0</Bomb_Countdown_Seconds>
+				<SFXEvent_GUI_Unit_Ability_Activated>Unit_Force_Area_Heal</SFXEvent_GUI_Unit_Ability_Activated>
+				<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_FLEET_TENDER_NAME</Alternate_Name_Text>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_FLEET_TENDER_DESCRIPTION</Alternate_Description_Text>
+				<Alternate_Icon_Name>i_sa_repair_vehicle.tga</Alternate_Icon_Name>
+				<Supports_Autofire>True</Supports_Autofire>
+			</Unit_Ability>	  
+		</Unit_Abilities_Data>
+		
+		<Abilities SubObjectList="Yes">
+			<Force_Healing_Ability Name="Repair_Facility_Healing">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Heal_Range>750.0</Heal_Range>
+				<Heal_Percent> 0.10 </Heal_Percent>
+                <Blob_Color>0, 255, 0, 255</Blob_Color>
+				<Heal_Interval_In_Secs>2.0</Heal_Interval_In_Secs>
+				<Single_Target_Heal>Yes</Single_Target_Heal>
+				<Heal_Range_Blob_Material>Reinforcement_Point_Radius_Overlay</Heal_Range_Blob_Material>
+				<!-- We can heal the following unit types: -->
+				<Applicable_Unit_Categories>Corvette, Frigate, Capital, SuperCapital, SpaceHero</Applicable_Unit_Categories>
+				<Applicable_Unit_Types />
+				<SFXEvent_Target_Affected>Unit_Force_Healing_Pulse</SFXEvent_Target_Affected>
+				<Target_Particle_Effect>Shield_Sparks_Medium</Target_Particle_Effect>
+				<Target_Particle_Bone_Name>B_TURRET, TURRET_00, B_TURRET_BASE</Target_Particle_Bone_Name>
+				<Target_Light_Effect_Type>Color_Flash</Target_Light_Effect_Type>
+				<Target_Light_Effect_Color>1.2, 1.2, 2.0</Target_Light_Effect_Color>
+				<Target_Light_Effect_Color2 />
+				<Target_Light_Effect_Duration>0.6</Target_Light_Effect_Duration>
+				<Target_Light_Effect_Pulse_Count>1</Target_Light_Effect_Pulse_Count>
+				<Owner_Particle_Bone_Name>ROOT</Owner_Particle_Bone_Name>
+				<Owner_Light_Effect_Type>Color_Flash</Owner_Light_Effect_Type>
+				<Owner_Light_Effect_Color>1.2, 1.2, 2.0</Owner_Light_Effect_Color>
+				<Owner_Light_Effect_Color2 />
+				<Owner_Light_Effect_Duration>0.6</Owner_Light_Effect_Duration>
+				<Owner_Light_Effect_Pulse_Count>1</Owner_Light_Effect_Pulse_Count>
+				<!--<Lightning_Effect_Name>Repair_Facility_Effect</Lightning_Effect_Name>-->
+			</Force_Healing_Ability>
+		</Abilities>
+	</SpaceUnit>
+
 	<SpaceUnit Name="Defence_Base_XQ5">
 		<Variant_Of_Existing_Type>Template_Defence_Station</Variant_Of_Existing_Type>
 		
@@ -802,11 +2904,10 @@
 		TEXT_TOOLTIP_XQ5_WEAP2
 		</Encyclopedia_Text>
 		
-		<Affiliation>Empire, Rebel</Affiliation>
+		<Affiliation>Empire, Rebel, Pentastar, Eriadu_Authority, Zsinj_Empire, Greater_Maldrood, Corporate_Sector, Hutt_Cartels</Affiliation>
 		
 		<Icon_Name>i_button_xq_platform.tga</Icon_Name>
 		<Space_Model_Name>xq5_platform.ALO</Space_Model_Name>
-		<GUI_Model_Name>xq5_platform.ALO</GUI_Model_Name>
 		
 		<CategoryMask> Frigate | AntiFighter </CategoryMask>
 		<AI_Combat_Power>620</AI_Combat_Power>
@@ -846,15 +2947,11 @@
 
 		<Death_Clone>Damage_Normal, XQ5_Platform_Death_Clone</Death_Clone>
 		
-				<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
 		<Tactical_Build_Cost_Multiplayer>1300</Tactical_Build_Cost_Multiplayer>
 		<Tactical_Build_Time_Seconds>25</Tactical_Build_Time_Seconds>
-		<Tactical_Build_Prerequisites/>
+		<Tactical_Build_Prerequisites>Space_Level_Two_Tech_Upgrade</Tactical_Build_Prerequisites>
 		<Tactical_Production_Queue>Tactical_Upgrades</Tactical_Production_Queue>
-		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
-		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->
 		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
-		<Build_Limit_Lifetime_Per_Player>1</Build_Limit_Lifetime_Per_Player>
 
 	</SpaceUnit>
 	
@@ -872,11 +2969,10 @@
 		TEXT_TOOLTIP_GOLAN_ONE_WEAP2
 		</Encyclopedia_Text>
 		
-		<Affiliation>Empire, Rebel</Affiliation>
+		<Affiliation>Empire, Rebel, Pentastar, Eriadu_Authority, Zsinj_Empire, Greater_Maldrood, Corporate_Sector, EmpireoftheHand, Hutt_Cartels</Affiliation>
 		
 		<Icon_Name>i_button_golan_one.tga</Icon_Name>
 		<Space_Model_Name>NV_GolanOne.ALO</Space_Model_Name>
-		<GUI_Model_Name>NV_GolanOne.ALO</GUI_Model_Name>
 		
 		<CategoryMask> Capital | AntiFrigate </CategoryMask>
 		<AI_Combat_Power>1714</AI_Combat_Power>
@@ -918,15 +3014,11 @@
 		
 		<Death_Clone>Damage_Normal, Golan_One_Death_Clone</Death_Clone>	
 		
-				<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
 		<Tactical_Build_Cost_Multiplayer>1750</Tactical_Build_Cost_Multiplayer>
 		<Tactical_Build_Time_Seconds>30</Tactical_Build_Time_Seconds>
-		<Tactical_Build_Prerequisites/>
+		<Tactical_Build_Prerequisites>Space_Level_Three_Tech_Upgrade</Tactical_Build_Prerequisites>
 		<Tactical_Production_Queue>Tactical_Upgrades</Tactical_Production_Queue>
-		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
-		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->
 		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
-		<Build_Limit_Lifetime_Per_Player>1</Build_Limit_Lifetime_Per_Player>
 
 	</SpaceUnit>
 	
@@ -944,11 +3036,10 @@
 		TEXT_TOOLTIP_GOLAN_TWO_WEAP2
 		</Encyclopedia_Text>
 		
-		<Affiliation>Empire, Rebel</Affiliation>
+		<Affiliation>Empire, Rebel, Pentastar, Eriadu_Authority, Zsinj_Empire, Greater_Maldrood, Corporate_Sector, EmpireoftheHand, Hutt_Cartels</Affiliation>
 		
 		<Icon_Name>i_button_golan_two.tga</Icon_Name>
 		<Space_Model_Name>NV_GolanTwo.ALO</Space_Model_Name>
-		<GUI_Model_Name>NV_GolanTwo.ALO</GUI_Model_Name>
 		
 		<CategoryMask> Capital | AntiFrigate </CategoryMask>
 		<AI_Combat_Power>2869</AI_Combat_Power>
@@ -996,15 +3087,11 @@
 		
 		<Death_Clone>Damage_Normal, Golan_Two_Death_Clone</Death_Clone>
 		
-				<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
 		<Tactical_Build_Cost_Multiplayer>3000</Tactical_Build_Cost_Multiplayer>
 		<Tactical_Build_Time_Seconds>35</Tactical_Build_Time_Seconds>
-		<Tactical_Build_Prerequisites/>
+		<Tactical_Build_Prerequisites>Space_Level_Four_Tech_Upgrade</Tactical_Build_Prerequisites>
 		<Tactical_Production_Queue>Tactical_Upgrades</Tactical_Production_Queue>
-		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
-		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->
 		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
-		<Build_Limit_Lifetime_Per_Player>1</Build_Limit_Lifetime_Per_Player>
 
 	</SpaceUnit>
 	
@@ -1022,11 +3109,10 @@
 		TEXT_TOOLTIP_GOLAN_THREE_WEAP2
 		</Encyclopedia_Text>
 		
-		<Affiliation>Empire, Rebel</Affiliation>
+		<Affiliation>Empire, Rebel, Pentastar, Eriadu_Authority, Zsinj_Empire, Greater_Maldrood, Hutt_Cartels</Affiliation>
 		
 		<Icon_Name>i_button_golan_three.tga</Icon_Name>
 		<Space_Model_Name>NV_GolanThree.ALO</Space_Model_Name>
-		<GUI_Model_Name>NV_GolanThree.ALO</GUI_Model_Name>
 		
 		<CategoryMask> Capital | AntiCapital </CategoryMask>
 		<AI_Combat_Power>4616</AI_Combat_Power>
@@ -1086,16 +3172,1330 @@
 		
 		<Death_Clone>Damage_Normal, Golan_Three_Death_Clone</Death_Clone>
 		
-				<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
 		<Tactical_Build_Cost_Multiplayer>4500</Tactical_Build_Cost_Multiplayer>
 		<Tactical_Build_Time_Seconds>40</Tactical_Build_Time_Seconds>
-		<Tactical_Build_Prerequisites/>
+		<Tactical_Build_Prerequisites>Space_Level_Five_Tech_Upgrade</Tactical_Build_Prerequisites>
 		<Tactical_Production_Queue>Tactical_Upgrades</Tactical_Production_Queue>
-		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
-		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->
 		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
-		<Build_Limit_Lifetime_Per_Player>1</Build_Limit_Lifetime_Per_Player>
 
 	</SpaceUnit>
+	
+	<SpaceUnit Name="Defence_Base_Valor">
+		<Variant_Of_Existing_Type>Template_Defence_Station</Variant_Of_Existing_Type>
+		
+		<GUI_Bounds_Scale>0.5</GUI_Bounds_Scale>
+		<Text_ID>TEXT_SURVIVAL_DEFENCE_STATION_VALOR</Text_ID>
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_VALOR
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
+		TEXT_TOOLTIP_VALOR_HULL
+		TEXT_TOOLTIP_VALOR_SHIELD
+		TEXT_TOOLTIP_VALOR_WEAP1
+		TEXT_TOOLTIP_VALOR_WEAP2 
+		TEXT_TOOLTIP_VALOR_WEAP3
+		</Encyclopedia_Text>
+		
+		<Affiliation>Corporate_Sector</Affiliation>
+		
+		<Icon_Name>i_button_valor.tga</Icon_Name>
+		<Space_Model_Name>ValorStation.ALO</Space_Model_Name>
+		
+		<Scale_Factor>0.25</Scale_Factor>
+		
+		<CategoryMask> Capital | AntiCapital </CategoryMask>
+		<AI_Combat_Power>5069</AI_Combat_Power>
+		
+		<Armor_Type> ArmourS_Capital </Armor_Type>
+		<Shield_Armor_Type>ShieldS_Capital</Shield_Armor_Type>
+		<Shield_Points>22000</Shield_Points>
+		<Shield_Refresh_Rate>110</Shield_Refresh_Rate>
+		<Tactical_Health>21000</Tactical_Health>
+		
+		<SFXEvent_Select>null</SFXEvent_Select>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_LASER, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_MISSILE, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_TORPEDO, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_ION_CANNON, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_SHIELD_GENERATOR, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENGINE, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_GRAVITY_WELL, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_FIGHTER_BAY, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_TRACTOR_BEAM, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_MASS_DRIVER, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_SPECIAL, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENABLE_SPECIAL_ABILITY, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_DUMMY_ART, null </SFXEvent_Hardpoint_Destroyed>
+		
+		<HardPoints>
+			HP_Valor_Hangar01,
+			HP_Valor_Hangar02,
+			HP_Valor_Hangar03,
+			HP_Valor_Turbo01,
+			HP_Valor_Turbo02,
+			HP_Valor_Turbo03,
+			HP_Valor_Turbo04,
+			HP_Valor_Turbo05,
+			HP_Valor_Turbo06,
+			HP_Valor_Turbo07,
+			HP_Valor_Turbo08,
+			HP_Valor_Turbo09,
+			HP_Valor_Turbo10,
+			HP_Valor_Turbo11,
+			HP_Valor_Turbo12,
+			HP_Valor_Turbo13,
+			HP_Valor_Turbo14,
+			HP_Valor_Turbo15,
+			HP_Valor_Turbo16,
+			HP_Valor_Laser01,
+			HP_Valor_Laser02,
+			HP_Valor_Laser03,
+			HP_Valor_Laser04,
+			HP_Valor_Laser05,
+			HP_Valor_Laser06,
+			HP_Valor_Laser07,
+			HP_Valor_Laser08,
+			HP_Valor_Proton01,
+			HP_Valor_Proton02,
+			HP_Valor_Proton03
+		</HardPoints>
+		
+		<Death_Clone>Damage_Normal, Valor_Death_Clone</Death_Clone>
+		
+		<Tactical_Build_Cost_Multiplayer>5250</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>42</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites>Space_Level_Five_Tech_Upgrade</Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Upgrades</Tactical_Production_Queue>
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+
+	</SpaceUnit>
+
+	<SpaceUnit Name="Defence_Base_Meridian_I">
+		<Variant_Of_Existing_Type>Template_Defence_Station</Variant_Of_Existing_Type>
+		
+		<GUI_Bounds_Scale>0.5</GUI_Bounds_Scale>
+		<Text_ID>TEXT_SURVIVAL_DEFENCE_STATION_MERIDIAN_I</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_MERIDIAN_I
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
+		TEXT_TOOLTIP_MERIDIAN_I_HULL
+		TEXT_TOOLTIP_MERIDIAN_I_SHIELD
+		TEXT_TOOLTIP_MERIDIAN_I_WEAP1
+		TEXT_TOOLTIP_MERIDIAN_I_WEAP2
+		</Encyclopedia_Text>
+		
+		<Affiliation>Hapes_Consortium</Affiliation>
+		
+		<Icon_Name>i_button_meridian_i.tga</Icon_Name>
+		<Space_Model_Name>Hapan_StarBase1.ALO</Space_Model_Name>
+		
+		<CategoryMask> Capital | AntiCapital </CategoryMask>
+		<AI_Combat_Power>857</AI_Combat_Power>
+		
+		<Armor_Type> ArmourS_HeavyFrigate </Armor_Type>
+		<Shield_Armor_Type>ShieldS_Capital</Shield_Armor_Type>
+		<Shield_Points>3700</Shield_Points>
+		<Shield_Refresh_Rate>27.75</Shield_Refresh_Rate>
+		<Tactical_Health>3200</Tactical_Health>
+		
+		<SFXEvent_Select>null</SFXEvent_Select>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_LASER, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_MISSILE, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_TORPEDO, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_ION_CANNON, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_SHIELD_GENERATOR, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENGINE, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_GRAVITY_WELL, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_FIGHTER_BAY, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_TRACTOR_BEAM, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_MASS_DRIVER, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_SPECIAL, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENABLE_SPECIAL_ABILITY, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_DUMMY_ART, null </SFXEvent_Hardpoint_Destroyed>
+		
+		<HardPoints>
+		HP_Hapan_Starbase_One_Hangar_01,
+		HP_Hapan_Starbase_One_Hangar_02,
+		HP_Hapan_Starbase_One_Hangar_03,
+		HP_Hapan_Starbase_One_Turbo_01,
+		HP_Hapan_Starbase_One_Turbo_02,
+		HP_Hapan_Starbase_One_Turbo_03,
+		HP_Hapan_Starbase_One_Turbo_04,
+		HP_Hapan_Starbase_One_Turbo_05,
+		HP_Hapan_Starbase_One_Turbo_06,
+		HP_Hapan_Starbase_One_Laser_01,
+		HP_Hapan_Starbase_One_Laser_02,
+		HP_Hapan_Starbase_One_Laser_03,
+		HP_Hapan_Starbase_One_Laser_04,
+		HP_Hapan_Starbase_One_Laser_05,
+		HP_Hapan_Starbase_One_Laser_06,
+		</HardPoints>
+		
+		<Death_Clone>Damage_Normal, Large_Explosion_Space</Death_Clone>
+		
+		<Tactical_Build_Cost_Multiplayer>1300</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>25</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites>Space_Level_Two_Tech_Upgrade</Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Upgrades</Tactical_Production_Queue>
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+	</SpaceUnit>
+
+	<SpaceUnit Name="Defence_Base_Meridian_II">
+		<Variant_Of_Existing_Type>Template_Defence_Station</Variant_Of_Existing_Type>
+		
+		<GUI_Bounds_Scale>0.5</GUI_Bounds_Scale>
+		<Text_ID>TEXT_SURVIVAL_DEFENCE_STATION_MERIDIAN_II</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_MERIDIAN_II
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
+		TEXT_TOOLTIP_MERIDIAN_II_HULL
+		TEXT_TOOLTIP_MERIDIAN_II_SHIELD
+		TEXT_TOOLTIP_MERIDIAN_II_WEAP1
+		TEXT_TOOLTIP_MERIDIAN_II_WEAP2
+		TEXT_TOOLTIP_MERIDIAN_II_WEAP3
+		</Encyclopedia_Text>
+		
+		<Affiliation>Hapes_Consortium</Affiliation>
+		
+		<Icon_Name>i_button_meridian_ii.tga</Icon_Name>
+		<Space_Model_Name>Hapan_StarBase2.ALO</Space_Model_Name>
+		
+		<CategoryMask> Capital | AntiCapital </CategoryMask>
+		<AI_Combat_Power>1914</AI_Combat_Power>
+		
+		<Armor_Type> ArmourS_HeavyFrigate </Armor_Type>
+		<Shield_Armor_Type>ShieldS_Capital</Shield_Armor_Type>
+		<Shield_Points>5300</Shield_Points>
+		<Shield_Refresh_Rate>39.75</Shield_Refresh_Rate>
+		<Tactical_Health>5200</Tactical_Health>
+		
+		<SFXEvent_Select>null</SFXEvent_Select>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_LASER, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_MISSILE, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_TORPEDO, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_ION_CANNON, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_SHIELD_GENERATOR, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENGINE, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_GRAVITY_WELL, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_FIGHTER_BAY, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_TRACTOR_BEAM, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_MASS_DRIVER, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_SPECIAL, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENABLE_SPECIAL_ABILITY, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_DUMMY_ART, null </SFXEvent_Hardpoint_Destroyed>
+		
+		<HardPoints>
+		HP_Hapan_Starbase_Two_Hangar_01,
+		HP_Hapan_Starbase_Two_Hangar_02,
+		HP_Hapan_Starbase_Two_Hangar_03,
+		HP_Hapan_Starbase_Two_Turbo_01,
+		HP_Hapan_Starbase_Two_Turbo_02,
+		HP_Hapan_Starbase_Two_Turbo_03,
+		HP_Hapan_Starbase_Two_Turbo_04,
+		HP_Hapan_Starbase_Two_Turbo_05,
+		HP_Hapan_Starbase_Two_Turbo_06,
+		HP_Hapan_Starbase_Two_Laser_01,
+		HP_Hapan_Starbase_Two_Laser_02,
+		HP_Hapan_Starbase_Two_Laser_03,
+		HP_Hapan_Starbase_Two_Laser_04,
+		HP_Hapan_Starbase_Two_Laser_05,
+		HP_Hapan_Starbase_Two_Laser_06,
+		HP_Hapan_Starbase_Two_Ion_01,
+		HP_Hapan_Starbase_Two_Ion_02,
+		HP_Hapan_Starbase_Two_Ion_03,
+		HP_Hapan_Starbase_Two_Ion_04,
+		HP_Hapan_Starbase_Two_Ion_05,
+		HP_Hapan_Starbase_Two_Ion_06,
+		</HardPoints>
+		
+		<Death_Clone>Damage_Normal, Large_Explosion_Space</Death_Clone>
+		
+		<Tactical_Build_Cost_Multiplayer>1750</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>30</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites>Space_Level_Three_Tech_Upgrade</Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Upgrades</Tactical_Production_Queue>
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+	</SpaceUnit>
+
+	<SpaceUnit Name="Defence_Base_Meridian_III">
+		<Variant_Of_Existing_Type>Template_Defence_Station</Variant_Of_Existing_Type>
+		
+		<GUI_Bounds_Scale>0.5</GUI_Bounds_Scale>
+		<Text_ID>TEXT_SURVIVAL_DEFENCE_STATION_MERIDIAN_III</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_MERIDIAN_III
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
+		TEXT_TOOLTIP_MERIDIAN_III_HULL
+		TEXT_TOOLTIP_MERIDIAN_III_SHIELD
+		TEXT_TOOLTIP_MERIDIAN_III_WEAP1
+		TEXT_TOOLTIP_MERIDIAN_III_WEAP2
+		TEXT_TOOLTIP_MERIDIAN_III_WEAP3
+		</Encyclopedia_Text>
+		
+		<Affiliation>Hapes_Consortium</Affiliation>
+		
+		<Icon_Name>i_button_meridian_iii.tga</Icon_Name>
+		<Space_Model_Name>Hapan_StarBase3.ALO</Space_Model_Name>
+		
+		<CategoryMask> Capital | AntiCapital </CategoryMask>
+		<AI_Combat_Power>3838</AI_Combat_Power>
+		
+		<Armor_Type> ArmourS_Capital </Armor_Type>
+		<Shield_Armor_Type>ShieldS_Capital</Shield_Armor_Type>
+		<Shield_Points>13000</Shield_Points>
+		<Shield_Refresh_Rate>97.5</Shield_Refresh_Rate>
+		<Tactical_Health>13500</Tactical_Health>
+		
+		<SFXEvent_Select>null</SFXEvent_Select>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_LASER, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_MISSILE, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_TORPEDO, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_ION_CANNON, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_SHIELD_GENERATOR, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENGINE, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_GRAVITY_WELL, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_FIGHTER_BAY, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_TRACTOR_BEAM, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_MASS_DRIVER, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_SPECIAL, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENABLE_SPECIAL_ABILITY, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_DUMMY_ART, null </SFXEvent_Hardpoint_Destroyed>
+		
+		<HardPoints>
+		HP_Hapan_Starbase_Three_Hangar_01,
+		HP_Hapan_Starbase_Three_Hangar_02,
+		HP_Hapan_Starbase_Three_Hangar_03,
+		HP_Hapan_Starbase_Three_Turbo_01,
+		HP_Hapan_Starbase_Three_Turbo_02,
+		HP_Hapan_Starbase_Three_Turbo_03,
+		HP_Hapan_Starbase_Three_Turbo_04,
+		HP_Hapan_Starbase_Three_Turbo_05,
+		HP_Hapan_Starbase_Three_Turbo_06,
+		HP_Hapan_Starbase_Three_Turbo_07,
+		HP_Hapan_Starbase_Three_Turbo_08,
+		HP_Hapan_Starbase_Three_Turbo_09,
+		HP_Hapan_Starbase_Three_Turbo_10,
+		HP_Hapan_Starbase_Three_Turbo_11,
+		HP_Hapan_Starbase_Three_Turbo_12,
+		HP_Hapan_Starbase_Three_Laser_01,
+		HP_Hapan_Starbase_Three_Laser_02,
+		HP_Hapan_Starbase_Three_Laser_03,
+		HP_Hapan_Starbase_Three_Laser_04,
+		HP_Hapan_Starbase_Three_Laser_05,
+		HP_Hapan_Starbase_Three_Laser_06,
+		HP_Hapan_Starbase_Three_Ion_01,
+		HP_Hapan_Starbase_Three_Ion_02,
+		HP_Hapan_Starbase_Three_Ion_03,
+		HP_Hapan_Starbase_Three_Ion_04,
+		HP_Hapan_Starbase_Three_Ion_05,
+		HP_Hapan_Starbase_Three_Ion_06,
+		</HardPoints>
+		
+		<Death_Clone>Damage_Normal, Large_Explosion_Space</Death_Clone>
+
+		<Tactical_Build_Cost_Multiplayer>3000</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>35</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites>Space_Level_Four_Tech_Upgrade</Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Upgrades</Tactical_Production_Queue>
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+	</SpaceUnit>
+
+	<SpaceUnit Name="Defence_Base_Meridian_IV">
+		<Variant_Of_Existing_Type>Template_Defence_Station</Variant_Of_Existing_Type>
+		
+		<GUI_Bounds_Scale>0.5</GUI_Bounds_Scale>
+		<Text_ID>TEXT_SURVIVAL_DEFENCE_STATION_MERIDIAN_IV</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_MERIDIAN_IV
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
+		TEXT_TOOLTIP_MERIDIAN_IV_HULL
+		TEXT_TOOLTIP_MERIDIAN_IV_SHIELD
+		TEXT_TOOLTIP_MERIDIAN_IV_WEAP1
+		TEXT_TOOLTIP_MERIDIAN_IV_WEAP2
+		TEXT_TOOLTIP_MERIDIAN_IV_WEAP3
+		</Encyclopedia_Text>
+		
+		<Affiliation>Hapes_Consortium</Affiliation>
+		
+		<Icon_Name>i_button_meridian_iv.tga</Icon_Name>
+		<Space_Model_Name>Hapan_StarBase4.ALO</Space_Model_Name>
+		
+		<CategoryMask> Capital | AntiCapital </CategoryMask>
+		<AI_Combat_Power>8000</AI_Combat_Power>
+		
+		<Armor_Type> ArmourS_HeavyFrigate </Armor_Type>
+		<Shield_Armor_Type>ShieldS_Capital</Shield_Armor_Type>
+		<Shield_Points>24000</Shield_Points>
+		<Shield_Refresh_Rate>180</Shield_Refresh_Rate>
+		<Tactical_Health>32925</Tactical_Health>
+		
+		<SFXEvent_Select>null</SFXEvent_Select>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_LASER, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_MISSILE, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_TORPEDO, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_ION_CANNON, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_SHIELD_GENERATOR, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENGINE, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_GRAVITY_WELL, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_FIGHTER_BAY, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_TRACTOR_BEAM, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_MASS_DRIVER, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_SPECIAL, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENABLE_SPECIAL_ABILITY, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_DUMMY_ART, null </SFXEvent_Hardpoint_Destroyed>
+		
+		<HardPoints>
+		HP_Hapan_Starbase_Four_Hangar,
+		HP_Hapan_Starbase_Four_Turbo_01,
+		HP_Hapan_Starbase_Four_Turbo_02,
+		HP_Hapan_Starbase_Four_Turbo_03,
+		HP_Hapan_Starbase_Four_Turbo_04,
+		HP_Hapan_Starbase_Four_Turbo_05,
+		HP_Hapan_Starbase_Four_Turbo_06,
+		HP_Hapan_Starbase_Four_Turbo_07,
+		HP_Hapan_Starbase_Four_Turbo_08,
+		HP_Hapan_Starbase_Four_Turbo_09,
+		HP_Hapan_Starbase_Four_Turbo_10,
+		HP_Hapan_Starbase_Four_Turbo_11,
+		HP_Hapan_Starbase_Four_Turbo_12,
+		HP_Hapan_Starbase_Four_Turbo_13,
+		HP_Hapan_Starbase_Four_Turbo_14,
+		HP_Hapan_Starbase_Four_Turbo_15,
+		HP_Hapan_Starbase_Four_Turbo_16,
+		HP_Hapan_Starbase_Four_Turbo_17,
+		HP_Hapan_Starbase_Four_Turbo_18,
+		HP_Hapan_Starbase_Four_Laser_01,
+		HP_Hapan_Starbase_Four_Laser_02,
+		HP_Hapan_Starbase_Four_Laser_03,
+		HP_Hapan_Starbase_Four_Laser_04,
+		HP_Hapan_Starbase_Four_Laser_05,
+		HP_Hapan_Starbase_Four_Laser_06,
+		HP_Hapan_Starbase_Four_Ion_01,
+		HP_Hapan_Starbase_Four_Ion_02,
+		HP_Hapan_Starbase_Four_Ion_03,
+		HP_Hapan_Starbase_Four_Ion_04,
+		HP_Hapan_Starbase_Four_Ion_05,
+		HP_Hapan_Starbase_Four_Ion_06,
+		HP_Hapan_Starbase_Four_Ion_07,
+		HP_Hapan_Starbase_Four_Ion_08,
+		HP_Hapan_Starbase_Four_Ion_09,
+		</HardPoints>
+		
+		<Death_Clone>Damage_Normal, Large_Explosion_Space</Death_Clone>
+		
+		<Tactical_Build_Cost_Multiplayer>4500</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>40</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites>Space_Level_Five_Tech_Upgrade</Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Upgrades</Tactical_Production_Queue>
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+	</SpaceUnit>
+
+	<SpaceUnit Name="Defence_Base_Brask">
+		<Variant_Of_Existing_Type>Template_Defence_Station</Variant_Of_Existing_Type>
+		
+		<GUI_Bounds_Scale>0.5</GUI_Bounds_Scale>
+		<Text_ID>TEXT_SURVIVAL_DEFENCE_STATION_BRASK</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_BRASK
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_BRASK_HULL
+		TEXT_TOOLTIP_BRASK_SHIELD
+		TEXT_TOOLTIP_BRASK_WEAP1
+		</Encyclopedia_Text>
+		
+		<Affiliation>EmpireoftheHand</Affiliation>
+		
+		<Icon_Name>i_button_brask.tga</Icon_Name>
+		<Space_Model_Name>EotH_Brask.ALO</Space_Model_Name>
+		
+		<CategoryMask> Capital | AntiCorvette </CategoryMask>
+		<AI_Combat_Power>444</AI_Combat_Power>
+		
+		<Armor_Type> ArmourS_HeavyFrigate </Armor_Type>
+		<Shield_Armor_Type>ShieldS_Capital</Shield_Armor_Type>
+		<Shield_Points>2100</Shield_Points>
+		<Shield_Refresh_Rate>15.75</Shield_Refresh_Rate>
+		<Tactical_Health>2100</Tactical_Health>
+		
+		<SFXEvent_Select>null</SFXEvent_Select>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_LASER, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_MISSILE, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_TORPEDO, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_ION_CANNON, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_SHIELD_GENERATOR, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENGINE, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_GRAVITY_WELL, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_FIGHTER_BAY, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_TRACTOR_BEAM, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_MASS_DRIVER, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_SPECIAL, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENABLE_SPECIAL_ABILITY, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_DUMMY_ART, null </SFXEvent_Hardpoint_Destroyed>
+		
+		<HardPoints>
+			HP_Brask_Weapon_04,
+			HP_Brask_Weapon_03,
+			HP_Brask_Weapon_02,
+			HP_Brask_Weapon_01,
+			HP_Brask_Hangar_01,
+			HP_Brask_Hangar_02,
+			HP_Brask_Hangar_03,
+		</HardPoints>
+
+		<Death_Clone>Damage_Normal, Large_Explosion_Space</Death_Clone>
+		
+		<Tactical_Build_Cost_Multiplayer>1300</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>25</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites>Space_Level_Two_Tech_Upgrade</Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Upgrades</Tactical_Production_Queue>
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+
+	</SpaceUnit>
+
+	<SpaceUnit Name="Defence_Base_Visvia">
+		<Variant_Of_Existing_Type>Template_Defence_Station</Variant_Of_Existing_Type>
+		
+		<GUI_Bounds_Scale>0.5</GUI_Bounds_Scale>
+		<Text_ID>TEXT_SURVIVAL_DEFENCE_STATION_VISVIA</Text_ID>
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_VISVIA
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_VISVIA_HULL
+		TEXT_TOOLTIP_VISVIA_SHIELD 
+		TEXT_TOOLTIP_VISVIA_WEAP1 
+		TEXT_TOOLTIP_VISVIA_WEAP2
+		</Encyclopedia_Text>
+		
+		<Affiliation>EmpireoftheHand</Affiliation>
+		
+		<Icon_Name>i_button_visvia.tga</Icon_Name>
+		<Space_Model_Name>EotH_Visvia.ALO</Space_Model_Name>
+		
+		<CategoryMask> Capital | AntiFrigate | AntiCapital </CategoryMask>
+		<AI_Combat_Power>4493</AI_Combat_Power>
+		
+		<Armor_Type> ArmourS_Capital </Armor_Type>
+		<Shield_Armor_Type>ShieldS_Capital</Shield_Armor_Type>
+		<Shield_Points>11000</Shield_Points>
+		<Shield_Refresh_Rate>82.5</Shield_Refresh_Rate>
+		<Tactical_Health>15000</Tactical_Health>
+		
+		<SFXEvent_Select>null</SFXEvent_Select>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_LASER, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_MISSILE, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_TORPEDO, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_ION_CANNON, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_SHIELD_GENERATOR, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENGINE, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_GRAVITY_WELL, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_FIGHTER_BAY, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_TRACTOR_BEAM, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_MASS_DRIVER, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_SPECIAL, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENABLE_SPECIAL_ABILITY, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_DUMMY_ART, null </SFXEvent_Hardpoint_Destroyed>
+		
+		<HardPoints>
+			HP_Visvia_Hangar01,
+			HP_Visvia_Hangar02,
+			HP_Visvia_Hangar03,
+			HP_Visvia_Megamaser_1,
+			HP_Visvia_Megamaser_2,
+			HP_Visvia_Megamaser_3,
+			HP_Visvia_Megamaser_4,
+			HP_Visvia_Megamaser_5,
+			HP_Visvia_Megamaser_6,
+			HP_Visvia_Megamaser_7,
+			HP_Visvia_Megamaser_8,
+			HP_Visvia_Turret_1,
+			HP_Visvia_Turret_2,
+			HP_Visvia_Turret_3,
+			HP_Visvia_Turret_4
+		</HardPoints>
+		
+		<Death_Clone>Damage_Normal, Large_Explosion_Space</Death_Clone>
+		
+		<Tactical_Build_Cost_Multiplayer>5250</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>42</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites>Space_Level_Five_Tech_Upgrade</Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Upgrades</Tactical_Production_Queue>
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+
+	</SpaceUnit>
+
+<!--***********************************************************-->
+<!--************************Alternate Stations*****************-->
+<!--***********************************************************-->
+
+	<Starbase Name="Survival_NewRepublic_Alternate_Research_Starbase">
+		<Variant_Of_Existing_Type>Template_Survival_Alternate_Research_Starbase</Variant_Of_Existing_Type>
+		
+		<Affiliation>Rebel</Affiliation>
+
+		<Tactical_Buildable_Objects_Campaign> 
+			Rebel,
+				MC30a,
+				Marauder_Missile_Cruiser,
+				
+				Alliance_Assault_Frigate_II,
+				
+				Survival_Corellian_Corvette,
+				Survival_Corellian_Gunboat,
+				Survival_Nebulon_B_Frigate,
+				Survival_Nebulon_B_Tender,
+				Survival_CC7700,
+				Survival_MC30c,
+				Survival_MC40a,
+				BAC,
+				MC75,
+				
+				Survival_NR_Bulwark_III,
+				Mothma_Star_Destroyer,
+				Survival_Calamari_Cruiser,
+				
+				Starhawk_MK1,
+				
+				Survival_LD12_Defence_Satellite,
+				Survival_MD12_Defence_Satellite,
+				Survival_Repair_Defence_Satellite,
+				
+				Defence_Base_XQ5,
+				Defence_Base_Golan_One,
+				Defence_Base_Golan_Two,,
+				Defence_Base_Golan_Three,
+		</Tactical_Buildable_Objects_Campaign>
+	</Starbase>
+	
+	<Starbase Name="Survival_Empire_Alternate_Research_Starbase">
+		<Variant_Of_Existing_Type>Template_Survival_Alternate_Research_Starbase</Variant_Of_Existing_Type>
+
+		<Affiliation>Empire</Affiliation>
+
+		<Tactical_Buildable_Objects_Campaign> 
+			Empire,
+				Nebulon_B_Empire,
+				
+				Survival_IPV1_System_Patrol_Craft,
+				Survival_Eidolon,
+				Combat_Escort_Carrier,
+				Hunter_Killer_Probot,
+				
+				Crimson_Victory,
+				MTC_Sensor,
+				Survival_MTC_Support,
+				Survival_World_Devastator_Frigate,
+				
+				Crusader_Gunship,
+				Survival_World_Devastator_Capital,
+				Impellor,
+				
+				Generic_Tagge_Battlecruiser,
+				Survival_World_Devastator_Battlecruiser,
+				Survival_Sovereign,
+				Survival_Eclipse_Star_Destroyer,
+				
+				Survival_LD12_Defence_Satellite,
+				Survival_MD12_Defence_Satellite,
+				Survival_Repair_Defence_Satellite,
+				
+				Defence_Base_XQ5,
+				Defence_Base_Golan_One,
+				Defence_Base_Golan_Two,
+				Defence_Base_Golan_Three,
+
+				Survival_Dark_Empire
+		</Tactical_Buildable_Objects_Campaign>
+	</Starbase>
+
+	<Starbase Name="Survival_Pentastar_Alternate_Research_Starbase">
+		<Variant_Of_Existing_Type>Template_Survival_Alternate_Research_Starbase</Variant_Of_Existing_Type>
+
+		<Affiliation>Pentastar</Affiliation>
+
+		<Tactical_Buildable_Objects_Campaign> 
+			Pentastar,
+				Adz,
+				
+				Hunter_Killer_Probot,
+				Combat_Escort_Carrier,
+				Munificent,
+
+				Crimson_Victory,
+				MTC_Sensor,
+				Survival_MTC_Support,
+				Survival_World_Devastator_Frigate,
+				
+				Survival_World_Devastator_Capital,
+				
+				Generic_Tagge_Battlecruiser,
+				Survival_World_Devastator_Battlecruiser,
+				Survival_Sovereign,
+				Survival_Eclipse_Star_Destroyer,
+				
+				Survival_LD12_Defence_Satellite,
+				Survival_MD12_Defence_Satellite,
+				Survival_Repair_Defence_Satellite,
+				
+				Defence_Base_XQ5,
+				Defence_Base_Golan_One,
+				Defence_Base_Golan_Two,
+				Defence_Base_Golan_Three,
+
+				Survival_Dark_Empire
+		</Tactical_Buildable_Objects_Campaign>
+	</Starbase>
+	
+	<Starbase Name="Survival_Eriadu_Authority_Alternate_Research_Starbase">
+		<Variant_Of_Existing_Type>Template_Survival_Alternate_Research_Starbase</Variant_Of_Existing_Type>
+
+		<Affiliation>Eriadu_Authority</Affiliation>
+
+		<Tactical_Buildable_Objects_Campaign> 
+			Eriadu_Authority,
+				Adz,
+
+				Survival_IPV1_System_Patrol_Craft,
+				Hunter_Killer_Probot,
+				Combat_Escort_Carrier,
+
+				Crimson_Victory,
+				MTC_Sensor,
+				Survival_MTC_Support,
+				Survival_World_Devastator_Frigate,
+				
+				Survival_World_Devastator_Capital,
+				
+				Generic_Tagge_Battlecruiser,
+				Survival_World_Devastator_Battlecruiser,
+				Survival_Sovereign,
+				Survival_Eclipse_Star_Destroyer,
+				
+				Survival_LD12_Defence_Satellite,
+				Survival_MD12_Defence_Satellite,
+				Survival_Repair_Defence_Satellite,
+				
+				Defence_Base_XQ5,
+				Defence_Base_Golan_One,
+				Defence_Base_Golan_Two,
+				Defence_Base_Golan_Three,
+
+				Survival_Dark_Empire
+		</Tactical_Buildable_Objects_Campaign>
+	</Starbase>
+	
+	<Starbase Name="Survival_Greater_Maldrood_Alternate_Research_Starbase">
+		<Variant_Of_Existing_Type>Template_Survival_Alternate_Research_Starbase</Variant_Of_Existing_Type>
+
+		<Affiliation>Greater_Maldrood</Affiliation>
+
+		<Tactical_Buildable_Objects_Campaign>
+			Greater_Maldrood,
+				Adz,
+
+				Hunter_Killer_Probot,
+				Combat_Escort_Carrier,
+
+				Strike_Cruiser_Gorath,
+				MTC_Sensor,
+				Survival_MTC_Support,
+				Survival_World_Devastator_Frigate,
+				
+				Survival_World_Devastator_Capital,
+				
+				Generic_Tagge_Battlecruiser,
+				Survival_World_Devastator_Battlecruiser,
+				Survival_Sovereign,
+				Survival_Eclipse_Star_Destroyer,
+				
+				Survival_LD12_Defence_Satellite,
+				Survival_MD12_Defence_Satellite,
+				Survival_Repair_Defence_Satellite,
+				
+				Defence_Base_XQ5,
+				Defence_Base_Golan_One,
+				Defence_Base_Golan_Two,
+				Defence_Base_Golan_Three,
+
+				Survival_Dark_Empire
+		</Tactical_Buildable_Objects_Campaign>
+	</Starbase>
+	
+	<Starbase Name="Survival_Zsinj_Empire_Alternate_Research_Starbase">
+		<Variant_Of_Existing_Type>Template_Survival_Alternate_Research_Starbase</Variant_Of_Existing_Type>
+
+		<Affiliation>Zsinj_Empire</Affiliation>
+
+		<Tactical_Buildable_Objects_Campaign> 
+			Zsinj_Empire,
+				Adz,
+				Interceptor_Frigate,
+				Action_VI_Support,
+				
+				Hunter_Killer_Probot,
+				Combat_Escort_Carrier,
+				Survival_Corona_Zsinj,
+
+				Crimson_Victory,
+				MTC_Sensor,
+				Survival_MTC_Support,
+				Survival_World_Devastator_Frigate,
+				
+				Survival_World_Devastator_Capital,
+				
+				Generic_Tagge_Battlecruiser,
+				Survival_World_Devastator_Battlecruiser,
+				Survival_Sovereign,
+				Survival_Eclipse_Star_Destroyer,				
+				
+				Survival_LD12_Defence_Satellite,
+				Survival_MD12_Defence_Satellite,
+				Survival_Repair_Defence_Satellite,
+				
+				Defence_Base_XQ5,
+				Defence_Base_Golan_One,
+				Defence_Base_Golan_Two,
+				Defence_Base_Golan_Three,
+
+				Survival_Dark_Empire
+		</Tactical_Buildable_Objects_Campaign>
+	</Starbase>
+
+	<Starbase Name="Survival_Corporate_Sector_Alternate_Research_Starbase">
+		<Variant_Of_Existing_Type>Template_Survival_Alternate_Research_Starbase</Variant_Of_Existing_Type>
+
+		<Affiliation>Corporate_Sector</Affiliation>
+
+		<Tactical_Buildable_Objects_Campaign> 
+			Corporate_Sector,
+				Vigil,
+				Pelta_Support,
+				Arquitens,
+				Carrack_Cruiser,
+				
+				MC30c,
+				Alliance_Assault_Frigate,
+				Munificent,
+				Generic_Acclamator_Assault_Ship_Leveler,
+				Captor,
+				
+				Calamari_Cruiser,
+				Generic_Venator,
+				Lucrehulk_Core_Destroyer,
+				Generic_Providence,
+				
+				Bulwark_II,
+				Generic_Star_Destroyer,
+				MC80B,
+				Keldabe,
+				
+				Survival_LD12_Defence_Satellite,
+				Survival_MD12_Defence_Satellite,
+				Survival_Repair_Defence_Satellite,
+				
+				Defence_Base_XQ5,
+				Defence_Base_Golan_One,
+				Defence_Base_Golan_Two,
+				Defence_Base_Valor,
+		</Tactical_Buildable_Objects_Campaign>
+	</Starbase>
+
+	<Starbase Name="Survival_Hapes_Consortium_Alternate_Research_Starbase">
+		<Variant_Of_Existing_Type>Template_Survival_Alternate_Research_Starbase</Variant_Of_Existing_Type>
+
+		<Affiliation>Hapes_Consortium</Affiliation>
+
+		<Tactical_Buildable_Objects_Campaign> 
+			Hapes_Consortium,
+				Survival_LD12_Defence_Satellite,
+				Survival_MD12_Defence_Satellite,
+				Survival_Repair_Defence_Satellite,
+				
+				Defence_Base_Meridian_I,
+				Defence_Base_Meridian_II,
+				Defence_Base_Meridian_III,
+				Defence_Base_Meridian_IV
+		</Tactical_Buildable_Objects_Campaign>
+	</Starbase>
+
+	<Starbase Name="Survival_EmpireoftheHand_Alternate_Research_Starbase">
+		<Variant_Of_Existing_Type>Template_Survival_Alternate_Research_Starbase</Variant_Of_Existing_Type>
+
+		<Affiliation>EmpireoftheHand</Affiliation>
+
+		<Tactical_Buildable_Objects_Campaign> 
+			EmpireoftheHand,
+				Survival_Gamma_ATR_6_Squadron_EotH,
+				
+				Survival_Katana_Dreadnaught,
+				Survival_Interdictor_Cruiser_EotH,
+				
+				Survival_Victory_Destroyer_EotH,
+				Survival_Victory_Destroyer_Two_EotH,
+				
+				Survival_Star_Destroyer_EotH,
+
+				Survival_LD12_Defence_Satellite,
+				Survival_MD12_Defence_Satellite,
+				Survival_Repair_Defence_Satellite,
+				
+				Defence_Base_Brask,
+				Defence_Base_Golan_One,
+				Defence_Base_Golan_Two,
+				Defence_Base_Visvia
+		</Tactical_Buildable_Objects_Campaign>
+	</Starbase>
+
+	<Starbase Name="Survival_Hutt_Cartels_Alternate_Research_Starbase">
+		<Variant_Of_Existing_Type>Template_Survival_Alternate_Research_Starbase</Variant_Of_Existing_Type>
+
+		<Affiliation>Hutt_Cartels</Affiliation>
+
+		<Tactical_Buildable_Objects_Campaign> 
+			Hutt_Cartels,
+				Survival_LD12_Defence_Satellite,
+				Survival_MD12_Defence_Satellite,
+				Survival_Repair_Defence_Satellite,
+				
+				Defence_Base_XQ5,
+				Defence_Base_Golan_One,
+				Defence_Base_Golan_Two,
+				Defence_Base_Golan_Three,
+				
+				Survival_Boonta_Fleet_Small,
+				Survival_Boonta_Fleet_Medium,
+				Survival_Boonta_Fleet_Large
+		</Tactical_Buildable_Objects_Campaign>
+	</Starbase>
+
+<!--***********************************************************-->
+<!--************************Optional Research******************-->
+<!--***********************************************************-->
+	
+	<UpgradeObject Name="Survival_Dark_Empire">
+		<Behavior>DUMMY_UPGRADE</Behavior>
+		<Affiliation>Empire, Pentastar, Eriadu_Authority, Zsinj_Empire, Greater_Maldrood</Affiliation>
+		<Tactical_Build_Cost_Multiplayer> 5000 </Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds> 10 </Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites> Space_Level_Three_Tech_Upgrade </Tactical_Build_Prerequisites>
+		<Tactical_Build_Increments_Tech_Level> No </Tactical_Build_Increments_Tech_Level>
+		<Tactical_Destruction_Decrements_Tech_Level> No </Tactical_Destruction_Decrements_Tech_Level>
+		<Tactical_Production_Queue>Tactical_Upgrades</Tactical_Production_Queue>
+		<Build_Limit_Current_For_All_Allies>1</Build_Limit_Current_For_All_Allies>
+		<Previous_Upgrade_Level_Type />
+		<Next_Upgrade_Level_Type></Next_Upgrade_Level_Type>
+		<Destroy_Previous_Upgrade_Level>No</Destroy_Previous_Upgrade_Level>
+		<Show_In_Sidebar_While_Building> Yes </Show_In_Sidebar_While_Building>
+		<Show_In_Sidebar_When_Complete> Yes </Show_In_Sidebar_When_Complete>
+		<Icon_Name>I_BUTTON_IMPERIAL_REGIME_DE.tga</Icon_Name>
+		
+		<Encyclopedia_Text>
+		TEXT_ENCYCLOPEDIA_SURVIVAL_DARK_EMPIRE_OPTION
+		TEXT_ENCYCLOPEDIA_SURVIVAL_DARK_EMPIRE_OPTION_1
+		TEXT_ENCYCLOPEDIA_SURVIVAL_DARK_EMPIRE_OPTION_2
+		TEXT_ENCYCLOPEDIA_SURVIVAL_DARK_EMPIRE_OPTION_3
+		TEXT_ENCYCLOPEDIA_SURVIVAL_DARK_EMPIRE_OPTION_4
+		TEXT_ENCYCLOPEDIA_SURVIVAL_DARK_EMPIRE_OPTION_5
+		TEXT_ENCYCLOPEDIA_SURVIVAL_DARK_EMPIRE_OPTION_6
+		TEXT_ENCYCLOPEDIA_SURVIVAL_DARK_EMPIRE_OPTION_7
+		TEXT_ENCYCLOPEDIA_SURVIVAL_DARK_EMPIRE_OPTION_8
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_ADVANCE </Encyclopedia_Unit_Class>
+		<Text_ID>TEXT_UPGRADE_SURVIVAL_DARK_EMPIRE_OPTION</Text_ID>
+		
+		<SFXEvent_Build_Started>RHD_Tech_Upgrade_Progress</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Tech_Upgrade_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>RHD_Tech_Upgrade_Complete</SFXEvent_Build_Complete>
+		<CategoryMask>Upgrade</CategoryMask>
+		<Is_Community_Property>Yes</Is_Community_Property>
+	</UpgradeObject>
+
+	<UpgradeObject Name="Survival_Boonta_Fleet_Small">
+		<Behavior>DUMMY_UPGRADE</Behavior>
+		<Affiliation>Hutt_Cartels</Affiliation>
+		<Tactical_Build_Cost_Multiplayer> 3500 </Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds> 20 </Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites> Space_Level_Three_Tech_Upgrade </Tactical_Build_Prerequisites>
+		<Tactical_Build_Increments_Tech_Level> No </Tactical_Build_Increments_Tech_Level>
+		<Tactical_Destruction_Decrements_Tech_Level> No </Tactical_Destruction_Decrements_Tech_Level>
+		<Tactical_Production_Queue>Tactical_Upgrades</Tactical_Production_Queue>
+		<Build_Limit_Current_For_All_Allies/>
+		<Previous_Upgrade_Level_Type />
+		<Next_Upgrade_Level_Type></Next_Upgrade_Level_Type>
+		<Lua_Script>Tactical_Spawner_Boonta_Fleet_Small</Lua_Script>
+		<Destroy_Previous_Upgrade_Level>No</Destroy_Previous_Upgrade_Level>
+		<Show_In_Sidebar_While_Building> Yes </Show_In_Sidebar_While_Building>
+		<Show_In_Sidebar_When_Complete> No </Show_In_Sidebar_When_Complete>
+		<Icon_Name>i_button_bh_tarrada.tga</Icon_Name>
+		
+		<Encyclopedia_Text>
+		TEXT_SURVIVAL_BOONTA_FLEET_SMALL
+		TEXT_SURVIVAL_BOONTA_FLEET_SHIPS
+		TEXT_SURVIVAL_BOONTA_FLEET_SHIP_1
+		TEXT_SURVIVAL_BOONTA_FLEET_SHIP_2
+		TEXT_SURVIVAL_BOONTA_FLEET_SHIP_3
+		TEXT_SURVIVAL_BOONTA_FLEET_SHIP_4
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_ADVANCE </Encyclopedia_Unit_Class>
+		<Text_ID>TEXT_UPGRADE_SURVIVAL_BOONTA_FLEET_SMALL</Text_ID>
+		
+		<SFXEvent_Build_Started>RHD_Tech_Upgrade_Progress</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Tech_Upgrade_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>RHD_Tech_Upgrade_Complete</SFXEvent_Build_Complete>
+		<CategoryMask>Upgrade</CategoryMask>
+		<Is_Community_Property>Yes</Is_Community_Property>
+	</UpgradeObject>
+
+	<UpgradeObject Name="Survival_Boonta_Fleet_Medium">
+		<Behavior>DUMMY_UPGRADE</Behavior>
+		<Affiliation>Hutt_Cartels</Affiliation>
+		<Tactical_Build_Cost_Multiplayer> 12000 </Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds> 40 </Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites> Space_Level_Four_Tech_Upgrade </Tactical_Build_Prerequisites>
+		<Tactical_Build_Increments_Tech_Level> No </Tactical_Build_Increments_Tech_Level>
+		<Tactical_Destruction_Decrements_Tech_Level> No </Tactical_Destruction_Decrements_Tech_Level>
+		<Tactical_Production_Queue>Tactical_Upgrades</Tactical_Production_Queue>
+		<Build_Limit_Current_For_All_Allies/>
+		<Previous_Upgrade_Level_Type />
+		<Next_Upgrade_Level_Type></Next_Upgrade_Level_Type>
+		<Lua_Script>Tactical_Spawner_Boonta_Fleet_Medium</Lua_Script>
+		<Destroy_Previous_Upgrade_Level>No</Destroy_Previous_Upgrade_Level>
+		<Show_In_Sidebar_While_Building> Yes </Show_In_Sidebar_While_Building>
+		<Show_In_Sidebar_When_Complete> No </Show_In_Sidebar_When_Complete>
+		<Icon_Name>i_button_bh_karagga_destroyer.tga</Icon_Name>
+		
+		<Encyclopedia_Text>
+		TEXT_SURVIVAL_BOONTA_FLEET_MEDIUM
+		TEXT_SURVIVAL_BOONTA_FLEET_SHIPS
+		TEXT_SURVIVAL_BOONTA_FLEET_SHIP_1
+		TEXT_SURVIVAL_BOONTA_FLEET_SHIP_2
+		TEXT_SURVIVAL_BOONTA_FLEET_SHIP_3
+		TEXT_SURVIVAL_BOONTA_FLEET_SHIP_4
+		TEXT_SURVIVAL_BOONTA_FLEET_SHIP_5
+		TEXT_SURVIVAL_BOONTA_FLEET_SHIP_6
+		TEXT_SURVIVAL_BOONTA_FLEET_SHIP_7
+		TEXT_SURVIVAL_BOONTA_FLEET_SHIP_8
+		TEXT_SURVIVAL_BOONTA_FLEET_SHIP_9
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_ADVANCE </Encyclopedia_Unit_Class>
+		<Text_ID>TEXT_UPGRADE_SURVIVAL_BOONTA_FLEET_MEDIUM</Text_ID>
+		
+		<SFXEvent_Build_Started>RHD_Tech_Upgrade_Progress</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Tech_Upgrade_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>RHD_Tech_Upgrade_Complete</SFXEvent_Build_Complete>
+		<CategoryMask>Upgrade</CategoryMask>
+		<Is_Community_Property>Yes</Is_Community_Property>
+	</UpgradeObject>
+
+	<UpgradeObject Name="Survival_Boonta_Fleet_Large">
+		<Behavior>DUMMY_UPGRADE</Behavior>
+		<Affiliation>Hutt_Cartels</Affiliation>
+		<Tactical_Build_Cost_Multiplayer> 47500 </Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds> 60 </Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites> Space_Level_Five_Tech_Upgrade </Tactical_Build_Prerequisites>
+		<Tactical_Build_Increments_Tech_Level> No </Tactical_Build_Increments_Tech_Level>
+		<Tactical_Destruction_Decrements_Tech_Level> No </Tactical_Destruction_Decrements_Tech_Level>
+		<Tactical_Production_Queue>Tactical_Upgrades</Tactical_Production_Queue>
+		<Build_Limit_Current_For_All_Allies/>
+		<Previous_Upgrade_Level_Type />
+		<Next_Upgrade_Level_Type></Next_Upgrade_Level_Type>
+		<Lua_Script>Tactical_Spawner_Boonta_Fleet_Large</Lua_Script>
+		<Destroy_Previous_Upgrade_Level>No</Destroy_Previous_Upgrade_Level>
+		<Show_In_Sidebar_While_Building> Yes </Show_In_Sidebar_While_Building>
+		<Show_In_Sidebar_When_Complete> No </Show_In_Sidebar_When_Complete>
+		<Icon_Name>i_button_bh_karabos.tga</Icon_Name>
+		
+		<Encyclopedia_Text>
+		TEXT_SURVIVAL_BOONTA_FLEET_LARGE
+		TEXT_SURVIVAL_BOONTA_FLEET_SHIPS
+		TEXT_SURVIVAL_BOONTA_FLEET_SHIP_1
+		TEXT_SURVIVAL_BOONTA_FLEET_SHIP_2
+		TEXT_SURVIVAL_BOONTA_FLEET_SHIP_3
+		TEXT_SURVIVAL_BOONTA_FLEET_SHIP_4
+		TEXT_SURVIVAL_BOONTA_FLEET_SHIP_5
+		TEXT_SURVIVAL_BOONTA_FLEET_SHIP_6
+		TEXT_SURVIVAL_BOONTA_FLEET_SHIP_7
+		TEXT_SURVIVAL_BOONTA_FLEET_SHIP_8
+		TEXT_SURVIVAL_BOONTA_FLEET_SHIP_9
+		TEXT_SURVIVAL_BOONTA_FLEET_SHIP_10
+		TEXT_SURVIVAL_BOONTA_FLEET_SHIP_11
+		TEXT_SURVIVAL_BOONTA_FLEET_GUARANTEED
+		TEXT_SURVIVAL_BOONTA_FLEET_SHIP_12
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_ADVANCE </Encyclopedia_Unit_Class>
+		<Text_ID>TEXT_UPGRADE_SURVIVAL_BOONTA_FLEET_LARGE</Text_ID>
+		
+		<SFXEvent_Build_Started>RHD_Tech_Upgrade_Progress</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Tech_Upgrade_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>RHD_Tech_Upgrade_Complete</SFXEvent_Build_Complete>
+		<CategoryMask>Upgrade</CategoryMask>
+		<Is_Community_Property>Yes</Is_Community_Property>
+	</UpgradeObject>
+
+
+<!--***********************************************************-->
+<!--************************Faction Dummies********************-->
+<!--***********************************************************-->
+
+	<DummyStructure Name="Faction_Dummy_NR">
+		<Variant_Of_Existing_Type>Template_Galactic_Company</Variant_Of_Existing_Type>
+		
+		<Text_ID>TEXT_UNIT_GC_SURVIVAL_FACTION_DUMMY_NR</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_GC_SURVIVAL_FACTION_DUMMY_DESCRIPTION
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_STORYEVENT </Encyclopedia_Unit_Class>
+
+		<Icon_Name>i_button_nr.TGA</Icon_Name>
+		<GUI_Row>1</GUI_Row>
+
+		<Affiliation>Rebel</Affiliation>
+		<Build_Initially_Locked>Yes</Build_Initially_Locked>
+		<Tech_Level>0</Tech_Level>
+		<Required_Special_Structures></Required_Special_Structures>
+		<Required_Planets/>
+		<Build_Cost_Credits>1</Build_Cost_Credits>
+		<Build_Time_Seconds>1</Build_Time_Seconds>
+
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+		<Build_Limit_Lifetime_Per_Player>1</Build_Limit_Lifetime_Per_Player>
+	</DummyStructure>
+
+	<DummyStructure Name="Faction_Dummy_IR">
+		<Variant_Of_Existing_Type>Template_Galactic_Company</Variant_Of_Existing_Type>
+		
+		<Text_ID>TEXT_UNIT_GC_SURVIVAL_FACTION_DUMMY_IR</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_GC_SURVIVAL_FACTION_DUMMY_DESCRIPTION
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_STORYEVENT </Encyclopedia_Unit_Class>
+
+		<Icon_Name>I_BUTTON_IR.TGA</Icon_Name>
+		<GUI_Row>1</GUI_Row>
+
+		<Affiliation>Rebel</Affiliation>
+		<Build_Initially_Locked>Yes</Build_Initially_Locked>
+		<Tech_Level>0</Tech_Level>
+		<Required_Special_Structures></Required_Special_Structures>
+		<Required_Planets/>
+		<Build_Cost_Credits>1</Build_Cost_Credits>
+		<Build_Time_Seconds>1</Build_Time_Seconds>
+
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+		<Build_Limit_Lifetime_Per_Player>1</Build_Limit_Lifetime_Per_Player>
+	</DummyStructure>
+
+	<DummyStructure Name="Faction_Dummy_Pentastar">
+		<Variant_Of_Existing_Type>Template_Galactic_Company</Variant_Of_Existing_Type>
+		
+		<Text_ID>TEXT_UNIT_GC_SURVIVAL_FACTION_DUMMY_PA</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_GC_SURVIVAL_FACTION_DUMMY_DESCRIPTION
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_STORYEVENT </Encyclopedia_Unit_Class>
+
+		<Icon_Name>i_button_pa.TGA</Icon_Name>
+		<GUI_Row>1</GUI_Row>
+
+		<Affiliation>Rebel</Affiliation>
+		<Build_Initially_Locked>Yes</Build_Initially_Locked>
+		<Tech_Level>0</Tech_Level>
+		<Required_Special_Structures></Required_Special_Structures>
+		<Required_Planets/>
+		<Build_Cost_Credits>1</Build_Cost_Credits>
+		<Build_Time_Seconds>1</Build_Time_Seconds>
+
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+		<Build_Limit_Lifetime_Per_Player>1</Build_Limit_Lifetime_Per_Player>
+	</DummyStructure>
+
+	<DummyStructure Name="Faction_Dummy_Eriadu_Authority">
+		<Variant_Of_Existing_Type>Template_Galactic_Company</Variant_Of_Existing_Type>
+		
+		<Text_ID>TEXT_UNIT_GC_SURVIVAL_FACTION_DUMMY_EA</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_GC_SURVIVAL_FACTION_DUMMY_DESCRIPTION
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_STORYEVENT </Encyclopedia_Unit_Class>
+
+		<Icon_Name>i_button_ea.TGA</Icon_Name>
+		<GUI_Row>1</GUI_Row>
+
+		<Affiliation>Rebel</Affiliation>
+		<Build_Initially_Locked>Yes</Build_Initially_Locked>
+		<Tech_Level>0</Tech_Level>
+		<Required_Special_Structures></Required_Special_Structures>
+		<Required_Planets/>
+		<Build_Cost_Credits>1</Build_Cost_Credits>
+		<Build_Time_Seconds>1</Build_Time_Seconds>
+
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+		<Build_Limit_Lifetime_Per_Player>1</Build_Limit_Lifetime_Per_Player>
+	</DummyStructure>
+
+	<DummyStructure Name="Faction_Dummy_Zsinj_Empire">
+		<Variant_Of_Existing_Type>Template_Galactic_Company</Variant_Of_Existing_Type>
+		
+		<Text_ID>TEXT_UNIT_GC_SURVIVAL_FACTION_DUMMY_ZE</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_GC_SURVIVAL_FACTION_DUMMY_DESCRIPTION
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_STORYEVENT </Encyclopedia_Unit_Class>
+
+		<Icon_Name>i_button_ze.TGA</Icon_Name>
+		<GUI_Row>1</GUI_Row>
+
+		<Affiliation>Rebel</Affiliation>
+		<Build_Initially_Locked>Yes</Build_Initially_Locked>
+		<Tech_Level>0</Tech_Level>
+		<Required_Special_Structures></Required_Special_Structures>
+		<Required_Planets/>
+		<Build_Cost_Credits>1</Build_Cost_Credits>
+		<Build_Time_Seconds>1</Build_Time_Seconds>
+
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+		<Build_Limit_Lifetime_Per_Player>1</Build_Limit_Lifetime_Per_Player>
+	</DummyStructure>
+
+	<DummyStructure Name="Faction_Dummy_Greater_Maldrood">
+		<Variant_Of_Existing_Type>Template_Galactic_Company</Variant_Of_Existing_Type>
+		
+		<Text_ID>TEXT_UNIT_GC_SURVIVAL_FACTION_DUMMY_GM</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_GC_SURVIVAL_FACTION_DUMMY_DESCRIPTION
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_STORYEVENT </Encyclopedia_Unit_Class>
+
+		<Icon_Name>i_button_gm.TGA</Icon_Name>
+		<GUI_Row>1</GUI_Row>
+
+		<Affiliation>Rebel</Affiliation>
+		<Build_Initially_Locked>Yes</Build_Initially_Locked>
+		<Tech_Level>0</Tech_Level>
+		<Required_Special_Structures></Required_Special_Structures>
+		<Required_Planets/>
+		<Build_Cost_Credits>1</Build_Cost_Credits>
+		<Build_Time_Seconds>1</Build_Time_Seconds>
+
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+		<Build_Limit_Lifetime_Per_Player>1</Build_Limit_Lifetime_Per_Player>
+	</DummyStructure>
+
+	<DummyStructure Name="Faction_Dummy_Corporate_Sector">
+		<Variant_Of_Existing_Type>Template_Galactic_Company</Variant_Of_Existing_Type>
+		
+		<Text_ID>TEXT_UNIT_GC_SURVIVAL_FACTION_DUMMY_CSA</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_GC_SURVIVAL_FACTION_DUMMY_DESCRIPTION
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_STORYEVENT </Encyclopedia_Unit_Class>
+
+		<Icon_Name>i_button_csa.TGA</Icon_Name>
+		<GUI_Row>1</GUI_Row>
+
+		<Affiliation>Rebel</Affiliation>
+		<Build_Initially_Locked>Yes</Build_Initially_Locked>
+		<Tech_Level>0</Tech_Level>
+		<Required_Special_Structures></Required_Special_Structures>
+		<Required_Planets/>
+		<Build_Cost_Credits>1</Build_Cost_Credits>
+		<Build_Time_Seconds>1</Build_Time_Seconds>
+
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+		<Build_Limit_Lifetime_Per_Player>1</Build_Limit_Lifetime_Per_Player>
+	</DummyStructure>
+
+	<DummyStructure Name="Faction_Dummy_Hapes_Consortium">
+		<Variant_Of_Existing_Type>Template_Galactic_Company</Variant_Of_Existing_Type>
+		
+		<Text_ID>TEXT_UNIT_GC_SURVIVAL_FACTION_DUMMY_HAPES</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_GC_SURVIVAL_FACTION_DUMMY_DESCRIPTION
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_STORYEVENT </Encyclopedia_Unit_Class>
+
+		<Icon_Name>I_BUTTON_HAPES_ROYAL.TGA</Icon_Name>
+		<GUI_Row>1</GUI_Row>
+
+		<Affiliation>Rebel</Affiliation>
+		<Build_Initially_Locked>Yes</Build_Initially_Locked>
+		<Tech_Level>0</Tech_Level>
+		<Required_Special_Structures></Required_Special_Structures>
+		<Required_Planets/>
+		<Build_Cost_Credits>1</Build_Cost_Credits>
+		<Build_Time_Seconds>1</Build_Time_Seconds>
+
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+		<Build_Limit_Lifetime_Per_Player>1</Build_Limit_Lifetime_Per_Player>
+	</DummyStructure>
+
+	<DummyStructure Name="Faction_Dummy_EmpireoftheHand">
+		<Variant_Of_Existing_Type>Template_Galactic_Company</Variant_Of_Existing_Type>
+		
+		<Text_ID>TEXT_UNIT_GC_SURVIVAL_FACTION_DUMMY_EOTH</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_GC_SURVIVAL_FACTION_DUMMY_DESCRIPTION
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_STORYEVENT </Encyclopedia_Unit_Class>
+
+		<Icon_Name>i_button_eoth.TGA</Icon_Name>
+		<GUI_Row>1</GUI_Row>
+
+		<Affiliation>Rebel</Affiliation>
+		<Build_Initially_Locked>Yes</Build_Initially_Locked>
+		<Tech_Level>0</Tech_Level>
+		<Required_Special_Structures></Required_Special_Structures>
+		<Required_Planets/>
+		<Build_Cost_Credits>1</Build_Cost_Credits>
+		<Build_Time_Seconds>1</Build_Time_Seconds>
+
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+		<Build_Limit_Lifetime_Per_Player>1</Build_Limit_Lifetime_Per_Player>
+	</DummyStructure>
+
+	<DummyStructure Name="Faction_Dummy_Hutts">
+		<Variant_Of_Existing_Type>Template_Galactic_Company</Variant_Of_Existing_Type>
+		
+		<Text_ID>TEXT_UNIT_GC_SURVIVAL_FACTION_DUMMY_HUTTS</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_GC_SURVIVAL_FACTION_DUMMY_DESCRIPTION
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_STORYEVENT </Encyclopedia_Unit_Class>
+
+		<Icon_Name>I_BUTTON_HUTTS.TGA</Icon_Name>
+		<GUI_Row>1</GUI_Row>
+
+		<Affiliation>Rebel</Affiliation>
+		<Build_Initially_Locked>Yes</Build_Initially_Locked>
+		<Tech_Level>0</Tech_Level>
+		<Required_Special_Structures></Required_Special_Structures>
+		<Required_Planets/>
+		<Build_Cost_Credits>1</Build_Cost_Credits>
+		<Build_Time_Seconds>1</Build_Time_Seconds>
+
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+		<Build_Limit_Lifetime_Per_Player>1</Build_Limit_Lifetime_Per_Player>
+	</DummyStructure>
+
+	<DummyStructure Name="Faction_Dummy"> <!-- Add at the initial GC -->
+		<Variant_Of_Existing_Type>Template_Galactic_Company</Variant_Of_Existing_Type>
+		
+		<Text_ID></Text_ID>
+		<Encyclopedia_Text>
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class></Encyclopedia_Unit_Class>
+
+		<Icon_Name></Icon_Name>
+		<GUI_Row>1</GUI_Row>
+
+		<Affiliation>Rebel</Affiliation>
+		<Build_Initially_Locked>Yes</Build_Initially_Locked>
+		<Tech_Level>0</Tech_Level>
+		<Required_Special_Structures></Required_Special_Structures>
+		<Required_Planets/>
+		<Build_Cost_Credits>1</Build_Cost_Credits>
+		<Build_Time_Seconds>1</Build_Time_Seconds>
+
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+		<Build_Limit_Lifetime_Per_Player>1</Build_Limit_Lifetime_Per_Player>
+	</DummyStructure>
 
 </Survival_Starbases>

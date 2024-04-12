@@ -1,12 +1,12 @@
 return {
 	Ship_Crew_Requirement = 25,
 	Fighters = {
-		["CLAWCRAFT_SQUADRON_DOUBLE"] = {
+		["NSSIS_SQUADRON_DOUBLE"] = {
 			EMPIREOFTHEHAND = {Initial = 1, Reserve = 2, TechLevel = LessThan(4)},
 			HOSTILE = {Initial = 1, Reserve = 2, TechLevel = LessThan(4)},
 			INDEPENDENT_FORCES = {Initial = 1, Reserve = 2, TechLevel = LessThan(4)}
 		},
-		["SCARSISS_SQUADRON_DOUBLE"] = {
+		["SCARSSIS_SQUADRON_DOUBLE"] = {
 			HOSTILE = {Initial = 1, Reserve = 2, TechLevel = GreaterOrEqualTo(4)},
 			EMPIREOFTHEHAND = {Initial = 1, Reserve = 2, TechLevel = GreaterOrEqualTo(4)},
 			INDEPENDENT_FORCES = {Initial = 1, Reserve = 2, TechLevel = GreaterOrEqualTo(4)}
@@ -20,6 +20,9 @@ return {
 		["MIYTIL_FIGHTER_SQUADRON_DOUBLE"] = {
 			HAPES_CONSORTIUM = {Initial = 1, Reserve = 2}
 		},
+		["DUNELIZARD_FIGHTER_SQUADRON_DOUBLE"] = {
+			HUTT_CARTELS = {Initial = 1, Reserve = 2}
+		},
 		["REBEL_X-WING_SQUADRON_DOUBLE"] = {
 			REBEL = {Initial = 1, Reserve = 2, TechLevel = LessThan(4)}
 		},
@@ -28,6 +31,9 @@ return {
 		},
 		["MIYTIL_BOMBER_SQUADRON_DOUBLE"] = {
 			HAPES_CONSORTIUM = {Initial = 1, Reserve = 2}
+		},
+		["KIMOGILA_SQUADRON_DOUBLE"] = {
+			HUTT_CARTELS = {Initial = 1, Reserve = 2}
 		},
 		["SYCA_BOMBER_SQUADRON_DOUBLE"] = {
 			EMPIREOFTHEHAND = {Initial = 1, Reserve = 2},

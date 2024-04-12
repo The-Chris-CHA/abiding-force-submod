@@ -55,7 +55,7 @@ function Definitions()
 	{
 		"MainForce"
 		,"DenyHeroAttach"		
-		,"Corvette | Frigate | Capital  = 100%"
+		,"Gunship | Corvette | Frigate | Capital  = 100%"
 	}
 	}
 	RequiredCategories = {"AntiBomber", "Frigate | Capital"}	--we want at least one heavier ship

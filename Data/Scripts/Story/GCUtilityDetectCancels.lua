@@ -82,6 +82,7 @@ function Begin_GC(message)
 	p_maldrood = Find_Player("Greater_Maldrood")
 	p_corporate = Find_Player("Corporate_Sector")
 	p_hapes = Find_Player("Hapes_Consortium")
+	p_hutts = Find_Player("Hutt_Cartels")
 	p_vong = Find_Player("Underworld")
 	p_ssi = Find_Player("SsiRuuvi_Imperium")
 
@@ -103,6 +104,8 @@ function Begin_GC(message)
 		player = p_corporate
 	elseif p_hapes.Is_Human() then
 		player = p_hapes
+	elseif p_hutts.Is_Human() then
+		player = p_hutts
 	elseif p_vong.Is_Human() then
 		player = p_vong
 	elseif p_ssi.Is_Human() then

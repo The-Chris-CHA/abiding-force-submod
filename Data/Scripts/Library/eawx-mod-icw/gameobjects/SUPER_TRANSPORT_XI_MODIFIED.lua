@@ -4,17 +4,17 @@ return {
 		["MIXED_UGLY_SQUADRON"] = {
 			DEFAULT = {Initial = 1, Reserve = 3}
 		},
-		["STANDARD_CIVILIAN_FIGHTER"] = {
-			DEFAULT = {Initial = 1, Reserve = 1}
+		["CIVILIAN_FIGHTER"] = {
+			DEFAULT = {Initial = 1, Reserve = 1, Random = "random-fighters/CivilianFighter"}
 		},
-		["STANDARD_PIRATE_FIGHTER"] = {
-			DEFAULT = {Initial = 1, Reserve = 1}
+		["PIRATE_FIGHTER"] = {
+			DEFAULT = {Initial = 1, Reserve = 1, Random = "random-fighters/PirateFighter"}
 		},
-		["STANDARD_CIVILIAN_BOMBER"] = {
-			DEFAULT = {Initial = 1, Reserve = 1}
+		["CIVILIAN_BOMBER"] = {
+			DEFAULT = {Initial = 1, Reserve = 1, Random = "random-fighters/CivilianBomber"}
 		},
-		["STANDARD_CIVILIAN_BOMBER_DOUBLE"] = {
-			DEFAULT = {Initial = 1, Reserve = 1}
+		["CIVILIAN_BOMBER_DOUBLE"] = {
+			DEFAULT = {Initial = 1, Reserve = 1, Random = "random-fighters/CivilianBomber", Suffix = "_DOUBLE"}
 		}
 	},
 	Scripts = {"multilayer", "fighter-spawn", "single-unit-retreat"}

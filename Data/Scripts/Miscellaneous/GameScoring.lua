@@ -33,8 +33,6 @@ function Base_Definitions()
     GlobalValue.Set("MOD_ID", ModContentLoader.get_mod_id())
 
     GameScoringPluginRunner = nil
-
-    Define_Title_Faction_Table()
 end
 
 --
@@ -480,51 +478,29 @@ end
 -- @since 3/15/2005 4:10:19 PM -- BMH
 --
 function Tactical_Unit_Destroyed_Event(object, killer)
+    Update_Kill_Stats_Table(TacticalKillStatsTable, object, killer)
+
+    if not killer.Is_Human() then
+        return
+    end
+
+    if object.Is_Category("Fighter") or object.Is_Category("Bomber") or object.Is_Category("Gunship") then
+        return
+    end
+
     local object_type = object.Get_Type()
 
-    local killer_name = ""
-    if TestValid(killer) and killer.Get_Faction_Name then
-        killer_name = killer.Get_Faction_Name()
+    if not object_type then
+        return
     end
 
-    local owner = object.Get_Owner()
-    local owner_name = ""
-    if TestValid(owner) and owner.Get_Faction_Name then
-        owner_name = owner.Get_Faction_Name()
-    end
+    local object_name = object_type.Get_Name()
+    local object_power = object_type.Get_Combat_Rating()
+    local object_is_hero = object_type.Is_Hero()
 
-    local category = "None"
-    if object.Is_Category("Corvette") then
-        category = "CORVETTE"
-    elseif object.Is_Category("Frigate") then
-        category = "FRIGATE"
-    elseif object.Is_Category("Capital") then
-        category = "CAPITAL"
-    elseif object.Is_Category("SuperCapital") then
-        category = "SUPERCAPITAL"
-    elseif object.Is_Category("Structure") then
-        category = "STRUCTURE"
-	elseif object.Is_Category("SpaceStructure") then
-        category = "SPACESTRUCTURE"
-	elseif object.Is_Category("SpaceHero") then
-        category = "SPACEHERO"
+    if object_name and object_power then
+        crossplot:publish("TACTICAL_UNIT_DESTROYED", object_name, object_power, object_is_hero)
     end
-    if object_type.Is_Hero() then
-        category = "HERO"
-    end
-
-    if object.Is_Category("Corvette") or 
-        object.Is_Category("Frigate") or 
-        object.Is_Category("Capital") or 
-        object.Is_Category("SuperCapital") or
-        object.Is_Category("Structure") or
-		object.Is_Category("SpaceStructure") or
-        object_type.Is_Hero() then
-        crossplot:publish("TACTICAL_UNIT_DESTROYED", object_type.Get_Name(), owner_name, killer_name, category)
-    end
-    
-
-    Update_Kill_Stats_Table(TacticalKillStatsTable, object, killer)
 end
 
 --
@@ -536,6 +512,7 @@ end
 --
 function Galactic_Unit_Destroyed_Event(object, killer)
     local object_type = object.Get_Type()
+    local object_name = object_type.Get_Name()
 
     local killer_name = ""
     if TestValid(killer) and killer.Get_Faction_Name then
@@ -549,11 +526,31 @@ function Galactic_Unit_Destroyed_Event(object, killer)
     end
 
     if object_type.Is_Hero() and not object.Is_Category("Structure") then
-        crossplot:publish("GALACTIC_HERO_KILLED", object_type.Get_Name(), owner_name, killer_name)
+        crossplot:publish("GALACTIC_HERO_KILLED", object_name, owner_name, killer_name)
     end
+
+    if not object_type.Is_Hero() and Is_SSD(object_name) then
+        crossplot:publish("GALACTIC_SSD_KILLED", object_name, owner_name, killer_name)
+    end
+
+    -- if string.find(object_name, "PATRON_") then
+    --     crossplot:publish("PATRON_KILLED", object_name, owner_name)
+    -- end
 
     Update_Kill_Stats_Table(GalacticKillStatsTable, object, killer)
     Update_Kill_Stats_Table(TacticalTeamKillStatsTable, object, killer)
+end
+
+function Is_SSD(object_name)
+    local SSD_List = require("hardpoint-lists/PersistentLibrary")
+	
+	for ssd, _ in pairs(SSD_List[1]) do
+		if object_name == ssd then
+			return true
+		end
+	end
+	
+	return false
 end
 
 --
@@ -769,6 +766,8 @@ function Galactic_Neutralized_Event(hero_type, killer)
 
     entry[hero_type] = pe
     GalacticNeutralizedTable[killer_id] = entry
+	
+	crossplot:publish("GALACTIC_HERO_NEUTRALIZED", hero_type.Get_Name(), killer_id)
 end
 
 --
@@ -822,78 +821,62 @@ function Get_Neutralized_Count_For_Type(object_type, player)
     return pe.neutralized
 end
 
-function Get_Military_Efficiency(player, kill_stats, build_stats)
+function Get_Econ_And_Kill_Efficiency(player, kill_stats, build_stats)
     pid = player.Get_ID()
 
+    econ_eff = 1
     kill_eff = 0
+    
+    -- frag stats
     kill_table = kill_stats[frag_index][pid]
 
-    tkills = 0
-    tpower = 0
-    tscore = 0
+    total_fragged_power = 0
+
     if kill_table then
         for kk, vv in pairs(kill_table) do
-            tkills = tkills + vv.kills
-            tpower = tpower + vv.combat_power
-            tscore = tscore + vv.score_value
+            total_fragged_power = total_fragged_power + vv.combat_power
         end
     end
 
+    -- loss stats
     death_table = kill_stats[death_index][pid]
 
-    tdeaths = 0
-    tdpower = 0
-    tdscore = 0
+    total_lost_power = 0
+    total_lost_cost = 0
+
     if death_table then
         for kk, vv in pairs(death_table) do
-            tdeaths = tdeaths + vv.kills
-            tdpower = tdpower + vv.combat_power
-            tdscore = tdscore + vv.score_value
+            total_lost_power = total_lost_power + vv.combat_power
+            total_lost_cost = total_lost_cost + vv.build_cost
         end
     end
 
     -- build stats
-    build_count = 0
-    cost_count = 0
-    power_count = 0
-    score_count = 0
+    total_built_cost = 0
 
     if build_stats[pid] then
         for planet_type, planet_entry in pairs(build_stats[pid]) do
             for object_type, type_entry in pairs(planet_entry) do
-                build_count = build_count + type_entry.build_count
-                cost_count = cost_count + type_entry.build_cost
-                power_count = power_count + type_entry.combat_power
-                score_count = score_count + type_entry.score_value
+                total_built_cost = total_built_cost + type_entry.build_cost
             end
         end
     end
 
-    if tpower == 0 then
-        kill_eff = 0
-    elseif tdpower == 0 then
-        kill_eff = tpower
-    else
-        kill_eff = tpower / (tpower + tdpower)
+    if total_lost_cost > 0 then
+        econ_eff = 1 - total_lost_cost / (total_built_cost + total_lost_cost)
     end
 
-    if build_count == 0 then
-        if tdeaths == 0 then
-            mill_eff = 0
-        else
-            mill_eff = -1
-        end
-    elseif tdeaths > build_count then
-        mill_eff = -((tdeaths - build_count) / build_count)
-    else
-        mill_eff = (build_count - tdeaths) / build_count
+    if total_fragged_power > 0 then
+        kill_eff = total_fragged_power / (total_fragged_power + total_lost_power)
     end
 
-    return mill_eff, kill_eff
+    return econ_eff, kill_eff
 end
 
 function Get_Conquest_Efficiency(player)
     pid = player.Get_ID()
+
+    conq_eff = 0
 
     -- [playerid][planet_type][sacked_count, lost_count]
     entry = GalacticConquestTable[pid]
@@ -902,112 +885,121 @@ function Get_Conquest_Efficiency(player)
         return 0
     end
 
-    sacked = 0
-    lost = 0
+    total_sacked_planets = 0
+    total_lost_planets = 0
     for planet_type, pe in pairs(entry) do
-        sacked = sacked + pe.sacked_count
-        lost = lost + pe.lost_count
+        total_sacked_planets = total_sacked_planets + pe.sacked_count
+        total_lost_planets = total_lost_planets + pe.lost_count
     end
 
-    if sacked == 0 then
-        conq_eff = 0
-    elseif lost == 0 then
-        conq_eff = sacked
-    else
-        conq_eff = sacked / (sacked + lost)
+    if total_sacked_planets > 0 then
+        conq_eff = total_sacked_planets / (total_sacked_planets + total_lost_planets)
     end
 
     return conq_eff
 end
 
-function Calc_Score_For_Efficiency(eff_val)
-    if eff_val > 0.99 then
-        return 50000
-    elseif eff_val > 0.98 then
-        return 30000
-    elseif eff_val > 0.94 then
-        return 25000
-    elseif eff_val > 0.91 then
-        return 20000
-    elseif eff_val > 0.88 then
-        return 10000
-    elseif eff_val > 0.84 then
-        return 9000
-    elseif eff_val > 0.80 then
-        return 8000
-    elseif eff_val > 0.78 then
-        return 4000
-    elseif eff_val > 0.74 then
-        return 3000
-    elseif eff_val > 0.70 then
-        return 2000
-    elseif eff_val > 0.60 then
-        return 1000
-    elseif eff_val > 0.50 then
-        return 500
-    elseif eff_val > 0.40 then
-        return 400
-    elseif eff_val > 0.30 then
-        return 300
-    elseif eff_val > 0.20 then
-        return 200
-    elseif eff_val > 0.10 then
-        return 100
-    else
-        return 0
-    end
-end
+function Calc_Score_For_Efficiency(econ_eff,kill_eff,conq_eff)
+    econ_score = 0
+    kill_score = 0
+    conq_score = 0
 
-function Define_Title_Faction_Table()
-    -- rebel at 2, empire at 3
-    Title_Faction_Table = {
-        {145000, "TEXT_REBEL_TITLE19", "TEXT_EMPIRE_TITLE19"},
-        {125000, "TEXT_REBEL_TITLE18", "TEXT_EMPIRE_TITLE18"},
-        {115000, "TEXT_REBEL_TITLE17", "TEXT_EMPIRE_TITLE17"},
-        {100000, "TEXT_REBEL_TITLE16", "TEXT_EMPIRE_TITLE16"},
-        {90000, "TEXT_REBEL_TITLE15", "TEXT_EMPIRE_TITLE15"},
-        {85000, "TEXT_REBEL_TITLE14", "TEXT_EMPIRE_TITLE14"},
-        {80000, "TEXT_REBEL_TITLE13", "TEXT_EMPIRE_TITLE13"},
-        {75000, "TEXT_REBEL_TITLE12", "TEXT_EMPIRE_TITLE12"},
-        {70000, "TEXT_REBEL_TITLE11", "TEXT_EMPIRE_TITLE11"},
-        {60000, "TEXT_REBEL_TITLE10", "TEXT_EMPIRE_TITLE10"},
-        {55000, "TEXT_REBEL_TITLE9", "TEXT_EMPIRE_TITLE9"},
-        {50000, "TEXT_REBEL_TITLE8", "TEXT_EMPIRE_TITLE8"},
-        {45000, "TEXT_REBEL_TITLE7", "TEXT_EMPIRE_TITLE7"},
-        {40000, "TEXT_REBEL_TITLE6", "TEXT_EMPIRE_TITLE6"},
-        {25000, "TEXT_REBEL_TITLE5", "TEXT_EMPIRE_TITLE5"},
-        {20000, "TEXT_REBEL_TITLE4", "TEXT_EMPIRE_TITLE4"},
-        {15000, "TEXT_REBEL_TITLE3", "TEXT_EMPIRE_TITLE3"},
-        {10000, "TEXT_REBEL_TITLE2", "TEXT_EMPIRE_TITLE2"},
-        {5000, "TEXT_REBEL_TITLE1", "TEXT_EMPIRE_TITLE1"},
-        {0, "TEXT_REBEL_TITLE0", "TEXT_EMPIRE_TITLE0"}
+-- efficiency, score
+
+-- econ: build:lost cost
+    Econ_Score_Table = {
+        {1.00,100},
+        {0.80, 95}, -- 4:1
+        {0.78, 89},
+        {0.76, 83},
+        {0.74, 78},
+        {0.72, 73},
+        {0.70, 68}, -- 7:3
+        {0.68, 64},
+        {0.66, 60}, -- ~2:1
+        {0.64, 56},
+        {0.62, 52},
+        {0.60, 48}, -- 3:2
+        {0.55, 40},
+        {0.50, 33}, -- 1:1
+        {0.45, 28},
+        {0.40, 23}, -- 2:3
+        {0.35, 19},
+        {0.30, 15}, -- 3:7
+        {0.20,  9}, -- 1:4
+        {0.10,  4}, -- 1:9
+        {0.00,  0}
     }
+
+-- kill: killed:lost power
+-- conq: sacked:lost planets
+    Kill_And_Conq_Score_Table = {
+        {1.00,100},
+        {0.97, 95}, -- ~33:1
+        {0.96, 91}, -- 24:1
+        {0.95, 87}, -- 19:1
+        {0.94, 83},
+        {0.93, 79},
+        {0.92, 75},
+        {0.90, 69}, -- 9:1
+        {0.85, 54},
+        {0.80, 43},
+        {0.75, 34}, -- 3:1
+        {0.70, 27},
+        {0.65, 21},
+        {0.60, 17},
+        {0.55, 13},
+        {0.50, 10}, -- 1:1
+        {0.40,  7},
+        {0.30,  5},
+        {0.20,  3},
+        {0.10,  1},
+        {0.00,  0}
+    }
+
+    for i, scorerow in ipairs(Econ_Score_Table) do
+        econ_score = scorerow[2]
+        if econ_eff >= scorerow[1] then
+            break
+        end
+    end
+
+    for i, scorerow in ipairs(Kill_And_Conq_Score_Table) do
+        kill_score = scorerow[2]
+        if kill_eff >= scorerow[1] then
+            break
+        end
+    end
+
+    for i, scorerow in ipairs(Kill_And_Conq_Score_Table) do
+        conq_score = scorerow[2]
+        if conq_eff >= scorerow[1] then
+            break
+        end
+    end
+
+    return econ_score + kill_score + conq_score
 end
 
 function Debug_Print_Score_Vals()
     for pid, player in pairs(PlayerTable) do
-        mill_eff, kill_eff = Get_Military_Efficiency(player, GalacticKillStatsTable, GalacticBuildStatsTable)
+        econ_eff, kill_eff = Get_Econ_And_Kill_Efficiency(player, GalacticKillStatsTable, GalacticBuildStatsTable)
         conq_eff = Get_Conquest_Efficiency(player)
 
-        score = Calc_Score_For_Efficiency(mill_eff)
-        score = score + Calc_Score_For_Efficiency(kill_eff)
-        score = score + Calc_Score_For_Efficiency(Get_Conquest_Efficiency(player))
-
-        if PlayerQuitTable[pid] == true then
-            score = 0
-        end
+        score = Calc_Score_For_Efficiency(econ_eff,kill_eff,conq_eff)
 
         GameScoringMessage(
-            "Galactic %s:%s, Mill_Eff:%f, Kill_Eff:%f, Conq_eff:%f, Score:%f",
+            "Galactic %s:%s, Econ_Eff:%f, Kill_Eff:%f, Conq_Eff:%f, Score:%f",
             player.Get_Name(),
             player.Get_Faction_Name(),
-            mill_eff,
+            econ_eff,
             kill_eff,
             conq_eff,
             score
         )
     end
 end
+
 --
 -- This function returns the a game stat for the given control id.
 --
@@ -1016,42 +1008,60 @@ end
 -- @since 6/18/2005 4:13:13 PM -- BMH
 --
 function Get_Game_Stat_For_Control_ID(player, control_id, for_tactical)
+--NB: efficiency values are truncated to 2 decimal places for display, but not for score calculations
+    econ_eff = 0
+    kill_eff = 0
+    conq_eff = 0
+	
     if for_tactical then
-        mill_eff, kill_eff = Get_Military_Efficiency(player, TacticalKillStatsTable, TacticalBuildStatsTable)
+        econ_eff, kill_eff = Get_Econ_And_Kill_Efficiency(player, TacticalKillStatsTable, TacticalBuildStatsTable)
     else
-        mill_eff, kill_eff = Get_Military_Efficiency(player, GalacticKillStatsTable, GalacticBuildStatsTable)
+        econ_eff, kill_eff = Get_Econ_And_Kill_Efficiency(player, GalacticKillStatsTable, GalacticBuildStatsTable)
     end
 
-    if control_id == "IDC_MILITARY_EFFICIENCY_STATIC" then
-        return mill_eff
+    if control_id == "IDC_MILITARY_EFFICIENCY_STATIC" then --can't rename guidialogs control w/o breaking display
+        return econ_eff
     elseif control_id == "IDC_CONQUEST_EFFICIENCY_STATIC" then
         return Get_Conquest_Efficiency(player)
     elseif control_id == "IDC_KILL_EFFICIENCY_STATIC" then
         return kill_eff
-    elseif control_id == "IDC_YOUR_LOSS_VAL_STATIC" or control_id == "IDC_ENEMY_LOSS_VAL_STATIC" then
-        return Calc_Score_For_Efficiency(mill_eff) + Calc_Score_For_Efficiency(kill_eff)
     elseif control_id == "IDC_TITLE_STATIC" then
-        score = Calc_Score_For_Efficiency(mill_eff)
-        score = score + Calc_Score_For_Efficiency(kill_eff)
-        score = score + Calc_Score_For_Efficiency(Get_Conquest_Efficiency(player))
-        tid = 3
-        if player.Get_Faction_Name() == "REBEL" then
-            tid = 2
-        end
+        conq_eff = Get_Conquest_Efficiency(player)
+        score = Calc_Score_For_Efficiency(econ_eff,kill_eff,conq_eff)
 
-        if PlayerQuitTable[player.Get_ID()] == true then
-            score = 0
-        end
+        Title_Table = {
+            {300, "TEXT_SCORE_TITLE19"},
+            {270, "TEXT_SCORE_TITLE18"},
+            {255, "TEXT_SCORE_TITLE17"},
+            {240, "TEXT_SCORE_TITLE16"},
+            {225, "TEXT_SCORE_TITLE15"},
+            {210, "TEXT_SCORE_TITLE14"},
+            {195, "TEXT_SCORE_TITLE13"},
+            {180, "TEXT_SCORE_TITLE12"},
+            {165, "TEXT_SCORE_TITLE11"},
+            {150, "TEXT_SCORE_TITLE10"},
+            {135, "TEXT_SCORE_TITLE09"},
+            {120, "TEXT_SCORE_TITLE08"},
+            {105, "TEXT_SCORE_TITLE07"},
+            { 90, "TEXT_SCORE_TITLE06"},
+            { 75, "TEXT_SCORE_TITLE05"},
+            { 60, "TEXT_SCORE_TITLE04"},
+            { 45, "TEXT_SCORE_TITLE03"},
+            { 30, "TEXT_SCORE_TITLE02"},
+            { 15, "TEXT_SCORE_TITLE01"},
+            {  0, "TEXT_SCORE_TITLE00"}
+        }
 
-        for ival, pe in ipairs(Title_Faction_Table) do
-            last = pe[tid]
-            if score > pe[1] then
+        for i, titlerow in ipairs(Title_Table) do
+            titlestring = titlerow[2]
+            if score >= titlerow[1] then
                 break
             end
         end
-        return last
+        return titlestring
     else
         MessageBox("Unknown control id %s:%s for Get_Game_Stat_For_Control_ID", type(control_id), tostring(control_id))
+        return 0
     end
 end
 

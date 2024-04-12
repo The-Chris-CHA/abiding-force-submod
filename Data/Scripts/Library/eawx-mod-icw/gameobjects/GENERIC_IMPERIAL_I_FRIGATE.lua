@@ -7,6 +7,9 @@ return {
 		["MIYTIL_FIGHTER_SQUADRON"] = {
 			HAPES_CONSORTIUM = {Initial = 1, Reserve = 2}
 		},
+		["DUNELIZARD_FIGHTER_SQUADRON"] = {
+			HUTT_CARTELS = {Initial = 1, Reserve = 2}
+		},
 		["TIE_INTERCEPTOR_SQUADRON"] = {
 			EMPIRE = {Initial = 1, Reserve = 2},
 			ERIADU_AUTHORITY = {Initial = 1, Reserve = 2, ResearchType = "~EATIEShields"},
@@ -22,6 +25,9 @@ return {
 		},
 		["MIYTIL_BOMBER_SQUADRON"] = {
 			HAPES_CONSORTIUM = {Initial = 1, Reserve = 2}
+		},
+		["KIMOGILA_SQUADRON"] = {
+			HUTT_CARTELS = {Initial = 1, Reserve = 2}
 		},
 		["TIE_BOMBER_SQUADRON"] = {
 			HOSTILE = {Initial = 1, Reserve = 2},

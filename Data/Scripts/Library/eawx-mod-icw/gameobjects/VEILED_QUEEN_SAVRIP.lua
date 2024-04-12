@@ -9,7 +9,7 @@ return {
 		["SKIRMISH_INTERCEPTOR_FRIGATE"] = {
 			DEFAULT = {Initial = 2, Reserve = 0}
 		},
-		["SKIRMISH_ZSINJ_CR90"] = {
+		["CHARGER_C70"] = {
 			DEFAULT = {Initial = 1, Reserve = 0}
 		}
 	},

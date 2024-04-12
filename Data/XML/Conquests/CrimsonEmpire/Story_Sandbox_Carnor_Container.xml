@@ -1,0 +1,412 @@
+<?xml version="1.0" ?>
+
+<Story>
+	
+	<Event Name="Universal_Story_Start">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>0</Event_Param1>
+	</Event>
+	
+	<Event Name="Delayed_Initialize">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>7</Event_Param1>
+	</Event>
+	
+	<Event Name="Reveal_All_Planets">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>REVEAL_ALL_PLANETS</Reward_Type>
+		<Prereq>Universal_Story_Start</Prereq>
+	</Event>
+  
+<!--******************************************************-->
+<!--***************	Faction Determiners	******************-->
+<!--******************************************************-->
+
+	<Event Name="Faction_Branch_Disabler_NewRep">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>0</Event_Param1>
+		<Reward_Type>DISABLE_BRANCH</Reward_Type>
+		<Reward_Param1>Faction_Branch_NewRep</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+	</Event>
+	
+	<Event Name="Faction_Branch_Disabler_Remnant">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>0</Event_Param1>
+		<Reward_Type>DISABLE_BRANCH</Reward_Type>
+		<Reward_Param1>Faction_Branch_Remnant</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+	</Event>
+	
+	<Event Name="Faction_Branch_Disabler_EotH">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>0</Event_Param1>
+		<Reward_Type>DISABLE_BRANCH</Reward_Type>
+		<Reward_Param1>Faction_Branch_EotH</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+	</Event>
+	
+	<Event Name="Faction_Branch_Disabler_Eriadu">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>0</Event_Param1>
+		<Reward_Type>DISABLE_BRANCH</Reward_Type>
+		<Reward_Param1>Faction_Branch_Eriadu</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+	</Event>
+	
+	<Event Name="Faction_Branch_Disabler_Zsinj">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>0</Event_Param1>
+		<Reward_Type>DISABLE_BRANCH</Reward_Type>
+		<Reward_Param1>Faction_Branch_Zsinj</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+	</Event>
+	
+	<Event Name="Faction_Branch_Disabler_Teradoc">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>0</Event_Param1>
+		<Reward_Type>DISABLE_BRANCH</Reward_Type>
+		<Reward_Param1>Faction_Branch_Teradoc</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+	</Event>
+	
+	<Event Name="Faction_Branch_Disabler_Pentastar">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>0</Event_Param1>
+		<Reward_Type>DISABLE_BRANCH</Reward_Type>
+		<Reward_Param1>Faction_Branch_Pentastar</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+	</Event>
+	
+	<Event Name="Faction_Branch_Disabler_Yevetha">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>0</Event_Param1>
+		<Reward_Type>DISABLE_BRANCH</Reward_Type>
+		<Reward_Param1>Faction_Branch_Yevetha</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+	</Event>
+	
+	<Event Name="Determine_Faction_LUA">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>0</Event_Param1>
+	</Event>
+	
+	
+	<Event Name="Faction_Branch_Enabler_NewRep">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>ENABLE_BRANCH_NEWREP_FLAG</Event_Param2>
+		<Reward_Type>DISABLE_BRANCH</Reward_Type>
+		<Reward_Param1>Faction_Branch_NewRep</Reward_Param1>
+		<Reward_Param2>0</Reward_Param2>
+	</Event>
+	
+	<Event Name="Faction_Branch_Enabler_Remnant">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>ENABLE_BRANCH_EMPIRE_FLAG</Event_Param2>
+		<Reward_Type>DISABLE_BRANCH</Reward_Type>
+		<Reward_Param1>Faction_Branch_Remnant</Reward_Param1>
+		<Reward_Param2>0</Reward_Param2>
+	</Event>
+	
+	<Event Name="Faction_Branch_Enabler_EotH">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>ENABLE_BRANCH_EOTH_FLAG</Event_Param2>
+		<Reward_Type>DISABLE_BRANCH</Reward_Type>
+		<Reward_Param1>Faction_Branch_EotH</Reward_Param1>
+		<Reward_Param2>0</Reward_Param2>
+	</Event>
+	
+	<Event Name="Faction_Branch_Enabler_Eriadu">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>ENABLE_BRANCH_ERIADU_FLAG</Event_Param2>
+		<Reward_Type>DISABLE_BRANCH</Reward_Type>
+		<Reward_Param1>Faction_Branch_Eriadu</Reward_Param1>
+		<Reward_Param2>0</Reward_Param2>
+	</Event>
+	
+	<Event Name="Faction_Branch_Enabler_Zsinj">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>ENABLE_BRANCH_ZSINJ_FLAG</Event_Param2>
+		<Reward_Type>DISABLE_BRANCH</Reward_Type>
+		<Reward_Param1>Faction_Branch_Zsinj</Reward_Param1>
+		<Reward_Param2>0</Reward_Param2>
+	</Event>
+	
+	<Event Name="Faction_Branch_Enabler_Teradoc">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>ENABLE_BRANCH_TERADOC_FLAG</Event_Param2>
+		<Reward_Type>DISABLE_BRANCH</Reward_Type>
+		<Reward_Param1>Faction_Branch_Teradoc</Reward_Param1>
+		<Reward_Param2>0</Reward_Param2>
+	</Event>
+	
+	<Event Name="Faction_Branch_Enabler_Pentastar">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>ENABLE_BRANCH_PENTASTAR_FLAG</Event_Param2>
+		<Reward_Type>DISABLE_BRANCH</Reward_Type>
+		<Reward_Param1>Faction_Branch_Pentastar</Reward_Param1>
+		<Reward_Param2>0</Reward_Param2>
+	</Event>	
+	
+	<Event Name="Faction_Branch_Enabler_Yevetha">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>ENABLE_BRANCH_YEVETHA_FLAG</Event_Param2>
+		<Reward_Type>DISABLE_BRANCH</Reward_Type>
+		<Reward_Param1>Faction_Branch_Yevetha</Reward_Param1>
+		<Reward_Param2>0</Reward_Param2>
+	</Event>
+	
+	  <!-- ==================== BEGIN SAVE CRASH RE-ENABLE EVENTS ==================== -->
+
+	<Event Name="Filter_AI_Challenge_Clicked">
+		<Event_Type>STORY_CLICK_GUI</Event_Type>
+		<Event_Param1>b_save_fixer</Event_Param1>
+		<Perpetual>true</Perpetual>
+	</Event>	
+		
+	<Event Name="Faction_Branch_Playing_NewRep">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+
+		<Reward_Type>DISABLE_BRANCH</Reward_Type>
+		<Reward_Param1>Faction_Branch_NewRep_Save</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+		<Prereq>Faction_Branch_Enabler_NewRep</Prereq>
+	</Event>
+	
+	
+	<Event Name="Faction_Branch_Playing_Remnant">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+
+		<Reward_Type>DISABLE_BRANCH</Reward_Type>
+		<Reward_Param1>Faction_Branch_Empire_Save</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+		<Prereq>Faction_Branch_Enabler_Remnant</Prereq>
+	</Event>
+	
+		
+	<Event Name="Faction_Branch_Playing_EotH">
+			<Event_Type>STORY_TRIGGER</Event_Type>
+
+		<Reward_Type>DISABLE_BRANCH</Reward_Type>
+		<Reward_Param1>Faction_Branch_EotH_Save</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+		<Prereq>Faction_Branch_Enabler_EotH</Prereq>
+	</Event>
+	
+	
+	<Event Name="Faction_Branch_Playing_Pentastar">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+
+		<Reward_Type>DISABLE_BRANCH</Reward_Type>
+		<Reward_Param1>Faction_Branch_Pentastar_Save</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+		<Prereq>Faction_Branch_Enabler_Pentastar</Prereq>
+	</Event>
+		
+	
+	<Event Name="Faction_Branch_Playing_Teradoc">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+
+		<Reward_Type>DISABLE_BRANCH</Reward_Type>
+		<Reward_Param1>Faction_Branch_Teradoc_Save</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+		<Prereq>Faction_Branch_Enabler_Teradoc</Prereq>
+	</Event>
+
+	
+	<Event Name="Faction_Branch_Playing_Zsinj">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+
+		<Reward_Type>DISABLE_BRANCH</Reward_Type>
+		<Reward_Param1>Faction_Branch_Zsinj_Save</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+		<Prereq>Faction_Branch_Enabler_Zsinj</Prereq>
+	</Event>
+	
+	<Event Name="Faction_Branch_Playing_Eriadu">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+
+		<Reward_Type>DISABLE_BRANCH</Reward_Type>
+		<Reward_Param1>Faction_Branch_Eriadu_Save</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+		<Prereq>Faction_Branch_Enabler_Eriadu</Prereq>
+	</Event>
+	
+	<Event Name="Faction_Branch_Playing_Corporate_Sector">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+
+		<Reward_Type>DISABLE_BRANCH</Reward_Type>
+		<Reward_Param1>Faction_Branch_Corporate_Sector_Save</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+		<Prereq>Faction_Branch_Enabler_Corporate_Sector</Prereq>
+	</Event>
+	
+	<!--***********************************************************-->
+	<!--***********************************************************-->
+	<!--******************* IMPERIAL STORYLINE ********************-->
+	<!--***********************************************************-->	
+	<!--***********************************************************-->	
+	
+	<Event Name="Intro_Welcome_Empire">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_CONQUEST_EVENT_IR_JAX_ERA</Reward_Param1>
+		<Reward_Param2>15</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6 />
+		<Reward_Param7 />
+		<Reward_Param8>Carnor_Intro_Speech</Reward_Param8>
+		<Reward_Param9>Carnor_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+		<Prereq>Faction_Branch_Enabler_Remnant</Prereq>
+		<Branch>Faction_Branch_Remnant</Branch>
+	</Event>
+	
+	<Event Name="Intro_Welcome_Empire_Dialog">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>15</Event_Param1>
+		<Story_Dialog>Dialog_Remnant_Crimson</Story_Dialog>
+		<Story_Chapter>0</Story_Chapter>
+		<Story_Tag>Main_Tag_Empire</Story_Tag>
+		<Prereq>Intro_Welcome_Empire</Prereq>
+		<Branch>Faction_Branch_Remnant</Branch>
+	</Event>
+ 
+	
+	<!--***********************************************************-->
+	<!--***********************************************************-->
+	<!--***************** New Republic Storyline ******************-->
+	<!--***********************************************************-->	
+	<!--***********************************************************-->	
+	
+	<Event Name="Intro_Welcome_NewRep">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_CONQUEST_CARNOR_NR_INTRO_LEIA</Reward_Param1>
+		<Reward_Param2>15</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6 />
+		<Reward_Param7 />
+		<Reward_Param8></Reward_Param8>
+		<Reward_Param9>Leia_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+		<Prereq>Faction_Branch_Enabler_NewRep</Prereq>
+		<Branch>Faction_Branch_NewRep</Branch>
+	</Event>
+	
+	<Event Name="Intro_Welcome_NewRep_Dialog">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>15</Event_Param1>
+		<Story_Dialog>Dialog_NewRep_Crimson</Story_Dialog>
+		<Story_Chapter>0</Story_Chapter>
+		<Story_Tag>Main_Tag</Story_Tag>
+		<Prereq>Intro_Welcome_NewRep</Prereq>
+		<Branch>Faction_Branch_Newrep</Branch>
+	</Event>
+	
+	<!--***********************************************************-->
+	<!--***********************************************************-->
+	<!--***************** Pentastar Alignment Story ******************-->
+	<!--***********************************************************-->	
+	<!--***********************************************************-->	
+
+	<Event Name="Intro_Welcome_Pentastar">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>0</Event_Param1>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_CONQUEST_CARNOR_PA_INTRO_ONE</Reward_Param1>
+		<Reward_Param2>22</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6 />
+		<Reward_Param7 />
+		<Reward_Param8></Reward_Param8>
+		<Reward_Param9>Imperial_Naval_Officer_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+		<Prereq>Faction_Branch_Enabler_Pentastar</Prereq>
+		<Branch>Faction_Branch_Pentastar</Branch>
+	</Event>
+  
+	<Event Name="Pentastar_Welcome_Dialog">
+		<Event_Type>STORY_GENERIC</Event_Type>
+		<Event_Param1>CLICK</Event_Param1>
+		<Story_Dialog>Dialog_PSA_Carnor</Story_Dialog>
+		<Story_Chapter>0</Story_Chapter>
+		<Story_Tag>Main_Tag</Story_Tag>
+		<Prereq>Intro_Welcome_Pentastar</Prereq>
+		<Branch>Faction_Branch_Pentastar</Branch>
+	</Event>
+	
+
+	<!--***********************************************************-->
+	<!--***********************************************************-->
+	<!--***************** Eriadu Authority Story ******************-->
+	<!--***********************************************************-->	
+	<!--***********************************************************-->	
+	
+	<Event Name="Intro_Welcome_Eriadu">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_CONQUEST_ERIADU_CARNOR_INTRO</Reward_Param1>
+		<Reward_Param2>15</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6 />
+		<Reward_Param7 />
+		<Reward_Param8>Mothma_Intro_Speech</Reward_Param8>
+		<Reward_Param9>Delvardus_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+		<Prereq>Faction_Branch_Enabler_Eriadu</Prereq>
+		<Branch>Faction_Branch_Eriadu</Branch>
+	</Event>
+	
+	<Event Name="Intro_Welcome_Eriadu_Dialog">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>15</Event_Param1>
+		<Story_Dialog>Dialog_Eriadu_Carnor</Story_Dialog>
+		<Story_Chapter>0</Story_Chapter>
+		<Story_Tag>Main_Tag</Story_Tag>
+		<Prereq>Intro_Welcome_Eriadu</Prereq>
+		<Branch>Faction_Branch_Eriadu</Branch>
+	</Event>
+	
+	<!--***********************************************************-->
+	<!--***********************************************************-->
+	<!--***************** Greater Maldrood Story ******************-->
+	<!--***********************************************************-->	
+	<!--***********************************************************-->	
+	
+	<Event Name="Intro_Welcome_Teradoc">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_CONQUEST_MALDROOD_CARNOR_INTRO</Reward_Param1>
+		<Reward_Param2>15</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6 />
+		<Reward_Param7 />
+		<Reward_Param8>Teradoc_Intro_Speech</Reward_Param8>
+		<Reward_Param9>Treuten_Teradoc_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+		<Prereq>Faction_Branch_Enabler_Teradoc</Prereq>
+		<Branch>Faction_Branch_Teradoc</Branch>
+	</Event>
+	
+	<Event Name="Intro_Welcome_Teradoc_Dialog">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>15</Event_Param1>
+		<Story_Dialog>Dialog_Maldrood_Carnor</Story_Dialog>
+		<Story_Chapter>0</Story_Chapter>
+		<Story_Tag>Main_Tag</Story_Tag>
+		<Prereq>Intro_Welcome_Teradoc</Prereq>
+		<Branch>Faction_Branch_Teradoc</Branch>
+	</Event>
+
+</Story>

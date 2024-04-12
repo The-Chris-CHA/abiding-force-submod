@@ -59,6 +59,12 @@ function Begin_Battle(message)
 		eriadu = Find_Player("Eriadu_Authority")
 		csa = Find_Player("Corporate_Sector")
 		hapans = Find_Player("Hapes_Consortium")
+		hutts = Find_Player("Hutt_Cartels")
+		corellians = Find_Player("Corellia")
+		chiss = Find_Player("Chiss")
+		yevetha = Find_Player("Yevetha")
+		ssi = Find_Player("SsiRuuvi_Imperium")
+		killiks = Find_Player("Killik_Hives")
 		hostile = Find_Player("Hostile")
 		pirates = Find_Player("Warlords")
 			
@@ -72,6 +78,12 @@ function Begin_Battle(message)
 		eriadu.Make_Ally(pirates)
 		csa.Make_Ally(pirates)
 		hapans.Make_Ally(pirates)
+		hutts.Make_Ally(pirates)
+		corellians.Make_Ally(pirates)
+		chiss.Make_Ally(pirates)
+		yevetha.Make_Ally(pirates)
+		ssi.Make_Ally(pirates)
+		killiks.Make_Ally(pirates)
 		
 		pirates.Make_Ally(empire)
 		pirates.Make_Ally(rebels)
@@ -83,6 +95,12 @@ function Begin_Battle(message)
 		pirates.Make_Ally(eriadu)
 		pirates.Make_Ally(csa)
 		pirates.Make_Ally(hapans)
+		pirates.Make_Ally(hutts)
+		pirates.Make_Ally(corellians)
+		pirates.Make_Ally(chiss)
+		pirates.Make_Ally(yevetha)
+		pirates.Make_Ally(ssi)
+		pirates.Make_Ally(killiks)
 		
 		entry_marker = Find_First_Object("Attacker Entry Position")
 		defender_marker = Find_First_Object("Defending Forces Position")
@@ -162,6 +180,48 @@ function Begin_Battle(message)
 			start_speech_trigger = "START_SPEECH_HAPES"
 			end_speech_trigger = "END_SPEECH_HAPES"
 			Reinforce_List = imp_reinforce
+		elseif hutts.Is_Human() then
+			player_list = reb_boarders
+			enemy_list = reb_enemy
+			player = hutts
+			start_speech_trigger = "START_SPEECH_HUTTS"
+			end_speech_trigger = "END_SPEECH_HUTTS"
+			Reinforce_List = reb_reinforce
+		elseif corellians.Is_Human() then
+			player_list = reb_boarders
+			enemy_list = imp_enemy
+			player = corellians
+			start_speech_trigger = "START_SPEECH_CORELLIA"
+			end_speech_trigger = "END_SPEECH_CORELLIA"
+			Reinforce_List = imp_reinforce
+		elseif chiss.Is_Human() then
+			player_list = imp_boarders
+			enemy_list = reb_enemy
+			player = chiss
+			start_speech_trigger = "START_SPEECH_CHISS"
+			end_speech_trigger = "END_SPEECH_CHISS"
+			Reinforce_List = reb_reinforce
+		elseif yevetha.Is_Human() then
+			player_list = imp_boarders
+			enemy_list = reb_enemy
+			player = yevetha
+			start_speech_trigger = "START_SPEECH_YEVETHA"
+			end_speech_trigger = "END_SPEECH_YEVETHA"
+			Reinforce_List = reb_reinforce
+		elseif ssi.Is_Human() then
+			player_list = reb_boarders
+			enemy_list = imp_enemy
+			player = ssi
+			start_speech_trigger = "START_SPEECH_SSI"
+			end_speech_trigger = "END_SPEECH_SSI"
+			Reinforce_List = imp_reinforce
+		elseif killiks.Is_Human() then
+			player_list = reb_boarders
+			enemy_list = imp_enemy
+			player = killiks
+			start_speech_trigger = "START_SPEECH_KILLIK"
+			end_speech_trigger = "END_SPEECH_KILLIK"
+			Reinforce_List = imp_reinforce
 		end
 		
 		plot = Get_Story_Plot("Tactical_Katana.XML")
@@ -192,6 +252,18 @@ function Begin_Battle(message)
 				Story_Event("CSA_LOSE")
 			elseif table.getn(Find_All_Objects_Of_Type(hapans)) > 0 then
 				Story_Event("HAPES_LOSE")
+			elseif table.getn(Find_All_Objects_Of_Type(hutts)) > 0 then
+				Story_Event("HUTTS_LOSE")
+			elseif table.getn(Find_All_Objects_Of_Type(corellians)) > 0 then
+				Story_Event("CORELLIANS_LOSE")
+			elseif table.getn(Find_All_Objects_Of_Type(chiss)) > 0 then
+				Story_Event("CHISS_LOSE")
+			elseif table.getn(Find_All_Objects_Of_Type(yevetha)) > 0 then
+				Story_Event("YEVETHA_LOSE")
+			elseif table.getn(Find_All_Objects_Of_Type(ssi)) > 0 then
+				Story_Event("SSIRUUVI_LOSE")
+			elseif table.getn(Find_All_Objects_Of_Type(killiks)) > 0 then
+				Story_Event("KILLIKS_LOSE")
 			else --failback, which kills the fleet and doesn't give them the bonus dreadnaughts
 				Story_Event("GENERIC_LOSE")
 			end

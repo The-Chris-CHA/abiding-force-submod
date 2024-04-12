@@ -9,7 +9,7 @@ function Definitions()
 	{
 		"MainForce"					
 		,"TaskForceRequired"
-		,"UC_Empire_Field_Support_Base | UC_Rebel_Field_Support_Base | UC_Teradoc_Field_Support_Base | UC_Zsinj_Field_Support_Base | UC_EotH_Field_Support_Base | UC_Corporate_Sector_Field_Support_Base | UC_Eriadu_Field_Support_Base | UC_Pentastar_Field_Support_Base | UC_Hapes_Field_Maluri_Base = 1"
+		,"UC_Empire_Field_Support_Base | UC_Rebel_Field_Support_Base | UC_Teradoc_Field_Support_Base | UC_Zsinj_Field_Support_Base | UC_EotH_Field_Support_Base | UC_Corporate_Sector_Field_Support_Base | UC_Eriadu_Field_Support_Base | UC_Pentastar_Field_Support_Base | UC_Hapes_Field_Maluri_Base | UC_Hutt_Cartels_Field_Support_Base = 1"
 	}
 	}
 

@@ -2,8 +2,11 @@ require("deepcore/std/class")
 require("eawx-events/GenericResearch")
 require("eawx-events/GenericSwap")
 require("eawx-events/GenericConquer")
+require("eawx-events/GenericPopup")
+require("eawx-events/FelChildren")
 require("eawx-events/TerrikUpgrade")
 require("eawx-events/PentastarTalks")
+StoryUtil = require("eawx-util/StoryUtil")
 
 
 ---@class EventManager
@@ -40,12 +43,13 @@ function EventManager:new(galactic_conquest, human_player, planets)
         "NZOTH", {},
         {"EX_F"}, false)
 
+    self.FelChildren = FelChildren(self.galactic_conquest)
+
     self.VentureUpgrade = VentureUpgrade(self.galactic_conquest)
 
     self.PentastarTalks = PentastarTalks(self.galactic_conquest)
     self.PentastarTalksFulfilled = false
-
-
+    -- self.RedBaronFired = false
 end
 
 function EventManager:update()
@@ -58,6 +62,23 @@ function EventManager:update()
             self.PentastarTalks:fulfill()
             self.PentastarTalksFulfilled = true
         end
+	-- elseif (self.current_time >= 2) and (self.RedBaronFired == false) then
+		-- -- GC, planets
+		-- -- Tag, Options, Planets
+		-- -- Player_List_Input, Spawn_List_Input,
+		-- --	Show_Holocron_List_Input, Movie_Name_List_Input,
+		-- --	Unlock_List_Input, Lock_List_Input,
+		-- --	Event_Enabled_List_Input, Tactical_Upgrades_List_Input,
+		-- --	Xml_Events_List_Input
+		-- self.Active_Planets = StoryUtil.GetSafePlanetTable()
+		-- self.RedBaron = GenericPopup(self.galactic_conquest, self.Active_Planets,
+			-- "THE_RED_BARON", {"EXECUTE", "EXILE", "INDOCTRINATE"}, {"CORUSCANT", "ANAXES", "CARIDA"},
+			-- {"EMPIRE", "EMPIRE", "EMPIRE"}, {{"Pestage_Team"},{"Ysanne_Isard_Team"},{"Thrawn_Chimaera"}},
+			-- Show_Holocron_List_Input, Movie_Name_List_Input,
+			-- Unlock_List_Input, Lock_List_Input,
+			-- Event_Enabled_List_Input, Tactical_Upgrades_List_Input,
+			-- Xml_Events_List_Input)
+		-- self.RedBaronFired = true
     end
 
 end

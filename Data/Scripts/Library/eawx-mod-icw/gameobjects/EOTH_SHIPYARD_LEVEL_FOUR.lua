@@ -1,9 +1,9 @@
 return {
 	Fighters = {
-		["CLAWCRAFT_SQUADRON"] = {
+		["NSSIS_SQUADRON"] = {
 			DEFAULT = {Initial = 3, Reserve = 99}
 		},
-		["KRSISS_INTERCEPTOR_SQUADRON"] = {
+		["KRSSIS_INTERCEPTOR_SQUADRON"] = {
 			DEFAULT = {Initial = 3, Reserve = 6}
 		},
 		["SYCA_BOMBER_SQUADRON_DOUBLE"] = {
@@ -21,7 +21,7 @@ return {
 		["SKIRMISH_CHISS_STAR_DESTROYER"] = {
 			DEFAULT = {Initial = 1, Reserve = 0}
 		},
-		["SKIRMISH_SYNDIC"] = {
+		["SKIRMISH_SYNDIC_DESTROYER"] = {
 			DEFAULT = {Initial =1, Reserve = 0}
 		}
 	},

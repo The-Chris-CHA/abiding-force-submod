@@ -1,22 +1,30 @@
 <?xml version="1.0"?>
 <GroundBuildables>
-
 	<!-- ========================================= -->
 	<!-- GROUND-BASED TACTICAL BUILD PADS - REBEL  -->
 	<!-- ========================================= -->
 
 	<GroundBuildable Name="Rebel_Build_Pad">
-
 		<Behavior> TACTICAL_BUILD_OBJECTS, REVEAL, HIDE_WHEN_FOGGED </Behavior>
 		
 		<!-- This is a list of the buildable objects at this pad (defined below) - that will be under construction -->
-		<Tactical_Buildable_Objects_Campaign> Rebel, UC_Rebel_Buildable_Anti_Vehicle_Turret, UC_Rebel_Buildable_Anti_Infantry_Turret, UC_Rebel_Buildable_Anti_Aircraft_Turret, UC_Buildable_Bacta_Tank, UC_Buildable_Repair_Facility, UC_Buildable_Sensor_Node,
+		<Tactical_Buildable_Objects_Campaign> 
+			Rebel, 
+				UC_Rebel_Buildable_Anti_Vehicle_Turret, 
+				UC_Rebel_Buildable_Anti_Infantry_Turret, 
+				UC_Rebel_Buildable_Anti_Aircraft_Turret, 
+				UC_Buildable_Bacta_Tank, 
+				UC_Buildable_Repair_Facility, 
+				UC_Buildable_Sensor_Node
 		</Tactical_Buildable_Objects_Campaign>
 		<Tactical_Buildable_Objects_Multiplayer> 
 			Rebel, 
-				UC_Rebel_Buildable_Anti_Vehicle_Turret, UC_Rebel_Buildable_Anti_Infantry_Turret, UC_Rebel_Buildable_Anti_Aircraft_Turret, UC_Buildable_Bacta_Tank, UC_Buildable_Repair_Facility, UC_Buildable_Sensor_Node,
-			Hapes_Consortium, 
-				UC_Rebel_Buildable_Anti_Vehicle_Turret, UC_Rebel_Buildable_Anti_Infantry_Turret, UC_Rebel_Buildable_Anti_Aircraft_Turret, UC_Buildable_Bacta_Tank, UC_Buildable_Repair_Facility, UC_Buildable_Sensor_Node,
+				UC_Rebel_Buildable_Anti_Vehicle_Turret, 
+				UC_Rebel_Buildable_Anti_Infantry_Turret, 
+				UC_Rebel_Buildable_Anti_Aircraft_Turret, 
+				UC_Buildable_Bacta_Tank, 
+				UC_Buildable_Repair_Facility, 
+				UC_Buildable_Sensor_Node
 		</Tactical_Buildable_Objects_Multiplayer>
 
 		<Text_ID> TEXT_BUILD_PAD </Text_ID>
@@ -35,9 +43,8 @@
 		<Respects_Skirmish_Pre_Build_Bases_Option> false </Respects_Skirmish_Pre_Build_Bases_Option>
 		
 		<Scale_Factor> 1.0 </Scale_Factor>
-		<Shield_Points> 0 </Shield_Points>
 		<Tactical_Health> 10000 </Tactical_Health>
-		<Affiliation> Rebel, Hapes_Consortium </Affiliation>
+		<Affiliation>Empire, Greater_Maldrood, Eriadu_Authority, Zsinj_Empire, Corporate_Sector, Pentastar, Warlords, Corellia, Rebel, Hapes_Consortium, Hutt_Cartels, SsiRuuvi_Imperium, Killik_Hives, EmpireoftheHand, Chiss</Affiliation>
 		<Base_Level_Available> 1 </Base_Level_Available>
 		<Required_Ground_Base_Level> 0 </Required_Ground_Base_Level>
 		<Reveal_During_Setup_Phase> False </Reveal_During_Setup_Phase>
@@ -47,9 +54,6 @@
 		<No_Reflection_Below_Detail_Level> 1 </No_Reflection_Below_Detail_Level>
 		<No_Refraction_Below_Detail_Level> 1 </No_Refraction_Below_Detail_Level>
 		<CategoryMask> Structure </CategoryMask>
-		<GUI_Bracket_Width> 20 </GUI_Bracket_Width>
-		<GUI_Bracket_Height> 0 </GUI_Bracket_Height>
-		<GUI_Bracket_Size> 1 </GUI_Bracket_Size> 
 		<Has_Land_Evaluator>True</Has_Land_Evaluator>
 
 		<Influences_Capture_Point> False </Influences_Capture_Point>
@@ -57,65 +61,88 @@
 		<Visible_To_Enemies_When_Empty>True</Visible_To_Enemies_When_Empty>
 		<Immune_To_Damage>True</Immune_To_Damage>
 		<Minimum_Time_Before_Pad_Can_Build_Again> 15 </Minimum_Time_Before_Pad_Can_Build_Again>
-
 	</GroundBuildable>
 	
 	<GroundBuildable Name="Rebel_Build_Pad_Offensive">
-
 		<Variant_Of_Existing_Type> Rebel_Build_Pad </Variant_Of_Existing_Type>
 
 		<!-- This is a list of the buildable objects at this pad (defined below) - that will be under construction -->
-		<Tactical_Buildable_Objects_Campaign> Rebel, UC_Rebel_Buildable_Anti_Vehicle_Turret, UC_Rebel_Buildable_Anti_Infantry_Turret, UC_Rebel_Buildable_Anti_Aircraft_Turret,
+		<Tactical_Buildable_Objects_Campaign> 
+			Rebel, 
+				UC_Rebel_Buildable_Anti_Vehicle_Turret,
+				UC_Rebel_Buildable_Anti_Infantry_Turret,
+				UC_Rebel_Buildable_Anti_Aircraft_Turret
 		</Tactical_Buildable_Objects_Campaign>
 		<Tactical_Buildable_Objects_Multiplayer> 
 			Rebel, 
-				UC_Rebel_Buildable_Anti_Vehicle_Turret, UC_Rebel_Buildable_Anti_Infantry_Turret, UC_Rebel_Buildable_Anti_Aircraft_Turret, 
-			Hapes_Consortium, 
-				UC_Rebel_Buildable_Anti_Vehicle_Turret, UC_Rebel_Buildable_Anti_Infantry_Turret, UC_Rebel_Buildable_Anti_Aircraft_Turret, 
-		
+				UC_Rebel_Buildable_Anti_Vehicle_Turret,
+				UC_Rebel_Buildable_Anti_Infantry_Turret,
+				UC_Rebel_Buildable_Anti_Aircraft_Turret
 		</Tactical_Buildable_Objects_Multiplayer>
-
 	</GroundBuildable>
 	
 	<GroundBuildable Name="Rebel_Build_Pad_Defensive">
-
 		<Variant_Of_Existing_Type> Rebel_Build_Pad </Variant_Of_Existing_Type>
 
 		<!-- This is a list of the buildable objects at this pad (defined below) - that will be under construction -->
-		<Tactical_Buildable_Objects_Campaign> Rebel, UC_Buildable_Bacta_Tank, UC_Buildable_Repair_Facility, UC_Buildable_Sensor_Node,
-		</Tactical_Buildable_Objects_Campaign>
-		<Tactical_Buildable_Objects_Multiplayer>
+		<Tactical_Buildable_Objects_Campaign> 
 			Rebel, 
-				UC_Buildable_Bacta_Tank, UC_Buildable_Repair_Facility, UC_Buildable_Sensor_Node,
-			Hapes_Consortium, 
-				UC_Buildable_Bacta_Tank, UC_Buildable_Repair_Facility, UC_Buildable_Sensor_Node,
+				UC_Buildable_Bacta_Tank,
+				UC_Buildable_Repair_Facility,
+				UC_Buildable_Sensor_Node
+		</Tactical_Buildable_Objects_Campaign>
+		<Tactical_Buildable_Objects_Multiplayer> 
+			Rebel, 
+				UC_Buildable_Bacta_Tank,
+				UC_Buildable_Repair_Facility,
+				UC_Buildable_Sensor_Node
 		</Tactical_Buildable_Objects_Multiplayer>
-
 	</GroundBuildable>
-	
-	<GroundBuildable Name="Rebel_Build_Pad_M1">
 
+	<GroundBuildable Name="Rebel_Build_Pad_M1">
 		<Variant_Of_Existing_Type> Rebel_Build_Pad </Variant_Of_Existing_Type>
 		
 		<!-- This is a list of the buildable objects at this pad (defined below) - that will be under construction -->
-		<Tactical_Buildable_Objects_Campaign> Rebel, UC_Rebel_Buildable_Anti_Vehicle_Turret, UC_Rebel_Buildable_Anti_Infantry_Turret </Tactical_Buildable_Objects_Campaign>
+		<Tactical_Buildable_Objects_Campaign> 
+			Rebel, 
+				UC_Rebel_Buildable_Anti_Vehicle_Turret, 
+				UC_Rebel_Buildable_Anti_Infantry_Turret 
+		</Tactical_Buildable_Objects_Campaign>
 		<Tactical_Buildable_Objects_Multiplayer> 
 			Rebel, 
-				UC_Rebel_Buildable_Anti_Vehicle_Turret, UC_Rebel_Buildable_Anti_Infantry_Turret,
-			Hapes_Consortium, 
-				UC_Rebel_Buildable_Anti_Vehicle_Turret, UC_Rebel_Buildable_Anti_Infantry_Turret 
+				UC_Rebel_Buildable_Anti_Vehicle_Turret,
+				UC_Rebel_Buildable_Anti_Infantry_Turret
 		</Tactical_Buildable_Objects_Multiplayer>
 
 		<Visible_To_Enemies_When_Empty> false </Visible_To_Enemies_When_Empty>
-		
+	</GroundBuildable>
+
+	<!--jdg this guy is used in Tutorial 01-->		
+	<GroundBuildable Name="Rebel_Build_Pad_Bacta">
+		<Variant_Of_Existing_Type>Rebel_Build_Pad</Variant_Of_Existing_Type>
+
+		<Tactical_Buildable_Objects_Campaign> 
+			Rebel,
+				UC_Buildable_Bacta_Tank
+		</Tactical_Buildable_Objects_Campaign>
 	</GroundBuildable>
 	
+	<!--jdg this guy is used in Tutorial 01-->
+	<GroundBuildable Name="Rebel_Build_Pad_AITurret">
+		<Variant_Of_Existing_Type>Rebel_Build_Pad</Variant_Of_Existing_Type>
+
+		<Tactical_Buildable_Objects_Campaign> 
+			Rebel,
+				UC_Rebel_Buildable_Anti_Infantry_Turret
+		</Tactical_Buildable_Objects_Campaign>
+	</GroundBuildable>
+
+
 	<!-- =========================================================================== -->
 	<!-- UNDER CONSTRUCTION GROUND-BASED BUILDABLE TACTICAL BASE STRUCTURES - REBEL  -->
 	<!-- =========================================================================== -->
 
 	<GroundBuildable Name="UC_Rebel_Buildable_Abstract_Type">
-
 		<!-- NOTE: TACTICAL_UNDER_CONSTRUCTION does not work as a Land_Behavior, since the type->Behaves_Like() fails for some reason when it should not - need to fix -->
 		<Behavior> TACTICAL_UNDER_CONSTRUCTION, SELECTABLE, REVEAL, HIDE_WHEN_FOGGED </Behavior>
 		<LandBehavior> EARTHQUAKE_TARGET </LandBehavior>
@@ -125,7 +152,7 @@
 
 		<Loop_Idle_Anim_00> No </Loop_Idle_Anim_00>
 		<Collidable_By_Projectile_Living> Yes </Collidable_By_Projectile_Living>
-		<Death_Explosions>Large_Explosion_Land</Death_Explosions>
+		<Death_Explosions>Medium_Explosion_Land</Death_Explosions>
 		<Death_SFXEvent_Start_Die> Unit_Generic_Building_Death_SFX </Death_SFXEvent_Start_Die>
 		<Ranged_Target_Z_Adjust> 10.0 </Ranged_Target_Z_Adjust>
 		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
@@ -141,8 +168,7 @@
 		<Custom_Hard_XExtent> 10.0 </Custom_Hard_XExtent>
 		<Custom_Hard_YExtent> 10.0 </Custom_Hard_YExtent>
 				
-		<Scale_Factor> 1.00 </Scale_Factor>
-		<Shield_Points> 0 </Shield_Points>
+		<Scale_Factor> 1.0 </Scale_Factor>
 		<Affiliation> Rebel, Hapes_Consortium </Affiliation>
 		<Base_Level_Available> 1 </Base_Level_Available>
 		<Required_Ground_Base_Level> 1 </Required_Ground_Base_Level>
@@ -152,51 +178,44 @@
 		<No_Reflection_Below_Detail_Level> 1 </No_Reflection_Below_Detail_Level>
 		<No_Refraction_Below_Detail_Level> 1 </No_Refraction_Below_Detail_Level>
 		<CategoryMask> Structure </CategoryMask>
-		<GUI_Bracket_Width> 20 </GUI_Bracket_Width>
-		<GUI_Bracket_Height> 0 </GUI_Bracket_Height>
-		<GUI_Bracket_Size> 0 </GUI_Bracket_Size> 
+		<GUI_Bracket_Size>0</GUI_Bracket_Size> 
 		<Influences_Capture_Point> False </Influences_Capture_Point>
-		
+
+		<Override_Bounty_SP>0</Override_Bounty_SP>
+		<Override_Bounty_MP>0</Override_Bounty_MP>
 	</GroundBuildable>
 
 	<GroundBuildable Name="UC_Rebel_Buildable_Anti_Aircraft_Turret">
-
 		<Variant_Of_Existing_Type> UC_Rebel_Buildable_Abstract_Type </Variant_Of_Existing_Type>
 
-		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_TURRET</Encyclopedia_Unit_Class>
+		<Text_ID> TEXT_STRUCTURE_BUILD_PAD_TURRET_AA </Text_ID>
 		<Encyclopedia_Text>
 		TEXT_TOOLTIP_AA_TURRET
 		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
 		TEXT_TOOLTIP_AA_HEALTH
 		TEXT_TOOLTIP_AA_WEAP1
 		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_TURRET</Encyclopedia_Unit_Class>
+		<Icon_Name>i_button_r_anti_aircraft.tga</Icon_Name>
 
-		<Tactical_Buildable_Constructed> Rebel_Anti_Aircraft_Turret </Tactical_Buildable_Constructed>		<!-- Defined in GroundTurrets.xml -->
+		<Tactical_Buildable_Constructed> Rebel_Anti_Aircraft_Turret </Tactical_Buildable_Constructed>
 		<Tactical_Build_Cost_Multiplayer> 800 </Tactical_Build_Cost_Multiplayer>
 		<Tactical_Build_Cost_Campaign>150</Tactical_Build_Cost_Campaign>
 		<Tactical_Build_Time_Seconds> 20 </Tactical_Build_Time_Seconds>
 		<Tactical_Build_Start_Lower_Z> 0 </Tactical_Build_Start_Lower_Z>
 		<Tactical_Health> 175 </Tactical_Health>
 
-		<Text_ID> TEXT_STRUCTURE_TURRET_AA_UC </Text_ID>
 		<Land_Model_Name> RB_AA-TURRET.ALO </Land_Model_Name>
 		<Scale_Factor>0.95</Scale_Factor>
 
 		<SFXEvent_Build_Started>RHD_Turret_Build</SFXEvent_Build_Started>
 		<SFXEvent_Select>Structure_Turret_Select_SFX</SFXEvent_Select>
-
-		<Armor_Type> ArmourG_Structure </Armor_Type>
-
-		<Icon_Name>i_button_r_anti_aircraft.tga</Icon_Name>
-
 	</GroundBuildable>
 
-
 	<GroundBuildable Name="UC_Rebel_Buildable_Anti_Infantry_Turret">
-
 		<Variant_Of_Existing_Type> UC_Rebel_Buildable_Abstract_Type </Variant_Of_Existing_Type>
 
-		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_TURRET</Encyclopedia_Unit_Class>
+		<Text_ID> TEXT_STRUCTURE_BUILD_PAD_TURRET_AI </Text_ID>
 		<Encyclopedia_Text>
 		TEXT_TOOLTIP_AI_TURRET
 		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
@@ -204,6 +223,8 @@
 		TEXT_TOOLTIP_AI_SHIELD
 		TEXT_TOOLTIP_AI_WEAP1
 		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_TURRET</Encyclopedia_Unit_Class>
+		<Icon_Name>i_button_r_anti_infantry.tga</Icon_Name>
 
 		<Tactical_Buildable_Constructed> Rebel_Anti_Infantry_Turret </Tactical_Buildable_Constructed>		<!-- Defined in GroundTurrets.xml -->
 		<Tactical_Build_Cost_Multiplayer> 700 </Tactical_Build_Cost_Multiplayer>
@@ -212,34 +233,26 @@
 		<Tactical_Build_Start_Lower_Z> 0 </Tactical_Build_Start_Lower_Z>
 		<Tactical_Health> 150 </Tactical_Health>
 
-		<Text_ID> TEXT_STRUCTURE_TURRET_AI_UC </Text_ID>
 		<Land_Model_Name> RB_TURRET.ALO </Land_Model_Name>
 
 		<Scale_Factor> 1.30 </Scale_Factor>
 
 		<SFXEvent_Build_Started>RHD_Turret_Build</SFXEvent_Build_Started>
 		<SFXEvent_Select>Structure_Turret_Select_SFX</SFXEvent_Select>
-
-		<Death_Explosions>Medium_Explosion_Land</Death_Explosions>
-
-		<Armor_Type> ArmourG_Structure </Armor_Type>
-
-		<Icon_Name>i_button_r_anti_infantry.tga</Icon_Name>
-
 	</GroundBuildable>
 
-
 	<GroundBuildable Name="UC_Rebel_Buildable_Anti_Vehicle_Turret">
-
 		<Variant_Of_Existing_Type> UC_Rebel_Buildable_Abstract_Type </Variant_Of_Existing_Type>
 
-		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_TURRET</Encyclopedia_Unit_Class>
+		<Text_ID> TEXT_STRUCTURE_BUILD_PAD_TURRET_AV </Text_ID>
 		<Encyclopedia_Text>
 		TEXT_TOOLTIP_AV_TURRET
 		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
 		TEXT_TOOLTIP_AV_HEALTH
 		TEXT_TOOLTIP_AV_WEAP1
 		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_TURRET</Encyclopedia_Unit_Class>
+		<Icon_Name>i_button_r_anti_vehicle.tga</Icon_Name>
 
 		<Tactical_Buildable_Constructed> Rebel_Anti_Vehicle_Turret </Tactical_Buildable_Constructed>		<!-- Defined in GroundTurrets.xml -->
 		<Tactical_Build_Cost_Multiplayer> 850 </Tactical_Build_Cost_Multiplayer>
@@ -248,44 +261,38 @@
 		<Tactical_Build_Start_Lower_Z> 0 </Tactical_Build_Start_Lower_Z>
 		<Tactical_Health> 200 </Tactical_Health>
 
-		<Text_ID> TEXT_STRUCTURE_TURRET_AV_UC </Text_ID>
 		<Land_Model_Name> RB_VEHICLETURRET.ALO </Land_Model_Name>
 
 		<SFXEvent_Build_Started>RHD_Turret_Build</SFXEvent_Build_Started>
 		<SFXEvent_Select>Structure_Turret_Select_SFX</SFXEvent_Select>
-
-		<Death_Explosions>Medium_Explosion_Land</Death_Explosions>
-
-		<Armor_Type> ArmourG_Structure </Armor_Type>
-
-		<Radar_Icon_Size>0.05  0.05</Radar_Icon_Size>
-		<Icon_Name>i_button_r_anti_vehicle.tga</Icon_Name>
-
-	</GroundBuildable>
-	
-<!--************************************************************************************************************-->	
-	<!--jdg this guy is used in Tutorial 01-->		
-	<GroundBuildable Name="Rebel_Build_Pad_Bacta">
-		<Variant_Of_Existing_Type>Rebel_Build_Pad</Variant_Of_Existing_Type>
-		<Tactical_Buildable_Objects_Campaign> 
-			Rebel,
-				UC_Buildable_Bacta_Tank
-		</Tactical_Buildable_Objects_Campaign>
-	</GroundBuildable>
-	
-<!--************************************************************************************************************-->	
-	<!--jdg this guy is used in Tutorial 01-->
-	<GroundBuildable Name="Rebel_Build_Pad_AITurret">
-		<Variant_Of_Existing_Type>Rebel_Build_Pad</Variant_Of_Existing_Type>
-		<Tactical_Buildable_Objects_Campaign> 
-			Rebel,
-				UC_Rebel_Buildable_Anti_Infantry_Turret
-		</Tactical_Buildable_Objects_Campaign>
 	</GroundBuildable>
 
-<!--************************************************************************************************************-->	
 
+<!-- TR-MB Variants for price and abilities  -->
+	<GroundBuildable Name="UC_Rebel_Buildable_Anti_Aircraft_Turret_TRMB">
+		<Variant_Of_Existing_Type> UC_Rebel_Buildable_Anti_Aircraft_Turret </Variant_Of_Existing_Type>
 
+		<Tactical_Build_Cost_Multiplayer> 5 </Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Cost_Campaign> 2 </Tactical_Build_Cost_Campaign>
+		<Tactical_Build_Time_Seconds> 10 </Tactical_Build_Time_Seconds>
+		<Tactical_Buildable_Constructed> Rebel_Anti_Aircraft_Turret_TRMB </Tactical_Buildable_Constructed>	
+	</GroundBuildable>
+
+	<GroundBuildable Name="UC_Rebel_Buildable_Anti_Infantry_Turret_TRMB">
+		<Variant_Of_Existing_Type> UC_Rebel_Buildable_Anti_Infantry_Turret </Variant_Of_Existing_Type>
+
+		<Tactical_Build_Cost_Multiplayer> 5 </Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Cost_Campaign> 2 </Tactical_Build_Cost_Campaign>
+		<Tactical_Build_Time_Seconds> 10 </Tactical_Build_Time_Seconds>
+		<Tactical_Buildable_Constructed> Rebel_Anti_Infantry_Turret_TRMB </Tactical_Buildable_Constructed>	
+	</GroundBuildable>
+
+	<GroundBuildable Name="UC_Rebel_Buildable_Anti_Vehicle_Turret_TRMB">
+		<Variant_Of_Existing_Type> UC_Rebel_Buildable_Anti_Vehicle_Turret </Variant_Of_Existing_Type>
+
+		<Tactical_Build_Cost_Multiplayer> 5 </Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Cost_Campaign> 2 </Tactical_Build_Cost_Campaign>
+		<Tactical_Build_Time_Seconds> 10 </Tactical_Build_Time_Seconds>
+		<Tactical_Buildable_Constructed> Rebel_Anti_Vehicle_Turret_TRMB </Tactical_Buildable_Constructed>	
+	</GroundBuildable>
 </GroundBuildables>
-
-

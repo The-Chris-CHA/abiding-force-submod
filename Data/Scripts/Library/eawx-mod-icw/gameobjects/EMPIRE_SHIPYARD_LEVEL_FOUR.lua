@@ -18,7 +18,7 @@ return {
 		["TIE_BOMBER_SQUADRON_DOUBLE"] = {
 			DEFAULT = {Initial = 2, Reserve = 4, TechLevel = LessThan(6)}
 		},
-		["SCIMMY_SQUADRON_DOUBLE"] = {
+		["SCIMITAR_SQUADRON_DOUBLE"] = {
 			DEFAULT = {Initial = 2, Reserve = 4, TechLevel = GreaterOrEqualTo(6)}
 		},
 		["SKIRMISH_IPV1"] = {
@@ -44,7 +44,7 @@ return {
 		},
 		["SKIRMISH_TECTOR"] = {
 			DEFAULT = {Initial = 1, Reserve = 0}
-		}
+		},
 	},
 	Scripts = {"fighter-spawn"},
 	Flags = {SHIPYARD = true, HANGAR = true}

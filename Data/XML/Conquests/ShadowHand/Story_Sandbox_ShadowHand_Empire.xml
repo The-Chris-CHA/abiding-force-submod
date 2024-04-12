@@ -1,0 +1,100 @@
+<?xml version="1.0" ?>
+<!--******************************************************-->
+<!--******  Campaign: Operation Shadow Hand (Empire) *****-->
+<!--******************************************************-->
+<Story>
+	<Event Name="Universal_Story_Start">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>0</Event_Param1>
+	</Event>
+
+ 	<Event Name="Spawn_Sedriss">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Sedriss_Team</Reward_Param1>
+		<Reward_Param2>Prakith</Reward_Param2>
+		<Prereq>Universal_Story_Start</Prereq>
+	</Event>
+
+	<Event Name="Spawn_Veers">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Veers_Chariot_Team</Reward_Param1>
+		<Reward_Param2>Kampe</Reward_Param2>
+		<Prereq>Universal_Story_Start</Prereq>
+	</Event>
+
+	<Event Name="Spawn_Harrsk_Palpateam">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Harrsk_Shockwave</Reward_Param1>
+		<Reward_Param2>Kalist</Reward_Param2>
+		<Prereq>Universal_Story_Start</Prereq>
+	</Event>
+	
+	<Event Name="Spawn_Kosh">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Kosh_Lancet</Reward_Param1>
+		<Reward_Param2>Hakassi</Reward_Param2>
+		<Prereq>Universal_Story_Start</Prereq>
+	</Event>	
+
+	<Event Name="Spawn_Delvardus">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Delvardus_Brilliant</Reward_Param1>
+		<Reward_Param2>Prakith</Reward_Param2>
+		<Prereq>Universal_Story_Start</Prereq>
+	</Event>
+
+	<Event Name="Spawn_Treuten">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Treuten_Crimson_Sunrise</Reward_Param1>
+		<Reward_Param2>Metalorn</Reward_Param2>
+		<Prereq>Universal_Story_Start</Prereq>
+	</Event>
+
+	<Event Name="Spawn_Pellaeon_Palpateam">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Pellaeon_Captain_Chimaera</Reward_Param1>
+		<Reward_Param2>Thomork</Reward_Param2>
+		<Prereq>Universal_Story_Start</Prereq>
+	</Event>
+	
+	<Event Name="Spawn_Praji">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Praji_Secutor</Reward_Param1>
+		<Reward_Param2>Kampe</Reward_Param2>
+		<Prereq>Universal_Story_Start</Prereq>
+	</Event>
+	
+	<Event Name="Spawn_Lanox">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Lanox_Hazard</Reward_Param1>
+		<Reward_Param2>Corsin</Reward_Param2>
+		<Prereq>Universal_Story_Start</Prereq>
+	</Event>
+	
+	<Event Name="E_Lock_Eclipse">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>3</Event_Param1>
+		<Reward_Type>LOCK_UNIT</Reward_Type>
+		<Reward_Param1>Eclipse_Star_Destroyer</Reward_Param1>
+		<Prereq>Universal_Story_Start</Prereq>
+	</Event>
+	
+	<Event Name="Byss_Bounces">
+		<Event_Type>STORY_FLEET_BOUNCED</Event_Type>
+		<Event_Param1>Byss</Event_Param1>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_CONQUEST_PALPATINE_BOUNCE_OSH</Reward_Param1>
+		<Reward_Param2>10</Reward_Param2>
+		<Reward_Param3></Reward_Param3>
+		<Reward_Param9>Palpatine_Reborn_Loop</Reward_Param9>
+	</Event>
+</Story>

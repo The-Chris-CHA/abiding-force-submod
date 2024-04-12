@@ -17,7 +17,10 @@ return {
 			IMPERIAL = {Initial = 1, Reserve = 2}
 		},
 		["A-WING_SQUADRON"] = {
-			REBEL = {Initial = 1, Reserve = 3}
+			REBEL = {Initial = 1, Reserve = 3, HeroOverride = {{"TALLON_SILENT_WATER"}, {"A-WING_SQUADRON_DOUBLE"}}}
+		},
+		["CLOAKSHAPE_NEW_SQUADRON"] = {
+			HUTT_CARTELS = {Initial = 1, Reserve = 3}
 		},
 		["MANKVIM_SQUADRON"] = {
 			CORPORATE_SECTOR = {Initial = 1, Reserve = 3},

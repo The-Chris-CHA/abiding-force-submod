@@ -13,14 +13,16 @@
 	<File>Units\Death_Clones_TR.xml</File>
 	
 	<!-- Load all templates to reduce looping -->
+	<File>Units\TransportUnits_Master.xml</File>
+	<File>Units\Templates_Master.xml</File>
 	<File>Units\Templates_Dummy.xml</File>
 	<File>Units\Templates_Instant_Action.xml</File>
 	<File>Units\Templates_Jedi.xml</File>
-	<File>Units\Templates_Master.xml</File>
 	<File>Units\Templates_Fighters.xml</File>
 	<File>Units\Templates_Corvettes.xml</File>
 	<File>Units\Templates_Frigates.xml</File>
 	<File>Units\Templates_Capitals.xml</File>
+	<File>Units\Templates_Master_Ground.xml</File>
 	<File>Units\Templates_Ground.xml</File>
 	<File>Units\Templates_Ground_Militia.xml</File>
 	<File>Units\Templates_BombingRunUnits.xml</File>
@@ -28,9 +30,11 @@
 	<File>Structures\Templates_Space_Structures.xml</File>
 	<File>Structures\Templates_Basic_Resource_Structures.xml</File>
 	<File>Structures\Template_Skirmish_Space_Structures.xml</File>
+	<File>Structures\Template_SurvivalBases.xml</File>
 	
 	<!--Main Files -->
 	<File>BlackMarketItems.xml</File> <!-- Game looks for it -->
+	<File>Containers.xml</File>
 	<File>Display_Structures_Dummies.xml</File>
 	<File>Era_Dummies.xml</File>
 	<File>GroundIndigenous.xml</File>
@@ -71,10 +75,9 @@
 	<File>Particles\Particles_Abilities.xml</File>
 	
 	<!-- Coresaga Files -->
-	<File>Coresaga_Containers.xml</File>
+	<File>Units\TransportUnits_Coresaga.xml</File>
 	
 	<!-- TR Files -->
-	<File>Containers.xml</File>
 	<File>Deconstruct_Dummies.xml</File>
 	<File>Government_NewRepublic_ChiefsOfState.xml</File>
 	<File>Markers.xml</File>
@@ -83,19 +86,19 @@
 	<File>NR_Research.xml</File>
 	<File>Options_TR.xml</File>
 	<File>RegicideObjects.xml</File>
-	<File>TR_Containers.xml</File>
 	<File>Units\Units_Fighters.xml</File>
 	<File>Units\Units_Corvettes.xml</File>
 	<File>Units\Units_Frigates.xml</File>
 	<File>Units\Units_Capitals.xml</File>
 	<File>Units\SharedSpaceTriangles.xml</File>
+	<File>Units\Corsec_Ground.xml</File>
 	<File>Units\Corsec_Space.xml</File>
 	<File>Units\EotH_Space.xml</File>
 	<File>Units\Hapes_Space.xml</File>
 	<File>Units\SsiRuuk_Space.xml</File>
 	<File>Units\Hutt_Space.xml</File>
-	<File>Units\HuntForZsinj_Campaign_Units.xml</File>
-	<File>Units\TransportUnits.xml</File>
+	<File>Units\Hutt_Government_Dummies.xml</File>
+	<File>Units\TransportUnits_TR.xml</File>
 	<File>Units\New_Republic_Infantry.xml</File>
 	<File>Units\New_Republic_Vehicles.xml</File>
 	<File>Units\Imperial_Infantry.xml</File>
@@ -126,6 +129,7 @@
 	<File>Structures\CSA_Structures.xml</File>
 	<File>Structures\EotH_Structures.xml</File>
 	<File>Structures\Hapes_Structures.xml</File>
+	<File>Structures\Hutt_Structures.xml</File>
 	<File>Structures\Imperial_Structures.xml</File>
 	<File>Structures\New_Republic_Structures.xml</File>
 	<File>Structures\Revolt_Structures.xml</File>
@@ -148,6 +152,8 @@
 	<File>Heroes\Yevetha_Heroes.xml</File>
 	<File>Heroes\Zsinj_Heroes.xml</File>
 	<File>Heroes\New_Republic_Heroes.xml</File>
+	<File>Heroes\Hutt_Heroes.xml</File>
+	<File>Heroes\Hutt_Core_Heroes.xml</File>
 	<File>GroundTurrets.xml</File> <!-- Load before buildables -->
 	<File>GroundBuildablesEmpire.xml</File>
 	<File>GroundBuildablesRebel.xml</File>
@@ -165,8 +171,11 @@
 	<File>Units\Skirmish\SkirmishUnits_EOTH.xml</File>
 	<File>Units\Skirmish\SkirmishUnits_Hapes.xml</File>
 	<File>Units\Skirmish\SkirmishUnits_Other.xml</File>
+	<File>Units\Skirmish\SkirmishUnits_Hutts.xml</File>
 	<File>Units\Skirmish\Skirmish_buildable_Squadrons.xml</File>
 	<File>Heroes\Skirmish_Heroes.xml</File>
+	<File>Heroes\Legitimacy_Heroes_Skirmish.xml</File>
+	
 	<File>GroundBuildablesSkirmish.xml</File>
 	<File>Structures\Skirmish\Skirmish_starbases.xml</File>
 	<File>Structures\Skirmish\Skirmish_Research_starbases.xml</File>
@@ -226,6 +235,7 @@
 
 	<!-- Loop if higher, so load last -->
 	<File>Ability_Dummies.xml</File>
+	<File>Event_Dummies.xml</File>
 	<File>UpgradeObjectsSpaceSkirmish_TR.xml</File>
 
 </Game_Object_Files>

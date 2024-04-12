@@ -16,8 +16,8 @@ function State_Init(message)
 	
 	--put era limited ships at the end of the list so they can be easily restricted
 	stolen_ships = {
-			"Scarsiss_Squadron",
-			"TIE_Punisher_Squadron",
+			"Scarssis_Squadron",
+			"TIE_Punisher_Squadron_Half",
 			"TIE_Hunter_Squadron",
 			"Furion_Squadron",
 			"T-Wing_Squadron",
@@ -52,13 +52,25 @@ function State_Init(message)
 			"Y-Wing_Squadron",
 			"A-Wing_Squadron",
 			"Advanced_Skipray_Squadron",
-			"I_BEAM_Squadron",
+			"I_BEAM_Squadron_Double",
 			"HLAF_Squadron_Double",
 			"N1_Squadron",
+			"G1_Squadron",
 			"R22_Spearhead_Squadron",
 			"ATL_Interceptor_Squadron",
+			"Firespray_Squadron",
+			"Scurrg_H6_Prototype_Squadron",
+			"Scurrg_H6_Squadron",
+			"Hwing_Squadron",
+			"Royal_Guard_Interceptor_Squadron",
+			"TIE_X2_Squadron",
+			"TIE_X3_Squadron",
+			"TIE_X7_Squadron",
+			"Bakuran_GPA_Squadron_Double",
+			"Dunelizard_Fighter_Squadron_Double",
+			
 			"E-Wing_Squadron",
-			"Scimmy_Squadron",
+			"Scimitar_Squadron",
 			"K-Wing_Squadron",
 			"B-Wing_E_Squadron",
 			}

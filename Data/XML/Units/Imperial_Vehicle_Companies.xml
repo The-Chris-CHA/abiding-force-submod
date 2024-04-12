@@ -5,7 +5,7 @@
 	
 	<GroundCompany Name="Imperial_PX10_Company">
 		<Text_ID>TEXT_UNIT_PX10_COMPANY</Text_ID>
-		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_LIGHT_VEHICLE</Encyclopedia_Unit_Class>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_LIGHT_TANK</Encyclopedia_Unit_Class>
 		<Encyclopedia_Text>
 		TEXT_TOOLTIP_PX10
 		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
@@ -42,7 +42,6 @@
 		<Population_Value>1</Population_Value>
 
 		<Tech_Level>0</Tech_Level>
-		<Required_Timeline>0</Required_Timeline>
 		<Required_Ground_Base_Level>1</Required_Ground_Base_Level>
 		
 		<Affiliation>Zsinj_Empire, Empire</Affiliation> <!-- CCoGM/IR -->
@@ -55,10 +54,10 @@
 		
 		<Company_Transport_Unit>Imperial_Landing_Craft_Light_Vehicles</Company_Transport_Unit> <!-- Replace with Y-4 Raptor when Extant -->
 
-		<SFXEvent_Build_Started>RHD_Build_Vehicle</SFXEvent_Build_Started>
-		<SFXEvent_Build_Cancelled>RHD_Vehicle_Canceled</SFXEvent_Build_Cancelled>
-		<SFXEvent_Build_Complete>Unit_Complete_Gallofree_HTT</SFXEvent_Build_Complete>
-		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Gallofree_HTT</SFXEvent_Fleet_Move>
+		<SFXEvent_Build_Started>EHD_Build_Vehicle</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Vehicle_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Complete_Tie_Mauler</SFXEvent_Build_Complete>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Tie_Mauler</SFXEvent_Fleet_Move>
 
 		<Required_Star_Base_Level>0</Required_Star_Base_Level>
 		<Required_Planets/>
@@ -79,7 +78,7 @@
 	<GroundCompany Name="Imperial_AT_PT_Company">
 
 		<Text_ID>TEXT_IMPERIAL_ATPT_SQUAD</Text_ID>
-		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_LIGHT_VEHICLE</Encyclopedia_Unit_Class>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_LIGHT_WALKER</Encyclopedia_Unit_Class>
 		<Encyclopedia_Text>
 		TEXT_TOOLTIP_ATPT
 		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
@@ -118,7 +117,6 @@
 		<Population_Value>1</Population_Value>
 
 		<Tech_Level>0</Tech_Level>
-		<Required_Timeline>0</Required_Timeline>
 		<Required_Ground_Base_Level>1</Required_Ground_Base_Level>
 		
 		<Affiliation>Empire, Pentastar</Affiliation> <!-- ZC -->
@@ -132,8 +130,8 @@
 
 		<SFXEvent_Build_Started>EHD_Build_Vehicle</SFXEvent_Build_Started>
 		<SFXEvent_Build_Cancelled>EHD_Vehicle_Canceled</SFXEvent_Build_Cancelled>
-		<SFXEvent_Build_Complete>Unit_Complete_AT_ST</SFXEvent_Build_Complete>
-		<SFXEvent_Fleet_Move>Unit_Fleet_Move_AT_ST</SFXEvent_Fleet_Move>
+		<SFXEvent_Build_Complete>Unit_Complete_AT_PT</SFXEvent_Build_Complete>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_AT_PT</SFXEvent_Fleet_Move>
 
 		<LOD_Bias>4</LOD_Bias>
 		<Required_Star_Base_Level>0</Required_Star_Base_Level>
@@ -176,7 +174,7 @@
 	<GroundCompany Name="Imperial_AT_RT_Company">
 
 		<Text_ID>TEXT_UNIT_AT_RT_WALKER_COMPANY</Text_ID>
-		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_LIGHT_VEHICLE</Encyclopedia_Unit_Class>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_LIGHT_WALKER</Encyclopedia_Unit_Class>
 		<Encyclopedia_Text>
 		TEXT_TOOLTIP_ATRT 
 		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
@@ -214,7 +212,6 @@
 		<Population_Value>1</Population_Value>
 
 		<Tech_Level>0</Tech_Level>
-		<Required_Timeline>0</Required_Timeline>
 		<Required_Ground_Base_Level>1</Required_Ground_Base_Level>
 		
 		<Affiliation>Greater_Maldrood</Affiliation>
@@ -262,7 +259,7 @@
 	<GroundCompany Name="Imperial_AT_MP_Company">
 
 		<Text_ID>TEXT_UNIT_AT_MP_COMPANY</Text_ID>
-		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_LIGHT_VEHICLE</Encyclopedia_Unit_Class>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_LIGHT_WALKER</Encyclopedia_Unit_Class>
 		<Encyclopedia_Text>
 		TEXT_TOOLTIP_ATMP
 		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
@@ -296,7 +293,6 @@
 		<Population_Value>1</Population_Value>
 
 		<Tech_Level>0</Tech_Level>
-		<Required_Timeline>0</Required_Timeline>
 		<Required_Ground_Base_Level>1</Required_Ground_Base_Level>
 		
 		<Affiliation>Eriadu_Authority</Affiliation>
@@ -310,8 +306,8 @@
 
 		<SFXEvent_Build_Started>EHD_Build_Vehicle</SFXEvent_Build_Started>
 		<SFXEvent_Build_Cancelled>EHD_Vehicle_Canceled</SFXEvent_Build_Cancelled>
-		<SFXEvent_Build_Complete>Unit_Complete_AT_ST</SFXEvent_Build_Complete>
-		<SFXEvent_Fleet_Move>Unit_Fleet_Move_AT_ST</SFXEvent_Fleet_Move>
+		<SFXEvent_Build_Complete>Unit_Complete_Imperial_Walker</SFXEvent_Build_Complete>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Imperial_Walker</SFXEvent_Fleet_Move>
 
 		<LOD_Bias>4</LOD_Bias>
 		<Required_Star_Base_Level>0</Required_Star_Base_Level>
@@ -332,7 +328,7 @@
 	<GroundCompany Name="Imperial_AT_ST_Company">
 
 		<Text_ID>TEXT_UNIT_AT_ST_WALKER_COMPANY</Text_ID>
-		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_LIGHT_VEHICLE</Encyclopedia_Unit_Class>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_LIGHT_WALKER</Encyclopedia_Unit_Class>
 		<Encyclopedia_Text>
 		TEXT_TOOLTIP_ATST
 		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
@@ -373,7 +369,6 @@
 		<Population_Value>1</Population_Value>
 
 		<Tech_Level>0</Tech_Level>
-		<Required_Timeline>0</Required_Timeline>
 		<Required_Ground_Base_Level>1</Required_Ground_Base_Level>
 		
 		<Affiliation>Empire</Affiliation> <!-- ZC -->
@@ -415,7 +410,7 @@
 	<GroundCompany Name="Imperial_1L_Tank_Company">
 
 		<Text_ID>TEXT_UNIT_1L_TANK_COMPANY </Text_ID>
-		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_LIGHT_TANK</Encyclopedia_Unit_Class>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_LIGHT_VEHICLE</Encyclopedia_Unit_Class>
 		<Encyclopedia_Text>
 		TEXT_TOOLTIP_1L_TANK
 		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
@@ -450,7 +445,6 @@
 		<Population_Value>1</Population_Value>
 
 		<Tech_Level>0</Tech_Level>
-		<Required_Timeline>0</Required_Timeline>
 		<Required_Ground_Base_Level>1</Required_Ground_Base_Level>
 		
 		<Affiliation>Eriadu_Authority</Affiliation>
@@ -464,8 +458,8 @@
 
 		<SFXEvent_Build_Started>EHD_Build_Vehicle</SFXEvent_Build_Started>
 		<SFXEvent_Build_Cancelled>EHD_Vehicle_Canceled</SFXEvent_Build_Cancelled>
-		<SFXEvent_Build_Complete>Unit_Complete_2M_Tank</SFXEvent_Build_Complete>
-		<SFXEvent_Fleet_Move>Unit_Fleet_Move_2M_Tank</SFXEvent_Fleet_Move>
+		<SFXEvent_Build_Complete>Unit_Complete_Hovertank</SFXEvent_Build_Complete>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Hovertank</SFXEvent_Fleet_Move>
 
 		<Required_Star_Base_Level>0</Required_Star_Base_Level>
 		<Required_Planets/>
@@ -521,7 +515,6 @@
 		<Population_Value>1</Population_Value>
 
 		<Tech_Level>0</Tech_Level>
-		<Required_Timeline>0</Required_Timeline>
 		<Required_Ground_Base_Level>1</Required_Ground_Base_Level>
 		
 		<Affiliation>Zsinj_Empire</Affiliation>
@@ -535,8 +528,8 @@
 
 		<SFXEvent_Build_Started>EHD_Build_Vehicle</SFXEvent_Build_Started>
 		<SFXEvent_Build_Cancelled>EHD_Vehicle_Canceled</SFXEvent_Build_Cancelled>
-		<SFXEvent_Build_Complete>Unit_Complete_AT_ST</SFXEvent_Build_Complete>
-		<SFXEvent_Fleet_Move>Unit_Fleet_Move_AT_ST</SFXEvent_Fleet_Move>
+		<SFXEvent_Build_Complete>Unit_Complete_2M_Tank</SFXEvent_Build_Complete>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_2M_Tank</SFXEvent_Fleet_Move>
 
 		<LOD_Bias>4</LOD_Bias>
 		<Required_Star_Base_Level>0</Required_Star_Base_Level>
@@ -563,7 +556,7 @@
 	<GroundCompany Name="Imperial_AT_ST_A_Company">
 
 		<Text_ID>TEXT_UNIT_AT_ST_A_WALKER_COMPANY</Text_ID>
-		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_LIGHT_VEHICLE</Encyclopedia_Unit_Class>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_LIGHT_WALKER</Encyclopedia_Unit_Class>
 		<Encyclopedia_Text>
 		TEXT_TOOLTIP_ATST_A
 		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
@@ -575,6 +568,8 @@
 		TEXT_TOOLTIP_ATST_A_WEAP3
 		TEXT_TOOLTIP_SEPARATOR_ABILITY_BLOCK
 		TEXT_TOOLTIP_ATST_A_WEAP4
+		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
+		TEXT_TOOLTIP_BONUS_ENHANCED_SENSORS
 		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
 		TEXT_TOOLTIP_CAPABILITY_CRUSH
 		</Encyclopedia_Text>
@@ -602,7 +597,6 @@
 		<Population_Value>1</Population_Value>
 
 		<Tech_Level>0</Tech_Level>
-		<Required_Timeline>0</Required_Timeline>
 		<Required_Ground_Base_Level>1</Required_Ground_Base_Level>
 		
 		<Affiliation>Empire, Yevetha</Affiliation>
@@ -677,7 +671,6 @@
 		<Population_Value>1</Population_Value>
 
 		<Tech_Level>0</Tech_Level>
-		<Required_Timeline>0</Required_Timeline>
 		<Required_Ground_Base_Level>1</Required_Ground_Base_Level>
 		
 		<Affiliation>Greater_Maldrood</Affiliation>
@@ -691,8 +684,8 @@
 
 		<SFXEvent_Build_Started>EHD_Build_Vehicle</SFXEvent_Build_Started>
 		<SFXEvent_Build_Cancelled>EHD_Vehicle_Canceled</SFXEvent_Build_Cancelled>
-		<SFXEvent_Build_Complete>Unit_Complete_2M_Tank</SFXEvent_Build_Complete>
-		<SFXEvent_Fleet_Move>Unit_Fleet_Move_2M_Tank</SFXEvent_Fleet_Move>
+		<SFXEvent_Build_Complete>Unit_Complete_Swamp_Speeder</SFXEvent_Build_Complete>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Swamp_Speeder</SFXEvent_Fleet_Move>
 
 		<Required_Star_Base_Level>0</Required_Star_Base_Level>
 		<Required_Planets/>
@@ -745,7 +738,6 @@
 		<Population_Value>1</Population_Value>
 
 		<Tech_Level>0</Tech_Level>
-		<Required_Timeline>0</Required_Timeline>
 		<Required_Ground_Base_Level>1</Required_Ground_Base_Level>
 		
 		<Affiliation>Zsinj_Empire</Affiliation> <!-- ZC -->
@@ -780,7 +772,7 @@
 	<GroundCompany Name="Imperial_RTT_Company">
 
 		<Text_ID>TEXT_UNIT_IMPERIAL_RTT_COMPANY</Text_ID>
-		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_TRANSPORT</Encyclopedia_Unit_Class>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_MEDIUM_TRANSPORT</Encyclopedia_Unit_Class>
 		<Encyclopedia_Text>
 		TEXT_TOOLTIP_IMPERIAL_RTT
 		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
@@ -819,7 +811,6 @@
 		<Population_Value>1</Population_Value>
 
 		<Tech_Level>0</Tech_Level>
-		<Required_Timeline>0</Required_Timeline>
 		<Required_Ground_Base_Level>1</Required_Ground_Base_Level>
 		
 		<Affiliation>Greater_Maldrood</Affiliation>
@@ -833,8 +824,8 @@
 
 		<SFXEvent_Build_Started>EHD_Build_Vehicle</SFXEvent_Build_Started>
 		<SFXEvent_Build_Cancelled>EHD_Vehicle_Canceled</SFXEvent_Build_Cancelled>
-		<SFXEvent_Build_Complete>Unit_Complete_2M_Tank</SFXEvent_Build_Complete>
-		<SFXEvent_Fleet_Move>Unit_Fleet_Move_2M_Tank</SFXEvent_Fleet_Move>
+		<SFXEvent_Build_Complete>Unit_Complete_RTT</SFXEvent_Build_Complete>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_RTT</SFXEvent_Fleet_Move>
 
 		<Required_Star_Base_Level>0</Required_Star_Base_Level>
 		<Required_Planets/>
@@ -854,7 +845,7 @@
 	<GroundCompany Name="Imperial_Gaba18_Group">
 
 		<Text_ID>TEXT_UNIT_GABA18_COMPANY</Text_ID>
-		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_SPEEDER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_LIGHT_AIRSPEEDER</Encyclopedia_Unit_Class>
 		<Encyclopedia_Text>
 		TEXT_TOOLTIP_GABA18
 		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
@@ -888,7 +879,6 @@
 		<Population_Value>1</Population_Value>
 
 		<Tech_Level>0</Tech_Level>
-		<Required_Timeline>0</Required_Timeline>
 		<Required_Ground_Base_Level>1</Required_Ground_Base_Level>
 		
 		<Affiliation>Pentastar</Affiliation>
@@ -902,8 +892,8 @@
 
 		<SFXEvent_Build_Started>EHD_Build_Vehicle</SFXEvent_Build_Started>
 		<SFXEvent_Build_Cancelled>EHD_Vehicle_Canceled</SFXEvent_Build_Cancelled>
-		<SFXEvent_Build_Complete>Unit_Complete_2M_Tank</SFXEvent_Build_Complete>
-		<SFXEvent_Fleet_Move>Unit_Fleet_Move_2M_Tank</SFXEvent_Fleet_Move>
+		<SFXEvent_Build_Complete>Unit_Complete_Assault_Speeder</SFXEvent_Build_Complete>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Assault_Speeder</SFXEvent_Fleet_Move>
 
 		<Required_Star_Base_Level>0</Required_Star_Base_Level>
 		<Required_Planets/>
@@ -932,7 +922,7 @@
 	<GroundCompany Name="Imperial_INT4_Group">
 
 		<Text_ID>TEXT_UNIT_INT4_COMPANY</Text_ID>
-		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_SPEEDER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_MEDIUM_AIRSPEEDER</Encyclopedia_Unit_Class>
 		<Encyclopedia_Text>
 		TEXT_TOOLTIP_INT4
 		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
@@ -967,7 +957,6 @@
 		<Population_Value>1</Population_Value>
 
 		<Tech_Level>0</Tech_Level>
-		<Required_Timeline>0</Required_Timeline>
 		<Required_Ground_Base_Level>1</Required_Ground_Base_Level>
 		
 		<Affiliation>Greater_Maldrood</Affiliation>
@@ -981,8 +970,8 @@
 
 		<SFXEvent_Build_Started>EHD_Build_Vehicle</SFXEvent_Build_Started>
 		<SFXEvent_Build_Cancelled>EHD_Vehicle_Canceled</SFXEvent_Build_Cancelled>
-		<SFXEvent_Build_Complete>Unit_Complete_2M_Tank</SFXEvent_Build_Complete>
-		<SFXEvent_Fleet_Move>Unit_Fleet_Move_2M_Tank</SFXEvent_Fleet_Move>
+		<SFXEvent_Build_Complete>Unit_Complete_Assault_Speeder</SFXEvent_Build_Complete>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Assault_Speeder</SFXEvent_Fleet_Move>
 
 		<Required_Star_Base_Level>0</Required_Star_Base_Level>
 		<Required_Planets/>
@@ -1011,7 +1000,7 @@
     <GroundCompany Name="Imperial_AT_DP_Company">
 
 		<Text_ID>TEXT_UNIT_AT_DP_COMPANY</Text_ID>
-		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_LIGHT_VEHICLE</Encyclopedia_Unit_Class>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_MEDIUM_WALKER</Encyclopedia_Unit_Class>
 		<Encyclopedia_Text>
 		TEXT_TOOLTIP_ATDP
 		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
@@ -1047,7 +1036,6 @@
 		<Population_Value>1</Population_Value>
 
 		<Tech_Level>0</Tech_Level>
-		<Required_Timeline>0</Required_Timeline>
 		<Required_Ground_Base_Level>1</Required_Ground_Base_Level>
 		
 		<Affiliation>Pentastar</Affiliation>
@@ -1061,8 +1049,8 @@
 
 		<SFXEvent_Build_Started>EHD_Build_Vehicle</SFXEvent_Build_Started>
 		<SFXEvent_Build_Cancelled>EHD_Vehicle_Canceled</SFXEvent_Build_Cancelled>
-		<SFXEvent_Build_Complete>Unit_Complete_AT_ST</SFXEvent_Build_Complete>
-		<SFXEvent_Fleet_Move>Unit_Fleet_Move_AT_ST</SFXEvent_Fleet_Move>
+		<SFXEvent_Build_Complete>Unit_Complete_Imperial_Walker</SFXEvent_Build_Complete>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Imperial_Walker</SFXEvent_Fleet_Move>
 
 		<LOD_Bias>4</LOD_Bias>
 		<Required_Star_Base_Level>0</Required_Star_Base_Level>
@@ -1082,21 +1070,21 @@
 	</GroundCompany>
 	
 	<!-- Unused -->
-	<GroundCompany Name="Imperial_Skiff_Company">
+	<GroundCompany Name="Imperial_Bantha_II_Skiff_Company">
 
-		<Text_ID>TEXT_UNIT_PIRATE_SKIFF_COMPANY</Text_ID>
-		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_LIGHT_VEHICLE</Encyclopedia_Unit_Class>
+		<Text_ID>TEXT_UNIT_BANTHA_II_SKIFF_COMPANY</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_MEDIUM_SKIFF</Encyclopedia_Unit_Class>
 		<Encyclopedia_Text>
-		TEXT_TOOLTIP_SKIFF
+		TEXT_TOOLTIP_BANTHA_II_SKIFF
 		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
-		TEXT_TOOLTIP_SKIFF_COMPANY
-		TEXT_TOOLTIP_SKIFF_HEALTH
-		TEXT_TOOLTIP_SKIFF_MOVE 
-		TEXT_TOOLTIP_SKIFF_WEAP1
+		TEXT_TOOLTIP_BANTHA_II_SKIFF_COMPANY
+		TEXT_TOOLTIP_BANTHA_II_SKIFF_HEALTH
+		TEXT_TOOLTIP_BANTHA_II_SKIFF_MOVE 
+		TEXT_TOOLTIP_BANTHA_II_SKIFF_WEAP1
 		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
 		TEXT_TOOLTIP_BONUS_ENHANCED_SENSORS
 		</Encyclopedia_Text>
-		<Icon_Name>i_button_skiff.tga</Icon_Name>
+		<Icon_Name>I_BUTTON_HUTT_BANTHA2_SKIFF.tga</Icon_Name>
 
 		<Autoresolve_Health>100</Autoresolve_Health>
 		<Damage>40</Damage>
@@ -1120,7 +1108,6 @@
 		<Population_Value>1</Population_Value>
 
 		<Tech_Level>0</Tech_Level>
-		<Required_Timeline>0</Required_Timeline>
 		<Required_Ground_Base_Level>1</Required_Ground_Base_Level>
 		
 		<Affiliation></Affiliation>
@@ -1139,7 +1126,7 @@
 
 		<Required_Star_Base_Level>0</Required_Star_Base_Level>
 		<Required_Planets/>
-		<Company_Units>Imperial_Skiff, Imperial_Skiff, Imperial_Skiff, Imperial_Skiff, Imperial_Skiff, Imperial_Skiff</Company_Units>
+		<Company_Units>Imperial_Bantha_II_Skiff, Imperial_Bantha_II_Skiff, Imperial_Bantha_II_Skiff, Imperial_Bantha_II_Skiff, Imperial_Bantha_II_Skiff, Imperial_Bantha_II_Skiff</Company_Units>
 		<Maintenance_Cost>0.0</Maintenance_Cost>
 		
 	<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
@@ -1155,7 +1142,7 @@
 	<GroundCompany Name="Imperial_Chariot_LAV_Company">
 
 		<Text_ID>TEXT_CHARIOT_LAV_COMPANY</Text_ID>
-		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_LIGHT_VEHICLE</Encyclopedia_Unit_Class>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_MEDIUM_VEHICLE</Encyclopedia_Unit_Class>
 		<Encyclopedia_Text>
 		TEXT_TOOLTIP_CHARIOT_LAV
 		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
@@ -1194,7 +1181,6 @@
 		<Population_Value>1</Population_Value>
 
 		<Tech_Level>0</Tech_Level>
-		<Required_Timeline>0</Required_Timeline>
 		<Required_Ground_Base_Level>1</Required_Ground_Base_Level>
 		
 		<Affiliation>Empire, Zsinj_Empire</Affiliation>
@@ -1208,8 +1194,8 @@
 
 		<SFXEvent_Build_Started>EHD_Build_Vehicle</SFXEvent_Build_Started>
 		<SFXEvent_Build_Cancelled>EHD_Vehicle_Canceled</SFXEvent_Build_Cancelled>
-		<SFXEvent_Build_Complete>Unit_Complete_Tie_Mauler</SFXEvent_Build_Complete>
-		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Tie_Mauler</SFXEvent_Fleet_Move>
+		<SFXEvent_Build_Complete>Unit_Complete_Chariot_LAV</SFXEvent_Build_Complete>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Chariot_LAV</SFXEvent_Fleet_Move>
 
 		<Required_Star_Base_Level>0</Required_Star_Base_Level>
 		<Required_Planets/>
@@ -1234,7 +1220,7 @@
 	<GroundCompany Name="Imperial_TIE_Mauler_Company">
 
 		<Text_ID>TEXT_UNIT_TIE_MAULER_COMPANY</Text_ID>
-		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_LIGHT_VEHICLE</Encyclopedia_Unit_Class>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_MEDIUM_TANK</Encyclopedia_Unit_Class>
 		<Encyclopedia_Text>
 		TEXT_TOOLTIP_TIE_MAULER 
 		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
@@ -1269,7 +1255,6 @@
 		<Population_Value>1</Population_Value>
 
 		<Tech_Level>0</Tech_Level>
-		<Required_Timeline>0</Required_Timeline>
 		<Required_Ground_Base_Level>1</Required_Ground_Base_Level>
 		
 		<Affiliation>Pentastar</Affiliation>
@@ -1315,7 +1300,7 @@
 	<GroundCompany Name="Imperial_Light_Artillery_Company">
 
         <Text_ID>TEXT_UNIT_IMPERIAL_ARTILLERY</Text_ID>
-		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_ARTILLERY</Encyclopedia_Unit_Class>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_MEDIUM_ARTILLERY</Encyclopedia_Unit_Class>
 		<Encyclopedia_Text>
 		TEXT_TOOLTIP_IMPERIAL_ARTILLERY
 		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
@@ -1348,7 +1333,6 @@
 		<Population_Value>1</Population_Value>
 
 		<Tech_Level>0</Tech_Level>
-		<Required_Timeline>0</Required_Timeline>
 		<Required_Ground_Base_Level>1</Required_Ground_Base_Level>
 		
 		<Affiliation>Eriadu_Authority</Affiliation>
@@ -1362,8 +1346,8 @@
 
 		<SFXEvent_Build_Started>EHD_Build_Vehicle</SFXEvent_Build_Started>
 		<SFXEvent_Build_Cancelled>EHD_Vehicle_Canceled</SFXEvent_Build_Cancelled>
-		<SFXEvent_Build_Complete>Unit_Complete_SPMAT</SFXEvent_Build_Complete>
-		<SFXEvent_Fleet_Move>Unit_Fleet_Move_SPMAT</SFXEvent_Fleet_Move>
+		<SFXEvent_Build_Complete>Unit_Complete_Mobile_Artillery</SFXEvent_Build_Complete>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Mobile_Artillery</SFXEvent_Fleet_Move>
 
 		<Required_Star_Base_Level>0</Required_Star_Base_Level>
 		<Required_Planets/>
@@ -1389,7 +1373,7 @@
 	<GroundCompany Name="Imperial_UT_AA_Company">
 
 		<Text_ID>TEXT_UNIT_UTAA_COMPANY</Text_ID>
-		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_LIGHT_VEHICLE</Encyclopedia_Unit_Class>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_MEDIUM_VEHICLE</Encyclopedia_Unit_Class>
 		<Encyclopedia_Text>
 		TEXT_TOOLTIP_UTAA 
 		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
@@ -1425,7 +1409,6 @@
 		<Population_Value>1</Population_Value>
 
 		<Tech_Level>0</Tech_Level>
-		<Required_Timeline>0</Required_Timeline>
 		<Required_Ground_Base_Level>1</Required_Ground_Base_Level>
 		
 		<Affiliation>Pentastar</Affiliation> <!-- 0C -->
@@ -1439,8 +1422,8 @@
 
 		<SFXEvent_Build_Started>EHD_Build_Vehicle</SFXEvent_Build_Started>
 		<SFXEvent_Build_Cancelled>EHD_Vehicle_Canceled</SFXEvent_Build_Cancelled>
-		<SFXEvent_Build_Complete>Unit_Complete_AT_AA</SFXEvent_Build_Complete>
-		<SFXEvent_Fleet_Move>Unit_Fleet_Move_AT_AA</SFXEvent_Fleet_Move>
+		<SFXEvent_Build_Complete>Unit_Complete_UT_AA</SFXEvent_Build_Complete>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_UT_AA</SFXEvent_Fleet_Move>
 
 		<Required_Star_Base_Level>0</Required_Star_Base_Level>
 		<Required_Planets/>
@@ -1462,7 +1445,7 @@
 	<GroundCompany Name="Imperial_AT_AP_Walker_Company">
 
 		<Text_ID>TEXT_UNIT_POD_WALKER</Text_ID>
-		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_HEAVY_VEHICLE</Encyclopedia_Unit_Class>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_HEAVY_WALKER</Encyclopedia_Unit_Class>
 		<Encyclopedia_Text>
 		TEXT_TOOLTIP_ATAP
 		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
@@ -1499,7 +1482,6 @@
 		<Population_Value>1</Population_Value>
 
 		<Tech_Level>0</Tech_Level>
-		<Required_Timeline>0</Required_Timeline>
 		<Required_Ground_Base_Level>1</Required_Ground_Base_Level>
 		
 		<Affiliation>Zsinj_Empire</Affiliation>
@@ -1513,8 +1495,8 @@
 
 		<SFXEvent_Build_Started>EHD_Build_Vehicle</SFXEvent_Build_Started>
 		<SFXEvent_Build_Cancelled>EHD_Vehicle_Canceled</SFXEvent_Build_Cancelled>
-		<SFXEvent_Build_Complete>Unit_Complete_2M_Tank</SFXEvent_Build_Complete>
-		<SFXEvent_Fleet_Move>Unit_Fleet_Move_2M_Tank</SFXEvent_Fleet_Move>
+		<SFXEvent_Build_Complete>Unit_Complete_Pod_Walker</SFXEvent_Build_Complete>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Pod_Walker</SFXEvent_Fleet_Move>
 
 		<Required_Star_Base_Level>0</Required_Star_Base_Level>
 		<Required_Planets/>
@@ -1534,7 +1516,7 @@
 	<GroundCompany Name="Imperial_AT_AA_Company">
 
 		<Text_ID>TEXT_UNIT_AT_AA_WALKER_COMPANY</Text_ID>
-		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_LIGHT_VEHICLE</Encyclopedia_Unit_Class>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_MEDIUM_WALKER</Encyclopedia_Unit_Class>
 		<Encyclopedia_Text>
 		TEXT_TOOLTIP_ATAA 
 		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
@@ -1571,7 +1553,6 @@
 		<Population_Value>1</Population_Value>
 
 		<Tech_Level>0</Tech_Level>
-		<Required_Timeline>0</Required_Timeline>
 		<Required_Ground_Base_Level>1</Required_Ground_Base_Level>
 		
 		<Affiliation>Empire, Zsinj_Empire, Greater_Maldrood, Eriadu_Authority, Yevetha</Affiliation>
@@ -1619,7 +1600,7 @@
 	<GroundCompany Name="Imperial_Heavy_Artillery_Company">
 
         <Text_ID>TEXT_UNIT_IMPERIAL_HEAVY_ARTILLERY</Text_ID>
-		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_ARTILLERY</Encyclopedia_Unit_Class>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_MEDIUM_ARTILLERY</Encyclopedia_Unit_Class>
 		<Encyclopedia_Text>
 		TEXT_TOOLTIP_IMPERIAL_HEAVY_ARTILLERY
 		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
@@ -1652,7 +1633,6 @@
 		<Population_Value>1</Population_Value>
 
 		<Tech_Level>0</Tech_Level>
-		<Required_Timeline>0</Required_Timeline>
 		<Required_Ground_Base_Level>1</Required_Ground_Base_Level>
 		
 		<Affiliation>Pentastar</Affiliation>
@@ -1666,8 +1646,8 @@
 
 		<SFXEvent_Build_Started>EHD_Build_Vehicle</SFXEvent_Build_Started>
 		<SFXEvent_Build_Cancelled>EHD_Vehicle_Canceled</SFXEvent_Build_Cancelled>
-		<SFXEvent_Build_Complete>Unit_Complete_SPMAT</SFXEvent_Build_Complete>
-		<SFXEvent_Fleet_Move>Unit_Fleet_Move_SPMAT</SFXEvent_Fleet_Move>
+		<SFXEvent_Build_Complete>Unit_Complete_Mobile_Artillery</SFXEvent_Build_Complete>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Mobile_Artillery</SFXEvent_Fleet_Move>
 
 		<Required_Star_Base_Level>0</Required_Star_Base_Level>
 		<Required_Planets/>
@@ -1693,7 +1673,7 @@
 	<GroundCompany Name="Imperial_Missile_Artillery_Company">
 
         <Text_ID>TEXT_UNIT_IMPERIAL_MISSILE_ARTILLERY</Text_ID>
-		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_ARTILLERY</Encyclopedia_Unit_Class>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_HEAVY_ARTILLERY</Encyclopedia_Unit_Class>
 		<Encyclopedia_Text>
 		TEXT_TOOLTIP_IMPERIAL_MISSILE_ARTILLERY
 		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
@@ -1726,7 +1706,6 @@
 		<Population_Value>1</Population_Value>
 
 		<Tech_Level>0</Tech_Level>
-		<Required_Timeline>0</Required_Timeline>
 		<Required_Ground_Base_Level>1</Required_Ground_Base_Level>
 		
 		<Affiliation>Greater_Maldrood</Affiliation>
@@ -1740,8 +1719,8 @@
 
 		<SFXEvent_Build_Started>EHD_Build_Vehicle</SFXEvent_Build_Started>
 		<SFXEvent_Build_Cancelled>EHD_Vehicle_Canceled</SFXEvent_Build_Cancelled>
-		<SFXEvent_Build_Complete>Unit_Complete_SPMAT</SFXEvent_Build_Complete>
-		<SFXEvent_Fleet_Move>Unit_Fleet_Move_SPMAT</SFXEvent_Fleet_Move>
+		<SFXEvent_Build_Complete>Unit_Complete_HAP</SFXEvent_Build_Complete>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_HAP</SFXEvent_Fleet_Move>
 
 		<Required_Star_Base_Level>0</Required_Star_Base_Level>
 		<Required_Planets/>
@@ -1767,7 +1746,7 @@
 	<GroundCompany Name="Imperial_APC_Company">
 
 		<Text_ID>TEXT_UNIT_ROGUE_SQUADRON_APC_COMPANY</Text_ID>
-		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_TRANSPORT</Encyclopedia_Unit_Class>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_MEDIUM_TRANSPORT</Encyclopedia_Unit_Class>
 		<Encyclopedia_Text>
 		TEXT_TOOLTIP_ROGUE_SQUADRON_APC
 		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
@@ -1803,7 +1782,6 @@
 		<Population_Value>1</Population_Value>
 
 		<Tech_Level>0</Tech_Level>
-		<Required_Timeline>0</Required_Timeline>
 		<Required_Ground_Base_Level>1</Required_Ground_Base_Level>
 		
 		<Affiliation>Zsinj_Empire</Affiliation>
@@ -1817,8 +1795,8 @@
 
 		<SFXEvent_Build_Started>EHD_Build_Vehicle</SFXEvent_Build_Started>
 		<SFXEvent_Build_Cancelled>EHD_Vehicle_Canceled</SFXEvent_Build_Cancelled>
-		<SFXEvent_Build_Complete>Unit_Complete_2M_Tank</SFXEvent_Build_Complete>
-		<SFXEvent_Fleet_Move>Unit_Fleet_Move_2M_Tank</SFXEvent_Fleet_Move>
+		<SFXEvent_Build_Complete>Unit_Complete_Gallofree_HTT</SFXEvent_Build_Complete>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Gallofree_HTT</SFXEvent_Fleet_Move>
 
 		<Required_Star_Base_Level>0</Required_Star_Base_Level>
 		<Required_Planets/>
@@ -1839,7 +1817,7 @@
 	<GroundCompany Name="Imperial_TX130_Company">
 
 		<Text_ID>TEXT_UNIT_IFTX_COMPANY</Text_ID>
-		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_TANK</Encyclopedia_Unit_Class>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_MEDIUM_VEHICLE</Encyclopedia_Unit_Class>
 		<Encyclopedia_Text>
 		TEXT_TOOLTIP_IFTX
 		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
@@ -1875,7 +1853,6 @@
 		<Population_Value>1</Population_Value>
 
 		<Tech_Level>0</Tech_Level>
-		<Required_Timeline>0</Required_Timeline>
 		<Required_Ground_Base_Level>1</Required_Ground_Base_Level>
 		
 		<Affiliation></Affiliation>
@@ -1923,7 +1900,7 @@
 	<GroundCompany Name="Imperial_1M_Tank_Company">
 
 		<Text_ID>TEXT_UNIT_1M_TANK_COMPANY </Text_ID>
-		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_MEDIUM_TANK</Encyclopedia_Unit_Class>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_MEDIUM_VEHICLE</Encyclopedia_Unit_Class>
 		<Encyclopedia_Text>
 		TEXT_TOOLTIP_1M_TANK
 		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
@@ -1960,7 +1937,6 @@
 		<Population_Value>1</Population_Value>
 
 		<Tech_Level>0</Tech_Level>
-		<Required_Timeline>0</Required_Timeline>
 		<Required_Ground_Base_Level>1</Required_Ground_Base_Level>
 		
 		<Affiliation>Eriadu_Authority</Affiliation>
@@ -1995,7 +1971,7 @@
 	<GroundCompany Name="Imperial_Flashblind_Group">
 
 		<Text_ID>TEXT_UNIT_FLASHBLIND_COMPANY</Text_ID>
-		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_SPEEDER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_HEAVY_AIRSPEEDER</Encyclopedia_Unit_Class>
 		<Encyclopedia_Text>
 		TEXT_TOOLTIP_FLASHBLIND
 		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
@@ -2029,7 +2005,6 @@
 		<Population_Value>1</Population_Value>
 
 		<Tech_Level>0</Tech_Level>
-		<Required_Timeline>0</Required_Timeline>
 		<Required_Ground_Base_Level>1</Required_Ground_Base_Level>
 		
 		<Affiliation>Eriadu_Authority</Affiliation>
@@ -2039,12 +2014,12 @@
 
 		<Create_Team_Type/>
 		<Max_Squad_Size>1</Max_Squad_Size>
-		<Company_Transport_Unit>Imperial_Landing_Craft_Air</Company_Transport_Unit> <!-- Replace with Box Sentinel when Extant -->
+		<Company_Transport_Unit>Flashblind_Landing_Craft_Landing</Company_Transport_Unit>
 
 		<SFXEvent_Build_Started>EHD_Build_Vehicle</SFXEvent_Build_Started>
 		<SFXEvent_Build_Cancelled>EHD_Vehicle_Canceled</SFXEvent_Build_Cancelled>
-		<SFXEvent_Build_Complete>Unit_Complete_2M_Tank</SFXEvent_Build_Complete>
-		<SFXEvent_Fleet_Move>Unit_Fleet_Move_2M_Tank</SFXEvent_Fleet_Move>
+		<SFXEvent_Build_Complete>Unit_Complete_Assault_Speeder</SFXEvent_Build_Complete>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Assault_Speeder</SFXEvent_Fleet_Move>
 
 		<Required_Star_Base_Level>0</Required_Star_Base_Level>
 		<Required_Planets/>
@@ -2077,7 +2052,7 @@
 	<GroundCompany Name="Imperial_Century_Tank_Company">
 
 		<Text_ID>TEXT_UNIT_TIE_CRAWLER_COMPANY</Text_ID>
-		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_HEAVY_TANK</Encyclopedia_Unit_Class>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_MEDIUM_TANK</Encyclopedia_Unit_Class>
 		<Encyclopedia_Text>
 		TEXT_TOOLTIP_TIE_CRAWLER 
 		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
@@ -2115,7 +2090,6 @@
 		<Population_Value>1</Population_Value>
 
 		<Tech_Level>0</Tech_Level>
-		<Required_Timeline>0</Required_Timeline>
 		<Required_Ground_Base_Level>1</Required_Ground_Base_Level>
 		
 		<Affiliation>Pentastar</Affiliation>
@@ -2154,7 +2128,7 @@
 	
 	<GroundCompany Name="Imperial_TNT_Company">
 		<Text_ID>TEXT_UNIT_TNT_COMPANY</Text_ID>
-		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_MEDIUM_VEHICLE</Encyclopedia_Unit_Class>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_HEAVY_TANK</Encyclopedia_Unit_Class>
 		<Encyclopedia_Text>
 		TEXT_TOOLTIP_TNT
 		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
@@ -2189,7 +2163,6 @@
 		<Population_Value>1</Population_Value>
 
 		<Tech_Level>0</Tech_Level>
-		<Required_Timeline>0</Required_Timeline>
 		<Required_Ground_Base_Level>1</Required_Ground_Base_Level>
 		
 		<Affiliation>Warlords, Empire</Affiliation> <!-- CCoGM/IR -->
@@ -2201,10 +2174,10 @@
 		<Max_Squad_Size>1</Max_Squad_Size>
 		<Company_Transport_Unit>Imperial_Landing_Craft_Tanks</Company_Transport_Unit> 
 
-		<SFXEvent_Build_Started>RHD_Build_Vehicle</SFXEvent_Build_Started>
-		<SFXEvent_Build_Cancelled>RHD_Vehicle_Canceled</SFXEvent_Build_Cancelled>
-		<SFXEvent_Build_Complete>Unit_Complete_Gallofree_HTT</SFXEvent_Build_Complete>
-		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Gallofree_HTT</SFXEvent_Fleet_Move>
+		<SFXEvent_Build_Started>EHD_Build_Vehicle</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Vehicle_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Complete_Juggernaut</SFXEvent_Build_Complete>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Juggernaut</SFXEvent_Fleet_Move>
 
 		<Required_Star_Base_Level>0</Required_Star_Base_Level>
 		<Required_Planets/>
@@ -2225,7 +2198,7 @@
 	<GroundCompany Name="Imperial_2M_Company">
 
 		<Text_ID>TEXT_UNIT_2M_REPULSOR_TANK_COMPANY</Text_ID>
-		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_TANK</Encyclopedia_Unit_Class>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_MEDIUM_VEHICLE</Encyclopedia_Unit_Class>
 		<Encyclopedia_Text>
 		TEXT_TOOLTIP_2M_REPULSOR
 		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
@@ -2261,7 +2234,6 @@
 		<Population_Value>1</Population_Value>
 
 		<Tech_Level>0</Tech_Level>
-		<Required_Timeline>0</Required_Timeline>
 		<Required_Ground_Base_Level>1</Required_Ground_Base_Level>
 		
 		<Affiliation>Greater_Maldrood</Affiliation> <!-- ZC -->
@@ -2308,7 +2280,7 @@
 	
 	<GroundCompany Name="Imperial_S_1_Firehawke_Company">
 		<Text_ID>TEXT_UNIT_S_1_FIREHAWKE_COMPANY</Text_ID>
-		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_TANK</Encyclopedia_Unit_Class>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_MEDIUM_VEHICLE</Encyclopedia_Unit_Class>
 		<Encyclopedia_Text>
 		TEXT_TOOLTIP_S_1_FIREHAWKE
 		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
@@ -2332,7 +2304,7 @@
 		<Build_Cost_Credits>900</Build_Cost_Credits>
 		<Build_Time_Seconds>40</Build_Time_Seconds>
 		<Slice_Cost_Credits>900</Slice_Cost_Credits>
-		<Required_Special_Structures>E_Ground_Heavy_Vehicle_Factory</Required_Special_Structures>
+		<Required_Special_Structures>E_Ground_Heavy_Vehicle_Factory | GormTalquist_HQ</Required_Special_Structures>
 		<Build_Time_Reduced_By_Multiple_Factories> Yes </Build_Time_Reduced_By_Multiple_Factories>
 		<Build_Tab_Land_Units>Yes</Build_Tab_Land_Units>
 		<Build_Initially_Locked>No</Build_Initially_Locked>
@@ -2342,7 +2314,6 @@
 		<Population_Value>1</Population_Value>
 
 		<Tech_Level>0</Tech_Level>
-		<Required_Timeline>0</Required_Timeline>
 		<Required_Ground_Base_Level>1</Required_Ground_Base_Level>
 		
 		<Affiliation>Empire</Affiliation>
@@ -2354,10 +2325,10 @@
 		<Max_Squad_Size>1</Max_Squad_Size>
 		<Company_Transport_Unit>Imperial_Landing_Craft_Heavy</Company_Transport_Unit> <!-- Replace with Box Sentinel when Extant -->
 
-		<SFXEvent_Build_Started>RHD_Build_Vehicle</SFXEvent_Build_Started>
-		<SFXEvent_Build_Cancelled>RHD_Vehicle_Canceled</SFXEvent_Build_Cancelled>
-		<SFXEvent_Build_Complete>Unit_Complete_Gallofree_HTT</SFXEvent_Build_Complete>
-		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Gallofree_HTT</SFXEvent_Fleet_Move>
+		<SFXEvent_Build_Started>EHD_Build_Vehicle</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Vehicle_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Complete_2M_Tank</SFXEvent_Build_Complete>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_2M_Tank</SFXEvent_Fleet_Move>
 
 		<Required_Star_Base_Level>0</Required_Star_Base_Level>
 		<Required_Planets/>
@@ -2378,7 +2349,7 @@
 	<GroundCompany Name="Imperial_SA5_Company">
 
 		<Text_ID>TEXT_UNIT_SWIFT_ASSAULT_5_COMPANY</Text_ID>
-		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_HEAVY_VEHICLE</Encyclopedia_Unit_Class>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_MEDIUM_VEHICLE</Encyclopedia_Unit_Class>
 		<Encyclopedia_Text>
 		TEXT_TOOLTIP_SWIFT_ASSAULT_5
 		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
@@ -2416,7 +2387,6 @@
 		<Population_Value>1</Population_Value>
 
 		<Tech_Level>0</Tech_Level>
-		<Required_Timeline>0</Required_Timeline>
 		<Required_Ground_Base_Level>1</Required_Ground_Base_Level>
 		
 		<Affiliation>Greater_Maldrood</Affiliation>
@@ -2430,8 +2400,8 @@
 
 		<SFXEvent_Build_Started>EHD_Build_Vehicle</SFXEvent_Build_Started>
 		<SFXEvent_Build_Cancelled>EHD_Vehicle_Canceled</SFXEvent_Build_Cancelled>
-		<SFXEvent_Build_Complete>Unit_Complete_2M_Tank</SFXEvent_Build_Complete>
-		<SFXEvent_Fleet_Move>Unit_Fleet_Move_2M_Tank</SFXEvent_Fleet_Move>
+		<SFXEvent_Build_Complete>Unit_Complete_Hovertank</SFXEvent_Build_Complete>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Hovertank</SFXEvent_Fleet_Move>
 
 		<Required_Star_Base_Level>0</Required_Star_Base_Level>
 		<Required_Planets/>
@@ -2464,7 +2434,7 @@
 	<GroundCompany Name="Imperial_Deathhawk_Group">
 
 		<Text_ID>TEXT_UNIT_DEATHHAWK_COMPANY</Text_ID>
-		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_GUNSHIP</Encyclopedia_Unit_Class>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_MEDIUM_AIRSPEEDER</Encyclopedia_Unit_Class>
 		<Encyclopedia_Text>
 		TEXT_TOOLTIP_DEATHHAWK
 		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
@@ -2497,7 +2467,6 @@
 		<Population_Value>1</Population_Value>
 
 		<Tech_Level>0</Tech_Level>
-		<Required_Timeline>0</Required_Timeline>
 		<Required_Ground_Base_Level>1</Required_Ground_Base_Level>
 		
 		<Affiliation>Empire</Affiliation>
@@ -2507,12 +2476,12 @@
 
 		<Create_Team_Type/>
 		<Max_Squad_Size> 1 </Max_Squad_Size>
-		<Company_Transport_Unit>Imperial_Landing_Craft_Air</Company_Transport_Unit> <!-- Replace with Box Sentinel when Extant -->
+		<Company_Transport_Unit>Deathhawk_Landing_Craft</Company_Transport_Unit>
 
 		<SFXEvent_Build_Started>EHD_Build_Vehicle</SFXEvent_Build_Started>
 		<SFXEvent_Build_Cancelled>EHD_Vehicle_Canceled</SFXEvent_Build_Cancelled>
-		<SFXEvent_Build_Complete/>
-		<SFXEvent_Fleet_Move/>
+		<SFXEvent_Build_Complete>Unit_Complete_Assault_Speeder</SFXEvent_Build_Complete>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Assault_Speeder</SFXEvent_Fleet_Move>
 
 		<LOD_Bias>4</LOD_Bias>
 		<Required_Star_Base_Level>0</Required_Star_Base_Level>
@@ -2533,7 +2502,7 @@
 	<GroundCompany Name="Imperial_SPMAG_Company">
 
 		<Text_ID>TEXT_UNIT_SPHAG_WALKER</Text_ID>
-		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_ARTILLERY</Encyclopedia_Unit_Class>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_HEAVY_ARTILLERY</Encyclopedia_Unit_Class>
 		<Encyclopedia_Text>
 		TEXT_TOOLTIP_SPMAG 
 		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
@@ -2569,7 +2538,6 @@
 		<Population_Value>1</Population_Value>
 
 		<Tech_Level>0</Tech_Level>
-		<Required_Timeline>0</Required_Timeline>
 		<Required_Ground_Base_Level>1</Required_Ground_Base_Level>
 		
 		<Affiliation>Empire</Affiliation> <!-- ZC -->
@@ -2610,7 +2578,7 @@
     <GroundCompany Name="Imperial_1H_Tank_Company">
 
 		<Text_ID>TEXT_UNIT_1H_TANK_COMPANY </Text_ID>
-		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_HEAVY_TANK</Encyclopedia_Unit_Class>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_HEAVY_VEHICLE</Encyclopedia_Unit_Class>
 		<Encyclopedia_Text>
 		TEXT_TOOLTIP_1H_TANK
 		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
@@ -2647,7 +2615,6 @@
 		<Population_Value>1</Population_Value>
 
 		<Tech_Level>0</Tech_Level>
-		<Required_Timeline>0</Required_Timeline>
 		<Required_Ground_Base_Level>1</Required_Ground_Base_Level>
 		
 		<Affiliation>Eriadu_Authority</Affiliation>
@@ -2658,11 +2625,11 @@
 		<Create_Team_Type/>
 		<Max_Squad_Size> 1 </Max_Squad_Size>
 		<Company_Transport_Unit>Imperial_Landing_Craft_Tanks</Company_Transport_Unit> <!-- Replace with Box Sentinel when Extant -->
-
+		
 		<SFXEvent_Build_Started>EHD_Build_Vehicle</SFXEvent_Build_Started>
 		<SFXEvent_Build_Cancelled>EHD_Vehicle_Canceled</SFXEvent_Build_Cancelled>
-		<SFXEvent_Build_Complete>Unit_Complete_2M_Tank</SFXEvent_Build_Complete>
-		<SFXEvent_Fleet_Move>Unit_Fleet_Move_2M_Tank</SFXEvent_Fleet_Move>
+		<SFXEvent_Build_Complete>Unit_Complete_Armored_Vehicle</SFXEvent_Build_Complete>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Armored_Vehicle</SFXEvent_Fleet_Move>
 
 		<Required_Star_Base_Level>0</Required_Star_Base_Level>
 		<Required_Planets/>
@@ -2700,7 +2667,7 @@
 	<GroundCompany Name="Imperial_SPMAT_Company">
 
 		<Text_ID>TEXT_UNIT_SPHAT_WALKER</Text_ID>
-		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_ARTILLERY</Encyclopedia_Unit_Class>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_HEAVY_ARTILLERY</Encyclopedia_Unit_Class>
 		<Encyclopedia_Text>
 		TEXT_TOOLTIP_SPMAT 
 		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
@@ -2736,7 +2703,6 @@
 		<Population_Value>1</Population_Value>
 
 		<Tech_Level>0</Tech_Level>
-		<Required_Timeline>0</Required_Timeline>
 		<Required_Ground_Base_Level>1</Required_Ground_Base_Level>
 		
 		<Affiliation>Zsinj_Empire</Affiliation>
@@ -2778,7 +2744,7 @@
 	<GroundCompany Name="Imperial_LAAT_Group">
 
 		<Text_ID>TEXT_UNIT_LAAT_COMPANY</Text_ID>
-		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_GUNSHIP</Encyclopedia_Unit_Class>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_HEAVY_GUNSHIP</Encyclopedia_Unit_Class>
 		<Encyclopedia_Text>
 		TEXT_TOOLTIP_LAAT
 		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
@@ -2819,7 +2785,6 @@
 		<Population_Value>1</Population_Value>
 
 		<Tech_Level>0</Tech_Level>
-		<Required_Timeline>0</Required_Timeline>
 		<Required_Ground_Base_Level>1</Required_Ground_Base_Level>
 		
 		<Affiliation></Affiliation>
@@ -2829,12 +2794,12 @@
 
 		<Create_Team_Type/>
 		<Max_Squad_Size> 1 </Max_Squad_Size>
-		<Company_Transport_Unit>LAAT_Lander</Company_Transport_Unit>
+		<Company_Transport_Unit>LAAT_Landing_Craft_LAAT</Company_Transport_Unit>
 
 		<SFXEvent_Build_Started>EHD_Build_Vehicle</SFXEvent_Build_Started>
 		<SFXEvent_Build_Cancelled>EHD_Vehicle_Canceled</SFXEvent_Build_Cancelled>
-		<SFXEvent_Build_Complete>Unit_Complete_2M_Tank</SFXEvent_Build_Complete>
-		<SFXEvent_Fleet_Move>Unit_Fleet_Move_2M_Tank</SFXEvent_Fleet_Move>
+		<SFXEvent_Build_Complete>Unit_Complete_Gunship</SFXEvent_Build_Complete>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Gunship</SFXEvent_Fleet_Move>
 
 		<Required_Star_Base_Level>0</Required_Star_Base_Level>
 		<Required_Planets/>
@@ -2850,11 +2815,86 @@
 		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->
 		
 	</GroundCompany>
+
+	<!-- Unused -->
+	<GroundCompany Name="Imperial_Modified_LAAT_Group">
+
+		<Text_ID>TEXT_UNIT_LAAT_MOD_COMPANY</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_HEAVY_GUNSHIP</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_LAAT_MOD
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_LAAT_COMPANY
+		TEXT_TOOLTIP_LAAT_HEALTH
+		TEXT_TOOLTIP_LAAT_MOVE 
+		TEXT_TOOLTIP_LAAT_WEAP1 
+		TEXT_TOOLTIP_LAAT_MOD_WEAP2 
+		TEXT_TOOLTIP_LAAT_WEAP3
+		TEXT_TOOLTIP_LAAT_WEAP4
+		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
+		TEXT_TOOLTIP_BONUS_AA_ACCURACY
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_TRANSPORT
+		</Encyclopedia_Text>
+		<Icon_Name>i_button_laat_mod.tga</Icon_Name>
+
+		<Autoresolve_Health>100</Autoresolve_Health>
+		<Damage>40</Damage>
+
+		<Ship_Class>tank</Ship_Class>
+		<Formation_Priority>3</Formation_Priority>
+		<Is_Dummy>Yes</Is_Dummy>
+		<Is_Escort>yes</Is_Escort>
+
+		<GUI_Row> 0 </GUI_Row>
+		<Build_Cost_Credits>1000</Build_Cost_Credits>
+		<Build_Time_Seconds>90</Build_Time_Seconds>
+		<Slice_Cost_Credits/>
+		<Required_Special_Structures> Z_Ground_Heavy_Vehicle_Factory | KDY_HQ | KDY_Branch </Required_Special_Structures>
+		<Build_Time_Reduced_By_Multiple_Factories> Yes </Build_Time_Reduced_By_Multiple_Factories>
+		<Build_Tab_Land_Units>Yes</Build_Tab_Land_Units>
+		<Build_Initially_Locked>Yes</Build_Initially_Locked>
+		
+		<Piracy_Value_Credits>50</Piracy_Value_Credits>
+		<Score_Cost_Credits>500</Score_Cost_Credits>
+		<Population_Value>1</Population_Value>
+
+		<Tech_Level>0</Tech_Level>
+		<Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+		
+		<Affiliation>Zsinj_Empire</Affiliation>  <!-- Imperial Kamino Lambda -->
+		<Political_Control/>
+
+		<Behavior>DUMMY_GROUND_COMPANY</Behavior>
+
+		<Create_Team_Type/>
+		<Max_Squad_Size> 1 </Max_Squad_Size>
+		<Company_Transport_Unit>Modified_LAAT_Landing_Craft</Company_Transport_Unit>
+
+		<SFXEvent_Build_Started>EHD_Build_Vehicle</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Vehicle_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Complete_Gunship</SFXEvent_Build_Complete>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Gunship</SFXEvent_Fleet_Move>
+
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+		<Required_Planets/>
+		<Company_Units>Imperial_Modified_LAAT</Company_Units>
+		<Maintenance_Cost>0.0</Maintenance_Cost>
+		
+	<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>51180</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>45</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites>Ground_Level_Two_Tech_Upgrade</Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->
+		
+	</GroundCompany>
     
 	<GroundCompany Name="Imperial_IDT_Group">
 
 		<Text_ID>TEXT_UNIT_IDT</Text_ID>
-		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_GUNSHIP</Encyclopedia_Unit_Class>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_HEAVY_GUNSHIP</Encyclopedia_Unit_Class>
 		<Encyclopedia_Text>
 		TEXT_TOOLTIP_IDT
 		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
@@ -2892,7 +2932,6 @@
 		<Population_Value>1</Population_Value>
 
 		<Tech_Level>0</Tech_Level>
-		<Required_Timeline>0</Required_Timeline>
 		<Required_Ground_Base_Level>1</Required_Ground_Base_Level>
 		
 		<Affiliation>Empire, Zsinj_Empire</Affiliation> <!-- ZC -->
@@ -2902,12 +2941,12 @@
 
 		<Create_Team_Type/>
 		<Max_Squad_Size> 1 </Max_Squad_Size>
-		<Company_Transport_Unit>Imperial_Landing_Craft_Air</Company_Transport_Unit>
+		<Company_Transport_Unit>IDT_Landing_Craft</Company_Transport_Unit>
 
 		<SFXEvent_Build_Started>EHD_Build_Vehicle</SFXEvent_Build_Started>
 		<SFXEvent_Build_Cancelled>EHD_Vehicle_Canceled</SFXEvent_Build_Cancelled>
-		<SFXEvent_Build_Complete/>
-		<SFXEvent_Fleet_Move/>
+		<SFXEvent_Build_Complete>Unit_Complete_Troop_Carrier</SFXEvent_Build_Complete>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Troop_Carrier</SFXEvent_Fleet_Move>
 
 		<LOD_Bias>4</LOD_Bias>
 		<Required_Star_Base_Level>0</Required_Star_Base_Level>
@@ -2928,7 +2967,7 @@
 	<GroundCompany Name="Imperial_MAAT_Group">
 
 		<Text_ID>TEXT_UNIT_MAAT_COMPANY</Text_ID>
-		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_GUNSHIP</Encyclopedia_Unit_Class>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_MEDIUM_GUNSHIP</Encyclopedia_Unit_Class>
 		<Encyclopedia_Text>
 		TEXT_TOOLTIP_MAAT
 		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
@@ -2965,7 +3004,6 @@
 		<Population_Value>1</Population_Value>
 
 		<Tech_Level>0</Tech_Level>
-		<Required_Timeline>0</Required_Timeline>
 		<Required_Ground_Base_Level>1</Required_Ground_Base_Level>
 		
 		<Affiliation>Greater_Maldrood</Affiliation>
@@ -2975,12 +3013,12 @@
 
 		<Create_Team_Type/>
 		<Max_Squad_Size> 1 </Max_Squad_Size>
-		<Company_Transport_Unit>Imperial_Landing_Craft_Air</Company_Transport_Unit>
+		<Company_Transport_Unit>MAAT_Landing_Craft</Company_Transport_Unit>
 
 		<SFXEvent_Build_Started>EHD_Build_Vehicle</SFXEvent_Build_Started>
 		<SFXEvent_Build_Cancelled>EHD_Vehicle_Canceled</SFXEvent_Build_Cancelled>
-		<SFXEvent_Build_Complete>Unit_Complete_2M_Tank</SFXEvent_Build_Complete>
-		<SFXEvent_Fleet_Move>Unit_Fleet_Move_2M_Tank</SFXEvent_Fleet_Move>
+		<SFXEvent_Build_Complete>Unit_Complete_Gunship</SFXEvent_Build_Complete>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Gunship</SFXEvent_Fleet_Move>
 
 		<Required_Star_Base_Level>0</Required_Star_Base_Level>
 		<Required_Planets/>
@@ -3000,7 +3038,7 @@
 	<GroundCompany Name="Imperial_VAAT_Group">
 
 		<Text_ID>TEXT_UNIT_VAAT_COMPANY</Text_ID>
-		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_GUNSHIP</Encyclopedia_Unit_Class>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_HEAVY_GUNSHIP</Encyclopedia_Unit_Class>
 		<Encyclopedia_Text>
 		TEXT_TOOLTIP_VAAT 
 		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
@@ -3036,7 +3074,6 @@
 		<Population_Value>1</Population_Value>
 
 		<Tech_Level>99</Tech_Level>
-		<Required_Timeline>0</Required_Timeline>
 		<Required_Ground_Base_Level>1</Required_Ground_Base_Level>
 		
 		<Affiliation></Affiliation>
@@ -3046,12 +3083,12 @@
 
 		<Create_Team_Type/>
 		<Max_Squad_Size> 1 </Max_Squad_Size>
-		<Company_Transport_Unit>Imperial_Landing_Craft_Air</Company_Transport_Unit>
+		<Company_Transport_Unit>Imperial_VAAT_Landing_Craft</Company_Transport_Unit>
 
 		<SFXEvent_Build_Started>EHD_Build_Vehicle</SFXEvent_Build_Started>
 		<SFXEvent_Build_Cancelled>EHD_Vehicle_Canceled</SFXEvent_Build_Cancelled>
-		<SFXEvent_Build_Complete>Unit_Complete_2M_Tank</SFXEvent_Build_Complete>
-		<SFXEvent_Fleet_Move>Unit_Fleet_Move_2M_Tank</SFXEvent_Fleet_Move>
+		<SFXEvent_Build_Complete>Unit_Complete_Gunship</SFXEvent_Build_Complete>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Gunship</SFXEvent_Fleet_Move>
 
 		<Required_Star_Base_Level>0</Required_Star_Base_Level>
 		<Required_Planets/>
@@ -3071,7 +3108,7 @@
     <GroundCompany Name="Imperial_Nemesis_Gunship_Group">
 
 		<Text_ID>TEXT_UNIT_NEMESIS_GUNSHIP</Text_ID>
-		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_GUNSHIP_HEAVY</Encyclopedia_Unit_Class>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_HEAVY_GUNSHIP</Encyclopedia_Unit_Class>
 		<Encyclopedia_Text> 
 		TEXT_TOOLTIP_NEMESIS_GUNSHIP
 		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
@@ -3105,7 +3142,6 @@
 		<Population_Value>1</Population_Value>
 
 		<Tech_Level>0</Tech_Level>
-		<Required_Timeline>0</Required_Timeline>
 		<Required_Ground_Base_Level>1</Required_Ground_Base_Level>
 
 		<Affiliation>Pentastar</Affiliation>
@@ -3115,12 +3151,12 @@
 
 		<Create_Team_Type/>
 		<Max_Squad_Size> 1 </Max_Squad_Size>
-		<Company_Transport_Unit>Imperial_Landing_Craft_Air</Company_Transport_Unit>
+		<Company_Transport_Unit>Nemesis_Landing_Craft</Company_Transport_Unit>
 
 		<SFXEvent_Build_Started>EHD_Build_Vehicle</SFXEvent_Build_Started>
 		<SFXEvent_Build_Cancelled>EHD_Vehicle_Canceled</SFXEvent_Build_Cancelled>
-		<SFXEvent_Build_Complete/>
-		<SFXEvent_Fleet_Move/>
+		<SFXEvent_Build_Complete>Unit_Complete_Gunship</SFXEvent_Build_Complete>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Gunship</SFXEvent_Fleet_Move>
 
 		<Required_Star_Base_Level>0</Required_Star_Base_Level>
 		<Required_Planets/>
@@ -3143,7 +3179,7 @@
 	<GroundCompany Name="Imperial_B5_Juggernaut_Company">
 
 		<Text_ID>TEXT_UNIT_JUGGERNAUT_B5</Text_ID>
-		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_TRANSPORT</Encyclopedia_Unit_Class>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_HEAVY_TRANSPORT</Encyclopedia_Unit_Class>
 		<Encyclopedia_Text>
 		TEXT_TOOLTIP_JUGGERNAUT_B5
 		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
@@ -3185,7 +3221,6 @@
 		<Population_Value>1</Population_Value>
 
 		<Tech_Level>0</Tech_Level>
-		<Required_Timeline>0</Required_Timeline>
 		<Required_Ground_Base_Level>1</Required_Ground_Base_Level>
 		
 		<Affiliation>Pentastar</Affiliation> <!-- ZC -->
@@ -3223,7 +3258,7 @@
 	<GroundCompany Name="Imperial_AT_TE_Walker_Company">
 
 		<Text_ID>TEXT_UNIT_AT_TE_WALKER</Text_ID>
-		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_HEAVY_VEHICLE</Encyclopedia_Unit_Class>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_HEAVY_WALKER</Encyclopedia_Unit_Class>
 		<Encyclopedia_Text>
 		TEXT_TOOLTIP_ATTE 
 		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
@@ -3237,7 +3272,7 @@
 		TEXT_TOOLTIP_BONUS_AA_ACCURACY
 		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
 		TEXT_TOOLTIP_CAPABILITY_SUPER_TRANSPORT
-		TEXT_TOOLTIP_CAPABILITY_SUPER_CRUSH
+		TEXT_TOOLTIP_CAPABILITY_CRUSH
 		</Encyclopedia_Text>
 		<Icon_Name>i_button_atte.tga</Icon_Name>
 
@@ -3263,7 +3298,6 @@
 		<Population_Value>1</Population_Value>
 
 		<Tech_Level>0</Tech_Level>
-		<Required_Timeline>0</Required_Timeline>
 		<Required_Ground_Base_Level>1</Required_Ground_Base_Level>
 		
 		<Affiliation></Affiliation>
@@ -3299,7 +3333,7 @@
     <GroundCompany Name="Imperial_PX4_Company">
 
 		<Text_ID>TEXT_UNIT_PX4_COMPANY</Text_ID>
-		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_TRANSPORT</Encyclopedia_Unit_Class>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_HEAVY_TANK</Encyclopedia_Unit_Class>
 		<Encyclopedia_Text>
 		TEXT_TOOLTIP_PX4
 		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
@@ -3338,7 +3372,6 @@
 		<Population_Value>1</Population_Value>
 
 		<Tech_Level>0</Tech_Level>
-		<Required_Timeline>0</Required_Timeline>
 		<Required_Ground_Base_Level>1</Required_Ground_Base_Level>
 		
 		<Affiliation>Empire</Affiliation>
@@ -3350,10 +3383,10 @@
 		<Max_Squad_Size>1</Max_Squad_Size>
 		<Company_Transport_Unit>Imperial_ATAT_Barge_Heavy</Company_Transport_Unit>
 
-		<SFXEvent_Build_Started>RHD_Build_Vehicle</SFXEvent_Build_Started>
-		<SFXEvent_Build_Cancelled>RHD_Vehicle_Canceled</SFXEvent_Build_Cancelled>
-		<SFXEvent_Build_Complete>Unit_Complete_Gallofree_HTT</SFXEvent_Build_Complete>
-		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Gallofree_HTT</SFXEvent_Fleet_Move>
+		<SFXEvent_Build_Started>EHD_Build_Vehicle</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Vehicle_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>GUI_E_Field_Commander_Complete</SFXEvent_Build_Complete>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Empire_Field</SFXEvent_Fleet_Move>
 
 		<Required_Star_Base_Level>0</Required_Star_Base_Level>
 		<Required_Planets/>
@@ -3374,7 +3407,7 @@
     <GroundCompany Name="Imperial_TRMB_Company">
 
 		<Text_ID>TEXT_UNIT_TRMB</Text_ID>
-		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_HEAVY_VEHICLE</Encyclopedia_Unit_Class>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_HEAVY_TANK</Encyclopedia_Unit_Class>
 		<Encyclopedia_Text>
 		TEXT_TOOLTIP_TRMB
 		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
@@ -3411,7 +3444,6 @@
 		<Population_Value>1</Population_Value>
 
 		<Tech_Level>0</Tech_Level>
-		<Required_Timeline>0</Required_Timeline>
 		<Required_Ground_Base_Level>1</Required_Ground_Base_Level>
 		
 		<Affiliation> Eriadu_Authority</Affiliation>
@@ -3423,10 +3455,10 @@
 		<Max_Squad_Size>1</Max_Squad_Size>
 		<Company_Transport_Unit>Imperial_ATAT_Barge_Heavy</Company_Transport_Unit>
 
-		<SFXEvent_Build_Started>RHD_Build_Vehicle</SFXEvent_Build_Started>
-		<SFXEvent_Build_Cancelled>RHD_Vehicle_Canceled</SFXEvent_Build_Cancelled>
-		<SFXEvent_Build_Complete>Unit_Complete_Gallofree_HTT</SFXEvent_Build_Complete>
-		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Gallofree_HTT</SFXEvent_Fleet_Move>
+		<SFXEvent_Build_Started>EHD_Build_Vehicle</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Vehicle_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Complete_Juggernaut</SFXEvent_Build_Complete>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Juggernaut</SFXEvent_Fleet_Move>
 
 		<Required_Star_Base_Level>0</Required_Star_Base_Level>
 		<Required_Planets/>
@@ -3447,7 +3479,7 @@
 	<GroundCompany Name="Imperial_A5_Juggernaut_Company">
 
 		<Text_ID>TEXT_UNIT_JUGGERNAUT_A5</Text_ID>
-		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_HEAVY_VEHICLE</Encyclopedia_Unit_Class>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_HEAVY_TRANSPORT</Encyclopedia_Unit_Class>
 		<Encyclopedia_Text>
 		TEXT_TOOLTIP_JUGGERNAUT_A5
 		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
@@ -3488,7 +3520,6 @@
 		<Population_Value>1</Population_Value>
 
 		<Tech_Level>0</Tech_Level>
-		<Required_Timeline>0</Required_Timeline>
 		<Required_Ground_Base_Level>1</Required_Ground_Base_Level>
 		
 		<Affiliation>Empire, Greater_Maldrood</Affiliation>
@@ -3522,10 +3553,81 @@
 		
 	</GroundCompany>
 	
+	<GroundCompany Name="Imperial_TRSD_Company">
+
+		<Text_ID>TEXT_UNIT_TRSD_COMPANY</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_MEDIUM_VEHICLE</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_TRSD
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_TRSD_COMPANY
+		TEXT_TOOLTIP_TRSD_HEALTH
+		TEXT_TOOLTIP_TRSD_MOVE 
+		TEXT_TOOLTIP_TRSD_WEAP1
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_CRUSH
+		</Encyclopedia_Text>
+		<Icon_Name>i_button_TRSD.tga</Icon_Name>
+
+		<Autoresolve_Health>100</Autoresolve_Health>
+		<Damage>60</Damage>
+
+		<Ship_Class>walker</Ship_Class>
+		<Formation_Priority>3</Formation_Priority>
+		<Is_Dummy>Yes</Is_Dummy>
+		<Is_Escort>yes</Is_Escort>
+
+		<GUI_Row> 1 </GUI_Row>
+		<Build_Cost_Credits>925</Build_Cost_Credits>
+		<Build_Time_Seconds>50</Build_Time_Seconds>
+		<Slice_Cost_Credits>1400</Slice_Cost_Credits>
+		<Required_Special_Structures>Z_Ground_Advanced_Vehicle_Factory | NenCarvon_HQ</Required_Special_Structures>
+		<Build_Time_Reduced_By_Multiple_Factories> Yes </Build_Time_Reduced_By_Multiple_Factories>
+		<Build_Tab_Land_Units>Yes</Build_Tab_Land_Units>
+		<Build_Initially_Locked>No</Build_Initially_Locked>
+		
+		<Piracy_Value_Credits>1</Piracy_Value_Credits>
+		<Score_Cost_Credits>600</Score_Cost_Credits>
+		<Population_Value>1</Population_Value>
+
+		<Tech_Level>0</Tech_Level>
+		<Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+		
+		<Affiliation>Zsinj_Empire</Affiliation>
+		<Political_Control/>
+
+		<Behavior>DUMMY_GROUND_COMPANY</Behavior>
+
+		<Create_Team_Type/>
+		<Max_Squad_Size> 1 </Max_Squad_Size>
+		<Company_Transport_Unit>Imperial_ATAT_Barge_Heavy</Company_Transport_Unit>
+
+		<SFXEvent_Build_Started>EHD_Build_Vehicle</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Vehicle_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Complete_TRSD</SFXEvent_Build_Complete>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_TRSD</SFXEvent_Fleet_Move>
+
+		<LOD_Bias>0.5</LOD_Bias>
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+		<Required_Planets/>
+		<Company_Units>Tracked_Shield_Disabler, Tracked_Shield_Disabler</Company_Units>
+		<Maintenance_Cost>0.0</Maintenance_Cost>
+		<Unit_Abilities_Data SubObjectList="Yes"> </Unit_Abilities_Data>
+		
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>770</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>21</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites>Ground_Level_Five_Tech_Upgrade</Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->  
+		<!--<MULTIPLAYER SKIRMISH VALUES END>-->
+	</GroundCompany>
+	
 	<GroundCompany Name="Imperial_A5RX_Company">
 
 		<Text_ID>TEXT_UNIT_A5RX_COMPANY</Text_ID>
-		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_HEAVY_VEHICLE</Encyclopedia_Unit_Class>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_HEAVY_TANK</Encyclopedia_Unit_Class>
 		<Encyclopedia_Text>
 		TEXT_TOOLTIP_A5RX
 		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
@@ -3563,7 +3665,6 @@
 		<Population_Value>1</Population_Value>
 
 		<Tech_Level>0</Tech_Level>
-		<Required_Timeline>0</Required_Timeline>
 		<Required_Ground_Base_Level>1</Required_Ground_Base_Level>
 		
 		<Affiliation>Empire</Affiliation>
@@ -3600,7 +3701,7 @@
 	<GroundCompany Name="Imperial_A9_Fortress_Company">
 
 		<Text_ID>TEXT_UNIT_FORTRESS</Text_ID>
-		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_TRANSPORT</Encyclopedia_Unit_Class>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_HEAVY_VEHICLE</Encyclopedia_Unit_Class>
 		<Encyclopedia_Text>
 		TEXT_TOOLTIP_FORTRESS
 		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
@@ -3639,7 +3740,6 @@
 		<Population_Value>1</Population_Value>
 
 		<Tech_Level>0</Tech_Level>
-		<Required_Timeline>0</Required_Timeline>
 		<Required_Ground_Base_Level>1</Required_Ground_Base_Level>
 		
 		<Affiliation>Zsinj_Empire</Affiliation>
@@ -3651,10 +3751,10 @@
 		<Max_Squad_Size>1</Max_Squad_Size>
 		<Company_Transport_Unit>Imperial_ATAT_Barge_Heavy</Company_Transport_Unit>
 
-		<SFXEvent_Build_Started>RHD_Build_Vehicle</SFXEvent_Build_Started>
-		<SFXEvent_Build_Cancelled>RHD_Vehicle_Canceled</SFXEvent_Build_Cancelled>
-		<SFXEvent_Build_Complete>Unit_Complete_Gallofree_HTT</SFXEvent_Build_Complete>
-		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Gallofree_HTT</SFXEvent_Fleet_Move>
+		<SFXEvent_Build_Started>EHD_Build_Vehicle</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Vehicle_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>GUI_R_Field_Commander_Complete</SFXEvent_Build_Complete>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Rebel_Field</SFXEvent_Fleet_Move>
 
 		<Required_Star_Base_Level>0</Required_Star_Base_Level>
 		<Required_Planets/>
@@ -3675,7 +3775,7 @@
 	<GroundCompany Name="Imperial_AT_AT_Company">
 
 		<Text_ID>TEXT_UNIT_AT_AT_WALKER</Text_ID>
-		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_HEAVY_VEHICLE</Encyclopedia_Unit_Class>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_HEAVY_WALKER</Encyclopedia_Unit_Class>
 		<Encyclopedia_Text>
 		TEXT_TOOLTIP_ATAT
 		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
@@ -3713,7 +3813,6 @@
 		<Population_Value>1</Population_Value>
 
 		<Tech_Level>0</Tech_Level>
-		<Required_Timeline>0</Required_Timeline>
 		<Required_Ground_Base_Level>1</Required_Ground_Base_Level>
 		
 		<Affiliation>Empire, Eriadu_Authority</Affiliation> <!-- ZC -->
@@ -3797,7 +3896,6 @@
 		<Population_Value>1</Population_Value>
 
 		<Tech_Level>0</Tech_Level>
-		<Required_Timeline>0</Required_Timeline>
 		<Required_Ground_Base_Level>1</Required_Ground_Base_Level>
 		
 		<Affiliation>Pentastar</Affiliation>
@@ -3841,7 +3939,7 @@
 	<GroundCompany Name="Imperial_Lancet_Group">
 
 		<Text_ID>TEXT_UNIT_LANCET_WING</Text_ID>
-		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_SPEEDER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_MEDIUM_GUNSHIP</Encyclopedia_Unit_Class>
 		<Encyclopedia_Text>
 		TEXT_TOOLTIP_LANCET
 		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
@@ -3877,7 +3975,6 @@
 		<Population_Value>1</Population_Value>
 
 		<Tech_Level>0</Tech_Level>
-		<Required_Timeline>0</Required_Timeline>
 		<Required_Ground_Base_Level>1</Required_Ground_Base_Level>
 		
 		<Affiliation>Eriadu_Authority</Affiliation>
@@ -3915,7 +4012,7 @@
 	<GroundCompany Name="Imperial_Heavy_Recovery_Vehicle_Company">
 
 		<Text_ID>TEXT_UNIT_HRV_COMPANY</Text_ID>
-		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_HEAVY_VEHICLE</Encyclopedia_Unit_Class>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_HEAVY_TANK</Encyclopedia_Unit_Class>
 		<Encyclopedia_Text>
 		TEXT_TOOLTIP_HRV
 		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
@@ -3953,7 +4050,6 @@
 		<Population_Value>1</Population_Value>
 
 		<Tech_Level>0</Tech_Level>
-		<Required_Timeline>0</Required_Timeline>
 		<Required_Ground_Base_Level>1</Required_Ground_Base_Level>
 		
 		<Affiliation>Greater_Maldrood</Affiliation>
@@ -3965,8 +4061,8 @@
 		<Max_Squad_Size>1</Max_Squad_Size>
 		<Company_Transport_Unit>Imperial_Landing_Craft_Heavy</Company_Transport_Unit> <!-- Replace with Box Sentinel when Extant -->
 
-		<SFXEvent_Build_Started>RHD_Build_Vehicle</SFXEvent_Build_Started>
-		<SFXEvent_Build_Cancelled>RHD_Vehicle_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Started>EHD_Build_Vehicle</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Vehicle_Canceled</SFXEvent_Build_Cancelled>
 		<SFXEvent_Build_Complete>Unit_Complete_Gallofree_HTT</SFXEvent_Build_Complete>
 		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Gallofree_HTT</SFXEvent_Fleet_Move>
 
@@ -3989,7 +4085,7 @@
 	<GroundCompany Name="Imperial_AT_AT_Refit_Company">
 
 		<Text_ID>TEXT_UNIT_AT_AT_REFIT</Text_ID>
-		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_HEAVY_VEHICLE</Encyclopedia_Unit_Class>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_HEAVY_WALKER</Encyclopedia_Unit_Class>
 		<Encyclopedia_Text>
 		TEXT_TOOLTIP_ATAT_REFIT
 		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
@@ -4027,7 +4123,6 @@
 		<Population_Value>1</Population_Value>
 
 		<Tech_Level>0</Tech_Level>
-		<Required_Timeline>0</Required_Timeline>
 		<Required_Ground_Base_Level>1</Required_Ground_Base_Level>
 		
 		<Affiliation>Empire</Affiliation>
@@ -4075,7 +4170,7 @@
 	<GroundCompany Name="Imperial_XR85_Company">
 
 		<Text_ID>TEXT_UNIT_TANKDROID</Text_ID>
-		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_HEAVY_VEHICLE</Encyclopedia_Unit_Class>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_HEAVY_TANK</Encyclopedia_Unit_Class>
 		<Encyclopedia_Text>
 		TEXT_TOOLTIP_TANKDROID_XR85 
 		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
@@ -4113,7 +4208,6 @@
 		<Population_Value>1</Population_Value>
 
 		<Tech_Level>0</Tech_Level>
-		<Required_Timeline>0</Required_Timeline>
 		<Required_Ground_Base_Level>1</Required_Ground_Base_Level>
 		
 		<Affiliation>Empire, Eriadu_Authority, Pentastar, Greater_Maldrood, Zsinj_Empire</Affiliation>
@@ -4127,8 +4221,8 @@
 
 		<SFXEvent_Build_Started>EHD_Build_Vehicle</SFXEvent_Build_Started>
 		<SFXEvent_Build_Cancelled>EHD_Vehicle_Canceled</SFXEvent_Build_Cancelled>
-		<SFXEvent_Build_Complete/>
-		<SFXEvent_Fleet_Move/>
+		<SFXEvent_Build_Complete>Unit_XR85_Select</SFXEvent_Build_Complete>
+		<SFXEvent_Fleet_Move>Unit_XR85_Move</SFXEvent_Fleet_Move>
 
 		<Required_Star_Base_Level>0</Required_Star_Base_Level>
 		<Required_Planets/>
@@ -4148,7 +4242,7 @@
 	<GroundCompany Name="Imperial_A6_Juggernaut_Company">
 
 		<Text_ID>TEXT_UNIT_JUGGERNAUT_A6</Text_ID>
-		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_HEAVY_VEHICLE</Encyclopedia_Unit_Class>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_HEAVY_TRANSPORT</Encyclopedia_Unit_Class>
 		<Encyclopedia_Text>
 		TEXT_TOOLTIP_JUGGERNAUT_A6
 		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
@@ -4190,7 +4284,6 @@
 		<Population_Value>2</Population_Value>
 
 		<Tech_Level>0</Tech_Level>
-		<Required_Timeline>0</Required_Timeline>
 		<Required_Ground_Base_Level>1</Required_Ground_Base_Level>
 		
 		<Affiliation></Affiliation>
@@ -4268,7 +4361,6 @@
 		<Population_Value>1</Population_Value>
 
 		<Tech_Level>99</Tech_Level>
-		<Required_Timeline>0</Required_Timeline>
 		<Required_Ground_Base_Level>1</Required_Ground_Base_Level>
 
 		<Behavior>DUMMY_GROUND_COMPANY</Behavior>
@@ -4279,8 +4371,8 @@
 		<Company_Units>SD_9_Battle_Droid, SD_9_Battle_Droid, SD_9_Battle_Droid</Company_Units>
 		<Company_Transport_Unit>Imperial_Landing_Craft_Light_Vehicles</Company_Transport_Unit>
 
-		<SFXEvent_Build_Started>UHD_Build_Troops</SFXEvent_Build_Started>
-		<SFXEvent_Build_Cancelled>UHD_Recruitment_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Started>EHD_Build_Troops</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Recruitment_Canceled</SFXEvent_Build_Cancelled>
 		<SFXEvent_Build_Complete>Unit_Complete_Dark_Trooper_2</SFXEvent_Build_Complete>
 		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Dark_Trooper_2</SFXEvent_Fleet_Move>
 		
@@ -4339,7 +4431,6 @@
 		<Population_Value>1</Population_Value>
 
 		<Tech_Level>99</Tech_Level>
-		<Required_Timeline>0</Required_Timeline>
 		<Required_Ground_Base_Level>1</Required_Ground_Base_Level>
 
 		<Behavior>DUMMY_GROUND_COMPANY</Behavior>
@@ -4350,8 +4441,8 @@
 		<Company_Units>SD_10_Battle_Droid, SD_10_Battle_Droid</Company_Units>
 		<Company_Transport_Unit>Imperial_Landing_Craft_Light_Vehicles</Company_Transport_Unit>
 
-		<SFXEvent_Build_Started>UHD_Build_Troops</SFXEvent_Build_Started>
-		<SFXEvent_Build_Cancelled>UHD_Recruitment_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Started>EHD_Build_Troops</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Recruitment_Canceled</SFXEvent_Build_Cancelled>
 		<SFXEvent_Build_Complete>Unit_Complete_Dark_Trooper_2</SFXEvent_Build_Complete>
 		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Dark_Trooper_2</SFXEvent_Fleet_Move>
 		
@@ -4369,7 +4460,7 @@
 	<GroundCompany Name="X1_Viper_Droid_Company">
 
 		<Text_ID>TEXT_UNIT_X1_VIPER_SQUAD</Text_ID>
-		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_HEAVY_VEHICLE</Encyclopedia_Unit_Class>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_MEDIUM_WALKER</Encyclopedia_Unit_Class>
 		<Encyclopedia_Text>
 		TEXT_TOOLTIP_X1_VIPER
 		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
@@ -4414,7 +4505,6 @@
 		<Population_Value>1</Population_Value>
 
 		<Tech_Level>99</Tech_Level>
-		<Required_Timeline>0</Required_Timeline>
 		<Required_Ground_Base_Level>1</Required_Ground_Base_Level>
 
 		<Behavior>DUMMY_GROUND_COMPANY</Behavior>
@@ -4424,8 +4514,8 @@
 		<Company_Units>X1_Viper, X1_Viper</Company_Units>
 		<Company_Transport_Unit>Imperial_Landing_Craft_Heavy</Company_Transport_Unit>
 
-		<SFXEvent_Build_Started>UHD_Build_Troops</SFXEvent_Build_Started>
-		<SFXEvent_Build_Cancelled>UHD_Recruitment_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Started>EHD_Build_Troops</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Recruitment_Canceled</SFXEvent_Build_Cancelled>
 		<SFXEvent_Build_Complete>Unit_Complete_Dark_Trooper_2</SFXEvent_Build_Complete>
 		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Dark_Trooper_2</SFXEvent_Fleet_Move>
 		

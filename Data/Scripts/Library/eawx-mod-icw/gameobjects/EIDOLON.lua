@@ -10,6 +10,7 @@ return {
 		},
 		["Z95_HEADHUNTER_SQUADRON"] = {
 			INDEPENDENT_FORCES = {Initial = 1, Reserve = 2},
+			HUTT_CARTELS = {Initial = 1, Reserve = 2},
 			REBEL = {Initial = 1, Reserve = 2, TechLevel = LessThan(4)}
 		},
 		["DEFENDER_STARFIGHTER_SQUADRON"] = {
@@ -25,6 +26,9 @@ return {
 		},
 		["Y-WING_SQUADRON_HALF"] = {
 			REBEL = {Initial = 1, Reserve = 3}
+		},
+		["SCURRG_H6_SQUADRON_HALF"] = {
+			HUTT_CARTELS = {Initial = 1, Reserve = 3}
 		}
 	},
 	Scripts = {"multilayer", "fighter-spawn", "single-unit-retreat"},

@@ -39,11 +39,15 @@
 		Variable_Self.IsFaction {Parameter_Faction = "Corporate_Sector"}
 		+
 		Variable_Self.IsFaction {Parameter_Faction = "EmpireoftheHand"} * (12 > Script_GetCurrentYear.Evaluate)
+		+
+		Variable_Self.IsFaction {Parameter_Faction = "Hutt_Cartels"}
 	</Isolationist_Personality>
 	
 	<!-- Only cares about money -->
 	<Economic_Personality>
 		Variable_Self.IsFaction {Parameter_Faction = "Corporate_Sector"}
+		+
+		Variable_Self.IsFaction {Parameter_Faction = "Hutt_Cartels"}
 	</Economic_Personality>
 	
 	

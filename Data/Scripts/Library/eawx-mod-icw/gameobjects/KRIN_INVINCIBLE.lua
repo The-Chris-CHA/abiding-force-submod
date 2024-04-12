@@ -3,7 +3,7 @@ return {
 		["Z95_HEADHUNTER_SQUADRON"] = {
 			DEFAULT = {Initial = 1, Reserve = 4}
 		},
-		["IRDA_SQUADRON_DOUBLE"] = {
+		["SHIELDED_IRDA_SQUADRON_DOUBLE"] = {
 			DEFAULT = {Initial = 1, Reserve = 2}
 		},
 		["2_WARPOD_SQUADRON_DOUBLE"] = {

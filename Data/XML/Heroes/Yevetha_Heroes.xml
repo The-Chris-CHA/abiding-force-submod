@@ -35,7 +35,8 @@
 		<Lua_Script>GenericGameObject</Lua_Script>
 		<Tech_Level>99</Tech_Level>
 		
-		<CategoryMask> SuperCapital | AntiCapital </CategoryMask>	
+		<CategoryMask> SuperCapital | AntiCapital </CategoryMask>
+		<Property_Flags>GTSImmune</Property_Flags>
 
 		<SFXEvent_Select></SFXEvent_Select>
 		<SFXEvent_Move></SFXEvent_Move>
@@ -57,13 +58,11 @@
 
 			<Combat_Bonus_Ability Name="Bille_Combat_Bonus">
 				<Activation_Style>Space_Automatic</Activation_Style>
-				<Unit_Strength_Category>All</Unit_Strength_Category>
 				<Applicable_Unit_Categories>All</Applicable_Unit_Categories>
 				<Applicable_Unit_Types/>
-				<Excluded_Unit_Types> </Excluded_Unit_Types>
+				<Excluded_Unit_Types> Ground_Ion_Cannon, Ground_Hypervelocity_Gun </Excluded_Unit_Types>
 				<Health_Bonus_Percentage>0.05</Health_Bonus_Percentage>
-				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
-				<Energy_Pool_Bonus_Percentage>0.0</Energy_Pool_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>    
 				<Shield_Bonus_Percentage>0.05</Shield_Bonus_Percentage>
 				<Defense_Bonus_Percentage>0.05</Defense_Bonus_Percentage>
 				<Movement_Speed_Bonus_Percentage>0.0</Movement_Speed_Bonus_Percentage>
@@ -109,6 +108,7 @@
 		<Tech_Level>99</Tech_Level>
 		
 		<CategoryMask> SpaceHero | AntiFrigate </CategoryMask>
+		<Property_Flags>GTSImmune</Property_Flags>
 		
 		<SFXEvent_Select></SFXEvent_Select>
 		<SFXEvent_Move></SFXEvent_Move>
@@ -141,12 +141,11 @@
 
 			<Combat_Bonus_Ability Name="Spaar_Combat_Bonus">
 				<Activation_Style>Space_Automatic</Activation_Style>
-				<Unit_Strength_Category>All</Unit_Strength_Category>
 				<Applicable_Unit_Categories>All</Applicable_Unit_Categories>
 				<Applicable_Unit_Types/>
+				<Excluded_Unit_Types> Ground_Ion_Cannon, Ground_Hypervelocity_Gun </Excluded_Unit_Types>
 				<Health_Bonus_Percentage>0.05</Health_Bonus_Percentage>
-				<Damage_Bonus_Percentage>0.15</Damage_Bonus_Percentage>
-				<Energy_Pool_Bonus_Percentage>0.0</Energy_Pool_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.15</Damage_Bonus_Percentage>    
 				<Shield_Bonus_Percentage>0.05</Shield_Bonus_Percentage>
 				<Defense_Bonus_Percentage>0.05</Defense_Bonus_Percentage>
 				<Movement_Speed_Bonus_Percentage>0.0</Movement_Speed_Bonus_Percentage>
@@ -210,18 +209,18 @@
 		<Lua_Script>GenericGameObject</Lua_Script>
 		<Tech_Level>99</Tech_Level>
 		
-		<CategoryMask> SuperCapital | AntiCapital </CategoryMask>		
+		<CategoryMask> SuperCapital | AntiCapital </CategoryMask>
+		<Property_Flags>GTSImmune</Property_Flags>		
 
 		<Abilities SubObjectList="Yes">
 
 			<Combat_Bonus_Ability Name="Spaar_Combat_Bonus">
 				<Activation_Style>Space_Automatic</Activation_Style>
-				<Unit_Strength_Category>All</Unit_Strength_Category>
 				<Applicable_Unit_Categories>All</Applicable_Unit_Categories>
 				<Applicable_Unit_Types/>
+				<Excluded_Unit_Types> Ground_Ion_Cannon, Ground_Hypervelocity_Gun </Excluded_Unit_Types>
 				<Health_Bonus_Percentage>0.05</Health_Bonus_Percentage>
-				<Damage_Bonus_Percentage>0.15</Damage_Bonus_Percentage>
-				<Energy_Pool_Bonus_Percentage>0.0</Energy_Pool_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.15</Damage_Bonus_Percentage>    
 				<Shield_Bonus_Percentage>0.05</Shield_Bonus_Percentage>
 				<Defense_Bonus_Percentage>0.05</Defense_Bonus_Percentage>
 				<Movement_Speed_Bonus_Percentage>0.0</Movement_Speed_Bonus_Percentage>
@@ -267,6 +266,7 @@
 		<Reserve_Spawned_Units_Tech_1>Trifoil_Squadron, 1</Reserve_Spawned_Units_Tech_1>
 
 		<CategoryMask> SpaceHero | AntiFrigate </CategoryMask>
+		<Property_Flags>GTSImmune</Property_Flags>
 		
 		<Tactical_Build_Cost_Multiplayer></Tactical_Build_Cost_Multiplayer>
 		<Tactical_Build_Time_Seconds></Tactical_Build_Time_Seconds>
@@ -280,13 +280,11 @@
 
 			<Combat_Bonus_Ability Name="Toorr_Combat_Bonus">
 				<Activation_Style>Space_Automatic</Activation_Style>
-				<Unit_Strength_Category>All</Unit_Strength_Category>
 				<Applicable_Unit_Categories>All</Applicable_Unit_Categories>
 				<Applicable_Unit_Types/>
-				<Excluded_Unit_Types> </Excluded_Unit_Types>
+				<Excluded_Unit_Types> Ground_Ion_Cannon, Ground_Hypervelocity_Gun </Excluded_Unit_Types>
 				<Health_Bonus_Percentage>0.05</Health_Bonus_Percentage>
-				<Damage_Bonus_Percentage>0.0</Damage_Bonus_Percentage>
-				<Energy_Pool_Bonus_Percentage>0.0</Energy_Pool_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.0</Damage_Bonus_Percentage>    
 				<Shield_Bonus_Percentage>0.0</Shield_Bonus_Percentage>
 				<Defense_Bonus_Percentage>0.0</Defense_Bonus_Percentage>
 				<Movement_Speed_Bonus_Percentage>0.0</Movement_Speed_Bonus_Percentage>
@@ -297,7 +295,7 @@
 
 	</UniqueUnit>
 
-	<SpaceUnit Name="Voota_Splendor">
+	<UniqueUnit Name="Voota_Splendor">
 		<Variant_Of_Existing_Type>Generic_Interdictor_Cruiser</Variant_Of_Existing_Type>
 		<Text_ID>TEXT_HERO_SPLENDER</Text_ID>
 		<Encyclopedia_Text> 
@@ -329,6 +327,7 @@
 		<Reserve_Spawned_Units_Tech_1>TIE_Interceptor_Squadron, 3</Reserve_Spawned_Units_Tech_1>
 		
 		<CategoryMask> SpaceHero | AntiFighter | Interdictor </CategoryMask>
+		<Property_Flags>GTSImmune</Property_Flags>
 		
 		<Tactical_Build_Cost_Multiplayer></Tactical_Build_Cost_Multiplayer>
 		<Tactical_Build_Time_Seconds></Tactical_Build_Time_Seconds>
@@ -342,13 +341,11 @@
 
 			<Combat_Bonus_Ability Name="Voota_Combat_Bonus">
 				<Activation_Style>Space_Automatic</Activation_Style>
-				<Unit_Strength_Category>All</Unit_Strength_Category>
 				<Applicable_Unit_Categories>All</Applicable_Unit_Categories>
 				<Applicable_Unit_Types/>
-				<Excluded_Unit_Types> </Excluded_Unit_Types>
+				<Excluded_Unit_Types> Ground_Ion_Cannon, Ground_Hypervelocity_Gun </Excluded_Unit_Types>
 				<Health_Bonus_Percentage>0.05</Health_Bonus_Percentage>
-				<Damage_Bonus_Percentage>0.0</Damage_Bonus_Percentage>
-				<Energy_Pool_Bonus_Percentage>0.0</Energy_Pool_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.0</Damage_Bonus_Percentage>    
 				<Shield_Bonus_Percentage>0.0</Shield_Bonus_Percentage>
 				<Defense_Bonus_Percentage>0.0</Defense_Bonus_Percentage>
 				<Movement_Speed_Bonus_Percentage>0.0</Movement_Speed_Bonus_Percentage>
@@ -356,9 +353,9 @@
 			</Combat_Bonus_Ability>
 		</Abilities>
 
-	</SpaceUnit>
+	</UniqueUnit>
 
-	<SpaceUnit Name="Attan_Beauty">
+	<UniqueUnit Name="Attan_Beauty">
 		<Variant_Of_Existing_Type>Corellian_Corvette</Variant_Of_Existing_Type>
 		<Text_ID>TEXT_HERO_KOL_ATTAN</Text_ID>
 		<Encyclopedia_Text> 
@@ -394,6 +391,7 @@
 		</HardPoints>
 		
 		<CategoryMask> SpaceHero | AntiFighter | AntiBomber </CategoryMask>
+		<Property_Flags>GTSImmune</Property_Flags>
 		
 		<Tactical_Build_Cost_Multiplayer>1000</Tactical_Build_Cost_Multiplayer>
 		<Tactical_Build_Time_Seconds>12</Tactical_Build_Time_Seconds>
@@ -405,13 +403,11 @@
 
 			<Combat_Bonus_Ability Name="Attan_Combat_Bonus">
 				<Activation_Style>Space_Automatic</Activation_Style>
-				<Unit_Strength_Category>All</Unit_Strength_Category>
 				<Applicable_Unit_Categories>All</Applicable_Unit_Categories>
 				<Applicable_Unit_Types/>
-				<Excluded_Unit_Types> </Excluded_Unit_Types>
+				<Excluded_Unit_Types> Ground_Ion_Cannon, Ground_Hypervelocity_Gun </Excluded_Unit_Types>
 				<Health_Bonus_Percentage>0.05</Health_Bonus_Percentage>
-				<Damage_Bonus_Percentage>0.0</Damage_Bonus_Percentage>
-				<Energy_Pool_Bonus_Percentage>0.0</Energy_Pool_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.0</Damage_Bonus_Percentage>    
 				<Shield_Bonus_Percentage>0.0</Shield_Bonus_Percentage>
 				<Defense_Bonus_Percentage>0.0</Defense_Bonus_Percentage>
 				<Movement_Speed_Bonus_Percentage>0.05</Movement_Speed_Bonus_Percentage>
@@ -420,7 +416,7 @@
 			
 			<Laser_Defense_Ability Name="CR90_Laser_Defense">
 				<Activation_Style> Space_Automatic </Activation_Style>
-                <Defense_Duration_In_Secs> 35000.0 </Defense_Duration_In_Secs>
+                <Defense_Duration_In_Secs> 4800.0 </Defense_Duration_In_Secs>
                 <Laser_Color>255, 134, 134, 255</Laser_Color>
                 <Bone_Names>ROOT</Bone_Names>
                 <Projectile_Types_Targeted>ROCKET, MISSILE</Projectile_Types_Targeted>
@@ -437,9 +433,9 @@
 
 	   </Abilities>
 
-	</SpaceUnit>
+	</UniqueUnit>
 
-	<SpaceUnit Name="Noorr_Purity">
+	<UniqueUnit Name="Noorr_Purity">
 		<Variant_Of_Existing_Type>Communications_Battlecruiser</Variant_Of_Existing_Type>
 		<Text_ID>TEXT_HERO_VOL_NOORR</Text_ID>
 		<Encyclopedia_Text> 
@@ -476,6 +472,7 @@
 		<Tech_Level>99</Tech_Level>
 		
 		<CategoryMask> AntiCapital | SpaceHero </CategoryMask>
+		<Property_Flags>GTSImmune</Property_Flags>
 
 		<Tactical_Build_Cost_Multiplayer></Tactical_Build_Cost_Multiplayer>
 		<Tactical_Build_Time_Seconds></Tactical_Build_Time_Seconds>
@@ -503,13 +500,11 @@
 			
 			<Combat_Bonus_Ability Name="Noorr_Combat_Bonus">
 				<Activation_Style>Space_Automatic</Activation_Style>
-				<Unit_Strength_Category>All</Unit_Strength_Category>
 				<Applicable_Unit_Categories>All</Applicable_Unit_Categories>
 				<Applicable_Unit_Types/>
-				<Excluded_Unit_Types> </Excluded_Unit_Types>
+				<Excluded_Unit_Types> Ground_Ion_Cannon, Ground_Hypervelocity_Gun </Excluded_Unit_Types>
 				<Health_Bonus_Percentage>0.05</Health_Bonus_Percentage>
-				<Damage_Bonus_Percentage>0.0</Damage_Bonus_Percentage>
-				<Energy_Pool_Bonus_Percentage>0.0</Energy_Pool_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.0</Damage_Bonus_Percentage>    
 				<Shield_Bonus_Percentage>0.0</Shield_Bonus_Percentage>
 				<Defense_Bonus_Percentage>0.0</Defense_Bonus_Percentage>
 				<Movement_Speed_Bonus_Percentage>0.0</Movement_Speed_Bonus_Percentage>
@@ -523,13 +518,11 @@
 			
 			<Combat_Bonus_Ability Name="Comm_Battlecruiser_Combat_Bonus">
 				<Activation_Style>Space_Automatic</Activation_Style>
-				<Unit_Strength_Category> Capital | Frigate | Corvette </Unit_Strength_Category>
 				<Applicable_Unit_Categories> Capital | Frigate | Corvette </Applicable_Unit_Categories>
 				<Applicable_Unit_Types />
 				<Excluded_Unit_Types> </Excluded_Unit_Types>
 				<Health_Bonus_Percentage>0.0</Health_Bonus_Percentage>
-				<Damage_Bonus_Percentage>0.0</Damage_Bonus_Percentage>
-				<Energy_Pool_Bonus_Percentage>0.0</Energy_Pool_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.0</Damage_Bonus_Percentage>    
 				<Shield_Bonus_Percentage>0.0</Shield_Bonus_Percentage>
 				<Defense_Bonus_Percentage>0.05</Defense_Bonus_Percentage>
 				<Movement_Speed_Bonus_Percentage>0.05</Movement_Speed_Bonus_Percentage>
@@ -537,9 +530,9 @@
 			</Combat_Bonus_Ability>
 		</Abilities>
 		
-	</SpaceUnit>
+	</UniqueUnit>
 
-	<SpaceUnit Name="Fraan_Glory">
+	<UniqueUnit Name="Fraan_Glory">
 		<Variant_Of_Existing_Type>EX_F</Variant_Of_Existing_Type>
 		<Text_ID>TEXT_HERO_TAL_FRAAN</Text_ID>
 		<Encyclopedia_Text>
@@ -573,18 +566,17 @@
 		<Tech_Level>99</Tech_Level>
 		
 		<CategoryMask> AntiFrigate | SpaceHero </CategoryMask>
+		<Property_Flags>GTSImmune</Property_Flags>
 
 		<Abilities SubObjectList="Yes">
 
 			<Combat_Bonus_Ability Name="Fraan_Combat_Bonus">
 				<Activation_Style>Space_Automatic</Activation_Style>
-				<Unit_Strength_Category>All</Unit_Strength_Category>
 				<Applicable_Unit_Categories>All</Applicable_Unit_Categories>
 				<Applicable_Unit_Types/>
-				<Excluded_Unit_Types> </Excluded_Unit_Types>
+				<Excluded_Unit_Types> Ground_Ion_Cannon, Ground_Hypervelocity_Gun </Excluded_Unit_Types>
 				<Health_Bonus_Percentage>0.10</Health_Bonus_Percentage>
-				<Damage_Bonus_Percentage>0.10</Damage_Bonus_Percentage>
-				<Energy_Pool_Bonus_Percentage>0.0</Energy_Pool_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.10</Damage_Bonus_Percentage>    
 				<Shield_Bonus_Percentage>0.10</Shield_Bonus_Percentage>
 				<Defense_Bonus_Percentage>0.10</Defense_Bonus_Percentage>
 				<Movement_Speed_Bonus_Percentage>0.05</Movement_Speed_Bonus_Percentage>
@@ -593,7 +585,7 @@
 			
 		</Abilities>
 
-	</SpaceUnit>
+	</UniqueUnit>
 
 
 	<HeroUnit Name="Vor_Duull">
@@ -616,7 +608,6 @@
 		<!-- must use a special ability to modify political control in order to stack correctly -->
 		<Political_Control>0</Political_Control>
 		<Political_Faction>Yevetha</Political_Faction>
-		<Required_Timeline>0</Required_Timeline>
 		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
 		<Required_Star_Base_Level>0</Required_Star_Base_Level>
 		<Required_Special_Structures/>
@@ -654,9 +645,7 @@
 		<Is_Dummy>Yes</Is_Dummy>
 		<Affiliation>Yevetha</Affiliation>
 		<Build_Time_Seconds>0</Build_Time_Seconds>
-		<Combat_Power_Value>0</Combat_Power_Value>
 		<Tech_Level>99</Tech_Level>
-		<Required_Timeline>0</Required_Timeline>
 		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
 		<Required_Star_Base_Level>0</Required_Star_Base_Level>
 		<Required_Special_Structures/>
@@ -696,7 +685,6 @@
 		<Respawn_Whole_Team_When_Killed>Yes</Respawn_Whole_Team_When_Killed>
 		<Type>Walk</Type>
 		<Affiliation>Yevetha</Affiliation>
-		<Required_Timeline>0</Required_Timeline>
 		<IsBuildable>No</IsBuildable>
 		<Size_Value>10</Size_Value>
 		<Stealth_Capable>Yes</Stealth_Capable>
@@ -716,8 +704,8 @@
 		<FormationSpacing> .5 </FormationSpacing> <!-- Temp scale change for scale test - change back once models resized -->
 		<MinimumPushReturnDistance> 10 </MinimumPushReturnDistance>
 		<Min_Speed> .1 </Min_Speed>
-		<OverrideAcceleration> .1 </OverrideAcceleration>
-		<OverrideDeceleration> .25 </OverrideDeceleration>
+		<OverrideAcceleration> 1 </OverrideAcceleration>
+		<OverrideDeceleration> 1 </OverrideDeceleration>
 		
 		<Deploys>No</Deploys>
 		
@@ -844,7 +832,7 @@
 			<System_Spy_Ability Name="Palle_Access">
 				<Initially_Enabled>Yes</Initially_Enabled>
 				<Activation_Style>Galactic_Automatic</Activation_Style>
-				<Causes_Despawn>Yes</Causes_Despawn>
+				<Causes_Despawn>False</Causes_Despawn>
 				<Duration_In_Secs>-1.0</Duration_In_Secs>
 				<See_Base_Levels>No</See_Base_Levels>
 				<See_Credit_Income>No</See_Credit_Income>
@@ -877,9 +865,7 @@
 		<Affiliation>Yevetha</Affiliation>
 		<Build_Time_Seconds>20</Build_Time_Seconds>
 		<Build_Cost_Credits>5000</Build_Cost_Credits>
-		<Combat_Power_Value>0</Combat_Power_Value>
 		<Tech_Level>99</Tech_Level>
-		<Required_Timeline>0</Required_Timeline>
 		<Required_Ground_Base_Level>1</Required_Ground_Base_Level>
 		<Required_Star_Base_Level>0</Required_Star_Base_Level>
 		<Required_Special_Structures/>
@@ -913,7 +899,7 @@
 		<Build_Limit_Lifetime_For_All_Allies>-1</Build_Limit_Lifetime_For_All_Allies>  
 		<!--<MULTIPLAYER SKIRMISH VALUES END>-->
 
-		<CategoryMask> Infantry | SpaceHero </CategoryMask>
+		<CategoryMask> LandHero </CategoryMask>
 		<Ranking_In_Category> 3 </Ranking_In_Category>
 		<Population_Value>1</Population_Value>
 		
@@ -935,8 +921,7 @@
 
 
 	<UniqueUnit Name="Raalk_AT_AT_Walker">
-		<Variant_Of_Existing_Type>AT_AT_Walker_Refit</Variant_Of_Existing_Type>
-		<Land_Model_Name>EV_AT-AT.ALO</Land_Model_Name>
+		<Variant_Of_Existing_Type>AT_AT_Walker</Variant_Of_Existing_Type>
 		<LOD_Bias>0.5</LOD_Bias>
 		<Text_ID>TEXT_HERO_TON_RAALK</Text_ID>
 		<Encyclopedia_Text>
@@ -960,6 +945,12 @@
 
 		<Is_Named_Hero>Yes</Is_Named_Hero>
 		<Affiliation>Yevetha</Affiliation>
+		
+		<HardPoints>
+				HP_ATAT_Refit_Main,
+				HP_ATAT_Side,
+		</HardPoints>
+		
 		<Property_Flags>GoodInfantryCrusher | IsSupercrusher | GTSImmune </Property_Flags>
 
 		<Icon_Name>i_button_yev10.tga</Icon_Name>
@@ -999,12 +990,10 @@
 
 			<Combat_Bonus_Ability Name="Raalk_Combat_Bonus">
 				<Activation_Style>Ground_Automatic</Activation_Style>
-				<Unit_Strength_Category>Vehicle | Infantry | Air</Unit_Strength_Category>
 				<Applicable_Unit_Categories>Vehicle | Infantry | Air</Applicable_Unit_Categories>
 				<Applicable_Unit_Types />
 				<Health_Bonus_Percentage>0.10</Health_Bonus_Percentage>
-				<Damage_Bonus_Percentage>0.10</Damage_Bonus_Percentage>
-				<Energy_Pool_Bonus_Percentage>0.0</Energy_Pool_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.10</Damage_Bonus_Percentage>    
 				<Shield_Bonus_Percentage>0.10</Shield_Bonus_Percentage>
 				<Defense_Bonus_Percentage>0.10</Defense_Bonus_Percentage>
 				<Movement_Speed_Bonus_Percentage>0.05</Movement_Speed_Bonus_Percentage>
@@ -1021,9 +1010,7 @@
 		<Affiliation>Yevetha</Affiliation>
 		<Build_Cost_Credits>10000</Build_Cost_Credits>
 		<Build_Time_Seconds>60</Build_Time_Seconds>
-		<Combat_Power_Value>0</Combat_Power_Value>
 		<Tech_Level>99</Tech_Level>
-		<Required_Timeline>0</Required_Timeline>
 		<Required_Ground_Base_Level>1</Required_Ground_Base_Level>
 		<Required_Star_Base_Level>0</Required_Star_Base_Level>
 		<Required_Special_Structures></Required_Special_Structures>

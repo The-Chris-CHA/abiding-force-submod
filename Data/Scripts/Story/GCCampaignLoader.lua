@@ -1,4 +1,5 @@
 require("PGBase")
+require("pgevents")
 require("PGStateMachine")
 require("PGStoryMode")
 StoryUtil = require("eawx-util/StoryUtil")
@@ -25,7 +26,7 @@ function Set_Tech(message)
     liveFactionTable = {
         ["REBEL"] = 0,
         ["EMPIRE"] = 1,
-        --"HUTT_CARTELS" 2,
+        ["HUTT_CARTELS"] = 2,
         --"NEUTRAL" 3,
         --"HOSTILE" 4,
         ["EMPIREOFTHEHAND"] = 5,
@@ -81,6 +82,45 @@ function Set_Tech(message)
         end
       end
 
+	elseif planet_name == "ETTI" then
+		if era >= 8 then
+			era = 7
+		end
+		
+		if Find_Player("Zsinj_Empire").Is_Human() then
+			if era >= 3 then
+				era = 3
+			end
+		elseif Find_Player("Empire").Is_Human() then
+			if era == 2 then
+				era = 3
+			end
+			if era >= 4 then
+				era = 4
+			end
+		elseif Find_Player("Greater_Maldrood").Is_Human() then
+			era = 3
+		elseif Find_Player("Hutt_Cartels").Is_Human() then
+			era = 7
+		end
+		
+		planet_name = "Sandbox_CorporateAcquisitions"
+		
+	elseif planet_name == "KAMPE" then
+		if era >= 6 then
+			era = 6
+		end
+		
+		if era == 5 then
+			era = 4
+		end
+		
+		if era <= 3 then
+			era = 3
+		end
+		
+		planet_name = "Sandbox_DeepCoreConflict"
+	
     else
       -- Main progressives
 	  if Find_Player("Corporate_Sector").Is_Human() then
@@ -114,8 +154,17 @@ function Set_Tech(message)
 
     loadEvent.Set_Reward_Parameter(0, name)
     loadEvent.Set_Reward_Parameter(1, faction_index)
-
-    
+    local difficulty = Find_Player("Empire").Get_Difficulty()
+    if faction_name == "EMPIRE" then
+      difficulty = Find_Player("Rebel").Get_Difficulty()
+    end
+    local difficulty_index = 1
+    if difficulty == "Easy" then
+      difficulty_index = 0
+    elseif difficulty == "Hard" then
+      difficulty_index = 2
+    end
+    loadEvent.Set_Reward_Parameter(2, difficulty_index)
     Story_Event("LOAD_CAMPAIGN_EVENT")
 
   elseif message == OnUpdate then

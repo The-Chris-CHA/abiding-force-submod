@@ -36,6 +36,12 @@ function TechManager:new(galactic_conquest, human_player, planets)
         {"Corellian_Corvette", "Corellian_Gunboat", "Quasar", "Liberator_Cruiser"},
         nil, nil,
         {"NCMP2_HEROES"})
+	
+	 self.AAC3Research = GenericResearch(self.galactic_conquest,
+        "AAC3_RESEARCH",
+        "Dummy_AAC3", {"Rebel"}, 
+        {"Rebel_AAC_3_Company"},
+        {"Rebel_AAC_2_Company"})
 		
 	self.ViscountResearch = GenericResearch(self.galactic_conquest,
         "VISCOUNT_RESEARCH",
@@ -67,7 +73,7 @@ function TechManager:new(galactic_conquest, human_player, planets)
         "Dummy_Find_Thrawn_Clone", {"EmpireoftheHand"}, 
         nil,
         nil,
-        {"Eviscerator"}, "Nirauan")
+        {"Thrawn_Clone_Eviscerator"}, "Nirauan")
 
 	self.CoronaResearch = GenericResearch(self.galactic_conquest,
         "CORONA_RESEARCH",
@@ -80,6 +86,13 @@ function TechManager:new(galactic_conquest, human_player, planets)
         "Dummy_Research_Gorath", {"Greater_Maldrood"}, 
         {"Strike_Cruiser_Gorath"},
         {"Strike_Cruiser"})
+		
+	self.TempestResearch = GenericResearch(self.galactic_conquest,
+		"TEMPEST_RESEARCH",
+		"Dummy_Research_Tempest", {"Hutt_Cartels"},
+		{"Tempest_Cruiser"},
+		{}, 
+		{"Mika_Tempest"}, "Nal_Hutta")
 
 	self.TechHelper = TechHelper(self.galactic_conquest)
 

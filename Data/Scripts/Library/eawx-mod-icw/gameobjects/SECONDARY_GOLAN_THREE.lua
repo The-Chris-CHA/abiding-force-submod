@@ -28,12 +28,18 @@ return {
 		["Z95_HEADHUNTER_SQUADRON_DOUBLE"] = {
 			ZSINJ_EMPIRE = {Initial = 1, Reserve = 2}
 		},
+		["DUNELIZARD_FIGHTER_SQUADRON_DOUBLE"] = {
+			HUTT_CARTELS = {Initial = 1, Reserve = 2}
+		},
 		["TIE_BOMBER_SQUADRON"] = {
 			IMPERIAL = {Initial = 1, Reserve = 1},
 			INDEPENDENT_FORCES = {Initial = 1, Reserve = 1}
 		},
 		["Y-WING_SQUADRON"] = {
 			REBEL = {Initial = 1, Reserve = 1}
+		},
+		["SCURRG_H6_SQUADRON"] = {
+			HUTT_CARTELS = {Initial = 1, Reserve = 1}
 		},
 		["SKIRMISH_CR90"] = {
 			REBEL = {Initial = 2, Reserve = 2}
@@ -55,6 +61,9 @@ return {
 		},
 		["SKIRMISH_ZSINJ_CR90"] = {
 			ZSINJ_EMPIRE = {Initial = 2, Reserve = 2}
+		},
+		["SKIRMISH_WARLORD_CRUISER"] = {
+			HUTT_CARTELS = {Initial = 2, Reserve = 2}
 		}
 	},
 	Scripts = {"turn-station", "fighter-spawn"}

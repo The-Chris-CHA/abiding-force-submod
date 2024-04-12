@@ -1,6 +1,6 @@
 return {
 	Fighters = {
-		["ARDELLA_N1_SQUADRON"] = {
+		["N1_SQUADRON_HALF"] = {
 			DEFAULT = {Initial = 1, Reserve = 0}
 		},
 		["IMPERIAL_LANDING_CRAFT"] = {

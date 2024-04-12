@@ -16,6 +16,9 @@ return {
 		},
 		["SUPER_TIE_SQUADRON_HALF"] = {
 			EMPIRE = {Initial = 1, Reserve = 0, TechLevel = GreaterOrEqualTo(6)}
+		},
+		["Z95_HEADHUNTER_SQUADRON_HALF"] = {
+			HUTT_CARTELS = {Initial = 1, Reserve = 0, TechLevel = GreaterOrEqualTo(6)}
 		}
 	},
 	Scripts = {"multilayer", "single-unit-retreat"},

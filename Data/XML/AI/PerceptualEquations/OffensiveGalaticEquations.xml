@@ -51,6 +51,21 @@
 	</Allow_Blind_Space_Production>
 	
 	
+	<Too_Many_SuperCapitals>
+		Variable_Self.IsDifficulty{Parameter_Difficulty_Level_Type = DifficultyLevelType[Easy]}
+		*
+		Variable_Self.SpaceTotalUnnormalized {Parameter_Category = GameObjectCategoryType[SuperCapital]} > 20000
+		+
+		Variable_Self.IsDifficulty{Parameter_Difficulty_Level_Type = DifficultyLevelType[Normal]}
+		*
+		Variable_Self.SpaceTotalUnnormalized {Parameter_Category = GameObjectCategoryType[SuperCapital]} > 100000
+		+
+		Variable_Self.IsDifficulty{Parameter_Difficulty_Level_Type = DifficultyLevelType[Normal]}
+		*
+		Variable_Self.SpaceTotalUnnormalized {Parameter_Category = GameObjectCategoryType[SuperCapital]} > 200000
+	</Too_Many_SuperCapitals>
+	
+	
 	<Allow_SuperCapital_Production>
 		(Function_Current_Credits.Evaluate >= 20000)
 		*
@@ -63,9 +78,15 @@
 									Parameter_Type = "NewRepublic_Shipyard_Level_Four",
 									Parameter_Type = "CSA_Shipyard_Level_Four",
 									Parameter_Type = "Republic_Shipyard_Level_Four",
-									Parameter_Type = "CIS_Shipyard_Level_Four"}
+									Parameter_Type = "Republic_Naval_Command_Centre",
+									Parameter_Type = "CIS_Shipyard_Level_Four",
+									Parameter_Type = "Sith_Shipyard_Level_Four",
+									Parameter_Type = "Star_Forge_Relay",
+									Parameter_Type = "Mandalorian_Shipyard_Level_Four"}
 		*
 		(1 - Function_Has_Upgradeable_Hero.Evaluate)
+		*
+		(1 - Function_Too_Many_SuperCapitals.Evaluate)
 	</Allow_SuperCapital_Production>
 
 	<!-- Empty planet, or neglected, or generally wealthy, or a chokepoint or other markup -->
@@ -83,6 +104,8 @@
 		+
 		5.0 * Variable_Target.Hints.Chokepoint
 		+
+		5.0 * (1.0 - Variable_Target.ActiveTradeRoutes) * Function_Is_Connected_To_Me.Evaluate
+		+
 		2.0 * Variable_Target.ConnectsIsolatedPlanetsByForce
 		+
 		2.0 * Variable_Target.Markup
@@ -91,7 +114,7 @@
 		-
 		10.0 * (Function_Is_AI_And_Should_Be_Ignored.Evaluate)
 		-
-		10.0 * Function_Opens_New_Front.Evaluate
+		5.0 * Function_Opens_New_Front.Evaluate
 		-
 		25.0 * Function_Isolationist_Personality.Evaluate * (1.0 - Variable_Target.IsFaction{Parameter_Faction = "Warlords", Parameter_Faction = "Independent_Forces"})
 	</Is_Good_Invasion_Target>
@@ -143,13 +166,23 @@
 			5.0 * (Variable_Target.EnemyForce.HasGroundForce == 0.0)
 		) 
 	</Is_Good_Ground_Grab_Target>
-	
 
 	<Enemy_Present>
 		((Variable_Target.EnemyForce.SpaceTotal + Variable_Target.EnemyForce.GroundTotal) > 0.0)
 	</Enemy_Present>
-	
-	
+
+	<Starbase_Present>
+		(Variable_Target.StarbaseLevel > 0.0)
+	</Starbase_Present>
+
+	<Enemy_Present_In_Space>
+		(Variable_Target.EnemyForce.SpaceTotal > 0.0)
+	</Enemy_Present_In_Space>
+
+	<Enemy_Present_On_Ground>
+		(Variable_Target.EnemyForce.GroundTotal > 0.0)
+	</Enemy_Present_On_Ground>
+
 	<Need_To_Reconnect_Islands>
 		Function_Is_Connected_To_Me.Evaluate
 		*
@@ -198,13 +231,10 @@
 	</Ground_Contrast>
 
 	<!-- AI controlled planet that is connected to other enemies -->
-	<!-- The more enemy connections, the more fronts this opens -->
 	<Opens_New_Front>
 		(Variable_Target.IsHumanControlled == 0.0) 
 		*
 		Function_Is_Connected_To_Enemy.Evaluate
-		*
-		(1.0 - Variable_Target.ActiveTradeRoutes)
 	</Opens_New_Front>
 
 	
@@ -291,6 +321,8 @@
 		Variable_Target.IsHumanControlled
 		*
 		(1.0 - Function_Isolationist_Personality.Evaluate)
+		*
+		(Function_Space_Contrast.Evaluate > 0)
 	</Skynet_Should_Perform_Unrestricted_Grab_Space>
 	
 	<Should_Perform_Unrestricted_Grab_Space>

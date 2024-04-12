@@ -1,26 +1,13 @@
 return {
-    ["EMPIRE"] = {
-        ["CORUSCANT"] = {
-            "Ysanne_Isard_Team",
-			"Brashin_Inquisitor",
-            "Makati_Steadfast",
-            "Corrupter_Star_Destroyer",
-			"Devlia_IEC",
-            "Elite_Squadron",
-            "Vorru_Team",
-			"Tal_Ashen_Team"
-        },
-        ["BILBRINGI"] = {"Agonizer_Star_Destroyer"}
-    },
     ["REBEL"] = {
         ["BOTHAWUI"] = {"Mon_Mothma_Team", "Luke_Skywalker_Jedi_Team"},
-		["KASHYYYK"] = {"Han_Solo_Team", "Home_One", "Lando_Calrissian_Team", "Wedge_Rogue_Squadron_Space", "Blue_Squadron_Space"},
+		["KASHYYYK"] = {"Han_Solo_Team", "Home_One", "Lando_Calrissian_Team"},
         ["MON_CALAMARI"] = {"Ragab_Emancipator", "Iillor_Corusca", "Airen_Cracken_Team", "Katarn_Team"},
 		["BOMIS_KOORI"] = {"Nantz_Independence"},
     },
     ["EMPIREOFTHEHAND"] = {
         ["NIRAUAN"] = {
-            "Grey_Wolf",
+            "Thrawn_Grey_Wolf",
             "Niriz_Admonitor",
             "Parck_Strikefast",
             "Hand_of_Judgement_Team"
@@ -31,18 +18,18 @@ return {
 			"Tasse_Team"}
     },
     ["GREATER_MALDROOD"] = {
-        ["CENTARES"]  = {"Neomen_Ion_Storm", "13x_Teradoc", "Therbon_Allegiance", "Somos_Team"},
-        ["HAKASSI"] = {"Lancet_Kosh", "Tanniel_Team"},
+        ["CENTARES"]  = {"Neomen_Ion_Storm", "Treuten_13X", "Therbon_Allegiance", "Somos_Team"},
+        ["HAKASSI"] = {"Kosh_Lancet", "Tanniel_Team"},
 		["ROCHE"] = {"Nervi_Blood_Ambition"},
 		["THANOS"] = {"Trier_Secutor", "Maston_Team", "Ramier_Team", "Lacmar_Team"}
     },
     ["PENTASTAR"] = {
         ["ENTRALLA"]  = {
-			"Grant_Oriflamme", 
+			"Grant_Oriflamme", 		
 			"Major_Noda_Team",
 			"Brazack_Team",
 			"Ardus_Kaine_Team",
-			"Gregor_Team",
+			"Gregor_Raquoran_Team",
 			"Dekeet_Intractable",
 			"Dynamic_Besk",
 			"Otro_Enforcer"
@@ -50,27 +37,26 @@ return {
         ["BASTION"]  = {"Slosin_Ironhand"}
     },
     ["ERIADU_AUTHORITY"] = {
-        ["SLUIS_VAN"]  = {"General_Veers_Team", "Delvardus_Brilliant", "Nyrox_Team", "Malcom_Team", "Grath_Stormtrooper_Team"},
-		["SANRAFSIX"]  = {"Retribution_Star_Destroyer", "Johans_Team", "Adrick_Team"},
+        ["SLUIS_VAN"]  = {"Veers_AT_AT_Team", "Delvardus_Brilliant", "Nyrox_Team", "Malcom_Team", "Grath_Stormtrooper_Team"},
+		["SANRAFSIX"]  = {"Resuun_Retribution", "Johans_Team", "Adrick_Team"},
 		["YAGDHUL"]  = {"Prittick_Tyrant", "Octavion_Sorin_Team", "Snopel_Team"}
 	},
     ["ZSINJ_EMPIRE"] = {
         ["DATHOMIR"]  = {
-            "Iron_Fist_VSD",
+            "Zsinj_Iron_Fist_VSD",
             "Joshi_Provocateur",				
             "Netbers_Team",
 			"Melvar_Team",
             "Gethzerion_Team",
-            "181st_Cowall"
         },
-		["PHINDAR"] = {"Demolisher"},
+		["PHINDAR"] = {"Screed_Demolisher"},
 		["SERENNO"] = {
 			"Banjeer", 
 			"Lanu_Team", 
 			"Teubbo_Team"
 		},
 		["ESSION"] = {
-			"Implacable_Star_Destroyer",
+			"Trigit_Implacable",
 			"Nabyl_Hawkbat",
 			"Night_Caller"
 		}
@@ -107,6 +93,33 @@ return {
             "Beed_Thane_Team",
             "Lovett_Riverlord",
             "Livette_Team"
+        }
+	},
+	["HUTT_CARTELS"] = {
+		["GAMORR"]  = {
+			"Zorba_The_Hutt_Team"
+		},
+        ["LATHARRA"]  = {
+			"Borvo_Prosperous_Secret"
+		},
+		["CIRCUMTORE"]  = {
+			"Tronox_Team",
+			"Reshul_Team",
+        },
+		["MULATAN"]  = {
+            "Troonol_Agrelcu_Haalta"
+        },
+        ["NAL_HUTTA"]  = {
+			"Bossato_Team",
+			"Plakot_Team",
+        },
+		["NAR_SHADDAA"]  = {
+            "Popara_Imru_Ootmian",
+			"Parella_Team",
+			"Smebba_Dunk_Team",
+        },
+		["UBRIKKIA"]  = {
+            "Quaffug_Lorda"
         }
 	},
     ["YEVETHA"] = {

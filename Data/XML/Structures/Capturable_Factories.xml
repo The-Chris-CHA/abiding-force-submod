@@ -159,6 +159,8 @@
 		<Icon_Name>i_button_r_factory_2_abandon.tga</Icon_Name>
 		<Affiliation>Neutral, Rebel, Empire, Zsinj_Empire, EmpireoftheHand, Pentastar, Hapes_Consortium, Greater_Maldrood, Eriadu_Authority, Hutt_Cartels, Corporate_Sector, Warlords, Chiss,  SsiRuuvi_Imperium</Affiliation>
 		<Starting_Spawned_Units_Tech_0>Hailfire_Riot_Control, 3</Starting_Spawned_Units_Tech_0>
+		<Spawned_Squadron_Delay_Seconds>2</Spawned_Squadron_Delay_Seconds>
+		<Spawned_Squadron_Location_Flyout_Distances>150.0</Spawned_Squadron_Location_Flyout_Distances>
 	</SecondaryStructure>
 	
 	<SecondaryStructure Name="Secondary_Heavy_Factory_AT_TE_Walker">
@@ -194,6 +196,23 @@
 		<Affiliation>Neutral, Rebel, Empire, Zsinj_Empire, EmpireoftheHand, Pentastar, Hapes_Consortium, Greater_Maldrood, Eriadu_Authority, Hutt_Cartels, Corporate_Sector, Warlords, Chiss,  SsiRuuvi_Imperium</Affiliation>
 		<Starting_Spawned_Units_Tech_0>B1_Droid_Deployed, 7</Starting_Spawned_Units_Tech_0>
 	</SecondaryStructure>
+
+	<SecondaryStructure Name="Secondary_Heavy_Factory_B1_RC">
+		<Variant_Of_Existing_Type>Secondary_Heavy_Factory_Template</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_GROUND_SECONDARY_ABANDONED_DROIDWORKS</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_ENCYCLOPEDIA_SECONDARY_FACTORY
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_TOOLTIP_SECONDARY_FACTORY_B1
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_UNIT_CAPTUREABLE_STRUCTURE
+		</Encyclopedia_Text>
+		<Secondary_Objective> TEXT_TACTICAL_SECONDARY_DROIDWORKS_CAPTURE </Secondary_Objective>
+		<Land_Model_Name>UB_DroidWorks.alo</Land_Model_Name>
+		<Icon_Name>i_button_n_UB_DroidWorks_abandon.tga</Icon_Name>
+		<Affiliation>Neutral, Rebel, Empire, Zsinj_Empire, EmpireoftheHand, Pentastar, Hapes_Consortium, Greater_Maldrood, Eriadu_Authority, Hutt_Cartels, Corporate_Sector, Warlords, Chiss,  SsiRuuvi_Imperium</Affiliation>
+		<Starting_Spawned_Units_Tech_0>Deployed_B1_CSA_Squad, 7</Starting_Spawned_Units_Tech_0>
+	</SecondaryStructure>
 	
 	<SecondaryStructure Name="Secondary_Heavy_Factory_B2">
 		<Variant_Of_Existing_Type>Secondary_Heavy_Factory_Template</Variant_Of_Existing_Type>
@@ -211,8 +230,60 @@
 		<Affiliation>Neutral, Rebel, Empire, Zsinj_Empire, EmpireoftheHand, Pentastar, Hapes_Consortium, Greater_Maldrood, Eriadu_Authority, Hutt_Cartels, Corporate_Sector, Warlords, Chiss,  SsiRuuvi_Imperium</Affiliation>
 		<Starting_Spawned_Units_Tech_0>B2_Droid_Deployed, 4</Starting_Spawned_Units_Tech_0>
 	</SecondaryStructure>
-	
-	<SecondaryStructure Name="Secondary_Heavy_Factory_Protocol_Legionnaire">
+
+	<SecondaryStructure Name="Secondary_Heavy_Factory_Destroyer_Droid">
+		<Variant_Of_Existing_Type>Secondary_Heavy_Factory_Template</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_GROUND_SECONDARY_ABANDONED_DROIDWORKS</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_ENCYCLOPEDIA_SECONDARY_FACTORY
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_TOOLTIP_SECONDARY_FACTORY_DESTROYER_DROIDMK1
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_UNIT_CAPTUREABLE_STRUCTURE
+		</Encyclopedia_Text>
+		<Secondary_Objective> TEXT_TACTICAL_SECONDARY_DROIDWORKS_CAPTURE </Secondary_Objective>
+		<Land_Model_Name>UB_DroidWorks.alo</Land_Model_Name>
+		<Icon_Name>i_button_n_UB_DroidWorks_abandon.tga</Icon_Name>
+		<Affiliation>Neutral, Rebel, Empire, Zsinj_Empire, EmpireoftheHand, Pentastar, Hapes_Consortium, Greater_Maldrood, Eriadu_Authority, Hutt_Cartels, Corporate_Sector, Warlords, Chiss,  SsiRuuvi_Imperium</Affiliation>
+		<Starting_Spawned_Units_Tech_0>Destroyer_Droid, 16</Starting_Spawned_Units_Tech_0>
+	</SecondaryStructure>
+
+	<SecondaryStructure Name="Secondary_Heavy_Factory_Destroyer_Droid_MK2">
+		<Variant_Of_Existing_Type>Secondary_Heavy_Factory_Template</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_GROUND_SECONDARY_ABANDONED_DROIDWORKS</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_ENCYCLOPEDIA_SECONDARY_FACTORY
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_TOOLTIP_SECONDARY_FACTORY_DESTROYER_DROIDMK2
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_UNIT_CAPTUREABLE_STRUCTURE
+		</Encyclopedia_Text>
+		<Secondary_Objective> TEXT_TACTICAL_SECONDARY_DROIDWORKS_CAPTURE </Secondary_Objective>
+		<Land_Model_Name>UB_DroidWorks.alo</Land_Model_Name>
+		<Icon_Name>i_button_n_UB_DroidWorks_abandon.tga</Icon_Name>
+		<Affiliation>Neutral, Rebel, Empire, Zsinj_Empire, EmpireoftheHand, Pentastar, Hapes_Consortium, Greater_Maldrood, Eriadu_Authority, Hutt_Cartels, Corporate_Sector, Warlords, Chiss,  SsiRuuvi_Imperium</Affiliation>
+		<Starting_Spawned_Units_Tech_0>Destroyer_Droid_II, 6</Starting_Spawned_Units_Tech_0>
+	</SecondaryStructure>
+
+	<!-- Should probably replace with non-imperial eventually or do a split -->
+	<SecondaryStructure Name="Secondary_Heavy_Factory_Dwarf_Spider_Droid">
+		<Variant_Of_Existing_Type>Secondary_Heavy_Factory_Template</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_GROUND_SECONDARY_ABANDONED_DROIDWORKS</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_ENCYCLOPEDIA_SECONDARY_FACTORY
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_TOOLTIP_SECONDARY_FACTORY_DWARF_SPIDER_DROID
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_UNIT_CAPTUREABLE_STRUCTURE
+		</Encyclopedia_Text>
+		<Secondary_Objective> TEXT_TACTICAL_SECONDARY_DROIDWORKS_CAPTURE </Secondary_Objective>
+		<Land_Model_Name>UB_DroidWorks.alo</Land_Model_Name>
+		<Icon_Name>i_button_n_UB_DroidWorks_abandon.tga</Icon_Name>
+		<Affiliation>Neutral, Rebel, Empire, Zsinj_Empire, EmpireoftheHand, Pentastar, Hapes_Consortium, Greater_Maldrood, Eriadu_Authority, Hutt_Cartels, Corporate_Sector, Warlords, Chiss,  SsiRuuvi_Imperium</Affiliation>
+		<Starting_Spawned_Units_Tech_0>Imperial_Dwarf_Spider_Droid_Squad, 4</Starting_Spawned_Units_Tech_0>
+	</SecondaryStructure>
+
+<!-- 	<SecondaryStructure Name="Secondary_Heavy_Factory_Protocol_Legionnaire"> T-Posing do not used until fixed
 		<Variant_Of_Existing_Type>Secondary_Heavy_Factory_Template</Variant_Of_Existing_Type>
 		<Text_ID>TEXT_GROUND_SECONDARY_ABANDONED_DROIDWORKS</Text_ID>
 		<Encyclopedia_Text>
@@ -227,24 +298,7 @@
 		<Icon_Name>i_button_n_UB_DroidWorks_abandon.tga</Icon_Name>
 		<Affiliation>Neutral, Rebel, Empire, Zsinj_Empire, EmpireoftheHand, Pentastar, Hapes_Consortium, Greater_Maldrood, Eriadu_Authority, Hutt_Cartels, Corporate_Sector, Warlords, Chiss,  SsiRuuvi_Imperium</Affiliation>
 		<Starting_Spawned_Units_Tech_0>Protocol_Legionnaire_Team_Deployed, 4</Starting_Spawned_Units_Tech_0>
-	</SecondaryStructure>
-	
-	<SecondaryStructure Name="Secondary_Heavy_Factory_A4">
-		<Variant_Of_Existing_Type>Secondary_Heavy_Factory_Template</Variant_Of_Existing_Type>
-		<Text_ID>TEXT_GROUND_SECONDARY_ABANDONED_ADVANCED_FACTORY</Text_ID>
-		<Encyclopedia_Text>
-		TEXT_ENCYCLOPEDIA_SECONDARY_FACTORY
-		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
-		TEXT_TOOLTIP_SECONDARY_FACTORY_A4
-		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
-		TEXT_TOOLTIP_UNIT_CAPTUREABLE_STRUCTURE
-		</Encyclopedia_Text>
-		<Land_Model_Name>EB_MegaAdvancedWeapons.alo</Land_Model_Name>
-		<Icon_Name>i_button_e_factory_3_abandon.tga</Icon_Name>
-		<Affiliation>Neutral, Rebel, Empire, Zsinj_Empire, EmpireoftheHand, Pentastar, Hapes_Consortium, Greater_Maldrood, Eriadu_Authority, Hutt_Cartels, Corporate_Sector, Warlords, Chiss,  SsiRuuvi_Imperium</Affiliation>
-		<Starting_Spawned_Units_Tech_0>A4_Juggernaut, 1</Starting_Spawned_Units_Tech_0>
-		<Spawned_Squadron_Location_Flyout_Distances>150.0</Spawned_Squadron_Location_Flyout_Distances>
-	</SecondaryStructure>
+	</SecondaryStructure> -->
 	
 	<SecondaryStructure Name="Secondary_Heavy_Factory_SD6">
 		<Variant_Of_Existing_Type>Secondary_Heavy_Factory_Template</Variant_Of_Existing_Type>
@@ -273,7 +327,7 @@
 		TEXT_TOOLTIP_UNIT_CAPTUREABLE_STRUCTURE
 		</Encyclopedia_Text>
 		<Affiliation>Neutral, Rebel, Empire, Zsinj_Empire, EmpireoftheHand, Pentastar, Hapes_Consortium, Greater_Maldrood, Eriadu_Authority, Hutt_Cartels, Corporate_Sector, Warlords, Chiss,  SsiRuuvi_Imperium</Affiliation>
-		<Starting_Spawned_Units_Tech_0>Skiff, 4</Starting_Spawned_Units_Tech_0>	
+		<Starting_Spawned_Units_Tech_0>Bantha_II_Skiff, 4</Starting_Spawned_Units_Tech_0>	
 	</SecondaryStructure>
 
 	<SecondaryStructure Name="Secondary_Heavy_Factory_M91">
@@ -373,6 +427,32 @@
 		<Starting_Spawned_Units_Tech_0>Treaded_Neutron_Torch, 3</Starting_Spawned_Units_Tech_0>	
 	</SecondaryStructure>
 
+	<SecondaryStructure Name="Secondary_Heavy_Factory_Gian">
+		<Variant_Of_Existing_Type>Secondary_Heavy_Factory_Template</Variant_Of_Existing_Type>
+		<Encyclopedia_Text>
+		TEXT_ENCYCLOPEDIA_SECONDARY_FACTORY
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_TOOLTIP_SECONDARY_FACTORY_GIAN
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_UNIT_CAPTUREABLE_STRUCTURE
+		</Encyclopedia_Text>
+		<Affiliation>Neutral, Rebel, Empire, Zsinj_Empire, EmpireoftheHand, Pentastar, Hapes_Consortium, Greater_Maldrood, Eriadu_Authority, Hutt_Cartels, Corporate_Sector, Warlords, Chiss,  SsiRuuvi_Imperium</Affiliation>
+		<Starting_Spawned_Units_Tech_0>Gian_Speeder, 4</Starting_Spawned_Units_Tech_0>	
+	</SecondaryStructure>
+
+	<SecondaryStructure Name="Secondary_Heavy_Factory_Gian_PDF">
+		<Variant_Of_Existing_Type>Secondary_Heavy_Factory_Template</Variant_Of_Existing_Type>
+		<Encyclopedia_Text>
+		TEXT_ENCYCLOPEDIA_SECONDARY_FACTORY
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_TOOLTIP_SECONDARY_FACTORY_GIAN_PDF
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_UNIT_CAPTUREABLE_STRUCTURE
+		</Encyclopedia_Text>
+		<Affiliation>Neutral, Rebel, Empire, Zsinj_Empire, EmpireoftheHand, Pentastar, Hapes_Consortium, Greater_Maldrood, Eriadu_Authority, Hutt_Cartels, Corporate_Sector, Warlords, Chiss,  SsiRuuvi_Imperium</Affiliation>
+		<Starting_Spawned_Units_Tech_0>Gian_PDF, 4</Starting_Spawned_Units_Tech_0>	
+	</SecondaryStructure>
+
 	<!-- Aircraft -->
 
 	<SecondaryStructure Name="Secondary_Heavy_Factory_Skyhopper">
@@ -445,6 +525,24 @@
 		<Spawned_Squadron_Location_Flyout_Distances>150.0</Spawned_Squadron_Location_Flyout_Distances>
 	</SecondaryStructure>
 
+	<SecondaryStructure Name="Secondary_Heavy_Factory_LAAT">
+		<Variant_Of_Existing_Type>Secondary_Heavy_Factory_Template</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_GROUND_SECONDARY_ABANDONED_LANDINGPAD</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_ENCYCLOPEDIA_SECONDARY_FACTORY
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_TOOLTIP_SECONDARY_FACTORY_LAAT
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_UNIT_CAPTUREABLE_STRUCTURE
+		</Encyclopedia_Text>
+		<Secondary_Objective> TEXT_TACTICAL_SECONDARY_LANDINGPAD_CAPTURE </Secondary_Objective>
+		<Land_Model_Name>EB_ICC_LandingPad.alo</Land_Model_Name>
+		<Icon_Name>i_button_e_landing_pad_1_abandon.tga</Icon_Name>
+		<Affiliation>Neutral, Rebel, Empire, Trade_Federation, EmpireoftheHand, Banking_Clan, Hapes_Consortium, Commerce_Guild, Techno_Union, Hutt_Cartels, Sector_Forces, Warlords, Independent_Forces, Chiss,  SsiRuuvi_Imperium</Affiliation>
+		<Starting_Spawned_Units_Tech_0>LAAT, 1</Starting_Spawned_Units_Tech_0>
+		<Spawned_Squadron_Location_Flyout_Distances>150.0</Spawned_Squadron_Location_Flyout_Distances>
+	</SecondaryStructure>
+
 	<SecondaryStructure Name="Secondary_Heavy_Factory_Snowspeeder">
 		<Variant_Of_Existing_Type>Secondary_Heavy_Factory_Template</Variant_Of_Existing_Type>
 		<Text_ID>TEXT_GROUND_SECONDARY_ABANDONED_LANDINGPAD</Text_ID>
@@ -479,6 +577,5 @@
 		<Starting_Spawned_Units_Tech_0>MAAT, 1</Starting_Spawned_Units_Tech_0>
 		<Spawned_Squadron_Location_Flyout_Distances>150.0</Spawned_Squadron_Location_Flyout_Distances>
 	</SecondaryStructure>
-	
-	
+
 </SecondaryStructures>

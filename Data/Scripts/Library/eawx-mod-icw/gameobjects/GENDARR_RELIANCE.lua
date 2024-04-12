@@ -9,7 +9,7 @@ return {
 		["SKIPRAY_SQUADRON_HALF"] = {
 			DEFAULT = {Initial = 1, Reserve = 1}
 		},
-		["SCIMMY_SQUADRON_HALF"] = {
+		["SCIMITAR_SQUADRON_HALF"] = {
 			DEFAULT = {Initial = 1, Reserve = 1}
 		}
 	},

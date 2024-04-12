@@ -1222,11 +1222,11 @@
 			HP_Oto_Dual_23,
 			HP_Oto_Dual_24,
 			HP_Oto_Hangar_01,
-			HP_Oto_Hangar,
+			HP_Oto_Hangar
 			HP_Empire_Station_One_Supply_Dock,
 			HP_Empire_Station_One_Comm_Array,
 		</HardPoints>
-		<Scale_Factor>22.3</Scale_Factor>
+		<Scale_Factor>0.5</Scale_Factor>
 
 		<Encyclopedia_Text>
 		TEXT_TOOLTIP_OTO
@@ -1245,11 +1245,11 @@
 		<SpaceBehavior> SPACE_OBSTACLE, POWERED, SHIELDED, HIDE_WHEN_FOGGED, REVEAL, UNIT_AI, SPAWN_SQUADRON, ION_STUN_EFFECT</SpaceBehavior>
 		<Tactical_Buildable_Objects_Multiplayer> 
 			EmpireoftheHand,
-				Clawcraft_Squadron_Buildable,
-				Krsiss_Interceptor_Squadron_Buildable,			
+				Nssis_Squadron_Buildable,
+				Krssis_Interceptor_Squadron_Buildable,			
 				Syca_Bomber_Squadron_Buildable,
 				Furion_Squadron_Buildable,
-				Scarsiss_Squadron_Buildable,
+				Scarssis_Squadron_Buildable,
 				Skirmish_Ormos,
 				Skirmish_Fruoro,
 				Skirmish_Syzygos,
@@ -1697,6 +1697,7 @@
 				Patrol_Miytil_Fighter_Squadron_Buildable,
 				Miytil_Bomber_Squadron_Buildable,
 				Miytil_Fighter_Squadron_Buildable,
+				Raptor_Gunship_Squadron_Buildable,
 				House_Miytil_Fighter_Squadron_Buildable,
 				Skirmish_Baidam,
 				Skirmish_Flare,
@@ -1839,6 +1840,153 @@
 		<Visible_On_Radar_When_Fogged>False</Visible_On_Radar_When_Fogged>
 	</StarBase>
 	
+	<!-- Hutt Skirmish Starbases -->
+	<StarBase Name="Skirmish_Hutt_Star_Base_1">
+		<Variant_Of_Existing_Type>Generic_Skirmish_Star_Base</Variant_Of_Existing_Type>
+		<Is_Community_Property>Yes</Is_Community_Property>
+		<Affiliation>Hutt_Cartels</Affiliation>
+
+		<Text_ID>TEXT_UNIT_VALOR</Text_ID>
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_VALOR
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
+		TEXT_TOOLTIP_VALOR_HULL
+		TEXT_TOOLTIP_VALOR_SHIELD
+		TEXT_TOOLTIP_VALOR_WEAP1
+		TEXT_TOOLTIP_VALOR_WEAP2 
+		TEXT_TOOLTIP_VALOR_WEAP3 
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+		<Icon_Name>i_button_valor.tga</Icon_Name>
+		
+		<Space_Model_Name>ValorStation.ALO</Space_Model_Name>
+		<Scale_Factor>0.25</Scale_Factor>
+		<!--Valor XML scale factor adjusted per discussion with Os-->
+		<Select_Box_Scale>1500</Select_Box_Scale>
+		
+		<Shield_Points>22000</Shield_Points>
+		<Tactical_Health>21000</Tactical_Health>
+		<Shield_Refresh_Rate>110</Shield_Refresh_Rate>
+		
+		<Dense_FOW_Reveal_Range_Multiplier>0.2</Dense_FOW_Reveal_Range_Multiplier>
+		<Space_FOW_Reveal_Range>4000.0</Space_FOW_Reveal_Range>
+		<Reinforcement_Prevention_Radius> 5000 </Reinforcement_Prevention_Radius>
+	
+		<!-- Tactical Production Options -->
+		<SpaceBehavior> SPACE_OBSTACLE, POWERED, SHIELDED, HIDE_WHEN_FOGGED, REVEAL, UNIT_AI, SPAWN_SQUADRON, ION_STUN_EFFECT</SpaceBehavior>
+		<Tactical_Buildable_Objects_Multiplayer> 
+			
+			Hutt_Cartels,
+				
+				Dunelizard_Fighter_Squadron_Buildable,
+				Kimogila_Squadron_Buildable,
+				Cloakshape_New_Squadron_Buildable,
+				Scurrg_H6_Squadron_Buildable,
+				
+				Skirmish_Warlord_Cruiser,
+				Skirmish_Juvard_Frigate,
+				Skirmish_Heavy_Minstrel_Yacht,
+				Skirmish_Kaloth_Battlecruiser,
+				Skirmish_Kossak_Frigate,
+				Skirmish_Barabbula_Frigate,
+				Skirmish_Raka_Freighter_Tender,
+				Skirmish_Tarrada_Frigate,
+				Skirmish_Tempest_Cruiser,
+				Skirmish_Ubrikkian_Cruiser_GCW,
+				Skirmish_Szajin_Cruiser,
+				Skirmish_Karagga_Destroyer,
+				Skirmish_Star_Galleon_Hutts,
+				Skirmish_Ubrikkian_Frigate,
+				Skirmish_Batil_Carrier,
+				Skirmish_Chelandion_Cruiser,
+				Skirmish_Vontor_Destroyer,
+				Skirmish_Karabos_Destroyer,
+				Skirmish_Voracious_Carrier,
+				Skirmish_DorBulla_Warship,
+				Space_Level_Two_Tech_Upgrade,
+				Space_Level_Three_Tech_Upgrade,
+				Space_Level_Four_Tech_Upgrade,
+				Space_Level_Five_Tech_Upgrade,
+				
+		</Tactical_Buildable_Objects_Multiplayer>
+		<Visible_To_Enemies_When_Empty>True</Visible_To_Enemies_When_Empty>
+	
+		<!-- Data to prevent this from being buildable in galactic mode -->
+		<Build_Cost_Credits>0</Build_Cost_Credits>
+		<Build_Time_Seconds>0</Build_Time_Seconds>
+		<Build_Tab_Space_Station>No</Build_Tab_Space_Station>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+		
+		<HardPoints>
+			HP_Valor_Hangar01,
+			HP_Valor_Hangar02,
+			HP_Valor_Hangar03,
+			HP_Valor_Turbo01,
+			HP_Valor_Turbo02,
+			HP_Valor_Turbo03,
+			HP_Valor_Turbo04,
+			HP_Valor_Turbo05,
+			HP_Valor_Turbo06,
+			HP_Valor_Turbo07,
+			HP_Valor_Turbo08,
+			HP_Valor_Turbo09,
+			HP_Valor_Turbo10,
+			HP_Valor_Turbo11,
+			HP_Valor_Turbo12,
+			HP_Valor_Turbo13,
+			HP_Valor_Turbo14,
+			HP_Valor_Turbo15,
+			HP_Valor_Turbo16,
+			HP_Valor_Laser01,
+			HP_Valor_Laser02,
+			HP_Valor_Laser03,
+			HP_Valor_Laser04,
+			HP_Valor_Laser05,
+			HP_Valor_Laser06,
+			HP_Valor_Laser07,
+			HP_Valor_Laser08,
+			HP_Valor_Proton01,
+			HP_Valor_Proton02,
+			HP_Valor_Proton03,
+			HP_Empire_Station_One_Supply_Dock,
+			HP_Empire_Station_One_Comm_Array,
+		</HardPoints>
+
+		<!-- Special Abilities unique to Skirmish mode -->
+		<Abilities SubObjectList="Yes">
+			<Income_Stream_Ability Name="H_Starbase_Income_Stream">
+				<Activation_Style>Skirmish_Automatic</Activation_Style>
+				<Initially_Enabled>Yes</Initially_Enabled>
+				<Base_Income_Value>15</Base_Income_Value>
+				<Base_Interval_In_Secs>1</Base_Interval_In_Secs>
+				<Split_Income_With_Allies>Yes</Split_Income_With_Allies>
+				<Split_Favors_Owner>No</Split_Favors_Owner>
+				<Full_Amount_To_Everyone>Yes</Full_Amount_To_Everyone>
+			</Income_Stream_Ability>
+			<Income_Stream_Mod_Ability Name="H_Supply_Dock_Income_Bonus">
+				<Activation_Style>Skirmish_Automatic</Activation_Style>
+				<Initially_Enabled>No</Initially_Enabled>			<!-- This bonus income is controlled by the presence of the Supply Dock hardpoint -->
+				<Income_Multiplier>1.0</Income_Multiplier>
+				<Income_Additive_Value>0</Income_Additive_Value>
+				<Interval_Multiplier>1.0</Interval_Multiplier>
+				<Stacking_Category>0</Stacking_Category>
+				<Target_Stream_Source>Skirmish_Hutt_Star_Base_1</Target_Stream_Source>
+				<Affects_All_Allied_Sources>Yes</Affects_All_Allied_Sources>
+				<Reverse_Application_Logic>No</Reverse_Application_Logic>
+			</Income_Stream_Mod_Ability>
+ 			<Enable_Radar_Ability Name="H_Comm_Array_Enable_Radar">
+ 				<Activation_Style>Skirmish_Automatic</Activation_Style>
+				<Initially_Enabled>Yes</Initially_Enabled>			<!-- This effect is controlled by the presence of the Comm Array hardpoint -->
+ 				<Affects_All_Allies>True</Affects_All_Allies>
+ 			</Enable_Radar_Ability>
+		</Abilities>
+		
+		<Last_State_Visible_Under_FOW> True </Last_State_Visible_Under_FOW>
+		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
+		<Visible_On_Radar_When_Fogged>False</Visible_On_Radar_When_Fogged>
+	</StarBase>
+	
 	<SecondaryStructure Name="Skirmish_Merchant_Dock">
 		<Select_Box_Scale>600</Select_Box_Scale>
 		<GUI_Bounds_Scale>0.3</GUI_Bounds_Scale>
@@ -1869,26 +2017,26 @@
 				TIE_Hunter_Squadron_Buildable,
 				Howlrunner_Squadron_Buildable,
 				A9_Squadron_Buildable,
+				Delta_JV7_Squadron_Buildable,
 				Super_TIE_Buildable,
 				Avenger_Squadron_Buildable,
 				TIE_Droid_Squadron_Buildable,
-				Scimmy_Squadron_Buildable,
+				Scimitar_Squadron_Buildable,
 				Skirmish_Combat_Escort_Carrier,
 				Skirmish_IPV1,
 				Skirmish_Nebulon_B_Empire,
 				Skirmish_Eidolon,
-				Skirmish_Munificent,
 				Skirmish_Crimson_Victory,
 				Skirmish_MTC_Support,
 				Skirmish_Generic_Tagge_Battlecruiser,
 				Banjeer_Neutron_MP,
-				181st_Stele_MP,
-				181st_TIE_Defender_Squadron_MP,
+				Turr_Phennir_TIE_Defender_181st_Squadron_MP,
+				Maarek_Stele_181st_Squadron_MP,
 				Scylla_MP,
 				Praji_Secutor_MP,
 				Pellaeon_Firestorm_MP,
 				Brashin_Inquisitor_MP,
-				Chimera_MP,
+				Thrawn_Chimaera_MP,
 				Rogriss_Aurora_MP,
 				
 			Rebel,
@@ -1908,7 +2056,7 @@
 				Han_Solo_Team_Space_MP,
 				Salm_B_Wing_Squadron_MP,
 				Iblis_Peregrine_MP,
-				Wedge_Rogue_Squadron_Space_MP,
+				Wedge_Antilles_Rogue_Team_MP,
 				Sovv_Dauntless_MP,
 				Kalback_Justice_MP,
 				Bell_Endurance_MP,
@@ -1917,47 +2065,23 @@
 				Galactic_Voyager_MP,
 				Nantz_Independence_MP,
 				
-				<!--
-				Rogue_Squadron_Space,
-				Wedge_Rogue_Squadron_Space,
-				Han_Solo_Team_Space_MP,
-				Iblis_Peregrine_MP,
-				Sovv_Dauntless_MP,
-				TalDira_Deathseed,
-				Krefey_Ralroost_MP,
-				Brand_Indomitable_MP,
-				Abaht_Intrepid_MP,
-				Snunb_Resolve_MP,
-				Galactic_Voyager_MP,
-				Nantz_Independence_MP,
-				Massa_Lucrehulk_Carrier_MP,
-				-->
+			
 				
 			EmpireoftheHand,
 				Missile_Boat_Squadron_Buildable,
 				Skirmish_EOTH_Victory_Destroyer_Two,
 				Skirmish_EOTH_Star_Destroyer,
-				Soontir_Fel_Squadron_MP,
+				Soontir_Fel_Gray_Squadron_MP,
+				Ferob_Iron_Fist_MP,
 				Parck_Strikefast_MP,
 				Stent_Thrawns_Hand_MP,
 				Niriz_Admonitor_MP,
 				Aralani_Frontier_MP,
 				Siath_Battlehammer_MP,
-				Eviscerator_MP,
-				Grey_Wolf_MP,
+				Thrawn_Clone_Eviscerator_MP,
+				Thrawn_Grey_Wolf_MP,
 			
-				<!--
-				Soontir_Fel_Squadron,
-				Jag_Fel_Squadron_Team,
-				Chak_Fel_Krsiss_Squadron_Association,
-				Eviscerator_MP,
-				Parck_Strikefast_MP,
-				Grey_Wolf_MP,
-				Niriz_Admonitor_MP,
-				Stent_Thrawns_Hand_MP,
-				Aralani_Frontier_MP,
-				Siath_Battlehammer_MP,
-				-->
+			
 			Pentastar,
 				TIE_Hunter_Squadron_Buildable,
 				Howlrunner_Squadron_Buildable,
@@ -1974,19 +2098,23 @@
 				Otro_Enforcer_MP,
 				Trelix_Indenture_MP,
 				Slosin_Ironhand_MP,
+				Imperial_Ace_Squadron_MP,
+				Niclara_Pulsars_Revenge_MP,
 				Grant_Oriflamme_MP,
-				Trico_Star_Destroyer_MP,
+				Trico_Pula_MP,
 				Coross_Vengeance_II_MP,
-				Dekeet_Intractable_MP,
+				Torpin_Passenger_MP,
+				Reder_Krieger_MP,
+				Dekeet_Intractable_MP,	
+				Darius_Shield_Breaker_MP,
 				
 				<!--
-				Trelix_Indenture_MP,
-				Otro_Enforcer_MP,
-				Grant_Oriflamme_MP,
-				Dynamic_Besk_MP,
-				Dekeet_Intractable_MP,
+				Raveen_Predominant_MP,	
+				Grot_Resolution_MP,
+				Bethrogg_Behemoth_MP,
+				Vanko_Invincible_MP,
 				-->
-			
+		
 			Greater_Maldrood,
 				TIE_Bomber_Squadron_Buildable,
 				TIE_gt_Squadron_Buildable,
@@ -1998,26 +2126,23 @@
 				Neomen_Ion_Storm_MP,
 				Nervi_Blood_Ambition_MP,
 				Riizolo_Neutron_MP,
-				13X_Teradoc_MP,
-				13X_Pellaeon_MP,
-				Lancet_Kosh_MP,
+				Larm_Carrack_MP,
+				Treuten_13X_MP,
+				Pellaeon_13X_MP,
+				Verpalion_Warlord_MP,
+				Kosh_Lancet_MP,
 				Tavira_Invidious_MP,
 				Syn_Silooth_MP,
 				Trier_Secutor_MP,
 				Therbon_Allegiance_MP,
-
+				Lankin_Knight_MP,
+				
 				<!--
-				Boba_Fett_Team_Space_MP,
-				Dengar_Team_Space_MP,
-				Neomen_Ion_Storm_MP,
-				13X_Teradoc_MP,
-				13X_Pellaeon_MP,
-				Lancet_Kosh_MP,
-				Tavira_Invidious_MP,
-				Syn_Silooth_MP,
-				Trier_Secutor_MP,
-				Therbon_Allegiance_MP,
-				Nervi_Blood_Ambition_MP,
+				Prentioch_Prentioch_MP,
+				Gendarr_Reliance_MP,
+				Heggel_Tabal_MP,
+				Resner_Folly_MP,
+				
 				-->
 				
 			Eriadu_Authority,
@@ -2029,16 +2154,24 @@
 				Skirmish_Munificent,
 				Skirmish_Crimson_Victory,
 				Skirmish_Generic_Tagge_Battlecruiser,
+				Touler_Korasa_Maze_MP,
+				Rexler_Brath_Onyx_Squadron_MP,
+				Parnell_Super_Transport_XI_MP,
 				Prittick_Tyrant_MP,
-				Kabalian_Star_Destroyer_MP,
-				Retribution_Star_Destroyer_MP,
+				Hublin_Kabalian_Cross_MP,
+				Resuun_Retribution_MP,
+				Panaka_Theed_MP,
+				Pryl_Thunderflare_MP,
+				Sahreel_Impending_Doom_MP,
 				Thalassa_MP,
-				<!--
-				Bossk_Team_Space_MP,
-				Prittick_Tyrant_MP,
-				Kabalian_Star_Destroyer_MP,
-				Retribution_Star_Destroyer_MP,
-				Thalassa_MP,
+				Kedler_Eleos_MP,
+		
+		<!--
+				DeGoort_Valor_MP,
+				Torsch_Appropriator_MP,
+				Trommer_Ravagor_MP,
+				Zed_Stalker_MP,
+				
 				-->
 				
 			Zsinj_Empire,
@@ -2060,27 +2193,20 @@
 				Joshi_Provocateur_MP,
 				181_Cowall_Fighter_MP,
 				Night_Caller_MP,
-				Demolisher_MP,
+				Screed_Demolisher_MP,
+				Jag_127th_Squadron_MP,
 				Nabyl_Hawkbat_MP,
-				Implacable_Star_Destroyer_MP,
-				
-				
+				Trigit_Implacable_MP,
+				Zsinj_Iron_Fist_VSD_MP,
+				Yzu_Constitution_MP,
 				
 				<!--
-				181st_Cowall,
-				Night_Caller_MP,
-				Banjeer_MP,
-				Coorshas_Cross_MP,
-				Demolisher_MP,
-				Renthals_Vigilance_MP,
-				Safonnes_Sword_MP,
-				Xufush_FaLohSui_MP,
-				Dane_Sweet_Victory_MP,
-				Ssurussk_Nebula_Raiders,
-				Rneeklii_Sumpntodo_MP,
-				Hilma_Bloodthirsty_MP,
-				Implacable_Star_Destroyer_MP,
-				Sait_Blackguard_MP,
+				Delurin_Galaxy_Dragon_MP,
+				Wessex_Dauntless_MP,
+				Wessex_Redoubt_MP,
+				Ulric_Tagge_MP,
+				Yzu_Constitution_MP,
+				Tzenkens_Atlas_MP,
 				-->
 				
 			Corporate_Sector,
@@ -2109,15 +2235,44 @@
 				Weplinn_ISD_MP,
 				Grumby_Notropis_MP,
 				Siin_Suub_Proclamation_MP,
-				
+				<!--	
+				Dej_Vennor_Team_MP,
+				Dengar_Team_Space_MP,
+				Ulric_Tagge_MP,
+				-->
 				
 			Hapes_Consortium,
+				Vhork_Squadron_Space_MP,
 				Lovett_Riverlord_Space_MP,
 				Gray_Kendall_Space_MP,
 				Isolder_Song_of_War_Space_MP,
 				Chelik_Dangerous_Dance_Space_MP,
 				Alyssia_Starsong_Space_MP,
+				Aegel_Squadron_Space_MP,
 				Astarta_Siren_Star_Space_MP,
+				
+			Hutt_Cartels,
+				Z95_Squadron_Buildable,
+				BTLS1_Y-Wing_Squadron_Buildable,
+				StarViper_Squadron_Buildable_Hutts,
+				Aggressor_Assault_Fighter_Squadron_Buildable_Hutts,
+				Rihkxyrk_Squadron_Buildable_Hutts,
+				Skirmish_IPV1_Gunboat,	
+				Skirmish_Marauder_Missile_Cruiser,
+				Skirmish_Dreadnaught_Lasers_Hutts,
+				Skirmish_Venator_Refit,		
+				Bossk_Team_Space_MP,
+				Oberos_Kimogila_Squadron_MP,
+				Boba_Fett_Team2_Space_MP,
+				Popara_Imru_Ootmian_MP,
+				Ganis_Nal_Hutta_Jewel_MP,
+				Borvo_Prosperous_Secret_MP,
+				Mika_Tempest_MP,
+				Quaffug_Lorda_MP,
+				Tobba_YTobba_MP,
+				Riboga_Rightful_Dominion_MP,
+				Troonol_Agrelcu_Haalta_MP,
+				Ulal_Potala_Um_Var_MP,
 				
 		</Tactical_Buildable_Objects_Multiplayer>
 	

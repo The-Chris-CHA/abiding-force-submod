@@ -41,22 +41,27 @@ function InfluenceService:new(human_player, planets, dummy_lifecycle_handler, re
     self.planets_in_crisis = 0
 
     self.influence_modifier = 0
-    self.difficulty_modifier = 0
     self.ai_difficulty_modifier = 0
 
+    self.isRev = Find_Object_Type("rev")
     self.isFotR = Find_Object_Type("fotr")
+    self.isTR = Find_Object_Type("icw")
 
-    if self.human_player.Get_Difficulty() == "Easy" then
-        self.ai_difficulty_modifier = 1
-        self.difficulty_modifier = 2
-    elseif self.human_player.Get_Difficulty() == "Hard" then
-        self.ai_difficulty_modifier = 3
-        self.difficulty_modifier = 1
+    local computer_player = nil
+    local p_rebel = Find_Player("Rebel")
+    if human_player == p_rebel then
+        computer_player = Find_Player("Empire")
     else
-        self.ai_difficulty_modifier = 2
-        self.difficulty_modifier = 1
+        computer_player = p_rebel
     end
-    
+	
+    self.ai_difficulty_modifier = 2
+    if computer_player.Get_Difficulty() == "Easy" then
+        self.ai_difficulty_modifier = 1
+    elseif computer_player.Get_Difficulty() == "Hard" then
+        self.ai_difficulty_modifier = 3
+    end	
+	
     for _, planet in pairs(planets) do
         self.planets[planet] = {
             __current_influence_dummies = {},
@@ -129,7 +134,6 @@ function InfluenceService:update(planet)
     elseif planet:get_owner() == Find_Player("Warlords")  then
         planet_stats.ownerInfluence = 10
     else
-        
         planet_stats.ownerInfluence = 5
         planet_stats.taxationLevel = EvaluatePerception("Tax_Level", self.human_player, planet:get_game_object())
 
@@ -184,7 +188,7 @@ function InfluenceService:update(planet)
         planet_stats.ownerInfluence = planet_stats.ownerInfluence + planetary_influence_policy(planet) 
 
         if planet:get_owner() ~= Find_Player("local")  then
-            planet_stats.ownerInfluence = planet_stats.ownerInfluence +  self.ai_difficulty_modifier
+            planet_stats.ownerInfluence = planet_stats.ownerInfluence + self.ai_difficulty_modifier
         end
 
         if planet_stats.ownerInfluence <= 1 then
@@ -249,12 +253,64 @@ function InfluenceService:attach_particle(planet, planet_stats)
         if planet_stats.is_locked then 
             planet:get_game_object().Attach_Particle_Effect("Locked_Planet") 
         end
+        
+        if self.isRev then
+            if planet:get_owner() == Find_Player("Empire") then 
+                planet:get_game_object().Attach_Particle_Effect("Old_Republic_Allies") 
+            elseif planet:get_owner() == Find_Player("Rebel") then 
+                planet:get_game_object().Attach_Particle_Effect("Sith_Allies") 
+            elseif planet:get_owner() == Find_Player("Underworld") then 
+                planet:get_game_object().Attach_Particle_Effect("Mando_Allies") 
+            elseif planet:get_owner() == Find_Player("Hutt_Cartels") then 
+                planet:get_game_object().Attach_Particle_Effect("Hutt_Allies") 
+            end
+        end
 
         if self.isFotR then
             if planet:get_owner() == Find_Player("Empire") then 
                 planet:get_game_object().Attach_Particle_Effect("Republic_Allies") 
             elseif planet:get_owner() == Find_Player("Sector_Forces") then 
                 planet:get_game_object().Attach_Particle_Effect("Republic_Allies") 
+            elseif planet:get_owner() == Find_Player("Hutt_Cartels") then 
+                planet:get_game_object().Attach_Particle_Effect("Hutt_Allies") 
+            elseif planet:get_owner() == Find_Player("Mandalorians") then 
+                planet:get_game_object().Attach_Particle_Effect("Mando_Allies") 
+            end
+        end
+        
+        if self.isTR then
+            if planet:get_owner() == Find_Player("Empire") then 
+                planet:get_game_object().Attach_Particle_Effect("IR_Allies") 
+            elseif planet:get_owner() == Find_Player("Eriadu_Authority") then 
+                planet:get_game_object().Attach_Particle_Effect("EA_Allies") 
+            elseif planet:get_owner() == Find_Player("Greater_Maldrood") then 
+                planet:get_game_object().Attach_Particle_Effect("GM_Allies") 
+            elseif planet:get_owner() == Find_Player("Zsinj_Empire") then 
+                planet:get_game_object().Attach_Particle_Effect("ZE_Allies") 
+            elseif planet:get_owner() == Find_Player("Pentastar") then 
+                planet:get_game_object().Attach_Particle_Effect("PA_Allies") 
+            elseif planet:get_owner() == Find_Player("Rebel") then 
+                planet:get_game_object().Attach_Particle_Effect("NR_Allies") 
+            elseif planet:get_owner() == Find_Player("EmpireoftheHand") then 
+                planet:get_game_object().Attach_Particle_Effect("EotH_Allies") 
+            elseif planet:get_owner() == Find_Player("Chiss") then 
+                planet:get_game_object().Attach_Particle_Effect("Chiss_Allies") 
+            elseif planet:get_owner() == Find_Player("Corporate_Sector") then 
+                planet:get_game_object().Attach_Particle_Effect("CSA_Allies") 
+            elseif planet:get_owner() == Find_Player("Hapes_Consortium") then 
+                planet:get_game_object().Attach_Particle_Effect("HC_Allies") 
+            elseif planet:get_owner() == Find_Player("Yevetha") then 
+                planet:get_game_object().Attach_Particle_Effect("DL_Allies") 
+            elseif planet:get_owner() == Find_Player("Corellia") then 
+                planet:get_game_object().Attach_Particle_Effect("Corellia_Allies") 
+            elseif planet:get_owner() == Find_Player("SsiRuuvi_Imperium") then 
+                planet:get_game_object().Attach_Particle_Effect("Ssi_Allies") 
+            elseif planet:get_owner() == Find_Player("Killik_Hives") then 
+                planet:get_game_object().Attach_Particle_Effect("Killik_Allies") 
+            elseif planet:get_owner() == Find_Player("Hutt_Cartels") then 
+                planet:get_game_object().Attach_Particle_Effect("Hutt_Allies") 
+            elseif planet:get_owner() == Find_Player("Mandalorians") then 
+                planet:get_game_object().Attach_Particle_Effect("Mando_Allies") 
             end
         end
     end

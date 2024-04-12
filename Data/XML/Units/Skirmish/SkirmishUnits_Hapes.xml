@@ -1,7 +1,7 @@
 <?xml version="1.0" ?>
 <Skirmish_Units>
 	
-	<SpaceUnit Name="Skirmish_Baidam">
+	<SkirmishSpaceUnit Name="Skirmish_Baidam">
 	    <Variant_Of_Existing_Type>Baidam</Variant_Of_Existing_Type>
 		<Lua_Script></Lua_Script>
 		<Tech_Level>99</Tech_Level>
@@ -9,7 +9,6 @@
 		<SpaceBehavior>ABILITY_COUNTDOWN, TELEKINESIS_TARGET, SPAWN_SQUADRON, SIMPLE_SPACE_LOCOMOTOR, TARGETING, POWERED, SHIELDED, REVEAL, HIDE_WHEN_FOGGED, UNIT_AI, DAMAGE_TRACKING, ION_STUN_EFFECT </SpaceBehavior>
 		<Spawned_Squadron_Delay_Seconds>15</Spawned_Squadron_Delay_Seconds>
 		     
-		<Override_Bounty_MP>425</Override_Bounty_MP>
 			 
         <!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
 		<Tactical_Build_Cost_Multiplayer>425</Tactical_Build_Cost_Multiplayer>
@@ -18,9 +17,9 @@
 		<Tactical_Production_Queue>Tactical_Upgrades</Tactical_Production_Queue>
 		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
 		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->	
-	</SpaceUnit>
+	</SkirmishSpaceUnit>
 	
-	<SpaceUnit Name="Skirmish_Flare">
+	<SkirmishSpaceUnit Name="Skirmish_Flare">
 	    <Variant_Of_Existing_Type>Flare</Variant_Of_Existing_Type>
 		<Lua_Script></Lua_Script>
 		<Tech_Level>99</Tech_Level>
@@ -28,7 +27,6 @@
 		<SpaceBehavior>ABILITY_COUNTDOWN, TELEKINESIS_TARGET, SPAWN_SQUADRON, SIMPLE_SPACE_LOCOMOTOR, TARGETING, POWERED, SHIELDED, REVEAL, HIDE_WHEN_FOGGED, UNIT_AI, DAMAGE_TRACKING, ION_STUN_EFFECT </SpaceBehavior>
 		<Spawned_Squadron_Delay_Seconds>15</Spawned_Squadron_Delay_Seconds>
 		     
-		<Override_Bounty_MP>565</Override_Bounty_MP>
 			 
         <!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
 		<Tactical_Build_Cost_Multiplayer>565</Tactical_Build_Cost_Multiplayer>
@@ -37,9 +35,9 @@
 		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
 		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
 		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->	
-	</SpaceUnit>
+	</SkirmishSpaceUnit>
 	
-	<SpaceUnit Name="Skirmish_Beta_Cruiser">
+	<SkirmishSpaceUnit Name="Skirmish_Beta_Cruiser">
 	    <Variant_Of_Existing_Type>Beta_Cruiser</Variant_Of_Existing_Type>
 		<Lua_Script></Lua_Script>
 		<Tech_Level>99</Tech_Level>
@@ -47,7 +45,6 @@
 		<SpaceBehavior>ABILITY_COUNTDOWN, TELEKINESIS_TARGET, SPAWN_SQUADRON, SIMPLE_SPACE_LOCOMOTOR, TARGETING, POWERED, SHIELDED, REVEAL, HIDE_WHEN_FOGGED, UNIT_AI, DAMAGE_TRACKING, ION_STUN_EFFECT </SpaceBehavior>
 		<Spawned_Squadron_Delay_Seconds>15</Spawned_Squadron_Delay_Seconds>
 		     
-		<Override_Bounty_MP>860</Override_Bounty_MP>
 			 
         <!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
 		<Tactical_Build_Cost_Multiplayer>860</Tactical_Build_Cost_Multiplayer>
@@ -56,10 +53,10 @@
 		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
 		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
 		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->	
-	</SpaceUnit>
+	</SkirmishSpaceUnit>
 	
 	
-	<SpaceUnit Name="Skirmish_Nova_Cruiser">
+	<SkirmishSpaceUnit Name="Skirmish_Nova_Cruiser">
 	    <Variant_Of_Existing_Type>Nova_Cruiser</Variant_Of_Existing_Type>
 		<Lua_Script></Lua_Script>
 		<Tech_Level>99</Tech_Level>
@@ -67,7 +64,6 @@
 		<SpaceBehavior>ABILITY_COUNTDOWN, TELEKINESIS_TARGET, SPAWN_SQUADRON, SIMPLE_SPACE_LOCOMOTOR, TARGETING, POWERED, SHIELDED, REVEAL, HIDE_WHEN_FOGGED, UNIT_AI, DAMAGE_TRACKING, ION_STUN_EFFECT </SpaceBehavior>
 		<Spawned_Squadron_Delay_Seconds>15</Spawned_Squadron_Delay_Seconds>
 		     
-		<Override_Bounty_MP>1130</Override_Bounty_MP>
 			 
         <!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
 		<Tactical_Build_Cost_Multiplayer>1130</Tactical_Build_Cost_Multiplayer>
@@ -76,9 +72,9 @@
 		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
 		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
 		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->	
-	</SpaceUnit>
+	</SkirmishSpaceUnit>
 	
-	<SpaceUnit Name="Skirmish_Nova_Cruiser_Refit">
+	<SkirmishSpaceUnit Name="Skirmish_Nova_Cruiser_Refit">
 	    <Variant_Of_Existing_Type>Nova_Cruiser_Refit</Variant_Of_Existing_Type>
 		<Lua_Script></Lua_Script>
 		<Tech_Level>99</Tech_Level>
@@ -86,7 +82,6 @@
 		<SpaceBehavior>ABILITY_COUNTDOWN, TELEKINESIS_TARGET, SPAWN_SQUADRON, SIMPLE_SPACE_LOCOMOTOR, TARGETING, POWERED, SHIELDED, REVEAL, HIDE_WHEN_FOGGED, UNIT_AI, DAMAGE_TRACKING, ION_STUN_EFFECT </SpaceBehavior>
 		<Spawned_Squadron_Delay_Seconds>15</Spawned_Squadron_Delay_Seconds>
 		     
-		<Override_Bounty_MP>1160</Override_Bounty_MP>
 			 
         <!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
 		<Tactical_Build_Cost_Multiplayer>1160</Tactical_Build_Cost_Multiplayer>
@@ -95,9 +90,9 @@
 		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
 		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
 		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->	
-	</SpaceUnit>
+	</SkirmishSpaceUnit>
 	
-	<SpaceUnit Name="Skirmish_Stella">
+	<SkirmishSpaceUnit Name="Skirmish_Stella">
 	    <Variant_Of_Existing_Type>Stella</Variant_Of_Existing_Type>
 		<Lua_Script></Lua_Script>
 		<Tech_Level>99</Tech_Level>
@@ -105,18 +100,16 @@
 		<SpaceBehavior>ABILITY_COUNTDOWN, TELEKINESIS_TARGET, SPAWN_SQUADRON, SIMPLE_SPACE_LOCOMOTOR, TARGETING, POWERED, SHIELDED, REVEAL, HIDE_WHEN_FOGGED, UNIT_AI, DAMAGE_TRACKING, ION_STUN_EFFECT </SpaceBehavior>
 		<Spawned_Squadron_Delay_Seconds>15</Spawned_Squadron_Delay_Seconds>
 		     
-		<Override_Bounty_MP>995</Override_Bounty_MP>
-		
-        <!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+	     <!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
 		<Tactical_Build_Cost_Multiplayer>995</Tactical_Build_Cost_Multiplayer>
 		<Tactical_Build_Time_Seconds>10</Tactical_Build_Time_Seconds>
 		<Tactical_Build_Prerequisites>Space_Level_Two_Tech_Upgrade</Tactical_Build_Prerequisites>
 		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
 		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
 		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->	
-	</SpaceUnit>
+	</SkirmishSpaceUnit>
 	
-	<SpaceUnit Name="Skirmish_Charubah_Frigate">
+	<SkirmishSpaceUnit Name="Skirmish_Charubah_Frigate">
 	    <Variant_Of_Existing_Type>Charubah_Frigate</Variant_Of_Existing_Type>
 		<Lua_Script></Lua_Script>
 		<Tech_Level>99</Tech_Level>
@@ -124,8 +117,7 @@
 		<SpaceBehavior>ABILITY_COUNTDOWN, TELEKINESIS_TARGET, SPAWN_SQUADRON, SIMPLE_SPACE_LOCOMOTOR, TARGETING, POWERED, SHIELDED, REVEAL, HIDE_WHEN_FOGGED, UNIT_AI, DAMAGE_TRACKING, ION_STUN_EFFECT </SpaceBehavior>
 		<Spawned_Squadron_Delay_Seconds>15</Spawned_Squadron_Delay_Seconds>
 		     
-		<Override_Bounty_MP>1440</Override_Bounty_MP>
-		
+	
         <!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
 		<Tactical_Build_Cost_Multiplayer>1440</Tactical_Build_Cost_Multiplayer>
 		<Tactical_Build_Time_Seconds>13</Tactical_Build_Time_Seconds>
@@ -133,9 +125,9 @@
 		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
 		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
 		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->	
-	</SpaceUnit>
+	</SkirmishSpaceUnit>
 	
-	<SpaceUnit Name="Skirmish_Olanji_Frigate">
+	<SkirmishSpaceUnit Name="Skirmish_Olanji_Frigate">
 	    <Variant_Of_Existing_Type>Olanji_Frigate</Variant_Of_Existing_Type>
 		<Lua_Script></Lua_Script>
 		<Tech_Level>99</Tech_Level>
@@ -143,7 +135,6 @@
 		<SpaceBehavior>ABILITY_COUNTDOWN, TELEKINESIS_TARGET, SPAWN_SQUADRON, SIMPLE_SPACE_LOCOMOTOR, TARGETING, POWERED, SHIELDED, REVEAL, HIDE_WHEN_FOGGED, UNIT_AI, DAMAGE_TRACKING, ION_STUN_EFFECT </SpaceBehavior>
 		<Spawned_Squadron_Delay_Seconds>15</Spawned_Squadron_Delay_Seconds>
 		     
-		<Override_Bounty_MP>1155</Override_Bounty_MP>
 		
         <!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
 		<Tactical_Build_Cost_Multiplayer>1155</Tactical_Build_Cost_Multiplayer>
@@ -152,9 +143,9 @@
 		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
 		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
 		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->	
-	</SpaceUnit>
+	</SkirmishSpaceUnit>
 	
-	<SpaceUnit Name="Skirmish_Magnetar">
+	<SkirmishSpaceUnit Name="Skirmish_Magnetar">
 	    <Variant_Of_Existing_Type>Magnetar</Variant_Of_Existing_Type>
 		<Lua_Script></Lua_Script>
 		<Tech_Level>99</Tech_Level>
@@ -162,7 +153,6 @@
 		<SpaceBehavior>ABILITY_COUNTDOWN, TELEKINESIS_TARGET, SPAWN_SQUADRON, SIMPLE_SPACE_LOCOMOTOR, TARGETING, POWERED, SHIELDED, REVEAL, HIDE_WHEN_FOGGED, UNIT_AI, DAMAGE_TRACKING, ION_STUN_EFFECT </SpaceBehavior>
 		<Spawned_Squadron_Delay_Seconds>15</Spawned_Squadron_Delay_Seconds>
 		     
-		<Override_Bounty_MP>1215</Override_Bounty_MP>
 		
         <!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
 		<Tactical_Build_Cost_Multiplayer>1215</Tactical_Build_Cost_Multiplayer>
@@ -171,18 +161,16 @@
 		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
 		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
 		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->	
-	</SpaceUnit>
+	</SkirmishSpaceUnit>
 	
-	<SpaceUnit Name="Skirmish_Pulsar">
+	<SkirmishSpaceUnit Name="Skirmish_Pulsar">
 	    <Variant_Of_Existing_Type>Pulsar</Variant_Of_Existing_Type>
 		<Lua_Script></Lua_Script>
 		<Tech_Level>99</Tech_Level>
 		<Space_FOW_Reveal_Range>2000.0</Space_FOW_Reveal_Range>
 		<SpaceBehavior>ABILITY_COUNTDOWN, TELEKINESIS_TARGET, SPAWN_SQUADRON, SIMPLE_SPACE_LOCOMOTOR, TARGETING, POWERED, SHIELDED, REVEAL, HIDE_WHEN_FOGGED, UNIT_AI, DAMAGE_TRACKING, ION_STUN_EFFECT </SpaceBehavior>
 		<Spawned_Squadron_Delay_Seconds>15</Spawned_Squadron_Delay_Seconds>
-		     
-		<Override_Bounty_MP>1615</Override_Bounty_MP>
-		
+		     		
         <!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
 		<Tactical_Build_Cost_Multiplayer>1615</Tactical_Build_Cost_Multiplayer>
 		<Tactical_Build_Time_Seconds>13</Tactical_Build_Time_Seconds>
@@ -190,9 +178,9 @@
 		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
 		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
 		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->	
-	</SpaceUnit>
+	</SkirmishSpaceUnit>
 	
-	<SpaceUnit Name="Skirmish_BattleDragon">
+	<SkirmishSpaceUnit Name="Skirmish_BattleDragon">
 	    <Variant_Of_Existing_Type>BattleDragon</Variant_Of_Existing_Type>
 		<Lua_Script></Lua_Script>
 		<Tech_Level>99</Tech_Level>
@@ -200,7 +188,6 @@
 		<SpaceBehavior>ABILITY_COUNTDOWN, TELEKINESIS_TARGET, SPAWN_SQUADRON, SIMPLE_SPACE_LOCOMOTOR, TARGETING, POWERED, SHIELDED, REVEAL, HIDE_WHEN_FOGGED, UNIT_AI, DAMAGE_TRACKING, ION_STUN_EFFECT </SpaceBehavior>
 		<Spawned_Squadron_Delay_Seconds>15</Spawned_Squadron_Delay_Seconds>
 		     
-		<Override_Bounty_MP>2315</Override_Bounty_MP>
 		 
         <!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
 		<Tactical_Build_Cost_Multiplayer>2315</Tactical_Build_Cost_Multiplayer>
@@ -209,9 +196,9 @@
 		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
 		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
 		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->	
-	</SpaceUnit>
+	</SkirmishSpaceUnit>
 	
-	<SpaceUnit Name="Skirmish_Coronal">
+	<SkirmishSpaceUnit Name="Skirmish_Coronal">
 	    <Variant_Of_Existing_Type>Coronal</Variant_Of_Existing_Type>
 		
 		<Encyclopedia_Text> 
@@ -229,14 +216,12 @@
 		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
 		TEXT_TOOLTIP_CAPABILITY_MIST_IMMUNE
 		TEXT_TOOLTIP_CAPABILITY_ORBITAL_BOMBARDMENT
-		TEXT_TOOLTIP_CAPABILITY_BOARDABLE
 		</Encyclopedia_Text>
 		
 		<Lua_Script></Lua_Script>
 		<Tech_Level>99</Tech_Level>
 		<Space_FOW_Reveal_Range>2500.0</Space_FOW_Reveal_Range>
 		
-		<Override_Bounty_MP>2265</Override_Bounty_MP>
 		
         <!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
 		<Tactical_Build_Cost_Multiplayer>2265</Tactical_Build_Cost_Multiplayer>
@@ -245,9 +230,9 @@
 		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
 		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
 		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->	
-	</SpaceUnit>
+	</SkirmishSpaceUnit>
 	
-	<SpaceUnit Name="Skirmish_Terephon_Cruiser">
+	<SkirmishSpaceUnit Name="Skirmish_Terephon_Cruiser">
 	    <Variant_Of_Existing_Type>Terephon_Cruiser</Variant_Of_Existing_Type>
 		<Lua_Script></Lua_Script>
 		<Tech_Level>99</Tech_Level>
@@ -255,7 +240,6 @@
 		<SpaceBehavior>ABILITY_COUNTDOWN, TELEKINESIS_TARGET, SPAWN_SQUADRON, SIMPLE_SPACE_LOCOMOTOR, TARGETING, POWERED, SHIELDED, REVEAL, HIDE_WHEN_FOGGED, UNIT_AI, DAMAGE_TRACKING, ION_STUN_EFFECT </SpaceBehavior>
 		<Spawned_Squadron_Delay_Seconds>15</Spawned_Squadron_Delay_Seconds>
 		     
-		<Override_Bounty_MP>2055</Override_Bounty_MP>
 		 
         <!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
 		<Tactical_Build_Cost_Multiplayer>2055</Tactical_Build_Cost_Multiplayer>
@@ -264,9 +248,9 @@
 		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
 		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
 		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->	
-	</SpaceUnit>
+	</SkirmishSpaceUnit>
 		
-	<SpaceUnit Name="Skirmish_Mist_Carrier">
+	<SkirmishSpaceUnit Name="Skirmish_Mist_Carrier">
 	    <Variant_Of_Existing_Type>Mist_Carrier</Variant_Of_Existing_Type>
 		<Lua_Script></Lua_Script>
 		<Tech_Level>99</Tech_Level>
@@ -274,7 +258,6 @@
 		<SpaceBehavior>ABILITY_COUNTDOWN, TELEKINESIS_TARGET, SPAWN_SQUADRON, SIMPLE_SPACE_LOCOMOTOR, TARGETING, POWERED, SHIELDED, REVEAL, HIDE_WHEN_FOGGED, UNIT_AI, DAMAGE_TRACKING, ION_STUN_EFFECT </SpaceBehavior>
 		<Spawned_Squadron_Delay_Seconds>15</Spawned_Squadron_Delay_Seconds>
 		     
-		<Override_Bounty_MP>2365</Override_Bounty_MP>
 		
         <!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
 		<Tactical_Build_Cost_Multiplayer>2365</Tactical_Build_Cost_Multiplayer>
@@ -283,9 +266,9 @@
 		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
 		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
 		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->	
-	</SpaceUnit>
+	</SkirmishSpaceUnit>
 		
-	<SpaceUnit Name="Skirmish_Neutron_Cruiser">
+	<SkirmishSpaceUnit Name="Skirmish_Neutron_Cruiser">
 	    <Variant_Of_Existing_Type>Neutron_Cruiser</Variant_Of_Existing_Type>
 		<Lua_Script></Lua_Script>
 		<Tech_Level>99</Tech_Level>
@@ -293,8 +276,7 @@
 		<SpaceBehavior>ABILITY_COUNTDOWN, TELEKINESIS_TARGET, SPAWN_SQUADRON, SIMPLE_SPACE_LOCOMOTOR, TARGETING, POWERED, SHIELDED, REVEAL, HIDE_WHEN_FOGGED, UNIT_AI, DAMAGE_TRACKING, ION_STUN_EFFECT </SpaceBehavior>
 		<Spawned_Squadron_Delay_Seconds>15</Spawned_Squadron_Delay_Seconds>
 		     
-		<Override_Bounty_MP>3060</Override_Bounty_MP>
-		
+			
         <!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
 		<Tactical_Build_Cost_Multiplayer>3060</Tactical_Build_Cost_Multiplayer>
 		<Tactical_Build_Time_Seconds>18</Tactical_Build_Time_Seconds>
@@ -302,9 +284,9 @@
 		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
 		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
 		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->	
-	</SpaceUnit>
+	</SkirmishSpaceUnit>
 	
-	<SpaceUnit Name="Skirmish_Star_Home">
+	<SkirmishSpaceUnit Name="Skirmish_Star_Home">
 	    <Variant_Of_Existing_Type>Star_Home</Variant_Of_Existing_Type>
 		<Lua_Script></Lua_Script>
 		<Tech_Level>99</Tech_Level>
@@ -312,7 +294,6 @@
 		<SpaceBehavior>ASTEROID_FIELD_DAMAGE, ABILITY_COUNTDOWN, TELEKINESIS_TARGET, SPAWN_SQUADRON, SIMPLE_SPACE_LOCOMOTOR, TARGETING, POWERED, SHIELDED, REVEAL, HIDE_WHEN_FOGGED, UNIT_AI, DAMAGE_TRACKING, ION_STUN_EFFECT </SpaceBehavior>
 		<Spawned_Squadron_Delay_Seconds>15</Spawned_Squadron_Delay_Seconds>
 		     
-		<Override_Bounty_MP>3900</Override_Bounty_MP>
 		
         <!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
 		<Tactical_Build_Cost_Multiplayer>3900</Tactical_Build_Cost_Multiplayer>
@@ -321,59 +302,25 @@
 		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
 		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
 		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->	
-	</SpaceUnit>	
+	</SkirmishSpaceUnit>	
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+	<!-- Survival -->
+	<SkirmishSpaceUnit Name="Survival_Star_Home">
+		<Variant_Of_Existing_Type>Star_Home</Variant_Of_Existing_Type>
+		
+		<Affiliation>Hapes_Consortium</Affiliation>
+		<Tech_Level>99</Tech_Level>
+		
+		<SpaceBehavior>ABILITY_COUNTDOWN, TELEKINESIS_TARGET, SPAWN_SQUADRON, SIMPLE_SPACE_LOCOMOTOR, TARGETING, POWERED, SHIELDED, REVEAL, HIDE_WHEN_FOGGED, UNIT_AI, DAMAGE_TRACKING, ION_STUN_EFFECT, NEBULA </SpaceBehavior>
+		<Spawned_Squadron_Delay_Seconds>15</Spawned_Squadron_Delay_Seconds>
+		
+		<Build_Limit_Current_Per_Player>-1</Build_Limit_Current_Per_Player>
+		<Build_Limit_Lifetime_Per_Player>-1</Build_Limit_Lifetime_Per_Player>
+		
+		<Tactical_Build_Cost_Multiplayer>3900</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>23</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites/>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+	</SkirmishSpaceUnit>
 
 </Skirmish_Units>

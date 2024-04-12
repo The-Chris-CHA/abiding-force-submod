@@ -49,7 +49,7 @@ function Definitions()
 	TaskForce = {
 	{
 		"ReserveForce",
-		"Infantry | LandHero = 1"
+		"Infantry = 1"
 	}
 	}
 	AllowFreeStoreUnits = false

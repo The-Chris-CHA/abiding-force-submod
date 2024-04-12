@@ -52,7 +52,7 @@ function Definitions()
 	{
 		"MainForce"
 		,"MinimumTotalSize = 2"
-		,"Corvette|Frigate|Capital|SuperCapital|SpaceHero = 100%"
+		,"Gunship|Corvette|Frigate|Capital|SuperCapital|SpaceHero = 100%"
 	},
 	{
 		"EscortForce"

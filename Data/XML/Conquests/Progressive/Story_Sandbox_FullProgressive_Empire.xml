@@ -1,29 +1,11 @@
 <?xml version="1.0" ?>
 
-
-
-<!--****************************************************-->
-<!--***** CAMPAIGN: Fractured Empire (Empire Version) *****-->
-<!--****************************************************-->
-
-
-
 <Story>
 
- <Event Name="Universal_Story_Start">
+	<Event Name="Universal_Story_Start">
 		<Event_Type>STORY_ELAPSED</Event_Type>
 		<Event_Param1>0</Event_Param1>
-
- </Event>
- 
-    <!-- <Event Name="Destroyed_Check">
-		<Event_Type>STORY_CHECK_DESTROYED</Event_Type>
-		<Event_Param1>Empire</Event_Param1>
-		<Event_Param2>DESTROY_ALL</Event_Param2>
-		<Reward_Type>DISABLE_BRANCH</Reward_Type>
-		<Reward_Param1>Empire_Alive</Reward_Param1>
-		<Reward_Param2>1</Reward_Param2>
-	</Event>-->
+	</Event>
  
  	<Event Name="Spawn_Branch_Disabler_Empire">
 		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
@@ -37,15 +19,11 @@
 	<!--***** ERA: ONE PESTAGE TO ISARD *****-->
 	<!--****************************************************-->
 	
-	
 	<Event Name="Empire_Enters_Tech_01">
 		<Event_Type>STORY_TECH_LEVEL</Event_Type>
 		<Event_Param1>1</Event_Param1>
 	</Event>
 
-
-
-		
 	<!--****************************************************-->
 	<!--***** ERA: ONE ISARD TO THRAWN *****-->
 	<!--****************************************************-->
@@ -55,115 +33,41 @@
 	<!--***** ERA: TWO THRAWN TO MOFF COUNCIL \ Palpatine*****-->
 	<!--****************************************************-->
 	
-	 <Event Name="Empire_Enters_Tech_02">
+	<Event Name="Empire_Enters_Tech_02">
 		<Event_Type>STORY_TECH_LEVEL</Event_Type>
 		<Event_Param1>2</Event_Param1>
 	</Event>
 
-	
-
-		
 	<!--****************************************************-->
 	<!--***** ERA: THREE PALPATINE TO CARNOR JAX *****-->
 	<!--****************************************************-->
-	
 	
 	<Event Name="Empire_Enters_Tech_03">
 		<Event_Type>STORY_TECH_LEVEL</Event_Type>
 		<Event_Param1>3</Event_Param1>
 	</Event> 
 	
-	
-	
 	<!--****************************************************-->
 	<!--***** ERA: THREE CARNOR TO DAALA *****-->
 	<!--****************************************************-->
 	
-
-	
-		
 	<!--****************************************************-->
-	<!--***** ERA: FOUR NATASI DAALA GORGON TO KNIGHT HAMMER *****-->
+	<!--***** ERA: FOUR NATASI DAALA DAALA_GORGON TO KNIGHT HAMMER *****-->
 	<!--****************************************************-->
-	
 	
 	<Event Name="Empire_Enters_Tech_04">
 		<Event_Type>STORY_TECH_LEVEL</Event_Type>
 		<Event_Param1>4</Event_Param1>
 	</Event>
-	
 
-	
-	<!-- <Event Name="Unlock_Knight_Hammer_Daala"> -->
-		<!-- <Event_Type>STORY_TRIGGER</Event_Type> -->
-		<!-- <Reward_Type>BUILDABLE_UNIT</Reward_Type> -->
-		<!-- <Reward_Param1>Knight_Hammer</Reward_Param1> -->
-		<!-- <Prereq>Empire_Enters_Tech_04</Prereq> -->
-	<!-- </Event> -->
-	
-		
-
-		
 	<!--****************************************************-->
 	<!--***** ERA: FIVE GILAD PELLAEON ****-->
 	<!--****************************************************-->
-		
 
 	<Event Name="Empire_Enters_Tech_05">
 		<Event_Type>STORY_TECH_LEVEL</Event_Type>
 		<Event_Param1>5</Event_Param1>
 		<Branch>Spawn_Crash_Prevention_Empire</Branch>
-
 	</Event>
-	
-	
-	
-	<!--<Event Name="Branch_Enabler_Reaper">
-  		<Event_Type>STORY_TACTICAL_DESTROY</Event_Type>
-  		<Event_Param1>Reaper_Kaine</Event_Param1>
-		<Event_Param2></Event_Param2>
-		<Event_Param3>1</Event_Param3>
-		<Reward_Type>DISABLE_BRANCH</Reward_Type>
-		<Reward_Param1>Branch_Pellaeon_Reaper</Reward_Param1>
-		<Reward_Param2>0</Reward_Param2>
-	</Event>
-	
-	<Event Name="Destroy_Pellaeon_For_Reaper">
-		<Event_Type>STORY_ELAPSED</Event_Type>
-		<Event_Param1>5</Event_Param1>	
-		<Reward_Type>REMOVE_UNIT</Reward_Type>
-		<Reward_Param1>Chimera_Pellaeon_Grand</Reward_Param1>
-		<Prereq>Empire_Enters_Tech_05</Prereq>
-		<Branch>Branch_Pellaeon_Reaper</Branch>
-	</Event>
-
-	<Event Name="Spawn_Gilad_Reaper">
-		<Event_Type>STORY_ELAPSED</Event_Type>
-		<Event_Param1>5</Event_Param1>	
-		<Reward_Type>SPAWN_HERO</Reward_Type>
-		<Reward_Param1>Pellaeon_Reaper</Reward_Param1>
-		<Reward_Param2>Bastion</Reward_Param2>
-		<Prereq>Empire_Enters_Tech_05</Prereq>
-		<Branch>Branch_Pellaeon_Reaper</Branch>
-	</Event>
-	
-	<Event Name="Pellaeon_Returns_Chimera">
-  		<Event_Type>STORY_TACTICAL_DESTROY</Event_Type>
-  		<Event_Param1>Pellaeon_Reaper</Event_Param1>
-		<Event_Param2></Event_Param2>
-		<Event_Param3>1</Event_Param3>
-		<Reward_Param1>Chimera_Pellaeon_Grand</Reward_Param1>
-		<Reward_Param2>Bastion</Reward_Param2>
-		<Prereq>Empire_Enters_Tech_05</Prereq>
-		<Branch>Empire_Alive</Branch>
-	</Event>-->
-	
-	<!-- <Event Name="Trigger_Pellaeon_Regicide_Construct"> -->
-		<!-- <Event_Type>STORY_CONSTRUCT</Event_Type> -->
-		<!-- <Event_Param1>Dummy_Regicide_Pellaeon</Event_Param1> -->
-		<!-- <Event_Param2>1</Event_Param2> -->
-		<!-- <Event_Param3>FILTER_FRIENDLY_AND_ENEMY</Event_Param3> -->
-	<!-- </Event> -->
-
 	
 </Story>

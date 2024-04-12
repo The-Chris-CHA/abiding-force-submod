@@ -23,27 +23,24 @@ return {
             if Find_Player("local") == Find_Player("Rebel") then
                 StoryUtil.Multimedia("TEXT_CONQUEST_ISARD_NR_INTRO_MOTHMA", 15, nil, "Mon_Mothma_Loop", 0)
                 Story_Event("NEWREP_ISARD_STARTED")
-			elseif Find_Player("local") == Find_Player("Pentastar") then
-				StoryUtil.Multimedia("TEXT_CONQUEST_PENTASTAR_INTRO_E2", 15, nil, "Kaine_Loop", 0)
-				Story_Event("PENTASTAR_ERATWO_STARTED")
-			elseif Find_Player("local") == Find_Player("Eriadu_Authority") then
-				StoryUtil.Multimedia("TEXT_CONQUEST_ERIADU_INTRO_E2", 15, nil, "Delvardus_Loop", 0)
-				Story_Event("ERIADU_ERATWO_STARTED")
-			elseif Find_Player("local") == Find_Player("Greater_Maldrood") then
-				StoryUtil.Multimedia("TEXT_CONQUEST_TERADOC_INTRO_E2", 15, nil, "Treuten_Teradoc_Loop", 0)
-				Story_Event("MALDROOD_ERATWO_STARTED")
-			elseif Find_Player("local") == Find_Player("Zsinj_Empire") then
-				StoryUtil.Multimedia("TEXT_CONQUEST_ZSINJ_INTRO_E2", 15, nil, "Zsinj_Loop", 0)
-				Story_Event("ZSINJ_ERATWO_STARTED")
+            elseif Find_Player("local") == Find_Player("Pentastar") then
+                StoryUtil.Multimedia("TEXT_CONQUEST_PENTASTAR_INTRO_E2", 15, nil, "Kaine_Loop", 0)
+                Story_Event("PENTASTAR_ERATWO_STARTED")
+            elseif Find_Player("local") == Find_Player("Eriadu_Authority") then
+                StoryUtil.Multimedia("TEXT_CONQUEST_ERIADU_INTRO_E2", 15, nil, "Delvardus_Loop", 0)
+                Story_Event("ERIADU_ERATWO_STARTED")
+            elseif Find_Player("local") == Find_Player("Greater_Maldrood") then
+                StoryUtil.Multimedia("TEXT_CONQUEST_MALDROOD_INTRO_E2", 15, nil, "Treuten_Teradoc_Loop", 0)
+                Story_Event("MALDROOD_ERATWO_STARTED")
+            elseif Find_Player("local") == Find_Player("Zsinj_Empire") then
+                StoryUtil.Multimedia("TEXT_CONQUEST_ZSINJ_INTRO_E2", 15, nil, "Zsinj_Loop", 0)
+                Story_Event("ZSINJ_ERATWO_STARTED")
             elseif Find_Player("local") == Find_Player("EmpireoftheHand") then
                 StoryUtil.Multimedia("TEXT_CONQUEST_EOTH_INTRO_E2", 15, nil, "Thrawn_Loop", 0)
-				Story_Event("HAND_ERATWO_STARTED")
+                Story_Event("HAND_ERATWO_STARTED")
             elseif Find_Player("local") == Find_Player("Hapes_Consortium") then
                 StoryUtil.Multimedia("TEXT_CONQUEST_INTRO_TAA_ONE", 15, nil, "TaaChume_Loop2", 0)
-				Story_Event("HAPES_TAA_START")
-            elseif Find_Player("local") == Find_Player("Corporate_Sector") then
-                StoryUtil.Multimedia("TEXT_CONQUEST_INTRO_ODUMIN", 15, nil, "Odumin_Loop", 0)
-				Story_Event("CSA_ERAONE_STARTED")
+                Story_Event("HAPES_TAA_START")
             end
 
             self.Starting_Spawns = require("eawx-mod-icw/spawn-sets/EraTwoStartSet")
@@ -59,18 +56,18 @@ return {
                     SpawnList(spawnlist, FindPlanet("Kessel"), Find_Player("Warlords"), true, false)  
                 end
             end
-			
-			self.CiutricSpawns = require("eawx-mod-icw/spawn-sets/EraTwoWarlordStartSet")
+            
+            self.CiutricSpawns = require("eawx-mod-icw/spawn-sets/EraTwoWarlordStartSet")
             if self.Active_Planets["CIUTRIC"] then
                 for planet, spawnlist in pairs(self.CiutricSpawns) do
                     SpawnList(spawnlist, FindPlanet("Ciutric"), Find_Player("Warlords"), true, false)  
                 end
             end
-			
-			
-			crossplot:publish("CONQUER_MANDALORE_EMPIRE", "empty")
-			crossplot:publish("CONQUER_MANDALORE_NR", "empty")
-			
+
+            crossplot:publish("CONQUER_MANDALORE_EMPIRE", "empty")
+            crossplot:publish("empty", "empty") --This is here on purpose; without it, crossplot won't pick up CONQUER_MANDALORE_NR when playing as NR. ~Mord
+            crossplot:publish("CONQUER_MANDALORE_NR", "empty")
+
         else
             
             self.Starting_Spawns = require("eawx-mod-icw/spawn-sets/EraTwoProgressSet")
@@ -80,7 +77,7 @@ return {
                 end
             end
 
-			crossplot:publish("ERA_TWO_TRANSITION", "empty")
+            crossplot:publish("ERA_TWO_TRANSITION", "empty")
         end
 
     end,

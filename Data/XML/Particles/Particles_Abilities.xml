@@ -39,6 +39,16 @@
 		<Behavior>PARTICLE</Behavior>
 		<Particle_Lifetime_Frames>30</Particle_Lifetime_Frames>
 	</Particle>
+
+	<!-- Use unused base game alternative push -->
+	<Particle Name="Force_Repulse_Particles">
+		<Land_Model_Name>P_force_whirlwind.ALO</Land_Model_Name>
+		<Space_Model_Name>P_force_whirlwind.ALO</Space_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Is_Decoration>Yes</Is_Decoration>
+		<Behavior>PARTICLE</Behavior>
+		<Particle_Lifetime_Frames>30</Particle_Lifetime_Frames>
+	</Particle>
 	
 	<!-- Generic: Emperor, FOW_Ping -->
 	<Particle Name="FOW_Ping_Blast_Particles">
@@ -63,6 +73,20 @@
 	<Particle Name="Lure_Ability_Particle">
 		<Land_Model_Name>p_lure_object_particle_effect.ALO</Land_Model_Name>
 		<Space_Model_Name>p_lure_object_particle_effect.ALO</Space_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Is_Decoration>Yes</Is_Decoration>
+	</Particle>
+	
+	<Particle Name="Brace_Ability_Particle">
+		<Land_Model_Name>p_brace.ALO</Land_Model_Name>
+		<Space_Model_Name>p_brace.ALO</Space_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Is_Decoration>Yes</Is_Decoration>
+	</Particle>
+	
+	<Particle Name="Brace_Large_Ability_Particle">
+		<Land_Model_Name>p_brace_large.ALO</Land_Model_Name>
+		<Space_Model_Name>p_brace_large.ALO</Space_Model_Name>
 		<Scale_Factor>1.0</Scale_Factor>
 		<Is_Decoration>Yes</Is_Decoration>
 	</Particle>
@@ -598,17 +622,15 @@
 		<Abilities SubObjectList="Yes">
 			<Combat_Bonus_Ability Name="Aggressiveness_Bonus">
 				<Activation_Style>Space_Automatic</Activation_Style>
-				<Unit_Strength_Category>SuperCapital | Capital | Corvette | Frigate | Fighter</Unit_Strength_Category>
 				<Applicable_Unit_Categories>SuperCapital | Capital | Corvette | Frigate | Fighter</Applicable_Unit_Categories>
 				<Applicable_Unit_Types />
 				<Excluded_Unit_Types> </Excluded_Unit_Types>
 				<Health_Bonus_Percentage>0.00</Health_Bonus_Percentage>
-				<Damage_Bonus_Percentage>0.10</Damage_Bonus_Percentage>
-				<Energy_Pool_Bonus_Percentage>0.0</Energy_Pool_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.10</Damage_Bonus_Percentage>    
 				<Shield_Bonus_Percentage>-0.05</Shield_Bonus_Percentage>
 				<Defense_Bonus_Percentage>0.00</Defense_Bonus_Percentage>
 				<Movement_Speed_Bonus_Percentage>0.05</Movement_Speed_Bonus_Percentage>
-				<Fire_Range_Bonus_Percentage>-.05</Fire_Range_Bonus_Percentage>
+				<!--<Fire_Range_Bonus_Percentage>-.05</Fire_Range_Bonus_Percentage>-->
 				<Stacking_Category>9</Stacking_Category>
 			</Combat_Bonus_Ability>
 
@@ -624,13 +646,11 @@
 		<Abilities SubObjectList="Yes">
 			<Combat_Bonus_Ability Name="Battle_Meditation_Bonus">
 				<Activation_Style>Ground_Automatic</Activation_Style>
-				<Unit_Strength_Category>Vehicle | Infantry | Air</Unit_Strength_Category>
 				<Applicable_Unit_Categories>Vehicle | Infantry | Air</Applicable_Unit_Categories>
 				<Applicable_Unit_Types />
 				<Excluded_Unit_Types> </Excluded_Unit_Types>
 				<Health_Bonus_Percentage>0.10</Health_Bonus_Percentage>
-				<Damage_Bonus_Percentage>0.10</Damage_Bonus_Percentage>
-				<Energy_Pool_Bonus_Percentage>0.0</Energy_Pool_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.10</Damage_Bonus_Percentage>    
 				<Shield_Bonus_Percentage>0.0</Shield_Bonus_Percentage>
 				<Defense_Bonus_Percentage>0.00</Defense_Bonus_Percentage>
 				<Movement_Speed_Bonus_Percentage>0.05</Movement_Speed_Bonus_Percentage>
@@ -649,13 +669,11 @@
 		<Abilities SubObjectList="Yes">
 			<Combat_Bonus_Ability Name="Battle_Meditation_Bonus">
 				<Activation_Style>Ground_Automatic</Activation_Style>
-				<Unit_Strength_Category>Infantry</Unit_Strength_Category>
 				<Applicable_Unit_Categories>Infantry</Applicable_Unit_Categories>
 				<Applicable_Unit_Types />
 				<Excluded_Unit_Types> </Excluded_Unit_Types>
 				<Health_Bonus_Percentage>0.0</Health_Bonus_Percentage>
-				<Damage_Bonus_Percentage>0.30</Damage_Bonus_Percentage>
-				<Energy_Pool_Bonus_Percentage>0.0</Energy_Pool_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.30</Damage_Bonus_Percentage>    
 				<Shield_Bonus_Percentage>0.0</Shield_Bonus_Percentage>
 				<Defense_Bonus_Percentage>-0.25</Defense_Bonus_Percentage>
 				<Movement_Speed_Bonus_Percentage>0.10</Movement_Speed_Bonus_Percentage>
@@ -674,14 +692,12 @@
 		<Abilities SubObjectList="Yes">
 			<Combat_Bonus_Ability Name="Cautiousness_Bonus">
 				<Activation_Style>Space_Automatic</Activation_Style>
-				<Unit_Strength_Category>SuperCapital | Capital | Corvette | Frigate | Fighter</Unit_Strength_Category>
-				<Applicable_Unit_Categories>SuperCapital | Capital | Corvette | Frigate | Fighter</Applicable_Unit_Categories>
+				<Applicable_Unit_Categories>All</Applicable_Unit_Categories>
 				<Applicable_Unit_Types />
-				<Excluded_Unit_Types> </Excluded_Unit_Types>
-				<Fire_Range_Bonus_Percentage>100.05</Fire_Range_Bonus_Percentage>
+				<Excluded_Unit_Types> Ground_Ion_Cannon, Ground_Hypervelocity_Gun </Excluded_Unit_Types>
+				<!--<Fire_Range_Bonus_Percentage>100.05</Fire_Range_Bonus_Percentage>-->
 				<Health_Bonus_Percentage>0.00</Health_Bonus_Percentage>
-				<Damage_Bonus_Percentage>-0.05</Damage_Bonus_Percentage>
-				<Energy_Pool_Bonus_Percentage>0.0</Energy_Pool_Bonus_Percentage>
+				<Damage_Bonus_Percentage>-0.05</Damage_Bonus_Percentage>    
 				<Shield_Bonus_Percentage>0.10</Shield_Bonus_Percentage>
 				<Defense_Bonus_Percentage>0.00</Defense_Bonus_Percentage>
 				<Movement_Speed_Bonus_Percentage>-0.05</Movement_Speed_Bonus_Percentage>
@@ -691,7 +707,7 @@
 		</Abilities>
 	</Particle>
 	
-	<Particle Name="Fighter_Shield_Ability_Particle">
+	<Particle Name="Fighter_Shield_Bell_Endurance_Ability_Particle">
 		<Land_Model_Name>p_lure_object_particle_effect.ALO</Land_Model_Name>
 		<Space_Model_Name>p_lure_object_particle_effect.ALO</Space_Model_Name>
 		<Scale_Factor>2.0</Scale_Factor>
@@ -700,14 +716,12 @@
 		<Abilities SubObjectList="Yes">
 			<Combat_Bonus_Ability Name="Fighter_Shield_Bonus">
 				<Activation_Style>Space_Automatic</Activation_Style>
-				<Unit_Strength_Category> Fighter</Unit_Strength_Category>
 				<Applicable_Unit_Categories> Fighter</Applicable_Unit_Categories>
 				<Applicable_Unit_Types />
 				<Excluded_Unit_Types> </Excluded_Unit_Types>
 				<Health_Bonus_Percentage>0.00</Health_Bonus_Percentage>
 				<Ability_Recharge_Bonus_Percentage>0.0</Ability_Recharge_Bonus_Percentage>
-				<Damage_Bonus_Percentage>0.00</Damage_Bonus_Percentage>
-				<Energy_Pool_Bonus_Percentage>0.0</Energy_Pool_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.00</Damage_Bonus_Percentage>    
 				<Shield_Bonus_Percentage>0.25</Shield_Bonus_Percentage>
 				<Defense_Bonus_Percentage>0.00</Defense_Bonus_Percentage>
 				<Movement_Speed_Bonus_Percentage>0.0</Movement_Speed_Bonus_Percentage>
@@ -722,8 +736,124 @@
 				<Excluded_Unit_Types> </Excluded_Unit_Types>
 				<Health_Bonus_Percentage>0.00</Health_Bonus_Percentage>
 				<Ability_Recharge_Bonus_Percentage>0.0</Ability_Recharge_Bonus_Percentage>
-				<Damage_Bonus_Percentage>-0.25</Damage_Bonus_Percentage>
-				<Energy_Pool_Bonus_Percentage>0.0</Energy_Pool_Bonus_Percentage>
+				<Damage_Bonus_Percentage>-0.25</Damage_Bonus_Percentage>    
+				<Shield_Bonus_Percentage>-0.25</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.00</Defense_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>-0.2</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>8</Stacking_Category>
+			</Combat_Bonus_Ability>
+
+		</Abilities>
+	</Particle>
+
+	<Particle Name="Fighter_Shield_Merai_Free_Dac_Ability_Particle">
+		<Land_Model_Name>p_lure_object_particle_effect.ALO</Land_Model_Name>
+		<Space_Model_Name>p_lure_object_particle_effect.ALO</Space_Model_Name>
+		<Scale_Factor>2.0</Scale_Factor>
+		<Is_Decoration>Yes</Is_Decoration>
+
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Fighter_Shield_Bonus">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories> Fighter</Applicable_Unit_Categories>
+				<Applicable_Unit_Types />
+				<Excluded_Unit_Types> </Excluded_Unit_Types>
+				<Health_Bonus_Percentage>0.00</Health_Bonus_Percentage>
+				<Ability_Recharge_Bonus_Percentage>0.0</Ability_Recharge_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.00</Damage_Bonus_Percentage>    
+				<Shield_Bonus_Percentage>0.25</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.00</Defense_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.0</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>8</Stacking_Category>
+			</Combat_Bonus_Ability>
+			
+			<Combat_Bonus_Ability Name="Fighter_Shield_Penalty">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Unit_Strength_Category />
+				<Applicable_Unit_Categories />  
+				<Applicable_Unit_Types> Merai_Free_Dac </Applicable_Unit_Types>
+				<Excluded_Unit_Types> </Excluded_Unit_Types>
+				<Health_Bonus_Percentage>0.00</Health_Bonus_Percentage>
+				<Ability_Recharge_Bonus_Percentage>0.0</Ability_Recharge_Bonus_Percentage>
+				<Damage_Bonus_Percentage>-0.25</Damage_Bonus_Percentage>    
+				<Shield_Bonus_Percentage>-0.25</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.00</Defense_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>-0.2</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>8</Stacking_Category>
+			</Combat_Bonus_Ability>
+
+		</Abilities>
+	</Particle>
+	
+	<Particle Name="Fighter_Shield_Tallon_Sundiver_Ability_Particle">
+		<Land_Model_Name>p_lure_object_particle_effect.ALO</Land_Model_Name>
+		<Space_Model_Name>p_lure_object_particle_effect.ALO</Space_Model_Name>
+		<Scale_Factor>2.0</Scale_Factor>
+		<Is_Decoration>Yes</Is_Decoration>
+
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Fighter_Shield_Bonus">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories> Fighter</Applicable_Unit_Categories>
+				<Applicable_Unit_Types />
+				<Excluded_Unit_Types> </Excluded_Unit_Types>
+				<Health_Bonus_Percentage>0.00</Health_Bonus_Percentage>
+				<Ability_Recharge_Bonus_Percentage>0.0</Ability_Recharge_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.00</Damage_Bonus_Percentage>    
+				<Shield_Bonus_Percentage>0.25</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.00</Defense_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.0</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>8</Stacking_Category>
+			</Combat_Bonus_Ability>
+			
+			<Combat_Bonus_Ability Name="Fighter_Shield_Penalty">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Unit_Strength_Category />
+				<Applicable_Unit_Categories />  
+				<Applicable_Unit_Types> Tallon_Sundiver </Applicable_Unit_Types>
+				<Excluded_Unit_Types> </Excluded_Unit_Types>
+				<Health_Bonus_Percentage>0.00</Health_Bonus_Percentage>
+				<Ability_Recharge_Bonus_Percentage>0.0</Ability_Recharge_Bonus_Percentage>
+				<Damage_Bonus_Percentage>-0.25</Damage_Bonus_Percentage>    
+				<Shield_Bonus_Percentage>-0.25</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.00</Defense_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>-0.2</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>8</Stacking_Category>
+			</Combat_Bonus_Ability>
+
+		</Abilities>
+	</Particle>
+	
+	<Particle Name="Fighter_Shield_Tallon_Battalion_Ability_Particle">
+		<Land_Model_Name>p_lure_object_particle_effect.ALO</Land_Model_Name>
+		<Space_Model_Name>p_lure_object_particle_effect.ALO</Space_Model_Name>
+		<Scale_Factor>2.0</Scale_Factor>
+		<Is_Decoration>Yes</Is_Decoration>
+
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Fighter_Shield_Bonus">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories> Fighter</Applicable_Unit_Categories>
+				<Applicable_Unit_Types />
+				<Excluded_Unit_Types> </Excluded_Unit_Types>
+				<Health_Bonus_Percentage>0.00</Health_Bonus_Percentage>
+				<Ability_Recharge_Bonus_Percentage>0.0</Ability_Recharge_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.00</Damage_Bonus_Percentage>    
+				<Shield_Bonus_Percentage>0.25</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.00</Defense_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.0</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>8</Stacking_Category>
+			</Combat_Bonus_Ability>
+			
+			<Combat_Bonus_Ability Name="Fighter_Shield_Penalty">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Unit_Strength_Category />
+				<Applicable_Unit_Categories />  
+				<Applicable_Unit_Types> Tallon_Battalion </Applicable_Unit_Types>
+				<Excluded_Unit_Types> </Excluded_Unit_Types>
+				<Health_Bonus_Percentage>0.00</Health_Bonus_Percentage>
+				<Ability_Recharge_Bonus_Percentage>0.0</Ability_Recharge_Bonus_Percentage>
+				<Damage_Bonus_Percentage>-0.25</Damage_Bonus_Percentage>    
 				<Shield_Bonus_Percentage>-0.25</Shield_Bonus_Percentage>
 				<Defense_Bonus_Percentage>0.00</Defense_Bonus_Percentage>
 				<Movement_Speed_Bonus_Percentage>-0.2</Movement_Speed_Bonus_Percentage>
@@ -742,13 +872,11 @@
 		<Abilities SubObjectList="Yes">
 			<Combat_Bonus_Ability Name="Rampage_Combat_Bonus">
 				<Activation_Style>Space_Automatic</Activation_Style>
-				<Unit_Strength_Category>SuperCapital | Capital | Corvette | Frigate | Fighter</Unit_Strength_Category>
 				<Applicable_Unit_Categories>SuperCapital | Capital | Corvette | Frigate | Fighter</Applicable_Unit_Categories>
 				<Applicable_Unit_Types />
 				<Excluded_Unit_Types> </Excluded_Unit_Types>
 				<Health_Bonus_Percentage>0.00</Health_Bonus_Percentage>
-				<Damage_Bonus_Percentage>0.10</Damage_Bonus_Percentage>
-				<Energy_Pool_Bonus_Percentage>0.0</Energy_Pool_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.10</Damage_Bonus_Percentage>    
 				<Shield_Bonus_Percentage>-0.05</Shield_Bonus_Percentage>
 				<Defense_Bonus_Percentage>0.00</Defense_Bonus_Percentage>
 				<Movement_Speed_Bonus_Percentage>0.05</Movement_Speed_Bonus_Percentage>
@@ -759,7 +887,7 @@
 				<Bounty_Percentage_Amount> 0.5 </Bounty_Percentage_Amount>
 				<Stacking_Category> 1 </Stacking_Category>
 				<!-- The Underworld player will gain credits for destroying objects owned by these factions: -->
-				<Target_Faction_Names> Empire, Rebel, EmpireoftheHand, Zsinj_Empire, Underworld, Warlords, Independent_Forces, Neutral, Hostile, Hapes_Consortium, Eriadu_Authority, Pentastar, Greater_Maldrood, Hutt_Cartels, SsiRuuvi_Imperium, Corporate_Sector </Target_Faction_Names>
+				<Target_Faction_Names> Empire, Rebel, Hutt_Cartels, EmpireoftheHand, Zsinj_Empire, Underworld, Warlords, Independent_Forces, Neutral, Hostile, Hapes_Consortium, Eriadu_Authority, Pentastar, Greater_Maldrood, SsiRuuvi_Imperium, Corporate_Sector </Target_Faction_Names>
 				<Apply_To_All_Allies> Yes </Apply_To_All_Allies>
 			</Bounty_On_Faction_Ability>
 
@@ -775,14 +903,12 @@
 		<Abilities SubObjectList="Yes">
 			<Combat_Bonus_Ability Name="Art_Of_War_Bonus">
 				<Activation_Style>Space_Automatic</Activation_Style>
-				<Unit_Strength_Category>SuperCapital | Capital | Corvette | Frigate | Fighter</Unit_Strength_Category>
 				<Applicable_Unit_Categories>SuperCapital | Capital | Corvette | Frigate | Fighter</Applicable_Unit_Categories>
 				<Applicable_Unit_Types />
 				<Excluded_Unit_Types> </Excluded_Unit_Types>
 				<Health_Bonus_Percentage>0.00</Health_Bonus_Percentage>
 				<Ability_Recharge_Bonus_Percentage>0.9</Ability_Recharge_Bonus_Percentage>
-				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
-				<Energy_Pool_Bonus_Percentage>0.0</Energy_Pool_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>    
 				<Shield_Bonus_Percentage>0.05</Shield_Bonus_Percentage>
 				<Defense_Bonus_Percentage>0.00</Defense_Bonus_Percentage>
 				<Movement_Speed_Bonus_Percentage>0.05</Movement_Speed_Bonus_Percentage>
@@ -802,14 +928,12 @@
 		<Abilities SubObjectList="Yes">
 			<Combat_Bonus_Ability Name="Art_Of_War_Bonus">
 				<Activation_Style>Space_Automatic</Activation_Style>
-				<Unit_Strength_Category>SuperCapital | Capital | Corvette | Frigate | Fighter</Unit_Strength_Category>
 				<Applicable_Unit_Categories>SuperCapital | Capital | Corvette | Frigate | Fighter</Applicable_Unit_Categories>
 				<Applicable_Unit_Types />
 				<Excluded_Unit_Types> </Excluded_Unit_Types>
 				<Health_Bonus_Percentage>0.00</Health_Bonus_Percentage>
 				<Ability_Recharge_Bonus_Percentage>0.9</Ability_Recharge_Bonus_Percentage>
-				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
-				<Energy_Pool_Bonus_Percentage>0.0</Energy_Pool_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>    
 				<Shield_Bonus_Percentage>0.05</Shield_Bonus_Percentage>
 				<Defense_Bonus_Percentage>0.00</Defense_Bonus_Percentage>
 				<Movement_Speed_Bonus_Percentage>0.05</Movement_Speed_Bonus_Percentage>
@@ -829,13 +953,11 @@
 		<Abilities SubObjectList="Yes">
 			<Combat_Bonus_Ability Name="Battle_Meditation_Bonus">
 				<Activation_Style>Space_Automatic</Activation_Style>
-				<Unit_Strength_Category>SuperCapital | Capital | Corvette | Frigate | Fighter</Unit_Strength_Category>
 				<Applicable_Unit_Categories>SuperCapital | Capital | Corvette | Frigate | Fighter</Applicable_Unit_Categories>
 				<Applicable_Unit_Types />
 				<Excluded_Unit_Types> </Excluded_Unit_Types>
 				<Health_Bonus_Percentage>0.10</Health_Bonus_Percentage>
-				<Damage_Bonus_Percentage>0.10</Damage_Bonus_Percentage>
-				<Energy_Pool_Bonus_Percentage>0.0</Energy_Pool_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.10</Damage_Bonus_Percentage>    
 				<Shield_Bonus_Percentage>0.0</Shield_Bonus_Percentage>
 				<Defense_Bonus_Percentage>0.00</Defense_Bonus_Percentage>
 				<Movement_Speed_Bonus_Percentage>0.05</Movement_Speed_Bonus_Percentage>
@@ -857,13 +979,12 @@
 				<Unit_Strength_Category />
 				<Applicable_Unit_Categories />
 				<Applicable_Unit_Types>
-				Yoda_Eta, Windu_Eta, Obi_Wan_Eta, Plo_Koon_Eta, Anakin_Eta, Kit_Fisto_Eta, Aayla_Secura_Eta, Ki_Adi_Mundi_Eta, Luminara_Unduli_Eta, Barriss_Offee_Eta, Shaak_Ti_Eta, Ahsoka_Eta, 
+				Yoda_Eta, Windu_Eta, Obi_Wan_Eta, Anakin_Eta, Kit_Fisto_Eta, Aayla_Secura_Eta, Ki_Adi_Mundi_Eta, Luminara_Unduli_Eta, Barriss_Offee_Eta, Shaak_Ti_Eta, Ahsoka_Eta, 
 				Yoda_Delta, Windu_Delta, Ima_Gun_Di_Delta, Obi_Wan_Delta, Plo_Koon_Delta, Anakin_Delta, Kit_Fisto_Delta, Aayla_Secura_Delta, Ki_Adi_Mundi_Delta, Luminara_Unduli_Delta, Barriss_Offee_Delta, Shaak_Ti_Delta, Ahsoka_Delta 
 				</Applicable_Unit_Types>
 				<Excluded_Unit_Types> </Excluded_Unit_Types>
 				<Health_Bonus_Percentage>0.15</Health_Bonus_Percentage>
-				<Damage_Bonus_Percentage>0.15</Damage_Bonus_Percentage>
-				<Energy_Pool_Bonus_Percentage>0.0</Energy_Pool_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.15</Damage_Bonus_Percentage>    
 				<Shield_Bonus_Percentage>0.0</Shield_Bonus_Percentage>
 				<Defense_Bonus_Percentage>0.00</Defense_Bonus_Percentage>
 				<Movement_Speed_Bonus_Percentage>0.10</Movement_Speed_Bonus_Percentage>
@@ -901,9 +1022,8 @@
 				<Applicable_Unit_Categories />
 				<Applicable_Unit_Types> Cronal_Singularity </Applicable_Unit_Types>
 				<Health_Bonus_Percentage>0.0</Health_Bonus_Percentage>
-				<Damage_Bonus_Percentage>0.0</Damage_Bonus_Percentage>
-				<Energy_Pool_Bonus_Percentage>0.0</Energy_Pool_Bonus_Percentage>
-				<Shield_Bonus_Percentage>-1.0</Shield_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.0</Damage_Bonus_Percentage>    
+				<Shield_Bonus_Percentage>-0.999</Shield_Bonus_Percentage>
 				<Defense_Bonus_Percentage>0.0</Defense_Bonus_Percentage>
 				<Movement_Speed_Bonus_Percentage>0.0</Movement_Speed_Bonus_Percentage>
 				<Stacking_Category>15</Stacking_Category>
@@ -925,14 +1045,12 @@
 		<Abilities SubObjectList="Yes">
 			<Combat_Bonus_Ability Name="Ambush_Bonus">
 				<Activation_Style>Space_Automatic</Activation_Style>
-				<Unit_Strength_Category>SuperCapital | Capital | Corvette | Frigate | Fighter</Unit_Strength_Category>
 				<Applicable_Unit_Categories>SuperCapital | Capital | Corvette | Frigate | Fighter</Applicable_Unit_Categories>
 				<Applicable_Unit_Types />
 				<Excluded_Unit_Types> </Excluded_Unit_Types>
 				<Health_Bonus_Percentage>0.00</Health_Bonus_Percentage>
 				<Ability_Recharge_Bonus_Percentage>0.0</Ability_Recharge_Bonus_Percentage>
-				<Damage_Bonus_Percentage>0.0</Damage_Bonus_Percentage>
-				<Energy_Pool_Bonus_Percentage>0.0</Energy_Pool_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.0</Damage_Bonus_Percentage>    
 				<Shield_Bonus_Percentage>0.00</Shield_Bonus_Percentage>
 				<Defense_Bonus_Percentage>0.00</Defense_Bonus_Percentage>
 				<Movement_Speed_Bonus_Percentage>0.10</Movement_Speed_Bonus_Percentage>
@@ -1038,7 +1156,7 @@
 			<Enable_Ability Name="Art_of_War_Buff_Display_Enabler">
 				<Ability_Name> Art_of_War_Buff_Display </Ability_Name>
 				<Applicable_Unit_Categories />
-				<Applicable_Unit_Types>Chimera</Applicable_Unit_Types>
+				<Applicable_Unit_Types>Thrawn_Chimaera</Applicable_Unit_Types>
 				<Affects_All_Allies> No </Affects_All_Allies>
 			</Enable_Ability>
 		</Abilities>
@@ -1111,8 +1229,8 @@
 	 <Particle Name="Inspire_Fear_Local_Debuff_Particle_Init">
 		<Variant_Of_Existing_Type>Local_Buff_Spawn_Dummy</Variant_Of_Existing_Type>
 		
-		<Starting_Spawned_Units_Tech_0>Inspire_Fear_Unit_Squadron_Init, 1</Starting_Spawned_Units_Tech_0>
-		<Reserve_Spawned_Units_Tech_0>Inspire_Fear_Unit_Squadron_Init, -1</Reserve_Spawned_Units_Tech_0>
+		<!--<Starting_Spawned_Units_Tech_0>Inspire_Fear_Unit_Squadron_Init, 1</Starting_Spawned_Units_Tech_0>		Commented out in Imperial_Remnant_Heroes.xml
+		<Reserve_Spawned_Units_Tech_0>Inspire_Fear_Unit_Squadron_Init, -1</Reserve_Spawned_Units_Tech_0> -->
 		<Spawned_Squadron_Delay_Seconds>1.1</Spawned_Squadron_Delay_Seconds>
 		
 		<Abilities SubObjectList="Yes">

@@ -1,0 +1,250 @@
+﻿<?xml version="1.0" ?>
+<!--********************************************-->
+<!--******  Campaign: Caamas Crisis  ***********-->
+<!--********************************************-->
+<Story>
+	<Event Name="Universal_Story_Start">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>0</Event_Param1>
+	</Event>
+
+	<Event Name="Trigger_NR_Player_Checker">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Prereq>Universal_Story_Start</Prereq>
+	</Event>
+
+	<Event Name="Trigger_NR_Story_Start">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>NR_STORY_START</Event_Param2>
+	</Event>
+	
+	<!--************************************-->
+	<!--*********** Story Handler **********-->
+	<!--************************************-->
+	
+	<Event Name="Unlock_Viscount_Research">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>3</Event_Param1>
+		<Reward_Type>BUILDABLE_UNIT</Reward_Type>
+		<Reward_Param1>Dummy_Viscount</Reward_Param1>
+		<Prereq>Universal_Story_Start</Prereq>
+	</Event>
+
+	<Event Name="Spawn_Gavrisom">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Gavrisom_Team</Reward_Param1>
+		<Reward_Param2>Coruscant</Reward_Param2>
+		<Prereq>Universal_Story_Start</Prereq>
+	</Event>
+
+	<Event Name="Spawn_Han_Solo">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Han_Solo_Team</Reward_Param1>
+		<Reward_Param2>Coruscant</Reward_Param2>
+		<Prereq>Universal_Story_Start</Prereq>
+	</Event>
+
+	<Event Name="Spawn_Lando">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Lando_Calrissian_Team</Reward_Param1>
+		<Reward_Param2>Orocco</Reward_Param2>
+		<Prereq>Universal_Story_Start</Prereq>
+	</Event>
+
+	<Event Name="Spawn_Karrde">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Wild_Karrde</Reward_Param1>
+		<Reward_Param2>Wayland</Reward_Param2>
+		<Prereq>Universal_Story_Start</Prereq>
+	</Event>
+
+	<Event Name="Spawn_Luke_Jedi">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Luke_Skywalker_Jedi_Team</Reward_Param1>
+		<Reward_Param2>Borleias</Reward_Param2>
+		<Prereq>Universal_Story_Start</Prereq>
+	</Event>
+
+	<Event Name="Spawn_Ackbar">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+       	<Reward_Type>SPAWN_HERO</Reward_Type>
+        <Reward_Param1>Galactic_Voyager</Reward_Param1>
+        <Reward_Param2>Coruscant</Reward_Param2>
+		<Prereq>Universal_Story_Start</Prereq>
+	</Event>
+
+	<Event Name="Spawn_Bel_Iblis">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Iblis_Peregrine</Reward_Param1>
+		<Reward_Param2>Bilbringi</Reward_Param2>
+		<Prereq>Universal_Story_Start</Prereq>
+	</Event>
+
+	<Event Name="Spawn_Mara">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Mara_Saber_Team</Reward_Param1>
+		<Reward_Param2>Borleias</Reward_Param2>
+		<Prereq>Universal_Story_Start</Prereq>
+	</Event>	
+
+	<!--************************************-->
+	<!--*********** Tech Handler ***********-->
+	<!--************************************-->
+
+	<!--************************************-->
+	<!--*************** Act I **************-->
+	<!--************************************-->
+
+	<Event Name="NR_Caamas_Crisis_Speech_01">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>0.5</Event_Param1>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_CONQUEST_CAAMAS_NR_INTRO</Reward_Param1>
+		<Reward_Param2>15</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6 />
+		<Reward_Param7 />
+		<Reward_Param8 />
+		<Reward_Param9>Gavrisom_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+		<Prereq>Trigger_NR_Story_Start</Prereq>
+	</Event>
+
+	<Event Name="NR_Caamas_Crisis_Act_I_Dialog">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>15</Event_Param1>
+		<Prereq>NR_Caamas_Crisis_Speech_01</Prereq>
+		<Story_Dialog>Dialog_Caamas_NewRep</Story_Dialog>
+		<Story_Chapter>1</Story_Chapter>
+		<Story_Tag>Caamas_Crisis_NR_Act_1</Story_Tag>
+	</Event>
+
+	<!--************************************-->
+	<!--*************** Act IA *************-->
+	<!--************************************-->
+	
+	<Event Name="NR_Caamas_Crisis_Speech_Karrde">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>30</Event_Param1>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_CONQUEST_TERRIK_VENTURE</Reward_Param1>
+		<Reward_Param2>15</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6 />
+		<Reward_Param7 />
+		<Reward_Param8 />
+		<Reward_Param9>Karrde_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+		<Prereq>Trigger_NR_Story_Start</Prereq>
+	</Event>
+  
+	<Event Name="Unlock_Venture">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>BUILDABLE_UNIT</Reward_Type>
+		<Reward_Param1>Errant_Venture_Two</Reward_Param1>
+		<Prereq>NR_Caamas_Crisis_Speech_Karrde</Prereq>
+	</Event>
+
+	<!--************************************-->
+	<!--*************** Act II *************-->
+	<!--************************************-->
+
+	<Event Name="NR_Caamas_Crisis_Speech_02">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>THRAWN_RETURNS</Event_Param2>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_CONQUEST_CAAMAS_THRAWN_RETURNS</Reward_Param1>
+		<Reward_Param2>15.0</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6 />
+		<Reward_Param7 />
+		<Reward_Param8 />
+		<Reward_Param9>Thrawn_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+	</Event>
+
+	<Event Name="NR_Caamas_Crisis_Speech_03A">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>NR_ONE_THRAWN</Event_Param2>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_CONQUEST_CAAMAS_RETURN_GAVRISOM_ONE</Reward_Param1>
+		<Reward_Param2>15.0</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6 />
+		<Reward_Param7 />
+		<Reward_Param8 />
+		<Reward_Param9>Gavrisom_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+	</Event>
+
+	<Event Name="NR_Caamas_Crisis_Speech_03B">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>NR_TWO_THRAWNS</Event_Param2>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_CONQUEST_CAAMAS_RETURN_GAVRISOM_TWO</Reward_Param1>
+		<Reward_Param2>15.0</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6 />
+		<Reward_Param7 />
+		<Reward_Param8 />
+		<Reward_Param9>Gavrisom_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+	</Event>
+
+	<!--************************************-->
+	<!--*************** Act III ************-->
+	<!--************************************-->
+
+	<Event Name="NR_Caamas_Crisis_Speech_04">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>NR_DOCUMENT_FOUND</Event_Param2>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_CONQUEST_CAAMAS_DOCUMENT_FOUND_NR</Reward_Param1>
+		<Reward_Param2>15.0</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6 />
+		<Reward_Param7 />
+		<Reward_Param8 />
+		<Reward_Param9>Luke_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+	</Event>
+
+	<!--************************************-->
+	<!--*************** Act IV *************-->
+	<!--************************************-->
+
+	<Event Name="NR_Caamas_Crisis_Speech_Pellaeon_Killed">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>NR_PELLAEON_KILLED</Event_Param2>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_CONQUEST_CAAMAS_PELLAEON_KILLED_NR</Reward_Param1>
+		<Reward_Param2>15.0</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6 />
+		<Reward_Param7 />
+		<Reward_Param8 />
+		<Reward_Param9>Gavrisom_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+	</Event>
+</Story>

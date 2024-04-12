@@ -47,6 +47,8 @@ function GalacticConquest:new(planet_factory)
         GalacticProductionFinished = ProductionFinishedEvent(self.Planets),
         GalacticProductionCanceled = ProductionCanceledEvent(self.Planets),
         GalacticHeroKilled = GalacticHeroKilledEvent(),
+        GalacticSSDKilled = GalacticSSDKilledEvent(),
+		GalacticHeroNeutralized = GalacticHeroNeutralizedEvent(),
         TacticalBattleEnded = TacticalBattleEndedEvent()
     }
 

@@ -4,6 +4,9 @@ return {
 		["MIYTIL_FIGHTER_SQUADRON_DOUBLE"] = {
 			HAPES_CONSORTIUM = {Initial = 1, Reserve = 2}
 		},
+		["DUNELIZARD_FIGHTER_SQUADRON_DOUBLE"] = {
+			HUTT_CARTELS = {Initial = 1, Reserve = 2}
+		},
 		["TIE_FIGHTER_SQUADRON_DOUBLE"] = {
 			HOSTILE = {Initial = 1, Reserve = 2},
 			IMPERIAL = {Initial = 1, Reserve = 2},
@@ -17,6 +20,9 @@ return {
 		},
 		["MIYTIL_BOMBER_SQUADRON_DOUBLE"] = {
 			HAPES_CONSORTIUM = {Initial = 1, Reserve = 2}
+		},
+		["SCURRG_H6_SQUADRON_DOUBLE"] = {
+			HUTT_CARTELS = {Initial = 1, Reserve = 2}
 		},
 		["TIE_BOMBER_SQUADRON_DOUBLE"] = {
 			HOSTILE = {Initial = 1, Reserve = 2},

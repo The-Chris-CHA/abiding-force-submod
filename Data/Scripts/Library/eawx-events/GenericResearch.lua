@@ -30,6 +30,11 @@ function GenericResearch:new(gc, event_name, research_dummy, player, unlock_list
     end
     if spawn_planet ~= nil then
         self.Spawn_Planet = FindPlanet(spawn_planet)
+        if not TestValid(self.Spawn_Planet) then
+            for _,player_name in pairs(player) do
+                self.Spawn_Planet = StoryUtil.FindFriendlyPlanet(Find_Player(player_name), true)
+            end
+        end
     end
 
     self.Chained_Event = chained_effect
@@ -56,7 +61,7 @@ function GenericResearch:activate()
                 Story_Event(self.Story_Tag.."_STARTED")
 
                 player_object.Unlock_Tech(self.research_dummy)
-             end
+            end
         end
         if self.ai_only == true then
             self:fulfil()

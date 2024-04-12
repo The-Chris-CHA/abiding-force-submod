@@ -50,10 +50,31 @@ function Definitions()
 		{
 			"MainForce"
 			,"Infantry = 1, 4"
+			,"-B2_RP_Team"
+			,"-Clone_Jumptrooper_One_Team"
+			,"-Clone_Jumptrooper_Two_Team"
+			,"-Mando_Commando_Team"
+			,"-Jumptrooper_Team"
 		},
 		{
 			"EscortForce"		
 			,"Infantry | Vehicle | Air | LandHero = 1,4"
+			,"EscortForce"
+			,"-Republic_AV7"
+			,"-HAG"
+			,"-CA_Artillery"
+			,"-MAL_Rocket_Vehicle"
+			,"-Plasma_Mortar"
+			,"-Hapan_Artillery"
+			,"-SPMAG_Walker"
+			,"-SPMAT_Walker"
+			,"-Imperial_Light_Artillery"
+			,"-Imperial_Heavy_Artillery"
+			,"-Imperial_Missile_Artillery"
+			,"-MPTL"
+			,"-Mando_Artillery_Platform"
+			,"-VX_Artillery_Droid"
+			,"-Sith_Krath_Artillery"
 		}
 	}
 
@@ -84,9 +105,9 @@ function MainForce_Thread()
 	-- move to contestables
 	faction_name = PlayerObject.Get_Faction_Name()
 	if PlayerObject.Get_Difficulty() == "Easy" then
-		BlockOnCommand(MainForce.Attack_Move(AITarget))
+		BlockOnCommand(MainForce.Move_To(AITarget))
 	else	
-		BlockOnCommand(MainForce.Attack_Move(AITarget, MainForce.Get_Self_Threat_Max()))
+		BlockOnCommand(MainForce.Attack_Move(AITarget))
 	end
 		
 	MainForce.Set_As_Goal_System_Removable(false)

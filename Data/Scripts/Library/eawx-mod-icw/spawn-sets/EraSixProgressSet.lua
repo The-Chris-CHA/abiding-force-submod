@@ -1,6 +1,6 @@
 return {
-    ["EMPIREOFTHEHAND"] = {
-        ["NIRAUAN"] =  {"Chak_Fel_Krsiss_Squadron_Association"}
+	["EMPIREOFTHEHAND"] = {
+        ["NIRAUAN"] =  {"Ashik_Team"}
     },
     ["CORPORATE_SECTOR"] = {
         ["ETTI"]  = {"Phineas_VSD"}

@@ -59,119 +59,6 @@
 		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_DUMMY_ART, null </SFXEvent_Hardpoint_Destroyed>
 	</SpecialStructure>
 
-	<SpecialStructure Name="Pirate_Base">
-		<Variant_Of_Existing_Type>Template_Pirate_Base</Variant_Of_Existing_Type>
-		
-		<Encyclopedia_Text> 
-		TEXT_TOOLTIP_PIRATE_BASE
-		TEXT_TOOLTIP_PIRATE_TARIFF
-		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
-		TEXT_TOOLTIP_PIRATE_BASE_HULL
-		TEXT_TOOLTIP_PIRATE_BASE_SHIELD 
-		TEXT_TOOLTIP_PIRATE_BASE_WEAP1
-		TEXT_TOOLTIP_PIRATE_BASE_WEAP2
-		TEXT_TOOLTIP_PIRATE_BASE_WEAP3 
-		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK 
-		TEXT_TOOLTIP_PIRATE_BASE_1
-		TEXT_TOOLTIP_PIRATE_BASE_2
-		TEXT_TOOLTIP_PIRATE_BASE_3
-		TEXT_TOOLTIP_PIRATE_BASE_4
-		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
-		TEXT_TOOLTIP_UNITS_PIRATE_BASE
-		TEXT_TOOLTIP_UNITS_PIRATE_BASE_PENALTY
-		TEXT_TOOLTIP_INCOME_PIRATE_BASE
-		TEXT_TOOLTIP_SEPARATOR_LIMITS_BLOCK
-		TEXT_TOOLTIP_BUILDLIMIT_PIRATE_BASE
-		</Encyclopedia_Text>
-		
- 		<Affiliation>Zsinj_Empire</Affiliation>
-		
-		<Tech_Level>0</Tech_Level>
-
-		<Starting_Spawned_Units_Tech_0>Rihkxyrk_Squadron, 4</Starting_Spawned_Units_Tech_0>
-		<Reserve_Spawned_Units_Tech_0>Rihkxyrk_Squadron, -1</Reserve_Spawned_Units_Tech_0>
-		
-		<Starting_Spawned_Units_Tech_0>Interceptor_Frigate, 3</Starting_Spawned_Units_Tech_0>
-		<Reserve_Spawned_Units_Tech_0>Interceptor_Frigate, 3</Reserve_Spawned_Units_Tech_0>
-	
-		<Starting_Spawned_Units_Tech_0>Space_ARC_Cruiser, 2</Starting_Spawned_Units_Tech_0>
-		
-		<Starting_Spawned_Units_Tech_0>Super_Transport_XI_Modified, 1</Starting_Spawned_Units_Tech_0>
-
-		<Spawned_Squadron_Delay_Seconds>5</Spawned_Squadron_Delay_Seconds>
-		
-		<SFXEvent_Build_Started>EHD_Build_Structure</SFXEvent_Build_Started>
-		<SFXEvent_Build_Cancelled>EHD_Building_Canceled</SFXEvent_Build_Cancelled>
-		<SFXEvent_Build_Complete>EHD_Construction_Complete</SFXEvent_Build_Complete>
-		<SFXEvent_Ambient_Loop>Unit_Starbase_Engine_Loop</SFXEvent_Ambient_Loop>
-		<SFXEvent_Fire>Unit_Turbo_Fire</SFXEvent_Fire>
-		<SFXEvent_Select>Unit_Select_Empire_Space_Station</SFXEvent_Select>
-		<SFXEvent_Attack>Unit_Attack_Empire_Space_Station</SFXEvent_Attack>
-		<SFXEvent_Barrage>Unit_Barrage_Empire_Space_Station</SFXEvent_Barrage>
-		<Death_SFXEvent_Start_Die>Unit_Space_Station_Death_SFX</Death_SFXEvent_Start_Die>
-		<SFXEvent_Unit_Under_Attack> EHD_Space_Station_Under_Attack </SFXEvent_Unit_Under_Attack>
-
-		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_LASER, Unit_HP_LASER_Empire_Space_Station</SFXEvent_Attack_Hardpoint>
-		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MISSILE, Unit_HP_MISSILE_Empire_Space_Station </SFXEvent_Attack_Hardpoint>
-		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_TORPEDO, Unit_HP_TORP_Empire_Space_Station </SFXEvent_Attack_Hardpoint>
-		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_ION_CANNON, Unit_HP_ION_Empire_Space_Station </SFXEvent_Attack_Hardpoint>
-		<SFXEvent_Attack_Hardpoint> HARD_POINT_SHIELD_GENERATOR, Unit_HP_SHIELDS_Empire_Space_Station </SFXEvent_Attack_Hardpoint>
-		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENGINE, Unit_HP_ENGINES_Empire_Space_Station </SFXEvent_Attack_Hardpoint>
-		<SFXEvent_Attack_Hardpoint> HARD_POINT_GRAVITY_WELL, Unit_HP_Grav_Empire_Space_Station </SFXEvent_Attack_Hardpoint>
-		<SFXEvent_Attack_Hardpoint> HARD_POINT_FIGHTER_BAY, Unit_HP_BAY_Empire_Space_Station </SFXEvent_Attack_Hardpoint>
-		<SFXEvent_Attack_Hardpoint> HARD_POINT_TRACTOR_BEAM, null </SFXEvent_Attack_Hardpoint>
-		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MASS_DRIVER, null </SFXEvent_Attack_Hardpoint>
-		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_SPECIAL, null </SFXEvent_Attack_Hardpoint>
-		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENABLE_SPECIAL_ABILITY, null </SFXEvent_Attack_Hardpoint>
-		<SFXEvent_Attack_Hardpoint> HARD_POINT_DUMMY_ART, null </SFXEvent_Attack_Hardpoint>
-				
-		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_LASER, Unit_Lost_Laser_Empire_Space_Station </SFXEvent_Hardpoint_Destroyed>
-		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_MISSILE,  Unit_Lost_Missile_Empire_Space_Station </SFXEvent_Hardpoint_Destroyed>
-		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_TORPEDO,  Unit_Lost_Torpedo_Empire_Space_Station </SFXEvent_Hardpoint_Destroyed>
-		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_ION_CANNON, Unit_Lost_Ion_Empire_Space_Station </SFXEvent_Hardpoint_Destroyed>
-		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_SHIELD_GENERATOR, Unit_Lost_Shields_Empire_Space_Station </SFXEvent_Hardpoint_Destroyed>
-		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENGINE, null </SFXEvent_Hardpoint_Destroyed>
-		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_GRAVITY_WELL, null </SFXEvent_Hardpoint_Destroyed>
-		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_FIGHTER_BAY, Unit_Lost_Bay_Empire_Space_Station </SFXEvent_Hardpoint_Destroyed>
-		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_TRACTOR_BEAM, null </SFXEvent_Hardpoint_Destroyed>
-		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_MASS_DRIVER, null </SFXEvent_Hardpoint_Destroyed>
-		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_SPECIAL, null </SFXEvent_Hardpoint_Destroyed>
-		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENABLE_SPECIAL_ABILITY, null </SFXEvent_Hardpoint_Destroyed>
-		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_DUMMY_ART, null </SFXEvent_Hardpoint_Destroyed>
-		
-		<Abilities SubObjectList="Yes">
-			<Reduce_Production_Price_Ability Name="No_Piratical_Spam">
-				<Unit_Strength_Category/>
-				<Applicable_Unit_Categories/>
-				<Applicable_Unit_Types> Interceptor_Frigate, Action_VI_Support, Super_Transport_XI_Modified, Space_ARC_Cruiser </Applicable_Unit_Types>
-				<Price_Reduction_Percentage>-0.01</Price_Reduction_Percentage>
-				<Stacking_Category>8</Stacking_Category>
-				<Galaxy_Wide> No </Galaxy_Wide>
-			</Reduce_Production_Price_Ability>
-			
-			<Reduce_Production_Time_Ability Name="No_Piratical_Spam2">
-				<Unit_Strength_Category/>
-				<Applicable_Unit_Categories/>
-				<Applicable_Unit_Types> Interceptor_Frigate, Action_VI_Support, Super_Transport_XI_Modified, Space_ARC_Cruiser </Applicable_Unit_Types>
-				<Time_Reduction_Percentage>-9</Time_Reduction_Percentage>
-				<Stacking_Category>10</Stacking_Category>
-				<Galaxy_Wide> No </Galaxy_Wide>
-			</Reduce_Production_Time_Ability>
-			
-			<Planet_Income_Gambling_Ability Name="Pirate_Activity">
-				<!-- choose a new income modifier every 30 seconds -->
-				<Evaluation_Interval_In_Secs>120.0</Evaluation_Interval_In_Secs>
-				<!-- worst losses are -20% of the base -->
-				<Min_Income_Modifier>-0.10</Min_Income_Modifier>
-				<!-- best positive income is +60% of the base -->
-				<Max_Income_Modifier>0.00</Max_Income_Modifier>
-				<!-- 80% of the time the income will be positive -->
-				<Chance_To_Win>0.80</Chance_To_Win>
-			</Planet_Income_Gambling_Ability>
-		</Abilities>
-
- 	</SpecialStructure>
-	
 	<!-- Empire -->
 		
 	<SpecialStructure Name="Remnant_Capital">
@@ -348,7 +235,7 @@
 
 		<Tactical_Buildable_Objects_Multiplayer>
 			Empire,
-				Army_Trooper_Squad,
+				Imperial_Army_Trooper_Squad,
 				Imperial_74Z_Bike_Company,
 				<!--Imperial_Dark_Jedi_Squad,-->
 				Imperial_Dwarf_Spider_Droid_Company,
@@ -358,26 +245,29 @@
 				
 			Pentastar,
 				Pentastar_Army_Trooper_Squad,
-				Enforcer_Trooper_Squad,
-				<!--Dark_Jedi_Squad,-->
+				Pentastar_Enforcer_Trooper_Squad,
+				<!--Pentastar_Dark_Jedi_Squad,-->
 				Imperial_Guardian_Protector_Squad,
 				Imperial_Army_Commando_Squad,
 				
 			Zsinj_Empire,
-				Army_Trooper_Squad,
+				Imperial_Army_Trooper_Squad,
 				Zsinj_74Z_Bike_Company,
 				Zsinj_Raptor_Squad,
-				EVO_Trooper_Platoon,
+				Zsinj_EVO_Trooper_Squad,
+				Imperial_Incinerator_Stormtrooper_Squad,
+				
 			Greater_Maldrood,
-				Army_Trooper_Squad,
+				Imperial_Army_Trooper_Squad,
 				Imperial_74Z_Bike_Company,
 				Imperial_Navy_Commando_Squad,
 				Imperial_Fleet_Commando_Squad,
 				
 			Eriadu_Authority,
-				Army_Trooper_Squad,
+				Imperial_Army_Trooper_Squad,
 				Imperial_64Y_Company,
-				Army_Special_Missions_Squad,
+				Imperial_Army_Special_Missions_Squad,
+				Imperial_Galactic_Marine_Squad,
 				Imperial_Army_Commando_Squad,
 				
 		</Tactical_Buildable_Objects_Multiplayer>
@@ -406,6 +296,8 @@
 		TEXT_TOOLTIP_L_FACTORY_IR1
 		TEXT_TOOLTIP_L_FACTORY_IR2
 		TEXT_TOOLTIP_L_FACTORY_IR3
+		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
+		TEXT_TOOLTIP_UPKEEP_FACTORY_L
 		</Encyclopedia_Text>
 		
 		<MP_Encyclopedia_Text> TEXT_TOOLTIP_L_FACTORY </MP_Encyclopedia_Text>
@@ -472,6 +364,8 @@
 		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
 		TEXT_TOOLTIP_H_FACTORY_IR1
 		TEXT_TOOLTIP_H_FACTORY_IR2
+		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
+		TEXT_TOOLTIP_UPKEEP_FACTORY_H
 		</Encyclopedia_Text>
 		
 		<MP_Encyclopedia_Text> TEXT_TOOLTIP_H_FACTORY </MP_Encyclopedia_Text>
@@ -509,6 +403,7 @@
 				Imperial_APC_Company,
 				Imperial_A9_Fortress_Company,
 				Imperial_AT_AP_Walker_Company,
+				Imperial_TRSD_Company,
 			Greater_Maldrood,
 				Imperial_AT_AA_Company,
 				Imperial_SA5_Company,
@@ -545,6 +440,8 @@
 		TEXT_TOOLTIP_A_FACTORY_IR_HEALTH 
 		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
 		TEXT_TOOLTIP_A_FACTORY_IR1
+		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
+		TEXT_TOOLTIP_UPKEEP_FACTORY_ADV
 		</Encyclopedia_Text>
 		
 		<MP_Encyclopedia_Text> TEXT_TOOLTIP_A_FACTORY </MP_Encyclopedia_Text>
@@ -577,8 +474,8 @@
 		<Icon_Name>I_BUTTON_PA_CAPITAL.TGA</Icon_Name>
 		
 		<!--All Eras-->
-		<Starting_Spawned_Units_Tech_0>Enforcer_Trooper_Squad_Deployed, 8</Starting_Spawned_Units_Tech_0>
-		<Reserve_Spawned_Units_Tech_0>Enforcer_Trooper_Squad_Deployed, 15</Reserve_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Pentastar_Enforcer_Trooper_Squad_Deployed, 8</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Pentastar_Enforcer_Trooper_Squad_Deployed, 15</Reserve_Spawned_Units_Tech_0>
 
 		<Starting_Spawned_Units_Tech_0>AT_PT_Walker, 4</Starting_Spawned_Units_Tech_0>
 		<Reserve_Spawned_Units_Tech_0>AT_PT_Walker, 8</Reserve_Spawned_Units_Tech_0>
@@ -630,8 +527,8 @@
 		<Icon_Name>i_button_pa.tga</Icon_Name>
 		
 		<!--All Eras-->
-		<Starting_Spawned_Units_Tech_0>Enforcer_Trooper_Squad_Deployed, 3</Starting_Spawned_Units_Tech_0>
-		<Reserve_Spawned_Units_Tech_0>Enforcer_Trooper_Squad_Deployed, 9</Reserve_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Pentastar_Enforcer_Trooper_Squad_Deployed, 3</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Pentastar_Enforcer_Trooper_Squad_Deployed, 9</Reserve_Spawned_Units_Tech_0>
 
 		<Starting_Spawned_Units_Tech_0>AT_PT_Walker, 2</Starting_Spawned_Units_Tech_0>
 		<Reserve_Spawned_Units_Tech_0>AT_PT_Walker, 4</Reserve_Spawned_Units_Tech_0>
@@ -654,6 +551,22 @@
 		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
 		TEXT_TOOLTIP_INFLUENCE_OFFICE
 		</Encyclopedia_Text>
+		
+		<Abilities SubObjectList="Yes">
+		
+			<Political_Transition_Bonus_Ability Name="Pacification_Bonus">
+				<Time_Reduction_Percentage>0.05</Time_Reduction_Percentage>
+				<Stacking_Category>1</Stacking_Category>
+			</Political_Transition_Bonus_Ability>
+			
+			<Reduce_Production_Price_Ability Name="Ubrikkian_Corp_Discount">
+				<Unit_Strength_Category/>
+				<Applicable_Unit_Categories/>
+				<Applicable_Unit_Types> Ubrikkian_HQ </Applicable_Unit_Types>
+				<Price_Reduction_Percentage>0.50</Price_Reduction_Percentage>
+				<Stacking_Category>0</Stacking_Category>
+			</Reduce_Production_Price_Ability>
+		</Abilities>
 
 	</SpecialStructure>
 	
@@ -702,6 +615,8 @@
 		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
 		TEXT_TOOLTIP_L_FACTORY_PA1
 		TEXT_TOOLTIP_L_FACTORY_PA2
+		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
+		TEXT_TOOLTIP_UPKEEP_FACTORY_L
 		</Encyclopedia_Text>
 		
 		<MP_Encyclopedia_Text> TEXT_TOOLTIP_L_FACTORY </MP_Encyclopedia_Text>
@@ -732,6 +647,8 @@
 		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
 		TEXT_TOOLTIP_H_FACTORY_PA1
 		TEXT_TOOLTIP_H_FACTORY_PA2
+		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
+		TEXT_TOOLTIP_UPKEEP_FACTORY_H
 		</Encyclopedia_Text>
 		
 		<MP_Encyclopedia_Text> TEXT_TOOLTIP_H_FACTORY </MP_Encyclopedia_Text>
@@ -761,6 +678,8 @@
 		TEXT_TOOLTIP_A_FACTORY_PA_HEALTH 
 		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
 		TEXT_TOOLTIP_A_FACTORY_PA1
+		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
+		TEXT_TOOLTIP_UPKEEP_FACTORY_ADV
 		</Encyclopedia_Text>
 		
 		<MP_Encyclopedia_Text> TEXT_TOOLTIP_A_FACTORY </MP_Encyclopedia_Text>
@@ -920,7 +839,7 @@
 			Greater_Maldrood,
 				Imperial_EWEB_Company,
 				Imperial_Stormtrooper_Squad,
-				Army_Trooper_Squad,
+				Imperial_Army_Trooper_Squad,
 				Imperial_Jumptrooper_Squad,
 				<!--
 				PL_Increased_Mobility_Upgrade,
@@ -942,6 +861,8 @@
 		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK 
 		TEXT_TOOLTIP_L_FACTORY_GM1
 		TEXT_TOOLTIP_L_FACTORY_GM2
+		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
+		TEXT_TOOLTIP_UPKEEP_FACTORY_L
 		</Encyclopedia_Text>
 		
 		<MP_Encyclopedia_Text> TEXT_TOOLTIP_L_FACTORY </MP_Encyclopedia_Text>
@@ -972,6 +893,8 @@
 		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
 		TEXT_TOOLTIP_H_FACTORY_GM1
 		TEXT_TOOLTIP_H_FACTORY_GM2
+		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
+		TEXT_TOOLTIP_UPKEEP_FACTORY_H
 		</Encyclopedia_Text>
 		
 		<MP_Encyclopedia_Text> TEXT_TOOLTIP_H_FACTORY </MP_Encyclopedia_Text>
@@ -1001,6 +924,8 @@
 		TEXT_TOOLTIP_A_FACTORY_GM_HEALTH 
 		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
 		TEXT_TOOLTIP_A_FACTORY_GM1
+		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
+		TEXT_TOOLTIP_UPKEEP_FACTORY_ADV
 		</Encyclopedia_Text>
 		
 		<MP_Encyclopedia_Text> TEXT_TOOLTIP_A_FACTORY </MP_Encyclopedia_Text>
@@ -1030,11 +955,11 @@
 		<Icon_Name>I_BUTTON_EA_CAPITAL.TGA</Icon_Name>
 		
 		<!--All Eras-->
-		<Starting_Spawned_Units_Tech_0>Army_Special_Missions_Heavy_Team_Deployed, 3</Starting_Spawned_Units_Tech_0>
-		<Reserve_Spawned_Units_Tech_0>Army_Special_Missions_Heavy_Team_Deployed, 9</Reserve_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Imperial_Army_Special_Missions_Heavy_Team_Deployed, 3</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Imperial_Army_Special_Missions_Heavy_Team_Deployed, 9</Reserve_Spawned_Units_Tech_0>
 
-		<Starting_Spawned_Units_Tech_0>Army_Special_Missions_Weapons_Team_Deployed, 2</Starting_Spawned_Units_Tech_0>
-		<Reserve_Spawned_Units_Tech_0>Army_Special_Missions_Weapons_Team_Deployed, 6</Reserve_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Imperial_Army_Special_Missions_Weapons_Team_Deployed, 2</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Imperial_Army_Special_Missions_Weapons_Team_Deployed, 6</Reserve_Spawned_Units_Tech_0>
 
 		<Starting_Spawned_Units_Tech_0>Imperial_Armytrooper_Assault_Team_Deployed, 2</Starting_Spawned_Units_Tech_0>
 		<Reserve_Spawned_Units_Tech_0>Imperial_Armytrooper_Assault_Team_Deployed, 6</Reserve_Spawned_Units_Tech_0>
@@ -1088,11 +1013,11 @@
 		
 
 		<!--All Eras-->
-		<Starting_Spawned_Units_Tech_0>Army_Special_Missions_Heavy_Team_Deployed, 1</Starting_Spawned_Units_Tech_0>
-		<Reserve_Spawned_Units_Tech_0>Army_Special_Missions_Heavy_Team_Deployed, 3</Reserve_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Imperial_Army_Special_Missions_Heavy_Team_Deployed, 1</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Imperial_Army_Special_Missions_Heavy_Team_Deployed, 3</Reserve_Spawned_Units_Tech_0>
 
-		<Starting_Spawned_Units_Tech_0>Army_Special_Missions_Weapons_Team_Deployed, 1</Starting_Spawned_Units_Tech_0>
-		<Reserve_Spawned_Units_Tech_0>Army_Special_Missions_Weapons_Team_Deployed, 3</Reserve_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Imperial_Army_Special_Missions_Weapons_Team_Deployed, 1</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Imperial_Army_Special_Missions_Weapons_Team_Deployed, 3</Reserve_Spawned_Units_Tech_0>
 
 		<Starting_Spawned_Units_Tech_0>Imperial_Armytrooper_Assault_Team_Deployed, 2</Starting_Spawned_Units_Tech_0>
 		<Reserve_Spawned_Units_Tech_0>Imperial_Armytrooper_Assault_Team_Deployed, 6</Reserve_Spawned_Units_Tech_0>
@@ -1129,6 +1054,14 @@
 				<Applicable_Unit_Categories/>
 				<Applicable_Unit_Types> SoroSuub_HQ </Applicable_Unit_Types>
 				<Price_Reduction_Percentage>0.85</Price_Reduction_Percentage>
+				<Stacking_Category>0</Stacking_Category>
+			</Reduce_Production_Price_Ability>
+			
+			<Reduce_Production_Price_Ability Name="Ubrikkian_Corp_Discount">
+				<Unit_Strength_Category/>
+				<Applicable_Unit_Categories/>
+				<Applicable_Unit_Types> Ubrikkian_HQ </Applicable_Unit_Types>
+				<Price_Reduction_Percentage>0.50</Price_Reduction_Percentage>
 				<Stacking_Category>0</Stacking_Category>
 			</Reduce_Production_Price_Ability>
 		</Abilities>
@@ -1177,6 +1110,8 @@
 		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
 		TEXT_TOOLTIP_L_FACTORY_EA1
 		TEXT_TOOLTIP_L_FACTORY_EA2
+		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
+		TEXT_TOOLTIP_UPKEEP_FACTORY_L
 		</Encyclopedia_Text>
 		
 		<MP_Encyclopedia_Text> TEXT_TOOLTIP_L_FACTORY </MP_Encyclopedia_Text>
@@ -1207,6 +1142,8 @@
 		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
 		TEXT_TOOLTIP_H_FACTORY_EA1
 		TEXT_TOOLTIP_H_FACTORY_EA2
+		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
+		TEXT_TOOLTIP_UPKEEP_FACTORY_H
 		</Encyclopedia_Text>
 		
 		<MP_Encyclopedia_Text> TEXT_TOOLTIP_H_FACTORY </MP_Encyclopedia_Text>
@@ -1234,6 +1171,8 @@
 		TEXT_TOOLTIP_A_FACTORY_EA_HEALTH
 		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
 		TEXT_TOOLTIP_A_FACTORY_EA1
+		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
+		TEXT_TOOLTIP_UPKEEP_FACTORY_ADV
 		</Encyclopedia_Text>
 		
 		<MP_Encyclopedia_Text> TEXT_TOOLTIP_A_FACTORY </MP_Encyclopedia_Text>
@@ -1280,7 +1219,6 @@
 		<Energy_Refresh_Rate>1000</Energy_Refresh_Rate>
 		<Tech_Level>0</Tech_Level>
 		<AI_Combat_Power>20000</AI_Combat_Power>
-		<Required_Timeline>0</Required_Timeline>
 		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
 		<Required_Star_Base_Level>1</Required_Star_Base_Level>
 		<Required_Special_Structures>AI_Category_Dummy | Structure_Category_Dummy</Required_Special_Structures>
@@ -1494,8 +1432,8 @@
 		<Starting_Spawned_Units_Tech_0>Zsinj_Raptor_Heavy_Team_Deployed, 2</Starting_Spawned_Units_Tech_0>
 		<Reserve_Spawned_Units_Tech_0>Zsinj_Raptor_Heavy_Team_Deployed, 6</Reserve_Spawned_Units_Tech_0>
 
-		<Starting_Spawned_Units_Tech_0>EVO_Trooper_Team_Deployed, 1</Starting_Spawned_Units_Tech_0>
-		<Reserve_Spawned_Units_Tech_0>EVO_Trooper_Team_Deployed, 3</Reserve_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Zsinj_EVO_Trooper_Team_Deployed, 1</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Zsinj_EVO_Trooper_Team_Deployed, 3</Reserve_Spawned_Units_Tech_0>
 
 		<Starting_Spawned_Units_Tech_0>Raptor_Scout_Trooper, 2</Starting_Spawned_Units_Tech_0>
 		<Reserve_Spawned_Units_Tech_0>Raptor_Scout_Trooper, 6</Reserve_Spawned_Units_Tech_0>
@@ -1530,7 +1468,137 @@
 			<Reduce_Production_Price_Ability Name="CEC_Corp_Discount">
 				<Unit_Strength_Category/>
 				<Applicable_Unit_Categories/>
-				<Applicable_Unit_Types> CEC_HQ </Applicable_Unit_Types>
+				<Applicable_Unit_Types> CEC_HQ, Ubrikkian_HQ </Applicable_Unit_Types>
+				<Price_Reduction_Percentage>0.50</Price_Reduction_Percentage>
+				<Stacking_Category>0</Stacking_Category>
+			</Reduce_Production_Price_Ability>
+			
+			<Reduce_Production_Price_Ability Name="SoroSuub_Corp_Discount">
+				<Unit_Strength_Category/>
+				<Applicable_Unit_Categories/>
+				<Applicable_Unit_Types> SoroSuub_HQ </Applicable_Unit_Types>
+				<Price_Reduction_Percentage>0.60</Price_Reduction_Percentage>
+				<Stacking_Category>0</Stacking_Category>
+			</Reduce_Production_Price_Ability>
+			
+			<Reduce_Production_Price_Ability Name="Incom_Corp_Discount">
+				<Unit_Strength_Category/>
+				<Applicable_Unit_Categories/>
+				<Applicable_Unit_Types> Incom_HQ </Applicable_Unit_Types>
+				<Price_Reduction_Percentage>0.75</Price_Reduction_Percentage>
+				<Stacking_Category>0</Stacking_Category>
+			</Reduce_Production_Price_Ability>
+		</Abilities>
+	</SpecialStructure>
+	
+	<SpecialStructure Name="Kamino_Capital"> <!-- Rewriting Zsinj for Kamino in Lambda -->
+	
+		<Variant_Of_Existing_Type>Template_Faction_Capital</Variant_Of_Existing_Type>
+		
+		<Text_ID>TEXT_COMPANY_EMPIRE_CAPITAL</Text_ID>
+		
+		<Affiliation>Zsinj_Empire</Affiliation>
+		<Build_Initially_Locked>Yes</Build_Initially_Locked>
+		
+		<Build_Cost_Credits>10000</Build_Cost_Credits>
+		
+		<Icon_Name>I_BUTTON_IR_CAPITAL.TGA</Icon_Name>
+		
+		<!--Era 1 to 3-->
+		<Starting_Spawned_Units_Tech_0>Imperial_Stormtrooper_Heavy_Team_Deployed, 2</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Imperial_Stormtrooper_Heavy_Team_Deployed, 6</Reserve_Spawned_Units_Tech_0>
+
+		<Starting_Spawned_Units_Tech_0>Zsinj_EVO_Trooper_Team_Deployed, 2</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Zsinj_EVO_Trooper_Team_Deployed, 6</Reserve_Spawned_Units_Tech_0>
+
+		<Starting_Spawned_Units_Tech_0>Repulsor_Scout, 5</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Repulsor_Scout, 10</Reserve_Spawned_Units_Tech_0>	
+
+		<Starting_Spawned_Units_Tech_0>AT_AP_Walker, 1</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>AT_AP_Walker, 3</Reserve_Spawned_Units_Tech_0>
+
+		<Starting_Spawned_Units_Tech_0>A9_Floating_Fortress, 1</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>A9_Floating_Fortress, 1</Reserve_Spawned_Units_Tech_0>
+
+		<Encyclopedia_Text> 
+		TEXT_COMPANY_CAPITAL_DESCRIPTION 
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_CAPITAL_IR_HEALTH
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_TOOLTIP_CAPITAL_KM1
+		TEXT_TOOLTIP_CAPITAL_KM2 
+		TEXT_TOOLTIP_CAPITAL_KM3
+		TEXT_TOOLTIP_CAPITAL_KM4
+		TEXT_TOOLTIP_CAPITAL_KM5
+		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
+		TEXT_TOOLTIP_BONUS_BLOCK_OB
+		TEXT_TOOLTIP_BONUS_BLOCK_BR
+        TEXT_TOOLTIP_BONUS_BLOCK_VP
+		TEXT_TOOLTIP_INCOME_CAPITAL
+		TEXT_TOOLTIP_INCOME_CAPITAL_SHIPCREWS
+		TEXT_TOOLTIP_INFLUENCE_CAPITAL
+		TEXT_TOOLTIP_SEPARATOR_LIMITS_BLOCK
+		TEXT_TOOLTIP_BUILDLIMIT_CAPITAL
+		</Encyclopedia_Text>
+		
+		<Death_CLone>Damage_Normal, EB_OfficerAcademy_Death_Clone</Death_CLone>
+		
+	</SpecialStructure>
+	
+	<SpecialStructure Name="Kamino_MoffPalace">
+	
+		<Variant_Of_Existing_Type>Template_Planetary_Government</Variant_Of_Existing_Type>
+		
+		<Text_ID>TEXT_COMPANY_EMPIRE_MOFFPALACE</Text_ID>
+		
+		<Affiliation>Zsinj_Empire</Affiliation>
+		<Build_Initially_Locked>Yes</Build_Initially_Locked>
+		
+		<Tactical_Additional_Structure_Type>Generic_Power_Generator</Tactical_Additional_Structure_Type>
+		
+		<Icon_Name>I_BUTTON_IR.tga</Icon_Name>
+		
+		<!--All Eras-->
+		<Starting_Spawned_Units_Tech_0>Imperial_Stormtrooper_Heavy_Team_Deployed, 2</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Imperial_Stormtrooper_Heavy_Team_Deployed, 6</Reserve_Spawned_Units_Tech_0>
+
+		<Starting_Spawned_Units_Tech_0>Zsinj_EVO_Trooper_Team_Deployed, 1</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Zsinj_EVO_Trooper_Team_Deployed, 3</Reserve_Spawned_Units_Tech_0>
+
+		<Starting_Spawned_Units_Tech_0>Raptor_Scout_Trooper, 2</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Raptor_Scout_Trooper, 6</Reserve_Spawned_Units_Tech_0>
+
+		<Starting_Spawned_Units_Tech_0>Chariot_LAV_Combat, 1</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Chariot_LAV_Combat, 2</Reserve_Spawned_Units_Tech_0>
+
+		<Starting_Spawned_Units_Tech_0>PX10, 2</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>PX10, 4</Reserve_Spawned_Units_Tech_0>
+
+		<Encyclopedia_Text> 
+		TEXT_COMPANY_MOFFPALACE_DESCRIPTION  
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
+		TEXT_TOOLTIP_OFFICE_ZE_HEALTH
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_TOOLTIP_OFFICE_KM1
+		TEXT_TOOLTIP_OFFICE_ZE2
+		TEXT_TOOLTIP_OFFICE_ZE3
+		TEXT_TOOLTIP_OFFICE_ZE4
+		TEXT_TOOLTIP_OFFICE_ZE5
+		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
+		TEXT_TOOLTIP_INFLUENCE_OFFICE
+		</Encyclopedia_Text>
+		
+		<Abilities SubObjectList="Yes">		
+		
+			<Political_Transition_Bonus_Ability Name="Pacification_Bonus">
+				<Time_Reduction_Percentage>0.05</Time_Reduction_Percentage>
+				<Stacking_Category>1</Stacking_Category>
+			</Political_Transition_Bonus_Ability>
+			
+			<Reduce_Production_Price_Ability Name="CEC_Corp_Discount">
+				<Unit_Strength_Category/>
+				<Applicable_Unit_Categories/>
+				<Applicable_Unit_Types> CEC_HQ, Ubrikkian_HQ </Applicable_Unit_Types>
 				<Price_Reduction_Percentage>0.50</Price_Reduction_Percentage>
 				<Stacking_Category>0</Stacking_Category>
 			</Reduce_Production_Price_Ability>
@@ -1571,7 +1639,7 @@
 
 		<Affiliation>Zsinj_Empire</Affiliation>
 
-		<Required_Special_Structures>Zsinj_MoffPalace</Required_Special_Structures>
+		<Required_Special_Structures>Zsinj_MoffPalace | Kamino_MoffPalace</Required_Special_Structures>
 		
 		<Obstacle_Proxy_Type> E_Ground_Barracks_Build_Pad </Obstacle_Proxy_Type>
 		
@@ -1598,13 +1666,15 @@
 		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
 		TEXT_TOOLTIP_L_FACTORY_ZE1
 		TEXT_TOOLTIP_L_FACTORY_ZE2
+		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
+		TEXT_TOOLTIP_UPKEEP_FACTORY_L
 		</Encyclopedia_Text>
 		
 		<MP_Encyclopedia_Text> TEXT_TOOLTIP_L_FACTORY </MP_Encyclopedia_Text>
 		
 		<Affiliation>Zsinj_Empire</Affiliation>
 		
-		<Required_Special_Structures>Zsinj_MoffPalace</Required_Special_Structures>
+		<Required_Special_Structures>Zsinj_MoffPalace | Kamino_MoffPalace</Required_Special_Structures>
 		
 		<Obstacle_Proxy_Type> E_Ground_Light_Vehicle_Factory_Build_Pad </Obstacle_Proxy_Type>
 		
@@ -1627,13 +1697,15 @@
 		TEXT_TOOLTIP_H_FACTORY_ZE_HEALTH  
 		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
 		TEXT_TOOLTIP_H_FACTORY_ZE1
+		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
+		TEXT_TOOLTIP_UPKEEP_FACTORY_H
 		</Encyclopedia_Text>
 		
 		<MP_Encyclopedia_Text> TEXT_TOOLTIP_H_FACTORY </MP_Encyclopedia_Text>
 		
 		<Affiliation>Zsinj_Empire</Affiliation>
 
-		<Required_Special_Structures>Zsinj_MoffPalace</Required_Special_Structures>
+		<Required_Special_Structures>Zsinj_MoffPalace | Kamino_MoffPalace</Required_Special_Structures>
 		
 		<Obstacle_Proxy_Type> E_Ground_Heavy_Vehicle_Factory_Build_Pad </Obstacle_Proxy_Type>
 		
@@ -1652,13 +1724,15 @@
 		TEXT_TOOLTIP_A_FACTORY_ZE_HEALTH 
 		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
 		TEXT_TOOLTIP_A_FACTORY_ZE1
+		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
+		TEXT_TOOLTIP_UPKEEP_FACTORY_ADV
 		</Encyclopedia_Text>
 		
 		<MP_Encyclopedia_Text> TEXT_TOOLTIP_A_FACTORY </MP_Encyclopedia_Text>
 		
 		<Affiliation>Zsinj_Empire</Affiliation>
 
-		<Required_Special_Structures>Zsinj_MoffPalace</Required_Special_Structures>
+		<Required_Special_Structures>Zsinj_MoffPalace | Kamino_MoffPalace</Required_Special_Structures>
 		
 		<Starting_Spawned_Units_Tech_0>A9_Floating_Fortress, 1</Starting_Spawned_Units_Tech_0>
 		<Reserve_Spawned_Units_Tech_0>A9_Floating_Fortress, 1</Reserve_Spawned_Units_Tech_0>

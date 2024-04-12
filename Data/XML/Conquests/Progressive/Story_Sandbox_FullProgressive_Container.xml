@@ -35,20 +35,6 @@
 		<Event_Param1>0</Event_Param1>
 		<Reward_Type>REVEAL_ALL_PLANETS</Reward_Type>
 	</Event>
-	
-	<Event Name="Destroy_Dlarit">
-		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
-		<Event_Param2>REMOVE_DLARIT</Event_Param2>
-		<Reward_Type>REMOVE_UNIT</Reward_Type>
-		<Reward_Param1>Elite_Squadron</Reward_Param1>
-	</Event>
-	
-	<Event Name="Destroy_Phennir">
-		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
-		<Event_Param2>REMOVE_PHENNIR</Event_Param2>
-		<Reward_Type>REMOVE_UNIT</Reward_Type>
-		<Reward_Param1>181st_TIE_Interceptor_Squadron</Reward_Param1>
-	</Event>
 
 	<!--***********************************************************-->
 	<!--***********************************************************-->
@@ -80,7 +66,7 @@
 	
 	<Event Name="Branch_Enabler_Hammer">
   		<Event_Type>STORY_TACTICAL_DESTROY</Event_Type>
-  		<Event_Param1>Thalassa</Event_Param1>
+  		<Event_Param1>Delvardus_Thalassa</Event_Param1>
 		<Event_Param2></Event_Param2>
 		<Event_Param3>1</Event_Param3>
 		<Reward_Type>DISABLE_BRANCH</Reward_Type>
@@ -94,81 +80,7 @@
 	<!--******************** UNIVERSAL EVENTS *********************-->
 	<!--***********************************************************-->	
 	<!--***********************************************************-->	
-	
-
-	<!--**************** Warlord Groups Captured ******************-->
-
-	<Event Name="NewRep_Evac_Trigger">
-		<Event_Type>STORY_ELAPSED</Event_Type>
-		<Event_Param1>30</Event_Param1>
-		<Prereq>Set_Subera_Palpatine</Prereq>
-		<Prereq>GC_Progress_03</Prereq>
-		<Branch>Faction_Branch_NewRep</Branch>
-	</Event>
-	
-	<Event Name="Jump_Camera_Coruscant">
-		<Event_Type>STORY_TRIGGER</Event_Type>
-		<Reward_Type>POSITION_CAMERA</Reward_Type>
-		<Reward_Param1>Coruscant</Reward_Param1>
-		<Reward_Param2>0,0,0</Reward_Param2>
-		<Prereq>NewRep_Evac_Trigger</Prereq>
-	</Event>
-	
-	<Event Name="Flash_Coruscant">
-        <Event_Type>STORY_TRIGGER</Event_Type>
-        <Reward_Type>FLASH_PLANET_GUI</Reward_Type>
-        <Reward_Param1>Coruscant</Reward_Param1>
-        <Reward_Param2>FLASH_PLANET</Reward_Param2>
-        <Reward_Param4>Coruscant_GUI_Flash</Reward_Param4>
-        <Reward_Param5>True</Reward_Param5>
-        <Prereq>NewRep_Evac_Trigger</Prereq>
-    </Event>
-	
-	<Event Name="Evac_Prereq">
-		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
-		<Event_Param2>ENABLE_BATTLE_OF_CORUSCANT</Event_Param2>
-		<Reward_Type>MULTIMEDIA</Reward_Type>
-		<Reward_Param1>TEXT_CONQUEST_PALPATINE_NR_INTRO</Reward_Param1>
-		<Reward_Param2>15</Reward_Param2>
-		<Reward_Param3 />
-		<Reward_Param4 />
-		<Reward_Param5 />
-		<Reward_Param6 />
-		<Reward_Param7 />
-		<Reward_Param8 />
-		<Reward_Param9>Mon_Mothma_Loop</Reward_Param9>
-		<Reward_Param10>0</Reward_Param10>
-	</Event>
-
-	<Event Name="Battle_of_Coruscant">
-		<Event_Type>STORY_ELAPSED</Event_Type>
-		<Event_Param1>16</Event_Param1>
-		<Reward_Type>LINK_TACTICAL</Reward_Type>
-		<Reward_Param1>Coruscant</Reward_Param1> <!-- the planet -->
-		<Reward_Param2>SPACE</Reward_Param2> <!-- LAND or SPACE, MUST be capitalized -->
-		<Reward_Param3>Hostile</Reward_Param3> <!-- attacking faction -->
-		<Reward_Param4>_FOTG_SPACE_CORUSCANT_EVACUATION.TED</Reward_Param4> <!-- the map you want to load for your mission -->
-		<Reward_Param5>Rebel</Reward_Param5> <!-- defending faction -->
-		<Reward_Param7>Battle_of_Coruscant.xml</Reward_Param7> <!-- the story plot file -->
-		<Reward_Param8>1</Reward_Param8> <!-- explained below -->
-		<Reward_Param9>2</Reward_Param9>
-		<Reward_Param13>1</Reward_Param13> <!-- 1: displays the "Launch Battle" dialog before battle; 0: skips the dialog and launches battle without asking the player -->
-		<Prereq>Evac_Prereq</Prereq>
-	</Event>
-	
-	<Event Name="Remove_Flash_Coruscant">
-        <Event_Type>STORY_ELAPSED</Event_Type>
-        <Event_Param1>10</Event_Param1>
-        <Reward_Type>HIDE_TUTORIAL_CURSOR</Reward_Type>
-        <Reward_Param1>Coruscant_GUI_Flash</Reward_Param1>
-        <Prereq>Battle_of_Coruscant</Prereq>
-    </Event>
-	
-	<Event Name="Empire_wins_Coruscant">  <!-- This exists to trigger Lua events -->
-		<Event_Type>STORY_MISSION_LOST</Event_Type>
-		<Event_Param1>Battle_of_Coruscant.xml</Event_Param1>
-	</Event>
-	
+		
 	<Event Name="Loop_Clearer">
 		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
 		<Event_Param2>LOOP_CLEAR</Event_Param2>
@@ -370,6 +282,23 @@
 		<Branch>Faction_Branch_Hapes</Branch>
 	</Event>
 	
+	<Event Name="Katana_Speech_Hutts">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_CONQUEST_THRAWN_HUTTS_KATANA_INFO</Reward_Param1>
+		<Reward_Param2>15</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6 />
+		<Reward_Param7 />
+		<Reward_Param8 />
+		<Reward_Param9>Zorba_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+		<Prereq>Unlock_Katana</Prereq>
+		<Branch>Faction_Branch_Hutts</Branch>
+	</Event>
+	
 	<Event Name="Jump_Camera_Katana">
 		<Event_Type>STORY_TRIGGER</Event_Type>
 		<Reward_Type>POSITION_CAMERA</Reward_Type>
@@ -384,6 +313,7 @@
 		<Prereq>Katana_Speech_EA</Prereq>
 		<Prereq>Katana_Speech_CSA</Prereq>
 		<Prereq>Katana_Speech_Hapes</Prereq>
+		<Prereq>Katana_Speech_Hutts</Prereq>
 	</Event>
 	
 	<Event Name="Flash_Katana">
@@ -411,6 +341,7 @@
 		<Prereq>Katana_Speech_EA</Prereq>
 		<Prereq>Katana_Speech_CSA</Prereq>
 		<Prereq>Katana_Speech_Hapes</Prereq>
+		<Prereq>Katana_Speech_Hutts</Prereq>
 	</Event>
 	
 	<Event Name="Katana_Battle_Empire">
@@ -566,6 +497,23 @@
 		<Prereq>Unlock_Katana</Prereq>
 	</Event>
 	
+	<Event Name="Katana_Battle_Hutts">
+		<Event_Type>STORY_ENTER</Event_Type>
+		<Event_Param1>Katana_Space</Event_Param1>
+		<Event_Param2>FILTER_FRIENDLY_AND_ENEMY</Event_Param2>
+		<Reward_Type>LINK_TACTICAL</Reward_Type>
+		<Reward_Param1>Katana_Space</Reward_Param1>
+		<Reward_Param2>SPACE</Reward_Param2>
+		<Reward_Param3>Hutt_Cartels</Reward_Param3>
+		<Reward_Param4>_FOTG_SPACE_KATANA_BATTLE.TED</Reward_Param4>
+		<Reward_Param5>Hostile</Reward_Param5>
+		<Reward_Param7>Katana_Plot.XML</Reward_Param7>
+		<Reward_Param8>1</Reward_Param8>
+		<Reward_Param13>1</Reward_Param13>
+		<Branch>Faction_Branch_Hutts</Branch>
+		<Prereq>Unlock_Katana</Prereq>
+	</Event>
+	
 	<Event Name="Remove_Flash_Katana">
         <Event_Type>STORY_ELAPSED</Event_Type>
         <Event_Param1>10</Event_Param1>
@@ -580,6 +528,7 @@
 		<Prereq>Katana_Battle_EA</Prereq>
 		<Prereq>Katana_Battle_CSA</Prereq>
 		<Prereq>Katana_Battle_Hapes</Prereq>
+		<Prereq>Katana_Battle_Hutts</Prereq>
     </Event>
 	
 	<!-- Katana reward spawn -->

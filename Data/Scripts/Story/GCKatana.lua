@@ -50,6 +50,12 @@ function Find_Faction(message)
         p_maldrood = Find_Player("Greater_Maldrood")
         p_corporate = Find_Player("Corporate_Sector")
         p_hapes = Find_Player("Hapes_Consortium")
+		p_hutts = Find_Player("Hutt_Cartels")
+		p_corellians = Find_Player("Corellia")
+		p_chiss = Find_Player("Chiss")
+		p_yevetha = Find_Player("Yevetha")
+		p_ssi = Find_Player("SsiRuuvi_Imperium")
+		p_killiks = Find_Player("Killik_Hives")
 
         if p_newrep.Is_Human() then
             Story_Event("KATANA_SPEECH_REBEL")
@@ -69,6 +75,18 @@ function Find_Faction(message)
             Story_Event("KATANA_SPEECH_CSA")
         elseif p_hapes.Is_Human() then
             Story_Event("KATANA_SPEECH_HAPES")
+		elseif p_hutts.Is_Human() then
+            Story_Event("KATANA_SPEECH_HUTTS")
+		elseif p_corellians.Is_Human() then
+            Story_Event("KATANA_SPEECH_CORELLIA")
+		elseif p_chiss.Is_Human() then
+            Story_Event("KATANA_SPEECH_CHISS")
+		elseif p_yevetha.Is_Human() then
+            Story_Event("KATANA_SPEECH_YEVETHA")
+		elseif p_ssi.Is_Human() then
+            Story_Event("KATANA_SPEECH_SSI")
+		elseif p_killiks.Is_Human() then
+            Story_Event("KATANA_SPEECH_KILLIK")
         end
     end
 end

@@ -11,15 +11,16 @@ return {
 			REBEL = {Initial = 1, Reserve = 1}
 		},
 		["TIE_GT_SQUADRON"] = {
-			EMPIRE = {Initial = 1, Reserve = 1},
-			GREATER_MALDROOD = {Initial = 1, Reserve = 1},
+			EMPIRE = {Initial = 1, Reserve = 1, HeroOverride = {{"PANAKA_THEED"}, {"N1_SQUADRON"}}},
+			GREATER_MALDROOD = {Initial = 1, Reserve = 1, HeroOverride = {{"PANAKA_THEED"}, {"N1_SQUADRON"}}},
 			HOSTILE = {Initial = 1, Reserve = 1},
-			PENTASTAR = {Initial = 1, Reserve = 1},
+			PENTASTAR = {Initial = 1, Reserve = 1, HeroOverride = {{"PANAKA_THEED"}, {"N1_SQUADRON"}}},
 			INDEPENDENT_FORCES = {Initial = 1, Reserve = 1}
 		},
 		["Z95_HEADHUNTER_SQUADRON"] = {
 			CORPORATE_SECTOR = {Initial = 1, Reserve = 1},
-			ZSINJ_EMPIRE = {Initial = 1, Reserve = 1}
+			ZSINJ_EMPIRE = {Initial = 1, Reserve = 1},
+			HUTT_CARTELS = {Initial = 1, Reserve = 1}
 		},
 		["2_WARPOD_SQUADRON_HALF"] = {
 			INDEPENDENT_FORCES = {Initial = 1, Reserve = 1}
@@ -47,6 +48,9 @@ return {
 		},
 		["TIE_OPPRESSOR_SQUADRON_HALF"] = {
 			GREATER_MALDROOD = {Initial = 1, Reserve = 1}
+		},
+		["SCURRG_H6_SQUADRON_HALF"] = {
+			HUTT_CARTELS = {Initial = 1, Reserve = 1}
 		}
 	},
 	Scripts = {"multilayer", "fighter-spawn"}

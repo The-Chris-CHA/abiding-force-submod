@@ -1,28 +1,44 @@
 <?xml version="1.0" ?>
-
-<!--****************************************************-->
-<!--***** CAMPAIGN: Fractured Empire (Empire Version) *****-->
-<!--****************************************************-->
-
+<!--******************************************-->
+<!--***** Campaign: Final Imperial Push  *****-->
+<!--******************************************-->
 <Story>
-
 	<Event Name="Universal_Story_Start">
 		<Event_Type>STORY_ELAPSED</Event_Type>
 		<Event_Param1>0</Event_Param1>
 	</Event>
- 	
+
+	<Event Name="Trigger_IR_Player_Checker">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Prereq>Universal_Story_Start</Prereq>
+	</Event>
+
+	<Event Name="Trigger_IR_Story_Start">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>IR_STORY_START</Event_Param2>
+	</Event>
+	
+	<!--************************************-->
+	<!--*********** Story Handler **********-->
+	<!--************************************-->
+	
+	<Event Name="Universal_Story_Start">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>0</Event_Param1>
+	</Event>
+	
 	<Event Name="Spawn_Pellaeon">
 		<Event_Type>STORY_TRIGGER</Event_Type>
 		<Reward_Type>SPAWN_HERO</Reward_Type>
-		<Reward_Param1>Chimera_Pellaeon_Grand</Reward_Param1>
+		<Reward_Param1>Pellaeon_Grand_Chimaera</Reward_Param1>
 		<Reward_Param2>Borosk</Reward_Param2>
 		<Prereq>Universal_Story_Start</Prereq>
 	</Event>
-	
+ 		
 	<Event Name="Spawn_Scylla">
 		<Event_Type>STORY_TRIGGER</Event_Type>
 		<Reward_Type>SPAWN_HERO</Reward_Type>
-		<Reward_Param1>Scylla</Reward_Param1>
+		<Reward_Param1>Daala_Scylla</Reward_Param1>
 		<Reward_Param2>Hakassi</Reward_Param2>
 		<Prereq>Universal_Story_Start</Prereq>
 	</Event>
@@ -31,7 +47,7 @@
 		<Event_Type>STORY_TRIGGER</Event_Type>
 		<Reward_Type>SPAWN_HERO</Reward_Type>
 		<Reward_Param1>Tethys_Callous</Reward_Param1>
-		<Reward_Param2>Kampe</Reward_Param2>
+		<Reward_Param2>Prakith</Reward_Param2>
 		<Prereq>Universal_Story_Start</Prereq>
 	</Event>
 	
@@ -39,23 +55,134 @@
 		<Event_Type>STORY_TRIGGER</Event_Type>
 		<Reward_Type>SPAWN_HERO</Reward_Type>
 		<Reward_Param1>Shargael_Team</Reward_Param1>
-		<Reward_Param2>Kalist</Reward_Param2>
+		<Reward_Param2>Hakassi</Reward_Param2>
 		<Prereq>Universal_Story_Start</Prereq>
 	</Event>
 	
-	<Event Name="Spawn_Phennir">
-		<Event_Type>STORY_TRIGGER</Event_Type>
-		<Reward_Type>SPAWN_HERO</Reward_Type>
-		<Reward_Param1>181st_Stele</Reward_Param1>
-		<Reward_Param2>Borosk</Reward_Param2>
-		<Prereq>Universal_Story_Start</Prereq>
-	</Event>	
 	<Event Name="Spawn_Brakiss">
 		<Event_Type>STORY_TRIGGER</Event_Type>
 		<Reward_Type>SPAWN_HERO</Reward_Type>
 		<Reward_Param1>Brakiss_Team</Reward_Param1>
-		<Reward_Param2>Hakassi</Reward_Param2>
+		<Reward_Param2>Prakith</Reward_Param2>
 		<Prereq>Universal_Story_Start</Prereq>
 	</Event>
+	
+	<Event Name="Spawn_Adrick">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Adrick_Team</Reward_Param1>
+		<Reward_Param2>Kampe</Reward_Param2>
+		<Prereq>Universal_Story_Start</Prereq>
+	</Event>
+	
+	<!--************************************-->
+	<!--*************** Act I **************-->
+	<!--************************************-->
+	
+	<Event Name="IR_FIP_Speech_01">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_CONQUEST_FIP_IR_INTRO</Reward_Param1>
+		<Reward_Param2>15</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6 />
+		<Reward_Param7 />
+		<Reward_Param8 />
+		<Reward_Param9>Pellaeon_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+		<Prereq>Trigger_IR_Story_Start</Prereq>
+	</Event>
 
+	<Event Name="IR_FIP_Megador_Pellaeon">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>16</Event_Param1>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_CONQUEST_FIP_IR_MEGADOR</Reward_Param1>
+		<Reward_Param2>15</Reward_Param2>
+		<Reward_Param9>Pellaeon_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+		<Prereq>IR_FIP_Speech_01</Prereq>
+	</Event>
+	
+	<Event Name="IR_FIP_Act_I_Dialog">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>15</Event_Param1>
+		<Story_Dialog>Dialog_FIP_Empire</Story_Dialog>
+		<Story_Chapter>1</Story_Chapter>
+		<Story_Dialog_Popup>true</Story_Dialog_Popup>
+		<Story_Tag>FIP_IR_Act_I</Story_Tag>
+		<Prereq>IR_FIP_Speech_01</Prereq>
+	</Event>
+	
+	<!--************************************-->
+	<!--*************** Act II *************-->
+	<!--************************************-->
+	
+	
+	
+	<!--*************************************-->
+	<!--************** Act III **************-->
+	<!--*************************************-->
+	
+	<Event Name="IR_Rogriss_Destroyed">
+		<Event_Type>STORY_TACTICAL_DESTROY</Event_Type>
+		<Event_Param1>Rogriss_Assuager</Event_Param1>
+		<Event_Param3>1</Event_Param3>
+		<Prereq>Trigger_IR_Story_Start</Prereq>
+	</Event>
+	
+	<Event Name="Trigger_IR_Rogriss_Destroyed">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Prereq>IR_Rogriss_Destroyed</Prereq>
+	</Event>
+	
+	<Event Name="IR_FIP_Speech_03">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>IR_ROGRISS_DESTROYED</Event_Param2>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_CONQUEST_FIP_IR_ROGRISS_DEATH</Reward_Param1>
+		<Reward_Param2>15.0</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6 />
+		<Reward_Param7 />
+		<Reward_Param8 />
+		<Reward_Param9>Pellaeon_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+	</Event>
+	
+	<!--************************************-->
+	<!--************** Act IV **************-->
+	<!--************************************-->
+	
+	<Event Name="IR_Daala_Destroyed">
+		<Event_Type>STORY_TACTICAL_DESTROY</Event_Type>
+		<Event_Param1>Daala_Scylla</Event_Param1>
+		<Event_Param3>1</Event_Param3>
+		<Prereq>Trigger_IR_Story_Start</Prereq>
+	</Event>
+	
+	<Event Name="Trigger_IR_Daala_Destroyed">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Prereq>IR_Daala_Destroyed</Prereq>
+	</Event>
+	
+	<Event Name="IR_FIP_Speech_04">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>IR_DAALA_DESTROYED</Event_Param2>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_CONQUEST_FIP_IR_DAALA_DEATH</Reward_Param1>
+		<Reward_Param2>15.0</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6 />
+		<Reward_Param7 />
+		<Reward_Param8 />
+		<Reward_Param9>Pellaeon_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+	</Event>
 </Story>

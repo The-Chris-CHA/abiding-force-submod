@@ -12,8 +12,8 @@
 --*   @Date:                2017-12-18T14:01:25+01:00
 --*   @Project:             Imperial Civil War
 --*   @Filename:            PopulatePlanetUtilities.lua
---*   @Last modified by:    Kiwi
---*   @Last modified time:  2018-02-04T10:55:16-05:00
+--*   @Last modified by:    Mord
+--*   @Last modified time:  2023-10-25T02:20:00-05:00
 --*   @License:             This source code may only be used with explicit permission from the developers
 --*   @Copyright:           © TR: Imperial Civil War Development Team
 --******************************************************************************
@@ -21,28 +21,33 @@ require("eawx-plugins/revolt-manager/LoyaltyPolicyRepository")
 require("eawx-util/ChangeOwnerUtilities")
 require("eawx-util/RandomDistribution")
 require("UnitSpawnerTables")
+CONSTANTS = ModContentLoader.get("GameConstants")
 
 -- Changes Planet owner to new Owner and randomly populates with fleet adjusted around inserted combat power value
 function ChangePlanetOwnerAndPopulate(planet, newOwner, combat_power, overrideOwner, consider_infrastructure)
 
-	local unit_source = newOwner
-
 	-- Possible spawning units
 		-- Arranged as Unit_Table = {{Find_Object_Type("Unit_Name"), weight}}
 
+	local factionString = newOwner.Get_Faction_Name()
+	local rosterOverride = DefineRosterOverride(planet.Get_Type().Get_Name())
+
 	if overrideOwner then
-		unit_source = overrideOwner
+		if type(overrideOwner) == "string" then
+			if overrideOwner == "RANDOM" then
+				if not rosterOverride then				
+					local num = table.getn(CONSTANTS.ALL_FACTIONS_NOT_NEUTRAL)
+					rosterOverride = CONSTANTS.ALL_FACTIONS_NOT_NEUTRAL[GameRandom.Free_Random(1, num)]
+				end
+			else 	
+				rosterOverride = overrideOwner
+			end
+		elseif type(overrideOwner) == "userdata" then
+			rosterOverride = overrideOwner.Get_Faction_Name()
+		end
 	end
 	
-	total_spawn_table = {
-		Unit_Table = DefineUnitTable(unit_source),
-		Groundbase_Table = DefineGroundBaseTable(unit_source),
-		Starbase_Table = DefineStarBaseTable(unit_source),
-		Government_Building = GetGovernmentBuilding(unit_source),
-		GTS_Weapon = GetGTSBuilding(unit_source),
-		Shipyard_Table = DefineShipyardTable(unit_source),
-		Defense_Starbase_Table = DefineDefenseStarbaseTable(unit_source)
-	}
+	total_spawn_table = DefineUnitTable(factionString, rosterOverride)
 
 	DebugMessage("%s -- Initializing spawning", tostring(Script))
 	if newOwner.Get_Difficulty() == "Easy" then
@@ -88,18 +93,28 @@ function Spawn_Random_Units(total_spawn_table, planet, player, total_combat_powe
 	-- Create distribution to sample from
 	local distribution_space = RandomDistribution()
 	local distribution_land = RandomDistribution()
+	
+	local year = GlobalValue.Get("GALACTIC_YEAR")
+	if year == nil then
+		year = 0.0
+	end
 
 	-- Add units to distributions
-	for _, possible_spawn in pairs(total_spawn_table["Unit_Table"]) do
-
-		if possible_spawn[3] == "Space" then
-			--Insert unit into distribution
-			distribution_space:Insert(possible_spawn[1], possible_spawn[2])
+	for _, possible_spawn in pairs(total_spawn_table["Space_Unit_Table"]) do
+		--Insert unit into distribution
+		local start = possible_spawn["StartYear"]
+		local last = possible_spawn["LastYear"]
+		if (start == nil or year >= start) and (last == nil or year <= last) then
+			distribution_space:Insert(Find_Object_Type(possible_spawn[1]), possible_spawn[2])
 		end
-
-		if possible_spawn[3] == "Land" then
-			--Insert unit into distribution
-			distribution_land:Insert(possible_spawn[1], possible_spawn[2])
+	end
+	
+	for _, possible_spawn in pairs(total_spawn_table["Land_Unit_Table"]) do
+		--Insert unit into distribution
+		local start = possible_spawn["StartYear"]
+		local last = possible_spawn["LastYear"]
+		if (start == nil or year >= start) and (last == nil or year <= last) then
+			distribution_land:Insert(Find_Object_Type(possible_spawn[1]), possible_spawn[2])
 		end
 	end
 
@@ -114,7 +129,7 @@ function Spawn_Random_Units(total_spawn_table, planet, player, total_combat_powe
 	-- spawn the units!
 	starbase_level = SpawnStarBase(player, planet, total_spawn_table["Starbase_Table"], limit_spawn)
 	groundbase_level = SpawnGroundBase(player, planet, total_spawn_table["Groundbase_Table"], total_spawn_table["Government_Building"], total_spawn_table["GTS_Weapon"], limit_spawn)
-	shipyard_spawned = SpawnShipyard(player, planet, total_spawn_table["Shipyard_Table"], total_spawn_table["Defense_Starbase_Table"])
+	shipyard_spawned = SpawnShipyard(player, planet, total_spawn_table["Shipyard_Table"], total_spawn_table["Defenses_Table"])
 	
 	SpawnListType(spawn_table, planet, player)
 	-- return infrastructure added, each structure adds 1 and removes one empty slot
@@ -201,7 +216,7 @@ function SpawnGroundBase(player, planet, base_table, government_building, gts_we
 	end
 	
 	if government_building then
-		Spawn_Unit(government_building, planet, player)
+		Spawn_Unit(Find_Object_Type(government_building), planet, player)
 		buildings_spawned = buildings_spawned + 1
 	end
 
@@ -210,8 +225,8 @@ function SpawnGroundBase(player, planet, base_table, government_building, gts_we
 	
 	while buildings_spawned < base_limit do
 		building = base_table[GameRandom.Free_Random(1, base_table_length)]
-		DebugMessage("%s -- Spawning %s", tostring(Script), tostring(building.Get_Name()))
-		Spawn_Unit(building, planet, player)
+		DebugMessage("%s -- Spawning %s", tostring(Script), building)
+		Spawn_Unit(Find_Object_Type(building), planet, player)
 		buildings_spawned = buildings_spawned + 1
 	end
 	
@@ -223,7 +238,7 @@ function SpawnGroundBase(player, planet, base_table, government_building, gts_we
 	
 	-- if planet's starbase is 5 or has a capital shipyard and it has a free slot, give it a GtS weapon
 	if shipyard_level > 2 and open_slots > 1 and gts_weapon ~= nil and EvaluatePerception("Is_Connected_To_Enemy", player, planet) > 0 and not limit_spawn then
-		Spawn_Unit(gts_weapon, planet, player)
+		Spawn_Unit(Find_Object_Type(gts_weapon), planet, player)
 		buildings_spawned = buildings_spawned + 1
 	end
 
@@ -242,6 +257,11 @@ function SpawnStarBase(player, planet, base_table, limit_spawn)
 		return 0
 	end
 	
+	if base_level == 0 then
+		StoryUtil.ShowScreenText("Starbase level 0 for base level".. tostring(base_level) .. "on" .. tostring(planet), 5)
+		return 0
+	end
+	
 	-- Check if the planet has a starbase
 	local current_base_level = EvaluatePerception("StarbaseLevel", player, planet)
 	
@@ -253,7 +273,7 @@ function SpawnStarBase(player, planet, base_table, limit_spawn)
 		base_level = 2
 	end
 
-	Spawn_Unit(base_table[base_level], planet, player)
+	Spawn_Unit(Find_Object_Type(base_table[base_level]), planet, player)
 	return base_level
 end
 
@@ -273,8 +293,8 @@ function SpawnShipyard(player, planet, yard_table, defense_table)
 	end
 
 	if yard_table[base_level] then
-		DebugMessage("%s -- Spawning %s", tostring(Script), tostring(yard_table[base_level].Get_Name()))
-		Spawn_Unit(yard_table[base_level], planet, player)
+		DebugMessage("%s -- Spawning %s", tostring(Script), tostring(yard_table[base_level]))
+		Spawn_Unit(Find_Object_Type(yard_table[base_level]), planet, player)
 	else
 		StoryUtil.ShowScreenText("No shipyard for base level".. tostring(base_level) .. "on" .. tostring(planet), 5)
 	end
@@ -282,7 +302,7 @@ function SpawnShipyard(player, planet, yard_table, defense_table)
 	local current_base_level = EvaluatePerception("StarbaseLevel", player, planet)
 	
 	if defense_table[current_base_level] then
-		Spawn_Unit(defense_table[current_base_level], planet, player)
+		Spawn_Unit(Find_Object_Type(defense_table[current_base_level]), planet, player)
 	end
 	
 	return 1

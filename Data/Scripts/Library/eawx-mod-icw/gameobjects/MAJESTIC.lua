@@ -23,6 +23,9 @@ return {
 		["MIYTIL_FIGHTER_SQUADRON"] = {
 			HAPES_CONSORTIUM = {Initial = 2, Reserve = 3}
 		},
+		["DUNELIZARD_FIGHTER_SQUADRON"] = {
+			HUTT_CARTELS = {Initial = 2, Reserve = 3}
+		},
 		["TIE_AVENGER_SQUADRON"] = {
 			IMPERIAL = {Initial = 1, Reserve = 1}
 		}

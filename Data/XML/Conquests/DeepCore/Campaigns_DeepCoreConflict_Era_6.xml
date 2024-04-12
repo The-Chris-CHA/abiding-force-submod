@@ -24,8 +24,6 @@ EA position has a pretty rough postion overall, but they'll get Cronus on Night 
         <Camera_Distance> 1200.0 </Camera_Distance>
 		
 		<Locations>
-			<!-- Possibly Metellos, Pakrik, or Sarapin, though none are that great a fit-->
-			Galaxy_Core_Art_Model,
 			Abregado_Rae,
 			Cal_Seti,
 			Columus,
@@ -33,6 +31,7 @@ EA position has a pretty rough postion overall, but they'll get Cronus on Night 
 			Empress_Teta,
 			Foerost,
 			Galantos,
+			Galaxy_Core_Art_Model,
 			Hakassi,
 			Kaikielius,
 			Kalist,
@@ -44,18 +43,17 @@ EA position has a pretty rough postion overall, but they'll get Cronus on Night 
 			Tsoss,
 		</Locations>
 		<Trade_Routes>
-			Abregado_Rae_Kalist,
 			Abregado_Rae_Thomork,
 			Cal_Seti_Foerost,
 			Cal_Seti_Galantos,
 			Cal_Seti_Odik,
+			Columus_Ebaq,
 			Columus_Hakassi,
 			Ebaq_Hakassi,
 			Ebaq_Tsoss,
-			Ebaq_Kampe,
-			Foerost_Kaikielius,
 			Empress_Teta_Foerost,
 			Empress_Teta_Tsoss,
+			Foerost_Kaikielius,
 			Galantos_Odik,
 			Hakassi_Ojom,
 			Kaikielius_Tsoss,
@@ -63,7 +61,6 @@ EA position has a pretty rough postion overall, but they'll get Cronus on Night 
 			Kalist_Odik,
 			Kalist_Thomork,
 			Kampe_Ojom,
-			Kampe_Thomork,
 			Kampe_Tsoss,
 			Odik_Prakith,
 			Odik_Tsoss,
@@ -94,25 +91,42 @@ EA position has a pretty rough postion overall, but they'll get Cronus on Night 
 		<AI_Player_Control> Warlords, None </AI_Player_Control>
 		<AI_Player_Control> Independent_Forces, None </AI_Player_Control>
 		
-		<AI_Player_Control> Rebel, None</AI_Player_Control>
-		<AI_Player_Control> Pentastar, None</AI_Player_Control>
-		<AI_Player_Control> EmpireoftheHand, None </AI_Player_Control>
-		<AI_Player_Control> Zsinj_Empire, None </AI_Player_Control>
-		
-		<AI_Player_Control> Hapes_Consortium, None </AI_Player_Control>		
-		<AI_Player_Control> Corporate_Sector, None </AI_Player_Control>		
-		
-		<Markup_Filename>Empire, DefaultGalacticHints </Markup_Filename>
-		<Markup_Filename>Rebel, DefaultGalacticHints </Markup_Filename>
-		<Markup_Filename>EmpireoftheHand, DefaultGalacticHints </Markup_Filename>
-		<Markup_Filename>Zsinj_Empire, DefaultGalacticHints </Markup_Filename>
-		<Markup_Filename>Greater_Maldrood, DefaultMaldroodHints </Markup_Filename>			
-		<Markup_Filename>Pentastar, DefaultGalacticHints </Markup_Filename>
-		<Markup_Filename>Eriadu_Authority, DefaultEriaduHints </Markup_Filename>				
-		<Markup_Filename>Corporate_Sector, DefaultGalacticHints </Markup_Filename>		
-		<Markup_Filename>Warlords, DefaultGalacticHints </Markup_Filename>			
-		<Markup_Filename>Hapes_Consortium, DefaultGalacticHints </Markup_Filename>
-		
+		<AI_Player_Control>Chiss, None</AI_Player_Control>
+		<AI_Player_Control>Corellia, None</AI_Player_Control>
+		<AI_Player_Control>Corporate_Sector, None</AI_Player_Control>
+		<AI_Player_Control>EmpireoftheHand, None</AI_Player_Control>
+		<AI_Player_Control>Hapes_Consortium, None</AI_Player_Control>
+		<AI_Player_Control>Hostile, None</AI_Player_Control>
+		<AI_Player_Control>Hutt_Cartels, None</AI_Player_Control>
+		<AI_Player_Control>Killik_Hives, None</AI_Player_Control>
+		<AI_Player_Control>Mandalorians, None</AI_Player_Control>
+		<AI_Player_Control>Pentastar, None</AI_Player_Control>
+		<AI_Player_Control>Rebel, None</AI_Player_Control>
+		<AI_Player_Control>SsiRuuvi_Imperium, None</AI_Player_Control>
+		<AI_Player_Control>Underworld, None</AI_Player_Control>
+		<AI_Player_Control>Yevetha, None</AI_Player_Control>
+		<AI_Player_Control>Zsinj_Empire, None</AI_Player_Control>
+
+		<Markup_Filename>Chiss, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Corellia, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Corporate_Sector, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Empire, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>EmpireoftheHand, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Eriadu_Authority, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Greater_Maldrood, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Hapes_Consortium, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Hostile, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Hutt_Cartels, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Independent_Forces, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Killik_Hives, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Mandalorians, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Pentastar, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Rebel, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>SsiRuuvi_Imperium, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Underworld, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Warlords, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Yevetha, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Zsinj_Empire, DefaultGalacticHints</Markup_Filename>
 		
 		<Supports_Custom_Settings>True</Supports_Custom_Settings>
 		<Show_Completed_Tab>True</Show_Completed_Tab>
@@ -137,7 +151,7 @@ EA position has a pretty rough postion overall, but they'll get Cronus on Night 
 		<!-- Kalist Space Forces -->
 		<Starting_Forces> Empire, Kalist, Empire_Star_Base_2 </Starting_Forces>
 		<Starting_Forces> Empire, Kalist, Empire_Shipyard_Level_Three </Starting_Forces>
-		<Starting_Forces> Empire, Kalist, Shockwave_Star_Destroyer </Starting_Forces>
+		<Starting_Forces> Empire, Kalist, Harrsk_Shockwave </Starting_Forces>
 		<Starting_Forces> Empire, Kalist, Generic_Tector </Starting_Forces>
 		<Starting_Forces> Empire, Kalist, Lancer_Frigate </Starting_Forces>
 		<Starting_Forces> Empire, Kalist, Generic_Star_Destroyer_Two </Starting_Forces>
@@ -157,10 +171,10 @@ EA position has a pretty rough postion overall, but they'll get Cronus on Night 
 		<Starting_Forces> Empire, Kalist, Imperial_A5RX_Company </Starting_Forces>
 		<Starting_Forces> Empire, Kalist, Imperial_AT_PT_Company </Starting_Forces>
 		<Starting_Forces> Empire, Kalist, Imperial_AT_PT_Company </Starting_Forces>
-		<Starting_Forces> Empire, Kalist, Navy_Trooper_Squad </Starting_Forces>
-		<Starting_Forces> Empire, Kalist, Navy_Trooper_Squad </Starting_Forces>
-		<Starting_Forces> Empire, Kalist, Navy_Trooper_Squad </Starting_Forces>
-		<Starting_Forces> Empire, Kalist, Navy_Trooper_Squad </Starting_Forces>
+		<Starting_Forces> Empire, Kalist, Imperial_Navy_Trooper_Squad </Starting_Forces>
+		<Starting_Forces> Empire, Kalist, Imperial_Navy_Trooper_Squad </Starting_Forces>
+		<Starting_Forces> Empire, Kalist, Imperial_Navy_Trooper_Squad </Starting_Forces>
+		<Starting_Forces> Empire, Kalist, Imperial_Navy_Trooper_Squad </Starting_Forces>
 		<Starting_Forces> Empire, Kalist, Imperial_IDT_Group </Starting_Forces>
 		
 		<!-- Abregado Rae Space Forces -->
@@ -180,10 +194,10 @@ EA position has a pretty rough postion overall, but they'll get Cronus on Night 
 		<Starting_Forces> Empire, Abregado_Rae, Imperial_AT_PT_Company </Starting_Forces>
 		<Starting_Forces> Empire, Abregado_Rae, Imperial_Chariot_LAV_Company </Starting_Forces>
 		<Starting_Forces> Empire, Abregado_Rae, Imperial_Chariot_LAV_Company </Starting_Forces>
-		<Starting_Forces> Empire, Abregado_Rae, Army_Trooper_Squad </Starting_Forces>
-		<Starting_Forces> Empire, Abregado_Rae, Army_Trooper_Squad </Starting_Forces>
-		<Starting_Forces> Empire, Abregado_Rae, Army_Trooper_Squad </Starting_Forces>
-		<Starting_Forces> Empire, Abregado_Rae, Army_Trooper_Squad </Starting_Forces>
+		<Starting_Forces> Empire, Abregado_Rae, Imperial_Army_Trooper_Squad </Starting_Forces>
+		<Starting_Forces> Empire, Abregado_Rae, Imperial_Army_Trooper_Squad </Starting_Forces>
+		<Starting_Forces> Empire, Abregado_Rae, Imperial_Army_Trooper_Squad </Starting_Forces>
+		<Starting_Forces> Empire, Abregado_Rae, Imperial_Army_Trooper_Squad </Starting_Forces>
 		
 		<!-- Thomork Space Forces -->
 		<Starting_Forces> Empire, Thomork, Empire_Star_Base_2 </Starting_Forces>
@@ -291,8 +305,8 @@ EA position has a pretty rough postion overall, but they'll get Cronus on Night 
 		<Starting_Forces> Warlords, Cal_Seti, Shargael_Team </Starting_Forces>
 		<Starting_Forces> Warlords, Cal_Seti, Imperial_TIE_Mauler_Company </Starting_Forces>
 		<Starting_Forces> Warlords, Cal_Seti, Skyhopper_Group </Starting_Forces>
-		<Starting_Forces> Warlords, Cal_Seti, Army_Trooper_Squad </Starting_Forces>
-		<Starting_Forces> Warlords, Cal_Seti, Army_Trooper_Squad </Starting_Forces>
+		<Starting_Forces> Warlords, Cal_Seti, Imperial_Army_Trooper_Squad </Starting_Forces>
+		<Starting_Forces> Warlords, Cal_Seti, Imperial_Army_Trooper_Squad </Starting_Forces>
 		<Starting_Forces> Warlords, Cal_Seti, Imperial_Stormtrooper_Squad </Starting_Forces>
 		
 		<Starting_Credits> Independent_Forces,  5000 </Starting_Credits>
@@ -326,8 +340,8 @@ EA position has a pretty rough postion overall, but they'll get Cronus on Night 
 		<Starting_Forces> Eriadu_Authority, Kampe, Imperial_1H_Tank_Company </Starting_Forces>
 		<Starting_Forces> Eriadu_Authority, Kampe, Imperial_1L_Tank_Company </Starting_Forces>
 		<Starting_Forces> Eriadu_Authority, Kampe, Imperial_1L_Tank_Company </Starting_Forces>
-		<Starting_Forces> Eriadu_Authority, Kampe, Army_Trooper_Squad </Starting_Forces>
-		<Starting_Forces> Eriadu_Authority, Kampe, Army_Trooper_Squad </Starting_Forces>
+		<Starting_Forces> Eriadu_Authority, Kampe, Imperial_Army_Trooper_Squad </Starting_Forces>
+		<Starting_Forces> Eriadu_Authority, Kampe, Imperial_Army_Trooper_Squad </Starting_Forces>
 		
 		<Starting_Forces> Eriadu_Authority, Empress_Teta, Empire_Star_Base_2 </Starting_Forces>
 		<Starting_Forces> Eriadu_Authority, Empress_Teta, Eriadu_Shipyard_Level_Two </Starting_Forces>
@@ -342,9 +356,9 @@ EA position has a pretty rough postion overall, but they'll get Cronus on Night 
 		<Starting_Forces> Eriadu_Authority, Empress_Teta, Imperial_AT_MP_Company </Starting_Forces>
 		<Starting_Forces> Eriadu_Authority, Empress_Teta, Imperial_Stormtrooper_Squad </Starting_Forces>
 		<Starting_Forces> Eriadu_Authority, Empress_Teta, Imperial_Stormtrooper_Squad </Starting_Forces>
-		<Starting_Forces> Eriadu_Authority, Empress_Teta, Army_Trooper_Squad </Starting_Forces>
-		<Starting_Forces> Eriadu_Authority, Empress_Teta, Army_Trooper_Squad </Starting_Forces>
-		<Starting_Forces> Eriadu_Authority, Empress_Teta, Army_Trooper_Squad </Starting_Forces>
+		<Starting_Forces> Eriadu_Authority, Empress_Teta, Imperial_Army_Trooper_Squad </Starting_Forces>
+		<Starting_Forces> Eriadu_Authority, Empress_Teta, Imperial_Army_Trooper_Squad </Starting_Forces>
+		<Starting_Forces> Eriadu_Authority, Empress_Teta, Imperial_Army_Trooper_Squad </Starting_Forces>
 		
 		<Starting_Forces> Eriadu_Authority, Kaikielius, Empire_Star_Base_2 </Starting_Forces>
 		<Starting_Forces> Eriadu_Authority, Kaikielius, Eriadu_Shipyard_Level_One </Starting_Forces>
@@ -360,8 +374,8 @@ EA position has a pretty rough postion overall, but they'll get Cronus on Night 
 		<Starting_Forces> Eriadu_Authority, Kaikielius, Imperial_1M_Tank_Company </Starting_Forces>
 		<Starting_Forces> Eriadu_Authority, Kaikielius, Imperial_1L_Tank_Company </Starting_Forces>
 		<Starting_Forces> Eriadu_Authority, Kaikielius, Imperial_AT_MP_Company </Starting_Forces>
-		<Starting_Forces> Eriadu_Authority, Kaikielius, Army_Trooper_Squad </Starting_Forces>
-		<Starting_Forces> Eriadu_Authority, Kaikielius, Army_Trooper_Squad </Starting_Forces>
+		<Starting_Forces> Eriadu_Authority, Kaikielius, Imperial_Army_Trooper_Squad </Starting_Forces>
+		<Starting_Forces> Eriadu_Authority, Kaikielius, Imperial_Army_Trooper_Squad </Starting_Forces>
 		
 		<Starting_Forces> Eriadu_Authority, Foerost, Empire_Star_Base_2 </Starting_Forces>
 		<Starting_Forces> Eriadu_Authority, Foerost, Eriadu_Shipyard_Level_Four </Starting_Forces>
@@ -377,9 +391,9 @@ EA position has a pretty rough postion overall, but they'll get Cronus on Night 
 		<Starting_Forces> Eriadu_Authority, Foerost, Imperial_1M_Tank_Company </Starting_Forces>
 		<Starting_Forces> Eriadu_Authority, Foerost, Imperial_Light_Artillery_Company </Starting_Forces>
 		<Starting_Forces> Eriadu_Authority, Foerost, Imperial_TRMB_Company </Starting_Forces>
-		<Starting_Forces> Eriadu_Authority, Foerost, Army_Trooper_Squad </Starting_Forces>
-		<Starting_Forces> Eriadu_Authority, Foerost, Army_Trooper_Squad </Starting_Forces>
-		<Starting_Forces> Eriadu_Authority, Foerost, Army_Trooper_Squad </Starting_Forces>
+		<Starting_Forces> Eriadu_Authority, Foerost, Imperial_Army_Trooper_Squad </Starting_Forces>
+		<Starting_Forces> Eriadu_Authority, Foerost, Imperial_Army_Trooper_Squad </Starting_Forces>
+		<Starting_Forces> Eriadu_Authority, Foerost, Imperial_Army_Trooper_Squad </Starting_Forces>
 		
 		<Starting_Forces> Eriadu_Authority, Tsoss, Empire_Star_Base_2 </Starting_Forces>
 		<Starting_Forces> Eriadu_Authority, Tsoss, Eriadu_Shipyard_Level_Two </Starting_Forces>
@@ -397,8 +411,8 @@ EA position has a pretty rough postion overall, but they'll get Cronus on Night 
 		<Starting_Forces> Greater_Maldrood, Hakassi, Empire_Star_Base_2 </Starting_Forces>
 		<Starting_Forces> Greater_Maldrood, Hakassi, Greater_Maldrood_Shipyard_Level_Three </Starting_Forces>
 		
-		<Starting_Forces> Greater_Maldrood, Hakassi, 13X_Pellaeon </Starting_Forces>
-		<Starting_Forces> Greater_Maldrood, Hakassi, CrimsonSunrise_Star_Destroyer </Starting_Forces>
+		<Starting_Forces> Greater_Maldrood, Hakassi, Pellaeon_13X </Starting_Forces>
+		<Starting_Forces> Greater_Maldrood, Hakassi, Treuten_Crimson_Sunrise </Starting_Forces>
 		<Starting_Forces> Greater_Maldrood, Hakassi, Crimson_Victory </Starting_Forces>
 		<Starting_Forces> Greater_Maldrood, Hakassi, Crimson_Victory </Starting_Forces>
 		<Starting_Forces> Greater_Maldrood, Hakassi, Crimson_Victory </Starting_Forces>
@@ -436,9 +450,9 @@ EA position has a pretty rough postion overall, but they'll get Cronus on Night 
 		<Starting_Forces> Greater_Maldrood, Ojom, Imperial_SA5_Company </Starting_Forces>
 		<Starting_Forces> Greater_Maldrood, Ojom, Imperial_AT_RT_Company </Starting_Forces>
 		<Starting_Forces> Greater_Maldrood, Ojom, Imperial_AT_RT_Company </Starting_Forces>
-		<Starting_Forces> Greater_Maldrood, Ojom, Army_Trooper_Squad </Starting_Forces>
-		<Starting_Forces> Greater_Maldrood, Ojom, Army_Trooper_Squad </Starting_Forces>
-		<Starting_Forces> Greater_Maldrood, Ojom, Army_Trooper_Squad </Starting_Forces>
+		<Starting_Forces> Greater_Maldrood, Ojom, Imperial_Army_Trooper_Squad </Starting_Forces>
+		<Starting_Forces> Greater_Maldrood, Ojom, Imperial_Army_Trooper_Squad </Starting_Forces>
+		<Starting_Forces> Greater_Maldrood, Ojom, Imperial_Army_Trooper_Squad </Starting_Forces>
 		<Starting_Forces> Greater_Maldrood, Ojom, Imperial_74Z_Bike_Company </Starting_Forces>
 		<Starting_Forces> Greater_Maldrood, Ojom, Imperial_74Z_Bike_Company </Starting_Forces>
 		
@@ -478,8 +492,8 @@ EA position has a pretty rough postion overall, but they'll get Cronus on Night 
 		<Starting_Forces> Greater_Maldrood, Columus, Imperial_INT4_Group </Starting_Forces>
 		<Starting_Forces> Greater_Maldrood, Columus, Imperial_ISP_Company </Starting_Forces>
 		<Starting_Forces> Greater_Maldrood, Columus, Imperial_ISP_Company </Starting_Forces>
-		<Starting_Forces> Greater_Maldrood, Columus, Army_Trooper_Squad </Starting_Forces>
-		<Starting_Forces> Greater_Maldrood, Columus, Army_Trooper_Squad </Starting_Forces>
+		<Starting_Forces> Greater_Maldrood, Columus, Imperial_Army_Trooper_Squad </Starting_Forces>
+		<Starting_Forces> Greater_Maldrood, Columus, Imperial_Army_Trooper_Squad </Starting_Forces>
 	</Campaign>
 
 	<Campaign Name="Sandbox_DeepCoreConflict_Era_6_Greater_Maldrood">
@@ -496,8 +510,6 @@ EA position has a pretty rough postion overall, but they'll get Cronus on Night 
         <Camera_Distance> 1200.0 </Camera_Distance>
 		
 		<Locations>
-			<!-- Possibly Metellos, Pakrik, or Sarapin, though none are that great a fit-->
-			Galaxy_Core_Art_Model,
 			Abregado_Rae,
 			Cal_Seti,
 			Columus,
@@ -505,6 +517,7 @@ EA position has a pretty rough postion overall, but they'll get Cronus on Night 
 			Empress_Teta,
 			Foerost,
 			Galantos,
+			Galaxy_Core_Art_Model,
 			Hakassi,
 			Kaikielius,
 			Kalist,
@@ -516,18 +529,17 @@ EA position has a pretty rough postion overall, but they'll get Cronus on Night 
 			Tsoss,
 		</Locations>
 		<Trade_Routes>
-			Abregado_Rae_Kalist,
 			Abregado_Rae_Thomork,
 			Cal_Seti_Foerost,
 			Cal_Seti_Galantos,
 			Cal_Seti_Odik,
+			Columus_Ebaq,
 			Columus_Hakassi,
 			Ebaq_Hakassi,
 			Ebaq_Tsoss,
-			Ebaq_Kampe,
-			Foerost_Kaikielius,
 			Empress_Teta_Foerost,
 			Empress_Teta_Tsoss,
+			Foerost_Kaikielius,
 			Galantos_Odik,
 			Hakassi_Ojom,
 			Kaikielius_Tsoss,
@@ -535,7 +547,6 @@ EA position has a pretty rough postion overall, but they'll get Cronus on Night 
 			Kalist_Odik,
 			Kalist_Thomork,
 			Kampe_Ojom,
-			Kampe_Thomork,
 			Kampe_Tsoss,
 			Odik_Prakith,
 			Odik_Tsoss,
@@ -566,25 +577,42 @@ EA position has a pretty rough postion overall, but they'll get Cronus on Night 
 		<AI_Player_Control> Warlords, None </AI_Player_Control>
 		<AI_Player_Control> Independent_Forces, None </AI_Player_Control>
 		
-		<AI_Player_Control> Rebel, None</AI_Player_Control>
-		<AI_Player_Control> Pentastar, None</AI_Player_Control>
-		<AI_Player_Control> EmpireoftheHand, None </AI_Player_Control>
-		<AI_Player_Control> Zsinj_Empire, None </AI_Player_Control>
-		
-		<AI_Player_Control> Hapes_Consortium, None </AI_Player_Control>		
-		<AI_Player_Control> Corporate_Sector, None </AI_Player_Control>		
-		
-		<Markup_Filename>Empire, DefaultGalacticHints </Markup_Filename>
-		<Markup_Filename>Rebel, DefaultGalacticHints </Markup_Filename>
-		<Markup_Filename>EmpireoftheHand, DefaultGalacticHints </Markup_Filename>
-		<Markup_Filename>Zsinj_Empire, DefaultGalacticHints </Markup_Filename>
-		<Markup_Filename>Greater_Maldrood, DefaultMaldroodHints </Markup_Filename>			
-		<Markup_Filename>Pentastar, DefaultGalacticHints </Markup_Filename>
-		<Markup_Filename>Eriadu_Authority, DefaultEriaduHints </Markup_Filename>				
-		<Markup_Filename>Corporate_Sector, DefaultGalacticHints </Markup_Filename>		
-		<Markup_Filename>Warlords, DefaultGalacticHints </Markup_Filename>			
-		<Markup_Filename>Hapes_Consortium, DefaultGalacticHints </Markup_Filename>
-		
+		<AI_Player_Control>Chiss, None</AI_Player_Control>
+		<AI_Player_Control>Corellia, None</AI_Player_Control>
+		<AI_Player_Control>Corporate_Sector, None</AI_Player_Control>
+		<AI_Player_Control>EmpireoftheHand, None</AI_Player_Control>
+		<AI_Player_Control>Hapes_Consortium, None</AI_Player_Control>
+		<AI_Player_Control>Hostile, None</AI_Player_Control>
+		<AI_Player_Control>Hutt_Cartels, None</AI_Player_Control>
+		<AI_Player_Control>Killik_Hives, None</AI_Player_Control>
+		<AI_Player_Control>Mandalorians, None</AI_Player_Control>
+		<AI_Player_Control>Pentastar, None</AI_Player_Control>
+		<AI_Player_Control>Rebel, None</AI_Player_Control>
+		<AI_Player_Control>SsiRuuvi_Imperium, None</AI_Player_Control>
+		<AI_Player_Control>Underworld, None</AI_Player_Control>
+		<AI_Player_Control>Yevetha, None</AI_Player_Control>
+		<AI_Player_Control>Zsinj_Empire, None</AI_Player_Control>
+
+		<Markup_Filename>Chiss, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Corellia, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Corporate_Sector, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Empire, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>EmpireoftheHand, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Eriadu_Authority, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Greater_Maldrood, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Hapes_Consortium, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Hostile, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Hutt_Cartels, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Independent_Forces, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Killik_Hives, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Mandalorians, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Pentastar, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Rebel, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>SsiRuuvi_Imperium, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Underworld, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Warlords, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Yevetha, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Zsinj_Empire, DefaultGalacticHints</Markup_Filename>
 		
 		<Supports_Custom_Settings>True</Supports_Custom_Settings>
 		<Show_Completed_Tab>True</Show_Completed_Tab>
@@ -609,7 +637,7 @@ EA position has a pretty rough postion overall, but they'll get Cronus on Night 
 		<!-- Kalist Space Forces -->
 		<Starting_Forces> Empire, Kalist, Empire_Star_Base_2 </Starting_Forces>
 		<Starting_Forces> Empire, Kalist, Empire_Shipyard_Level_Three </Starting_Forces>
-		<Starting_Forces> Empire, Kalist, Shockwave_Star_Destroyer </Starting_Forces>
+		<Starting_Forces> Empire, Kalist, Harrsk_Shockwave </Starting_Forces>
 		<Starting_Forces> Empire, Kalist, Generic_Tector </Starting_Forces>
 		<Starting_Forces> Empire, Kalist, Lancer_Frigate </Starting_Forces>
 		<Starting_Forces> Empire, Kalist, Generic_Star_Destroyer_Two </Starting_Forces>
@@ -629,10 +657,10 @@ EA position has a pretty rough postion overall, but they'll get Cronus on Night 
 		<Starting_Forces> Empire, Kalist, Imperial_A5RX_Company </Starting_Forces>
 		<Starting_Forces> Empire, Kalist, Imperial_AT_PT_Company </Starting_Forces>
 		<Starting_Forces> Empire, Kalist, Imperial_AT_PT_Company </Starting_Forces>
-		<Starting_Forces> Empire, Kalist, Navy_Trooper_Squad </Starting_Forces>
-		<Starting_Forces> Empire, Kalist, Navy_Trooper_Squad </Starting_Forces>
-		<Starting_Forces> Empire, Kalist, Navy_Trooper_Squad </Starting_Forces>
-		<Starting_Forces> Empire, Kalist, Navy_Trooper_Squad </Starting_Forces>
+		<Starting_Forces> Empire, Kalist, Imperial_Navy_Trooper_Squad </Starting_Forces>
+		<Starting_Forces> Empire, Kalist, Imperial_Navy_Trooper_Squad </Starting_Forces>
+		<Starting_Forces> Empire, Kalist, Imperial_Navy_Trooper_Squad </Starting_Forces>
+		<Starting_Forces> Empire, Kalist, Imperial_Navy_Trooper_Squad </Starting_Forces>
 		<Starting_Forces> Empire, Kalist, Imperial_IDT_Group </Starting_Forces>
 		
 		<!-- Abregado Rae Space Forces -->
@@ -652,10 +680,10 @@ EA position has a pretty rough postion overall, but they'll get Cronus on Night 
 		<Starting_Forces> Empire, Abregado_Rae, Imperial_AT_PT_Company </Starting_Forces>
 		<Starting_Forces> Empire, Abregado_Rae, Imperial_Chariot_LAV_Company </Starting_Forces>
 		<Starting_Forces> Empire, Abregado_Rae, Imperial_Chariot_LAV_Company </Starting_Forces>
-		<Starting_Forces> Empire, Abregado_Rae, Army_Trooper_Squad </Starting_Forces>
-		<Starting_Forces> Empire, Abregado_Rae, Army_Trooper_Squad </Starting_Forces>
-		<Starting_Forces> Empire, Abregado_Rae, Army_Trooper_Squad </Starting_Forces>
-		<Starting_Forces> Empire, Abregado_Rae, Army_Trooper_Squad </Starting_Forces>
+		<Starting_Forces> Empire, Abregado_Rae, Imperial_Army_Trooper_Squad </Starting_Forces>
+		<Starting_Forces> Empire, Abregado_Rae, Imperial_Army_Trooper_Squad </Starting_Forces>
+		<Starting_Forces> Empire, Abregado_Rae, Imperial_Army_Trooper_Squad </Starting_Forces>
+		<Starting_Forces> Empire, Abregado_Rae, Imperial_Army_Trooper_Squad </Starting_Forces>
 		
 		<!-- Thomork Space Forces -->
 		<Starting_Forces> Empire, Thomork, Empire_Star_Base_2 </Starting_Forces>
@@ -763,8 +791,8 @@ EA position has a pretty rough postion overall, but they'll get Cronus on Night 
 		<Starting_Forces> Warlords, Cal_Seti, Shargael_Team </Starting_Forces>
 		<Starting_Forces> Warlords, Cal_Seti, Imperial_TIE_Mauler_Company </Starting_Forces>
 		<Starting_Forces> Warlords, Cal_Seti, Skyhopper_Group </Starting_Forces>
-		<Starting_Forces> Warlords, Cal_Seti, Army_Trooper_Squad </Starting_Forces>
-		<Starting_Forces> Warlords, Cal_Seti, Army_Trooper_Squad </Starting_Forces>
+		<Starting_Forces> Warlords, Cal_Seti, Imperial_Army_Trooper_Squad </Starting_Forces>
+		<Starting_Forces> Warlords, Cal_Seti, Imperial_Army_Trooper_Squad </Starting_Forces>
 		<Starting_Forces> Warlords, Cal_Seti, Imperial_Stormtrooper_Squad </Starting_Forces>
 		
 		<Starting_Credits> Independent_Forces,  5000 </Starting_Credits>
@@ -798,8 +826,8 @@ EA position has a pretty rough postion overall, but they'll get Cronus on Night 
 		<Starting_Forces> Eriadu_Authority, Kampe, Imperial_1H_Tank_Company </Starting_Forces>
 		<Starting_Forces> Eriadu_Authority, Kampe, Imperial_1L_Tank_Company </Starting_Forces>
 		<Starting_Forces> Eriadu_Authority, Kampe, Imperial_1L_Tank_Company </Starting_Forces>
-		<Starting_Forces> Eriadu_Authority, Kampe, Army_Trooper_Squad </Starting_Forces>
-		<Starting_Forces> Eriadu_Authority, Kampe, Army_Trooper_Squad </Starting_Forces>
+		<Starting_Forces> Eriadu_Authority, Kampe, Imperial_Army_Trooper_Squad </Starting_Forces>
+		<Starting_Forces> Eriadu_Authority, Kampe, Imperial_Army_Trooper_Squad </Starting_Forces>
 		
 		<Starting_Forces> Eriadu_Authority, Empress_Teta, Empire_Star_Base_2 </Starting_Forces>
 		<Starting_Forces> Eriadu_Authority, Empress_Teta, Eriadu_Shipyard_Level_Two </Starting_Forces>
@@ -814,9 +842,9 @@ EA position has a pretty rough postion overall, but they'll get Cronus on Night 
 		<Starting_Forces> Eriadu_Authority, Empress_Teta, Imperial_AT_MP_Company </Starting_Forces>
 		<Starting_Forces> Eriadu_Authority, Empress_Teta, Imperial_Stormtrooper_Squad </Starting_Forces>
 		<Starting_Forces> Eriadu_Authority, Empress_Teta, Imperial_Stormtrooper_Squad </Starting_Forces>
-		<Starting_Forces> Eriadu_Authority, Empress_Teta, Army_Trooper_Squad </Starting_Forces>
-		<Starting_Forces> Eriadu_Authority, Empress_Teta, Army_Trooper_Squad </Starting_Forces>
-		<Starting_Forces> Eriadu_Authority, Empress_Teta, Army_Trooper_Squad </Starting_Forces>
+		<Starting_Forces> Eriadu_Authority, Empress_Teta, Imperial_Army_Trooper_Squad </Starting_Forces>
+		<Starting_Forces> Eriadu_Authority, Empress_Teta, Imperial_Army_Trooper_Squad </Starting_Forces>
+		<Starting_Forces> Eriadu_Authority, Empress_Teta, Imperial_Army_Trooper_Squad </Starting_Forces>
 		
 		<Starting_Forces> Eriadu_Authority, Kaikielius, Empire_Star_Base_2 </Starting_Forces>
 		<Starting_Forces> Eriadu_Authority, Kaikielius, Eriadu_Shipyard_Level_One </Starting_Forces>
@@ -832,8 +860,8 @@ EA position has a pretty rough postion overall, but they'll get Cronus on Night 
 		<Starting_Forces> Eriadu_Authority, Kaikielius, Imperial_1M_Tank_Company </Starting_Forces>
 		<Starting_Forces> Eriadu_Authority, Kaikielius, Imperial_1L_Tank_Company </Starting_Forces>
 		<Starting_Forces> Eriadu_Authority, Kaikielius, Imperial_AT_MP_Company </Starting_Forces>
-		<Starting_Forces> Eriadu_Authority, Kaikielius, Army_Trooper_Squad </Starting_Forces>
-		<Starting_Forces> Eriadu_Authority, Kaikielius, Army_Trooper_Squad </Starting_Forces>
+		<Starting_Forces> Eriadu_Authority, Kaikielius, Imperial_Army_Trooper_Squad </Starting_Forces>
+		<Starting_Forces> Eriadu_Authority, Kaikielius, Imperial_Army_Trooper_Squad </Starting_Forces>
 		
 		<Starting_Forces> Eriadu_Authority, Foerost, Empire_Star_Base_2 </Starting_Forces>
 		<Starting_Forces> Eriadu_Authority, Foerost, Eriadu_Shipyard_Level_Four </Starting_Forces>
@@ -849,9 +877,9 @@ EA position has a pretty rough postion overall, but they'll get Cronus on Night 
 		<Starting_Forces> Eriadu_Authority, Foerost, Imperial_1M_Tank_Company </Starting_Forces>
 		<Starting_Forces> Eriadu_Authority, Foerost, Imperial_Light_Artillery_Company </Starting_Forces>
 		<Starting_Forces> Eriadu_Authority, Foerost, Imperial_TRMB_Company </Starting_Forces>
-		<Starting_Forces> Eriadu_Authority, Foerost, Army_Trooper_Squad </Starting_Forces>
-		<Starting_Forces> Eriadu_Authority, Foerost, Army_Trooper_Squad </Starting_Forces>
-		<Starting_Forces> Eriadu_Authority, Foerost, Army_Trooper_Squad </Starting_Forces>
+		<Starting_Forces> Eriadu_Authority, Foerost, Imperial_Army_Trooper_Squad </Starting_Forces>
+		<Starting_Forces> Eriadu_Authority, Foerost, Imperial_Army_Trooper_Squad </Starting_Forces>
+		<Starting_Forces> Eriadu_Authority, Foerost, Imperial_Army_Trooper_Squad </Starting_Forces>
 		
 		<Starting_Forces> Eriadu_Authority, Tsoss, Empire_Star_Base_2 </Starting_Forces>
 		<Starting_Forces> Eriadu_Authority, Tsoss, Eriadu_Shipyard_Level_Two </Starting_Forces>
@@ -869,8 +897,8 @@ EA position has a pretty rough postion overall, but they'll get Cronus on Night 
 		<Starting_Forces> Greater_Maldrood, Hakassi, Empire_Star_Base_2 </Starting_Forces>
 		<Starting_Forces> Greater_Maldrood, Hakassi, Greater_Maldrood_Shipyard_Level_Three </Starting_Forces>
 		
-		<Starting_Forces> Greater_Maldrood, Hakassi, 13X_Pellaeon </Starting_Forces>
-		<Starting_Forces> Greater_Maldrood, Hakassi, CrimsonSunrise_Star_Destroyer </Starting_Forces>
+		<Starting_Forces> Greater_Maldrood, Hakassi, Pellaeon_13X </Starting_Forces>
+		<Starting_Forces> Greater_Maldrood, Hakassi, Treuten_Crimson_Sunrise </Starting_Forces>
 		<Starting_Forces> Greater_Maldrood, Hakassi, Crimson_Victory </Starting_Forces>
 		<Starting_Forces> Greater_Maldrood, Hakassi, Crimson_Victory </Starting_Forces>
 		<Starting_Forces> Greater_Maldrood, Hakassi, Crimson_Victory </Starting_Forces>
@@ -908,9 +936,9 @@ EA position has a pretty rough postion overall, but they'll get Cronus on Night 
 		<Starting_Forces> Greater_Maldrood, Ojom, Imperial_SA5_Company </Starting_Forces>
 		<Starting_Forces> Greater_Maldrood, Ojom, Imperial_AT_RT_Company </Starting_Forces>
 		<Starting_Forces> Greater_Maldrood, Ojom, Imperial_AT_RT_Company </Starting_Forces>
-		<Starting_Forces> Greater_Maldrood, Ojom, Army_Trooper_Squad </Starting_Forces>
-		<Starting_Forces> Greater_Maldrood, Ojom, Army_Trooper_Squad </Starting_Forces>
-		<Starting_Forces> Greater_Maldrood, Ojom, Army_Trooper_Squad </Starting_Forces>
+		<Starting_Forces> Greater_Maldrood, Ojom, Imperial_Army_Trooper_Squad </Starting_Forces>
+		<Starting_Forces> Greater_Maldrood, Ojom, Imperial_Army_Trooper_Squad </Starting_Forces>
+		<Starting_Forces> Greater_Maldrood, Ojom, Imperial_Army_Trooper_Squad </Starting_Forces>
 		<Starting_Forces> Greater_Maldrood, Ojom, Imperial_74Z_Bike_Company </Starting_Forces>
 		<Starting_Forces> Greater_Maldrood, Ojom, Imperial_74Z_Bike_Company </Starting_Forces>
 		
@@ -950,8 +978,8 @@ EA position has a pretty rough postion overall, but they'll get Cronus on Night 
 		<Starting_Forces> Greater_Maldrood, Columus, Imperial_INT4_Group </Starting_Forces>
 		<Starting_Forces> Greater_Maldrood, Columus, Imperial_ISP_Company </Starting_Forces>
 		<Starting_Forces> Greater_Maldrood, Columus, Imperial_ISP_Company </Starting_Forces>
-		<Starting_Forces> Greater_Maldrood, Columus, Army_Trooper_Squad </Starting_Forces>
-		<Starting_Forces> Greater_Maldrood, Columus, Army_Trooper_Squad </Starting_Forces>
+		<Starting_Forces> Greater_Maldrood, Columus, Imperial_Army_Trooper_Squad </Starting_Forces>
+		<Starting_Forces> Greater_Maldrood, Columus, Imperial_Army_Trooper_Squad </Starting_Forces>
 	</Campaign>
 
 	<Campaign Name="Sandbox_DeepCoreConflict_Era_6_Eriadu_Authority">
@@ -968,8 +996,6 @@ EA position has a pretty rough postion overall, but they'll get Cronus on Night 
         <Camera_Distance> 1200.0 </Camera_Distance>
 		
 		<Locations>
-			<!-- Possibly Metellos, Pakrik, or Sarapin, though none are that great a fit-->
-			Galaxy_Core_Art_Model,
 			Abregado_Rae,
 			Cal_Seti,
 			Columus,
@@ -977,6 +1003,7 @@ EA position has a pretty rough postion overall, but they'll get Cronus on Night 
 			Empress_Teta,
 			Foerost,
 			Galantos,
+			Galaxy_Core_Art_Model,
 			Hakassi,
 			Kaikielius,
 			Kalist,
@@ -988,18 +1015,17 @@ EA position has a pretty rough postion overall, but they'll get Cronus on Night 
 			Tsoss,
 		</Locations>
 		<Trade_Routes>
-			Abregado_Rae_Kalist,
 			Abregado_Rae_Thomork,
 			Cal_Seti_Foerost,
 			Cal_Seti_Galantos,
 			Cal_Seti_Odik,
+			Columus_Ebaq,
 			Columus_Hakassi,
 			Ebaq_Hakassi,
 			Ebaq_Tsoss,
-			Ebaq_Kampe,
-			Foerost_Kaikielius,
 			Empress_Teta_Foerost,
 			Empress_Teta_Tsoss,
+			Foerost_Kaikielius,
 			Galantos_Odik,
 			Hakassi_Ojom,
 			Kaikielius_Tsoss,
@@ -1007,7 +1033,6 @@ EA position has a pretty rough postion overall, but they'll get Cronus on Night 
 			Kalist_Odik,
 			Kalist_Thomork,
 			Kampe_Ojom,
-			Kampe_Thomork,
 			Kampe_Tsoss,
 			Odik_Prakith,
 			Odik_Tsoss,
@@ -1038,25 +1063,42 @@ EA position has a pretty rough postion overall, but they'll get Cronus on Night 
 		<AI_Player_Control> Warlords, None </AI_Player_Control>
 		<AI_Player_Control> Independent_Forces, None </AI_Player_Control>
 		
-		<AI_Player_Control> Rebel, None</AI_Player_Control>
-		<AI_Player_Control> Pentastar, None</AI_Player_Control>
-		<AI_Player_Control> EmpireoftheHand, None </AI_Player_Control>
-		<AI_Player_Control> Zsinj_Empire, None </AI_Player_Control>
-		
-		<AI_Player_Control> Hapes_Consortium, None </AI_Player_Control>		
-		<AI_Player_Control> Corporate_Sector, None </AI_Player_Control>		
-		
-		<Markup_Filename>Empire, DefaultGalacticHints </Markup_Filename>
-		<Markup_Filename>Rebel, DefaultGalacticHints </Markup_Filename>
-		<Markup_Filename>EmpireoftheHand, DefaultGalacticHints </Markup_Filename>
-		<Markup_Filename>Zsinj_Empire, DefaultGalacticHints </Markup_Filename>
-		<Markup_Filename>Greater_Maldrood, DefaultMaldroodHints </Markup_Filename>			
-		<Markup_Filename>Pentastar, DefaultGalacticHints </Markup_Filename>
-		<Markup_Filename>Eriadu_Authority, DefaultEriaduHints </Markup_Filename>				
-		<Markup_Filename>Corporate_Sector, DefaultGalacticHints </Markup_Filename>		
-		<Markup_Filename>Warlords, DefaultGalacticHints </Markup_Filename>			
-		<Markup_Filename>Hapes_Consortium, DefaultGalacticHints </Markup_Filename>
-		
+		<AI_Player_Control>Chiss, None</AI_Player_Control>
+		<AI_Player_Control>Corellia, None</AI_Player_Control>
+		<AI_Player_Control>Corporate_Sector, None</AI_Player_Control>
+		<AI_Player_Control>EmpireoftheHand, None</AI_Player_Control>
+		<AI_Player_Control>Hapes_Consortium, None</AI_Player_Control>
+		<AI_Player_Control>Hostile, None</AI_Player_Control>
+		<AI_Player_Control>Hutt_Cartels, None</AI_Player_Control>
+		<AI_Player_Control>Killik_Hives, None</AI_Player_Control>
+		<AI_Player_Control>Mandalorians, None</AI_Player_Control>
+		<AI_Player_Control>Pentastar, None</AI_Player_Control>
+		<AI_Player_Control>Rebel, None</AI_Player_Control>
+		<AI_Player_Control>SsiRuuvi_Imperium, None</AI_Player_Control>
+		<AI_Player_Control>Underworld, None</AI_Player_Control>
+		<AI_Player_Control>Yevetha, None</AI_Player_Control>
+		<AI_Player_Control>Zsinj_Empire, None</AI_Player_Control>
+
+		<Markup_Filename>Chiss, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Corellia, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Corporate_Sector, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Empire, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>EmpireoftheHand, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Eriadu_Authority, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Greater_Maldrood, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Hapes_Consortium, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Hostile, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Hutt_Cartels, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Independent_Forces, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Killik_Hives, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Mandalorians, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Pentastar, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Rebel, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>SsiRuuvi_Imperium, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Underworld, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Warlords, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Yevetha, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Zsinj_Empire, DefaultGalacticHints</Markup_Filename>
 		
 		<Supports_Custom_Settings>True</Supports_Custom_Settings>
 		<Show_Completed_Tab>True</Show_Completed_Tab>
@@ -1081,7 +1123,7 @@ EA position has a pretty rough postion overall, but they'll get Cronus on Night 
 		<!-- Kalist Space Forces -->
 		<Starting_Forces> Empire, Kalist, Empire_Star_Base_2 </Starting_Forces>
 		<Starting_Forces> Empire, Kalist, Empire_Shipyard_Level_Three </Starting_Forces>
-		<Starting_Forces> Empire, Kalist, Shockwave_Star_Destroyer </Starting_Forces>
+		<Starting_Forces> Empire, Kalist, Harrsk_Shockwave </Starting_Forces>
 		<Starting_Forces> Empire, Kalist, Generic_Tector </Starting_Forces>
 		<Starting_Forces> Empire, Kalist, Lancer_Frigate </Starting_Forces>
 		<Starting_Forces> Empire, Kalist, Generic_Star_Destroyer_Two </Starting_Forces>
@@ -1101,10 +1143,10 @@ EA position has a pretty rough postion overall, but they'll get Cronus on Night 
 		<Starting_Forces> Empire, Kalist, Imperial_A5RX_Company </Starting_Forces>
 		<Starting_Forces> Empire, Kalist, Imperial_AT_PT_Company </Starting_Forces>
 		<Starting_Forces> Empire, Kalist, Imperial_AT_PT_Company </Starting_Forces>
-		<Starting_Forces> Empire, Kalist, Navy_Trooper_Squad </Starting_Forces>
-		<Starting_Forces> Empire, Kalist, Navy_Trooper_Squad </Starting_Forces>
-		<Starting_Forces> Empire, Kalist, Navy_Trooper_Squad </Starting_Forces>
-		<Starting_Forces> Empire, Kalist, Navy_Trooper_Squad </Starting_Forces>
+		<Starting_Forces> Empire, Kalist, Imperial_Navy_Trooper_Squad </Starting_Forces>
+		<Starting_Forces> Empire, Kalist, Imperial_Navy_Trooper_Squad </Starting_Forces>
+		<Starting_Forces> Empire, Kalist, Imperial_Navy_Trooper_Squad </Starting_Forces>
+		<Starting_Forces> Empire, Kalist, Imperial_Navy_Trooper_Squad </Starting_Forces>
 		<Starting_Forces> Empire, Kalist, Imperial_IDT_Group </Starting_Forces>
 		
 		<!-- Abregado Rae Space Forces -->
@@ -1124,10 +1166,10 @@ EA position has a pretty rough postion overall, but they'll get Cronus on Night 
 		<Starting_Forces> Empire, Abregado_Rae, Imperial_AT_PT_Company </Starting_Forces>
 		<Starting_Forces> Empire, Abregado_Rae, Imperial_Chariot_LAV_Company </Starting_Forces>
 		<Starting_Forces> Empire, Abregado_Rae, Imperial_Chariot_LAV_Company </Starting_Forces>
-		<Starting_Forces> Empire, Abregado_Rae, Army_Trooper_Squad </Starting_Forces>
-		<Starting_Forces> Empire, Abregado_Rae, Army_Trooper_Squad </Starting_Forces>
-		<Starting_Forces> Empire, Abregado_Rae, Army_Trooper_Squad </Starting_Forces>
-		<Starting_Forces> Empire, Abregado_Rae, Army_Trooper_Squad </Starting_Forces>
+		<Starting_Forces> Empire, Abregado_Rae, Imperial_Army_Trooper_Squad </Starting_Forces>
+		<Starting_Forces> Empire, Abregado_Rae, Imperial_Army_Trooper_Squad </Starting_Forces>
+		<Starting_Forces> Empire, Abregado_Rae, Imperial_Army_Trooper_Squad </Starting_Forces>
+		<Starting_Forces> Empire, Abregado_Rae, Imperial_Army_Trooper_Squad </Starting_Forces>
 		
 		<!-- Thomork Space Forces -->
 		<Starting_Forces> Empire, Thomork, Empire_Star_Base_2 </Starting_Forces>
@@ -1235,8 +1277,8 @@ EA position has a pretty rough postion overall, but they'll get Cronus on Night 
 		<Starting_Forces> Warlords, Cal_Seti, Shargael_Team </Starting_Forces>
 		<Starting_Forces> Warlords, Cal_Seti, Imperial_TIE_Mauler_Company </Starting_Forces>
 		<Starting_Forces> Warlords, Cal_Seti, Skyhopper_Group </Starting_Forces>
-		<Starting_Forces> Warlords, Cal_Seti, Army_Trooper_Squad </Starting_Forces>
-		<Starting_Forces> Warlords, Cal_Seti, Army_Trooper_Squad </Starting_Forces>
+		<Starting_Forces> Warlords, Cal_Seti, Imperial_Army_Trooper_Squad </Starting_Forces>
+		<Starting_Forces> Warlords, Cal_Seti, Imperial_Army_Trooper_Squad </Starting_Forces>
 		<Starting_Forces> Warlords, Cal_Seti, Imperial_Stormtrooper_Squad </Starting_Forces>
 		
 		<Starting_Credits> Independent_Forces,  5000 </Starting_Credits>
@@ -1270,8 +1312,8 @@ EA position has a pretty rough postion overall, but they'll get Cronus on Night 
 		<Starting_Forces> Eriadu_Authority, Kampe, Imperial_1H_Tank_Company </Starting_Forces>
 		<Starting_Forces> Eriadu_Authority, Kampe, Imperial_1L_Tank_Company </Starting_Forces>
 		<Starting_Forces> Eriadu_Authority, Kampe, Imperial_1L_Tank_Company </Starting_Forces>
-		<Starting_Forces> Eriadu_Authority, Kampe, Army_Trooper_Squad </Starting_Forces>
-		<Starting_Forces> Eriadu_Authority, Kampe, Army_Trooper_Squad </Starting_Forces>
+		<Starting_Forces> Eriadu_Authority, Kampe, Imperial_Army_Trooper_Squad </Starting_Forces>
+		<Starting_Forces> Eriadu_Authority, Kampe, Imperial_Army_Trooper_Squad </Starting_Forces>
 		
 		<Starting_Forces> Eriadu_Authority, Empress_Teta, Empire_Star_Base_2 </Starting_Forces>
 		<Starting_Forces> Eriadu_Authority, Empress_Teta, Eriadu_Shipyard_Level_Two </Starting_Forces>
@@ -1286,9 +1328,9 @@ EA position has a pretty rough postion overall, but they'll get Cronus on Night 
 		<Starting_Forces> Eriadu_Authority, Empress_Teta, Imperial_AT_MP_Company </Starting_Forces>
 		<Starting_Forces> Eriadu_Authority, Empress_Teta, Imperial_Stormtrooper_Squad </Starting_Forces>
 		<Starting_Forces> Eriadu_Authority, Empress_Teta, Imperial_Stormtrooper_Squad </Starting_Forces>
-		<Starting_Forces> Eriadu_Authority, Empress_Teta, Army_Trooper_Squad </Starting_Forces>
-		<Starting_Forces> Eriadu_Authority, Empress_Teta, Army_Trooper_Squad </Starting_Forces>
-		<Starting_Forces> Eriadu_Authority, Empress_Teta, Army_Trooper_Squad </Starting_Forces>
+		<Starting_Forces> Eriadu_Authority, Empress_Teta, Imperial_Army_Trooper_Squad </Starting_Forces>
+		<Starting_Forces> Eriadu_Authority, Empress_Teta, Imperial_Army_Trooper_Squad </Starting_Forces>
+		<Starting_Forces> Eriadu_Authority, Empress_Teta, Imperial_Army_Trooper_Squad </Starting_Forces>
 		
 		<Starting_Forces> Eriadu_Authority, Kaikielius, Empire_Star_Base_2 </Starting_Forces>
 		<Starting_Forces> Eriadu_Authority, Kaikielius, Eriadu_Shipyard_Level_One </Starting_Forces>
@@ -1304,8 +1346,8 @@ EA position has a pretty rough postion overall, but they'll get Cronus on Night 
 		<Starting_Forces> Eriadu_Authority, Kaikielius, Imperial_1M_Tank_Company </Starting_Forces>
 		<Starting_Forces> Eriadu_Authority, Kaikielius, Imperial_1L_Tank_Company </Starting_Forces>
 		<Starting_Forces> Eriadu_Authority, Kaikielius, Imperial_AT_MP_Company </Starting_Forces>
-		<Starting_Forces> Eriadu_Authority, Kaikielius, Army_Trooper_Squad </Starting_Forces>
-		<Starting_Forces> Eriadu_Authority, Kaikielius, Army_Trooper_Squad </Starting_Forces>
+		<Starting_Forces> Eriadu_Authority, Kaikielius, Imperial_Army_Trooper_Squad </Starting_Forces>
+		<Starting_Forces> Eriadu_Authority, Kaikielius, Imperial_Army_Trooper_Squad </Starting_Forces>
 		
 		<Starting_Forces> Eriadu_Authority, Foerost, Empire_Star_Base_2 </Starting_Forces>
 		<Starting_Forces> Eriadu_Authority, Foerost, Eriadu_Shipyard_Level_Four </Starting_Forces>
@@ -1321,9 +1363,9 @@ EA position has a pretty rough postion overall, but they'll get Cronus on Night 
 		<Starting_Forces> Eriadu_Authority, Foerost, Imperial_1M_Tank_Company </Starting_Forces>
 		<Starting_Forces> Eriadu_Authority, Foerost, Imperial_Light_Artillery_Company </Starting_Forces>
 		<Starting_Forces> Eriadu_Authority, Foerost, Imperial_TRMB_Company </Starting_Forces>
-		<Starting_Forces> Eriadu_Authority, Foerost, Army_Trooper_Squad </Starting_Forces>
-		<Starting_Forces> Eriadu_Authority, Foerost, Army_Trooper_Squad </Starting_Forces>
-		<Starting_Forces> Eriadu_Authority, Foerost, Army_Trooper_Squad </Starting_Forces>
+		<Starting_Forces> Eriadu_Authority, Foerost, Imperial_Army_Trooper_Squad </Starting_Forces>
+		<Starting_Forces> Eriadu_Authority, Foerost, Imperial_Army_Trooper_Squad </Starting_Forces>
+		<Starting_Forces> Eriadu_Authority, Foerost, Imperial_Army_Trooper_Squad </Starting_Forces>
 		
 		<Starting_Forces> Eriadu_Authority, Tsoss, Empire_Star_Base_2 </Starting_Forces>
 		<Starting_Forces> Eriadu_Authority, Tsoss, Eriadu_Shipyard_Level_Two </Starting_Forces>
@@ -1341,8 +1383,8 @@ EA position has a pretty rough postion overall, but they'll get Cronus on Night 
 		<Starting_Forces> Greater_Maldrood, Hakassi, Empire_Star_Base_2 </Starting_Forces>
 		<Starting_Forces> Greater_Maldrood, Hakassi, Greater_Maldrood_Shipyard_Level_Three </Starting_Forces>
 		
-		<Starting_Forces> Greater_Maldrood, Hakassi, 13X_Pellaeon </Starting_Forces>
-		<Starting_Forces> Greater_Maldrood, Hakassi, CrimsonSunrise_Star_Destroyer </Starting_Forces>
+		<Starting_Forces> Greater_Maldrood, Hakassi, Pellaeon_13X </Starting_Forces>
+		<Starting_Forces> Greater_Maldrood, Hakassi, Treuten_Crimson_Sunrise </Starting_Forces>
 		<Starting_Forces> Greater_Maldrood, Hakassi, Crimson_Victory </Starting_Forces>
 		<Starting_Forces> Greater_Maldrood, Hakassi, Crimson_Victory </Starting_Forces>
 		<Starting_Forces> Greater_Maldrood, Hakassi, Crimson_Victory </Starting_Forces>
@@ -1380,9 +1422,9 @@ EA position has a pretty rough postion overall, but they'll get Cronus on Night 
 		<Starting_Forces> Greater_Maldrood, Ojom, Imperial_SA5_Company </Starting_Forces>
 		<Starting_Forces> Greater_Maldrood, Ojom, Imperial_AT_RT_Company </Starting_Forces>
 		<Starting_Forces> Greater_Maldrood, Ojom, Imperial_AT_RT_Company </Starting_Forces>
-		<Starting_Forces> Greater_Maldrood, Ojom, Army_Trooper_Squad </Starting_Forces>
-		<Starting_Forces> Greater_Maldrood, Ojom, Army_Trooper_Squad </Starting_Forces>
-		<Starting_Forces> Greater_Maldrood, Ojom, Army_Trooper_Squad </Starting_Forces>
+		<Starting_Forces> Greater_Maldrood, Ojom, Imperial_Army_Trooper_Squad </Starting_Forces>
+		<Starting_Forces> Greater_Maldrood, Ojom, Imperial_Army_Trooper_Squad </Starting_Forces>
+		<Starting_Forces> Greater_Maldrood, Ojom, Imperial_Army_Trooper_Squad </Starting_Forces>
 		<Starting_Forces> Greater_Maldrood, Ojom, Imperial_74Z_Bike_Company </Starting_Forces>
 		<Starting_Forces> Greater_Maldrood, Ojom, Imperial_74Z_Bike_Company </Starting_Forces>
 		
@@ -1422,8 +1464,8 @@ EA position has a pretty rough postion overall, but they'll get Cronus on Night 
 		<Starting_Forces> Greater_Maldrood, Columus, Imperial_INT4_Group </Starting_Forces>
 		<Starting_Forces> Greater_Maldrood, Columus, Imperial_ISP_Company </Starting_Forces>
 		<Starting_Forces> Greater_Maldrood, Columus, Imperial_ISP_Company </Starting_Forces>
-		<Starting_Forces> Greater_Maldrood, Columus, Army_Trooper_Squad </Starting_Forces>
-		<Starting_Forces> Greater_Maldrood, Columus, Army_Trooper_Squad </Starting_Forces>
+		<Starting_Forces> Greater_Maldrood, Columus, Imperial_Army_Trooper_Squad </Starting_Forces>
+		<Starting_Forces> Greater_Maldrood, Columus, Imperial_Army_Trooper_Squad </Starting_Forces>
 	</Campaign>
 
 </Campaigns>

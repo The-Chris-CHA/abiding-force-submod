@@ -12,9 +12,9 @@
 --*                                                                                                *
 --*       File:              init.lua                                                              *
 --*       File Created:      Monday, 24th February 2020 02:16                                      *
---*       Author:            [TR] Kiwi                                                             *
---*       Last Modified:     Monday, 24th February 2020 03:57                                      *
---*       Modified By:       [TR] Kiwi                                                             *
+--*       Author:            [TR] Jorritkarwehr                                                             *
+--*       Last Modified:     Monday, 24th February 2023 03:57                                      *
+--*       Modified By:       [TR] Jorritkarwehr                                                             *
 --*       Copyright:         Thrawns Revenge Development Team                                      *
 --*       License:           This code may not be used without the author's explicit permission    *
 --**************************************************************************************************

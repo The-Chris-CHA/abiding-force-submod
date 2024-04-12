@@ -255,7 +255,7 @@
 		<Select_Box_Scale>1000</Select_Box_Scale>
 		<Select_Box_Z_Adjust>-50</Select_Box_Z_Adjust>
 		
-		<Icon_Name>i_button_imperial_station.tga</Icon_Name>
+		<Icon_Name>I_BUTTON_RESEARCH_STATION.tga</Icon_Name>
 		
 		<Multisample_FOW_Check>Yes</Multisample_FOW_Check>
 		<CategoryMask> SpaceStructure </CategoryMask>
@@ -366,7 +366,6 @@
 		
 
 		<Tech_Level>99</Tech_Level>
-		<Required_Timeline>0</Required_Timeline>
 		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
 		<Required_Star_Base_Level>1</Required_Star_Base_Level>
 		<Required_Planets/>
@@ -385,8 +384,6 @@
 		<Tactical_Build_Time_Seconds>15</Tactical_Build_Time_Seconds>
 		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
 		<Tactical_Build_Prerequisites/>
-		<Override_Bounty_SP/>
-		<Override_Bounty_MP/>
 		<Tactical_Bribe_Cost>1</Tactical_Bribe_Cost>
 		<Piracy_Value_Credits>1</Piracy_Value_Credits>
 		<Score_Cost_Credits> 1250</Score_Cost_Credits>
@@ -430,21 +427,13 @@
 		<Layer_Z_Adjust>10.0</Layer_Z_Adjust>
 		<Has_Space_Evaluator>True</Has_Space_Evaluator>
 		
-		<GUI_Distance>4700</GUI_Distance>
-		<GUI_Offset>0 0 -300</GUI_Offset>
-		<GUI_Angles>90 0 0</GUI_Angles>
-		<GUI_Velocity>45</GUI_Velocity>
-		<GUI_X_Rot>0</GUI_X_Rot>
 
-		<MovementClass> Space </MovementClass>
 		<Min_Speed>2.0</Min_Speed>
 		<Max_Lift>0.0</Max_Lift>
 		<Death_Clone/>
 		<FormationPriority>3</FormationPriority>
 		<Transport_Capacity>4</Transport_Capacity>
 		<Number_per_Squadron>1</Number_per_Squadron>
-		<SFXEvent_Move_Opposite></SFXEvent_Move_Opposite>
-		<MovementClass> Space </MovementClass>
 	</SpaceUnit>
 
 </Space_Structures>

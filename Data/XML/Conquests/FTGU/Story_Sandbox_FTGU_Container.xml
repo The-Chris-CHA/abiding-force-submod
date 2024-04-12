@@ -27,33 +27,6 @@
 		<Prereq>Universal_Story_Start</Prereq>
 	</Event>
 	
-	<Event Name="NR_Level_Five">
-  		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
-		<Event_Param2>SET_NR_TECH</Event_Param2>
- 		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
-  		<Reward_Param1>Rebel</Reward_Param1>
-		<Reward_Param2>2</Reward_Param2>
-		<Prereq>Universal_Story_Start</Prereq>		
-	</Event>
-	
-	<Event Name="IR_Level_Five">
-  		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
-		<Event_Param2>SET_IR_TECH</Event_Param2>
- 		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
-  		<Reward_Param1>Empire</Reward_Param1>
-		<Reward_Param2>3</Reward_Param2>
-		<Prereq>Universal_Story_Start</Prereq>		
-	</Event>
-	
-	<Event Name="EH_Level_Five">
-  		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
-		<Event_Param2>SET_EH_TECH</Event_Param2>
- 		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
-  		<Reward_Param1>EmpireoftheHand</Reward_Param1>
-		<Reward_Param2>3</Reward_Param2>
-		<Prereq>Universal_Story_Start</Prereq>		
-	</Event>
-	
 <!--******************************************************-->
 <!--***************	Faction Determiners	******************-->
 <!--******************************************************-->
@@ -195,6 +168,14 @@
 		<Event_Param2>ENABLE_BRANCH_CORPORATE_SECTOR_FLAG</Event_Param2>
 		<Reward_Type>DISABLE_BRANCH</Reward_Type>
 		<Reward_Param1>Faction_Branch_Corporate_Sector</Reward_Param1>
+		<Reward_Param2>0</Reward_Param2>
+	</Event>
+	
+	<Event Name="Faction_Branch_Enabler_Hutt_Cartels">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>ENABLE_BRANCH_HUTT_CARTELS_FLAG</Event_Param2>
+		<Reward_Type>DISABLE_BRANCH</Reward_Type>
+		<Reward_Param1>Faction_Branch_Hutt_Cartels</Reward_Param1>
 		<Reward_Param2>0</Reward_Param2>
 	</Event>
 	<!-- ==================== BEGIN SAVE CRASH RE-ENABLE EVENTS ==================== -->

@@ -1,0 +1,140 @@
+<?xml version="1.0" ?>
+<!--********************************************-->
+<!--******  Campaign: Caamas Crisis  ***********-->
+<!--********************************************-->
+<Story>
+	<Event Name="Universal_Story_Start">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>0</Event_Param1>
+	</Event>
+	
+	<Event Name="Reveal_All_Planets">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>REVEAL_ALL_PLANETS</Reward_Type>
+		<Prereq>Universal_Story_Start</Prereq>
+	</Event>
+	
+	<Event Name="Delayed_Initialize">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>7</Event_Param1>
+	</Event>
+
+<!--***********************************************************-->
+<!--******************** UNIVERSAL EVENTS *********************-->
+<!--***********************************************************-->	
+
+	<Event Name="Caamas_Crisis_Thrawn_Timer">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>400</Event_Param1>
+	</Event>
+
+	<Event Name="Trigger_Caamas_Crisis_Thrawn">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Prereq>Caamas_Crisis_Thrawn_Timer</Prereq>
+	</Event>
+
+	<Event Name="Trigger_Caamas_Crisis_Which_Thrawn">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>15</Event_Param1>
+		<Prereq>Trigger_Caamas_Crisis_Thrawn</Prereq>
+	</Event>
+
+<!--***********************************************************-->
+<!--******************** IR & NR SHARED EVENTS ****************-->
+<!--***********************************************************-->	
+	
+	<Event Name="Trigger_Caamas_Crisis_ThrawnClone_Destroyed">
+  		<Event_Type>STORY_TACTICAL_DESTROY</Event_Type>
+  		<Event_Param1>Thrawn_Clone_Eviscerator</Event_Param1>
+		<Event_Param3>1</Event_Param3>
+	</Event>
+
+	<Event Name="Trigger_Caamas_Crisis_Flim_Destroyed">
+  		<Event_Type>STORY_TACTICAL_DESTROY</Event_Type>
+  		<Event_Param1>Flim_Tierce_Ironhand</Event_Param1>
+		<Event_Param3>1</Event_Param3>
+	</Event>
+
+	<Event Name="Trigger_Caamas_Crisis_Nirauan_Captured">
+  		<Event_Type>STORY_CONQUER</Event_Type>
+  		<Event_Param1>Nirauan</Event_Param1>
+		<Event_Param3>FILTER_FRIENDLY_AND_ENEMY</Event_Param3>
+		<Perpetual>True</Perpetual>
+	</Event>
+
+	<Event Name="Stop_Monitoring_Pellaeon_Death">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>STOP_MONITOR_PELLAEON_DEATH</Event_Param2>
+		<Reward_Type>DISABLE_BRANCH</Reward_Type>
+		<Reward_Param1>Branch_Monitor_Pellaeon_Death</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+	</Event>
+
+	<Event Name="Resume_Monitoring_Pellaeon_Death">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>RESUME_MONITOR_PELLAEON_DEATH</Event_Param2>
+		<Reward_Type>DISABLE_BRANCH</Reward_Type>
+		<Reward_Param1>Branch_Monitor_Pellaeon_Death</Reward_Param1>
+		<Reward_Param2>0</Reward_Param2>
+	</Event>
+
+	<Event Name="Caamas_Crisis_Pellaeon_Destroyed">
+  		<Event_Type>STORY_TACTICAL_DESTROY</Event_Type>
+  		<Event_Param1>Pellaeon_Grand_Chimaera</Event_Param1>
+		<Event_Param3>1</Event_Param3>
+		<Branch>Branch_Monitor_Pellaeon_Death</Branch>
+	</Event>
+
+	<Event Name="Trigger_Caamas_Crisis_Pellaeon_Destroyed">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Prereq>Caamas_Crisis_Pellaeon_Destroyed</Prereq>
+	</Event>
+
+	<Event Name="Caamas_Crisis_Treaty">
+  		<Event_Type>STORY_CONSTRUCT</Event_Type>
+  		<Event_Param1>Dummy_Treaty_Victory</Event_Param1>
+		<Event_Param2>1</Event_Param2>
+		<Event_Param3>FILTER_FRIENDLY_AND_ENEMY</Event_Param3>
+		<Reward_Type>REMOVE_UNIT</Reward_Type>
+		<Reward_Param1>Dummy_Treaty_Victory</Reward_Param1>
+	</Event>
+
+	<Event Name="Caamas_Crisis_Speech_Peace1">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_CONQUEST_CAAMAS_PEACE_GAVRISOM</Reward_Param1>
+		<Reward_Param2>15.0</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6 />
+		<Reward_Param7 />
+		<Reward_Param8 />
+		<Reward_Param9>Gavrisom_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+		<Prereq>Caamas_Crisis_Treaty</Prereq>
+	</Event>
+	
+	<Event Name="Caamas_Crisis_Speech_Peace2">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>14</Event_Param1>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_CONQUEST_CAAMAS_PEACE_PELLAEON</Reward_Param1>
+		<Reward_Param2>15.0</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6 />
+		<Reward_Param7 />
+		<Reward_Param8 />
+		<Reward_Param9>Pellaeon_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+		<Prereq>Caamas_Crisis_Speech_Peace1</Prereq>
+	</Event>
+
+	<Event Name="Trigger_Caamas_Crisis_Peace_Victory">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>15</Event_Param1>
+		<Prereq>Caamas_Crisis_Speech_Peace1</Prereq>
+	</Event>
+</Story>

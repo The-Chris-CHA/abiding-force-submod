@@ -186,6 +186,102 @@
 		<Reward_Param10>0</Reward_Param10>
 	</Event>
 	
+	<Event Name="Katana_Speech_Hutts">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>KATANA_SPEECH_HUTTS</Event_Param2>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_CONQUEST_THRAWN_HUTTS_KATANA_INFO</Reward_Param1>
+		<Reward_Param2>15</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6 />
+		<Reward_Param7 />
+		<Reward_Param8 />
+		<Reward_Param9>Troonol_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+	</Event>
+	
+	<Event Name="Katana_Speech_Corellia">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>KATANA_SPEECH_CORELLIA</Event_Param2>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_CONQUEST_THRAWN_CORELLIA_KATANA_INFO</Reward_Param1>
+		<Reward_Param2>15</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6 />
+		<Reward_Param7 />
+		<Reward_Param8 />
+		<Reward_Param9>SalSolo_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+	</Event>
+	
+	<Event Name="Katana_Speech_Chiss">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>KATANA_SPEECH_CHISS</Event_Param2>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_CONQUEST_THRAWN_CHISS_KATANA_INFO</Reward_Param1>
+		<Reward_Param2>15</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6 />
+		<Reward_Param7 />
+		<Reward_Param8 />
+		<Reward_Param9>Aralani_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+	</Event>
+	
+	<Event Name="Katana_Speech_Yevetha">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>KATANA_SPEECH_YEVETHA</Event_Param2>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_CONQUEST_THRAWN_YEVETHA_KATANA_INFO</Reward_Param1>
+		<Reward_Param2>15</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6 />
+		<Reward_Param7 />
+		<Reward_Param8 />
+		<Reward_Param9>Spaar_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+	</Event>
+	
+	<Event Name="Katana_Speech_Ssi">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>KATANA_SPEECH_SSI</Event_Param2>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_CONQUEST_THRAWN_SSIRUUK_KATANA_INFO</Reward_Param1>
+		<Reward_Param2>15</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6 />
+		<Reward_Param7 />
+		<Reward_Param8 />
+		<Reward_Param9>Ipvikkis_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+	</Event>
+	
+	<Event Name="Katana_Speech_Killik">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>KATANA_SPEECH_KILLIK</Event_Param2>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_CONQUEST_THRAWN_KILLIKS_KATANA_INFO</Reward_Param1>
+		<Reward_Param2>15</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6 />
+		<Reward_Param7 />
+		<Reward_Param8 />
+		<Reward_Param9>Saras_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+	</Event>
+	
 	<Event Name="Katana_Speech_Generic">
 		<Event_Type>STORY_ELAPSED</Event_Type>
 		<Event_Param1>15</Event_Param1>
@@ -201,6 +297,12 @@
 		<Prereq>Katana_Speech_EA</Prereq>
 		<Prereq>Katana_Speech_CSA</Prereq>
 		<Prereq>Katana_Speech_Hapes</Prereq>
+		<Prereq>Katana_Speech_Hutts</Prereq>
+		<Prereq>Katana_Speech_Corellia</Prereq>
+		<Prereq>Katana_Speech_Chiss</Prereq>
+		<Prereq>Katana_Speech_Yevetha</Prereq>
+		<Prereq>Katana_Speech_Ssi</Prereq>
+		<Prereq>Katana_Speech_Killik</Prereq>
 	</Event>
 	
 	<Event Name="Katana_Battle_Empire">
@@ -347,6 +449,102 @@
 		<Prereq>Katana_Speech_Hapes</Prereq>
 	</Event>
 	
+	<Event Name="Katana_Battle_Hutts">
+		<Event_Type>STORY_ENTER</Event_Type>
+		<Event_Param1>Katana_Space</Event_Param1>
+		<Event_Param2>FILTER_FRIENDLY_AND_ENEMY</Event_Param2>
+		<Reward_Type>LINK_TACTICAL</Reward_Type>
+		<Reward_Param1>Katana_Space</Reward_Param1>
+		<Reward_Param2>SPACE</Reward_Param2>
+		<Reward_Param3>Hutt_Cartels</Reward_Param3>
+		<Reward_Param4>_FOTG_SPACE_KATANA_BATTLE.TED</Reward_Param4>
+		<Reward_Param5>Hostile</Reward_Param5>
+		<Reward_Param7>Katana_Plot.XML</Reward_Param7>
+		<Reward_Param8>1</Reward_Param8>
+		<Reward_Param13>1</Reward_Param13>
+		<Prereq>Katana_Speech_Hutts</Prereq>
+	</Event>
+	
+	<Event Name="Katana_Battle_Corellia">
+		<Event_Type>STORY_ENTER</Event_Type>
+		<Event_Param1>Katana_Space</Event_Param1>
+		<Event_Param2>FILTER_FRIENDLY_AND_ENEMY</Event_Param2>
+		<Reward_Type>LINK_TACTICAL</Reward_Type>
+		<Reward_Param1>Katana_Space</Reward_Param1>
+		<Reward_Param2>SPACE</Reward_Param2>
+		<Reward_Param3>Corellia</Reward_Param3>
+		<Reward_Param4>_FOTG_SPACE_KATANA_BATTLE.TED</Reward_Param4>
+		<Reward_Param5>Hostile</Reward_Param5>
+		<Reward_Param7>Katana_Plot.XML</Reward_Param7>
+		<Reward_Param8>1</Reward_Param8>
+		<Reward_Param13>1</Reward_Param13>
+		<Prereq>Katana_Speech_Corellia</Prereq>
+	</Event>
+	
+	<Event Name="Katana_Battle_Chiss">
+		<Event_Type>STORY_ENTER</Event_Type>
+		<Event_Param1>Katana_Space</Event_Param1>
+		<Event_Param2>FILTER_FRIENDLY_AND_ENEMY</Event_Param2>
+		<Reward_Type>LINK_TACTICAL</Reward_Type>
+		<Reward_Param1>Katana_Space</Reward_Param1>
+		<Reward_Param2>SPACE</Reward_Param2>
+		<Reward_Param3>Chiss</Reward_Param3>
+		<Reward_Param4>_FOTG_SPACE_KATANA_BATTLE.TED</Reward_Param4>
+		<Reward_Param5>Hostile</Reward_Param5>
+		<Reward_Param7>Katana_Plot.XML</Reward_Param7>
+		<Reward_Param8>1</Reward_Param8>
+		<Reward_Param13>1</Reward_Param13>
+		<Prereq>Katana_Speech_Chiss</Prereq>
+	</Event>
+	
+	<Event Name="Katana_Battle_Yevetha">
+		<Event_Type>STORY_ENTER</Event_Type>
+		<Event_Param1>Katana_Space</Event_Param1>
+		<Event_Param2>FILTER_FRIENDLY_AND_ENEMY</Event_Param2>
+		<Reward_Type>LINK_TACTICAL</Reward_Type>
+		<Reward_Param1>Katana_Space</Reward_Param1>
+		<Reward_Param2>SPACE</Reward_Param2>
+		<Reward_Param3>Yevetha</Reward_Param3>
+		<Reward_Param4>_FOTG_SPACE_KATANA_BATTLE.TED</Reward_Param4>
+		<Reward_Param5>Hostile</Reward_Param5>
+		<Reward_Param7>Katana_Plot.XML</Reward_Param7>
+		<Reward_Param8>1</Reward_Param8>
+		<Reward_Param13>1</Reward_Param13>
+		<Prereq>Katana_Speech_Yevetha</Prereq>
+	</Event>
+	
+	<Event Name="Katana_Battle_Ssi">
+		<Event_Type>STORY_ENTER</Event_Type>
+		<Event_Param1>Katana_Space</Event_Param1>
+		<Event_Param2>FILTER_FRIENDLY_AND_ENEMY</Event_Param2>
+		<Reward_Type>LINK_TACTICAL</Reward_Type>
+		<Reward_Param1>Katana_Space</Reward_Param1>
+		<Reward_Param2>SPACE</Reward_Param2>
+		<Reward_Param3>SsiRuuvi_Imperium</Reward_Param3>
+		<Reward_Param4>_FOTG_SPACE_KATANA_BATTLE.TED</Reward_Param4>
+		<Reward_Param5>Hostile</Reward_Param5>
+		<Reward_Param7>Katana_Plot.XML</Reward_Param7>
+		<Reward_Param8>1</Reward_Param8>
+		<Reward_Param13>1</Reward_Param13>
+		<Prereq>Katana_Speech_Ssi</Prereq>
+	</Event>
+	
+	<Event Name="Katana_Battle_Killiks">
+		<Event_Type>STORY_ENTER</Event_Type>
+		<Event_Param1>Katana_Space</Event_Param1>
+		<Event_Param2>FILTER_FRIENDLY_AND_ENEMY</Event_Param2>
+		<Reward_Type>LINK_TACTICAL</Reward_Type>
+		<Reward_Param1>Katana_Space</Reward_Param1>
+		<Reward_Param2>SPACE</Reward_Param2>
+		<Reward_Param3>Killik_Hives</Reward_Param3>
+		<Reward_Param4>_FOTG_SPACE_KATANA_BATTLE.TED</Reward_Param4>
+		<Reward_Param5>Hostile</Reward_Param5>
+		<Reward_Param7>Katana_Plot.XML</Reward_Param7>
+		<Reward_Param8>1</Reward_Param8>
+		<Reward_Param13>1</Reward_Param13>
+		<Prereq>Katana_Speech_Killik</Prereq>
+	</Event>
+	
 	<!-- Katana reward spawn -->
 	
 	<Event Name="STORY_CONQUER_Katana_Space">
@@ -371,6 +569,12 @@
 		<Prereq>Katana_Battle_EA</Prereq>
 		<Prereq>Katana_Battle_CSA</Prereq>
 		<Prereq>Katana_Battle_Hapes</Prereq>
+		<Prereq>Katana_Battle_Hutts</Prereq>
+		<Prereq>Katana_Battle_Corellia</Prereq>
+		<Prereq>Katana_Battle_Chiss</Prereq>
+		<Prereq>Katana_Battle_Yevetha</Prereq>
+		<Prereq>Katana_Battle_Ssi</Prereq>
+		<Prereq>Katana_Battle_Killiks</Prereq>
     </Event>
 	
 	<Event Name="Loser_unlock">

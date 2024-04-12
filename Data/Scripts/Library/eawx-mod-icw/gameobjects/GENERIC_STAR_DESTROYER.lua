@@ -7,6 +7,15 @@ return {
 		["MIYTIL_FIGHTER_SQUADRON_DOUBLE"] = {
 			HAPES_CONSORTIUM = {Initial = 1, Reserve = 2}
 		},
+		["MIYTIL_FIGHTER_SQUADRON_HALF"] = {
+			HAPES_CONSORTIUM = {Initial = 1, Reserve = 1}
+		},
+		["DUNELIZARD_FIGHTER_SQUADRON_DOUBLE"] = {
+			HUTT_CARTELS = {Initial = 1, Reserve = 2}
+		},
+		["CLOAKSHAPE_NEW_SQUADRON_HALF"] = {
+			HUTT_CARTELS = {Initial = 1, Reserve = 1}
+		},
 		["TIE_FIGHTER_SQUADRON"] = {
 			EMPIRE = {Initial = 1, Reserve = 2, TechLevel = LessThan(4)},
 			ERIADU_AUTHORITY = {Initial = 1, Reserve = 2, ResearchType = "~EATIEShields"},
@@ -80,6 +89,9 @@ return {
 		["MIYTIL_BOMBER_SQUADRON_HALF"] = {
 			HAPES_CONSORTIUM = {Initial = 1, Reserve = 1}
 		},
+		["KIMOGILA_SQUADRON_HALF"] = {
+			HUTT_CARTELS = {Initial = 1, Reserve = 1}
+		},
 		["TIE_BOMBER_SQUADRON_HALF"] = {
 			EMPIRE = {Initial = 1, Reserve = 1, TechLevel = IsOneOf({1, 2, 4, 5, 6})},
 			ERIADU_AUTHORITY = {Initial = 1, Reserve = 1},
@@ -90,7 +102,7 @@ return {
 			WARLORDS = {Initial = 1, Reserve = 1},
 			ZSINJ_EMPIRE = {Initial = 1, Reserve = 1}
 		},
-		["SCIMMY_SQUADRON_HALF"] = {
+		["SCIMITAR_SQUADRON_HALF"] = {
 			EMPIRE = {Initial = 1, Reserve = 1, TechLevel = IsOneOf({3, 7, 8, 9, 10, 11})}
 		},
 		["Y-WING_SQUADRON_HALF"] = {

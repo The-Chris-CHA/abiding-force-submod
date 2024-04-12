@@ -1,0 +1,758 @@
+<?xml version="1.0" ?>
+
+
+
+<!--******************************************************-->
+<!--******	Campaign: Corporate Acquisitions	******-->
+<!--******************************************************-->
+
+<Story>
+
+	<Event Name="Universal_Story_Start">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>0</Event_Param1>
+	</Event>
+	
+	<Event Name="Delayed_Initialize">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>7</Event_Param1>
+	</Event>
+
+	<Event Name="Reveal_All_Planets">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>REVEAL_ALL_PLANETS</Reward_Type>
+		<Prereq>Universal_Story_Start</Prereq>
+	</Event>
+
+
+<!--******************************************************-->
+<!--***************	Faction Determiners	******************-->
+<!--******************************************************-->
+
+
+	<Event Name="Faction_Branch_Disabler_NewRep">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>0</Event_Param1>
+		<Reward_Type>DISABLE_BRANCH</Reward_Type>
+		<Reward_Param1>Faction_Branch_NewRep</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+	</Event>
+
+	<Event Name="Faction_Branch_Disabler_Remnant">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>0</Event_Param1>
+		<Reward_Type>DISABLE_BRANCH</Reward_Type>
+		<Reward_Param1>Faction_Branch_Remnant</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+	</Event>
+
+	<Event Name="Faction_Branch_Disabler_Eriadu">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>0</Event_Param1>
+		<Reward_Type>DISABLE_BRANCH</Reward_Type>
+		<Reward_Param1>Faction_Branch_Eriadu</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+	</Event>
+
+	<Event Name="Faction_Branch_Disabler_Zsinj">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>0</Event_Param1>
+		<Reward_Type>DISABLE_BRANCH</Reward_Type>
+		<Reward_Param1>Faction_Branch_Zsinj</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+	</Event>
+
+	<Event Name="Faction_Branch_Disabler_Teradoc">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>0</Event_Param1>
+		<Reward_Type>DISABLE_BRANCH</Reward_Type>
+		<Reward_Param1>Faction_Branch_Teradoc</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+	</Event>
+
+	<Event Name="Faction_Branch_Disabler_Pentastar">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>0</Event_Param1>
+		<Reward_Type>DISABLE_BRANCH</Reward_Type>
+		<Reward_Param1>Faction_Branch_Pentastar</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+	</Event>
+	
+	<Event Name="Faction_Branch_Disabler_Corporate_Sector">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>0</Event_Param1>
+		<Reward_Type>DISABLE_BRANCH</Reward_Type>
+		<Reward_Param1>Faction_Branch_Corporate_Sector</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+	</Event>
+	
+	<Event Name="Faction_Branch_Disabler_Hutts">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>0</Event_Param1>
+		<Reward_Type>DISABLE_BRANCH</Reward_Type>
+		<Reward_Param1>Faction_Branch_Hutts</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+	</Event>
+
+	<Event Name="Determine_Faction_LUA">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>0</Event_Param1>
+	</Event>
+
+	<Event Name="Faction_Branch_Enabler_NewRep">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>ENABLE_BRANCH_NEWREP_FLAG</Event_Param2>
+		<Reward_Type>DISABLE_BRANCH</Reward_Type>
+		<Reward_Param1>Faction_Branch_NewRep</Reward_Param1>
+		<Reward_Param2>0</Reward_Param2>
+	</Event>
+
+	<Event Name="Faction_Branch_Enabler_Remnant">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>ENABLE_BRANCH_EMPIRE_FLAG</Event_Param2>
+		<Reward_Type>DISABLE_BRANCH</Reward_Type>
+		<Reward_Param1>Faction_Branch_Remnant</Reward_Param1>
+		<Reward_Param2>0</Reward_Param2>
+	</Event>
+
+	<Event Name="Faction_Branch_Enabler_EotH">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>ENABLE_BRANCH_EOTH_FLAG</Event_Param2>
+		<Reward_Type>DISABLE_BRANCH</Reward_Type>
+		<Reward_Param1>Faction_Branch_Remnant</Reward_Param1>
+		<Reward_Param2>0</Reward_Param2>
+	</Event>
+
+	<Event Name="Faction_Branch_Enabler_Eriadu">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>ENABLE_BRANCH_ERIADU_FLAG</Event_Param2>
+		<Reward_Type>DISABLE_BRANCH</Reward_Type>
+		<Reward_Param1>Faction_Branch_Eriadu</Reward_Param1>
+		<Reward_Param2>0</Reward_Param2>
+	</Event>
+
+	<Event Name="Faction_Branch_Enabler_Zsinj">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>ENABLE_BRANCH_ZSINJ_FLAG</Event_Param2>
+		<Reward_Type>DISABLE_BRANCH</Reward_Type>
+		<Reward_Param1>Faction_Branch_Zsinj</Reward_Param1>
+		<Reward_Param2>0</Reward_Param2>
+	</Event>
+
+	<Event Name="Faction_Branch_Enabler_Teradoc">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>ENABLE_BRANCH_TERADOC_FLAG</Event_Param2>
+		<Reward_Type>DISABLE_BRANCH</Reward_Type>
+		<Reward_Param1>Faction_Branch_Teradoc</Reward_Param1>
+		<Reward_Param2>0</Reward_Param2>
+	</Event>
+
+	<Event Name="Faction_Branch_Enabler_Pentastar">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>ENABLE_BRANCH_PENTASTAR_FLAG</Event_Param2>
+		<Reward_Type>DISABLE_BRANCH</Reward_Type>
+		<Reward_Param1>Faction_Branch_Pentastar</Reward_Param1>
+		<Reward_Param2>0</Reward_Param2>
+	</Event>
+
+	<Event Name="Faction_Branch_Enabler_Yevetha">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>ENABLE_BRANCH_YEVETHA_FLAG</Event_Param2>
+		<Reward_Type>DISABLE_BRANCH</Reward_Type>
+		<Reward_Param1>Faction_Branch_Pentastar</Reward_Param1>
+		<Reward_Param2>0</Reward_Param2>
+	</Event>
+	
+	<Event Name="Faction_Branch_Enabler_Corporate_Sector">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>ENABLE_BRANCH_CSA_FLAG</Event_Param2>
+		<Reward_Type>DISABLE_BRANCH</Reward_Type>
+		<Reward_Param1>Faction_Branch_Corporate_Sector</Reward_Param1>
+		<Reward_Param2>0</Reward_Param2>
+	</Event>
+	
+	<Event Name="Faction_Branch_Enabler_Hutts">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>ENABLE_BRANCH_HUTTS_FLAG</Event_Param2>
+		<Reward_Type>DISABLE_BRANCH</Reward_Type>
+		<Reward_Param1>Faction_Branch_Hutts</Reward_Param1>
+		<Reward_Param2>0</Reward_Param2>
+	</Event>
+
+	<!--***********************************************************-->
+	<!--***********************************************************-->
+	<!--******************** UNIVERSAL EVENTS *********************-->
+	<!--***********************************************************-->
+	<!--***********************************************************-->
+	
+	<Event Name="Era_Selection">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>1</Event_Param1>
+		<Prereq>Universal_Story_Start</Prereq>
+	</Event>
+	
+	<Event Name="Makati_Start">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>START_ERA_MAKATI</Event_Param2>
+		<Reward_Type>DISABLE_BRANCH</Reward_Type>
+		<Reward_Param1>Hero_Death_Events</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+	</Event>
+	
+	<Event Name="HfZ_Lite_Start">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>START_ERA_HFZ_LITE</Event_Param2>
+		<Reward_Type>DISABLE_BRANCH</Reward_Type>
+		<Reward_Param1>Hero_Death_Events</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+	</Event>
+	
+	<Event Name="Post_Zsinj_Start">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>START_ERA_POST_ZSINJ</Event_Param2>
+		<Reward_Type>DISABLE_BRANCH</Reward_Type>
+		<Reward_Param1>Hero_Death_Events</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+	</Event>
+	
+	<Event Name="DE_Lite_Start">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>START_ERA_DE_LITE</Event_Param2>
+		<Reward_Type>DISABLE_BRANCH</Reward_Type>
+		<Reward_Param1>Hero_Death_Events</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+	</Event>
+	
+	<Event Name="NR_Brawl_Start">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>START_ERA_NR_BRAWL</Event_Param2>
+		<Reward_Type>DISABLE_BRANCH</Reward_Type>
+		<Reward_Param1>Hero_Death_Events</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+	</Event>
+	
+	<Event Name="Tempest_Feud_Start">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>START_TEMPEST_FEUD</Event_Param2>
+		<Reward_Type>DISABLE_BRANCH</Reward_Type>
+		<Reward_Param1>Hero_Death_Events</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+	</Event>
+	
+	<Event Name="Empire_Dromund">
+  		<Event_Type>STORY_CONQUER</Event_Type>
+  		<Event_Param1>Korriban</Event_Param1>
+		<Event_Param3>Empire</Event_Param3>
+		<Prereq>Makati_Start</Prereq>
+	 </Event>
+	 
+	<!--***********************************************************-->
+	<!--***********************************************************-->
+	<!--***************** Corporate Sector Story ******************-->
+	<!--***********************************************************-->	
+	<!--***********************************************************-->	
+	
+	<Event Name="Intro_Welcome_CSA_E1">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_CONQUEST_CSA_CSA_INTRO_E1</Reward_Param1>
+		<Reward_Param2>15</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6 />
+		<Reward_Param7 />
+		<Reward_Param8>Weplinn_Intro_Speech</Reward_Param8>
+		<Reward_Param9>Weplinn_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+		<Prereq>Makati_Start, Faction_Branch_Enabler_Corporate_Sector</Prereq>
+		<Branch>Faction_Branch_Corporate_Sector</Branch>
+	</Event>
+	
+	<Event Name="Intro_Welcome_CSA_Dialog_E1">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>15</Event_Param1>
+		<Story_Dialog>Dialog_CorporateAcquisitions_CSA</Story_Dialog>
+		<Story_Chapter>0</Story_Chapter>
+		<Story_Tag>Main_Tag</Story_Tag>
+		<Prereq>Intro_Welcome_CSA_E1</Prereq>
+		<Branch>Faction_Branch_Corporate_Sector</Branch>
+	</Event>
+	
+	<Event Name="Intro_Welcome_CSA_E2">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_CONQUEST_CSA_CSA_INTRO_E2</Reward_Param1>
+		<Reward_Param2>15</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6 />
+		<Reward_Param7 />
+		<Reward_Param8>Weplinn_Intro_Speech</Reward_Param8>
+		<Reward_Param9>Weplinn_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+		<Prereq>HfZ_Lite_Start, Faction_Branch_Enabler_Corporate_Sector</Prereq>
+		<Prereq>Post_Zsinj_Start, Faction_Branch_Enabler_Corporate_Sector</Prereq>
+		<Branch>Faction_Branch_Corporate_Sector</Branch>
+	</Event>
+	
+	<Event Name="Intro_Welcome_CSA_Dialog_E2">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>15</Event_Param1>
+		<Story_Dialog>Dialog_CorporateAcquisitions_CSA</Story_Dialog>
+		<Story_Chapter>1</Story_Chapter>
+		<Story_Tag>Main_Tag</Story_Tag>
+		<Prereq>Intro_Welcome_CSA_E2</Prereq>
+		<Branch>Faction_Branch_Corporate_Sector</Branch>
+	</Event>
+	
+	<Event Name="Intro_Welcome_CSA_E3">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_CONQUEST_CSA_CSA_INTRO_E3</Reward_Param1>
+		<Reward_Param2>15</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6 />
+		<Reward_Param7 />
+		<Reward_Param8>Weplinn_Intro_Speech</Reward_Param8>
+		<Reward_Param9>Weplinn_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+		<Prereq>DE_Lite_Start, Faction_Branch_Enabler_Corporate_Sector</Prereq>
+		<Branch>Faction_Branch_Corporate_Sector</Branch>
+	</Event>
+	
+	<Event Name="Intro_Welcome_CSA_Dialog_E3">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>15</Event_Param1>
+		<Story_Dialog>Dialog_CorporateAcquisitions_CSA</Story_Dialog>
+		<Story_Chapter>2</Story_Chapter>
+		<Story_Tag>Main_Tag</Story_Tag>
+		<Prereq>Intro_Welcome_CSA_E3</Prereq>
+		<Branch>Faction_Branch_Corporate_Sector</Branch>
+	</Event>
+	
+	<Event Name="Intro_Welcome_CSA_E4">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_CONQUEST_CSA_CSA_INTRO_E4</Reward_Param1>
+		<Reward_Param2>15</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6 />
+		<Reward_Param7 />
+		<Reward_Param8>Weplinn_Intro_Speech</Reward_Param8>
+		<Reward_Param9>Weplinn_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+		<Prereq>NR_Brawl_Start, Faction_Branch_Enabler_Corporate_Sector</Prereq>
+		<Branch>Faction_Branch_Corporate_Sector</Branch>
+	</Event>
+	
+	<Event Name="Intro_Welcome_CSA_Dialog_E4">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>15</Event_Param1>
+		<Story_Dialog>Dialog_CorporateAcquisitions_CSA</Story_Dialog>
+		<Story_Chapter>3</Story_Chapter>
+		<Story_Tag>Main_Tag</Story_Tag>
+		<Prereq>Intro_Welcome_CSA_E4</Prereq>
+		<Branch>Faction_Branch_Corporate_Sector</Branch>
+	</Event>
+
+
+<Event Name="Intro_Welcome_CSA_E7">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_CONQUEST_CSA_CSA_INTRO_E7</Reward_Param1>
+		<Reward_Param2>15</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6 />
+		<Reward_Param7 />
+		<Reward_Param8>Krin_Intro_Speech</Reward_Param8>
+		<Reward_Param9>Krin_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+		<Prereq>Tempest_Feud_Start, Faction_Branch_Enabler_Corporate_Sector</Prereq>
+		<Branch>Faction_Branch_Corporate_Sector</Branch>
+	</Event>
+	
+	<Event Name="Intro_Welcome_CSA_Dialog_E7">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>15</Event_Param1>
+		<Story_Dialog>Dialog_CorporateAcquisitions_CSA</Story_Dialog>
+		<Story_Chapter>4</Story_Chapter>
+		<Story_Tag>Main_Tag</Story_Tag>
+		<Prereq>Intro_Welcome_CSA_E7</Prereq>
+		<Branch>Faction_Branch_Corporate_Sector</Branch>
+	</Event>
+	<!--***********************************************************-->
+	<!--***********************************************************-->
+	<!--******************* IMPERIAL STORYLINE ********************-->
+	<!--***********************************************************-->
+	<!--***********************************************************-->
+
+	<Event Name="Intro_Welcome_Empire">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_CONQUEST_EMPIRE_CSA_INTRO_E1</Reward_Param1>
+		<Reward_Param2>15</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6 />
+		<Reward_Param7 />
+		<Reward_Param8 />
+		<Reward_Param9>Makati_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+		<Prereq>Makati_Start, Faction_Branch_Enabler_Remnant</Prereq>
+		<Branch>Faction_Branch_Remnant</Branch>
+	</Event>
+	
+	<Event Name="Intro_Welcome_Empire_Dialog">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>15</Event_Param1>
+		<Story_Dialog>Dialog_CorporateAcquisitions_Empire</Story_Dialog>
+		<Story_Chapter>0</Story_Chapter>
+		<Story_Tag>Main_Tag</Story_Tag>
+		<Prereq>Intro_Welcome_Empire</Prereq>
+		<Branch>Faction_Branch_Remnant</Branch>
+	</Event>
+	
+	<Event Name="Prophets_Taken_Speech">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>PROPHET_SPEECH</Event_Param2>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_CONQUEST_EMPIRE_CSA_PROPHETS</Reward_Param1>
+		<Reward_Param2>15</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6 />
+		<Reward_Param7 />
+		<Reward_Param8 />
+		<Reward_Param9>Makati_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+		<Branch>Faction_Branch_Remnant</Branch>
+	</Event>
+	
+	<Event Name="Intro_Welcome_Empire_E3">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_CONQUEST_EMPIRE_CSA_INTRO_E3</Reward_Param1>
+		<Reward_Param2>15</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6 />
+		<Reward_Param7 />
+		<Reward_Param8 />
+		<Reward_Param9>Palpatine_Reborn_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+		<Prereq>DE_Lite_Start, Faction_Branch_Enabler_Remnant</Prereq>
+		<Branch>Faction_Branch_Remnant</Branch>
+	</Event>
+	
+	<Event Name="Intro_Welcome_Empire_Dialog_E3">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>15</Event_Param1>
+		<Story_Dialog>Dialog_CorporateAcquisitions_Empire</Story_Dialog>
+		<Story_Chapter>1</Story_Chapter>
+		<Story_Tag>Main_Tag</Story_Tag>
+		<Prereq>Intro_Welcome_Empire_E3</Prereq>
+		<Branch>Faction_Branch_Remnant</Branch>
+	</Event>
+	
+	<Event Name="Intro_Welcome_Empire_E2">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_CONQUEST_EMPIRE_CSA_INTRO_E2</Reward_Param1>
+		<Reward_Param2>15</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6 />
+		<Reward_Param7 />
+		<Reward_Param8 />
+		<Reward_Param9>Banjeer_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+		<Prereq>Post_Zsinj_Start, Faction_Branch_Enabler_Remnant</Prereq>
+		<Branch>Faction_Branch_Remnant</Branch>
+	</Event>
+	
+	<Event Name="Intro_Welcome_Empire_Dialog_E2">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>15</Event_Param1>
+		<Story_Dialog>Dialog_CorporateAcquisitions_Empire</Story_Dialog>
+		<Story_Chapter>2</Story_Chapter>
+		<Story_Tag>Main_Tag</Story_Tag>
+		<Prereq>Intro_Welcome_Empire_E2</Prereq>
+		<Branch>Faction_Branch_Remnant</Branch>
+	</Event>
+
+	<!--***********************************************************-->
+	<!--***********************************************************-->
+	<!--*********************** Zsinj Story ***********************-->
+	<!--***********************************************************-->	
+	<!--***********************************************************-->	
+	
+	<Event Name="Intro_Welcome_Zsinj">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_CONQUEST_ZSINJ_CSA_INTRO_E1</Reward_Param1>
+		<Reward_Param2>15</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6 />
+		<Reward_Param7 />
+		<Reward_Param8 />
+		<Reward_Param9>Zsinj_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+		<Prereq>Makati_Start, Faction_Branch_Enabler_Zsinj</Prereq>
+		<Prereq>HfZ_Lite_Start, Faction_Branch_Enabler_Zsinj</Prereq>
+		<Branch>Faction_Branch_Zsinj</Branch>
+	</Event>
+	
+	<Event Name="Intro_Welcome_Zsinj_Dialog">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>15</Event_Param1>
+		<Story_Dialog>Dialog_CorporateAcquisitions_Zsinj</Story_Dialog>
+		<Story_Chapter>0</Story_Chapter>
+		<Story_Tag>Main_Tag</Story_Tag>
+		<Prereq>Intro_Welcome_Zsinj</Prereq>
+		<Branch>Faction_Branch_Zsinj</Branch>
+	</Event>
+	
+	<Event Name="Intro_Welcome_Post_Zsinj">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_CONQUEST_ZSINJ_CSA_INTRO_E3</Reward_Param1>
+		<Reward_Param2>15</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6 />
+		<Reward_Param7 />
+		<Reward_Param8 />
+		<Reward_Param9></Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+		<Prereq>Post_Zsinj_Start, Faction_Branch_Enabler_Zsinj</Prereq>
+		<Branch>Faction_Branch_Zsinj</Branch>
+	</Event>
+	
+	<Event Name="Intro_Welcome_Post_Zsinj_Dialog">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>15</Event_Param1>
+		<Story_Dialog>Dialog_CorporateAcquisitions_Zsinj</Story_Dialog>
+		<Story_Chapter>1</Story_Chapter>
+		<Story_Tag>Main_Tag</Story_Tag>
+		<Prereq>Intro_Welcome_Post_Zsinj</Prereq>
+		<Branch>Faction_Branch_Zsinj</Branch>
+	</Event>
+	
+	<!--***********************************************************-->
+	<!--***********************************************************-->
+	<!--********************** Maldrood Story *********************-->
+	<!--***********************************************************-->	
+	<!--***********************************************************-->	
+	
+	<Event Name="Intro_Welcome_Teradoc">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_CONQUEST_MALDROOD_CSA_INTRO_E1</Reward_Param1>
+		<Reward_Param2>15</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6 />
+		<Reward_Param7 />
+		<Reward_Param8>Teradoc_Intro_Speech</Reward_Param8>
+		<Reward_Param9>Treuten_Teradoc_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+		<Prereq>Faction_Branch_Enabler_Teradoc</Prereq>
+		<Branch>Faction_Branch_Teradoc</Branch>
+	</Event>
+	
+	<Event Name="Intro_Welcome_Teradoc_Dialog">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>15</Event_Param1>
+		<Story_Dialog>Dialog_CorporateAcquisitions_Maldrood</Story_Dialog>
+		<Story_Chapter>0</Story_Chapter>
+		<Story_Tag>Main_Tag</Story_Tag>
+		<Prereq>Intro_Welcome_Teradoc</Prereq>
+		<Branch>Faction_Branch_Teradoc</Branch>
+	</Event>
+	
+	<!--***********************************************************-->
+	<!--***********************************************************-->
+	<!--******************* New Republic Story ********************-->
+	<!--***********************************************************-->	
+	<!--***********************************************************-->	
+	
+	<Event Name="Intro_Welcome_NewRep_E1_E2">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_CONQUEST_REBEL_CSA_INTRO_E1</Reward_Param1>
+		<Reward_Param2>15</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6 />
+		<Reward_Param7 />
+		<Reward_Param8>Ackbar_Intro_Speech</Reward_Param8>
+		<Reward_Param9>Ackbar_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+		<Prereq>Makati_Start, Faction_Branch_Enabler_NewRep</Prereq>
+		<Prereq>HfZ_Lite_Start, Faction_Branch_Enabler_NewRep</Prereq>
+		<Prereq>Post_Zsinj_Start, Faction_Branch_Enabler_NewRep</Prereq>
+		<Branch>Faction_Branch_NewRep</Branch>
+	</Event>
+	
+	<Event Name="Intro_Welcome_NewRep_Dialog_E1_E2">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>15</Event_Param1>
+		<Story_Dialog>Dialog_CorporateAcquisitions_NewRep</Story_Dialog>
+		<Story_Chapter>0</Story_Chapter>
+		<Story_Tag>Main_Tag</Story_Tag>
+		<Prereq>Intro_Welcome_NewRep_E1_E2</Prereq>
+		<Branch>Faction_Branch_NewRep</Branch>
+	</Event>
+	
+	<Event Name="Intro_Welcome_NewRep_E3">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_CONQUEST_REBEL_CSA_INTRO_E3</Reward_Param1>
+		<Reward_Param2>15</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6 />
+		<Reward_Param7 />
+		<Reward_Param8>Mothma_Intro_Speech</Reward_Param8>
+		<Reward_Param9>Mon_Mothma_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+		<Prereq>DE_Lite_Start, Faction_Branch_Enabler_NewRep</Prereq>
+		<Branch>Faction_Branch_NewRep</Branch>
+	</Event>
+	
+	<Event Name="Intro_Welcome_NewRep_Dialog_E3">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>15</Event_Param1>
+		<Story_Dialog>Dialog_CorporateAcquisitions_NewRep</Story_Dialog>
+		<Story_Chapter>1</Story_Chapter>
+		<Story_Tag>Main_Tag</Story_Tag>
+		<Prereq>Intro_Welcome_NewRep_E3</Prereq>
+		<Branch>Faction_Branch_NewRep</Branch>
+	</Event>
+	
+	<Event Name="Intro_Welcome_NewRep_E4_E5">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_CONQUEST_REBEL_CSA_INTRO_E4</Reward_Param1>
+		<Reward_Param2>15</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6 />
+		<Reward_Param7 />
+		<Reward_Param8>Ackbar_Intro_Speech</Reward_Param8>
+		<Reward_Param9>Ackbar_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+		<Prereq>NR_Brawl_Start, Faction_Branch_Enabler_NewRep</Prereq>
+		<Branch>Faction_Branch_NewRep</Branch>
+	</Event>
+	
+	<Event Name="Intro_Welcome_NewRep_Dialog_E4_E5">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>15</Event_Param1>
+		<Story_Dialog>Dialog_CorporateAcquisitions_NewRep</Story_Dialog>
+		<Story_Chapter>2</Story_Chapter>
+		<Story_Tag>Main_Tag</Story_Tag>
+		<Prereq>Intro_Welcome_NewRep_E4_E5</Prereq>
+		<Branch>Faction_Branch_NewRep</Branch>
+	</Event>
+	
+	<Event Name="Intro_Welcome_NewRep_E7">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_CONQUEST_REBEL_CSA_INTRO_E7</Reward_Param1>
+		<Reward_Param2>15</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6 />
+		<Reward_Param7 />
+		<Reward_Param8>Ackbar_Intro_Speech</Reward_Param8>
+		<Reward_Param9>Ackbar_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+		<Prereq>Tempest_Feud_Start, Faction_Branch_Enabler_NewRep</Prereq>
+		<Branch>Faction_Branch_NewRep</Branch>
+	</Event>
+	
+	<Event Name="Intro_Welcome_NewRep_Dialog_E7">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>15</Event_Param1>
+		<Story_Dialog>Dialog_CorporateAcquisitions_NewRep</Story_Dialog>
+		<Story_Chapter>3</Story_Chapter>
+		<Story_Tag>Main_Tag</Story_Tag>
+		<Prereq>Intro_Welcome_NewRep_E7</Prereq>
+		<Branch>Faction_Branch_NewRep</Branch>
+	</Event>
+	
+	<!--***********************************************************-->
+	<!--***********************************************************-->
+	<!--************************ Hutt Story ***********************-->
+	<!--***********************************************************-->	
+	<!--***********************************************************-->	
+	
+	<Event Name="Intro_Welcome_Parella">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_CONQUEST_HUTTS_CSA_INTRO_E7</Reward_Param1>
+		<Reward_Param2>15</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6 />
+		<Reward_Param7 />
+		<Reward_Param8>Parella_Intro_Speech</Reward_Param8>
+		<Reward_Param9>Parella_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+		<Prereq>Faction_Branch_Enabler_Hutts</Prereq>
+		<Branch>Faction_Branch_Hutts</Branch>
+	</Event>
+	
+	<Event Name="Intro_Welcome_Hutts_Dialog">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>15</Event_Param1>
+		<Story_Dialog>Dialog_CorporateAcquisitions_Hutts</Story_Dialog>
+		<Story_Chapter>0</Story_Chapter>
+		<Story_Tag>Main_Tag</Story_Tag>
+		<Prereq>Intro_Welcome_Parella</Prereq>
+		<Branch>Faction_Branch_Hutts</Branch>
+	</Event>
+	
+	<Event Name="Mika_Boast">
+		<Event_Type>STORY_CONSTRUCT</Event_Type>
+		<Event_Param1>Dummy_Research_Tempest</Event_Param1>
+		<Event_Param2>1</Event_Param2>
+		<Event_Param3>Hutt_Cartels</Event_Param3>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_CONQUEST_HUTTS_CSA_MIKA</Reward_Param1>
+		<Reward_Param2>15</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6 />
+		<Reward_Param7 />
+		<Reward_Param8>Mika_Intro_Speech</Reward_Param8>
+		<Reward_Param9>Mika_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+		<Prereq>Faction_Branch_Enabler_Hutts</Prereq>
+		<Branch>Faction_Branch_Hutts</Branch>
+	</Event>
+
+</Story>

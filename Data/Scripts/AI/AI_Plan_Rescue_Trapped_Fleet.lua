@@ -75,6 +75,13 @@ function MainForce_Thread()
 	
 	trapped_fleet = Assemble_Fleet(trapped_units)
 	
+	if trapped_fleet == nil then
+		DebugMessage("%s -- No units at target? Exiting plan.", tostring(Script))
+		MainForce.Set_Plan_Result(false)
+		ScriptExit()
+	end
+		
+	
 	DebugMessage("%s -- Fleet assembled %s", tostring(Script), tostring(trapped_fleet))
 	
 	reconnect_location = FindTarget.Reachable_Target(PlayerObject, "Is_Connected_To_Me", "Enemy", "Enemy_destination", 1.0, Target)
@@ -102,6 +109,7 @@ function MainForce_Production_Failed(tf, failed_object_type)
 	ScriptExit()
 end
 
+--This same function is duplicated in ChangeOwnerUtilities (to simplify dependencies?)
 function get_friendly_units_on_planet(player, planet)
 	DebugMessage("%s -- getting all units for %s on planet %s", tostring(Script), tostring(player), tostring(planet))
     local all_units_of_player = Find_All_Objects_Of_Type(player) or {}

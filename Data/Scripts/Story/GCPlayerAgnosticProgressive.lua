@@ -43,6 +43,8 @@ function Begin_GC(message)
         CONSTANTS = ModContentLoader.get("GameConstants")
         GameObjectLibrary = ModContentLoader.get("GameObjectLibrary")
         local plot = StoryUtil.GetPlayerAgnosticPlot()
+        StoryUtil.ShowScreenText("TEXT_GUI_INITIALIZING", 10)
+
 
         local era = Find_Player("local").Get_Tech_Level()
         if Find_Player("local") == Find_Player("Rebel") then
@@ -94,19 +96,19 @@ function Begin_GC(message)
             year_start = 11
         elseif era == 6 then
             year_start = 11
-            month_start = 6
+            month_start = 7
         elseif era == 7 then
             year_start = 12
         end
 
-        local holocron_event = plot.Get_Event("Show_Debug_Display")
+        --local holocron_event = plot.Get_Event("Show_Debug_Display")
         
-        local holocron_sink = require("deepcore/log/sinks/holocron-window")
-                                :with_event(holocron_event)
+        --local holocron_sink = require("deepcore/log/sinks/holocron-window")
+        --                        :with_event(holocron_event)
 
-        Logger = require("deepcore/log/logger")
-                :with_sink(holocron_sink)
-                :with_log_level(3)
+        --Logger = require("deepcore/log/logger")
+        --        :with_sink(holocron_sink)
+        --        :with_log_level(3)
 
         local plugin_list = ModContentLoader.get("InstalledPlugins")
         local context = {

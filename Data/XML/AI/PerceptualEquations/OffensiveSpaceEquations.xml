@@ -31,6 +31,12 @@
 												Parameter_Type = "Hapan_Star_Base_3",
 												Parameter_Type = "Hapan_Star_Base_4",
 												Parameter_Type = "Hapan_Star_Base_5",
+												Parameter_Type = "Hutt_Star_Base_1",
+												Parameter_Type = "Hutt_Star_Base_2",
+												Parameter_Type = "Hutt_Star_Base_3",
+												Parameter_Type = "Hutt_Star_Base_4",
+												Parameter_Type = "Hutt_Star_Base_5",
+												Parameter_Type = "Skirmish_Hutt_Star_Base_1",
 												Parameter_Type = "Skirmish_NR_Star_Base_1",
 												Parameter_Type = "Skirmish_Remnant_Star_Base_1",
 												Parameter_Type = "Skirmish_EotH_Star_Base_1",
@@ -117,6 +123,12 @@
 												Parameter_Type = "Hapan_Star_Base_3",
 												Parameter_Type = "Hapan_Star_Base_4",
 												Parameter_Type = "Hapan_Star_Base_5",
+												Parameter_Type = "Hutt_Star_Base_1",
+												Parameter_Type = "Hutt_Star_Base_2",
+												Parameter_Type = "Hutt_Star_Base_3",
+												Parameter_Type = "Hutt_Star_Base_4",
+												Parameter_Type = "Hutt_Star_Base_5",
+												Parameter_Type = "Skirmish_Hutt_Star_Base_1",
 												Parameter_Type = "Skirmish_NR_Star_Base_1",
 												Parameter_Type = "Skirmish_Remnant_Star_Base_1",
 												Parameter_Type = "Skirmish_EotH_Star_Base_1",
@@ -203,6 +215,12 @@
 												Parameter_Type = "Hapan_Star_Base_3",
 												Parameter_Type = "Hapan_Star_Base_4",
 												Parameter_Type = "Hapan_Star_Base_5",
+												Parameter_Type = "Hutt_Star_Base_1",
+												Parameter_Type = "Hutt_Star_Base_2",
+												Parameter_Type = "Hutt_Star_Base_3",
+												Parameter_Type = "Hutt_Star_Base_4",
+												Parameter_Type = "Hutt_Star_Base_5",
+												Parameter_Type = "Skirmish_Hutt_Star_Base_1",
 												Parameter_Type = "Skirmish_NR_Star_Base_1",
 												Parameter_Type = "Skirmish_Remnant_Star_Base_1",
 												Parameter_Type = "Skirmish_EotH_Star_Base_1",
@@ -331,7 +349,7 @@
 		(
 			(1.0 - Variable_Self.IsDefender)
 			*
-			((300 # 600) / Game.Age)
+			((600 # 1200) / Game.Age)
 			*
 			(Game.Age > 15)
 			+
@@ -386,7 +404,8 @@
 								Parameter_Type = "Greater_Maldrood_Shipyard_Level_One",
 								Parameter_Type = "CSA_Shipyard_Level_One",
 								Parameter_Type = "Chiss_Shipyard_Level_One",
-								Parameter_Type = "EotH_Shipyard_Level_One"}
+								Parameter_Type = "EotH_Shipyard_Level_One",
+								Parameter_Type = "Hutt_Shipyard_Level_One"}
 		+
 		2500
 		*
@@ -395,6 +414,7 @@
 								Parameter_Type = "Sith_Shipyard_Level_Two",
 								Parameter_Type = "Mandalorian_Shipyard_Level_Two",
 								Parameter_Type = "CIS_Shipyard_Level_Two",
+								Parameter_Type = "Sabaoth_HQ",
 								Parameter_Type = "NewRepublic_Shipyard_Level_Two",
 								Parameter_Type = "Empire_Shipyard_Level_Two",
 								Parameter_Type = "Pentastar_Shipyard_Level_Two",
@@ -404,7 +424,8 @@
 								Parameter_Type = "Greater_Maldrood_Shipyard_Level_Two",
 								Parameter_Type = "CSA_Shipyard_Level_Two",
 								Parameter_Type = "Chiss_Shipyard_Level_Two",
-								Parameter_Type = "EotH_Shipyard_Level_Two"}
+								Parameter_Type = "EotH_Shipyard_Level_Two",
+								Parameter_Type = "Hutt_Shipyard_Level_Two"}
 		+
 		6000
 		*
@@ -422,13 +443,16 @@
 								Parameter_Type = "CSA_Shipyard_Level_Three",
 								Parameter_Type = "CSA_Ship_Market",
 								Parameter_Type = "Chiss_Shipyard_Level_Three",
-								Parameter_Type = "EotH_Shipyard_Level_Three"}
+								Parameter_Type = "EotH_Shipyard_Level_Three",
+								Parameter_Type = "Hutt_Shipyard_Level_Three"}
 		+
 		8500
 		*
 		Variable_Enemy.HasUnit {Parameter_Type = "Generic_Shipyard_Level_Four",
 								Parameter_Type = "Republic_Shipyard_Level_Four",
+								Parameter_Type = "Republic_Naval_Command_Centre",
 								Parameter_Type = "Sith_Shipyard_Level_Four",
+								Parameter_Type = "Star_Forge_Relay",
 								Parameter_Type = "Mandalorian_Shipyard_Level_Four",
 								Parameter_Type = "CIS_Shipyard_Level_Four",
 								Parameter_Type = "NewRepublic_Shipyard_Level_Four",
@@ -440,7 +464,8 @@
 								Parameter_Type = "Greater_Maldrood_Shipyard_Level_Four",
 								Parameter_Type = "CSA_Shipyard_Level_Four",
 								Parameter_Type = "Chiss_Shipyard_Level_Four",
-								Parameter_Type = "EotH_Shipyard_Level_Four"}
+								Parameter_Type = "EotH_Shipyard_Level_Four",
+								Parameter_Type = "Hutt_Shipyard_Level_Four"}
 		+
 		5000
 		*
@@ -525,7 +550,28 @@
 			1.0
 		)
 	</Unit_Needs_To_Be_Destroyed_Survival>
-
+	
+	<Unit_Needs_To_Be_Destroyed_Freestore>
+		(1 - Function_Is_Space_Structure_Indestructable.Evaluate)
+		*
+		(
+			4.0 * ((Variable_Target.Location.FriendlyForce - Variable_Target.Location.EnemyForce) > 0.0)
+			+
+			3.0 * (1.0 - Variable_Target.Location.EnemyForce)
+			+
+			2.0 * (0.66 > Variable_Target.Shield)
+			+
+			4.0 * (1.0 - Variable_Target.Health)
+			+
+			(1.0 * Variable_Target.ForceNBTD)
+			+
+			2.0 * Variable_Target.ContainsHero
+			+
+			2.0 * Script_TargetHasProperty.Evaluate{Parameter_Script_String = "HealsVehicles"}
+			+
+			1.0
+		)
+	</Unit_Needs_To_Be_Destroyed_Freestore>
 
 	<Unit_Needs_To_Be_Disabled>
 		Function_Allowed_As_Defender_Space.Evaluate
@@ -928,5 +974,17 @@
 	<Survival_Defeat>
 		Variable_Self.Force == 0.0
 	</Survival_Defeat>
+
+	
+	<Need_Bootana_Unit>
+		Variable_Self.HasUnit{Parameter_Type = "Hutt_Shipyard_Level_One",
+								Parameter_Type = "Hutt_Shipyard_Level_Two",
+								Parameter_Type = "Hutt_Shipyard_Level_Three",
+								Parameter_Type = "Hutt_Shipyard_Level_Four"}
+		*
+		(1.2 > (Variable_Self.EnemyForceUnnormalized / Variable_Self.FriendlyForceUnnormalized))
+		*
+		(Variable_Self.EnemyForceUnnormalized > Variable_Self.FriendlyForceUnnormalized)
+	</Need_Bootana_Unit>
 
 </Equations>

@@ -44,14 +44,14 @@ function Begin_GC(message)
         GameObjectLibrary = ModContentLoader.get("GameObjectLibrary")
         local plot = StoryUtil.GetPlayerAgnosticPlot()
 
-        local holocron_event = plot.Get_Event("Show_Debug_Display")
+        --local holocron_event = plot.Get_Event("Show_Debug_Display")
         
-        local holocron_sink = require("deepcore/log/sinks/holocron-window")
-                                :with_event(holocron_event)
+        --local holocron_sink = require("deepcore/log/sinks/holocron-window")
+        --                        :with_event(holocron_event)
 
-        Logger = require("deepcore/log/logger")
-                :with_sink(holocron_sink)
-                :with_log_level(3)
+        --Logger = require("deepcore/log/logger")
+        --        :with_sink(holocron_sink)
+        --        :with_log_level(3)
 
         local era = Find_Player("local").Get_Tech_Level()
         if Find_Player("local") == Find_Player("Rebel") then

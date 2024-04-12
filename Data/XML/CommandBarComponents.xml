@@ -205,7 +205,25 @@
                 <Click_SFX>GUI_Dial_Switch_SFX</Click_SFX>
                 <Click_Shift>True</Click_Shift>
         </CommandBarComponent>
-		
+		<!--
+		<CommandBarComponent Name="b_doc_filter06">
+                <Type>Button</Type>
+                <Tooltip_Text>TEXT_TOOLTIP_EVENT_MENU</Tooltip_Text>
+                <Blank_Texture_Name>EVENT_MENU.tga</Blank_Texture_Name>
+                <Icon_Texture_Name>EVENT_MENU.tga</Icon_Texture_Name>
+                <Mouse_Over_Texture_Name>EVENT_MENU_HOVER.tga</Mouse_Over_Texture_Name>
+                <Selected_Texture_Name>EVENT_MENU_HOVER.tga</Selected_Texture_Name>
+                <Disabled_Texture_Name>EVENT_MENU.tga</Disabled_Texture_Name>
+                <Flash_Texture_Name>EVENT_MENU_FLASH.tga</Flash_Texture_Name>
+                <Group>FilterBuilds</Group>
+                <Swap_Texture>False</Swap_Texture>
+                <Selected_Alpha>True</Selected_Alpha>
+                <Scale>0.5</Scale>
+                <Mouse_Over_SFX>GUI_Highlight_Mouse_Over</Mouse_Over_SFX>
+                <Click_SFX>GUI_Dial_Switch_SFX</Click_SFX>
+                <Click_Shift>True</Click_Shift>
+        </CommandBarComponent>
+		-->
 		<CommandBarComponent Name="b_doc_important01">
                 <Type>Button</Type>
                 <Tooltip_Text>TEXT_TOOLTIP_DOCUMENTATION_GOVERNMENT</Tooltip_Text>
@@ -7073,7 +7091,8 @@
                 <Type>Button</Type>
                 <Blank_Texture_Name> fleet_empty.tga fleet_stacks_01.tga fleet_stacks_02.tga fleet_stacks_03.tga fleet_stacks_04.tga fleet_stacks_05.tga </Blank_Texture_Name>
                 <!-- Order of icons : Rebel, Empire, Pirate, Raid, Death Star -->
-                <Icon_Alternate_Texture_Name>i_encyclopedia_rebel_symbol.tga i_encyclopedia_empire_symbol.tga i_encyclopedia_pirates_symbol.tga i_encyclopedia_underworld_symbol.tga i_encyclopedia_hutt_symbol.tga i_button_command_bar_rebel_symbol_raid.tga i_button_command_bar_death_star_symbol.tga</Icon_Alternate_Texture_Name>
+                <!-- <Icon_Alternate_Texture_Name>i_encyclopedia_rebel_symbol.tga i_encyclopedia_empire_symbol.tga i_encyclopedia_pirates_symbol.tga i_encyclopedia_underworld_symbol.tga i_encyclopedia_hutt_symbol.tga i_button_command_bar_rebel_symbol_raid.tga i_button_command_bar_death_star_symbol.tga</Icon_Alternate_Texture_Name> -->
+                <Icon_Alternate_Texture_Name></Icon_Alternate_Texture_Name>
                 <Mouse_Over_Texture_Name>i_button_unit_frame_space.tga i_button_unit_frame_space.tga i_button_unit_frame_space.tga i_button_unit_frame_space.tga</Mouse_Over_Texture_Name>
                 <No_Shell>True</No_Shell>
                 <Scale>1.0</Scale>
@@ -8356,23 +8375,6 @@
                 <Base_Layer>9</Base_Layer>
         </CommandBarComponent>
 
-        <CommandBarComponent Name="h_close">
-                <Type>TextButton</Type>
-                <Icon_Texture_Name>i_reinforcement_button.tga</Icon_Texture_Name>
-                <Mouse_Over_Texture_Name>i_reinforcement_button_mouse_over.tga</Mouse_Over_Texture_Name>
-                <Selected_Texture_Name>i_reinforcement_button_pressed.tga</Selected_Texture_Name>
-                <Scale>1.0</Scale>
-                <Font_Name>EmpireAtWar-Medium</Font_Name>
-                <Font_Point_Size>7</Font_Point_Size>
-                <Text_Offset>0 -1</Text_Offset>
-                <Text_Color>37 37 47 255</Text_Color>
-                <Mouse_Over_SFX>GUI_Highlight_Mouse_Over</Mouse_Over_SFX>
-                <Text_Outline>False</Text_Outline>
-                <Text_Emboss>True</Text_Emboss>
-                <Swap_Texture>True</Swap_Texture>
-                <Base_Layer>9</Base_Layer>
-        </CommandBarComponent>
-
         <CommandBarComponent Name="h_0000">
                 <Type>TextButton</Type>
                 <Mouse_Over_Texture_Name>i_button_unit_frame_select.tga</Mouse_Over_Texture_Name>
@@ -8562,12 +8564,12 @@
                 <Text_Color>255 255 255 255</Text_Color>
                 <Text_Outline>False</Text_Outline>
 				<Tooltip_Text>TEXT_TOOLTIP_PAUSE_PLAY</Tooltip_Text>
-                <Left_Justified>True</Left_Justified>
+                <Left_Justified>False</Left_Justified>
                 <Group>TargetTypeName</Group>
                 <No_Hidden_Collision>True</No_Hidden_Collision>
                 <Base_Layer>9</Base_Layer>
                 <Size>1 180</Size>
-                <Text_Offset2>0 -10</Text_Offset2>
+                <Text_Offset2>0 0</Text_Offset2>
         </CommandBarComponent>
 
         <CommandBarComponent Name="h_name_01">
@@ -8581,8 +8583,8 @@
                 <Group>TargetTypeName</Group>
                 <No_Hidden_Collision>True</No_Hidden_Collision>
                 <Base_Layer>9</Base_Layer>
-                <Size>1 1000</Size>
-                <Text_Offset2>0 -10</Text_Offset2>
+                <Size>1000 1000</Size>
+                <Text_Offset2>0 0</Text_Offset2>
         </CommandBarComponent>
 
         <CommandBarComponent Name="h_name_02">
@@ -8596,7 +8598,7 @@
                 <Group>TargetTypeName</Group>
                 <No_Hidden_Collision>True</No_Hidden_Collision>
                 <Base_Layer>9</Base_Layer>
-                <Size>1 95</Size>
+                <Size>20 200</Size>
                 <Text_Offset2>0 -10</Text_Offset2>
         </CommandBarComponent>
 
@@ -8611,7 +8613,7 @@
                 <Group>TargetTypeName</Group>
                 <No_Hidden_Collision>True</No_Hidden_Collision>
                 <Base_Layer>9</Base_Layer>
-                <Size>1 95</Size>
+                <Size>20 200</Size>
                 <Text_Offset2>0 -10</Text_Offset2>
         </CommandBarComponent>
 

@@ -1,6 +1,7 @@
 require("eawx-util/UnitUtil")
 require("PGStoryMode")
 require("PGSpawnUnits")
+require("SetFighterResearch")
 
 return {
 	on_enter = function(self, state_context)
@@ -12,7 +13,6 @@ return {
 		self.entry_time = GetCurrentTime()
 
 		if self.entry_time <= 5 then
-
 			if GlobalValue.Get("IS_DCC") == true then
 				UnitUtil.SetLockList("EMPIRE", {
 					"Eidolon",
@@ -37,16 +37,9 @@ return {
 				UnitUtil.SetLockList("EMPIRE", {
 					"Generic_Executor",
 					"Eidolon",
-					"Imperial_Boarding_Shuttle",
-					"Incom_HQ",
-					"SoroSuub_HQ",
-					"Ysalamiri_Stormtrooper_Squad",
-					"Noghri_Assassin_Squad",
 					"Imperial_PX10_Company",
 					"Imperial_AT_ST_Company",
 					"Imperial_AT_AT_Company",
-					"Mekuun_HQ",
-					"Cygnus_HQ",
 					-- Historical-only units
 					"Imperial_Navy_Commando_Squad"
 				}, false)
@@ -79,6 +72,7 @@ return {
 			})
 			
 			UnitUtil.SetLockList("PENTASTAR", {
+				"Cygnus_HQ",
 				"Merkuni_HQ"
 			})
 
@@ -98,7 +92,6 @@ return {
 			UnitUtil.SetLockList("ZSINJ_EMPIRE", {
 				"TaggeCo_HQ"
 			}, false)
-			
 		else
 			
 			UnitUtil.SetLockList("REBEL", {
@@ -121,13 +114,11 @@ return {
 				"Imperial_AT_AT_Company",
 			}, false)
 
-			UnitUtil.SetLockList("EMPIRE", {
+			UnitUtil.SetLockList("EMPIRE", {	 
 				"Imperial_AT_AT_Refit_Company",
 				"Imperial_AT_ST_A_Company",
 			})
-
 		end
-
 	end,
 	on_update = function(self, state_context)  
 	end,

@@ -752,7 +752,7 @@
 
 	<!-- General set of filters for ranking (highest to lowest) for multiply selected units and command responses - like select, move, attack, guard, etc. -->
 
-	<Unit_Command_Rankings_By_Category> Hero, SuperCapital, Capital, Frigate, Corvette, Transport, Bomber, Fighter, SpaceStructure, Air, Vehicle, Infantry, Structure </Unit_Command_Rankings_By_Category>
+	<Unit_Command_Rankings_By_Category> Hero, SuperCapital, Capital, Frigate, Corvette, Gunship, Transport, Bomber, Fighter, SpaceStructure, Air, Vehicle, Infantry, Structure </Unit_Command_Rankings_By_Category>
 
 	<!-- Culling system constants -->
 	<Space_Collidable_Grid_Cull_Size>500.0</Space_Collidable_Grid_Cull_Size>
@@ -767,8 +767,8 @@
 	<Raid_Force_Free_Object_Category_Mask>  </Raid_Force_Free_Object_Category_Mask>	<!-- can have as many of these as you want -->
 
 	<!-- Subjective thresholds for unit health levels - used by game object type SFXEvent triggers -->
-	<Health_Low_Percent_Threshold> 0.33 </Health_Low_Percent_Threshold>
-	<Health_Critical_Percent_Threshold> 0.10 </Health_Critical_Percent_Threshold>
+	<Health_Low_Percent_Threshold> 0.50 </Health_Low_Percent_Threshold>
+	<Health_Critical_Percent_Threshold> 0.25 </Health_Critical_Percent_Threshold>
 
 	<Under_Construction_Damage_Multiplier> 2.0 </Under_Construction_Damage_Multiplier>
 
@@ -806,6 +806,7 @@
 		DamageL_Slug,
 		DamageL_InfantrySlug,
 		DamageL_Plasma,
+		DamageL_InfantryPulseWave,
 		<!-- TR Rework Space Damage types -->
 		DamageS_Laser,
 		DamageS_Ion,
@@ -1199,6 +1200,21 @@
 	<Damage_To_Armor_Mod> DamageL_Plasma, ArmourG_Structure, 0.7 </Damage_To_Armor_Mod>
 	<Damage_To_Armor_Mod> DamageL_Plasma, ArmourG_Speeder, 0.65 </Damage_To_Armor_Mod>
 	<Damage_To_Armor_Mod> DamageL_Plasma, ArmourG_SpeederHeavy, 0.55 </Damage_To_Armor_Mod>	
+	
+	<Damage_To_Armor_Mod> DamageL_InfantryPulseWave, ShieldG_Infantry, 1.0 </Damage_To_Armor_Mod>
+	<Damage_To_Armor_Mod> DamageL_InfantryPulseWave, ShieldG_LightVehicle, 0.125 </Damage_To_Armor_Mod>
+	<Damage_To_Armor_Mod> DamageL_InfantryPulseWave, ShieldG_HeavyVehicle, 0.06 </Damage_To_Armor_Mod>
+	<Damage_To_Armor_Mod> DamageL_InfantryPulseWave, ShieldG_Speeder, 0.125 </Damage_To_Armor_Mod>
+	<Damage_To_Armor_Mod> DamageL_InfantryPulseWave, ArmourG_Infantry, 1.0 </Damage_To_Armor_Mod>
+	<Damage_To_Armor_Mod> DamageL_InfantryPulseWave, ArmourG_Droid, 1.0 </Damage_To_Armor_Mod>
+	<Damage_To_Armor_Mod> DamageL_InfantryPulseWave, ArmourG_LightVehicle, 0.06 </Damage_To_Armor_Mod>
+	<Damage_To_Armor_Mod> DamageL_InfantryPulseWave, ArmourG_MediumVehicle, 0.03 </Damage_To_Armor_Mod>
+	<Damage_To_Armor_Mod> DamageL_InfantryPulseWave, ArmourG_HeavyVehicle, 0.03 </Damage_To_Armor_Mod>
+	<Damage_To_Armor_Mod> DamageL_InfantryPulseWave, ArmourG_Hero, 0.06 </Damage_To_Armor_Mod>
+	<Damage_To_Armor_Mod> DamageL_InfantryPulseWave, ArmourG_Structure, 0.05 </Damage_To_Armor_Mod>
+	<Damage_To_Armor_Mod> DamageL_InfantryPulseWave, ArmourG_Speeder, 0.06 </Damage_To_Armor_Mod>
+	<Damage_To_Armor_Mod> DamageL_InfantryPulseWave, ArmourG_SpeederHeavy, 0.03 </Damage_To_Armor_Mod>
+
 
 	<!-- Damage Armour Reworked Matrix - Space -->
 	
@@ -2238,9 +2254,9 @@
 
 	<!-- Menu Battle Maps info -->
 	
-	<Demo_Attract_Maps> End_Demo_Attract_Space.ted</Demo_Attract_Maps>
+	<Demo_Attract_Maps> End_Demo_Attract_Space_Orinda.ted, End_Demo_Attract_Space_Bilbringi.ted, End_Demo_Attract_Space_Hapan_Assault.ted, End_Demo_Attract_EotH_Defence.ted </Demo_Attract_Maps>
 	<Demo_Attract_Start_Timeout_Seconds>7200</Demo_Attract_Start_Timeout_Seconds>
-	<Demo_Attract_Map_Cycle_Delay_Seconds> 500 </Demo_Attract_Map_Cycle_Delay_Seconds>
+	<Demo_Attract_Map_Cycle_Delay_Seconds> 90, 90, 90, 90 </Demo_Attract_Map_Cycle_Delay_Seconds>
 
 	<Battle_Pending_Timeout_Seconds> 15 </Battle_Pending_Timeout_Seconds>
 
@@ -2297,7 +2313,7 @@
 	<Activated_Siphon_Credits_Ability_Names> </Activated_Siphon_Credits_Ability_Names>
 	<Activated_System_Spy_Ability_Names> Probe_Droid_System_Spy, Bothan_Spy_System_Spy </Activated_System_Spy_Ability_Names>
 	<Activated_Destroy_Planet_Ability_Names> Death_Star_Planet_Destruction </Activated_Destroy_Planet_Ability_Names>
-	<Activated_Corrupt_Planet_Ability_Names> </Activated_Corrupt_Planet_Ability_Names>
+	<Activated_Corrupt_Planet_Ability_Names> Open_Neutralize_Hero </Activated_Corrupt_Planet_Ability_Names>
 	<Activated_Remove_Corruption_Ability_Names>  </Activated_Remove_Corruption_Ability_Names>
 	<Activated_Hack_Super_Weapon_Ability_Names> </Activated_Hack_Super_Weapon_Ability_Names>
 
@@ -2323,7 +2339,7 @@
 	<MP_Default_Allow_SuperWeapons>						yes		</MP_Default_Allow_SuperWeapons>
 	<MP_Default_Pre_Built_Base>							yes		</MP_Default_Pre_Built_Base>
 	<MP_Default_Allow_Random_Events>						no			</MP_Default_Allow_Random_Events>
-	<MP_Default_Free_Starting_Units>						yes		</MP_Default_Free_Starting_Units>
+	<MP_Default_Free_Starting_Units>						no		</MP_Default_Free_Starting_Units>
 	<MP_Default_Land_Tactical_Win_Condition>SKIRMISH_ALL_ENEMY_BASE_COMPONENTS_DESTROYED</MP_Default_Land_Tactical_Win_Condition>
 	<MP_Default_Space_Tactical_Win_Condition>SKIRMISH_SPACE_ENEMY_STARBASE_DESTROYED</MP_Default_Space_Tactical_Win_Condition>
 
@@ -2357,8 +2373,8 @@
 	<MP_Color_Orange>239, 139, 9</MP_Color_Orange>
 	<MP_Color_Cyan>102, 188, 217</MP_Color_Cyan>
 	<MP_Color_Purple>212, 81, 255</MP_Color_Purple>
-	<MP_Color_Yellow>224,215,111</MP_Color_Yellow>
-	<MP_Color_Gray>179, 148, 105</MP_Color_Gray>
+	<MP_Color_Yellow>247, 201, 13</MP_Color_Yellow>
+	<MP_Color_Gray>148, 133, 60</MP_Color_Gray>
 	<MP_Color_Eight>142, 195, 0</MP_Color_Eight>
 
 	<!-- Localized splash screen asset names -->
@@ -2426,14 +2442,14 @@
 		Imperial_Armor_Group,
 		Imperial_Artillery_Corp,
 		Imperial_AT_AT_Company,
-		Navy_Trooper_Squad,
-		Enforcer_Trooper_Squad,
-		Army_Guard_Squad,
-		Army_Trooper_Squad,
+		Imperial_Navy_Trooper_Squad,
+		Pentastar_Enforcer_Trooper_Squad,
+		Imperial_Army_Guard_Squad,
+		Imperial_Army_Trooper_Squad,
 		Pentastar_Army_Trooper_Squad,
-		EVO_Trooper_Platoon,
+		Zsinj_EVO_Trooper_Squad,
 		Imperial_Navy_Commando_Squad,
-		Army_Special_Missions_Squad,
+		Imperial_Army_Special_Missions_Squad,
 		Imperial_Dark_Stormtrooper_Squad,
 		Imperial_Army_Commando_Squad,
 		Imperial_Fleet_Commando_Squad,
@@ -2487,6 +2503,8 @@
 		Endurance, 							Data\ShipNames\Endurance.txt,
 		Majestic, 							Data\ShipNames\Majestic.txt,
 		Corellian_Corvette, 				Data\ShipNames\Corellian_Corvette.txt,
+		CR92a_Rebel, 						Data\ShipNames\Corellian_Corvette.txt,
+		Charger_C70, 						Data\ShipNames\C70.txt,
 		Corellian_Buccaneer, 				Data\ShipNames\Buccaneer.txt,
 		Action_VI_Support, 					Data\ShipNames\Action.txt,
 		Corellian_Gunboat, 					Data\ShipNames\Corellian_Gunboat.txt,
@@ -2510,9 +2528,9 @@
 		BAC, 								Data\ShipNames\Bothan_Assault_Cruiser.txt,
 		Home_One_Type, 						Data\ShipNames\home_one.txt,
 		Dauntless, 							Data\ShipNames\Dauntless.txt,
+		Dauntless_Transport,				Data\ShipNames\Dauntless.txt,
+		VSD_1_NR, 							Data\ShipNames\NR_Star_Destroyer.txt,
 		ISD_1_NR, 							Data\ShipNames\NR_Star_Destroyer.txt,
-		AMM_BattleDragon, 					Data\ShipNames\Battle_Dragon.txt,
-		AMM_Nova_Cruiser, 					Data\ShipNames\Nova_Cruiser.txt,
 		Republic_Boarding_Shuttle,			Data\ShipNames\GR75.txt,
 		CC7700,								Data\ShipNames\CC7700.txt,
 		CC7700_E,							Data\ShipNames\CC7700E.txt,
@@ -2590,9 +2608,11 @@
 		Strike_Cruiser_Gorath, 				Data\ShipNames\Strike_Cruiser.txt,
 		Strike_Interdictor, 				Data\ShipNames\Strike_Interdictor.txt,
 		Eidolon, 							Data\ShipNames\Eidolon.txt,
+		Generic_Maelstrom,					Data\ShipNames\Maelstrom.txt,
 		Generic_Victory_Destroyer, 			Data\ShipNames\Victory_Destroyer.txt,
 		Generic_Victory_Destroyer_Two, 		Data\ShipNames\victory_destroyer_II.txt,
 		Generic_Venator, 					Data\ShipNames\Venator.txt,
+		Venator_Refit, 						Data\ShipNames\Venator.txt,
 		Crimson_Victory, 					Data\ShipNames\Crimson_Command.txt,
 		MTC_Support, 						Data\ShipNames\MTC.txt,
 		Dreadnaught_Empire, 				Data\ShipNames\Dreadnaught_Imperial.txt,
@@ -2600,12 +2620,16 @@
 		Vindicator_Cruiser, 				Data\ShipNames\Vindicator.txt,
 		Carrack_Cruiser, 					Data\ShipNames\Carrack.txt,
 		Lancer_Frigate, 					Data\ShipNames\Lancer.txt,
+		Lancer_Frigate_Prototype, 			Data\ShipNames\Lancer.txt,
+		Lancer_Frigate_PDF, 				Data\ShipNames\Lancer.txt,
 		Imperial_Boarding_Shuttle,			Data\ShipNames\Sentinel.txt,
 		CR90_Zsinj, 						Data\ShipNames\Zsinj_CR90.txt,
 		CR92_Assassin, 						Data\ShipNames\CR92.txt,
+		DP20_Zsinj, 						Data\ShipNames\CR92.txt,
 		Nebulon_B_Zsinj, 					Data\ShipNames\Zsinj_NebulonB.txt,
 		Nebulon_B_Empire, 					Data\ShipNames\Zsinj_NebulonB.txt,
 		IPV1_System_Patrol_Craft, 			Data\ShipNames\IPV.txt,
+		IPV1_Gunboat, 						Data\ShipNames\IPV.txt,
 		IPV4, 								Data\ShipNames\IPV.txt,
 		Tartan_Patrol_Cruiser,              Data\ShipNames\tartan_patrol_cruiser.txt,
 		Generic_Bellator, 					Data\ShipNames\Bellator.txt,
@@ -2613,6 +2637,7 @@
 		Generic_Mandator_III, 				Data\ShipNames\Mandator.txt,
 		Generic_Secutor, 					Data\ShipNames\Secutor.txt,
 		Neutron_Star, 						Data\ShipNames\Neutron_Star.txt,
+		Neutron_Star_Mercenary,				Data\ShipNames\Neutron_Star.txt,
 		Neutron_Star_Tender, 				Data\ShipNames\Neutron_Star.txt,		
 		Crusader_Gunship, 					Data\ShipNames\Crusader.txt,
 		Arquitens, 							Data\ShipNames\Arquitens.txt,
@@ -2658,6 +2683,7 @@
 		Super_Transport_VII_Interdictor, 	Data\ShipNames\Super_Transport_VII.txt,
 		Super_Transport_XI, 				Data\ShipNames\Super_Transport_XI.txt,
 		Super_Transport_XI_Modified, 		Data\ShipNames\Super_Transport_XI.txt,
+		Kuari_Princess_Liner, 				Data\ShipNames\Cruise_Liner.txt,
 		Calamari_Cruiser_Liner, 			Data\ShipNames\Cruise_Liner.txt,		
 		Home_One_Type_Liner, 				Data\ShipNames\Cruise_Liner.txt,		
 	</ShipNameTextFiles>
@@ -2681,6 +2707,7 @@
 		Skirmish_Victory_Destroyer, 		Data\ShipNames\Victory_Destroyer.txt,
 		Skirmish_Victory_Destroyer_Two, 	Data\ShipNames\victory_destroyer_II.txt,
 		Skirmish_Venator, 					Data\ShipNames\Venator.txt,
+		Skirmish_Venator_Refit,				Data\ShipNames\Venator.txt,
 		Skirmish_Crimson_Victory, 			Data\ShipNames\Crimson_Command.txt,
 		Skirmish_MTC_Support, 				Data\ShipNames\MTC.txt,
 		Skirmish_MTC_Combat, 				Data\ShipNames\MTC.txt,		
@@ -2690,6 +2717,7 @@
 		Skirmish_Lancer_Frigate, 			Data\ShipNames\Lancer.txt,
 		Skirmish_Lucrehulk, 				Data\ShipNames\Lucrehulk.txt,
 		Skirmish_IPV1, 						Data\ShipNames\IPV.txt,
+		Skirmish_IPV1_Gunboat, 				Data\ShipNames\IPV.txt,
 		Skirmish_IPV4, 						Data\ShipNames\IPV.txt,		
 		Skirmish_Tartan_Patrol_Cruiser,     Data\ShipNames\tartan_patrol_cruiser.txt,
 		Skirmish_Secutor, 					Data\ShipNames\Secutor.txt,
@@ -2803,6 +2831,15 @@
 		Skirmish_Terephon_Cruiser, 			Data\ShipNames\Terephon.txt,
 		Skirmish_Mist_Carrier, 				Data\ShipNames\Mist.txt,
 		Skirmish_Neutron_Cruiser, 			Data\ShipNames\Neutron_Hapes.txt,
+		
+		Gallofree_Transport_Commander_Hapes	Data\ShipNames\Cadet_Hapes.txt,
+		Royal_Commander,					Data\ShipNames\Cadet_Hapes.txt,
+		Galney_Commander,					Data\ShipNames\Cadet_Hapes.txt,
+		Thane_Commander,					Data\ShipNames\Cadet_Hapes.txt,
+		Maluri_Commander,					Data\ShipNames\Cadet_Hapes.txt,
+		Requud_Commander,					Data\ShipNames\Cadet_Hapes.txt,
+		AlGray_Commander,					Data\ShipNames\Cadet_Hapes.txt,
+		Corr_Commander,						Data\ShipNames\Cadet_Hapes.txt,
 	</ShipNameTextFiles>
 
 
@@ -2837,7 +2874,8 @@
 		Bulwark_III, 						Data\ShipNames\Bulwark_III.txt,
 		Captor, 							Data\ShipNames\Captor.txt,
 		Skirmish_Etti_Lighter, 				Data\ShipNames\Etti.txt,
-		Skirmish_Marauder, 					Data\ShipNames\Marauder_Cruiser.txt,		
+		Skirmish_Marauder, 					Data\ShipNames\Marauder_Cruiser.txt,
+		Skirmish_Marauder_Missile_Cruiser, 	Data\ShipNames\Marauder_Cruiser.txt,		
 		Skirmish_Invincible, 				Data\ShipNames\Invincible.txt,
 		Skirmish_Recusant, 					Data\ShipNames\Recusant.txt,
 		Skirmish_Bulwark_I, 				Data\ShipNames\Bulwark_I.txt,
@@ -2860,12 +2898,49 @@
 	</ShipNameTextFiles>
 	
 	<ShipNameTextFiles>
+		Warlord_Cruiser, 					Data\ShipNames\Warlord_Hutt.txt,
 		Ubrikkian_Frigate, 					Data\ShipNames\Ubrikkian_Frigate.txt,
 		Heavy_Minstrel_Yacht, 				Data\ShipNames\Minstrel.txt,
 		Kaloth_Battlecruiser, 				Data\ShipNames\Kaloth.txt,
 		Juvard_Frigate, 					Data\ShipNames\Juvard.txt,
 		Barabbula_Frigate, 					Data\ShipNames\Barabbula.txt,
 		Kossak_Frigate, 					Data\ShipNames\Kossak.txt,
+		Ubrikkian_Cruiser_GCW, 				Data\ShipNames\Agrelcu.txt,
+		Tempest_Cruiser, 					Data\ShipNames\Tempest.txt,
+		Raka_Freighter_Tender, 				Data\ShipNames\Raka.txt,
+		Szajin_Cruiser, 					Data\ShipNames\Szajin.txt,
+		Karagga_Destroyer, 					Data\ShipNames\Karagga.txt,
+		Vontor_Destroyer, 					Data\ShipNames\Vontor.txt,
+		Tarrada_Frigate, 					Data\ShipNames\Tarrada.txt,
+		Batil_Carrier, 						Data\ShipNames\Batil.txt,
+		Chelandion_Cruiser, 				Data\ShipNames\Chelandion.txt,
+		Karabos_Destroyer, 					Data\ShipNames\Karabos.txt,
+		Voracious_Carrier, 					Data\ShipNames\Voracious.txt,
+		Dorbulla_Warship, 					Data\ShipNames\Dorbulla.txt,
+		Dreadnaught_Lasers, 				Data\ShipNames\Dreadnaught_Republic.txt,
+	</ShipNameTextFiles>
+	
+	<ShipNameTextFiles>
+		Skirmish_Warlord_Cruiser, 					Data\ShipNames\Warlord_Hutt.txt,
+		Skirmish_Ubrikkian_Frigate, 				Data\ShipNames\Ubrikkian_Frigate.txt,
+		Skirmish_Heavy_Minstrel_Yacht, 				Data\ShipNames\Minstrel.txt,
+		Skirmish_Kaloth_Battlecruiser, 				Data\ShipNames\Kaloth.txt,
+		Skirmish_Juvard_Frigate, 					Data\ShipNames\Juvard.txt,
+		Skirmish_Barabbula_Frigate, 				Data\ShipNames\Barabbula.txt,
+		Skirmish_Kossak_Frigate, 					Data\ShipNames\Kossak.txt,
+		Skirmish_Ubrikkian_Cruiser_GCW, 			Data\ShipNames\Agrelcu.txt,
+		Skirmish_Tempest_Cruiser, 					Data\ShipNames\Tempest.txt,
+		Skirmish_Raka_Freighter_Tender, 			Data\ShipNames\Raka.txt,
+		Skirmish_Szajin_Cruiser, 					Data\ShipNames\Szajin.txt,
+		Skirmish_Karagga_Destroyer, 				Data\ShipNames\Karagga.txt,
+		Skirmish_Vontor_Destroyer, 					Data\ShipNames\Vontor.txt,
+		Skirmish_Tarrada_Frigate, 					Data\ShipNames\Tarrada.txt,
+		Skirmish_Batil_Carrier, 					Data\ShipNames\Batil.txt,
+		Skirmish_Chelandion_Cruiser, 				Data\ShipNames\Chelandion.txt,
+		Skirmish_Karabos_Destroyer, 				Data\ShipNames\Karabos.txt,
+		Skirmish_Voracious_Carrier, 				Data\ShipNames\Voracious.txt,
+		Skirmish_DorBulla_Warship, 					Data\ShipNames\Dorbulla.txt,
+		Skirmish_Dreadnaught_Lasers_Hutts, 			Data\ShipNames\Dreadnaught_Republic.txt,
 	</ShipNameTextFiles>
 	
 	<ShipNameTextFiles>
@@ -2875,7 +2950,7 @@
 	</ShipNameTextFiles>
 
 	<ShipNameTextFiles>
-		Starbolt, 						Data\ShipNames\Starbolt.txt,
+		Starbolt, 							Data\ShipNames\Starbolt.txt,
 		Proficient, 						Data\ShipNames\Proficient.txt,
 		Proficient_Tender, 					Data\ShipNames\Proficient_Tender.txt,
 	</ShipNameTextFiles>
@@ -2886,13 +2961,12 @@
 		Imperial_Landing_Craft_Artillery,		Data\ShipNames\Dropship_Artillery.txt,
 		Imperial_Landing_Craft_Commando,		Data\ShipNames\Dropship_Commando.txt,
 		Imperial_Landing_Craft_Heavy,			Data\ShipNames\Dropship_Heavy.txt,
-		Imperial_Landing_Craft_LAAT,			Data\ShipNames\Dropship_LAAT.txt,
 		Imperial_Landing_Craft_Light_Vehicles,	Data\ShipNames\Dropship_Light_Vehicles.txt,
 		Imperial_Landing_Craft_Tanks,			Data\ShipNames\Dropship_Tanks.txt,
 		Imperial_Landing_Craft_Troops,			Data\ShipNames\Dropship_Troops.txt,
 		Imperial_ATAT_Barge_ATAT,				Data\ShipNames\Dropship_ATAT.txt,
 		Imperial_ATAT_Barge_Heavy,				Data\ShipNames\Dropship_Heavy.txt,
-		Imperial_ATAT_Barge_Artillery,				Data\ShipNames\Dropship_Artillery.txt,
+		Imperial_ATAT_Barge_Artillery,			Data\ShipNames\Dropship_Artillery.txt,
 		Imperial_Titan_Barge_Super,				Data\ShipNames\Dropship_ATAT.txt,
 		Gallofree_Transport_Air,				Data\ShipNames\Dropship_Air.txt,
 		Gallofree_Transport_Artillery,			Data\ShipNames\Dropship_Artillery.txt,
@@ -2901,8 +2975,9 @@
 		Gallofree_Transport_Light_Vehicles,		Data\ShipNames\Dropship_Light_Vehicles.txt,
 		Gallofree_Transport_Tanks,				Data\ShipNames\Dropship_Tanks.txt,
 		Gallofree_Transport_Troops,				Data\ShipNames\Dropship_Troops.txt,
+		Nova_Courier_Landing_Craft_Troops,		Data\ShipNames\Dropship_Troops.txt,
+		Kappa_Shuttle_Landing_Craft_Troops,		Data\ShipNames\Dropship_Troops.txt,
 		Shuttle_Tyderium_Commando,				Data\ShipNames\Dropship_Commando.txt,
-		Alliance_Shuttle_Commando,				Data\ShipNames\Dropship_Commando.txt,
 	</ShipNameTextFiles>
 	
 	<!-- Commander Names -->
@@ -2929,6 +3004,13 @@
 		Commander_Chaf_V,						Data\ShipNames\Cadet_EotH_Space.txt,
 		Commander_Kynigos_IV,					Data\ShipNames\Cadet_EotH_Space.txt,
 		Commander_Rohkea_III,					Data\ShipNames\Cadet_EotH_Space.txt,
+		Commander_Barabbula_Frigate_III,		Data\ShipNames\Cadet_Hutt_Space.txt,
+		Commander_PDF_Dreadnaught_IV,			Data\ShipNames\Cadet_Hutt_Space.txt,
+		Commander_Kossak_Frigate_IV,			Data\ShipNames\Cadet_Hutt_Space.txt,
+		Commander_Szajin_Cruiser_IV,			Data\ShipNames\Cadet_Hutt_Space.txt,
+		Commander_Karagga_Destroyer_V,			Data\ShipNames\Cadet_Hutt_Space.txt,
+		Commander_Venator_Refit_V,				Data\ShipNames\Cadet_Hutt_Space.txt,
+		Commander_Vontor_Destroyer_V,			Data\ShipNames\Cadet_Hutt_Space.txt,
 
 	</ShipNameTextFiles>
 
@@ -3095,30 +3177,32 @@
 	<!-- player and multiplayer -->
 	<Default_Bounty_By_Category_SP>Infantry, 0</Default_Bounty_By_Category_SP>
 	<Default_Bounty_By_Category_SP>Vehicle, 10</Default_Bounty_By_Category_SP>
-	<Default_Bounty_By_Category_SP>Air, 10</Default_Bounty_By_Category_SP>
+	<Default_Bounty_By_Category_SP>Air, 15</Default_Bounty_By_Category_SP>
 	<Default_Bounty_By_Category_SP>Structure, 150</Default_Bounty_By_Category_SP>
-	<Default_Bounty_By_Category_SP>Fighter, 1</Default_Bounty_By_Category_SP>
-	<Default_Bounty_By_Category_SP>Bomber, 1</Default_Bounty_By_Category_SP>
-	<Default_Bounty_By_Category_SP>Corvette, 20</Default_Bounty_By_Category_SP>
-	<Default_Bounty_By_Category_SP>Frigate, 20</Default_Bounty_By_Category_SP>
+	<Default_Bounty_By_Category_SP>Fighter, 0</Default_Bounty_By_Category_SP>
+	<Default_Bounty_By_Category_SP>Bomber, 0</Default_Bounty_By_Category_SP>
+	<Default_Bounty_By_Category_SP>Corvette, 10</Default_Bounty_By_Category_SP>
+	<Default_Bounty_By_Category_SP>Frigate, 25</Default_Bounty_By_Category_SP>
 	<Default_Bounty_By_Category_SP>Capital, 100</Default_Bounty_By_Category_SP>
-	<Default_Bounty_By_Category_SP>SuperCapital, 1000</Default_Bounty_By_Category_SP>
-	<!--<Default_Bounty_By_Category_SP>SpaceHero, 500</Default_Bounty_By_Category_SP>-->
-	<Default_Bounty_By_Category_SP>LandHero, 500</Default_Bounty_By_Category_SP>
+	<Default_Bounty_By_Category_SP>SuperCapital, 2000</Default_Bounty_By_Category_SP>
+	<Default_Bounty_By_Category_SP>SpaceStructure, 150</Default_Bounty_By_Category_SP>
+	<Default_Bounty_By_Category_SP>SpaceHero, 250</Default_Bounty_By_Category_SP>
+	<Default_Bounty_By_Category_SP>LandHero, 250</Default_Bounty_By_Category_SP>
 
-	<Default_Bounty_By_Category_MP>Infantry, 0</Default_Bounty_By_Category_MP>
+	<Default_Bounty_By_Category_MP>Infantry, 1</Default_Bounty_By_Category_MP>
 	<Default_Bounty_By_Category_MP>Vehicle, 10</Default_Bounty_By_Category_MP>
-	<Default_Bounty_By_Category_MP>Air, 10</Default_Bounty_By_Category_MP>
+	<Default_Bounty_By_Category_MP>Air, 15</Default_Bounty_By_Category_MP>
 	<Default_Bounty_By_Category_MP>Structure, 150</Default_Bounty_By_Category_MP>
 	<Default_Bounty_By_Category_MP>Fighter, 1</Default_Bounty_By_Category_MP>
 	<Default_Bounty_By_Category_MP>Bomber, 1</Default_Bounty_By_Category_MP>
-	<Default_Bounty_By_Category_MP>Corvette, 20</Default_Bounty_By_Category_MP>
-	<Default_Bounty_By_Category_MP>Frigate, 20</Default_Bounty_By_Category_MP>
+	<Default_Bounty_By_Category_MP>Corvette, 10</Default_Bounty_By_Category_MP>
+	<Default_Bounty_By_Category_MP>Frigate, 25</Default_Bounty_By_Category_MP>
 	<Default_Bounty_By_Category_MP>Capital, 100</Default_Bounty_By_Category_MP>
-	<Default_Bounty_By_Category_MP>SpaceHero, 500</Default_Bounty_By_Category_MP>
-	<Default_Bounty_By_Category_MP>LandHero, 500</Default_Bounty_By_Category_MP>
+	<Default_Bounty_By_Category_MP>SpaceStructure, 150</Default_Bounty_By_Category_MP>
+	<Default_Bounty_By_Category_MP>SpaceHero, 250</Default_Bounty_By_Category_MP>
+	<Default_Bounty_By_Category_MP>LandHero, 250</Default_Bounty_By_Category_MP>
 
-   <Corruption_Hyperspace_Bonus> 1.0 </Corruption_Hyperspace_Bonus>
+	<Corruption_Hyperspace_Bonus> 1.0 </Corruption_Hyperspace_Bonus>
 
 	<!-- The following corruption type-related entries need to be listed in the following order:
 		0.	Corruption_Intimidation

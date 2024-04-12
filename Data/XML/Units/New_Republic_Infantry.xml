@@ -72,8 +72,6 @@
 		<Victory_Relevant>yes</Victory_Relevant>
 		<Create_Team>Yes</Create_Team>
 
-		<Override_Bounty_SP/>
-		<Override_Bounty_MP/>
 		<Tactical_Bribe_Cost>25</Tactical_Bribe_Cost>
 
 		<GalacticBehavior> SELECTABLE </GalacticBehavior>
@@ -197,7 +195,7 @@
 				<Type>SPREAD_OUT</Type>
 				<Mod_Multiplier>SPEED_MULTIPLIER,	 0.5f</Mod_Multiplier>
 				<Mod_Multiplier>TAKE_DAMAGE_MULTIPLIER, 0.75f</Mod_Multiplier>
-				<SFXEvent_GUI_Unit_Ability_Activated>Unit_Take_Cover_Storm_Trooper</SFXEvent_GUI_Unit_Ability_Activated>
+				<SFXEvent_GUI_Unit_Ability_Activated>Unit_Take_Cover_Rebel_Soldier</SFXEvent_GUI_Unit_Ability_Activated>
 			</Unit_Ability>
 		</Unit_Abilities_Data>
 		<Conversion_Ability_Changes_To_Enemy> Rebel_Trooper_Converted_To_Enemy </Conversion_Ability_Changes_To_Enemy>
@@ -223,6 +221,7 @@
 		<Projectile_Fire_Pulse_Count>1</Projectile_Fire_Pulse_Count>
 		<Projectile_Fire_Pulse_Delay_Seconds>0.2</Projectile_Fire_Pulse_Delay_Seconds>
 		<Projectile_Appearance_Delay_Frames> 8 </Projectile_Appearance_Delay_Frames>
+		<SFXEvent_Fire>Unit_Grenade_Throw</SFXEvent_Fire>
 
 		<HardPoints>HP_DHX_Rifle, ArtHP_Defense_Trooper_Hide_Backpack, ArtHP_Defense_Trooper_Hide_Antenna</HardPoints>
 		<!-- Hide backpack and antenna on rifleman -->
@@ -295,6 +294,7 @@
 		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
 		TEXT_TOOLTIP_CAPABILITY_INFANTRY_CAPTURE
 		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_SUPPORT</Encyclopedia_Unit_Class>
 
 		<Land_Model_Name>RI_defense_trooper_medic.ALO</Land_Model_Name>
 		<Land_Terrain_Model_Mapping>
@@ -321,7 +321,6 @@
 				<Heal_Range_Blob_Material>Heal_Support_Radius_Overlay</Heal_Range_Blob_Material>
 				<!-- We can heal the following unit types: -->
 				<Applicable_Unit_Categories>Infantry, LandHero, Vehicle, Air</Applicable_Unit_Categories>
-				<Applicable_Unit_Types>Scout_Trooper, MPTL_Spotter, Veers_AT_AT_Walker, </Applicable_Unit_Types>
 				<SFXEvent_Target_Affected>Unit_Force_Healing_Pulse</SFXEvent_Target_Affected>
 				<Target_Particle_Effect>Shield_Sparks_Medium</Target_Particle_Effect>
 				<Target_Particle_Bone_Name>ROOT</Target_Particle_Bone_Name>
@@ -462,8 +461,6 @@
 		<Victory_Relevant>yes</Victory_Relevant>
 		<Create_Team>Yes</Create_Team>
 
-		<Override_Bounty_SP/>
-		<Override_Bounty_MP/>
 		<Tactical_Bribe_Cost>25</Tactical_Bribe_Cost>
 
 		<GalacticBehavior> SELECTABLE </GalacticBehavior>
@@ -511,13 +508,16 @@
 		<SFXEvent_Tactical_Build_Complete> RHD_Reinforcements_Available </SFXEvent_Tactical_Build_Complete>
 		<SFXEvent_Tactical_Build_Cancelled> RHD_Reinforcements_Cancelled  </SFXEvent_Tactical_Build_Cancelled>
 
-		<SFXEvent_Select>Unit_Select_Rebel_Soldier</SFXEvent_Select>
-		<SFXEvent_Move>Unit_Move_Rebel_Soldier</SFXEvent_Move>
-		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Rebel_Soldier</SFXEvent_Fleet_Move>
-		<SFXEvent_Attack>Unit_Attack_Rebel_Soldier</SFXEvent_Attack>
-		<SFXEvent_Assist_Move> Unit_Assist_Move_Rebel_Soldier </SFXEvent_Assist_Move>
-		<SFXEvent_Assist_Attack> Unit_Assist_Attack_Rebel_Soldier </SFXEvent_Assist_Attack>
-		<SFXEvent_Guard>Unit_Guard_Rebel_Soldier</SFXEvent_Guard>
+		<SFXEvent_Select>Unit_Select_Heavy_Trooper</SFXEvent_Select>
+		<SFXEvent_Move>Unit_Move_Heavy_Trooper</SFXEvent_Move>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Heavy_Trooper</SFXEvent_Fleet_Move>
+		<SFXEvent_Attack>Unit_Attack_Heavy_Trooper</SFXEvent_Attack>
+		<SFXEvent_Assist_Move> Unit_Assist_Move_Heavy_Trooper </SFXEvent_Assist_Move>
+		<SFXEvent_Assist_Attack> Unit_Assist_Attack_Heavy_Trooper </SFXEvent_Assist_Attack>
+		<SFXEvent_Guard>Unit_Guard_Heavy_Trooper</SFXEvent_Guard>
+		<SFXEvent_Health_Low_Warning> </SFXEvent_Health_Low_Warning>
+		<SFXEvent_Health_Critical_Warning> </SFXEvent_Health_Critical_Warning>
+		<Death_SFXEvent_Start_Die>Unit_Rebel_Soldier_2_Death</Death_SFXEvent_Start_Die>
 		
 		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_LASER, null </SFXEvent_Hardpoint_Destroyed>
 		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_MISSILE, null </SFXEvent_Hardpoint_Destroyed>
@@ -525,8 +525,6 @@
 		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_ION_CANNON, null </SFXEvent_Hardpoint_Destroyed>
 		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_FIGHTER_BAY, null </SFXEvent_Hardpoint_Destroyed>
 		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_DUMMY_ART, null </SFXEvent_Hardpoint_Destroyed>
-
-		<Death_SFXEvent_Start_Die>Unit_Rebel_Soldier_Death</Death_SFXEvent_Start_Die>
 
 		<MovementClass>Infantry</MovementClass>
 		<Space_Layer> Land </Space_Layer>
@@ -586,7 +584,7 @@
 				<Type>SPREAD_OUT</Type>
 				<Mod_Multiplier>SPEED_MULTIPLIER,	 0.5f</Mod_Multiplier>
 				<Mod_Multiplier>TAKE_DAMAGE_MULTIPLIER, 0.75f</Mod_Multiplier>
-				<SFXEvent_GUI_Unit_Ability_Activated>Unit_Take_Cover_Storm_Trooper</SFXEvent_GUI_Unit_Ability_Activated>
+				<SFXEvent_GUI_Unit_Ability_Activated> Unit_Take_Cover_Heavy_Trooper </SFXEvent_GUI_Unit_Ability_Activated>
 			</Unit_Ability>
 		</Unit_Abilities_Data>
 		<Conversion_Ability_Changes_To_Enemy> Rebel_Trooper_Converted_To_Enemy </Conversion_Ability_Changes_To_Enemy>
@@ -624,6 +622,7 @@
 		<Projectile_Fire_Pulse_Count>1</Projectile_Fire_Pulse_Count>
 		<Projectile_Fire_Pulse_Delay_Seconds>0.2</Projectile_Fire_Pulse_Delay_Seconds>
 		<Projectile_Appearance_Delay_Frames> 8 </Projectile_Appearance_Delay_Frames>
+		<SFXEvent_Fire>Unit_Grenade_Throw</SFXEvent_Fire>
 
         <Highlight_Blob_Material_Name>Highlight_Infantry_Grenadier</Highlight_Blob_Material_Name>	
 	</GroundInfantry>
@@ -744,16 +743,16 @@
 		</Encyclopedia_Text>
 		<Icon_Name>I_BUTTON_NRI_ARMY.TGA</Icon_Name>
 
-		<Land_Model_Name>secforce_trooper_nr.ALO</Land_Model_Name>
+		<Land_Model_Name>NRA_Trooper.ALO</Land_Model_Name>
 		<No_Colorization_Color/>
 		<Land_Terrain_Model_Mapping>
-			Temperate, 			secforce_trooper_nr.ALO,
-			Urban, 				secforce_trooper_nr.ALO,
-			Arctic, 			secforce_trooper_nr.ALO,
-			Volcanic, 			secforce_trooper_nr.ALO,
-			Desert, 			secforce_trooper_nr.ALO,
-			Forest, 			secforce_trooper_nr.ALO,
-			Swamp, 				secforce_trooper_nr.ALO
+			Temperate, 			NRA_Trooper.ALO,
+			Urban, 				NRA_Trooper.ALO,
+			Arctic, 			NRA_SnowTrooper.ALO,
+			Volcanic, 			nra_secforce_trooper.ALO,
+			Desert, 			nra_secforce_trooper.ALO,
+			Forest, 			NRA_JungleTrooper.ALO,
+			Swamp, 				NRA_JungleTrooper.ALO
 		</Land_Terrain_Model_Mapping>
 		<Land_Model_Anim_Override_Name>MilitiaInfantry.alo</Land_Model_Anim_Override_Name>
 		<Scale_Factor>1.1</Scale_Factor>
@@ -798,8 +797,6 @@
 		<Victory_Relevant>yes</Victory_Relevant>
 		<Create_Team>Yes</Create_Team>
 
-		<Override_Bounty_SP/>
-		<Override_Bounty_MP/>
 		<Tactical_Bribe_Cost>25</Tactical_Bribe_Cost>
 
 		<GalacticBehavior> SELECTABLE </GalacticBehavior>
@@ -848,13 +845,14 @@
 		<SFXEvent_Tactical_Build_Complete> RHD_Reinforcements_Available </SFXEvent_Tactical_Build_Complete>
 		<SFXEvent_Tactical_Build_Cancelled> RHD_Reinforcements_Cancelled  </SFXEvent_Tactical_Build_Cancelled>
 
-		<SFXEvent_Select>Unit_Select_Rebel_Soldier</SFXEvent_Select>
-		<SFXEvent_Move>Unit_Move_Rebel_Soldier</SFXEvent_Move>
-		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Rebel_Soldier</SFXEvent_Fleet_Move>
-		<SFXEvent_Attack>Unit_Attack_Rebel_Soldier</SFXEvent_Attack>
-		<SFXEvent_Assist_Move> Unit_Assist_Move_Rebel_Soldier </SFXEvent_Assist_Move>
-		<SFXEvent_Assist_Attack> Unit_Assist_Attack_Rebel_Soldier </SFXEvent_Assist_Attack>
-		<SFXEvent_Guard>Unit_Guard_Rebel_Soldier</SFXEvent_Guard>
+		<SFXEvent_Select>Unit_Select_Freedom_Fighter</SFXEvent_Select>
+		<SFXEvent_Move>Unit_Move_Freedom_Fighter</SFXEvent_Move>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Freedom_Fighter</SFXEvent_Fleet_Move>
+		<SFXEvent_Attack>Unit_Attack_Freedom_Fighter</SFXEvent_Attack>
+		<SFXEvent_Assist_Move>Unit_Assist_Move_Freedom_Fighter</SFXEvent_Assist_Move>
+		<SFXEvent_Assist_Attack>Unit_Assist_Attack_Freedom_Fighter</SFXEvent_Assist_Attack>
+		<SFXEvent_Guard>Unit_Guard_Freedom_Fighter</SFXEvent_Guard>
+		<Death_SFXEvent_Start_Die> Unit_Rebel_Soldier_Death </Death_SFXEvent_Start_Die>
 		
 		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_LASER, null </SFXEvent_Hardpoint_Destroyed>
 		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_MISSILE, null </SFXEvent_Hardpoint_Destroyed>
@@ -862,8 +860,6 @@
 		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_ION_CANNON, null </SFXEvent_Hardpoint_Destroyed>
 		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_FIGHTER_BAY, null </SFXEvent_Hardpoint_Destroyed>
 		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_DUMMY_ART, null </SFXEvent_Hardpoint_Destroyed>
-
-		<Death_SFXEvent_Start_Die>Unit_Rebel_Soldier_Death</Death_SFXEvent_Start_Die>
 
 		<MovementClass>Infantry</MovementClass>
 		<Space_Layer> Land </Space_Layer>
@@ -923,7 +919,7 @@
 				<Type>SPREAD_OUT</Type>
 				<Mod_Multiplier>SPEED_MULTIPLIER,	 0.5f</Mod_Multiplier>
 				<Mod_Multiplier>TAKE_DAMAGE_MULTIPLIER, 0.75f</Mod_Multiplier>
-				<SFXEvent_GUI_Unit_Ability_Activated>Unit_Take_Cover_Storm_Trooper</SFXEvent_GUI_Unit_Ability_Activated>
+				<SFXEvent_GUI_Unit_Ability_Activated>Unit_Take_Cover_Freedom_Fighter</SFXEvent_GUI_Unit_Ability_Activated>
 			</Unit_Ability>
 		</Unit_Abilities_Data>
 		<Conversion_Ability_Changes_To_Enemy> Rebel_Trooper_Converted_To_Enemy </Conversion_Ability_Changes_To_Enemy>
@@ -960,15 +956,15 @@
 		TEXT_TOOLTIP_CAPABILITY_INFANTRY_CAPTURE
 		</Encyclopedia_Text>
 
-		<Land_Model_Name>secforce_trooper_nr_grenadier.ALO</Land_Model_Name>
+		<Land_Model_Name>NRA_Trooper_grenadier.ALO</Land_Model_Name>
 		<Land_Terrain_Model_Mapping>
-			Temperate, 			secforce_trooper_nr_grenadier.ALO,
-			Urban, 				secforce_trooper_nr_grenadier.ALO,
-			Arctic, 			secforce_trooper_nr_grenadier.ALO,
-			Volcanic, 			secforce_trooper_nr_grenadier.ALO,
-			Desert, 			secforce_trooper_nr_grenadier.ALO,
-			Forest, 			secforce_trooper_nr_grenadier.ALO,
-			Swamp, 				secforce_trooper_nr_grenadier.ALO
+			Temperate, 			NRA_Trooper_grenadier.ALO,
+			Urban, 				NRA_Trooper_grenadier.ALO,
+			Arctic, 			NRA_SnowTrooper_grenadier.ALO,
+			Volcanic, 			nra_secforce_trooper_grenadier.ALO,
+			Desert, 			nra_secforce_trooper_grenadier.ALO,
+			Forest, 			NRA_JungleTrooper_grenadier.ALO,
+			Swamp, 				NRA_JungleTrooper_grenadier.ALO
 		</Land_Terrain_Model_Mapping>
 
 		<!-- Grenade throw -->
@@ -977,6 +973,7 @@
 		<Projectile_Fire_Pulse_Count>1</Projectile_Fire_Pulse_Count>
 		<Projectile_Fire_Pulse_Delay_Seconds>0.2</Projectile_Fire_Pulse_Delay_Seconds>
 		<Projectile_Appearance_Delay_Frames> 8 </Projectile_Appearance_Delay_Frames>
+		<SFXEvent_Fire>Unit_Grenade_Throw</SFXEvent_Fire>
 
         <Highlight_Blob_Material_Name>Highlight_Infantry_Grenadier</Highlight_Blob_Material_Name>	
 	</GroundInfantry>
@@ -1011,15 +1008,15 @@
 		TEXT_TOOLTIP_CAPABILITY_INFANTRY_CAPTURE
 		</Encyclopedia_Text>
 
-		<Land_Model_Name>secforce_trooper_nr_grenadier.ALO</Land_Model_Name>
+		<Land_Model_Name>NRA_Trooper_grenadier.ALO</Land_Model_Name>
 		<Land_Terrain_Model_Mapping>
-			Temperate, 			secforce_trooper_nr_grenadier.ALO,
-			Urban, 				secforce_trooper_nr_grenadier.ALO,
-			Arctic, 			secforce_trooper_nr_grenadier.ALO,
-			Volcanic, 			secforce_trooper_nr_grenadier.ALO,
-			Desert, 			secforce_trooper_nr_grenadier.ALO,
-			Forest, 			secforce_trooper_nr_grenadier.ALO,
-			Swamp, 				secforce_trooper_nr_grenadier.ALO
+			Temperate, 			NRA_Trooper_grenadier.ALO,
+			Urban, 				NRA_Trooper_grenadier.ALO,
+			Arctic, 			NRA_SnowTrooper_grenadier.ALO,
+			Volcanic, 			nra_secforce_trooper_grenadier.ALO,
+			Desert, 			nra_secforce_trooper_grenadier.ALO,
+			Forest, 			NRA_JungleTrooper_grenadier.ALO,
+			Swamp, 				NRA_JungleTrooper_grenadier.ALO
 		</Land_Terrain_Model_Mapping>
 		
 		<HardPoints>HP_E11b_Carbine</HardPoints>	
@@ -1030,6 +1027,7 @@
 		<Projectile_Fire_Pulse_Count>1</Projectile_Fire_Pulse_Count>
 		<Projectile_Fire_Pulse_Delay_Seconds>0.2</Projectile_Fire_Pulse_Delay_Seconds>
 		<Projectile_Appearance_Delay_Frames> 8 </Projectile_Appearance_Delay_Frames>
+		<SFXEvent_Fire>Unit_Grenade_Throw</SFXEvent_Fire>
 
         <Highlight_Blob_Material_Name>Highlight_Infantry_Grenadier</Highlight_Blob_Material_Name>	
 	</GroundInfantry>
@@ -1047,15 +1045,15 @@
 		TEXT_TOOLTIP_CAPABILITY_INFANTRY_CAPTURE
 		</Encyclopedia_Text>
 
-		<Land_Model_Name>secforce_trooper_nr_sergeant.ALO</Land_Model_Name>
+		<Land_Model_Name>NRA_Trooper_sergeant.ALO</Land_Model_Name>
 		<Land_Terrain_Model_Mapping>
-			Temperate, 			secforce_trooper_nr_sergeant.ALO,
-			Urban, 				secforce_trooper_nr_sergeant.ALO,
-			Arctic, 			secforce_trooper_nr_sergeant.ALO,
-			Volcanic, 			secforce_trooper_nr_sergeant.ALO,
-			Desert, 			secforce_trooper_nr_sergeant.ALO,
-			Forest, 			secforce_trooper_nr_sergeant.ALO,
-			Swamp, 				secforce_trooper_nr_sergeant.ALO
+			Temperate, 			NRA_Trooper_sergeant.ALO,
+			Urban, 				NRA_Trooper_sergeant.ALO,
+			Arctic, 			NRA_SnowTrooper_sergeant.ALO,
+			Volcanic, 			nra_secforce_trooper_sergeant.ALO,
+			Desert, 			nra_secforce_trooper_sergeant.ALO,
+			Forest, 			NRA_JungleTrooper_sergeant.ALO,
+			Swamp, 				NRA_JungleTrooper_sergeant.ALO
 		</Land_Terrain_Model_Mapping>
 		
 		<Tactical_Health>18</Tactical_Health>
@@ -1077,15 +1075,15 @@
 		TEXT_TOOLTIP_CAPABILITY_INFANTRY_CAPTURE
 		</Encyclopedia_Text>
 
-		<Land_Model_Name>secforce_trooper_nr_sergeant.ALO</Land_Model_Name>
+		<Land_Model_Name>NRA_Trooper_sergeant.ALO</Land_Model_Name>
 		<Land_Terrain_Model_Mapping>
-			Temperate, 			secforce_trooper_nr_sergeant.ALO,
-			Urban, 				secforce_trooper_nr_sergeant.ALO,
-			Arctic, 			secforce_trooper_nr_sergeant.ALO,
-			Volcanic, 			secforce_trooper_nr_sergeant.ALO,
-			Desert, 			secforce_trooper_nr_sergeant.ALO,
-			Forest, 			secforce_trooper_nr_sergeant.ALO,
-			Swamp, 				secforce_trooper_nr_sergeant.ALO
+			Temperate, 			NRA_Trooper_sergeant.ALO,
+			Urban, 				NRA_Trooper_sergeant.ALO,
+			Arctic, 			NRA_SnowTrooper_sergeant.ALO,
+			Volcanic, 			nra_secforce_trooper_sergeant.ALO,
+			Desert, 			nra_secforce_trooper_sergeant.ALO,
+			Forest, 			NRA_JungleTrooper_sergeant.ALO,
+			Swamp, 				NRA_JungleTrooper_sergeant.ALO
 		</Land_Terrain_Model_Mapping>
 		
 		<Tactical_Health>18</Tactical_Health>
@@ -1107,15 +1105,15 @@
 		TEXT_TOOLTIP_CAPABILITY_INFANTRY_CAPTURE
 		</Encyclopedia_Text>
 
-		<Land_Model_Name>secforce_trooper_nr_rocket.ALO</Land_Model_Name>
+		<Land_Model_Name>NRA_Trooper_rocket.ALO</Land_Model_Name>
 		<Land_Terrain_Model_Mapping>
-			Temperate, 			secforce_trooper_nr_rocket.ALO,
-			Urban, 				secforce_trooper_nr_rocket.ALO,
-			Arctic, 			secforce_trooper_nr_rocket.ALO,
-			Volcanic, 			secforce_trooper_nr_rocket.ALO,
-			Desert, 			secforce_trooper_nr_rocket.ALO,
-			Forest, 			secforce_trooper_nr_rocket.ALO,
-			Swamp, 				secforce_trooper_nr_rocket.ALO
+			Temperate, 			NRA_Trooper_rocket.ALO,
+			Urban, 				NRA_Trooper_rocket.ALO,
+			Arctic, 			NRA_SnowTrooper_rocket.ALO,
+			Volcanic, 			nra_secforce_trooper_rocket.ALO,
+			Desert, 			nra_secforce_trooper_rocket.ALO,
+			Forest, 			NRA_JungleTrooper_rocket.ALO,
+			Swamp, 				NRA_JungleTrooper_rocket.ALO
 		</Land_Terrain_Model_Mapping>
 		<Land_Model_Anim_Override_Name>RocketInfantry.alo</Land_Model_Anim_Override_Name>		
 		
@@ -1138,15 +1136,15 @@
 		TEXT_TOOLTIP_CAPABILITY_INFANTRY_CAPTURE
 		</Encyclopedia_Text>
 
-		<Land_Model_Name>secforce_trooper_nr_rocket.ALO</Land_Model_Name>
+		<Land_Model_Name>NRA_Trooper_rocket.ALO</Land_Model_Name>
 		<Land_Terrain_Model_Mapping>
-			Temperate, 			secforce_trooper_nr_rocket.ALO,
-			Urban, 				secforce_trooper_nr_rocket.ALO,
-			Arctic, 			secforce_trooper_nr_rocket.ALO,
-			Volcanic, 			secforce_trooper_nr_rocket.ALO,
-			Desert, 			secforce_trooper_nr_rocket.ALO,
-			Forest, 			secforce_trooper_nr_rocket.ALO,
-			Swamp, 				secforce_trooper_nr_rocket.ALO
+			Temperate, 			NRA_Trooper_rocket.ALO,
+			Urban, 				NRA_Trooper_rocket.ALO,
+			Arctic, 			NRA_SnowTrooper_rocket.ALO,
+			Volcanic, 			nra_secforce_trooper_rocket.ALO,
+			Desert, 			nra_secforce_trooper_rocket.ALO,
+			Forest, 			NRA_JungleTrooper_rocket.ALO,
+			Swamp, 				NRA_JungleTrooper_rocket.ALO
 		</Land_Terrain_Model_Mapping>
 		<Land_Model_Anim_Override_Name>RocketInfantry.alo</Land_Model_Anim_Override_Name>
 		
@@ -1169,15 +1167,15 @@
 		TEXT_TOOLTIP_CAPABILITY_INFANTRY_CAPTURE
 		</Encyclopedia_Text>
 
-		<Land_Model_Name>secforce_trooper_nr_gunner.ALO</Land_Model_Name>
+		<Land_Model_Name>NRA_Trooper_gunner.ALO</Land_Model_Name>
 		<Land_Terrain_Model_Mapping>
-			Temperate, 			secforce_trooper_nr_gunner.ALO,
-			Urban, 				secforce_trooper_nr_gunner.ALO,
-			Arctic, 			secforce_trooper_nr_gunner.ALO,
-			Volcanic, 			secforce_trooper_nr_gunner.ALO,
-			Desert, 			secforce_trooper_nr_gunner.ALO,
-			Forest, 			secforce_trooper_nr_gunner.ALO,
-			Swamp, 				secforce_trooper_nr_gunner.ALO
+			Temperate, 			NRA_Trooper_gunner.ALO,
+			Urban, 				NRA_Trooper_gunner.ALO,
+			Arctic, 			NRA_SnowTrooper_gunner.ALO,
+			Volcanic, 			nra_secforce_trooper_gunner.ALO,
+			Desert, 			nra_secforce_trooper_gunner.ALO,
+			Forest, 			NRA_JungleTrooper_gunner.ALO,
+			Swamp, 				NRA_JungleTrooper_gunner.ALO
 		</Land_Terrain_Model_Mapping>
 		
 		<HardPoints>HP_KX80_LMG</HardPoints>
@@ -1199,16 +1197,17 @@
 		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
 		TEXT_TOOLTIP_CAPABILITY_INFANTRY_CAPTURE
 		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_SUPPORT</Encyclopedia_Unit_Class>
 
-		<Land_Model_Name>secforce_trooper_nr_medic.ALO</Land_Model_Name>
+		<Land_Model_Name>NRA_Trooper_medic.ALO</Land_Model_Name>
 		<Land_Terrain_Model_Mapping>
-			Temperate, 			secforce_trooper_nr_medic.ALO,
-			Urban, 				secforce_trooper_nr_medic.ALO,
-			Arctic, 			secforce_trooper_nr_medic.ALO,
-			Volcanic, 			secforce_trooper_nr_medic.ALO,
-			Desert, 			secforce_trooper_nr_medic.ALO,
-			Forest, 			secforce_trooper_nr_medic.ALO,
-			Swamp, 				secforce_trooper_nr_medic.ALO
+			Temperate, 			NRA_Trooper_medic.ALO,
+			Urban, 				NRA_Trooper_medic.ALO,
+			Arctic, 			NRA_SnowTrooper_medic.ALO,
+			Volcanic, 			nra_secforce_trooper_medic.ALO,
+			Desert, 			nra_secforce_trooper_medic.ALO,
+			Forest, 			NRA_JungleTrooper_medic.ALO,
+			Swamp, 				NRA_JungleTrooper_medic.ALO
 		</Land_Terrain_Model_Mapping>
 		
         <Highlight_Blob_Material_Name>Highlight_Infantry_Medic</Highlight_Blob_Material_Name>
@@ -1225,7 +1224,6 @@
 				<Heal_Range_Blob_Material>Heal_Support_Radius_Overlay</Heal_Range_Blob_Material>
 				<!-- We can heal the following unit types: -->
 				<Applicable_Unit_Categories>Infantry, LandHero, Vehicle, Air</Applicable_Unit_Categories>
-				<Applicable_Unit_Types>Scout_Trooper, MPTL_Spotter, Veers_AT_AT_Walker, </Applicable_Unit_Types>
 				<SFXEvent_Target_Affected>Unit_Force_Healing_Pulse</SFXEvent_Target_Affected>
 				<Target_Particle_Effect>Shield_Sparks_Medium</Target_Particle_Effect>
 				<Target_Particle_Bone_Name>ROOT</Target_Particle_Bone_Name>
@@ -1261,15 +1259,15 @@
 		</Encyclopedia_Text>
 		<No_Colorization_Color> 251, 174, 1, 255 </No_Colorization_Color>
 
-		<Land_Model_Name>secforce_trooper_nr_officer.ALO</Land_Model_Name>
+		<Land_Model_Name>NRA_Trooper_sergeant.ALO</Land_Model_Name>
 		<Land_Terrain_Model_Mapping>
-			Temperate, 			secforce_trooper_nr_officer.ALO,
-			Urban, 				secforce_trooper_nr_officer.ALO,
-			Arctic, 			secforce_trooper_nr_officer.ALO,
-			Volcanic, 			secforce_trooper_nr_officer.ALO,
-			Desert, 			secforce_trooper_nr_officer.ALO,
-			Forest, 			secforce_trooper_nr_officer.ALO,
-			Swamp, 				secforce_trooper_nr_officer.ALO
+			Temperate, 			NRA_Trooper_sergeant.ALO,
+			Urban, 				NRA_Trooper_sergeant.ALO,
+			Arctic, 			NRA_SnowTrooper_sergeant.ALO,
+			Volcanic, 			nra_secforce_trooper_officer.ALO,
+			Desert, 			nra_secforce_trooper_officer.ALO,
+			Forest, 			NRA_JungleTrooper_sergeant.ALO,
+			Swamp, 				NRA_JungleTrooper_sergeant.ALO
 		</Land_Terrain_Model_Mapping>
 		
 		<LandBehavior>SELECTABLE, SPAWN_SQUADRON, LANDING, SURFACE_FX,LAND_TEAM_INFANTRY_LOCOMOTOR,IDLE,TARGETING,WEAPON, STUNNABLE, REVEAL,HIDE_WHEN_FOGGED,DAMAGE_TRACKING</LandBehavior>
@@ -1353,8 +1351,6 @@
 		<Victory_Relevant>yes</Victory_Relevant>
 		<Create_Team>Yes</Create_Team>
 
-		<Override_Bounty_SP/>
-		<Override_Bounty_MP/>
 		<Tactical_Bribe_Cost>100</Tactical_Bribe_Cost>
 
 		<GalacticBehavior> SELECTABLE </GalacticBehavior>
@@ -1461,7 +1457,6 @@
 		<Energy_Refresh_Rate>0</Energy_Refresh_Rate>
 		<Dense_FOW_Reveal_Range_Multiplier>1.0</Dense_FOW_Reveal_Range_Multiplier>
 		<Influences_Capture_Point>True</Influences_Capture_Point>
-		<SFXEvent_Fire>Unit_Blarg_Fire</SFXEvent_Fire>
 		
         <Highlight_Blob_Material_Name>Highlight_Infantry_Gunner</Highlight_Blob_Material_Name>
 		
@@ -1599,6 +1594,7 @@
 		<Projectile_Fire_Pulse_Count>1</Projectile_Fire_Pulse_Count>
 		<Projectile_Fire_Pulse_Delay_Seconds>0.2</Projectile_Fire_Pulse_Delay_Seconds>
 		<Projectile_Appearance_Delay_Frames> 8 </Projectile_Appearance_Delay_Frames>
+		<SFXEvent_Fire>Unit_Grenade_Throw</SFXEvent_Fire>
 
         <Highlight_Blob_Material_Name>Highlight_Infantry_Grenadier</Highlight_Blob_Material_Name>		
 	</GroundInfantry>
@@ -1642,6 +1638,7 @@
 		<Projectile_Fire_Pulse_Count>1</Projectile_Fire_Pulse_Count>
 		<Projectile_Fire_Pulse_Delay_Seconds>0.2</Projectile_Fire_Pulse_Delay_Seconds>
 		<Projectile_Appearance_Delay_Frames> 8 </Projectile_Appearance_Delay_Frames>
+		<SFXEvent_Fire>Unit_Grenade_Throw</SFXEvent_Fire>
 
         <Highlight_Blob_Material_Name>Highlight_Infantry_SGT</Highlight_Blob_Material_Name>		
 	</GroundInfantry>
@@ -1678,7 +1675,7 @@
 		
 		<AI_Combat_Power>4</AI_Combat_Power>
 		
-		<HardPoints>HP_LB1a_Sniper</HardPoints>
+		<HardPoints>HP_E17D_Sniper</HardPoints>
 		
 		<Targeting_Max_Attack_Distance>375.0</Targeting_Max_Attack_Distance>
 

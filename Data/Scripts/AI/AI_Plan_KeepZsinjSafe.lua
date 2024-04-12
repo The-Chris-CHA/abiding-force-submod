@@ -10,7 +10,7 @@ function Definitions()
 	{
 		"ReserveForce"
 		,"DenyHeroAttach"
-		,"Iron_Fist_VSD = 1"
+		,"Zsinj_Iron_Fist_VSD = 1"
 	}
 	}
 end

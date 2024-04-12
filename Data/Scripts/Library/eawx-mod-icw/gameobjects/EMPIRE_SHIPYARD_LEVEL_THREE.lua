@@ -21,7 +21,7 @@ return {
 		["TIE_BOMBER_SQUADRON"] = {
 			DEFAULT = {Initial = 3, Reserve = 6, TechLevel = LessThan(6)}
 		},
-		["SCIMMY_SQUADRON"] = {
+		["SCIMITAR_SQUADRON"] = {
 			DEFAULT = {Initial = 3, Reserve = 6, TechLevel = GreaterOrEqualTo(6)}
 		},
 		["SKIRMISH_IPV1"] = {
@@ -41,7 +41,7 @@ return {
 		},
 		["SKIRMISH_VICTORY_DESTROYER"] = {
 			DEFAULT = {Initial = 2, Reserve = 0}
-		}
+		},
 	},
 	Scripts = {"fighter-spawn"},
 	Flags = {SHIPYARD = true, HANGAR = true}

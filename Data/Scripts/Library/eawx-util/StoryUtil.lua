@@ -22,6 +22,11 @@ StoryUtil = {
 	MultimediaEventName = "Template_Multimedia",
 	MultimediaNotificationName = "MULTIMEDIA",
 
+    LockControlsEventName = "Lock_All_Controls",
+	LockControlsNotificationName = "LOCK_ALL_CONTROLS",
+
+    UnlockControlsEventName = "Unlock_All_Controls",
+	UnlockControlsNotificationName = "UNLOCK_ALL_CONTROLS",
 
 	GenericEventName = "Template_Generic_Event",
 	GenericEventNotificationName = "GENERIC_EVENT",
@@ -44,6 +49,12 @@ StoryUtil = {
 	LoadCampaignEventName = "Template_Load_Campaign",
 	LoadCampaignNotificationName = "CAMPAIGN_LOADING",
 
+	NewAbilityEventName = "Template_New_Ability",
+	NewPowerNotificationName = "NEW_ABILITY",
+
+	RemoveAbilityEventName = "Template_Remove_Ability",
+	RemoveAbilityNotificationName = "REMOVE_ABILITY",
+
 
 	-- Galactic Events
 	SetTacticalMapEventName = "Template_Set_Tactical_Map",
@@ -51,15 +62,6 @@ StoryUtil = {
 
 	LockPlanetEventName = "Template_Lock_Planet",
 	LockPlanetNotificationName = "SET_PLANET_RESTRICTED",
-
-	RevealPlanetEventName = "Template_Reveal_Planet",
-	RevealPlanetNotificationName = "REVEAL_PLANET",
-
-	RevealAllPlanetsEventName = "Template_Reveal_All_Planets",
-	RevealAllPlanetsNotificationName = "REVEAL_ALL_PLANETS",
-
-	EnableGalacticRevealEventName = "Template_Enable_Galactic_Reveal",
-	EnableGalacticRevealNotificationName = "ENABLE_GALACTIC_REVEAL",
 
 	RestrictAutoresolveEventName = "Template_Restrict_Autoresolve",
 	RestrictAutoresolveNotificationName = "RESTRICT_AUTORESOLVE",
@@ -75,6 +77,9 @@ StoryUtil = {
 
 	GalacticGoalRemoveEventName = "Template_Goal_Removed",
 	GalacticGoalRemoveNotificationName = "REMOVE_STORY_GOAL",
+
+	RevealPlanetEventName = "Template_Reveal_Planet",
+	RevealPlanetNotificationName = "REVEAL_PLANET",
 
 
 	-- Tactical Events
@@ -93,10 +98,6 @@ StoryUtil = {
 	HideAutoresolveEventName = "Template_Hide_Autoresolve",
 	HideAutoresolveNotificationName = "HIDE_AUTORESOLVE",
 
-
-	ObjectiveSandboxSetEventName = "Template_Objective_Sandbox_Set",
-	ObjectiveSandboxSetNotificationName = "OBJECTIVE_SANDBOX_SET",
-
 	ObjectiveCleanUpEventName = "Template_Objective_Clean_Up",
 	ObjectiveCleanUpNotificationName = "OBJECTIVE_CLEAN_UP",
 
@@ -111,6 +112,9 @@ StoryUtil = {
 
 	ObjectiveRemoveEventName = "Template_Objective_Remove",
 	ObjectiveRemoveNotificationName = "REMOVE_OBJECTIVE",
+
+	ObjectiveNewEventName = "Template_Objective_New",
+	ObjectiveNewNotificationName = "ADD_OBJECTIVE",
 }
 
 -- Global Events
@@ -120,6 +124,10 @@ function StoryUtil.GetPlayerAgnosticPlot()
 end
 
 function StoryUtil.ShowScreenText(textId, time, var, color, teletype)
+    if type(textId) ~= "string" then
+        return
+    end
+
     local plot = StoryUtil.GetPlayerAgnosticPlot()
 
     if not plot then
@@ -156,6 +164,10 @@ function StoryUtil.ShowScreenText(textId, time, var, color, teletype)
 end
 
 function StoryUtil.RemoveScreenText(textId)
+    if type(textId) ~= "string" then
+        return
+    end
+
     local plot = StoryUtil.GetPlayerAgnosticPlot()
 
     if not plot then
@@ -171,82 +183,6 @@ function StoryUtil.RemoveScreenText(textId)
     screenTextEvent.Set_Reward_Parameter(0, textId)
     screenTextEvent.Set_Reward_Parameter(3, "remove")
     Story_Event(StoryUtil.ShowTextNotificationName)
-end
-
-function StoryUtil.PlayGenericSpeech(speechId)
-    local plot = StoryUtil.GetPlayerAgnosticPlot()
-
-    if not plot then
-        return
-    end
-
-    local speechEvent = plot.Get_Event(StoryUtil.GenericSpeechEventName)
-
-    if not speechEvent then
-        return
-    end
-
-	Stop_All_Speech()
-    speechEvent.Set_Reward_Parameter(0, speechId)
-    Story_Event(StoryUtil.GenericSpeechNotificationName)
-end
-
-function StoryUtil.PlayCinematicSpeech(textId, var, color, teletype, speechId, movie_name, faction)
-    local plot = StoryUtil.GetPlayerAgnosticPlot()
-
-    if not plot then
-        return
-    end
-
-    if faction ~= nil then
-        if Find_Player("local") ~= Find_Player(faction) then
-            return
-        end
-    end
-
-    local cinematicSpeechEvent = plot.Get_Event(StoryUtil.CinematicSpeechEventName)
-
-    if not cinematicSpeechEvent then
-        return
-    end
-
-    local colorString = ""
-    if color then
-        colorString = color.r .. " " .. color.g .. " " .. color.b
-    end
-
-    if not var then
-        var = ""
-    end
-
-    local use_teletype = 1
-    if teletype == false then
-        use_teletype = 0
-    end
-
-    if speechId == nil then
-        speechId = ""
-    end
-
-    if movie_name == nil then
-        movie_name = ""
-    end
-    
-    cinematicSpeechEvent.Set_Reward_Parameter(0, textId)
-    cinematicSpeechEvent.Set_Reward_Parameter(1, -1)
-    cinematicSpeechEvent.Set_Reward_Parameter(2, var)
-    cinematicSpeechEvent.Set_Reward_Parameter(3, "")
-    cinematicSpeechEvent.Set_Reward_Parameter(4, use_teletype)
-    cinematicSpeechEvent.Set_Reward_Parameter(5, colorString)
-    cinematicSpeechEvent.Set_Reward_Parameter(7, speechId)
-    cinematicSpeechEvent.Set_Reward_Parameter(8, movie_name)
-    cinematicSpeechEvent.Set_Reward_Parameter(9, 1)
-
-    local cinematicSpeechRemoveEvent = plot.Get_Event("Template_Cinematic_Speech_Remove_Text")
-    cinematicSpeechRemoveEvent.Set_Event_Parameter(0, speechId)
-    cinematicSpeechRemoveEvent.Set_Reward_Parameter(0, textId)
-
-    Story_Event(StoryUtil.CinematicSpeechNotificationName)
 end
 
 function StoryUtil.Multimedia(textId, time, speech_name, movie_name, int, faction, color)
@@ -290,6 +226,37 @@ function StoryUtil.Multimedia(textId, time, speech_name, movie_name, int, factio
     Story_Event(StoryUtil.MultimediaNotificationName)
 end
 
+function StoryUtil.LockAllControls()
+    local plot = StoryUtil.GetPlayerAgnosticPlot()
+
+    if not plot then
+        return
+    end
+
+    local lockControlsEvent = plot.Get_Event(StoryUtil.LockControlsEventName)
+
+    if not lockControlsEvent then
+        return
+    end
+
+    Story_Event(StoryUtil.LockControlsNotificationName)
+end
+
+function StoryUtil.UnlockAllControls()
+    local plot = StoryUtil.GetPlayerAgnosticPlot()
+
+    if not plot then
+        return
+    end
+
+    local unlockControlsEvent = plot.Get_Event(StoryUtil.UnlockControlsEventName)
+
+    if not unlockControlsEvent then
+        return
+    end
+
+    Story_Event(StoryUtil.UnlockControlsNotificationName)
+end
 
 function StoryUtil.GetGenericEvent()
     local plot = StoryUtil.GetPlayerAgnosticPlot()
@@ -378,23 +345,6 @@ function StoryUtil.ChangeAIPlayer(player, ai_type)
     Story_Event(StoryUtil.ChangeAINotificationName)
 end
 
-function StoryUtil.PositionCamera(planet)
-    local plot = StoryUtil.GetPlayerAgnosticPlot()
-
-    if not plot then
-        return
-    end
-
-    local positionCameraEvent = plot.Get_Event(StoryUtil.PositionCameraEventName)
-
-    if not positionCameraEvent then
-        return
-    end
-
-    positionCameraEvent.Set_Reward_Parameter(0, planet)
-    Story_Event(StoryUtil.PositionCameraNotificationName)
-end
-
 function StoryUtil.DeclareVictory(player, play_victory_text)
     local plot = StoryUtil.GetPlayerAgnosticPlot()
     local player_name = nil
@@ -414,22 +364,20 @@ function StoryUtil.DeclareVictory(player, play_victory_text)
         return
     end
 
-    local use_victory_text = 1
+    local use_victory_text = 0
     if play_victory_text == false then
-        use_victory_text = 0
+        use_victory_text = 1
     end
+
+	Resume_Mode_Based_Music()
 
     victoryEvent.Set_Reward_Parameter(0, player_name)
     victoryEvent.Set_Reward_Parameter(1, use_victory_text)
     Story_Event(StoryUtil.DeclareVictoryNotificationName)
 end
 
-function StoryUtil.TriggerScriptedBattle(planet, layer, attacker, defender, is_sandbox, map, battle_plot)
+function StoryUtil.TriggerScriptedBattle(missionId, planet, layer, attacker, defender, is_sandbox, faction_tag, unique_tag)
     local plot = StoryUtil.GetPlayerAgnosticPlot()
-
-    if not battle_plot then
-        return
-    end
 
     local linkTacticalEvent = plot.Get_Event(StoryUtil.LinkTacticalEventName)
 
@@ -443,10 +391,22 @@ function StoryUtil.TriggerScriptedBattle(planet, layer, attacker, defender, is_s
 		is_sandbox = 0
 	end
 
+	map_name = "_FOTG_"..layer.."_"..missionId..".TED"
+
+	if faction_tag ~= nil then
+		map_name = "_FOTG_"..layer.."_"..missionId.."_"..faction_tag..".TED"
+	end
+
+	if unique_tag ~= nil then
+		map_name = "_FOTG_"..layer.."_"..unique_tag.."_"..missionId..".TED"
+	end
+
+	battle_plot = "StoryEvents/Plot_"..missionId..".XML"
+
     linkTacticalEvent.Set_Reward_Parameter(0, planet)
     linkTacticalEvent.Set_Reward_Parameter(1, layer)
     linkTacticalEvent.Set_Reward_Parameter(2, attacker)
-    linkTacticalEvent.Set_Reward_Parameter(3, map)
+    linkTacticalEvent.Set_Reward_Parameter(3, map_name)
     linkTacticalEvent.Set_Reward_Parameter(4, defender)
     linkTacticalEvent.Set_Reward_Parameter(6, battle_plot)
     linkTacticalEvent.Set_Reward_Parameter(7, is_sandbox)
@@ -481,6 +441,28 @@ function StoryUtil.ValidGlobalValue(val)
     return val and val ~= ""
 end
 
+function StoryUtil.GetDifficulty()
+	local ai_player = nil
+	local difficulty = nil
+
+	if Find_Player("Rebel").Is_Human() then
+		ai_player = Find_Player("Empire")
+	end
+	if Find_Player("Empire").Is_Human() then
+		ai_player = Find_Player("Rebel")
+	end
+
+	if ai_player.Get_Difficulty() == "Easy" then
+		difficulty = "EASY"
+	elseif ai_player.Get_Difficulty() == "Hard" then
+		difficulty = "HARD"
+	else
+		difficulty = "NORMAL"
+	end	
+
+	return difficulty
+end
+
 
 -- Galactic Events
 function StoryUtil.CheckFriendlyPlanet(planet, player, count_neutral_as_friendly)
@@ -488,28 +470,73 @@ function StoryUtil.CheckFriendlyPlanet(planet, player, count_neutral_as_friendly
 		return false
 	end
 
-	if planet.Get_Owner() == player then
+	local owner = planet.Get_Owner()
+
+	if owner == player then
 		return true
 	end
 
 	if count_neutral_as_friendly then
-		if planet.Get_Owner() == Find_Player("Neutral") then
+		if owner == Find_Player("Neutral") then
 			return true
 		end
 	end
-
+	
 	return false
 end
 
-function StoryUtil.FindFriendlyPlanet(player)
+function StoryUtil.SetPlanetRestricted(planet, status)
+    local plot = StoryUtil.GetPlayerAgnosticPlot()
+
+    if not plot then
+        return
+    end
+
+    local lockPlanetEvent = plot.Get_Event(StoryUtil.LockPlanetEventName)
+
+    if not lockPlanetEvent then
+        return
+    end
+
+    crossplot:publish("LOCK_PLANET", planet, status)
+
+    lockPlanetEvent.Set_Reward_Parameter(0, planet)
+    lockPlanetEvent.Set_Reward_Parameter(1, status)
+    Story_Event(StoryUtil.LockPlanetNotificationName)
+end
+
+function StoryUtil.FindFriendlyPlanet(player, preferCapital)
     if type(player) == "string" then
         player = Find_Player(player)
     end
+
+    local playerFactionName = player.Get_Faction_Name()
 
     local allPlanets = FindPlanet.Get_All_Planets()
 
     local random = 0
     local planet = nil
+
+    local factionCapitalStructure = nil
+    local factionCapitalInstance = nil
+    local factionCapitalLocation = nil
+
+	if preferCapital then	
+		if CONSTANTS.ALL_FACTIONS_CAPITALS[playerFactionName] then
+			factionCapitalStructure = CONSTANTS.ALL_FACTIONS_CAPITALS[playerFactionName].STRUCTURE
+			if factionCapitalStructure then
+				factionCapitalInstance = Find_First_Object(factionCapitalStructure)
+				if factionCapitalInstance then
+					factionCapitalLocation = factionCapitalInstance.Get_Planet_Location()
+					if factionCapitalLocation then
+						if factionCapitalLocation.Get_Owner() == player and EvaluatePerception("Enemy_Present", player, factionCapitalLocation) == 0 then
+							return factionCapitalLocation
+						end
+					end
+				end
+			end
+		end    	
+	end
 
     while table.getn(allPlanets) > 0 do
         random = GameRandom.Free_Random(1, table.getn(allPlanets))
@@ -539,155 +566,128 @@ function StoryUtil.FindEnemyPlanet(player)
         planet = allPlanets[random]
         table.remove(allPlanets, random)
 
-        if planet.Get_Owner() ~= player and EvaluatePerception("Enemy_Present", planet.Get_Owner(), planet) == 0 then
-            return planet
+        if EvaluatePerception("Is_Owned_By_Enemy", player, planet) == 1 then
+            if EvaluatePerception("Enemy_Present", planet.Get_Owner(), planet) == 0 then
+                return planet
+            end        
         end
     end
 
     return nil
 end
 
-function StoryUtil.FindTargetPlanet(player, must_be_connected_to_player, allow_fortress_worlds, amount)
-	if type(player) == "string" then
-		player = Find_Player(player)
-	end
+function StoryUtil.FindTargetPlanet(player, must_be_connected_to_player, allow_fortress_worlds, amount, active_enemy_only)
+    if amount == 0 then
+        return nil
+    end
 
-	local target_planet_list = {}
-	local allPlanets = FindPlanet.Get_All_Planets()
+    if active_enemy_only == true then
+        enemy_perception = "Is_Owned_By_Active_Enemy"
+    else
+        enemy_perception = "Is_Owned_By_Enemy"
+    end
 
-	for _,planet in pairs(allPlanets) do
-		local owner = planet.Get_Owner().Get_Faction_Name()
-		if owner ~= player.Get_Faction_Name() and owner ~= "NEUTRAL" and EvaluatePerception("Priority_Target", player, planet) == 0 and EvaluatePerception("Is_Owned_By_Enemy", player, planet) == 1 then
-			if must_be_connected_to_player then
-				if EvaluatePerception("Is_Connected_To_Me", player, planet) == 1 then
-					if allow_fortress_worlds then
-						table.insert(target_planet_list, planet)
-					end
-					if not allow_fortress_worlds then
-						if EvaluatePerception("Is_Important_Planet", player, planet) == 0 then
-							table.insert(target_planet_list, planet)
-						end
-					end
-				end
-			end
-			if not must_be_connected_to_player then
-				if allow_fortress_worlds then
-					table.insert(target_planet_list, planet)
-				end
-				if not allow_fortress_worlds then
-					if EvaluatePerception("Is_Important_Planet", player, planet) == 0 then
-						table.insert(target_planet_list, planet)
-					end
-				end
-			end
-		end
-	end
-	if table.getn(target_planet_list) == 0 then
-		for _,planet in pairs(allPlanets) do
-			local owner = planet.Get_Owner().Get_Faction_Name()
-			if owner ~= player.Get_Faction_Name() and owner ~= "NEUTRAL" and EvaluatePerception("Priority_Target", player, planet) == 0 and EvaluatePerception("Is_Owned_By_Enemy", player, planet) == 1 then
-				table.insert(target_planet_list, planet)
-			end
-		end
-	end
+    if type(player) == "string" then
+        player = Find_Player(player)
+    end
 
-	local planet_counter = table.getn(target_planet_list)
+    local target_planet_list = {}
+    local allPlanets = FindPlanet.Get_All_Planets()
 
-	if amount >= 5 then
-		if table.getn(target_planet_list) >= 5 then
-			random = GameRandom.Free_Random(1, planet_counter)
-			local target01 = target_planet_list[random]
-			table.remove(target_planet_list, random)
+    for _,planet in pairs(allPlanets) do
+        local planet_owner = planet.Get_Owner()
+        if planet_owner ~= Find_Player("Neutral") then
+            local owner_check = EvaluatePerception(enemy_perception, player, planet)
+            local priority_check = EvaluatePerception("Priority_Target", player, planet)
+            local not_blockaded_check = EvaluatePerception("Starbase_Present", player, planet)
+    
+            if not_blockaded_check == 0 and EvaluatePerception("Enemy_Present", planet_owner, planet) == 0 then 
+                not_blockaded_check = 1
+            end
 
-			random = GameRandom.Free_Random(1, planet_counter)
-			local target02 = target_planet_list[random]
-			table.remove(target_planet_list, random)
+            if owner_check == 1 and priority_check == 0 and not_blockaded_check == 1 then
+                if must_be_connected_to_player ~= true or EvaluatePerception("Is_Connected_To_Me", player, planet) == 1 then
+                    if allow_fortress_worlds == true or EvaluatePerception("Is_Important_Planet", player, planet) == 0 then
+                        table.insert(target_planet_list, planet)
+                    end
+                end
+            end
+        end
+    end
 
-			random = GameRandom.Free_Random(1, planet_counter)
-			local target03 = target_planet_list[random]
-			table.remove(target_planet_list, random)
+    if table.getn(target_planet_list) == 0 then
+        for _,planet in pairs(allPlanets) do
+            local planet_owner = planet.Get_Owner()
+            if planet_owner ~= Find_Player("Neutral") then
+                local owner_check = EvaluatePerception(enemy_perception, player, planet)
+                local priority_check = EvaluatePerception("Priority_Target", player, planet)
+                local not_blockaded_check = EvaluatePerception("Starbase_Present", planet_owner, planet)
+                
+                if not_blockaded_check == 0 and EvaluatePerception("Enemy_Present", planet_owner, planet) == 0 then 
+                    not_blockaded_check = 1
+                end
+            
+                if owner_check == 1 and priority_check == 0 and not_blockaded_check == 1 then
+                    table.insert(target_planet_list, planet)
+                end
+            end
+        end
+    end
 
-			random = GameRandom.Free_Random(1, planet_counter)
-			local target04 = target_planet_list[random]
-			table.remove(target_planet_list, random)
+    local planet_count = table.getn(target_planet_list)
 
-			random = GameRandom.Free_Random(1, planet_counter)
-			local target05 = target_planet_list[random]
+    if planet_count == 0 then
+        return nil
+    end
 
-			return target01, target02, target03, target04, target05
-		end
-		if table.getn(target_planet_list) < 5 then
-			local amount = 4
-		end
-	end
-	if amount == 4 then
-		if table.getn(target_planet_list) >= 4 then
-			random = GameRandom.Free_Random(1, planet_counter)
-			local target01 = target_planet_list[random]
-			table.remove(target_planet_list, random)
+    if amount > planet_count then
+        amount = planet_count
+    end
 
-			random = GameRandom.Free_Random(1, planet_counter)
-			local target02 = target_planet_list[random]
-			table.remove(target_planet_list, random)
+    if amount > 5 then
+        amount = 5
+    end
 
-			random = GameRandom.Free_Random(1, planet_counter)
-			local target03 = target_planet_list[random]
-			table.remove(target_planet_list, random)
+    local random = 0
+    local new_target = nil
+    local target01 = nil
+    local target02 = nil
+    local target03 = nil
+    local target04 = nil
+    local target05 = nil
 
-			random = GameRandom.Free_Random(1, planet_counter)
-			local target04 = target_planet_list[random]
-
-			return target01, target02, target03, target04
-		end
-		if table.getn(target_planet_list) < 4 then
-			local amount = 3
-		end
-	end
-	if amount == 3 then
-		if table.getn(target_planet_list) >= 3 then
-			random = GameRandom.Free_Random(1, planet_counter)
-			local target01 = target_planet_list[random]
-			table.remove(target_planet_list, random)
-
-			random = GameRandom.Free_Random(1, planet_counter)
-			local target02 = target_planet_list[random]
-			table.remove(target_planet_list, random)
-
-			random = GameRandom.Free_Random(1, planet_counter)
-			local target03 = target_planet_list[random]
-
-			return target01, target02, target03
-		end
-		if table.getn(target_planet_list) < 3 then
-			local amount = 2
-		end
-	end
-	if amount == 2 then
-		if table.getn(target_planet_list) >= 2 then
-			random = GameRandom.Free_Random(1, planet_counter)
-			local target01 = target_planet_list[random]
-			table.remove(target_planet_list, random)
-
-			random = GameRandom.Free_Random(1, planet_counter)
-			local target02 = target_planet_list[random]
-
-			return target01, target02
-		end
-		if table.getn(target_planet_list) < 2 then
-			local amount = 1
-		end
-	end
-	if amount == 1 then
-		if table.getn(target_planet_list) >= 1 then
-			random = GameRandom.Free_Random(1, planet_counter)
-			local target01 = target_planet_list[random]
-
-			return target01
-		end
-		if table.getn(target_planet_list) < 1 then
-			return nil
-		end
-	end
+    repeat
+        random = GameRandom.Free_Random(1, planet_count)
+        new_target = target_planet_list[random]
+        table.remove(target_planet_list, random)
+        
+        if target01 == nil then
+            target01 = new_target
+        elseif target02 == nil then
+            target02 = new_target
+        elseif target03 == nil then
+            target03 = new_target
+        elseif target04 == nil then
+            target04 = new_target
+        else
+            target05 = new_target
+        end
+        
+        planet_count = planet_count - 1
+        amount = amount - 1
+    until amount == 0
+    
+    if target05 ~= nil then
+        return target01,target02,target03,target04,target05
+    elseif target04 ~= nil then 
+        return target01,target02,target03,target04
+    elseif target03 ~= nil then 
+        return target01,target02,target03
+    elseif target02 ~= nil then 
+        return target01,target02
+    else
+        return target01
+    end
 end
 
 function StoryUtil.SpawnAtSafePlanet(planet_name, player, spawn_location_table, spawn_list, ai_use_set, allow_neutral)
@@ -698,39 +698,21 @@ function StoryUtil.SpawnAtSafePlanet(planet_name, player, spawn_location_table, 
 
     player_string = player.Get_Faction_Name()
 
-    local capital_structure = nil
-    local capital_location = nil
-    local capital = nil
-
-    if CONSTANTS.ALL_FACTIONS_CAPITALS[player_string] then
-        capital = CONSTANTS.ALL_FACTIONS_CAPITALS[player_string].STRUCTURE
-        if capital then
-            capital_structure = Find_First_Object(capital)
-            if capital_structure then
-                capital_location = capital_structure.Get_Planet_Location()
-            end
-        end
-    end      
-
     if spawn_location_table[planet_name] then
         local start_planet = FindPlanet(planet_name)
 
         if allow_neutral == nil then
             allow_neutral = true
         end
-		
+
         if not StoryUtil.CheckFriendlyPlanet(start_planet, player, allow_neutral) then
             if player == Find_Player("Warlords") or player == Find_Player("Independent_Forces") then
                 return nil
             else
-                if capital_location ~= nil then
-                    start_planet = capital_location
-                else
-                    start_planet = StoryUtil.FindFriendlyPlanet(player)
-                end
+                start_planet = StoryUtil.FindFriendlyPlanet(player, true)
             end
         end
-		
+
         local ai_use = true
         if ai_use_set == false then
             ai_use = false
@@ -748,14 +730,9 @@ function StoryUtil.SpawnAtSafePlanet(planet_name, player, spawn_location_table, 
             return nil
         end
     else
-        start_planet = nil
-        if capital_location ~= nil then
-            start_planet = capital_location
-        else
-            start_planet = StoryUtil.FindFriendlyPlanet(player)
-        end
-		
-		local ai_use = true
+        local start_planet = StoryUtil.FindFriendlyPlanet(player, true)
+        
+        local ai_use = true
         if ai_use_set == false then
             ai_use = false
         end
@@ -786,30 +763,27 @@ function StoryUtil.GetSafePlanetTable()
     return Active_Planets
 end
 
-function StoryUtil.DebugLog(text)
+function StoryUtil.RevealPlanet(planet, status)
     local plot = StoryUtil.GetPlayerAgnosticPlot()
-
-    local debugStack = GlobalValue.Get("DEBUG_LOG")
-
-    table.remove(debugStack, 1)
-    table.insert(debugStack, text)
 
     if not plot then
         return
     end
 
-    local debugEvent = plot.Get_Event("Show_Debug_Display")
+    local revealPlanetEvent = plot.Get_Event(StoryUtil.RevealPlanetEventName)
 
-    if not debugEvent then
+    if not revealPlanetEvent then
         return
     end
 
-    GlobalValue.Set("DEBUG_LOG", debugStack)
+	status_index = 1
+	if status == false then
+		status_index = 0
+	end
 
-    debugEvent.Clear_Dialog_Text()
-    for _, entry in pairs(debugStack) do
-        debugEvent.Add_Dialog_Text(entry)
-    end
+    revealPlanetEvent.Set_Reward_Parameter(0, planet)
+    revealPlanetEvent.Set_Reward_Parameter(1, status_index)
+    Story_Event(StoryUtil.RevealPlanetNotificationName)
 end
 
 
@@ -832,568 +806,6 @@ function StoryUtil.SetTacticalMap(map_name, layer, map_owner)
     setTacticalMapEvent.Set_Reward_Parameter(1, layer)
     setTacticalMapEvent.Set_Reward_Parameter(1, map_owner_name)
     Story_Event(StoryUtil.SetTacticalMapNotificationName)
-end
-
-function StoryUtil.SetPlanetRestricted(planet, status)
-    local plot = StoryUtil.GetPlayerAgnosticPlot()
-
-    if not plot then
-        return
-    end
-
-    local lockPlanetEvent = plot.Get_Event(StoryUtil.LockPlanetEventName)
-
-    if not lockPlanetEvent then
-        return
-    end
-
-    crossplot:publish("LOCK_PLANET", planet, status)
-
-    lockPlanetEvent.Set_Reward_Parameter(0, planet)
-    lockPlanetEvent.Set_Reward_Parameter(1, status)
-    Story_Event(StoryUtil.LockPlanetNotificationName)
-end
-
-function StoryUtil.RevealPlanet(planet, reveal)
-    local plot = StoryUtil.GetPlayerAgnosticPlot()
-
-    if not plot then
-        return
-    end
-
-    local revealPlanetEvent = plot.Get_Event(StoryUtil.RevealPlanetEventName)
-
-    if not revealPlanetEvent then
-        return
-    end
-
-    local reveal_planet = 1
-    if reveal == false then
-        reveal_planet = 0
-    end
-
-    revealPlanetEvent.Set_Reward_Parameter(0, planet)
-    revealPlanetEvent.Set_Reward_Parameter(1, reveal_planet)
-    Story_Event(StoryUtil.RevealPlanetNotificationName)
-end
-
-function StoryUtil.RevealAllPlanets()
-    local plot = StoryUtil.GetPlayerAgnosticPlot()
-
-    if not plot then
-        return
-    end
-
-    Story_Event(StoryUtil.RevealAllPlanetsNotificationName)
-end
-
-function StoryUtil.EnableGalacticReveal(reveal)
-    local plot = StoryUtil.GetPlayerAgnosticPlot()
-
-    if not plot then
-        return
-    end
-
-    local enableGalacticReveal = plot.Get_Event(StoryUtil.EnableGalacticRevealEventName)
-
-    if not enableGalacticReveal then
-        return
-    end
-
-    local reveal_planets = 1
-    if reveal == false then
-        reveal_planets = 0
-    end
-
-    enableGalacticReveal.Set_Reward_Parameter(0, reveal_planets)
-    Story_Event(StoryUtil.EnableGalacticRevealNotificationName)
-end
-
-function StoryUtil.RestrictAutoresolve(planet, allow_autoresolve)
-    local plot = StoryUtil.GetPlayerAgnosticPlot()
-
-    if not plot then
-        return
-    end
-
-    local restrictAutoresolveEvent = plot.Get_Event(StoryUtil.RestrictAutoresolveEventName)
-
-    if not restrictAutoresolveEvent then
-        return
-    end
-
-    local is_allowed = 1
-    if allow_autoresolve == false then
-        is_allowed = 0
-    end
-
-    restrictAutoresolveEvent.Set_Reward_Parameter(0, planet)
-    restrictAutoresolveEvent.Set_Reward_Parameter(1, is_allowed)
-    Story_Event(StoryUtil.RestrictAutoresolveNotificationName)
-end
-
-function StoryUtil.EnableInvasion(planet, allow_invasion)
-    local plot = StoryUtil.GetPlayerAgnosticPlot()
-
-    if not plot then
-        return
-    end
-
-    local enableInvasionEvent = plot.Get_Event(StoryUtil.EnableInvasionEventName)
-
-    if not enableInvasionEvent then
-        return
-    end
-
-    local is_allowed = 1
-    if allow_invasion == false then
-        is_allowed = 0
-    end
-
-    enableInvasionEvent.Set_Reward_Parameter(0, planet)
-    enableInvasionEvent.Set_Reward_Parameter(1, is_allowed)
-    Story_Event(StoryUtil.EnableInvasionNotificationName)
-end
-
-function StoryUtil.FlashPlanet(planet, flashId)
-    local plot = StoryUtil.GetPlayerAgnosticPlot()
-
-    if not plot then
-        return
-    end
-
-    local flashPlanetEvent = plot.Get_Event(StoryUtil.FlashPlanetEventName)
-
-    if not flashPlanetEvent then
-        return
-    end
-
-    flashPlanetEvent.Set_Reward_Parameter(0, planet)
-    flashPlanetEvent.Set_Reward_Parameter(1, flashId)
-    Story_Event(StoryUtil.FlashPlanetNotificationName)
-
-    local flashPlanetRemoveEvent = plot.Get_Event("Template_Flash_Planet_Remove")
-    flashPlanetRemoveEvent.Set_Reward_Parameter(0, flashId)
-
-    Story_Event(StoryUtil.CinematicSpeechNotificationName)
-end
-
-function StoryUtil.GalacticGoalComplete(textId)
-    local plot = StoryUtil.GetPlayerAgnosticPlot()
-
-    if not plot then
-        return
-    end
-
-    local galacticGoalCompleteEvent = plot.Get_Event(StoryUtil.GalacticGoalCompleteEventName)
-
-    if not galacticGoalCompleteEvent then
-        return
-    end
-
-    galacticGoalCompleteEvent.Set_Reward_Parameter(0, textId)
-    Story_Event(StoryUtil.GalacticGoalCompleteNotificationName)
-end
-
-function StoryUtil.GalacticGoalRemove(textId)
-    local plot = StoryUtil.GetPlayerAgnosticPlot()
-
-    if not plot then
-        return
-    end
-
-    local galacticGoalRemoveEvent = plot.Get_Event(StoryUtil.GalacticGoalRemoveEventName)
-
-    if not galacticGoalRemoveEvent then
-        return
-    end
-
-    galacticGoalRemoveEvent.Set_Reward_Parameter(0, textId)
-    Story_Event(StoryUtil.GalacticGoalRemoveNotificationName)
-end
-
-
--- Tactical Events
-function StoryUtil.Find_Attacking_Player(land_battle, sleep)
-	if land_battle then
-		local attacker_marker = Find_First_Object("Attacker Entry Position")
-
-		if not TestValid(attacker_marker) then
-			return nil
-		end
-
-		Sleep(0.5)
-
-		local p_attacker = Find_Nearest(attacker_marker, "Infantry | Vehicle | Air | LandHero")
-
-		if TestValid(p_attacker) and p_attacker.Get_Distance(attacker_marker) < 100 then
-			return p_attacker.Get_Owner()
-		else
-			return nil
-		end
-	else
-		if sleep == true then
-			Sleep(5)
-		end
-
-		DebugMessage("%s -- Set Attacker", tostring(Script))
-		local attacker_marker_list = Find_All_Objects_Of_Type("Attacker Entry Position")
-
-		for _,attacker_marker in pairs(attacker_marker_list) do
-			local p_attacker = Find_Nearest(attacker_marker, "SpaceHero | Fighter | Bomber | Transport | Corvette | Frigate | Capital | SuperCapital")
-			DebugMessage("%s -- Attacker starting unit %s", tostring(Script), tostring(p_attacker))
-			if TestValid(p_attacker) then
-				if attacker_marker.Get_Distance(p_attacker) < 4000 then
-					DebugMessage("%s -- Set Attacker Marker", tostring(Script))
-					return p_attacker.Get_Owner()
-				end
-			end
-		end
-	end
-end
-
-function StoryUtil.Find_Defending_Player()
-    local defending_player = nil
-	local defender_marker = Find_First_Object("Defending Forces Position")
-
-	if not TestValid(defender_marker) then
-		return nil
-	end
-
-	local defending_player = defender_marker.Get_Owner()
-	if TestValid(defending_player) then
-		return defending_player
-	else
-		return nil
-	end
-end
-
-function StoryUtil.SpawnUnitGround(unit, spawn_position, player)
-    local player_name = player
-
-	local unit_to_spawn = Find_Object_Type(unit)
-	local unit_to_spawn_list = Spawn_Unit(unit_to_spawn, spawn_position, player_name)
-	local player_unit_to_spawn = unit_to_spawn_list[1]
-	player_unit_to_spawn.Teleport_And_Face(spawn_position)
-
-	if TestValid(player_unit_to_spawn) then
-		return player_unit_to_spawn
-	else
-		return nil
-	end
-end
-
-function StoryUtil.SpawnUnitSpace(unit, spawn_position, player, hyperspace_duration)
-    local player_name = player
-
-	local player_unit_to_spawn = Spawn_Unit(Find_Object_Type("Generic_Praetor"), spawn_position, player_name)
-	local player_unit_to_spawn = Find_Nearest(spawn_position, player_name, true)
-	player_unit_to_spawn.Teleport_And_Face(spawn_position)
-	player_unit_to_spawn.Cinematic_Hyperspace_In(hyperspace_duration)
-
-	if TestValid(player_unit_to_spawn) then
-		return player_unit_to_spawn
-	else
-		return nil
-	end
-end
-
-function StoryUtil.CinematicEnvironmentOn()
-	Allow_Localized_SFX(false)
-	SFXManager.Allow_HUD_VO(false)
-	SFXManager.Allow_Ambient_VO(false)
-	SFXManager.Allow_Enemy_Sighted_VO(false)
-	SFXManager.Allow_Unit_Reponse_VO(false)
-	Set_Cinematic_Environment(true)
-end
-
-function StoryUtil.CinematicEnvironmentOff()
-	Allow_Localized_SFX(true)
-	SFXManager.Allow_HUD_VO(true)
-	SFXManager.Allow_Ambient_VO(true)
-	SFXManager.Allow_Enemy_Sighted_VO(true)
-	SFXManager.Allow_Unit_Reponse_VO(true)
-	Set_Cinematic_Environment(false)
-end
-
-function StoryUtil.StartCinematicCamera()
-	Start_Cinematic_Camera()
-	Stop_All_Music()
-	Lock_Controls(1)
-	Cancel_Fast_Forward()
-	Letter_Box_In(0)
-	Remove_All_Text()
-	Suspend_AI(1)
-	Fade_On()
-end
-
-function StoryUtil.EndCinematicCamera(camera_target, duration)
-	Point_Camera_At(camera_target)
-	Transition_To_Tactical_Camera(duration)
-	Letter_Box_Out(duration)
-	Suspend_AI(0)
-	Lock_Controls(0)
-	End_Cinematic_Camera()
-end
-
-function StoryUtil.SetCinematicCamera(camera_position, camera_target, follow_target)
-    local should_follow = 1
-    if follow_target == false then
-        should_follow = 0
-    end
-
-	Set_Cinematic_Camera_Key(camera_position, 0, 0, 0, 1, 0, 0, 0)
-	Set_Cinematic_Target_Key(camera_position, 0, 0, 0, 0, camera_target, should_follow, 0)
-end
-
-function StoryUtil.TransitionCinematicCamera(new_camera_position, camera_target, follow_target, duration)
-    local should_follow = 1
-    if follow_target == false then
-        should_follow = 0
-    end
-	Transition_Cinematic_Camera_Key(new_camera_position, duration, 0, 0, 0, 1, 0, 0, 0)
-	Transition_Cinematic_Target_Key(new_camera_position, duration, 0, 0, 0, 0, camera_target, should_follow, 0)
-end
-
-
-function StoryUtil.AIActivation()
-    local plot = StoryUtil.GetPlayerAgnosticPlot()
-
-    if not plot then
-        return
-    end
-
-	if (GlobalValue.Get("CRUEL_ON") == 1) then
-        if (GlobalValue.Get("ACTIVE_MOD") == 1) then -- 0 = TR; 1 = FotR; 2 = RevRev
-            for _, faction in pairs(CONSTANTS.ALL_FACTIONS_NOT_NEUTRAL) do
-                local faction_object = Find_Player(faction)
-                if faction_object ~= Find_Player("local") then
-                    local faction_name = faction_object.Get_Faction_Name()
-                    if faction_name == "REBEL" then
-                        local ai_type = CONSTANTS.ALL_FACTIONS_CRUEL_AI_CIS[string.upper(faction)]
-                        StoryUtil.ChangeAIPlayer(faction_name, ai_type)
-                    else
-                        local ai_type = CONSTANTS.ALL_FACTIONS_CRUEL_AI[string.upper(faction)]
-                        StoryUtil.ChangeAIPlayer(faction_name, ai_type)
-                    end
-                end
-            end
-        else
-            for _, faction in pairs(CONSTANTS.ALL_FACTIONS_NOT_NEUTRAL) do
-                local faction_object = Find_Player(faction)
-                if faction_object ~= Find_Player("local") then
-                    local faction_name = faction_object.Get_Faction_Name()
-                    local ai_type = CONSTANTS.ALL_FACTIONS_CRUEL_AI[string.upper(faction)]
-                    StoryUtil.ChangeAIPlayer(faction_name, ai_type)
-                end
-            end
-        end
-	end
-	if (GlobalValue.Get("CRUEL_ON") == 0) then
-        if (GlobalValue.Get("ACTIVE_MOD") == 1) then -- 0 = TR; 1 = FotR; 2 = RevRev
-            for _, faction in pairs(CONSTANTS.ALL_FACTIONS_NOT_NEUTRAL) do
-                local faction_object = Find_Player(faction)
-                if faction_object ~= Find_Player("local") then
-                    local faction_name = faction_object.Get_Faction_Name()
-                    if faction_name == "REBEL" then
-                        local ai_type = CONSTANTS.ALL_FACTIONS_AI_CIS[string.upper(faction)]
-                        StoryUtil.ChangeAIPlayer(faction_name, ai_type)
-                    else
-                        local ai_type = CONSTANTS.ALL_FACTIONS_AI[string.upper(faction)]
-                        StoryUtil.ChangeAIPlayer(faction_name, ai_type)
-                    end
-                end
-            end
-        else
-            for _, faction in pairs(CONSTANTS.ALL_FACTIONS_NOT_NEUTRAL) do
-                local faction_object = Find_Player(faction)
-                if faction_object ~= Find_Player("local") then
-                    local faction_name = faction_object.Get_Faction_Name()
-                    local ai_type = CONSTANTS.ALL_FACTIONS_AI[string.upper(faction)]
-                    StoryUtil.ChangeAIPlayer(faction_name, ai_type)
-                end
-            end
-        end
-	end
-    Story_Event(StoryUtil.AIActivationNotificationName)
-end
-
-function StoryUtil.DisableRetreat(player, status)
-    local plot = StoryUtil.GetPlayerAgnosticPlot()
-
-    if not plot then
-        return
-    end
-
-	local player_name = player.Get_Faction_Name()
-
-    local disableRetreatEvent = plot.Get_Event(StoryUtil.DisableRetreatEventName)
-
-    if not disableRetreatEvent then
-        return
-    end
-
-    local is_disable = 1
-    if status == false then
-        is_disable = 0
-    end
-
-    disableRetreatEvent.Set_Reward_Parameter(0, player_name)
-    disableRetreatEvent.Set_Reward_Parameter(1, is_disable)
-    Story_Event(StoryUtil.DisableRetreatNotificationName)
-end
-
-function StoryUtil.VictoryAllowance(status)
-    local plot = StoryUtil.GetPlayerAgnosticPlot()
-
-    if not plot then
-        return
-    end
-
-    local victoryAllowanceEvent = plot.Get_Event(StoryUtil.VictoryAllowanceEventName)
-
-    if not victoryAllowanceEvent then
-        return
-    end
-
-    local is_allowed = 1
-    if status == false then
-        is_allowed = 0
-    end
-
-    victoryAllowanceEvent.Set_Reward_Parameter(0, is_allowed)
-    Story_Event(StoryUtil.VictoryAllowanceNotificationName)
-end
-
-function StoryUtil.ReinforcementHandler(status, player)
-    local plot = StoryUtil.GetPlayerAgnosticPlot()
-
-    if not plot then
-        return
-    end
-
-	if player then
-		local player_name = player.Get_Faction_Name()
-	end
-
-    if not player then
-        player_name = ""
-    end
-
-    local reinforcementHandlerEvent = plot.Get_Event(StoryUtil.ReinforcementHandlerEventName)
-
-    if not reinforcementHandlerEvent then
-        return
-    end
-
-    local is_allowed = 1
-    if status == false then
-        is_allowed = 0
-    end
-
-    reinforcementHandlerEvent.Set_Reward_Parameter(0, is_allowed)
-    reinforcementHandlerEvent.Set_Reward_Parameter(1, player_name)
-    Story_Event(StoryUtil.ReinforcementHandlerNotificationName)
-end
-
-function StoryUtil.HideAutoresolve()
-    local plot = StoryUtil.GetPlayerAgnosticPlot()
-
-    if not plot then
-        return
-    end
-
-    Story_Event(StoryUtil.HideAutoresolveNotificationName)
-end
-
-
-function StoryUtil.SetObjectiveSandboxSet()
-    local plot = StoryUtil.GetPlayerAgnosticPlot()
-
-    if not plot then
-        return
-    end
-
-    Story_Event(StoryUtil.ObjectiveSandboxSetNotificationName)
-end
-
-function StoryUtil.SetObjectiveCleanUp()
-    local plot = StoryUtil.GetPlayerAgnosticPlot()
-
-    if not plot then
-        return
-    end
-
-    Story_Event(StoryUtil.ObjectiveCleanUpNotificationName)
-end
-
-function StoryUtil.SetObjectiveComplete(textId)
-    local plot = StoryUtil.GetPlayerAgnosticPlot()
-
-    if not plot then
-        return
-    end
-
-    local tacticalObjectiveEvent = plot.Get_Event(StoryUtil.ObjectiveCompleteEventName)
-
-    if not tacticalObjectiveEvent then
-        return
-    end
-
-    tacticalObjectiveEvent.Set_Reward_Parameter(0, textId)
-    Story_Event(StoryUtil.ObjectiveCompleteNotificationName)
-end
-
-function StoryUtil.SetObjectiveUpdate(old_textId, new_textID)
-    local plot = StoryUtil.GetPlayerAgnosticPlot()
-
-    if not plot then
-        return
-    end
-
-    local tacticalObjectiveUpdateEvent = plot.Get_Event(StoryUtil.ObjectiveUpdateEventName)
-
-    if not tacticalObjectiveUpdateEvent then
-        return
-    end
-
-    tacticalObjectiveUpdateEvent.Set_Reward_Parameter(0, old_textId)
-    tacticalObjectiveUpdateEvent.Set_Reward_Parameter(1, new_textID)
-    Story_Event(StoryUtil.ObjectiveUpdateNotificationName)
-end
-
-function StoryUtil.SetObjectiveFailed(textId)
-    local plot = StoryUtil.GetPlayerAgnosticPlot()
-
-    if not plot then
-        return
-    end
-
-    local tacticalObjectiveEvent = plot.Get_Event(StoryUtil.ObjectiveFailedEventName)
-
-    if not tacticalObjectiveEvent then
-        return
-    end
-
-    tacticalObjectiveEvent.Set_Reward_Parameter(0, textId)
-    Story_Event(StoryUtil.ObjectiveFailedNotificationName)
-end
-
-function StoryUtil.SetObjectiveRemove(textId)
-    local plot = StoryUtil.GetPlayerAgnosticPlot()
-
-    if not plot then
-        return
-    end
-
-    local tacticalObjectiveEvent = plot.Get_Event(StoryUtil.ObjectiveRemoveEventName)
-
-    if not tacticalObjectiveEvent then
-        return
-    end
-
-    tacticalObjectiveEvent.Set_Reward_Parameter(0, textId)
-    Story_Event(StoryUtil.ObjectiveRemoveNotificationName)
 end
 
 return StoryUtil

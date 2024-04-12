@@ -1,60 +1,23 @@
 <?xml version="1.0" ?>
 
-
-
-<!--******************************************************-->
-<!--******	Campaign: Rim World Conflict (Empire)	******-->
-<!--******************************************************-->
-
 <Story>
-	
-	<Event Name="Universal_Story_Start">
-		<Event_Type>STORY_ELAPSED</Event_Type>
-		<Event_Param1>0</Event_Param1>
-	</Event>
-	
-	<Event Name="Lock_Enter_Tech_03">
-		<Event_Type>STORY_TECH_LEVEL</Event_Type>
-		<Event_Param1>2</Event_Param1>
-	</Event>
-	
-	<Event Name="Rebels_Enter_Tech_05">
-		<Event_Type>STORY_TECH_LEVEL</Event_Type>
-		<Event_Param1>2</Event_Param1>
-	</Event>
-	
-	<Event Name="Build_Wedge">
+
+	<!--The branch disabling is needed because STORY_TACTICAL_DESTROY can't differentiate actual tactical death versus scripted REMOVE_UNIT for Wedge.-->
+	<Event Name="Build_Wedge_Lusankya">
 		<Event_Type>STORY_CONSTRUCT</Event_Type>
 		<Event_Param1>Wedge_Lusankya</Event_Param1>
 		<Event_Param2>1</Event_Param2>
 		<Event_Param3>Rebel</Event_Param3>
-		<Reward_Type>REMOVE_UNIT</Reward_Type>
-		<Reward_Param1>Wedge_Rogue_Squadron_Space</Reward_Param1>
-	</Event>
-	
-	<Event Name="Wedge_Dies">
-  		<Event_Type>STORY_TACTICAL_DESTROY</Event_Type>
-  		<Event_Param1>Wedge_XWing_Rogue</Event_Param1>
-		<Event_Param2></Event_Param2>
-		<Event_Param3>1</Event_Param3>
 		<Reward_Type>DISABLE_BRANCH</Reward_Type>
-		<Reward_Param1>Tycho_Passive</Reward_Param1>
+		<Reward_Param1>Branch_Monitor_Wedge_Rogue_Death</Reward_Param1>
 		<Reward_Param2>1</Reward_Param2>
 	</Event>
-	
-	<Event Name="Spawn_Tycho_Active">
+
+	<!--Wedge_Lusankya can still be built even if Rogue Squadron was killed; this prevents Tycho from spawning in that case.-->
+	<!--Tycho is spawned via Lua to allow spawning on Wedge's location.-->
+	<Event Name="Spawn_Tycho_Celchu_Rogue_Team">
 		<Event_Type>STORY_TRIGGER</Event_Type>
-		<Prereq>Build_Wedge</Prereq>
-		<Branch>Tycho_Passive</Branch>
-	</Event>
-	
-	<Event Name="Spawn_Rogue_Squadron">
-		<Event_Type>STORY_ELAPSED</Event_Type>
-		<Event_Param1>2</Event_Param1>
-		<!-- <Reward_Type>SPAWN_HERO</Reward_Type> Don't spawn via XML and crash the game if NR was destroyed before era 5
-		<Reward_Param1>Rogue_Squadron_Space</Reward_Param1>
-		<Reward_Param2>Coruscant</Reward_Param2> -->
-		<Prereq>Spawn_Tycho_Active</Prereq>
+		<Prereq>Build_Wedge_Lusankya</Prereq>
 	</Event>	
-	
+
 </Story>

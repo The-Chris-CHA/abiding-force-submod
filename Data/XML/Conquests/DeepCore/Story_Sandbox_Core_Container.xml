@@ -11,6 +11,11 @@
 	<Event Name="Universal_Story_Start">
 		<Event_Type>STORY_ELAPSED</Event_Type>
 		<Event_Param1>0</Event_Param1>
+	</Event>	
+
+	<Event Name="Delayed_Initialize">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>7</Event_Param1>
 	</Event>
 
 	<Event Name="Reveal_All_Planets">
@@ -391,7 +396,7 @@
 	<Event Name="Intro_Welcome_Teradoc_E2">
 		<Event_Type>STORY_TRIGGER</Event_Type>
 		<Reward_Type>MULTIMEDIA</Reward_Type>
-		<Reward_Param1>TEXT_CONQUEST_TERADOC_DEEPCORE_INTRO</Reward_Param1>
+		<Reward_Param1>TEXT_CONQUEST_MALDROOD_DEEPCORE_INTRO</Reward_Param1>
 		<Reward_Param2>15</Reward_Param2>
 		<Reward_Param3 />
 		<Reward_Param4 />
@@ -418,7 +423,7 @@
 	<Event Name="Intro_Welcome_Teradoc_E4">
 		<Event_Type>STORY_TRIGGER</Event_Type>
 		<Reward_Type>MULTIMEDIA</Reward_Type>
-		<Reward_Param1>TEXT_CONQUEST_TERADOC_CARNOR_INTRO</Reward_Param1>
+		<Reward_Param1>TEXT_CONQUEST_MALDROOD_CARNOR_INTRO</Reward_Param1>
 		<Reward_Param2>15</Reward_Param2>
 		<Reward_Param3 />
 		<Reward_Param4 />
@@ -446,7 +451,7 @@
 	<Event Name="Night Hammer_Dialog_Teradoc">
 		<Event_Type>STORY_TRIGGER</Event_Type>
 		<Reward_Type>MULTIMEDIA</Reward_Type>
-		<Reward_Param1>TEXT_CONQUEST_TERADOC_DEEPCORE_NH</Reward_Param1>
+		<Reward_Param1>TEXT_CONQUEST_MALDROOD_DEEPCORE_NH</Reward_Param1>
 		<Reward_Param2>15</Reward_Param2>
 		<Reward_Param3 />
 		<Reward_Param4 />

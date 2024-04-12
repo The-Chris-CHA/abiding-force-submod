@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Campaigns>
+<!-- ************************************************** -->
+<!-- ******      Campaign: Orinda Campaign       ****** -->
+<!-- ************************************************** -->
 	<Campaign Name="Orinda_Empire">
 		<Campaign_Set>Orinda</Campaign_Set>
-		
-		
 		<Sort_Order>223</Sort_Order>
-
         <Text_ID> TEXT_CAMPAIGN_SINGLE_ORINDA </Text_ID>
         <Description_Text> TEXT_CAMPAIGN_SINGLE_DESCRIPTION_ORINDA </Description_Text>
 
@@ -13,115 +13,142 @@
         <Camera_Shift_Y> 0.0 </Camera_Shift_Y>
         <Camera_Distance> 1200.0 </Camera_Distance>
 		<Locations>
-			Galaxy_Core_Art_Model, 
+			Adumar,
 			Agamar,
-			Axxila,
-			Bandomeer,
-			Bastion,
+			Ansion,
 			Bilbringi,
-			Bimmiel,
 			Borosk,
-			Celanon,
 			Corthenia,
 			Darkon,
-			Dathomir,
+			Galaxy_Core_Art_Model,
+			Garqi,
+			Generis,
+			Hewett,
+			Iridonia,
+			Ithor,
+			Ketaris,
+			Lonnaw,
+			Morishim,
+			Movris,
+			Nentan,
+			Obredaan,
+			Ord_Biniir,
+			Ord_Cantrell,
+			Ord_Mantell,
+			Orinda,
+			Orocco,
 			Paarin_Minor,
 			Phaeda,
-			Scarl,
 			Tartaglia,
-			Ord_Trasi,
 			Traval_Pacor,
 			Tyan,
-			Hewett,
-			Ithor,
-			Jaemus,
-			Lonnaw,
-			Ketaris,
-			Ord_Mantell,
-			Mygeeto,
-			Obredaan,
-			Orinda,
-			Orocco
-</Locations>
+			Wistril,
+			Yaga_Minor,
+		</Locations>
 		<Trade_Routes>
-			Agamar_Hewett,
+			Adumar_Ansion,
+			Adumar_Borosk,
+			Agamar_Generis,
+			Agamar_Movris,
 			Agamar_Paarin_Minor,
-			Agamar_Bimmiel,
-			Axxila_Bimmiel,
-			Axxila_Celanon,
-			Axxila_Dathomir,
-			Bandomeer_Dathomir,
-			Bandomeer_Hewett,
-			Bandomeer_Scarl,
-			Bastion_Bimmiel,
-			Bastion_Jaemus,
+			Ansion_Darkon,
+			Ansion_Iridonia,
 			Bilbringi_Darkon,
-			Bilbringi_Ord_Mantell,
-			Bilbringi_Scarl,
-			Bimmiel_Ord_Trasi,
-			Borosk_Jaemus,
-			Borosk_Mygeeto,
-			Borosk_Orinda,
-			Celanon_Dathomir,
+			Bilbringi_Nentan,
+			Borosk_Garqi,
+			Borosk_Wistril,
+			Borosk_Yaga_Minor,
+			Corthenia_Obredaan,
 			Corthenia_Traval_Pacor,
 			Corthenia_Tyan,
-			Darkon_Traval_Pacor,
+			Darkon_Iridonia,
+			Darkon_Nentan,
+			Garqi_Morishim,
+			Garqi_Ord_Biniir,
+			Garqi_Wistril,
+			Generis_Ketaris,
+			Generis_Ord_Biniir,
+			Hewett_Movris,
 			Hewett_Orocco,
-			Hewett_Paarin_Minor,
 			Hewett_Tartaglia,
-			Ithor_Ketaris,
-			Ithor_Obredaan,
+			Iridonia_Traval_Pacor,
 			Ithor_Orocco,
+			Ithor_Paarin_Minor,
+			Ithor_Phaeda,
+			Ithor_Tyan,
 			Ketaris_Paarin_Minor,
 			Ketaris_Phaeda,
 			Lonnaw_Orinda,
-			Lonnaw_Obredaan,
+			Lonnaw_Traval_Pacor,
+			Morishim_Ord_Biniir,
+			Morishim_Yaga_Minor,
+			Movris_Paarin_Minor,
+			Nentan_Ord_Mantell,
+			Nentan_Traval_Pacor,
+			Obredaan_Orinda,
+			Obredaan_Tyan,
+			Ord_Biniir_Ord_Cantrell,
+			Ord_Cantrell_Orinda,
+			Ord_Cantrell_Phaeda,
+			Ord_Cantrell_Wistril,
 			Ord_Mantell_Orocco,
 			Ord_Mantell_Tyan,
-			Mygeeto_Ord_Trasi,
-			Obredaan_Tyan,
-			Orinda_Phaeda,
-			Orinda_Traval_Pacor,
+			Orinda_Wistril,
 			Orocco_Tartaglia,
-			Ord_Trasi_Phaeda
-</Trade_Routes>
-
-
+		</Trade_Routes>
+		
 		<Home_Location> Rebel, Bilbringi </Home_Location>
-        <Home_Location> Empire, Bastion </Home_Location>
-		<Home_Location> Warlords, RZ7 </Home_Location> 
-	 
+        <Home_Location> Empire, Yaga_Minor </Home_Location>
+		<Home_Location> Independent_Forces, Adumar </Home_Location> 
+
         <Starting_Active_Player> Empire </Starting_Active_Player>
 
 		<Rebel_Story_Name>Conquests\Orinda\Story_Plots_Sandbox_Orinda_Rebel.xml</Rebel_Story_Name>
         <Empire_Story_Name>Conquests\Orinda\Story_Plots_Sandbox_Orinda_Empire.xml</Empire_Story_Name>
         <Underworld_Story_Name>Conquests\Orinda\Story_Plots_Sandbox_Orinda_Container.xml</Underworld_Story_Name>
-        	 
-        	 
-		<AI_Player_Control> Rebel, GenericAI </AI_Player_Control>
-		<AI_Player_Control> EmpireoftheHand, None </AI_Player_Control>
-		<AI_Player_Control> Empire, SandboxHuman </AI_Player_Control>		
-		<AI_Player_Control> Warlords, None </AI_Player_Control>		
-		
-		<AI_Player_Control> Pentastar, None</AI_Player_Control>
-		<AI_Player_Control> Zsinj_Empire, None </AI_Player_Control>
-		
-		<AI_Player_Control> Hapes_Consortium, None </AI_Player_Control>
-		<AI_Player_Control> Greater_Maldrood, None </AI_Player_Control>      
-		<AI_Player_Control> Eriadu_Authority, None </AI_Player_Control>				
-		<AI_Player_Control> Corporate_Sector, None </AI_Player_Control>				
 
-		<Markup_Filename>Empire, DefaultGalacticHints </Markup_Filename>
-		<Markup_Filename>Rebel, DefaultGalacticHints </Markup_Filename>
-		<Markup_Filename>EmpireoftheHand, DefaultGalacticHints </Markup_Filename>
-		<Markup_Filename>Zsinj_Empire, DefaultGalacticHints </Markup_Filename>
-		<Markup_Filename>Greater_Maldrood, DefaultMaldroodHints </Markup_Filename>			
-		<Markup_Filename>Pentastar, DefaultGalacticHints </Markup_Filename>
-		<Markup_Filename>Eriadu_Authority, DefaultEriaduHints </Markup_Filename>				
-		<Markup_Filename>Corporate_Sector, DefaultGalacticHints </Markup_Filename>		
-		<Markup_Filename>Warlords, DefaultGalacticHints </Markup_Filename>			
-		<Markup_Filename>Hapes_Consortium, DefaultGalacticHints </Markup_Filename>
+		<AI_Player_Control> Rebel, GenericAI </AI_Player_Control>
+		<AI_Player_Control> Empire, SandboxHuman </AI_Player_Control>		
 		
+		<AI_Player_Control>Chiss, None</AI_Player_Control>
+		<AI_Player_Control>Corellia, None</AI_Player_Control>
+		<AI_Player_Control>Corporate_Sector, None</AI_Player_Control>
+		<AI_Player_Control>EmpireoftheHand, None </AI_Player_Control>
+		<AI_Player_Control>Eriadu_Authority, None</AI_Player_Control>
+		<AI_Player_Control>Greater_Maldrood, None</AI_Player_Control>
+		<AI_Player_Control>Hapes_Consortium, None</AI_Player_Control>
+		<AI_Player_Control>Hostile, None</AI_Player_Control>
+		<AI_Player_Control>Hutt_Cartels, None</AI_Player_Control>
+		<AI_Player_Control>Independent_Forces, None</AI_Player_Control>
+		<AI_Player_Control>Killik_Hives, None</AI_Player_Control>
+		<AI_Player_Control>Mandalorians, None</AI_Player_Control>
+		<AI_Player_Control>Pentastar, None</AI_Player_Control>
+		<AI_Player_Control>SsiRuuvi_Imperium, None</AI_Player_Control>
+		<AI_Player_Control>Underworld, None</AI_Player_Control>	
+		<AI_Player_Control>Warlords, None</AI_Player_Control>	
+		<AI_Player_Control>Yevetha, None</AI_Player_Control>
+		<AI_Player_Control>Zsinj_Empire, None</AI_Player_Control>
+
+		<Markup_Filename>Chiss, OrindaGalacticHints</Markup_Filename>
+		<Markup_Filename>Corellia, OrindaGalacticHints</Markup_Filename>
+		<Markup_Filename>Corporate_Sector, OrindaGalacticHints</Markup_Filename>
+		<Markup_Filename>Empire, OrindaGalacticHints</Markup_Filename>
+		<Markup_Filename>EmpireoftheHand, OrindaGalacticHints</Markup_Filename>
+		<Markup_Filename>Eriadu_Authority, OrindaGalacticHints</Markup_Filename>
+		<Markup_Filename>Greater_Maldrood, OrindaGalacticHints</Markup_Filename>
+		<Markup_Filename>Hapes_Consortium, OrindaGalacticHints</Markup_Filename>
+		<Markup_Filename>Hostile, OrindaGalacticHints</Markup_Filename>
+		<Markup_Filename>Hutt_Cartels, OrindaGalacticHints</Markup_Filename>
+		<Markup_Filename>Independent_Forces, OrindaGalacticHints</Markup_Filename>
+		<Markup_Filename>Killik_Hives, OrindaGalacticHints</Markup_Filename>
+		<Markup_Filename>Mandalorians, OrindaGalacticHints</Markup_Filename>
+		<Markup_Filename>Pentastar, OrindaGalacticHints</Markup_Filename>
+		<Markup_Filename>Rebel, OrindaGalacticHints</Markup_Filename>
+		<Markup_Filename>SsiRuuvi_Imperium, OrindaGalacticHints</Markup_Filename>
+		<Markup_Filename>Underworld, OrindaGalacticHints</Markup_Filename>
+		<Markup_Filename>Warlords, OrindaGalacticHints</Markup_Filename>
+		<Markup_Filename>Yevetha, OrindaGalacticHints</Markup_Filename>
+		<Markup_Filename>Zsinj_Empire, OrindaGalacticHints</Markup_Filename>
 		
 		<Supports_Custom_Settings>False</Supports_Custom_Settings>
 		<Show_Completed_Tab>True</Show_Completed_Tab>
@@ -136,57 +163,855 @@
 				Galactic_All_Planets_Controlled
 		</AI_Victory_Conditions>
 
-        <!-- Resources for quick organization/editing -->
-		
-		
 		<!-- Rebel Starting Forces -->
 
-		<Starting_Credits> Rebel,  15000 </Starting_Credits>
+		<Starting_Credits> Rebel, 10000 </Starting_Credits>
 		<Starting_Tech_Level> Rebel, 2 </Starting_Tech_Level>
 		<Max_Tech_Level> Rebel, 2 </Max_Tech_Level>
 		
-				<!-- Bilbringi Space Forces -->
-		<Starting_Forces> Rebel, Bilbringi, Generate_Force </Starting_Forces>
+		<!-- Ansion Space Forces -->
+		<Starting_Forces> Rebel, Ansion, NewRepublic_Star_Base_3 </Starting_Forces>
+		<Starting_Forces> Rebel, Ansion, NewRepublic_Shipyard_Level_One </Starting_Forces>
+		<Starting_Forces> Rebel, Ansion, Generic_Colony_One </Starting_Forces>
+		<Starting_Forces> Rebel, Ansion, Liberator_Cruiser </Starting_Forces>
+		<Starting_Forces> Rebel, Ansion, Alliance_Assault_Frigate </Starting_Forces>
+		<Starting_Forces> Rebel, Ansion, Corellian_Corvette </Starting_Forces>
+		<Starting_Forces> Rebel, Ansion, Corellian_Corvette </Starting_Forces>
+		<!-- Ansion Ground Forces -->
+		<Starting_Forces> Rebel, Ansion, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Ansion, R_Ground_Light_Vehicle_Factory </Starting_Forces>
+		<Starting_Forces> Rebel, Ansion, Rebel_T2B_Company </Starting_Forces>
+		<Starting_Forces> Rebel, Ansion, Rebel_SRV1_Company </Starting_Forces>
+		
+		<!-- Bilbringi Space Forces --> <!-- Additional MC90 and DHC for AI -->
+		<Starting_Forces> Rebel, Bilbringi, NewRepublic_Star_Base_4 </Starting_Forces>
+		<Starting_Forces> Rebel, Bilbringi, Secondary_Golan_Two </Starting_Forces>
+		<Starting_Forces> Rebel, Bilbringi, NewRepublic_Shipyard_Level_Four </Starting_Forces>
+		<Starting_Forces> Rebel, Bilbringi, MC90 </Starting_Forces>
+		<Starting_Forces> Rebel, Bilbringi, MC90 </Starting_Forces>
+		<Starting_Forces> Rebel, Bilbringi, Dreadnaught_Rebel </Starting_Forces>
+		<Starting_Forces> Rebel, Bilbringi, Dreadnaught_Rebel </Starting_Forces>
+		<Starting_Forces> Rebel, Bilbringi, Corona </Starting_Forces>
+		<Starting_Forces> Rebel, Bilbringi, Corona </Starting_Forces>
+		<Starting_Forces> Rebel, Bilbringi, Warrior_Gunship </Starting_Forces>
+		<Starting_Forces> Rebel, Bilbringi, Warrior_Gunship </Starting_Forces>
+		<Starting_Forces> Rebel, Bilbringi, Warrior_Gunship </Starting_Forces>
+		<Starting_Forces> Rebel, Bilbringi, Warrior_Gunship </Starting_Forces>
+		<!-- Bilbringi Ground Forces -->
+		<Starting_Forces> Rebel, Bilbringi, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Bilbringi, R_Ground_Barracks </Starting_Forces>
+		<Starting_Forces> Rebel, Bilbringi, Ground_Ion_Cannon </Starting_Forces>
+		<Starting_Forces> Rebel, Bilbringi, Defense_Trooper_Squad </Starting_Forces>
+		<Starting_Forces> Rebel, Bilbringi, Rebel_Infiltrator_Squad </Starting_Forces>
+		<Starting_Forces> Rebel, Bilbringi, Rebel_T2B_Company </Starting_Forces>
+		<Starting_Forces> Rebel, Bilbringi, Rebel_SRV1_Company </Starting_Forces>
+		<Starting_Forces> Rebel, Bilbringi, Rebel_T3B_Company </Starting_Forces>
 		
 		<!-- Orinda Space Forces -->
-		<Starting_Forces> Rebel, Orinda, Generate_Force </Starting_Forces>
-		
-		<!-- Orinda Space Forces -->
-		
-		<!-- Bandomeer Space Forces -->
-		<Starting_Forces> Rebel, Bandomeer, Generate_Force </Starting_Forces>
+		<Starting_Forces> Rebel, Orinda, NewRepublic_Star_Base_4 </Starting_Forces>
+		<Starting_Forces> Rebel, Orinda, Secondary_Golan_Two </Starting_Forces>
+		<Starting_Forces> Rebel, Orinda, NewRepublic_Shipyard_Level_Two </Starting_Forces>
+		<Starting_Forces> Rebel, Orinda, ISD_1_NR </Starting_Forces>
+		<Starting_Forces> Rebel, Orinda, MC80B </Starting_Forces>
+		<Starting_Forces> Rebel, Orinda, MC80B </Starting_Forces> <!-- Additional MC80b for AI -->
+		<Starting_Forces> Rebel, Orinda, Dauntless </Starting_Forces>
+		<Starting_Forces> Rebel, Orinda, MC40a </Starting_Forces>
+		<Starting_Forces> Rebel, Orinda, Nebulon_B_Tender </Starting_Forces>
+		<Starting_Forces> Rebel, Orinda, Nebulon_B_Tender </Starting_Forces>
+		<!-- Orinda Ground Forces -->
+		<Starting_Forces> Rebel, Orinda, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Orinda, R_Ground_Barracks </Starting_Forces>
+		<Starting_Forces> Rebel, Orinda, R_Ground_Heavy_Vehicle_Factory </Starting_Forces>
+		<Starting_Forces> Rebel, Orinda, Rebel_Marine_Squad </Starting_Forces>
+		<Starting_Forces> Rebel, Orinda, Rebel_Marine_Squad </Starting_Forces>
+		<Starting_Forces> Rebel, Orinda, Rebel_AA5_Company </Starting_Forces>
+		<Starting_Forces> Rebel, Orinda, Rebel_T4B_Company </Starting_Forces>
+		<Starting_Forces> Rebel, Orinda, Rebel_Vwing_Group </Starting_Forces>
+		<Starting_Forces> Rebel, Orinda, MAS_2xB_Company </Starting_Forces>
 
 		<!-- Corthenia Space Forces -->
-		<Starting_Forces> Rebel, Corthenia, Generate_Force </Starting_Forces>
-		
-		<Starting_Forces> Rebel, Scarl, Generate_Force </Starting_Forces>
+		<Starting_Forces> Rebel, Corthenia, NewRepublic_Star_Base_2 </Starting_Forces>
+		<Starting_Forces> Rebel, Corthenia, NewRepublic_Shipyard_Level_One </Starting_Forces>
+		<Starting_Forces> Rebel, Corthenia, Dreadnaught_Rebel </Starting_Forces>
+		<Starting_Forces> Rebel, Corthenia, Dreadnaught_Rebel </Starting_Forces>
+		<Starting_Forces> Rebel, Corthenia, MC40a </Starting_Forces>
+		<Starting_Forces> Rebel, Corthenia, MC40a </Starting_Forces>
+		<Starting_Forces> Rebel, Corthenia, Marauder_Missile_Cruiser </Starting_Forces>
+		<Starting_Forces> Rebel, Corthenia, Corellian_Gunboat </Starting_Forces>
+		<!-- Corthenia Ground Forces -->
+		<Starting_Forces> Rebel, Corthenia, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Corthenia, R_Ground_Barracks </Starting_Forces>
+		<Starting_Forces> Rebel, Corthenia, R_Ground_Light_Vehicle_Factory </Starting_Forces>
+		<Starting_Forces> Rebel, Corthenia, Tax_Agency </Starting_Forces>
+		<Starting_Forces> Rebel, Corthenia, Defense_Trooper_Squad </Starting_Forces>
+		<Starting_Forces> Rebel, Corthenia, Rebel_SRV1_Company </Starting_Forces>
+		<Starting_Forces> Rebel, Corthenia, Rebel_T3B_Company </Starting_Forces>
 
 		<!-- Darkon Space Forces -->
-		<Starting_Forces> Rebel, Darkon, Generate_Force </Starting_Forces>
-
-	
+		<Starting_Forces> Rebel, Darkon, NewRepublic_Star_Base_2 </Starting_Forces>
+		<Starting_Forces> Rebel, Darkon, NewRepublic_Shipyard_Level_One </Starting_Forces>
+		<Starting_Forces> Rebel, Darkon, Generic_TradeStation </Starting_Forces>
+		<Starting_Forces> Rebel, Darkon, Dauntless </Starting_Forces>
+		<Starting_Forces> Rebel, Darkon, Alliance_Assault_Frigate_II </Starting_Forces>
+		<Starting_Forces> Rebel, Darkon, Alliance_Assault_Frigate_II </Starting_Forces>
+		<!-- Darkon Ground Forces -->
+		<Starting_Forces> Rebel, Darkon, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Darkon, R_Ground_Barracks </Starting_Forces>
+		<Starting_Forces> Rebel, Darkon, Rebel_Marine_Squad </Starting_Forces>
+		<Starting_Forces> Rebel, Darkon, Rebel_T1B_Company </Starting_Forces>
+		<Starting_Forces> Rebel, Darkon, Rebel_MPTL_Company </Starting_Forces>
+		
+		<!-- Hewett Space Forces -->
+		<Starting_Forces> Rebel, Hewett, NewRepublic_Star_Base_3 </Starting_Forces>
+		<Starting_Forces> Rebel, Hewett, NewRepublic_Shipyard_Level_One </Starting_Forces>
+		<Starting_Forces> Rebel, Hewett, Invincible_Cruiser </Starting_Forces>
+		<Starting_Forces> Rebel, Hewett, MC30a </Starting_Forces>
+		<Starting_Forces> Rebel, Hewett, MC30c </Starting_Forces>
+		<Starting_Forces> Rebel, Hewett, MC30c </Starting_Forces>
+		<Starting_Forces> Rebel, Hewett, Quasar </Starting_Forces>
+		<!-- Hewett Ground Forces -->
+		<Starting_Forces> Rebel, Hewett, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Hewett, R_Ground_Light_Vehicle_Factory </Starting_Forces>
+		<Starting_Forces> Rebel, Hewett, Rebel_T1B_Company </Starting_Forces>
+		<Starting_Forces> Rebel, Hewett, Rebel_T2B_Company </Starting_Forces>
+		
+		<!-- Ithor Space Forces -->
+		<Starting_Forces> Rebel, Ithor, NewRepublic_Star_Base_4 </Starting_Forces>
+		<Starting_Forces> Rebel, Ithor, NewRepublic_Shipyard_Level_Two </Starting_Forces>
+		<Starting_Forces> Rebel, Ithor, Secondary_Golan_One </Starting_Forces>
+		<Starting_Forces> Rebel, Ithor, Generic_Colony_Two </Starting_Forces>
+		<Starting_Forces> Rebel, Ithor, Republic_SD </Starting_Forces>
+		<Starting_Forces> Rebel, Ithor, MC80B </Starting_Forces>
+		<Starting_Forces> Rebel, Ithor, MC80B </Starting_Forces> <!-- Additional MC80b for AI -->
+		<Starting_Forces> Rebel, Ithor, MC30a </Starting_Forces>
+		<Starting_Forces> Rebel, Ithor, MC30a </Starting_Forces>
+		<Starting_Forces> Rebel, Ithor, Corellian_Gunboat </Starting_Forces>
+		<Starting_Forces> Rebel, Ithor, Corellian_Gunboat </Starting_Forces>
+		<!-- Ithor Ground Forces -->
+		<Starting_Forces> Rebel, Ithor, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Ithor, R_Ground_Barracks </Starting_Forces>
+		<Starting_Forces> Rebel, Ithor, Tax_Agency </Starting_Forces>
+		<Starting_Forces> Rebel, Ithor, Rebel_Infantry_Squad </Starting_Forces>
+		<Starting_Forces> Rebel, Ithor, Rebel_T3B_Company </Starting_Forces>
+		<Starting_Forces> Rebel, Ithor, Rebel_Gallofree_HTT_Company </Starting_Forces>
+		
+		<!-- Iridonia Space Forces -->
+		<Starting_Forces> Rebel, Iridonia, NewRepublic_Star_Base_2 </Starting_Forces>
+		<Starting_Forces> Rebel, Iridonia, NewRepublic_Shipyard_Level_One </Starting_Forces>
+		<Starting_Forces> Rebel, Iridonia, Belarus </Starting_Forces>
+		<Starting_Forces> Rebel, Iridonia, Belarus </Starting_Forces> <!-- Additional Belarus for AI -->
+		<Starting_Forces> Rebel, Iridonia, Corona </Starting_Forces>
+		<!-- Iridonia Ground Forces -->
+		<Starting_Forces> Rebel, Iridonia, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Iridonia, R_Ground_Barracks </Starting_Forces>
+		<Starting_Forces> Rebel, Iridonia, Tax_Agency </Starting_Forces>
+		<Starting_Forces> Rebel, Iridonia, Rebel_Infantry_Squad </Starting_Forces>
+		<Starting_Forces> Rebel, Iridonia, Rebel_AAC_2_Company </Starting_Forces>
+		<Starting_Forces> Rebel, Iridonia, Rebel_SRV1_Company </Starting_Forces>
+		
 		<!-- Lonnaw Space Forces -->
-		<Starting_Forces> Rebel, Lonnaw, Generate_Force </Starting_Forces>
+		<Starting_Forces> Rebel, Lonnaw, NewRepublic_Star_Base_2 </Starting_Forces>
+		<Starting_Forces> Rebel, Lonnaw, NewRepublic_Shipyard_Level_Two </Starting_Forces>
+		<Starting_Forces> Rebel, Lonnaw, Dauntless </Starting_Forces>
+		<Starting_Forces> Rebel, Lonnaw, Alliance_Assault_Frigate </Starting_Forces>
+		<Starting_Forces> Rebel, Lonnaw, Nebulon_B_Tender </Starting_Forces>
+		<Starting_Forces> Rebel, Lonnaw, Nebulon_B_Tender </Starting_Forces>
+		<Starting_Forces> Rebel, Lonnaw, Nebulon_B_Tender </Starting_Forces>
+		<Starting_Forces> Rebel, Lonnaw, Corellian_Gunboat </Starting_Forces>
+		<Starting_Forces> Rebel, Lonnaw, Corellian_Gunboat </Starting_Forces>
+		<!-- Lonnaw Ground Forces -->
+		<Starting_Forces> Rebel, Lonnaw, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Lonnaw, R_Ground_Barracks </Starting_Forces>
+		<Starting_Forces> Rebel, Lonnaw, Tax_Agency </Starting_Forces>
+		<Starting_Forces> Rebel, Lonnaw, Rebel_Infantry_Squad </Starting_Forces>
+		<Starting_Forces> Rebel, Lonnaw, Rebel_Infantry_Squad </Starting_Forces>
+		<Starting_Forces> Rebel, Lonnaw, Rebel_T2B_Company </Starting_Forces>
 		
-						<!-- Tartaglia Space Forces -->
-		<Starting_Forces> Rebel, Tartaglia, Generate_Force </Starting_Forces>
-		
-		<!-- Traval_Pacor Space Forces -->
-		<Starting_Forces> Rebel, Traval_Pacor, Generate_Force </Starting_Forces>
-		
-						<!-- Tyan Space Forces -->
-		<Starting_Forces> Rebel, Tyan, Generate_Force </Starting_Forces>
-		
-								<!-- Hewett Space Forces -->
-		<Starting_Forces> Rebel, Hewett, Generate_Force </Starting_Forces>
-		
-								<!-- Ithor Space Forces -->
-		<Starting_Forces> Rebel, Ithor, Generate_Force </Starting_Forces>
+		<!-- Nentan Space Forces -->
+		<Starting_Forces> Rebel, Nentan, NewRepublic_Star_Base_1 </Starting_Forces>
+		<Starting_Forces> Rebel, Nentan, NewRepublic_Shipyard_Level_One </Starting_Forces>
+		<Starting_Forces> Rebel, Nentan, Majestic </Starting_Forces>
+		<Starting_Forces> Rebel, Nentan, Agave_Corvette </Starting_Forces>
+		<Starting_Forces> Rebel, Nentan, Agave_Corvette </Starting_Forces>
+		<Starting_Forces> Rebel, Nentan, Warrior_Gunship </Starting_Forces>
+		<!-- Nentan Ground Forces -->
+		<Starting_Forces> Rebel, Nentan, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Nentan, R_Ground_Barracks </Starting_Forces>
+		<Starting_Forces> Rebel, Nentan, Rebel_Infiltrator_Squad </Starting_Forces>
+		<Starting_Forces> Rebel, Nentan, Rebel_Infiltrator_Squad </Starting_Forces>
 		
 		<!-- Ord_Mantell Space Forces -->
 		<Starting_Forces> Rebel, Ord_Mantell, NewRepublic_Star_Base_3 </Starting_Forces>
 		<Starting_Forces> Rebel, Ord_Mantell, Secondary_Golan_One </Starting_Forces>
+		<Starting_Forces> Rebel, Ord_Mantell, NewRepublic_Shipyard_Level_Two </Starting_Forces>
+		<Starting_Forces> Rebel, Ord_Mantell, Nebula </Starting_Forces>
+		<Starting_Forces> Rebel, Ord_Mantell, Nebula </Starting_Forces> <!-- Additional Nebula for AI -->
+		<Starting_Forces> Rebel, Ord_Mantell, Republic_SD </Starting_Forces>
+		<Starting_Forces> Rebel, Ord_Mantell, Alliance_Assault_Frigate_II </Starting_Forces>
+		<Starting_Forces> Rebel, Ord_Mantell, Alliance_Assault_Frigate </Starting_Forces>
+		<Starting_Forces> Rebel, Ord_Mantell, Agave_Corvette </Starting_Forces>
+		<Starting_Forces> Rebel, Ord_Mantell, Agave_Corvette </Starting_Forces>
+		<!-- Ord_Mantell Land Forces -->
+		<Starting_Forces> Rebel, Ord_Mantell, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Ord_Mantell, R_Ground_Barracks </Starting_Forces>
+		<Starting_Forces> Rebel, Ord_Mantell, NewRep_Senate </Starting_Forces>
+		<Starting_Forces> Rebel, Ord_Mantell, R_Ground_Light_Vehicle_Factory </Starting_Forces>
+		<Starting_Forces> Rebel, Ord_Mantell, Defense_Trooper_Squad </Starting_Forces>
+		<Starting_Forces> Rebel, Ord_Mantell, Rebel_Infantry_Squad </Starting_Forces>
+		<Starting_Forces> Rebel, Ord_Mantell, Rebel_SRV1_Company </Starting_Forces>		
+		<Starting_Forces> Rebel, Ord_Mantell, Rebel_T1B_Company </Starting_Forces>
+		<Starting_Forces> Rebel, Ord_Mantell, MAS_2xB_Company </Starting_Forces>
+		
+		<!-- Obredaan Space Forces -->
+		<Starting_Forces> Rebel, Obredaan, NewRepublic_Star_Base_3 </Starting_Forces>
+		<Starting_Forces> Rebel, Obredaan, Secondary_Golan_One </Starting_Forces>
+		<Starting_Forces> Rebel, Obredaan, NewRepublic_Shipyard_Level_One </Starting_Forces>
+		<Starting_Forces> Rebel, Obredaan, Generic_TradeStation </Starting_Forces>
+		<Starting_Forces> Rebel, Obredaan, Dauntless </Starting_Forces>
+		<Starting_Forces> Rebel, Obredaan, Generic_Victory_Destroyer_Two </Starting_Forces>
+		<Starting_Forces> Rebel, Obredaan, Strike_Cruiser </Starting_Forces>
+		<!-- Obredaan Ground Forces -->
+		<Starting_Forces> Rebel, Obredaan, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Obredaan, R_Ground_Light_Vehicle_Factory </Starting_Forces>
+		<Starting_Forces> Rebel, Obredaan, Mining_Facility </Starting_Forces>
+		<Starting_Forces> Rebel, Obredaan, Rebel_Infiltrator_Squad </Starting_Forces>
+		<Starting_Forces> Rebel, Obredaan, Rebel_Infiltrator_Squad </Starting_Forces>
+		<Starting_Forces> Rebel, Obredaan, Rebel_AA5_Company </Starting_Forces>
+		<Starting_Forces> Rebel, Obredaan, Rebel_T1B_Company </Starting_Forces>
+		
+		<!-- Orocco Space Forces -->
+		<Starting_Forces> Rebel, Orocco, NewRepublic_Star_Base_3 </Starting_Forces>
+		<Starting_Forces> Rebel, Orocco, Secondary_Golan_One </Starting_Forces>
+		<Starting_Forces> Rebel, Orocco, NewRepublic_Shipyard_Level_One </Starting_Forces>
+		<Starting_Forces> Rebel, Orocco, Generic_TradeStation </Starting_Forces>
+		<Starting_Forces> Rebel, Orocco, Dreadnaught_Rebel </Starting_Forces>
+		<Starting_Forces> Rebel, Orocco, Neutron_Star </Starting_Forces>
+		<Starting_Forces> Rebel, Orocco, Nebulon_B_Frigate </Starting_Forces>
+		<!-- Orocco Ground Forces -->
+		<Starting_Forces> Rebel, Orocco, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Orocco, R_Ground_Barracks </Starting_Forces>
+		<Starting_Forces> Rebel, Orocco, R_Ground_Light_Vehicle_Factory </Starting_Forces>
+		<Starting_Forces> Rebel, Orocco, Tax_Agency </Starting_Forces>
+		<Starting_Forces> Rebel, Orocco, Rebel_Infantry_Squad </Starting_Forces>
+		<Starting_Forces> Rebel, Orocco, Rebel_Infiltrator_Squad </Starting_Forces>
+		<Starting_Forces> Rebel, Orocco, Rebel_T2B_Company </Starting_Forces>
+		
+		<!-- Tartaglia Space Forces -->
+		<Starting_Forces> Rebel, Tartaglia, NewRepublic_Star_Base_3 </Starting_Forces>
+		<Starting_Forces> Rebel, Tartaglia, NewRepublic_Shipyard_Level_One </Starting_Forces>
+		<Starting_Forces> Rebel, Tartaglia, Liberator_Cruiser </Starting_Forces>
+		<Starting_Forces> Rebel, Tartaglia, Alliance_Assault_Frigate_II </Starting_Forces>
+		<Starting_Forces> Rebel, Tartaglia, Marauder_Cruiser </Starting_Forces>
+		<Starting_Forces> Rebel, Tartaglia, Marauder_Cruiser </Starting_Forces>
+		<!-- Tartaglia Ground Forces -->
+		<Starting_Forces> Rebel, Tartaglia, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Tartaglia, Tax_Agency </Starting_Forces>
+		<Starting_Forces> Rebel, Tartaglia, Defense_Trooper_Squad </Starting_Forces>
+		<Starting_Forces> Rebel, Tartaglia, Defense_Trooper_Squad </Starting_Forces>
+		<Starting_Forces> Rebel, Tartaglia, Rebel_T4B_Company </Starting_Forces>
+		
+		<!-- Traval Pacor Space Forces -->  <!-- Added Majestic and 2 Sacheens for AI -->
+		<Starting_Forces> Rebel, Traval_Pacor, NewRepublic_Star_Base_3 </Starting_Forces>
+		<Starting_Forces> Rebel, Traval_Pacor, NewRepublic_Shipyard_Level_One </Starting_Forces>
+		<Starting_Forces> Rebel, Traval_Pacor, Majestic </Starting_Forces>
+		<Starting_Forces> Rebel, Traval_Pacor, Defender_Carrier </Starting_Forces>
+		<Starting_Forces> Rebel, Traval_Pacor, Sacheen </Starting_Forces>
+		<Starting_Forces> Rebel, Traval_Pacor, Sacheen </Starting_Forces>
+		<Starting_Forces> Rebel, Traval_Pacor, Sacheen </Starting_Forces>
+		<Starting_Forces> Rebel, Traval_Pacor, Hajen </Starting_Forces>
+		<Starting_Forces> Rebel, Traval_Pacor, Hajen </Starting_Forces>
+		<!-- Traval Pacor Ground Forces -->
+		<Starting_Forces> Rebel, Traval_Pacor, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Traval_Pacor, R_Ground_Barracks </Starting_Forces>
+		<Starting_Forces> Rebel, Traval_Pacor, R_Ground_Light_Vehicle_Factory </Starting_Forces>
+		<Starting_Forces> Rebel, Traval_Pacor, Tax_Agency </Starting_Forces>
+		<Starting_Forces> Rebel, Traval_Pacor, Defense_Trooper_Squad </Starting_Forces>
+		<Starting_Forces> Rebel, Traval_Pacor, Rebel_MPTL_Company </Starting_Forces>
+		
+		<!-- Tyan Space Forces -->
+		<Starting_Forces> Rebel, Tyan, NewRepublic_Star_Base_3 </Starting_Forces>
+		<Starting_Forces> Rebel, Tyan, NewRepublic_Shipyard_Level_One </Starting_Forces>
+		<Starting_Forces> Rebel, Tyan, Generic_TradeStation </Starting_Forces>
+		<Starting_Forces> Rebel, Tyan, Alliance_Assault_Frigate_II </Starting_Forces>
+		<Starting_Forces> Rebel, Tyan, Alliance_Assault_Frigate_II </Starting_Forces>
+		<Starting_Forces> Rebel, Tyan, Quasar </Starting_Forces>
+		<Starting_Forces> Rebel, Tyan, Marauder_Cruiser </Starting_Forces>
+		<Starting_Forces> Rebel, Tyan, Marauder_Cruiser </Starting_Forces>
+		<Starting_Forces> Rebel, Tyan, Marauder_Cruiser </Starting_Forces>
+		<!-- Tyan Ground Forces -->
+		<Starting_Forces> Rebel, Tyan, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Tyan, R_Ground_Heavy_Vehicle_Factory </Starting_Forces>
+		<Starting_Forces> Rebel, Tyan, Tax_Agency </Starting_Forces>
+		<Starting_Forces> Rebel, Tyan, Defense_Trooper_Squad </Starting_Forces>
+		<Starting_Forces> Rebel, Tyan, Rebel_AAC_2_Company </Starting_Forces>
+	
+		
+		<!-- Empire Starting Forces -->
+
+		<Starting_Credits> Empire, 10000 </Starting_Credits>
+		<Starting_Tech_Level> Empire, 3 </Starting_Tech_Level>
+		<Max_Tech_Level> Empire, 3 </Max_Tech_Level>
+		
+		<!-- Agamar Space Forces -->
+		<Starting_Forces> Empire, Agamar, Empire_Star_Base_3 </Starting_Forces>
+		<Starting_Forces> Empire, Agamar, Empire_Shipyard_Level_One </Starting_Forces>
+		<!-- Agamar Ground Forces -->
+		<Starting_Forces> Empire, Agamar, Empire_MoffPalace </Starting_Forces>
+		<Starting_Forces> Empire, Agamar, E_Ground_Heavy_Vehicle_Factory </Starting_Forces>
+		<Starting_Forces> Empire, Agamar, Tax_Agency </Starting_Forces>
+		<Starting_Forces> Empire, Agamar, Imperial_Army_Trooper_Squad </Starting_Forces>
+		<Starting_Forces> Empire, Agamar, Imperial_S_1_Firehawke_Company </Starting_Forces>
+		
+		<!-- Borosk Space Forces -->
+		<Starting_Forces> Empire, Borosk, Empire_Star_Base_3 </Starting_Forces>
+		<Starting_Forces> Empire, Borosk, Secondary_Golan_One </Starting_Forces>
+		<Starting_Forces> Empire, Borosk, Generic_TradeStation </Starting_Forces>
+		<Starting_Forces> Empire, Borosk, Empire_Shipyard_Level_Two </Starting_Forces>
+		<Starting_Forces> Empire, Borosk, Generic_Interdictor_Cruiser </Starting_Forces>
+		<Starting_Forces> Empire, Borosk, Generic_Interdictor_Cruiser </Starting_Forces>
+		<!-- Borosk Ground Forces -->
+		<Starting_Forces> Empire, Borosk, Remnant_Capital </Starting_Forces>
+		<Starting_Forces> Empire, Borosk, Empire_MoffPalace </Starting_Forces>
+		<Starting_Forces> Empire, Borosk, E_Ground_Barracks </Starting_Forces>
+		<Starting_Forces> Empire, Borosk, Tax_Agency </Starting_Forces>
+		<Starting_Forces> Empire, Borosk, E_Ground_Heavy_Vehicle_Factory </Starting_Forces>
+		<Starting_Forces> Empire, Borosk, Imperial_Stormtrooper_Squad </Starting_Forces>
+		<Starting_Forces> Empire, Borosk, Imperial_Stormtrooper_Squad </Starting_Forces>
+		<Starting_Forces> Empire, Borosk, Imperial_AT_PT_Company </Starting_Forces>
+		<Starting_Forces> Empire, Borosk, Imperial_Century_Tank_Company </Starting_Forces>
+		<Starting_Forces> Empire, Borosk, Imperial_Heavy_Artillery_Company </Starting_Forces>
+		<Starting_Forces> Empire, Borosk, Imperial_B5_Juggernaut_Company </Starting_Forces>
+
+		<!-- Garqi Space Forces -->
+		<Starting_Forces> Empire, Garqi, Empire_Star_Base_2 </Starting_Forces>
+		<Starting_Forces> Empire, Garqi, Empire_Shipyard_Level_One </Starting_Forces>
+		<Starting_Forces> Empire, Garqi, Generic_TradeStation </Starting_Forces>
+		<Starting_Forces> Empire, Garqi, Enforcer </Starting_Forces>
+		<Starting_Forces> Empire, Garqi, Dreadnaught_Empire </Starting_Forces>
+		<Starting_Forces> Empire, Garqi, Raider_Corvette </Starting_Forces>
+		<Starting_Forces> Empire, Garqi, Raider_Corvette </Starting_Forces>
+		<!-- Garqi Ground Forces -->
+		<Starting_Forces> Empire, Garqi, Empire_MoffPalace </Starting_Forces>
+		<Starting_Forces> Empire, Garqi, E_Ground_Barracks </Starting_Forces>
+		<Starting_Forces> Empire, Garqi, Pentastar_Enforcer_Trooper_Squad </Starting_Forces>
+		<Starting_Forces> Empire, Garqi, Pentastar_Army_Trooper_Squad </Starting_Forces>
+		<Starting_Forces> Empire, Garqi, Imperial_Century_Tank_Company </Starting_Forces>
+		
+		<!-- Generis Space Forces -->
+		<Starting_Forces> Empire, Generis, Empire_Star_Base_2 </Starting_Forces>
+		<Starting_Forces> Empire, Generis, Empire_Shipyard_Level_One </Starting_Forces>
+		<Starting_Forces> Empire, Generis, Generic_Colony_One </Starting_Forces>
+		<Starting_Forces> Empire, Generis, Enforcer </Starting_Forces>
+		<Starting_Forces> Empire, Generis, Imperial_Cargo_Ship </Starting_Forces>
+		<Starting_Forces> Empire, Generis, Tartan_Patrol_Cruiser </Starting_Forces>
+		<Starting_Forces> Empire, Generis, Tartan_Patrol_Cruiser </Starting_Forces>
+		<Starting_Forces> Empire, Generis, Tartan_Patrol_Cruiser </Starting_Forces>
+		<!-- Garqi Ground Forces -->
+		<Starting_Forces> Empire, Generis, Empire_MoffPalace </Starting_Forces>
+		<Starting_Forces> Empire, Generis, E_Ground_Barracks </Starting_Forces>
+		<Starting_Forces> Empire, Generis, E_Ground_Barracks </Starting_Forces>
+		<Starting_Forces> Empire, Generis, Pentastar_Enforcer_Trooper_Squad </Starting_Forces>
+		<Starting_Forces> Empire, Generis, Pentastar_Army_Trooper_Squad </Starting_Forces>
+		<Starting_Forces> Empire, Generis, Imperial_AT_DP_Company </Starting_Forces>
+		
+		<!-- Ketaris Space Forces -->
+		<Starting_Forces> Empire, Ketaris, Empire_Star_Base_2 </Starting_Forces>
+		<Starting_Forces> Empire, Ketaris, Empire_Shipyard_Level_One </Starting_Forces>
+		<Starting_Forces> Empire, Ketaris, Generic_TradeStation </Starting_Forces>
+		<Starting_Forces> Empire, Ketaris, Generic_Victory_Destroyer_Two </Starting_Forces>
+		<Starting_Forces> Empire, Ketaris, Lancer_Frigate </Starting_Forces>
+		<Starting_Forces> Empire, Ketaris, Lancer_Frigate </Starting_Forces>
+		<!-- Ketaris Ground Forces -->
+		<Starting_Forces> Empire, Ketaris, Empire_MoffPalace </Starting_Forces>
+		<Starting_Forces> Empire, Ketaris, E_Ground_Barracks </Starting_Forces>
+		<Starting_Forces> Empire, Ketaris, Tax_Agency </Starting_Forces>
+		<Starting_Forces> Empire, Ketaris, Imperial_Army_Guard_Squad </Starting_Forces>
+		<Starting_Forces> Empire, Ketaris, Imperial_PX4_Company </Starting_Forces>
+		
+		<!-- Morishim Space Forces -->
+		<Starting_Forces> Empire, Morishim, Empire_Star_Base_2 </Starting_Forces>
+		<Starting_Forces> Empire, Morishim, Empire_Shipyard_Level_One </Starting_Forces>
+		<Starting_Forces> Empire, Morishim, Escort_Carrier </Starting_Forces>
+		<Starting_Forces> Empire, Morishim, Carrack_Cruiser </Starting_Forces>
+		<Starting_Forces> Empire, Morishim, Nebulon_B_Empire </Starting_Forces>
+		<Starting_Forces> Empire, Morishim, Delta_JV7_Squadron </Starting_Forces>
+		<!-- Morishim Ground Forces -->
+		<Starting_Forces> Empire, Morishim, Empire_MoffPalace </Starting_Forces>
+		<Starting_Forces> Empire, Morishim, E_Ground_Light_Vehicle_Factory </Starting_Forces>
+		<Starting_Forces> Empire, Morishim, Tax_Agency </Starting_Forces>
+		<Starting_Forces> Empire, Morishim, Imperial_Army_Commando_Squad </Starting_Forces>
+		<Starting_Forces> Empire, Morishim, Imperial_UT_AA_Company </Starting_Forces>
+		
+		<!-- Movris Space Forces -->
+		<Starting_Forces> Empire, Movris, Empire_Star_Base_1 </Starting_Forces>
+		<Starting_Forces> Empire, Movris, Empire_Shipyard_Level_One </Starting_Forces>
+		<Starting_Forces> Empire, Movris, Generic_Procursator </Starting_Forces>
+		<Starting_Forces> Empire, Movris, Dreadnaught_Empire </Starting_Forces>
+		<Starting_Forces> Empire, Movris, Dreadnaught_Empire </Starting_Forces>
+		<Starting_Forces> Empire, Movris, Crusader_Gunship </Starting_Forces>
+		<Starting_Forces> Empire, Movris, Crusader_Gunship </Starting_Forces>
+		<Starting_Forces> Empire, Movris, Crusader_Gunship </Starting_Forces>
+		<!-- Movris Ground Forces -->
+		<Starting_Forces> Empire, Movris, Empire_MoffPalace </Starting_Forces>
+		<Starting_Forces> Empire, Movris, E_Ground_Barracks </Starting_Forces>
+		<Starting_Forces> Empire, Movris, Imperial_Dwarf_Spider_Droid_Company </Starting_Forces>
+		<Starting_Forces> Empire, Movris, Imperial_Stormtrooper_Squad </Starting_Forces>
+		<Starting_Forces> Empire, Movris, Imperial_AT_ST_Company </Starting_Forces>
+		<Starting_Forces> Empire, Movris, Imperial_Deathhawk_Group </Starting_Forces>
+
+		<!-- Paarin Minor Space Forces -->
+		<Starting_Forces> Empire, Paarin_Minor, Empire_Star_Base_2 </Starting_Forces>
+		<Starting_Forces> Empire, Paarin_Minor, Empire_Shipyard_Level_One </Starting_Forces>
+		<Starting_Forces> Empire, Paarin_Minor, Generic_Venator </Starting_Forces>
+		<Starting_Forces> Empire, Paarin_Minor, Escort_Carrier </Starting_Forces>
+		<Starting_Forces> Empire, Paarin_Minor, Delta_JV7_Squadron </Starting_Forces>
+		<!-- Paarin Minor Ground Forces -->
+		<Starting_Forces> Empire, Paarin_Minor, Empire_MoffPalace </Starting_Forces>
+		<Starting_Forces> Empire, Paarin_Minor, E_Ground_Light_Vehicle_Factory </Starting_Forces>
+		<Starting_Forces> Empire, Paarin_Minor, E_Ground_Heavy_Vehicle_Factory </Starting_Forces>
+		<Starting_Forces> Empire, Paarin_Minor, Imperial_Stormtrooper_Squad </Starting_Forces>
+		<Starting_Forces> Empire, Paarin_Minor, Imperial_Scout_Trooper_Infantry_Squad </Starting_Forces>
+		<Starting_Forces> Empire, Paarin_Minor, Imperial_S_1_Firehawke_Company </Starting_Forces>
+		
+		<!-- Phaeda Ground Forces -->
+		<Starting_Forces> Empire, Phaeda, Empire_Star_Base_2 </Starting_Forces>
+		<Starting_Forces> Empire, Phaeda, Empire_Shipyard_Level_Two </Starting_Forces>
+		<Starting_Forces> Empire, Phaeda, Generic_Colony_Two </Starting_Forces>
+		<Starting_Forces> Empire, Phaeda, Generic_Victory_Destroyer </Starting_Forces>
+		<Starting_Forces> Empire, Phaeda, Strike_Cruiser </Starting_Forces>
+		<Starting_Forces> Empire, Phaeda, Star_Galleon </Starting_Forces>
+		<!-- Phaeda Ground Forces -->
+		<Starting_Forces> Empire, Phaeda, Empire_MoffPalace </Starting_Forces>
+		<Starting_Forces> Empire, Phaeda, E_Ground_Barracks </Starting_Forces>
+		<Starting_Forces> Empire, Phaeda, Tax_Agency </Starting_Forces>
+		<Starting_Forces> Empire, Phaeda, Imperial_Navy_Trooper_Squad </Starting_Forces>
+		<Starting_Forces> Empire, Phaeda, Imperial_Navy_Trooper_Squad </Starting_Forces>
+		<Starting_Forces> Empire, Phaeda, Imperial_S_1_Firehawke_Company </Starting_Forces>
+		<Starting_Forces> Empire, Phaeda, Imperial_AT_AA_Company </Starting_Forces>
+		<Starting_Forces> Empire, Phaeda, Imperial_AT_AT_Company </Starting_Forces>
+		
+		<!-- Ord Biniir Space Forces -->
+		<Starting_Forces> Empire, Ord_Biniir, Empire_Star_Base_2 </Starting_Forces>
+		<Starting_Forces> Empire, Ord_Biniir, Empire_Shipyard_Level_One </Starting_Forces>
+		<Starting_Forces> Empire, Ord_Biniir, Generic_Acclamator_Assault_Ship_Leveler </Starting_Forces>
+		<Starting_Forces> Empire, Ord_Biniir, Victory_II_Frigate </Starting_Forces>
+		<Starting_Forces> Empire, Ord_Biniir, Raider_Corvette </Starting_Forces>
+		<Starting_Forces> Empire, Ord_Biniir, Raider_Corvette </Starting_Forces>
+		<Starting_Forces> Empire, Ord_Biniir, Raider_Corvette </Starting_Forces>
+		<Starting_Forces> Empire, Ord_Biniir, Raider_Corvette </Starting_Forces>
+		<!-- Ord Biniir Ground Forces -->
+		<Starting_Forces> Empire, Ord_Biniir, Empire_MoffPalace </Starting_Forces>
+		<Starting_Forces> Empire, Ord_Biniir, E_Ground_Barracks </Starting_Forces>
+		<Starting_Forces> Empire, Ord_Biniir, E_Ground_Barracks </Starting_Forces>
+		<Starting_Forces> Empire, Ord_Biniir, Imperial_Army_Trooper_Squad </Starting_Forces>
+		<Starting_Forces> Empire, Ord_Biniir, Pentastar_Army_Trooper_Squad </Starting_Forces>
+		<Starting_Forces> Empire, Ord_Biniir, Imperial_AT_PT_Company </Starting_Forces>
+		<Starting_Forces> Empire, Ord_Biniir, Imperial_C10_Siege_Tower_Company </Starting_Forces>
+		
+		<!-- Ord Cantrell Space Forces -->
+		<Starting_Forces> Empire, Ord_Cantrell, Empire_Star_Base_3 </Starting_Forces>
+		<Starting_Forces> Empire, Ord_Cantrell, Empire_Shipyard_Level_Two </Starting_Forces>
+		<Starting_Forces> Empire, Ord_Cantrell, Generic_TradeStation </Starting_Forces>
+		<Starting_Forces> Empire, Ord_Cantrell, Vindicator_Cruiser </Starting_Forces>
+		<Starting_Forces> Empire, Ord_Cantrell, Generic_Interdictor_Cruiser </Starting_Forces>
+		<Starting_Forces> Empire, Ord_Cantrell, Generic_Interdictor_Cruiser </Starting_Forces>
+		<Starting_Forces> Empire, Ord_Cantrell, Strike_Cruiser </Starting_Forces>
+		<Starting_Forces> Empire, Ord_Cantrell, Carrack_Cruiser </Starting_Forces>
+		<Starting_Forces> Empire, Ord_Cantrell, Delta_JV7_Squadron </Starting_Forces>
+		<!-- Ord Cantrell Ground Forces -->
+		<Starting_Forces> Empire, Ord_Cantrell, Empire_MoffPalace </Starting_Forces>
+		<Starting_Forces> Empire, Ord_Cantrell, E_Ground_Heavy_Vehicle_Factory </Starting_Forces>
+		<Starting_Forces> Empire, Ord_Cantrell, Tax_Agency </Starting_Forces>
+		<Starting_Forces> Empire, Ord_Cantrell, Imperial_Army_Trooper_Squad </Starting_Forces>
+		<Starting_Forces> Empire, Ord_Cantrell, Imperial_Army_Trooper_Squad </Starting_Forces>
+		<Starting_Forces> Empire, Ord_Cantrell, Imperial_AT_ST_Company </Starting_Forces>
+		<Starting_Forces> Empire, Ord_Cantrell, Imperial_Chariot_LAV_Company </Starting_Forces>
+		
+		<!-- Wistril Space Forces -->
+		<Starting_Forces> Empire, Wistril, Empire_Star_Base_3 </Starting_Forces>
+		<Starting_Forces> Empire, Wistril, Empire_Shipyard_Level_One </Starting_Forces>
+		<Starting_Forces> Empire, Wistril, Generic_Colony_One </Starting_Forces>
+		<Starting_Forces> Empire, Wistril, Generic_Acclamator_Assault_Ship_II </Starting_Forces>
+		<Starting_Forces> Empire, Wistril, Escort_Carrier </Starting_Forces>
+		<Starting_Forces> Empire, Wistril, Generic_Interdictor_Cruiser </Starting_Forces>
+		<Starting_Forces> Empire, Wistril, Generic_Interdictor_Cruiser </Starting_Forces>
+		<Starting_Forces> Empire, Wistril, Tartan_Patrol_Cruiser </Starting_Forces>
+		<!-- Wistril Space Forces -->
+		<Starting_Forces> Empire, Wistril, Empire_MoffPalace </Starting_Forces>
+		<Starting_Forces> Empire, Wistril, E_Ground_Barracks </Starting_Forces>
+		<Starting_Forces> Empire, Wistril, E_Ground_Light_Vehicle_Factory </Starting_Forces>
+		<Starting_Forces> Empire, Wistril, Tax_Agency </Starting_Forces>
+		<Starting_Forces> Empire, Wistril, Imperial_Dwarf_Spider_Droid_Company </Starting_Forces>
+		<Starting_Forces> Empire, Wistril, Imperial_Scout_Trooper_Infantry_Squad </Starting_Forces>
+		<Starting_Forces> Empire, Wistril, Imperial_IDT_Group </Starting_Forces>
+		
+		<!-- Yaga Minor Space Forces -->
+		<Starting_Forces> Empire, Yaga_Minor, Empire_Star_Base_4 </Starting_Forces>
+		<Starting_Forces> Empire, Yaga_Minor, Secondary_Golan_Two </Starting_Forces>
+		<Starting_Forces> Empire, Yaga_Minor, Generic_TradeStation </Starting_Forces>
+		<Starting_Forces> Empire, Yaga_Minor, Empire_Shipyard_Level_Four </Starting_Forces>
+		<Starting_Forces> Empire, Yaga_Minor, Generic_Tector </Starting_Forces>
+		<Starting_Forces> Empire, Yaga_Minor, Generic_Victory_Destroyer </Starting_Forces>
+		<Starting_Forces> Empire, Yaga_Minor, Nebulon_B_Empire </Starting_Forces>
+		<Starting_Forces> Empire, Yaga_Minor, Strike_Cruiser </Starting_Forces>
+		<!-- Yaga Minor Ground Forces -->
+		<Starting_Forces> Empire, Yaga_Minor, Empire_MoffPalace </Starting_Forces>
+		<Starting_Forces> Empire, Yaga_Minor, E_Ground_Barracks </Starting_Forces>
+		<Starting_Forces> Empire, Yaga_Minor, E_Ground_Heavy_Vehicle_Factory </Starting_Forces>
+		<Starting_Forces> Empire, Yaga_Minor, E_Ground_Advanced_Vehicle_Factory </Starting_Forces>
+		<Starting_Forces> Empire, Yaga_Minor, Ground_Hypervelocity_Gun </Starting_Forces>
+		<Starting_Forces> Empire, Yaga_Minor, Imperial_Army_Guard_Squad </Starting_Forces>
+		<Starting_Forces> Empire, Yaga_Minor, Imperial_Stormtrooper_Squad </Starting_Forces>
+		<Starting_Forces> Empire, Yaga_Minor, Imperial_AT_AT_Company </Starting_Forces>	
+		<Starting_Forces> Empire, Yaga_Minor, Imperial_AT_ST_Company </Starting_Forces>
+
+
+		<!-- Independent (Adumar) Starting Forces -->
+		
+		<!-- Adumar Space Forces -->
+		<Starting_Forces> Independent_Forces, Adumar, Generic_XQ_Starbase </Starting_Forces>
+		<!-- Adumar Ground Forces -->
+		<Starting_Forces> Independent_Forces, Adumar, Revolt_Rural_PDF_Barracks </Starting_Forces>
+		<Starting_Forces> Independent_Forces, Adumar, Revolt_Urban_Barracks </Starting_Forces>
+		<Starting_Forces> Independent_Forces, Adumar, Revolt_Underground_Market </Starting_Forces>
+	</Campaign>
+
+	<Campaign Name="Orinda_NewRep">
+		<Campaign_Set>Orinda</Campaign_Set>
+		<Sort_Order>223</Sort_Order>
+        <Text_ID> TEXT_CAMPAIGN_SINGLE_ORINDA </Text_ID>
+        <Description_Text> TEXT_CAMPAIGN_SINGLE_DESCRIPTION_ORINDA </Description_Text>
+
+        <Camera_Shift_X> 40.0 </Camera_Shift_X>
+        <Camera_Shift_Y> 0.0 </Camera_Shift_Y>
+        <Camera_Distance> 1200.0 </Camera_Distance>
+		<Locations>
+			Adumar,
+			Agamar,
+			Ansion,
+			Bilbringi,
+			Borosk,
+			Corthenia,
+			Darkon,
+			Galaxy_Core_Art_Model,
+			Garqi,
+			Generis,
+			Hewett,
+			Iridonia,
+			Ithor,
+			Ketaris,
+			Lonnaw,
+			Morishim,
+			Movris,
+			Nentan,
+			Obredaan,
+			Ord_Biniir,
+			Ord_Cantrell,
+			Ord_Mantell,
+			Orinda,
+			Orocco,
+			Paarin_Minor,
+			Phaeda,
+			Tartaglia,
+			Traval_Pacor,
+			Tyan,
+			Wistril,
+			Yaga_Minor,
+		</Locations>
+		<Trade_Routes>
+			Adumar_Ansion,
+			Adumar_Borosk,
+			Agamar_Generis,
+			Agamar_Movris,
+			Agamar_Paarin_Minor,
+			Ansion_Darkon,
+			Ansion_Iridonia,
+			Bilbringi_Darkon,
+			Bilbringi_Nentan,
+			Borosk_Garqi,
+			Borosk_Wistril,
+			Borosk_Yaga_Minor,
+			Corthenia_Obredaan,
+			Corthenia_Traval_Pacor,
+			Corthenia_Tyan,
+			Darkon_Iridonia,
+			Darkon_Nentan,
+			Garqi_Morishim,
+			Garqi_Ord_Biniir,
+			Garqi_Wistril,
+			Generis_Ketaris,
+			Generis_Ord_Biniir,
+			Hewett_Movris,
+			Hewett_Orocco,
+			Hewett_Tartaglia,
+			Iridonia_Traval_Pacor,
+			Ithor_Orocco,
+			Ithor_Paarin_Minor,
+			Ithor_Phaeda,
+			Ithor_Tyan,
+			Ketaris_Paarin_Minor,
+			Ketaris_Phaeda,
+			Lonnaw_Orinda,
+			Lonnaw_Traval_Pacor,
+			Morishim_Ord_Biniir,
+			Morishim_Yaga_Minor,
+			Movris_Paarin_Minor,
+			Nentan_Ord_Mantell,
+			Nentan_Traval_Pacor,
+			Obredaan_Orinda,
+			Obredaan_Tyan,
+			Ord_Biniir_Ord_Cantrell,
+			Ord_Cantrell_Orinda,
+			Ord_Cantrell_Phaeda,
+			Ord_Cantrell_Wistril,
+			Ord_Mantell_Orocco,
+			Ord_Mantell_Tyan,
+			Orinda_Wistril,
+			Orocco_Tartaglia,
+		</Trade_Routes>
+
+		<Home_Location> Rebel, Bilbringi </Home_Location>
+        <Home_Location> Empire, Yaga_Minor </Home_Location>
+		<Home_Location> Independent_Forces, Adumar </Home_Location> 
+	 
+        <Starting_Active_Player> Rebel </Starting_Active_Player>
+
+		<Rebel_Story_Name>Conquests\Orinda\Story_Plots_Sandbox_Orinda_Rebel.xml</Rebel_Story_Name>
+        <Empire_Story_Name>Conquests\Orinda\Story_Plots_Sandbox_Orinda_Empire.xml</Empire_Story_Name>
+        <Underworld_Story_Name>Conquests\Orinda\Story_Plots_Sandbox_Orinda_Container.xml</Underworld_Story_Name>
+
+		<AI_Player_Control> Rebel, SandboxHuman </AI_Player_Control>
+		<AI_Player_Control> Empire, GenericAI </AI_Player_Control>		
+		
+		<AI_Player_Control>Chiss, None</AI_Player_Control>
+		<AI_Player_Control>Corellia, None</AI_Player_Control>
+		<AI_Player_Control>Corporate_Sector, None</AI_Player_Control>
+		<AI_Player_Control>EmpireoftheHand, None</AI_Player_Control>
+		<AI_Player_Control>Eriadu_Authority, None</AI_Player_Control>
+		<AI_Player_Control>Greater_Maldrood, None</AI_Player_Control>
+		<AI_Player_Control>Hapes_Consortium, None</AI_Player_Control>
+		<AI_Player_Control>Hostile, None</AI_Player_Control>
+		<AI_Player_Control>Hutt_Cartels, None</AI_Player_Control>
+		<AI_Player_Control>Independent_Forces, None</AI_Player_Control>
+		<AI_Player_Control>Killik_Hives, None</AI_Player_Control>
+		<AI_Player_Control>Mandalorians, None</AI_Player_Control>
+		<AI_Player_Control>Pentastar, None</AI_Player_Control>
+		<AI_Player_Control>SsiRuuvi_Imperium, None</AI_Player_Control>
+		<AI_Player_Control>Underworld, None</AI_Player_Control>	
+		<AI_Player_Control>Warlords, None</AI_Player_Control>	
+		<AI_Player_Control>Yevetha, None</AI_Player_Control>
+		<AI_Player_Control>Zsinj_Empire, None</AI_Player_Control>
+
+		<Markup_Filename>Chiss, OrindaGalacticHints</Markup_Filename>
+		<Markup_Filename>Corellia, OrindaGalacticHints</Markup_Filename>
+		<Markup_Filename>Corporate_Sector, OrindaGalacticHints</Markup_Filename>
+		<Markup_Filename>Empire, OrindaGalacticHints</Markup_Filename>
+		<Markup_Filename>EmpireoftheHand, OrindaGalacticHints</Markup_Filename>
+		<Markup_Filename>Eriadu_Authority, OrindaGalacticHints</Markup_Filename>
+		<Markup_Filename>Greater_Maldrood, OrindaGalacticHints</Markup_Filename>
+		<Markup_Filename>Hapes_Consortium, OrindaGalacticHints</Markup_Filename>
+		<Markup_Filename>Hostile, OrindaGalacticHints</Markup_Filename>
+		<Markup_Filename>Hutt_Cartels, OrindaGalacticHints</Markup_Filename>
+		<Markup_Filename>Independent_Forces, OrindaGalacticHints</Markup_Filename>
+		<Markup_Filename>Killik_Hives, OrindaGalacticHints</Markup_Filename>
+		<Markup_Filename>Mandalorians, OrindaGalacticHints</Markup_Filename>
+		<Markup_Filename>Pentastar, OrindaGalacticHints</Markup_Filename>
+		<Markup_Filename>Rebel, OrindaGalacticHints</Markup_Filename>
+		<Markup_Filename>SsiRuuvi_Imperium, OrindaGalacticHints</Markup_Filename>
+		<Markup_Filename>Underworld, OrindaGalacticHints</Markup_Filename>
+		<Markup_Filename>Warlords, OrindaGalacticHints</Markup_Filename>
+		<Markup_Filename>Yevetha, OrindaGalacticHints</Markup_Filename>
+		<Markup_Filename>Zsinj_Empire, OrindaGalacticHints</Markup_Filename>
+		
+		<Supports_Custom_Settings>False</Supports_Custom_Settings>
+		<Show_Completed_Tab>True</Show_Completed_Tab>
+
+		<!-- Win Conditions -->
+
+		<Human_Victory_Conditions>
+				Galactic_All_Planets_Controlled
+		</Human_Victory_Conditions>
+
+		<AI_Victory_Conditions>
+				Galactic_All_Planets_Controlled
+		</AI_Victory_Conditions>
+
+       	<!-- Rebel Starting Forces -->
+
+		<Starting_Credits> Rebel, 10000 </Starting_Credits>
+		<Starting_Tech_Level> Rebel, 2 </Starting_Tech_Level>
+		<Max_Tech_Level> Rebel, 2 </Max_Tech_Level>
+		
+		<!-- Ansion Space Forces -->
+		<Starting_Forces> Rebel, Ansion, NewRepublic_Star_Base_3 </Starting_Forces>
+		<Starting_Forces> Rebel, Ansion, NewRepublic_Shipyard_Level_One </Starting_Forces>
+		<Starting_Forces> Rebel, Ansion, Generic_Colony_One </Starting_Forces>
+		<Starting_Forces> Rebel, Ansion, Liberator_Cruiser </Starting_Forces>
+		<Starting_Forces> Rebel, Ansion, Alliance_Assault_Frigate </Starting_Forces>
+		<Starting_Forces> Rebel, Ansion, Corellian_Corvette </Starting_Forces>
+		<Starting_Forces> Rebel, Ansion, Corellian_Corvette </Starting_Forces>
+		<!-- Ansion Ground Forces -->
+		<Starting_Forces> Rebel, Ansion, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Ansion, R_Ground_Light_Vehicle_Factory </Starting_Forces>
+		<Starting_Forces> Rebel, Ansion, Rebel_T2B_Company </Starting_Forces>
+		<Starting_Forces> Rebel, Ansion, Rebel_SRV1_Company </Starting_Forces>
+		
+		<!-- Bilbringi Space Forces -->
+		<Starting_Forces> Rebel, Bilbringi, NewRepublic_Star_Base_4 </Starting_Forces>
+		<Starting_Forces> Rebel, Bilbringi, Secondary_Golan_Two </Starting_Forces>
+		<Starting_Forces> Rebel, Bilbringi, NewRepublic_Shipyard_Level_Four </Starting_Forces>
+		<Starting_Forces> Rebel, Bilbringi, MC90 </Starting_Forces>
+		<Starting_Forces> Rebel, Bilbringi, Dreadnaught_Rebel </Starting_Forces>
+		<Starting_Forces> Rebel, Bilbringi, Corona </Starting_Forces>
+		<Starting_Forces> Rebel, Bilbringi, Corona </Starting_Forces>
+		<Starting_Forces> Rebel, Bilbringi, Warrior_Gunship </Starting_Forces>
+		<Starting_Forces> Rebel, Bilbringi, Warrior_Gunship </Starting_Forces>
+		<Starting_Forces> Rebel, Bilbringi, Warrior_Gunship </Starting_Forces>
+		<Starting_Forces> Rebel, Bilbringi, Warrior_Gunship </Starting_Forces>
+		<!-- Bilbringi Ground Forces -->
+		<Starting_Forces> Rebel, Bilbringi, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Bilbringi, R_Ground_Barracks </Starting_Forces>
+		<Starting_Forces> Rebel, Bilbringi, Ground_Ion_Cannon </Starting_Forces>
+		<Starting_Forces> Rebel, Bilbringi, Defense_Trooper_Squad </Starting_Forces>
+		<Starting_Forces> Rebel, Bilbringi, Rebel_Infiltrator_Squad </Starting_Forces>
+		<Starting_Forces> Rebel, Bilbringi, Rebel_T2B_Company </Starting_Forces>
+		<Starting_Forces> Rebel, Bilbringi, Rebel_SRV1_Company </Starting_Forces>
+		<Starting_Forces> Rebel, Bilbringi, Rebel_T3B_Company </Starting_Forces>
+		
+		<!-- Orinda Space Forces -->
+		<Starting_Forces> Rebel, Orinda, NewRepublic_Star_Base_4 </Starting_Forces>
+		<Starting_Forces> Rebel, Orinda, Secondary_Golan_Two </Starting_Forces>
+		<Starting_Forces> Rebel, Orinda, NewRepublic_Shipyard_Level_Two </Starting_Forces>
+		<Starting_Forces> Rebel, Orinda, ISD_1_NR </Starting_Forces>
+		<Starting_Forces> Rebel, Orinda, MC80B </Starting_Forces>
+		<Starting_Forces> Rebel, Orinda, Dauntless </Starting_Forces>
+		<Starting_Forces> Rebel, Orinda, MC40a </Starting_Forces>
+		<Starting_Forces> Rebel, Orinda, Nebulon_B_Tender </Starting_Forces>
+		<Starting_Forces> Rebel, Orinda, Nebulon_B_Tender </Starting_Forces>
+		<!-- Orinda Ground Forces -->
+		<Starting_Forces> Rebel, Orinda, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Orinda, R_Ground_Barracks </Starting_Forces>
+		<Starting_Forces> Rebel, Orinda, R_Ground_Heavy_Vehicle_Factory </Starting_Forces>
+		<Starting_Forces> Rebel, Orinda, Rebel_Marine_Squad </Starting_Forces>
+		<Starting_Forces> Rebel, Orinda, Rebel_Marine_Squad </Starting_Forces>
+		<Starting_Forces> Rebel, Orinda, Rebel_AA5_Company </Starting_Forces>
+		<Starting_Forces> Rebel, Orinda, Rebel_T4B_Company </Starting_Forces>
+		<Starting_Forces> Rebel, Orinda, Rebel_Vwing_Group </Starting_Forces>
+		<Starting_Forces> Rebel, Orinda, MAS_2xB_Company </Starting_Forces>
+
+		<!-- Corthenia Space Forces -->
+		<Starting_Forces> Rebel, Corthenia, NewRepublic_Star_Base_2 </Starting_Forces>
+		<Starting_Forces> Rebel, Corthenia, NewRepublic_Shipyard_Level_One </Starting_Forces>
+		<Starting_Forces> Rebel, Corthenia, Dreadnaught_Rebel </Starting_Forces>
+		<Starting_Forces> Rebel, Corthenia, Dreadnaught_Rebel </Starting_Forces>
+		<Starting_Forces> Rebel, Corthenia, MC40a </Starting_Forces>
+		<Starting_Forces> Rebel, Corthenia, MC40a </Starting_Forces>
+		<Starting_Forces> Rebel, Corthenia, Marauder_Missile_Cruiser </Starting_Forces>
+		<Starting_Forces> Rebel, Corthenia, Corellian_Gunboat </Starting_Forces>
+		<!-- Corthenia Ground Forces -->
+		<Starting_Forces> Rebel, Corthenia, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Corthenia, R_Ground_Barracks </Starting_Forces>
+		<Starting_Forces> Rebel, Corthenia, R_Ground_Light_Vehicle_Factory </Starting_Forces>
+		<Starting_Forces> Rebel, Corthenia, Tax_Agency </Starting_Forces>
+		<Starting_Forces> Rebel, Corthenia, Defense_Trooper_Squad </Starting_Forces>
+		<Starting_Forces> Rebel, Corthenia, Rebel_SRV1_Company </Starting_Forces>
+		<Starting_Forces> Rebel, Corthenia, Rebel_T3B_Company </Starting_Forces>
+
+		<!-- Darkon Space Forces -->
+		<Starting_Forces> Rebel, Darkon, NewRepublic_Star_Base_2 </Starting_Forces>
+		<Starting_Forces> Rebel, Darkon, NewRepublic_Shipyard_Level_One </Starting_Forces>
+		<Starting_Forces> Rebel, Darkon, Generic_TradeStation </Starting_Forces>
+		<Starting_Forces> Rebel, Darkon, Dauntless </Starting_Forces>
+		<Starting_Forces> Rebel, Darkon, Alliance_Assault_Frigate_II </Starting_Forces>
+		<Starting_Forces> Rebel, Darkon, Alliance_Assault_Frigate_II </Starting_Forces>
+		<!-- Darkon Ground Forces -->
+		<Starting_Forces> Rebel, Darkon, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Darkon, R_Ground_Barracks </Starting_Forces>
+		<Starting_Forces> Rebel, Darkon, Rebel_Marine_Squad </Starting_Forces>
+		<Starting_Forces> Rebel, Darkon, Rebel_T1B_Company </Starting_Forces>
+		<Starting_Forces> Rebel, Darkon, Rebel_MPTL_Company </Starting_Forces>
+		
+		<!-- Hewett Space Forces -->
+		<Starting_Forces> Rebel, Hewett, NewRepublic_Star_Base_3 </Starting_Forces>
+		<Starting_Forces> Rebel, Hewett, NewRepublic_Shipyard_Level_One </Starting_Forces>
+		<Starting_Forces> Rebel, Hewett, Invincible_Cruiser </Starting_Forces>
+		<Starting_Forces> Rebel, Hewett, MC30a </Starting_Forces>
+		<Starting_Forces> Rebel, Hewett, MC30c </Starting_Forces>
+		<Starting_Forces> Rebel, Hewett, MC30c </Starting_Forces>
+		<Starting_Forces> Rebel, Hewett, Quasar </Starting_Forces>
+		<!-- Hewett Ground Forces -->
+		<Starting_Forces> Rebel, Hewett, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Hewett, R_Ground_Light_Vehicle_Factory </Starting_Forces>
+		<Starting_Forces> Rebel, Hewett, Rebel_T1B_Company </Starting_Forces>
+		<Starting_Forces> Rebel, Hewett, Rebel_T2B_Company </Starting_Forces>
+		
+		<!-- Ithor Space Forces -->
+		<Starting_Forces> Rebel, Ithor, NewRepublic_Star_Base_4 </Starting_Forces>
+		<Starting_Forces> Rebel, Ithor, NewRepublic_Shipyard_Level_Two </Starting_Forces>
+		<Starting_Forces> Rebel, Ithor, Secondary_Golan_One </Starting_Forces>
+		<Starting_Forces> Rebel, Ithor, Generic_Colony_Two </Starting_Forces>
+		<Starting_Forces> Rebel, Ithor, Republic_SD </Starting_Forces>
+		<Starting_Forces> Rebel, Ithor, MC80B </Starting_Forces>
+		<Starting_Forces> Rebel, Ithor, MC30a </Starting_Forces>
+		<Starting_Forces> Rebel, Ithor, MC30a </Starting_Forces>
+		<Starting_Forces> Rebel, Ithor, Corellian_Gunboat </Starting_Forces>
+		<Starting_Forces> Rebel, Ithor, Corellian_Gunboat </Starting_Forces>
+		<!-- Ithor Ground Forces -->
+		<Starting_Forces> Rebel, Ithor, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Ithor, R_Ground_Barracks </Starting_Forces>
+		<Starting_Forces> Rebel, Ithor, Tax_Agency </Starting_Forces>
+		<Starting_Forces> Rebel, Ithor, Rebel_Infantry_Squad </Starting_Forces>
+		<Starting_Forces> Rebel, Ithor, Rebel_T3B_Company </Starting_Forces>
+		<Starting_Forces> Rebel, Ithor, Rebel_Gallofree_HTT_Company </Starting_Forces>
+		
+		<!-- Iridonia Space Forces -->
+		<Starting_Forces> Rebel, Iridonia, NewRepublic_Star_Base_2 </Starting_Forces>
+		<Starting_Forces> Rebel, Iridonia, NewRepublic_Shipyard_Level_One </Starting_Forces>
+		<Starting_Forces> Rebel, Iridonia, Belarus </Starting_Forces>
+		<Starting_Forces> Rebel, Iridonia, Corona </Starting_Forces>
+		<!-- Iridonia Ground Forces -->
+		<Starting_Forces> Rebel, Iridonia, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Iridonia, R_Ground_Barracks </Starting_Forces>
+		<Starting_Forces> Rebel, Iridonia, Tax_Agency </Starting_Forces>
+		<Starting_Forces> Rebel, Iridonia, Rebel_Infantry_Squad </Starting_Forces>
+		<Starting_Forces> Rebel, Iridonia, Rebel_AAC_2_Company </Starting_Forces>
+		<Starting_Forces> Rebel, Iridonia, Rebel_SRV1_Company </Starting_Forces>
+		
+		<!-- Lonnaw Space Forces -->
+		<Starting_Forces> Rebel, Lonnaw, NewRepublic_Star_Base_2 </Starting_Forces>
+		<Starting_Forces> Rebel, Lonnaw, NewRepublic_Shipyard_Level_Two </Starting_Forces>
+		<Starting_Forces> Rebel, Lonnaw, Dauntless </Starting_Forces>
+		<Starting_Forces> Rebel, Lonnaw, Alliance_Assault_Frigate </Starting_Forces>
+		<Starting_Forces> Rebel, Lonnaw, Nebulon_B_Tender </Starting_Forces>
+		<Starting_Forces> Rebel, Lonnaw, Nebulon_B_Tender </Starting_Forces>
+		<Starting_Forces> Rebel, Lonnaw, Nebulon_B_Tender </Starting_Forces>
+		<Starting_Forces> Rebel, Lonnaw, Corellian_Gunboat </Starting_Forces>
+		<Starting_Forces> Rebel, Lonnaw, Corellian_Gunboat </Starting_Forces>
+		<!-- Lonnaw Ground Forces -->
+		<Starting_Forces> Rebel, Lonnaw, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Lonnaw, R_Ground_Barracks </Starting_Forces>
+		<Starting_Forces> Rebel, Lonnaw, Tax_Agency </Starting_Forces>
+		<Starting_Forces> Rebel, Lonnaw, Rebel_Infantry_Squad </Starting_Forces>
+		<Starting_Forces> Rebel, Lonnaw, Rebel_Infantry_Squad </Starting_Forces>
+		<Starting_Forces> Rebel, Lonnaw, Rebel_T2B_Company </Starting_Forces>
+		
+		<!-- Nentan Space Forces -->
+		<Starting_Forces> Rebel, Nentan, NewRepublic_Star_Base_1 </Starting_Forces>
+		<Starting_Forces> Rebel, Nentan, NewRepublic_Shipyard_Level_One </Starting_Forces>
+		<Starting_Forces> Rebel, Nentan, Majestic </Starting_Forces>
+		<Starting_Forces> Rebel, Nentan, Agave_Corvette </Starting_Forces>
+		<Starting_Forces> Rebel, Nentan, Agave_Corvette </Starting_Forces>
+		<Starting_Forces> Rebel, Nentan, Warrior_Gunship </Starting_Forces>
+		<!-- Nentan Ground Forces -->
+		<Starting_Forces> Rebel, Nentan, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Nentan, R_Ground_Barracks </Starting_Forces>
+		<Starting_Forces> Rebel, Nentan, Rebel_Infiltrator_Squad </Starting_Forces>
+		<Starting_Forces> Rebel, Nentan, Rebel_Infiltrator_Squad </Starting_Forces>
+		
+		<!-- Ord_Mantell Space Forces -->
 		<Starting_Forces> Rebel, Ord_Mantell, NewRepublic_Star_Base_3 </Starting_Forces>
+		<Starting_Forces> Rebel, Ord_Mantell, Secondary_Golan_One </Starting_Forces>
+		<Starting_Forces> Rebel, Ord_Mantell, NewRepublic_Shipyard_Level_Two </Starting_Forces>
 		<Starting_Forces> Rebel, Ord_Mantell, Nebula </Starting_Forces>
 		<Starting_Forces> Rebel, Ord_Mantell, Republic_SD </Starting_Forces>
 		<Starting_Forces> Rebel, Ord_Mantell, Alliance_Assault_Frigate_II </Starting_Forces>
@@ -203,337 +1028,330 @@
 		<Starting_Forces> Rebel, Ord_Mantell, Rebel_SRV1_Company </Starting_Forces>		
 		<Starting_Forces> Rebel, Ord_Mantell, Rebel_T1B_Company </Starting_Forces>
 		<Starting_Forces> Rebel, Ord_Mantell, MAS_2xB_Company </Starting_Forces>
+		
+		<!-- Obredaan Space Forces -->
+		<Starting_Forces> Rebel, Obredaan, NewRepublic_Star_Base_3 </Starting_Forces>
+		<Starting_Forces> Rebel, Obredaan, Secondary_Golan_One </Starting_Forces>
+		<Starting_Forces> Rebel, Obredaan, NewRepublic_Shipyard_Level_One </Starting_Forces>
+		<Starting_Forces> Rebel, Obredaan, Generic_TradeStation </Starting_Forces>
+		<Starting_Forces> Rebel, Obredaan, Dauntless </Starting_Forces>
+		<Starting_Forces> Rebel, Obredaan, Generic_Victory_Destroyer_Two </Starting_Forces>
+		<Starting_Forces> Rebel, Obredaan, Strike_Cruiser </Starting_Forces>
+		<!-- Obredaan Ground Forces -->
+		<Starting_Forces> Rebel, Obredaan, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Obredaan, R_Ground_Light_Vehicle_Factory </Starting_Forces>
+		<Starting_Forces> Rebel, Obredaan, Mining_Facility </Starting_Forces>
+		<Starting_Forces> Rebel, Obredaan, Rebel_Infiltrator_Squad </Starting_Forces>
+		<Starting_Forces> Rebel, Obredaan, Rebel_Infiltrator_Squad </Starting_Forces>
+		<Starting_Forces> Rebel, Obredaan, Rebel_AA5_Company </Starting_Forces>
+		<Starting_Forces> Rebel, Obredaan, Rebel_T1B_Company </Starting_Forces>
+		
+		<!-- Orocco Space Forces -->
+		<Starting_Forces> Rebel, Orocco, NewRepublic_Star_Base_3 </Starting_Forces>
+		<Starting_Forces> Rebel, Orocco, Secondary_Golan_One </Starting_Forces>
+		<Starting_Forces> Rebel, Orocco, NewRepublic_Shipyard_Level_One </Starting_Forces>
+		<Starting_Forces> Rebel, Orocco, Generic_TradeStation </Starting_Forces>
+		<Starting_Forces> Rebel, Orocco, Dreadnaught_Rebel </Starting_Forces>
+		<Starting_Forces> Rebel, Orocco, Neutron_Star </Starting_Forces>
+		<Starting_Forces> Rebel, Orocco, Nebulon_B_Frigate </Starting_Forces>
+		<!-- Orocco Ground Forces -->
+		<Starting_Forces> Rebel, Orocco, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Orocco, R_Ground_Barracks </Starting_Forces>
+		<Starting_Forces> Rebel, Orocco, R_Ground_Light_Vehicle_Factory </Starting_Forces>
+		<Starting_Forces> Rebel, Orocco, Tax_Agency </Starting_Forces>
+		<Starting_Forces> Rebel, Orocco, Rebel_Infantry_Squad </Starting_Forces>
+		<Starting_Forces> Rebel, Orocco, Rebel_Infiltrator_Squad </Starting_Forces>
+		<Starting_Forces> Rebel, Orocco, Rebel_T2B_Company </Starting_Forces>
+		
+		<!-- Tartaglia Space Forces -->
+		<Starting_Forces> Rebel, Tartaglia, NewRepublic_Star_Base_3 </Starting_Forces>
+		<Starting_Forces> Rebel, Tartaglia, NewRepublic_Shipyard_Level_One </Starting_Forces>
+		<Starting_Forces> Rebel, Tartaglia, Liberator_Cruiser </Starting_Forces>
+		<Starting_Forces> Rebel, Tartaglia, Alliance_Assault_Frigate_II </Starting_Forces>
+		<Starting_Forces> Rebel, Tartaglia, Marauder_Cruiser </Starting_Forces>
+		<Starting_Forces> Rebel, Tartaglia, Marauder_Cruiser </Starting_Forces>
+		<!-- Tartaglia Ground Forces -->
+		<Starting_Forces> Rebel, Tartaglia, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Tartaglia, Tax_Agency </Starting_Forces>
+		<Starting_Forces> Rebel, Tartaglia, Defense_Trooper_Squad </Starting_Forces>
+		<Starting_Forces> Rebel, Tartaglia, Defense_Trooper_Squad </Starting_Forces>
+		<Starting_Forces> Rebel, Tartaglia, Rebel_T4B_Company </Starting_Forces>
+		
+		<!-- Traval Pacor Space Forces -->
+		<Starting_Forces> Rebel, Traval_Pacor, NewRepublic_Star_Base_3 </Starting_Forces>
+		<Starting_Forces> Rebel, Traval_Pacor, NewRepublic_Shipyard_Level_One </Starting_Forces>
+		<Starting_Forces> Rebel, Traval_Pacor, Defender_Carrier </Starting_Forces>
+		<Starting_Forces> Rebel, Traval_Pacor, Sacheen </Starting_Forces>
+		<Starting_Forces> Rebel, Traval_Pacor, Hajen </Starting_Forces>
+		<Starting_Forces> Rebel, Traval_Pacor, Hajen </Starting_Forces>
+		<!-- Traval Pacor Ground Forces -->
+		<Starting_Forces> Rebel, Traval_Pacor, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Traval_Pacor, R_Ground_Barracks </Starting_Forces>
+		<Starting_Forces> Rebel, Traval_Pacor, R_Ground_Light_Vehicle_Factory </Starting_Forces>
+		<Starting_Forces> Rebel, Traval_Pacor, Tax_Agency </Starting_Forces>
+		<Starting_Forces> Rebel, Traval_Pacor, Defense_Trooper_Squad </Starting_Forces>
+		<Starting_Forces> Rebel, Traval_Pacor, Rebel_MPTL_Company </Starting_Forces>
+		
+		<!-- Tyan Space Forces -->
+		<Starting_Forces> Rebel, Tyan, NewRepublic_Star_Base_3 </Starting_Forces>
+		<Starting_Forces> Rebel, Tyan, NewRepublic_Shipyard_Level_One </Starting_Forces>
+		<Starting_Forces> Rebel, Tyan, Generic_TradeStation </Starting_Forces>
+		<Starting_Forces> Rebel, Tyan, Alliance_Assault_Frigate_II </Starting_Forces>
+		<Starting_Forces> Rebel, Tyan, Alliance_Assault_Frigate_II </Starting_Forces>
+		<Starting_Forces> Rebel, Tyan, Quasar </Starting_Forces>
+		<Starting_Forces> Rebel, Tyan, Marauder_Cruiser </Starting_Forces>
+		<Starting_Forces> Rebel, Tyan, Marauder_Cruiser </Starting_Forces>
+		<Starting_Forces> Rebel, Tyan, Marauder_Cruiser </Starting_Forces>
+		<!-- Tyan Ground Forces -->
+		<Starting_Forces> Rebel, Tyan, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Tyan, R_Ground_Heavy_Vehicle_Factory </Starting_Forces>
+		<Starting_Forces> Rebel, Tyan, Tax_Agency </Starting_Forces>
+		<Starting_Forces> Rebel, Tyan, Defense_Trooper_Squad </Starting_Forces>
+		<Starting_Forces> Rebel, Tyan, Rebel_AAC_2_Company </Starting_Forces>
 
-		
-								<!-- Obredaan Space Forces -->
-		<Starting_Forces> Rebel, Obredaan, Generate_Force </Starting_Forces>
-		
-								<!-- Orocco Space Forces -->
-		<Starting_Forces> Rebel, Orocco, Generate_Force </Starting_Forces>
-	
-		
-				<!-- Empire Starting Forces -->
 
-		<Starting_Credits> Empire,  32000 </Starting_Credits>
+		<!-- Empire Starting Forces -->
+
+		<Starting_Credits> Empire, 10000 </Starting_Credits>
 		<Starting_Tech_Level> Empire, 3 </Starting_Tech_Level>
 		<Max_Tech_Level> Empire, 3 </Max_Tech_Level>
 		
-			<!-- Bastion Space Forces -->
-		<Starting_Forces> Empire, Bastion, Empire_Star_Base_4 </Starting_Forces>
-		<Starting_Forces> Empire, Bastion, Secondary_Golan_One </Starting_Forces>
-		<Starting_Forces> Empire, Bastion, Generic_Colony_Two </Starting_Forces>
-		<Starting_Forces> Empire, Bastion, Empire_Shipyard_Level_Two </Starting_Forces>
-		<Starting_Forces> Empire, Bastion, Generic_Victory_Destroyer </Starting_Forces>
-		<Starting_Forces> Empire, Bastion, Nebulon_B_Empire </Starting_Forces>
-		<Starting_Forces> Empire, Bastion, Strike_Cruiser </Starting_Forces>
-		<!-- Bastion Land Forces -->
-		<Starting_Forces> Empire, Bastion, Empire_MoffPalace </Starting_Forces>
-		<Starting_Forces> Empire, Bastion, E_Ground_Barracks </Starting_Forces>
-		<Starting_Forces> Empire, Bastion, Remnant_Capital </Starting_Forces>
-		<Starting_Forces> Empire, Bastion, E_Ground_Light_Vehicle_Factory </Starting_Forces>
-		<Starting_Forces> Empire, Bastion, E_Ground_Heavy_Vehicle_Factory </Starting_Forces>
-		<Starting_Forces> Empire, Bastion, Army_Guard_Squad </Starting_Forces>
-		<Starting_Forces> Empire, Bastion, Imperial_Stormtrooper_Squad </Starting_Forces>
-		<Starting_Forces> Empire, Bastion, Imperial_AT_AT_Company </Starting_Forces>	
-		<Starting_Forces> Empire, Bastion, Imperial_AT_ST_Company </Starting_Forces>
+		<!-- Agamar Space Forces --> <!-- Extra escorts for AI Megador -->
+		<Starting_Forces> Empire, Agamar, Empire_Star_Base_3 </Starting_Forces>
+		<Starting_Forces> Empire, Agamar, Empire_Shipyard_Level_One </Starting_Forces>
+		<Starting_Forces> Empire, Agamar, Generic_Star_Destroyer </Starting_Forces>
+		<Starting_Forces> Empire, Agamar, Generic_Acclamator_Assault_Ship_II </Starting_Forces>
+		<Starting_Forces> Empire, Agamar, Crusader_Gunship </Starting_Forces>
+		<Starting_Forces> Empire, Agamar, Crusader_Gunship </Starting_Forces>
+		<!-- Agamar Ground Forces -->
+		<Starting_Forces> Empire, Agamar, Empire_MoffPalace </Starting_Forces>
+		<Starting_Forces> Empire, Agamar, E_Ground_Heavy_Vehicle_Factory </Starting_Forces>
+		<Starting_Forces> Empire, Agamar, Tax_Agency </Starting_Forces>
+		<Starting_Forces> Empire, Agamar, Imperial_Army_Trooper_Squad </Starting_Forces>
+		<Starting_Forces> Empire, Agamar, Imperial_S_1_Firehawke_Company </Starting_Forces>
 		
-		<Starting_Forces> Empire, Mygeeto, Generate_Force </Starting_Forces>
+		<!-- Borosk Space Forces --> <!-- Extra escorts for AI Reaper -->
+		<Starting_Forces> Empire, Borosk, Empire_Star_Base_3 </Starting_Forces>
+		<Starting_Forces> Empire, Borosk, Secondary_Golan_One </Starting_Forces>
+		<Starting_Forces> Empire, Borosk, Generic_TradeStation </Starting_Forces>
+		<Starting_Forces> Empire, Borosk, Empire_Shipyard_Level_Two </Starting_Forces>
+		<Starting_Forces> Empire, Borosk, Generic_Star_Destroyer_Two </Starting_Forces>
+		<Starting_Forces> Empire, Borosk, Generic_Victory_Destroyer_Two </Starting_Forces>
+		<Starting_Forces> Empire, Borosk, Generic_Interdictor_Cruiser </Starting_Forces>
+		<Starting_Forces> Empire, Borosk, Generic_Interdictor_Cruiser </Starting_Forces>
+		<Starting_Forces> Empire, Borosk, Lancer_Frigate </Starting_Forces>
+		<Starting_Forces> Empire, Borosk, Lancer_Frigate </Starting_Forces>
+		<!-- Borosk Ground Forces -->
+		<Starting_Forces> Empire, Borosk, Remnant_Capital </Starting_Forces>
+		<Starting_Forces> Empire, Borosk, Empire_MoffPalace </Starting_Forces>
+		<Starting_Forces> Empire, Borosk, E_Ground_Barracks </Starting_Forces>
+		<Starting_Forces> Empire, Borosk, Tax_Agency </Starting_Forces>
+		<Starting_Forces> Empire, Borosk, E_Ground_Heavy_Vehicle_Factory </Starting_Forces>
+		<Starting_Forces> Empire, Borosk, Imperial_Stormtrooper_Squad </Starting_Forces>
+		<Starting_Forces> Empire, Borosk, Imperial_Stormtrooper_Squad </Starting_Forces>
+		<Starting_Forces> Empire, Borosk, Imperial_AT_PT_Company </Starting_Forces>
+		<Starting_Forces> Empire, Borosk, Imperial_Century_Tank_Company </Starting_Forces>
+		<Starting_Forces> Empire, Borosk, Imperial_Heavy_Artillery_Company </Starting_Forces>
+		<Starting_Forces> Empire, Borosk, Imperial_B5_Juggernaut_Company </Starting_Forces>
 		
+		<!-- Garqi Space Forces -->
+		<Starting_Forces> Empire, Garqi, Empire_Star_Base_2 </Starting_Forces>
+		<Starting_Forces> Empire, Garqi, Empire_Shipyard_Level_One </Starting_Forces>
+		<Starting_Forces> Empire, Garqi, Generic_TradeStation </Starting_Forces>
+		<Starting_Forces> Empire, Garqi, Enforcer </Starting_Forces>
+		<Starting_Forces> Empire, Garqi, Dreadnaught_Empire </Starting_Forces>
+		<Starting_Forces> Empire, Garqi, Raider_Corvette </Starting_Forces>
+		<Starting_Forces> Empire, Garqi, Raider_Corvette </Starting_Forces>
+		<!-- Garqi Ground Forces -->
+		<Starting_Forces> Empire, Garqi, Empire_MoffPalace </Starting_Forces>
+		<Starting_Forces> Empire, Garqi, E_Ground_Barracks </Starting_Forces>
+		<Starting_Forces> Empire, Garqi, Pentastar_Enforcer_Trooper_Squad </Starting_Forces>
+		<Starting_Forces> Empire, Garqi, Pentastar_Army_Trooper_Squad </Starting_Forces>
+		<Starting_Forces> Empire, Garqi, Imperial_Century_Tank_Company </Starting_Forces>
 		
-		<Starting_Forces> Empire, Agamar, Generate_Force </Starting_Forces>
+		<!-- Generis Space Forces -->
+		<Starting_Forces> Empire, Generis, Empire_Star_Base_2 </Starting_Forces>
+		<Starting_Forces> Empire, Generis, Empire_Shipyard_Level_One </Starting_Forces>
+		<Starting_Forces> Empire, Generis, Generic_Colony_One </Starting_Forces>
+		<Starting_Forces> Empire, Generis, Enforcer </Starting_Forces>
+		<Starting_Forces> Empire, Generis, Imperial_Cargo_Ship </Starting_Forces>
+		<Starting_Forces> Empire, Generis, Tartan_Patrol_Cruiser </Starting_Forces>
+		<Starting_Forces> Empire, Generis, Tartan_Patrol_Cruiser </Starting_Forces>
+		<Starting_Forces> Empire, Generis, Tartan_Patrol_Cruiser </Starting_Forces>
+		<!-- Garqi Ground Forces -->
+		<Starting_Forces> Empire, Generis, Empire_MoffPalace </Starting_Forces>
+		<Starting_Forces> Empire, Generis, E_Ground_Barracks </Starting_Forces>
+		<Starting_Forces> Empire, Generis, E_Ground_Barracks </Starting_Forces>
+		<Starting_Forces> Empire, Generis, Pentastar_Enforcer_Trooper_Squad </Starting_Forces>
+		<Starting_Forces> Empire, Generis, Pentastar_Army_Trooper_Squad </Starting_Forces>
+		<Starting_Forces> Empire, Generis, Imperial_AT_DP_Company </Starting_Forces>
 		
+		<!-- Ketaris Space Forces -->
+		<Starting_Forces> Empire, Ketaris, Empire_Star_Base_2 </Starting_Forces>
+		<Starting_Forces> Empire, Ketaris, Empire_Shipyard_Level_One </Starting_Forces>
+		<Starting_Forces> Empire, Ketaris, Generic_TradeStation </Starting_Forces>
+		<Starting_Forces> Empire, Ketaris, Generic_Victory_Destroyer_Two </Starting_Forces>
+		<Starting_Forces> Empire, Ketaris, Lancer_Frigate </Starting_Forces>
+		<Starting_Forces> Empire, Ketaris, Lancer_Frigate </Starting_Forces>
+		<!-- Ketaris Ground Forces -->
+		<Starting_Forces> Empire, Ketaris, Empire_MoffPalace </Starting_Forces>
+		<Starting_Forces> Empire, Ketaris, E_Ground_Barracks </Starting_Forces>
+		<Starting_Forces> Empire, Ketaris, Tax_Agency </Starting_Forces>
+		<Starting_Forces> Empire, Ketaris, Imperial_Army_Guard_Squad </Starting_Forces>
+		<Starting_Forces> Empire, Ketaris, Imperial_PX4_Company </Starting_Forces>
 		
-		<Starting_Forces> Empire, Axxila, Generate_Force </Starting_Forces>
-		<Starting_Forces> Empire, Axxila, Megador </Starting_Forces>
+		<!-- Morishim Space Forces -->
+		<Starting_Forces> Empire, Morishim, Empire_Star_Base_2 </Starting_Forces>
+		<Starting_Forces> Empire, Morishim, Empire_Shipyard_Level_One </Starting_Forces>
+		<Starting_Forces> Empire, Morishim, Escort_Carrier </Starting_Forces>
+		<Starting_Forces> Empire, Morishim, Carrack_Cruiser </Starting_Forces>
+		<Starting_Forces> Empire, Morishim, Nebulon_B_Empire </Starting_Forces>
+		<Starting_Forces> Empire, Morishim, Delta_JV7_Squadron </Starting_Forces>
+		<!-- Morishim Ground Forces -->
+		<Starting_Forces> Empire, Morishim, Empire_MoffPalace </Starting_Forces>
+		<Starting_Forces> Empire, Morishim, E_Ground_Light_Vehicle_Factory </Starting_Forces>
+		<Starting_Forces> Empire, Morishim, Tax_Agency </Starting_Forces>
+		<Starting_Forces> Empire, Morishim, Imperial_Army_Commando_Squad </Starting_Forces>
+		<Starting_Forces> Empire, Morishim, Imperial_UT_AA_Company </Starting_Forces>
 		
-	
-		
-		<Starting_Forces> Empire, Bimmiel, Generate_Force </Starting_Forces>
-		
-		<Starting_Forces> Empire, Borosk, Generate_Force </Starting_Forces>
+		<!-- Movris Space Forces --> <!-- Extra Procursator and DHC for AI -->
+		<Starting_Forces> Empire, Movris, Empire_Star_Base_1 </Starting_Forces>
+		<Starting_Forces> Empire, Movris, Empire_Shipyard_Level_One </Starting_Forces>
+		<Starting_Forces> Empire, Movris, Generic_Procursator </Starting_Forces>
+		<Starting_Forces> Empire, Movris, Generic_Procursator </Starting_Forces>
+		<Starting_Forces> Empire, Movris, Dreadnaught_Empire </Starting_Forces>
+		<Starting_Forces> Empire, Movris, Dreadnaught_Empire </Starting_Forces>
+		<Starting_Forces> Empire, Movris, Dreadnaught_Empire </Starting_Forces>
+		<Starting_Forces> Empire, Movris, Crusader_Gunship </Starting_Forces>
+		<Starting_Forces> Empire, Movris, Crusader_Gunship </Starting_Forces>
+		<Starting_Forces> Empire, Movris, Crusader_Gunship </Starting_Forces>
+		<!-- Movris Ground Forces -->
+		<Starting_Forces> Empire, Movris, Empire_MoffPalace </Starting_Forces>
+		<Starting_Forces> Empire, Movris, E_Ground_Barracks </Starting_Forces>
+		<Starting_Forces> Empire, Movris, Imperial_Dwarf_Spider_Droid_Company </Starting_Forces>
+		<Starting_Forces> Empire, Movris, Imperial_Stormtrooper_Squad </Starting_Forces>
+		<Starting_Forces> Empire, Movris, Imperial_AT_ST_Company </Starting_Forces>
+		<Starting_Forces> Empire, Movris, Imperial_Deathhawk_Group </Starting_Forces>
 
-		<Starting_Forces> Empire, Jaemus, Generate_Force </Starting_Forces>
+		<!-- Paarin Minor Space Forces -->  <!-- Extra Procursator and Escort Carrier for AI -->
+		<Starting_Forces> Empire, Paarin_Minor, Empire_Star_Base_2 </Starting_Forces>
+		<Starting_Forces> Empire, Paarin_Minor, Empire_Shipyard_Level_One </Starting_Forces>
+		<Starting_Forces> Empire, Paarin_Minor, Generic_Procursator </Starting_Forces>
+		<Starting_Forces> Empire, Paarin_Minor, Generic_Venator </Starting_Forces>
+		<Starting_Forces> Empire, Paarin_Minor, Escort_Carrier </Starting_Forces>
+		<Starting_Forces> Empire, Paarin_Minor, Escort_Carrier </Starting_Forces>
+		<Starting_Forces> Empire, Paarin_Minor, Delta_JV7_Squadron </Starting_Forces>
+		<!-- Paarin Minor Ground Forces -->
+		<Starting_Forces> Empire, Paarin_Minor, Empire_MoffPalace </Starting_Forces>
+		<Starting_Forces> Empire, Paarin_Minor, E_Ground_Light_Vehicle_Factory </Starting_Forces>
+		<Starting_Forces> Empire, Paarin_Minor, E_Ground_Heavy_Vehicle_Factory </Starting_Forces>
+		<Starting_Forces> Empire, Paarin_Minor, Imperial_Stormtrooper_Squad </Starting_Forces>
+		<Starting_Forces> Empire, Paarin_Minor, Imperial_Scout_Trooper_Infantry_Squad </Starting_Forces>
+		<Starting_Forces> Empire, Paarin_Minor, Imperial_S_1_Firehawke_Company </Starting_Forces>
+		
+		<!-- Phaeda Space Forces --> <!-- Extra VSD and Strike for AI -->
+		<Starting_Forces> Empire, Phaeda, Empire_Star_Base_2 </Starting_Forces>
+		<Starting_Forces> Empire, Phaeda, Empire_Shipyard_Level_Two </Starting_Forces>
+		<Starting_Forces> Empire, Phaeda, Generic_Colony_Two </Starting_Forces>
+		<Starting_Forces> Empire, Phaeda, Generic_Victory_Destroyer </Starting_Forces> 
+		<Starting_Forces> Empire, Phaeda, Generic_Victory_Destroyer </Starting_Forces>
+		<Starting_Forces> Empire, Phaeda, Strike_Cruiser </Starting_Forces>
+		<Starting_Forces> Empire, Phaeda, Strike_Cruiser </Starting_Forces>
+		<Starting_Forces> Empire, Phaeda, Star_Galleon </Starting_Forces>
+		<!-- Phaeda Ground Forces -->
+		<Starting_Forces> Empire, Phaeda, Empire_MoffPalace </Starting_Forces>
+		<Starting_Forces> Empire, Phaeda, E_Ground_Barracks </Starting_Forces>
+		<Starting_Forces> Empire, Phaeda, Tax_Agency </Starting_Forces>
+		<Starting_Forces> Empire, Phaeda, Imperial_Navy_Trooper_Squad </Starting_Forces>
+		<Starting_Forces> Empire, Phaeda, Imperial_Navy_Trooper_Squad </Starting_Forces>
+		<Starting_Forces> Empire, Phaeda, Imperial_S_1_Firehawke_Company </Starting_Forces>
+		<Starting_Forces> Empire, Phaeda, Imperial_AT_AA_Company </Starting_Forces>
+		<Starting_Forces> Empire, Phaeda, Imperial_AT_AT_Company </Starting_Forces>
+		
+		<!-- Ord Biniir Space Forces -->
+		<Starting_Forces> Empire, Ord_Biniir, Empire_Star_Base_2 </Starting_Forces>
+		<Starting_Forces> Empire, Ord_Biniir, Empire_Shipyard_Level_One </Starting_Forces>
+		<Starting_Forces> Empire, Ord_Biniir, Generic_Acclamator_Assault_Ship_Leveler </Starting_Forces>
+		<Starting_Forces> Empire, Ord_Biniir, Victory_II_Frigate </Starting_Forces>
+		<Starting_Forces> Empire, Ord_Biniir, Raider_Corvette </Starting_Forces>
+		<Starting_Forces> Empire, Ord_Biniir, Raider_Corvette </Starting_Forces>
+		<Starting_Forces> Empire, Ord_Biniir, Raider_Corvette </Starting_Forces>
+		<Starting_Forces> Empire, Ord_Biniir, Raider_Corvette </Starting_Forces>
+		<!-- Ord Biniir Ground Forces -->
+		<Starting_Forces> Empire, Ord_Biniir, Empire_MoffPalace </Starting_Forces>
+		<Starting_Forces> Empire, Ord_Biniir, E_Ground_Barracks </Starting_Forces>
+		<Starting_Forces> Empire, Ord_Biniir, E_Ground_Barracks </Starting_Forces>
+		<Starting_Forces> Empire, Ord_Biniir, Imperial_Army_Trooper_Squad </Starting_Forces>
+		<Starting_Forces> Empire, Ord_Biniir, Pentastar_Army_Trooper_Squad </Starting_Forces>
+		<Starting_Forces> Empire, Ord_Biniir, Imperial_AT_PT_Company </Starting_Forces>
+		<Starting_Forces> Empire, Ord_Biniir, Imperial_C10_Siege_Tower_Company </Starting_Forces>
+		
+		<!-- Ord Cantrell Space Forces -->
+		<Starting_Forces> Empire, Ord_Cantrell, Empire_Star_Base_3 </Starting_Forces>
+		<Starting_Forces> Empire, Ord_Cantrell, Empire_Shipyard_Level_Two </Starting_Forces>
+		<Starting_Forces> Empire, Ord_Cantrell, Generic_TradeStation </Starting_Forces>
+		<Starting_Forces> Empire, Ord_Cantrell, Generic_Star_Destroyer </Starting_Forces> <!-- extra ISD for AI -->
+		<Starting_Forces> Empire, Ord_Cantrell, Vindicator_Cruiser </Starting_Forces>
+		<Starting_Forces> Empire, Ord_Cantrell, Generic_Interdictor_Cruiser </Starting_Forces>
+		<Starting_Forces> Empire, Ord_Cantrell, Generic_Interdictor_Cruiser </Starting_Forces>
+		<Starting_Forces> Empire, Ord_Cantrell, Strike_Cruiser </Starting_Forces>
+		<Starting_Forces> Empire, Ord_Cantrell, Carrack_Cruiser </Starting_Forces>
+		<Starting_Forces> Empire, Ord_Cantrell, Delta_JV7_Squadron </Starting_Forces>
+		<!-- Ord Cantrell Ground Forces -->
+		<Starting_Forces> Empire, Ord_Cantrell, Empire_MoffPalace </Starting_Forces>
+		<Starting_Forces> Empire, Ord_Cantrell, E_Ground_Heavy_Vehicle_Factory </Starting_Forces>
+		<Starting_Forces> Empire, Ord_Cantrell, Tax_Agency </Starting_Forces>
+		<Starting_Forces> Empire, Ord_Cantrell, Imperial_Army_Trooper_Squad </Starting_Forces>
+		<Starting_Forces> Empire, Ord_Cantrell, Imperial_Army_Trooper_Squad </Starting_Forces>
+		<Starting_Forces> Empire, Ord_Cantrell, Imperial_AT_ST_Company </Starting_Forces>
+		<Starting_Forces> Empire, Ord_Cantrell, Imperial_Chariot_LAV_Company </Starting_Forces>
+		
+		<!-- Wistril Space Forces -->
+		<Starting_Forces> Empire, Wistril, Empire_Star_Base_3 </Starting_Forces>
+		<Starting_Forces> Empire, Wistril, Empire_Shipyard_Level_One </Starting_Forces>
+		<Starting_Forces> Empire, Wistril, Generic_Star_Destroyer_Two </Starting_Forces> <!-- extra ISD 2 for AI -->
+		<Starting_Forces> Empire, Wistril, Generic_Acclamator_Assault_Ship_II </Starting_Forces>
+		<Starting_Forces> Empire, Wistril, Escort_Carrier </Starting_Forces>
+		<Starting_Forces> Empire, Wistril, Generic_Interdictor_Cruiser </Starting_Forces>
+		<Starting_Forces> Empire, Wistril, Generic_Interdictor_Cruiser </Starting_Forces>
+		<Starting_Forces> Empire, Wistril, Tartan_Patrol_Cruiser </Starting_Forces>
+		<!-- Wistril Space Forces -->
+		<Starting_Forces> Empire, Wistril, Empire_MoffPalace </Starting_Forces>
+		<Starting_Forces> Empire, Wistril, E_Ground_Barracks </Starting_Forces>
+		<Starting_Forces> Empire, Wistril, E_Ground_Light_Vehicle_Factory </Starting_Forces>
+		<Starting_Forces> Empire, Wistril, Tax_Agency </Starting_Forces>
+		<Starting_Forces> Empire, Wistril, Imperial_Dwarf_Spider_Droid_Company </Starting_Forces>
+		<Starting_Forces> Empire, Wistril, Imperial_Scout_Trooper_Infantry_Squad </Starting_Forces>
+		<Starting_Forces> Empire, Wistril, Imperial_IDT_Group </Starting_Forces>
+		
+		<!-- Yaga Minor Space Forces -->
+		<Starting_Forces> Empire, Yaga_Minor, Empire_Star_Base_4 </Starting_Forces>
+		<Starting_Forces> Empire, Yaga_Minor, Secondary_Golan_Two </Starting_Forces>
+		<Starting_Forces> Empire, Yaga_Minor, Generic_TradeStation </Starting_Forces>
+		<Starting_Forces> Empire, Yaga_Minor, Empire_Shipyard_Level_Four </Starting_Forces>
+		<Starting_Forces> Empire, Yaga_Minor, Generic_Tector </Starting_Forces>
+		<Starting_Forces> Empire, Yaga_Minor, Generic_Victory_Destroyer </Starting_Forces>
+		<Starting_Forces> Empire, Yaga_Minor, Nebulon_B_Empire </Starting_Forces>
+		<Starting_Forces> Empire, Yaga_Minor, Strike_Cruiser </Starting_Forces>
+		<!-- Yaga Minor Ground Forces -->
+		<Starting_Forces> Empire, Yaga_Minor, Empire_MoffPalace </Starting_Forces>
+		<Starting_Forces> Empire, Yaga_Minor, E_Ground_Barracks </Starting_Forces>
+		<Starting_Forces> Empire, Yaga_Minor, E_Ground_Heavy_Vehicle_Factory </Starting_Forces>
+		<Starting_Forces> Empire, Yaga_Minor, E_Ground_Advanced_Vehicle_Factory </Starting_Forces>
+		<Starting_Forces> Empire, Yaga_Minor, Ground_Hypervelocity_Gun </Starting_Forces>
+		<Starting_Forces> Empire, Yaga_Minor, Imperial_Army_Guard_Squad </Starting_Forces>
+		<Starting_Forces> Empire, Yaga_Minor, Imperial_Stormtrooper_Squad </Starting_Forces>
+		<Starting_Forces> Empire, Yaga_Minor, Imperial_AT_AT_Company </Starting_Forces>	
+		<Starting_Forces> Empire, Yaga_Minor, Imperial_AT_ST_Company </Starting_Forces>
+		
 
-		<Starting_Forces> Empire, Ketaris, Generate_Force </Starting_Forces>
-
+		<!-- Independent (Adumar) Starting Forces -->
 		
-		<Starting_Forces> Empire, Celanon, Generate_Force </Starting_Forces>
-
-
-		<Starting_Forces> Empire, Paarin_Minor, Generate_Force </Starting_Forces>
-
-		
-		<Starting_Forces> Empire, Phaeda, Generate_Force </Starting_Forces>
-
-		
-		<Starting_Forces> Empire, Ord_Trasi, Generate_Force </Starting_Forces>
-	
-	</Campaign>
-	
-		<Campaign Name="Orinda_NewRep">
-		<Campaign_Set>Orinda</Campaign_Set>
-		
-		
-		<Sort_Order>223</Sort_Order>
-
-        <Text_ID> TEXT_CAMPAIGN_SINGLE_ORINDA </Text_ID>
-        <Description_Text> TEXT_CAMPAIGN_SINGLE_DESCRIPTION_ORINDA </Description_Text>
-
-        <Camera_Shift_X> 40.0 </Camera_Shift_X>
-        <Camera_Shift_Y> 0.0 </Camera_Shift_Y>
-        <Camera_Distance> 1200.0 </Camera_Distance>
-		<Locations>
-			Galaxy_Core_Art_Model, 
-			Agamar,
-			Axxila,
-			Bandomeer,
-			Bastion,
-			Bilbringi,
-			Bimmiel,
-			Borosk,
-			Celanon,
-			Corthenia,
-			Darkon,
-			Dathomir,
-			Paarin_Minor,
-			Phaeda,
-			Scarl,
-			Tartaglia,
-			Ord_Trasi,
-			Traval_Pacor,
-			Tyan,
-			Hewett,
-			Ithor,
-			Jaemus,
-			Lonnaw,
-			Ketaris,
-			Ord_Mantell,
-			Mygeeto,
-			Obredaan,
-			Orinda,
-			Orocco
-</Locations>
-		<Trade_Routes>
-			Agamar_Hewett,
-			Agamar_Paarin_Minor,
-			Agamar_Bimmiel,
-			Axxila_Bimmiel,
-			Axxila_Celanon,
-			Axxila_Dathomir,
-			Bandomeer_Dathomir,
-			Bandomeer_Hewett,
-			Bandomeer_Scarl,
-			Bastion_Bimmiel,
-			Bastion_Jaemus,
-			Bilbringi_Darkon,
-			Bilbringi_Ord_Mantell,
-			Bilbringi_Scarl,
-			Bimmiel_Ord_Trasi,
-			Borosk_Jaemus,
-			Borosk_Mygeeto,
-			Borosk_Orinda,
-			Celanon_Dathomir,
-			Corthenia_Traval_Pacor,
-			Corthenia_Tyan,
-			Darkon_Traval_Pacor,
-			Hewett_Orocco,
-			Hewett_Paarin_Minor,
-			Hewett_Tartaglia,
-			Ithor_Ketaris,
-			Ithor_Obredaan,
-			Ithor_Orocco,
-			Ketaris_Paarin_Minor,
-			Ketaris_Phaeda,
-			Lonnaw_Orinda,
-			Lonnaw_Obredaan,
-			Ord_Mantell_Orocco,
-			Ord_Mantell_Tyan,
-			Mygeeto_Ord_Trasi,
-			Obredaan_Tyan,
-			Orinda_Phaeda,
-			Orinda_Traval_Pacor,
-			Orocco_Tartaglia,
-			Ord_Trasi_Phaeda
-</Trade_Routes>
-
-
-		<Home_Location> Rebel, Bilbringi </Home_Location>
-        <Home_Location> Empire, Bastion </Home_Location>
-		<Home_Location> Warlords, RZ7 </Home_Location> 
-	 
-        <Starting_Active_Player> Rebel </Starting_Active_Player>
-
-		<Rebel_Story_Name>Conquests\Orinda\Story_Plots_Sandbox_Orinda_Rebel.xml</Rebel_Story_Name>
-        <Empire_Story_Name>Conquests\Orinda\Story_Plots_Sandbox_Orinda_Empire.xml</Empire_Story_Name>
-        <Underworld_Story_Name>Conquests\Orinda\Story_Plots_Sandbox_Orinda_Container.xml</Underworld_Story_Name>
-        	 
-        	 
-		<AI_Player_Control> Rebel, SandboxHuman </AI_Player_Control>
-		<AI_Player_Control> EmpireoftheHand, None </AI_Player_Control>
-		<AI_Player_Control> Empire, GenericAI </AI_Player_Control>		
-		<AI_Player_Control> Warlords, None </AI_Player_Control>		
-		
-		<AI_Player_Control> Pentastar, None</AI_Player_Control>
-		<AI_Player_Control> Zsinj_Empire, None </AI_Player_Control>
-		
-		<AI_Player_Control> Hapes_Consortium, None </AI_Player_Control>
-		<AI_Player_Control> Greater_Maldrood, None </AI_Player_Control>      
-		<AI_Player_Control> Eriadu_Authority, None </AI_Player_Control>				
-		<AI_Player_Control> Corporate_Sector, None </AI_Player_Control>				
-
-		<Markup_Filename>Empire, DefaultGalacticHints </Markup_Filename>
-		<Markup_Filename>Rebel, DefaultGalacticHints </Markup_Filename>
-		<Markup_Filename>EmpireoftheHand, DefaultGalacticHints </Markup_Filename>
-		<Markup_Filename>Zsinj_Empire, DefaultGalacticHints </Markup_Filename>
-		<Markup_Filename>Greater_Maldrood, DefaultMaldroodHints </Markup_Filename>			
-		<Markup_Filename>Pentastar, DefaultGalacticHints </Markup_Filename>
-		<Markup_Filename>Eriadu_Authority, DefaultEriaduHints </Markup_Filename>				
-		<Markup_Filename>Corporate_Sector, DefaultGalacticHints </Markup_Filename>		
-		<Markup_Filename>Warlords, DefaultGalacticHints </Markup_Filename>			
-		<Markup_Filename>Hapes_Consortium, DefaultGalacticHints </Markup_Filename>
-				
-
-	
-		
-		<Supports_Custom_Settings>False</Supports_Custom_Settings>
-		<Show_Completed_Tab>True</Show_Completed_Tab>
-
-		<!-- Win Conditions -->
-
-		<Human_Victory_Conditions>
-				Galactic_All_Planets_Controlled
-		</Human_Victory_Conditions>
-
-		<AI_Victory_Conditions>
-				Galactic_All_Planets_Controlled
-		</AI_Victory_Conditions>
-
-       		<!-- Rebel Starting Forces -->
-
-		<Starting_Credits> Rebel,  15000 </Starting_Credits>
-		<Starting_Tech_Level> Rebel, 2 </Starting_Tech_Level>
-		<Max_Tech_Level> Rebel, 2 </Max_Tech_Level>
-		
-				<!-- Bilbringi Space Forces -->
-		<Starting_Forces> Rebel, Bilbringi, Generate_Force </Starting_Forces>
-		
-		<!-- Orinda Space Forces -->
-		<Starting_Forces> Rebel, Orinda, Generate_Force </Starting_Forces>
-
-		
-		<!-- Bandomeer Space Forces -->
-		<Starting_Forces> Rebel, Bandomeer, Generate_Force </Starting_Forces>
-		
-		<Starting_Forces> Rebel, Scarl, Generate_Force </Starting_Forces>
-
-		<!-- Corthenia Space Forces -->
-		<Starting_Forces> Rebel, Corthenia, Generate_Force </Starting_Forces>
-
-		<!-- Darkon Space Forces -->
-		<Starting_Forces> Rebel, Darkon, Generate_Force </Starting_Forces>
-
-	
-		<!-- Lonnaw Space Forces -->
-		<Starting_Forces> Rebel, Lonnaw, Generate_Force </Starting_Forces>
-		
-						<!-- Tartaglia Space Forces -->
-		<Starting_Forces> Rebel, Tartaglia, Generate_Force </Starting_Forces>
-		
-		<!-- Traval_Pacor Space Forces -->
-		<Starting_Forces> Rebel, Traval_Pacor, Generate_Force </Starting_Forces>
-		
-						<!-- Tyan Space Forces -->
-		<Starting_Forces> Rebel, Tyan, Generate_Force </Starting_Forces>
-		
-								<!-- Hewett Space Forces -->
-		<Starting_Forces> Rebel, Hewett, Generate_Force </Starting_Forces>
-		
-								<!-- Ithor Space Forces -->
-		<Starting_Forces> Rebel, Ithor, Generate_Force </Starting_Forces>
-		
-		<!-- Ord_Mantell Space Forces -->
-		<Starting_Forces> Rebel, Ord_Mantell, NewRepublic_Star_Base_3 </Starting_Forces>
-		<Starting_Forces> Rebel, Ord_Mantell, Secondary_Golan_One </Starting_Forces>
-		<Starting_Forces> Rebel, Ord_Mantell, NewRepublic_Star_Base_3 </Starting_Forces>
-		<Starting_Forces> Rebel, Ord_Mantell, Nebula </Starting_Forces>
-		<Starting_Forces> Rebel, Ord_Mantell, Republic_SD </Starting_Forces>
-		<Starting_Forces> Rebel, Ord_Mantell, Alliance_Assault_Frigate_II </Starting_Forces>
-		<Starting_Forces> Rebel, Ord_Mantell, Alliance_Assault_Frigate </Starting_Forces>
-		<Starting_Forces> Rebel, Ord_Mantell, Agave_Corvette </Starting_Forces>
-		<Starting_Forces> Rebel, Ord_Mantell, Agave_Corvette </Starting_Forces>
-		<!-- Ord_Mantell Land Forces -->
-		<Starting_Forces> Rebel, Ord_Mantell, NewRep_SenatorsOffice </Starting_Forces>
-		<Starting_Forces> Rebel, Ord_Mantell, R_Ground_Barracks </Starting_Forces>
-		<Starting_Forces> Rebel, Ord_Mantell, NewRep_Senate </Starting_Forces>
-		<Starting_Forces> Rebel, Ord_Mantell, R_Ground_Light_Vehicle_Factory </Starting_Forces>
-		<Starting_Forces> Rebel, Ord_Mantell, Defense_Trooper_Squad </Starting_Forces>
-		<Starting_Forces> Rebel, Ord_Mantell, Rebel_Infantry_Squad </Starting_Forces>
-		<Starting_Forces> Rebel, Ord_Mantell, Rebel_SRV1_Company </Starting_Forces>		
-		<Starting_Forces> Rebel, Ord_Mantell, Rebel_T1B_Company </Starting_Forces>
-		<Starting_Forces> Rebel, Ord_Mantell, MAS_2xB_Company </Starting_Forces>	
-
-		
-								<!-- Obredaan Space Forces -->
-		<Starting_Forces> Rebel, Obredaan, Generate_Force </Starting_Forces>
-		
-								<!-- Orocco Space Forces -->
-		<Starting_Forces> Rebel, Orocco, Generate_Force </Starting_Forces>
-	
-		
-				<!-- Empire Starting Forces -->
-
-		<Starting_Credits> Empire,  32000 </Starting_Credits>
-		<Starting_Tech_Level> Empire, 3 </Starting_Tech_Level>
-		<Max_Tech_Level> Empire, 3 </Max_Tech_Level>
-		
-			<!-- Bastion Space Forces -->
-		<Starting_Forces> Empire, Bastion, Empire_Star_Base_4 </Starting_Forces>
-		<Starting_Forces> Empire, Bastion, Secondary_Golan_One </Starting_Forces>
-		<Starting_Forces> Empire, Bastion, Generic_Colony_Two </Starting_Forces>
-		<Starting_Forces> Empire, Bastion, Empire_Shipyard_Level_Two </Starting_Forces>
-		<Starting_Forces> Empire, Bastion, Generic_Victory_Destroyer </Starting_Forces>
-		<Starting_Forces> Empire, Bastion, Nebulon_B_Empire </Starting_Forces>
-		<Starting_Forces> Empire, Bastion, Strike_Cruiser </Starting_Forces>
-		<!-- Bastion Land Forces -->
-		<Starting_Forces> Empire, Bastion, Empire_MoffPalace </Starting_Forces>
-		<Starting_Forces> Empire, Bastion, E_Ground_Barracks </Starting_Forces>
-		<Starting_Forces> Empire, Bastion, Remnant_Capital </Starting_Forces>
-		<Starting_Forces> Empire, Bastion, E_Ground_Light_Vehicle_Factory </Starting_Forces>
-		<Starting_Forces> Empire, Bastion, E_Ground_Heavy_Vehicle_Factory </Starting_Forces>
-		<Starting_Forces> Empire, Bastion, Army_Guard_Squad </Starting_Forces>
-		<Starting_Forces> Empire, Bastion, Imperial_Stormtrooper_Squad </Starting_Forces>
-		<Starting_Forces> Empire, Bastion, Imperial_AT_AT_Company </Starting_Forces>	
-		<Starting_Forces> Empire, Bastion, Imperial_AT_ST_Company </Starting_Forces>
-		
-		<Starting_Forces> Empire, Mygeeto, Generate_Force </Starting_Forces>
-		
-		
-		<Starting_Forces> Empire, Agamar, Generate_Force </Starting_Forces>
-		
-		
-		<Starting_Forces> Empire, Axxila, Generate_Force </Starting_Forces>
-		<Starting_Forces> Empire, Axxila, Megador </Starting_Forces>
-		
-	
-		
-		<Starting_Forces> Empire, Bimmiel, Generate_Force </Starting_Forces>
-		
-		<Starting_Forces> Empire, Borosk, Generate_Force </Starting_Forces>
-
-		<Starting_Forces> Empire, Jaemus, Generate_Force </Starting_Forces>
-
-		<Starting_Forces> Empire, Ketaris, Generate_Force </Starting_Forces>
-
-		
-		<Starting_Forces> Empire, Celanon, Generate_Force </Starting_Forces>
-
-
-		<Starting_Forces> Empire, Paarin_Minor, Generate_Force </Starting_Forces>
-
-		
-		<Starting_Forces> Empire, Phaeda, Generate_Force </Starting_Forces>
-
-		
-		<Starting_Forces> Empire, Ord_Trasi, Generate_Force </Starting_Forces>
+		<!-- Adumar Space Forces -->
+		<Starting_Forces> Independent_Forces, Adumar, Generic_XQ_Starbase </Starting_Forces>
+		<!-- Adumar Ground Forces -->
+		<Starting_Forces> Independent_Forces, Adumar, Revolt_Rural_PDF_Barracks </Starting_Forces>
+		<Starting_Forces> Independent_Forces, Adumar, Revolt_Urban_Barracks </Starting_Forces>
+		<Starting_Forces> Independent_Forces, Adumar, Revolt_Underground_Market </Starting_Forces>
 	</Campaign>
 </Campaigns>

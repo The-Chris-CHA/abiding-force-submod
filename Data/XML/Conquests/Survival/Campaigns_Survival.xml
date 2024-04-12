@@ -1,11 +1,11 @@
 <?xml version="1.0"?>
 <Campaigns>
 
-	<Campaign Name="Sandbox_Survival_Rebel">
-		<Campaign_Set>Sandbox_Survival_NR</Campaign_Set>
+	<Campaign Name="Sandbox_Survival_Loader">
+		<Campaign_Set>Sandbox_Survival_Loader</Campaign_Set>
 		<Sort_Order>30</Sort_Order>
 		<Tutorial>true</Tutorial>
-        <Text_ID> TEXT_CAMPAIGN_SINGLE_SURVIVAL_NEW_REPUBLIC </Text_ID>
+		<Text_ID> TEXT_CAMPAIGN_SINGLE_SURVIVAL </Text_ID>
         <Description_Text> TEXT_CAMPAIGN_SINGLE_DESCRIPTION_SURVIVAL </Description_Text>
 
         <Camera_Shift_X> 40.0 </Camera_Shift_X>
@@ -13,108 +13,858 @@
         <Camera_Distance> 1200.0 </Camera_Distance>
 
         <Locations> 
-				Galaxy_Core_Art_Model, 
-				Survivaland
+			Galaxy_Core_Art_Model,
+			Survivaland
 		</Locations>
 
 		<Trade_Routes> 
 		</Trade_Routes> 	
-		
-        <Home_Location> Rebel, Nespis </Home_Location>
-        <Home_Location> Empire, Byss </Home_Location>
-        
+
+        <Home_Location> Rebel, Survivaland </Home_Location>
+
         <Starting_Active_Player> Rebel </Starting_Active_Player>
 
-		<Rebel_Story_Name>Conquests\Survival\Survival_Plot_Main_Galactic.xml</Rebel_Story_Name>
+		<Rebel_Story_Name>Conquests\Survival\Plot_Survival_Faction_Loader.xml</Rebel_Story_Name>
         <Empire_Story_Name></Empire_Story_Name>
-        	       
-		<AI_Player_Control> Hapes_Consortium, GenericAI </AI_Player_Control>
-		<AI_Player_Control> Rebel, SandboxHuman </AI_Player_Control>
-		<AI_Player_Control> Underworld, GenericAI </AI_Player_Control>
+
+		<AI_Player_Control> Rebel, None </AI_Player_Control>
 		<AI_Player_Control> Empire, GenericAI </AI_Player_Control>
-		
-				
-		<Supports_Custom_Settings>False</Supports_Custom_Settings>
-		<Show_Completed_Tab>True</Show_Completed_Tab>
+		<AI_Player_Control> Commerce_Guild, None </AI_Player_Control> <!-- Commerce Guild -->
+		<AI_Player_Control> Techno_Union, CISFederationAIAlly </AI_Player_Control> <!-- Techno Union -->
+		<AI_Player_Control> Trade_Federation, CISFederationAIAlly </AI_Player_Control> <!-- Trade Federation -->
+		<AI_Player_Control> Banking_Clan, None</AI_Player_Control> <!-- IGBC -->
+		<AI_Player_Control> Underworld, None </AI_Player_Control>
+		<AI_Player_Control> Sector_Forces, None </AI_Player_Control>
+		<AI_Player_Control> Hapes_Consortium, None </AI_Player_Control>		
+		<AI_Player_Control> Warlords, None </AI_Player_Control>		
 
-		<!-- Win Conditions -->
-
-		<Human_Victory_Conditions>
-				Galactic_All_Planets_Controlled
-		</Human_Victory_Conditions>
-
-		<AI_Victory_Conditions>
-				Galactic_All_Planets_Controlled
-		</AI_Victory_Conditions>
-
-		<Starting_Credits> Rebel, 900 </Starting_Credits>
-		<Starting_Tech_Level> Rebel, 2 </Starting_Tech_Level>
-		<Max_Tech_Level> Rebel, 2 </Max_Tech_Level>
-
-		<Starting_Credits> Empire, 900 </Starting_Credits>
-		<Starting_Tech_Level> Empire, 3 </Starting_Tech_Level>
-		<Max_Tech_Level> Empire, 3 </Max_Tech_Level>
-		
-	</Campaign>	
-
-
-    <Campaign Name="Sandbox_Survival_Empire">
-
-		<Sort_Order>30</Sort_Order>
-        <Text_ID> TEXT_CAMPAIGN_SINGLE_SURVIVAL_EMPIRE </Text_ID>
-		<Campaign_Set>Sandbox_Survival_IR</Campaign_Set>
-        <Description_Text> TEXT_CAMPAIGN_SINGLE_DESCRIPTION_SURVIVAL </Description_Text>
-		<Tutorial>true</Tutorial>
-        <Camera_Shift_X> 40.0 </Camera_Shift_X>
-        <Camera_Shift_Y> 0.0 </Camera_Shift_Y>
-        <Camera_Distance> 1200.0 </Camera_Distance>
-
-        <Locations> 
-				Galaxy_Core_Art_Model, 
-				Survivaland
-		</Locations>
-
-		<Trade_Routes> 
-		</Trade_Routes> 	
-		
-        <Home_Location> Rebel, Nespis </Home_Location>
-        <Home_Location> Empire, Byss </Home_Location>
-        
-        <Starting_Active_Player> Empire </Starting_Active_Player>
-
-		<Rebel_Story_Name>Conquests\Survival\Survival_Plot_Main_Galactic.xml</Rebel_Story_Name>
-        	<Empire_Story_Name></Empire_Story_Name>
-        	       
-		<AI_Player_Control> Hapes_Consortium, GenericAI </AI_Player_Control>
-		<AI_Player_Control> Rebel, GenericAI </AI_Player_Control>
-		<AI_Player_Control> Underworld, GenericAI </AI_Player_Control>
-		<AI_Player_Control> Empire, SandboxHuman </AI_Player_Control>
-
-		<Markup_Filename>Hapes_Consortium, DefaultGalacticHints </Markup_Filename>
 		<Markup_Filename>Empire, DefaultGalacticHints </Markup_Filename>
 		<Markup_Filename>Rebel, DefaultGalacticHints </Markup_Filename>
 		<Markup_Filename>Underworld, DefaultGalacticHints </Markup_Filename>
-				
+		<Markup_Filename>Trade_Federation, DefaultGalacticHints </Markup_Filename>
+		<Markup_Filename>Commerce_Guild, DefaultGalacticHints </Markup_Filename>			
+		<Markup_Filename>Banking_Clan, DefaultGalacticHints </Markup_Filename>
+		<Markup_Filename>Techno_Union, DefaultGalacticHints </Markup_Filename>				
+		<Markup_Filename>Sector_Forces, DefaultGalacticHints </Markup_Filename>		
+		<Markup_Filename>Warlords, DefaultGalacticHints </Markup_Filename>			
+		<Markup_Filename>Hapes_Consortium, DefaultGalacticHints </Markup_Filename>
+
 		<Supports_Custom_Settings>False</Supports_Custom_Settings>
 		<Show_Completed_Tab>True</Show_Completed_Tab>
 
 		<!-- Win Conditions -->
 
-		<Human_Victory_Conditions>
-				Galactic_All_Planets_Controlled
-		</Human_Victory_Conditions>
-
 		<AI_Victory_Conditions>
 				Galactic_All_Planets_Controlled
 		</AI_Victory_Conditions>
 
-		<Starting_Credits> Rebel, 900 </Starting_Credits>
+		<Starting_Credits> Rebel, 1 </Starting_Credits>
 		<Starting_Tech_Level> Rebel, 2 </Starting_Tech_Level>
 		<Max_Tech_Level> Rebel, 2 </Max_Tech_Level>
 
-		<Starting_Credits> Empire, 900 </Starting_Credits>
-		<Starting_Tech_Level> Empire, 3 </Starting_Tech_Level>
-		<Max_Tech_Level> Empire, 3 </Max_Tech_Level>
-		
+		<Starting_Forces> Rebel, Survivaland, Faction_Dummy </Starting_Forces>
 	</Campaign>	
- </Campaigns>
+
+
+	<Campaign Name="Sandbox_Survival_Rebel">
+		<Campaign_Set>Sandbox_Survival</Campaign_Set>
+		<Sort_Order>30</Sort_Order>
+		<Tutorial>false</Tutorial>
+        <Text_ID>  </Text_ID>
+        <Description_Text>  </Description_Text>
+		<Is_Listed>False</Is_Listed>
+
+        <Camera_Shift_X> 40.0 </Camera_Shift_X>
+        <Camera_Shift_Y> 0.0 </Camera_Shift_Y>
+        <Camera_Distance> 1200.0 </Camera_Distance>
+
+        <Locations> 
+				Galaxy_Core_Art_Model, 
+				Survivaland
+		</Locations>
+
+		<Trade_Routes> 
+		</Trade_Routes> 	
+
+        <Home_Location> Rebel, Survivaland </Home_Location>
+        
+        <Starting_Active_Player> Rebel </Starting_Active_Player>
+
+		<Rebel_Story_Name>Conquests\Survival\Plot_Survival_Galactic_SetUp.xml</Rebel_Story_Name>
+        <Empire_Story_Name></Empire_Story_Name>
+
+		<AI_Player_Control> Rebel, SandboxHuman </AI_Player_Control>
+		<AI_Player_Control> EmpireoftheHand, None </AI_Player_Control>
+		<AI_Player_Control> Empire, None </AI_Player_Control>
+		<AI_Player_Control> Hapes_Consortium, None </AI_Player_Control>
+		<AI_Player_Control> Hostile, None </AI_Player_Control>
+
+		<AI_Player_Control> Pentastar, None</AI_Player_Control>
+		<AI_Player_Control> Zsinj_Empire, None </AI_Player_Control>
+		<AI_Player_Control> Greater_Maldrood, None </AI_Player_Control>      
+		<AI_Player_Control> Eriadu_Authority, None </AI_Player_Control>				
+		<AI_Player_Control> Corporate_Sector, None </AI_Player_Control>		
+		<AI_Player_Control> Hutt_Cartels, None</AI_Player_Control>
+		<AI_Player_Control> Independent_Forces, None </AI_Player_Control>						
+
+		<AI_Player_Control>Chiss, None</AI_Player_Control>
+		<AI_Player_Control>Corellia, None</AI_Player_Control>
+		<AI_Player_Control>Killik_Hives, None</AI_Player_Control>
+		<AI_Player_Control>Mandalorians, None</AI_Player_Control>
+		<AI_Player_Control>SsiRuuvi_Imperium, None</AI_Player_Control>
+		<AI_Player_Control>Underworld, None</AI_Player_Control>
+		<AI_Player_Control>Warlords, None</AI_Player_Control>
+		<AI_Player_Control>Yevetha, None</AI_Player_Control>
+
+		<Markup_Filename>Chiss, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Corellia, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Corporate_Sector, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Empire, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>EmpireoftheHand, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Eriadu_Authority, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Greater_Maldrood, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Hapes_Consortium, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Hostile, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Hutt_Cartels, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Independent_Forces, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Killik_Hives, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Mandalorians, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Pentastar, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Rebel, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>SsiRuuvi_Imperium, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Underworld, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Warlords, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Yevetha, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Zsinj_Empire, DefaultGalacticHints</Markup_Filename>
+		
+		<Supports_Custom_Settings>False</Supports_Custom_Settings>
+		<Show_Completed_Tab>True</Show_Completed_Tab>
+
+		<!-- Win Conditions -->
+
+		<AI_Victory_Conditions>
+				Galactic_All_Planets_Controlled
+		</AI_Victory_Conditions>
+	</Campaign>	
+
+    <Campaign Name="Sandbox_Survival_Empire">
+		<Sort_Order>30</Sort_Order>
+        <Text_ID>  </Text_ID>
+		<Campaign_Set>Sandbox_Survival</Campaign_Set>
+        <Description_Text>  </Description_Text>
+		<Tutorial>false</Tutorial>
+        <Camera_Shift_X> 40.0 </Camera_Shift_X>
+        <Camera_Shift_Y> 0.0 </Camera_Shift_Y>
+        <Camera_Distance> 1200.0 </Camera_Distance>
+		<Is_Listed>False</Is_Listed>
+
+        <Locations> 
+				Galaxy_Core_Art_Model, 
+				Survivaland
+		</Locations>
+
+		<Trade_Routes> 
+		</Trade_Routes> 	
+		
+        <Home_Location> Rebel, Survivaland </Home_Location>
+        
+        <Starting_Active_Player> Empire </Starting_Active_Player>
+
+		<Rebel_Story_Name>Conquests\Survival\Plot_Survival_Galactic_SetUp.xml</Rebel_Story_Name>
+        <Empire_Story_Name></Empire_Story_Name>
+
+		<AI_Player_Control> Rebel, None </AI_Player_Control>
+		<AI_Player_Control> EmpireoftheHand, None </AI_Player_Control>
+		<AI_Player_Control> Empire, SandboxHuman </AI_Player_Control>
+		<AI_Player_Control> Hapes_Consortium, None </AI_Player_Control>
+		<AI_Player_Control> Hostile, None </AI_Player_Control>
+
+		<AI_Player_Control> Pentastar, None</AI_Player_Control>
+		<AI_Player_Control> Zsinj_Empire, None </AI_Player_Control>
+		<AI_Player_Control> Greater_Maldrood, None </AI_Player_Control>      
+		<AI_Player_Control> Eriadu_Authority, None </AI_Player_Control>				
+		<AI_Player_Control> Corporate_Sector, None </AI_Player_Control>		
+		<AI_Player_Control> Hutt_Cartels, None</AI_Player_Control>
+		<AI_Player_Control> Independent_Forces, None </AI_Player_Control>						
+
+		<AI_Player_Control>Chiss, None</AI_Player_Control>
+		<AI_Player_Control>Corellia, None</AI_Player_Control>
+		<AI_Player_Control>Killik_Hives, None</AI_Player_Control>
+		<AI_Player_Control>Mandalorians, None</AI_Player_Control>
+		<AI_Player_Control>SsiRuuvi_Imperium, None</AI_Player_Control>
+		<AI_Player_Control>Underworld, None</AI_Player_Control>
+		<AI_Player_Control>Warlords, None</AI_Player_Control>
+		<AI_Player_Control>Yevetha, None</AI_Player_Control>
+
+		<Markup_Filename>Chiss, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Corellia, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Corporate_Sector, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Empire, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>EmpireoftheHand, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Eriadu_Authority, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Greater_Maldrood, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Hapes_Consortium, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Hostile, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Hutt_Cartels, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Independent_Forces, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Killik_Hives, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Mandalorians, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Pentastar, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Rebel, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>SsiRuuvi_Imperium, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Underworld, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Warlords, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Yevetha, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Zsinj_Empire, DefaultGalacticHints</Markup_Filename>
+
+		<Supports_Custom_Settings>False</Supports_Custom_Settings>
+		<Show_Completed_Tab>True</Show_Completed_Tab>
+
+		<!-- Win Conditions -->
+
+		<AI_Victory_Conditions>
+				Galactic_All_Planets_Controlled
+		</AI_Victory_Conditions>
+	</Campaign>	
+	
+    <Campaign Name="Sandbox_Survival_Pentastar">
+		<Sort_Order>30</Sort_Order>
+        <Text_ID>  </Text_ID>
+		<Campaign_Set>Sandbox_Survival</Campaign_Set>
+        <Description_Text>  </Description_Text>
+		<Tutorial>false</Tutorial>
+        <Camera_Shift_X> 40.0 </Camera_Shift_X>
+        <Camera_Shift_Y> 0.0 </Camera_Shift_Y>
+        <Camera_Distance> 1200.0 </Camera_Distance>
+		<Is_Listed>False</Is_Listed>
+
+        <Locations> 
+				Galaxy_Core_Art_Model, 
+				Survivaland
+		</Locations>
+
+		<Trade_Routes> 
+		</Trade_Routes> 	
+		
+        <Home_Location> Rebel, Survivaland </Home_Location>
+        
+        <Starting_Active_Player> Pentastar </Starting_Active_Player>
+
+		<Rebel_Story_Name>Conquests\Survival\Plot_Survival_Galactic_SetUp.xml</Rebel_Story_Name>
+        <Empire_Story_Name></Empire_Story_Name>
+
+		<AI_Player_Control> Rebel, None </AI_Player_Control>
+		<AI_Player_Control> EmpireoftheHand, None </AI_Player_Control>
+		<AI_Player_Control> Empire, None </AI_Player_Control>
+		<AI_Player_Control> Hapes_Consortium, None </AI_Player_Control>
+		<AI_Player_Control> Hostile, None </AI_Player_Control>
+
+		<AI_Player_Control> Pentastar, SandboxHuman</AI_Player_Control>
+		<AI_Player_Control> Zsinj_Empire, None </AI_Player_Control>
+		<AI_Player_Control> Greater_Maldrood, None </AI_Player_Control>      
+		<AI_Player_Control> Eriadu_Authority, None </AI_Player_Control>				
+		<AI_Player_Control> Corporate_Sector, None </AI_Player_Control>		
+		<AI_Player_Control> Hutt_Cartels, None</AI_Player_Control>
+		<AI_Player_Control> Independent_Forces, None </AI_Player_Control>						
+
+		<AI_Player_Control>Chiss, None</AI_Player_Control>
+		<AI_Player_Control>Corellia, None</AI_Player_Control>
+		<AI_Player_Control>Killik_Hives, None</AI_Player_Control>
+		<AI_Player_Control>Mandalorians, None</AI_Player_Control>
+		<AI_Player_Control>SsiRuuvi_Imperium, None</AI_Player_Control>
+		<AI_Player_Control>Underworld, None</AI_Player_Control>
+		<AI_Player_Control>Warlords, None</AI_Player_Control>
+		<AI_Player_Control>Yevetha, None</AI_Player_Control>
+
+		<Markup_Filename>Chiss, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Corellia, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Corporate_Sector, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Empire, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>EmpireoftheHand, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Eriadu_Authority, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Greater_Maldrood, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Hapes_Consortium, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Hostile, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Hutt_Cartels, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Independent_Forces, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Killik_Hives, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Mandalorians, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Pentastar, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Rebel, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>SsiRuuvi_Imperium, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Underworld, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Warlords, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Yevetha, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Zsinj_Empire, DefaultGalacticHints</Markup_Filename>
+
+		<Supports_Custom_Settings>False</Supports_Custom_Settings>
+		<Show_Completed_Tab>True</Show_Completed_Tab>
+
+		<!-- Win Conditions -->
+
+		<AI_Victory_Conditions>
+				Galactic_All_Planets_Controlled
+		</AI_Victory_Conditions>
+	</Campaign>	
+
+    <Campaign Name="Sandbox_Survival_Eriadu_Authority">
+		<Sort_Order>30</Sort_Order>
+        <Text_ID>  </Text_ID>
+		<Campaign_Set>Sandbox_Survival</Campaign_Set>
+        <Description_Text>  </Description_Text>
+		<Tutorial>false</Tutorial>
+        <Camera_Shift_X> 40.0 </Camera_Shift_X>
+        <Camera_Shift_Y> 0.0 </Camera_Shift_Y>
+        <Camera_Distance> 1200.0 </Camera_Distance>
+		<Is_Listed>False</Is_Listed>
+
+        <Locations> 
+				Galaxy_Core_Art_Model, 
+				Survivaland
+		</Locations>
+
+		<Trade_Routes> 
+		</Trade_Routes> 	
+		
+        <Home_Location> Rebel, Survivaland </Home_Location>
+        
+        <Starting_Active_Player> Eriadu_Authority </Starting_Active_Player>
+
+		<Rebel_Story_Name>Conquests\Survival\Plot_Survival_Galactic_SetUp.xml</Rebel_Story_Name>
+        <Empire_Story_Name></Empire_Story_Name>
+
+		<AI_Player_Control> Rebel, None </AI_Player_Control>
+		<AI_Player_Control> EmpireoftheHand, None </AI_Player_Control>
+		<AI_Player_Control> Empire, None </AI_Player_Control>
+		<AI_Player_Control> Hapes_Consortium, None </AI_Player_Control>
+		<AI_Player_Control> Hostile, None </AI_Player_Control>
+
+		<AI_Player_Control> Pentastar, SandboxHuman</AI_Player_Control>
+		<AI_Player_Control> Zsinj_Empire, None </AI_Player_Control>
+		<AI_Player_Control> Greater_Maldrood, None </AI_Player_Control>      
+		<AI_Player_Control> Eriadu_Authority, None </AI_Player_Control>				
+		<AI_Player_Control> Corporate_Sector, None </AI_Player_Control>		
+		<AI_Player_Control> Hutt_Cartels, None</AI_Player_Control>
+		<AI_Player_Control> Independent_Forces, None </AI_Player_Control>						
+
+		<AI_Player_Control>Chiss, None</AI_Player_Control>
+		<AI_Player_Control>Corellia, None</AI_Player_Control>
+		<AI_Player_Control>Killik_Hives, None</AI_Player_Control>
+		<AI_Player_Control>Mandalorians, None</AI_Player_Control>
+		<AI_Player_Control>SsiRuuvi_Imperium, None</AI_Player_Control>
+		<AI_Player_Control>Underworld, None</AI_Player_Control>
+		<AI_Player_Control>Warlords, None</AI_Player_Control>
+		<AI_Player_Control>Yevetha, None</AI_Player_Control>
+
+		<Markup_Filename>Chiss, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Corellia, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Corporate_Sector, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Empire, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>EmpireoftheHand, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Eriadu_Authority, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Greater_Maldrood, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Hapes_Consortium, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Hostile, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Hutt_Cartels, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Independent_Forces, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Killik_Hives, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Mandalorians, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Pentastar, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Rebel, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>SsiRuuvi_Imperium, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Underworld, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Warlords, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Yevetha, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Zsinj_Empire, DefaultGalacticHints</Markup_Filename>
+
+		<Supports_Custom_Settings>False</Supports_Custom_Settings>
+		<Show_Completed_Tab>True</Show_Completed_Tab>
+
+		<!-- Win Conditions -->
+
+		<AI_Victory_Conditions>
+				Galactic_All_Planets_Controlled
+		</AI_Victory_Conditions>
+	</Campaign>	
+
+    <Campaign Name="Sandbox_Survival_Zsinj_Empire">
+		<Sort_Order>30</Sort_Order>
+        <Text_ID>  </Text_ID>
+		<Campaign_Set>Sandbox_Survival</Campaign_Set>
+        <Description_Text>  </Description_Text>
+		<Tutorial>false</Tutorial>
+        <Camera_Shift_X> 40.0 </Camera_Shift_X>
+        <Camera_Shift_Y> 0.0 </Camera_Shift_Y>
+        <Camera_Distance> 1200.0 </Camera_Distance>
+		<Is_Listed>False</Is_Listed>
+
+        <Locations> 
+				Galaxy_Core_Art_Model, 
+				Survivaland
+		</Locations>
+
+		<Trade_Routes> 
+		</Trade_Routes> 	
+		
+        <Home_Location> Rebel, Survivaland </Home_Location>
+        
+        <Starting_Active_Player> Zsinj_Empire </Starting_Active_Player>
+
+		<Rebel_Story_Name>Conquests\Survival\Plot_Survival_Galactic_SetUp.xml</Rebel_Story_Name>
+        <Empire_Story_Name></Empire_Story_Name>
+
+		<AI_Player_Control> Rebel, None </AI_Player_Control>
+		<AI_Player_Control> EmpireoftheHand, None </AI_Player_Control>
+		<AI_Player_Control> Empire, None </AI_Player_Control>
+		<AI_Player_Control> Hapes_Consortium, None </AI_Player_Control>
+		<AI_Player_Control> Hostile, None </AI_Player_Control>
+
+		<AI_Player_Control> Pentastar, None</AI_Player_Control>
+		<AI_Player_Control> Zsinj_Empire, SandboxHuman </AI_Player_Control>
+		<AI_Player_Control> Greater_Maldrood, None </AI_Player_Control>      
+		<AI_Player_Control> Eriadu_Authority, None </AI_Player_Control>				
+		<AI_Player_Control> Corporate_Sector, None </AI_Player_Control>		
+		<AI_Player_Control> Hutt_Cartels, None</AI_Player_Control>
+		<AI_Player_Control> Independent_Forces, None </AI_Player_Control>						
+
+		<AI_Player_Control>Chiss, None</AI_Player_Control>
+		<AI_Player_Control>Corellia, None</AI_Player_Control>
+		<AI_Player_Control>Killik_Hives, None</AI_Player_Control>
+		<AI_Player_Control>Mandalorians, None</AI_Player_Control>
+		<AI_Player_Control>SsiRuuvi_Imperium, None</AI_Player_Control>
+		<AI_Player_Control>Underworld, None</AI_Player_Control>
+		<AI_Player_Control>Warlords, None</AI_Player_Control>
+		<AI_Player_Control>Yevetha, None</AI_Player_Control>
+
+		<Markup_Filename>Chiss, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Corellia, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Corporate_Sector, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Empire, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>EmpireoftheHand, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Eriadu_Authority, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Greater_Maldrood, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Hapes_Consortium, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Hostile, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Hutt_Cartels, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Independent_Forces, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Killik_Hives, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Mandalorians, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Pentastar, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Rebel, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>SsiRuuvi_Imperium, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Underworld, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Warlords, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Yevetha, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Zsinj_Empire, DefaultGalacticHints</Markup_Filename>
+
+		<Supports_Custom_Settings>False</Supports_Custom_Settings>
+		<Show_Completed_Tab>True</Show_Completed_Tab>
+
+		<!-- Win Conditions -->
+
+		<AI_Victory_Conditions>
+				Galactic_All_Planets_Controlled
+		</AI_Victory_Conditions>
+	</Campaign>	
+
+    <Campaign Name="Sandbox_Survival_Greater_Maldrood">
+		<Sort_Order>30</Sort_Order>
+        <Text_ID>  </Text_ID>
+		<Campaign_Set>Sandbox_Survival</Campaign_Set>
+        <Description_Text>  </Description_Text>
+		<Tutorial>false</Tutorial>
+        <Camera_Shift_X> 40.0 </Camera_Shift_X>
+        <Camera_Shift_Y> 0.0 </Camera_Shift_Y>
+        <Camera_Distance> 1200.0 </Camera_Distance>
+		<Is_Listed>False</Is_Listed>
+
+        <Locations> 
+				Galaxy_Core_Art_Model, 
+				Survivaland
+		</Locations>
+
+		<Trade_Routes> 
+		</Trade_Routes> 	
+		
+        <Home_Location> Rebel, Survivaland </Home_Location>
+        
+        <Starting_Active_Player> Greater_Maldrood </Starting_Active_Player>
+
+		<Rebel_Story_Name>Conquests\Survival\Plot_Survival_Galactic_SetUp.xml</Rebel_Story_Name>
+        <Empire_Story_Name></Empire_Story_Name>
+
+		<AI_Player_Control> Rebel, None </AI_Player_Control>
+		<AI_Player_Control> EmpireoftheHand, None </AI_Player_Control>
+		<AI_Player_Control> Empire, None </AI_Player_Control>
+		<AI_Player_Control> Hapes_Consortium, None </AI_Player_Control>
+		<AI_Player_Control> Hostile, None </AI_Player_Control>
+
+		<AI_Player_Control> Pentastar, None</AI_Player_Control>
+		<AI_Player_Control> Zsinj_Empire, None </AI_Player_Control>
+		<AI_Player_Control> Greater_Maldrood, SandboxHuman </AI_Player_Control>      
+		<AI_Player_Control> Eriadu_Authority, None </AI_Player_Control>				
+		<AI_Player_Control> Corporate_Sector, None </AI_Player_Control>		
+		<AI_Player_Control> Hutt_Cartels, None</AI_Player_Control>
+		<AI_Player_Control> Independent_Forces, None </AI_Player_Control>						
+
+		<AI_Player_Control>Chiss, None</AI_Player_Control>
+		<AI_Player_Control>Corellia, None</AI_Player_Control>
+		<AI_Player_Control>Killik_Hives, None</AI_Player_Control>
+		<AI_Player_Control>Mandalorians, None</AI_Player_Control>
+		<AI_Player_Control>SsiRuuvi_Imperium, None</AI_Player_Control>
+		<AI_Player_Control>Underworld, None</AI_Player_Control>
+		<AI_Player_Control>Warlords, None</AI_Player_Control>
+		<AI_Player_Control>Yevetha, None</AI_Player_Control>
+
+		<Markup_Filename>Chiss, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Corellia, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Corporate_Sector, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Empire, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>EmpireoftheHand, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Eriadu_Authority, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Greater_Maldrood, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Hapes_Consortium, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Hostile, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Hutt_Cartels, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Independent_Forces, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Killik_Hives, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Mandalorians, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Pentastar, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Rebel, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>SsiRuuvi_Imperium, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Underworld, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Warlords, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Yevetha, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Zsinj_Empire, DefaultGalacticHints</Markup_Filename>
+
+		<Supports_Custom_Settings>False</Supports_Custom_Settings>
+		<Show_Completed_Tab>True</Show_Completed_Tab>
+
+		<!-- Win Conditions -->
+
+		<AI_Victory_Conditions>
+				Galactic_All_Planets_Controlled
+		</AI_Victory_Conditions>
+	</Campaign>	
+
+    <Campaign Name="Sandbox_Survival_Corporate_Sector">
+		<Sort_Order>30</Sort_Order>
+        <Text_ID>  </Text_ID>
+		<Campaign_Set>Sandbox_Survival</Campaign_Set>
+        <Description_Text>  </Description_Text>
+		<Tutorial>false</Tutorial>
+        <Camera_Shift_X> 40.0 </Camera_Shift_X>
+        <Camera_Shift_Y> 0.0 </Camera_Shift_Y>
+        <Camera_Distance> 1200.0 </Camera_Distance>
+		<Is_Listed>False</Is_Listed>
+
+        <Locations> 
+				Galaxy_Core_Art_Model, 
+				Survivaland
+		</Locations>
+
+		<Trade_Routes> 
+		</Trade_Routes> 	
+		
+        <Home_Location> Rebel, Survivaland </Home_Location>
+        
+        <Starting_Active_Player> Corporate_Sector </Starting_Active_Player>
+
+		<Rebel_Story_Name>Conquests\Survival\Plot_Survival_Galactic_SetUp.xml</Rebel_Story_Name>
+        <Empire_Story_Name></Empire_Story_Name>
+
+		<AI_Player_Control> Rebel, None </AI_Player_Control>
+		<AI_Player_Control> EmpireoftheHand, None </AI_Player_Control>
+		<AI_Player_Control> Empire, None </AI_Player_Control>
+		<AI_Player_Control> Hapes_Consortium, None </AI_Player_Control>
+		<AI_Player_Control> Hostile, None </AI_Player_Control>
+
+		<AI_Player_Control> Pentastar, None</AI_Player_Control>
+		<AI_Player_Control> Zsinj_Empire, None </AI_Player_Control>
+		<AI_Player_Control> Greater_Maldrood, None </AI_Player_Control>      
+		<AI_Player_Control> Eriadu_Authority, None </AI_Player_Control>				
+		<AI_Player_Control> Corporate_Sector, SandboxHuman </AI_Player_Control>		
+		<AI_Player_Control> Hutt_Cartels, None</AI_Player_Control>
+		<AI_Player_Control> Independent_Forces, None </AI_Player_Control>						
+
+		<AI_Player_Control>Chiss, None</AI_Player_Control>
+		<AI_Player_Control>Corellia, None</AI_Player_Control>
+		<AI_Player_Control>Killik_Hives, None</AI_Player_Control>
+		<AI_Player_Control>Mandalorians, None</AI_Player_Control>
+		<AI_Player_Control>SsiRuuvi_Imperium, None</AI_Player_Control>
+		<AI_Player_Control>Underworld, None</AI_Player_Control>
+		<AI_Player_Control>Warlords, None</AI_Player_Control>
+		<AI_Player_Control>Yevetha, None</AI_Player_Control>
+
+		<Markup_Filename>Chiss, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Corellia, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Corporate_Sector, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Empire, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>EmpireoftheHand, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Eriadu_Authority, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Greater_Maldrood, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Hapes_Consortium, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Hostile, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Hutt_Cartels, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Independent_Forces, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Killik_Hives, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Mandalorians, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Pentastar, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Rebel, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>SsiRuuvi_Imperium, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Underworld, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Warlords, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Yevetha, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Zsinj_Empire, DefaultGalacticHints</Markup_Filename>
+
+		<Supports_Custom_Settings>False</Supports_Custom_Settings>
+		<Show_Completed_Tab>True</Show_Completed_Tab>
+
+		<!-- Win Conditions -->
+
+		<AI_Victory_Conditions>
+				Galactic_All_Planets_Controlled
+		</AI_Victory_Conditions>
+	</Campaign>	
+
+    <Campaign Name="Sandbox_Survival_Hapes_Consortium">
+		<Sort_Order>30</Sort_Order>
+        <Text_ID>  </Text_ID>
+		<Campaign_Set>Sandbox_Survival</Campaign_Set>
+        <Description_Text>  </Description_Text>
+		<Tutorial>false</Tutorial>
+        <Camera_Shift_X> 40.0 </Camera_Shift_X>
+        <Camera_Shift_Y> 0.0 </Camera_Shift_Y>
+        <Camera_Distance> 1200.0 </Camera_Distance>
+		<Is_Listed>False</Is_Listed>
+
+        <Locations> 
+				Galaxy_Core_Art_Model, 
+				Survivaland
+		</Locations>
+
+		<Trade_Routes> 
+		</Trade_Routes> 	
+		
+        <Home_Location> Rebel, Survivaland </Home_Location>
+        
+        <Starting_Active_Player> Hapes_Consortium </Starting_Active_Player>
+
+		<Rebel_Story_Name>Conquests\Survival\Plot_Survival_Galactic_SetUp.xml</Rebel_Story_Name>
+        <Empire_Story_Name></Empire_Story_Name>
+
+		<AI_Player_Control> Rebel, None </AI_Player_Control>
+		<AI_Player_Control> EmpireoftheHand, None </AI_Player_Control>
+		<AI_Player_Control> Empire, None </AI_Player_Control>
+		<AI_Player_Control> Hapes_Consortium, SandboxHuman </AI_Player_Control>
+		<AI_Player_Control> Hostile, None </AI_Player_Control>
+
+		<AI_Player_Control> Pentastar, None</AI_Player_Control>
+		<AI_Player_Control> Zsinj_Empire, None </AI_Player_Control>
+		<AI_Player_Control> Greater_Maldrood, None </AI_Player_Control>      
+		<AI_Player_Control> Eriadu_Authority, None </AI_Player_Control>				
+		<AI_Player_Control> Corporate_Sector, None </AI_Player_Control>		
+		<AI_Player_Control> Hutt_Cartels, None</AI_Player_Control>
+		<AI_Player_Control> Independent_Forces, None </AI_Player_Control>						
+
+		<AI_Player_Control>Chiss, None</AI_Player_Control>
+		<AI_Player_Control>Corellia, None</AI_Player_Control>
+		<AI_Player_Control>Killik_Hives, None</AI_Player_Control>
+		<AI_Player_Control>Mandalorians, None</AI_Player_Control>
+		<AI_Player_Control>SsiRuuvi_Imperium, None</AI_Player_Control>
+		<AI_Player_Control>Underworld, None</AI_Player_Control>
+		<AI_Player_Control>Warlords, None</AI_Player_Control>
+		<AI_Player_Control>Yevetha, None</AI_Player_Control>
+
+		<Markup_Filename>Chiss, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Corellia, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Corporate_Sector, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Empire, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>EmpireoftheHand, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Eriadu_Authority, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Greater_Maldrood, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Hapes_Consortium, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Hostile, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Hutt_Cartels, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Independent_Forces, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Killik_Hives, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Mandalorians, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Pentastar, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Rebel, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>SsiRuuvi_Imperium, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Underworld, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Warlords, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Yevetha, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Zsinj_Empire, DefaultGalacticHints</Markup_Filename>
+
+		<Supports_Custom_Settings>False</Supports_Custom_Settings>
+		<Show_Completed_Tab>True</Show_Completed_Tab>
+
+		<!-- Win Conditions -->
+
+		<AI_Victory_Conditions>
+				Galactic_All_Planets_Controlled
+		</AI_Victory_Conditions>
+	</Campaign>
+	
+    <Campaign Name="Sandbox_Survival_EmpireoftheHand">
+		<Sort_Order>30</Sort_Order>
+        <Text_ID>  </Text_ID>
+		<Campaign_Set>Sandbox_Survival</Campaign_Set>
+        <Description_Text>  </Description_Text>
+		<Tutorial>false</Tutorial>
+        <Camera_Shift_X> 40.0 </Camera_Shift_X>
+        <Camera_Shift_Y> 0.0 </Camera_Shift_Y>
+        <Camera_Distance> 1200.0 </Camera_Distance>
+		<Is_Listed>False</Is_Listed>
+
+        <Locations> 
+				Galaxy_Core_Art_Model, 
+				Survivaland
+		</Locations>
+
+		<Trade_Routes> 
+		</Trade_Routes> 	
+		
+        <Home_Location> Rebel, Survivaland </Home_Location>
+        
+        <Starting_Active_Player> EmpireoftheHand </Starting_Active_Player>
+
+		<Rebel_Story_Name>Conquests\Survival\Plot_Survival_Galactic_SetUp.xml</Rebel_Story_Name>
+        <Empire_Story_Name></Empire_Story_Name>
+
+		<AI_Player_Control> Rebel, None </AI_Player_Control>
+		<AI_Player_Control> EmpireoftheHand, SandboxHuman </AI_Player_Control>
+		<AI_Player_Control> Empire, None </AI_Player_Control>
+		<AI_Player_Control> Hapes_Consortium, None </AI_Player_Control>
+		<AI_Player_Control> Hostile, None </AI_Player_Control>
+
+		<AI_Player_Control> Pentastar, None</AI_Player_Control>
+		<AI_Player_Control> Zsinj_Empire, None </AI_Player_Control>
+		<AI_Player_Control> Greater_Maldrood, None </AI_Player_Control>      
+		<AI_Player_Control> Eriadu_Authority, None </AI_Player_Control>				
+		<AI_Player_Control> Corporate_Sector, None </AI_Player_Control>		
+		<AI_Player_Control> Hutt_Cartels, None</AI_Player_Control>
+		<AI_Player_Control> Independent_Forces, None </AI_Player_Control>						
+
+		<AI_Player_Control>Chiss, None</AI_Player_Control>
+		<AI_Player_Control>Corellia, None</AI_Player_Control>
+		<AI_Player_Control>Killik_Hives, None</AI_Player_Control>
+		<AI_Player_Control>Mandalorians, None</AI_Player_Control>
+		<AI_Player_Control>SsiRuuvi_Imperium, None</AI_Player_Control>
+		<AI_Player_Control>Underworld, None</AI_Player_Control>
+		<AI_Player_Control>Warlords, None</AI_Player_Control>
+		<AI_Player_Control>Yevetha, None</AI_Player_Control>
+
+		<Markup_Filename>Chiss, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Corellia, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Corporate_Sector, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Empire, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>EmpireoftheHand, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Eriadu_Authority, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Greater_Maldrood, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Hapes_Consortium, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Hostile, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Hutt_Cartels, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Independent_Forces, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Killik_Hives, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Mandalorians, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Pentastar, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Rebel, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>SsiRuuvi_Imperium, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Underworld, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Warlords, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Yevetha, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Zsinj_Empire, DefaultGalacticHints</Markup_Filename>
+
+		<Supports_Custom_Settings>False</Supports_Custom_Settings>
+		<Show_Completed_Tab>True</Show_Completed_Tab>
+
+		<!-- Win Conditions -->
+
+		<AI_Victory_Conditions>
+				Galactic_All_Planets_Controlled
+		</AI_Victory_Conditions>
+	</Campaign>	
+
+    <Campaign Name="Sandbox_Survival_Hutt_Cartels">
+		<Sort_Order>30</Sort_Order>
+        <Text_ID>  </Text_ID>
+		<Campaign_Set>Sandbox_Survival</Campaign_Set>
+        <Description_Text>  </Description_Text>
+		<Tutorial>false</Tutorial>
+        <Camera_Shift_X> 40.0 </Camera_Shift_X>
+        <Camera_Shift_Y> 0.0 </Camera_Shift_Y>
+        <Camera_Distance> 1200.0 </Camera_Distance>
+		<Is_Listed>False</Is_Listed>
+
+        <Locations> 
+				Galaxy_Core_Art_Model, 
+				Survivaland
+		</Locations>
+
+		<Trade_Routes> 
+		</Trade_Routes> 	
+		
+        <Home_Location> Rebel, Survivaland </Home_Location>
+        
+        <Starting_Active_Player> Hutt_Cartels </Starting_Active_Player>
+
+		<Rebel_Story_Name>Conquests\Survival\Plot_Survival_Galactic_SetUp.xml</Rebel_Story_Name>
+        <Empire_Story_Name></Empire_Story_Name>
+
+		<AI_Player_Control> Rebel, None </AI_Player_Control>
+		<AI_Player_Control> EmpireoftheHand, None </AI_Player_Control>
+		<AI_Player_Control> Empire, None </AI_Player_Control>
+		<AI_Player_Control> Hapes_Consortium, None </AI_Player_Control>
+		<AI_Player_Control> Hostile, None </AI_Player_Control>
+
+		<AI_Player_Control> Pentastar, None</AI_Player_Control>
+		<AI_Player_Control> Zsinj_Empire, None </AI_Player_Control>
+		<AI_Player_Control> Greater_Maldrood, None </AI_Player_Control>      
+		<AI_Player_Control> Eriadu_Authority, None </AI_Player_Control>				
+		<AI_Player_Control> Corporate_Sector, None </AI_Player_Control>		
+		<AI_Player_Control> Hutt_Cartels, SandboxHuman</AI_Player_Control>
+		<AI_Player_Control> Independent_Forces, None </AI_Player_Control>						
+
+		<AI_Player_Control>Chiss, None</AI_Player_Control>
+		<AI_Player_Control>Corellia, None</AI_Player_Control>
+		<AI_Player_Control>Killik_Hives, None</AI_Player_Control>
+		<AI_Player_Control>Mandalorians, None</AI_Player_Control>
+		<AI_Player_Control>SsiRuuvi_Imperium, None</AI_Player_Control>
+		<AI_Player_Control>Underworld, None</AI_Player_Control>
+		<AI_Player_Control>Warlords, None</AI_Player_Control>
+		<AI_Player_Control>Yevetha, None</AI_Player_Control>
+
+		<Markup_Filename>Chiss, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Corellia, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Corporate_Sector, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Empire, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>EmpireoftheHand, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Eriadu_Authority, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Greater_Maldrood, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Hapes_Consortium, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Hostile, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Hutt_Cartels, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Independent_Forces, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Killik_Hives, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Mandalorians, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Pentastar, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Rebel, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>SsiRuuvi_Imperium, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Underworld, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Warlords, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Yevetha, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Zsinj_Empire, DefaultGalacticHints</Markup_Filename>
+
+		<Supports_Custom_Settings>False</Supports_Custom_Settings>
+		<Show_Completed_Tab>True</Show_Completed_Tab>
+
+		<!-- Win Conditions -->
+
+		<AI_Victory_Conditions>
+				Galactic_All_Planets_Controlled
+		</AI_Victory_Conditions>
+	</Campaign>	
+
+</Campaigns>

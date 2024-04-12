@@ -88,10 +88,15 @@
 							Parameter_Type = "Eriadu_Capital",
 							Parameter_Type = "NewRep_Senate",
 							Parameter_Type = "Rancor_Base",
+							Parameter_Type = "Kamino_Capital",
 							Parameter_Type = "CSA_Capital",
 							Parameter_Type = "U_Ground_Palace",
 							Parameter_Type = "Hapan_Palace",
-							Parameter_Type = "Mando_Capital"}
+							Parameter_Type = "Mando_Capital",
+							Parameter_Type = "Republic_Sector_Capital",
+							Parameter_Type = "Shadow_Collective_Palace",
+							Parameter_Type = "Separatist_Council",
+							Parameter_Type = "Hutt_Palace"}
 	</Disable_VictoryPoint>
     
 
@@ -106,10 +111,16 @@
 							Parameter_Type = "Eriadu_Capital",
 							Parameter_Type = "NewRep_Senate",
 							Parameter_Type = "Rancor_Base",
+							Parameter_Type = "Kamino_Capital",
 							Parameter_Type = "CSA_Capital",
 							Parameter_Type = "U_Ground_Palace",
 							Parameter_Type = "Hapan_Palace",
-							Parameter_Type = "Mando_Capital"}
+							Parameter_Type = "Mando_Capital",
+							Parameter_Type = "Republic_Sector_Capital",
+							Parameter_Type = "Shadow_Collective_Palace",
+							Parameter_Type = "Separatist_Council",
+
+							Parameter_Type = "Hutt_Palace"}
 	</Disable_Bombardment>
 	
 	
@@ -276,13 +287,16 @@
 		(15.0 * Variable_Target.Type.IsType {Parameter_Type = "Empire_MoffPalace", 
 											Parameter_Type = "Maldrood_MoffPalace",
 											Parameter_Type = "Zsinj_MoffPalace",
+											Parameter_Type = "Kamino_MoffPalace",
 											Parameter_Type = "Eriadu_MoffPalace",
 											Parameter_Type = "Pentastar_MoffPalace",
 											Parameter_Type = "Hand_GovernorOffice",
 											Parameter_Type = "NewRep_SenatorsOffice",
 											Parameter_Type = "CSA_LocalOffice",
 											Parameter_Type = "House_Royal",
-											Parameter_Type = "Mando_Palace"})
+											Parameter_Type = "Mando_Palace",
+											Parameter_Type = "Shadow_Collective_LocalOffice",
+											Parameter_Type = "Hutt_LocalOffice"})
 		+
 		(20.0 * Variable_Target.Type.IsType {Parameter_Type = "Remnant_Capital",
 											Parameter_Type = "PA_Capital",
@@ -290,10 +304,16 @@
 											Parameter_Type = "Eriadu_Capital",
 											Parameter_Type = "NewRep_Senate",
 											Parameter_Type = "Rancor_Base",
+											Parameter_Type = "Kamino_Capital",
 											Parameter_Type = "CSA_Capital",
 											Parameter_Type = "U_Ground_Palace",
 											Parameter_Type = "Hapan_Palace",
-											Parameter_Type = "Mando_Capital"})
+											Parameter_Type = "Mando_Capital",
+											Parameter_Type = "Republic_Sector_Capital",
+											Parameter_Type = "Shadow_Collective_Palace",
+											Parameter_Type = "Separatist_Council",
+
+											Parameter_Type = "Hutt_Palace"})
 		+
 		(Game.IsCampaignGame == 1)	
 		*
@@ -315,7 +335,8 @@
 								Parameter_Type = "C_Ground_Barracks",
 								Parameter_Type = "U_Ground_Barracks",
 								Parameter_Type = "HC_Ground_Barracks",
-								Parameter_Type = "M_Ground_Barracks"}
+								Parameter_Type = "M_Ground_Barracks",
+								Parameter_Type = "H_Ground_Barracks"}
 		+
 		Variable_Self.HasUnit {Parameter_Type = "E_Ground_Light_Vehicle_Factory",
 								Parameter_Type = "A_Ground_Light_Vehicle_Factory",
@@ -326,7 +347,8 @@
 								Parameter_Type = "P_Ground_Light_Vehicle_Factory",
 								Parameter_Type = "U_Ground_Vehicle_Factory",
 								Parameter_Type = "HC_Ground_Light_Vehicle_Factory",
-								Parameter_Type = "M_Ground_Light_Vehicle_Factory"}
+								Parameter_Type = "M_Ground_Light_Vehicle_Factory",
+								Parameter_Type = "H_Ground_Light_Vehicle_Factory"}
 		+
 		Variable_Self.HasUnit {Parameter_Type = "E_Ground_Heavy_Vehicle_Factory",
 								Parameter_Type = "A_Ground_Heavy_Vehicle_Factory",
@@ -337,24 +359,29 @@
 								Parameter_Type = "C_Ground_Heavy_Vehicle_Factory",
 								Parameter_Type = "U_Ground_Droid_Works",
 								Parameter_Type = "HC_Ground_Heavy_Vehicle_Factory",
-								Parameter_Type = "M_Ground_Heavy_Vehicle_Factory"}
+								Parameter_Type = "M_Ground_Heavy_Vehicle_Factory",
+								Parameter_Type = "H_Ground_Heavy_Vehicle_Factory"}
 		+
 		Variable_Self.HasUnit {Parameter_Type = "E_Ground_Advanced_Vehicle_Factory",
 								Parameter_Type = "A_Ground_Advanced_Vehicle_Factory",
 								Parameter_Type = "T_Ground_Advanced_Vehicle_Factory",
 								Parameter_Type = "Z_Ground_Advanced_Vehicle_Factory",
-								Parameter_Type = "P_Ground_Advanced_Vehicle_Factory"}
+								Parameter_Type = "P_Ground_Advanced_Vehicle_Factory",
+								Parameter_Type = "R_Ground_Advanced_Vehicle_Factory"}
 		+
 		Variable_Self.HasUnit {Parameter_Type = "Empire_MoffPalace", 
 								Parameter_Type = "Maldrood_MoffPalace",
 								Parameter_Type = "Zsinj_MoffPalace",
+								Parameter_Type = "Kamino_MoffPalace",
 								Parameter_Type = "Eriadu_MoffPalace",
 								Parameter_Type = "Pentastar_MoffPalace",
 								Parameter_Type = "Hand_GovernorOffice",
 								Parameter_Type = "NewRep_SenatorsOffice",
 								Parameter_Type = "CSA_LocalOffice",
 								Parameter_Type = "House_Royal",
-								Parameter_Type = "Mando_Palace"}
+								Parameter_Type = "Mando_Palace",
+								Parameter_Type = "Shadow_Collective_LocalOffice",
+								Parameter_Type = "Hutt_LocalOffice"}
 		+
 		Variable_Self.HasUnit{Parameter_Type = "Remnant_Capital",
 								Parameter_Type = "PA_Capital",
@@ -362,10 +389,15 @@
 								Parameter_Type = "Eriadu_Capital",
 								Parameter_Type = "NewRep_Senate",
 								Parameter_Type = "Rancor_Base",
+								Parameter_Type = "Kamino_Capital",
 								Parameter_Type = "CSA_Capital",
 								Parameter_Type = "U_Ground_Palace",
 								Parameter_Type = "Hapan_Palace",
-								Parameter_Type = "Mando_Capital"}
+								Parameter_Type = "Mando_Capital",
+								Parameter_Type = "Republic_Sector_Capital",
+								Parameter_Type = "Shadow_Collective_Palace",
+								Parameter_Type = "Separatist_Council",
+								Parameter_Type = "Hutt_Palace"}
 		) > 0
 	</Have_Structure_With_Garrison>
 
@@ -878,6 +910,23 @@
 		Variable_Target.FriendlyUnitConcentration
 	</Current_Friendly_Location>
 
+	
+	<Good_Artillery_Area>
+		(
+			((Variable_Target.FriendlyForce - Variable_Target.EnemyForce) > 0.0)
+			+
+			Function_Is_Friendly_Start.Evaluate
+			+
+			(2000 > Variable_Target.DistanceToNearestEnemy)
+		)
+		*
+		(
+			30.0
+			+
+			2.0 * Function_Current_Friendly_Location.Evaluate
+		)
+	</Good_Artillery_Area>
+	
 
 	<Should_Burn_Units_Land>
 		(Game.IsCampaignGame == 1)
@@ -941,6 +990,7 @@
 		(Variable_Self.HasUnit {Parameter_Type = "Empire_MoffPalace", 
 								Parameter_Type = "Maldrood_MoffPalace",
 								Parameter_Type = "Zsinj_MoffPalace",
+								Parameter_Type = "Kamino_MoffPalace",
 								Parameter_Type = "Eriadu_MoffPalace",
 								Parameter_Type = "Pentastar_MoffPalace",
 								Parameter_Type = "Hand_GovernorOffice",
@@ -948,16 +998,23 @@
 								Parameter_Type = "CSA_LocalOffice",
 								Parameter_Type = "House_Royal",
 								Parameter_Type = "Mando_Palace",
+								Parameter_Type = "Hutt_LocalOffice",
+								Parameter_Type = "Shadow_Collective_LocalOffice",
 								Parameter_Type = "Remnant_Capital",
 								Parameter_Type = "PA_Capital",
 								Parameter_Type = "Maldrood_Capital",
 								Parameter_Type = "Eriadu_Capital",
 								Parameter_Type = "NewRep_Senate",
 								Parameter_Type = "Rancor_Base",
+								Parameter_Type = "Kamino_Capital",
 								Parameter_Type = "CSA_Capital",
 								Parameter_Type = "U_Ground_Palace",
 								Parameter_Type = "Hapan_Palace",
-								Parameter_Type = "Mando_Palace"} == 0)
+								Parameter_Type = "Mando_Capital",
+								Parameter_Type = "Republic_Sector_Capital",
+								Parameter_Type = "Shadow_Collective_Palace",
+								Parameter_Type = "Separatist_Council",
+								Parameter_Type = "Hutt_Palace"} == 0)
 		*
 		(1 - Variable_Self.HasUnit {Parameter_Type = "Ground_Ion_Cannon"})
 		*
@@ -1008,6 +1065,8 @@
 		20.0
 		*
 		Game.IsLandControlGame
+		*
+		Variable_Target.Type.IsType {Parameter_Type = "Reinforcement_Point"}
 		+
 		5.0
 		*

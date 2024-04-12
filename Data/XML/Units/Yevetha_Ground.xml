@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='ASCII'?>
-<Remnant_Space_Units>
+<Yevethan_Ground>
 
 	<GroundInfantry Name="Yevethan_Soldier">
 		<Variant_Of_Existing_Type> Armytrooper </Variant_Of_Existing_Type>
@@ -77,22 +77,21 @@
 		<Targeting_Fire_Inaccuracy> Vehicle, 5.0 </Targeting_Fire_Inaccuracy>
 		<Targeting_Fire_Inaccuracy> Air, 70.0 </Targeting_Fire_Inaccuracy>
 		<Targeting_Fire_Inaccuracy> Structure, 10.0 </Targeting_Fire_Inaccuracy>
+		
+		<SFXEvent_Tactical_Build_Started> RHD_Reinforcements_En_Route </SFXEvent_Tactical_Build_Started>
+		<SFXEvent_Tactical_Build_Complete> RHD_Reinforcements_Available </SFXEvent_Tactical_Build_Complete>
+		<SFXEvent_Tactical_Build_Cancelled> RHD_Reinforcements_Cancelled  </SFXEvent_Tactical_Build_Cancelled>
+		
 		<SFXEvent_Select></SFXEvent_Select>
 		<SFXEvent_Move></SFXEvent_Move>
 		<SFXEvent_Fleet_Move></SFXEvent_Fleet_Move>
 		<SFXEvent_Attack></SFXEvent_Attack>
 		<SFXEvent_Guard></SFXEvent_Guard>
-
-
-		<SFXEvent_Fire>Unit_Rebel_Pistol_Fire</SFXEvent_Fire>
-
-
-		<Death_SFXEvent_Start_Die></Death_SFXEvent_Start_Die>
 		<SFXEvent_Assist_Move>  </SFXEvent_Assist_Move>
 		<SFXEvent_Assist_Attack>  </SFXEvent_Assist_Attack>
-		<SFXEvent_Tactical_Build_Started> RHD_Reinforcements_En_Route </SFXEvent_Tactical_Build_Started>
-		<SFXEvent_Tactical_Build_Complete> RHD_Reinforcements_Available </SFXEvent_Tactical_Build_Complete>
-		<SFXEvent_Tactical_Build_Cancelled> RHD_Reinforcements_Cancelled  </SFXEvent_Tactical_Build_Cancelled>
+
+		<Death_SFXEvent_Start_Die></Death_SFXEvent_Start_Die>
+		
 		<CategoryMask> Infantry </CategoryMask>
 		<MovementClass>Infantry</MovementClass>
 		<Property_Flags>Fodder</Property_Flags>
@@ -196,7 +195,6 @@
 		<Population_Value>1</Population_Value>
 
 		<Tech_Level>0</Tech_Level>
-		<Required_Timeline>0</Required_Timeline>
 		<Required_Ground_Base_Level>1</Required_Ground_Base_Level>
 		
 		<Affiliation>Warlords</Affiliation>
@@ -249,6 +247,85 @@
 		</Encyclopedia_Text>
 		<Create_Team_Type> Yevetha_Team </Create_Team_Type>
 	</GroundCompany>
+
+	<Container Name="Yevetha_Team">
+
+		<Text_ID>TEXT_UNIT_YEVETHA_SQUAD</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_INFANTRY</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_YEVETHASOLDIER
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_YEVETHASOLDIER_SQUAD
+		TEXT_TOOLTIP_YEVETHASOLDIER_HEALTH
+		TEXT_TOOLTIP_YEVETHASOLDIER_MOVE
+		TEXT_TOOLTIP_YEVETHASOLDIER_WEAP1
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_INFANTRY_CAPTURE
+		</Encyclopedia_Text>
+		<Icon_Name>i_button_yevetha.tga</Icon_Name>
+
+		<Select_Box_Scale>65</Select_Box_Scale>
+		<Select_Box_Z_Adjust>0</Select_Box_Z_Adjust>
+		
+		<Land_Model_Name/>
+
+		<Max_Speed> 1.6 </Max_Speed>
+		<OverrideAcceleration>0.1</OverrideAcceleration>
+		<OverrideDeceleration>0.1</OverrideDeceleration>
+		<Max_Rate_Of_Turn>12.0</Max_Rate_Of_Turn>
+
+		<CategoryMask>Infantry | AntiInfantry</CategoryMask>
+		<Show_Name>No</Show_Name>
+
+		<Tactical_Bribe_Cost>25</Tactical_Bribe_Cost>
+
+		<Behavior>TEAM,SELECTABLE,UNIT_AI</Behavior>
+		<LandBehavior>REVEAL, LAND_TEAM_CONTAINER_LOCOMOTOR, TEAM_TARGETING, GARRISON_UNIT</LandBehavior>
+		
+		<Lua_Script/>
+		
+		<SFXEvent_Select>Null</SFXEvent_Select>
+
+		<Garrison_Category> Infantry </Garrison_Category>
+		<Garrison_Value>2</Garrison_Value>
+
+		<Is_Squashable> true </Is_Squashable>
+
+		<MovementClass>Infantry</MovementClass>
+		<Space_Layer> Land </Space_Layer>
+		<UnitCollisionClass> Infantry </UnitCollisionClass>
+		<OccupationStyle>1x1</OccupationStyle>
+		<ContainerArrangement> Dartboard </ContainerArrangement>
+		<FormationSpacing> 1 </FormationSpacing>
+		<FormationOrder> 2 </FormationOrder>
+		<MovementPredictionInterval> 4.0 </MovementPredictionInterval>
+
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+
+		<Land_FOW_Reveal_Range>250.0</Land_FOW_Reveal_Range>
+
+		<Targeting_Max_Attack_Distance>275.0</Targeting_Max_Attack_Distance>
+		<Targeting_Min_Attack_Distance>0.0</Targeting_Min_Attack_Distance>
+		<Idle_Chase_Range>50.0</Idle_Chase_Range>
+		<Guard_Chase_Range>275.0</Guard_Chase_Range>
+		<Attack_Move_Response_Range>275.0</Attack_Move_Response_Range>
+		<Autonomous_Move_Extension_Vs_Attacker>50.0</Autonomous_Move_Extension_Vs_Attacker>
+
+		<SpaceBehavior>REVEAL</SpaceBehavior>
+		<Space_FOW_Reveal_Range>800.0</Space_FOW_Reveal_Range>
+		<Override_Acceleration> .1 </Override_Acceleration>
+		<Override_Deceleration> .1 </Override_Deceleration>
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<!-- Primary ability -->
+			<Unit_Ability>
+				<Type>SPREAD_OUT</Type>
+				<Mod_Multiplier>SPEED_MULTIPLIER,	 0.5f</Mod_Multiplier>
+				<Mod_Multiplier>TAKE_DAMAGE_MULTIPLIER, 0.75f</Mod_Multiplier>
+				<SFXEvent_GUI_Unit_Ability_Activated>Unit_Take_Cover_Rebel_Soldier</SFXEvent_GUI_Unit_Ability_Activated>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+	</Container>
+
 
 	<GroundInfantry Name="Yevethan_Plex_Soldier">
 
@@ -312,8 +389,6 @@
 		<Victory_Relevant>yes</Victory_Relevant>
 		<Create_Team>Yes</Create_Team>
 
-		<Override_Bounty_SP/>
-		<Override_Bounty_MP/>
 		<Tactical_Bribe_Cost>25</Tactical_Bribe_Cost>
 
 		<GalacticBehavior> SELECTABLE </GalacticBehavior>
@@ -497,7 +572,6 @@
 		<Population_Value>1</Population_Value>
 
 		<Tech_Level>0</Tech_Level>
-		<Required_Timeline>0</Required_Timeline>
 		<Required_Ground_Base_Level>1</Required_Ground_Base_Level>
 		
 		<Affiliation>Warlords</Affiliation>
@@ -505,7 +579,7 @@
 
 		<Behavior>DUMMY_GROUND_COMPANY</Behavior>
 
-		<Create_Team_Type> Plex_Soldier_Team </Create_Team_Type>
+		<Create_Team_Type> Yevethan_Plex_Soldier_Team </Create_Team_Type>
 		<Max_Squad_Size> 4 </Max_Squad_Size>
 		<Company_Units>Yevethan_Plex_Soldier, Yevethan_Plex_Soldier, Yevethan_Plex_Soldier </Company_Units>
 		<Company_Units> Yevethan_Plex_Soldier, Yevethan_Plex_Soldier, Yevethan_Plex_Soldier </Company_Units>
@@ -518,7 +592,7 @@
 		<SFXEvent_Build_Complete>Unit_Complete_Plex_Soldier</SFXEvent_Build_Complete>
 		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Plex_Soldier</SFXEvent_Fleet_Move>
 
-	<LOD_Bias>5</LOD_Bias>
+		<LOD_Bias>5</LOD_Bias>
 		<Required_Star_Base_Level>0</Required_Star_Base_Level>
 		<Required_Planets/>
 		<Unit_Abilities_Data SubObjectList="Yes">
@@ -530,6 +604,85 @@
 			</Unit_Ability>
 		</Unit_Abilities_Data>
 		<Maintenance_Cost>0.0</Maintenance_Cost>
-		</GroundCompany>
+	</GroundCompany>
 
-	</Remnant_Space_Units>
+	<Container Name="Yevethan_Plex_Soldier_Team">
+
+		<Text_ID>TEXT_UNIT_YEVETHAN_PLEX_SOLDIER_COMPANY</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_INFANTRY</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_YEVETHAN_PLEX
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
+		TEXT_TOOLTIP_YEVETHAN_PLEX_COMPANY
+		TEXT_TOOLTIP_YEVETHAN_PLEX_SQUAD
+		TEXT_TOOLTIP_YEVETHAN_PLEX_HEALTH
+		TEXT_TOOLTIP_YEVETHAN_PLEX_MOVE 
+		TEXT_TOOLTIP_YEVETHAN_PLEX_WEAP1
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_INFANTRY_CAPTURE
+		</Encyclopedia_Text>
+		<Icon_Name>i_button_plex_yevetha.tga</Icon_Name>
+
+		<Select_Box_Scale>65</Select_Box_Scale>
+		<Select_Box_Z_Adjust>0</Select_Box_Z_Adjust>
+		
+		<Land_Model_Name/>
+
+		<Max_Speed> 1.1 </Max_Speed>
+		<OverrideAcceleration> .05 </OverrideAcceleration>
+		<OverrideDeceleration> .05 </OverrideDeceleration>
+		<Max_Rate_Of_Turn>20.0</Max_Rate_Of_Turn>
+
+		<CategoryMask>Infantry | AntiInfantry</CategoryMask>
+		<Show_Name>No</Show_Name>
+
+		<Tactical_Bribe_Cost>25</Tactical_Bribe_Cost>
+
+		<Behavior>TEAM,SELECTABLE,UNIT_AI</Behavior>
+		<LandBehavior>REVEAL, LAND_TEAM_CONTAINER_LOCOMOTOR, TEAM_TARGETING, GARRISON_UNIT</LandBehavior>
+		
+		<Lua_Script/>
+		
+		<SFXEvent_Select>Null</SFXEvent_Select>
+
+		<Garrison_Category> Infantry </Garrison_Category>
+		<Garrison_Value>2</Garrison_Value>
+
+		<Is_Squashable> true </Is_Squashable>
+
+		<MovementClass>Infantry</MovementClass>
+		<Space_Layer> Land </Space_Layer>
+		<UnitCollisionClass> Infantry </UnitCollisionClass>
+		<OccupationStyle>1x1</OccupationStyle>
+		<ContainerArrangement> Dartboard </ContainerArrangement>
+		<FormationSpacing> 1 </FormationSpacing>
+		<FormationOrder> 2 </FormationOrder>
+		<MovementPredictionInterval> 4.0 </MovementPredictionInterval>
+
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+
+		<Land_FOW_Reveal_Range>250.0</Land_FOW_Reveal_Range>
+
+		<Targeting_Max_Attack_Distance>275.0</Targeting_Max_Attack_Distance>
+		<Targeting_Min_Attack_Distance>0.0</Targeting_Min_Attack_Distance>
+		<Idle_Chase_Range>50.0</Idle_Chase_Range>
+		<Guard_Chase_Range>275.0</Guard_Chase_Range>
+		<Attack_Move_Response_Range>275.0</Attack_Move_Response_Range>
+		<Autonomous_Move_Extension_Vs_Attacker>50.0</Autonomous_Move_Extension_Vs_Attacker>
+
+		<SpaceBehavior>REVEAL</SpaceBehavior>
+		<Space_FOW_Reveal_Range>800.0</Space_FOW_Reveal_Range>
+		<Override_Acceleration> .1 </Override_Acceleration>
+		<Override_Deceleration> .1 </Override_Deceleration>
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<!-- Primary ability -->
+			<Unit_Ability>
+				<Type>SPREAD_OUT</Type>
+				<Mod_Multiplier>SPEED_MULTIPLIER,	 0.5f</Mod_Multiplier>
+				<Mod_Multiplier>TAKE_DAMAGE_MULTIPLIER, 0.75f</Mod_Multiplier>
+				<SFXEvent_GUI_Unit_Ability_Activated>Unit_Take_Cover_Rebel_Soldier</SFXEvent_GUI_Unit_Ability_Activated>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+	</Container>
+
+</Yevethan_Ground>

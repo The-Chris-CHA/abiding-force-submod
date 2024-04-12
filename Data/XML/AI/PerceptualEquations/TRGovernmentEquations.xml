@@ -36,7 +36,15 @@
 	<Needs_SSD_Hero_Upgrade>
 		50.0
 		*
-		(Variable_Self.CreditsUnnormalized > 30000)
+		(
+			Variable_Self.CreditsUnnormalized > 30000
+			+
+			Variable_Self.IsFaction {Parameter_Faction = "Eriadu_Authority"}
+			*
+			(Variable_Self.CreditsUnnormalized > 18000)
+			*
+			(Script_GetCurrentEra.Evaluate == 1)
+		)
 		*
 		(
 			Variable_Self.IsFaction {Parameter_Faction = "Empire"}
@@ -51,9 +59,13 @@
 			*
 			Variable_Target.FriendlyForce.HasSpaceUnitsBitfield {Parameter_Type = "Delvardus_Brilliant"}
 			+
+			Variable_Self.IsFaction {Parameter_Faction = "Eriadu_Authority"}
+			*
+			Variable_Target.FriendlyForce.HasSpaceUnitsBitfield {Parameter_Type = "Delvardus_Thalassa"}
+			+
 			Variable_Self.IsFaction {Parameter_Faction = "Zsinj_Empire"}
 			*
-			Variable_Target.FriendlyForce.HasSpaceUnitsBitfield {Parameter_Type = "Iron_Fist_VSD"}
+			Variable_Target.FriendlyForce.HasSpaceUnitsBitfield {Parameter_Type = "Zsinj_Iron_Fist_VSD"}
 		)
 		*
 		Variable_Self.HasStructure {
@@ -64,5 +76,25 @@
 			Parameter_Type = "Rancor_Base", Parameter_Only_Consider_Complete = 1.0}
 	</Needs_SSD_Hero_Upgrade>
 	
+	<House_Royal_Construction_Favour>
+		(Variable_Target.StructureCount {Parameter_Type = "Hapan_Shipyard_Royal",
+									Parameter_Type = "House_Royal",
+								Parameter_Only_Consider_Complete = 1.0})
+	</House_Royal_Construction_Favour>	
+	<House_Requud_Construction_Favour>
+		(Variable_Target.StructureCount {Parameter_Type = "Hapan_Shipyard_Requud",
+									Parameter_Type = "House_Requud",
+								Parameter_Only_Consider_Complete = 1.0})
+	</House_Requud_Construction_Favour>	
+	<House_Galney_Construction_Favour>
+		(Variable_Target.StructureCount {Parameter_Type = "Hapan_Shipyard_Galney",
+									Parameter_Type = "House_Galney",
+								Parameter_Only_Consider_Complete = 1.0})
+	</House_Galney_Construction_Favour>	
+	<House_Maluri_Construction_Favour>
+		(Variable_Target.StructureCount {Parameter_Type = "Hapan_Shipyard_Maluri",
+									Parameter_Type = "House_Maluri",
+								Parameter_Only_Consider_Complete = 1.0})
+	</House_Maluri_Construction_Favour>
 
 </Equations>
